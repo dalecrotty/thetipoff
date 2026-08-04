@@ -1,0 +1,644 @@
+{
+ "player_id": 201567,
+ "player": "Kevin Love",
+ "team": "Utah",
+ "projections": {
+  "3PM": {
+   "mean": 1.83,
+   "floor": 0.11,
+   "ceiling": 4.04
+  },
+  "AST": {
+   "mean": 2.32,
+   "floor": 0.56,
+   "ceiling": 4.67
+  },
+  "BLK": {
+   "mean": 0.42,
+   "floor": 0.0,
+   "ceiling": 1.03
+  },
+  "PTS": {
+   "mean": 8.73,
+   "floor": 2.3,
+   "ceiling": 15.44
+  },
+  "REB": {
+   "mean": 6.5,
+   "floor": 2.46,
+   "ceiling": 10.48
+  },
+  "STL": {
+   "mean": 0.43,
+   "floor": 0.0,
+   "ceiling": 1.92
+  },
+  "TOV": {
+   "mean": 0.8,
+   "floor": 0.0,
+   "ceiling": 1.99
+  }
+ },
+ "minutes": {
+  "value": 19.6,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 20,
+   "min_pg": 17.1,
+   "PTS": {
+    "pg": 7.15,
+    "pm": 0.418
+   },
+   "REB": {
+    "pg": 5.35,
+    "pm": 0.313
+   },
+   "AST": {
+    "pg": 1.95,
+    "pm": 0.114
+   },
+   "3PM": {
+    "pg": 1.5,
+    "pm": 0.088
+   },
+   "STL": {
+    "pg": 0.35,
+    "pm": 0.02
+   },
+   "BLK": {
+    "pg": 0.35,
+    "pm": 0.02
+   },
+   "TOV": {
+    "pg": 0.7,
+    "pm": 0.041
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 20.3,
+   "PTS": {
+    "pg": 9.3,
+    "pm": 0.458
+   },
+   "REB": {
+    "pg": 6.3,
+    "pm": 0.31
+   },
+   "AST": {
+    "pg": 1.9,
+    "pm": 0.094
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.099
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.03
+   },
+   "BLK": {
+    "pg": 0.3,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.02
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 23.5,
+   "PTS": {
+    "pg": 9.2,
+    "pm": 0.392
+   },
+   "REB": {
+    "pg": 7.8,
+    "pm": 0.333
+   },
+   "AST": {
+    "pg": 2.6,
+    "pm": 0.111
+   },
+   "3PM": {
+    "pg": 2.2,
+    "pm": 0.094
+   },
+   "STL": {
+    "pg": 0.4,
+    "pm": 0.017
+   },
+   "BLK": {
+    "pg": 0.4,
+    "pm": 0.017
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.026
+   }
+  },
+  "home": {
+   "games": 12,
+   "min_pg": 18.2,
+   "PTS": {
+    "pg": 8.33,
+    "pm": 0.457
+   },
+   "REB": {
+    "pg": 5.58,
+    "pm": 0.306
+   },
+   "AST": {
+    "pg": 1.75,
+    "pm": 0.096
+   },
+   "3PM": {
+    "pg": 1.83,
+    "pm": 0.101
+   },
+   "STL": {
+    "pg": 0.42,
+    "pm": 0.023
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.027
+   },
+   "TOV": {
+    "pg": 0.75,
+    "pm": 0.041
+   }
+  },
+  "away": {
+   "games": 8,
+   "min_pg": 15.4,
+   "PTS": {
+    "pg": 5.38,
+    "pm": 0.349
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.325
+   },
+   "AST": {
+    "pg": 2.25,
+    "pm": 0.146
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.065
+   },
+   "STL": {
+    "pg": 0.25,
+    "pm": 0.016
+   },
+   "BLK": {
+    "pg": 0.12,
+    "pm": 0.008
+   },
+   "TOV": {
+    "pg": 0.62,
+    "pm": 0.041
+   }
+  }
+ },
+ "lines": {
+  "REB": {
+   "line": 5.5,
+   "side": "over",
+   "tier": "A"
+  },
+  "3PM": {
+   "line": 1.5,
+   "side": "over",
+   "tier": "A"
+  }
+ },
+ "game_log": [
+  {
+   "date": "2025-11-02",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2025-11-02_charlotte_vs_utah",
+   "min": 14.5,
+   "PTS": 3.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-03",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2025-11-03_boston_vs_utah",
+   "min": 16.6,
+   "PTS": 5.0,
+   "REB": 7.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-05",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2025-11-05_detroit_vs_utah",
+   "min": 13.9,
+   "PTS": 3.0,
+   "REB": 3.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-07",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2025-11-07_minnesota_vs_utah",
+   "min": 3.4,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-10",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2025-11-10_minnesota_vs_utah",
+   "min": 16.7,
+   "PTS": 10.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-13",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2025-11-13_atlanta_vs_utah",
+   "min": 15.5,
+   "PTS": 3.0,
+   "REB": 3.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-16",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2025-11-16_chicago_vs_utah",
+   "min": 18.4,
+   "PTS": 10.0,
+   "REB": 8.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-18",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2025-11-18_la-lakers_vs_utah",
+   "min": 13.5,
+   "PTS": 0.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-21",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-11-21_oklahoma-city_vs_utah",
+   "min": 13.2,
+   "PTS": 12.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-23",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2025-11-23_la-lakers_vs_utah",
+   "min": 13.1,
+   "PTS": 4.0,
+   "REB": 9.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-28",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-11-28_sacramento_vs_utah",
+   "min": 17.4,
+   "PTS": 9.0,
+   "REB": 7.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-01",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2025-12-01_houston_vs_utah",
+   "min": 15.4,
+   "PTS": 11.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2025-12-05_new-york_vs_utah",
+   "min": 16.5,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-07",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-12-07_oklahoma-city_vs_utah",
+   "min": 16.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-12",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2025-12-12_memphis_vs_utah",
+   "min": 20.4,
+   "PTS": 20.0,
+   "REB": 8.0,
+   "AST": 1.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-18",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2025-12-18_la-lakers_vs_utah",
+   "min": 16.3,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2025-12-20_orlando_vs_utah",
+   "min": 31.9,
+   "PTS": 16.0,
+   "REB": 16.0,
+   "AST": 1.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2025-12-23_memphis_vs_utah",
+   "min": 28.6,
+   "PTS": 6.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-26",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-12-26_detroit_vs_utah",
+   "min": 16.2,
+   "PTS": 14.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-03",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2026-01-03_golden-state_vs_utah",
+   "min": 24.3,
+   "PTS": 5.0,
+   "REB": 10.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-01-03",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2026-01-03_golden-state_vs_utah",
+   "min": 24.3,
+   "PTS": 5.0,
+   "REB": 10.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-26",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-12-26_detroit_vs_utah",
+   "min": 16.2,
+   "PTS": 14.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2025-12-23_memphis_vs_utah",
+   "min": 28.6,
+   "PTS": 6.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2025-12-20_orlando_vs_utah",
+   "min": 31.9,
+   "PTS": 16.0,
+   "REB": 16.0,
+   "AST": 1.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-18",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2025-12-18_la-lakers_vs_utah",
+   "min": 16.3,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-12",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2025-12-12_memphis_vs_utah",
+   "min": 20.4,
+   "PTS": 20.0,
+   "REB": 8.0,
+   "AST": 1.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-07",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-12-07_oklahoma-city_vs_utah",
+   "min": 16.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2025-12-05_new-york_vs_utah",
+   "min": 16.5,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-01",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2025-12-01_houston_vs_utah",
+   "min": 15.4,
+   "PTS": 11.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-28",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-11-28_sacramento_vs_utah",
+   "min": 17.4,
+   "PTS": 9.0,
+   "REB": 7.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  }
+ ]
+}

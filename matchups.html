@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matchups — the tipoff</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body data-page="matchups">
+<header class="site">
+  <div class="logo">the<span>tipoff</span></div>
+  <nav class="site">
+    <a href="index.html">Projections</a>
+    <a href="player.html">Player Hub</a>
+    <a href="matchups.html" class="on">Matchups</a>
+    <a href="with-without.html">With &amp; Without</a>
+    <a href="track-record.html">Track Record</a>
+  </nav>
+  <button id="themeBtn" title="Toggle theme">◐</button>
+</header>
+<div class="fresh" id="fresh">Loading…</div>
+<main>
+  <h1>Matchups — what each defence gives up</h1>
+  <p class="sub">Per-minute production allowed to each position, as a %
+    above (+) or below (−) the league rate for that position. Thin
+    samples show as — rather than a fake number. Click a column to sort.</p>
+  <div class="controls">
+    <div class="chips" id="posChips"></div>
+    <select id="winSel">
+      <option value="season">Season</option>
+      <option value="l3w">Last 3 weeks</option>
+    </select>
+  </div>
+  <div class="tablewrap">
+    <table id="mx">
+      <thead><tr>
+        <th class="s" data-k="team">Vs team</th>
+        <th data-k="minutes" title="sample minutes in the cell">Min</th>
+        <th data-k="PTS">PTS</th><th data-k="REB">REB</th>
+        <th data-k="AST">AST</th><th data-k="3PM">3PM</th>
+        <th data-k="STL">STL</th><th data-k="BLK">BLK</th>
+        <th data-k="TOV">TOV</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+<footer class="rg">
+  <b>18+.</b> Projections are statistical estimates, not betting advice.
+  Gamble responsibly —
+  <a href="https://www.gamblinghelponline.org.au">Gambling Help Online</a>
+  · 1800 858 858.
+</footer>
+</body>
+</html>

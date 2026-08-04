@@ -1,0 +1,826 @@
+{
+ "player_id": 1641854,
+ "player": "Craig Porter",
+ "team": "Cleveland",
+ "projections": {
+  "3PM": {
+   "mean": 0.73,
+   "floor": 0.0,
+   "ceiling": 2.09
+  },
+  "AST": {
+   "mean": 3.81,
+   "floor": 1.17,
+   "ceiling": 6.62
+  },
+  "BLK": {
+   "mean": 0.93,
+   "floor": 0.0,
+   "ceiling": 2.06
+  },
+  "PTS": {
+   "mean": 6.17,
+   "floor": 1.75,
+   "ceiling": 13.42
+  },
+  "REB": {
+   "mean": 5.03,
+   "floor": 1.82,
+   "ceiling": 8.53
+  },
+  "STL": {
+   "mean": 1.39,
+   "floor": 0.02,
+   "ceiling": 3.01
+  },
+  "TOV": {
+   "mean": 1.03,
+   "floor": 0.0,
+   "ceiling": 2.08
+  }
+ },
+ "minutes": {
+  "value": 21.3,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 33,
+   "min_pg": 17.3,
+   "PTS": {
+    "pg": 5.03,
+    "pm": 0.291
+   },
+   "REB": {
+    "pg": 3.67,
+    "pm": 0.212
+   },
+   "AST": {
+    "pg": 2.76,
+    "pm": 0.159
+   },
+   "3PM": {
+    "pg": 0.58,
+    "pm": 0.033
+   },
+   "STL": {
+    "pg": 1.06,
+    "pm": 0.061
+   },
+   "BLK": {
+    "pg": 0.67,
+    "pm": 0.039
+   },
+   "TOV": {
+    "pg": 0.85,
+    "pm": 0.049
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 18.2,
+   "PTS": {
+    "pg": 4.4,
+    "pm": 0.242
+   },
+   "REB": {
+    "pg": 4.6,
+    "pm": 0.253
+   },
+   "AST": {
+    "pg": 3.6,
+    "pm": 0.198
+   },
+   "3PM": {
+    "pg": 0.5,
+    "pm": 0.027
+   },
+   "STL": {
+    "pg": 1.2,
+    "pm": 0.066
+   },
+   "BLK": {
+    "pg": 0.8,
+    "pm": 0.044
+   },
+   "TOV": {
+    "pg": 1.1,
+    "pm": 0.06
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 23.5,
+   "PTS": {
+    "pg": 4.8,
+    "pm": 0.204
+   },
+   "REB": {
+    "pg": 7.0,
+    "pm": 0.298
+   },
+   "AST": {
+    "pg": 4.2,
+    "pm": 0.179
+   },
+   "3PM": {
+    "pg": 0.6,
+    "pm": 0.026
+   },
+   "STL": {
+    "pg": 1.4,
+    "pm": 0.06
+   },
+   "BLK": {
+    "pg": 1.4,
+    "pm": 0.06
+   },
+   "TOV": {
+    "pg": 1.4,
+    "pm": 0.06
+   }
+  },
+  "home": {
+   "games": 20,
+   "min_pg": 16.9,
+   "PTS": {
+    "pg": 4.6,
+    "pm": 0.272
+   },
+   "REB": {
+    "pg": 3.6,
+    "pm": 0.213
+   },
+   "AST": {
+    "pg": 2.15,
+    "pm": 0.127
+   },
+   "3PM": {
+    "pg": 0.55,
+    "pm": 0.032
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.059
+   },
+   "BLK": {
+    "pg": 0.6,
+    "pm": 0.035
+   },
+   "TOV": {
+    "pg": 0.85,
+    "pm": 0.05
+   }
+  },
+  "away": {
+   "games": 13,
+   "min_pg": 17.9,
+   "PTS": {
+    "pg": 5.69,
+    "pm": 0.319
+   },
+   "REB": {
+    "pg": 3.77,
+    "pm": 0.211
+   },
+   "AST": {
+    "pg": 3.69,
+    "pm": 0.207
+   },
+   "3PM": {
+    "pg": 0.62,
+    "pm": 0.034
+   },
+   "STL": {
+    "pg": 1.15,
+    "pm": 0.065
+   },
+   "BLK": {
+    "pg": 0.77,
+    "pm": 0.043
+   },
+   "TOV": {
+    "pg": 0.85,
+    "pm": 0.047
+   }
+  }
+ },
+ "lines": {
+  "AST": {
+   "line": 3.5,
+   "side": "over",
+   "tier": "B"
+  },
+  "REB": {
+   "line": 5.5,
+   "side": "under",
+   "tier": "B"
+  }
+ },
+ "game_log": [
+  {
+   "date": "2025-10-22",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2025-10-22_cleveland_vs_new-york",
+   "min": 6.7,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-24",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2025-10-24_brooklyn_vs_cleveland",
+   "min": 14.4,
+   "PTS": 14.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-26",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-10-26_cleveland_vs_milwaukee",
+   "min": 16.4,
+   "PTS": 5.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2025-10-27_cleveland_vs_detroit",
+   "min": 23.8,
+   "PTS": 4.0,
+   "REB": 7.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-10-29",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2025-10-29_boston_vs_cleveland",
+   "min": 22.2,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-10-31",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-31_cleveland_vs_toronto",
+   "min": 20.9,
+   "PTS": 5.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-02",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2025-11-02_atlanta_vs_cleveland",
+   "min": 21.2,
+   "PTS": 4.0,
+   "REB": 7.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-05",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2025-11-05_cleveland_vs_philadelphia",
+   "min": 18.1,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-07",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2025-11-07_cleveland_vs_washington",
+   "min": 15.9,
+   "PTS": 2.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-08",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2025-11-08_chicago_vs_cleveland",
+   "min": 4.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-10",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2025-11-10_cleveland_vs_miami",
+   "min": 5.4,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-12",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2025-11-12_cleveland_vs_miami",
+   "min": 32.2,
+   "PTS": 19.0,
+   "REB": 4.0,
+   "AST": 9.0,
+   "3PM": 3.0,
+   "STL": 3.0,
+   "BLK": 4.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-13",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-11-13_cleveland_vs_toronto",
+   "min": 24.4,
+   "PTS": 10.0,
+   "REB": 1.0,
+   "AST": 5.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-15",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2025-11-15_cleveland_vs_memphis",
+   "min": 13.0,
+   "PTS": 3.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-17",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-11-17_cleveland_vs_milwaukee",
+   "min": 20.1,
+   "PTS": 11.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-19",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2025-11-19_cleveland_vs_houston",
+   "min": 25.8,
+   "PTS": 9.0,
+   "REB": 7.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-21",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2025-11-21_cleveland_vs_indiana",
+   "min": 10.6,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-30",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2025-11-30_boston_vs_cleveland",
+   "min": 10.8,
+   "PTS": 4.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-01",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2025-12-01_cleveland_vs_indiana",
+   "min": 22.4,
+   "PTS": 4.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-03",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2025-12-03_cleveland_vs_portland",
+   "min": 10.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2025-12-05_cleveland_vs_san-antonio",
+   "min": 23.9,
+   "PTS": 11.0,
+   "REB": 7.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-06",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-12-06_cleveland_vs_golden-state",
+   "min": 15.2,
+   "PTS": 0.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-12",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2025-12-12_cleveland_vs_washington",
+   "min": 10.8,
+   "PTS": 4.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-14",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-12-14_charlotte_vs_cleveland",
+   "min": 4.4,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-17",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2025-12-17_chicago_vs_cleveland",
+   "min": 17.8,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-12-22_charlotte_vs_cleveland",
+   "min": 2.9,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2025-12-23_cleveland_vs_new-orleans",
+   "min": 22.3,
+   "PTS": 12.0,
+   "REB": 8.0,
+   "AST": 8.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-27",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2025-12-27_cleveland_vs_houston",
+   "min": 17.2,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-29",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2025-12-29_cleveland_vs_san-antonio",
+   "min": 15.3,
+   "PTS": 2.0,
+   "REB": 6.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-31",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2025-12-31_cleveland_vs_phoenix",
+   "min": 28.5,
+   "PTS": 2.0,
+   "REB": 9.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-02",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-01-02_cleveland_vs_denver",
+   "min": 23.2,
+   "PTS": 10.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-01-04",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-01-04_cleveland_vs_detroit",
+   "min": 22.5,
+   "PTS": 2.0,
+   "REB": 6.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-06",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-01-06_cleveland_vs_indiana",
+   "min": 28.0,
+   "PTS": 8.0,
+   "REB": 9.0,
+   "AST": 9.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 3.0,
+   "TOV": 4.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-01-06",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-01-06_cleveland_vs_indiana",
+   "min": 28.0,
+   "PTS": 8.0,
+   "REB": 9.0,
+   "AST": 9.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 3.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2026-01-04",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-01-04_cleveland_vs_detroit",
+   "min": 22.5,
+   "PTS": 2.0,
+   "REB": 6.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-02",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-01-02_cleveland_vs_denver",
+   "min": 23.2,
+   "PTS": 10.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-31",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2025-12-31_cleveland_vs_phoenix",
+   "min": 28.5,
+   "PTS": 2.0,
+   "REB": 9.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-29",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2025-12-29_cleveland_vs_san-antonio",
+   "min": 15.3,
+   "PTS": 2.0,
+   "REB": 6.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-27",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2025-12-27_cleveland_vs_houston",
+   "min": 17.2,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2025-12-23_cleveland_vs_new-orleans",
+   "min": 22.3,
+   "PTS": 12.0,
+   "REB": 8.0,
+   "AST": 8.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-12-22_charlotte_vs_cleveland",
+   "min": 2.9,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-17",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2025-12-17_chicago_vs_cleveland",
+   "min": 17.8,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-14",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-12-14_charlotte_vs_cleveland",
+   "min": 4.4,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  }
+ ]
+}

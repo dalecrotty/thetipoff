@@ -1,0 +1,752 @@
+{
+ "player_id": 1630163,
+ "player": "LaMelo Ball",
+ "team": "Charlotte",
+ "projections": {
+  "3PM": {
+   "mean": 2.93,
+   "floor": 0.32,
+   "ceiling": 5.12
+  },
+  "AST": {
+   "mean": 6.91,
+   "floor": 2.99,
+   "ceiling": 10.3
+  },
+  "BLK": {
+   "mean": 0.2,
+   "floor": 0.0,
+   "ceiling": 1.01
+  },
+  "PTS": {
+   "mean": 17.58,
+   "floor": 8.54,
+   "ceiling": 25.93
+  },
+  "REB": {
+   "mean": 4.54,
+   "floor": 1.77,
+   "ceiling": 7.93
+  },
+  "STL": {
+   "mean": 1.09,
+   "floor": 0.0,
+   "ceiling": 2.02
+  },
+  "TOV": {
+   "mean": 2.97,
+   "floor": 0.69,
+   "ceiling": 4.95
+  }
+ },
+ "minutes": {
+  "value": 24.0,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 27,
+   "min_pg": 28.0,
+   "PTS": {
+    "pg": 19.52,
+    "pm": 0.698
+   },
+   "REB": {
+    "pg": 5.11,
+    "pm": 0.183
+   },
+   "AST": {
+    "pg": 7.89,
+    "pm": 0.282
+   },
+   "3PM": {
+    "pg": 3.19,
+    "pm": 0.114
+   },
+   "STL": {
+    "pg": 1.22,
+    "pm": 0.044
+   },
+   "BLK": {
+    "pg": 0.22,
+    "pm": 0.008
+   },
+   "TOV": {
+    "pg": 3.37,
+    "pm": 0.12
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 26.3,
+   "PTS": {
+    "pg": 18.9,
+    "pm": 0.719
+   },
+   "REB": {
+    "pg": 3.8,
+    "pm": 0.145
+   },
+   "AST": {
+    "pg": 6.4,
+    "pm": 0.243
+   },
+   "3PM": {
+    "pg": 3.9,
+    "pm": 0.148
+   },
+   "STL": {
+    "pg": 1.3,
+    "pm": 0.049
+   },
+   "BLK": {
+    "pg": 0.3,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 3.2,
+    "pm": 0.122
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 26.6,
+   "PTS": {
+    "pg": 17.4,
+    "pm": 0.654
+   },
+   "REB": {
+    "pg": 4.4,
+    "pm": 0.165
+   },
+   "AST": {
+    "pg": 5.6,
+    "pm": 0.211
+   },
+   "3PM": {
+    "pg": 3.4,
+    "pm": 0.128
+   },
+   "STL": {
+    "pg": 1.6,
+    "pm": 0.06
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.2,
+    "pm": 0.083
+   }
+  },
+  "home": {
+   "games": 12,
+   "min_pg": 28.7,
+   "PTS": {
+    "pg": 19.42,
+    "pm": 0.677
+   },
+   "REB": {
+    "pg": 4.58,
+    "pm": 0.16
+   },
+   "AST": {
+    "pg": 7.83,
+    "pm": 0.273
+   },
+   "3PM": {
+    "pg": 3.33,
+    "pm": 0.116
+   },
+   "STL": {
+    "pg": 1.17,
+    "pm": 0.041
+   },
+   "BLK": {
+    "pg": 0.08,
+    "pm": 0.003
+   },
+   "TOV": {
+    "pg": 3.33,
+    "pm": 0.116
+   }
+  },
+  "away": {
+   "games": 15,
+   "min_pg": 27.4,
+   "PTS": {
+    "pg": 19.6,
+    "pm": 0.716
+   },
+   "REB": {
+    "pg": 5.53,
+    "pm": 0.202
+   },
+   "AST": {
+    "pg": 7.93,
+    "pm": 0.29
+   },
+   "3PM": {
+    "pg": 3.07,
+    "pm": 0.112
+   },
+   "STL": {
+    "pg": 1.27,
+    "pm": 0.046
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.012
+   },
+   "TOV": {
+    "pg": 3.4,
+    "pm": 0.124
+   }
+  }
+ },
+ "lines": {
+  "3PM": {
+   "line": 3.5,
+   "side": "under",
+   "tier": "A"
+  },
+  "REB": {
+   "line": 5.5,
+   "side": "under",
+   "tier": "A"
+  },
+  "AST": {
+   "line": 6.5,
+   "side": "over",
+   "tier": null
+  },
+  "PTS": {
+   "line": 16.5,
+   "side": "under",
+   "tier": null
+  }
+ },
+ "game_log": [
+  {
+   "date": "2025-10-22",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2025-10-22_brooklyn_vs_charlotte",
+   "min": 33.6,
+   "PTS": 20.0,
+   "REB": 2.0,
+   "AST": 8.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-10-25",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-10-25_charlotte_vs_philadelphia",
+   "min": 33.6,
+   "PTS": 27.0,
+   "REB": 10.0,
+   "AST": 8.0,
+   "3PM": 4.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-10-26",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2025-10-26_charlotte_vs_washington",
+   "min": 34.6,
+   "PTS": 38.0,
+   "REB": 13.0,
+   "AST": 13.0,
+   "3PM": 5.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-10-28",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2025-10-28_charlotte_vs_miami",
+   "min": 28.5,
+   "PTS": 20.0,
+   "REB": 8.0,
+   "AST": 9.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2025-10-30",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2025-10-30_charlotte_vs_orlando",
+   "min": 36.3,
+   "PTS": 17.0,
+   "REB": 7.0,
+   "AST": 13.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-11-01",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2025-11-01_charlotte_vs_minnesota",
+   "min": 33.5,
+   "PTS": 18.0,
+   "REB": 7.0,
+   "AST": 8.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-11-14",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2025-11-14_charlotte_vs_milwaukee",
+   "min": 27.4,
+   "PTS": 16.0,
+   "REB": 3.0,
+   "AST": 10.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-17",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2025-11-17_charlotte_vs_toronto",
+   "min": 27.5,
+   "PTS": 20.0,
+   "REB": 5.0,
+   "AST": 8.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-11-19",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2025-11-19_charlotte_vs_indiana",
+   "min": 27.3,
+   "PTS": 18.0,
+   "REB": 7.0,
+   "AST": 9.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 6.0
+  },
+  {
+   "date": "2025-11-22",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2025-11-22_charlotte_vs_la-clippers",
+   "min": 25.1,
+   "PTS": 18.0,
+   "REB": 4.0,
+   "AST": 7.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-11-26",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2025-11-26_charlotte_vs_new-york",
+   "min": 26.8,
+   "PTS": 11.0,
+   "REB": 6.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-11-28",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2025-11-28_charlotte_vs_chicago",
+   "min": 28.9,
+   "PTS": 16.0,
+   "REB": 7.0,
+   "AST": 8.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-29",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-11-29_charlotte_vs_toronto",
+   "min": 21.7,
+   "PTS": 14.0,
+   "REB": 2.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-01",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2025-12-01_brooklyn_vs_charlotte",
+   "min": 29.5,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 14.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-03",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2025-12-03_charlotte_vs_new-york",
+   "min": 36.9,
+   "PTS": 34.0,
+   "REB": 8.0,
+   "AST": 9.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2025-12-05_charlotte_vs_toronto",
+   "min": 11.9,
+   "PTS": 11.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-18",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2025-12-18_atlanta_vs_charlotte",
+   "min": 29.2,
+   "PTS": 28.0,
+   "REB": 4.0,
+   "AST": 13.0,
+   "3PM": 8.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 6.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2025-12-20_charlotte_vs_detroit",
+   "min": 23.1,
+   "PTS": 8.0,
+   "REB": 1.0,
+   "AST": 6.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 2.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-12-22_charlotte_vs_cleveland",
+   "min": 24.4,
+   "PTS": 23.0,
+   "REB": 4.0,
+   "AST": 9.0,
+   "3PM": 6.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-12-23_charlotte_vs_washington",
+   "min": 24.8,
+   "PTS": 23.0,
+   "REB": 2.0,
+   "AST": 9.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-26",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-12-26_charlotte_vs_orlando",
+   "min": 28.6,
+   "PTS": 22.0,
+   "REB": 7.0,
+   "AST": 5.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 6.0
+  },
+  {
+   "date": "2025-12-29",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-29_charlotte_vs_milwaukee",
+   "min": 29.1,
+   "PTS": 26.0,
+   "REB": 2.0,
+   "AST": 7.0,
+   "3PM": 6.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 6.0
+  },
+  {
+   "date": "2025-12-31",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-12-31_charlotte_vs_golden-state",
+   "min": 30.3,
+   "PTS": 27.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 7.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2026-01-02",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2026-01-02_charlotte_vs_milwaukee",
+   "min": 25.9,
+   "PTS": 12.0,
+   "REB": 2.0,
+   "AST": 7.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-03",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2026-01-03_charlotte_vs_chicago",
+   "min": 26.4,
+   "PTS": 17.0,
+   "REB": 6.0,
+   "AST": 7.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-05",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-01-05_charlotte_vs_oklahoma-city",
+   "min": 25.2,
+   "PTS": 16.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2026-01-07",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-01-07_charlotte_vs_toronto",
+   "min": 25.1,
+   "PTS": 15.0,
+   "REB": 7.0,
+   "AST": 7.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-01-07",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-01-07_charlotte_vs_toronto",
+   "min": 25.1,
+   "PTS": 15.0,
+   "REB": 7.0,
+   "AST": 7.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-05",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-01-05_charlotte_vs_oklahoma-city",
+   "min": 25.2,
+   "PTS": 16.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2026-01-03",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2026-01-03_charlotte_vs_chicago",
+   "min": 26.4,
+   "PTS": 17.0,
+   "REB": 6.0,
+   "AST": 7.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-02",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2026-01-02_charlotte_vs_milwaukee",
+   "min": 25.9,
+   "PTS": 12.0,
+   "REB": 2.0,
+   "AST": 7.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-31",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-12-31_charlotte_vs_golden-state",
+   "min": 30.3,
+   "PTS": 27.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 7.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2025-12-29",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-29_charlotte_vs_milwaukee",
+   "min": 29.1,
+   "PTS": 26.0,
+   "REB": 2.0,
+   "AST": 7.0,
+   "3PM": 6.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 6.0
+  },
+  {
+   "date": "2025-12-26",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-12-26_charlotte_vs_orlando",
+   "min": 28.6,
+   "PTS": 22.0,
+   "REB": 7.0,
+   "AST": 5.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 6.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-12-23_charlotte_vs_washington",
+   "min": 24.8,
+   "PTS": 23.0,
+   "REB": 2.0,
+   "AST": 9.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-12-22_charlotte_vs_cleveland",
+   "min": 24.4,
+   "PTS": 23.0,
+   "REB": 4.0,
+   "AST": 9.0,
+   "3PM": 6.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2025-12-20_charlotte_vs_detroit",
+   "min": 23.1,
+   "PTS": 8.0,
+   "REB": 1.0,
+   "AST": 6.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 2.0,
+   "TOV": 4.0
+  }
+ ]
+}

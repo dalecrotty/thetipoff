@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>the tipoff — NBA projections, Australia</title>
+<meta name="description" content="Transparent NBA player projections and prop edges for the Australian market, with an honest, audited track record.">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body data-page="board">
+<header class="site">
+  <div class="logo">the<span>tipoff</span></div>
+  <nav class="site">
+    <a href="index.html" class="on">Projections</a>
+    <a href="player.html">Player Hub</a>
+    <a href="matchups.html">Matchups</a>
+    <a href="with-without.html">With &amp; Without</a>
+    <a href="track-record.html">Track Record</a>
+  </nav>
+  <button id="themeBtn" title="Toggle theme">◐</button>
+</header>
+<div class="fresh" id="fresh">Loading…</div>
+<main>
+  <h1>Daily projections</h1>
+  <p class="sub">Tonight's slate, every player × market. Lines, edges and
+    bet tiers light up when books post NBA props; projections stand on
+    their own. Click a column to sort.</p>
+  <div class="controls">
+    <select id="fStat">
+      <option value="all">All markets</option>
+      <option>PTS</option><option>REB</option><option>AST</option>
+      <option>3PM</option><option>STL</option><option>BLK</option>
+      <option>TOV</option>
+    </select>
+    <select id="fTier">
+      <option value="all">All rows</option>
+      <option value="gated">Gated edges only</option>
+      <option value="A">Tier A</option>
+      <option value="B">Tier B</option>
+    </select>
+    <select id="fTeam"><option value="all">All teams</option></select>
+    <input id="fQ" type="search" placeholder="Search player…">
+  </div>
+  <div class="tablewrap">
+    <table id="board">
+      <thead><tr>
+        <th class="s" data-k="player">Player</th>
+        <th class="s" data-k="team">Team</th>
+        <th class="s" data-k="stat">Market</th>
+        <th data-k="proj">Proj</th>
+        <th>Floor–Ceil</th>
+        <th data-k="minutes">Min</th>
+        <th data-k="line">Line</th>
+        <th class="s">Side</th>
+        <th data-k="edge">Edge</th>
+        <th data-k="l10_over" title="over-rate vs the line, last 10 games">L10</th>
+        <th class="s" data-k="tier">Tier</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+<footer class="rg">
+  <b>18+.</b> Projections are statistical estimates, not betting advice.
+  Chances are you're about to lose. Gamble responsibly —
+  <a href="https://www.gamblinghelponline.org.au">Gambling Help Online</a>
+  · 1800 858 858.
+</footer>
+</body>
+</html>

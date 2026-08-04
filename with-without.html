@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>With &amp; Without — the tipoff</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body data-page="wow">
+<header class="site">
+  <div class="logo">the<span>tipoff</span></div>
+  <nav class="site">
+    <a href="index.html">Projections</a>
+    <a href="player.html">Player Hub</a>
+    <a href="matchups.html">Matchups</a>
+    <a href="with-without.html" class="on">With &amp; Without</a>
+    <a href="track-record.html">Track Record</a>
+  </nav>
+  <button id="themeBtn" title="Toggle theme">◐</button>
+</header>
+<div class="fresh" id="fresh">Loading…</div>
+<main>
+  <h1>With &amp; Without</h1>
+  <p class="sub" id="wownote"></p>
+  <div class="controls">
+    <input id="fQ" type="search" placeholder="Search player, teammate or team…">
+  </div>
+  <div class="tablewrap">
+    <table id="wow">
+      <thead><tr>
+        <th class="s" data-k="focal">Player</th>
+        <th class="s" data-k="key_out">Teammate out</th>
+        <th class="s" data-k="team">Team</th>
+        <th>Min with → without</th>
+        <th data-k="d_min">Δ Min</th>
+        <th>Pts with → without</th>
+        <th data-k="d_pts">Δ Pts</th>
+        <th>n (w/wo)</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+<footer class="rg">
+  <b>18+.</b> Projections are statistical estimates, not betting advice.
+  Gamble responsibly —
+  <a href="https://www.gamblinghelponline.org.au">Gambling Help Online</a>
+  · 1800 858 858.
+</footer>
+</body>
+</html>

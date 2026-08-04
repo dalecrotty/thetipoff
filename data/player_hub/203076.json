@@ -1,0 +1,640 @@
+{
+ "player_id": 203076,
+ "player": "Anthony Davis",
+ "team": "Dallas",
+ "projections": {
+  "3PM": {
+   "mean": 0.59,
+   "floor": 0.0,
+   "ceiling": 1.96
+  },
+  "AST": {
+   "mean": 3.13,
+   "floor": 0.88,
+   "ceiling": 5.85
+  },
+  "BLK": {
+   "mean": 2.0,
+   "floor": 0.39,
+   "ceiling": 3.68
+  },
+  "PTS": {
+   "mean": 23.49,
+   "floor": 12.35,
+   "ceiling": 32.44
+  },
+  "REB": {
+   "mean": 13.06,
+   "floor": 8.2,
+   "ceiling": 17.59
+  },
+  "STL": {
+   "mean": 1.25,
+   "floor": 0.0,
+   "ceiling": 2.87
+  },
+  "TOV": {
+   "mean": 2.38,
+   "floor": 0.73,
+   "ceiling": 4.23
+  }
+ },
+ "minutes": {
+  "value": 34.7,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 19,
+   "min_pg": 31.1,
+   "PTS": {
+    "pg": 20.32,
+    "pm": 0.654
+   },
+   "REB": {
+    "pg": 11.05,
+    "pm": 0.356
+   },
+   "AST": {
+    "pg": 2.74,
+    "pm": 0.088
+   },
+   "3PM": {
+    "pg": 0.53,
+    "pm": 0.017
+   },
+   "STL": {
+    "pg": 1.11,
+    "pm": 0.036
+   },
+   "BLK": {
+    "pg": 1.68,
+    "pm": 0.054
+   },
+   "TOV": {
+    "pg": 2.05,
+    "pm": 0.066
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 32.8,
+   "PTS": {
+    "pg": 21.9,
+    "pm": 0.668
+   },
+   "REB": {
+    "pg": 11.6,
+    "pm": 0.354
+   },
+   "AST": {
+    "pg": 2.2,
+    "pm": 0.067
+   },
+   "3PM": {
+    "pg": 0.3,
+    "pm": 0.009
+   },
+   "STL": {
+    "pg": 1.1,
+    "pm": 0.034
+   },
+   "BLK": {
+    "pg": 1.7,
+    "pm": 0.052
+   },
+   "TOV": {
+    "pg": 2.2,
+    "pm": 0.067
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 31.7,
+   "PTS": {
+    "pg": 18.4,
+    "pm": 0.581
+   },
+   "REB": {
+    "pg": 9.6,
+    "pm": 0.303
+   },
+   "AST": {
+    "pg": 2.2,
+    "pm": 0.069
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.006
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.032
+   },
+   "BLK": {
+    "pg": 1.8,
+    "pm": 0.057
+   },
+   "TOV": {
+    "pg": 2.4,
+    "pm": 0.076
+   }
+  },
+  "home": {
+   "games": 12,
+   "min_pg": 32.5,
+   "PTS": {
+    "pg": 21.58,
+    "pm": 0.665
+   },
+   "REB": {
+    "pg": 11.08,
+    "pm": 0.341
+   },
+   "AST": {
+    "pg": 2.58,
+    "pm": 0.08
+   },
+   "3PM": {
+    "pg": 0.58,
+    "pm": 0.018
+   },
+   "STL": {
+    "pg": 1.5,
+    "pm": 0.046
+   },
+   "BLK": {
+    "pg": 1.67,
+    "pm": 0.051
+   },
+   "TOV": {
+    "pg": 2.42,
+    "pm": 0.074
+   }
+  },
+  "away": {
+   "games": 7,
+   "min_pg": 28.7,
+   "PTS": {
+    "pg": 18.14,
+    "pm": 0.632
+   },
+   "REB": {
+    "pg": 11.0,
+    "pm": 0.383
+   },
+   "AST": {
+    "pg": 3.0,
+    "pm": 0.105
+   },
+   "3PM": {
+    "pg": 0.43,
+    "pm": 0.015
+   },
+   "STL": {
+    "pg": 0.43,
+    "pm": 0.015
+   },
+   "BLK": {
+    "pg": 1.71,
+    "pm": 0.06
+   },
+   "TOV": {
+    "pg": 1.43,
+    "pm": 0.05
+   }
+  }
+ },
+ "lines": {
+  "AST": {
+   "line": 2.5,
+   "side": "over",
+   "tier": "A"
+  },
+  "PTS": {
+   "line": 25.5,
+   "side": "under",
+   "tier": "A"
+  },
+  "REB": {
+   "line": 14.5,
+   "side": "under",
+   "tier": "A"
+  },
+  "PRA": {
+   "line": 37.5,
+   "side": "over",
+   "tier": "B"
+  }
+ },
+ "game_log": [
+  {
+   "date": "2025-10-22",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2025-10-22_dallas_vs_san-antonio",
+   "min": 32.5,
+   "PTS": 22.0,
+   "REB": 13.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-24",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-10-24_dallas_vs_washington",
+   "min": 37.6,
+   "PTS": 27.0,
+   "REB": 13.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 2.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2025-10-26",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-26_dallas_vs_toronto",
+   "min": 34.5,
+   "PTS": 25.0,
+   "REB": 10.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-10-27_dallas_vs_oklahoma-city",
+   "min": 38.1,
+   "PTS": 26.0,
+   "REB": 11.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-10-29",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2025-10-29_dallas_vs_indiana",
+   "min": 6.6,
+   "PTS": 4.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-28",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2025-11-28_dallas_vs_la-lakers",
+   "min": 28.3,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 3.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-01",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2025-12-01_dallas_vs_denver",
+   "min": 32.4,
+   "PTS": 32.0,
+   "REB": 13.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-03",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2025-12-03_dallas_vs_miami",
+   "min": 28.2,
+   "PTS": 17.0,
+   "REB": 17.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 3.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2025-12-05_dallas_vs_oklahoma-city",
+   "min": 24.3,
+   "PTS": 2.0,
+   "REB": 8.0,
+   "AST": 6.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-06",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2025-12-06_dallas_vs_houston",
+   "min": 30.3,
+   "PTS": 29.0,
+   "REB": 8.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-12",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2025-12-12_brooklyn_vs_dallas",
+   "min": 32.7,
+   "PTS": 24.0,
+   "REB": 14.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-18",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-12-18_dallas_vs_detroit",
+   "min": 37.4,
+   "PTS": 15.0,
+   "REB": 14.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 3.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-12-20_dallas_vs_philadelphia",
+   "min": 34.0,
+   "PTS": 24.0,
+   "REB": 15.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-12-22_dallas_vs_new-orleans",
+   "min": 35.3,
+   "PTS": 35.0,
+   "REB": 17.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2025-12-23_dallas_vs_denver",
+   "min": 35.9,
+   "PTS": 31.0,
+   "REB": 9.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-25",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2025-12-25_dallas_vs_golden-state",
+   "min": 10.9,
+   "PTS": 3.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-01",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-01-01_dallas_vs_philadelphia",
+   "min": 36.9,
+   "PTS": 13.0,
+   "REB": 8.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2026-01-03",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-01-03_dallas_vs_houston",
+   "min": 39.0,
+   "PTS": 26.0,
+   "REB": 12.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 5.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2026-01-06",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2026-01-06_dallas_vs_sacramento",
+   "min": 35.6,
+   "PTS": 19.0,
+   "REB": 16.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-01-06",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2026-01-06_dallas_vs_sacramento",
+   "min": 35.6,
+   "PTS": 19.0,
+   "REB": 16.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2026-01-03",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-01-03_dallas_vs_houston",
+   "min": 39.0,
+   "PTS": 26.0,
+   "REB": 12.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 5.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2026-01-01",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-01-01_dallas_vs_philadelphia",
+   "min": 36.9,
+   "PTS": 13.0,
+   "REB": 8.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-25",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2025-12-25_dallas_vs_golden-state",
+   "min": 10.9,
+   "PTS": 3.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2025-12-23_dallas_vs_denver",
+   "min": 35.9,
+   "PTS": 31.0,
+   "REB": 9.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-12-22_dallas_vs_new-orleans",
+   "min": 35.3,
+   "PTS": 35.0,
+   "REB": 17.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-12-20_dallas_vs_philadelphia",
+   "min": 34.0,
+   "PTS": 24.0,
+   "REB": 15.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-18",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-12-18_dallas_vs_detroit",
+   "min": 37.4,
+   "PTS": 15.0,
+   "REB": 14.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 3.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-12",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2025-12-12_brooklyn_vs_dallas",
+   "min": 32.7,
+   "PTS": 24.0,
+   "REB": 14.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-06",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2025-12-06_dallas_vs_houston",
+   "min": 30.3,
+   "PTS": 29.0,
+   "REB": 8.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  }
+ ]
+}

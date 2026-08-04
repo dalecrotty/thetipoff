@@ -1,0 +1,892 @@
+{
+ "player_id": 1628978,
+ "player": "Donte DiVincenzo",
+ "team": "Minnesota",
+ "projections": {
+  "3PM": {
+   "mean": 3.04,
+   "floor": 0.43,
+   "ceiling": 5.23
+  },
+  "AST": {
+   "mean": 4.43,
+   "floor": 1.31,
+   "ceiling": 7.25
+  },
+  "BLK": {
+   "mean": 0.49,
+   "floor": 0.01,
+   "ceiling": 1.09
+  },
+  "PTS": {
+   "mean": 13.0,
+   "floor": 5.31,
+   "ceiling": 21.12
+  },
+  "REB": {
+   "mean": 4.93,
+   "floor": 1.72,
+   "ceiling": 8.43
+  },
+  "STL": {
+   "mean": 1.35,
+   "floor": 0.0,
+   "ceiling": 2.97
+  },
+  "TOV": {
+   "mean": 1.2,
+   "floor": 0.0,
+   "ceiling": 2.98
+  }
+ },
+ "minutes": {
+  "value": 31.2,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 37,
+   "min_pg": 31.2,
+   "PTS": {
+    "pg": 13.0,
+    "pm": 0.417
+   },
+   "REB": {
+    "pg": 4.51,
+    "pm": 0.145
+   },
+   "AST": {
+    "pg": 4.0,
+    "pm": 0.128
+   },
+   "3PM": {
+    "pg": 2.95,
+    "pm": 0.095
+   },
+   "STL": {
+    "pg": 1.27,
+    "pm": 0.041
+   },
+   "BLK": {
+    "pg": 0.46,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 1.22,
+    "pm": 0.039
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 30.1,
+   "PTS": {
+    "pg": 10.7,
+    "pm": 0.356
+   },
+   "REB": {
+    "pg": 4.9,
+    "pm": 0.163
+   },
+   "AST": {
+    "pg": 4.6,
+    "pm": 0.153
+   },
+   "3PM": {
+    "pg": 2.6,
+    "pm": 0.086
+   },
+   "STL": {
+    "pg": 1.4,
+    "pm": 0.047
+   },
+   "BLK": {
+    "pg": 0.3,
+    "pm": 0.01
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.033
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 27.2,
+   "PTS": {
+    "pg": 9.2,
+    "pm": 0.338
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.183
+   },
+   "AST": {
+    "pg": 3.8,
+    "pm": 0.139
+   },
+   "3PM": {
+    "pg": 2.4,
+    "pm": 0.088
+   },
+   "STL": {
+    "pg": 1.2,
+    "pm": 0.044
+   },
+   "BLK": {
+    "pg": 0.4,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.8,
+    "pm": 0.029
+   }
+  },
+  "home": {
+   "games": 19,
+   "min_pg": 31.4,
+   "PTS": {
+    "pg": 13.0,
+    "pm": 0.414
+   },
+   "REB": {
+    "pg": 4.74,
+    "pm": 0.151
+   },
+   "AST": {
+    "pg": 4.21,
+    "pm": 0.134
+   },
+   "3PM": {
+    "pg": 3.0,
+    "pm": 0.096
+   },
+   "STL": {
+    "pg": 1.16,
+    "pm": 0.037
+   },
+   "BLK": {
+    "pg": 0.37,
+    "pm": 0.012
+   },
+   "TOV": {
+    "pg": 1.32,
+    "pm": 0.042
+   }
+  },
+  "away": {
+   "games": 18,
+   "min_pg": 31.0,
+   "PTS": {
+    "pg": 13.0,
+    "pm": 0.42
+   },
+   "REB": {
+    "pg": 4.28,
+    "pm": 0.138
+   },
+   "AST": {
+    "pg": 3.78,
+    "pm": 0.122
+   },
+   "3PM": {
+    "pg": 2.89,
+    "pm": 0.093
+   },
+   "STL": {
+    "pg": 1.39,
+    "pm": 0.045
+   },
+   "BLK": {
+    "pg": 0.56,
+    "pm": 0.018
+   },
+   "TOV": {
+    "pg": 1.11,
+    "pm": 0.036
+   }
+  }
+ },
+ "lines": {
+  "3PM": {
+   "line": 3.5,
+   "side": "under",
+   "tier": "A"
+  },
+  "AST": {
+   "line": 3.5,
+   "side": "over",
+   "tier": "A"
+  },
+  "REB": {
+   "line": 4.5,
+   "side": "over",
+   "tier": "B"
+  },
+  "PTS": {
+   "line": 13.5,
+   "side": "under",
+   "tier": null
+  }
+ },
+ "game_log": [
+  {
+   "date": "2025-10-22",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2025-10-22_minnesota_vs_portland",
+   "min": 20.4,
+   "PTS": 7.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 2.0,
+   "TOV": 6.0
+  },
+  {
+   "date": "2025-10-24",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2025-10-24_la-lakers_vs_minnesota",
+   "min": 28.3,
+   "PTS": 13.0,
+   "REB": 0.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-26",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2025-10-26_indiana_vs_minnesota",
+   "min": 37.6,
+   "PTS": 17.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2025-10-27_denver_vs_minnesota",
+   "min": 29.9,
+   "PTS": 12.0,
+   "REB": 3.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-10-29",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2025-10-29_la-lakers_vs_minnesota",
+   "min": 33.7,
+   "PTS": 14.0,
+   "REB": 4.0,
+   "AST": 6.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-11-01",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2025-11-01_charlotte_vs_minnesota",
+   "min": 31.3,
+   "PTS": 18.0,
+   "REB": 3.0,
+   "AST": 4.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-03",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2025-11-03_brooklyn_vs_minnesota",
+   "min": 30.4,
+   "PTS": 25.0,
+   "REB": 9.0,
+   "AST": 5.0,
+   "3PM": 6.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-05",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2025-11-05_minnesota_vs_new-york",
+   "min": 36.0,
+   "PTS": 21.0,
+   "REB": 3.0,
+   "AST": 4.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-07",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2025-11-07_minnesota_vs_utah",
+   "min": 20.6,
+   "PTS": 3.0,
+   "REB": 6.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-09",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2025-11-09_minnesota_vs_sacramento",
+   "min": 28.4,
+   "PTS": 8.0,
+   "REB": 4.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-10",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2025-11-10_minnesota_vs_utah",
+   "min": 37.5,
+   "PTS": 14.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-14",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-11-14_minnesota_vs_sacramento",
+   "min": 30.4,
+   "PTS": 20.0,
+   "REB": 6.0,
+   "AST": 5.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-15",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2025-11-15_denver_vs_minnesota",
+   "min": 34.0,
+   "PTS": 11.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-17",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2025-11-17_dallas_vs_minnesota",
+   "min": 26.3,
+   "PTS": 14.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-19",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-11-19_minnesota_vs_washington",
+   "min": 36.0,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 6.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-21",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-21_minnesota_vs_phoenix",
+   "min": 31.6,
+   "PTS": 9.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 2.0,
+   "STL": 4.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-24",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2025-11-24_minnesota_vs_sacramento",
+   "min": 37.0,
+   "PTS": 17.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-26",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2025-11-26_minnesota_vs_oklahoma-city",
+   "min": 31.3,
+   "PTS": 11.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-29",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2025-11-29_boston_vs_minnesota",
+   "min": 34.2,
+   "PTS": 15.0,
+   "REB": 3.0,
+   "AST": 8.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-30",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2025-11-30_minnesota_vs_san-antonio",
+   "min": 29.4,
+   "PTS": 18.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-02",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-12-02_minnesota_vs_new-orleans",
+   "min": 37.8,
+   "PTS": 15.0,
+   "REB": 4.0,
+   "AST": 5.0,
+   "3PM": 5.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-04",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-12-04_minnesota_vs_new-orleans",
+   "min": 32.1,
+   "PTS": 15.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-06",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2025-12-06_la-clippers_vs_minnesota",
+   "min": 24.7,
+   "PTS": 5.0,
+   "REB": 4.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-08",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2025-12-08_minnesota_vs_phoenix",
+   "min": 27.4,
+   "PTS": 2.0,
+   "REB": 4.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-12",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2025-12-12_golden-state_vs_minnesota",
+   "min": 35.2,
+   "PTS": 21.0,
+   "REB": 6.0,
+   "AST": 4.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-14",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-12-14_minnesota_vs_sacramento",
+   "min": 33.7,
+   "PTS": 18.0,
+   "REB": 6.0,
+   "AST": 6.0,
+   "3PM": 3.0,
+   "STL": 4.0,
+   "BLK": 2.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-17",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2025-12-17_memphis_vs_minnesota",
+   "min": 37.3,
+   "PTS": 19.0,
+   "REB": 11.0,
+   "AST": 4.0,
+   "3PM": 4.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-19",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-12-19_minnesota_vs_oklahoma-city",
+   "min": 33.4,
+   "PTS": 15.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-21",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-21_milwaukee_vs_minnesota",
+   "min": 33.1,
+   "PTS": 18.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 4.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2025-12-23_minnesota_vs_new-york",
+   "min": 32.2,
+   "PTS": 11.0,
+   "REB": 2.0,
+   "AST": 8.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-25",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2025-12-25_denver_vs_minnesota",
+   "min": 34.2,
+   "PTS": 6.0,
+   "REB": 8.0,
+   "AST": 8.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-27",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2025-12-27_brooklyn_vs_minnesota",
+   "min": 31.6,
+   "PTS": 11.0,
+   "REB": 5.0,
+   "AST": 6.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-29",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2025-12-29_chicago_vs_minnesota",
+   "min": 26.5,
+   "PTS": 12.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-31",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2025-12-31_atlanta_vs_minnesota",
+   "min": 25.6,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 7.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-03",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2026-01-03_miami_vs_minnesota",
+   "min": 31.0,
+   "PTS": 11.0,
+   "REB": 8.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-01-04",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2026-01-04_minnesota_vs_washington",
+   "min": 22.6,
+   "PTS": 5.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-06",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-01-06_miami_vs_minnesota",
+   "min": 30.5,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-01-06",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-01-06_miami_vs_minnesota",
+   "min": 30.5,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-04",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2026-01-04_minnesota_vs_washington",
+   "min": 22.6,
+   "PTS": 5.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-03",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2026-01-03_miami_vs_minnesota",
+   "min": 31.0,
+   "PTS": 11.0,
+   "REB": 8.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-31",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2025-12-31_atlanta_vs_minnesota",
+   "min": 25.6,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 7.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-29",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2025-12-29_chicago_vs_minnesota",
+   "min": 26.5,
+   "PTS": 12.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-27",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2025-12-27_brooklyn_vs_minnesota",
+   "min": 31.6,
+   "PTS": 11.0,
+   "REB": 5.0,
+   "AST": 6.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-25",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2025-12-25_denver_vs_minnesota",
+   "min": 34.2,
+   "PTS": 6.0,
+   "REB": 8.0,
+   "AST": 8.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2025-12-23_minnesota_vs_new-york",
+   "min": 32.2,
+   "PTS": 11.0,
+   "REB": 2.0,
+   "AST": 8.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-21",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-21_milwaukee_vs_minnesota",
+   "min": 33.1,
+   "PTS": 18.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 4.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-19",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-12-19_minnesota_vs_oklahoma-city",
+   "min": 33.4,
+   "PTS": 15.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  }
+ ]
+}

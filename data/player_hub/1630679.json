@@ -1,0 +1,569 @@
+{
+ "player_id": 1630679,
+ "player": "Ethan Thompson",
+ "team": "Indiana",
+ "projections": {
+  "3PM": {
+   "mean": 1.23,
+   "floor": 0.0,
+   "ceiling": 2.98
+  },
+  "AST": {
+   "mean": 1.84,
+   "floor": 0.11,
+   "ceiling": 4.06
+  },
+  "BLK": {
+   "mean": 0.33,
+   "floor": 0.0,
+   "ceiling": 1.01
+  },
+  "PTS": {
+   "mean": 5.65,
+   "floor": 1.23,
+   "ceiling": 12.9
+  },
+  "REB": {
+   "mean": 2.36,
+   "floor": 0.67,
+   "ceiling": 4.95
+  },
+  "STL": {
+   "mean": 0.66,
+   "floor": 0.0,
+   "ceiling": 1.96
+  },
+  "TOV": {
+   "mean": 0.75,
+   "floor": 0.03,
+   "ceiling": 2.09
+  }
+ },
+ "minutes": {
+  "value": 19.8,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 15,
+   "min_pg": 17.5,
+   "PTS": {
+    "pg": 4.73,
+    "pm": 0.271
+   },
+   "REB": {
+    "pg": 1.87,
+    "pm": 0.107
+   },
+   "AST": {
+    "pg": 1.53,
+    "pm": 0.088
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.057
+   },
+   "STL": {
+    "pg": 0.53,
+    "pm": 0.03
+   },
+   "BLK": {
+    "pg": 0.27,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.034
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 15.7,
+   "PTS": {
+    "pg": 4.0,
+    "pm": 0.254
+   },
+   "REB": {
+    "pg": 1.9,
+    "pm": 0.121
+   },
+   "AST": {
+    "pg": 1.6,
+    "pm": 0.102
+   },
+   "3PM": {
+    "pg": 0.8,
+    "pm": 0.051
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.013
+   },
+   "TOV": {
+    "pg": 0.9,
+    "pm": 0.057
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 10.2,
+   "PTS": {
+    "pg": 3.0,
+    "pm": 0.293
+   },
+   "REB": {
+    "pg": 1.6,
+    "pm": 0.156
+   },
+   "AST": {
+    "pg": 1.4,
+    "pm": 0.137
+   },
+   "3PM": {
+    "pg": 0.6,
+    "pm": 0.059
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.02
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.098
+   }
+  },
+  "home": {
+   "games": 9,
+   "min_pg": 14.1,
+   "PTS": {
+    "pg": 2.89,
+    "pm": 0.204
+   },
+   "REB": {
+    "pg": 1.67,
+    "pm": 0.118
+   },
+   "AST": {
+    "pg": 1.11,
+    "pm": 0.079
+   },
+   "3PM": {
+    "pg": 0.67,
+    "pm": 0.047
+   },
+   "STL": {
+    "pg": 0.56,
+    "pm": 0.039
+   },
+   "BLK": {
+    "pg": 0.22,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 0.33,
+    "pm": 0.024
+   }
+  },
+  "away": {
+   "games": 6,
+   "min_pg": 22.5,
+   "PTS": {
+    "pg": 7.5,
+    "pm": 0.333
+   },
+   "REB": {
+    "pg": 2.17,
+    "pm": 0.096
+   },
+   "AST": {
+    "pg": 2.17,
+    "pm": 0.096
+   },
+   "3PM": {
+    "pg": 1.5,
+    "pm": 0.067
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.022
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.044
+   }
+  }
+ },
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "side": "under",
+   "tier": "B"
+  }
+ },
+ "game_log": [
+  {
+   "date": "2025-12-01",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2025-12-01_cleveland_vs_indiana",
+   "min": 7.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-03",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2025-12-03_denver_vs_indiana",
+   "min": 3.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2025-12-05_chicago_vs_indiana",
+   "min": 34.3,
+   "PTS": 11.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-08",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-12-08_indiana_vs_sacramento",
+   "min": 27.8,
+   "PTS": 6.0,
+   "REB": 5.0,
+   "AST": 0.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-12",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-12-12_indiana_vs_philadelphia",
+   "min": 32.8,
+   "PTS": 12.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-14",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-12-14_indiana_vs_washington",
+   "min": 23.9,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-18",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2025-12-18_indiana_vs_new-york",
+   "min": 3.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-12-20_indiana_vs_new-orleans",
+   "min": 18.9,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2025-12-22_boston_vs_indiana",
+   "min": 33.6,
+   "PTS": 13.0,
+   "REB": 4.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-23_indiana_vs_milwaukee",
+   "min": 26.1,
+   "PTS": 3.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 2.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-26",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2025-12-26_boston_vs_indiana",
+   "min": 26.3,
+   "PTS": 11.0,
+   "REB": 4.0,
+   "AST": 6.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-27",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2025-12-27_indiana_vs_miami",
+   "min": 11.8,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-29",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2025-12-29_houston_vs_indiana",
+   "min": 3.7,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-02",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-01-02_indiana_vs_san-antonio",
+   "min": 0.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-06",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-01-06_cleveland_vs_indiana",
+   "min": 8.7,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-01-06",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-01-06_cleveland_vs_indiana",
+   "min": 8.7,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-02",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-01-02_indiana_vs_san-antonio",
+   "min": 0.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-29",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2025-12-29_houston_vs_indiana",
+   "min": 3.7,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-27",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2025-12-27_indiana_vs_miami",
+   "min": 11.8,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-26",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2025-12-26_boston_vs_indiana",
+   "min": 26.3,
+   "PTS": 11.0,
+   "REB": 4.0,
+   "AST": 6.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-23_indiana_vs_milwaukee",
+   "min": 26.1,
+   "PTS": 3.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 2.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2025-12-22_boston_vs_indiana",
+   "min": 33.6,
+   "PTS": 13.0,
+   "REB": 4.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-12-20_indiana_vs_new-orleans",
+   "min": 18.9,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-18",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2025-12-18_indiana_vs_new-york",
+   "min": 3.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-14",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-12-14_indiana_vs_washington",
+   "min": 23.9,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ]
+}
