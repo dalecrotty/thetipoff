@@ -2,8 +2,191 @@
  "game": "2025-12-05_new-york_vs_utah",
  "date": "2025-12-05",
  "teams": {
+  "New York": {
+   "players": [
+    {
+     "player_id": 203903,
+     "player": "Jordan Clarkson",
+     "starter": false,
+     "min": 31.0,
+     "PTS": 16.0,
+     "REB": 4.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1628973,
+     "player": "Jalen Brunson",
+     "starter": true,
+     "min": 30.9,
+     "PTS": 33.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 6.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1628404,
+     "player": "Josh Hart",
+     "starter": true,
+     "min": 27.8,
+     "PTS": 8.0,
+     "REB": 6.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1628384,
+     "player": "O.G. Anunoby",
+     "starter": true,
+     "min": 22.7,
+     "PTS": 11.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1626157,
+     "player": "Karl-Anthony Towns",
+     "starter": true,
+     "min": 22.3,
+     "PTS": 18.0,
+     "REB": 9.0,
+     "AST": 4.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1630540,
+     "player": "Miles McBride",
+     "starter": false,
+     "min": 21.7,
+     "PTS": 22.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 7.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1628969,
+     "player": "Mikal Bridges",
+     "starter": true,
+     "min": 19.9,
+     "PTS": 10.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629011,
+     "player": "Mitchell Robinson",
+     "starter": false,
+     "min": 16.0,
+     "PTS": 4.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1642278,
+     "player": "Tyler Kolek",
+     "starter": false,
+     "min": 14.3,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1642885,
+     "player": "Mohamed Diawara",
+     "starter": false,
+     "min": 12.4,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1630574,
+     "player": "Ariel Hukporti",
+     "starter": false,
+     "min": 12.0,
+     "PTS": 4.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1627824,
+     "player": "Guerschon Yabusele",
+     "starter": false,
+     "min": 9.1,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    }
+   ],
+   "totals": {
+    "PTS": 146.0,
+    "REB": 46.0,
+    "AST": 30.0,
+    "3PM": 21.0,
+    "STL": 9.0,
+    "BLK": 2.0,
+    "TOV": 12.0,
+    "min": 240.0
+   }
+  },
   "Utah": {
    "players": [
+    {
+     "player_id": 1642846,
+     "player": "Ace Bailey",
+     "starter": true,
+     "min": 34.0,
+     "PTS": 13.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 3.0
+    },
     {
      "player_id": 1642271,
      "player": "Kyle Filipowski",
@@ -57,6 +240,19 @@
      "TOV": 0.0
     },
     {
+     "player_id": 203994,
+     "player": "Jusuf Nurkic",
+     "starter": true,
+     "min": 19.5,
+     "PTS": 4.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0
+    },
+    {
      "player_id": 1642383,
      "player": "Walter Clayton Jr.",
      "starter": false,
@@ -65,6 +261,19 @@
      "REB": 1.0,
      "AST": 4.0,
      "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629004,
+     "player": "Svi Mykhailiuk",
+     "starter": true,
+     "min": 18.6,
+     "PTS": 3.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 1.0,
      "STL": 0.0,
      "BLK": 0.0,
      "TOV": 1.0
@@ -110,14 +319,14 @@
     }
    ],
    "totals": {
-    "PTS": 92.0,
-    "REB": 23.0,
-    "AST": 22.0,
-    "3PM": 12.0,
-    "STL": 5.0,
-    "BLK": 0.0,
-    "TOV": 5.0,
-    "min": 168.0
+    "PTS": 112.0,
+    "REB": 37.0,
+    "AST": 23.0,
+    "3PM": 15.0,
+    "STL": 8.0,
+    "BLK": 1.0,
+    "TOV": 12.0,
+    "min": 240.0
    }
   }
  },

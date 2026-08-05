@@ -24,8 +24,14 @@
   <div class="controls">
     <select id="playerSel"></select>
   </div>
-  <h1 id="pname">—</h1>
-  <p class="sub"><span id="pteam"></span> · projected <span id="pmins">—</span></p>
+  <div class="playerhead">
+    <span id="psinglet"></span>
+    <div>
+      <h1 id="pname">—</h1>
+      <p class="sub"><span id="pteam"></span> · projected
+        <span id="pmins">—</span></p>
+    </div>
+  </div>
 
   <div class="section"><h2>Tonight's projection (floor–ceiling = 10th–90th)</h2></div>
   <div class="cards" id="projCards"></div>
@@ -85,6 +91,12 @@
       <option value="0">B2B (0 days)</option>
       <option value="1+">1+ days rest</option>
     </select>
+    <select id="fResult">
+      <option value="all">Wins &amp; losses</option>
+      <option value="W">Wins only</option>
+      <option value="L">Losses only</option>
+    </select>
+    <select id="fTier"><option value="all">Any opp standing</option></select>
     <select id="fOpp"><option value="all">Any opponent</option></select>
     <span class="stepper" title="minutes range">
       <input id="fMinLo" type="number" step="1" min="0" placeholder="min">
@@ -111,7 +123,7 @@
     <table id="gamelog">
       <thead><tr>
         <th class="s">Date</th><th class="s">Opp</th><th class="s">H/A</th>
-        <th class="s">Role</th><th>Min</th>
+        <th class="s">W/L</th><th class="s">Role</th><th>Min</th>
         <th>PTS</th><th>REB</th><th>AST</th><th>3PM</th>
         <th>STL</th><th>BLK</th><th>TOV</th>
       </tr></thead>

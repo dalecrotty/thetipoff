@@ -2,6 +2,150 @@
  "game": "2025-11-16_chicago_vs_utah",
  "date": "2025-11-16",
  "teams": {
+  "Chicago": {
+   "players": [
+    {
+     "player_id": 1630581,
+     "player": "Josh Giddey",
+     "starter": true,
+     "min": 42.3,
+     "PTS": 26.0,
+     "REB": 12.0,
+     "AST": 13.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 2.0,
+     "TOV": 6.0
+    },
+    {
+     "player_id": 202696,
+     "player": "Nikola Vucevic",
+     "starter": true,
+     "min": 41.4,
+     "PTS": 21.0,
+     "REB": 13.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 3.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1630171,
+     "player": "Isaac Okoro",
+     "starter": true,
+     "min": 40.4,
+     "PTS": 5.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1641824,
+     "player": "Matas Buzelis",
+     "starter": true,
+     "min": 33.2,
+     "PTS": 18.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1628989,
+     "player": "Kevin Huerter",
+     "starter": true,
+     "min": 32.5,
+     "PTS": 6.0,
+     "REB": 8.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629632,
+     "player": "Coby White",
+     "starter": false,
+     "min": 30.3,
+     "PTS": 27.0,
+     "REB": 4.0,
+     "AST": 8.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1630245,
+     "player": "Ayo Dosunmu",
+     "starter": false,
+     "min": 25.8,
+     "PTS": 18.0,
+     "REB": 1.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1630188,
+     "player": "Jalen Smith",
+     "starter": false,
+     "min": 16.6,
+     "PTS": 8.0,
+     "REB": 8.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1630172,
+     "player": "Patrick Williams",
+     "starter": false,
+     "min": 14.2,
+     "PTS": 8.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1641763,
+     "player": "Julian Phillips",
+     "starter": false,
+     "min": 13.3,
+     "PTS": 10.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    }
+   ],
+   "totals": {
+    "PTS": 147.0,
+    "REB": 60.0,
+    "AST": 38.0,
+    "3PM": 19.0,
+    "STL": 7.0,
+    "BLK": 10.0,
+    "TOV": 17.0,
+    "min": 290.0
+   }
+  },
   "Utah": {
    "players": [
     {
@@ -31,6 +175,19 @@
      "TOV": 4.0
     },
     {
+     "player_id": 203994,
+     "player": "Jusuf Nurkic",
+     "starter": true,
+     "min": 38.0,
+     "PTS": 5.0,
+     "REB": 14.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
      "player_id": 1642268,
      "player": "Isaiah Collier",
      "starter": false,
@@ -42,6 +199,19 @@
      "STL": 2.0,
      "BLK": 0.0,
      "TOV": 3.0
+    },
+    {
+     "player_id": 1629004,
+     "player": "Svi Mykhailiuk",
+     "starter": true,
+     "min": 28.6,
+     "PTS": 10.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0
     },
     {
      "player_id": 1641729,
@@ -94,17 +264,30 @@
      "STL": 0.0,
      "BLK": 1.0,
      "TOV": 0.0
+    },
+    {
+     "player_id": 1642846,
+     "player": "Ace Bailey",
+     "starter": true,
+     "min": 10.4,
+     "PTS": 5.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0
     }
    ],
    "totals": {
-    "PTS": 130.0,
-    "REB": 38.0,
-    "AST": 21.0,
-    "3PM": 15.0,
-    "STL": 10.0,
-    "BLK": 3.0,
-    "TOV": 8.0,
-    "min": 213.0
+    "PTS": 150.0,
+    "REB": 53.0,
+    "AST": 29.0,
+    "3PM": 18.0,
+    "STL": 13.0,
+    "BLK": 6.0,
+    "TOV": 9.0,
+    "min": 290.0
    }
   }
  },

@@ -2,6 +2,163 @@
  "game": "2025-11-17_detroit_vs_indiana",
  "date": "2025-11-17",
  "teams": {
+  "Detroit": {
+   "players": [
+    {
+     "player_id": 1629130,
+     "player": "Duncan Robinson",
+     "starter": true,
+     "min": 34.3,
+     "PTS": 13.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1642450,
+     "player": "Daniss Jenkins",
+     "starter": true,
+     "min": 33.5,
+     "PTS": 26.0,
+     "REB": 2.0,
+     "AST": 8.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 4.0
+    },
+    {
+     "player_id": 1641842,
+     "player": "Ronald Holland II",
+     "starter": true,
+     "min": 30.5,
+     "PTS": 7.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1631105,
+     "player": "Jalen Duren",
+     "starter": true,
+     "min": 28.6,
+     "PTS": 31.0,
+     "REB": 15.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629750,
+     "player": "Javonte Green",
+     "starter": false,
+     "min": 27.1,
+     "PTS": 20.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1630191,
+     "player": "Isaiah Stewart",
+     "starter": true,
+     "min": 20.4,
+     "PTS": 10.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 5.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1642404,
+     "player": "Chaz Lanier",
+     "starter": false,
+     "min": 18.4,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1627747,
+     "player": "Caris LeVert",
+     "starter": false,
+     "min": 17.4,
+     "PTS": 8.0,
+     "REB": 5.0,
+     "AST": 8.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1631111,
+     "player": "Wendell Moore Jr.",
+     "starter": false,
+     "min": 15.0,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1630194,
+     "player": "Paul Reed",
+     "starter": false,
+     "min": 13.5,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1642403,
+     "player": "Isaac Jones",
+     "starter": false,
+     "min": 1.3,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    }
+   ],
+   "totals": {
+    "PTS": 127.0,
+    "REB": 43.0,
+    "AST": 29.0,
+    "3PM": 9.0,
+    "STL": 9.0,
+    "BLK": 8.0,
+    "TOV": 16.0,
+    "min": 240.0
+   }
+  },
   "Indiana": {
    "players": [
     {
@@ -16,6 +173,19 @@
      "STL": 1.0,
      "BLK": 1.0,
      "TOV": 3.0
+    },
+    {
+     "player_id": 1629614,
+     "player": "Andrew Nembhard",
+     "starter": true,
+     "min": 31.5,
+     "PTS": 15.0,
+     "REB": 1.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 5.0
     },
     {
      "player_id": 1641767,
@@ -42,6 +212,45 @@
      "STL": 2.0,
      "BLK": 0.0,
      "TOV": 3.0
+    },
+    {
+     "player_id": 1630543,
+     "player": "Isaiah Jackson",
+     "starter": true,
+     "min": 26.6,
+     "PTS": 16.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1631097,
+     "player": "Bennedict Mathurin",
+     "starter": true,
+     "min": 25.2,
+     "PTS": 25.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 4.0
+    },
+    {
+     "player_id": 1630526,
+     "player": "Jeremiah Robinson-Earl",
+     "starter": false,
+     "min": 20.4,
+     "PTS": 4.0,
+     "REB": 9.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
     },
     {
      "player_id": 1628396,
@@ -81,17 +290,43 @@
      "STL": 0.0,
      "BLK": 1.0,
      "TOV": 0.0
+    },
+    {
+     "player_id": 1643007,
+     "player": "Taelon Peter",
+     "starter": false,
+     "min": 2.2,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1628420,
+     "player": "Monte Morris",
+     "starter": false,
+     "min": 2.2,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
     }
    ],
    "totals": {
-    "PTS": 50.0,
-    "REB": 20.0,
-    "AST": 9.0,
-    "3PM": 5.0,
-    "STL": 5.0,
-    "BLK": 3.0,
-    "TOV": 10.0,
-    "min": 132.0
+    "PTS": 112.0,
+    "REB": 43.0,
+    "AST": 19.0,
+    "3PM": 9.0,
+    "STL": 8.0,
+    "BLK": 5.0,
+    "TOV": 21.0,
+    "min": 240.0
    }
   }
  },

@@ -2,6 +2,137 @@
  "game": "2025-12-01_houston_vs_utah",
  "date": "2025-12-01",
  "teams": {
+  "Houston": {
+   "players": [
+    {
+     "player_id": 201142,
+     "player": "Kevin Durant",
+     "starter": true,
+     "min": 40.3,
+     "PTS": 32.0,
+     "REB": 9.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 5.0
+    },
+    {
+     "player_id": 1630578,
+     "player": "Alperen Sengun",
+     "starter": true,
+     "min": 38.1,
+     "PTS": 31.0,
+     "REB": 8.0,
+     "AST": 14.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 5.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1631095,
+     "player": "Jabari Smith Jr.",
+     "starter": true,
+     "min": 37.4,
+     "PTS": 12.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1641708,
+     "player": "Amen Thompson",
+     "starter": true,
+     "min": 37.2,
+     "PTS": 23.0,
+     "REB": 8.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1628988,
+     "player": "Aaron Holiday",
+     "starter": false,
+     "min": 32.6,
+     "PTS": 10.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1642263,
+     "player": "Reed Sheppard",
+     "starter": true,
+     "min": 23.4,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1630256,
+     "player": "Jae'Sean Tate",
+     "starter": false,
+     "min": 12.9,
+     "PTS": 6.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 203991,
+     "player": "Clint Capela",
+     "starter": false,
+     "min": 9.0,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1629006,
+     "player": "Josh Okogie",
+     "starter": false,
+     "min": 9.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    }
+   ],
+   "totals": {
+    "PTS": 125.0,
+    "REB": 46.0,
+    "AST": 27.0,
+    "3PM": 10.0,
+    "STL": 6.0,
+    "BLK": 8.0,
+    "TOV": 13.0,
+    "min": 240.0
+   }
+  },
   "Utah": {
    "players": [
     {
@@ -42,6 +173,45 @@
      "STL": 0.0,
      "BLK": 1.0,
      "TOV": 3.0
+    },
+    {
+     "player_id": 1642846,
+     "player": "Ace Bailey",
+     "starter": true,
+     "min": 28.4,
+     "PTS": 13.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 3.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629004,
+     "player": "Svi Mykhailiuk",
+     "starter": true,
+     "min": 26.1,
+     "PTS": 10.0,
+     "REB": 6.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 203994,
+     "player": "Jusuf Nurkic",
+     "starter": true,
+     "min": 24.2,
+     "PTS": 18.0,
+     "REB": 9.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
     },
     {
      "player_id": 1642383,
@@ -97,14 +267,14 @@
     }
    ],
    "totals": {
-    "PTS": 92.0,
-    "REB": 32.0,
-    "AST": 23.0,
-    "3PM": 9.0,
-    "STL": 6.0,
-    "BLK": 1.0,
-    "TOV": 11.0,
-    "min": 161.0
+    "PTS": 133.0,
+    "REB": 50.0,
+    "AST": 33.0,
+    "3PM": 14.0,
+    "STL": 8.0,
+    "BLK": 4.0,
+    "TOV": 13.0,
+    "min": 240.0
    }
   }
  },

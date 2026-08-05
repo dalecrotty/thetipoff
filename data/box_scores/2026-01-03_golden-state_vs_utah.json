@@ -2,6 +2,163 @@
  "game": "2026-01-03_golden-state_vs_utah",
  "date": "2026-01-03",
  "teams": {
+  "Golden State": {
+   "players": [
+    {
+     "player_id": 201939,
+     "player": "Stephen Curry",
+     "starter": true,
+     "min": 34.3,
+     "PTS": 31.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 6.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 202710,
+     "player": "Jimmy Butler",
+     "starter": true,
+     "min": 33.5,
+     "PTS": 15.0,
+     "REB": 3.0,
+     "AST": 7.0,
+     "3PM": 1.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1630541,
+     "player": "Moses Moody",
+     "starter": true,
+     "min": 25.0,
+     "PTS": 8.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629001,
+     "player": "De'Anthony Melton",
+     "starter": false,
+     "min": 24.6,
+     "PTS": 13.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1641764,
+     "player": "Brandin Podziemski",
+     "starter": false,
+     "min": 24.1,
+     "PTS": 6.0,
+     "REB": 6.0,
+     "AST": 8.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1642366,
+     "player": "Quinten Post",
+     "starter": true,
+     "min": 22.5,
+     "PTS": 15.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1627780,
+     "player": "Gary Payton II",
+     "starter": false,
+     "min": 20.9,
+     "PTS": 10.0,
+     "REB": 8.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1642954,
+     "player": "Will Richard",
+     "starter": false,
+     "min": 17.9,
+     "PTS": 8.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1631218,
+     "player": "Trayce Jackson-Davis",
+     "starter": false,
+     "min": 16.9,
+     "PTS": 9.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 203110,
+     "player": "Draymond Green",
+     "starter": true,
+     "min": 12.1,
+     "PTS": 8.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1630611,
+     "player": "Gui Santos",
+     "starter": false,
+     "min": 8.4,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    }
+   ],
+   "totals": {
+    "PTS": 123.0,
+    "REB": 45.0,
+    "AST": 32.0,
+    "3PM": 19.0,
+    "STL": 9.0,
+    "BLK": 2.0,
+    "TOV": 14.0,
+    "min": 240.0
+   }
+  },
   "Utah": {
    "players": [
     {
@@ -29,6 +186,19 @@
      "STL": 1.0,
      "BLK": 0.0,
      "TOV": 7.0
+    },
+    {
+     "player_id": 1629004,
+     "player": "Svi Mykhailiuk",
+     "starter": true,
+     "min": 27.9,
+     "PTS": 10.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
     },
     {
      "player_id": 1641729,
@@ -123,14 +293,14 @@
     }
    ],
    "totals": {
-    "PTS": 104.0,
-    "REB": 34.0,
-    "AST": 30.0,
-    "3PM": 11.0,
+    "PTS": 114.0,
+    "REB": 37.0,
+    "AST": 32.0,
+    "3PM": 13.0,
     "STL": 7.0,
     "BLK": 2.0,
     "TOV": 15.0,
-    "min": 212.0
+    "min": 240.0
    }
   }
  },

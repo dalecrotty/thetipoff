@@ -2,6 +2,137 @@
  "game": "2025-12-12_memphis_vs_utah",
  "date": "2025-12-12",
  "teams": {
+  "Memphis": {
+   "players": [
+    {
+     "player_id": 1630583,
+     "player": "Santi Aldama",
+     "starter": true,
+     "min": 35.8,
+     "PTS": 22.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1642377,
+     "player": "Jaylen Wells",
+     "starter": true,
+     "min": 32.5,
+     "PTS": 19.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1642907,
+     "player": "Cedric Coward",
+     "starter": true,
+     "min": 29.4,
+     "PTS": 17.0,
+     "REB": 12.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629111,
+     "player": "Jock Landale",
+     "starter": false,
+     "min": 27.3,
+     "PTS": 8.0,
+     "REB": 9.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1628991,
+     "player": "Jaren Jackson Jr.",
+     "starter": true,
+     "min": 26.6,
+     "PTS": 12.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1642285,
+     "player": "Cam Spencer",
+     "starter": false,
+     "min": 25.3,
+     "PTS": 20.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 6.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1629630,
+     "player": "Ja Morant",
+     "starter": true,
+     "min": 25.2,
+     "PTS": 21.0,
+     "REB": 4.0,
+     "AST": 10.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 4.0
+    },
+    {
+     "player_id": 203484,
+     "player": "Kentavious Caldwell-Pope",
+     "starter": false,
+     "min": 22.5,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1631246,
+     "player": "Vince Williams Jr.",
+     "starter": false,
+     "min": 15.4,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    }
+   ],
+   "totals": {
+    "PTS": 126.0,
+    "REB": 49.0,
+    "AST": 32.0,
+    "3PM": 19.0,
+    "STL": 4.0,
+    "BLK": 5.0,
+    "TOV": 10.0,
+    "min": 240.0
+   }
+  },
   "Utah": {
    "players": [
     {
@@ -31,6 +162,32 @@
      "TOV": 3.0
     },
     {
+     "player_id": 1642846,
+     "player": "Ace Bailey",
+     "starter": true,
+     "min": 31.4,
+     "PTS": 8.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 203994,
+     "player": "Jusuf Nurkic",
+     "starter": true,
+     "min": 27.5,
+     "PTS": 13.0,
+     "REB": 17.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
      "player_id": 1642268,
      "player": "Isaiah Collier",
      "starter": false,
@@ -42,6 +199,19 @@
      "STL": 0.0,
      "BLK": 0.0,
      "TOV": 2.0
+    },
+    {
+     "player_id": 1629004,
+     "player": "Svi Mykhailiuk",
+     "starter": true,
+     "min": 23.7,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
     },
     {
      "player_id": 201567,
@@ -97,14 +267,14 @@
     }
    ],
    "totals": {
-    "PTS": 103.0,
-    "REB": 34.0,
-    "AST": 23.0,
-    "3PM": 15.0,
-    "STL": 5.0,
-    "BLK": 1.0,
-    "TOV": 10.0,
-    "min": 157.0
+    "PTS": 130.0,
+    "REB": 58.0,
+    "AST": 33.0,
+    "3PM": 17.0,
+    "STL": 6.0,
+    "BLK": 4.0,
+    "TOV": 13.0,
+    "min": 240.0
    }
   }
  },

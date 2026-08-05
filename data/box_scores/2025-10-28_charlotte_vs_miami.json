@@ -18,6 +18,19 @@
      "TOV": 2.0
     },
     {
+     "player_id": 1641750,
+     "player": "Ryan Kalkbrenner",
+     "starter": true,
+     "min": 30.9,
+     "PTS": 10.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    },
+    {
      "player_id": 1630163,
      "player": "LaMelo Ball",
      "starter": true,
@@ -55,6 +68,19 @@
      "STL": 0.0,
      "BLK": 0.0,
      "TOV": 4.0
+    },
+    {
+     "player_id": 1630544,
+     "player": "Tre Mann",
+     "starter": false,
+     "min": 26.9,
+     "PTS": 8.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0
     },
     {
      "player_id": 1642883,
@@ -110,14 +136,184 @@
     }
    ],
    "totals": {
-    "PTS": 99.0,
-    "REB": 32.0,
-    "AST": 21.0,
-    "3PM": 16.0,
-    "STL": 4.0,
+    "PTS": 117.0,
+    "REB": 41.0,
+    "AST": 26.0,
+    "3PM": 18.0,
+    "STL": 9.0,
+    "BLK": 3.0,
+    "TOV": 17.0,
+    "min": 240.0
+   }
+  },
+  "Miami": {
+   "players": [
+    {
+     "player_id": 1641796,
+     "player": "Pelle Larsson",
+     "starter": true,
+     "min": 30.7,
+     "PTS": 17.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1628389,
+     "player": "Bam Adebayo",
+     "starter": true,
+     "min": 30.3,
+     "PTS": 26.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 203952,
+     "player": "Andrew Wiggins",
+     "starter": true,
+     "min": 29.7,
+     "PTS": 21.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1630558,
+     "player": "Davion Mitchell",
+     "starter": true,
+     "min": 29.7,
+     "PTS": 8.0,
+     "REB": 4.0,
+     "AST": 9.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1631170,
+     "player": "Jaime Jaquez Jr.",
+     "starter": false,
+     "min": 28.2,
+     "PTS": 28.0,
+     "REB": 4.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1642276,
+     "player": "Kel'el Ware",
+     "starter": true,
+     "min": 26.7,
+     "PTS": 14.0,
+     "REB": 9.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1631107,
+     "player": "Nikola Jovic",
+     "starter": false,
+     "min": 22.0,
+     "PTS": 10.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1631323,
+     "player": "Simone Fontecchio",
+     "starter": false,
+     "min": 18.9,
+     "PTS": 10.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1630696,
+     "player": "Dru Smith",
+     "starter": false,
+     "min": 15.6,
+     "PTS": 5.0,
+     "REB": 0.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1642066,
+     "player": "Myron Gardner",
+     "starter": false,
+     "min": 2.7,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1642443,
+     "player": "Jahmir Young",
+     "starter": false,
+     "min": 2.7,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1642352,
+     "player": "Keshad Johnson",
+     "starter": false,
+     "min": 2.7,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    }
+   ],
+   "totals": {
+    "PTS": 144.0,
+    "REB": 37.0,
+    "AST": 34.0,
+    "3PM": 20.0,
+    "STL": 8.0,
     "BLK": 2.0,
-    "TOV": 14.0,
-    "min": 182.0
+    "TOV": 11.0,
+    "min": 240.0
    }
   }
  },

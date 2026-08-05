@@ -2,6 +2,137 @@
  "game": "2025-12-25_denver_vs_minnesota",
  "date": "2025-12-25",
  "teams": {
+  "Denver": {
+   "players": [
+    {
+     "player_id": 203999,
+     "player": "Nikola Jokic",
+     "starter": true,
+     "min": 42.6,
+     "PTS": 56.0,
+     "REB": 16.0,
+     "AST": 15.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 5.0
+    },
+    {
+     "player_id": 1627750,
+     "player": "Jamal Murray",
+     "starter": true,
+     "min": 42.4,
+     "PTS": 35.0,
+     "REB": 2.0,
+     "AST": 10.0,
+     "3PM": 9.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 4.0
+    },
+    {
+     "player_id": 1631212,
+     "player": "Peyton Watson",
+     "starter": true,
+     "min": 42.2,
+     "PTS": 9.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 203501,
+     "player": "Tim Hardaway Jr.",
+     "starter": true,
+     "min": 41.1,
+     "PTS": 19.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1642461,
+     "player": "Spencer Jones",
+     "starter": true,
+     "min": 40.9,
+     "PTS": 12.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1628971,
+     "player": "Bruce Brown",
+     "starter": false,
+     "min": 28.3,
+     "PTS": 7.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1631124,
+     "player": "Julian Strawther",
+     "starter": false,
+     "min": 11.8,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 202685,
+     "player": "Jonas Valanciunas",
+     "starter": false,
+     "min": 10.4,
+     "PTS": 2.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1630192,
+     "player": "Zeke Nnaji",
+     "starter": false,
+     "min": 5.3,
+     "PTS": 2.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    }
+   ],
+   "totals": {
+    "PTS": 142.0,
+    "REB": 45.0,
+    "AST": 31.0,
+    "3PM": 19.0,
+    "STL": 6.0,
+    "BLK": 5.0,
+    "TOV": 17.0,
+    "min": 265.0
+   }
+  },
   "Minnesota": {
    "players": [
     {
@@ -96,6 +227,19 @@
      "TOV": 1.0
     },
     {
+     "player_id": 1630545,
+     "player": "Terrence Shannon Jr.",
+     "starter": false,
+     "min": 9.7,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
      "player_id": 201144,
      "player": "Mike Conley",
      "starter": false,
@@ -120,6 +264,19 @@
      "STL": 0.0,
      "BLK": 0.0,
      "TOV": 0.0
+    },
+    {
+     "player_id": 1630548,
+     "player": "Johnny Juzang",
+     "starter": false,
+     "min": 0.1,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
     }
    ],
    "totals": {
@@ -130,7 +287,7 @@
     "STL": 10.0,
     "BLK": 12.0,
     "TOV": 13.0,
-    "min": 255.0
+    "min": 265.0
    }
   }
  },

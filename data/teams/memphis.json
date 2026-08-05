@@ -2,6 +2,114 @@
  "team": "Memphis",
  "players": [
   {
+   "id": 1629630,
+   "name": "Ja Morant",
+   "games": 18,
+   "med_min": 31.1
+  },
+  {
+   "id": 1628991,
+   "name": "Jaren Jackson Jr.",
+   "games": 35,
+   "med_min": 30.6
+  },
+  {
+   "id": 1642377,
+   "name": "Jaylen Wells",
+   "games": 37,
+   "med_min": 27.8
+  },
+  {
+   "id": 1630583,
+   "name": "Santi Aldama",
+   "games": 37,
+   "med_min": 27.6
+  },
+  {
+   "id": 1641744,
+   "name": "Zach Edey",
+   "games": 11,
+   "med_min": 26.5
+  },
+  {
+   "id": 1642907,
+   "name": "Cedric Coward",
+   "games": 34,
+   "med_min": 26.4
+  },
+  {
+   "id": 1642285,
+   "name": "Cam Spencer",
+   "games": 36,
+   "med_min": 23.6
+  },
+  {
+   "id": 1629111,
+   "name": "Jock Landale",
+   "games": 35,
+   "med_min": 23.5
+  },
+  {
+   "id": 1631246,
+   "name": "Vince Williams Jr.",
+   "games": 23,
+   "med_min": 23.3
+  },
+  {
+   "id": 203484,
+   "name": "Kentavious Caldwell-Pope",
+   "games": 36,
+   "med_min": 22.7
+  },
+  {
+   "id": 1631132,
+   "name": "Christian Koloko",
+   "games": 9,
+   "med_min": 19.6
+  },
+  {
+   "id": 1641713,
+   "name": "GG Jackson",
+   "games": 17,
+   "med_min": 16.2
+  },
+  {
+   "id": 1629646,
+   "name": "Charles Bassey",
+   "games": 2,
+   "med_min": 15.3
+  },
+  {
+   "id": 1642914,
+   "name": "Javon Small",
+   "games": 14,
+   "med_min": 14.3
+  },
+  {
+   "id": 1641765,
+   "name": "Olivier-Maxence Prosper",
+   "games": 20,
+   "med_min": 13.5
+  },
+  {
+   "id": 1629723,
+   "name": "John Konchar",
+   "games": 22,
+   "med_min": 13.2
+  },
+  {
+   "id": 1629634,
+   "name": "Brandon Clarke",
+   "games": 2,
+   "med_min": 10.2
+  },
+  {
+   "id": 1642942,
+   "name": "Jahmai Mashack",
+   "games": 7,
+   "med_min": 3.5
+  },
+  {
    "id": 1641790,
    "name": "PJ Hall",
    "games": 7,
@@ -10,11 +118,206 @@
  ],
  "games": [
   {
+   "date": "2025-10-22",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2025-10-22_memphis_vs_new-orleans",
+   "lines": {
+    "203484": {
+     "min": 30.7,
+     "PTS": 15.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 26.6,
+     "PTS": 18.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 6.0,
+     "TOV": 5.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 25.4,
+     "PTS": 10.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 27.5,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 4.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 28.7,
+     "PTS": 35.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1641765": {
+     "min": 15.5,
+     "PTS": 10.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 24.2,
+     "PTS": 5.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 19.3,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642907": {
+     "min": 22.2,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 12.2,
+     "PTS": 7.0,
+     "REB": 0.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 7.6,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    }
+   }
+  },
+  {
    "date": "2025-10-24",
    "opp": "Miami",
    "venue": "H",
    "game": "2025-10-24_memphis_vs_miami",
    "lines": {
+    "203484": {
+     "min": 23.1,
+     "PTS": 7.0,
+     "REB": 3.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 21.4,
+     "PTS": 19.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 17.7,
+     "PTS": 4.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 22.5,
+     "PTS": 9.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 21.6,
+     "PTS": 12.0,
+     "REB": 2.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 19.7,
+     "PTS": 13.0,
+     "REB": 8.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
     "1641790": {
      "min": 14.1,
      "PTS": 7.0,
@@ -22,6 +325,72 @@
      "AST": 0.0,
      "3PM": 1.0,
      "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642907": {
+     "min": 22.2,
+     "PTS": 16.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 22.0,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 8.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 16.9,
+     "PTS": 8.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 16.2,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 14.9,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 7.6,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
      "BLK": 1.0,
      "TOV": 0.0,
      "starter": false
@@ -34,6 +403,116 @@
    "venue": "H",
    "game": "2025-10-25_indiana_vs_memphis",
    "lines": {
+    "203484": {
+     "min": 23.3,
+     "PTS": 10.0,
+     "REB": 4.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 25.1,
+     "PTS": 17.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 25.9,
+     "PTS": 8.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 27.2,
+     "PTS": 5.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 27.2,
+     "PTS": 19.0,
+     "REB": 3.0,
+     "AST": 8.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 23.6,
+     "PTS": 27.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 6.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 24.6,
+     "PTS": 9.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 2.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 20.9,
+     "PTS": 9.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 20.8,
+     "PTS": 16.0,
+     "REB": 2.0,
+     "AST": 6.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 15.6,
+     "PTS": 8.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
     "1641790": {
      "min": 1.9,
      "PTS": 0.0,
@@ -44,6 +523,28 @@
      "BLK": 0.0,
      "TOV": 1.0,
      "starter": false
+    },
+    "1641765": {
+     "min": 1.9,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 1.9,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
     }
    }
   },
@@ -53,6 +554,127 @@
    "venue": "R",
    "game": "2025-10-27_golden-state_vs_memphis",
    "lines": {
+    "203484": {
+     "min": 26.1,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 29.2,
+     "PTS": 16.0,
+     "REB": 7.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 24.4,
+     "PTS": 17.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 27.8,
+     "PTS": 10.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 31.3,
+     "PTS": 23.0,
+     "REB": 3.0,
+     "AST": 9.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 25.2,
+     "PTS": 9.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 20.8,
+     "PTS": 3.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 22.4,
+     "PTS": 14.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 16.3,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 14.3,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 1.1,
+     "PTS": 4.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
     "1641790": {
      "min": 1.1,
      "PTS": 0.0,
@@ -67,16 +689,642 @@
    }
   },
   {
+   "date": "2025-10-29",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-10-29_memphis_vs_phoenix",
+   "lines": {
+    "203484": {
+     "min": 18.8,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 31.9,
+     "PTS": 18.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 23.5,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 29.1,
+     "PTS": 9.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 31.6,
+     "PTS": 28.0,
+     "REB": 8.0,
+     "AST": 7.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 6.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 28.5,
+     "PTS": 14.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 30.7,
+     "PTS": 14.0,
+     "REB": 10.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 16.5,
+     "PTS": 5.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 10.4,
+     "PTS": 3.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 18.9,
+     "PTS": 6.0,
+     "REB": 2.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-10-31",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2025-10-31_la-lakers_vs_memphis",
+   "lines": {
+    "203484": {
+     "min": 24.4,
+     "PTS": 12.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 31.5,
+     "PTS": 15.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 25.4,
+     "PTS": 16.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 26.8,
+     "PTS": 16.0,
+     "REB": 7.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 31.0,
+     "PTS": 8.0,
+     "REB": 1.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 26.4,
+     "PTS": 7.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642907": {
+     "min": 26.2,
+     "PTS": 13.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 18.6,
+     "PTS": 12.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 17.0,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 12.7,
+     "PTS": 6.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-02",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2025-11-02_memphis_vs_toronto",
+   "lines": {
+    "203484": {
+     "min": 27.4,
+     "PTS": 12.0,
+     "REB": 0.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 32.5,
+     "PTS": 20.0,
+     "REB": 9.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 22.8,
+     "PTS": 14.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 26.2,
+     "PTS": 7.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 26.4,
+     "PTS": 4.0,
+     "REB": 4.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 28.4,
+     "PTS": 15.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642907": {
+     "min": 29.3,
+     "PTS": 12.0,
+     "REB": 5.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 21.1,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 7.9,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 6.2,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 11.8,
+     "PTS": 6.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-03",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-11-03_detroit_vs_memphis",
+   "lines": {
+    "203484": {
+     "min": 25.3,
+     "PTS": 2.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 31.1,
+     "PTS": 21.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 29.6,
+     "PTS": 13.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 4.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 21.3,
+     "PTS": 4.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 35.0,
+     "PTS": 18.0,
+     "REB": 5.0,
+     "AST": 10.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 30.6,
+     "PTS": 17.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 22.7,
+     "PTS": 11.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1629646": {
+     "min": 15.2,
+     "PTS": 3.0,
+     "REB": 10.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 14.6,
+     "PTS": 4.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 14.6,
+     "PTS": 13.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    }
+   }
+  },
+  {
    "date": "2025-11-05",
    "opp": "Houston",
    "venue": "H",
    "game": "2025-11-05_houston_vs_memphis",
    "lines": {
+    "203484": {
+     "min": 23.9,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 29.3,
+     "PTS": 9.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 5.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 20.5,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 19.6,
+     "PTS": 8.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 33.7,
+     "PTS": 17.0,
+     "REB": 5.0,
+     "AST": 8.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 6.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 26.3,
+     "PTS": 16.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642907": {
+     "min": 28.7,
+     "PTS": 7.0,
+     "REB": 9.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 15.2,
+     "PTS": 10.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1629646": {
+     "min": 15.3,
+     "PTS": 4.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 19.5,
+     "PTS": 19.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 5.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 2.0,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
     "1641790": {
      "min": 2.0,
      "PTS": 2.0,
      "REB": 2.0,
      "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 2.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 2.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
      "3PM": 0.0,
      "STL": 0.0,
      "BLK": 0.0,
@@ -91,7 +1339,150 @@
    "venue": "H",
    "game": "2025-11-07_dallas_vs_memphis",
    "lines": {
+    "203484": {
+     "min": 24.1,
+     "PTS": 12.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 28.8,
+     "PTS": 17.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 29.4,
+     "PTS": 11.0,
+     "REB": 7.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 25.2,
+     "PTS": 8.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 32.2,
+     "PTS": 21.0,
+     "REB": 5.0,
+     "AST": 13.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 7.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 27.9,
+     "PTS": 21.0,
+     "REB": 9.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 28.1,
+     "PTS": 16.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 15.7,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 18.6,
+     "PTS": 12.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 9.4,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 0.1,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
     "1641790": {
+     "min": 0.1,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 0.1,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642914": {
      "min": 0.1,
      "PTS": 0.0,
      "REB": 0.0,
@@ -110,10 +1501,260 @@
    "venue": "H",
    "game": "2025-11-09_memphis_vs_oklahoma-city",
    "lines": {
+    "203484": {
+     "min": 23.1,
+     "PTS": 9.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 28.6,
+     "PTS": 17.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 27.6,
+     "PTS": 10.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 22.9,
+     "PTS": 12.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 33.6,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 8.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 28.9,
+     "PTS": 13.0,
+     "REB": 10.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 29.6,
+     "PTS": 12.0,
+     "REB": 9.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 4.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 14.4,
+     "PTS": 3.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 20.1,
+     "PTS": 9.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 8.9,
+     "PTS": 3.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 1.0,
+     "PTS": 1.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 1.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
     "1641790": {
      "min": 0.4,
      "PTS": 0.0,
      "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-11",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2025-11-11_memphis_vs_new-york",
+   "lines": {
+    "203484": {
+     "min": 15.2,
+     "PTS": 4.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 29.7,
+     "PTS": 19.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 25.9,
+     "PTS": 8.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 33.5,
+     "PTS": 16.0,
+     "REB": 3.0,
+     "AST": 10.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 8.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 29.1,
+     "PTS": 18.0,
+     "REB": 3.0,
+     "AST": 4.0,
+     "3PM": 4.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 30.1,
+     "PTS": 19.0,
+     "REB": 7.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642907": {
+     "min": 30.2,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 2.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 24.3,
+     "PTS": 14.0,
+     "REB": 9.0,
+     "AST": 6.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 18.8,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 3.2,
+     "PTS": 0.0,
+     "REB": 1.0,
      "AST": 0.0,
      "3PM": 0.0,
      "STL": 0.0,
@@ -129,11 +1770,3063 @@
    "venue": "R",
    "game": "2025-11-12_boston_vs_memphis",
    "lines": {
+    "203484": {
+     "min": 18.7,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 23.3,
+     "PTS": 18.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 24.5,
+     "PTS": 11.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 24.4,
+     "PTS": 5.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 24.6,
+     "PTS": 12.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 29.4,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 23.6,
+     "PTS": 14.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642907": {
+     "min": 25.6,
+     "PTS": 12.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 26.1,
+     "PTS": 8.0,
+     "REB": 4.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
     "1641790": {
      "min": 7.0,
      "PTS": 4.0,
      "REB": 3.0,
      "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 7.0,
+     "PTS": 6.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 5.9,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-15",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-11-15_cleveland_vs_memphis",
+   "lines": {
+    "1642907": {
+     "min": 24.5,
+     "PTS": 10.0,
+     "REB": 8.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 32.7,
+     "PTS": 26.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 24.7,
+     "PTS": 13.0,
+     "REB": 7.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 23.9,
+     "PTS": 8.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 6.0,
+     "PTS": 7.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 19.4,
+     "PTS": 5.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 25.0,
+     "PTS": 12.0,
+     "REB": 11.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 23.3,
+     "PTS": 6.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 26.8,
+     "PTS": 8.0,
+     "REB": 4.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 19.8,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 14.0,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-18",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2025-11-18_memphis_vs_san-antonio",
+   "lines": {
+    "1642377": {
+     "min": 26.6,
+     "PTS": 9.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 33.2,
+     "PTS": 18.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 25.1,
+     "PTS": 8.0,
+     "REB": 11.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 25.5,
+     "PTS": 19.0,
+     "REB": 11.0,
+     "AST": 1.0,
+     "3PM": 5.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 29.8,
+     "PTS": 14.0,
+     "REB": 9.0,
+     "AST": 9.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 23.6,
+     "PTS": 15.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 25.9,
+     "PTS": 10.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 18.9,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 17.6,
+     "PTS": 4.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 13.8,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-20",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-11-20_memphis_vs_sacramento",
+   "lines": {
+    "1642377": {
+     "min": 18.8,
+     "PTS": 13.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 27.6,
+     "PTS": 29.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 5.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 24.8,
+     "PTS": 16.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 24.8,
+     "PTS": 19.0,
+     "REB": 4.0,
+     "AST": 4.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 23.8,
+     "PTS": 4.0,
+     "REB": 5.0,
+     "AST": 15.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 18.3,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 14.8,
+     "PTS": 21.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 24.2,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 6.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 18.0,
+     "PTS": 11.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 20.2,
+     "PTS": 3.0,
+     "REB": 7.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 18.2,
+     "PTS": 6.0,
+     "REB": 9.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642942": {
+     "min": 6.4,
+     "PTS": 6.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-22",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2025-11-22_dallas_vs_memphis",
+   "lines": {
+    "1642377": {
+     "min": 31.3,
+     "PTS": 9.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 34.8,
+     "PTS": 20.0,
+     "REB": 8.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 26.5,
+     "PTS": 12.0,
+     "REB": 15.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 4.0,
+     "TOV": 4.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 25.2,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 24.1,
+     "PTS": 10.0,
+     "REB": 10.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 25.3,
+     "PTS": 10.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 4.9,
+     "PTS": 7.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 23.6,
+     "PTS": 17.0,
+     "REB": 4.0,
+     "AST": 5.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 17.0,
+     "PTS": 2.0,
+     "REB": 7.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 19.7,
+     "PTS": 4.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 7.7,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-24",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2025-11-24_denver_vs_memphis",
+   "lines": {
+    "1642377": {
+     "min": 33.4,
+     "PTS": 22.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 28.6,
+     "PTS": 16.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 5.7,
+     "PTS": 2.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 26.7,
+     "PTS": 5.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 23.9,
+     "PTS": 6.0,
+     "REB": 5.0,
+     "AST": 7.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 32.7,
+     "PTS": 12.0,
+     "REB": 6.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 21.3,
+     "PTS": 8.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 28.9,
+     "PTS": 18.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 30.9,
+     "PTS": 26.0,
+     "REB": 10.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 7.9,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-26",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-11-26_memphis_vs_new-orleans",
+   "lines": {
+    "1642377": {
+     "min": 32.5,
+     "PTS": 25.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 5.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 36.1,
+     "PTS": 27.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 5.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 34.6,
+     "PTS": 21.0,
+     "REB": 15.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 34.1,
+     "PTS": 12.0,
+     "REB": 9.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 35.0,
+     "PTS": 5.0,
+     "REB": 4.0,
+     "AST": 17.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 6.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 24.4,
+     "PTS": 14.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 19.1,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 7.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 18.1,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 17.4,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 13.7,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-28",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2025-11-28_la-clippers_vs_memphis",
+   "lines": {
+    "1642377": {
+     "min": 28.1,
+     "PTS": 13.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 30.8,
+     "PTS": 24.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 32.0,
+     "PTS": 5.0,
+     "REB": 19.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 3.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 30.7,
+     "PTS": 7.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 23.3,
+     "PTS": 16.0,
+     "REB": 1.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 21.2,
+     "PTS": 12.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 24.6,
+     "PTS": 10.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 22.2,
+     "PTS": 13.0,
+     "REB": 7.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 16.0,
+     "PTS": 12.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 11.1,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-11-30",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2025-11-30_memphis_vs_sacramento",
+   "lines": {
+    "1642377": {
+     "min": 29.6,
+     "PTS": 15.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 34.0,
+     "PTS": 13.0,
+     "REB": 6.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 29.4,
+     "PTS": 32.0,
+     "REB": 17.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 5.0,
+     "TOV": 5.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 28.7,
+     "PTS": 10.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 26.8,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 19.9,
+     "PTS": 13.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 22.1,
+     "PTS": 7.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 21.2,
+     "PTS": 16.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 16.8,
+     "PTS": 5.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 11.5,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-02",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2025-12-02_memphis_vs_san-antonio",
+   "lines": {
+    "1642377": {
+     "min": 28.3,
+     "PTS": 20.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 26.6,
+     "PTS": 7.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 29.7,
+     "PTS": 19.0,
+     "REB": 15.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 28.8,
+     "PTS": 9.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 26.7,
+     "PTS": 12.0,
+     "REB": 7.0,
+     "AST": 7.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 3.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 24.4,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 13.1,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 21.9,
+     "PTS": 21.0,
+     "REB": 1.0,
+     "AST": 6.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 15.3,
+     "PTS": 10.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 17.9,
+     "PTS": 13.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 7.5,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2025-12-05_la-clippers_vs_memphis",
+   "lines": {
+    "1642377": {
+     "min": 27.3,
+     "PTS": 17.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 30.6,
+     "PTS": 13.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 29.4,
+     "PTS": 10.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 28.5,
+     "PTS": 23.0,
+     "REB": 14.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 19.2,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 24.6,
+     "PTS": 7.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 16.5,
+     "PTS": 7.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 19.5,
+     "PTS": 5.0,
+     "REB": 0.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 28.9,
+     "PTS": 17.0,
+     "REB": 5.0,
+     "AST": 7.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 15.6,
+     "PTS": 5.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-07",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2025-12-07_memphis_vs_portland",
+   "lines": {
+    "1642377": {
+     "min": 25.7,
+     "PTS": 16.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 23.8,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1641744": {
+     "min": 21.9,
+     "PTS": 12.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 6.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 24.6,
+     "PTS": 11.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1631246": {
+     "min": 16.2,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 28.1,
+     "PTS": 22.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 31.8,
+     "PTS": 12.0,
+     "REB": 3.0,
+     "AST": 6.0,
+     "3PM": 1.0,
+     "STL": 4.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 23.4,
+     "PTS": 16.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 21.0,
+     "PTS": 15.0,
+     "REB": 8.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1629723": {
+     "min": 17.3,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642942": {
+     "min": 3.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 3.0,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-12",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2025-12-12_memphis_vs_utah",
+   "lines": {
+    "1642377": {
+     "min": 32.5,
+     "PTS": 19.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 26.6,
+     "PTS": 12.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 35.8,
+     "PTS": 22.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 29.4,
+     "PTS": 17.0,
+     "REB": 12.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 25.2,
+     "PTS": 21.0,
+     "REB": 4.0,
+     "AST": 10.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 27.3,
+     "PTS": 8.0,
+     "REB": 9.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 25.3,
+     "PTS": 20.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 6.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 22.5,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 15.4,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-15",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2025-12-15_la-clippers_vs_memphis",
+   "lines": {
+    "1642377": {
+     "min": 29.7,
+     "PTS": 16.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 32.8,
+     "PTS": 31.0,
+     "REB": 4.0,
+     "AST": 4.0,
+     "3PM": 4.0,
+     "STL": 2.0,
+     "BLK": 5.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 30.8,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 23.2,
+     "PTS": 12.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 21.0,
+     "PTS": 12.0,
+     "REB": 3.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 27.5,
+     "PTS": 8.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 23.4,
+     "PTS": 4.0,
+     "REB": 7.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 30.0,
+     "PTS": 27.0,
+     "REB": 3.0,
+     "AST": 6.0,
+     "3PM": 7.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 18.3,
+     "PTS": 8.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 1.7,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642942": {
+     "min": 1.7,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-17",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2025-12-17_memphis_vs_minnesota",
+   "lines": {
+    "1628991": {
+     "min": 33.5,
+     "PTS": 28.0,
+     "REB": 12.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 3.0,
+     "TOV": 4.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 34.3,
+     "PTS": 8.0,
+     "REB": 11.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1629634": {
+     "min": 16.6,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 31.4,
+     "PTS": 17.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 4.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 27.2,
+     "PTS": 13.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 23.2,
+     "PTS": 12.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 25.1,
+     "PTS": 5.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 29.9,
+     "PTS": 20.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 4.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 15.3,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642942": {
+     "min": 3.5,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-12-20_memphis_vs_washington",
+   "lines": {
+    "1642377": {
+     "min": 32.0,
+     "PTS": 4.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 32.0,
+     "PTS": 22.0,
+     "REB": 8.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1629634": {
+     "min": 3.9,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 31.0,
+     "PTS": 14.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 37.1,
+     "PTS": 19.0,
+     "REB": 4.0,
+     "AST": 11.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 23.8,
+     "PTS": 5.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 28.0,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 35.7,
+     "PTS": 37.0,
+     "REB": 10.0,
+     "AST": 2.0,
+     "3PM": 5.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 16.5,
+     "PTS": 8.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2025-12-22_memphis_vs_oklahoma-city",
+   "lines": {
+    "1642377": {
+     "min": 32.5,
+     "PTS": 12.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 5.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 31.6,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 25.8,
+     "PTS": 11.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 24.8,
+     "PTS": 16.0,
+     "REB": 8.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 34.8,
+     "PTS": 14.0,
+     "REB": 5.0,
+     "AST": 8.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 20.7,
+     "PTS": 16.0,
+     "REB": 3.0,
+     "AST": 4.0,
+     "3PM": 5.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 17.4,
+     "PTS": 8.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642942": {
+     "min": 5.8,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 24.7,
+     "PTS": 9.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 12.5,
+     "PTS": 6.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631132": {
+     "min": 9.5,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2025-12-23_memphis_vs_utah",
+   "lines": {
+    "1641713": {
+     "min": 29.5,
+     "PTS": 18.0,
+     "REB": 9.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 30.2,
+     "PTS": 21.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 3.0,
+     "TOV": 4.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 34.4,
+     "PTS": 37.0,
+     "REB": 5.0,
+     "AST": 7.0,
+     "3PM": 7.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 31.8,
+     "PTS": 12.0,
+     "REB": 1.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 4.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 32.2,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 13.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 20.6,
+     "PTS": 17.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 18.8,
+     "PTS": 8.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 19.5,
+     "PTS": 11.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 12.4,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631132": {
+     "min": 10.0,
+     "PTS": 2.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642942": {
+     "min": 0.3,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-26",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-26_memphis_vs_milwaukee",
+   "lines": {
+    "1642377": {
+     "min": 29.3,
+     "PTS": 14.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 30.1,
+     "PTS": 24.0,
+     "REB": 9.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 5.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 30.0,
+     "PTS": 12.0,
+     "REB": 7.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 24.9,
+     "PTS": 15.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 25.3,
+     "PTS": 17.0,
+     "REB": 4.0,
+     "AST": 10.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 22.1,
+     "PTS": 13.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 25.6,
+     "PTS": 19.0,
+     "REB": 5.0,
+     "AST": 5.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": false
+    },
+    "1631132": {
+     "min": 28.4,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 21.9,
+     "PTS": 7.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 2.4,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-28",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2025-12-28_memphis_vs_washington",
+   "lines": {
+    "1642377": {
+     "min": 27.5,
+     "PTS": 11.0,
+     "REB": 7.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 35.0,
+     "PTS": 31.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 4.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 35.5,
+     "PTS": 14.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 5.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 22.7,
+     "PTS": 11.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 27.5,
+     "PTS": 21.0,
+     "REB": 0.0,
+     "AST": 7.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 10.7,
+     "PTS": 4.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1631132": {
+     "min": 25.5,
+     "PTS": 4.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 3.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 26.7,
+     "PTS": 8.0,
+     "REB": 3.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 21.1,
+     "PTS": 5.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 4.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 7.8,
+     "PTS": 3.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2025-12-30",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2025-12-30_memphis_vs_philadelphia",
+   "lines": {
+    "1642377": {
+     "min": 32.0,
+     "PTS": 14.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 37.1,
+     "PTS": 15.0,
+     "REB": 12.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 3.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1631132": {
+     "min": 19.6,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 36.8,
+     "PTS": 28.0,
+     "REB": 16.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 34.5,
+     "PTS": 40.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 18.3,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 36.3,
+     "PTS": 15.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 4.0,
+     "TOV": 4.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 23.0,
+     "PTS": 6.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 18.5,
+     "PTS": 7.0,
+     "REB": 1.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 8.9,
+     "PTS": 5.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-01-02",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-01-02_la-lakers_vs_memphis",
+   "lines": {
+    "1642377": {
+     "min": 28.1,
+     "PTS": 6.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 30.3,
+     "PTS": 25.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1631132": {
+     "min": 21.6,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 23.8,
+     "PTS": 5.0,
+     "REB": 7.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629630": {
+     "min": 31.4,
+     "PTS": 16.0,
+     "REB": 3.0,
+     "AST": 11.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 29.8,
+     "PTS": 15.0,
+     "REB": 7.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 22.9,
+     "PTS": 20.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1629111": {
+     "min": 20.2,
+     "PTS": 14.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1642285": {
+     "min": 16.6,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 15.2,
+     "PTS": 12.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-01-04",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-01-04_la-lakers_vs_memphis",
+   "lines": {
+    "1642377": {
+     "min": 24.5,
+     "PTS": 23.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 33.7,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 28.6,
+     "PTS": 13.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642907": {
+     "min": 12.6,
+     "PTS": 16.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 34.0,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 9.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 30.7,
+     "PTS": 12.0,
+     "REB": 10.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 24.8,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 16.1,
+     "PTS": 7.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631132": {
+     "min": 13.1,
+     "PTS": 6.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1641713": {
+     "min": 21.9,
+     "PTS": 11.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-01-06",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-01-06_memphis_vs_san-antonio",
+   "lines": {
+    "1641713": {
+     "min": 22.5,
+     "PTS": 2.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 35.9,
+     "PTS": 21.0,
+     "REB": 9.0,
+     "AST": 2.0,
+     "3PM": 5.0,
+     "STL": 2.0,
+     "BLK": 3.0,
+     "TOV": 6.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 23.7,
+     "PTS": 19.0,
+     "REB": 9.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 28.3,
+     "PTS": 8.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 29.9,
+     "PTS": 21.0,
+     "REB": 8.0,
+     "AST": 8.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1630583": {
+     "min": 23.9,
+     "PTS": 10.0,
+     "REB": 9.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 4.0,
+     "starter": false
+    },
+    "203484": {
+     "min": 19.6,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 16.4,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1631132": {
+     "min": 17.7,
+     "PTS": 4.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 3.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1631246": {
+     "min": 22.1,
+     "PTS": 15.0,
+     "REB": 6.0,
+     "AST": 5.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-01-07",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2026-01-07_memphis_vs_phoenix",
+   "lines": {
+    "1641713": {
+     "min": 25.2,
+     "PTS": 11.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "starter": true
+    },
+    "1628991": {
+     "min": 29.2,
+     "PTS": 19.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 21.0,
+     "PTS": 0.0,
+     "REB": 8.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": true
+    },
+    "1642377": {
+     "min": 27.4,
+     "PTS": 9.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": true
+    },
+    "1642285": {
+     "min": 27.4,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 4.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 16.7,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "starter": false
+    },
+    "1630583": {
+     "min": 22.2,
+     "PTS": 7.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1642914": {
+     "min": 20.6,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 7.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 5.0,
+     "starter": false
+    },
+    "1631132": {
+     "min": 20.1,
+     "PTS": 2.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 26.3,
+     "PTS": 8.0,
+     "REB": 7.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "starter": false
+    },
+    "1642942": {
+     "min": 4.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
      "3PM": 0.0,
      "STL": 0.0,
      "BLK": 0.0,

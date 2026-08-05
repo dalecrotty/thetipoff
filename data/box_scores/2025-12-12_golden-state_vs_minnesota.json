@@ -2,6 +2,163 @@
  "game": "2025-12-12_golden-state_vs_minnesota",
  "date": "2025-12-12",
  "teams": {
+  "Golden State": {
+   "players": [
+    {
+     "player_id": 202710,
+     "player": "Jimmy Butler",
+     "starter": true,
+     "min": 36.9,
+     "PTS": 15.0,
+     "REB": 8.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1642366,
+     "player": "Quinten Post",
+     "starter": true,
+     "min": 33.2,
+     "PTS": 16.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 201939,
+     "player": "Stephen Curry",
+     "starter": true,
+     "min": 32.2,
+     "PTS": 39.0,
+     "REB": 5.0,
+     "AST": 5.0,
+     "3PM": 6.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1630311,
+     "player": "Pat Spencer",
+     "starter": true,
+     "min": 28.3,
+     "PTS": 12.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1641764,
+     "player": "Brandin Podziemski",
+     "starter": false,
+     "min": 22.9,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1630541,
+     "player": "Moses Moody",
+     "starter": false,
+     "min": 22.6,
+     "PTS": 11.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1629001,
+     "player": "De'Anthony Melton",
+     "starter": false,
+     "min": 20.2,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1627741,
+     "player": "Buddy Hield",
+     "starter": true,
+     "min": 18.9,
+     "PTS": 6.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1631218,
+     "player": "Trayce Jackson-Davis",
+     "starter": false,
+     "min": 14.7,
+     "PTS": 8.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1630611,
+     "player": "Gui Santos",
+     "starter": false,
+     "min": 6.5,
+     "PTS": 2.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1627780,
+     "player": "Gary Payton II",
+     "starter": false,
+     "min": 3.7,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    }
+   ],
+   "totals": {
+    "PTS": 120.0,
+    "REB": 42.0,
+    "AST": 27.0,
+    "3PM": 15.0,
+    "STL": 7.0,
+    "BLK": 2.0,
+    "TOV": 13.0,
+    "min": 240.0
+   }
+  },
   "Minnesota": {
    "players": [
     {
@@ -57,6 +214,19 @@
      "TOV": 3.0
     },
     {
+     "player_id": 1630545,
+     "player": "Terrence Shannon Jr.",
+     "starter": false,
+     "min": 30.5,
+     "PTS": 9.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 2.0
+    },
+    {
      "player_id": 1629675,
      "player": "Naz Reid",
      "starter": false,
@@ -83,6 +253,19 @@
      "TOV": 0.0
     },
     {
+     "player_id": 1642265,
+     "player": "Rob Dillingham",
+     "starter": false,
+     "min": 16.6,
+     "PTS": 6.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
      "player_id": 1630538,
      "player": "Bones Hyland",
      "starter": true,
@@ -97,14 +280,14 @@
     }
    ],
    "totals": {
-    "PTS": 112.0,
-    "REB": 39.0,
-    "AST": 27.0,
+    "PTS": 127.0,
+    "REB": 44.0,
+    "AST": 30.0,
     "3PM": 11.0,
-    "STL": 6.0,
-    "BLK": 2.0,
-    "TOV": 6.0,
-    "min": 193.0
+    "STL": 8.0,
+    "BLK": 3.0,
+    "TOV": 10.0,
+    "min": 240.0
    }
   }
  },

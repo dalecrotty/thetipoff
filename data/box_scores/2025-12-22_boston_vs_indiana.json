@@ -2,6 +2,150 @@
  "game": "2025-12-22_boston_vs_indiana",
  "date": "2025-12-22",
  "teams": {
+  "Boston": {
+   "players": [
+    {
+     "player_id": 1642864,
+     "player": "Hugo Gonzalez",
+     "starter": false,
+     "min": 36.8,
+     "PTS": 6.0,
+     "REB": 11.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1627759,
+     "player": "Jaylen Brown",
+     "starter": true,
+     "min": 33.2,
+     "PTS": 31.0,
+     "REB": 9.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1630202,
+     "player": "Payton Pritchard",
+     "starter": true,
+     "min": 33.0,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 1628401,
+     "player": "Derrick White",
+     "starter": true,
+     "min": 31.5,
+     "PTS": 19.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1630568,
+     "player": "Luka Garza",
+     "starter": false,
+     "min": 24.5,
+     "PTS": 6.0,
+     "REB": 9.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1629674,
+     "player": "Neemias Queta",
+     "starter": true,
+     "min": 23.4,
+     "PTS": 8.0,
+     "REB": 8.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1630573,
+     "player": "Sam Hauser",
+     "starter": false,
+     "min": 19.9,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629014,
+     "player": "Anfernee Simons",
+     "starter": false,
+     "min": 17.4,
+     "PTS": 11.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1631248,
+     "player": "Baylor Scheierman",
+     "starter": false,
+     "min": 11.8,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1631169,
+     "player": "Josh Minott",
+     "starter": true,
+     "min": 8.6,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    }
+   ],
+   "totals": {
+    "PTS": 103.0,
+    "REB": 49.0,
+    "AST": 19.0,
+    "3PM": 11.0,
+    "STL": 6.0,
+    "BLK": 6.0,
+    "TOV": 13.0,
+    "min": 240.0
+   }
+  },
   "Indiana": {
    "players": [
     {
@@ -16,6 +160,32 @@
      "STL": 0.0,
      "BLK": 0.0,
      "TOV": 0.0
+    },
+    {
+     "player_id": 1631097,
+     "player": "Bennedict Mathurin",
+     "starter": true,
+     "min": 36.8,
+     "PTS": 16.0,
+     "REB": 9.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1629614,
+     "player": "Andrew Nembhard",
+     "starter": true,
+     "min": 35.8,
+     "PTS": 20.0,
+     "REB": 2.0,
+     "AST": 7.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 4.0
     },
     {
      "player_id": 1630679,
@@ -83,6 +253,58 @@
      "TOV": 1.0
     },
     {
+     "player_id": 1630164,
+     "player": "James Wiseman",
+     "starter": false,
+     "min": 12.2,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1630543,
+     "player": "Isaiah Jackson",
+     "starter": false,
+     "min": 2.4,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1629726,
+     "player": "Garrison Mathews",
+     "starter": false,
+     "min": 1.0,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1643007,
+     "player": "Taelon Peter",
+     "starter": false,
+     "min": 0.7,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
      "player_id": 1642880,
      "player": "Kam Jones",
      "starter": false,
@@ -97,14 +319,14 @@
     }
    ],
    "totals": {
-    "PTS": 57.0,
-    "REB": 24.0,
-    "AST": 10.0,
-    "3PM": 9.0,
+    "PTS": 95.0,
+    "REB": 36.0,
+    "AST": 19.0,
+    "3PM": 13.0,
     "STL": 4.0,
-    "BLK": 1.0,
-    "TOV": 7.0,
-    "min": 151.0
+    "BLK": 3.0,
+    "TOV": 12.0,
+    "min": 240.0
    }
   }
  },

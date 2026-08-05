@@ -20,6 +20,69 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   });
 })();
 
+/* ---------- team identity ----------
+   Colour + abbreviation per team, drawn as CSS/SVG. Deliberately NOT
+   the official league logos: those are trademarks, and this is a
+   public, betting-adjacent site. Team colours and three-letter codes
+   carry the same at-a-glance recognition with none of that exposure,
+   and they need no external assets (nothing to load, nothing to break).
+   Keys are the BBD team strings the pipeline emits. */
+const TEAM_META = {
+  "Atlanta": ["ATL", "#e03a3e", "#26282a"], "Boston": ["BOS", "#007a33", "#ba9653"],
+  "Brooklyn": ["BKN", "#1d1d1b", "#ffffff"], "Charlotte": ["CHA", "#1d1160", "#00788c"],
+  "Chicago": ["CHI", "#ce1141", "#000000"], "Cleveland": ["CLE", "#860038", "#fdbb30"],
+  "Dallas": ["DAL", "#00538c", "#b8c4ca"], "Denver": ["DEN", "#0e2240", "#fec524"],
+  "Detroit": ["DET", "#c8102e", "#1d42ba"], "Golden State": ["GSW", "#1d428a", "#ffc72c"],
+  "Houston": ["HOU", "#ce1141", "#c4ced4"], "Indiana": ["IND", "#002d62", "#fdbb30"],
+  "LA Clippers": ["LAC", "#c8102e", "#1d428a"], "LA Lakers": ["LAL", "#552583", "#fdb927"],
+  "Memphis": ["MEM", "#5d76a9", "#12173f"], "Miami": ["MIA", "#98002e", "#f9a01b"],
+  "Milwaukee": ["MIL", "#00471b", "#eee1c6"], "Minnesota": ["MIN", "#0c2340", "#236192"],
+  "New Orleans": ["NOP", "#0c2340", "#c8102e"], "New York": ["NYK", "#006bb6", "#f58426"],
+  "Oklahoma City": ["OKC", "#007ac1", "#ef3b24"], "Orlando": ["ORL", "#0077c0", "#c4ced4"],
+  "Philadelphia": ["PHI", "#006bb6", "#ed174c"], "Phoenix": ["PHX", "#1d1160", "#e56020"],
+  "Portland": ["POR", "#e03a3e", "#000000"], "Sacramento": ["SAC", "#5a2d81", "#63727a"],
+  "San Antonio": ["SAS", "#c4ced4", "#000000"], "Toronto": ["TOR", "#ce1141", "#000000"],
+  "Utah": ["UTA", "#002b5c", "#f9a01b"], "Washington": ["WAS", "#002b5c", "#e31837"],
+};
+
+/* readable text on any jersey colour — luminance, not eyeballing */
+function inkOn(hex) {
+  const c = hex.replace("#", "");
+  const [r, g, b] = [0, 2, 4].map(i => parseInt(c.slice(i, i + 2), 16) / 255)
+    .map(v => v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+  return (0.2126 * r + 0.7152 * g + 0.0722 * b) > 0.42 ? "#12141a" : "#ffffff";
+}
+
+function teamMeta(team) {
+  return TEAM_META[team] || [String(team || "").slice(0, 3).toUpperCase(),
+                             "#667085", "#98a2b3"];
+}
+
+/** Small colour chip with the team code — for table cells. */
+function teamBadge(team, { withName = false } = {}) {
+  if (!team) return "";
+  const [abbr, c1, c2] = teamMeta(team);
+  return `<span class="tbadge" style="background:${c1};color:${inkOn(c1)};
+    border-color:${c2}" title="${esc(team)}">${abbr}</span>` +
+    (withName ? ` <span class="dim">${esc(team)}</span>` : "");
+}
+
+/** Singlet in team colours; shows the squad number when known, else the
+    team code. Jersey numbers aren't in the spine yet — the shape is
+    ready for them the day they are. */
+function playerSinglet(team, number) {
+  const [abbr, c1, c2] = teamMeta(team);
+  const label = (number === undefined || number === null || number === "")
+    ? abbr : String(number);
+  return `<svg class="singlet" viewBox="0 0 44 46" role="img"
+      aria-label="${esc(team)} singlet">
+    <path d="M13 4 L22 9 L31 4 L41 9 L38 18 L34 16.5 V42 H10 V16.5 L6 18 L3 9 Z"
+      fill="${c1}" stroke="${c2}" stroke-width="2" stroke-linejoin="round"/>
+    <text x="22" y="32" text-anchor="middle" fill="${inkOn(c1)}"
+      font-size="${label.length > 2 ? 11 : 15}" font-weight="800">${esc(label)}</text>
+  </svg>`;
+}
+
 /* ---------- data + freshness ---------- */
 async function loadJSON(path) {
   const r = await fetch(path, { cache: "no-store" });
@@ -36,7 +99,7 @@ async function renderFreshness() {
     el.innerHTML =
       `Slate <b>${m.slate_date}</b> · ${build} · computed <b>${m.computed_at}</b>` +
       ` · <span class="dim">${m.model_version}</span>` +
-      (m.demo ? ` · <span class="demo">FIXTURE DEMO — not live data</span>` : "");
+      (m.demo ? ` · <span class="demo">DEMO — 25-26 replay, not live</span>` : "");
     return m;
   } catch { return null; }
 }
@@ -74,14 +137,15 @@ function leaderTable(stat, rows) {
   return `<div class="section"><h2>${stat} — top ${TOP_N}</h2></div>
     <div class="tablewrap"><table>
       <thead><tr>
-        <th class="s">#</th><th class="s">Player</th><th class="s">Team</th>
+        <th class="s" title="rank for this stat across the whole slate">Rk</th>
+        <th class="s">Player</th><th class="s">Team</th>
         <th>Proj</th><th>Floor–Ceil</th><th>Min</th>
         <th>Line</th><th class="s">Side</th><th>Edge</th><th>L10</th>
       </tr></thead>
       <tbody>${top.map((r, i) => `<tr>
-        <td class="s dim">${i + 1}</td>
+        <td class="s dim">${r.rank ?? i + 1}</td>
         <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
-        <td class="s dim">${esc(r.team || "")}</td>
+        <td class="s">${teamBadge(r.team)}</td>
         <td class="num"><b>${fmt(r.proj)}</b></td>
         <td class="num dim">${fmt(r.floor)}–${fmt(r.ceiling)}</td>
         <td class="num">${fmt(r.minutes)}</td>
@@ -149,8 +213,9 @@ async function initBoard() {
 
   const renderFull = view =>  {
     tbody.innerHTML = view.map(r => `<tr>
+      <td class="s dim">${r.rank ?? "—"}</td>
       <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
-      <td class="s dim">${esc(r.team || "")}</td>
+      <td class="s">${teamBadge(r.team)}</td>
       <td class="s">${r.stat}</td>
       <td class="num">${fmt(r.proj)}</td>
       <td class="num dim">${fmt(r.floor)}–${fmt(r.ceiling)}</td>
@@ -164,7 +229,7 @@ async function initBoard() {
       <td class="s">${r.tier ? `<span class="badge ${r.tier}">${r.tier}</span>`
         : (r.gate_status && r.gate_status !== "passed"
            ? `<span class="dim" title="${r.gate_status}">·</span>` : "—")}</td>
-    </tr>`).join("") || `<tr><td colspan="11" class="empty">No rows match.</td></tr>`;
+    </tr>`).join("") || `<tr><td colspan="12" class="empty">No rows match.</td></tr>`;
   };
 
   [statSel, tierSel, teamSel, gameSel].forEach(el => el.onchange = render);
@@ -287,7 +352,8 @@ async function initPlayer() {
   const h = await loadJSON(`data/player_hub/${pid}.json`);
 
   $("#pname").textContent = h.player;
-  $("#pteam").textContent = h.team;
+  $("#pteam").innerHTML = teamBadge(h.team, { withName: true });
+  $("#psinglet").innerHTML = playerSinglet(h.team, h.number);
   $("#pmins").innerHTML = h.minutes
     ? `${fmt(h.minutes.value)} min <span class="badge src">${h.minutes.source}</span>`
     : "—";
@@ -385,17 +451,30 @@ async function initPlayer() {
   $("#splits tbody").innerHTML = rows.join("");
 
   /* --- game log explorer: filters -> summary, hit rates, log --- */
-  const oppSel = $("#fOpp");
+  const oppSel = $("#fOpp"), tierSel = $("#fTier"), resSel = $("#fResult");
   [...new Set(log.map(g => g.opp).filter(Boolean))].sort().forEach(o => {
     const el = document.createElement("option");
     el.value = el.textContent = o;
     oppSel.append(el);
   });
+  // standings buckets exist only where both sides of a game are in the
+  // spine; the dropdown lists whatever the data actually supports
+  const tiers = [...new Set(log.map(g => g.opp_tier).filter(Boolean))];
+  const tierOrder = t => t.startsWith("Top") ? 0 : t.startsWith("Mid") ? 1 : 2;
+  tiers.sort((a, b) => tierOrder(a) - tierOrder(b)).forEach(t => {
+    const el = document.createElement("option");
+    el.value = t;
+    el.textContent = "vs " + t;
+    tierSel.append(el);
+  });
+  if (!tiers.length) tierSel.disabled = true;
+  if (!log.some(g => g.result)) resSel.disabled = true;
   const lineInputs = {};
 
   const filtered = () => {
     const loc = $("#fLoc").value, role = $("#fRole").value,
           rest = $("#fRest").value, opp = oppSel.value,
+          res = resSel.value, tier = tierSel.value,
           lo = parseFloat($("#fMinLo").value),
           hi = parseFloat($("#fMinHi").value),
           last = parseInt($("#fLast").value, 10);
@@ -408,6 +487,8 @@ async function initPlayer() {
       if (rest === "0" && String(g.rest) !== "0") return false;
       if (rest === "1+" && String(g.rest) === "0") return false;
       if (opp !== "all" && g.opp !== opp) return false;
+      if (res !== "all" && g.result !== res) return false;
+      if (tier !== "all" && g.opp_tier !== tier) return false;
       if (!isNaN(lo) && g.min < lo) return false;
       if (!isNaN(hi) && g.min > hi) return false;
       return true;
@@ -433,7 +514,7 @@ async function initPlayer() {
        <div class="card"><div class="k">Min avg</div>
          <div class="v">${games.length ? (totMin / games.length).toFixed(1) : "—"}</div>
          <div class="r">median ${games.length ? median(mins).toFixed(1) : "—"}</div></div>`
-      + S.slice(0, 4).map(s => {
+      + S.map(s => {
           const v = games.map(g => g[s]);
           const avg = v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
           return `<div class="card"><div class="k">${s}</div>
@@ -476,23 +557,26 @@ async function initPlayer() {
         ? `<a href="boxscore.html?g=${encodeURIComponent(g.game)}"
              target="_blank" rel="noopener" title="open box score">${g.date} ↗</a>`
         : `<span class="dim">${g.date}</span>`}</td>
-      <td class="s">${esc(g.opp || "")}</td>
+      <td class="s">${teamBadge(g.opp)}${g.opp_tier
+        ? ` <span class="dim" title="opponent standing">(${esc(g.opp_tier)})</span>` : ""}</td>
       <td class="s dim">${(g.venue || "").toUpperCase().startsWith("H") ? "H" : "A"}</td>
+      <td class="s ${g.result === "W" ? "pos" : g.result === "L" ? "neg" : "dim"}">${g.result || "—"}</td>
       <td class="s">${g.starter
         ? '<span class="badge src">start</span>' : '<span class="dim">bench</span>'}</td>
       <td class="num">${fmt(g.min)}</td>
       ${S.map(s => `<td class="num">${fmt(g[s], 0)}</td>`).join("")}
     </tr>`).join("")
-      || `<tr><td colspan="12" class="empty">No games match these filters.</td></tr>`;
+      || `<tr><td colspan="13" class="empty">No games match these filters.</td></tr>`;
   };
 
-  ["#fLast", "#fLoc", "#fRole", "#fRest", "#fOpp"].forEach(
-    sel => $(sel).onchange = renderLog);
+  ["#fLast", "#fLoc", "#fRole", "#fRest", "#fOpp", "#fResult",
+   "#fTier"].forEach(sel => $(sel).onchange = renderLog);
   ["#fMinLo", "#fMinHi"].forEach(sel => $(sel).oninput = renderLog);
   $("#fReset").onclick = () => {
     $("#fLast").value = "15"; $("#fLoc").value = "all";
     $("#fRole").value = "all"; $("#fRest").value = "all";
-    oppSel.value = "all"; $("#fMinLo").value = ""; $("#fMinHi").value = "";
+    oppSel.value = "all"; resSel.value = "all"; tierSel.value = "all";
+    $("#fMinLo").value = ""; $("#fMinHi").value = "";
     for (const k of Object.keys(lineInputs)) delete lineInputs[k];
     renderLog();
   };
@@ -593,7 +677,7 @@ async function initWow() {
           ? `<a href="boxscore.html?g=${encodeURIComponent(g.game)}"
                target="_blank" rel="noopener">${g.date} ↗</a>`
           : `<span class="dim">${g.date}</span>`}</td>
-        <td class="s">${esc(g.opp || "")}</td>
+        <td class="s">${teamBadge(g.opp)}</td>
         <td class="s dim">${(g.venue || "").toUpperCase().startsWith("H") ? "H" : "A"}</td>
         <td class="num">${fmt(l.min)}</td>
         ${S.map(s => `<td class="num">${fmt(l[s], 0)}</td>`).join("")}
@@ -630,9 +714,20 @@ async function initMatchups() {
   await renderFreshness();
   const data = await loadJSON("data/matchups.json");
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
+  const ORDER = ["PG", "SG", "SF", "PF", "C", "G", "F"];
   const positions = [...new Set(
-    Object.values(data.windows).flat().map(r => r.pos))].sort();
-  let pos = positions.includes("G") ? "G" : positions[0];
+    Object.values(data.windows).flat().map(r => r.pos))]
+    .sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
+  let pos = positions[0];
+  if (data.coverage != null) {
+    const note = document.createElement("p");
+    note.className = "sub";
+    note.innerHTML = `Positions are the 5-way split (PG/SG/SF/PF/C) from
+      the vendor roster map, covering <b>${(data.coverage * 100).toFixed(0)}%</b>
+      of minutes played; unmapped deep-bench players are excluded rather
+      than folded into a coarse bucket.`;
+    $("#posChips").parentElement.after(note);
+  }
   $("#posChips").innerHTML = positions.map(p =>
     `<button class="chip" data-p="${esc(p)}">${esc(p)}</button>`).join("");
 
@@ -653,7 +748,7 @@ async function initMatchups() {
         return (x < y ? -1 : x > y ? 1 : 0) * -sortDir;
       });
     $("#mx tbody").innerHTML = rows.map(r => `<tr>
-      <td class="s">${esc(r.team)}</td>
+      <td class="s">${teamBadge(r.team, {withName: true})}</td>
       <td class="num dim">${r.minutes ?? "—"}</td>
       ${S.map(s => cell(r[s])).join("")}
     </tr>`).join("") ||
@@ -684,7 +779,7 @@ async function initBoxscore() {
   $("#bsSub").textContent = d.date;
   document.title = `${d.matchup} ${d.date} — the tipoff`;
   $("#bsTables").innerHTML = Object.entries(d.teams).map(([team, t]) => `
-    <div class="section"><h2>${esc(team)}</h2></div>
+    <div class="section"><h2>${teamBadge(team)} ${esc(team)}</h2></div>
     <div class="tablewrap"><table>
       <thead><tr><th class="s">Player</th><th>Min</th>
         ${S.map(s => `<th>${s}</th>`).join("")}</tr></thead>

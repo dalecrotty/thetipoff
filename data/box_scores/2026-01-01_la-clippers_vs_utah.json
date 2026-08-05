@@ -2,6 +2,176 @@
  "game": "2026-01-01_la-clippers_vs_utah",
  "date": "2026-01-01",
  "teams": {
+  "LA Clippers": {
+   "players": [
+    {
+     "player_id": 202695,
+     "player": "Kawhi Leonard",
+     "starter": true,
+     "min": 39.2,
+     "PTS": 45.0,
+     "REB": 7.0,
+     "AST": 3.0,
+     "3PM": 6.0,
+     "STL": 2.0,
+     "BLK": 2.0,
+     "TOV": 3.0
+    },
+    {
+     "player_id": 201935,
+     "player": "James Harden",
+     "starter": true,
+     "min": 28.9,
+     "PTS": 20.0,
+     "REB": 3.0,
+     "AST": 7.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 201587,
+     "player": "Nicolas Batum",
+     "starter": false,
+     "min": 27.7,
+     "PTS": 14.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1642949,
+     "player": "Yanic Konan Niederhauser",
+     "starter": false,
+     "min": 27.0,
+     "PTS": 6.0,
+     "REB": 10.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1642920,
+     "player": "Kobe Sanders",
+     "starter": false,
+     "min": 24.4,
+     "PTS": 10.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1627739,
+     "player": "Kris Dunn",
+     "starter": true,
+     "min": 24.4,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 1627884,
+     "player": "Derrick Jones Jr.",
+     "starter": false,
+     "min": 24.1,
+     "PTS": 10.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0
+    },
+    {
+     "player_id": 1628381,
+     "player": "John Collins",
+     "starter": true,
+     "min": 19.9,
+     "PTS": 8.0,
+     "REB": 11.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0
+    },
+    {
+     "player_id": 201572,
+     "player": "Brook Lopez",
+     "starter": true,
+     "min": 19.9,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1642353,
+     "player": "Cam Christie",
+     "starter": false,
+     "min": 1.5,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1641757,
+     "player": "Jordan Miller",
+     "starter": false,
+     "min": 1.5,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
+     "player_id": 1641738,
+     "player": "Kobe Brown",
+     "starter": false,
+     "min": 1.5,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0
+    }
+   ],
+   "totals": {
+    "PTS": 118.0,
+    "REB": 47.0,
+    "AST": 20.0,
+    "3PM": 16.0,
+    "STL": 8.0,
+    "BLK": 7.0,
+    "TOV": 12.0,
+    "min": 240.0
+   }
+  },
   "Utah": {
    "players": [
     {
@@ -83,6 +253,19 @@
      "TOV": 0.0
     },
     {
+     "player_id": 1629004,
+     "player": "Svi Mykhailiuk",
+     "starter": true,
+     "min": 23.6,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0
+    },
+    {
      "player_id": 1641707,
      "player": "Taylor Hendricks",
      "starter": true,
@@ -94,17 +277,30 @@
      "STL": 1.0,
      "BLK": 0.0,
      "TOV": 2.0
+    },
+    {
+     "player_id": 1631131,
+     "player": "Oscar Tshiebwe",
+     "starter": false,
+     "min": 14.8,
+     "PTS": 2.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0
     }
    ],
    "totals": {
-    "PTS": 94.0,
-    "REB": 27.0,
-    "AST": 18.0,
-    "3PM": 5.0,
-    "STL": 6.0,
+    "PTS": 101.0,
+    "REB": 35.0,
+    "AST": 20.0,
+    "3PM": 6.0,
+    "STL": 7.0,
     "BLK": 5.0,
     "TOV": 18.0,
-    "min": 202.0
+    "min": 240.0
    }
   }
  },
