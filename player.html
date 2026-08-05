@@ -59,11 +59,59 @@
     <div class="tip" id="tip"></div>
   </div>
 
-  <div class="section"><h2>Splits (per game)</h2></div>
+  <div class="section"><h2>Game log explorer</h2></div>
+  <p class="sub">Filter the log; the summary and hit-rates below recompute
+    on the filtered games only.</p>
+  <div class="controls">
+    <select id="fLast">
+      <option value="15" selected>Last 15</option>
+      <option value="5">Last 5</option>
+      <option value="10">Last 10</option>
+      <option value="20">Last 20</option>
+      <option value="0">Season</option>
+    </select>
+    <select id="fLoc">
+      <option value="all">Home &amp; away</option>
+      <option value="H">Home only</option>
+      <option value="R">Away only</option>
+    </select>
+    <select id="fRole">
+      <option value="all">Any role</option>
+      <option value="start">Started</option>
+      <option value="bench">Off bench</option>
+    </select>
+    <select id="fRest">
+      <option value="all">Any rest</option>
+      <option value="0">B2B (0 days)</option>
+      <option value="1+">1+ days rest</option>
+    </select>
+    <select id="fOpp"><option value="all">Any opponent</option></select>
+    <span class="stepper" title="minutes range">
+      <input id="fMinLo" type="number" step="1" min="0" placeholder="min">
+      <input id="fMinHi" type="number" step="1" min="0" placeholder="max">
+    </span>
+    <button class="chip" id="fReset">Reset</button>
+  </div>
+  <div class="hitcards" id="logSummary"></div>
+
+  <div class="section"><h2>Hit rate vs a line</h2></div>
+  <p class="sub" id="lineNote">Type any line per stat — the rate is the
+    share of the filtered games that went over.</p>
   <div class="tablewrap">
-    <table id="splits">
+    <table id="lineRates">
+      <thead><tr><th class="s">Stat</th><th>Custom line</th>
+        <th>Over</th><th>Rate</th><th>Avg</th><th>Median</th>
+        <th>Per 36</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="section"><h2>Filtered game log</h2></div>
+  <div class="tablewrap">
+    <table id="gamelog">
       <thead><tr>
-        <th class="s">Split</th><th>G</th><th>Min</th>
+        <th class="s">Date</th><th class="s">Opp</th><th class="s">H/A</th>
+        <th class="s">Role</th><th>Min</th>
         <th>PTS</th><th>REB</th><th>AST</th><th>3PM</th>
         <th>STL</th><th>BLK</th><th>TOV</th>
       </tr></thead>
@@ -71,11 +119,11 @@
     </table>
   </div>
 
-  <div class="section"><h2>Recent games</h2></div>
+  <div class="section"><h2>Season splits (per game)</h2></div>
   <div class="tablewrap">
-    <table id="gamelog">
+    <table id="splits">
       <thead><tr>
-        <th class="s">Date</th><th class="s">Opp</th><th>Min</th>
+        <th class="s">Split</th><th>G</th><th>Min</th>
         <th>PTS</th><th>REB</th><th>AST</th><th>3PM</th>
         <th>STL</th><th>BLK</th><th>TOV</th>
       </tr></thead>

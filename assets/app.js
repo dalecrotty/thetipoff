@@ -64,27 +64,90 @@ function sortable(table, rows, render) {
 }
 
 /* ---------- board page ---------- */
+const BOARD_STATS = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
+const TOP_N = 15;
+
+function leaderTable(stat, rows) {
+  const top = rows.filter(r => r.stat === stat)
+    .sort((a, b) => (b.proj ?? 0) - (a.proj ?? 0)).slice(0, TOP_N);
+  if (!top.length) return "";
+  return `<div class="section"><h2>${stat} — top ${TOP_N}</h2></div>
+    <div class="tablewrap"><table>
+      <thead><tr>
+        <th class="s">#</th><th class="s">Player</th><th class="s">Team</th>
+        <th>Proj</th><th>Floor–Ceil</th><th>Min</th>
+        <th>Line</th><th class="s">Side</th><th>Edge</th><th>L10</th>
+      </tr></thead>
+      <tbody>${top.map((r, i) => `<tr>
+        <td class="s dim">${i + 1}</td>
+        <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
+        <td class="s dim">${esc(r.team || "")}</td>
+        <td class="num"><b>${fmt(r.proj)}</b></td>
+        <td class="num dim">${fmt(r.floor)}–${fmt(r.ceiling)}</td>
+        <td class="num">${fmt(r.minutes)}</td>
+        <td class="num">${fmt(r.line)}</td>
+        <td class="s">${r.side ? `<span class="badge ${r.side}">${r.side}</span>` : "—"}</td>
+        <td class="num ${r.edge > 0 ? "pos" : ""}">${pct(r.edge)}</td>
+        <td class="num ${r.l10_over > 0.5 ? "pos" : r.l10_over != null && r.l10_over < 0.5 ? "neg" : "dim"}">${
+          r.l10_over == null ? "—" : (r.l10_over * 100).toFixed(0) + "%"}</td>
+      </tr>`).join("")}</tbody>
+    </table></div>`;
+}
+
 async function initBoard() {
   await renderFreshness();
   const data = await loadJSON("data/projections.json");
   let rows = data.rows;
   const tbody = $("#board tbody");
   const statSel = $("#fStat"), tierSel = $("#fTier"),
-        teamSel = $("#fTeam"), q = $("#fQ");
+        teamSel = $("#fTeam"), gameSel = $("#fGame"), q = $("#fQ");
   [...new Set(rows.map(r => r.team).filter(Boolean))].sort().forEach(t => {
     const o = document.createElement("option");
     o.value = o.textContent = t;
     teamSel.append(o);
   });
+  [...new Set(rows.map(r => r.game).filter(Boolean))].sort().forEach(g => {
+    const o = document.createElement("option");
+    o.value = o.textContent = g;
+    gameSel.append(o);
+  });
+
+  let view = "leaders";
+  $("#viewChips").onclick = e => {
+    const c = e.target.closest(".chip");
+    if (!c) return;
+    view = c.dataset.v;
+    $$(".chip", $("#viewChips")).forEach(x =>
+      x.classList.toggle("on", x.dataset.v === view));
+    $("#leaders").hidden = view !== "leaders";
+    $("#fullboard").hidden = view !== "full";
+    render();
+  };
+
+  // shared filters (game / team / search) apply to both views
+  const shared = r => {
+    const tm = teamSel.value, gm = gameSel.value,
+          needle = q.value.toLowerCase();
+    return (tm === "all" || r.team === tm) &&
+           (gm === "all" || r.game === gm) &&
+           (!needle || r.player.toLowerCase().includes(needle));
+  };
 
   const render = () => {
-    const s = statSel.value, t = tierSel.value, tm = teamSel.value,
-          needle = q.value.toLowerCase();
-    const view = rows.filter(r =>
+    const base = rows.filter(shared);
+    if (view === "leaders") {
+      $("#leaders").innerHTML = BOARD_STATS.map(s => leaderTable(s, base))
+        .join("") || `<div class="empty">No players match.</div>`;
+      return;
+    }
+    const s = statSel.value, t = tierSel.value;
+    const view_ = base.filter(r =>
       (s === "all" || r.stat === s) &&
-      (t === "all" || (t === "gated" ? r.tier : r.tier === t)) &&
-      (tm === "all" || r.team === tm) &&
-      (!needle || r.player.toLowerCase().includes(needle)));
+      (t === "all" || (t === "gated" ? r.tier : r.tier === t)));
+    renderFull(view_);
+  };
+
+  const renderFull = view =>  {
     tbody.innerHTML = view.map(r => `<tr>
       <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
       <td class="s dim">${esc(r.team || "")}</td>
@@ -104,7 +167,7 @@ async function initBoard() {
     </tr>`).join("") || `<tr><td colspan="11" class="empty">No rows match.</td></tr>`;
   };
 
-  [statSel, tierSel].forEach(el => el.onchange = render);
+  [statSel, tierSel, teamSel, gameSel].forEach(el => el.onchange = render);
   q.oninput = render;
   sortable($("#board"), rows, render);
   // default: real (tiered) edges first, then near-misses, then the rest
@@ -321,44 +384,245 @@ async function initPlayer() {
     </tr>`);
   $("#splits tbody").innerHTML = rows.join("");
 
-  $("#gamelog tbody").innerHTML = h.recent_games.map(g => `<tr>
-    <td class="s">${g.game
-      ? `<a href="boxscore.html?g=${encodeURIComponent(g.game)}"
-           target="_blank" rel="noopener" title="open box score">${g.date} ↗</a>`
-      : `<span class="dim">${g.date}</span>`}</td>
-    <td class="s">${esc(g.opp || "")}</td>
-    <td class="num">${fmt(g.min)}</td>
-    ${S.map(s => `<td class="num">${fmt(g[s], 0)}</td>`).join("")}
-  </tr>`).join("");
+  /* --- game log explorer: filters -> summary, hit rates, log --- */
+  const oppSel = $("#fOpp");
+  [...new Set(log.map(g => g.opp).filter(Boolean))].sort().forEach(o => {
+    const el = document.createElement("option");
+    el.value = el.textContent = o;
+    oppSel.append(el);
+  });
+  const lineInputs = {};
+
+  const filtered = () => {
+    const loc = $("#fLoc").value, role = $("#fRole").value,
+          rest = $("#fRest").value, opp = oppSel.value,
+          lo = parseFloat($("#fMinLo").value),
+          hi = parseFloat($("#fMinHi").value),
+          last = parseInt($("#fLast").value, 10);
+    let out = log.filter(g => {
+      const home = (g.venue || "").toUpperCase().startsWith("H");
+      if (loc === "H" && !home) return false;
+      if (loc === "R" && home) return false;
+      if (role === "start" && !g.starter) return false;
+      if (role === "bench" && g.starter) return false;
+      if (rest === "0" && String(g.rest) !== "0") return false;
+      if (rest === "1+" && String(g.rest) === "0") return false;
+      if (opp !== "all" && g.opp !== opp) return false;
+      if (!isNaN(lo) && g.min < lo) return false;
+      if (!isNaN(hi) && g.min > hi) return false;
+      return true;
+    });
+    return last ? out.slice(-last) : out;
+  };
+
+  const median = a => {
+    if (!a.length) return null;
+    const s = [...a].sort((x, y) => x - y), m = s.length >> 1;
+    return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+  };
+
+  const renderLog = () => {
+    const games = filtered();
+    const mins = games.map(g => g.min);
+    const totMin = mins.reduce((a, b) => a + b, 0);
+
+    $("#logSummary").innerHTML =
+      `<div class="card"><div class="k">Games</div>
+         <div class="v">${games.length}</div>
+         <div class="r">of ${log.length} played</div></div>
+       <div class="card"><div class="k">Min avg</div>
+         <div class="v">${games.length ? (totMin / games.length).toFixed(1) : "—"}</div>
+         <div class="r">median ${games.length ? median(mins).toFixed(1) : "—"}</div></div>`
+      + S.slice(0, 4).map(s => {
+          const v = games.map(g => g[s]);
+          const avg = v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
+          return `<div class="card"><div class="k">${s}</div>
+            <div class="v">${avg == null ? "—" : avg.toFixed(1)}</div>
+            <div class="r">med ${v.length ? median(v).toFixed(1) : "—"}</div></div>`;
+        }).join("");
+
+    $("#lineRates tbody").innerHTML = S.map(s => {
+      const v = games.map(g => g[s]);
+      const avg = v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
+      const per36 = totMin > 0
+        ? v.reduce((a, b) => a + b, 0) / totMin * 36 : null;
+      const dflt = h.lines?.[s]?.line
+        ?? (avg == null ? null : Math.floor(avg) + 0.5);
+      const cur = lineInputs[s] ?? dflt;
+      const over = cur == null ? null : v.filter(x => x > cur).length;
+      const rate = (over == null || !v.length) ? null : over / v.length;
+      return `<tr>
+        <td class="s"><b>${s}</b></td>
+        <td class="num"><input class="lineIn" data-s="${s}" type="number"
+          step="0.5" value="${cur == null ? "" : cur}" style="width:72px"></td>
+        <td class="num dim">${over == null ? "—" : `${over}/${v.length}`}</td>
+        <td class="num ${rate > 0.5 ? "pos" : rate != null && rate < 0.5 ? "neg" : ""}">${
+          rate == null ? "—" : (rate * 100).toFixed(0) + "%"}</td>
+        <td class="num">${avg == null ? "—" : avg.toFixed(1)}</td>
+        <td class="num">${v.length ? median(v).toFixed(1) : "—"}</td>
+        <td class="num dim">${per36 == null ? "—" : per36.toFixed(1)}</td>
+      </tr>`;
+    }).join("");
+    $$(".lineIn", $("#lineRates")).forEach(inp => {
+      inp.onchange = () => {
+        const v = parseFloat(inp.value);
+        lineInputs[inp.dataset.s] = isNaN(v) ? null : v;
+        renderLog();
+      };
+    });
+
+    $("#gamelog tbody").innerHTML = games.slice().reverse().map(g => `<tr>
+      <td class="s">${g.game
+        ? `<a href="boxscore.html?g=${encodeURIComponent(g.game)}"
+             target="_blank" rel="noopener" title="open box score">${g.date} ↗</a>`
+        : `<span class="dim">${g.date}</span>`}</td>
+      <td class="s">${esc(g.opp || "")}</td>
+      <td class="s dim">${(g.venue || "").toUpperCase().startsWith("H") ? "H" : "A"}</td>
+      <td class="s">${g.starter
+        ? '<span class="badge src">start</span>' : '<span class="dim">bench</span>'}</td>
+      <td class="num">${fmt(g.min)}</td>
+      ${S.map(s => `<td class="num">${fmt(g[s], 0)}</td>`).join("")}
+    </tr>`).join("")
+      || `<tr><td colspan="12" class="empty">No games match these filters.</td></tr>`;
+  };
+
+  ["#fLast", "#fLoc", "#fRole", "#fRest", "#fOpp"].forEach(
+    sel => $(sel).onchange = renderLog);
+  ["#fMinLo", "#fMinHi"].forEach(sel => $(sel).oninput = renderLog);
+  $("#fReset").onclick = () => {
+    $("#fLast").value = "15"; $("#fLoc").value = "all";
+    $("#fRole").value = "all"; $("#fRest").value = "all";
+    oppSel.value = "all"; $("#fMinLo").value = ""; $("#fMinHi").value = "";
+    for (const k of Object.keys(lineInputs)) delete lineInputs[k];
+    renderLog();
+  };
+  renderLog();
 }
 
-/* ---------- with & without page ---------- */
+/* ---------- with & without page (in/out lineup explorer) ---------- */
 async function initWow() {
   await renderFreshness();
-  const data = await loadJSON("data/with_without.json");
-  $("#wownote").textContent = data.note || "";
-  let rows = data.pairs;
-  const tbody = $("#wow tbody"), q = $("#fQ");
-  const render = () => {
-    const needle = q.value.toLowerCase();
-    const view = rows.filter(r => !needle
-      || r.focal.toLowerCase().includes(needle)
-      || r.key_out.toLowerCase().includes(needle)
-      || (r.team || "").toLowerCase().includes(needle));
-    tbody.innerHTML = view.slice(0, 400).map(r => `<tr>
-      <td class="s">${esc(r.focal)}</td><td class="s">${esc(r.key_out)}</td>
-      <td class="s dim">${esc(r.team)}</td>
-      <td class="num">${fmt(r.min_with)} → ${fmt(r.min_without)}</td>
-      <td class="num ${r.d_min > 0 ? "pos" : r.d_min < 0 ? "neg" : ""}">${fmt(r.d_min)}</td>
-      <td class="num">${fmt(r.pts_with)} → ${fmt(r.pts_without)}</td>
-      <td class="num ${r.d_pts > 0 ? "pos" : r.d_pts < 0 ? "neg" : ""}">${fmt(r.d_pts)}</td>
-      <td class="num dim">${r.n_with}/${r.n_without}</td>
-    </tr>`).join("") || `<tr><td colspan="8" class="empty">No pairs match.</td></tr>`;
+  const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
+  const index = await loadJSON("data/teams/index.json");
+  const teamSel = $("#wTeam"), playerSel = $("#wPlayer");
+  teamSel.innerHTML = index.map(t =>
+    `<option value="${esc(t.slug)}">${esc(t.team)}</option>`).join("");
+
+  let team = null;                 // loaded team payload
+  let focal = null;                // focal player id (string)
+  const state = new Map();         // mate id -> "in" | "out"
+
+  const avg = (games, pick) => {
+    if (!games.length) return null;
+    return games.reduce((a, g) => a + pick(g), 0) / games.length;
   };
-  q.oninput = render;
-  sortable($("#wow"), rows, render);
-  rows.sort((a, b) => (b.d_pts ?? 0) - (a.d_pts ?? 0));
-  render();
+
+  const focalLine = g => g.lines[focal];
+  const played = (g, id) => g.lines[id] !== undefined;
+
+  const matching = () => team.games.filter(g => {
+    if (!focalLine(g)) return false;           // focal must have played
+    for (const [id, mode] of state) {
+      if (mode === "in" && !played(g, id)) return false;
+      if (mode === "out" && played(g, id)) return false;
+    }
+    return true;
+  });
+
+  const rowFor = (label, games) => {
+    if (!games.length)
+      return `<tr><td class="s">${label}</td><td class="num dim">0</td>
+        <td colspan="8" class="empty">no games</td></tr>`;
+    const cells = [["min", g => focalLine(g).min]]
+      .concat(S.map(s => [s, g => focalLine(g)[s]]));
+    return `<tr><td class="s"><b>${label}</b></td>
+      <td class="num dim">${games.length}</td>
+      ${cells.map(([, pick]) =>
+        `<td class="num">${avg(games, pick).toFixed(1)}</td>`).join("")}
+    </tr>`;
+  };
+
+  const diffRow = (a, b) => {
+    if (!a.length || !b.length) return "";
+    const cells = [["min", g => focalLine(g).min]]
+      .concat(S.map(s => [s, g => focalLine(g)[s]]));
+    return `<tr><td class="s">Diff</td><td class="num dim">—</td>
+      ${cells.map(([, pick]) => {
+        const d = avg(b, pick) - avg(a, pick);
+        return `<td class="num ${d > 0 ? "pos" : d < 0 ? "neg" : "dim"}">${
+          (d > 0 ? "+" : "") + d.toFixed(1)}</td>`;
+      }).join("")}</tr>`;
+  };
+
+  const renderMates = () => {
+    $("#wMates").innerHTML = team.players
+      .filter(p => String(p.id) !== focal)
+      .map(p => {
+        const mode = state.get(String(p.id));
+        const cls = mode === "in" ? "chip on" : mode === "out" ? "chip on" : "chip";
+        const tag = mode === "in" ? " ✓IN" : mode === "out" ? " ✗OUT" : "";
+        const style = mode === "in"
+          ? 'style="background:var(--over);border-color:var(--over);color:#fff"'
+          : mode === "out"
+          ? 'style="background:var(--under);border-color:var(--under);color:#fff"'
+          : "";
+        return `<button class="${cls}" ${style} data-id="${p.id}"
+          title="${p.games} games, median ${p.med_min} min">${esc(p.name)}${tag}</button>`;
+      }).join("");
+  };
+
+  const render = () => {
+    renderMates();
+    const all = team.games.filter(focalLine);
+    const sel = matching();
+    const anyFilter = state.size > 0;
+    $("#wCompare tbody").innerHTML =
+      rowFor("Season (all games)", all)
+      + (anyFilter ? rowFor("Matching lineup", sel) : "")
+      + (anyFilter ? diffRow(all, sel) : "");
+    const ins = [...state].filter(([, m]) => m === "in").length;
+    const outs = [...state].filter(([, m]) => m === "out").length;
+    $("#wNote").textContent = anyFilter
+      ? `${sel.length} of ${all.length} games match (${ins} in, ${outs} out).`
+        + (sel.length < 5 ? " Small sample — read with caution." : "")
+      : "Pick teammates above to split the season.";
+    $("#wLog tbody").innerHTML = sel.slice().reverse().map(g => {
+      const l = focalLine(g);
+      return `<tr>
+        <td class="s">${g.game
+          ? `<a href="boxscore.html?g=${encodeURIComponent(g.game)}"
+               target="_blank" rel="noopener">${g.date} ↗</a>`
+          : `<span class="dim">${g.date}</span>`}</td>
+        <td class="s">${esc(g.opp || "")}</td>
+        <td class="s dim">${(g.venue || "").toUpperCase().startsWith("H") ? "H" : "A"}</td>
+        <td class="num">${fmt(l.min)}</td>
+        ${S.map(s => `<td class="num">${fmt(l[s], 0)}</td>`).join("")}
+      </tr>`;
+    }).join("") || `<tr><td colspan="11" class="empty">No games match.</td></tr>`;
+  };
+
+  const loadTeam = async slug => {
+    team = await loadJSON(`data/teams/${slug}.json`);
+    state.clear();
+    playerSel.innerHTML = team.players.map(p =>
+      `<option value="${p.id}">${esc(p.name)} — ${p.med_min} min</option>`).join("");
+    focal = playerSel.value;
+    render();
+  };
+
+  $("#wMates").onclick = e => {
+    const b = e.target.closest(".chip");
+    if (!b) return;
+    const id = b.dataset.id, cur = state.get(id);
+    if (!cur) state.set(id, "in");
+    else if (cur === "in") state.set(id, "out");
+    else state.delete(id);
+    render();
+  };
+  teamSel.onchange = () => loadTeam(teamSel.value);
+  playerSel.onchange = () => { focal = playerSel.value; state.clear(); render(); };
+  $("#wReset").onclick = () => { state.clear(); render(); };
+  await loadTeam(teamSel.value);
 }
 
 /* ---------- matchups page ---------- */
