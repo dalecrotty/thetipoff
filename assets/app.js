@@ -153,18 +153,22 @@ const LEADER_COLS = [
 ];
 
 function leaderTable(stat, rows) {
-  // population = the top 15 BY PROJECTION (that's what "leaders" means);
-  // a column click reorders those 15 rather than re-picking the set
-  const top = rows.filter(r => r.stat === stat)
-    .sort((a, b) => (b.proj ?? 0) - (a.proj ?? 0)).slice(0, TOP_N);
-  if (!top.length) return "";
+  // the ACTIVE SORT COLUMN picks the population: default = the 15
+  // biggest projections, sort by Edge = the 15 biggest edges on the
+  // slate, etc. Nulls sort last, so rows with no line never occupy a
+  // slot in an edge-ranked table.
   const s = leaderSort[stat] || { k: "proj", dir: -1 };
-  top.sort(cmpBy(s.k, s.dir));
+  const top = rows.filter(r => r.stat === stat)
+    .sort(cmpBy(s.k, s.dir)).slice(0, TOP_N);
+  if (!top.length) return "";
+  const sortedBy = LEADER_COLS.find(c => c[0] === s.k);
+  const byLabel = s.k === "proj" ? "" : ` by ${sortedBy ? sortedBy[1] : s.k}`;
   const head = LEADER_COLS.map(([k, label, left, title]) =>
     `<th class="${left ? "s" : ""}${k === s.k ? " sorted" : ""}"
         data-k="${k}"${title ? ` title="${title}"` : ""}>${label}${
       k === s.k ? (s.dir === -1 ? " ▾" : " ▴") : ""}</th>`).join("");
-  return `<div class="section"><h2>${stat} — top ${TOP_N}</h2></div>
+  return `<div class="section"><h2>${stat} — top ${TOP_N}${byLabel}${
+      byLabel && s.dir === 1 ? " (lowest)" : ""}</h2></div>
     <div class="tablewrap"><table data-stat="${stat}">
       <thead><tr>${head}</tr></thead>
       <tbody>${top.map((r, i) => `<tr>
