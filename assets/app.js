@@ -115,12 +115,12 @@ function sortable(table, rows, render) {
     const k = th.dataset.k;
     dir = (key === k) ? -dir : -1;
     key = k;
-    rows.sort((a, b) => {
-      const x = a[k], y = b[k];
-      if (x == null && y == null) return 0;
-      if (x == null) return 1;
-      if (y == null) return -1;
-      return (x < y ? -1 : x > y ? 1 : 0) * -dir;
+    rows.sort(cmpBy(k, -dir));
+    $$("th[data-k]", table).forEach(x => {
+      x.classList.toggle("sorted", x === th);
+      const base = x.dataset.label || (x.dataset.label = x.textContent.trim());
+      x.textContent = x === th
+        ? `${base} ${-dir === -1 ? "▾" : "▴"}` : base;
     });
     render();
   });
@@ -130,18 +130,43 @@ function sortable(table, rows, render) {
 const BOARD_STATS = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
 const TOP_N = 15;
 
+/* per-stat sort state for the leader tables; survives re-renders so a
+   filter change doesn't silently reset the column you chose */
+const leaderSort = {};
+
+const cmpBy = (k, dir) => (a, b) => {
+  const x = a[k], y = b[k];
+  if (x == null && y == null) return 0;
+  if (x == null) return 1;                 // blanks last, either direction
+  if (y == null) return -1;
+  return (x < y ? -1 : x > y ? 1 : 0) * dir;
+};
+
+/* columns: [key, label, leftAligned, title] */
+const LEADER_COLS = [
+  ["rank", "Rk", true, "rank for this stat across the whole slate"],
+  ["player", "Player", true, ""], ["team", "Team", true, ""],
+  ["proj", "Proj", false, ""], ["floor", "Floor–Ceil", false, "sorts on floor"],
+  ["minutes", "Min", false, ""], ["line", "Line", false, ""],
+  ["side", "Side", true, ""], ["edge", "Edge", false, ""],
+  ["l10_over", "L10", false, "over-rate vs the line, last 10 games"],
+];
+
 function leaderTable(stat, rows) {
+  // population = the top 15 BY PROJECTION (that's what "leaders" means);
+  // a column click reorders those 15 rather than re-picking the set
   const top = rows.filter(r => r.stat === stat)
     .sort((a, b) => (b.proj ?? 0) - (a.proj ?? 0)).slice(0, TOP_N);
   if (!top.length) return "";
+  const s = leaderSort[stat] || { k: "proj", dir: -1 };
+  top.sort(cmpBy(s.k, s.dir));
+  const head = LEADER_COLS.map(([k, label, left, title]) =>
+    `<th class="${left ? "s" : ""}${k === s.k ? " sorted" : ""}"
+        data-k="${k}"${title ? ` title="${title}"` : ""}>${label}${
+      k === s.k ? (s.dir === -1 ? " ▾" : " ▴") : ""}</th>`).join("");
   return `<div class="section"><h2>${stat} — top ${TOP_N}</h2></div>
-    <div class="tablewrap"><table>
-      <thead><tr>
-        <th class="s" title="rank for this stat across the whole slate">Rk</th>
-        <th class="s">Player</th><th class="s">Team</th>
-        <th>Proj</th><th>Floor–Ceil</th><th>Min</th>
-        <th>Line</th><th class="s">Side</th><th>Edge</th><th>L10</th>
-      </tr></thead>
+    <div class="tablewrap"><table data-stat="${stat}">
+      <thead><tr>${head}</tr></thead>
       <tbody>${top.map((r, i) => `<tr>
         <td class="s dim">${r.rank ?? i + 1}</td>
         <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
@@ -175,6 +200,17 @@ async function initBoard() {
     o.value = o.textContent = g;
     gameSel.append(o);
   });
+
+  // leader tables sort independently, per stat
+  $("#leaders").onclick = e => {
+    const th = e.target.closest("th[data-k]");
+    if (!th) return;
+    const stat = th.closest("table").dataset.stat;
+    const cur = leaderSort[stat] || { k: "proj", dir: -1 };
+    leaderSort[stat] = { k: th.dataset.k,
+                         dir: cur.k === th.dataset.k ? -cur.dir : -1 };
+    render();
+  };
 
   let view = "leaders";
   $("#viewChips").onclick = e => {

@@ -86,6 +86,7 @@ th {
   cursor: pointer; user-select: none;
 }
 th.s, td.s { text-align: left; }
+th.sorted { color: var(--ink); }
 tr:last-child td { border-bottom: 0; }
 td a { text-decoration: none; font-weight: 600; }
 td a:hover { color: var(--accent); }
