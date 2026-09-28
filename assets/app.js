@@ -343,12 +343,16 @@ function aedtTime(iso) {
    ("Doncic out: +9.9 without him, 16 games"). The model keeps it out of
    the prediction until it proves itself against closing lines. */
 function wwNote(r) {
-  if (!r.ww || !r.ww.length) return "";
+  // tonight's role, when it differs from his usual position
+  const role = r.pos && r.pos_usual && r.pos !== r.pos_usual
+    ? `<div class="ww" title="${esc(r.player)} matches up as a ${esc(r.pos)} tonight (usually ${esc(r.pos_usual)}), so the ${esc(r.pos)} matchup numbers are used.">${esc(r.pos)} tonight (usually ${esc(r.pos_usual)})</div>`
+    : "";
+  if (!r.ww || !r.ww.length) return role;
   return r.ww.map(w => {
     const d = w.delta, sign = d > 0 ? "+" : "";
     const last = String(w.star).split(" ").slice(-1)[0];
     return `<div class="ww" title="${esc(w.star)} out tonight. ${esc(r.player)} has averaged ${sign}${fmt(d)} ${r.stat} per game without him (${w.n} games) compared with with him.">${esc(last)} out: ${sign}${fmt(d)} without him (${w.n} g)</div>`;
-  }).join("");
+  }).join("") + role;
 }
 
 function predCell(r, bold) {
