@@ -347,12 +347,15 @@ function wwNote(r) {
   const role = r.pos && r.pos_usual && r.pos !== r.pos_usual
     ? `<div class="ww" title="${esc(r.player)} matches up as a ${esc(r.pos)} tonight (usually ${esc(r.pos_usual)}), so the ${esc(r.pos)} matchup numbers are used.">${esc(r.pos)} tonight (usually ${esc(r.pos_usual)})</div>`
     : "";
-  if (!r.ww || !r.ww.length) return role;
+  const early = r.early != null
+    ? `<div class="ww" title="Fewer than 10 NBA games: an early estimate built from his own games and the typical rookie at his position, with wider ranges. Not used for edges yet.">early estimate · ${r.early} NBA game${r.early === 1 ? "" : "s"}</div>`
+    : "";
+  if (!r.ww || !r.ww.length) return role + early;
   return r.ww.map(w => {
     const d = w.delta, sign = d > 0 ? "+" : "";
     const last = String(w.star).split(" ").slice(-1)[0];
     return `<div class="ww" title="${esc(w.star)} out tonight. ${esc(r.player)} has averaged ${sign}${fmt(d)} ${r.stat} per game without him (${w.n} games) compared with with him.">${esc(last)} out: ${sign}${fmt(d)} without him (${w.n} g)</div>`;
-  }).join("") + role;
+  }).join("") + role + early;
 }
 
 function predCell(r, bold) {
