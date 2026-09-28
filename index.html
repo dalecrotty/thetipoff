@@ -5,72 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NBA Predictions Today — Player Props &amp; Stats | the tipoff</title>
 <meta name="description" content="Today's NBA predictions for every player — points, rebounds, assists and threes — set against bookmaker lines in decimal odds, with an audited track record.">
+<meta name="theme-color" content="#0a0d11">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0d11'/%3E%3Ctext x='6' y='23' font-family='monospace' font-weight='700' font-size='20' fill='%23ff6b2c'%3Et%3C/text%3E%3Crect x='20' y='9' width='5' height='15' fill='%23ff6b2c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/app.js" defer></script>
 </head>
 <body data-page="board">
 <header class="site">
-  <div class="logo">the<span>tipoff</span></div>
+  <a class="logo" href="index.html" aria-label="thetipoff home">the<b>tipoff</b><i></i></a>
   <nav class="site">
     <a href="index.html" class="on">Predictions</a>
-    <a href="player.html">Player Hub</a>
+    <a href="player.html">Players</a>
     <a href="matchups.html">Matchups</a>
-    <a href="with-without.html">With &amp; Without</a>
-    <a href="track-record.html">Track Record</a>
+    <a href="with-without.html">With/Without</a>
+    <a href="track-record.html">Track record</a>
   </nav>
-  <button id="themeBtn" title="Toggle theme">◐</button>
+  <button id="themeBtn" aria-label="Switch between dark and light">
+    <svg class="moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.5 9.5A5.5 5.5 0 1 1 6.5 2.5a4.5 4.5 0 0 0 7 7Z"/></svg>
+    <svg class="sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.4 1.4M11.6 11.6 13 13M3 13l1.4-1.4M11.6 4.4 13 3"/></svg>
+  </button>
 </header>
 <div class="fresh" id="fresh">Loading…</div>
 <main>
+  <p class="kicker">Tonight · <span id="slateLbl"></span></p>
   <h1>NBA predictions today</h1>
-  <p class="sub">Tonight's slate. <b>Leaders</b> gives a standalone
-    top-15 table per stat; <b>Full board</b> is every player × market
-    with lines and edges. Filter by game to isolate a fixture.</p>
+  <p class="lead" id="lead"></p>
   <div id="movers" class="movers" hidden></div>
   <div class="controls">
-    <div class="chips" id="viewChips">
+    <div class="seg" id="viewChips">
       <button class="chip on" data-v="leaders">Leaders</button>
       <button class="chip" data-v="full">Full board</button>
     </div>
-    <select id="fGame"><option value="all">All games</option></select>
-    <select id="fTeam"><option value="all">All teams</option></select>
-    <input id="fQ" type="search" placeholder="Search player…">
+    <select id="fGame" aria-label="Game"><option value="all">All games</option></select>
+    <select id="fTeam" aria-label="Team"><option value="all">All teams</option></select>
+    <select id="fSort" aria-label="Sort"></select>
+    <input id="fQ" type="search" placeholder="Search player…" aria-label="Search player">
   </div>
 
-  <!-- Leaders view: one standalone top-15 table per stat -->
-  <div id="leaders"></div>
+  <!-- Leaders: one stat at a time, top 15 -->
+  <div id="leadersWrap">
+    <div class="controls"><div class="chips" id="statTabs"></div></div>
+    <div id="leaders"></div>
+  </div>
 
-  <!-- Full board view -->
+  <!-- Full board: every player x market -->
   <div id="fullboard" hidden>
     <div class="controls">
-      <select id="fStat">
+      <select id="fStat" aria-label="Market">
         <option value="all">All markets</option>
         <option>PTS</option><option>REB</option><option>AST</option>
         <option>3PM</option><option>STL</option><option>BLK</option>
         <option>TOV</option>
+        <option>PRA</option><option>PR</option><option>PA</option><option>RA</option>
       </select>
-      <select id="fTier">
+      <select id="fTier" aria-label="Rows">
         <option value="all">All rows</option>
-        <option value="gated">Gated edges only</option>
+        <option value="gated">Edges only</option>
         <option value="A">Tier A</option>
         <option value="B">Tier B</option>
       </select>
     </div>
     <div class="tablewrap">
-      <table id="board">
+      <table id="board" class="board">
         <thead><tr>
-          <th class="s" data-k="rank" title="rank for this stat across the slate">Rk</th>
           <th class="s" data-k="player">Player</th>
-          <th class="s" data-k="team">Team</th>
-          <th class="s" data-k="stat">Market</th>
-          <th data-k="proj" title="our prediction">Pred</th>
-          <th>Floor–Ceil</th>
-          <th data-k="minutes">Min</th>
-          <th data-k="line">Line</th>
-          <th class="s">Side</th>
-          <th data-k="edge">Edge</th>
-          <th data-k="l10_over" title="over-rate vs the line, last 10 games">L10</th>
-          <th class="s" data-k="tier">Tier</th>
+          <th class="s" data-k="stat">Mkt</th>
+          <th data-k="proj" title="our prediction, with its 10th–90th percentile range">Pred</th>
+          <th data-k="line" title="bookmaker line and price for the side we lean">Line</th>
+          <th class="opt" data-k="adiff" title="our prediction minus the line">Diff</th>
+          <th data-k="edge" title="our probability minus the bookmaker's (margin removed)">Edge</th>
+          <th class="opt" data-k="l10_hit" title="how often our side landed in his last 10 games">Hit L10</th>
+          <th class="s opt" data-k="tier">Tier</th>
         </tr></thead>
         <tbody></tbody>
       </table>

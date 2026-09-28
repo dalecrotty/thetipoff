@@ -11,8 +11,7 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
     const btn = $("#themeBtn");
     if (!btn) return;
     btn.onclick = () => {
-      const cur = document.documentElement.dataset.theme
-        || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      const cur = document.documentElement.dataset.theme || "dark";  // dark-first
       const next = cur === "dark" ? "light" : "dark";
       document.documentElement.dataset.theme = next;
       localStorage.setItem("theme", next);
@@ -102,7 +101,7 @@ const STALE_HOURS = 24;
 function staleNotice(m) {
   const lastGood = m.last_ok_at || m.computed_at;
   if (m.status === "stale") {
-    return `These are the numbers from <b>${lastGood}</b>. Tonight's run `
+    return `These are the numbers from <b>${whenAEDT(lastGood)}</b>. Tonight's run `
       + `did not complete, so nothing here has been updated since.`;
   }
   // Demo data is already labelled as a replay, so its age isn't news.
@@ -111,9 +110,21 @@ function staleNotice(m) {
   if (Number.isFinite(age) && age > STALE_HOURS) {
     const ago = age > 48 ? `${Math.floor(age / 24)} days` : `${Math.floor(age)} hours`;
     return `These numbers were computed <b>${ago} ago</b> `
-      + `(${m.computed_at}) and have not refreshed since.`;
+      + `(${whenAEDT(m.computed_at)}) and have not refreshed since.`;
   }
   return null;
+}
+
+/* "9:30am AEDT, Thu 8 Jan" — readers are in Australia */
+function whenAEDT(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return iso || "";
+  const day = new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Sydney",
+    weekday: "short", day: "numeric", month: "short" }).format(d);
+  const zone = (new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Sydney",
+    timeZoneName: "short" }).formatToParts(d).find(p => p.type === "timeZoneName")
+    || {}).value || "";
+  return `${aedtTime(iso)} ${zone.replace(/^GMT\+11$/, "AEDT").replace(/^GMT\+10$/, "AEST")}, ${day.replace(",", "")}`;
 }
 
 async function renderFreshness() {
@@ -121,18 +132,18 @@ async function renderFreshness() {
     const m = await loadJSON("data/meta.json");
     const el = $("#fresh");
     if (!el) return m;
-    const build = { late: "late refresh (near lock)",
-                    recalc: "updated after news" }[m.build] || "overnight main build";
+    const build = { late: "late refresh near lock",
+                    recalc: "updated after team news" }[m.build];
     const warn = staleNotice(m);
     el.classList.toggle("stale", !!warn);
+    el.title = m.model_version || "";
     el.innerHTML =
       (warn ? `<div class="staleline"><b>Out of date.</b> ${warn}</div>` : "") +
-      `Slate <b>${m.slate_date}</b> · ${build} · computed <b>${m.computed_at}</b>` +
+      `<span>Updated <b>${whenAEDT(m.computed_at)}</b>${build ? ` · ${build}` : ""}</span>` +
       (m.lines_region === "us"
-        ? ` · lines from <b>US bookmakers</b> <span class="dim">(Australian books aren't pricing NBA player props yet)</span>`
-        : m.lines_region === "au" ? ` · lines from <b>Australian bookmakers</b>` : "") +
-      ` · <span class="dim">${m.model_version}</span>` +
-      (m.demo ? ` · <span class="demo">DEMO — 25-26 replay, not live</span>` : "");
+        ? `<span>Lines from <b>US bookmakers</b> until Australian books price NBA player props</span>`
+        : m.lines_region === "au" ? `<span>Lines from <b>Australian bookmakers</b></span>` : "") +
+      (m.demo ? `<span class="demo">Demo: last season's replay, not live</span>` : "");
     return m;
   } catch {
     const el = $("#fresh");
@@ -168,7 +179,8 @@ function sortable(table, rows, render) {
 }
 
 /* ---------- board page ---------- */
-const BOARD_STATS = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
+const COMBOS = ["PRA", "PR", "PA", "RA"];
+const BOARD_STATS = ["PTS", "REB", "AST", "3PM", ...COMBOS, "STL", "BLK", "TOV"];
 const TOP_N = 15;
 
 /* per-stat sort state for the leader tables; survives re-renders so a
@@ -183,56 +195,143 @@ const cmpBy = (k, dir) => (a, b) => {
   return (x < y ? -1 : x > y ? 1 : 0) * dir;
 };
 
-/* columns: [key, label, leftAligned, title] */
+/* ---------- board cells ----------
+   One meaning per colour: green = a real edge, or our side landing;
+   orange = our prediction / movement; over and under are neutral. */
+const STAT_WORD = { PTS: "points", REB: "rebounds", AST: "assists",
+  "3PM": "threes", STL: "steals", BLK: "blocks", TOV: "turnovers",
+  PRA: "pts + reb + ast", PR: "pts + reb", PA: "pts + ast", RA: "reb + ast" };
+
+function playerCell(r) {
+  const opp = r.opp ? ` v ${teamMeta(r.opp)[0]}` : "";
+  return `<td class="s pl"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>
+    <div class="sm">${teamBadge(r.team)}${esc(opp)}${
+      r.minutes != null ? ` · ${fmt(r.minutes)} min` : ""}${
+      r.minutes_source && r.minutes_source !== "model"
+        ? ` <span class="badge src">${esc(r.minutes_source)}</span>` : ""}</div>${wwNote(r)}</td>`;
+}
+function predTd(r) {
+  return `<td class="num pred">${predCell(r, true)}<div class="sm">${
+    fmt(r.floor, 0)}–${fmt(r.ceiling, 0)}</div></td>`;
+}
+/* A side is called only on a real (tiered) edge. Below that, the value
+   side can come from the price rather than the line — an under at 2.29
+   with our prediction above the line — which reads as a contradiction. */
+function lineTd(r) {
+  if (r.line == null) return `<td class="num dim">—</td>`;
+  const over = r.side === "over", call = r.side && r.tier;
+  return `<td class="num"><span class="side" title="${
+    call ? `Our side: ${r.side} ${r.line}` : "No side called: not a real edge"}">${call
+      ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ` : ""}${fmt(r.line)}</span>${
+    r.price != null ? `<div class="sm" title="${r.book ? esc(r.book) : ""}">@ ${fmt(r.price, 2)}</div>` : ""}</td>`;
+}
+function diffTd(r) {
+  if (r.diff == null) return `<td class="num dim opt">—</td>`;
+  return `<td class="num opt" title="our prediction minus the line, and as a % of the line">${
+    r.diff > 0 ? "+" : ""}${fmt(r.diff)}<div class="sm">${
+    r.diff_pct > 0 ? "+" : ""}${(r.diff_pct * 100).toFixed(0)}%</div></td>`;
+}
+function priceTd(r) {
+  if (r.price == null) return `<td class="num dim">—</td>`;
+  return `<td class="num">${fmt(r.price, 2)}${r.book
+    ? `<div class="sm l">${esc(r.book)}</div>` : ""}</td>`;
+}
+function edgeTd(r) {
+  if (r.edge == null) return `<td class="num dim">—</td>`;
+  const cls = r.tier ? "hot" : "cold";
+  return `<td class="num"><span class="edge ${cls}" title="${r.tier
+    ? `Tier ${r.tier}: our probability beats the bookmaker's by ${pct(r.edge)}`
+    : "Below the threshold we'd call an edge"}">${
+    r.edge > 0 ? "+" : ""}${pct(r.edge)}</span>${r.diff != null
+    ? `<div class="sm ph">diff ${r.diff > 0 ? "+" : ""}${fmt(r.diff)}</div>` : ""}</td>`;
+}
+function hitTd(r) {
+  if (r.l10_hit == null) return `<td class="num dim opt">—</td>`;
+  return `<td class="num opt"><span class="hit ${r.l10_hit >= 0.6 ? "good" : "meh"}"
+    title="The ${r.lean} landed in ${(r.l10_hit * 100).toFixed(0)}% of his last 10">${
+    (r.l10_hit * 100).toFixed(0)}%</span></td>`;
+}
+
+/* columns: [key, label, leftAligned, title, optional-on-phone] —
+   the owner's Best Bets layout: prediction, line, the difference, and
+   how often the side has landed. Price and edge % live on the full board. */
 const LEADER_COLS = [
-  ["rank", "Rk", true, "rank for this stat across the whole slate"],
-  ["player", "Player", true, ""], ["team", "Team", true, ""],
-  ["proj", "Pred", false, "our prediction"], ["floor", "Floor–Ceil", false, "sorts on floor"],
-  ["minutes", "Min", false, ""], ["line", "Line", false, ""],
-  ["side", "Side", true, ""], ["edge", "Edge", false, ""],
-  ["l10_over", "L10", false, "over-rate vs the line, last 10 games"],
+  ["player", "Player", true, ""],
+  ["proj", "Pred", false, "our prediction, with its 10th–90th percentile range"],
+  ["line", "Line", false, "bookmaker line and price for the side we lean"],
+  ["adiff", "Diff", false, "our prediction minus the line (sorts by size, overs and unders alike)", true],
+  ["edge", "Edge", false, "our probability minus the bookmaker's, margin removed; green = a real edge"],
+  ["l10_hit", "Hit L10", false, "how often our side landed in his last 10 games", true],
 ];
 
-function leaderTable(stat, rows) {
+/* How the boards are ordered. Edge is the default: it is the difference
+   scaled by how much the player's number swings and by the price, so a
+   2-point gap at 1.91 outranks a 2-point gap the bookmaker has already
+   priced in at 1.64, and a 0.5 line can't win on percentage alone.
+   Rows without a line fall to the bottom, biggest prediction first. */
+const SORTS = { edge: "Edge", adiff: "Diff", adpct: "Diff %", proj: "Prediction" };
+let boardSort = "edge";
+
+function leaderTable(stat, rows, titled) {
   // the ACTIVE SORT COLUMN picks the population: default = the 15
-  // biggest projections, sort by Edge = the 15 biggest edges on the
-  // slate, etc. Nulls sort last, so rows with no line never occupy a
-  // slot in an edge-ranked table.
-  const s = leaderSort[stat] || { k: "proj", dir: -1 };
+  // biggest projections, sort by Diff = the 15 biggest gaps to the line,
+  // etc. Nulls sort last, so rows with no line never occupy a slot.
+  const s = leaderSort[stat] || { k: boardSort, dir: -1 };
   const top = rows.filter(r => r.stat === stat)
-    .sort(cmpBy(s.k, s.dir)).slice(0, TOP_N);
-  if (!top.length) return "";
-  const sortedBy = LEADER_COLS.find(c => c[0] === s.k);
-  const byLabel = s.k === "proj" ? "" : ` by ${sortedBy ? sortedBy[1] : s.k}`;
-  const head = LEADER_COLS.map(([k, label, left, title]) =>
-    `<th class="${left ? "s" : ""}${k === s.k ? " sorted" : ""}"
+    .sort((a, b) => cmpBy(s.k, s.dir)(a, b) || (b.proj ?? 0) - (a.proj ?? 0))
+    .slice(0, TOP_N);
+  const head = LEADER_COLS.map(([k, label, left, title, opt]) =>
+    `<th class="${left ? "s" : ""}${k === s.k ? " sorted" : ""}${opt ? " opt" : ""}"
         data-k="${k}"${title ? ` title="${title}"` : ""}>${label}${
       k === s.k ? (s.dir === -1 ? " ▾" : " ▴") : ""}</th>`).join("");
-  return `<div class="section"><h2>${stat} — top ${TOP_N}${byLabel}${
-      byLabel && s.dir === 1 ? " (lowest)" : ""}</h2></div>
-    <div class="tablewrap"><table data-stat="${stat}">
-      <thead><tr>${head}</tr></thead>
-      <tbody>${top.map((r, i) => `<tr>
-        <td class="s dim">${r.rank ?? i + 1}</td>
-        <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${wwNote(r)}</td>
-        <td class="s">${teamBadge(r.team)}</td>
-        <td class="num">${predCell(r, true)}</td>
-        <td class="num dim">${fmt(r.floor)}–${fmt(r.ceiling)}</td>
-        <td class="num">${fmt(r.minutes)}</td>
-        <td class="num">${fmt(r.line)}</td>
-        <td class="s">${r.side ? `<span class="badge ${r.side}">${r.side}</span>` : "—"}</td>
-        <td class="num ${r.edge > 0 ? "pos" : ""}">${pct(r.edge)}</td>
-        <td class="num ${r.l10_over > 0.5 ? "pos" : r.l10_over != null && r.l10_over < 0.5 ? "neg" : "dim"}">${
-          r.l10_over == null ? "—" : (r.l10_over * 100).toFixed(0) + "%"}</td>
-      </tr>`).join("")}</tbody>
-    </table></div>`;
+  const body = top.length ? top.map(r => `<tr>
+        ${playerCell(r)}${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${hitTd(r)}
+      </tr>`).join("")
+    : `<tr><td colspan="6" class="empty">No players match.</td></tr>`;
+  return `<div class="block">${titled
+      ? `<div class="section"><h2>${STAT_WORD[stat] || stat}</h2></div>` : ""}
+    <div class="tablewrap"><table class="board lead" data-stat="${stat}">
+      <thead><tr>${head}</tr></thead><tbody>${body}</tbody>
+    </table></div></div>`;
+}
+
+/* The page's answer in one sentence (brief §9): tonight's top points
+   prediction, and the bookmaker line when there is one. */
+function leadSentence(rows) {
+  const pts = rows.filter(r => r.stat === "PTS" && r.proj != null)
+    .sort((a, b) => b.proj - a.proj);
+  const top = pts.find(r => r.line != null) || pts[0];
+  if (!top) return "";
+  const opp = top.opp ? ` against ${esc(top.opp)}` : "";
+  const line = top.line != null
+    ? `; the line is <span class="n">${fmt(top.line)}</span>${top.book ? ` at ${esc(top.book)}` : ""}` : "";
+  return `<b>${esc(top.player)}</b> is predicted to score <span class="n">${
+    fmt(top.proj)}</span> points${opp} tonight${line}.`;
 }
 
 async function initBoard() {
-  await renderFreshness();
+  const meta = await renderFreshness();
   const data = await loadJSON("data/projections.json");
   let rows = data.rows;
+  // L10 from our side's point of view: an under that the player went
+  // over in 4 of 10 landed 6 of 10
+  rows.forEach(r => {
+    r.diff = r.proj == null || r.line == null ? null : +(r.proj - r.line).toFixed(1);
+    r.diff_pct = r.diff == null || !r.line ? null : r.diff / r.line;
+    r.adiff = r.diff == null ? null : Math.abs(r.diff);
+    r.adpct = r.diff_pct == null ? null : Math.abs(r.diff_pct);
+    // the side we call on a real edge, else the way our prediction leans
+    const lean = r.tier ? r.side : (r.diff == null ? null : r.diff >= 0 ? "over" : "under");
+    r.lean = lean;
+    r.l10_hit = r.l10_over == null || !lean ? null
+      : (lean === "under" ? 1 - r.l10_over : r.l10_over);
+  });
   renderMovers(data);
+  const games = [...new Set(rows.map(r => r.game).filter(Boolean))].sort();
+  $("#lead").innerHTML = leadSentence(rows);
+  const lbl = $("#slateLbl");
+  if (lbl) lbl.textContent = `${games.length} game${games.length === 1 ? "" : "s"} · ${
+    new Set(rows.map(r => r.player_id)).size} players`;
   const tbody = $("#board tbody");
   const statSel = $("#fStat"), tierSel = $("#fTier"),
         teamSel = $("#fTeam"), gameSel = $("#fGame"), q = $("#fQ");
@@ -241,18 +340,51 @@ async function initBoard() {
     o.value = o.textContent = t;
     teamSel.append(o);
   });
-  [...new Set(rows.map(r => r.game).filter(Boolean))].sort().forEach(g => {
+  games.forEach(g => {
     const o = document.createElement("option");
     o.value = o.textContent = g;
     gameSel.append(o);
   });
 
+  // leaders: one stat at a time, chosen by tab
+  let stat = "PTS";
+  $("#statTabs").innerHTML = BOARD_STATS.filter(s => rows.some(r => r.stat === s)).map(s =>
+    `<button class="chip${s === stat ? " on" : ""}" data-s="${s}">${s}</button>`).join("");
+  $("#statTabs").onclick = e => {
+    const c = e.target.closest(".chip");
+    if (!c) return;
+    stat = c.dataset.s;
+    $$(".chip", $("#statTabs")).forEach(x => x.classList.toggle("on", x.dataset.s === stat));
+    render();
+  };
+
+  // markets tonight's data actually carries (older payloads have no combos)
+  const present = new Set(rows.map(r => r.stat));
+  const have = list => list.filter(s => present.has(s));
+  const sortSel = $("#fSort");
+  sortSel.innerHTML = Object.entries(SORTS).map(([k, l]) =>
+    `<option value="${k}"${k === boardSort ? " selected" : ""}>Sort: ${l}</option>`).join("");
+  sortSel.onchange = () => {
+    boardSort = sortSel.value;
+    Object.keys(leaderSort).forEach(k => delete leaderSort[k]);  // one order for every board
+    rows.sort((a, b) => cmpBy(boardSort, -1)(a, b) || (b.proj ?? 0) - (a.proj ?? 0));
+    render();
+  };
+
+  // wide screens: the four main markets side by side, the rest behind a
+  // toggle; phones: one market at a time from the tabs
+  const wide = matchMedia("(min-width: 900px)");
+  wide.addEventListener("change", () => render());
+  let others = false;
+
   // leader tables sort independently, per stat
   $("#leaders").onclick = e => {
+    const more = e.target.closest("#moreBtn");
+    if (more) { others = !others; render(); return; }
     const th = e.target.closest("th[data-k]");
     if (!th) return;
     const stat = th.closest("table").dataset.stat;
-    const cur = leaderSort[stat] || { k: "proj", dir: -1 };
+    const cur = leaderSort[stat] || { k: boardSort, dir: -1 };
     leaderSort[stat] = { k: th.dataset.k,
                          dir: cur.k === th.dataset.k ? -cur.dir : -1 };
     render();
@@ -265,7 +397,7 @@ async function initBoard() {
     view = c.dataset.v;
     $$(".chip", $("#viewChips")).forEach(x =>
       x.classList.toggle("on", x.dataset.v === view));
-    $("#leaders").hidden = view !== "leaders";
+    $("#leadersWrap").hidden = view !== "leaders";
     $("#fullboard").hidden = view !== "full";
     render();
   };
@@ -282,8 +414,16 @@ async function initBoard() {
   const render = () => {
     const base = rows.filter(shared);
     if (view === "leaders") {
-      $("#leaders").innerHTML = BOARD_STATS.map(s => leaderTable(s, base))
-        .join("") || `<div class="empty">No players match.</div>`;
+      $("#statTabs").hidden = wide.matches;
+      $("#leaders").innerHTML = wide.matches
+        ? `<div class="grid2">${["PTS", "REB", "AST", "3PM"].map(s =>
+            leaderTable(s, base, true)).join("")}</div>
+           ${have(COMBOS).length ? `<div class="grid2">${have(COMBOS).map(s =>
+            leaderTable(s, base, true)).join("")}</div>` : ""}
+           <button class="chip" id="moreBtn">${others ? "Hide" : "Show"} steals, blocks, turnovers</button>
+           ${others ? `<div class="grid2 grid3">${["STL", "BLK", "TOV"].map(s =>
+             leaderTable(s, base, true)).join("")}</div>` : ""}`
+        : leaderTable(stat, base, false);
       return;
     }
     const s = statSel.value, t = tierSel.value;
@@ -293,33 +433,22 @@ async function initBoard() {
     renderFull(view_);
   };
 
-  const renderFull = view =>  {
+  const renderFull = view => {
     tbody.innerHTML = view.map(r => `<tr>
-      <td class="s dim">${r.rank ?? "—"}</td>
-      <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${wwNote(r)}</td>
-      <td class="s">${teamBadge(r.team)}</td>
-      <td class="s">${r.stat}</td>
-      <td class="num">${predCell(r, false)}</td>
-      <td class="num dim">${fmt(r.floor)}–${fmt(r.ceiling)}</td>
-      <td class="num">${fmt(r.minutes)}${r.minutes_source && r.minutes_source !== "model"
-        ? ` <span class="badge src">${r.minutes_source}</span>` : ""}</td>
-      <td class="num">${fmt(r.line)}</td>
-      <td class="s">${r.side ? `<span class="badge ${r.side}">${r.side}</span>` : "—"}</td>
-      <td class="num ${r.edge > 0 ? "pos" : ""}">${pct(r.edge)}</td>
-      <td class="num ${r.l10_over > 0.5 ? "pos" : r.l10_over != null && r.l10_over < 0.5 ? "neg" : "dim"}">${
-        r.l10_over == null ? "—" : (r.l10_over * 100).toFixed(0) + "%"}</td>
-      <td class="s">${r.tier ? `<span class="badge ${r.tier}">${r.tier}</span>`
+      ${playerCell(r)}
+      <td class="s"><span class="side">${r.stat}</span></td>
+      ${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${hitTd(r)}
+      <td class="s opt">${r.tier ? `<span class="badge ${r.tier}">${r.tier}</span>`
         : (r.gate_status && r.gate_status !== "passed"
-           ? `<span class="dim" title="${r.gate_status}">·</span>` : "—")}</td>
-    </tr>`).join("") || `<tr><td colspan="12" class="empty">No rows match.</td></tr>`;
+           ? `<span class="dim" title="${esc(r.gate_status)}">·</span>` : "—")}</td>
+    </tr>`).join("") || `<tr><td colspan="8" class="empty">No rows match.</td></tr>`;
   };
 
   [statSel, tierSel, teamSel, gameSel].forEach(el => el.onchange = render);
   q.oninput = render;
   sortable($("#board"), rows, render);
-  // default: real (tiered) edges first, then near-misses, then the rest
-  const rank = r => r.tier ? 2 : (r.gate_status === "failed:edge_below_tier" ? 1 : 0);
-  rows.sort((a, b) => rank(b) - rank(a) || (b.edge ?? -1) - (a.edge ?? -1));
+  // default: biggest edge first; rows without a line after, by prediction
+  rows.sort((a, b) => cmpBy(boardSort, -1)(a, b) || (b.proj ?? 0) - (a.proj ?? 0));
   render();
 }
 
@@ -520,7 +649,7 @@ async function initPlayer() {
       ${sg(w.REB)} rebounds and ${sg(w.AST)} assists per game
       (${w.n_without} games).</p>`).join("");
   }
-  $("#projCards").innerHTML = S.filter(s => h.projections[s]).map(s => {
+  $("#projCards").innerHTML = [...S, ...COMBOS].filter(s => h.projections[s]).map(s => {
     const v = h.projections[s];
     return `<div class="card"><div class="k">${s}</div>
       <div class="v">${fmt(v.mean)}</div>
@@ -528,14 +657,15 @@ async function initPlayer() {
   }).join("");
 
   /* --- interactive prop chart --- */
-  const CHART_STATS = [...S, "PRA"];
+  const CHART_STATS = [...S, ...COMBOS];
   const log = h.game_log || [];
   const lines = h.lines || {};
   let stat = lines.PTS ? "PTS" : (Object.keys(lines)[0] || "PTS");
-  const projOf = s => s === "PRA"
-    ? ["PTS", "REB", "AST"].reduce((a, k) =>
-        a + (h.projections[k]?.mean || 0), 0)
-    : h.projections[s]?.mean;
+  const COMBO_OF = { PRA: ["PTS", "REB", "AST"], PR: ["PTS", "REB"],
+                     PA: ["PTS", "AST"], RA: ["REB", "AST"] };
+  const projOf = s => h.projections[s]?.mean ?? (COMBO_OF[s]
+    ? COMBO_OF[s].reduce((a, k) => a + (h.projections[k]?.mean || 0), 0)
+    : undefined);
   const defLine = s => lines[s] ? lines[s].line
     : (projOf(s) != null ? Math.floor(projOf(s)) + 0.5 : 0.5);
   let line = defLine(stat);
@@ -880,6 +1010,9 @@ async function initMatchups() {
     Object.values(data.windows).flat().map(r => r.pos))]
     .sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
   let pos = positions[0];
+  const winSel = $("#winSel");
+  [...winSel.options].forEach(o => { if (!data.windows[o.value]) o.remove(); });
+  if (!winSel.options.length) throw new Error("no matchup windows");
   if (data.coverage != null) {
     const note = document.createElement("p");
     note.className = "sub";
@@ -994,8 +1127,9 @@ addEventListener("DOMContentLoaded", () => {
                  wow: initWow, record: initRecord,
                  matchups: initMatchups, boxscore: initBoxscore }[page];
   if (boot) boot().catch(e => {
+    console.error(e);
     const m = $("main");
-    if (m) m.innerHTML = `<div class="empty">Data not available yet
-      (${e.message}). The nightly run publishes it here.</div>`;
+    if (m) m.innerHTML = `<div class="empty">This page's numbers aren't
+      published yet. The morning run publishes them here.</div>`;
   });
 });
