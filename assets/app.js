@@ -1156,11 +1156,87 @@ async function initRecord() {
        night — every gated edge, bet or not. No back-filled picks.</td></tr>`;
 }
 
+/* ---------- Just the Tip ---------- */
+function auDay(isoDate) {
+  const d = new Date(isoDate + "T12:00:00Z");
+  return new Intl.DateTimeFormat("en-AU", { timeZone: "UTC", weekday: "short",
+    day: "numeric", month: "short" }).format(d).replace(",", "");
+}
+const sideWord = s => s === "over" ? "Over" : "Under";
+const sideGlyph = s => s === "over" ? "▲O" : "▼U";
+
+function tipBet(t) {
+  return `${t.market_label} ${sideWord(t.side)} <b>${fmt(t.line)}</b> @ `
+    + `<b>${fmt(t.price, 2)}</b>, ${t.book_label}`;
+}
+
+async function initTip() {
+  await renderFreshness();
+  const d = await loadJSON("data/tips.json");
+  const t = d.today;
+  const day = auDay(d.au_game_date);
+  if (t) {
+    const game = [t.team, t.opp].filter(Boolean).join(" v ");
+    $("#tlead").innerHTML = `Our biggest edge for ${day} is <b>${t.player}</b> `
+      + `${sideWord(t.side).toLowerCase()} ${fmt(t.line)} ${t.market_label.toLowerCase()} `
+      + `at ${fmt(t.price, 2)} with ${t.book_label}; we predict `
+      + `<span class="n">${fmt(t.model_proj)}</span>.`;
+    const closed = t.closing_price != null
+      ? `Closed ${fmt(t.closing_line)} @ ${fmt(t.closing_price, 2)} · CLV ${pct(t.clv)}` : "";
+    const res = t.result ? ` · ${t.result}${t.actual != null ? ` (${fmt(t.actual)})` : ""}` : "";
+    $("#tcard").innerHTML = `<div class="tipcard">
+      <div class="ctx">${day.toUpperCase()}${t.trial ? `<span class="tag trial">Preseason trial</span>` : ""}</div>
+      <div class="who">${t.player}</div>
+      <div class="ctx">${game}${t.game_start ? ` · tips off ${whenAEDT(t.game_start).split(",")[0]}` : ""}</div>
+      <div class="bet">${tipBet(t)}</div>
+      <div class="figs">
+        <div class="fig"><div class="k">Our prediction</div><div class="v ours">${fmt(t.model_proj)}</div></div>
+        <div class="fig"><div class="k">Book line</div><div class="v">${fmt(t.line)}</div></div>
+        <div class="fig"><div class="k">Edge ${sideGlyph(t.side)}</div><div class="v ${t.side}">${pct(t.edge)}</div></div>
+      </div>
+      <div class="foot">Posted ${t.posted_at ? whenAEDT(t.posted_at) : ""}${t.au_book ? "" : " · US line: Australian books aren't pricing NBA player props yet"}${closed ? " · " + closed : ""}${res}</div>
+    </div>`;
+  } else {
+    $("#tlead").textContent = `No tip is posted for ${day} yet. It goes up around `
+      + `8pm Sydney time the night before the games, once the bookmakers' `
+      + `player lines are up; if none clears the rules, there's no tip.`;
+  }
+
+  const s = d.summary;
+  $("#tnote").textContent = s.n_tips
+    ? `Regular-season tips only; preseason trial tips are listed below but not counted.`
+    : `The record starts on opening night, 21 October (AEDT). Preseason tips are a trial run: listed, never counted.`;
+  $("#tcards").innerHTML = `
+    <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(s.avg_clv)}</div><div class="r">${s.n_clv} graded at the close</div></div>
+    <div class="card"><div class="k">Beat the close</div><div class="v">${pct(s.beat_close)}</div></div>
+    <div class="card"><div class="k">Won–lost</div><div class="v">${s.wins}–${s.losses}</div><div class="r">${s.pushes} push · ${s.voids} void</div></div>
+    <div class="card"><div class="k">Hit rate</div><div class="v">${pct(s.hit_rate)}</div></div>
+    <div class="card"><div class="k">Return (flat)</div><div class="v">${pct(s.roi)}</div></div>`;
+  const tb = $("#tips tbody");
+  tb.innerHTML = d.tips.length ? d.tips.map(r => `<tr class="${r.trial ? "trial" : ""}">
+      <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}</td>
+      <td class="s">${r.player}</td>
+      <td class="s">${r.market_label} ${sideGlyph(r.side)} ${fmt(r.line)}</td>
+      <td class="num opt">${fmt(r.price, 2)}</td>
+      <td class="num opt">${r.closing_price != null ? (r.closing_line !== r.line ? fmt(r.closing_line) + " @ " : "") + fmt(r.closing_price, 2) : "—"}</td>
+      <td class="num ${r.clv > 0 ? "pos" : r.clv < 0 ? "neg" : ""}">${pct(r.clv)}</td>
+      <td class="num">${r.result ?? "—"}</td>
+    </tr>`).join("")
+    : `<tr><td colspan="7" class="empty">No tips yet. The first goes up the
+       night before the first preseason games.</td></tr>`;
+}
+
+function dayAfter(iso) {
+  const d = new Date(iso + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() + 1);
+  return d.toISOString().slice(0, 10);
+}
+
 /* ---------- boot ---------- */
 addEventListener("DOMContentLoaded", () => {
   const page = document.body.dataset.page;
   const boot = { board: initBoard, player: initPlayer,
-                 wow: initWow, record: initRecord,
+                 wow: initWow, record: initRecord, tip: initTip,
                  matchups: initMatchups, boxscore: initBoxscore }[page];
   if (boot) boot().catch(e => {
     console.error(e);

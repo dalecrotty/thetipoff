@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NBA Matchups: Player Props by Defence — the tipoff</title>
-<meta name="description" content="What each NBA defence gives up by position — points, rebounds, assists and threes — for reading tonight's player props.">
+<title>NBA Tips Today: Our Biggest Edge, on the Record | thetipoff</title>
+<meta name="description" content="NBA tips today from thetipoff: the single biggest edge between our NBA predictions and the bookmaker line, posted the night before, graded on closing-line value.">
 <meta name="theme-color" content="#0a0d11">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%230a0d11%22/%3E%3Cg transform=%22translate(8.40 56.32) scale(0.5792)%22%3E%3Cpath d=%22M33.5 0.0Q26.1 0.0 22.6 -3.9000000000000004Q19.1 -7.800000000000001 19.1 -14.0V-41.5H4.1000000000000005V-51.6H14.3Q17.400000000000002 -51.6 18.700000000000003 -52.85Q20.0 -54.1 20.0 -57.300000000000004V-69.8H31.900000000000002V-51.6H52.900000000000006V-41.5H31.900000000000002V-10.100000000000001H52.900000000000006V0.0Z%22 fill=%22%23e8ebf0%22/%3E%3Ccircle cx=%2266.90%22 cy=%22-73.47%22 r=%2210.50%22 fill=%22%23ff6b2c%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,14 @@
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/app.js" defer></script>
 </head>
-<body data-page="matchups">
+<body data-page="tip">
 <header class="site">
   <a class="logo" href="index.html" aria-label="thetipoff home">the<b>tipoff</b><i></i></a>
   <nav class="site">
     <a href="index.html">Predictions</a>
-    <a href="tip.html">Just the Tip</a>
+    <a href="tip.html" class="on">Just the Tip</a>
     <a href="player.html">Players</a>
-    <a href="matchups.html" class="on">Matchups</a>
+    <a href="matchups.html">Matchups</a>
     <a href="with-without.html">With/Without</a>
     <a href="track-record.html">Track record</a>
   </nav>
@@ -31,31 +31,41 @@
 </header>
 <div class="fresh" id="fresh">Loading…</div>
 <main>
-  <h1>Matchups — what each defence gives up</h1>
-  <p class="sub">Per-minute production allowed to each position, as a %
-    above (+) or below (−) the league rate for that position. Thin
-    samples show as — rather than a fake number. Click a column to sort.</p>
-  <div class="controls">
-    <div class="chips" id="posChips"></div>
-    <select id="winSel">
-      <option value="model">Recent games count more</option>
-      <option value="month">Last month</option>
-      <option value="l3w">Last 3 weeks</option>
-      <option value="season">All games</option>
-    </select>
-  </div>
+  <p class="kicker">Just the Tip</p>
+  <h1>NBA tips today: our biggest edge, on the record</h1>
+  <p class="lead" id="tlead">Loading…</p>
+  <div id="tcard"></div>
+
+  <div class="section"><h2>The record</h2></div>
+  <p class="sub" id="tnote"></p>
+  <div class="cards" id="tcards"></div>
   <div class="tablewrap">
-    <table id="mx">
+    <table id="tips">
       <thead><tr>
-        <th class="s" data-k="team">Vs team</th>
-        <th data-k="minutes" title="sample minutes in the cell">Min</th>
-        <th data-k="PTS">PTS</th><th data-k="REB">REB</th>
-        <th data-k="AST">AST</th><th data-k="3PM">3PM</th>
-        <th data-k="STL">STL</th><th data-k="BLK">BLK</th>
-        <th data-k="TOV">TOV</th>
+        <th class="s">Games</th><th class="s">Player</th><th class="s">Tip</th>
+        <th class="opt">Posted</th><th class="opt">Closed</th><th>CLV</th>
+        <th>Result</th>
       </tr></thead>
       <tbody></tbody>
     </table>
+  </div>
+
+  <div class="section"><h2>How it's chosen</h2></div>
+  <div class="prose">
+    <p>The pipeline picks it, never a person. Every night it compares our
+    prediction for every player with every bookmaker's line and takes the
+    single biggest gap between our probability and the bookmaker's, once
+    the bookmaker's margin is taken out.</p>
+    <p>Points, rebounds, assists, threes and the combined markets (Pts + Reb,
+    Pts + Ast, Reb + Ast, Pts + Reb + Ast) only. The line has to be at
+    Sportsbet or TAB, at a price of 1.70 or better, for a player with a
+    settled role. It's posted around 8pm Sydney time the night before the
+    games.</p>
+    <p>It's graded first on closing-line value: the price we posted against
+    the bookmaker's fair price when the market closed. Beating the close
+    over a season is the clearest sign the numbers are ahead of the market;
+    wins and losses over a few dozen tips mostly measure luck. Preseason tips
+    are a trial run: listed here, never counted.</p>
   </div>
 </main>
 <footer class="rg">
