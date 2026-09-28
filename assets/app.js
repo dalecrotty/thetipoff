@@ -214,7 +214,7 @@ function predTd(r) {
   return `<td class="num pred">${predCell(r, true)}<div class="sm">${
     fmt(r.floor, 0)}–${fmt(r.ceiling, 0)}</div></td>`;
 }
-/* A side is called only on a real (tiered) edge. Below that, the value
+/* A side is called only on a clear edge (3%+; internal threshold, never shown as a tier). Below that, the value
    side can come from the price rather than the line — an under at 2.29
    with our prediction above the line — which reads as a contradiction. */
 function lineTd(r) {
@@ -234,7 +234,7 @@ function priceTd(r) {
     ? `<div class="sm l">${esc(r.book)}</div>` : ""}</td>`;
 }
 /* The edge carries its side — "▼U 11.3%" — so an under never reads as an
-   over. Only a real (tiered) edge names a side; below that the value
+   over. Only a clear edge (3%+) names a side; below that the value
    side can come from the price rather than the line, so it's shown
    muted and unsided. */
 function edgeTd(r) {
@@ -244,7 +244,7 @@ function edgeTd(r) {
     ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ${pct(r.edge)}`
     : pct(r.edge);
   return `<td class="num"><span class="edge ${r.tier ? `hot ${r.side}` : "cold"}" title="${r.tier
-    ? `Tier ${r.tier}: the ${r.side} ${r.line} at ${fmt(r.price, 2)} — our probability beats the bookmaker's by ${pct(r.edge)}`
+    ? `The ${r.side} ${r.line} at ${fmt(r.price, 2)}: our probability beats the bookmaker's (margin removed) by ${pct(r.edge)}`
     : "Below the threshold we'd call an edge"}">${label}</span>${r.diff != null
     ? `<div class="sm ph">diff ${r.diff > 0 ? "+" : ""}${fmt(r.diff)}</div>` : ""}</td>`;
 }
@@ -445,7 +445,7 @@ async function initBoard() {
     const s = statSel.value, t = tierSel.value;
     const view_ = base.filter(r =>
       (s === "all" || r.stat === s) &&
-      (t === "all" || (t === "gated" ? r.tier : r.tier === t)));
+      (t === "all" || (t === "gated" && r.tier)));
     renderFull(view_);
   };
 
@@ -454,9 +454,6 @@ async function initBoard() {
       ${playerCell(r)}
       <td class="s" data-stat="${r.stat}"><span class="side mkt">${r.stat}</span></td>
       ${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${muTd(r)}${hitTd(r)}
-      <td class="s opt">${r.tier ? `<span class="badge ${r.tier}">${r.tier}</span>`
-        : (r.gate_status && r.gate_status !== "passed"
-           ? `<span class="dim" title="${esc(r.gate_status)}">·</span>` : "—")}</td>
     </tr>`).join("") || `<tr><td colspan="9" class="empty">No rows match.</td></tr>`;
   };
 
@@ -724,8 +721,8 @@ async function initPlayer() {
     const line = lineFor(stat);
     lineEl.value = line;
     $("#lineSrc").textContent = lines[stat]
-      ? (line === lines[stat].line ? `book line (${lines[stat].side}` +
-         (lines[stat].tier ? `, tier ${lines[stat].tier})` : ")")
+      ? (line === lines[stat].line
+         ? `book line${lines[stat].book ? ` (${lines[stat].book})` : ""}`
          : "custom line")
       : "no book line — custom";
     // the chart and hit rates follow the filters
@@ -1143,7 +1140,7 @@ async function initRecord() {
   $("#recCards").innerHTML = `
     <div class="card"><div class="k">Graded edges</div><div class="v">${s.n_graded}</div></div>
     <div class="card"><div class="k">Hit rate</div><div class="v">${pct(s.hit_rate)}</div></div>
-    <div class="card"><div class="k">ROI (flat, tier A)</div><div class="v">${pct(s.roi)}</div></div>
+    <div class="card"><div class="k">ROI (flat stakes)</div><div class="v">${pct(s.roi)}</div></div>
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(s.avg_clv)}</div></div>`;
   $("#recnote").textContent = d.note || "";
   const tbody = $("#rec tbody");
@@ -1151,7 +1148,7 @@ async function initRecord() {
     <td class="s dim">${r.slate_date}</td><td class="s">${r.market}</td>
     <td class="s"><span class="badge ${r.side}">${r.side}</span></td>
     <td class="num">${fmt(r.line)}</td><td class="num">${fmt(r.price, 2)}</td>
-    <td class="s">${r.tier ? `<span class="badge ${r.tier}">${r.tier}</span>` : "—"}</td>
+
     <td class="s">${r.result ?? "ungraded"}</td>
     <td class="num ${r.clv > 0 ? "pos" : r.clv < 0 ? "neg" : ""}">${pct(r.clv)}</td>
   </tr>`).join("")
