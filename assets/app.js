@@ -245,8 +245,7 @@ function edgeTd(r) {
     : pct(r.edge);
   return `<td class="num"><span class="edge ${r.tier ? `hot ${r.side}` : "cold"}" title="${r.tier
     ? `Tier ${r.tier}: the ${r.side} ${r.line} at ${fmt(r.price, 2)} — our probability beats the bookmaker's by ${pct(r.edge)}`
-    : "Below the threshold we'd call an edge"}">${label}</span>${r.large
-    ? ` <span class="flag" title="An unusually large edge — worth checking the line isn't stale or suspended">⚑</span>` : ""}${r.diff != null
+    : "Below the threshold we'd call an edge"}">${label}</span>${r.diff != null
     ? `<div class="sm ph">diff ${r.diff > 0 ? "+" : ""}${fmt(r.diff)}</div>` : ""}</td>`;
 }
 function ordinal(n) {
