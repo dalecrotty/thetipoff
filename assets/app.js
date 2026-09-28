@@ -1232,11 +1232,261 @@ function dayAfter(iso) {
   return d.toISOString().slice(0, 10);
 }
 
+/* ---------- Games section: shared ---------- */
+/* The Australian date a slate is played on, from its first tip. */
+function auDate(iso) {
+  return new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Sydney",
+    weekday: "short", day: "numeric", month: "short" }).format(new Date(iso)).replace(",", "");
+}
+const code = t => teamMeta(t)[0];
+const signed = v => v == null ? "—" : (v > 0 ? "+" : v < 0 ? "−" : "") + fmt(Math.abs(v));
+/* "GSW −4.9": the favoured side and its spread, from a home line */
+function favLine(g, homeLine) {
+  if (homeLine == null) return "—";
+  if (homeLine === 0) return "Pick'em";
+  return homeLine < 0 ? `${code(g.home)} −${fmt(-homeLine)}` : `${code(g.away)} −${fmt(homeLine)}`;
+}
+function edgeSpan(r) {
+  const over = r.side === "over";
+  return `<span class="edge hot ${r.side}"><span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ${pct(r.edge)}</span>`;
+}
+
+/* ---------- home ---------- */
+async function initHome() {
+  await renderFreshness();
+  const [tips, board, gd] = await Promise.all([
+    loadJSON("data/tips.json").catch(() => null),
+    loadJSON("data/projections.json").catch(() => null),
+    loadJSON("data/games.json").catch(() => null)]);
+  const games = gd?.games || [];
+  if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${auDate(games[0].start)}`;
+
+  const t = tips?.today;
+  const rec = tips?.summary;
+  $("#hTip").innerHTML = `<div class="ph2"><span>Just the Tip</span><a href="tip.html">Record →</a></div>` + (t
+    ? `<div class="tipmini">
+        <div class="who">${esc(t.player)}</div>
+        <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${fmt(t.price, 2)}</b>, ${esc(t.book_label)}</div>
+        <div class="sm">Our prediction <b class="ours">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
+      </div>`
+    : `<p class="dim">Our biggest edge goes up around 8pm Sydney time the night before the games.</p>`)
+    + (rec && rec.n_tips ? `<div class="sm dim">Season: ${rec.wins}–${rec.losses}, average CLV ${pct(rec.avg_clv)}</div>` : "");
+
+  const rows = (board?.rows || []).filter(r => r.edge != null && r.line != null && r.tier)
+    .sort((a, b) => b.edge - a.edge).slice(0, 6);
+  $("#hEdges").innerHTML = `<div class="ph2"><span>Biggest edges tonight</span><a href="predictions.html">All predictions →</a></div>` + (rows.length
+    ? `<table class="mini"><tbody>${rows.map(r => `<tr>
+        <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a> <span class="sm dim">${esc(STAT_WORD[r.stat] || r.stat)}</span></td>
+        <td class="num"><span class="ours">${fmt(r.proj)}</span> <span class="dim">v ${fmt(r.line)}</span></td>
+        <td class="num">${edgeSpan(r)}</td></tr>`).join("")}</tbody></table>`
+    : `<p class="dim">Edges appear once the bookmakers post tonight's player lines.</p>`);
+
+  $("#hGames").innerHTML = games.length ? games.map(g => {
+    const fav = g.p_home == null ? null : g.p_home >= 0.5 ? [g.home, g.p_home] : [g.away, 1 - g.p_home];
+    return `<a class="gmini" href="games.html#g${esc(g.event_id)}">
+      <div class="t">${g.start ? aedtTime(g.start) : ""}</div>
+      <div class="m">${teamBadge(g.away)} <span class="dim">@</span> ${teamBadge(g.home)}</div>
+      <div class="sm">${favLine(g, g.line_home)} · ${fmt(g.total)}</div>
+      ${fav ? `<div class="sm dim">${code(fav[0])} ${pct(fav[1]).replace(".0%", "%")} to win</div>` : ""}
+    </a>`; }).join("")
+    : `<p class="dim">No games tonight.</p>`;
+}
+
+/* ---------- game predictions ---------- */
+async function initGames() {
+  await renderFreshness();
+  const d = await loadJSON("data/games.json");
+  const games = d.games || [];
+  if (games.length && games[0].start) $("#gday").textContent = auDate(games[0].start);
+  if (!games.length) {
+    $("#glead").textContent = "No NBA games tonight.";
+    return;
+  }
+  // answer first: the game where we differ most from the bookmakers
+  const gap = g => (g.line_home != null && g.book_line_home != null) ? Math.abs(g.line_home - g.book_line_home) : -1;
+  const top = [...games].sort((a, b) => gap(b) - gap(a))[0];
+  const winner = top.pred_home >= top.pred_away ? [top.home, top.away, top.pred_home, top.pred_away]
+                                                 : [top.away, top.home, top.pred_away, top.pred_home];
+  $("#glead").innerHTML = `We predict ${esc(winner[0])} to beat ${esc(winner[1])} `
+    + `<span class="n">${fmt(winner[2], 0)}–${fmt(winner[3], 0)}</span>`
+    + (top.book_line_home != null ? `; the bookmakers have ${favLine(top, top.book_line_home)}, `
+      + `we have ${favLine(top, top.line_home)}.` : ".")
+    + ` ${games.length} game${games.length > 1 ? "s" : ""} tonight.`;
+
+  $("#games").innerHTML = games.map(g => {
+    const sd = (g.line_home != null && g.book_line_home != null) ? g.line_home - g.book_line_home : null;
+    const td = (g.total != null && g.book_total != null) ? g.total - g.book_total : null;
+    const win = p => p == null ? "—" : pct(p).replace(".0%", "%");
+    return `<article class="game" id="g${esc(g.event_id)}">
+      <header><span class="t">${g.start ? whenAEDT(g.start) : ""}</span></header>
+      <div class="score">
+        <div class="side">${teamBadge(g.away)} <span class="nm">${esc(g.away)}</span><b class="ours">${fmt(g.pred_away, 0)}</b></div>
+        <div class="side">${teamBadge(g.home)} <span class="nm">${esc(g.home)}</span><b class="ours">${fmt(g.pred_home, 0)}</b></div>
+      </div>
+      <table class="gt"><thead><tr><th class="s"></th><th>Ours</th><th>Bookmakers</th><th>Gap</th></tr></thead><tbody>
+        <tr><td class="s">Spread</td><td class="num ours">${favLine(g, g.line_home)}</td>
+          <td class="num">${favLine(g, g.book_line_home)}</td>
+          <td class="num ${sd != null && Math.abs(sd) >= 2 ? "gap" : "dim"}">${sd == null ? "—" : fmt(Math.abs(sd)) + " pts"}</td></tr>
+        <tr><td class="s">Total</td><td class="num ours">${fmt(g.total)}<div class="sm dim">${fmt(g.total_lo, 0)}–${fmt(g.total_hi, 0)}</div></td>
+          <td class="num">${fmt(g.book_total)}</td>
+          <td class="num ${td != null && Math.abs(td) >= 3 ? "gap" : "dim"}">${td == null ? "—" : signed(td)}</td></tr>
+        <tr><td class="s">${code(g.home)} to win</td><td class="num ours">${win(g.p_home)}</td>
+          <td class="num">${win(g.book_p_home)}</td><td class="num dim"></td></tr>
+      </tbody></table>
+    </article>`; }).join("");
+
+  // SportsEvent markup, one per game (brief §9)
+  const ld = games.filter(g => g.start).map(g => ({
+    "@context": "https://schema.org", "@type": "SportsEvent",
+    name: `${g.away} at ${g.home}`, startDate: g.start, sport: "Basketball",
+    homeTeam: { "@type": "SportsTeam", name: g.home },
+    awayTeam: { "@type": "SportsTeam", name: g.away },
+    description: `Prediction: ${g.home} ${fmt(g.pred_home, 0)}, ${g.away} ${fmt(g.pred_away, 0)}; total ${fmt(g.total)}.`,
+  }));
+  const s = document.createElement("script");
+  s.type = "application/ld+json"; s.textContent = JSON.stringify(ld);
+  document.head.appendChild(s);
+}
+
+/* ---------- schedule (AEDT) ---------- */
+async function initSchedule() {
+  await renderFreshness();
+  const d = await loadJSON("data/games.json");
+  const games = d.games || [];
+  if (!games.length) { $("#sclead").textContent = "No NBA games today."; return; }
+  const first = games.find(g => g.start);
+  $("#sclead").innerHTML = `There ${games.length === 1 ? "is 1 NBA game" : `are ${games.length} NBA games`} today`
+    + (first ? ` (${auDate(first.start)}); the first tips off at <b>${whenAEDT(first.start).split(",")[0]}</b>.` : ".");
+  $("#sched tbody").innerHTML = games.map(g => {
+    const hw = g.pred_home != null && g.pred_home >= g.pred_away;
+    return `<tr>
+      <td class="s">${g.start ? whenAEDT(g.start).split(",")[0] : "—"}</td>
+      <td class="s"><a href="games.html#g${esc(g.event_id)}">${teamBadge(g.away)} <span class="tn">${esc(g.away)}</span> <span class="dim">@</span> ${teamBadge(g.home)} <span class="tn">${esc(g.home)}</span></a></td>
+      <td class="s">${g.pred_home == null ? "—" : `${esc(code(hw ? g.home : g.away))} by ${fmt(Math.abs(g.pred_home - g.pred_away), 0)}`}</td>
+      <td class="num">${fmt(g.total)}</td></tr>`; }).join("");
+}
+
+/* ---------- situational splits ---------- */
+const SPLIT_FILTERS = [
+  { k: "venue", label: "Venue", opts: [["all", "All"], ["home", "Home"], ["away", "Away"]],
+    f: (r, v) => v === "all" || (v === "home") === r.home },
+  { k: "b2b", label: "Back-to-back", opts: [["all", "All"], ["team", "Team on B2B"], ["opp", "Opponent on B2B"], ["either", "Either"], ["neither", "Neither"]],
+    f: (r, v) => { const t = r.rest === 0, o = r.opp_rest === 0;
+      return v === "all" || (v === "team" ? t : v === "opp" ? o : v === "either" ? (t || o) : (!t && !o)); } },
+  { k: "rest", label: "Rest days", opts: [["all", "All"], ["0", "0"], ["1", "1"], ["2", "2+"]],
+    f: (r, v) => v === "all" || (r.rest != null && (v === "2" ? r.rest >= 2 : r.rest === +v)) },
+  { k: "role", label: "Favourite", opts: [["all", "All"], ["fav", "Favourite"], ["dog", "Underdog"]],
+    f: (r, v) => v === "all" || (r.spread != null && (v === "fav" ? r.spread < 0 : r.spread > 0)) },
+  { k: "band", label: "Spread", opts: [["all", "All"], ["s", "0–3"], ["m", "3.5–7"], ["l", "7.5+"]],
+    f: (r, v) => { if (v === "all") return true; if (r.spread == null) return false;
+      const a = Math.abs(r.spread); return v === "s" ? a <= 3 : v === "m" ? a > 3 && a <= 7 : a > 7; } },
+  { k: "total", label: "Total", opts: [["all", "All"], ["lo", "Under 220"], ["mid", "220–234.5"], ["hi", "235+"]],
+    f: (r, v) => { if (v === "all") return true; if (r.total == null) return false;
+      return v === "lo" ? r.total < 220 : v === "mid" ? r.total >= 220 && r.total < 235 : r.total >= 235; } },
+  { k: "top3", label: "Top-3 minutes player", opts: [["all", "All"], ["out", "One missing"], ["in", "All playing"]],
+    f: (r, v) => v === "all" || (v === "out") === !!r.missing_top3 },
+];
+
+/* Team rows (each game appears once per side). O–U is counted per game,
+   so a game is never counted twice. */
+const gameKey = r => r.date + "|" + (r.home ? r.team : r.opp);
+function splitStats(rows) {
+  const s = { n: rows.length, w: 0, l: 0, aw: 0, al: 0, ap: 0, o: 0, u: 0, p: 0, mv: 0, mvn: 0 };
+  const seen = new Set();
+  for (const r of rows) {
+    const m = r.pts - r.opp_pts;
+    m > 0 ? s.w++ : s.l++;
+    if (r.spread != null) {
+      const c = m + r.spread;
+      c > 0 ? s.aw++ : c < 0 ? s.al++ : s.ap++;
+      s.mv += c; s.mvn++;
+    }
+    const k = gameKey(r);
+    if (r.total != null && !seen.has(k)) {
+      seen.add(k);
+      const t = r.pts + r.opp_pts;
+      t > r.total ? s.o++ : t < r.total ? s.u++ : s.p++;
+    }
+  }
+  s.games = new Set(rows.map(gameKey)).size;
+  s.ats_pct = (s.aw + s.al) ? s.aw / (s.aw + s.al) : null;
+  s.ov_pct = (s.o + s.u) ? s.o / (s.o + s.u) : null;
+  s.mvs = s.mvn ? s.mv / s.mvn : null;
+  return s;
+}
+
+async function initSplits() {
+  await renderFreshness();
+  const d = await loadJSON("data/splits.json");
+  const all = d.rows || [];
+  const state = Object.fromEntries(SPLIT_FILTERS.map(f => [f.k, "all"]));
+  const months = [...new Set(all.map(r => r.month))].sort();
+  const filters = [...SPLIT_FILTERS, { k: "month", label: "Month",
+    opts: [["all", "All"], ...months.map(m => [m, new Date(m + "-01T00:00:00Z").toLocaleString("en-AU", { month: "short", timeZone: "UTC" })])],
+    f: (r, v) => v === "all" || r.month === v }];
+  state.month = "all";
+  $("#sfilters").innerHTML = filters.map(f => `<label class="fsel"><span>${f.label}</span>
+    <select data-k="${f.k}">${f.opts.map(([v, t]) => `<option value="${v}">${t}</option>`).join("")}</select></label>`).join("");
+
+  let sortKey = "ats_pct", sortDir = -1;
+  function render() {
+    const rows = all.filter(r => filters.every(f => f.f(r, state[f.k])));
+    const on = filters.filter(f => state[f.k] !== "all").map(f => f.opts.find(o => o[0] === state[f.k])[1].toLowerCase());
+    // unfiltered, every game counts once per side and ATS is 50% by
+    // construction: the headline reads from the home side instead
+    const who = on.length ? rows : rows.filter(r => r.home);
+    const s = splitStats(who);
+    const ou = splitStats(rows);
+    const subject = on.length ? `Teams (${esc(on.join(", "))})` : "Home teams";
+    $("#slead").innerHTML = !all.length
+      ? `The 2026-27 splits start on opening night (21 October AEDT) and fill in game by game.`
+      : `${subject} are <b>${s.aw}–${s.al}${s.ap ? `–${s.ap}` : ""}</b> against the spread this season; `
+        + `these games have gone <b>${ou.o}–${ou.u}</b> over/under (${ou.games} games).`;
+    $("#scards").innerHTML = `
+      <div class="card"><div class="k">Games</div><div class="v">${ou.games}</div><div class="r">${s.n} team results</div></div>
+      <div class="card"><div class="k">ATS${on.length ? "" : ", home"}</div><div class="v">${s.aw}–${s.al}</div><div class="r">${pct(s.ats_pct)} · ${s.ap} push</div></div>
+      <div class="card"><div class="k">Over–under</div><div class="v">${ou.o}–${ou.u}</div><div class="r">${pct(ou.ov_pct)} overs</div></div>
+      <div class="card"><div class="k">Straight up${on.length ? "" : ", home"}</div><div class="v">${s.w}–${s.l}</div></div>
+      <div class="card"><div class="k">Vs spread${on.length ? "" : ", home"}</div><div class="v">${signed(s.mvs)}</div><div class="r">avg pts</div></div>`;
+    const by = {};
+    rows.forEach(r => (by[r.team] = by[r.team] || []).push(r));
+    let teams = Object.entries(by).map(([team, rs]) => ({ team, ...splitStats(rs) }));
+    const small = $("#small").checked;
+    const hidden = teams.filter(t => t.n < 10).length;
+    if (!small) teams = teams.filter(t => t.n >= 10);
+    teams.sort((a, b) => {
+      const x = a[sortKey], y = b[sortKey];
+      if (x == null) return 1; if (y == null) return -1;
+      return (x < y ? -1 : x > y ? 1 : 0) * sortDir;
+    });
+    $("#splits tbody").innerHTML = teams.length ? teams.map(t => `<tr class="${t.n < 10 ? "thin" : ""}">
+      <td class="s">${teamBadge(t.team)} <span class="tn">${esc(t.team)}</span></td>
+      <td class="num">${t.n}</td>
+      <td class="num">${t.w}–${t.l}</td>
+      <td class="num">${t.aw}–${t.al}${t.ap ? `–${t.ap}` : ""}<div class="sm dim">${pct(t.ats_pct)}</div></td>
+      <td class="num opt">${t.o}–${t.u}${t.p ? `–${t.p}` : ""}<div class="sm dim">${pct(t.ov_pct)}</div></td>
+      <td class="num ${t.mvs > 0 ? "pos" : ""}">${signed(t.mvs)}</td></tr>`).join("")
+      : `<tr><td colspan="6" class="empty">${all.length
+        ? `No team has 10 games in this split yet${hidden ? ` (${hidden} with fewer: tick the box above to see them)` : ""}.`
+        : "No games yet this season."}</td></tr>`;
+    $("#small").parentElement.lastChild.textContent = ` Show teams with fewer than 10 games${hidden && !small ? ` (${hidden} hidden)` : ""}`;
+  }
+  $("#sfilters").addEventListener("change", e => { state[e.target.dataset.k] = e.target.value; render(); });
+  $("#small").addEventListener("change", render);
+  $$("#splits th[data-k]").forEach(th => th.addEventListener("click", () => {
+    const k = { w: "w", ats_pct: "ats_pct", ov_pct: "ov_pct", mvs: "mvs", n: "n", team: "team" }[th.dataset.k];
+    sortDir = sortKey === k ? -sortDir : (k === "team" ? 1 : -1); sortKey = k; render();
+  }));
+  render();
+}
+
 /* ---------- boot ---------- */
 addEventListener("DOMContentLoaded", () => {
   const page = document.body.dataset.page;
   const boot = { board: initBoard, player: initPlayer,
                  wow: initWow, record: initRecord, tip: initTip,
+                 home: initHome, games: initGames, schedule: initSchedule,
+                 splits: initSplits,
                  matchups: initMatchups, boxscore: initBoxscore }[page];
   if (boot) boot().catch(e => {
     console.error(e);

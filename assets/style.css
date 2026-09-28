@@ -429,3 +429,69 @@ tr.trial td { opacity: .62; }
 }
 
 footer.rg .social { margin-top: 6px; }
+
+/* ---------- home ---------- */
+.ours { color: var(--accent); font-family: var(--mono); font-weight: 600; }
+h1.home-h1 { font-size: 30px; max-width: 24ch; }
+.hgrid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 12px; margin: 18px 0 6px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.ph2 { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 10px;
+  font: 500 11.5px/1.2 var(--mono); color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+.ph2 a { text-transform: none; letter-spacing: 0; color: var(--muted); }
+.ph2 a:hover { color: var(--ink); }
+.tipmini .who { font: 700 22px/1.15 var(--sans); }
+.tipmini .bet { font: 500 16px/1.35 var(--sans); margin: 6px 0; }
+.tipmini .bet b { font-family: var(--mono); font-weight: 600; }
+.panel .sm { font: 12.5px/1.5 var(--mono); }
+table.mini { min-width: 0; }
+table.mini td { padding: 7px 6px; border-bottom: 1px solid var(--line); }
+table.mini tr:last-child td { border-bottom: 0; }
+table.mini td.s a { color: var(--ink); font-weight: 600; }
+table.mini .sm { font: 12px var(--mono); }
+.gstrip { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 1fr);
+  gap: 8px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
+.gmini { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+  padding: 9px 11px; color: var(--ink); text-decoration: none; }
+.gmini:hover { border-color: var(--line-strong, var(--muted)); }
+.gmini .t { font: 500 11.5px var(--mono); color: var(--muted); margin-bottom: 5px; }
+.gmini .m { margin-bottom: 5px; }
+.gmini .sm { font: 12px/1.45 var(--mono); }
+.links { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; }
+.lcard { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+  padding: 11px 13px; text-decoration: none; color: var(--ink); }
+.lcard b { display: block; font: 600 15px var(--sans); margin-bottom: 3px; }
+.lcard span { color: var(--muted); font-size: 13.5px; line-height: 1.4; }
+.lcard:hover b { color: var(--accent); }
+
+/* ---------- game predictions ---------- */
+.games { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 10px; }
+.game { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 11px 13px; }
+.game header { font: 500 11.5px var(--mono); color: var(--muted); margin-bottom: 8px; }
+.game .score .side { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+.game .score .nm { flex: 1; font: 600 15px var(--sans); }
+.game .score b.ours { font-size: 20px; }
+table.gt { min-width: 0; margin-top: 8px; }
+table.gt th, table.gt td { padding: 6px 4px; }
+table.gt td.s { color: var(--muted); font-size: 13px; }
+table.gt td.gap { color: var(--ink); font-weight: 600; }
+
+/* ---------- splits ---------- */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 6px; }
+.fsel { display: flex; flex-direction: column; gap: 3px; }
+.fsel span { font: 500 10.5px var(--mono); color: var(--faint); letter-spacing: .07em; text-transform: uppercase; }
+.fsel select { background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+  border-radius: 6px; padding: 6px 8px; font: 13px var(--sans); }
+.toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13.5px; margin: 2px 0 10px; }
+tr.thin td { opacity: .6; }
+table#splits th[data-k] { cursor: pointer; }
+@media (max-width: 760px) {
+  .hgrid { grid-template-columns: 1fr; }
+  h1.home-h1 { font-size: 24px; }
+  table#splits, table#sched { min-width: 0; }
+  table#splits .opt, table#splits .tn, table#sched .tn { display: none; }
+  .fsel { flex: 1 1 45%; }
+  .games { grid-template-columns: 1fr; }
+}
+.hgrid > * { min-width: 0; }
+table.mini td.s { white-space: normal; }
+@media (max-width: 760px) { table.mini td.s .sm { display: block; } }
