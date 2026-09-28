@@ -4,7 +4,8 @@
 
    Colour carries ONE meaning each, everywhere:
      --accent   the brand and "our prediction" (orange)
-     --signal   a real edge / our side landing (green) — never decoration
+     --signal   a real edge on the over / our side landing (green)
+     --dn       a real edge on the under (red), the owner's Over/Under colours
      --bad      something is wrong with the data (stale, failed) — never
                 "under" or "bad bet"; over and under are neutral */
 
@@ -22,6 +23,7 @@
   /* one quiet shade per market, kept clear of green (edge) and orange
      (our prediction): points blue, rebounds violet, assists cyan,
      threes gold, combos rose, the rest slate */
+  --dn: #ff6b64; --dn-soft: rgba(255, 107, 100, .14);   /* under edges */
   --st-pts: #6ea8fe; --st-reb: #b393f5; --st-ast: #52c6d3; --st-3pm: #e3c160;
   --st-combo: #ee8fb5; --st-other: #8e9aab;
   --sans: "IBM Plex Sans Condensed", "Roboto Condensed", "Arial Narrow",
@@ -38,6 +40,7 @@
   --bad: #c4261d; --chip: #eef0f3;
   --tierA: #0d8a52; --tierB: #9a7b12;
   --over: #0d8a52; --under: #8397ad;
+  --dn: #c4261d; --dn-soft: rgba(196, 38, 29, .09);
   --st-pts: #2f6fd6; --st-reb: #7b52d6; --st-ast: #12879a; --st-3pm: #a57c0c;
   --st-combo: #c24a7c; --st-other: #66717f;
   color-scheme: light;
@@ -179,6 +182,8 @@ td.pl .tbadge { margin-right: 6px; }
 .side .ar { color: var(--muted); font-size: 10px; margin-right: 2px; }
 .edge { display: inline-block; min-width: 54px; padding: 3px 6px; border-radius: 4px; text-align: right; }
 .edge.hot { background: var(--signal-soft); color: var(--signal); font-weight: 600; }
+.edge.hot.under { background: var(--dn-soft); color: var(--dn); }
+.flag { color: var(--tierB); font-size: 11px; cursor: help; }
 .edge .ar { font-size: 9px; margin-right: 1px; vertical-align: 1px; }
 .edge.warm { color: var(--signal); }
 .edge.cold { color: var(--muted); }
