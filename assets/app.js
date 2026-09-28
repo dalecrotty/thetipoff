@@ -214,7 +214,7 @@ function leaderTable(stat, rows) {
       <thead><tr>${head}</tr></thead>
       <tbody>${top.map((r, i) => `<tr>
         <td class="s dim">${r.rank ?? i + 1}</td>
-        <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
+        <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${wwNote(r)}</td>
         <td class="s">${teamBadge(r.team)}</td>
         <td class="num">${predCell(r, true)}</td>
         <td class="num dim">${fmt(r.floor)}–${fmt(r.ceiling)}</td>
@@ -296,7 +296,7 @@ async function initBoard() {
   const renderFull = view =>  {
     tbody.innerHTML = view.map(r => `<tr>
       <td class="s dim">${r.rank ?? "—"}</td>
-      <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
+      <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${wwNote(r)}</td>
       <td class="s">${teamBadge(r.team)}</td>
       <td class="s">${r.stat}</td>
       <td class="num">${predCell(r, false)}</td>
@@ -336,6 +336,19 @@ function aedtTime(iso) {
   const get = t => (parts.find(p => p.type === t) || {}).value || "";
   const mins = get("minute");
   return `${get("hour")}${mins === "00" ? "" : ":" + mins}${get("dayPeriod").toLowerCase().replace(/\./g, "")}`;
+}
+
+/* With/without: a key teammate is out tonight, and this player's own
+   per-game shift without him, for this stat — shown as information
+   ("Doncic out: +9.9 without him, 16 games"). The model keeps it out of
+   the prediction until it proves itself against closing lines. */
+function wwNote(r) {
+  if (!r.ww || !r.ww.length) return "";
+  return r.ww.map(w => {
+    const d = w.delta, sign = d > 0 ? "+" : "";
+    const last = String(w.star).split(" ").slice(-1)[0];
+    return `<div class="ww" title="${esc(w.star)} out tonight. ${esc(r.player)} has averaged ${sign}${fmt(d)} ${r.stat} per game without him (${w.n} games) compared with with him.">${esc(last)} out: ${sign}${fmt(d)} without him (${w.n} g)</div>`;
+  }).join("");
 }
 
 function predCell(r, bold) {
@@ -489,6 +502,17 @@ async function initPlayer() {
     : "—";
 
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
+  // key teammates out tonight, and this player's own record without them
+  const wwt = h.with_without_tonight || [];
+  const wwEl = $("#wwTonight");
+  if (wwEl) {
+    wwEl.hidden = !wwt.length;
+    const sg = v => `${v > 0 ? "+" : ""}${fmt(v)}`;
+    wwEl.innerHTML = wwt.map(w => `<p class="sub"><b>${esc(w.star)} out tonight.</b>
+      Without him, ${esc(h.player)} has averaged ${sg(w.PTS)} points,
+      ${sg(w.REB)} rebounds and ${sg(w.AST)} assists per game
+      (${w.n_without} games).</p>`).join("");
+  }
   $("#projCards").innerHTML = S.filter(s => h.projections[s]).map(s => {
     const v = h.projections[s];
     return `<div class="card"><div class="k">${s}</div>
