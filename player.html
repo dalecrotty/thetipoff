@@ -31,37 +31,73 @@
 <div class="fresh" id="fresh">Loading…</div>
 <main>
   <div class="controls">
-    <select id="playerSel"></select>
+    <input id="playerQ" type="search" list="playerList" placeholder="Find a player…"
+           aria-label="Find a player" autocomplete="off">
+    <datalist id="playerList"></datalist>
   </div>
   <div class="playerhead">
     <span id="psinglet"></span>
     <div>
+      <p class="kicker" id="pkicker"></p>
       <h1 id="pname">—</h1>
-      <p class="sub"><span id="pteam"></span> · predicted
-        <span id="pmins">—</span></p>
     </div>
   </div>
-
-  <div class="section"><h2>Tonight's prediction (floor–ceiling = 10th–90th)</h2></div>
+  <p class="lead" id="plead"></p>
   <div id="wwTonight" hidden></div>
-  <div class="cards" id="projCards"></div>
 
-  <div class="section"><h2>Prop chart — game by game vs the line</h2></div>
-  <div class="controls">
+  <div class="section"><h2>Tonight's predictions · range is 10th–90th percentile</h2></div>
+  <div class="cards tonight" id="projCards"></div>
+
+  <!-- explorer: one filter bar drives the chart, hit rates, summary and log -->
+  <div class="section"><h2>Explore his games</h2></div>
+  <details class="filters" id="filterBox" open>
+    <summary>Filters <span id="fCount" class="sm"></span></summary>
+    <div class="fgrid">
+      <label>Games<select id="fLast">
+        <option value="5">Last 5</option>
+        <option value="10">Last 10</option>
+        <option value="15">Last 15</option>
+        <option value="20" selected>Last 20</option>
+        <option value="0">Season</option>
+      </select></label>
+      <label>Location<select id="fLoc">
+        <option value="all">Home &amp; away</option>
+        <option value="H">Home</option>
+        <option value="R">Away</option>
+      </select></label>
+      <label>Role<select id="fRole">
+        <option value="all">Any</option>
+        <option value="start">Started</option>
+        <option value="bench">Off the bench</option>
+      </select></label>
+      <label>Rest<select id="fRest">
+        <option value="all">Any</option>
+        <option value="0">Back-to-back</option>
+        <option value="1+">1+ days</option>
+      </select></label>
+      <label>Result<select id="fResult">
+        <option value="all">Wins &amp; losses</option>
+        <option value="W">Wins</option>
+        <option value="L">Losses</option>
+      </select></label>
+      <label>Vs standings<select id="fTier"><option value="all">Any</option></select></label>
+      <label>Vs team<select id="fOpp"><option value="all">Any</option></select></label>
+      <label>Minutes<span class="minrange">
+        <input id="fMinLo" type="number" step="1" min="0" placeholder="min">
+        <input id="fMinHi" type="number" step="1" min="0" placeholder="max">
+      </span></label>
+      <label class="fbtn"><span>&nbsp;</span><button class="chip" id="fReset">Reset</button></label>
+    </div>
+  </details>
+
+  <div class="controls chartctl">
     <div class="chips" id="statChips"></div>
-  </div>
-  <div class="controls">
     <span class="stepper">
       <button id="lineDown" aria-label="line down">−</button>
-      <input id="lineVal" type="number" step="0.5" inputmode="decimal">
+      <input id="lineVal" type="number" step="0.5" inputmode="decimal" aria-label="line">
       <button id="lineUp" aria-label="line up">+</button>
     </span>
-    <select id="rangeSel">
-      <option value="10">Last 10</option>
-      <option value="20" selected>Last 20</option>
-      <option value="0">Season</option>
-    </select>
-    <span class="sub" id="lineSrc" style="align-self:center"></span>
+    <span class="sub" id="lineSrc" style="align-self:center;margin:0"></span>
   </div>
   <div class="hitcards" id="hitCards"></div>
   <div class="chartpanel">
@@ -75,58 +111,11 @@
     <div class="tip" id="tip"></div>
   </div>
 
-  <div class="section"><h2>Game log explorer</h2></div>
-  <p class="sub">Filter the log; the summary and hit-rates below recompute
-    on the filtered games only.</p>
-  <div class="controls">
-    <select id="fLast">
-      <option value="15" selected>Last 15</option>
-      <option value="5">Last 5</option>
-      <option value="10">Last 10</option>
-      <option value="20">Last 20</option>
-      <option value="0">Season</option>
-    </select>
-    <select id="fLoc">
-      <option value="all">Home &amp; away</option>
-      <option value="H">Home only</option>
-      <option value="R">Away only</option>
-    </select>
-    <select id="fRole">
-      <option value="all">Any role</option>
-      <option value="start">Started</option>
-      <option value="bench">Off bench</option>
-    </select>
-    <select id="fRest">
-      <option value="all">Any rest</option>
-      <option value="0">B2B (0 days)</option>
-      <option value="1+">1+ days rest</option>
-    </select>
-    <select id="fResult">
-      <option value="all">Wins &amp; losses</option>
-      <option value="W">Wins only</option>
-      <option value="L">Losses only</option>
-    </select>
-    <select id="fTier"><option value="all">Any opp standing</option></select>
-    <select id="fOpp"><option value="all">Any opponent</option></select>
-    <span class="stepper" title="minutes range">
-      <input id="fMinLo" type="number" step="1" min="0" placeholder="min">
-      <input id="fMinHi" type="number" step="1" min="0" placeholder="max">
-    </span>
-    <button class="chip" id="fReset">Reset</button>
-  </div>
-  <div class="hitcards" id="logSummary"></div>
-
-  <div class="section"><h2>Hit rate vs a line</h2></div>
-  <p class="sub" id="lineNote">Type any line per stat — the rate is the
-    share of the filtered games that went over.</p>
+  <div class="section"><h2>Summary · the filtered games</h2></div>
   <div class="tablewrap">
-    <table id="lineRates">
-      <thead><tr><th class="s">Stat</th><th>Custom line</th>
-        <th>Over</th><th>Rate</th><th>Avg</th><th>Median</th>
-        <th>Per 36</th></tr></thead>
-      <tbody></tbody>
-    </table>
+    <table id="summary" class="summary-t"><thead></thead><tbody></tbody></table>
   </div>
+  <p class="sub" id="sumNote"></p>
 
   <div class="section"><h2>Filtered game log</h2></div>
   <div class="tablewrap">
@@ -135,7 +124,7 @@
         <th class="s">Date</th><th class="s">Opp</th><th class="s">H/A</th>
         <th class="s">W/L</th><th class="s">Role</th><th>Min</th>
         <th>PTS</th><th>REB</th><th>AST</th><th>3PM</th>
-        <th>STL</th><th>BLK</th><th>TOV</th>
+        <th>STL</th><th>BLK</th><th>TOV</th><th>PRA</th>
       </tr></thead>
       <tbody></tbody>
     </table>

@@ -17,8 +17,8 @@
   --signal: #3fd08a; --signal-soft: rgba(63, 208, 138, .13);
   --bad: #ff5a52; --chip: #182029;
   --tierA: #3fd08a; --tierB: #c9b458;
-  /* chart marks: over the line vs under it — under is neutral, not red */
-  --over: #3fd08a; --under: #4f6782;
+  /* chart marks: over the line green, under red (the owner's colours) */
+  --over: #3fd08a; --under: #d4574f;
   --good: var(--signal);
   /* one quiet shade per market, kept clear of green (edge) and orange
      (our prediction): points blue, rebounds violet, assists cyan,
@@ -39,7 +39,7 @@
   --signal: #0d8a52; --signal-soft: rgba(13, 138, 82, .10);
   --bad: #c4261d; --chip: #eef0f3;
   --tierA: #0d8a52; --tierB: #9a7b12;
-  --over: #0d8a52; --under: #8397ad;
+  --over: #0d8a52; --under: #c9463f;
   --dn: #c4261d; --dn-soft: rgba(196, 38, 29, .09);
   --st-pts: #2f6fd6; --st-reb: #7b52d6; --st-ast: #12879a; --st-3pm: #a57c0c;
   --st-combo: #c24a7c; --st-other: #66717f;
@@ -251,7 +251,7 @@ td.pl .tbadge { margin-right: 6px; }
 .stepper button:first-child { border-radius: 6px 0 0 6px; }
 .stepper button:last-child { border-radius: 0 6px 6px 0; }
 .stepper input {
-  width: 64px; height: 34px; text-align: center; border: 1px solid var(--line);
+  width: 74px; height: 34px; text-align: center; border: 1px solid var(--line);
   border-left: 0; border-right: 0; background: var(--panel); color: var(--ink);
   font: 600 14px var(--mono); font-variant-numeric: tabular-nums;
 }
@@ -332,6 +332,46 @@ table.board.lead { min-width: 0; }
 td .sm + .sm { margin-top: 1px; }
 @media (min-width: 641px) { td.num .sm { } }
 
+/* ---- player hub: the owner's layout (filters left, summary right) ---- */
+.playerhead .kicker { margin: 0 0 4px; }
+.playerhead .kicker .tbadge { margin-right: 4px; }
+.cards.tonight { grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); }
+.card .cl { display: flex; justify-content: space-between; align-items: center; gap: 6px;
+  margin-top: 8px; padding-top: 7px; border-top: 1px solid var(--line);
+  font: 500 13px/1.2 var(--mono); }
+.card .cl .edge { min-width: 0; padding: 2px 5px; font-size: 11.5px; }
+.filters { background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+  padding: 10px 12px 12px; margin: 0 0 14px; }
+.filters summary { cursor: pointer; font: 500 12px/1.2 var(--mono); color: var(--muted);
+  text-transform: uppercase; letter-spacing: .08em; }
+.filters[open] summary { margin-bottom: 10px; }
+.filters .fgrid { display: grid; gap: 8px 10px;
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
+.filters label { display: flex; flex-direction: column; gap: 3px; margin: 0;
+  font: 500 11px/1.2 var(--mono); color: var(--faint); text-transform: uppercase; letter-spacing: .06em; }
+.filters select, .filters input {
+  background: var(--bg); color: var(--ink); border: 1px solid var(--line);
+  border-radius: 6px; padding: 6px 8px; font: 14px var(--sans); text-transform: none; letter-spacing: 0;
+  width: 100%; min-width: 0; }
+.filters .minrange { display: flex; gap: 6px; }
+.filters .chip { width: 100%; height: 33px; }
+/* the filter bar stays in view on wide screens while you read the chart */
+@media (min-width: 901px) { .filters { position: sticky; top: 60px; z-index: 4;
+  box-shadow: 0 8px 16px -12px rgba(0,0,0,.5); } }
+.chartctl { align-items: center; }
+table.summary-t { min-width: 760px; }
+table.summary-t th.st { color: var(--st, var(--faint)); }
+table.summary-t td.s { color: var(--muted); font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+table.summary-t tr.dimrow td.num { color: var(--muted); }
+table.summary-t tr.sep td { border-top: 1px solid var(--line-strong); }
+table.summary-t .pv { color: var(--accent); font-weight: 600; }
+table.summary-t tr.linerow td { background: var(--accent-soft); }
+table.summary-t .lineIn { width: 58px; text-align: right; background: var(--panel);
+  color: var(--ink); border: 1px solid var(--line-strong); border-radius: 4px;
+  padding: 3px 5px; font: 600 13px var(--mono); }
+table.summary-t .hi { color: var(--signal); font-weight: 600; }
+table.summary-t .lo { color: var(--dn); font-weight: 600; }
+
 /* ---- phone ---- */
 @media (max-width: 640px) {
   header.site { gap: 10px; padding: 0 12px; }
@@ -346,6 +386,9 @@ td .sm + .sm { margin-top: 1px; }
   table.board { min-width: 0; }
   table.board .opt { display: none; }
   .ph { display: block; }
+  .cards.tonight { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .cards.tonight .card { padding: 8px 9px; }
+  .cards.tonight .card .v { font-size: 19px; }
   .fresh { font-size: 11.5px; }
   .kicker { font-size: 11px; }
 }

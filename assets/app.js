@@ -612,7 +612,7 @@ function renderPropChart(games, line, proj) {
       y1="${lineY}" y2="${lineY}"></line>
     <text class="proplbl" x="${W - m.r + 6}" y="${lineY + 4}">${line}</text>`);
   if (proj != null)
-    parts.push(`<line class="projtick" x1="${W - m.r - 14}" x2="${W - m.r}"
+    parts.push(`<line class="projtick" x1="${m.l}" x2="${W - m.r}"
         y1="${projY}" y2="${projY}"></line>
       <text class="projlbl" x="${W - m.r + 6}" y="${projLblY}">
         ${proj.toFixed(1)}</text>`);
@@ -636,24 +636,43 @@ function hitCard(label, games, line) {
 async function initPlayer() {
   await renderFreshness();
   const idx = await loadJSON("data/player_hub/index.json");
-  const sel = $("#playerSel");
-  sel.innerHTML = idx.map(p =>
-    `<option value="${p.player_id}">${esc(p.player)} (${esc(p.team)})</option>`).join("");
+  const label = p => `${p.player} (${p.team})`;
+  $("#playerList").innerHTML = idx.map(p =>
+    `<option value="${esc(label(p))}"></option>`).join("");
   const want = new URLSearchParams(location.search).get("id");
-  if (want && idx.some(p => String(p.player_id) === want)) sel.value = want;
-  sel.onchange = () => { location.search = `?id=${sel.value}`; };
-  const pid = sel.value;
+  const cur = idx.find(p => String(p.player_id) === want) || idx[0];
+  const q = $("#playerQ");
+  const go = () => {
+    const v = q.value.trim().toLowerCase();
+    const hit = idx.find(p => label(p).toLowerCase() === v)
+      || (v.length > 2 && idx.filter(p => p.player.toLowerCase().includes(v)).length === 1
+          && idx.find(p => p.player.toLowerCase().includes(v)));
+    if (hit && String(hit.player_id) !== String(cur.player_id))
+      location.search = `?id=${hit.player_id}`;
+  };
+  q.addEventListener("change", go);
+  q.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
+  const pid = cur.player_id;
   const h = await loadJSON(`data/player_hub/${pid}.json`);
 
   $("#pname").textContent = h.player;
   document.title = `${h.player} props and stats — the tipoff`;
-  $("#pteam").innerHTML = teamBadge(h.team, { withName: true });
   $("#psinglet").innerHTML = playerSinglet(h.team, h.number);
-  $("#pmins").innerHTML = h.minutes
-    ? `${fmt(h.minutes.value)} min <span class="badge src">${h.minutes.source}</span>`
-    : "—";
+  const oppAb = h.opp ? teamMeta(h.opp)[0] : null;
+  $("#pkicker").innerHTML = `${teamBadge(h.team)} ${esc(h.team || "")}${
+    oppAb ? ` · v ${esc(oppAb)} tonight` : ""}${h.minutes
+    ? ` · ${fmt(h.minutes.value)} min predicted` : ""}`;
 
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
+  const P = h.projections || {};
+  const L = h.lines || {};
+  // the page's answer in one sentence (brief section 9)
+  if (P.PTS) {
+    $("#plead").innerHTML = `<b>${esc(h.player)}</b> is predicted to score <span class="n">${
+      fmt(P.PTS.mean)}</span> points${h.opp ? ` against ${esc(h.opp)}` : ""} tonight${
+      L.PTS ? `; the line is <span class="n">${fmt(L.PTS.line)}</span>${
+        L.PTS.book ? ` at ${esc(L.PTS.book)}` : ""}` : ""}.`;
+  }
   // key teammates out tonight, and this player's own record without them
   const wwt = h.with_without_tonight || [];
   const wwEl = $("#wwTonight");
@@ -665,11 +684,18 @@ async function initPlayer() {
       ${sg(w.REB)} rebounds and ${sg(w.AST)} assists per game
       (${w.n_without} games).</p>`).join("");
   }
-  $("#projCards").innerHTML = [...S, ...COMBOS].filter(s => h.projections[s]).map(s => {
-    const v = h.projections[s];
+  // tonight's cards: prediction, range, and the line with its edge
+  $("#projCards").innerHTML = [...S, ...COMBOS].filter(s => P[s]).map(s => {
+    const v = P[s], l = L[s];
+    const over = l && l.side === "over";
+    const edge = l && l.edge != null
+      ? `<span class="edge ${l.tier ? `hot ${l.side}` : "cold"}">${l.tier
+          ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ` : ""}${pct(l.edge)}</span>` : "";
     return `<div class="card" data-stat="${s}"><div class="k">${s}</div>
       <div class="v">${fmt(v.mean)}</div>
-      <div class="r">${fmt(v.floor)}–${fmt(v.ceiling)}</div></div>`;
+      <div class="r">${fmt(v.floor, 0)}–${fmt(v.ceiling, 0)}</div>
+      ${l ? `<div class="cl"><span>${fmt(l.line)}${l.price != null
+        ? ` <span class="sm">@ ${fmt(l.price, 2)}</span>` : ""}</span>${edge}</div>` : ""}</div>`;
   }).join("");
 
   /* --- interactive prop chart --- */
@@ -684,7 +710,9 @@ async function initPlayer() {
     : undefined);
   const defLine = s => lines[s] ? lines[s].line
     : (projOf(s) != null ? Math.floor(projOf(s)) + 0.5 : 0.5);
-  let line = defLine(stat);
+  // one line per market, shared by the chart and the summary block
+  const lineInputs = {};
+  const lineFor = s => lineInputs[s] ?? defLine(s);
 
   const chipsEl = $("#statChips"), lineEl = $("#lineVal");
   chipsEl.innerHTML = CHART_STATS.map(s =>
@@ -693,27 +721,29 @@ async function initPlayer() {
   const redraw = () => {
     $$(".chip", chipsEl).forEach(c =>
       c.classList.toggle("on", c.dataset.s === stat));
+    const line = lineFor(stat);
     lineEl.value = line;
     $("#lineSrc").textContent = lines[stat]
       ? (line === lines[stat].line ? `book line (${lines[stat].side}` +
          (lines[stat].tier ? `, tier ${lines[stat].tier})` : ")")
          : "custom line")
       : "no book line — custom";
-    const nGames = parseInt($("#rangeSel").value, 10);
-    const games = (nGames ? log.slice(-nGames) : log)
-      .map(g => ({ ...g, v: statValue(g, stat) }));
+    // the chart and hit rates follow the filters
+    const games = filtered().map(g => ({ ...g, v: statValue(g, stat) }));
     const home = g => (g.venue || "").toUpperCase().startsWith("H");
     const all = log.map(g => ({ ...g, v: statValue(g, stat) }));
     $("#hitCards").innerHTML =
-      hitCard("L5", all.slice(-5), line) +
-      hitCard("L10", all.slice(-10), line) +
-      hitCard("L20", all.slice(-20), line) +
-      hitCard("Season", all, line) +
-      hitCard("Home", all.filter(home), line) +
-      hitCard("Away", all.filter(g => !home(g)), line);
-    $("#propChart").innerHTML = renderPropChart(games, line, projOf(stat));
+      hitCard("Filtered", games, line) +
+      hitCard("Last 5", games.slice(-5), line) +
+      hitCard("Last 10", games.slice(-10), line) +
+      hitCard("Home", games.filter(home), line) +
+      hitCard("Away", games.filter(g => !home(g)), line) +
+      hitCard("Season", all, line);
+    $("#propChart").innerHTML = games.length
+      ? renderPropChart(games, line, projOf(stat))
+      : `<div class="empty">No games match these filters.</div>`;
     $("#chartNote").textContent =
-      `${games.length} games shown · line ${line}`;
+      `${games.length} filtered game${games.length === 1 ? "" : "s"} · line ${line}`;
 
     const tip = $("#tip"), panel = $(".chartpanel");
     $$(".barhit", $("#propChart")).forEach(gEl => {
@@ -738,17 +768,15 @@ async function initPlayer() {
     const c = e.target.closest(".chip");
     if (!c) return;
     stat = c.dataset.s;
-    line = defLine(stat);
     redraw();
   };
-  $("#lineDown").onclick = () => { line = Math.max(0.5, line - 0.5); redraw(); };
-  $("#lineUp").onclick = () => { line = line + 0.5; redraw(); };
+  $("#lineDown").onclick = () => {
+    lineInputs[stat] = Math.max(0.5, lineFor(stat) - 0.5); renderLog(); };
+  $("#lineUp").onclick = () => { lineInputs[stat] = lineFor(stat) + 0.5; renderLog(); };
   lineEl.onchange = () => {
     const v = parseFloat(lineEl.value);
-    if (!isNaN(v) && v > 0) { line = v; redraw(); }
+    if (!isNaN(v) && v > 0) { lineInputs[stat] = v; renderLog(); }
   };
-  $("#rangeSel").onchange = redraw;
-  redraw();
   const rows = Object.entries(h.splits)
     .filter(([, v]) => v && v.games)
     .map(([k, v]) => `<tr><td class="s">${k}</td>
@@ -776,7 +804,6 @@ async function initPlayer() {
   });
   if (!tiers.length) tierSel.disabled = true;
   if (!log.some(g => g.result)) resSel.disabled = true;
-  const lineInputs = {};
 
   const filtered = () => {
     const loc = $("#fLoc").value, role = $("#fRole").value,
@@ -814,50 +841,43 @@ async function initPlayer() {
     const mins = games.map(g => g.min);
     const totMin = mins.reduce((a, b) => a + b, 0);
 
-    $("#logSummary").innerHTML =
-      `<div class="card"><div class="k">Games</div>
-         <div class="v">${games.length}</div>
-         <div class="r">of ${log.length} played</div></div>
-       <div class="card"><div class="k">Min avg</div>
-         <div class="v">${games.length ? (totMin / games.length).toFixed(1) : "—"}</div>
-         <div class="r">median ${games.length ? median(mins).toFixed(1) : "—"}</div></div>`
-      + S.map(s => {
-          const v = games.map(g => g[s]);
-          const avg = v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
-          return `<div class="card"><div class="k">${s}</div>
-            <div class="v">${avg == null ? "—" : avg.toFixed(1)}</div>
-            <div class="r">med ${v.length ? median(v).toFixed(1) : "—"}</div></div>`;
-        }).join("");
-
-    $("#lineRates tbody").innerHTML = S.map(s => {
-      const v = games.map(g => g[s]);
-      const avg = v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
-      const per36 = totMin > 0
-        ? v.reduce((a, b) => a + b, 0) / totMin * 36 : null;
-      const dflt = h.lines?.[s]?.line
-        ?? (avg == null ? null : Math.floor(avg) + 0.5);
-      const cur = lineInputs[s] ?? dflt;
-      const over = cur == null ? null : v.filter(x => x > cur).length;
-      const rate = (over == null || !v.length) ? null : over / v.length;
-      return `<tr>
-        <td class="s"><b>${s}</b></td>
-        <td class="num"><input class="lineIn" data-s="${s}" type="number"
-          step="0.5" value="${cur == null ? "" : cur}" style="width:72px"></td>
-        <td class="num dim">${over == null ? "—" : `${over}/${v.length}`}</td>
-        <td class="num ${rate > 0.5 ? "pos" : rate != null && rate < 0.5 ? "neg" : ""}">${
-          rate == null ? "—" : (rate * 100).toFixed(0) + "%"}</td>
-        <td class="num">${avg == null ? "—" : avg.toFixed(1)}</td>
-        <td class="num">${v.length ? median(v).toFixed(1) : "—"}</td>
-        <td class="num dim">${per36 == null ? "—" : per36.toFixed(1)}</td>
-      </tr>`;
-    }).join("");
-    $$(".lineIn", $("#lineRates")).forEach(inp => {
+    // the owner's summary block: stats across, measures down, on the
+    // filtered games; the line row is editable (book line to start)
+    const SUM = [...S.slice(0, 4), ...COMBOS, ...S.slice(4)];
+    const vals = s => games.map(g => statValue(g, s));
+    const head = `<tr><th class="s"></th>${SUM.map(s =>
+      `<th data-s="${s}" class="st">${s}</th>`).join("")}</tr>`;
+    const row = (label, fn, cls = "") => `<tr class="${cls}"><td class="s">${label}</td>${
+      SUM.map(s => `<td class="num" data-stat="${s}">${fn(s)}</td>`).join("")}</tr>`;
+    const avg = s => { const v = vals(s); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null; };
+    const lineOf = s => lineFor(s);
+    const rate = s => { const v = vals(s), l = lineOf(s);
+      return (l == null || !v.length) ? null : v.filter(x => x > l).length / v.length; };
+    $("#summary thead").innerHTML = head;
+    $("#summary tbody").innerHTML =
+      row("Average", s => avg(s) == null ? "—" : avg(s).toFixed(1)) +
+      row("Median", s => vals(s).length ? median(vals(s)).toFixed(1) : "—") +
+      row("Per 36", s => totMin > 0 ? (vals(s).reduce((a, b) => a + b, 0) / totMin * 36).toFixed(1) : "—", "dimrow") +
+      row("Prediction", s => P[s] ? `<b class="pv">${fmt(P[s].mean)}</b>` : "—", "sep") +
+      row("Line", s => `<input class="lineIn" data-s="${s}" type="number" step="0.5" value="${
+        lineOf(s) ?? ""}" title="${L[s] ? `book line${L[s].book ? ` (${esc(L[s].book)})` : ""}` : "no book line: type one"}">`, "linerow") +
+      row("Over", s => { const v = vals(s), l = lineOf(s);
+        return l == null ? "—" : `${v.filter(x => x > l).length}/${v.length}`; }, "dimrow") +
+      row("Hit rate", s => { const r = rate(s);
+        return r == null ? "—" : `<span class="${r >= 0.6 ? "hi" : r <= 0.4 ? "lo" : ""}">${(r * 100).toFixed(0)}%</span>`; });
+    $("#sumNote").textContent = `${games.length} of ${log.length} games · min avg ${
+      games.length ? (totMin / games.length).toFixed(1) : "—"}. Hit rate = share of these games over the line; edit a line to test your own.`;
+    $$(".lineIn", $("#summary")).forEach(inp => {
       inp.onchange = () => {
         const v = parseFloat(inp.value);
         lineInputs[inp.dataset.s] = isNaN(v) ? null : v;
         renderLog();
       };
     });
+    const active = ["#fLoc", "#fRole", "#fRest", "#fResult", "#fTier", "#fOpp"]
+      .filter(sel => $(sel).value !== "all").length
+      + (($("#fMinLo").value || $("#fMinHi").value) ? 1 : 0);
+    $("#fCount").textContent = active ? `· ${active} on` : "";
 
     $("#gamelog tbody").innerHTML = games.slice().reverse().map(g => `<tr>
       <td class="s">${g.game
@@ -872,15 +892,18 @@ async function initPlayer() {
         ? '<span class="badge src">start</span>' : '<span class="dim">bench</span>'}</td>
       <td class="num">${fmt(g.min)}</td>
       ${S.map(s => `<td class="num">${fmt(g[s], 0)}</td>`).join("")}
+      <td class="num dim">${fmt(statValue(g, "PRA"), 0)}</td>
     </tr>`).join("")
-      || `<tr><td colspan="13" class="empty">No games match these filters.</td></tr>`;
+      || `<tr><td colspan="14" class="empty">No games match these filters.</td></tr>`;
+    redraw();
   };
 
+  if (matchMedia("(max-width: 900px)").matches) $("#filterBox").open = false;
   ["#fLast", "#fLoc", "#fRole", "#fRest", "#fOpp", "#fResult",
    "#fTier"].forEach(sel => $(sel).onchange = renderLog);
   ["#fMinLo", "#fMinHi"].forEach(sel => $(sel).oninput = renderLog);
   $("#fReset").onclick = () => {
-    $("#fLast").value = "15"; $("#fLoc").value = "all";
+    $("#fLast").value = "20"; $("#fLoc").value = "all";
     $("#fRole").value = "all"; $("#fRest").value = "all";
     oppSel.value = "all"; resSel.value = "all"; tierSel.value = "all";
     $("#fMinLo").value = ""; $("#fMinHi").value = "";
