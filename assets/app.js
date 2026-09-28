@@ -128,6 +128,9 @@ async function renderFreshness() {
     el.innerHTML =
       (warn ? `<div class="staleline"><b>Out of date.</b> ${warn}</div>` : "") +
       `Slate <b>${m.slate_date}</b> · ${build} · computed <b>${m.computed_at}</b>` +
+      (m.lines_region === "us"
+        ? ` · lines from <b>US bookmakers</b> <span class="dim">(Australian books aren't pricing NBA player props yet)</span>`
+        : m.lines_region === "au" ? ` · lines from <b>Australian bookmakers</b>` : "") +
       ` · <span class="dim">${m.model_version}</span>` +
       (m.demo ? ` · <span class="demo">DEMO — 25-26 replay, not live</span>` : "");
     return m;
