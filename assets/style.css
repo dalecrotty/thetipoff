@@ -71,11 +71,12 @@ header.site {
   align-items: center; flex: none;
 }
 .logo span, .logo b { color: var(--accent); font-weight: 600; }
-.logo i {                                  /* terminal cursor */
-  display: inline-block; width: 8px; height: 17px; margin-left: 3px;
-  background: var(--accent); animation: blink 1.1s steps(1) infinite;
+.logo i {                                  /* the ball, tossed (the mark) */
+  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  margin-left: 2px; align-self: flex-start; margin-top: -1px;
+  background: var(--accent); animation: toss 0.7s cubic-bezier(.2,.7,.3,1) 1 both;
 }
-@keyframes blink { 50% { opacity: 0; } }
+@keyframes toss { from { transform: translateY(9px); opacity: 0; } to { transform: none; opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .logo i { animation: none; } }
 nav.site {
   display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none;
@@ -376,7 +377,7 @@ table.summary-t .lo { color: var(--dn); font-weight: 600; }
 @media (max-width: 640px) {
   header.site { gap: 10px; padding: 0 12px; }
   .logo { font-size: 17px; }
-  .logo i { height: 15px; width: 7px; }
+  .logo i { height: 5px; width: 5px; }
   nav.site a { padding: 6px 8px; font-size: 13.5px; }
   main { padding: 16px 12px 48px; }
   h1 { font-size: 22px; }
