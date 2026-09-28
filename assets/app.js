@@ -219,10 +219,7 @@ function predTd(r) {
    with our prediction above the line — which reads as a contradiction. */
 function lineTd(r) {
   if (r.line == null) return `<td class="num dim">—</td>`;
-  const over = r.side === "over", call = r.side && r.tier;
-  return `<td class="num"><span class="side" title="${
-    call ? `Our side: ${r.side} ${r.line}` : "No side called: not a real edge"}">${call
-      ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ` : ""}${fmt(r.line)}</span>${
+  return `<td class="num"><span class="side">${fmt(r.line)}</span>${
     r.price != null ? `<div class="sm" title="${r.book ? esc(r.book) : ""}">@ ${fmt(r.price, 2)}</div>` : ""}</td>`;
 }
 function diffTd(r) {
@@ -236,14 +233,32 @@ function priceTd(r) {
   return `<td class="num">${fmt(r.price, 2)}${r.book
     ? `<div class="sm l">${esc(r.book)}</div>` : ""}</td>`;
 }
+/* The edge carries its side — "▼U 11.3%" — so an under never reads as an
+   over. Only a real (tiered) edge names a side; below that the value
+   side can come from the price rather than the line, so it's shown
+   muted and unsided. */
 function edgeTd(r) {
   if (r.edge == null) return `<td class="num dim">—</td>`;
-  const cls = r.tier ? "hot" : "cold";
-  return `<td class="num"><span class="edge ${cls}" title="${r.tier
-    ? `Tier ${r.tier}: our probability beats the bookmaker's by ${pct(r.edge)}`
-    : "Below the threshold we'd call an edge"}">${
-    r.edge > 0 ? "+" : ""}${pct(r.edge)}</span>${r.diff != null
+  const over = r.side === "over";
+  const label = r.tier
+    ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ${pct(r.edge)}`
+    : pct(r.edge);
+  return `<td class="num"><span class="edge ${r.tier ? "hot" : "cold"}" title="${r.tier
+    ? `Tier ${r.tier}: the ${r.side} ${r.line} at ${fmt(r.price, 2)} — our probability beats the bookmaker's by ${pct(r.edge)}`
+    : "Below the threshold we'd call an edge"}">${label}</span>${r.diff != null
     ? `<div class="sm ph">diff ${r.diff > 0 ? "+" : ""}${fmt(r.diff)}</div>` : ""}</td>`;
+}
+function ordinal(n) {
+  const t = n % 100, u = n % 10;
+  return n + (t >= 11 && t <= 13 ? "th" : u === 1 ? "st" : u === 2 ? "nd" : u === 3 ? "rd" : "th");
+}
+function muTd(r) {
+  if (r.mu == null) return `<td class="num dim opt">—</td>`;
+  const soft = r.mu_rank <= 10, hard = r.mu_rank > (r.mu_n || 30) - 10;
+  return `<td class="num opt" title="${esc(r.opp || "Tonight's opponent")} give up ${
+    r.mu > 0 ? "+" : ""}${(r.mu * 100).toFixed(0)}% ${STAT_WORD[r.stat] || r.stat} to his position vs the league — ${
+    ordinal(r.mu_rank)} softest of ${r.mu_n || 30}"><span class="mu ${soft ? "soft" : hard ? "hard" : ""}">${
+    r.mu > 0 ? "+" : ""}${(r.mu * 100).toFixed(0)}%</span><div class="sm">${ordinal(r.mu_rank)}</div></td>`;
 }
 function hitTd(r) {
   if (r.l10_hit == null) return `<td class="num dim opt">—</td>`;
@@ -260,7 +275,8 @@ const LEADER_COLS = [
   ["proj", "Pred", false, "our prediction, with its 10th–90th percentile range"],
   ["line", "Line", false, "bookmaker line and price for the side we lean"],
   ["adiff", "Diff", false, "our prediction minus the line (sorts by size, overs and unders alike)", true],
-  ["edge", "Edge", false, "our probability minus the bookmaker's, margin removed; green = a real edge"],
+  ["edge", "Edge", false, "our probability minus the bookmaker's (margin removed), with the side it is on; green = a real edge"],
+  ["mu", "Matchup", false, "what tonight's opponent gives up to his position, and its rank (1st = softest)", true],
   ["l10_hit", "Hit L10", false, "how often our side landed in his last 10 games", true],
 ];
 
@@ -285,10 +301,10 @@ function leaderTable(stat, rows, titled) {
         data-k="${k}"${title ? ` title="${title}"` : ""}>${label}${
       k === s.k ? (s.dir === -1 ? " ▾" : " ▴") : ""}</th>`).join("");
   const body = top.length ? top.map(r => `<tr>
-        ${playerCell(r)}${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${hitTd(r)}
+        ${playerCell(r)}${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${muTd(r)}${hitTd(r)}
       </tr>`).join("")
-    : `<tr><td colspan="6" class="empty">No players match.</td></tr>`;
-  return `<div class="block">${titled
+    : `<tr><td colspan="7" class="empty">No players match.</td></tr>`;
+  return `<div class="block" data-stat="${stat}">${titled
       ? `<div class="section"><h2>${STAT_WORD[stat] || stat}</h2></div>` : ""}
     <div class="tablewrap"><table class="board lead" data-stat="${stat}">
       <thead><tr>${head}</tr></thead><tbody>${body}</tbody>
@@ -436,12 +452,12 @@ async function initBoard() {
   const renderFull = view => {
     tbody.innerHTML = view.map(r => `<tr>
       ${playerCell(r)}
-      <td class="s"><span class="side">${r.stat}</span></td>
-      ${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${hitTd(r)}
+      <td class="s" data-stat="${r.stat}"><span class="side mkt">${r.stat}</span></td>
+      ${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${muTd(r)}${hitTd(r)}
       <td class="s opt">${r.tier ? `<span class="badge ${r.tier}">${r.tier}</span>`
         : (r.gate_status && r.gate_status !== "passed"
            ? `<span class="dim" title="${esc(r.gate_status)}">·</span>` : "—")}</td>
-    </tr>`).join("") || `<tr><td colspan="8" class="empty">No rows match.</td></tr>`;
+    </tr>`).join("") || `<tr><td colspan="9" class="empty">No rows match.</td></tr>`;
   };
 
   [statSel, tierSel, teamSel, gameSel].forEach(el => el.onchange = render);
@@ -651,7 +667,7 @@ async function initPlayer() {
   }
   $("#projCards").innerHTML = [...S, ...COMBOS].filter(s => h.projections[s]).map(s => {
     const v = h.projections[s];
-    return `<div class="card"><div class="k">${s}</div>
+    return `<div class="card" data-stat="${s}"><div class="k">${s}</div>
       <div class="v">${fmt(v.mean)}</div>
       <div class="r">${fmt(v.floor)}–${fmt(v.ceiling)}</div></div>`;
   }).join("");
@@ -1016,10 +1032,10 @@ async function initMatchups() {
   if (data.coverage != null) {
     const note = document.createElement("p");
     note.className = "sub";
-    note.innerHTML = `Positions are the 5-way split (PG/SG/SF/PF/C) from
-      the vendor roster map, covering <b>${(data.coverage * 100).toFixed(0)}%</b>
-      of minutes played; unmapped deep-bench players are excluded rather
-      than folded into a coarse bucket.`;
+    note.innerHTML = `Built from our own box scores. Positions are each
+      player's usual spot (PG/SG/SF/PF/C) from roster listings and ESPN depth
+      charts, covering <b>${(data.coverage * 100).toFixed(0)}%</b> of minutes
+      played; players without one are left out rather than guessed.`;
     $("#posChips").parentElement.after(note);
   }
   $("#posChips").innerHTML = positions.map(p =>

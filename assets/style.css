@@ -19,6 +19,11 @@
   /* chart marks: over the line vs under it — under is neutral, not red */
   --over: #3fd08a; --under: #4f6782;
   --good: var(--signal);
+  /* one quiet shade per market, kept clear of green (edge) and orange
+     (our prediction): points blue, rebounds violet, assists cyan,
+     threes gold, combos rose, the rest slate */
+  --st-pts: #6ea8fe; --st-reb: #b393f5; --st-ast: #52c6d3; --st-3pm: #e3c160;
+  --st-combo: #ee8fb5; --st-other: #8e9aab;
   --sans: "IBM Plex Sans Condensed", "Roboto Condensed", "Arial Narrow",
           system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -33,6 +38,8 @@
   --bad: #c4261d; --chip: #eef0f3;
   --tierA: #0d8a52; --tierB: #9a7b12;
   --over: #0d8a52; --under: #8397ad;
+  --st-pts: #2f6fd6; --st-reb: #7b52d6; --st-ast: #12879a; --st-3pm: #a57c0c;
+  --st-combo: #c24a7c; --st-other: #66717f;
   color-scheme: light;
 }
 
@@ -172,9 +179,14 @@ td.pl .tbadge { margin-right: 6px; }
 .side .ar { color: var(--muted); font-size: 10px; margin-right: 2px; }
 .edge { display: inline-block; min-width: 54px; padding: 3px 6px; border-radius: 4px; text-align: right; }
 .edge.hot { background: var(--signal-soft); color: var(--signal); font-weight: 600; }
+.edge .ar { font-size: 9px; margin-right: 1px; vertical-align: 1px; }
 .edge.warm { color: var(--signal); }
 .edge.cold { color: var(--muted); }
 .hit.good { color: var(--signal); }
+.mu { color: var(--muted); }
+.mu.soft { color: var(--ink); font-weight: 600; }
+.mu.soft::before { content: "▲"; font-size: 9px; color: var(--accent); margin-right: 3px; vertical-align: 1px; }
+.mu.hard { color: var(--faint); }
 .hit.meh { color: var(--muted); }
 
 .badge {
@@ -284,6 +296,26 @@ td .ww { font: 11.5px/1.35 var(--sans); color: var(--muted); font-weight: 400; w
 td .was { font: 11px var(--mono); color: var(--muted); font-weight: 400;
   white-space: nowrap; margin-top: 1px; }
 .movers { margin: 0 0 14px; }
+
+/* ---- market colours ---- */
+[data-stat="PTS"], [data-s="PTS"] { --st: var(--st-pts); }
+[data-stat="REB"], [data-s="REB"] { --st: var(--st-reb); }
+[data-stat="AST"], [data-s="AST"] { --st: var(--st-ast); }
+[data-stat="3PM"], [data-s="3PM"] { --st: var(--st-3pm); }
+[data-stat="PRA"], [data-s="PRA"], [data-stat="PR"], [data-s="PR"],
+[data-stat="PA"], [data-s="PA"], [data-stat="RA"], [data-s="RA"] { --st: var(--st-combo); }
+[data-stat="STL"], [data-s="STL"], [data-stat="BLK"], [data-s="BLK"],
+[data-stat="TOV"], [data-s="TOV"] { --st: var(--st-other); }
+.block .tablewrap { border-top: 2px solid var(--st, var(--line)); }
+.block .section h2::before, .chip[data-s]::before {
+  content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 2px;
+  background: var(--st, var(--faint)); margin-right: 7px; vertical-align: 1px;
+}
+.chip[data-s].on { background: var(--st, var(--accent)); border-color: var(--st, var(--accent)); color: var(--accent-ink); }
+.chip[data-s].on::before { background: var(--accent-ink); opacity: .55; }
+.side.mkt { color: var(--st, var(--ink)); }
+.card[data-stat] .k { color: var(--st, var(--faint)); }
+.card[data-stat] { border-top: 2px solid var(--st, var(--line)); }
 
 /* ---- leaders grid (wide screens): the owner's Best Bets 2x2 ---- */
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; margin: 0 0 16px; }
