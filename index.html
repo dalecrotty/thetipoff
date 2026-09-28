@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>the tipoff — NBA projections, Australia</title>
-<meta name="description" content="Transparent NBA player projections and prop edges for the Australian market, with an honest, audited track record.">
+<title>NBA Predictions Today — Player Props &amp; Stats | the tipoff</title>
+<meta name="description" content="Today's NBA predictions for every player — points, rebounds, assists and threes — set against bookmaker lines in decimal odds, with an audited track record.">
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/app.js" defer></script>
 </head>
@@ -12,7 +12,7 @@
 <header class="site">
   <div class="logo">the<span>tipoff</span></div>
   <nav class="site">
-    <a href="index.html" class="on">Projections</a>
+    <a href="index.html" class="on">Predictions</a>
     <a href="player.html">Player Hub</a>
     <a href="matchups.html">Matchups</a>
     <a href="with-without.html">With &amp; Without</a>
@@ -22,10 +22,11 @@
 </header>
 <div class="fresh" id="fresh">Loading…</div>
 <main>
-  <h1>Daily projections</h1>
+  <h1>NBA predictions today</h1>
   <p class="sub">Tonight's slate. <b>Leaders</b> gives a standalone
     top-15 table per stat; <b>Full board</b> is every player × market
     with lines and edges. Filter by game to isolate a fixture.</p>
+  <div id="movers" class="movers" hidden></div>
   <div class="controls">
     <div class="chips" id="viewChips">
       <button class="chip on" data-v="leaders">Leaders</button>
@@ -62,7 +63,7 @@
           <th class="s" data-k="player">Player</th>
           <th class="s" data-k="team">Team</th>
           <th class="s" data-k="stat">Market</th>
-          <th data-k="proj">Proj</th>
+          <th data-k="proj" title="our prediction">Pred</th>
           <th>Floor–Ceil</th>
           <th data-k="minutes">Min</th>
           <th data-k="line">Line</th>
@@ -77,7 +78,7 @@
   </div>
 </main>
 <footer class="rg">
-  <b>18+.</b> Projections are statistical estimates, not betting advice.
+  <b>18+.</b> Predictions are statistical estimates, not betting advice.
   Chances are you're about to lose. Gamble responsibly —
   <a href="https://www.gamblinghelponline.org.au">Gambling Help Online</a>
   · 1800 858 858.

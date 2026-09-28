@@ -90,18 +90,56 @@ async function loadJSON(path) {
   return r.json();
 }
 
+/* Degraded mode (brief §5.2): the site must never show a blank page and
+   must never let yesterday's numbers pass as today's. Two independent
+   checks, because they catch different failures:
+     status === "stale"  the run ran and failed, and said so in meta
+     age > STALE_HOURS   the run never happened at all, so nothing was
+                         there to mark it — the page has to notice itself
+*/
+const STALE_HOURS = 24;
+
+function staleNotice(m) {
+  const lastGood = m.last_ok_at || m.computed_at;
+  if (m.status === "stale") {
+    return `These are the numbers from <b>${lastGood}</b>. Tonight's run `
+      + `did not complete, so nothing here has been updated since.`;
+  }
+  // Demo data is already labelled as a replay, so its age isn't news.
+  if (m.demo) return null;
+  const age = (Date.now() - Date.parse(m.computed_at)) / 3.6e6;
+  if (Number.isFinite(age) && age > STALE_HOURS) {
+    const ago = age > 48 ? `${Math.floor(age / 24)} days` : `${Math.floor(age)} hours`;
+    return `These numbers were computed <b>${ago} ago</b> `
+      + `(${m.computed_at}) and have not refreshed since.`;
+  }
+  return null;
+}
+
 async function renderFreshness() {
   try {
     const m = await loadJSON("data/meta.json");
     const el = $("#fresh");
     if (!el) return m;
-    const build = m.build === "late" ? "late refresh (near lock)" : "overnight main build";
+    const build = { late: "late refresh (near lock)",
+                    recalc: "updated after news" }[m.build] || "overnight main build";
+    const warn = staleNotice(m);
+    el.classList.toggle("stale", !!warn);
     el.innerHTML =
+      (warn ? `<div class="staleline"><b>Out of date.</b> ${warn}</div>` : "") +
       `Slate <b>${m.slate_date}</b> · ${build} · computed <b>${m.computed_at}</b>` +
       ` · <span class="dim">${m.model_version}</span>` +
       (m.demo ? ` · <span class="demo">DEMO — 25-26 replay, not live</span>` : "");
     return m;
-  } catch { return null; }
+  } catch {
+    const el = $("#fresh");
+    if (el) {
+      el.classList.add("stale");
+      el.innerHTML = `<div class="staleline"><b>Out of date.</b> Today's `
+        + `numbers could not be loaded. Nothing on this page is current.</div>`;
+    }
+    return null;
+  }
 }
 
 /* ---------- table helpers ---------- */
@@ -146,7 +184,7 @@ const cmpBy = (k, dir) => (a, b) => {
 const LEADER_COLS = [
   ["rank", "Rk", true, "rank for this stat across the whole slate"],
   ["player", "Player", true, ""], ["team", "Team", true, ""],
-  ["proj", "Proj", false, ""], ["floor", "Floor–Ceil", false, "sorts on floor"],
+  ["proj", "Pred", false, "our prediction"], ["floor", "Floor–Ceil", false, "sorts on floor"],
   ["minutes", "Min", false, ""], ["line", "Line", false, ""],
   ["side", "Side", true, ""], ["edge", "Edge", false, ""],
   ["l10_over", "L10", false, "over-rate vs the line, last 10 games"],
@@ -175,7 +213,7 @@ function leaderTable(stat, rows) {
         <td class="s dim">${r.rank ?? i + 1}</td>
         <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
         <td class="s">${teamBadge(r.team)}</td>
-        <td class="num"><b>${fmt(r.proj)}</b></td>
+        <td class="num">${predCell(r, true)}</td>
         <td class="num dim">${fmt(r.floor)}–${fmt(r.ceiling)}</td>
         <td class="num">${fmt(r.minutes)}</td>
         <td class="num">${fmt(r.line)}</td>
@@ -191,6 +229,7 @@ async function initBoard() {
   await renderFreshness();
   const data = await loadJSON("data/projections.json");
   let rows = data.rows;
+  renderMovers(data);
   const tbody = $("#board tbody");
   const statSel = $("#fStat"), tierSel = $("#fTier"),
         teamSel = $("#fTeam"), gameSel = $("#fGame"), q = $("#fQ");
@@ -257,7 +296,7 @@ async function initBoard() {
       <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
       <td class="s">${teamBadge(r.team)}</td>
       <td class="s">${r.stat}</td>
-      <td class="num">${fmt(r.proj)}</td>
+      <td class="num">${predCell(r, false)}</td>
       <td class="num dim">${fmt(r.floor)}–${fmt(r.ceiling)}</td>
       <td class="num">${fmt(r.minutes)}${r.minutes_source && r.minutes_source !== "model"
         ? ` <span class="badge src">${r.minutes_source}</span>` : ""}</td>
@@ -279,6 +318,53 @@ async function initBoard() {
   const rank = r => r.tier ? 2 : (r.gate_status === "failed:edge_below_tier" ? 1 : 0);
   rows.sort((a, b) => rank(b) - rank(a) || (b.edge ?? -1) - (a.edge ?? -1));
   render();
+}
+
+
+/* ---------- movement since the morning (brief §5.4) ----------
+   "22.4 at 9am → 25.1, Jokic out". The prior is the day's first run;
+   times are shown in Australian Eastern time, where the readers are. */
+function aedtTime(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return "";
+  const parts = new Intl.DateTimeFormat("en-AU", {
+    timeZone: "Australia/Sydney", hour: "numeric", minute: "2-digit",
+    hour12: true }).formatToParts(d);
+  const get = t => (parts.find(p => p.type === t) || {}).value || "";
+  const mins = get("minute");
+  return `${get("hour")}${mins === "00" ? "" : ":" + mins}${get("dayPeriod").toLowerCase().replace(/\./g, "")}`;
+}
+
+function predCell(r, bold) {
+  const v = bold ? `<b>${fmt(r.proj)}</b>` : fmt(r.proj);
+  if (r.prior == null || r.proj == null) return v;
+  const up = r.proj > r.prior;
+  const was = `${fmt(r.prior)} at ${aedtTime(r.prior_at)}`;
+  return `${v} <span class="mv ${up ? "up" : "down"}" title="${was} → ${
+    fmt(r.proj)}, ${esc(r.move_reason || "")}">${up ? "▲" : "▼"}</span>` +
+    `<div class="was">was ${was} · ${esc(r.move_reason || "")}</div>`;
+}
+
+function renderMovers(data) {
+  const el = $("#movers");
+  if (!el) return;
+  const m = data.movers || [];
+  const ups = (data.updates || []).map(u => aedtTime(u.run_at)).filter(Boolean);
+  if (!m.length) { el.hidden = true; return; }
+  el.hidden = false;
+  el.innerHTML = `<div class="section"><h2>Since this morning</h2></div>
+    <p class="sub">Predictions that moved after news. Updated ${
+      ups.join(", ")} (AEDT).</p>
+    <div class="tablewrap"><table><tbody>${m.map(r => `<tr>
+      <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
+      <td class="s">${teamBadge(r.team)}</td>
+      <td class="s">${r.stat}</td>
+      <td class="num dim">${fmt(r.prior)}</td>
+      <td class="num">→ <b>${fmt(r.now)}</b></td>
+      <td class="num"><span class="mv ${r.delta > 0 ? "up" : "down"}">${
+        r.delta > 0 ? "+" : ""}${fmt(r.delta)}</span></td>
+      <td class="s">${esc(r.reason)}</td>
+    </tr>`).join("")}</tbody></table></div>`;
 }
 
 /* ---------- prop chart (player hub) ---------- */
@@ -392,6 +478,7 @@ async function initPlayer() {
   const h = await loadJSON(`data/player_hub/${pid}.json`);
 
   $("#pname").textContent = h.player;
+  document.title = `${h.player} props and stats — the tipoff`;
   $("#pteam").innerHTML = teamBadge(h.team, { withName: true });
   $("#psinglet").innerHTML = playerSinglet(h.team, h.number);
   $("#pmins").innerHTML = h.minutes

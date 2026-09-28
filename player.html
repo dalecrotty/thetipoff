@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Player Hub — the tipoff</title>
+<title>NBA Player Props and Stats — the tipoff</title>
+<meta name="description" content="Every NBA player's props and stats: tonight's prediction with its range, game-by-game results against the line, hit rates and splits.">
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/app.js" defer></script>
 </head>
@@ -11,7 +12,7 @@
 <header class="site">
   <div class="logo">the<span>tipoff</span></div>
   <nav class="site">
-    <a href="index.html">Projections</a>
+    <a href="index.html">Predictions</a>
     <a href="player.html" class="on">Player Hub</a>
     <a href="matchups.html">Matchups</a>
     <a href="with-without.html">With &amp; Without</a>
@@ -28,12 +29,12 @@
     <span id="psinglet"></span>
     <div>
       <h1 id="pname">—</h1>
-      <p class="sub"><span id="pteam"></span> · projected
+      <p class="sub"><span id="pteam"></span> · predicted
         <span id="pmins">—</span></p>
     </div>
   </div>
 
-  <div class="section"><h2>Tonight's projection (floor–ceiling = 10th–90th)</h2></div>
+  <div class="section"><h2>Tonight's prediction (floor–ceiling = 10th–90th)</h2></div>
   <div class="cards" id="projCards"></div>
 
   <div class="section"><h2>Prop chart — game by game vs the line</h2></div>
@@ -59,7 +60,7 @@
     <div class="legendrow">
       <span><span class="key" style="background:var(--over)"></span>over the line</span>
       <span><span class="key" style="background:var(--under)"></span>under</span>
-      <span><span class="key" style="background:var(--accent);border-radius:1px;height:3px;width:14px"></span>projection</span>
+      <span><span class="key" style="background:var(--accent);border-radius:1px;height:3px;width:14px"></span>our prediction</span>
       <span id="chartNote"></span>
     </div>
     <div class="tip" id="tip"></div>
@@ -144,7 +145,7 @@
   </div>
 </main>
 <footer class="rg">
-  <b>18+.</b> Projections are statistical estimates, not betting advice.
+  <b>18+.</b> Predictions are statistical estimates, not betting advice.
   Gamble responsibly —
   <a href="https://www.gamblinghelponline.org.au">Gambling Help Online</a>
   · 1800 858 858.
