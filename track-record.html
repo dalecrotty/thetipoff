@@ -33,18 +33,41 @@
 </header>
 <div class="fresh" id="fresh">Loading…</div>
 <main>
-  <h1>Track record</h1>
-  <p class="sub" id="recnote"></p>
-  <div class="cards" id="recCards"></div>
-  <div class="tablewrap">
-    <table id="rec">
-      <thead><tr>
-        <th class="s">Slate</th><th class="s">Market</th><th class="s">Side</th>
-        <th>Line</th><th>Price</th>
-        <th class="s">Result</th><th>CLV</th>
-      </tr></thead>
-      <tbody></tbody>
-    </table>
+  <p class="kicker">Track record</p>
+  <h1>How accurate our NBA predictions are</h1>
+  <p class="lead" id="rlead">Loading…</p>
+
+  <div class="section"><h2>Accuracy: how far off, on average</h2></div>
+  <p class="sub">Average miss per player game (our prediction against what he
+  did), by market. Bias is the average of prediction minus result: above
+  zero means we ran high.</p>
+  <div class="tablewrap"><table id="acc" class="rec">
+    <thead><tr><th class="s">Market</th><th>Last 7 days</th><th>Last 30 days</th>
+      <th>Season</th><th class="opt">Bias</th></tr></thead><tbody></tbody></table></div>
+
+  <div class="section"><h2>Ranges: do they hold?</h2></div>
+  <p class="sub">Every prediction comes with a range the result should land
+  inside 80% of the time. If the ranges are honest, the season column sits
+  near 80%, with misses split evenly above and below.</p>
+  <div class="tablewrap"><table id="cov" class="rec">
+    <thead><tr><th class="s">Market</th><th>Inside the range</th>
+      <th>Below</th><th>Above</th><th class="opt">Player games</th></tr></thead><tbody></tbody></table></div>
+
+  <div class="section"><h2>Just the Tip</h2></div>
+  <div class="cards" id="rtip"></div>
+
+  <div class="section"><h2>Every edge on the board</h2></div>
+  <p class="sub">Every edge of 3% or more at the reference bookmaker, whether
+  or not it was the tip, graded against the closing line: the price when we
+  flagged it against the bookmaker's fair price at tip-off.</p>
+  <div class="cards" id="redges"></div>
+
+  <div class="section"><h2>How this is graded</h2></div>
+  <div class="prose">
+    <p>Each player game is graded on our last prediction before tip-off,
+    for every player who took the court. Players who didn't play aren't
+    graded. Nothing is removed after the fact, and the record starts on
+    opening night: preseason games aren't counted.</p>
   </div>
 </main>
 <footer class="rg">

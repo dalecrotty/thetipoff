@@ -1136,24 +1136,40 @@ async function initBoxscore() {
 async function initRecord() {
   await renderFreshness();
   const d = await loadJSON("data/track_record.json");
-  const s = d.summary;
-  $("#recCards").innerHTML = `
-    <div class="card"><div class="k">Graded edges</div><div class="v">${s.n_graded}</div></div>
-    <div class="card"><div class="k">Hit rate</div><div class="v">${pct(s.hit_rate)}</div></div>
-    <div class="card"><div class="k">ROI (flat stakes)</div><div class="v">${pct(s.roi)}</div></div>
-    <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(s.avg_clv)}</div></div>`;
-  $("#recnote").textContent = d.note || "";
-  const tbody = $("#rec tbody");
-  tbody.innerHTML = d.rows.length ? d.rows.map(r => `<tr>
-    <td class="s dim">${r.slate_date}</td><td class="s">${r.market}</td>
-    <td class="s"><span class="badge ${r.side}">${r.side}</span></td>
-    <td class="num">${fmt(r.line)}</td><td class="num">${fmt(r.price, 2)}</td>
-
-    <td class="s">${r.result ?? "ungraded"}</td>
-    <td class="num ${r.clv > 0 ? "pos" : r.clv < 0 ? "neg" : ""}">${pct(r.clv)}</td>
-  </tr>`).join("")
-    : `<tr><td colspan="8" class="empty">Populates forward-only from opening
-       night — every gated edge, bet or not. No back-filled picks.</td></tr>`;
+  const cal = d.calibration || {};
+  const mk = cal.markets || [];
+  const W = (m, k) => (m.windows || {})[k] || { n: 0 };
+  const pts = mk.find(m => m.stat === "PTS");
+  const all = mk.reduce((a, m) => {
+    const s = W(m, "season"); if (!s.n) return a;
+    a.n += s.n; a.in += s.coverage * s.n; return a; }, { n: 0, in: 0 });
+  $("#rlead").innerHTML = pts && W(pts, "season").n
+    ? `Across <b>${W(pts, "season").n.toLocaleString("en-AU")}</b> player games this season, our points predictions `
+      + `missed by <span class="n">${fmt(W(pts, "season").mae)}</span> on average, and `
+      + `<span class="n">${pct(all.in / all.n)}</span> of results landed inside our 80% range.`
+    : `The track record starts on opening night (21 October AEDT). From then, every prediction is graded here the morning after, in the open.`;
+  const cell = w => w.n ? `${fmt(w.mae, 2)}<div class="sm dim">${w.n.toLocaleString("en-AU")} games</div>` : `<span class="dim">—</span>`;
+  $("#acc tbody").innerHTML = mk.length ? mk.map(m => `<tr>
+      <td class="s">${esc(m.label)}</td><td class="num">${cell(W(m, "7d"))}</td>
+      <td class="num">${cell(W(m, "30d"))}</td><td class="num">${cell(W(m, "season"))}</td>
+      <td class="num opt">${W(m, "season").n ? (W(m, "season").bias > 0 ? "+" : "") + fmt(W(m, "season").bias, 2) : "—"}</td></tr>`).join("")
+    : `<tr><td colspan="5" class="empty">Fills in from opening night.</td></tr>`;
+  $("#cov tbody").innerHTML = mk.length ? mk.map(m => { const s = W(m, "season");
+      return `<tr><td class="s">${esc(m.label)}</td>
+      <td class="num"><b>${pct(s.coverage)}</b></td>
+      <td class="num">${pct(s.below)}</td><td class="num">${pct(s.above)}</td>
+      <td class="num opt">${s.n ? s.n.toLocaleString("en-AU") : "—"}</td></tr>`; }).join("")
+    : `<tr><td colspan="5" class="empty">Fills in from opening night.</td></tr>`;
+  const t = d.tips;
+  $("#rtip").innerHTML = `
+    <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(t?.avg_clv)}</div><div class="r">${t?.n_clv ?? 0} graded at the close</div></div>
+    <div class="card"><div class="k">Beat the close</div><div class="v">${pct(t?.beat_close)}</div></div>
+    <div class="card"><div class="k">Won–lost</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="tip.html">Every tip →</a></div></div>`;
+  const e = d.edges || {};
+  $("#redges").innerHTML = `
+    <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(e.avg_clv)}</div><div class="r">${e.n_clv ?? 0} graded at the close</div></div>
+    <div class="card"><div class="k">Beat the close</div><div class="v">${pct(e.beat_close)}</div></div>
+    <div class="card"><div class="k">Edges flagged</div><div class="v">${(e.n ?? 0).toLocaleString("en-AU")}</div></div>`;
 }
 
 /* ---------- Just the Tip ---------- */

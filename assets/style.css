@@ -507,3 +507,7 @@ table.stat td.s a { color: var(--ink); font-weight: 600; }
 table.stat .sm { font: 11.5px var(--mono); }
 table.stat td.s { white-space: normal; }
 @media (max-width: 640px) { table.stat .opt { display: none; } }
+
+/* track record */
+table.rec { min-width: 0; }
+@media (max-width: 640px) { table.rec .opt, table.rec .sm { display: none; } }
