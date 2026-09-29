@@ -1496,7 +1496,9 @@ async function initSplits() {
   render();
 }
 
-/* ---------- email signup (every page) ----------
+/* ---------- founding-member interest (every page) ----------
+   Owner's call (29 Sep 2026): no tip or newsletter emails. The list gets
+   one email, when founding memberships open.
    Posts to the `subscribe` edge function, which keeps the list in our own
    database and adds it to Beehiiv. The key below is Supabase's public
    anon key: it can only call functions, and nothing in the database is
@@ -1513,8 +1515,8 @@ function mountSignup() {
   el.className = "signup";
   el.id = "signup";
   el.innerHTML = `
-    <div class="su-copy"><b>Just the Tip, by email.</b>
-      <span>Our biggest edge and the record, free. Unsubscribe any time.</span></div>
+    <div class="su-copy"><b>Founding members lock in a lower price.</b>
+      <span>Leave your email and we'll tell you when memberships open. One email, nothing else.</span></div>
     <form id="suForm" novalidate>
       <label class="vh" for="suEmail">Email address</label>
       <input id="suEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
@@ -1522,7 +1524,7 @@ function mountSignup() {
       <button id="suBtn" type="submit">Sign up</button>
     </form>
     <p class="su-msg" id="suMsg" role="status"></p>
-    <p class="su-fine">We use your email only to send thetipoff emails. <a href="/privacy.html">Privacy</a></p>`;
+    <p class="su-fine">Used only to tell you when memberships open. <a href="/privacy.html">Privacy</a></p>`;
   foot.before(el);
   $("#suForm").addEventListener("submit", async ev => {
     ev.preventDefault();
@@ -1539,7 +1541,7 @@ function mountSignup() {
       const d = await r.json().catch(() => ({}));
       if (r.ok && d.ok) {
         $("#suForm").hidden = true;
-        msg.textContent = "You're on the list."; msg.className = "su-msg ok";
+        msg.textContent = "You're on the list. We'll email you once, when memberships open."; msg.className = "su-msg ok";
       } else {
         msg.textContent = d.error || "That didn't go through. Try again in a minute."; msg.className = "su-msg err";
       }
