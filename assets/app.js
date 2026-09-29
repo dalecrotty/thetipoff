@@ -1270,10 +1270,21 @@ function edgeSpan(r) {
 /* ---------- home ---------- */
 async function initHome() {
   await renderFreshness();
-  const [tips, board, gd] = await Promise.all([
+  const [tips, board, gd, trackRec] = await Promise.all([
     loadJSON("data/tips.json").catch(() => null),
     loadJSON("data/projections.json").catch(() => null),
-    loadJSON("data/games.json").catch(() => null)]);
+    loadJSON("data/games.json").catch(() => null),
+    loadJSON("data/track_record.json").catch(() => null)]);
+  // the record, in the open (brief §10): accuracy first, then the tip's CLV
+  const pts = ((trackRec?.calibration?.markets) || []).find(m => m.stat === "PTS");
+  const ps = pts?.windows?.season || {};
+  const ts = tips?.summary || {};
+  $("#hRecord").innerHTML = ps.n ? `<div class="cards">
+    <div class="card"><div class="k">Points: average miss</div><div class="v">${fmt(ps.mae)}</div><div class="r">${ps.n.toLocaleString("en-AU")} player games</div></div>
+    <div class="card"><div class="k">Inside our range</div><div class="v">${pct(ps.coverage)}</div><div class="r">target 80%</div></div>
+    <div class="card"><div class="k">Tip: avg CLV</div><div class="v">${pct(ts.avg_clv)}</div><div class="r">${ts.n_clv ?? 0} graded at the close</div></div>
+    <div class="card"><div class="k">Tip: won–lost</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="track-record.html">Full record →</a></div></div></div>`
+    : `<p class="dim">Every prediction is graded in the open from opening night, 21 October (AEDT): how far off, whether the ranges hold, and the tip's closing-line value. <a href="track-record.html">How it's graded →</a></p>`;
   const games = gd?.games || [];
   if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${auDate(games[0].start)}`;
 
@@ -1401,6 +1412,8 @@ const SPLIT_FILTERS = [
       return v === "lo" ? r.total < 220 : v === "mid" ? r.total >= 220 && r.total < 235 : r.total >= 235; } },
   { k: "top3", label: "Top-3 minutes player", opts: [["all", "All"], ["out", "One missing"], ["in", "All playing"]],
     f: (r, v) => v === "all" || (v === "out") === !!r.missing_top3 },
+  { k: "cup", label: "NBA Cup", opts: [["all", "All"], ["cup", "Cup games"], ["not", "Not Cup"]],
+    f: (r, v) => v === "all" || (v === "cup") === !!r.cup },
 ];
 
 /* Team rows (each game appears once per side). O–U is counted per game,
