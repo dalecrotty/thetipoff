@@ -511,3 +511,30 @@ table.stat td.s { white-space: normal; }
 /* track record */
 table.rec { min-width: 0; }
 @media (max-width: 640px) { table.rec .opt, table.rec .sm { display: none; } }
+
+/* ---------- email signup ---------- */
+.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.signup { max-width: 1120px; margin: 24px auto 0; padding: 16px; display: grid;
+  grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: center;
+  border-top: 1px solid var(--line); }
+.signup .su-copy b { font: 600 16px var(--sans); color: var(--ink); display: block; }
+.signup .su-copy span { color: var(--muted); font-size: 14px; }
+.signup form { display: flex; gap: 8px; }
+.signup input[type=email] { background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+  border-radius: 6px; padding: 9px 11px; font: 14px var(--sans); width: 240px; }
+.signup input[type=email]:focus-visible, .signup button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.signup button { background: var(--accent); color: #111; border: 0; border-radius: 6px;
+  padding: 9px 16px; font: 600 14px var(--sans); cursor: pointer; }
+.signup button:disabled { opacity: .6; cursor: default; }
+.signup .su-msg { grid-column: 1 / -1; margin: 0; font-size: 14px; min-height: 0; }
+.signup .su-msg:empty { display: none; }
+.signup .su-msg.ok { color: var(--ink); }
+.signup .su-msg.err { color: var(--dn); }
+.signup .su-fine { grid-column: 1 / -1; margin: 0; color: var(--faint); font-size: 12.5px; }
+.signup .su-fine a { color: var(--muted); }
+@media (max-width: 640px) {
+  .signup { grid-template-columns: minmax(0, 1fr); margin-top: 16px; }
+  .signup form { width: 100%; }
+  .signup input[type=email] { flex: 1; width: auto; min-width: 0; }
+}
+td.empty { white-space: normal; }

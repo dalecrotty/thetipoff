@@ -1496,6 +1496,60 @@ async function initSplits() {
   render();
 }
 
+/* ---------- email signup (every page) ----------
+   Posts to the `subscribe` edge function, which keeps the list in our own
+   database and adds it to Beehiiv. The key below is Supabase's public
+   anon key: it can only call functions, and nothing in the database is
+   readable with it. `website` is a honeypot people never see. */
+const SIGNUP = {
+  url: "https://gpupsgkyyldqyfemtjml.supabase.co/functions/v1/subscribe",
+  key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdwdXBzZ2t5eWxkcXlmZW10am1sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3NDQ5NjQsImV4cCI6MjA5NzMyMDk2NH0.QKumwzupWA_61YodHozZmHE32HTIlHnoquXxaNzlvBA",
+};
+
+function mountSignup() {
+  const foot = $("footer.rg");
+  if (!foot || $("#signup")) return;
+  const el = document.createElement("section");
+  el.className = "signup";
+  el.id = "signup";
+  el.innerHTML = `
+    <div class="su-copy"><b>Just the Tip, by email.</b>
+      <span>Our biggest edge and the record, free. Unsubscribe any time.</span></div>
+    <form id="suForm" novalidate>
+      <label class="vh" for="suEmail">Email address</label>
+      <input id="suEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+      <input id="suWebsite" class="vh" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button id="suBtn" type="submit">Sign up</button>
+    </form>
+    <p class="su-msg" id="suMsg" role="status"></p>
+    <p class="su-fine">We use your email only to send thetipoff emails. <a href="/privacy.html">Privacy</a></p>`;
+  foot.before(el);
+  $("#suForm").addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const email = $("#suEmail").value.trim();
+    const msg = $("#suMsg"), btn = $("#suBtn");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+      msg.textContent = "That email address doesn't look right."; msg.className = "su-msg err"; return;
+    }
+    btn.disabled = true; btn.textContent = "Signing up…"; msg.textContent = "";
+    try {
+      const r = await fetch(SIGNUP.url, { method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": `Bearer ${SIGNUP.key}` },
+        body: JSON.stringify({ email, page: location.pathname, website: $("#suWebsite").value }) });
+      const d = await r.json().catch(() => ({}));
+      if (r.ok && d.ok) {
+        $("#suForm").hidden = true;
+        msg.textContent = "You're on the list."; msg.className = "su-msg ok";
+      } else {
+        msg.textContent = d.error || "That didn't go through. Try again in a minute."; msg.className = "su-msg err";
+      }
+    } catch {
+      msg.textContent = "That didn't go through. Try again in a minute."; msg.className = "su-msg err";
+    } finally { btn.disabled = false; btn.textContent = "Sign up"; }
+  });
+}
+addEventListener("DOMContentLoaded", mountSignup);
+
 /* ---------- boot ---------- */
 addEventListener("DOMContentLoaded", () => {
   const page = document.body.dataset.page;
