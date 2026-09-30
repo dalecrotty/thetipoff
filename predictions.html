@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/app.js" defer></script>
+<script type="application/ld+json" data-k="dataset">{"@context": "https://schema.org", "@type": "Dataset", "name": "NBA player predictions", "url": "https://thetipoff.com.au/predictions.html", "description": "Predictions for every NBA player each night (points, rebounds, assists, threes and combined markets) with 80% ranges, set against bookmaker player prop lines in decimal odds.", "creator": {"@type": "Organization", "name": "thetipoff", "url": "https://thetipoff.com.au/"}, "isAccessibleForFree": true, "dateModified": "2026-01-08T09:30+11:00", "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://thetipoff.com.au/data/projections.json"}]}</script>
 </head>
 <body data-page="board">
 <header class="site">
@@ -35,7 +36,7 @@
 <main>
   <p class="kicker">Tonight · <span id="slateLbl"></span></p>
   <h1>NBA predictions today</h1>
-  <p class="lead" id="lead"></p>
+  <p class="lead" id="lead"><!--pre-->thetipoff predicts points, rebounds, assists, threes and the combined markets for every NBA player each night, set against the bookmaker line. The 2026-27 predictions start with the first games.<!--/pre--></p>
   <div id="movers" class="movers" hidden></div>
   <div class="controls">
     <div class="seg" id="viewChips">
@@ -51,7 +52,7 @@
   <!-- Leaders: one stat at a time, top 15 -->
   <div id="leadersWrap">
     <div class="controls"><div class="chips" id="statTabs"></div></div>
-    <div id="leaders"></div>
+    <div id="leaders"><!--pre--><!--/pre--></div>
   </div>
 
   <!-- Full board: every player x market -->
