@@ -4,63 +4,63 @@
  "team": "Toronto",
  "projections": {
   "3PM": {
-   "mean": 0.09,
+   "mean": 0.1,
    "floor": 0.0,
-   "ceiling": 0.09
+   "ceiling": 0.1
   },
   "AST": {
-   "mean": 2.01,
-   "floor": 0.0,
-   "ceiling": 3.98
+   "mean": 2.11,
+   "floor": 0.04,
+   "ceiling": 4.1
   },
   "BLK": {
-   "mean": 0.33,
+   "mean": 0.35,
    "floor": 0.0,
-   "ceiling": 1.01
+   "ceiling": 1.02
   },
   "PTS": {
-   "mean": 3.41,
+   "mean": 3.58,
    "floor": 0.0,
-   "ceiling": 9.08
+   "ceiling": 9.3
   },
   "REB": {
-   "mean": 2.08,
-   "floor": 0.24,
-   "ceiling": 4.27
+   "mean": 2.19,
+   "floor": 0.42,
+   "ceiling": 4.4
   },
   "STL": {
-   "mean": 0.51,
+   "mean": 0.54,
+   "floor": 0.0,
+   "ceiling": 1.98
+  },
+  "TOV": {
+   "mean": 0.55,
    "floor": 0.0,
    "ceiling": 1.95
   },
-  "TOV": {
-   "mean": 0.52,
-   "floor": 0.0,
-   "ceiling": 1.91
-  },
   "PRA": {
-   "mean": 7.51,
-   "floor": 0.0,
-   "ceiling": 16.22
+   "mean": 7.89,
+   "floor": 0.17,
+   "ceiling": 16.6
   },
   "PR": {
-   "mean": 5.5,
+   "mean": 5.77,
    "floor": 0.0,
-   "ceiling": 13.61
+   "ceiling": 13.89
   },
   "PA": {
-   "mean": 5.43,
+   "mean": 5.7,
    "floor": 0.0,
-   "ceiling": 12.21
+   "ceiling": 12.48
   },
   "RA": {
-   "mean": 4.1,
-   "floor": 0.74,
-   "ceiling": 7.54
+   "mean": 4.3,
+   "floor": 0.95,
+   "ceiling": 7.75
   }
  },
  "minutes": {
-  "value": 10.9,
+  "value": 11.5,
   "source": "model"
  },
  "splits": {
