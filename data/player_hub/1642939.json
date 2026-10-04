@@ -1,0 +1,667 @@
+{
+ "player_id": 1642939,
+ "player": "Miles Kelly",
+ "team": "Golden State",
+ "projections": {
+  "3PM": {
+   "mean": 0.89,
+   "floor": 0.0,
+   "ceiling": 2.15
+  },
+  "AST": {
+   "mean": 1.3,
+   "floor": 0.01,
+   "ceiling": 3.08
+  },
+  "BLK": {
+   "mean": 0.1,
+   "floor": 0.0,
+   "ceiling": 0.99
+  },
+  "PTS": {
+   "mean": 4.47,
+   "floor": 0.0,
+   "ceiling": 10.14
+  },
+  "REB": {
+   "mean": 2.02,
+   "floor": 0.18,
+   "ceiling": 4.2
+  },
+  "STL": {
+   "mean": 0.42,
+   "floor": 0.0,
+   "ceiling": 1.21
+  },
+  "TOV": {
+   "mean": 0.65,
+   "floor": 0.03,
+   "ceiling": 2.04
+  },
+  "PRA": {
+   "mean": 7.79,
+   "floor": 0.07,
+   "ceiling": 16.5
+  },
+  "PR": {
+   "mean": 6.49,
+   "floor": 0.0,
+   "ceiling": 14.6
+  },
+  "PA": {
+   "mean": 5.77,
+   "floor": 0.0,
+   "ceiling": 12.55
+  },
+  "RA": {
+   "mean": 3.32,
+   "floor": 0.57,
+   "ceiling": 6.62
+  }
+ },
+ "minutes": {
+  "value": 12.6,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 14,
+   "min_pg": 9.6,
+   "PTS": {
+    "pg": 3.07,
+    "pm": 0.322
+   },
+   "REB": {
+    "pg": 1.71,
+    "pm": 0.179
+   },
+   "AST": {
+    "pg": 0.86,
+    "pm": 0.09
+   },
+   "3PM": {
+    "pg": 0.71,
+    "pm": 0.075
+   },
+   "STL": {
+    "pg": 0.29,
+    "pm": 0.03
+   },
+   "BLK": {
+    "pg": 0.07,
+    "pm": 0.007
+   },
+   "TOV": {
+    "pg": 0.43,
+    "pm": 0.045
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 9.7,
+   "PTS": {
+    "pg": 3.1,
+    "pm": 0.32
+   },
+   "REB": {
+    "pg": 1.7,
+    "pm": 0.175
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.103
+   },
+   "3PM": {
+    "pg": 0.8,
+    "pm": 0.083
+   },
+   "STL": {
+    "pg": 0.4,
+    "pm": 0.041
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.01
+   },
+   "TOV": {
+    "pg": 0.3,
+    "pm": 0.031
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 11.3,
+   "PTS": {
+    "pg": 2.8,
+    "pm": 0.248
+   },
+   "REB": {
+    "pg": 2.4,
+    "pm": 0.212
+   },
+   "AST": {
+    "pg": 1.4,
+    "pm": 0.124
+   },
+   "3PM": {
+    "pg": 0.6,
+    "pm": 0.053
+   },
+   "STL": {
+    "pg": 0.4,
+    "pm": 0.035
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.018
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.053
+   }
+  },
+  "home": {
+   "games": 10,
+   "min_pg": 10.7,
+   "PTS": {
+    "pg": 3.6,
+    "pm": 0.336
+   },
+   "REB": {
+    "pg": 1.6,
+    "pm": 0.149
+   },
+   "AST": {
+    "pg": 0.9,
+    "pm": 0.084
+   },
+   "3PM": {
+    "pg": 0.9,
+    "pm": 0.084
+   },
+   "STL": {
+    "pg": 0.4,
+    "pm": 0.037
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.047
+   }
+  },
+  "away": {
+   "games": 4,
+   "min_pg": 6.6,
+   "PTS": {
+    "pg": 1.75,
+    "pm": 0.264
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.302
+   },
+   "AST": {
+    "pg": 0.75,
+    "pm": 0.113
+   },
+   "3PM": {
+    "pg": 0.25,
+    "pm": 0.038
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.25,
+    "pm": 0.038
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2025-10-26",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-26_dallas_vs_toronto",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-17",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2025-11-17_dallas_vs_minnesota",
+   "starter": false,
+   "rest": "21",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.1,
+   "PTS": 2.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-10",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2026-01-10_chicago_vs_dallas",
+   "starter": false,
+   "rest": "53",
+   "result": null,
+   "opp_tier": null,
+   "min": 14.8,
+   "PTS": 5.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-12",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2026-01-12_brooklyn_vs_dallas",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.8,
+   "PTS": 5.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-14",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-01-14_dallas_vs_denver",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.6,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-15",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2026-01-15_dallas_vs_utah",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 22.0,
+   "PTS": 9.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-17",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2026-01-17_dallas_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.8,
+   "PTS": 8.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-19",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-01-19_dallas_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.1,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-22",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2026-01-22_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 0.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-28",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-01-28_dallas_vs_minnesota",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-03",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-02-03_boston_vs_dallas",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.1,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-02-05",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-02-05_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.9,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-24",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2026-02-24_brooklyn_vs_dallas",
+   "starter": false,
+   "rest": "18",
+   "result": null,
+   "opp_tier": null,
+   "min": 0.5,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-27",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-02-27_dallas_vs_memphis",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 31.0,
+   "PTS": 9.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-02-27",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-02-27_dallas_vs_memphis",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 31.0,
+   "PTS": 9.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-02-24",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2026-02-24_brooklyn_vs_dallas",
+   "starter": false,
+   "rest": "18",
+   "result": null,
+   "opp_tier": null,
+   "min": 0.5,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-05",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-02-05_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.9,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-03",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-02-03_boston_vs_dallas",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.1,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-28",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-01-28_dallas_vs_minnesota",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-22",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2026-01-22_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 0.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-19",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-01-19_dallas_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.1,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-17",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2026-01-17_dallas_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.8,
+   "PTS": 8.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-15",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2026-01-15_dallas_vs_utah",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 22.0,
+   "PTS": 9.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-14",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-01-14_dallas_vs_denver",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.6,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "LA Clippers"
+}

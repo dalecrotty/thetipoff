@@ -1,0 +1,973 @@
+{
+ "player_id": 1642502,
+ "player": "Malevy Leons",
+ "team": "Golden State",
+ "projections": {
+  "3PM": {
+   "mean": 0.18,
+   "floor": 0.03,
+   "ceiling": 0.18
+  },
+  "AST": {
+   "mean": 1.19,
+   "floor": 0.0,
+   "ceiling": 2.97
+  },
+  "BLK": {
+   "mean": 0.35,
+   "floor": 0.0,
+   "ceiling": 1.02
+  },
+  "PTS": {
+   "mean": 3.82,
+   "floor": 0.0,
+   "ceiling": 9.48
+  },
+  "REB": {
+   "mean": 2.18,
+   "floor": 0.34,
+   "ceiling": 4.36
+  },
+  "STL": {
+   "mean": 0.66,
+   "floor": 0.0,
+   "ceiling": 2.02
+  },
+  "TOV": {
+   "mean": 0.55,
+   "floor": 0.0,
+   "ceiling": 1.93
+  },
+  "PRA": {
+   "mean": 7.19,
+   "floor": 0.0,
+   "ceiling": 15.9
+  },
+  "PR": {
+   "mean": 6.0,
+   "floor": 0.0,
+   "ceiling": 14.11
+  },
+  "PA": {
+   "mean": 5.01,
+   "floor": 0.0,
+   "ceiling": 11.79
+  },
+  "RA": {
+   "mean": 3.37,
+   "floor": 0.62,
+   "ceiling": 6.67
+  }
+ },
+ "minutes": {
+  "value": 12.0,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 31,
+   "min_pg": 9.6,
+   "PTS": {
+    "pg": 2.74,
+    "pm": 0.287
+   },
+   "REB": {
+    "pg": 1.81,
+    "pm": 0.189
+   },
+   "AST": {
+    "pg": 0.77,
+    "pm": 0.081
+   },
+   "3PM": {
+    "pg": 0.13,
+    "pm": 0.013
+   },
+   "STL": {
+    "pg": 0.45,
+    "pm": 0.047
+   },
+   "BLK": {
+    "pg": 0.26,
+    "pm": 0.027
+   },
+   "TOV": {
+    "pg": 0.45,
+    "pm": 0.047
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 14.0,
+   "PTS": {
+    "pg": 4.3,
+    "pm": 0.306
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.142
+   },
+   "AST": {
+    "pg": 1.4,
+    "pm": 0.1
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.014
+   },
+   "STL": {
+    "pg": 0.8,
+    "pm": 0.057
+   },
+   "BLK": {
+    "pg": 0.3,
+    "pm": 0.021
+   },
+   "TOV": {
+    "pg": 0.9,
+    "pm": 0.064
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 20.6,
+   "PTS": {
+    "pg": 6.8,
+    "pm": 0.33
+   },
+   "REB": {
+    "pg": 3.4,
+    "pm": 0.165
+   },
+   "AST": {
+    "pg": 2.6,
+    "pm": 0.126
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.01
+   },
+   "STL": {
+    "pg": 1.2,
+    "pm": 0.058
+   },
+   "BLK": {
+    "pg": 0.4,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 1.4,
+    "pm": 0.068
+   }
+  },
+  "home": {
+   "games": 15,
+   "min_pg": 8.6,
+   "PTS": {
+    "pg": 2.13,
+    "pm": 0.247
+   },
+   "REB": {
+    "pg": 1.6,
+    "pm": 0.186
+   },
+   "AST": {
+    "pg": 0.8,
+    "pm": 0.093
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.27,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.13,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.077
+   }
+  },
+  "away": {
+   "games": 16,
+   "min_pg": 10.4,
+   "PTS": {
+    "pg": 3.31,
+    "pm": 0.317
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.192
+   },
+   "AST": {
+    "pg": 0.75,
+    "pm": 0.072
+   },
+   "3PM": {
+    "pg": 0.25,
+    "pm": 0.024
+   },
+   "STL": {
+    "pg": 0.62,
+    "pm": 0.06
+   },
+   "BLK": {
+    "pg": 0.38,
+    "pm": 0.036
+   },
+   "TOV": {
+    "pg": 0.25,
+    "pm": 0.024
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2024-11-01",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2024-11-01_oklahoma-city_vs_portland",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 1.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-02",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2024-11-02_la-clippers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-04",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2024-11-04_oklahoma-city_vs_orlando",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-11-08",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2024-11-08_houston_vs_oklahoma-city",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 1.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-13",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2024-11-13_new-orleans_vs_oklahoma-city",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-15",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2024-11-15_oklahoma-city_vs_phoenix",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-19",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-01-19_golden-state_vs_miami",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.9,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-20",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-01-20_golden-state_vs_toronto",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.7,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-26",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-01-26_golden-state_vs_minnesota",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.4,
+   "PTS": 6.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-28",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2026-01-28_golden-state_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-03",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-02-03_golden-state_vs_philadelphia",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.3,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-02-25",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-02-25_golden-state_vs_memphis",
+   "starter": false,
+   "rest": "21",
+   "result": null,
+   "opp_tier": null,
+   "min": 17.9,
+   "PTS": 9.0,
+   "REB": 8.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-02-28",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-02-28_golden-state_vs_la-lakers",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.8,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-02",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-03-02_golden-state_vs_la-clippers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.4,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-05",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-03-05_golden-state_vs_houston",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.1,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-07",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-03-07_golden-state_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.4,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-09",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2026-03-09_golden-state_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.4,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-10",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2026-03-10_chicago_vs_golden-state",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.3,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-13",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-03-13_golden-state_vs_minnesota",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.6,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-15",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-03-15_golden-state_vs_new-york",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 19.6,
+   "PTS": 2.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-16",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2026-03-16_golden-state_vs_washington",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 15.7,
+   "PTS": 8.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-18",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-03-18_boston_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.9,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-20",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2026-03-20_detroit_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.2,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-21",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2026-03-21_atlanta_vs_golden-state",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.3,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-27",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-03-27_golden-state_vs_washington",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-29",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-03-29_denver_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.9,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-01",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-04-01_golden-state_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.4,
+   "PTS": 5.0,
+   "REB": 4.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-04-07_golden-state_vs_sacramento",
+   "starter": true,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 21.0,
+   "PTS": 2.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2026-04-09",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-04-09_golden-state_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 24.1,
+   "PTS": 12.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2026-04-10_golden-state_vs_sacramento",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.8,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-04-12_golden-state_vs_la-clippers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 16.8,
+   "PTS": 8.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-04-12",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-04-12_golden-state_vs_la-clippers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 16.8,
+   "PTS": 8.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2026-04-10_golden-state_vs_sacramento",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.8,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-09",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-04-09_golden-state_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 24.1,
+   "PTS": 12.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-04-07_golden-state_vs_sacramento",
+   "starter": true,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 21.0,
+   "PTS": 2.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2026-04-01",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-04-01_golden-state_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.4,
+   "PTS": 5.0,
+   "REB": 4.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-03-29",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-03-29_denver_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.9,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-27",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-03-27_golden-state_vs_washington",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-21",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2026-03-21_atlanta_vs_golden-state",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.3,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-20",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2026-03-20_detroit_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.2,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-18",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-03-18_boston_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.9,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "LA Clippers"
+}

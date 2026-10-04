@@ -1,0 +1,631 @@
+{
+ "player_id": 1631127,
+ "player": "Harrison Ingram",
+ "team": "Utah",
+ "projections": {
+  "3PM": {
+   "mean": 0.34,
+   "floor": 0.0,
+   "ceiling": 1.68
+  },
+  "AST": {
+   "mean": 0.73,
+   "floor": 0.0,
+   "ceiling": 2.06
+  },
+  "BLK": {
+   "mean": 0.13,
+   "floor": 0.0,
+   "ceiling": 0.96
+  },
+  "PTS": {
+   "mean": 3.35,
+   "floor": 0.0,
+   "ceiling": 9.02
+  },
+  "REB": {
+   "mean": 1.89,
+   "floor": 0.05,
+   "ceiling": 4.08
+  },
+  "STL": {
+   "mean": 0.36,
+   "floor": 0.0,
+   "ceiling": 1.16
+  },
+  "TOV": {
+   "mean": 0.38,
+   "floor": 0.0,
+   "ceiling": 1.77
+  },
+  "PRA": {
+   "mean": 5.97,
+   "floor": 0.0,
+   "ceiling": 14.68
+  },
+  "PR": {
+   "mean": 5.24,
+   "floor": 0.0,
+   "ceiling": 13.36
+  },
+  "PA": {
+   "mean": 4.08,
+   "floor": 0.0,
+   "ceiling": 10.86
+  },
+  "RA": {
+   "mean": 2.62,
+   "floor": 0.0,
+   "ceiling": 5.93
+  }
+ },
+ "minutes": {
+  "value": 9.5,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 12,
+   "min_pg": 5.1,
+   "PTS": {
+    "pg": 1.25,
+    "pm": 0.245
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.196
+   },
+   "AST": {
+    "pg": 0.33,
+    "pm": 0.065
+   },
+   "3PM": {
+    "pg": 0.08,
+    "pm": 0.016
+   },
+   "STL": {
+    "pg": 0.25,
+    "pm": 0.049
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.17,
+    "pm": 0.033
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 5.0,
+   "PTS": {
+    "pg": 1.5,
+    "pm": 0.299
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.2
+   },
+   "AST": {
+    "pg": 0.4,
+    "pm": 0.08
+   },
+   "3PM": {
+    "pg": 0.1,
+    "pm": 0.02
+   },
+   "STL": {
+    "pg": 0.3,
+    "pm": 0.06
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.2,
+    "pm": 0.04
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 4.0,
+   "PTS": {
+    "pg": 1.6,
+    "pm": 0.402
+   },
+   "REB": {
+    "pg": 0.4,
+    "pm": 0.101
+   },
+   "AST": {
+    "pg": 0.2,
+    "pm": 0.05
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.2,
+    "pm": 0.05
+   }
+  },
+  "home": {
+   "games": 5,
+   "min_pg": 4.3,
+   "PTS": {
+    "pg": 1.2,
+    "pm": 0.281
+   },
+   "REB": {
+    "pg": 0.6,
+    "pm": 0.14
+   },
+   "AST": {
+    "pg": 0.4,
+    "pm": 0.094
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.047
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 7,
+   "min_pg": 5.7,
+   "PTS": {
+    "pg": 1.29,
+    "pm": 0.226
+   },
+   "REB": {
+    "pg": 1.29,
+    "pm": 0.226
+   },
+   "AST": {
+    "pg": 0.29,
+    "pm": 0.05
+   },
+   "3PM": {
+    "pg": 0.14,
+    "pm": 0.025
+   },
+   "STL": {
+    "pg": 0.29,
+    "pm": 0.05
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.29,
+    "pm": 0.05
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2024-11-06",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2024-11-06_houston_vs_san-antonio",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-03",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2025-02-03_memphis_vs_san-antonio",
+   "starter": false,
+   "rest": "88",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-14",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-03-14_charlotte_vs_san-antonio",
+   "starter": false,
+   "rest": "38",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 2.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-08",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2025-04-08_la-clippers_vs_san-antonio",
+   "starter": false,
+   "rest": "24",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-04-11_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-22",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2025-10-22_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.1,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-27_san-antonio_vs_toronto",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-02",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-02_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.5,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-01",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2026-02-01_orlando_vs_san-antonio",
+   "starter": false,
+   "rest": "90",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-21",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-02-21_sacramento_vs_san-antonio",
+   "starter": false,
+   "rest": "19",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.4,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-02",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-04-02_la-clippers_vs_san-antonio",
+   "starter": false,
+   "rest": "39",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2026-04-10_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "7",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-04-10",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2026-04-10_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "7",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-02",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-04-02_la-clippers_vs_san-antonio",
+   "starter": false,
+   "rest": "39",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-02-21",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-02-21_sacramento_vs_san-antonio",
+   "starter": false,
+   "rest": "19",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.4,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-01",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2026-02-01_orlando_vs_san-antonio",
+   "starter": false,
+   "rest": "90",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-02",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-02_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.5,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-27_san-antonio_vs_toronto",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-22",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2025-10-22_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.1,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-04-11_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-08",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2025-04-08_la-clippers_vs_san-antonio",
+   "starter": false,
+   "rest": "24",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-03-14",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-03-14_charlotte_vs_san-antonio",
+   "starter": false,
+   "rest": "38",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 2.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Denver"
+}
