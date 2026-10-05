@@ -1,0 +1,847 @@
+{
+ "player_id": -682,
+ "player": "Elfrid Payton",
+ "team": "Sacramento",
+ "projections": {
+  "3PM": {
+   "mean": 0.04,
+   "floor": 0.0,
+   "ceiling": 0.04
+  },
+  "AST": {
+   "mean": 6.54,
+   "floor": 3.03,
+   "ceiling": 10.42
+  },
+  "BLK": {
+   "mean": 0.39,
+   "floor": 0.0,
+   "ceiling": 1.0
+  },
+  "PTS": {
+   "mean": 2.86,
+   "floor": 0.0,
+   "ceiling": 8.52
+  },
+  "REB": {
+   "mean": 2.9,
+   "floor": 0.77,
+   "ceiling": 5.78
+  },
+  "STL": {
+   "mean": 0.85,
+   "floor": 0.0,
+   "ceiling": 2.01
+  },
+  "TOV": {
+   "mean": 2.18,
+   "floor": 0.03,
+   "ceiling": 4.45
+  },
+  "PRA": {
+   "mean": 12.3,
+   "floor": 3.68,
+   "ceiling": 21.08
+  },
+  "PR": {
+   "mean": 5.76,
+   "floor": 0.0,
+   "ceiling": 13.88
+  },
+  "PA": {
+   "mean": 9.4,
+   "floor": 1.86,
+   "ceiling": 17.09
+  },
+  "RA": {
+   "mean": 9.45,
+   "floor": 4.56,
+   "ceiling": 14.41
+  }
+ },
+ "minutes": {
+  "value": 18.4,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 24,
+   "min_pg": 21.2,
+   "PTS": {
+    "pg": 3.54,
+    "pm": 0.167
+   },
+   "REB": {
+    "pg": 3.29,
+    "pm": 0.155
+   },
+   "AST": {
+    "pg": 6.92,
+    "pm": 0.325
+   },
+   "3PM": {
+    "pg": 0.04,
+    "pm": 0.002
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.047
+   },
+   "BLK": {
+    "pg": 0.46,
+    "pm": 0.022
+   },
+   "TOV": {
+    "pg": 2.46,
+    "pm": 0.116
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 23.2,
+   "PTS": {
+    "pg": 3.2,
+    "pm": 0.138
+   },
+   "REB": {
+    "pg": 4.2,
+    "pm": 0.181
+   },
+   "AST": {
+    "pg": 9.7,
+    "pm": 0.418
+   },
+   "3PM": {
+    "pg": 0.1,
+    "pm": 0.004
+   },
+   "STL": {
+    "pg": 0.8,
+    "pm": 0.034
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.022
+   },
+   "TOV": {
+    "pg": 3.0,
+    "pm": 0.129
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 24.8,
+   "PTS": {
+    "pg": 2.4,
+    "pm": 0.097
+   },
+   "REB": {
+    "pg": 4.8,
+    "pm": 0.194
+   },
+   "AST": {
+    "pg": 10.2,
+    "pm": 0.411
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.008
+   },
+   "STL": {
+    "pg": 0.8,
+    "pm": 0.032
+   },
+   "BLK": {
+    "pg": 0.4,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 2.2,
+    "pm": 0.089
+   }
+  },
+  "home": {
+   "games": 8,
+   "min_pg": 24.4,
+   "PTS": {
+    "pg": 4.12,
+    "pm": 0.169
+   },
+   "REB": {
+    "pg": 4.5,
+    "pm": 0.185
+   },
+   "AST": {
+    "pg": 8.0,
+    "pm": 0.328
+   },
+   "3PM": {
+    "pg": 0.12,
+    "pm": 0.005
+   },
+   "STL": {
+    "pg": 1.25,
+    "pm": 0.051
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.021
+   },
+   "TOV": {
+    "pg": 2.62,
+    "pm": 0.108
+   }
+  },
+  "away": {
+   "games": 16,
+   "min_pg": 19.7,
+   "PTS": {
+    "pg": 3.25,
+    "pm": 0.165
+   },
+   "REB": {
+    "pg": 2.69,
+    "pm": 0.137
+   },
+   "AST": {
+    "pg": 6.38,
+    "pm": 0.324
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.88,
+    "pm": 0.044
+   },
+   "BLK": {
+    "pg": 0.44,
+    "pm": 0.022
+   },
+   "TOV": {
+    "pg": 2.38,
+    "pm": 0.121
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2024-11-20",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2024-11-20_cleveland_vs_new-orleans",
+   "starter": true,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 22.0,
+   "PTS": 11.0,
+   "REB": 5.0,
+   "AST": 8.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2024-11-22",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2024-11-22_golden-state_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 26.0,
+   "PTS": 4.0,
+   "REB": 3.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2024-11-25",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2024-11-25_indiana_vs_new-orleans",
+   "starter": true,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 31.0,
+   "PTS": 14.0,
+   "REB": 7.0,
+   "AST": 21.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2024-11-27",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2024-11-27_new-orleans_vs_toronto",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 27.0,
+   "PTS": 10.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2024-11-29",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2024-11-29_memphis_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 15.0,
+   "PTS": 2.0,
+   "REB": 3.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-12-01",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2024-12-01_new-orleans_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 17.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 7.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2024-12-02",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2024-12-02_atlanta_vs_new-orleans",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-02-09",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2025-02-09_charlotte_vs_detroit",
+   "starter": false,
+   "rest": "68",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-02-12",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-02-12_charlotte_vs_orlando",
+   "starter": true,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 32.0,
+   "PTS": 4.0,
+   "REB": 4.0,
+   "AST": 7.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-02-19",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2025-02-19_charlotte_vs_la-lakers",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 15.0,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-02-20",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2025-02-20_charlotte_vs_denver",
+   "starter": true,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 16.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-02-22",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2025-02-22_charlotte_vs_portland",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 22.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-02-24",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2025-02-24_charlotte_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 14.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-21",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2025-03-21_minnesota_vs_new-orleans",
+   "starter": false,
+   "rest": "24",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-03-24",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2025-03-24_new-orleans_vs_philadelphia",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 25.0,
+   "PTS": 6.0,
+   "REB": 6.0,
+   "AST": 14.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-03-28",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-03-28_golden-state_vs_new-orleans",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.0,
+   "PTS": 4.0,
+   "REB": 5.0,
+   "AST": 10.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-03-30",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-03-30_charlotte_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 19.0,
+   "PTS": 2.0,
+   "REB": 3.0,
+   "AST": 6.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-04-02",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2025-04-02_la-clippers_vs_new-orleans",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 21.0,
+   "PTS": 6.0,
+   "REB": 4.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-04-04",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2025-04-04_la-lakers_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 20.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 12.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2025-04-06",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-04-06_milwaukee_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 28.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 10.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-04-08",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2025-04-08_brooklyn_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.0,
+   "PTS": 3.0,
+   "REB": 6.0,
+   "AST": 10.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-04-10",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2025-04-10_milwaukee_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 26.0,
+   "PTS": 2.0,
+   "REB": 4.0,
+   "AST": 15.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2025-04-11_miami_vs_new-orleans",
+   "starter": true,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.0,
+   "PTS": 4.0,
+   "REB": 10.0,
+   "AST": 13.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-04-13",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-04-13_new-orleans_vs_oklahoma-city",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 18.0,
+   "PTS": 3.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2025-04-13",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-04-13_new-orleans_vs_oklahoma-city",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 18.0,
+   "PTS": 3.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2025-04-11_miami_vs_new-orleans",
+   "starter": true,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.0,
+   "PTS": 4.0,
+   "REB": 10.0,
+   "AST": 13.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-04-10",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2025-04-10_milwaukee_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 26.0,
+   "PTS": 2.0,
+   "REB": 4.0,
+   "AST": 15.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-04-08",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2025-04-08_brooklyn_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.0,
+   "PTS": 3.0,
+   "REB": 6.0,
+   "AST": 10.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-04-06",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-04-06_milwaukee_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 28.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 10.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-04-04",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2025-04-04_la-lakers_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 20.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 12.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2025-04-02",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2025-04-02_la-clippers_vs_new-orleans",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 21.0,
+   "PTS": 6.0,
+   "REB": 4.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-03-30",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-03-30_charlotte_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 19.0,
+   "PTS": 2.0,
+   "REB": 3.0,
+   "AST": 6.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-03-28",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-03-28_golden-state_vs_new-orleans",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.0,
+   "PTS": 4.0,
+   "REB": 5.0,
+   "AST": 10.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2025-03-24",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2025-03-24_new-orleans_vs_philadelphia",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 25.0,
+   "PTS": 6.0,
+   "REB": 6.0,
+   "AST": 14.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 3.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "LA Lakers"
+}

@@ -1,0 +1,973 @@
+{
+ "player_id": 1642876,
+ "player": "Adou Thiero",
+ "team": "LA Lakers",
+ "projections": {
+  "3PM": {
+   "mean": 0.11,
+   "floor": 0.0,
+   "ceiling": 0.11
+  },
+  "AST": {
+   "mean": 0.92,
+   "floor": 0.0,
+   "ceiling": 2.25
+  },
+  "BLK": {
+   "mean": 0.09,
+   "floor": 0.0,
+   "ceiling": 0.98
+  },
+  "PTS": {
+   "mean": 4.19,
+   "floor": 0.0,
+   "ceiling": 9.86
+  },
+  "REB": {
+   "mean": 2.7,
+   "floor": 0.32,
+   "ceiling": 5.17
+  },
+  "STL": {
+   "mean": 0.3,
+   "floor": 0.0,
+   "ceiling": 1.09
+  },
+  "TOV": {
+   "mean": 1.18,
+   "floor": 0.0,
+   "ceiling": 2.92
+  },
+  "PRA": {
+   "mean": 7.81,
+   "floor": 0.09,
+   "ceiling": 16.53
+  },
+  "PR": {
+   "mean": 6.89,
+   "floor": 0.13,
+   "ceiling": 15.01
+  },
+  "PA": {
+   "mean": 5.11,
+   "floor": 0.0,
+   "ceiling": 11.9
+  },
+  "RA": {
+   "mean": 3.62,
+   "floor": 0.87,
+   "ceiling": 6.93
+  }
+ },
+ "minutes": {
+  "value": 12.8,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 31,
+   "min_pg": 5.9,
+   "PTS": {
+    "pg": 1.81,
+    "pm": 0.307
+   },
+   "REB": {
+    "pg": 1.29,
+    "pm": 0.219
+   },
+   "AST": {
+    "pg": 0.35,
+    "pm": 0.06
+   },
+   "3PM": {
+    "pg": 0.03,
+    "pm": 0.005
+   },
+   "STL": {
+    "pg": 0.23,
+    "pm": 0.038
+   },
+   "BLK": {
+    "pg": 0.06,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 0.42,
+    "pm": 0.071
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 7.5,
+   "PTS": {
+    "pg": 2.7,
+    "pm": 0.362
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.268
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.067
+   },
+   "3PM": {
+    "pg": 0.1,
+    "pm": 0.013
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.027
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.8,
+    "pm": 0.107
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 5.4,
+   "PTS": {
+    "pg": 1.2,
+    "pm": 0.221
+   },
+   "REB": {
+    "pg": 2.4,
+    "pm": 0.443
+   },
+   "AST": {
+    "pg": 0.2,
+    "pm": 0.037
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.111
+   }
+  },
+  "home": {
+   "games": 18,
+   "min_pg": 5.3,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.381
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.286
+   },
+   "AST": {
+    "pg": 0.44,
+    "pm": 0.085
+   },
+   "3PM": {
+    "pg": 0.06,
+    "pm": 0.011
+   },
+   "STL": {
+    "pg": 0.28,
+    "pm": 0.053
+   },
+   "BLK": {
+    "pg": 0.11,
+    "pm": 0.021
+   },
+   "TOV": {
+    "pg": 0.44,
+    "pm": 0.085
+   }
+  },
+  "away": {
+   "games": 13,
+   "min_pg": 6.8,
+   "PTS": {
+    "pg": 1.54,
+    "pm": 0.228
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.148
+   },
+   "AST": {
+    "pg": 0.23,
+    "pm": 0.034
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.15,
+    "pm": 0.023
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.38,
+    "pm": 0.057
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2025-11-15",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2025-11-15_la-lakers_vs_milwaukee",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.7,
+   "PTS": 4.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-18",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2025-11-18_la-lakers_vs_utah",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.5,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-25",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2025-11-25_la-clippers_vs_la-lakers",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-30",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2025-11-30_la-lakers_vs_new-orleans",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-01",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2025-12-01_la-lakers_vs_phoenix",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.6,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-04",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2025-12-04_la-lakers_vs_toronto",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.1,
+   "PTS": 4.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2025-12-05_boston_vs_la-lakers",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 19.5,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-07",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-12-07_la-lakers_vs_philadelphia",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.4,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-10",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2025-12-10_la-lakers_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.1,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-18",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2025-12-18_la-lakers_vs_utah",
+   "starter": false,
+   "rest": "7",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2025-12-20_la-clippers_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.8,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-12-23_la-lakers_vs_phoenix",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.9,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-25",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2025-12-25_houston_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-28",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-12-28_la-lakers_vs_sacramento",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.6,
+   "PTS": 2.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-30",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-12-30_detroit_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.2,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-10",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-02-10_la-lakers_vs_san-antonio",
+   "starter": false,
+   "rest": "41",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.8,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-12",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2026-02-12_dallas_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.8,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-01",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-03-01_la-lakers_vs_sacramento",
+   "starter": false,
+   "rest": "16",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.9,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-10",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-03-10_la-lakers_vs_minnesota",
+   "starter": false,
+   "rest": "8",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-23",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2026-03-23_detroit_vs_la-lakers",
+   "starter": false,
+   "rest": "12",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.4,
+   "PTS": 1.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-31",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-03-31_cleveland_vs_la-lakers",
+   "starter": false,
+   "rest": "7",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.4,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-04-07_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 20.6,
+   "PTS": 10.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-09",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2026-04-09_golden-state_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2026-04-10_la-lakers_vs_phoenix",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2026-04-12_la-lakers_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.0,
+   "PTS": 8.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-26",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-04-26_houston_vs_la-lakers",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.5,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-05-01",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-05-01_houston_vs_la-lakers",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-05-05",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-05-05_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-05-07",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-05-07_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.2,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-05-09",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-05-09_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.2,
+   "PTS": 4.0,
+   "REB": 8.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-05-11",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-05-11_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-05-11",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-05-11_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-05-09",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-05-09_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.2,
+   "PTS": 4.0,
+   "REB": 8.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-05-07",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-05-07_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.2,
+   "PTS": 0.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-05-05",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-05-05_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-05-01",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-05-01_houston_vs_la-lakers",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-26",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-04-26_houston_vs_la-lakers",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.5,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2026-04-12_la-lakers_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.0,
+   "PTS": 8.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2026-04-10_la-lakers_vs_phoenix",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-09",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2026-04-09_golden-state_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-04-07_la-lakers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 20.6,
+   "PTS": 10.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Sacramento"
+}

@@ -1,0 +1,865 @@
+{
+ "player_id": 1642402,
+ "player": "Enrique Freeman",
+ "team": "Minnesota",
+ "projections": {
+  "3PM": {
+   "mean": 0.23,
+   "floor": 0.09,
+   "ceiling": 0.23
+  },
+  "AST": {
+   "mean": 0.67,
+   "floor": 0.0,
+   "ceiling": 2.0
+  },
+  "BLK": {
+   "mean": 0.26,
+   "floor": 0.0,
+   "ceiling": 0.99
+  },
+  "PTS": {
+   "mean": 3.73,
+   "floor": 0.0,
+   "ceiling": 9.4
+  },
+  "REB": {
+   "mean": 2.53,
+   "floor": 0.15,
+   "ceiling": 5.0
+  },
+  "STL": {
+   "mean": 0.35,
+   "floor": 0.0,
+   "ceiling": 1.14
+  },
+  "TOV": {
+   "mean": 0.47,
+   "floor": 0.0,
+   "ceiling": 1.86
+  },
+  "PRA": {
+   "mean": 6.93,
+   "floor": 0.0,
+   "ceiling": 15.65
+  },
+  "PR": {
+   "mean": 6.26,
+   "floor": 0.0,
+   "ceiling": 14.38
+  },
+  "PA": {
+   "mean": 4.4,
+   "floor": 0.0,
+   "ceiling": 11.19
+  },
+  "RA": {
+   "mean": 3.2,
+   "floor": 0.45,
+   "ceiling": 6.5
+  }
+ },
+ "minutes": {
+  "value": 12.4,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 25,
+   "min_pg": 8.7,
+   "PTS": {
+    "pg": 2.28,
+    "pm": 0.261
+   },
+   "REB": {
+    "pg": 1.6,
+    "pm": 0.183
+   },
+   "AST": {
+    "pg": 0.44,
+    "pm": 0.05
+   },
+   "3PM": {
+    "pg": 0.12,
+    "pm": 0.014
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.023
+   },
+   "BLK": {
+    "pg": 0.24,
+    "pm": 0.027
+   },
+   "TOV": {
+    "pg": 0.32,
+    "pm": 0.037
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 10.7,
+   "PTS": {
+    "pg": 3.5,
+    "pm": 0.326
+   },
+   "REB": {
+    "pg": 2.8,
+    "pm": 0.261
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.047
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.019
+   },
+   "STL": {
+    "pg": 0.3,
+    "pm": 0.028
+   },
+   "BLK": {
+    "pg": 0.4,
+    "pm": 0.037
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.037
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 13.6,
+   "PTS": {
+    "pg": 4.2,
+    "pm": 0.308
+   },
+   "REB": {
+    "pg": 3.6,
+    "pm": 0.264
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.044
+   },
+   "3PM": {
+    "pg": 0.4,
+    "pm": 0.029
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.044
+   },
+   "BLK": {
+    "pg": 0.8,
+    "pm": 0.059
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.044
+   }
+  },
+  "home": {
+   "games": 10,
+   "min_pg": 9.6,
+   "PTS": {
+    "pg": 3.2,
+    "pm": 0.333
+   },
+   "REB": {
+    "pg": 2.1,
+    "pm": 0.218
+   },
+   "AST": {
+    "pg": 0.7,
+    "pm": 0.073
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.021
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.021
+   },
+   "BLK": {
+    "pg": 0.3,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 0.3,
+    "pm": 0.031
+   }
+  },
+  "away": {
+   "games": 15,
+   "min_pg": 8.1,
+   "PTS": {
+    "pg": 1.67,
+    "pm": 0.205
+   },
+   "REB": {
+    "pg": 1.27,
+    "pm": 0.156
+   },
+   "AST": {
+    "pg": 0.27,
+    "pm": 0.033
+   },
+   "3PM": {
+    "pg": 0.07,
+    "pm": 0.008
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.025
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.025
+   },
+   "TOV": {
+    "pg": 0.33,
+    "pm": 0.041
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2024-10-23",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2024-10-23_detroit_vs_indiana",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-10-25",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2024-10-25_indiana_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-08",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2024-11-08_charlotte_vs_indiana",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-10",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2024-11-10_indiana_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-13",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2024-11-13_indiana_vs_orlando",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-15",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2024-11-15_indiana_vs_miami",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-18",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2024-11-18_indiana_vs_toronto",
+   "starter": true,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 19.0,
+   "PTS": 3.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-11-20",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2024-11-20_houston_vs_indiana",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 14.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-11-22",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2024-11-22_indiana_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-25",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2024-11-25_indiana_vs_new-orleans",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-29",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2024-11-29_detroit_vs_indiana",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-01",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2024-12-01_indiana_vs_memphis",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-03",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2024-12-03_indiana_vs_toronto",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-04",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2024-12-04_brooklyn_vs_indiana",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-12-08",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2024-12-08_charlotte_vs_indiana",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-13",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2024-12-13_indiana_vs_philadelphia",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-27",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2024-12-27_boston_vs_indiana",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-08",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2025-01-08_chicago_vs_indiana",
+   "starter": false,
+   "rest": "11",
+   "result": null,
+   "opp_tier": null,
+   "min": 16.0,
+   "PTS": 6.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-02-04",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2025-02-04_indiana_vs_portland",
+   "starter": false,
+   "rest": "26",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2025-04-11_indiana_vs_orlando",
+   "starter": false,
+   "rest": "24",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.0,
+   "PTS": 4.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-13",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-04-13_cleveland_vs_indiana",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 31.0,
+   "PTS": 8.0,
+   "REB": 8.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-02-08",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-02-08_la-clippers_vs_minnesota",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.2,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-11",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-02-11_minnesota_vs_portland",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.8,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-04-07_indiana_vs_minnesota",
+   "starter": false,
+   "rest": "54",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2026-04-12_minnesota_vs_new-orleans",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 26.1,
+   "PTS": 13.0,
+   "REB": 7.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 2.0,
+   "TOV": 2.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-04-12",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2026-04-12_minnesota_vs_new-orleans",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 26.1,
+   "PTS": 13.0,
+   "REB": 7.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 2.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-04-07_indiana_vs_minnesota",
+   "starter": false,
+   "rest": "54",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-11",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-02-11_minnesota_vs_portland",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.8,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-02-08",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-02-08_la-clippers_vs_minnesota",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.2,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-13",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-04-13_cleveland_vs_indiana",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 31.0,
+   "PTS": 8.0,
+   "REB": 8.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2025-04-11_indiana_vs_orlando",
+   "starter": false,
+   "rest": "24",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.0,
+   "PTS": 4.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-04",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2025-02-04_indiana_vs_portland",
+   "starter": false,
+   "rest": "26",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-08",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2025-01-08_chicago_vs_indiana",
+   "starter": false,
+   "rest": "11",
+   "result": null,
+   "opp_tier": null,
+   "min": 16.0,
+   "PTS": 6.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-12-27",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2024-12-27_boston_vs_indiana",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-13",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2024-12-13_indiana_vs_philadelphia",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Milwaukee"
+}

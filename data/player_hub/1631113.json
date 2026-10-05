@@ -1,0 +1,613 @@
+{
+ "player_id": 1631113,
+ "player": "Kennedy Chandler",
+ "team": "Phoenix",
+ "projections": {
+  "3PM": {
+   "mean": 1.04,
+   "floor": 0.0,
+   "ceiling": 2.92
+  },
+  "AST": {
+   "mean": 4.96,
+   "floor": 1.45,
+   "ceiling": 8.84
+  },
+  "BLK": {
+   "mean": 0.15,
+   "floor": 0.0,
+   "ceiling": 0.98
+  },
+  "PTS": {
+   "mean": 11.55,
+   "floor": 3.76,
+   "ceiling": 19.96
+  },
+  "REB": {
+   "mean": 2.49,
+   "floor": 0.11,
+   "ceiling": 4.96
+  },
+  "STL": {
+   "mean": 0.79,
+   "floor": 0.0,
+   "ceiling": 2.02
+  },
+  "TOV": {
+   "mean": 1.75,
+   "floor": 0.12,
+   "ceiling": 3.21
+  },
+  "PRA": {
+   "mean": 19.0,
+   "floor": 9.23,
+   "ceiling": 29.35
+  },
+  "PR": {
+   "mean": 14.04,
+   "floor": 4.93,
+   "ceiling": 23.29
+  },
+  "PA": {
+   "mean": 16.51,
+   "floor": 7.52,
+   "ceiling": 25.57
+  },
+  "RA": {
+   "mean": 7.45,
+   "floor": 3.33,
+   "ceiling": 12.17
+  }
+ },
+ "minutes": {
+  "value": 24.7,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 11,
+   "min_pg": 32.3,
+   "PTS": {
+    "pg": 15.0,
+    "pm": 0.465
+   },
+   "REB": {
+    "pg": 3.36,
+    "pm": 0.104
+   },
+   "AST": {
+    "pg": 6.73,
+    "pm": 0.208
+   },
+   "3PM": {
+    "pg": 1.36,
+    "pm": 0.042
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.18,
+    "pm": 0.006
+   },
+   "TOV": {
+    "pg": 2.09,
+    "pm": 0.065
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 31.8,
+   "PTS": {
+    "pg": 14.6,
+    "pm": 0.459
+   },
+   "REB": {
+    "pg": 3.2,
+    "pm": 0.101
+   },
+   "AST": {
+    "pg": 7.0,
+    "pm": 0.22
+   },
+   "3PM": {
+    "pg": 1.3,
+    "pm": 0.041
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.006
+   },
+   "TOV": {
+    "pg": 2.3,
+    "pm": 0.072
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 32.2,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.496
+   },
+   "REB": {
+    "pg": 3.6,
+    "pm": 0.112
+   },
+   "AST": {
+    "pg": 6.6,
+    "pm": 0.205
+   },
+   "3PM": {
+    "pg": 1.4,
+    "pm": 0.043
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.006
+   },
+   "TOV": {
+    "pg": 1.8,
+    "pm": 0.056
+   }
+  },
+  "home": {
+   "games": 6,
+   "min_pg": 35.7,
+   "PTS": {
+    "pg": 16.67,
+    "pm": 0.467
+   },
+   "REB": {
+    "pg": 4.17,
+    "pm": 0.117
+   },
+   "AST": {
+    "pg": 7.0,
+    "pm": 0.196
+   },
+   "3PM": {
+    "pg": 1.67,
+    "pm": 0.047
+   },
+   "STL": {
+    "pg": 1.33,
+    "pm": 0.037
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 2.17,
+    "pm": 0.061
+   }
+  },
+  "away": {
+   "games": 5,
+   "min_pg": 28.2,
+   "PTS": {
+    "pg": 13.0,
+    "pm": 0.461
+   },
+   "REB": {
+    "pg": 2.4,
+    "pm": 0.085
+   },
+   "AST": {
+    "pg": 6.4,
+    "pm": 0.227
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.035
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.021
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.071
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2026-03-21",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-03-21_philadelphia_vs_utah",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 37.2,
+   "PTS": 19.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-23",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-03-23_toronto_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.4,
+   "PTS": 13.0,
+   "REB": 5.0,
+   "AST": 9.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-03-25",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-03-25_utah_vs_washington",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 33.9,
+   "PTS": 14.0,
+   "REB": 1.0,
+   "AST": 8.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-03-27",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-03-27_denver_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.4,
+   "PTS": 16.0,
+   "REB": 1.0,
+   "AST": 7.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-28",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-03-28_phoenix_vs_utah",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.7,
+   "PTS": 11.0,
+   "REB": 3.0,
+   "AST": 8.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2026-03-30",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-03-30_cleveland_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 40.4,
+   "PTS": 12.0,
+   "REB": 4.0,
+   "AST": 5.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2026-04-01",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-04-01_denver_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 32.5,
+   "PTS": 16.0,
+   "REB": 5.0,
+   "AST": 6.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-03",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-04-03_houston_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 24.8,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-05",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-04-05_oklahoma-city_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 19.8,
+   "PTS": 5.0,
+   "REB": 0.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-04-07_new-orleans_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 43.2,
+   "PTS": 31.0,
+   "REB": 7.0,
+   "AST": 8.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-04-10_memphis_vs_utah",
+   "starter": true,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 40.9,
+   "PTS": 26.0,
+   "REB": 5.0,
+   "AST": 10.0,
+   "3PM": 4.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-04-10",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-04-10_memphis_vs_utah",
+   "starter": true,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 40.9,
+   "PTS": 26.0,
+   "REB": 5.0,
+   "AST": 10.0,
+   "3PM": 4.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-04-07_new-orleans_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 43.2,
+   "PTS": 31.0,
+   "REB": 7.0,
+   "AST": 8.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2026-04-05",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-04-05_oklahoma-city_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 19.8,
+   "PTS": 5.0,
+   "REB": 0.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-03",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-04-03_houston_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 24.8,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-01",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-04-01_denver_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 32.5,
+   "PTS": 16.0,
+   "REB": 5.0,
+   "AST": 6.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-30",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-03-30_cleveland_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 40.4,
+   "PTS": 12.0,
+   "REB": 4.0,
+   "AST": 5.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 5.0
+  },
+  {
+   "date": "2026-03-28",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-03-28_phoenix_vs_utah",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.7,
+   "PTS": 11.0,
+   "REB": 3.0,
+   "AST": 8.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0
+  },
+  {
+   "date": "2026-03-27",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-03-27_denver_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.4,
+   "PTS": 16.0,
+   "REB": 1.0,
+   "AST": 7.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-25",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-03-25_utah_vs_washington",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 33.9,
+   "PTS": 14.0,
+   "REB": 1.0,
+   "AST": 8.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-03-23",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-03-23_toronto_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.4,
+   "PTS": 13.0,
+   "REB": 5.0,
+   "AST": 9.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Detroit"
+}

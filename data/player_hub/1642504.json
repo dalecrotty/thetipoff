@@ -1,0 +1,613 @@
+{
+ "player_id": 1642504,
+ "player": "Cormac Ryan",
+ "team": "Milwaukee",
+ "projections": {
+  "3PM": {
+   "mean": 1.87,
+   "floor": 0.0,
+   "ceiling": 3.88
+  },
+  "AST": {
+   "mean": 1.45,
+   "floor": 0.0,
+   "ceiling": 3.05
+  },
+  "BLK": {
+   "mean": 0.14,
+   "floor": 0.0,
+   "ceiling": 0.97
+  },
+  "PTS": {
+   "mean": 11.89,
+   "floor": 4.1,
+   "ceiling": 20.3
+  },
+  "REB": {
+   "mean": 2.16,
+   "floor": 0.32,
+   "ceiling": 4.34
+  },
+  "STL": {
+   "mean": 0.81,
+   "floor": 0.0,
+   "ceiling": 2.04
+  },
+  "TOV": {
+   "mean": 1.27,
+   "floor": 0.0,
+   "ceiling": 3.01
+  },
+  "PRA": {
+   "mean": 15.5,
+   "floor": 6.13,
+   "ceiling": 24.67
+  },
+  "PR": {
+   "mean": 14.06,
+   "floor": 4.94,
+   "ceiling": 23.3
+  },
+  "PA": {
+   "mean": 13.34,
+   "floor": 5.11,
+   "ceiling": 22.49
+  },
+  "RA": {
+   "mean": 3.61,
+   "floor": 0.86,
+   "ceiling": 6.91
+  }
+ },
+ "minutes": {
+  "value": 19.6,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 11,
+   "min_pg": 24.6,
+   "PTS": {
+    "pg": 14.27,
+    "pm": 0.58
+   },
+   "REB": {
+    "pg": 2.55,
+    "pm": 0.103
+   },
+   "AST": {
+    "pg": 1.73,
+    "pm": 0.07
+   },
+   "3PM": {
+    "pg": 2.45,
+    "pm": 0.1
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.041
+   },
+   "BLK": {
+    "pg": 0.27,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 1.55,
+    "pm": 0.063
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 26.3,
+   "PTS": {
+    "pg": 15.2,
+    "pm": 0.578
+   },
+   "REB": {
+    "pg": 2.8,
+    "pm": 0.106
+   },
+   "AST": {
+    "pg": 1.8,
+    "pm": 0.068
+   },
+   "3PM": {
+    "pg": 2.6,
+    "pm": 0.099
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.038
+   },
+   "BLK": {
+    "pg": 0.3,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 1.7,
+    "pm": 0.065
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 32.0,
+   "PTS": {
+    "pg": 20.2,
+    "pm": 0.632
+   },
+   "REB": {
+    "pg": 4.8,
+    "pm": 0.15
+   },
+   "AST": {
+    "pg": 2.4,
+    "pm": 0.075
+   },
+   "3PM": {
+    "pg": 3.4,
+    "pm": 0.106
+   },
+   "STL": {
+    "pg": 1.4,
+    "pm": 0.044
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.006
+   },
+   "TOV": {
+    "pg": 2.2,
+    "pm": 0.069
+   }
+  },
+  "home": {
+   "games": 5,
+   "min_pg": 24.8,
+   "PTS": {
+    "pg": 14.6,
+    "pm": 0.59
+   },
+   "REB": {
+    "pg": 2.2,
+    "pm": 0.089
+   },
+   "AST": {
+    "pg": 1.6,
+    "pm": 0.065
+   },
+   "3PM": {
+    "pg": 2.6,
+    "pm": 0.105
+   },
+   "STL": {
+    "pg": 1.6,
+    "pm": 0.065
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.008
+   },
+   "TOV": {
+    "pg": 1.8,
+    "pm": 0.073
+   }
+  },
+  "away": {
+   "games": 6,
+   "min_pg": 24.5,
+   "PTS": {
+    "pg": 14.0,
+    "pm": 0.572
+   },
+   "REB": {
+    "pg": 2.83,
+    "pm": 0.116
+   },
+   "AST": {
+    "pg": 1.83,
+    "pm": 0.075
+   },
+   "3PM": {
+    "pg": 2.33,
+    "pm": 0.095
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.02
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.014
+   },
+   "TOV": {
+    "pg": 1.33,
+    "pm": 0.054
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2026-03-19",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2026-03-19_milwaukee_vs_utah",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.7,
+   "PTS": 5.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-25",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2026-03-25_milwaukee_vs_portland",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.5,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-28",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-03-28_milwaukee_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.2,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-29",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-03-29_la-clippers_vs_milwaukee",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 20.4,
+   "PTS": 13.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-01",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-04-01_houston_vs_milwaukee",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 38.2,
+   "PTS": 25.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-03",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-04-03_boston_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 32.8,
+   "PTS": 11.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-05",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-04-05_memphis_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.4,
+   "PTS": 21.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 5.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2026-04-07_brooklyn_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 33.7,
+   "PTS": 14.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-08",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2026-04-08_detroit_vs_milwaukee",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 24.5,
+   "PTS": 16.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2026-04-10_brooklyn_vs_milwaukee",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 34.0,
+   "PTS": 28.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2026-04-12_milwaukee_vs_philadelphia",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 38.2,
+   "PTS": 22.0,
+   "REB": 10.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-04-12",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2026-04-12_milwaukee_vs_philadelphia",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 38.2,
+   "PTS": 22.0,
+   "REB": 10.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2026-04-10_brooklyn_vs_milwaukee",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 34.0,
+   "PTS": 28.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2026-04-08",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2026-04-08_detroit_vs_milwaukee",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 24.5,
+   "PTS": 16.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-07",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2026-04-07_brooklyn_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 33.7,
+   "PTS": 14.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-05",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-04-05_memphis_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 29.4,
+   "PTS": 21.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 5.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-03",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-04-03_boston_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 32.8,
+   "PTS": 11.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-04-01",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-04-01_houston_vs_milwaukee",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 38.2,
+   "PTS": 25.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2026-03-29",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-03-29_la-clippers_vs_milwaukee",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 20.4,
+   "PTS": 13.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-28",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-03-28_milwaukee_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.2,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-25",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2026-03-25_milwaukee_vs_portland",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.5,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Minnesota"
+}
