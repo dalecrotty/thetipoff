@@ -4,63 +4,63 @@
  "team": "Philadelphia",
  "projections": {
   "3PM": {
-   "mean": 1.12,
-   "floor": 0.01,
-   "ceiling": 3.0
+   "mean": 0.94,
+   "floor": 0.05,
+   "ceiling": 2.19
   },
   "AST": {
-   "mean": 1.13,
+   "mean": 0.94,
    "floor": 0.0,
-   "ceiling": 2.91
+   "ceiling": 2.3
   },
   "BLK": {
-   "mean": 0.17,
+   "mean": 0.14,
    "floor": 0.0,
-   "ceiling": 1.0
+   "ceiling": 0.98
   },
   "PTS": {
-   "mean": 6.78,
-   "floor": 0.57,
-   "ceiling": 13.65
+   "mean": 5.64,
+   "floor": 0.82,
+   "ceiling": 11.36
   },
   "REB": {
-   "mean": 1.97,
-   "floor": 0.12,
-   "ceiling": 4.15
+   "mean": 1.64,
+   "floor": 0.0,
+   "ceiling": 3.85
   },
   "STL": {
-   "mean": 0.77,
+   "mean": 0.64,
+   "floor": 0.0,
+   "ceiling": 2.01
+  },
+  "TOV": {
+   "mean": 0.6,
    "floor": 0.0,
    "ceiling": 2.0
   },
-  "TOV": {
-   "mean": 0.72,
-   "floor": 0.0,
-   "ceiling": 1.97
-  },
   "PRA": {
-   "mean": 9.88,
-   "floor": 2.16,
-   "ceiling": 18.59
+   "mean": 8.22,
+   "floor": 0.5,
+   "ceiling": 16.94
   },
   "PR": {
-   "mean": 8.75,
-   "floor": 1.98,
-   "ceiling": 16.86
+   "mean": 7.28,
+   "floor": 0.52,
+   "ceiling": 15.4
   },
   "PA": {
-   "mean": 7.91,
-   "floor": 1.23,
-   "ceiling": 14.89
+   "mean": 6.58,
+   "floor": 0.72,
+   "ceiling": 13.37
   },
   "RA": {
-   "mean": 3.1,
-   "floor": 0.35,
-   "ceiling": 6.4
+   "mean": 2.58,
+   "floor": 0.0,
+   "ceiling": 5.88
   }
  },
  "minutes": {
-  "value": 17.4,
+  "value": 14.5,
   "source": "model"
  },
  "splits": {
