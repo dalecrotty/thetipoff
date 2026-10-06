@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NBA Game Predictions Today: Spread, Total and Win Chance | thetipoff</title>
-<meta name="description" content="NBA game predictions for every game today: our predicted score, spread, total and win chance, set against the bookmakers' lines. Tip-off times in AEDT.">
+<title>NBA Game Trends: Against the Spread and Over/Under by Situation | thetipoff</title>
+<meta name="description" content="NBA game trends for every team: against the spread, over/under and straight-up records by situation (home, rest, favourite, after a win) over any date range, with tonight's games and the bookmaker lines.">
 <meta name="theme-color" content="#0a0d11">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%230a0d11%22/%3E%3Cg transform=%22translate(8.40 56.32) scale(0.5792)%22%3E%3Cpath d=%22M33.5 0.0Q26.1 0.0 22.6 -3.9000000000000004Q19.1 -7.800000000000001 19.1 -14.0V-41.5H4.1000000000000005V-51.6H14.3Q17.400000000000002 -51.6 18.700000000000003 -52.85Q20.0 -54.1 20.0 -57.300000000000004V-69.8H31.900000000000002V-51.6H52.900000000000006V-41.5H31.900000000000002V-10.100000000000001H52.900000000000006V0.0Z%22 fill=%22%23e8ebf0%22/%3E%3Ccircle cx=%2266.90%22 cy=%22-73.47%22 r=%2210.50%22 fill=%22%23ff6b2c%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,13 @@
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/app.js" defer></script>
 </head>
-<body data-page="games">
+<body data-page="trends">
 <header class="site">
   <a class="logo" href="index.html" aria-label="thetipoff home">the<b>tipoff</b><i></i></a>
   <nav class="site">
     <a href="predictions.html">Predictions</a>
     <a href="tip.html">Just the Tip</a>
-    <a href="games.html" class="on">Games</a>
-    <a href="splits.html">Splits</a>
+    <a href="games.html" class="on">Game trends</a>
     <a href="player.html">Players</a>
     <a href="matchups.html">Matchups</a>
     <a href="with-without.html">With/Without</a>
@@ -33,21 +32,29 @@
 </header>
 <div class="fresh" id="fresh">Loading…</div>
 <main>
-  <p class="kicker">Games · <span id="gday"></span></p>
-  <h1>NBA game predictions today</h1>
-  <p class="lead" id="glead"><!--pre-->We predict the Knicks to beat the 76ers 113–107; the bookmakers have 76ers −1.5, we have Knicks −6. 5 games on Tuesday 6 October.<!--/pre--></p>
-  <p class="sub">Spreads are the home side's line, negative when it's favoured.
-  Our total comes with the range the final score lands in 80% of the time.
-  <a href="schedule.html">Tonight's schedule in AEDT</a>.</p>
-  <div class="games" id="games"><!--pre--><p><a href="/games/grizzlies-vs-hawks.html">Grizzlies at Hawks</a>, 10am AEDT: Hawks 118–116, spread Hawks −1.4, total 234.3.</p><p><a href="/games/pistons-vs-suns.html">Suns at Pistons</a>, 10am AEDT: Pistons 112–109, spread Pistons −2.3, total 220.7.</p><p><a href="/games/76ers-vs-knicks.html">Knicks at 76ers</a>, 10am AEDT: Knicks 113–107, spread Knicks −6, total 220.7.</p><p><a href="/games/bucks-vs-timberwolves.html">Timberwolves at Bucks</a>, 11am AEDT: Timberwolves 118–110, spread Timberwolves −7.4, total 227.5.</p><p><a href="/games/kings-vs-lakers.html">Lakers at Kings</a>, 1pm AEDT: Lakers 119–108, spread Lakers −10.5, total 227.2.</p><!--/pre--></div>
-  <div class="section"><h2>How these are made</h2></div>
-  <div class="prose">
-    <p>Each team's scoring and defence this season, weighted toward recent games,
-    blended with the sum of tonight's player predictions (so injuries and
-    rest days count), plus home court. Tested on last season's final three
-    months: the side we made the favourite won 74% of the time, and the total
-    landed inside our range 82% of the time.</p>
+  <p class="kicker">Game trends · <span id="tday"></span></p>
+  <h1>NBA game trends: against the spread and over/under</h1>
+  <p class="lead" id="tlead"><!--pre-->Game trends for every NBA team: against the spread, over/under and straight-up records by situation, over any date range. This season's trends start with the first games; last season is there already. 5 games on Tuesday 6 October: <a href="/games/grizzlies-vs-hawks.html">Grizzlies at Hawks</a> (Hawks −5.5), <a href="/games/pistons-vs-suns.html">Suns at Pistons</a> (Pistons −3.5), <a href="/games/76ers-vs-knicks.html">Knicks at 76ers</a> (76ers −1.5), <a href="/games/bucks-vs-timberwolves.html">Timberwolves at Bucks</a> (Timberwolves −4.5), <a href="/games/kings-vs-lakers.html">Lakers at Kings</a> (Lakers −4.5).<!--/pre--></p>
+  <p class="sub">Every situation is from the team's side: "home" means the team was at home, "favourite" that it was favoured. Closing spreads and totals from Australian bookmakers; last season's lines are ESPN's stored near-closing line. <a href="schedule.html">Tonight's schedule in AEDT</a> · <a href="teams/">Team pages</a>.</p>
+  <div id="trange"></div>
+  <div class="sits" id="tfilters"></div>
+  <div class="cards" id="tcards"></div>
+  <div class="section"><h2>Tonight's games</h2></div>
+  <div class="games" id="tonight"><!--pre--><p><a href="/games/grizzlies-vs-hawks.html">Grizzlies at Hawks</a>, 10am AEDT: bookmakers Hawks −5.5, total 231.5.</p><p><a href="/games/pistons-vs-suns.html">Suns at Pistons</a>, 10am AEDT: bookmakers Pistons −3.5, total 220.5.</p><p><a href="/games/76ers-vs-knicks.html">Knicks at 76ers</a>, 10am AEDT: bookmakers 76ers −1.5, total 226.5.</p><p><a href="/games/bucks-vs-timberwolves.html">Timberwolves at Bucks</a>, 11am AEDT: bookmakers Timberwolves −4.5, total 231.5.</p><p><a href="/games/kings-vs-lakers.html">Lakers at Kings</a>, 1pm AEDT: bookmakers Lakers −4.5, total 230.5.</p><!--/pre--></div>
+  <div class="section"><h2>Every team</h2></div>
+  <label class="toggle"><input type="checkbox" id="small"> Show teams with fewer than 5 games</label>
+  <div class="tablewrap">
+    <table id="trends">
+      <thead><tr>
+        <th class="s" data-k="team">Team</th><th data-k="n">n</th>
+        <th data-k="w">W–L</th><th data-k="ats_pct">ATS</th>
+        <th data-k="ov_pct" class="opt">O–U</th>
+        <th data-k="mvs">vs spread</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
   </div>
+  <p class="sub">ATS and O–U count pushes separately. "vs spread" is the average points the team beat (+) or missed (−) the closing spread by. Teams with fewer than 10 games in a situation are greyed.</p>
 </main>
 <footer class="rg">
   <b>18+.</b> Predictions are statistical estimates, not betting advice.

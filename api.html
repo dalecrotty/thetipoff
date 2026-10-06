@@ -19,8 +19,7 @@
   <nav class="site">
     <a href="predictions.html">Predictions</a>
     <a href="tip.html">Just the Tip</a>
-    <a href="games.html">Games</a>
-    <a href="splits.html">Splits</a>
+    <a href="games.html">Game trends</a>
     <a href="player.html">Players</a>
     <a href="matchups.html">Matchups</a>
     <a href="with-without.html">With/Without</a>
@@ -77,10 +76,12 @@
   <code>n</code>, <code>mae</code> (average miss), <code>bias</code> (prediction minus
   result), <code>coverage</code> (share inside the 80% range), <code>below</code> and
   <code>above</code>.</p>
-  <h2>Splits</h2>
-  <p><a href="data/splits.json"><code>/data/splits.json</code></a>: one row per team per
-  game this season: score, rest days for both sides, the closing spread (from that
-  team's side) and total, and whether a top-three-minutes player sat.</p>
+  <h2>Game trends</h2>
+  <p><a href="data/trends.json"><code>/data/trends.json</code></a>: one row per team per
+  game from last season on: score, rest days for both sides, the previous result, the
+  closing spread (from that team's side) and total, conference and division flags,
+  whether a top-three-minutes player sat, and which rotation players sat. Last
+  season's lines are ESPN's stored near-closing line.</p>
   <p class="sub">Fields may be added; anything removed or renamed changes
   <code>model_version</code> first. Decimal odds throughout.</p>
   </div>

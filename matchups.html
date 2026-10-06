@@ -19,8 +19,7 @@
   <nav class="site">
     <a href="predictions.html">Predictions</a>
     <a href="tip.html">Just the Tip</a>
-    <a href="games.html">Games</a>
-    <a href="splits.html">Splits</a>
+    <a href="games.html">Game trends</a>
     <a href="player.html">Players</a>
     <a href="matchups.html" class="on">Matchups</a>
     <a href="with-without.html">With/Without</a>
@@ -33,17 +32,21 @@
 </header>
 <div class="fresh" id="fresh">Loading…</div>
 <main>
-  <h1>Matchups — what each defence gives up</h1>
+  <h1>Matchups — what each defence gives up to each position</h1>
   <p class="sub">Per-minute production allowed to each position, as a %
     above (+) or below (−) the league rate for that position. Thin
     samples show as — rather than a fake number. Click a column to sort.</p>
   <div class="controls">
     <div class="chips" id="posChips"></div>
     <select id="winSel">
-      <option value="model">Recent games count more</option>
+      <option value="season">This season</option>
       <option value="month">Last month</option>
-      <option value="l3w">Last 3 weeks</option>
-      <option value="season">All games</option>
+      <option value="model">Recent games count more (the model's view)</option>
+      <option value="last">Last season</option>
+    </select>
+    <select id="modeSel" aria-label="Reading">
+      <option value="pct">% v league</option>
+      <option value="game">Per game</option>
     </select>
   </div>
   <div class="tablewrap">

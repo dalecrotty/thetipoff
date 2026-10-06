@@ -84,6 +84,7 @@ function playerSinglet(team, number) {
 
 /* ---------- data + freshness ---------- */
 async function loadJSON(path) {
+  if (!path.startsWith("/") && !path.startsWith("http")) path = "/" + path;   // pages in subfolders too
   const r = await fetch(path, { cache: "no-store" });
   if (!r.ok) throw new Error(`${path}: ${r.status}`);
   return r.json();
@@ -210,9 +211,10 @@ function playerCell(r) {
       r.minutes_source && r.minutes_source !== "model"
         ? ` <span class="badge src">${esc(r.minutes_source)}</span>` : ""}</div>${wwNote(r)}</td>`;
 }
+/* ranges (floor–ceiling) stay in the data but are not shown per player
+   (owner, 6 Oct 2026); the track record reports how often they hold */
 function predTd(r) {
-  return `<td class="num pred">${predCell(r, true)}<div class="sm">${
-    fmt(r.floor, 0)}–${fmt(r.ceiling, 0)}</div></td>`;
+  return `<td class="num pred">${predCell(r, true)}</td>`;
 }
 /* A side is called only on a clear edge (3%+; internal threshold, never shown as a tier). Below that, the value
    side can come from the price rather than the line — an under at 2.29
@@ -272,7 +274,7 @@ function hitTd(r) {
    how often the side has landed. Price and edge % live on the full board. */
 const LEADER_COLS = [
   ["player", "Player", true, ""],
-  ["proj", "Pred", false, "our prediction, with its 10th–90th percentile range"],
+  ["proj", "Pred", false, "our prediction"],
   ["line", "Line", false, "bookmaker line and price for the side we lean"],
   ["adiff", "Diff", false, "our prediction minus the line (sorts by size, overs and unders alike)", true],
   ["edge", "Edge", false, "our probability minus the bookmaker's (margin removed), with the side it is on; green = a real edge"],
@@ -459,6 +461,11 @@ async function initBoard() {
 
   [statSel, tierSel, teamSel, gameSel].forEach(el => el.onchange = render);
   q.oninput = render;
+  // a game or team in the address: the home strip and game pages link here
+  const want = new URLSearchParams(location.search);
+  const wg = want.get("game"), wt = want.get("team");
+  if (wg && games.includes(wg)) gameSel.value = wg;
+  else if (wt && [...teamSel.options].some(o => o.value === wt)) teamSel.value = wt;
   sortable($("#board"), rows, render);
   // default: biggest edge first; rows without a line after, by prediction
   rows.sort((a, b) => cmpBy(boardSort, -1)(a, b) || (b.proj ?? 0) - (a.proj ?? 0));
@@ -500,15 +507,38 @@ function wwNote(r) {
   }).join("") + role + early;
 }
 
+/* A moved prediction shows its arrow and an "i"; the note ("was 23.3 at
+   4:46am, Jokic out") sits behind it, on hover or tap, so the row stays
+   one line on a phone (owner, 6 Oct 2026). */
 function predCell(r, bold) {
   const v = bold ? `<b>${fmt(r.proj)}</b>` : fmt(r.proj);
   if (r.prior == null || r.proj == null) return v;
   const up = r.proj > r.prior;
-  const was = `${fmt(r.prior)} at ${aedtTime(r.prior_at)}`;
-  return `${v} <span class="mv ${up ? "up" : "down"}" title="${was} → ${
-    fmt(r.proj)}, ${esc(r.move_reason || "")}">${up ? "▲" : "▼"}</span>` +
-    `<div class="was">was ${was} · ${esc(r.move_reason || "")}</div>`;
+  const was = `was ${fmt(r.prior)} at ${aedtTime(r.prior_at)}${r.move_reason ? ` · ${r.move_reason}` : ""}`;
+  return `${v} <span class="mv ${up ? "up" : "down"}">${up ? "▲" : "▼"}</span>`
+    + `<button class="info" type="button" aria-label="${esc(was)}" data-tip="${esc(was)}">i</button>`;
 }
+/* one floating note for every "i" on the page: hover shows it, tap toggles it */
+addEventListener("DOMContentLoaded", () => {
+  const tip = document.createElement("div");
+  tip.className = "infotip"; tip.hidden = true;
+  document.body.append(tip);
+  let open = null;
+  const show = el => {
+    tip.textContent = el.dataset.tip; tip.hidden = false;
+    const r = el.getBoundingClientRect();
+    tip.style.top = `${r.bottom + scrollY + 6}px`;
+    tip.style.left = `${Math.max(8, Math.min(r.left + scrollX, innerWidth - tip.offsetWidth - 8))}px`;
+  };
+  const hide = () => { tip.hidden = true; open = null; };
+  document.addEventListener("mouseover", e => { const el = e.target.closest(".info"); if (el && !open) show(el); });
+  document.addEventListener("mouseout", e => { if (e.target.closest(".info") && !open) hide(); });
+  document.addEventListener("click", e => {
+    const el = e.target.closest(".info");
+    if (el) { e.preventDefault(); if (open === el) hide(); else { show(el); open = el; } }
+    else if (open) hide();
+  });
+});
 
 function renderMovers(data) {
   const el = $("#movers");
@@ -517,10 +547,12 @@ function renderMovers(data) {
   const ups = (data.updates || []).map(u => aedtTime(u.run_at)).filter(Boolean);
   if (!m.length) { el.hidden = true; return; }
   el.hidden = false;
+  const CAP = 6;
+  const more = m.length > CAP;
   el.innerHTML = `<div class="section"><h2>Since this morning</h2></div>
     <p class="sub">Predictions that moved after news. Updated ${
-      ups.join(", ")} (AEDT).</p>
-    <div class="tablewrap"><table><tbody>${m.map(r => `<tr>
+      ups.join(", ")} (AEDT).${more ? ` <a href="#" id="moversAll">All ${m.length} →</a>` : ""}</p>
+    <div class="tablewrap"><table><tbody>${m.map((r, i) => `<tr${i >= CAP ? ' class="more" hidden' : ""}>
       <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
       <td class="s">${teamBadge(r.team)}</td>
       <td class="s">${r.stat}</td>
@@ -530,6 +562,8 @@ function renderMovers(data) {
         r.delta > 0 ? "+" : ""}${fmt(r.delta)}</span></td>
       <td class="s">${esc(r.reason)}</td>
     </tr>`).join("")}</tbody></table></div>`;
+  const all = $("#moversAll");
+  if (all) all.onclick = e => { e.preventDefault(); $$("tr.more", el).forEach(t => t.hidden = false); all.remove(); };
 }
 
 /* ---------- prop chart (player hub) ---------- */
@@ -681,19 +715,13 @@ async function initPlayer() {
       ${sg(w.REB)} rebounds and ${sg(w.AST)} assists per game
       (${w.n_without} games).</p>`).join("");
   }
-  // tonight's cards: prediction, range, and the line with its edge
-  $("#projCards").innerHTML = [...S, ...COMBOS].filter(s => P[s]).map(s => {
-    const v = P[s], l = L[s];
-    const over = l && l.side === "over";
-    const edge = l && l.edge != null
-      ? `<span class="edge ${l.tier ? `hot ${l.side}` : "cold"}">${l.tier
-          ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ` : ""}${pct(l.edge)}</span>` : "";
-    return `<div class="card" data-stat="${s}"><div class="k">${s}</div>
-      <div class="v">${fmt(v.mean)}</div>
-      <div class="r">${fmt(v.floor, 0)}–${fmt(v.ceiling, 0)}</div>
-      ${l ? `<div class="cl"><span>${fmt(l.line)}${l.price != null
-        ? ` <span class="sm">@ ${fmt(l.price, 2)}</span>` : ""}</span>${edge}</div>` : ""}</div>`;
-  }).join("");
+  // tonight, in one line (owner, 6 Oct 2026): minutes, points, threes,
+  // rebounds, assists; lines and edges live in the explorer below
+  const strip = [["MIN", h.minutes ? h.minutes.value : null], ["PTS", P.PTS?.mean], ["3PM", P["3PM"]?.mean],
+                 ["REB", P.REB?.mean], ["AST", P.AST?.mean]].filter(x => x[1] != null);
+  $("#projCards").innerHTML = strip.length
+    ? strip.map(([k, v]) => `<span class="pst"><span class="k">${k}</span><b>${fmt(v)}</b></span>`).join("")
+    : `<span class="dim">No prediction tonight.</span>`;
 
   /* --- interactive prop chart --- */
   const CHART_STATS = [...S, ...COMBOS];
@@ -1053,37 +1081,53 @@ async function initMatchups() {
     const note = document.createElement("p");
     note.className = "sub";
     note.innerHTML = `Built from our own box scores. Positions are each
-      player's usual spot (PG/SG/SF/PF/C) from roster listings and ESPN depth
-      charts, covering <b>${(data.coverage * 100).toFixed(0)}%</b> of minutes
-      played; players without one are left out rather than guessed.`;
+      player's usual spot (PG/SG/SF/PF/C), covering <b>${(data.coverage * 100).toFixed(0)}%</b>
+      of minutes played; players without one are left out rather than guessed.
+      "% v league" is per minute against the league rate for the position;
+      "per game" is what the position scored against that defence per game.`;
     $("#posChips").parentElement.after(note);
   }
   $("#posChips").innerHTML = positions.map(p =>
     `<button class="chip" data-p="${esc(p)}">${esc(p)}</button>`).join("");
 
   let rows = [], sortK = "PTS", sortDir = -1;
+  // two readings of the same cell: % against the league rate for the
+  // position (per minute), or what the position scored per game
+  let mode = "pct";
+  const modeSel = $("#modeSel");
+  if (modeSel) modeSel.onchange = () => { mode = modeSel.value; render(); };
   const cell = v => v == null ? `<td class="num dim">—</td>`
     : `<td class="num ${v > 0.03 ? "pos" : v < -0.03 ? "neg" : ""}">
          ${(v > 0 ? "+" : "") + (v * 100).toFixed(0)}%</td>`;
+  const gcell = (v, lg) => v == null ? `<td class="num dim">—</td>`
+    : `<td class="num ${lg != null && v > lg * 1.03 ? "pos" : lg != null && v < lg * 0.97 ? "neg" : ""}">${fmt(v)}</td>`;
   const render = () => {
     $$(".chip", $("#posChips")).forEach(c =>
       c.classList.toggle("on", c.dataset.p === pos));
-    rows = data.windows[$("#winSel").value]
+    const win = $("#winSel").value;
+    const key = s => mode === "pct" ? s : "g_" + s;
+    const lg = (data.league || {})[win]?.[pos] || {};
+    rows = data.windows[win]
       .filter(r => r.pos === pos)
       .sort((a, b) => {
-        const x = a[sortK], y = b[sortK];
+        const kk = sortK === "minutes" || sortK === "team" ? sortK : key(sortK);
+        const x = a[kk], y = b[kk];
         if (x == null && y == null) return 0;
         if (x == null) return 1;
         if (y == null) return -1;
         return (x < y ? -1 : x > y ? 1 : 0) * -sortDir;
       });
-    $("#mx tbody").innerHTML = rows.map(r => `<tr>
+    const lgRow = mode === "pct" ? "" : `<tr class="thin"><td class="s dim">League average, ${esc(pos)}</td><td class="num dim"></td>${
+      S.map(s => `<td class="num dim">${lg[s] == null ? "—" : fmt(lg[s])}</td>`).join("")}</tr>`;
+    $("#mx tbody").innerHTML = (rows.map(r => `<tr>
       <td class="s">${teamBadge(r.team, {withName: true})}</td>
-      <td class="num dim">${r.minutes ?? "—"}</td>
-      ${S.map(s => cell(r[s])).join("")}
-    </tr>`).join("") ||
+      <td class="num dim">${mode === "pct" ? (r.minutes ?? "—") : (r.games ?? "—")}</td>
+      ${S.map(s => mode === "pct" ? cell(r[s]) : gcell(r["g_" + s], lg[s])).join("")}
+    </tr>`).join("") + lgRow) ||
       `<tr><td colspan="9" class="empty">No teams meet the sample floor
        in this window.</td></tr>`;
+    const th = $("#mx th[data-k=minutes]");
+    if (th) th.textContent = mode === "pct" ? "Min" : "G";
   };
   $$("th[data-k]", $("#mx")).forEach(th => th.onclick = () => {
     const k = th.dataset.k;
@@ -1308,118 +1352,71 @@ async function initHome() {
         <td class="num">${edgeSpan(r)}</td></tr>`).join("")}</tbody></table>`
     : `<p class="dim">Edges appear once the bookmakers post tonight's player lines.</p>`);
 
-  $("#hGames").innerHTML = games.length ? games.map(g => {
-    const fav = g.p_home == null ? null : g.p_home >= 0.5 ? [g.home, g.p_home] : [g.away, 1 - g.p_home];
-    return `<a class="gmini" href="games.html#g${esc(g.event_id)}">
+  $("#hGames").innerHTML = games.length ? games.map(g => `<a class="gmini" href="${gameHref(g)}">
       <div class="t">${g.start ? aedtTime(g.start) : ""}</div>
       <div class="m">${teamBadge(g.away)} <span class="dim">@</span> ${teamBadge(g.home)}</div>
-      <div class="sm">${favLine(g, g.line_home)} · ${fmt(g.total)}</div>
-      ${fav ? `<div class="sm dim">${code(fav[0])} ${pct(fav[1]).replace(".0%", "%")} to win</div>` : ""}
-    </a>`; }).join("")
+      <div class="sm">${favLine(g, g.book_line_home)} · ${g.book_total == null ? "total —" : fmt(g.book_total)}</div>
+      <div class="sm dim">${g.book_line_home == null ? "lines to come" : "bookmaker line"} · players →</div>
+    </a>`).join("")
     : `<p class="dim">No games tonight.</p>`;
 }
 
-/* ---------- game predictions ---------- */
-async function initGames() {
-  await renderFreshness();
-  const d = await loadJSON("data/games.json");
-  const games = d.games || [];
-  if (games.length && games[0].start) $("#gday").textContent = auDate(games[0].start);
-  if (!games.length) {
-    $("#glead").textContent = "No NBA games tonight.";
-    return;
-  }
-  // answer first: the game where we differ most from the bookmakers
-  const gap = g => (g.line_home != null && g.book_line_home != null) ? Math.abs(g.line_home - g.book_line_home) : -1;
-  const top = [...games].sort((a, b) => gap(b) - gap(a))[0];
-  const winner = top.pred_home >= top.pred_away ? [top.home, top.away, top.pred_home, top.pred_away]
-                                                 : [top.away, top.home, top.pred_away, top.pred_home];
-  $("#glead").innerHTML = `We predict ${esc(winner[0])} to beat ${esc(winner[1])} `
-    + `<span class="n">${fmt(winner[2], 0)}–${fmt(winner[3], 0)}</span>`
-    + (top.book_line_home != null ? `; the bookmakers have ${favLine(top, top.book_line_home)}, `
-      + `we have ${favLine(top, top.line_home)}.` : ".")
-    + ` ${games.length} game${games.length > 1 ? "s" : ""} tonight.`;
+/* the board, filtered to one game: its label there is "Home vs Away" */
+const gameHref = g => `predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
+const TEAM_NICK = { Atlanta: "Hawks", Boston: "Celtics", Brooklyn: "Nets", Charlotte: "Hornets",
+  Chicago: "Bulls", Cleveland: "Cavaliers", Dallas: "Mavericks", Denver: "Nuggets", Detroit: "Pistons",
+  "Golden State": "Warriors", Houston: "Rockets", Indiana: "Pacers", "LA Clippers": "Clippers",
+  "LA Lakers": "Lakers", Memphis: "Grizzlies", Miami: "Heat", Milwaukee: "Bucks", Minnesota: "Timberwolves",
+  "New Orleans": "Pelicans", "New York": "Knicks", "Oklahoma City": "Thunder", Orlando: "Magic",
+  Philadelphia: "76ers", Phoenix: "Suns", Portland: "Trail Blazers", Sacramento: "Kings",
+  "San Antonio": "Spurs", Toronto: "Raptors", Utah: "Jazz", Washington: "Wizards" };
+const nick = t => TEAM_NICK[t] || t;
+const slugOf = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const teamHref = t => `teams/${slugOf(t)}.html`;
+const pairHref = g => { const [x, y] = [nick(g.home), nick(g.away)].sort(); return `games/${slugOf(x)}-vs-${slugOf(y)}.html`; };
 
-  $("#games").innerHTML = games.map(g => {
-    const sd = (g.line_home != null && g.book_line_home != null) ? g.line_home - g.book_line_home : null;
-    const td = (g.total != null && g.book_total != null) ? g.total - g.book_total : null;
-    const win = p => p == null ? "—" : pct(p).replace(".0%", "%");
-    return `<article class="game" id="g${esc(g.event_id)}">
-      <header><span class="t">${g.start ? whenAEDT(g.start) : ""}</span></header>
-      <div class="score">
-        <div class="side">${teamBadge(g.away)} <span class="nm">${esc(g.away)}</span><b class="ours">${fmt(g.pred_away, 0)}</b></div>
-        <div class="side">${teamBadge(g.home)} <span class="nm">${esc(g.home)}</span><b class="ours">${fmt(g.pred_home, 0)}</b></div>
-      </div>
-      <table class="gt"><thead><tr><th class="s"></th><th>Ours</th><th>Bookmakers</th><th>Gap</th></tr></thead><tbody>
-        <tr><td class="s">Spread</td><td class="num ours">${favLine(g, g.line_home)}</td>
-          <td class="num">${favLine(g, g.book_line_home)}</td>
-          <td class="num ${sd != null && Math.abs(sd) >= 2 ? "gap" : "dim"}">${sd == null ? "—" : fmt(Math.abs(sd)) + " pts"}</td></tr>
-        <tr><td class="s">Total</td><td class="num ours">${fmt(g.total)}<div class="sm dim">${fmt(g.total_lo, 0)}–${fmt(g.total_hi, 0)}</div></td>
-          <td class="num">${fmt(g.book_total)}</td>
-          <td class="num ${td != null && Math.abs(td) >= 3 ? "gap" : "dim"}">${td == null ? "—" : signed(td)}</td></tr>
-        <tr><td class="s">${code(g.home)} to win</td><td class="num ours">${win(g.p_home)}</td>
-          <td class="num">${win(g.book_p_home)}</td><td class="num dim"></td></tr>
-      </tbody></table>
-    </article>`; }).join("");
-
-  // SportsEvent markup, one per game (brief §9)
-  const ld = games.filter(g => g.start).map(g => ({
-    "@context": "https://schema.org", "@type": "SportsEvent",
-    name: `${g.away} at ${g.home}`, startDate: g.start, sport: "Basketball",
-    homeTeam: { "@type": "SportsTeam", name: g.home },
-    awayTeam: { "@type": "SportsTeam", name: g.away },
-    description: `Prediction: ${g.home} ${fmt(g.pred_home, 0)}, ${g.away} ${fmt(g.pred_away, 0)}; total ${fmt(g.total)}.`,
-  }));
-  const s = document.createElement("script");
-  s.type = "application/ld+json"; s.textContent = JSON.stringify(ld);
-  document.head.appendChild(s);
-}
-
-/* ---------- schedule (AEDT) ---------- */
-async function initSchedule() {
-  await renderFreshness();
-  const d = await loadJSON("data/games.json");
-  const games = d.games || [];
-  if (!games.length) { $("#sclead").textContent = "No NBA games today."; return; }
-  const first = games.find(g => g.start);
-  $("#sclead").innerHTML = `There ${games.length === 1 ? "is 1 NBA game" : `are ${games.length} NBA games`} today`
-    + (first ? ` (${auDate(first.start)}); the first tips off at <b>${whenAEDT(first.start).split(",")[0]}</b>.` : ".");
-  $("#sched tbody").innerHTML = games.map(g => {
-    const hw = g.pred_home != null && g.pred_home >= g.pred_away;
-    return `<tr>
-      <td class="s">${g.start ? whenAEDT(g.start).split(",")[0] : "—"}</td>
-      <td class="s"><a href="games.html#g${esc(g.event_id)}">${teamBadge(g.away)} <span class="tn">${esc(g.away)}</span> <span class="dim">@</span> ${teamBadge(g.home)} <span class="tn">${esc(g.home)}</span></a></td>
-      <td class="s">${g.pred_home == null ? "—" : `${esc(code(hw ? g.home : g.away))} by ${fmt(Math.abs(g.pred_home - g.pred_away), 0)}`}</td>
-      <td class="num">${fmt(g.total)}</td></tr>`; }).join("");
-}
-
-/* ---------- situational splits ---------- */
-const SPLIT_FILTERS = [
+/* ---------- Game trends: shared ----------
+   One row per team per completed game (data/trends.json, last season
+   onward). Every situation is from the team's side. Rows are counted
+   per team result; over/under per game, never twice. */
+const SITUATIONS = [
   { k: "venue", label: "Venue", opts: [["all", "All"], ["home", "Home"], ["away", "Away"]],
     f: (r, v) => v === "all" || (v === "home") === r.home },
-  { k: "b2b", label: "Back-to-back", opts: [["all", "All"], ["team", "Team on B2B"], ["opp", "Opponent on B2B"], ["either", "Either"], ["neither", "Neither"]],
-    f: (r, v) => { const t = r.rest === 0, o = r.opp_rest === 0;
-      return v === "all" || (v === "team" ? t : v === "opp" ? o : v === "either" ? (t || o) : (!t && !o)); } },
-  { k: "rest", label: "Rest days", opts: [["all", "All"], ["0", "0"], ["1", "1"], ["2", "2+"]],
-    f: (r, v) => v === "all" || (r.rest != null && (v === "2" ? r.rest >= 2 : r.rest === +v)) },
-  { k: "role", label: "Favourite", opts: [["all", "All"], ["fav", "Favourite"], ["dog", "Underdog"]],
-    f: (r, v) => v === "all" || (r.spread != null && (v === "fav" ? r.spread < 0 : r.spread > 0)) },
+  { k: "prev", label: "After a", opts: [["all", "Any result"], ["win", "Win"], ["loss", "Loss"]],
+    f: (r, v) => v === "all" || (r.prev_win != null && (v === "win") === r.prev_win) },
+  { k: "role", label: "Favourite / underdog", opts: [["all", "All"], ["fav", "Favourite"], ["dog", "Underdog"],
+      ["hfav", "Home favourite"], ["hdog", "Home underdog"], ["afav", "Away favourite"], ["adog", "Away underdog"]],
+    f: (r, v) => { if (v === "all") return true; if (r.spread == null) return false;
+      const fav = r.spread < 0, dog = r.spread > 0;
+      return v === "fav" ? fav : v === "dog" ? dog : v === "hfav" ? fav && r.home : v === "hdog" ? dog && r.home
+           : v === "afav" ? fav && !r.home : dog && !r.home; } },
   { k: "band", label: "Spread", opts: [["all", "All"], ["s", "0–3"], ["m", "3.5–7"], ["l", "7.5+"]],
     f: (r, v) => { if (v === "all") return true; if (r.spread == null) return false;
       const a = Math.abs(r.spread); return v === "s" ? a <= 3 : v === "m" ? a > 3 && a <= 7 : a > 7; } },
   { k: "total", label: "Total", opts: [["all", "All"], ["lo", "Under 220"], ["mid", "220–234.5"], ["hi", "235+"]],
     f: (r, v) => { if (v === "all") return true; if (r.total == null) return false;
       return v === "lo" ? r.total < 220 : v === "mid" ? r.total >= 220 && r.total < 235 : r.total >= 235; } },
+  { k: "rest", label: "Rest", opts: [["all", "All"], ["0", "No rest (B2B)"], ["1", "1 day"], ["2", "2–3 days"], ["4", "4+ days"],
+      ["adv", "Rest advantage"], ["dis", "Rest disadvantage"], ["eq", "Equal rest"], ["oppb2b", "Opponent on B2B"]],
+    f: (r, v) => { if (v === "all") return true;
+      if (v === "oppb2b") return r.opp_rest === 0;
+      if (["adv", "dis", "eq"].includes(v)) { if (r.rest == null || r.opp_rest == null) return false;
+        return v === "adv" ? r.rest > r.opp_rest : v === "dis" ? r.rest < r.opp_rest : r.rest === r.opp_rest; }
+      if (r.rest == null) return false;
+      return v === "0" ? r.rest === 0 : v === "1" ? r.rest === 1 : v === "2" ? r.rest >= 2 && r.rest <= 3 : r.rest >= 4; } },
   { k: "top3", label: "Top-3 minutes player", opts: [["all", "All"], ["out", "One missing"], ["in", "All playing"]],
     f: (r, v) => v === "all" || (v === "out") === !!r.missing_top3 },
+  { k: "group", label: "Opponent", opts: [["all", "All"], ["conf", "Conference"], ["nconf", "Non-conference"], ["div", "Division"], ["ndiv", "Non-division"]],
+    f: (r, v) => v === "all" || (v === "conf" ? r.conf : v === "nconf" ? !r.conf : v === "div" ? r.div : !r.div) },
+  { k: "type", label: "Games", opts: [["reg", "Regular season"], ["post", "Play-in and playoffs"], ["all", "All"]],
+    f: (r, v) => v === "all" || (v === "post") === !!r.post },
   { k: "cup", label: "NBA Cup", opts: [["all", "All"], ["cup", "Cup games"], ["not", "Not Cup"]],
     f: (r, v) => v === "all" || (v === "cup") === !!r.cup },
 ];
+const SIT_DEFAULT = Object.fromEntries(SITUATIONS.map(f => [f.k, f.k === "type" ? "reg" : "all"]));
 
-/* Team rows (each game appears once per side). O–U is counted per game,
-   so a game is never counted twice. */
 const gameKey = r => r.date + "|" + (r.home ? r.team : r.opp);
-function splitStats(rows) {
+function trendStats(rows) {
   const s = { n: rows.length, w: 0, l: 0, aw: 0, al: 0, ap: 0, o: 0, u: 0, p: 0, mv: 0, mvn: 0 };
   const seen = new Set();
   for (const r of rows) {
@@ -1443,70 +1440,267 @@ function splitStats(rows) {
   s.mvs = s.mvn ? s.mv / s.mvn : null;
   return s;
 }
+const rec = (a, b, c) => `${a}–${b}${c ? `–${c}` : ""}`;
 
-async function initSplits() {
+/* date range: from / to (YYYY-MM-DD), with presets; default this season */
+function seasonStartOf(d) {               // 1 October of the season the date is in
+  const y = d.getUTCMonth() >= 7 ? d.getUTCFullYear() : d.getUTCFullYear() - 1;
+  return `${y}-10-01`;
+}
+function dateRangeControl(el, data, onChange) {
+  const today = new Date().toISOString().slice(0, 10);
+  const dates = (data.rows || []).map(r => r.date).sort();
+  const lo = dates[0] || today, hi = dates[dates.length - 1] || today;
+  const thisStart = seasonStartOf(new Date(today + "T12:00:00Z"));
+  const lastStart = `${+thisStart.slice(0, 4) - 1}-10-01`;
+  const shift = (iso, days) => { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + days); return d.toISOString().slice(0, 10); };
+  const presets = [["season", "This season", thisStart, today], ["30", "Last 30 days", shift(today, -30), today],
+                   ["14", "Last 14 days", shift(today, -14), today], ["last", "Last season", lastStart, shift(thisStart, -1)],
+                   ["all", "Everything", lo, hi]];
+  const state = { from: thisStart, to: today };
+  if (!dates.some(d => d >= thisStart)) { state.from = lastStart; }   // before opening night: last season
+  el.innerHTML = `<div class="daterange">
+    <div class="chips">${presets.map(p => `<button class="chip" data-p="${p[0]}">${p[1]}</button>`).join("")}</div>
+    <label>From <input type="date" id="drFrom" min="${lo}" max="${hi}" value="${state.from}"></label>
+    <label>To <input type="date" id="drTo" min="${lo}" max="${hi}" value="${state.to}"></label>
+  </div>`;
+  const mark = () => $$(".chip", el).forEach(c => {
+    const p = presets.find(x => x[0] === c.dataset.p);
+    c.classList.toggle("on", p && p[2] === state.from && p[3] === state.to);
+  });
+  el.onclick = e => { const c = e.target.closest(".chip"); if (!c) return;
+    const p = presets.find(x => x[0] === c.dataset.p);
+    state.from = p[2]; state.to = p[3]; $("#drFrom", el).value = p[2]; $("#drTo", el).value = p[3]; mark(); onChange(); };
+  el.onchange = e => { if (e.target.id === "drFrom") state.from = e.target.value;
+    if (e.target.id === "drTo") state.to = e.target.value; mark(); onChange(); };
+  mark();
+  return { inRange: r => r.date >= state.from && r.date <= state.to, state,
+           label: () => { const p = presets.find(x => x[2] === state.from && x[3] === state.to);
+             return p ? p[1].toLowerCase() : `${auDay(state.from)} to ${auDay(state.to)}`; } };
+}
+function situationControls(el, state, filters = SITUATIONS, onChange) {
+  el.innerHTML = filters.map(f => `<label class="fsel"><span>${f.label}</span>
+    <select data-k="${f.k}">${f.opts.map(([v, t]) => `<option value="${v}"${state[f.k] === v ? " selected" : ""}>${t}</option>`).join("")}</select></label>`).join("");
+  el.onchange = e => { state[e.target.dataset.k] = e.target.value; onChange(); };
+}
+const SIT_PHRASE = { venue: { home: "at home", away: "away" }, prev: { win: "after a win", loss: "after a loss" },
+  role: { fav: "as favourite", dog: "as underdog", hfav: "as home favourite", hdog: "as home underdog", afav: "as away favourite", adog: "as away underdog" },
+  band: { s: "spread 0–3", m: "spread 3.5–7", l: "spread 7.5+" }, total: { lo: "total under 220", mid: "total 220–234.5", hi: "total 235+" },
+  rest: { "0": "on no rest", "1": "on 1 day's rest", "2": "on 2–3 days' rest", "4": "on 4+ days' rest", adv: "with a rest advantage", dis: "with a rest disadvantage", eq: "on equal rest", oppb2b: "v an opponent on a back-to-back" },
+  top3: { out: "missing a top-3 player", in: "at full strength" }, group: { conf: "v conference", nconf: "v non-conference", div: "v division", ndiv: "v non-division" },
+  type: { post: "play-in and playoffs", all: "all games" }, cup: { cup: "NBA Cup games", not: "outside the NBA Cup" } };
+const situationLabel = state => SITUATIONS.filter(f => state[f.k] !== "all" && !(f.k === "type" && state[f.k] === "reg"))
+  .map(f => (SIT_PHRASE[f.k] || {})[state[f.k]] || f.opts.find(o => o[0] === state[f.k])[1].toLowerCase());
+
+/* tonight's situation for one side of a game, from the bookmaker line and rest */
+function tonightSituation(g, team, rows) {
+  const home = g.home === team;
+  const line = g.book_line_home == null ? null : (home ? g.book_line_home : -g.book_line_home);
+  const mine = rows.filter(r => r.team === team).sort((a, b) => a.date < b.date ? 1 : -1);
+  const last = mine[0];
+  const rest = last && g.start ? Math.round((new Date(g.start) - new Date(last.date + "T23:00:00Z")) / 864e5) - 1 : null;
+  const s = { ...SIT_DEFAULT, venue: home ? "home" : "away" };
+  if (line != null) s.role = line < 0 ? (home ? "hfav" : "afav") : line > 0 ? (home ? "hdog" : "adog") : "all";
+  if (line != null) { const a = Math.abs(line); s.band = a <= 3 ? "s" : a <= 7 ? "m" : "l"; }
+  if (rest != null && rest >= 0 && rest <= 5) s.rest = rest === 0 ? "0" : rest === 1 ? "1" : rest <= 3 ? "2" : "4";
+  if (last) s.prev = last.pts > last.opp_pts ? "win" : "loss";
+  return s;
+}
+function trendLine(label, st) {
+  if (!st.n) return `<li class="dim">${esc(label)}: no games yet</li>`;
+  return `<li><span class="lbl">${esc(label)}</span> <b>${rec(st.w, st.l)}</b> straight up, <b>${rec(st.aw, st.al, st.ap)}</b> ATS, ` +
+    `overs <b>${rec(st.o, st.u, st.p)}</b>${st.mvs != null ? `, ${signed(st.mvs)} v spread` : ""} <span class="dim">n=${st.n}</span></li>`;
+}
+/* up to three lines for a side: tonight's full situation, then each of its parts that has games */
+function sideTrends(team, sit, rows, inRange) {
+  const mine = rows.filter(r => r.team === team && inRange(r));
+  const applies = st => mine.filter(r => SITUATIONS.every(f => f.f(r, st[f.k])));
+  const lines = [];
+  const full = applies(sit), fullLabel = situationLabel(sit).join(", ");
+  lines.push([fullLabel ? `Tonight's situation (${fullLabel})` : "Tonight's situation", trendStats(full)]);
+  for (const k of ["venue", "role", "rest", "prev"]) {
+    if (sit[k] === "all" || (k === "role" && sit.band !== "all" && false)) continue;
+    const st = { ...SIT_DEFAULT, [k]: sit[k] };
+    const label = (SIT_PHRASE[k] || {})[sit[k]] || SITUATIONS.find(f => f.k === k).opts.find(o => o[0] === sit[k])[1];
+    lines.push([label[0].toUpperCase() + label.slice(1), trendStats(applies(st))]);
+  }
+  lines.push(["All games", trendStats(mine)]);
+  return lines.slice(0, 5).map(([l, st]) => trendLine(l, st)).join("");
+}
+function gameCard(g, rows, inRange) {
+  const sides = [g.away, g.home].map(t => {
+    const sit = tonightSituation(g, t, rows);
+    return `<div class="side"><h3><a href="${teamHref(t)}">${teamBadge(t)} ${esc(nick(t))}</a></h3><ul class="trend">${sideTrends(t, sit, rows, inRange)}</ul></div>`;
+  }).join("");
+  return `<article class="game" id="g${esc(g.event_id)}">
+    <header><span class="t">${g.start ? whenAEDT(g.start) : ""}</span>
+      <span class="line">${g.book_line_home == null ? "lines to come" : `${favLine(g, g.book_line_home)} · total ${fmt(g.book_total)}`}</span></header>
+    <div class="sides">${sides}</div>
+    <p class="sm"><a href="${gameHref(g)}">Player predictions for this game →</a> · <a href="${pairHref(g)}">Game page</a></p>
+  </article>`;
+}
+
+/* ---------- Game trends page ---------- */
+async function initTrends() {
   await renderFreshness();
-  const d = await loadJSON("data/splits.json");
+  const [d, gd] = await Promise.all([loadJSON("data/trends.json"), loadJSON("data/games.json").catch(() => null)]);
   const all = d.rows || [];
-  const state = Object.fromEntries(SPLIT_FILTERS.map(f => [f.k, "all"]));
-  const months = [...new Set(all.map(r => r.month))].sort();
-  const filters = [...SPLIT_FILTERS, { k: "month", label: "Month",
-    opts: [["all", "All"], ...months.map(m => [m, new Date(m + "-01T00:00:00Z").toLocaleString("en-AU", { month: "short", timeZone: "UTC" })])],
-    f: (r, v) => v === "all" || r.month === v }];
-  state.month = "all";
-  $("#sfilters").innerHTML = filters.map(f => `<label class="fsel"><span>${f.label}</span>
-    <select data-k="${f.k}">${f.opts.map(([v, t]) => `<option value="${v}">${t}</option>`).join("")}</select></label>`).join("");
-
-  let sortKey = "ats_pct", sortDir = -1;
-  function render() {
-    const rows = all.filter(r => filters.every(f => f.f(r, state[f.k])));
-    const on = filters.filter(f => state[f.k] !== "all").map(f => f.opts.find(o => o[0] === state[f.k])[1].toLowerCase());
+  const games = gd?.games || [];
+  const state = { ...SIT_DEFAULT };
+  let range;
+  const render = () => {
+    const rows = all.filter(r => range.inRange(r) && SITUATIONS.every(f => f.f(r, state[f.k])));
+    const on = situationLabel(state);
     // unfiltered, every game counts once per side and ATS is 50% by
     // construction: the headline reads from the home side instead
     const who = on.length ? rows : rows.filter(r => r.home);
-    const s = splitStats(who);
-    const ou = splitStats(rows);
+    const s = trendStats(who), ou = trendStats(rows);
     const subject = on.length ? `Teams (${esc(on.join(", "))})` : "Home teams";
-    $("#slead").innerHTML = !all.length
-      ? `The 2026-27 splits start on opening night (21 October AEDT) and fill in game by game.`
-      : `${subject} are <b>${s.aw}–${s.al}${s.ap ? `–${s.ap}` : ""}</b> against the spread this season; `
-        + `these games have gone <b>${ou.o}–${ou.u}</b> over/under (${ou.games} games).`;
-    $("#scards").innerHTML = `
+    $("#tlead").innerHTML = !all.length
+      ? `Game trends start with the first games of the season.`
+      : `${subject} are <b>${rec(s.aw, s.al, s.ap)}</b> against the spread, ${range.label()}; `
+        + `these games have gone <b>${rec(ou.o, ou.u)}</b> over/under (${ou.games} games).`;
+    $("#tcards").innerHTML = `
       <div class="card"><div class="k">Games</div><div class="v">${ou.games}</div><div class="r">${s.n} team results</div></div>
-      <div class="card"><div class="k">ATS${on.length ? "" : ", home"}</div><div class="v">${s.aw}–${s.al}</div><div class="r">${pct(s.ats_pct)} · ${s.ap} push</div></div>
-      <div class="card"><div class="k">Over–under</div><div class="v">${ou.o}–${ou.u}</div><div class="r">${pct(ou.ov_pct)} overs</div></div>
-      <div class="card"><div class="k">Straight up${on.length ? "" : ", home"}</div><div class="v">${s.w}–${s.l}</div></div>
+      <div class="card"><div class="k">ATS${on.length ? "" : ", home"}</div><div class="v">${rec(s.aw, s.al)}</div><div class="r">${pct(s.ats_pct)} · ${s.ap} push</div></div>
+      <div class="card"><div class="k">Over–under</div><div class="v">${rec(ou.o, ou.u)}</div><div class="r">${pct(ou.ov_pct)} overs</div></div>
+      <div class="card"><div class="k">Straight up${on.length ? "" : ", home"}</div><div class="v">${rec(s.w, s.l)}</div></div>
       <div class="card"><div class="k">Vs spread${on.length ? "" : ", home"}</div><div class="v">${signed(s.mvs)}</div><div class="r">avg pts</div></div>`;
     const by = {};
     rows.forEach(r => (by[r.team] = by[r.team] || []).push(r));
-    let teams = Object.entries(by).map(([team, rs]) => ({ team, ...splitStats(rs) }));
+    let teams = Object.entries(by).map(([team, rs]) => ({ team, ...trendStats(rs) }));
     const small = $("#small").checked;
-    const hidden = teams.filter(t => t.n < 10).length;
-    if (!small) teams = teams.filter(t => t.n >= 10);
-    teams.sort((a, b) => {
-      const x = a[sortKey], y = b[sortKey];
-      if (x == null) return 1; if (y == null) return -1;
-      return (x < y ? -1 : x > y ? 1 : 0) * sortDir;
-    });
-    $("#splits tbody").innerHTML = teams.length ? teams.map(t => `<tr class="${t.n < 10 ? "thin" : ""}">
-      <td class="s">${teamBadge(t.team)} <span class="tn">${esc(t.team)}</span></td>
+    const hidden = teams.filter(t => t.n < 5).length;
+    if (!small) teams = teams.filter(t => t.n >= 5);
+    teams.sort((a, b) => { const x = a[sortKey], y = b[sortKey];
+      if (x == null) return 1; if (y == null) return -1; return (x < y ? -1 : x > y ? 1 : 0) * sortDir; });
+    $("#trends tbody").innerHTML = teams.length ? teams.map(t => `<tr class="${t.n < 10 ? "thin" : ""}">
+      <td class="s"><a href="${teamHref(t.team)}">${teamBadge(t.team)} <span class="tn">${esc(t.team)}</span></a></td>
       <td class="num">${t.n}</td>
-      <td class="num">${t.w}–${t.l}</td>
-      <td class="num">${t.aw}–${t.al}${t.ap ? `–${t.ap}` : ""}<div class="sm dim">${pct(t.ats_pct)}</div></td>
-      <td class="num opt">${t.o}–${t.u}${t.p ? `–${t.p}` : ""}<div class="sm dim">${pct(t.ov_pct)}</div></td>
+      <td class="num">${rec(t.w, t.l)}</td>
+      <td class="num">${rec(t.aw, t.al, t.ap)}<div class="sm dim">${pct(t.ats_pct)}</div></td>
+      <td class="num opt">${rec(t.o, t.u, t.p)}<div class="sm dim">${pct(t.ov_pct)}</div></td>
       <td class="num ${t.mvs > 0 ? "pos" : ""}">${signed(t.mvs)}</td></tr>`).join("")
       : `<tr><td colspan="6" class="empty">${all.length
-        ? `No team has 10 games in this split yet${hidden ? ` (${hidden} with fewer: tick the box above to see them)` : ""}.`
-        : "No games yet this season."}</td></tr>`;
-    $("#small").parentElement.lastChild.textContent = ` Show teams with fewer than 10 games${hidden && !small ? ` (${hidden} hidden)` : ""}`;
-  }
-  $("#sfilters").addEventListener("change", e => { state[e.target.dataset.k] = e.target.value; render(); });
+        ? `No team has 5 games in this situation and range${hidden ? ` (${hidden} with fewer: tick the box above)` : ""}.`
+        : "No games yet."}</td></tr>`;
+    $("#small").parentElement.lastChild.textContent = ` Show teams with fewer than 5 games${hidden && !small ? ` (${hidden} hidden)` : ""}`;
+    // tonight's games, each side in tonight's situation over the chosen range
+    const tonight = $("#tonight");
+    if (tonight) tonight.innerHTML = games.length
+      ? games.map(g => gameCard(g, all, range.inRange)).join("")
+      : `<p class="dim">No games tonight. The table below covers every team.</p>`;
+  };
+  let sortKey = "ats_pct", sortDir = -1;
+  range = dateRangeControl($("#trange"), d, render);
+  situationControls($("#tfilters"), state, SITUATIONS, render);
   $("#small").addEventListener("change", render);
-  $$("#splits th[data-k]").forEach(th => th.addEventListener("click", () => {
-    const k = { w: "w", ats_pct: "ats_pct", ov_pct: "ov_pct", mvs: "mvs", n: "n", team: "team" }[th.dataset.k];
-    sortDir = sortKey === k ? -sortDir : (k === "team" ? 1 : -1); sortKey = k; render();
+  $$("#trends th[data-k]").forEach(th => th.addEventListener("click", () => {
+    const k = th.dataset.k; sortDir = sortKey === k ? -sortDir : (k === "team" ? 1 : -1); sortKey = k; render();
   }));
+  if (games.length && games[0].start) $("#tday").textContent = auDate(games[0].start);
   render();
+}
+
+/* ---------- team page: the game log, filters, with / without ---------- */
+/* a compact multi-select: a button that opens a checklist (native multi-
+   selects are unusable on a phone) */
+function multiSelect(el, label, options, onChange) {
+  const picked = new Set();
+  el.innerHTML = `<details class="msel"><summary><span class="k">${esc(label)}</span><span class="v">Anyone</span></summary>
+    <div class="list">${options.map(o => `<label><input type="checkbox" value="${esc(o)}"> ${esc(o)}</label>`).join("")}</div></details>`;
+  const det = $("details", el), v = $(".v", el);
+  det.addEventListener("change", e => {
+    if (e.target.checked) picked.add(e.target.value); else picked.delete(e.target.value);
+    v.textContent = picked.size ? [...picked].join(", ") : "Anyone";
+    onChange();
+  });
+  document.addEventListener("click", e => { if (!det.contains(e.target)) det.open = false; });
+  return picked;
+}
+async function initTeam() {
+  await renderFreshness();
+  const team = document.body.dataset.team;
+  const [d, gd] = await Promise.all([loadJSON("data/trends.json"), loadJSON("data/games.json").catch(() => null)]);
+  const mine = (d.rows || []).filter(r => r.team === team).sort((a, b) => a.date < b.date ? 1 : -1);
+  const seasons = (d.seasons || []).slice().reverse();
+  const rotation = d.rotation?.[team] || {};
+  const players = [...new Set(seasons.flatMap(s => rotation[s] || []))];
+  const state = { ...SIT_DEFAULT };
+  let range, withP = new Set(), withoutP = new Set();
+  const tonight = (gd?.games || []).find(g => g.home === team || g.away === team);
+  const render = () => {
+    let rows = mine.filter(r => range.inRange(r) && SITUATIONS.every(f => f.f(r, state[f.k])));
+    if (withoutP.size) rows = rows.filter(r => [...withoutP].every(p => r.absent.includes(p)));
+    if (withP.size) rows = rows.filter(r => [...withP].every(p => !r.absent.includes(p)));
+    const st = trendStats(rows);
+    const on = situationLabel(state);
+    const who = [nick(team), ...(withP.size ? [`with ${[...withP].join(", ")}`] : []),
+                 ...(withoutP.size ? [`without ${[...withoutP].join(", ")}`] : []), ...on].join(", ");
+    $("#tmlead").innerHTML = st.n
+      ? `${esc(who)}: <b>${rec(st.w, st.l)}</b> straight up, <b>${rec(st.aw, st.al, st.ap)}</b> against the spread, `
+        + `overs <b>${rec(st.o, st.u, st.p)}</b>, ${range.label()} (${st.n} games).`
+      : `${esc(who)}: no games match, ${range.label()}.`;
+    $("#tmcards").innerHTML = `
+      <div class="card"><div class="k">Games</div><div class="v">${st.n}</div></div>
+      <div class="card"><div class="k">Straight up</div><div class="v">${rec(st.w, st.l)}</div></div>
+      <div class="card"><div class="k">ATS</div><div class="v">${rec(st.aw, st.al)}</div><div class="r">${pct(st.ats_pct)} · ${st.ap} push</div></div>
+      <div class="card"><div class="k">Over–under</div><div class="v">${rec(st.o, st.u)}</div><div class="r">${pct(st.ov_pct)} overs</div></div>
+      <div class="card"><div class="k">Vs spread</div><div class="v">${signed(st.mvs)}</div><div class="r">avg pts</div></div>`;
+    $("#glog tbody").innerHTML = rows.length ? rows.map(r => {
+      const m = r.pts - r.opp_pts, c = r.spread == null ? null : m + r.spread, t = r.pts + r.opp_pts;
+      return `<tr>
+        <td class="s">${auDay(r.date)}${r.post ? ' <span class="dim">po</span>' : ""}${r.cup ? ' <span class="dim">cup</span>' : ""}</td>
+        <td class="s">${r.home ? "v" : "@"} <a href="${teamHref(r.opp)}">${teamBadge(r.opp)}</a></td>
+        <td class="num ${m > 0 ? "pos" : "neg"}">${m > 0 ? "W" : "L"} <span class="dim">${r.pts}–${r.opp_pts}</span></td>
+        <td class="num">${r.spread == null ? "—" : (r.spread > 0 ? "+" : "") + fmt(r.spread)}</td>
+        <td class="num ${c == null ? "dim" : c > 0 ? "pos" : c < 0 ? "neg" : ""}">${c == null ? "—" : c > 0 ? "✓" : c < 0 ? "✗" : "push"}</td>
+        <td class="num">${r.total == null ? "—" : fmt(r.total)} <span class="dim">${t}</span></td>
+        <td class="num ${r.total == null ? "dim" : t > r.total ? "pos" : t < r.total ? "neg" : ""}">${r.total == null ? "—" : t > r.total ? "O" : t < r.total ? "U" : "push"}</td>
+        <td class="num dim opt">${r.rest == null ? "—" : r.rest}</td>
+        <td class="s sm">${r.absent.map(esc).join(", ")}</td></tr>`; }).join("")
+      : `<tr><td colspan="9" class="empty">No games match.</td></tr>`;
+    const CAP = 25, trs = $$("#glog tbody tr");
+    if (trs.length > CAP && !showAll) {
+      trs.slice(CAP).forEach(t => t.hidden = true);
+      $("#glog tbody").insertAdjacentHTML("beforeend", `<tr class="moreRow"><td colspan="9" class="s"><a href="#" id="glogAll">Show all ${trs.length} games →</a></td></tr>`);
+      $("#glogAll").onclick = e => { e.preventDefault(); showAll = true; render(); };
+    }
+  };
+  let showAll = false;
+  range = dateRangeControl($("#tmrange"), { rows: mine }, render);
+  situationControls($("#tmfilters"), state, SITUATIONS, render);
+  if (players.length) {
+    $("#tmww").innerHTML = `<div id="wwWith"></div><div id="wwWithout"></div>`;
+    withP = multiSelect($("#wwWith"), "With", players, render);
+    withoutP = multiSelect($("#wwWithout"), "Without", players, render);
+  }
+  if (tonight) {
+    const sit = tonightSituation(tonight, team, d.rows || []);
+    const opp = tonight.home === team ? tonight.away : tonight.home;
+    $("#tmtonight").innerHTML = `<div class="game"><header><span class="t">Tonight: ${tonight.away === team ? "at" : "v"} ${esc(nick(opp))}, ${
+      tonight.start ? whenAEDT(tonight.start) : ""}</span><span class="line">${tonight.book_line_home != null
+      ? `${favLine(tonight, tonight.book_line_home)} · total ${fmt(tonight.book_total)}` : "lines to come"}</span></header>
+      <ul class="trend">${sideTrends(team, sit, d.rows || [], range.inRange)}</ul>
+      <p class="sm"><a href="${gameHref(tonight)}">Player predictions for this game →</a> · <a href="${pairHref(tonight)}">Game page</a></p></div>`;
+  }
+  render();
+}
+
+/* ---------- schedule (AEDT) ---------- */
+async function initSchedule() {
+  await renderFreshness();
+  const d = await loadJSON("data/games.json");
+  const games = d.games || [];
+  if (!games.length) { $("#sclead").textContent = "No NBA games today."; return; }
+  const first = games.find(g => g.start);
+  $("#sclead").innerHTML = `There ${games.length === 1 ? "is 1 NBA game" : `are ${games.length} NBA games`} today`
+    + (first ? ` (${auDate(first.start)}); the first tips off at <b>${whenAEDT(first.start).split(",")[0]}</b>.` : ".");
+  $("#sched tbody").innerHTML = games.map(g => `<tr>
+      <td class="s">${g.start ? whenAEDT(g.start).split(",")[0] : "—"}</td>
+      <td class="s"><a href="${pairHref(g)}">${teamBadge(g.away)} <span class="tn">${esc(g.away)}</span> <span class="dim">@</span> ${teamBadge(g.home)} <span class="tn">${esc(g.home)}</span></a></td>
+      <td class="num">${favLine(g, g.book_line_home)}</td>
+      <td class="num">${g.book_total == null ? "—" : fmt(g.book_total)}</td></tr>`).join("");
 }
 
 /* ---------- founding-member interest (every page) ----------
@@ -1570,8 +1764,7 @@ addEventListener("DOMContentLoaded", () => {
   const page = document.body.dataset.page;
   const boot = { board: initBoard, player: initPlayer,
                  wow: initWow, record: initRecord, tip: initTip,
-                 home: initHome, games: initGames, schedule: initSchedule,
-                 splits: initSplits,
+                 home: initHome, trends: initTrends, team: initTeam, schedule: initSchedule,
                  matchups: initMatchups, boxscore: initBoxscore }[page];
   if (boot) boot().catch(e => {
     console.error(e);

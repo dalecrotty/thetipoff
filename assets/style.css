@@ -538,3 +538,54 @@ table.rec { min-width: 0; }
   .signup input[type=email] { flex: 1; width: auto; min-width: 0; }
 }
 td.empty { white-space: normal; }
+
+/* ---------- Game trends (owner, 6 Oct 2026) ---------- */
+.daterange { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: end; margin: 10px 0 12px; }
+.daterange label { display: flex; flex-direction: column; gap: 3px; font: 500 11px/1.2 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.daterange input[type="date"] { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font: 13px var(--mono); }
+.sits { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px 10px; margin: 0 0 12px; }
+.fsel { display: flex; flex-direction: column; gap: 3px; margin: 0; }
+.fsel span { font: 500 11px/1.2 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.fsel select { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font: 13px var(--mono); width: 100%; }
+.game header { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.game header .line { color: var(--ink); font-weight: 600; }
+.game .sides { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 720px) { .game .sides { grid-template-columns: 1fr 1fr; } }
+.game .side h3 { font: 600 14px/1.2 var(--sans); margin: 0 0 6px; }
+.game .side h3 a { color: var(--ink); text-decoration: none; }
+ul.trend { list-style: none; margin: 0; padding: 0; font: 12.5px/1.55 var(--mono); }
+ul.trend li { padding: 3px 0; border-top: 1px solid var(--line); }
+ul.trend li:first-child { border-top: 0; }
+ul.trend .lbl { color: var(--muted); display: block; font-size: 11.5px; }
+.neg { color: var(--accent); }
+tr.thin td { color: var(--muted); }
+#glog td.sm { font: 11.5px/1.4 var(--mono); color: var(--muted); max-width: 180px; }
+.tmtonight { font: 13.5px/1.5 var(--sans); color: var(--muted); margin: 0 0 12px; }
+
+/* the "i" note on a moved prediction: one line on a phone, the detail on tap or hover */
+.info { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; margin-left: 3px;
+  border-radius: 50%; border: 1px solid var(--line-strong, var(--muted)); background: transparent; color: var(--muted);
+  font: 600 10px/1 var(--mono); cursor: pointer; vertical-align: 1px; padding: 0; }
+.info:hover { color: var(--ink); border-color: var(--ink); }
+.infotip { position: absolute; z-index: 30; max-width: 260px; background: var(--panel); color: var(--ink); border: 1px solid var(--line-strong, var(--line));
+  border-radius: 6px; padding: 7px 9px; font: 12px/1.45 var(--mono); box-shadow: 0 6px 20px rgba(0,0,0,.25); }
+td .was { display: none; }
+/* with / without: a button that opens a checklist */
+.msel { position: relative; }
+.msel summary { list-style: none; cursor: pointer; display: flex; flex-direction: column; gap: 3px; }
+.msel summary::-webkit-details-marker { display: none; }
+.msel summary .k { font: 500 11px/1.2 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.msel summary .v { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px;
+  font: 13px var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.msel summary .v::after { content: " ▾"; color: var(--muted); }
+.msel .list { position: absolute; z-index: 20; left: 0; right: 0; max-height: 260px; overflow: auto; margin-top: 4px;
+  background: var(--panel); border: 1px solid var(--line-strong, var(--line)); border-radius: 6px; padding: 6px; box-shadow: 0 8px 24px rgba(0,0,0,.3); }
+.msel .list label { display: flex; align-items: center; gap: 8px; padding: 6px 4px; font: 13px var(--mono); color: var(--ink); cursor: pointer; }
+.msel .list label:hover { background: var(--chip); border-radius: 4px; }
+#glog td.num .dim { font-size: 11px; }
+ul.plain.cols { columns: 2; column-gap: 24px; }
+@media (min-width: 720px) { ul.plain.cols { columns: 3; } }
+/* player page: tonight in one line */
+.pstrip { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 8px 0 14px; font: 13px var(--mono); }
+.pst .k { color: var(--faint); font-size: 11px; letter-spacing: .06em; margin-right: 6px; }
+.pst b { font-size: 16px; color: var(--ink); }
