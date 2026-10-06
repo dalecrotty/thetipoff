@@ -4,63 +4,63 @@
  "team": "Charlotte",
  "projections": {
   "3PM": {
-   "mean": 0.75,
+   "mean": 0.68,
+   "floor": 0.0,
+   "ceiling": 1.93
+  },
+  "AST": {
+   "mean": 0.7,
+   "floor": 0.0,
+   "ceiling": 2.06
+  },
+  "BLK": {
+   "mean": 0.14,
+   "floor": 0.0,
+   "ceiling": 0.97
+  },
+  "PTS": {
+   "mean": 4.76,
+   "floor": 0.0,
+   "ceiling": 10.47
+  },
+  "REB": {
+   "mean": 3.13,
+   "floor": 0.98,
+   "ceiling": 6.07
+  },
+  "STL": {
+   "mean": 0.31,
+   "floor": 0.0,
+   "ceiling": 1.11
+  },
+  "TOV": {
+   "mean": 0.6,
    "floor": 0.0,
    "ceiling": 2.0
   },
-  "AST": {
-   "mean": 0.77,
-   "floor": 0.0,
-   "ceiling": 2.1
-  },
-  "BLK": {
-   "mean": 0.15,
-   "floor": 0.0,
-   "ceiling": 0.98
-  },
-  "PTS": {
-   "mean": 5.25,
-   "floor": 0.17,
-   "ceiling": 10.92
-  },
-  "REB": {
-   "mean": 3.45,
-   "floor": 1.0,
-   "ceiling": 6.22
-  },
-  "STL": {
-   "mean": 0.34,
-   "floor": 0.0,
-   "ceiling": 1.14
-  },
-  "TOV": {
-   "mean": 0.66,
-   "floor": 0.03,
-   "ceiling": 2.04
-  },
   "PRA": {
-   "mean": 9.47,
-   "floor": 1.75,
-   "ceiling": 18.19
+   "mean": 8.59,
+   "floor": 0.86,
+   "ceiling": 17.3
   },
   "PR": {
-   "mean": 8.7,
-   "floor": 1.93,
-   "ceiling": 16.81
+   "mean": 7.88,
+   "floor": 1.12,
+   "ceiling": 16.0
   },
   "PA": {
-   "mean": 6.03,
-   "floor": 0.16,
-   "ceiling": 12.81
+   "mean": 5.46,
+   "floor": 0.0,
+   "ceiling": 12.24
   },
   "RA": {
-   "mean": 4.22,
-   "floor": 0.86,
-   "ceiling": 7.67
+   "mean": 3.83,
+   "floor": 1.08,
+   "ceiling": 7.13
   }
  },
  "minutes": {
-  "value": 13.9,
+  "value": 12.6,
   "source": "model"
  },
  "splits": {
