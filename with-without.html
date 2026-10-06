@@ -33,19 +33,16 @@
 <div class="fresh" id="fresh">Loading…</div>
 <main>
   <h1>With &amp; Without</h1>
-  <p class="sub">Pick a player, then mark teammates <b>IN</b> (must have
-    played) or <b>OUT</b> (must have sat). The comparison comes from the
-    games matching that exact lineup condition, against the player's
-    full season.</p>
+  <p class="sub">Pick a player, then the teammates who must have
+    <b>played</b> (with) or <b>sat</b> (without). The comparison comes from
+    the games matching that lineup, against the player's full season.</p>
 
   <div class="controls">
     <select id="wTeam"></select>
     <select id="wPlayer"></select>
-    <button class="chip" id="wReset">Clear in/out</button>
+    <button class="chip" id="wReset">Clear</button>
   </div>
-
-  <div class="section"><h2>Teammates — click to cycle: any → IN → OUT</h2></div>
-  <div class="chips" id="wMates"></div>
+  <div class="sits" id="wPick"></div>
 
   <div class="section"><h2>Comparison</h2></div>
   <div class="tablewrap">

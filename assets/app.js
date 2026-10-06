@@ -949,7 +949,12 @@ async function initWow() {
 
   let team = null;                 // loaded team payload
   let focal = null;                // focal player id (string)
-  const state = new Map();         // mate id -> "in" | "out"
+  // teammates who must have played (with) and who must have sat (without):
+  // two multi-select pickers (owner, 6 Oct 2026), names -> ids
+  let withP = new Set(), withoutP = new Set();
+  const idOf = {};
+  const state = { get size() { return withP.size + withoutP.size; },
+                  clear() { withP.clear(); withoutP.clear(); } };
 
   const avg = (games, pick) => {
     if (!games.length) return null;
@@ -961,10 +966,8 @@ async function initWow() {
 
   const matching = () => team.games.filter(g => {
     if (!focalLine(g)) return false;           // focal must have played
-    for (const [id, mode] of state) {
-      if (mode === "in" && !played(g, id)) return false;
-      if (mode === "out" && played(g, id)) return false;
-    }
+    for (const n of withP) if (!played(g, idOf[n])) return false;
+    for (const n of withoutP) if (played(g, idOf[n])) return false;
     return true;
   });
 
@@ -994,24 +997,14 @@ async function initWow() {
   };
 
   const renderMates = () => {
-    $("#wMates").innerHTML = team.players
-      .filter(p => String(p.id) !== focal)
-      .map(p => {
-        const mode = state.get(String(p.id));
-        const cls = mode === "in" ? "chip on" : mode === "out" ? "chip on" : "chip";
-        const tag = mode === "in" ? " ✓IN" : mode === "out" ? " ✗OUT" : "";
-        const style = mode === "in"
-          ? 'style="background:var(--over);border-color:var(--over);color:#fff"'
-          : mode === "out"
-          ? 'style="background:var(--under);border-color:var(--under);color:#fff"'
-          : "";
-        return `<button class="${cls}" ${style} data-id="${p.id}"
-          title="${p.games} games, median ${p.med_min} min">${esc(p.name)}${tag}</button>`;
-      }).join("");
+    const mates = team.players.filter(p => String(p.id) !== focal).map(p => p.name);
+    mates.forEach(n => { idOf[n] = String(team.players.find(p => p.name === n).id); });
+    $("#wPick").innerHTML = `<div id="wWith"></div><div id="wWithout"></div>`;
+    withP = multiSelect($("#wWith"), "With (played)", mates, render);
+    withoutP = multiSelect($("#wWithout"), "Without (sat)", mates, render);
   };
 
   const render = () => {
-    renderMates();
     const all = team.games.filter(focalLine);
     const sel = matching();
     const anyFilter = state.size > 0;
@@ -1019,10 +1012,10 @@ async function initWow() {
       rowFor("Season (all games)", all)
       + (anyFilter ? rowFor("Matching lineup", sel) : "")
       + (anyFilter ? diffRow(all, sel) : "");
-    const ins = [...state].filter(([, m]) => m === "in").length;
-    const outs = [...state].filter(([, m]) => m === "out").length;
     $("#wNote").textContent = anyFilter
-      ? `${sel.length} of ${all.length} games match (${ins} in, ${outs} out).`
+      ? `${sel.length} of ${all.length} games match`
+        + (withP.size ? ` with ${[...withP].join(", ")}` : "")
+        + (withoutP.size ? ` without ${[...withoutP].join(", ")}` : "") + "."
         + (sel.length < 5 ? " Small sample — read with caution." : "")
       : "Pick teammates above to split the season.";
     $("#wLog tbody").innerHTML = sel.slice().reverse().map(g => {
@@ -1038,7 +1031,14 @@ async function initWow() {
         ${S.map(s => `<td class="num">${fmt(l[s], 0)}</td>`).join("")}
       </tr>`;
     }).join("") || `<tr><td colspan="11" class="empty">No games match.</td></tr>`;
+    const trs = $$("#wLog tbody tr");
+    if (trs.length > 25 && !logAll) {
+      trs.slice(25).forEach(t => t.hidden = true);
+      $("#wLog tbody").insertAdjacentHTML("beforeend", `<tr><td colspan="11" class="s"><a href="#" id="wLogAll">Show all ${trs.length} games →</a></td></tr>`);
+      $("#wLogAll").onclick = e => { e.preventDefault(); logAll = true; render(); };
+    }
   };
+  let logAll = false;
 
   const loadTeam = async slug => {
     team = await loadJSON(`data/teams/${slug}.json`);
@@ -1046,21 +1046,13 @@ async function initWow() {
     playerSel.innerHTML = team.players.map(p =>
       `<option value="${p.id}">${esc(p.name)} — ${p.med_min} min</option>`).join("");
     focal = playerSel.value;
+    renderMates();
     render();
   };
 
-  $("#wMates").onclick = e => {
-    const b = e.target.closest(".chip");
-    if (!b) return;
-    const id = b.dataset.id, cur = state.get(id);
-    if (!cur) state.set(id, "in");
-    else if (cur === "in") state.set(id, "out");
-    else state.delete(id);
-    render();
-  };
   teamSel.onchange = () => loadTeam(teamSel.value);
-  playerSel.onchange = () => { focal = playerSel.value; state.clear(); render(); };
-  $("#wReset").onclick = () => { state.clear(); render(); };
+  playerSel.onchange = () => { focal = playerSel.value; renderMates(); render(); };
+  $("#wReset").onclick = () => { renderMates(); render(); };
   await loadTeam(teamSel.value);
 }
 
