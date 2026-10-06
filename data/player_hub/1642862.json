@@ -4,204 +4,224 @@
  "team": "Charlotte",
  "projections": {
   "3PM": {
-   "mean": 0.87,
-   "floor": 0.06,
-   "ceiling": 2.24
+   "mean": 0.62,
+   "floor": 0.0,
+   "ceiling": 1.96
   },
   "AST": {
-   "mean": 0.83,
-   "floor": 0.04,
-   "ceiling": 2.41
+   "mean": 0.59,
+   "floor": 0.0,
+   "ceiling": 1.92
   },
   "BLK": {
-   "mean": 0.13,
+   "mean": 0.09,
    "floor": 0.0,
-   "ceiling": 0.99
+   "ceiling": 0.97
   },
   "PTS": {
-   "mean": 4.55,
-   "floor": 1.26,
-   "ceiling": 11.42
+   "mean": 3.89,
+   "floor": 0.0,
+   "ceiling": 9.55
   },
   "REB": {
-   "mean": 2.46,
-   "floor": 0.78,
-   "ceiling": 5.05
+   "mean": 2.06,
+   "floor": 0.22,
+   "ceiling": 4.24
   },
   "STL": {
-   "mean": 0.21,
+   "mean": 0.18,
    "floor": 0.0,
-   "ceiling": 1.81
+   "ceiling": 0.97
   },
   "TOV": {
-   "mean": 0.48,
+   "mean": 0.36,
    "floor": 0.0,
-   "ceiling": 1.97
+   "ceiling": 1.75
+  },
+  "PRA": {
+   "mean": 6.54,
+   "floor": 0.0,
+   "ceiling": 15.25
+  },
+  "PR": {
+   "mean": 5.95,
+   "floor": 0.0,
+   "ceiling": 14.06
+  },
+  "PA": {
+   "mean": 4.48,
+   "floor": 0.0,
+   "ceiling": 11.26
+  },
+  "RA": {
+   "mean": 2.65,
+   "floor": 0.0,
+   "ceiling": 5.95
   }
  },
  "minutes": {
-  "value": 12.6,
+  "value": 10.0,
   "source": "model"
  },
  "splits": {
   "season": {
-   "games": 26,
-   "min_pg": 12.5,
+   "games": 32,
+   "min_pg": 11.7,
    "PTS": {
-    "pg": 4.35,
-    "pm": 0.348
+    "pg": 4.19,
+    "pm": 0.359
    },
    "REB": {
-    "pg": 2.23,
-    "pm": 0.179
+    "pg": 2.28,
+    "pm": 0.196
    },
    "AST": {
-    "pg": 0.85,
-    "pm": 0.068
+    "pg": 0.75,
+    "pm": 0.064
    },
    "3PM": {
-    "pg": 0.85,
-    "pm": 0.068
+    "pg": 0.75,
+    "pm": 0.064
    },
    "STL": {
     "pg": 0.19,
-    "pm": 0.015
+    "pm": 0.016
+   },
+   "BLK": {
+    "pg": 0.09,
+    "pm": 0.008
+   },
+   "TOV": {
+    "pg": 0.41,
+    "pm": 0.035
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 9.0,
+   "PTS": {
+    "pg": 3.1,
+    "pm": 0.346
+   },
+   "REB": {
+    "pg": 2.2,
+    "pm": 0.245
+   },
+   "AST": {
+    "pg": 0.4,
+    "pm": 0.045
+   },
+   "3PM": {
+    "pg": 0.4,
+    "pm": 0.045
+   },
+   "STL": {
+    "pg": 0.1,
+    "pm": 0.011
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 0.3,
+    "pm": 0.033
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 7.5,
+   "PTS": {
+    "pg": 3.8,
+    "pm": 0.509
+   },
+   "REB": {
+    "pg": 2.8,
+    "pm": 0.375
+   },
+   "AST": {
+    "pg": 0.2,
+    "pm": 0.027
+   },
+   "3PM": {
+    "pg": 0.4,
+    "pm": 0.054
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.027
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.2,
+    "pm": 0.027
+   }
+  },
+  "home": {
+   "games": 17,
+   "min_pg": 12.4,
+   "PTS": {
+    "pg": 4.71,
+    "pm": 0.379
+   },
+   "REB": {
+    "pg": 2.59,
+    "pm": 0.209
+   },
+   "AST": {
+    "pg": 0.82,
+    "pm": 0.066
+   },
+   "3PM": {
+    "pg": 0.82,
+    "pm": 0.066
+   },
+   "STL": {
+    "pg": 0.24,
+    "pm": 0.019
    },
    "BLK": {
     "pg": 0.12,
     "pm": 0.009
    },
    "TOV": {
-    "pg": 0.46,
-    "pm": 0.037
-   }
-  },
-  "l10": {
-   "games": 10,
-   "min_pg": 10.9,
-   "PTS": {
-    "pg": 3.9,
-    "pm": 0.359
-   },
-   "REB": {
-    "pg": 2.4,
-    "pm": 0.221
-   },
-   "AST": {
-    "pg": 0.8,
-    "pm": 0.074
-   },
-   "3PM": {
-    "pg": 0.8,
-    "pm": 0.074
-   },
-   "STL": {
-    "pg": 0.2,
-    "pm": 0.018
-   },
-   "BLK": {
-    "pg": 0.1,
-    "pm": 0.009
-   },
-   "TOV": {
-    "pg": 0.4,
-    "pm": 0.037
-   }
-  },
-  "l5": {
-   "games": 5,
-   "min_pg": 10.4,
-   "PTS": {
-    "pg": 2.0,
-    "pm": 0.192
-   },
-   "REB": {
-    "pg": 1.6,
-    "pm": 0.154
-   },
-   "AST": {
-    "pg": 0.6,
-    "pm": 0.058
-   },
-   "3PM": {
-    "pg": 0.4,
-    "pm": 0.038
-   },
-   "STL": {
-    "pg": 0.2,
-    "pm": 0.019
-   },
-   "BLK": {
-    "pg": 0.2,
-    "pm": 0.019
-   },
-   "TOV": {
-    "pg": 0.4,
-    "pm": 0.038
-   }
-  },
-  "home": {
-   "games": 14,
-   "min_pg": 12.7,
-   "PTS": {
-    "pg": 4.36,
-    "pm": 0.342
-   },
-   "REB": {
-    "pg": 2.21,
-    "pm": 0.174
-   },
-   "AST": {
-    "pg": 0.93,
-    "pm": 0.073
-   },
-   "3PM": {
-    "pg": 0.86,
-    "pm": 0.067
-   },
-   "STL": {
-    "pg": 0.29,
-    "pm": 0.022
-   },
-   "BLK": {
-    "pg": 0.14,
-    "pm": 0.011
-   },
-   "TOV": {
-    "pg": 0.57,
-    "pm": 0.045
+    "pg": 0.53,
+    "pm": 0.043
    }
   },
   "away": {
-   "games": 12,
-   "min_pg": 12.2,
+   "games": 15,
+   "min_pg": 10.8,
    "PTS": {
-    "pg": 4.33,
-    "pm": 0.355
+    "pg": 3.6,
+    "pm": 0.332
    },
    "REB": {
-    "pg": 2.25,
-    "pm": 0.185
+    "pg": 1.93,
+    "pm": 0.179
    },
    "AST": {
-    "pg": 0.75,
+    "pg": 0.67,
     "pm": 0.062
    },
    "3PM": {
-    "pg": 0.83,
-    "pm": 0.068
+    "pg": 0.67,
+    "pm": 0.062
    },
    "STL": {
-    "pg": 0.08,
-    "pm": 0.007
+    "pg": 0.13,
+    "pm": 0.012
    },
    "BLK": {
-    "pg": 0.08,
-    "pm": 0.007
+    "pg": 0.07,
+    "pm": 0.006
    },
    "TOV": {
-    "pg": 0.33,
-    "pm": 0.027
+    "pg": 0.27,
+    "pm": 0.025
    }
   }
  },
@@ -214,8 +234,8 @@
    "game": "2025-10-26_charlotte_vs_washington",
    "starter": false,
    "rest": "3+",
-   "result": "W",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 6.3,
    "PTS": 0.0,
    "REB": 1.0,
@@ -232,8 +252,8 @@
    "game": "2025-10-28_charlotte_vs_miami",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 10.9,
    "PTS": 6.0,
    "REB": 1.0,
@@ -250,8 +270,8 @@
    "game": "2025-10-30_charlotte_vs_orlando",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 14.3,
    "PTS": 6.0,
    "REB": 3.0,
@@ -268,8 +288,8 @@
    "game": "2025-11-01_charlotte_vs_minnesota",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 9.6,
    "PTS": 0.0,
    "REB": 1.0,
@@ -286,8 +306,8 @@
    "game": "2025-11-02_charlotte_vs_utah",
    "starter": false,
    "rest": "0",
-   "result": "W",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 9.4,
    "PTS": 3.0,
    "REB": 1.0,
@@ -304,8 +324,8 @@
    "game": "2025-11-04_charlotte_vs_new-orleans",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 13.0,
    "PTS": 2.0,
    "REB": 2.0,
@@ -322,8 +342,8 @@
    "game": "2025-11-07_charlotte_vs_miami",
    "starter": false,
    "rest": "2",
-   "result": "L",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 19.3,
    "PTS": 8.0,
    "REB": 4.0,
@@ -340,8 +360,8 @@
    "game": "2025-11-10_charlotte_vs_la-lakers",
    "starter": false,
    "rest": "2",
-   "result": "L",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 17.7,
    "PTS": 7.0,
    "REB": 1.0,
@@ -358,8 +378,8 @@
    "game": "2025-11-12_charlotte_vs_milwaukee",
    "starter": false,
    "rest": "1",
-   "result": "W",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 11.9,
    "PTS": 5.0,
    "REB": 3.0,
@@ -376,8 +396,8 @@
    "game": "2025-11-22_charlotte_vs_la-clippers",
    "starter": false,
    "rest": "9",
-   "result": "L",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 17.9,
    "PTS": 3.0,
    "REB": 6.0,
@@ -394,8 +414,8 @@
    "game": "2025-11-23_atlanta_vs_charlotte",
    "starter": false,
    "rest": "0",
-   "result": "L",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 15.3,
    "PTS": 6.0,
    "REB": 2.0,
@@ -412,8 +432,8 @@
    "game": "2025-11-26_charlotte_vs_new-york",
    "starter": false,
    "rest": "2",
-   "result": "L",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 15.0,
    "PTS": 3.0,
    "REB": 1.0,
@@ -430,8 +450,8 @@
    "game": "2025-11-28_charlotte_vs_chicago",
    "starter": false,
    "rest": "1",
-   "result": "W",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 4.1,
    "PTS": 0.0,
    "REB": 0.0,
@@ -448,8 +468,8 @@
    "game": "2025-11-29_charlotte_vs_toronto",
    "starter": false,
    "rest": "0",
-   "result": "W",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 13.3,
    "PTS": 7.0,
    "REB": 3.0,
@@ -466,8 +486,8 @@
    "game": "2025-12-01_brooklyn_vs_charlotte",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 17.1,
    "PTS": 8.0,
    "REB": 2.0,
@@ -484,8 +504,8 @@
    "game": "2025-12-03_charlotte_vs_new-york",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 20.9,
    "PTS": 10.0,
    "REB": 3.0,
@@ -502,8 +522,8 @@
    "game": "2025-12-05_charlotte_vs_toronto",
    "starter": false,
    "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 18.1,
    "PTS": 2.0,
    "REB": 6.0,
@@ -520,8 +540,8 @@
    "game": "2025-12-07_charlotte_vs_denver",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 19.6,
    "PTS": 13.0,
    "REB": 4.0,
@@ -538,8 +558,8 @@
    "game": "2025-12-22_charlotte_vs_cleveland",
    "starter": false,
    "rest": "14",
-   "result": "L",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 5.5,
    "PTS": 7.0,
    "REB": 1.0,
@@ -556,8 +576,8 @@
    "game": "2025-12-23_charlotte_vs_washington",
    "starter": false,
    "rest": "0",
-   "result": "W",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 1.4,
    "PTS": 0.0,
    "REB": 0.0,
@@ -574,8 +594,8 @@
    "game": "2025-12-29_charlotte_vs_milwaukee",
    "starter": false,
    "rest": "5",
-   "result": "L",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 12.0,
    "PTS": 7.0,
    "REB": 5.0,
@@ -592,8 +612,8 @@
    "game": "2025-12-31_charlotte_vs_golden-state",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 10.8,
    "PTS": 0.0,
    "REB": 1.0,
@@ -610,8 +630,8 @@
    "game": "2026-01-02_charlotte_vs_milwaukee",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 5.2,
    "PTS": 0.0,
    "REB": 2.0,
@@ -628,8 +648,8 @@
    "game": "2026-01-03_charlotte_vs_chicago",
    "starter": false,
    "rest": "0",
-   "result": "W",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 12.7,
    "PTS": 0.0,
    "REB": 3.0,
@@ -646,8 +666,8 @@
    "game": "2026-01-05_charlotte_vs_oklahoma-city",
    "starter": false,
    "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 2.0,
    "PTS": 3.0,
    "REB": 0.0,
@@ -664,8 +684,8 @@
    "game": "2026-01-07_charlotte_vs_toronto",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 21.3,
    "PTS": 7.0,
    "REB": 2.0,
@@ -674,18 +694,234 @@
    "STL": 0.0,
    "BLK": 1.0,
    "TOV": 2.0
+  },
+  {
+   "date": "2026-01-08",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2026-01-08_charlotte_vs_indiana",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.2,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-28",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-01-28_charlotte_vs_memphis",
+   "starter": false,
+   "rest": "19",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.1,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-24",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-03-24_charlotte_vs_sacramento",
+   "starter": false,
+   "rest": "54",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.3,
+   "PTS": 7.0,
+   "REB": 6.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-29",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-03-29_boston_vs_charlotte",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.9,
+   "PTS": 10.0,
+   "REB": 6.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-04-12_charlotte_vs_new-york",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.3,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-17",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2026-04-17_charlotte_vs_orlando",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.7,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
   }
  ],
  "recent_games": [
   {
+   "date": "2026-04-17",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2026-04-17_charlotte_vs_orlando",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.7,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-04-12_charlotte_vs_new-york",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.3,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-29",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-03-29_boston_vs_charlotte",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.9,
+   "PTS": 10.0,
+   "REB": 6.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-24",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-03-24_charlotte_vs_sacramento",
+   "starter": false,
+   "rest": "54",
+   "result": null,
+   "opp_tier": null,
+   "min": 10.3,
+   "PTS": 7.0,
+   "REB": 6.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-01-28",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-01-28_charlotte_vs_memphis",
+   "starter": false,
+   "rest": "19",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.1,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-08",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2026-01-08_charlotte_vs_indiana",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.2,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
    "date": "2026-01-07",
    "opp": "Toronto",
    "venue": "H",
    "game": "2026-01-07_charlotte_vs_toronto",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 21.3,
    "PTS": 7.0,
    "REB": 2.0,
@@ -702,8 +938,8 @@
    "game": "2026-01-05_charlotte_vs_oklahoma-city",
    "starter": false,
    "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
+   "result": null,
+   "opp_tier": null,
    "min": 2.0,
    "PTS": 3.0,
    "REB": 0.0,
@@ -720,8 +956,8 @@
    "game": "2026-01-03_charlotte_vs_chicago",
    "starter": false,
    "rest": "0",
-   "result": "W",
-   "opp_tier": "Middle 10",
+   "result": null,
+   "opp_tier": null,
    "min": 12.7,
    "PTS": 0.0,
    "REB": 3.0,
@@ -738,8 +974,8 @@
    "game": "2026-01-02_charlotte_vs_milwaukee",
    "starter": false,
    "rest": "1",
-   "result": "L",
-   "opp_tier": "Bottom 10",
+   "result": null,
+   "opp_tier": null,
    "min": 5.2,
    "PTS": 0.0,
    "REB": 2.0,
@@ -748,114 +984,8 @@
    "STL": 0.0,
    "BLK": 0.0,
    "TOV": 0.0
-  },
-  {
-   "date": "2025-12-31",
-   "opp": "Golden State",
-   "venue": "H",
-   "game": "2025-12-31_charlotte_vs_golden-state",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 10.8,
-   "PTS": 0.0,
-   "REB": 1.0,
-   "AST": 1.0,
-   "3PM": 0.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2025-12-29",
-   "opp": "Milwaukee",
-   "venue": "H",
-   "game": "2025-12-29_charlotte_vs_milwaukee",
-   "starter": false,
-   "rest": "5",
-   "result": "L",
-   "opp_tier": "Bottom 10",
-   "min": 12.0,
-   "PTS": 7.0,
-   "REB": 5.0,
-   "AST": 2.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2025-12-23",
-   "opp": "Washington",
-   "venue": "H",
-   "game": "2025-12-23_charlotte_vs_washington",
-   "starter": false,
-   "rest": "0",
-   "result": "W",
-   "opp_tier": "Bottom 10",
-   "min": 1.4,
-   "PTS": 0.0,
-   "REB": 0.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2025-12-22",
-   "opp": "Cleveland",
-   "venue": "R",
-   "game": "2025-12-22_charlotte_vs_cleveland",
-   "starter": false,
-   "rest": "14",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 5.5,
-   "PTS": 7.0,
-   "REB": 1.0,
-   "AST": 1.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2025-12-07",
-   "opp": "Denver",
-   "venue": "H",
-   "game": "2025-12-07_charlotte_vs_denver",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 19.6,
-   "PTS": 13.0,
-   "REB": 4.0,
-   "AST": 2.0,
-   "3PM": 4.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2025-12-05",
-   "opp": "Toronto",
-   "venue": "R",
-   "game": "2025-12-05_charlotte_vs_toronto",
-   "starter": false,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 18.1,
-   "PTS": 2.0,
-   "REB": 6.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 2.0
   }
- ]
+ ],
+ "with_without_tonight": [],
+ "opp": "Brooklyn"
 }
