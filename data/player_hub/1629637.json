@@ -4,63 +4,63 @@
  "team": "Utah",
  "projections": {
   "3PM": {
-   "mean": 0.03,
+   "mean": 0.05,
    "floor": 0.0,
-   "ceiling": 0.03
+   "ceiling": 0.05
   },
   "AST": {
-   "mean": 0.79,
-   "floor": 0.0,
-   "ceiling": 2.15
+   "mean": 1.27,
+   "floor": 0.01,
+   "ceiling": 3.07
   },
   "BLK": {
-   "mean": 0.71,
+   "mean": 1.14,
+   "floor": 0.0,
+   "ceiling": 2.87
+  },
+  "PTS": {
+   "mean": 11.8,
+   "floor": 3.81,
+   "ceiling": 19.99
+  },
+  "REB": {
+   "mean": 6.13,
+   "floor": 2.66,
+   "ceiling": 9.85
+  },
+  "STL": {
+   "mean": 0.67,
+   "floor": 0.0,
+   "ceiling": 1.97
+  },
+  "TOV": {
+   "mean": 0.87,
    "floor": 0.0,
    "ceiling": 2.01
   },
-  "PTS": {
-   "mean": 7.3,
-   "floor": 0.85,
-   "ceiling": 13.95
-  },
-  "REB": {
-   "mean": 3.79,
-   "floor": 1.02,
-   "ceiling": 6.91
-  },
-  "STL": {
-   "mean": 0.41,
-   "floor": 0.0,
-   "ceiling": 1.21
-  },
-  "TOV": {
-   "mean": 0.54,
-   "floor": 0.0,
-   "ceiling": 1.94
-  },
   "PRA": {
-   "mean": 11.89,
-   "floor": 3.26,
-   "ceiling": 20.67
+   "mean": 19.21,
+   "floor": 9.44,
+   "ceiling": 29.56
   },
   "PR": {
-   "mean": 11.1,
-   "floor": 3.04,
-   "ceiling": 19.04
+   "mean": 17.94,
+   "floor": 8.66,
+   "ceiling": 27.34
   },
   "PA": {
-   "mean": 8.09,
-   "floor": 1.41,
-   "ceiling": 15.07
+   "mean": 13.08,
+   "floor": 4.85,
+   "ceiling": 22.22
   },
   "RA": {
-   "mean": 4.58,
-   "floor": 1.22,
-   "ceiling": 8.03
+   "mean": 7.4,
+   "floor": 3.29,
+   "ceiling": 12.13
   }
  },
  "minutes": {
-  "value": 17.2,
+  "value": 27.9,
   "source": "model"
  },
  "splits": {
