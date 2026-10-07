@@ -1,0 +1,631 @@
+{
+ "player_id": -631,
+ "player": "James Johnson",
+ "team": "Indiana",
+ "projections": {
+  "3PM": {
+   "mean": 0.14,
+   "floor": 0.0,
+   "ceiling": 0.14
+  },
+  "AST": {
+   "mean": 0.35,
+   "floor": 0.0,
+   "ceiling": 1.68
+  },
+  "BLK": {
+   "mean": 0.13,
+   "floor": 0.0,
+   "ceiling": 0.96
+  },
+  "PTS": {
+   "mean": 1.42,
+   "floor": 0.0,
+   "ceiling": 7.08
+  },
+  "REB": {
+   "mean": 0.79,
+   "floor": 0.0,
+   "ceiling": 2.97
+  },
+  "STL": {
+   "mean": 0.11,
+   "floor": 0.0,
+   "ceiling": 0.9
+  },
+  "TOV": {
+   "mean": 0.26,
+   "floor": 0.0,
+   "ceiling": 1.65
+  },
+  "PRA": {
+   "mean": 2.55,
+   "floor": 0.0,
+   "ceiling": 11.26
+  },
+  "PR": {
+   "mean": 2.2,
+   "floor": 0.0,
+   "ceiling": 10.32
+  },
+  "PA": {
+   "mean": 1.76,
+   "floor": 0.0,
+   "ceiling": 8.55
+  },
+  "RA": {
+   "mean": 1.13,
+   "floor": 0.0,
+   "ceiling": 4.44
+  }
+ },
+ "minutes": {
+  "value": 4.1,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 12,
+   "min_pg": 3.1,
+   "PTS": {
+    "pg": 0.67,
+    "pm": 0.216
+   },
+   "REB": {
+    "pg": 0.5,
+    "pm": 0.162
+   },
+   "AST": {
+    "pg": 0.33,
+    "pm": 0.108
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.17,
+    "pm": 0.054
+   },
+   "TOV": {
+    "pg": 0.33,
+    "pm": 0.108
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 3.1,
+   "PTS": {
+    "pg": 0.6,
+    "pm": 0.194
+   },
+   "REB": {
+    "pg": 0.6,
+    "pm": 0.194
+   },
+   "AST": {
+    "pg": 0.3,
+    "pm": 0.097
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.032
+   },
+   "TOV": {
+    "pg": 0.3,
+    "pm": 0.097
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 2.4,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 0.4,
+    "pm": 0.167
+   },
+   "AST": {
+    "pg": 0.2,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "home": {
+   "games": 4,
+   "min_pg": 1.5,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 8,
+   "min_pg": 3.9,
+   "PTS": {
+    "pg": 1.0,
+    "pm": 0.258
+   },
+   "REB": {
+    "pg": 0.75,
+    "pm": 0.194
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.129
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.065
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.129
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2024-10-25",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2024-10-25_indiana_vs_new-york",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-11-08",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2024-11-08_charlotte_vs_indiana",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-20",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2024-11-20_houston_vs_indiana",
+   "starter": false,
+   "rest": "11",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2024-12-22",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2024-12-22_indiana_vs_sacramento",
+   "starter": false,
+   "rest": "31",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-12-27",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2024-12-27_boston_vs_indiana",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.0,
+   "PTS": 4.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-06",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2025-01-06_brooklyn_vs_indiana",
+   "starter": false,
+   "rest": "9",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-10",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-01-10_golden-state_vs_indiana",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-14",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2025-01-14_cleveland_vs_indiana",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-29",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-01-29_detroit_vs_indiana",
+   "starter": false,
+   "rest": "14",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-04",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2025-02-04_indiana_vs_portland",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-02",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2025-03-02_chicago_vs_indiana",
+   "starter": false,
+   "rest": "25",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-10",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2025-03-10_chicago_vs_indiana",
+   "starter": false,
+   "rest": "7",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2025-03-10",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2025-03-10_chicago_vs_indiana",
+   "starter": false,
+   "rest": "7",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-02",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2025-03-02_chicago_vs_indiana",
+   "starter": false,
+   "rest": "25",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-04",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2025-02-04_indiana_vs_portland",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-29",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-01-29_detroit_vs_indiana",
+   "starter": false,
+   "rest": "14",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-14",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2025-01-14_cleveland_vs_indiana",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-10",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-01-10_golden-state_vs_indiana",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-06",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2025-01-06_brooklyn_vs_indiana",
+   "starter": false,
+   "rest": "9",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-27",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2024-12-27_boston_vs_indiana",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.0,
+   "PTS": 4.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-22",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2024-12-22_indiana_vs_sacramento",
+   "starter": false,
+   "rest": "31",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-11-20",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2024-11-20_houston_vs_indiana",
+   "starter": false,
+   "rest": "11",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Minnesota"
+}

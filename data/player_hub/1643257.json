@@ -1,0 +1,415 @@
+{
+ "player_id": 1643257,
+ "player": "Jayson Kent",
+ "team": "Portland",
+ "projections": {
+  "3PM": {
+   "mean": 0.49,
+   "floor": 0.0,
+   "ceiling": 1.83
+  },
+  "AST": {
+   "mean": 0.66,
+   "floor": 0.0,
+   "ceiling": 1.99
+  },
+  "BLK": {
+   "mean": 0.28,
+   "floor": 0.0,
+   "ceiling": 1.0
+  },
+  "PTS": {
+   "mean": 4.23,
+   "floor": 0.0,
+   "ceiling": 9.89
+  },
+  "REB": {
+   "mean": 2.18,
+   "floor": 0.34,
+   "ceiling": 4.37
+  },
+  "STL": {
+   "mean": 0.41,
+   "floor": 0.0,
+   "ceiling": 1.21
+  },
+  "TOV": {
+   "mean": 0.45,
+   "floor": 0.0,
+   "ceiling": 1.84
+  },
+  "PRA": {
+   "mean": 7.07,
+   "floor": 0.0,
+   "ceiling": 15.79
+  },
+  "PR": {
+   "mean": 6.41,
+   "floor": 0.0,
+   "ceiling": 14.52
+  },
+  "PA": {
+   "mean": 4.89,
+   "floor": 0.0,
+   "ceiling": 11.67
+  },
+  "RA": {
+   "mean": 2.85,
+   "floor": 0.1,
+   "ceiling": 6.15
+  }
+ },
+ "minutes": {
+  "value": 10.6,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 5,
+   "min_pg": 4.5,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.445
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.223
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l10": {
+   "games": 5,
+   "min_pg": 4.5,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.445
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.223
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 4.5,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.445
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.223
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "home": {
+   "games": 3,
+   "min_pg": 5.2,
+   "PTS": {
+    "pg": 1.67,
+    "pm": 0.321
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.193
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.33,
+    "pm": 0.064
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.064
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 2,
+   "min_pg": 3.5,
+   "PTS": {
+    "pg": 2.5,
+    "pm": 0.725
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.29
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.5,
+    "pm": 0.145
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2026-03-16",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2026-03-16_brooklyn_vs_portland",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-22",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-03-22_denver_vs_portland",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.8,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-29",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-03-29_portland_vs_washington",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.5,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-04-10_la-clippers_vs_portland",
+   "starter": false,
+   "rest": "11",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.4,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-04-12_portland_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-04-12",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-04-12_portland_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-04-10_la-clippers_vs_portland",
+   "starter": false,
+   "rest": "11",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.4,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-29",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-03-29_portland_vs_washington",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.5,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-22",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-03-22_denver_vs_portland",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.8,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-16",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2026-03-16_brooklyn_vs_portland",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.1,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Golden State"
+}

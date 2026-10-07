@@ -1,0 +1,667 @@
+{
+ "player_id": -662,
+ "player": "Kevin Knox II",
+ "team": "Orlando",
+ "projections": {
+  "3PM": {
+   "mean": 0.38,
+   "floor": 0.0,
+   "ceiling": 1.72
+  },
+  "AST": {
+   "mean": 0.55,
+   "floor": 0.0,
+   "ceiling": 1.88
+  },
+  "BLK": {
+   "mean": 0.27,
+   "floor": 0.0,
+   "ceiling": 1.0
+  },
+  "PTS": {
+   "mean": 3.76,
+   "floor": 0.0,
+   "ceiling": 9.43
+  },
+  "REB": {
+   "mean": 1.63,
+   "floor": 0.0,
+   "ceiling": 3.81
+  },
+  "STL": {
+   "mean": 0.24,
+   "floor": 0.0,
+   "ceiling": 1.04
+  },
+  "TOV": {
+   "mean": 0.38,
+   "floor": 0.0,
+   "ceiling": 1.77
+  },
+  "PRA": {
+   "mean": 5.94,
+   "floor": 0.0,
+   "ceiling": 14.65
+  },
+  "PR": {
+   "mean": 5.39,
+   "floor": 0.0,
+   "ceiling": 13.5
+  },
+  "PA": {
+   "mean": 4.31,
+   "floor": 0.0,
+   "ceiling": 11.09
+  },
+  "RA": {
+   "mean": 2.17,
+   "floor": 0.0,
+   "ceiling": 5.48
+  }
+ },
+ "minutes": {
+  "value": 8.0,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 14,
+   "min_pg": 6.0,
+   "PTS": {
+    "pg": 3.29,
+    "pm": 0.548
+   },
+   "REB": {
+    "pg": 1.21,
+    "pm": 0.202
+   },
+   "AST": {
+    "pg": 0.36,
+    "pm": 0.06
+   },
+   "3PM": {
+    "pg": 0.29,
+    "pm": 0.048
+   },
+   "STL": {
+    "pg": 0.14,
+    "pm": 0.024
+   },
+   "BLK": {
+    "pg": 0.29,
+    "pm": 0.048
+   },
+   "TOV": {
+    "pg": 0.29,
+    "pm": 0.048
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 5.4,
+   "PTS": {
+    "pg": 2.3,
+    "pm": 0.426
+   },
+   "REB": {
+    "pg": 0.9,
+    "pm": 0.167
+   },
+   "AST": {
+    "pg": 0.2,
+    "pm": 0.037
+   },
+   "3PM": {
+    "pg": 0.1,
+    "pm": 0.019
+   },
+   "STL": {
+    "pg": 0.1,
+    "pm": 0.019
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.037
+   },
+   "TOV": {
+    "pg": 0.3,
+    "pm": 0.056
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 5.6,
+   "PTS": {
+    "pg": 3.6,
+    "pm": 0.643
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.179
+   },
+   "AST": {
+    "pg": 0.2,
+    "pm": 0.036
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.036
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.036
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.107
+   }
+  },
+  "home": {
+   "games": 4,
+   "min_pg": 6.2,
+   "PTS": {
+    "pg": 4.0,
+    "pm": 0.64
+   },
+   "REB": {
+    "pg": 1.75,
+    "pm": 0.28
+   },
+   "AST": {
+    "pg": 0.75,
+    "pm": 0.12
+   },
+   "3PM": {
+    "pg": 0.5,
+    "pm": 0.08
+   },
+   "STL": {
+    "pg": 0.25,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.08
+   },
+   "TOV": {
+    "pg": 0.25,
+    "pm": 0.04
+   }
+  },
+  "away": {
+   "games": 10,
+   "min_pg": 5.9,
+   "PTS": {
+    "pg": 3.0,
+    "pm": 0.508
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.169
+   },
+   "AST": {
+    "pg": 0.2,
+    "pm": 0.034
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.034
+   },
+   "STL": {
+    "pg": 0.1,
+    "pm": 0.017
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.034
+   },
+   "TOV": {
+    "pg": 0.3,
+    "pm": 0.051
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2025-02-21",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2025-02-21_golden-state_vs_sacramento",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-23",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2025-02-23_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 4.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-25",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-02-25_charlotte_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 15.0,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-27",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-02-27_golden-state_vs_orlando",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-03-01",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-03-01_golden-state_vs_philadelphia",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 1.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-03",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2025-03-03_charlotte_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-04",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2025-03-04_golden-state_vs_new-york",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-25",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2025-03-25_golden-state_vs_miami",
+   "starter": false,
+   "rest": "20",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-28",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-03-28_golden-state_vs_new-orleans",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-30",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2025-03-30_golden-state_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.0,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-04",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2025-04-04_denver_vs_golden-state",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-04-06",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2025-04-06_golden-state_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-08",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-04-08_golden-state_vs_phoenix",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.0,
+   "PTS": 10.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2025-04-11_golden-state_vs_portland",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2025-04-11",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2025-04-11_golden-state_vs_portland",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-04-08",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-04-08_golden-state_vs_phoenix",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.0,
+   "PTS": 10.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-06",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2025-04-06_golden-state_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-04",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2025-04-04_denver_vs_golden-state",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-03-30",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2025-03-30_golden-state_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.0,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-28",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-03-28_golden-state_vs_new-orleans",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-25",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2025-03-25_golden-state_vs_miami",
+   "starter": false,
+   "rest": "20",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-04",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2025-03-04_golden-state_vs_new-york",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 12.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-03",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2025-03-03_charlotte_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-03-01",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-03-01_golden-state_vs_philadelphia",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 1.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Memphis"
+}

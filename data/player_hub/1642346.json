@@ -4,63 +4,63 @@
  "team": "Phoenix",
  "projections": {
   "3PM": {
-   "mean": 0.53,
+   "mean": 0.62,
    "floor": 0.0,
-   "ceiling": 1.86
+   "ceiling": 1.96
   },
   "AST": {
-   "mean": 0.89,
-   "floor": 0.0,
-   "ceiling": 2.25
+   "mean": 1.01,
+   "floor": 0.03,
+   "ceiling": 2.34
   },
   "BLK": {
    "mean": 0.29,
    "floor": 0.0,
-   "ceiling": 1.03
+   "ceiling": 1.02
   },
   "PTS": {
-   "mean": 3.37,
+   "mean": 3.96,
    "floor": 0.0,
-   "ceiling": 9.09
+   "ceiling": 9.62
   },
   "REB": {
-   "mean": 2.73,
-   "floor": 0.59,
-   "ceiling": 5.68
+   "mean": 3.14,
+   "floor": 1.0,
+   "ceiling": 6.02
   },
   "STL": {
-   "mean": 0.52,
-   "floor": 0.0,
-   "ceiling": 1.96
-  },
-  "TOV": {
    "mean": 0.54,
    "floor": 0.0,
-   "ceiling": 1.94
+   "ceiling": 1.98
+  },
+  "TOV": {
+   "mean": 0.51,
+   "floor": 0.0,
+   "ceiling": 1.89
   },
   "PRA": {
-   "mean": 7.0,
-   "floor": 0.0,
-   "ceiling": 15.71
+   "mean": 8.11,
+   "floor": 0.39,
+   "ceiling": 16.83
   },
   "PR": {
-   "mean": 6.11,
-   "floor": 0.0,
-   "ceiling": 14.22
+   "mean": 7.1,
+   "floor": 0.33,
+   "ceiling": 15.21
   },
   "PA": {
-   "mean": 4.26,
+   "mean": 4.97,
    "floor": 0.0,
-   "ceiling": 11.05
+   "ceiling": 11.75
   },
   "RA": {
-   "mean": 3.63,
-   "floor": 0.88,
-   "ceiling": 6.93
+   "mean": 4.15,
+   "floor": 0.79,
+   "ceiling": 7.6
   }
  },
  "minutes": {
-  "value": 12.4,
+  "value": 13.4,
   "source": "model"
  },
  "splits": {
@@ -3075,5 +3075,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Detroit"
+ "opp": "Chicago"
 }
