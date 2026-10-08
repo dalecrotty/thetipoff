@@ -1,0 +1,595 @@
+{
+ "player_id": 1642434,
+ "player": "Riley Minix",
+ "team": "Cleveland",
+ "projections": {
+  "3PM": {
+   "mean": 0.63,
+   "floor": 0.0,
+   "ceiling": 1.97
+  },
+  "AST": {
+   "mean": 0.83,
+   "floor": 0.0,
+   "ceiling": 2.16
+  },
+  "BLK": {
+   "mean": 0.21,
+   "floor": 0.0,
+   "ceiling": 1.0
+  },
+  "PTS": {
+   "mean": 5.1,
+   "floor": 0.03,
+   "ceiling": 10.77
+  },
+  "REB": {
+   "mean": 1.96,
+   "floor": 0.11,
+   "ceiling": 4.14
+  },
+  "STL": {
+   "mean": 0.34,
+   "floor": 0.0,
+   "ceiling": 1.14
+  },
+  "TOV": {
+   "mean": 0.5,
+   "floor": 0.0,
+   "ceiling": 1.88
+  },
+  "PRA": {
+   "mean": 7.89,
+   "floor": 0.17,
+   "ceiling": 16.61
+  },
+  "PR": {
+   "mean": 7.06,
+   "floor": 0.29,
+   "ceiling": 15.17
+  },
+  "PA": {
+   "mean": 5.94,
+   "floor": 0.07,
+   "ceiling": 12.72
+  },
+  "RA": {
+   "mean": 2.79,
+   "floor": 0.04,
+   "ceiling": 6.1
+  }
+ },
+ "minutes": {
+  "value": 11.8,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 10,
+   "min_pg": 6.5,
+   "PTS": {
+    "pg": 3.5,
+    "pm": 0.538
+   },
+   "REB": {
+    "pg": 0.8,
+    "pm": 0.123
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.077
+   },
+   "3PM": {
+    "pg": 0.4,
+    "pm": 0.061
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.3,
+    "pm": 0.046
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 6.5,
+   "PTS": {
+    "pg": 3.5,
+    "pm": 0.538
+   },
+   "REB": {
+    "pg": 0.8,
+    "pm": 0.123
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.077
+   },
+   "3PM": {
+    "pg": 0.4,
+    "pm": 0.061
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.3,
+    "pm": 0.046
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 9.2,
+   "PTS": {
+    "pg": 5.2,
+    "pm": 0.565
+   },
+   "REB": {
+    "pg": 0.8,
+    "pm": 0.087
+   },
+   "AST": {
+    "pg": 0.8,
+    "pm": 0.087
+   },
+   "3PM": {
+    "pg": 0.6,
+    "pm": 0.065
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.022
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.022
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.043
+   }
+  },
+  "home": {
+   "games": 4,
+   "min_pg": 9.0,
+   "PTS": {
+    "pg": 4.5,
+    "pm": 0.502
+   },
+   "REB": {
+    "pg": 0.25,
+    "pm": 0.028
+   },
+   "AST": {
+    "pg": 0.75,
+    "pm": 0.084
+   },
+   "3PM": {
+    "pg": 0.75,
+    "pm": 0.084
+   },
+   "STL": {
+    "pg": 0.25,
+    "pm": 0.028
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.028
+   },
+   "TOV": {
+    "pg": 0.75,
+    "pm": 0.084
+   }
+  },
+  "away": {
+   "games": 6,
+   "min_pg": 4.9,
+   "PTS": {
+    "pg": 2.83,
+    "pm": 0.582
+   },
+   "REB": {
+    "pg": 1.17,
+    "pm": 0.24
+   },
+   "AST": {
+    "pg": 0.33,
+    "pm": 0.068
+   },
+   "3PM": {
+    "pg": 0.17,
+    "pm": 0.034
+   },
+   "STL": {
+    "pg": 0.17,
+    "pm": 0.034
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2024-11-06",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2024-11-06_houston_vs_san-antonio",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-22",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2025-10-22_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.6,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-27_san-antonio_vs_toronto",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-02",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-02_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.5,
+   "PTS": 9.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-09",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-03-09_cleveland_vs_philadelphia",
+   "starter": false,
+   "rest": "126",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-13",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2026-03-13_cleveland_vs_dallas",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.9,
+   "PTS": 4.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-27",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-03-27_cleveland_vs_miami",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.7,
+   "PTS": 6.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-06",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-04-06_cleveland_vs_memphis",
+   "starter": false,
+   "rest": "9",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.3,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2026-04-10_atlanta_vs_cleveland",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.0,
+   "PTS": 4.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-04-12_cleveland_vs_washington",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 25.2,
+   "PTS": 12.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-04-12",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-04-12_cleveland_vs_washington",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 25.2,
+   "PTS": 12.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2026-04-10_atlanta_vs_cleveland",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.0,
+   "PTS": 4.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-04-06",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-04-06_cleveland_vs_memphis",
+   "starter": false,
+   "rest": "9",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.3,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-27",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-03-27_cleveland_vs_miami",
+   "starter": false,
+   "rest": "13",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.7,
+   "PTS": 6.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2026-03-13",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2026-03-13_cleveland_vs_dallas",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.9,
+   "PTS": 4.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-03-09",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-03-09_cleveland_vs_philadelphia",
+   "starter": false,
+   "rest": "126",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.8,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-02",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-02_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.5,
+   "PTS": 9.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-27_san-antonio_vs_toronto",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-22",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2025-10-22_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.6,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-06",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2024-11-06_houston_vs_san-antonio",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 7.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Boston"
+}

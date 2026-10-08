@@ -4,63 +4,63 @@
  "team": "New Orleans",
  "projections": {
   "3PM": {
-   "mean": 0.61,
+   "mean": 0.56,
+   "floor": 0.0,
+   "ceiling": 1.9
+  },
+  "AST": {
+   "mean": 0.68,
+   "floor": 0.0,
+   "ceiling": 2.01
+  },
+  "BLK": {
+   "mean": 0.77,
    "floor": 0.0,
    "ceiling": 1.95
   },
-  "AST": {
-   "mean": 0.69,
-   "floor": 0.0,
-   "ceiling": 2.05
-  },
-  "BLK": {
-   "mean": 0.82,
-   "floor": 0.0,
-   "ceiling": 2.54
-  },
   "PTS": {
-   "mean": 5.55,
-   "floor": 0.73,
-   "ceiling": 11.27
+   "mean": 5.52,
+   "floor": 0.44,
+   "ceiling": 11.18
   },
   "REB": {
-   "mean": 3.77,
-   "floor": 1.0,
-   "ceiling": 6.88
+   "mean": 3.65,
+   "floor": 1.2,
+   "ceiling": 6.43
   },
   "STL": {
-   "mean": 0.41,
+   "mean": 0.4,
    "floor": 0.0,
-   "ceiling": 1.21
+   "ceiling": 1.19
   },
   "TOV": {
-   "mean": 0.64,
-   "floor": 0.03,
-   "ceiling": 2.04
+   "mean": 0.56,
+   "floor": 0.0,
+   "ceiling": 1.94
   },
   "PRA": {
-   "mean": 10.02,
-   "floor": 2.3,
-   "ceiling": 18.73
+   "mean": 9.86,
+   "floor": 2.14,
+   "ceiling": 18.57
   },
   "PR": {
-   "mean": 9.33,
-   "floor": 1.59,
-   "ceiling": 17.66
+   "mean": 9.17,
+   "floor": 2.41,
+   "ceiling": 17.29
   },
   "PA": {
-   "mean": 6.25,
-   "floor": 0.38,
-   "ceiling": 13.03
+   "mean": 6.2,
+   "floor": 0.34,
+   "ceiling": 12.99
   },
   "RA": {
-   "mean": 4.46,
-   "floor": 1.11,
-   "ceiling": 7.91
+   "mean": 4.34,
+   "floor": 0.98,
+   "ceiling": 7.78
   }
  },
  "minutes": {
-  "value": 14.8,
+  "value": 13.9,
   "source": "model"
  },
  "splits": {
@@ -2283,5 +2283,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Oklahoma City"
+ "opp": "Miami"
 }

@@ -1,0 +1,613 @@
+{
+ "player_id": 1642357,
+ "player": "David Jones Garcia",
+ "team": "San Antonio",
+ "projections": {
+  "3PM": {
+   "mean": 0.32,
+   "floor": 0.0,
+   "ceiling": 1.66
+  },
+  "AST": {
+   "mean": 1.1,
+   "floor": 0.0,
+   "ceiling": 2.88
+  },
+  "BLK": {
+   "mean": 0.14,
+   "floor": 0.0,
+   "ceiling": 0.97
+  },
+  "PTS": {
+   "mean": 3.0,
+   "floor": 0.0,
+   "ceiling": 8.67
+  },
+  "REB": {
+   "mean": 1.38,
+   "floor": 0.0,
+   "ceiling": 3.56
+  },
+  "STL": {
+   "mean": 0.4,
+   "floor": 0.0,
+   "ceiling": 1.2
+  },
+  "TOV": {
+   "mean": 0.44,
+   "floor": 0.0,
+   "ceiling": 1.82
+  },
+  "PRA": {
+   "mean": 5.48,
+   "floor": 0.0,
+   "ceiling": 14.2
+  },
+  "PR": {
+   "mean": 4.38,
+   "floor": 0.0,
+   "ceiling": 12.5
+  },
+  "PA": {
+   "mean": 4.1,
+   "floor": 0.0,
+   "ceiling": 10.89
+  },
+  "RA": {
+   "mean": 2.48,
+   "floor": 0.0,
+   "ceiling": 5.78
+  }
+ },
+ "minutes": {
+  "value": 7.1,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 11,
+   "min_pg": 6.2,
+   "PTS": {
+    "pg": 2.91,
+    "pm": 0.471
+   },
+   "REB": {
+    "pg": 1.18,
+    "pm": 0.191
+   },
+   "AST": {
+    "pg": 1.64,
+    "pm": 0.265
+   },
+   "3PM": {
+    "pg": 0.27,
+    "pm": 0.044
+   },
+   "STL": {
+    "pg": 0.55,
+    "pm": 0.088
+   },
+   "BLK": {
+    "pg": 0.09,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.45,
+    "pm": 0.074
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 6.4,
+   "PTS": {
+    "pg": 2.7,
+    "pm": 0.422
+   },
+   "REB": {
+    "pg": 1.2,
+    "pm": 0.188
+   },
+   "AST": {
+    "pg": 1.6,
+    "pm": 0.25
+   },
+   "3PM": {
+    "pg": 0.3,
+    "pm": 0.047
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.094
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.078
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 3.8,
+   "PTS": {
+    "pg": 1.8,
+    "pm": 0.479
+   },
+   "REB": {
+    "pg": 0.4,
+    "pm": 0.107
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.266
+   },
+   "3PM": {
+    "pg": 0.4,
+    "pm": 0.107
+   },
+   "STL": {
+    "pg": 0.4,
+    "pm": 0.107
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.107
+   }
+  },
+  "home": {
+   "games": 5,
+   "min_pg": 6.0,
+   "PTS": {
+    "pg": 3.2,
+    "pm": 0.531
+   },
+   "REB": {
+    "pg": 1.4,
+    "pm": 0.232
+   },
+   "AST": {
+    "pg": 1.6,
+    "pm": 0.265
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.033
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.1
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.033
+   },
+   "TOV": {
+    "pg": 0.2,
+    "pm": 0.033
+   }
+  },
+  "away": {
+   "games": 6,
+   "min_pg": 6.3,
+   "PTS": {
+    "pg": 2.67,
+    "pm": 0.423
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.159
+   },
+   "AST": {
+    "pg": 1.67,
+    "pm": 0.264
+   },
+   "3PM": {
+    "pg": 0.33,
+    "pm": 0.053
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.079
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.106
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2025-10-22",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2025-10-22_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "3+",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.1,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-27_san-antonio_vs_toronto",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-02",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-02_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.5,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-18",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2025-11-18_memphis_vs_san-antonio",
+   "starter": false,
+   "rest": "15",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.9,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-20",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2025-11-20_atlanta_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 18.6,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 6.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-23",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-23_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-30",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2025-11-30_minnesota_vs_san-antonio",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.7,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-02",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2025-12-02_memphis_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-03",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-12-03_orlando_vs_san-antonio",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.7,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-12-05_cleveland_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.9,
+   "PTS": 9.0,
+   "REB": 0.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2026-01-07",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-01-07_la-lakers_vs_san-antonio",
+   "starter": false,
+   "rest": "32",
+   "result": null,
+   "opp_tier": null,
+   "min": 0.8,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-01-07",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-01-07_la-lakers_vs_san-antonio",
+   "starter": false,
+   "rest": "32",
+   "result": null,
+   "opp_tier": null,
+   "min": 0.8,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-05",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-12-05_cleveland_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.9,
+   "PTS": 9.0,
+   "REB": 0.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-03",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-12-03_orlando_vs_san-antonio",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.7,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-12-02",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2025-12-02_memphis_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-30",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2025-11-30_minnesota_vs_san-antonio",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.7,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-23",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-23_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 13.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-11-20",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2025-11-20_atlanta_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 18.6,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 6.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-11-18",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2025-11-18_memphis_vs_san-antonio",
+   "starter": false,
+   "rest": "15",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.9,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-02",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-02_phoenix_vs_san-antonio",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.5,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-27",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2025-10-27_san-antonio_vs_toronto",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.2,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Atlanta"
+}
