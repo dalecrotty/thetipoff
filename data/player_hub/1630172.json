@@ -4,63 +4,63 @@
  "team": "Chicago",
  "projections": {
   "3PM": {
-   "mean": 1.03,
-   "floor": 0.0,
-   "ceiling": 2.91
+   "mean": 0.9,
+   "floor": 0.01,
+   "ceiling": 2.16
   },
   "AST": {
-   "mean": 1.46,
-   "floor": 0.0,
-   "ceiling": 3.05
+   "mean": 1.28,
+   "floor": 0.02,
+   "ceiling": 3.08
   },
   "BLK": {
-   "mean": 0.3,
+   "mean": 0.27,
    "floor": 0.0,
-   "ceiling": 1.03
+   "ceiling": 1.0
   },
   "PTS": {
-   "mean": 5.71,
-   "floor": 0.64,
-   "ceiling": 11.38
+   "mean": 5.02,
+   "floor": 0.19,
+   "ceiling": 10.74
   },
   "REB": {
-   "mean": 2.4,
-   "floor": 0.02,
-   "ceiling": 4.87
+   "mean": 2.11,
+   "floor": 0.33,
+   "ceiling": 4.32
   },
   "STL": {
-   "mean": 0.54,
+   "mean": 0.48,
+   "floor": 0.0,
+   "ceiling": 1.92
+  },
+  "TOV": {
+   "mean": 0.84,
    "floor": 0.0,
    "ceiling": 1.98
   },
-  "TOV": {
-   "mean": 0.96,
-   "floor": 0.0,
-   "ceiling": 2.09
-  },
   "PRA": {
-   "mean": 9.57,
-   "floor": 1.85,
-   "ceiling": 18.28
+   "mean": 8.41,
+   "floor": 0.68,
+   "ceiling": 17.12
   },
   "PR": {
-   "mean": 8.11,
-   "floor": 1.35,
-   "ceiling": 16.23
+   "mean": 7.12,
+   "floor": 0.36,
+   "ceiling": 15.24
   },
   "PA": {
-   "mean": 7.17,
-   "floor": 1.31,
-   "ceiling": 13.96
+   "mean": 6.3,
+   "floor": 0.43,
+   "ceiling": 13.08
   },
   "RA": {
-   "mean": 3.85,
-   "floor": 1.11,
-   "ceiling": 7.16
+   "mean": 3.39,
+   "floor": 0.64,
+   "ceiling": 6.69
   }
  },
  "minutes": {
-  "value": 16.9,
+  "value": 14.9,
   "source": "model"
  },
  "splits": {
