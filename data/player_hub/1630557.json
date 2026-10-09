@@ -4,63 +4,63 @@
  "team": "Atlanta",
  "projections": {
   "3PM": {
-   "mean": 0.98,
-   "floor": 0.0,
-   "ceiling": 2.85
+   "mean": 0.9,
+   "floor": 0.02,
+   "ceiling": 2.16
   },
   "AST": {
-   "mean": 1.14,
+   "mean": 1.06,
    "floor": 0.0,
-   "ceiling": 2.92
+   "ceiling": 2.86
   },
   "BLK": {
    "mean": 0.1,
    "floor": 0.0,
-   "ceiling": 0.99
-  },
-  "PTS": {
-   "mean": 5.8,
-   "floor": 0.73,
-   "ceiling": 11.47
-  },
-  "REB": {
-   "mean": 1.56,
-   "floor": 0.0,
-   "ceiling": 3.75
-  },
-  "STL": {
-   "mean": 0.18,
-   "floor": 0.0,
    "ceiling": 0.98
   },
-  "TOV": {
-   "mean": 0.54,
+  "PTS": {
+   "mean": 5.38,
+   "floor": 0.55,
+   "ceiling": 11.09
+  },
+  "REB": {
+   "mean": 1.45,
    "floor": 0.0,
-   "ceiling": 1.92
+   "ceiling": 3.66
+  },
+  "STL": {
+   "mean": 0.17,
+   "floor": 0.0,
+   "ceiling": 0.97
+  },
+  "TOV": {
+   "mean": 0.5,
+   "floor": 0.0,
+   "ceiling": 1.9
   },
   "PRA": {
-   "mean": 8.51,
-   "floor": 0.78,
-   "ceiling": 17.22
+   "mean": 7.88,
+   "floor": 0.16,
+   "ceiling": 16.6
   },
   "PR": {
-   "mean": 7.37,
-   "floor": 0.6,
-   "ceiling": 15.48
+   "mean": 6.83,
+   "floor": 0.06,
+   "ceiling": 14.94
   },
   "PA": {
-   "mean": 6.94,
-   "floor": 1.08,
-   "ceiling": 13.73
+   "mean": 6.43,
+   "floor": 0.57,
+   "ceiling": 13.22
   },
   "RA": {
-   "mean": 2.7,
+   "mean": 2.51,
    "floor": 0.0,
-   "ceiling": 6.01
+   "ceiling": 5.81
   }
  },
  "minutes": {
-  "value": 12.9,
+  "value": 11.9,
   "source": "model"
  },
  "splits": {

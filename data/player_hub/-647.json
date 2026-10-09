@@ -1,0 +1,703 @@
+{
+ "player_id": -647,
+ "player": "Jazian Gortman",
+ "team": "Washington",
+ "projections": {
+  "3PM": {
+   "mean": 0.47,
+   "floor": 0.0,
+   "ceiling": 1.8
+  },
+  "AST": {
+   "mean": 0.72,
+   "floor": 0.0,
+   "ceiling": 2.08
+  },
+  "BLK": {
+   "mean": 0.17,
+   "floor": 0.0,
+   "ceiling": 1.01
+  },
+  "PTS": {
+   "mean": 3.37,
+   "floor": 0.0,
+   "ceiling": 9.09
+  },
+  "REB": {
+   "mean": 1.33,
+   "floor": 0.0,
+   "ceiling": 3.54
+  },
+  "STL": {
+   "mean": 0.3,
+   "floor": 0.0,
+   "ceiling": 1.09
+  },
+  "TOV": {
+   "mean": 0.52,
+   "floor": 0.0,
+   "ceiling": 1.92
+  },
+  "PRA": {
+   "mean": 5.42,
+   "floor": 0.0,
+   "ceiling": 14.14
+  },
+  "PR": {
+   "mean": 4.7,
+   "floor": 0.0,
+   "ceiling": 12.82
+  },
+  "PA": {
+   "mean": 4.09,
+   "floor": 0.0,
+   "ceiling": 10.87
+  },
+  "RA": {
+   "mean": 2.05,
+   "floor": 0.0,
+   "ceiling": 5.36
+  }
+ },
+ "minutes": {
+  "value": 8.4,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 16,
+   "min_pg": 3.6,
+   "PTS": {
+    "pg": 1.5,
+    "pm": 0.414
+   },
+   "REB": {
+    "pg": 0.31,
+    "pm": 0.086
+   },
+   "AST": {
+    "pg": 0.38,
+    "pm": 0.103
+   },
+   "3PM": {
+    "pg": 0.25,
+    "pm": 0.069
+   },
+   "STL": {
+    "pg": 0.12,
+    "pm": 0.034
+   },
+   "BLK": {
+    "pg": 0.06,
+    "pm": 0.017
+   },
+   "TOV": {
+    "pg": 0.31,
+    "pm": 0.086
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 4.4,
+   "PTS": {
+    "pg": 1.6,
+    "pm": 0.364
+   },
+   "REB": {
+    "pg": 0.4,
+    "pm": 0.091
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.136
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.045
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.091
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 4.2,
+   "PTS": {
+    "pg": 1.6,
+    "pm": 0.381
+   },
+   "REB": {
+    "pg": 0.4,
+    "pm": 0.095
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.143
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.048
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.048
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.143
+   }
+  },
+  "home": {
+   "games": 7,
+   "min_pg": 4.7,
+   "PTS": {
+    "pg": 2.43,
+    "pm": 0.515
+   },
+   "REB": {
+    "pg": 0.29,
+    "pm": 0.061
+   },
+   "AST": {
+    "pg": 0.57,
+    "pm": 0.121
+   },
+   "3PM": {
+    "pg": 0.57,
+    "pm": 0.121
+   },
+   "STL": {
+    "pg": 0.14,
+    "pm": 0.03
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.14,
+    "pm": 0.03
+   }
+  },
+  "away": {
+   "games": 9,
+   "min_pg": 2.8,
+   "PTS": {
+    "pg": 0.78,
+    "pm": 0.28
+   },
+   "REB": {
+    "pg": 0.33,
+    "pm": 0.12
+   },
+   "AST": {
+    "pg": 0.22,
+    "pm": 0.08
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.11,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 0.11,
+    "pm": 0.04
+   },
+   "TOV": {
+    "pg": 0.44,
+    "pm": 0.16
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2024-10-26",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2024-10-26_dallas_vs_phoenix",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-11-06",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2024-11-06_chicago_vs_dallas",
+   "starter": false,
+   "rest": "10",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-25",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2024-11-25_atlanta_vs_dallas",
+   "starter": false,
+   "rest": "18",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-27",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2024-11-27_dallas_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-11-30",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2024-11-30_dallas_vs_utah",
+   "starter": false,
+   "rest": "2",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-10",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2024-12-10_dallas_vs_oklahoma-city",
+   "starter": false,
+   "rest": "9",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-15",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2024-12-15_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-19",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2024-12-19_dallas_vs_la-clippers",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.0,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-12-21",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2024-12-21_dallas_vs_la-clippers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-23",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2024-12-23_dallas_vs_portland",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-27",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2024-12-27_dallas_vs_phoenix",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-28",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2024-12-28_dallas_vs_portland",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-30",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2024-12-30_dallas_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.0,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-01-01",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2025-01-01_dallas_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-03",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2025-01-03_cleveland_vs_dallas",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-25",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2025-01-25_boston_vs_dallas",
+   "starter": false,
+   "rest": "21",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2025-01-25",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2025-01-25_boston_vs_dallas",
+   "starter": false,
+   "rest": "21",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-03",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2025-01-03_cleveland_vs_dallas",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 4.0,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-01",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2025-01-01_dallas_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-30",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2024-12-30_dallas_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.0,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2024-12-28",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2024-12-28_dallas_vs_portland",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-27",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2024-12-27_dallas_vs_phoenix",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-23",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2024-12-23_dallas_vs_portland",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 9.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-21",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2024-12-21_dallas_vs_la-clippers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2024-12-19",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2024-12-19_dallas_vs_la-clippers",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 11.0,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2024-12-15",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2024-12-15_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "4",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "New York"
+}
