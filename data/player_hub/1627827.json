@@ -4,63 +4,63 @@
  "team": "Atlanta",
  "projections": {
   "3PM": {
-   "mean": 0.64,
-   "floor": 0.02,
-   "ceiling": 1.97
-  },
-  "AST": {
-   "mean": 0.67,
-   "floor": 0.0,
+   "mean": 0.69,
+   "floor": 0.05,
    "ceiling": 2.03
   },
-  "BLK": {
-   "mean": 0.12,
+  "AST": {
+   "mean": 0.73,
    "floor": 0.0,
-   "ceiling": 1.01
+   "ceiling": 2.06
+  },
+  "BLK": {
+   "mean": 0.14,
+   "floor": 0.0,
+   "ceiling": 0.97
   },
   "PTS": {
-   "mean": 2.58,
+   "mean": 2.91,
    "floor": 0.0,
-   "ceiling": 8.3
+   "ceiling": 8.57
   },
   "REB": {
-   "mean": 1.59,
+   "mean": 1.77,
    "floor": 0.0,
-   "ceiling": 3.81
+   "ceiling": 3.95
   },
   "STL": {
-   "mean": 0.32,
+   "mean": 0.36,
    "floor": 0.0,
-   "ceiling": 1.12
+   "ceiling": 1.15
   },
   "TOV": {
-   "mean": 0.37,
+   "mean": 0.39,
    "floor": 0.0,
    "ceiling": 1.77
   },
   "PRA": {
-   "mean": 4.85,
+   "mean": 5.4,
    "floor": 0.0,
-   "ceiling": 13.56
+   "ceiling": 14.12
   },
   "PR": {
-   "mean": 4.17,
+   "mean": 4.67,
    "floor": 0.0,
-   "ceiling": 12.29
+   "ceiling": 12.79
   },
   "PA": {
-   "mean": 3.25,
+   "mean": 3.64,
    "floor": 0.0,
-   "ceiling": 10.04
+   "ceiling": 10.42
   },
   "RA": {
-   "mean": 2.27,
+   "mean": 2.5,
    "floor": 0.0,
-   "ceiling": 5.57
+   "ceiling": 5.8
   }
  },
  "minutes": {
-  "value": 11.5,
+  "value": 12.1,
   "source": "model"
  },
  "splits": {
@@ -2283,5 +2283,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "San Antonio"
+ "opp": "Indiana"
 }

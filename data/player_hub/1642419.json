@@ -4,14 +4,14 @@
  "team": "Toronto",
  "projections": {
   "3PM": {
-   "mean": 1.03,
+   "mean": 1.01,
    "floor": 0.0,
-   "ceiling": 2.9
+   "ceiling": 2.89
   },
   "AST": {
-   "mean": 0.47,
+   "mean": 0.51,
    "floor": 0.0,
-   "ceiling": 1.83
+   "ceiling": 1.84
   },
   "BLK": {
    "mean": 0.06,
@@ -19,48 +19,48 @@
    "ceiling": 0.95
   },
   "PTS": {
-   "mean": 4.5,
+   "mean": 4.59,
    "floor": 0.0,
-   "ceiling": 10.21
+   "ceiling": 10.25
   },
   "REB": {
-   "mean": 1.9,
-   "floor": 0.13,
-   "ceiling": 4.11
+   "mean": 1.91,
+   "floor": 0.07,
+   "ceiling": 4.1
   },
   "STL": {
-   "mean": 0.14,
+   "mean": 0.15,
    "floor": 0.0,
-   "ceiling": 0.93
+   "ceiling": 0.94
   },
   "TOV": {
-   "mean": 0.32,
+   "mean": 0.36,
    "floor": 0.0,
-   "ceiling": 1.72
+   "ceiling": 1.74
   },
   "PRA": {
-   "mean": 6.87,
+   "mean": 7.01,
    "floor": 0.0,
-   "ceiling": 15.58
+   "ceiling": 15.72
   },
   "PR": {
-   "mean": 6.4,
+   "mean": 6.5,
    "floor": 0.0,
-   "ceiling": 14.51
+   "ceiling": 14.61
   },
   "PA": {
-   "mean": 4.97,
+   "mean": 5.09,
    "floor": 0.0,
-   "ceiling": 11.75
+   "ceiling": 11.88
   },
   "RA": {
-   "mean": 2.37,
+   "mean": 2.42,
    "floor": 0.0,
-   "ceiling": 5.67
+   "ceiling": 5.72
   }
  },
  "minutes": {
-  "value": 11.0,
+  "value": 11.7,
   "source": "model"
  },
  "splits": {
@@ -2678,6 +2678,14 @@
    "TOV": 0.0
   }
  ],
- "with_without_tonight": [],
- "opp": "Miami"
+ "with_without_tonight": [
+  {
+   "star": "Brandon Ingram",
+   "n_without": 5,
+   "PTS": 3.4,
+   "REB": 0.5,
+   "AST": 0.5
+  }
+ ],
+ "opp": "LA Clippers"
 }

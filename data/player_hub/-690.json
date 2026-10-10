@@ -1,0 +1,613 @@
+{
+ "player_id": -690,
+ "player": "Kylor Kelley",
+ "team": "Miami",
+ "projections": {
+  "3PM": {
+   "mean": 0.27,
+   "floor": 0.0,
+   "ceiling": 1.61
+  },
+  "AST": {
+   "mean": 0.72,
+   "floor": 0.0,
+   "ceiling": 2.05
+  },
+  "BLK": {
+   "mean": 0.3,
+   "floor": 0.0,
+   "ceiling": 1.03
+  },
+  "PTS": {
+   "mean": 4.22,
+   "floor": 0.0,
+   "ceiling": 9.89
+  },
+  "REB": {
+   "mean": 3.4,
+   "floor": 0.95,
+   "ceiling": 6.17
+  },
+  "STL": {
+   "mean": 0.26,
+   "floor": 0.0,
+   "ceiling": 1.05
+  },
+  "TOV": {
+   "mean": 0.5,
+   "floor": 0.0,
+   "ceiling": 1.89
+  },
+  "PRA": {
+   "mean": 8.34,
+   "floor": 0.62,
+   "ceiling": 17.05
+  },
+  "PR": {
+   "mean": 7.62,
+   "floor": 0.86,
+   "ceiling": 15.74
+  },
+  "PA": {
+   "mean": 4.94,
+   "floor": 0.0,
+   "ceiling": 11.73
+  },
+  "RA": {
+   "mean": 4.12,
+   "floor": 0.76,
+   "ceiling": 7.56
+  }
+ },
+ "minutes": {
+  "value": 12.9,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 11,
+   "min_pg": 11.5,
+   "PTS": {
+    "pg": 3.09,
+    "pm": 0.27
+   },
+   "REB": {
+    "pg": 3.55,
+    "pm": 0.31
+   },
+   "AST": {
+    "pg": 0.45,
+    "pm": 0.04
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.09,
+    "pm": 0.008
+   },
+   "BLK": {
+    "pg": 0.27,
+    "pm": 0.024
+   },
+   "TOV": {
+    "pg": 0.36,
+    "pm": 0.032
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 11.8,
+   "PTS": {
+    "pg": 3.3,
+    "pm": 0.28
+   },
+   "REB": {
+    "pg": 3.5,
+    "pm": 0.297
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.042
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.1,
+    "pm": 0.008
+   },
+   "BLK": {
+    "pg": 0.3,
+    "pm": 0.025
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.034
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 13.6,
+   "PTS": {
+    "pg": 3.2,
+    "pm": 0.235
+   },
+   "REB": {
+    "pg": 4.2,
+    "pm": 0.309
+   },
+   "AST": {
+    "pg": 0.8,
+    "pm": 0.059
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.015
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.044
+   }
+  },
+  "home": {
+   "games": 6,
+   "min_pg": 8.3,
+   "PTS": {
+    "pg": 2.17,
+    "pm": 0.26
+   },
+   "REB": {
+    "pg": 2.83,
+    "pm": 0.34
+   },
+   "AST": {
+    "pg": 0.33,
+    "pm": 0.04
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.17,
+    "pm": 0.02
+   },
+   "BLK": {
+    "pg": 0.17,
+    "pm": 0.02
+   },
+   "TOV": {
+    "pg": 0.17,
+    "pm": 0.02
+   }
+  },
+  "away": {
+   "games": 5,
+   "min_pg": 15.2,
+   "PTS": {
+    "pg": 4.2,
+    "pm": 0.276
+   },
+   "REB": {
+    "pg": 4.4,
+    "pm": 0.289
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.039
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.4,
+    "pm": 0.026
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.039
+   }
+  }
+ },
+ "lines": {},
+ "game_log": [
+  {
+   "date": "2025-01-27",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-01-27_dallas_vs_washington",
+   "starter": false,
+   "rest": "",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.0,
+   "PTS": 1.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-01-31",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2025-01-31_dallas_vs_detroit",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-02",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-02-02_cleveland_vs_dallas",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 34.0,
+   "PTS": 12.0,
+   "REB": 11.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-02-04",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-02-04_dallas_vs_philadelphia",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 1.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-10",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-02-10_dallas_vs_sacramento",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-12",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-02-12_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-13",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2025-02-13_dallas_vs_miami",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-23",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2025-02-23_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "9",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-10",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2025-04-10_milwaukee_vs_new-orleans",
+   "starter": false,
+   "rest": "45",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.0,
+   "PTS": 2.0,
+   "REB": 7.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2025-04-11_miami_vs_new-orleans",
+   "starter": true,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 21.0,
+   "PTS": 5.0,
+   "REB": 6.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-13",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-04-13_new-orleans_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 15.0,
+   "PTS": 3.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2025-04-13",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-04-13_new-orleans_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 15.0,
+   "PTS": 3.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-04-11",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2025-04-11_miami_vs_new-orleans",
+   "starter": true,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 21.0,
+   "PTS": 5.0,
+   "REB": 6.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-04-10",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2025-04-10_milwaukee_vs_new-orleans",
+   "starter": false,
+   "rest": "45",
+   "result": null,
+   "opp_tier": null,
+   "min": 23.0,
+   "PTS": 2.0,
+   "REB": 7.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0
+  },
+  {
+   "date": "2025-02-23",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2025-02-23_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "9",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-13",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2025-02-13_dallas_vs_miami",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-12",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2025-02-12_dallas_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-10",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2025-02-10_dallas_vs_sacramento",
+   "starter": false,
+   "rest": "5",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-04",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2025-02-04_dallas_vs_philadelphia",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 5.0,
+   "PTS": 1.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-02-02",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-02-02_cleveland_vs_dallas",
+   "starter": true,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 34.0,
+   "PTS": 12.0,
+   "REB": 11.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-01-31",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2025-01-31_dallas_vs_detroit",
+   "starter": false,
+   "rest": "3",
+   "result": null,
+   "opp_tier": null,
+   "min": 8.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0
+  }
+ ],
+ "with_without_tonight": [],
+ "opp": "Minnesota"
+}

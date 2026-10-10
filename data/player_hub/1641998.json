@@ -11,56 +11,56 @@
   "AST": {
    "mean": 0.45,
    "floor": 0.0,
-   "ceiling": 1.81
+   "ceiling": 1.78
   },
   "BLK": {
-   "mean": 0.33,
+   "mean": 0.34,
+   "floor": 0.0,
+   "ceiling": 1.01
+  },
+  "PTS": {
+   "mean": 2.32,
+   "floor": 0.0,
+   "ceiling": 7.98
+  },
+  "REB": {
+   "mean": 2.41,
+   "floor": 0.03,
+   "ceiling": 4.89
+  },
+  "STL": {
+   "mean": 0.2,
    "floor": 0.0,
    "ceiling": 1.0
   },
-  "PTS": {
-   "mean": 2.4,
-   "floor": 0.0,
-   "ceiling": 8.12
-  },
-  "REB": {
-   "mean": 2.53,
-   "floor": 0.27,
-   "ceiling": 4.96
-  },
-  "STL": {
-   "mean": 0.19,
-   "floor": 0.0,
-   "ceiling": 0.98
-  },
   "TOV": {
-   "mean": 0.81,
-   "floor": 0.03,
-   "ceiling": 2.08
+   "mean": 0.85,
+   "floor": 0.0,
+   "ceiling": 1.98
   },
   "PRA": {
-   "mean": 5.38,
+   "mean": 5.18,
    "floor": 0.0,
-   "ceiling": 14.09
+   "ceiling": 13.89
   },
   "PR": {
-   "mean": 4.93,
+   "mean": 4.73,
    "floor": 0.0,
-   "ceiling": 13.04
+   "ceiling": 12.84
   },
   "PA": {
-   "mean": 2.85,
+   "mean": 2.76,
    "floor": 0.0,
-   "ceiling": 9.64
+   "ceiling": 9.55
   },
   "RA": {
-   "mean": 2.98,
-   "floor": 0.23,
-   "ceiling": 6.28
+   "mean": 2.86,
+   "floor": 0.11,
+   "ceiling": 6.16
   }
  },
  "minutes": {
-  "value": 10.8,
+  "value": 10.4,
   "source": "model"
  },
  "splits": {
@@ -1329,5 +1329,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Miami"
+ "opp": "LA Clippers"
 }

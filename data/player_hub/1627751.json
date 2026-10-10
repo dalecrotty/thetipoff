@@ -10,57 +10,57 @@
   },
   "AST": {
    "mean": 1.36,
-   "floor": 0.0,
-   "ceiling": 2.96
+   "floor": 0.08,
+   "ceiling": 3.14
   },
   "BLK": {
-   "mean": 0.55,
+   "mean": 0.57,
    "floor": 0.0,
-   "ceiling": 1.96
+   "ceiling": 1.98
   },
   "PTS": {
-   "mean": 7.97,
-   "floor": 1.51,
-   "ceiling": 14.62
+   "mean": 7.8,
+   "floor": 1.2,
+   "ceiling": 14.35
   },
   "REB": {
-   "mean": 5.07,
-   "floor": 1.84,
-   "ceiling": 8.22
+   "mean": 4.91,
+   "floor": 1.77,
+   "ceiling": 8.58
   },
   "STL": {
-   "mean": 0.6,
-   "floor": 0.0,
-   "ceiling": 1.97
+   "mean": 0.66,
+   "floor": 0.01,
+   "ceiling": 2.03
   },
   "TOV": {
-   "mean": 0.9,
+   "mean": 0.95,
    "floor": 0.0,
-   "ceiling": 2.04
+   "ceiling": 2.09
   },
   "PRA": {
-   "mean": 14.41,
-   "floor": 5.04,
-   "ceiling": 23.58
+   "mean": 14.08,
+   "floor": 4.98,
+   "ceiling": 22.9
   },
   "PR": {
-   "mean": 13.05,
-   "floor": 4.54,
-   "ceiling": 21.67
+   "mean": 12.72,
+   "floor": 4.21,
+   "ceiling": 21.34
   },
   "PA": {
-   "mean": 9.33,
-   "floor": 1.8,
-   "ceiling": 17.03
+   "mean": 9.16,
+   "floor": 1.63,
+   "ceiling": 16.86
   },
   "RA": {
-   "mean": 6.44,
-   "floor": 2.15,
-   "ceiling": 10.9
+   "mean": 6.27,
+   "floor": 1.98,
+   "ceiling": 10.73
   }
  },
  "minutes": {
-  "value": 17.5,
+  "value": 17.1,
   "source": "model"
  },
  "splits": {
@@ -2390,6 +2390,14 @@
    "TOV": 1.0
   }
  ],
- "with_without_tonight": [],
- "opp": "Miami"
+ "with_without_tonight": [
+  {
+   "star": "Brandon Ingram",
+   "n_without": 4,
+   "PTS": -0.2,
+   "REB": -1.2,
+   "AST": -0.8
+  }
+ ],
+ "opp": "LA Clippers"
 }

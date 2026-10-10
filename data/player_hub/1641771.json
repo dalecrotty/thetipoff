@@ -4,63 +4,63 @@
  "team": "Indiana",
  "projections": {
   "3PM": {
-   "mean": 0.9,
-   "floor": 0.01,
-   "ceiling": 2.15
+   "mean": 0.88,
+   "floor": 0.0,
+   "ceiling": 2.13
   },
   "AST": {
-   "mean": 2.08,
-   "floor": 0.01,
-   "ceiling": 4.07
+   "mean": 2.15,
+   "floor": 0.08,
+   "ceiling": 4.11
   },
   "BLK": {
-   "mean": 0.87,
+   "mean": 0.83,
+   "floor": 0.0,
+   "ceiling": 2.01
+  },
+  "PTS": {
+   "mean": 5.81,
+   "floor": 0.73,
+   "ceiling": 11.47
+  },
+  "REB": {
+   "mean": 3.45,
+   "floor": 1.0,
+   "ceiling": 6.23
+  },
+  "STL": {
+   "mean": 1.15,
+   "floor": 0.03,
+   "ceiling": 2.99
+  },
+  "TOV": {
+   "mean": 1.05,
    "floor": 0.0,
    "ceiling": 2.04
   },
-  "PTS": {
-   "mean": 5.89,
-   "floor": 0.0,
-   "ceiling": 12.72
-  },
-  "REB": {
-   "mean": 3.48,
-   "floor": 1.04,
-   "ceiling": 6.19
-  },
-  "STL": {
-   "mean": 1.17,
-   "floor": 0.03,
-   "ceiling": 3.01
-  },
-  "TOV": {
-   "mean": 1.06,
-   "floor": 0.0,
-   "ceiling": 2.06
-  },
   "PRA": {
-   "mean": 11.45,
-   "floor": 2.83,
-   "ceiling": 20.23
+   "mean": 11.41,
+   "floor": 2.79,
+   "ceiling": 20.19
   },
   "PR": {
-   "mean": 9.36,
-   "floor": 1.63,
-   "ceiling": 17.7
+   "mean": 9.26,
+   "floor": 1.53,
+   "ceiling": 17.6
   },
   "PA": {
-   "mean": 7.97,
-   "floor": 1.29,
-   "ceiling": 14.95
+   "mean": 7.96,
+   "floor": 1.27,
+   "ceiling": 14.94
   },
   "RA": {
-   "mean": 5.56,
-   "floor": 1.69,
-   "ceiling": 9.8
+   "mean": 5.6,
+   "floor": 1.73,
+   "ceiling": 9.84
   }
  },
  "minutes": {
-  "value": 18.5,
+  "value": 18.1,
   "source": "model"
  },
  "splits": {
@@ -645,5 +645,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Minnesota"
+ "opp": "Atlanta"
 }

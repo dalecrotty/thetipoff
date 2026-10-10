@@ -5,62 +5,62 @@
  "projections": {
   "3PM": {
    "mean": 0.62,
-   "floor": 0.01,
-   "ceiling": 1.95
+   "floor": 0.0,
+   "ceiling": 1.96
   },
   "AST": {
-   "mean": 0.89,
+   "mean": 0.87,
    "floor": 0.0,
-   "ceiling": 2.25
+   "ceiling": 2.2
   },
   "BLK": {
-   "mean": 0.17,
+   "mean": 0.16,
    "floor": 0.0,
-   "ceiling": 1.0
+   "ceiling": 0.99
   },
   "PTS": {
-   "mean": 3.43,
+   "mean": 3.38,
    "floor": 0.0,
-   "ceiling": 9.14
+   "ceiling": 9.05
   },
   "REB": {
-   "mean": 1.72,
+   "mean": 1.7,
    "floor": 0.0,
-   "ceiling": 3.93
+   "ceiling": 3.89
   },
   "STL": {
-   "mean": 0.42,
+   "mean": 0.43,
    "floor": 0.0,
-   "ceiling": 1.22
+   "ceiling": 1.23
   },
   "TOV": {
-   "mean": 0.3,
+   "mean": 0.31,
    "floor": 0.0,
-   "ceiling": 1.7
+   "ceiling": 1.69
   },
   "PRA": {
-   "mean": 6.04,
+   "mean": 5.96,
    "floor": 0.0,
-   "ceiling": 14.76
+   "ceiling": 14.67
   },
   "PR": {
-   "mean": 5.15,
+   "mean": 5.09,
    "floor": 0.0,
-   "ceiling": 13.27
+   "ceiling": 13.2
   },
   "PA": {
-   "mean": 4.32,
+   "mean": 4.25,
    "floor": 0.0,
-   "ceiling": 11.1
+   "ceiling": 11.04
   },
   "RA": {
-   "mean": 2.62,
+   "mean": 2.57,
    "floor": 0.0,
-   "ceiling": 5.92
+   "ceiling": 5.88
   }
  },
  "minutes": {
-  "value": 11.1,
+  "value": 11.8,
   "source": "model"
  },
  "splits": {
@@ -1923,5 +1923,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Chicago"
+ "opp": "San Antonio"
 }

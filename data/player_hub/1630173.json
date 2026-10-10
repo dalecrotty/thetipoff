@@ -4,29 +4,29 @@
  "team": "Sacramento",
  "projections": {
   "3PM": {
-   "mean": 0.29,
+   "mean": 0.28,
    "floor": 0.0,
    "ceiling": 1.62
   },
   "AST": {
-   "mean": 1.32,
-   "floor": 0.06,
-   "ceiling": 3.12
+   "mean": 1.41,
+   "floor": 0.0,
+   "ceiling": 3.01
   },
   "BLK": {
-   "mean": 0.55,
-   "floor": 0.0,
-   "ceiling": 1.96
+   "mean": 0.59,
+   "floor": 0.01,
+   "ceiling": 1.99
   },
   "PTS": {
-   "mean": 10.17,
-   "floor": 2.92,
-   "ceiling": 18.07
+   "mean": 9.98,
+   "floor": 2.82,
+   "ceiling": 18.05
   },
   "REB": {
-   "mean": 5.99,
-   "floor": 2.53,
-   "ceiling": 9.71
+   "mean": 5.98,
+   "floor": 2.52,
+   "ceiling": 9.47
   },
   "STL": {
    "mean": 0.79,
@@ -34,33 +34,33 @@
    "ceiling": 2.02
   },
   "TOV": {
-   "mean": 0.88,
-   "floor": 0.0,
-   "ceiling": 2.02
+   "mean": 0.99,
+   "floor": 0.03,
+   "ceiling": 2.12
   },
   "PRA": {
-   "mean": 17.49,
-   "floor": 7.26,
-   "ceiling": 27.75
+   "mean": 17.38,
+   "floor": 7.15,
+   "ceiling": 27.65
   },
   "PR": {
-   "mean": 16.16,
-   "floor": 6.89,
-   "ceiling": 25.57
+   "mean": 15.97,
+   "floor": 6.69,
+   "ceiling": 25.38
   },
   "PA": {
-   "mean": 11.49,
-   "floor": 3.61,
-   "ceiling": 19.79
+   "mean": 11.4,
+   "floor": 3.52,
+   "ceiling": 19.7
   },
   "RA": {
-   "mean": 7.32,
-   "floor": 3.2,
-   "ceiling": 12.04
+   "mean": 7.4,
+   "floor": 3.28,
+   "ceiling": 12.12
   }
  },
  "minutes": {
-  "value": 21.1,
+  "value": 20.7,
   "source": "model"
  },
  "splits": {
@@ -2751,5 +2751,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "LA Lakers"
+ "opp": "Golden State"
 }
