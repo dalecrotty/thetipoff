@@ -1,155 +1,155 @@
 {
- "player_id": 1631211,
- "player": "Trevor Keels",
- "team": "Washington",
+ "player_id": 1643141,
+ "player": "Jahmyl Telfort",
+ "team": "LA Clippers",
  "projections": {
   "3PM": {
-   "mean": 0.77,
+   "mean": 0.3,
    "floor": 0.0,
-   "ceiling": 2.02
+   "ceiling": 1.63
   },
   "AST": {
-   "mean": 1.06,
+   "mean": 0.64,
    "floor": 0.0,
-   "ceiling": 2.86
+   "ceiling": 1.99
   },
   "BLK": {
-   "mean": 0.1,
+   "mean": 0.05,
    "floor": 0.0,
-   "ceiling": 0.99
+   "ceiling": 0.94
   },
   "PTS": {
-   "mean": 4.6,
+   "mean": 2.1,
    "floor": 0.0,
-   "ceiling": 10.32
+   "ceiling": 7.81
   },
   "REB": {
-   "mean": 1.53,
+   "mean": 0.87,
    "floor": 0.0,
-   "ceiling": 3.74
+   "ceiling": 3.08
   },
   "STL": {
-   "mean": 0.48,
+   "mean": 0.24,
    "floor": 0.0,
-   "ceiling": 1.92
+   "ceiling": 1.04
   },
   "TOV": {
-   "mean": 0.61,
-   "floor": 0.01,
-   "ceiling": 2.01
+   "mean": 0.39,
+   "floor": 0.0,
+   "ceiling": 1.79
   },
   "PRA": {
-   "mean": 7.2,
+   "mean": 3.61,
    "floor": 0.0,
-   "ceiling": 15.91
+   "ceiling": 12.32
   },
   "PR": {
-   "mean": 6.14,
+   "mean": 2.97,
    "floor": 0.0,
-   "ceiling": 14.25
+   "ceiling": 11.09
   },
   "PA": {
-   "mean": 5.67,
+   "mean": 2.73,
    "floor": 0.0,
-   "ceiling": 12.45
+   "ceiling": 9.52
   },
   "RA": {
-   "mean": 2.59,
+   "mean": 1.51,
    "floor": 0.0,
-   "ceiling": 5.9
+   "ceiling": 4.81
   }
  },
  "minutes": {
-  "value": 11.6,
+  "value": 7.0,
   "source": "fallback"
  },
  "splits": {
   "season": {
    "games": 8,
-   "min_pg": 1.9,
+   "min_pg": 4.0,
    "PTS": {
-    "pg": 1.0,
-    "pm": 0.535
+    "pg": 0.12,
+    "pm": 0.031
    },
    "REB": {
-    "pg": 0.25,
-    "pm": 0.134
+    "pg": 0.38,
+    "pm": 0.094
    },
    "AST": {
+    "pg": 0.12,
+    "pm": 0.031
+   },
+   "3PM": {
     "pg": 0.0,
     "pm": 0.0
    },
-   "3PM": {
-    "pg": 0.25,
-    "pm": 0.134
-   },
    "STL": {
     "pg": 0.12,
-    "pm": 0.067
+    "pm": 0.031
    },
    "BLK": {
     "pg": 0.0,
     "pm": 0.0
    },
    "TOV": {
-    "pg": 0.0,
-    "pm": 0.0
+    "pg": 0.12,
+    "pm": 0.031
    }
   },
   "l10": {
    "games": 8,
-   "min_pg": 1.9,
+   "min_pg": 4.0,
    "PTS": {
-    "pg": 1.0,
-    "pm": 0.535
+    "pg": 0.12,
+    "pm": 0.031
    },
    "REB": {
-    "pg": 0.25,
-    "pm": 0.134
+    "pg": 0.38,
+    "pm": 0.094
    },
    "AST": {
+    "pg": 0.12,
+    "pm": 0.031
+   },
+   "3PM": {
     "pg": 0.0,
     "pm": 0.0
    },
-   "3PM": {
-    "pg": 0.25,
-    "pm": 0.134
-   },
    "STL": {
     "pg": 0.12,
-    "pm": 0.067
+    "pm": 0.031
    },
    "BLK": {
     "pg": 0.0,
     "pm": 0.0
    },
    "TOV": {
-    "pg": 0.0,
-    "pm": 0.0
+    "pg": 0.12,
+    "pm": 0.031
    }
   },
   "l5": {
    "games": 5,
-   "min_pg": 2.2,
+   "min_pg": 3.2,
    "PTS": {
-    "pg": 1.6,
-    "pm": 0.714
-   },
-   "REB": {
     "pg": 0.0,
     "pm": 0.0
+   },
+   "REB": {
+    "pg": 0.2,
+    "pm": 0.062
    },
    "AST": {
     "pg": 0.0,
     "pm": 0.0
    },
    "3PM": {
-    "pg": 0.4,
-    "pm": 0.178
+    "pg": 0.0,
+    "pm": 0.0
    },
    "STL": {
     "pg": 0.2,
-    "pm": 0.089
+    "pm": 0.062
    },
    "BLK": {
     "pg": 0.0,
@@ -161,15 +161,15 @@
    }
   },
   "home": {
-   "games": 5,
-   "min_pg": 1.5,
+   "games": 1,
+   "min_pg": 6.6,
    "PTS": {
-    "pg": 0.4,
-    "pm": 0.261
+    "pg": 0.0,
+    "pm": 0.0
    },
    "REB": {
-    "pg": 0.4,
-    "pm": 0.261
+    "pg": 1.0,
+    "pm": 0.152
    },
    "AST": {
     "pg": 0.0,
@@ -178,38 +178,6 @@
    "3PM": {
     "pg": 0.0,
     "pm": 0.0
-   },
-   "STL": {
-    "pg": 0.2,
-    "pm": 0.131
-   },
-   "BLK": {
-    "pg": 0.0,
-    "pm": 0.0
-   },
-   "TOV": {
-    "pg": 0.0,
-    "pm": 0.0
-   }
-  },
-  "away": {
-   "games": 3,
-   "min_pg": 2.4,
-   "PTS": {
-    "pg": 2.0,
-    "pm": 0.824
-   },
-   "REB": {
-    "pg": 0.0,
-    "pm": 0.0
-   },
-   "AST": {
-    "pg": 0.0,
-    "pm": 0.0
-   },
-   "3PM": {
-    "pg": 0.67,
-    "pm": 0.275
    },
    "STL": {
     "pg": 0.0,
@@ -222,21 +190,71 @@
    "TOV": {
     "pg": 0.0,
     "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 7,
+   "min_pg": 3.6,
+   "PTS": {
+    "pg": 0.14,
+    "pm": 0.039
+   },
+   "REB": {
+    "pg": 0.29,
+    "pm": 0.079
+   },
+   "AST": {
+    "pg": 0.14,
+    "pm": 0.039
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.14,
+    "pm": 0.039
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.14,
+    "pm": 0.039
    }
   }
  },
  "lines": {},
  "game_log": [
   {
-   "date": "2026-02-21",
-   "opp": "Memphis",
-   "venue": "H",
-   "game": "2026-02-21_memphis_vs_miami",
+   "date": "2025-10-28",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2025-10-28_golden-state_vs_la-clippers",
    "starter": false,
    "rest": "3+",
    "result": null,
    "opp_tier": null,
-   "min": 2.5,
+   "min": 2.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-04",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2025-11-04_la-clippers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "6",
+   "result": null,
+   "opp_tier": null,
+   "min": 6.6,
    "PTS": 0.0,
    "REB": 1.0,
    "AST": 0.0,
@@ -246,51 +264,33 @@
    "TOV": 0.0
   },
   {
-   "date": "2026-03-05",
-   "opp": "Brooklyn",
-   "venue": "H",
-   "game": "2026-03-05_brooklyn_vs_miami",
+   "date": "2025-11-06",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2025-11-06_la-clippers_vs_phoenix",
    "starter": false,
-   "rest": "11",
+   "rest": "1",
    "result": null,
    "opp_tier": null,
-   "min": 0.4,
-   "PTS": 0.0,
-   "REB": 0.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2026-03-08",
-   "opp": "Detroit",
-   "venue": "H",
-   "game": "2026-03-08_detroit_vs_miami",
-   "starter": false,
-   "rest": "2",
-   "result": null,
-   "opp_tier": null,
-   "min": 0.8,
-   "PTS": 0.0,
+   "min": 6.5,
+   "PTS": 1.0,
    "REB": 1.0,
-   "AST": 0.0,
+   "AST": 1.0,
    "3PM": 0.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 0.0
+   "TOV": 1.0
   },
   {
-   "date": "2026-03-10",
-   "opp": "Washington",
-   "venue": "H",
-   "game": "2026-03-10_miami_vs_washington",
+   "date": "2025-11-20",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-11-20_la-clippers_vs_orlando",
    "starter": false,
-   "rest": "1",
+   "rest": "13",
    "result": null,
    "opp_tier": null,
-   "min": 1.1,
+   "min": 4.8,
    "PTS": 0.0,
    "REB": 0.0,
    "AST": 0.0,
@@ -300,90 +300,144 @@
    "TOV": 0.0
   },
   {
-   "date": "2026-04-07",
-   "opp": "Toronto",
+   "date": "2025-11-22",
+   "opp": "Charlotte",
    "venue": "R",
-   "game": "2026-04-07_miami_vs_toronto",
-   "starter": false,
-   "rest": "27",
-   "result": null,
-   "opp_tier": null,
-   "min": 2.8,
-   "PTS": 0.0,
-   "REB": 0.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2026-04-09",
-   "opp": "Toronto",
-   "venue": "R",
-   "game": "2026-04-09_miami_vs_toronto",
+   "game": "2025-11-22_charlotte_vs_la-clippers",
    "starter": false,
    "rest": "1",
    "result": null,
    "opp_tier": null,
-   "min": 3.1,
-   "PTS": 6.0,
-   "REB": 0.0,
-   "AST": 0.0,
-   "3PM": 2.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2026-04-10",
-   "opp": "Washington",
-   "venue": "R",
-   "game": "2026-04-10_miami_vs_washington",
-   "starter": false,
-   "rest": "0",
-   "result": null,
-   "opp_tier": null,
-   "min": 1.4,
+   "min": 3.3,
    "PTS": 0.0,
-   "REB": 0.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2026-04-12",
-   "opp": "Atlanta",
-   "venue": "H",
-   "game": "2026-04-12_atlanta_vs_miami",
-   "starter": false,
-   "rest": "1",
-   "result": null,
-   "opp_tier": null,
-   "min": 2.8,
-   "PTS": 2.0,
    "REB": 0.0,
    "AST": 0.0,
    "3PM": 0.0,
    "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-23",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-11-23_cleveland_vs_la-clippers",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.5,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-25",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2025-11-25_la-clippers_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 1.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-03",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2025-12-03_atlanta_vs_la-clippers",
+   "starter": false,
+   "rest": "7",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
    "BLK": 0.0,
    "TOV": 0.0
   }
  ],
  "recent_games": [
   {
-   "date": "2026-04-12",
+   "date": "2025-12-03",
    "opp": "Atlanta",
-   "venue": "H",
-   "game": "2026-04-12_atlanta_vs_miami",
+   "venue": "R",
+   "game": "2025-12-03_atlanta_vs_la-clippers",
+   "starter": false,
+   "rest": "7",
+   "result": null,
+   "opp_tier": null,
+   "min": 2.6,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-25",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2025-11-25_la-clippers_vs_la-lakers",
    "starter": false,
    "rest": "1",
    "result": null,
    "opp_tier": null,
-   "min": 2.8,
-   "PTS": 2.0,
+   "min": 1.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-23",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2025-11-23_cleveland_vs_la-clippers",
+   "starter": false,
+   "rest": "0",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.5,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-11-22",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2025-11-22_charlotte_vs_la-clippers",
+   "starter": false,
+   "rest": "1",
+   "result": null,
+   "opp_tier": null,
+   "min": 3.3,
+   "PTS": 0.0,
    "REB": 0.0,
    "AST": 0.0,
    "3PM": 0.0,
@@ -392,15 +446,15 @@
    "TOV": 0.0
   },
   {
-   "date": "2026-04-10",
-   "opp": "Washington",
+   "date": "2025-11-20",
+   "opp": "Orlando",
    "venue": "R",
-   "game": "2026-04-10_miami_vs_washington",
+   "game": "2025-11-20_la-clippers_vs_orlando",
    "starter": false,
-   "rest": "0",
+   "rest": "13",
    "result": null,
    "opp_tier": null,
-   "min": 1.4,
+   "min": 4.8,
    "PTS": 0.0,
    "REB": 0.0,
    "AST": 0.0,
@@ -410,69 +464,33 @@
    "TOV": 0.0
   },
   {
-   "date": "2026-04-09",
-   "opp": "Toronto",
+   "date": "2025-11-06",
+   "opp": "Phoenix",
    "venue": "R",
-   "game": "2026-04-09_miami_vs_toronto",
+   "game": "2025-11-06_la-clippers_vs_phoenix",
    "starter": false,
    "rest": "1",
    "result": null,
    "opp_tier": null,
-   "min": 3.1,
-   "PTS": 6.0,
-   "REB": 0.0,
-   "AST": 0.0,
-   "3PM": 2.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2026-04-07",
-   "opp": "Toronto",
-   "venue": "R",
-   "game": "2026-04-07_miami_vs_toronto",
-   "starter": false,
-   "rest": "27",
-   "result": null,
-   "opp_tier": null,
-   "min": 2.8,
-   "PTS": 0.0,
-   "REB": 0.0,
-   "AST": 0.0,
+   "min": 6.5,
+   "PTS": 1.0,
+   "REB": 1.0,
+   "AST": 1.0,
    "3PM": 0.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 0.0
+   "TOV": 1.0
   },
   {
-   "date": "2026-03-10",
-   "opp": "Washington",
+   "date": "2025-11-04",
+   "opp": "Oklahoma City",
    "venue": "H",
-   "game": "2026-03-10_miami_vs_washington",
+   "game": "2025-11-04_la-clippers_vs_oklahoma-city",
    "starter": false,
-   "rest": "1",
+   "rest": "6",
    "result": null,
    "opp_tier": null,
-   "min": 1.1,
-   "PTS": 0.0,
-   "REB": 0.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2026-03-08",
-   "opp": "Detroit",
-   "venue": "H",
-   "game": "2026-03-08_detroit_vs_miami",
-   "starter": false,
-   "rest": "2",
-   "result": null,
-   "opp_tier": null,
-   "min": 0.8,
+   "min": 6.6,
    "PTS": 0.0,
    "REB": 1.0,
    "AST": 0.0,
@@ -482,35 +500,17 @@
    "TOV": 0.0
   },
   {
-   "date": "2026-03-05",
-   "opp": "Brooklyn",
-   "venue": "H",
-   "game": "2026-03-05_brooklyn_vs_miami",
-   "starter": false,
-   "rest": "11",
-   "result": null,
-   "opp_tier": null,
-   "min": 0.4,
-   "PTS": 0.0,
-   "REB": 0.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0
-  },
-  {
-   "date": "2026-02-21",
-   "opp": "Memphis",
-   "venue": "H",
-   "game": "2026-02-21_memphis_vs_miami",
+   "date": "2025-10-28",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2025-10-28_golden-state_vs_la-clippers",
    "starter": false,
    "rest": "3+",
    "result": null,
    "opp_tier": null,
-   "min": 2.5,
+   "min": 2.9,
    "PTS": 0.0,
-   "REB": 1.0,
+   "REB": 0.0,
    "AST": 0.0,
    "3PM": 0.0,
    "STL": 0.0,
@@ -519,5 +519,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Detroit"
+ "opp": "Toronto"
 }
