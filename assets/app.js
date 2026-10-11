@@ -169,7 +169,7 @@ async function renderFreshness() {
       `<span>Updated <b>${whenAEDT(m.computed_at)}</b>${build ? ` · ${build}` : ""}</span>` +
       (m.lines_region === "us"
         ? `<span>Lines from <b>US bookmakers</b> until Australian books price NBA player props</span>`
-        : m.lines_region === "au" ? `<span>Lines from <b>Australian bookmakers</b></span>` : "") +
+        : m.lines_region === "au" ? `<span>Lines from <b>Australian bookmakers</b>; a US book stands in where no Australian book has priced a player</span>` : "") +
       (m.demo ? `<span class="demo">Demo: last season's replay, not live</span>` : "");
     return m;
   } catch {
@@ -1286,7 +1286,7 @@ async function initTip() {
         <div class="fig"><div class="k">Book line</div><div class="v">${fmt(t.line)}</div></div>
         <div class="fig"><div class="k">Edge ${sideGlyph(t.side)}</div><div class="v ${t.side}">${pct(t.edge)}</div></div>
       </div>
-      <div class="foot">Posted ${t.posted_at ? whenAEDT(t.posted_at) : ""}${t.au_book ? "" : " · US line: Australian books aren't pricing NBA player props yet"}${closed ? " · " + closed : ""}${res}</div>
+      <div class="foot">Posted ${t.posted_at ? whenAEDT(t.posted_at) : ""}${t.au_book ? "" : " · US line: no Australian book priced this player"}${closed ? " · " + closed : ""}${res}</div>
     </div>`;
   } else {
     $("#tlead").textContent = `No tip is posted for ${day} yet. It goes up around `
@@ -1296,8 +1296,8 @@ async function initTip() {
 
   const s = d.summary;
   $("#tnote").textContent = s.n_tips
-    ? `Regular-season tips only; preseason trial tips are listed below but not counted. Prices are US market lines until Australian books price NBA player props.`
-    : `The record starts on opening night, 20 October (21 October AEDT). Preseason tips are a trial run: listed, never counted. Prices are US market lines until Australian books price NBA player props.`;
+    ? `Regular-season tips only; preseason trial tips are listed below but not counted. Each tip names its bookmaker; a US book stands in where no Australian book priced the player.`
+    : `The record starts on opening night, 20 October (21 October AEDT). Preseason tips are a trial run: listed, never counted. Each tip names its bookmaker; a US book stands in where no Australian book priced the player.`;
   $("#tcards").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(s.avg_clv)}</div><div class="r">${s.n_clv} graded at the close</div></div>
     <div class="card"><div class="k">Beat the close</div><div class="v">${pct(s.beat_close)}</div></div>
