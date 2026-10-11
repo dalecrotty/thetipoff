@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Our NBA Predictions Work: Minutes, Production and Matchups | thetipoff</title>
+<meta name="description" content="How thetipoff predicts every NBA player&#x27;s points, rebounds, assists and threes: minutes first, then production per minute, the opponent, and a range, each piece tested before it&#x27;s used.">
+<meta name="theme-color" content="#0a0d11">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%230a0d11%22/%3E%3Cg transform=%22translate(8.40 56.32) scale(0.5792)%22%3E%3Cpath d=%22M33.5 0.0Q26.1 0.0 22.6 -3.9000000000000004Q19.1 -7.800000000000001 19.1 -14.0V-41.5H4.1000000000000005V-51.6H14.3Q17.400000000000002 -51.6 18.700000000000003 -52.85Q20.0 -54.1 20.0 -57.300000000000004V-69.8H31.900000000000002V-51.6H52.900000000000006V-41.5H31.900000000000002V-10.100000000000001H52.900000000000006V0.0Z%22 fill=%22%23e8ebf0%22/%3E%3Ccircle cx=%2266.90%22 cy=%22-73.47%22 r=%2210.50%22 fill=%22%23ff6b2c%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/style.css">
+<meta name="google-site-verification" content="IVbNidC2M0lhbTdu--Wp42ezV7IYYM9X9KUvdADQcZU">
+<script src="/assets/analytics.js" defer></script>
+<script src="/assets/app.js" defer></script>
+<link rel="canonical" href="https://thetipoff.com.au/learn/how-our-nba-predictions-work.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How our NBA predictions work", "url": "https://thetipoff.com.au/learn/how-our-nba-predictions-work.html", "author": {"@type": "Organization", "name": "thetipoff"}, "description": "How thetipoff predicts every NBA player's points, rebounds, assists and threes: minutes first, then production per minute, the opponent, and a range, each piece tested before it's used."}</script>
+</head>
+<body data-page="static">
+<header class="site">
+  <a class="logo" href="/index.html" aria-label="thetipoff home">the<b>tipoff</b><i></i></a>
+  <nav class="site">
+    <a href="/predictions.html">Predictions</a>
+    <a href="/tip.html">Just the Tip</a>
+    <a href="/games.html">Game trends</a>
+    <a href="/player.html">Players</a>
+    <a href="/matchups.html">Matchups</a>
+    <a href="/with-without.html">With/Without</a>
+    <a href="/track-record.html">Track record</a>
+  </nav>
+  <button id="themeBtn" aria-label="Switch between dark and light">
+    <svg class="moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.5 9.5A5.5 5.5 0 1 1 6.5 2.5a4.5 4.5 0 0 0 7 7Z"/></svg>
+    <svg class="sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.4 1.4M11.6 11.6 13 13M3 13l1.4-1.4M11.6 4.4 13 3"/></svg>
+  </button>
+</header>
+<main class="static">
+<p class="kicker">Explainer</p>
+<h1>How our NBA predictions work</h1>
+<p class="lead">Every prediction on thetipoff is minutes times production: how long we
+expect a player to be on the court tonight, multiplied by what he produces per minute,
+adjusted for the opponent, then given a range the result should land inside 80% of the
+time.</p>
+
+<h2>Minutes come first</h2>
+<p>Most of what changes from night to night is playing time, so that's where the model
+starts. A team plays 240 minutes a game (a little more on average, once overtime is
+counted), and those minutes are shared out. When a player is ruled out, his minutes are
+shared among the teammates still available. Once teams confirm their starting fives near
+tip-off, more of them go to the teammates who have absorbed that player's minutes
+before.</p>
+<p>On top of each player's usual role, the model adjusts for the situations that
+reliably move minutes:</p>
+<ul class="plain">
+  <li><b>Back-to-backs.</b> On the second night, starters play a little less and the bench
+  a little more.</li>
+  <li><b>Coming back from an absence.</b> A player returning after missing three to nine
+  games is eased back in slightly; after ten or more, noticeably.</li>
+  <li><b>Expected blowouts.</b> When the bookmakers' spread is ten points or more, the
+  bench gets extra time.</li>
+  <li><b>Playoffs.</b> Rotations shorten: starters play more, the bench less.</li>
+  <li><b>Who starts.</b> In the morning we use the projected starting fives and the
+  depth chart; once teams confirm their fives near tip-off, we use them. A player
+  projected to start out of his usual position gets that position for the night.</li>
+</ul>
+
+<h2>Then production per minute</h2>
+<p>Each player's points, rebounds, assists and threes per minute come from his recent
+games, with older games counting for less. On the second night of a back-to-back,
+assists and threes per minute dip slightly. Rookies and anyone with fewer than ten NBA
+games get an early estimate that blends their own games with a typical player at their
+position, with wider ranges, and they're kept out of edges until they've played more.</p>
+
+<h2>Then the opponent</h2>
+<p>Some defences give up more to guards, others to big men. For each opponent we measure
+what it allows to each position against the league average, with recent games weighted
+more heavily, and apply that at half strength. Tested on last season, full strength
+helped late in the season and hurt early, when the numbers are thin; half strength
+held up in both.</p>
+
+<h2>Then a range</h2>
+<p>A single number hides how uncertain a night is, so every prediction carries a range
+the result should land inside 80% of the time. The range isn't printed on the board;
+it's what turns a prediction and a line into a probability, and the
+<a href="/track-record.html">track record</a> reports how often results actually landed
+inside it. <a href="/learn/what-the-prediction-ranges-mean.html">What the ranges mean</a>
+explains how they're built.</p>
+
+<h2>What isn't in the prediction</h2>
+<p>Some things look like they should matter and didn't survive testing. When a star sits,
+the board shows how each teammate has done without him ("Jokić out: +3.1 without him"),
+but that shift isn't added to the prediction. Tested across last season, it mostly
+double-counts minutes the model already hands out. Home and away made almost no
+difference once minutes were right. We show these as information and leave the number
+alone until the evidence says otherwise.</p>
+
+<h2>Tested before it's used</h2>
+<p>Every piece above had to make predictions more accurate on games it hadn't seen (last
+season, split into early and late halves) before it went in. Ideas that looked good but
+made the numbers worse were left out. Even so, most of a miss is the night itself: with a
+player's exact minutes known in advance, points predictions would still miss by about four
+points a game on average.</p>
+
+<h2>When the numbers update</h2>
+<p>The main build runs early each morning Sydney time, after the afternoon injury report
+in the US. The numbers are rerun after each later injury report, 90 minutes before tip-off
+and once more just before it. When a prediction moves, the board shows the earlier number
+and why ("22.4 → 25.1, Jokić out").</p>
+
+<h2>What's free and what's for members</h2>
+<p>Until 30 November everything is open. From 1 December the predictions, probabilities,
+edges, matchups and with/without numbers are for members; who plays, the bookmaker line and
+how often each player has cleared it in his last five and ten games stay free, and one game a
+night is fully open as the free game of the day. Game pages, game trends, team pages, Just the
+Tip and the track record stay free.</p>
+</main>
+<footer class="rg">
+  <b>18+.</b> Predictions are statistical estimates, not betting advice.
+  Gamble responsibly —
+  <a href="https://www.gamblinghelponline.org.au">Gambling Help Online</a>
+  · 1800 858 858.
+  <div class="social">Follow <a href="https://x.com/thetipoff_nba">@thetipoff_nba</a> on X for the tip each night. · <a href="/api.html">Open data</a> · <a href="/learn/">How it works</a></div>
+</footer>
+</body>
+</html>
