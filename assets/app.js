@@ -90,6 +90,32 @@ async function loadJSON(path) {
   return r.json();
 }
 
+/* The members' data (api.html#members). The public file under /data
+   carries the free columns; the full payload comes from the data endpoint,
+   open to everyone until 1 December and then to members. If the endpoint
+   is down or says members only, the page runs on the public file and the
+   members' columns show as locked. */
+const DATA_API = "https://gpupsgkyyldqyfemtjml.supabase.co/functions/v1/data";
+window.DATA_LOCKED = false;
+function memberToken() {
+  try { return localStorage.getItem("tipoff.member_token") || ""; } catch { return ""; }
+}
+async function loadData(name) {
+  const pub = loadJSON(name.startsWith("hub/") ? `data/player_hub/${name.slice(4)}.json` : `data/${name}.json`)
+    .catch(() => null);
+  let full = null;
+  try {
+    const r = await fetch(`${DATA_API}?name=${encodeURIComponent(name)}`, {
+      headers: { "Authorization": `Bearer ${memberToken() || SIGNUP.key}` } });
+    if (r.ok) full = await r.json();
+    else if (r.status === 401 || r.status === 403) window.DATA_LOCKED = true;
+  } catch { /* endpoint down: the public file stands */ }
+  const p = await pub;
+  if (full) return full;
+  if (p) return p;
+  throw new Error(`${name}: unavailable`);
+}
+
 /* Degraded mode (brief §5.2): the site must never show a blank page and
    must never let yesterday's numbers pass as today's. Two independent
    checks, because they catch different failures:
@@ -329,7 +355,7 @@ function leadSentence(rows) {
 
 async function initBoard() {
   const meta = await renderFreshness();
-  const data = await loadJSON("data/projections.json");
+  const data = await loadData("projections");
   let rows = data.rows;
   // L10 from our side's point of view: an under that the player went
   // over in 4 of 10 landed 6 of 10
@@ -466,7 +492,7 @@ async function initBoard() {
   const wg = want.get("game"), wt = want.get("team");
   if (wg && games.includes(wg)) {
     gameSel.value = wg;
-    loadJSON("data/games.json").then(gd => {
+    loadData("games").then(gd => {
       const g = (gd?.games || []).find(x => `${x.home} vs ${x.away}` === wg);
       if (g && g.url) $("#lead").insertAdjacentHTML("afterend",
         `<p class="sub"><a href="${gameHref(g)}">${esc(nick(g.away))} v ${esc(nick(g.home))}: the game page →</a></p>`);
@@ -691,7 +717,7 @@ async function initPlayer() {
   q.addEventListener("change", go);
   q.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
   const pid = cur.player_id;
-  const h = await loadJSON(`data/player_hub/${pid}.json`);
+  const h = await loadData(`hub/${pid}`);
 
   $("#pname").textContent = h.player;
   document.title = `${h.player} props and stats — the tipoff`;
@@ -1066,7 +1092,7 @@ async function initWow() {
 /* ---------- matchups page ---------- */
 async function initMatchups() {
   await renderFreshness();
-  const data = await loadJSON("data/matchups.json");
+  const data = await loadData("matchups");
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
   const ORDER = ["PG", "SG", "SF", "PF", "C", "G", "F"];
   const positions = [...new Set(
@@ -1322,8 +1348,8 @@ async function initHome() {
   await renderFreshness();
   const [tips, board, gd, trackRec] = await Promise.all([
     loadJSON("data/tips.json").catch(() => null),
-    loadJSON("data/projections.json").catch(() => null),
-    loadJSON("data/games.json").catch(() => null),
+    loadData("projections").catch(() => null),
+    loadData("games").catch(() => null),
     loadJSON("data/track_record.json").catch(() => null)]);
   // the record, in the open (brief §10): accuracy first, then the tip's CLV
   const pts = ((trackRec?.calibration?.markets) || []).find(m => m.stat === "PTS");
@@ -1552,7 +1578,7 @@ function gameCard(g, rows, inRange) {
 /* ---------- Game trends page ---------- */
 async function initTrends() {
   await renderFreshness();
-  const [d, gd] = await Promise.all([loadJSON("data/trends.json"), loadJSON("data/games.json").catch(() => null)]);
+  const [d, gd] = await Promise.all([loadJSON("data/trends.json"), loadData("games").catch(() => null)]);
   const all = d.rows || [];
   const games = gd?.games || [];
   const state = { ...SIT_DEFAULT };
@@ -1630,7 +1656,7 @@ function multiSelect(el, label, options, onChange) {
 async function initTeam() {
   await renderFreshness();
   const team = document.body.dataset.team;
-  const [d, gd] = await Promise.all([loadJSON("data/trends.json"), loadJSON("data/games.json").catch(() => null)]);
+  const [d, gd] = await Promise.all([loadJSON("data/trends.json"), loadData("games").catch(() => null)]);
   const mine = (d.rows || []).filter(r => r.team === team).sort((a, b) => a.date < b.date ? 1 : -1);
   const seasons = (d.seasons || []).slice().reverse();
   const rotation = d.rotation?.[team] || {};
@@ -1699,7 +1725,7 @@ async function initTeam() {
 /* ---------- schedule (AEDT) ---------- */
 async function initSchedule() {
   await renderFreshness();
-  const d = await loadJSON("data/games.json");
+  const d = await loadData("games");
   const games = d.games || [];
   if (!games.length) { $("#sclead").textContent = "No NBA games today."; return; }
   const first = games.find(g => g.start);

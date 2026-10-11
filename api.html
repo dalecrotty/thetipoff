@@ -35,38 +35,39 @@
 <main>
   <p class="kicker">Open data</p>
   <h1>NBA predictions as JSON</h1>
-  <p class="lead">Every number on thetipoff comes from a public JSON file,
-  refreshed after each run (the morning build, injury updates and the final
-  refresh before tip-off). Use them freely with a link back to thetipoff.com.au.</p>
+  <p class="lead">Every number on thetipoff comes from JSON, refreshed after each
+  run (the morning build, injury updates and the final refresh before tip-off).
+  The public files below are free to use with a link back to thetipoff.com.au;
+  the members' data (predictions, probabilities, edges, matchups, with/without)
+  comes from one endpoint, open to everyone until 1 December 2026.</p>
   <div class="prose">
-  <h2>Tonight's player predictions</h2>
+  <h2>Tonight's players and lines</h2>
   <p><a href="data/projections.json"><code>/data/projections.json</code></a>:
-  <code>slate_date</code> (the US date), <code>model_version</code> and
+  <code>slate_date</code> (the US date), <code>model_version</code>,
+  <code>free_game</code> (the game whose rows are fully open today) and
   <code>rows</code>, one per player and market:</p>
   <ul class="plain">
-    <li><code>player_id</code>, <code>player</code>, <code>team</code>, <code>opp</code></li>
+    <li><code>player_id</code>, <code>player</code>, <code>team</code>, <code>opp</code>, <code>game</code></li>
     <li><code>stat</code>: PTS, REB, AST, 3PM, STL, BLK, or a combined market PRA, PR, PA, RA</li>
-    <li><code>proj</code>: our prediction; <code>floor</code> and <code>ceiling</code>: the range
-    the result lands inside 80% of the time</li>
-    <li><code>minutes</code>: predicted minutes</li>
     <li><code>line</code>, <code>price</code>, <code>book</code>: the bookmaker line, its
-    decimal price for our side, and the bookmaker</li>
-    <li><code>side</code> and <code>edge</code>: the side our probability favours and by how much
-    (our probability minus the bookmaker's, margin removed)</li>
-    <li><code>l10_over</code>: how often he went over this line in his last 10 games</li>
-    <li><code>mu</code>, <code>mu_rank</code>: how much the opponent gives up to his
-    position against the league, and its rank (1 = softest)</li>
-    <li><code>prior</code>, <code>move_reason</code>: the earlier prediction and why it
-    moved, after team news</li>
+    decimal price and the bookmaker (US market lines until Australian books price
+    NBA player props)</li>
+    <li><code>l5_over</code>, <code>l10_over</code>: how often he went over this line in his
+    last 5 and last 10 games</li>
+    <li><code>pos</code>, <code>pos_usual</code>: his position tonight and his usual one</li>
+    <li>Rows for the free game of the day also carry every members' field below.</li>
   </ul>
-  <h2>Tonight's game predictions</h2>
+  <h2>Tonight's games</h2>
   <p><a href="data/games.json"><code>/data/games.json</code></a>: <code>games</code>,
   one per game: <code>start</code> (UTC), <code>home</code>, <code>away</code>,
-  <code>pred_home</code>, <code>pred_away</code>, <code>total</code> with
-  <code>total_lo</code>–<code>total_hi</code> (80% range), <code>p_home</code> (home win
-  chance), <code>line_home</code> (our spread for the home side, negative when
-  favoured), and the bookmakers' <code>book_line_home</code>, <code>book_total</code>
-  and <code>book_p_home</code>; <code>out</code> lists who's ruled out on each side.</p>
+  <code>p_home</code> (our home win chance), the bookmakers'
+  <code>book_line_home</code>, <code>book_total</code> and <code>book_p_home</code>,
+  <code>out</code> (who's ruled out on each side), <code>url</code> (the game's page)
+  and <code>free_game</code>.</p>
+  <h2>Players</h2>
+  <p><code>/data/player_hub/&lt;player_id&gt;.json</code>: <code>lines</code> (tonight's
+  line, price and bookmaker per market), <code>recent_games</code> (his last five) and
+  <code>hits</code> (how many of those cleared tonight's line, per market).</p>
   <h2>Just the Tip</h2>
   <p><a href="data/tips.json"><code>/data/tips.json</code></a>: <code>today</code> (tonight's
   tip, or null), <code>summary</code> (the regular-season record: average CLV,
@@ -77,13 +78,27 @@
   <code>calibration.markets</code>, per market and window (7 days, 30 days, season):
   <code>n</code>, <code>mae</code> (average miss), <code>bias</code> (prediction minus
   result), <code>coverage</code> (share inside the 80% range), <code>below</code> and
-  <code>above</code>.</p>
+  <code>above</code>; <code>plays</code>, the graded record (won, lost, push, void,
+  hit rate, closing-line value; return on stake from 100 graded plays).</p>
   <h2>Game trends</h2>
   <p><a href="data/trends.json"><code>/data/trends.json</code></a>: one row per team per
   game from last season on: score, rest days for both sides, the previous result, the
   closing spread (from that team's side) and total, conference and division flags,
   whether a top-three-minutes player sat, and which rotation players sat. Last
-  season's lines are ESPN's stored near-closing line.</p>
+  season's lines are ESPN's stored near-closing line. Team game logs sit under
+  <code>/data/teams/</code> and box scores under <code>/data/box_scores/</code>.</p>
+  <h2 id="members">Members' data</h2>
+  <p><code>GET https://gpupsgkyyldqyfemtjml.supabase.co/functions/v1/data?name=…</code>
+  with the site's public key as a bearer token (it is in the page source). Names:
+  <code>projections</code> (every row with <code>proj</code>, <code>floor</code>,
+  <code>ceiling</code>, <code>minutes</code>, <code>side</code>, <code>edge</code>,
+  <code>mu</code> and <code>mu_rank</code> (matchup), <code>ww</code> (with/without),
+  <code>prior</code> and <code>move_reason</code>, plus <code>movers</code>),
+  <code>games</code> (with our projected score, margin and total), <code>matchups</code>
+  (what each defence gives up by position) and <code>hub/&lt;player_id&gt;</code> (the
+  full player file: predictions, season and recent splits, the game log, with/without
+  tonight). Open to everyone until 1 December 2026; from then it answers a member's
+  sign-in token, and the public files keep the free columns.</p>
   <p class="sub">Fields may be added; anything removed or renamed changes
   <code>model_version</code> first. Decimal odds throughout.</p>
   </div>
