@@ -464,7 +464,14 @@ async function initBoard() {
   // a game or team in the address: the home strip and game pages link here
   const want = new URLSearchParams(location.search);
   const wg = want.get("game"), wt = want.get("team");
-  if (wg && games.includes(wg)) gameSel.value = wg;
+  if (wg && games.includes(wg)) {
+    gameSel.value = wg;
+    loadJSON("data/games.json").then(gd => {
+      const g = (gd?.games || []).find(x => `${x.home} vs ${x.away}` === wg);
+      if (g && g.url) $("#lead").insertAdjacentHTML("afterend",
+        `<p class="sub"><a href="${gameHref(g)}">${esc(nick(g.away))} v ${esc(nick(g.home))}: the game page →</a></p>`);
+    }).catch(() => {});
+  }
   else if (wt && [...teamSel.options].some(o => o.value === wt)) teamSel.value = wt;
   sortable($("#board"), rows, render);
   // default: biggest edge first; rows without a line after, by prediction
@@ -1348,13 +1355,16 @@ async function initHome() {
       <div class="t">${g.start ? aedtTime(g.start) : ""}</div>
       <div class="m">${teamBadge(g.away)} <span class="dim">@</span> ${teamBadge(g.home)}</div>
       <div class="sm">${favLine(g, g.book_line_home)} · ${g.book_total == null ? "total —" : fmt(g.book_total)}</div>
-      <div class="sm dim">${g.book_line_home == null ? "lines to come" : "bookmaker line"} · players →</div>
+      <div class="sm dim">${g.free_game ? "free game of the day" : g.book_line_home == null ? "lines to come" : "bookmaker line"} · prediction →</div>
     </a>`).join("")
     : `<p class="dim">No games tonight.</p>`;
 }
 
 /* the board, filtered to one game: its label there is "Home vs Away" */
-const gameHref = g => `predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
+/* a game's own page (dated, /nba/games/...), written by the pipeline; the
+   board filtered to the game is linked from there */
+const gameHref = g => g.url ? g.url.replace(/^\//, "") : `predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
+const boardHref = g => `predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
 const TEAM_NICK = { Atlanta: "Hawks", Boston: "Celtics", Brooklyn: "Nets", Charlotte: "Hornets",
   Chicago: "Bulls", Cleveland: "Cavaliers", Dallas: "Mavericks", Denver: "Nuggets", Detroit: "Pistons",
   "Golden State": "Warriors", Houston: "Rockets", Indiana: "Pacers", "LA Clippers": "Clippers",
@@ -1528,7 +1538,7 @@ function gameCard(g, rows, inRange) {
     <header><span class="t">${g.start ? whenAEDT(g.start) : ""}</span>
       <span class="line">${g.book_line_home == null ? "lines to come" : `${favLine(g, g.book_line_home)} · total ${fmt(g.book_total)}`}</span></header>
     <div class="sides">${sides}</div>
-    <p class="sm"><a href="${gameHref(g)}">Player predictions for this game →</a> · <a href="${pairHref(g)}">Game page</a></p>
+    <p class="sm"><a href="${gameHref(g)}">Game page →</a> · <a href="${boardHref(g)}">Player predictions</a></p>
   </article>`;
 }
 
@@ -1674,7 +1684,7 @@ async function initTeam() {
       tonight.start ? whenAEDT(tonight.start) : ""}</span><span class="line">${tonight.book_line_home != null
       ? `${favLine(tonight, tonight.book_line_home)} · total ${fmt(tonight.book_total)}` : "lines to come"}</span></header>
       <ul class="trend">${sideTrends(team, sit, d.rows || [], range.inRange)}</ul>
-      <p class="sm"><a href="${gameHref(tonight)}">Player predictions for this game →</a> · <a href="${pairHref(tonight)}">Game page</a></p></div>`;
+      <p class="sm"><a href="${gameHref(tonight)}">Game page →</a> · <a href="${boardHref(tonight)}">Player predictions</a></p></div>`;
   }
   render();
 }
@@ -1690,7 +1700,7 @@ async function initSchedule() {
     + (first ? ` (${auDate(first.start)}); the first tips off at <b>${whenAEDT(first.start).split(",")[0]}</b>.` : ".");
   $("#sched tbody").innerHTML = games.map(g => `<tr>
       <td class="s">${g.start ? whenAEDT(g.start).split(",")[0] : "—"}</td>
-      <td class="s"><a href="${pairHref(g)}">${teamBadge(g.away)} <span class="tn">${esc(g.away)}</span> <span class="dim">@</span> ${teamBadge(g.home)} <span class="tn">${esc(g.home)}</span></a></td>
+      <td class="s"><a href="${gameHref(g)}">${teamBadge(g.away)} <span class="tn">${esc(g.away)}</span> <span class="dim">@</span> ${teamBadge(g.home)} <span class="tn">${esc(g.home)}</span></a></td>
       <td class="num">${favLine(g, g.book_line_home)}</td>
       <td class="num">${g.book_total == null ? "—" : fmt(g.book_total)}</td></tr>`).join("");
 }
