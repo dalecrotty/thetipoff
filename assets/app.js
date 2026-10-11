@@ -1077,7 +1077,7 @@ async function initWow() {
     team = await loadJSON(`data/teams/${slug}.json`);
     state.clear();
     playerSel.innerHTML = team.players.map(p =>
-      `<option value="${p.id}">${esc(p.name)} — ${p.med_min} min</option>`).join("");
+      `<option value="${p.id}">${esc(p.name)}</option>`).join("");   // ordered by minutes, unlabelled (owner, 12 Oct 2026)
     focal = playerSel.value;
     renderMates();
     render();
