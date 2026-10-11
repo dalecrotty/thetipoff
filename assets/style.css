@@ -357,8 +357,19 @@ td .sm + .sm { margin-top: 1px; }
 .filters .minrange { display: flex; gap: 6px; }
 .filters .chip { width: 100%; height: 33px; }
 /* the filter bar stays in view on wide screens while you read the chart */
-@media (min-width: 901px) { .filters { position: sticky; top: 60px; z-index: 4;
-  box-shadow: 0 8px 16px -12px rgba(0,0,0,.5); } }
+@media (min-width: 901px) {
+  .filters { position: sticky; top: 60px; z-index: 4; box-shadow: 0 8px 16px -12px rgba(0,0,0,.5);
+    padding: 8px 12px 10px; }
+  .filters summary { display: inline-block; margin: 0 0 6px; }
+  .filters .fgrid { grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 6px 8px; }
+  .filters .fgrid label:has(.minrange) { grid-column: span 1; }
+  /* game trends and team pages: six filters a row, dates on the right */
+  .sits { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
+  .daterange { justify-content: space-between; }   /* dates right of the chips, or left on their own row */
+  /* with / without: the two teammate pickers side by side, not five columns of nothing */
+  #wPick { grid-template-columns: repeat(2, minmax(0, 320px)); }
+  .controls > select { max-width: 320px; }
+}
 .chartctl { align-items: center; }
 table.summary-t { min-width: 760px; }
 table.summary-t th.st { color: var(--st, var(--faint)); }
@@ -475,8 +486,7 @@ table.gt th, table.gt td { padding: 6px 4px; }
 table.gt td.s { color: var(--muted); font-size: 13px; }
 table.gt td.gap { color: var(--ink); font-weight: 600; }
 
-/* ---------- splits ---------- */
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 6px; }
+/* ---------- game trends (was splits) ---------- */
 .fsel { display: flex; flex-direction: column; gap: 3px; }
 .fsel span { font: 500 10.5px var(--mono); color: var(--faint); letter-spacing: .07em; text-transform: uppercase; }
 .fsel select { background: var(--panel); color: var(--ink); border: 1px solid var(--line);
@@ -541,6 +551,7 @@ td.empty { white-space: normal; }
 
 /* ---------- Game trends (owner, 6 Oct 2026) ---------- */
 .daterange { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: end; margin: 10px 0 12px; }
+.daterange .dates { display: flex; gap: 8px 14px; }   /* the two dates move as one unit */
 .daterange label { display: flex; flex-direction: column; gap: 3px; font: 500 11px/1.2 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
 .daterange input[type="date"] { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font: 13px var(--mono); }
 .sits { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px 10px; margin: 0 0 12px; }

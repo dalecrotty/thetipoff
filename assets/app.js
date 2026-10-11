@@ -1496,8 +1496,10 @@ function dateRangeControl(el, data, onChange) {
   if (!dates.some(d => d >= thisStart)) { state.from = lastStart; }   // before opening night: last season
   el.innerHTML = `<div class="daterange">
     <div class="chips">${presets.map(p => `<button class="chip" data-p="${p[0]}">${p[1]}</button>`).join("")}</div>
-    <label>From <input type="date" id="drFrom" min="${lo}" max="${hi}" value="${state.from}"></label>
-    <label>To <input type="date" id="drTo" min="${lo}" max="${hi}" value="${state.to}"></label>
+    <div class="dates">
+      <label>From <input type="date" id="drFrom" min="${lo}" max="${hi}" value="${state.from}"></label>
+      <label>To <input type="date" id="drTo" min="${lo}" max="${hi}" value="${state.to}"></label>
+    </div>
   </div>`;
   const mark = () => $$(".chip", el).forEach(c => {
     const p = presets.find(x => x[0] === c.dataset.p);
