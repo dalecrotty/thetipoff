@@ -4,63 +4,63 @@
  "team": "Dallas",
  "projections": {
   "3PM": {
-   "mean": 0.76,
+   "mean": 0.75,
    "floor": 0.0,
-   "ceiling": 2.02
+   "ceiling": 2.0
   },
   "AST": {
-   "mean": 3.78,
-   "floor": 1.07,
-   "ceiling": 6.76
+   "mean": 3.7,
+   "floor": 1.01,
+   "ceiling": 6.81
   },
   "BLK": {
-   "mean": 0.71,
+   "mean": 0.7,
+   "floor": 0.0,
+   "ceiling": 2.0
+  },
+  "PTS": {
+   "mean": 17.62,
+   "floor": 8.98,
+   "ceiling": 26.55
+  },
+  "REB": {
+   "mean": 4.78,
+   "floor": 1.54,
+   "ceiling": 7.92
+  },
+  "STL": {
+   "mean": 0.95,
    "floor": 0.0,
    "ceiling": 2.02
   },
-  "PTS": {
-   "mean": 18.0,
-   "floor": 7.57,
-   "ceiling": 28.17
-  },
-  "REB": {
-   "mean": 4.88,
-   "floor": 1.74,
-   "ceiling": 8.55
-  },
-  "STL": {
-   "mean": 0.97,
-   "floor": 0.0,
-   "ceiling": 2.04
-  },
   "TOV": {
-   "mean": 1.8,
-   "floor": 0.0,
-   "ceiling": 3.83
+   "mean": 1.76,
+   "floor": 0.12,
+   "ceiling": 3.19
   },
   "PRA": {
-   "mean": 26.66,
-   "floor": 16.09,
-   "ceiling": 38.32
+   "mean": 26.1,
+   "floor": 15.53,
+   "ceiling": 37.77
   },
   "PR": {
-   "mean": 22.88,
-   "floor": 13.17,
-   "ceiling": 33.92
+   "mean": 22.4,
+   "floor": 12.69,
+   "ceiling": 33.44
   },
   "PA": {
-   "mean": 21.78,
-   "floor": 10.9,
-   "ceiling": 32.72
+   "mean": 21.32,
+   "floor": 12.75,
+   "ceiling": 31.68
   },
   "RA": {
-   "mean": 8.66,
-   "floor": 4.42,
-   "ceiling": 13.46
+   "mean": 8.48,
+   "floor": 4.25,
+   "ceiling": 13.28
   }
  },
  "minutes": {
-  "value": 25.0,
+  "value": 24.5,
   "source": "model"
  },
  "splits": {

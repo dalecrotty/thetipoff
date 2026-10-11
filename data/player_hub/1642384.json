@@ -4,63 +4,63 @@
  "team": "Houston",
  "projections": {
   "3PM": {
-   "mean": 0.31,
+   "mean": 0.32,
    "floor": 0.0,
    "ceiling": 1.65
   },
   "AST": {
-   "mean": 0.43,
+   "mean": 0.44,
    "floor": 0.0,
-   "ceiling": 1.76
+   "ceiling": 1.8
   },
   "BLK": {
-   "mean": 0.31,
+   "mean": 0.32,
+   "floor": 0.0,
+   "ceiling": 0.99
+  },
+  "PTS": {
+   "mean": 3.0,
+   "floor": 0.0,
+   "ceiling": 8.72
+  },
+  "REB": {
+   "mean": 1.6,
+   "floor": 0.0,
+   "ceiling": 3.81
+  },
+  "STL": {
+   "mean": 0.23,
    "floor": 0.0,
    "ceiling": 1.03
   },
-  "PTS": {
-   "mean": 2.9,
-   "floor": 0.0,
-   "ceiling": 8.57
-  },
-  "REB": {
-   "mean": 1.54,
-   "floor": 0.0,
-   "ceiling": 3.73
-  },
-  "STL": {
-   "mean": 0.22,
-   "floor": 0.0,
-   "ceiling": 1.01
-  },
   "TOV": {
-   "mean": 0.31,
+   "mean": 0.32,
    "floor": 0.0,
-   "ceiling": 1.69
+   "ceiling": 1.72
   },
   "PRA": {
-   "mean": 4.87,
+   "mean": 5.04,
    "floor": 0.0,
-   "ceiling": 13.59
+   "ceiling": 13.76
   },
   "PR": {
-   "mean": 4.45,
+   "mean": 4.6,
    "floor": 0.0,
-   "ceiling": 12.56
+   "ceiling": 12.72
   },
   "PA": {
-   "mean": 3.33,
+   "mean": 3.44,
    "floor": 0.0,
-   "ceiling": 10.11
+   "ceiling": 10.23
   },
   "RA": {
-   "mean": 1.97,
+   "mean": 2.04,
    "floor": 0.0,
-   "ceiling": 5.27
+   "ceiling": 5.34
   }
  },
  "minutes": {
-  "value": 7.1,
+  "value": 7.4,
   "source": "model"
  },
  "splits": {
