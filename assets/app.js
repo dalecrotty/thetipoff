@@ -1190,7 +1190,7 @@ async function initRecord() {
     ? `Across <b>${W(pts, "season").n.toLocaleString("en-AU")}</b> player games this season, our points predictions `
       + `missed by <span class="n">${fmt(W(pts, "season").mae)}</span> on average, and `
       + `<span class="n">${pct(all.in / all.n)}</span> of results landed inside our 80% range.`
-    : `The track record starts on opening night (21 October AEDT). From then, every prediction is graded here the morning after, in the open.`;
+    : `The track record starts from opening night, 20 October (21 October AEDT). From then, every prediction is graded here the morning after, in the open.`;
   const cell = w => w.n ? `${fmt(w.mae, 2)}<div class="sm dim">${w.n.toLocaleString("en-AU")} games</div>` : `<span class="dim">—</span>`;
   $("#acc tbody").innerHTML = mk.length ? mk.map(m => `<tr>
       <td class="s">${esc(m.label)}</td><td class="num">${cell(W(m, "7d"))}</td>
@@ -1263,8 +1263,8 @@ async function initTip() {
 
   const s = d.summary;
   $("#tnote").textContent = s.n_tips
-    ? `Regular-season tips only; preseason trial tips are listed below but not counted.`
-    : `The record starts on opening night, 21 October (AEDT). Preseason tips are a trial run: listed, never counted.`;
+    ? `Regular-season tips only; preseason trial tips are listed below but not counted. Prices are US market lines until Australian books price NBA player props.`
+    : `The record starts on opening night, 20 October (21 October AEDT). Preseason tips are a trial run: listed, never counted. Prices are US market lines until Australian books price NBA player props.`;
   $("#tcards").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(s.avg_clv)}</div><div class="r">${s.n_clv} graded at the close</div></div>
     <div class="card"><div class="k">Beat the close</div><div class="v">${pct(s.beat_close)}</div></div>
@@ -1327,7 +1327,7 @@ async function initHome() {
     <div class="card"><div class="k">Inside our range</div><div class="v">${pct(ps.coverage)}</div><div class="r">target 80%</div></div>
     <div class="card"><div class="k">Tip: avg CLV</div><div class="v">${pct(ts.avg_clv)}</div><div class="r">${ts.n_clv ?? 0} graded at the close</div></div>
     <div class="card"><div class="k">Tip: won–lost</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="track-record.html">Full record →</a></div></div></div>`
-    : `<p class="dim">Every prediction is graded in the open from opening night, 21 October (AEDT): how far off, whether the ranges hold, and the tip's closing-line value. <a href="track-record.html">How it's graded →</a></p>`;
+    : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the tip's closing-line value. <a href="track-record.html">How it's graded →</a></p>`;
   const games = gd?.games || [];
   if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${auDate(games[0].start)}`;
 
@@ -1724,8 +1724,8 @@ function mountSignup() {
   el.className = "signup";
   el.id = "signup";
   el.innerHTML = `
-    <div class="su-copy"><b>Founding members lock in a lower price.</b>
-      <span>Leave your email and we'll tell you when memberships open. One email, nothing else.</span></div>
+    <div class="su-copy"><b>Email before 1 December: season one for $69, not $99.</b>
+      <span>Leave your email and we'll send the offer when memberships open. One email, nothing else.</span></div>
     <form id="suForm" novalidate>
       <label class="vh" for="suEmail">Email address</label>
       <input id="suEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
@@ -1733,7 +1733,7 @@ function mountSignup() {
       <button id="suBtn" type="submit">Sign up</button>
     </form>
     <p class="su-msg" id="suMsg" role="status"></p>
-    <p class="su-fine">Used only to tell you when memberships open. <a href="/privacy.html">Privacy</a></p>`;
+    <p class="su-fine">Used only to send the offer when memberships open. The $69 season pass is for season one (1 December to the Finals, AUD); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
   foot.before(el);
   $("#suForm").addEventListener("submit", async ev => {
     ev.preventDefault();
@@ -1751,6 +1751,7 @@ function mountSignup() {
       if (r.ok && d.ok) {
         $("#suForm").hidden = true;
         msg.textContent = "You're on the list. We'll email you once, when memberships open."; msg.className = "su-msg ok";
+        window.tipoffEvent?.("sign_up", { method: "email", source_page: location.pathname });
       } else {
         msg.textContent = d.error || "That didn't go through. Try again in a minute."; msg.className = "su-msg err";
       }
