@@ -4,63 +4,63 @@
  "team": "Miami",
  "projections": {
   "3PM": {
-   "mean": 0.73,
+   "mean": 0.99,
+   "floor": 0.0,
+   "ceiling": 2.87
+  },
+  "AST": {
+   "mean": 1.66,
+   "floor": 0.0,
+   "ceiling": 3.78
+  },
+  "BLK": {
+   "mean": 0.3,
+   "floor": 0.0,
+   "ceiling": 1.03
+  },
+  "PTS": {
+   "mean": 6.85,
+   "floor": 0.79,
+   "ceiling": 13.68
+  },
+  "REB": {
+   "mean": 2.88,
+   "floor": 0.74,
+   "ceiling": 5.83
+  },
+  "STL": {
+   "mean": 0.54,
    "floor": 0.0,
    "ceiling": 1.99
   },
-  "AST": {
-   "mean": 1.23,
-   "floor": 0.0,
-   "ceiling": 3.03
-  },
-  "BLK": {
-   "mean": 0.22,
-   "floor": 0.0,
-   "ceiling": 1.01
-  },
-  "PTS": {
-   "mean": 5.08,
-   "floor": 0.25,
-   "ceiling": 10.79
-  },
-  "REB": {
-   "mean": 2.14,
-   "floor": 0.36,
-   "ceiling": 4.35
-  },
-  "STL": {
-   "mean": 0.4,
-   "floor": 0.0,
-   "ceiling": 1.2
-  },
   "TOV": {
-   "mean": 0.86,
+   "mean": 1.16,
    "floor": 0.0,
-   "ceiling": 2.0
+   "ceiling": 2.89
   },
   "PRA": {
-   "mean": 8.44,
-   "floor": 0.72,
-   "ceiling": 17.16
+   "mean": 11.39,
+   "floor": 2.77,
+   "ceiling": 20.17
   },
   "PR": {
-   "mean": 7.21,
-   "floor": 0.45,
-   "ceiling": 15.33
+   "mean": 9.73,
+   "floor": 2.0,
+   "ceiling": 18.07
   },
   "PA": {
-   "mean": 6.31,
-   "floor": 0.44,
-   "ceiling": 13.09
+   "mean": 8.51,
+   "floor": 1.82,
+   "ceiling": 15.49
   },
   "RA": {
-   "mean": 3.37,
-   "floor": 0.62,
-   "ceiling": 6.67
+   "mean": 4.54,
+   "floor": 1.18,
+   "ceiling": 7.98
   }
  },
  "minutes": {
-  "value": 12.2,
+  "value": 16.5,
   "source": "model"
  },
  "splits": {

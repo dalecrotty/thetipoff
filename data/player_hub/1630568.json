@@ -4,63 +4,63 @@
  "team": "Boston",
  "projections": {
   "3PM": {
-   "mean": 0.69,
+   "mean": 0.61,
    "floor": 0.0,
    "ceiling": 1.94
   },
   "AST": {
-   "mean": 0.78,
+   "mean": 0.69,
    "floor": 0.0,
-   "ceiling": 2.14
+   "ceiling": 2.05
   },
   "BLK": {
-   "mean": 0.27,
+   "mean": 0.24,
+   "floor": 0.0,
+   "ceiling": 1.03
+  },
+  "PTS": {
+   "mean": 5.66,
+   "floor": 0.84,
+   "ceiling": 11.38
+  },
+  "REB": {
+   "mean": 2.51,
+   "floor": 0.25,
+   "ceiling": 4.95
+  },
+  "STL": {
+   "mean": 0.2,
    "floor": 0.0,
    "ceiling": 1.0
   },
-  "PTS": {
-   "mean": 6.44,
-   "floor": 0.38,
-   "ceiling": 13.27
-  },
-  "REB": {
-   "mean": 2.86,
-   "floor": 0.71,
-   "ceiling": 5.81
-  },
-  "STL": {
-   "mean": 0.23,
-   "floor": 0.0,
-   "ceiling": 1.02
-  },
   "TOV": {
-   "mean": 0.5,
+   "mean": 0.44,
    "floor": 0.0,
-   "ceiling": 1.9
+   "ceiling": 1.84
   },
   "PRA": {
-   "mean": 10.08,
-   "floor": 2.36,
-   "ceiling": 18.8
+   "mean": 8.87,
+   "floor": 1.15,
+   "ceiling": 17.58
   },
   "PR": {
-   "mean": 9.3,
-   "floor": 1.57,
-   "ceiling": 17.64
+   "mean": 8.18,
+   "floor": 1.41,
+   "ceiling": 16.29
   },
   "PA": {
-   "mean": 7.22,
-   "floor": 1.36,
-   "ceiling": 14.01
+   "mean": 6.35,
+   "floor": 0.49,
+   "ceiling": 13.14
   },
   "RA": {
-   "mean": 3.64,
-   "floor": 0.89,
-   "ceiling": 6.95
+   "mean": 3.2,
+   "floor": 0.45,
+   "ceiling": 6.51
   }
  },
  "minutes": {
-  "value": 11.7,
+  "value": 10.3,
   "source": "model"
  },
  "splits": {
