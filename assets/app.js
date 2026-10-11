@@ -1562,15 +1562,44 @@ function sideTrends(team, sit, rows, inRange) {
   lines.push(["All games", trendStats(mine)]);
   return lines.slice(0, 5).map(([l, st]) => trendLine(l, st)).join("");
 }
-function gameCard(g, rows, inRange) {
-  const sides = [g.away, g.home].map(t => {
+/* the standout trends for one game: at most two bullets, only when a side's
+   record in tonight's situation (or one of its parts) is lopsided over
+   enough games — otherwise just the line (owner, 11 Oct 2026) */
+const INSIGHT_MIN_N = 10, INSIGHT_EDGE = 0.15;   // 65%+ or 35%- on 10+ games
+function gameInsights(g, rows, inRange) {
+  const found = [];
+  for (const t of [g.away, g.home]) {
     const sit = tonightSituation(g, t, rows);
-    return `<div class="side"><h3><a href="${teamHref(t)}">${teamBadge(t)} ${esc(nick(t))}</a></h3><ul class="trend">${sideTrends(t, sit, rows, inRange)}</ul></div>`;
-  }).join("");
+    const mine = rows.filter(r => r.team === t && inRange(r));
+    const applies = st => mine.filter(r => SITUATIONS.every(f => f.f(r, st[f.k])));
+    const cands = [[situationLabel(sit).join(", "), applies(sit)]];
+    for (const k of ["venue", "role", "rest", "prev"]) {
+      if (sit[k] === "all") continue;
+      const st = { ...SIT_DEFAULT, [k]: sit[k] };
+      cands.push([(SIT_PHRASE[k] || {})[sit[k]] || "", applies(st)]);
+    }
+    for (const [label, got] of cands) {
+      const st = trendStats(got);
+      if (st.n < INSIGHT_MIN_N) continue;
+      const ats = st.aw + st.al ? st.aw / (st.aw + st.al) : 0.5;
+      const ov = st.o + st.u ? st.o / (st.o + st.u) : 0.5;
+      if (Math.abs(ats - 0.5) >= INSIGHT_EDGE)
+        found.push({ score: Math.abs(ats - 0.5) * Math.sqrt(st.n),
+          text: `${esc(nick(t))} are <b>${rec(st.aw, st.al, st.ap)}</b> against the spread ${esc(label)} <span class="dim">(${st.n} games)</span>` });
+      if (Math.abs(ov - 0.5) >= INSIGHT_EDGE)
+        found.push({ score: Math.abs(ov - 0.5) * Math.sqrt(st.n),
+          text: `${esc(nick(t))} games have gone <b>${ov > 0.5 ? "over" : "under"} ${rec(ov > 0.5 ? st.o : st.u, ov > 0.5 ? st.u : st.o, st.p)}</b> ${esc(label)} <span class="dim">(${st.n} games)</span>` });
+    }
+  }
+  const seen = new Set();
+  return found.sort((a, b) => b.score - a.score).filter(f => !seen.has(f.text) && seen.add(f.text)).slice(0, 2);
+}
+function gameCard(g, rows, inRange) {
+  const ins = gameInsights(g, rows, inRange);
   return `<article class="game" id="g${esc(g.event_id)}">
-    <header><span class="t">${g.start ? whenAEDT(g.start) : ""}</span>
+    <header><span class="t">${g.start ? whenAEDT(g.start) : ""} · ${teamBadge(g.away)} ${esc(nick(g.away))} <span class="dim">@</span> ${teamBadge(g.home)} ${esc(nick(g.home))}</span>
       <span class="line">${g.book_line_home == null ? "lines to come" : `${favLine(g, g.book_line_home)} · total ${fmt(g.book_total)}`}</span></header>
-    <div class="sides">${sides}</div>
+    ${ins.length ? `<ul class="trend">${ins.map(i => `<li>${i.text}</li>`).join("")}</ul>` : `<p class="sm dim">Nothing lopsided in either side's situation.</p>`}
     <p class="sm"><a href="${gameHref(g)}">Game page →</a> · <a href="${boardHref(g)}">Player predictions</a></p>
   </article>`;
 }
@@ -1624,7 +1653,7 @@ async function initTrends() {
     const tonight = $("#tonight");
     if (tonight) tonight.innerHTML = games.length
       ? games.map(g => gameCard(g, all, range.inRange)).join("")
-      : `<p class="dim">No games tonight. The table below covers every team.</p>`;
+      : `<p class="dim">No games tonight. The table above covers every team.</p>`;
   };
   let sortKey = "ats_pct", sortDir = -1;
   range = dateRangeControl($("#trange"), d, render);
