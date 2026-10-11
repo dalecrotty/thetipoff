@@ -2,7 +2,7 @@
    left empty, nothing is loaded and nothing is sent. The Search Console
    verification tag sits in each page's head (google-site-verification).
    Events: sign_up (the email form), with the page it was sent from. */
-const GA4_ID = "";
+const GA4_ID = "G-F2E68CP62V";
 
 window.tipoffEvent = (name, params) => {
   if (typeof window.gtag === "function") window.gtag("event", name, params || {});
