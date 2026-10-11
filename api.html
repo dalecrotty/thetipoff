@@ -60,7 +60,10 @@
   <h2>Tonight's games</h2>
   <p><a href="data/games.json"><code>/data/games.json</code></a>: <code>games</code>,
   one per game: <code>start</code> (UTC), <code>home</code>, <code>away</code>,
-  <code>p_home</code> (our home win chance), the bookmakers'
+  <code>p_home</code> (our home win chance), <code>pred_home</code>, <code>pred_away</code>,
+  <code>total</code> with <code>total_lo</code>–<code>total_hi</code> and <code>line_home</code>
+  (the model's score, total and margin: context, never picks, as the backtest found no edge in
+  them against the line), the bookmakers'
   <code>book_line_home</code>, <code>book_total</code> and <code>book_p_home</code>,
   <code>out</code> (who's ruled out on each side), <code>url</code> (the game's page)
   and <code>free_game</code>.</p>
@@ -94,7 +97,7 @@
   <code>ceiling</code>, <code>minutes</code>, <code>side</code>, <code>edge</code>,
   <code>mu</code> and <code>mu_rank</code> (matchup), <code>ww</code> (with/without),
   <code>prior</code> and <code>move_reason</code>, plus <code>movers</code>),
-  <code>games</code> (with our projected score, margin and total), <code>matchups</code>
+  <code>games</code> (the same as the public file), <code>matchups</code>
   (what each defence gives up by position) and <code>hub/&lt;player_id&gt;</code> (the
   full player file: predictions, season and recent splits, the game log, with/without
   tonight). Open to everyone until 1 December 2026; from then it answers a member's
