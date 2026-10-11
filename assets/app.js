@@ -1203,6 +1203,13 @@ async function initRecord() {
       <td class="num">${pct(s.below)}</td><td class="num">${pct(s.above)}</td>
       <td class="num opt">${s.n ? s.n.toLocaleString("en-AU") : "—"}</td></tr>`; }).join("")
     : `<tr><td colspan="5" class="empty">Fills in from opening night.</td></tr>`;
+  const pl = d.plays || {};
+  const graded = pl.n_graded ?? 0;
+  $("#rplays").innerHTML = `
+    <div class="card"><div class="k">Won–lost</div><div class="v">${pl.won ?? 0}–${pl.lost ?? 0}</div><div class="r">${pl.push ?? 0} push · ${pl.void ?? 0} void · ${pl.open ?? 0} open</div></div>
+    <div class="card"><div class="k">Hit rate</div><div class="v">${pct(pl.hit)}</div><div class="r">${graded} graded</div></div>
+    <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(pl.avg_clv)}</div><div class="r">${pl.n_clv ?? 0} closed · beat the close ${pct(pl.beat_close)}</div></div>
+    <div class="card"><div class="k">Return on stake</div><div class="v">${pl.roi_public ? pct(pl.roi) : "—"}</div><div class="r">${pl.roi_public ? `${fmt(pl.units, 1)} units, flat 1 unit` : `published from ${pl.public_roi_from ?? 100} graded plays`}</div></div>`;
   const t = d.tips;
   $("#rtip").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(t?.avg_clv)}</div><div class="r">${t?.n_clv ?? 0} graded at the close</div></div>
