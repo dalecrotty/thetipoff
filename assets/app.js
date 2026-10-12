@@ -1698,7 +1698,10 @@ async function initTeam() {
   const render = () => {
     let rows = mine.filter(r => range.inRange(r) && SITUATIONS.every(f => f.f(r, state[f.k])));
     if (withoutP.size) rows = rows.filter(r => [...withoutP].every(p => r.absent.includes(p)));
-    if (withP.size) rows = rows.filter(r => [...withP].every(p => !r.absent.includes(p)));
+    // "with X": X played in that game (a mid-season arrival isn't "with"
+    // before he joined); rows from before `played` existed fall back
+    if (withP.size) rows = rows.filter(r => [...withP].every(p =>
+      r.played ? r.played.includes(p) : !r.absent.includes(p)));
     const st = trendStats(rows);
     const on = situationLabel(state);
     const who = [nick(team), ...(withP.size ? [`with ${[...withP].join(", ")}`] : []),
