@@ -4,63 +4,63 @@
  "team": "Oklahoma City",
  "projections": {
   "3PM": {
-   "mean": 0.95,
-   "floor": 0.0,
-   "ceiling": 2.83
+   "mean": 0.93,
+   "floor": 0.01,
+   "ceiling": 2.18
   },
   "AST": {
-   "mean": 3.42,
-   "floor": 1.11,
-   "ceiling": 6.08
+   "mean": 3.4,
+   "floor": 1.12,
+   "ceiling": 6.11
   },
   "BLK": {
-   "mean": 0.19,
+   "mean": 0.21,
    "floor": 0.0,
-   "ceiling": 0.98
+   "ceiling": 1.0
   },
   "PTS": {
-   "mean": 11.36,
-   "floor": 4.11,
-   "ceiling": 19.26
+   "mean": 11.86,
+   "floor": 4.07,
+   "ceiling": 20.27
   },
   "REB": {
-   "mean": 2.84,
-   "floor": 0.7,
-   "ceiling": 5.79
+   "mean": 2.92,
+   "floor": 0.79,
+   "ceiling": 5.8
   },
   "STL": {
-   "mean": 1.02,
-   "floor": 0.03,
-   "ceiling": 2.09
-  },
-  "TOV": {
    "mean": 1.08,
    "floor": 0.0,
-   "ceiling": 2.09
+   "ceiling": 2.91
+  },
+  "TOV": {
+   "mean": 1.28,
+   "floor": 0.01,
+   "ceiling": 3.02
   },
   "PRA": {
-   "mean": 17.62,
-   "floor": 7.39,
-   "ceiling": 27.89
+   "mean": 18.18,
+   "floor": 7.95,
+   "ceiling": 28.45
   },
   "PR": {
-   "mean": 14.2,
-   "floor": 5.09,
-   "ceiling": 23.45
+   "mean": 14.79,
+   "floor": 5.67,
+   "ceiling": 24.03
   },
   "PA": {
-   "mean": 14.78,
-   "floor": 6.16,
-   "ceiling": 24.1
+   "mean": 15.26,
+   "floor": 6.64,
+   "ceiling": 24.59
   },
   "RA": {
-   "mean": 6.26,
-   "floor": 1.97,
-   "ceiling": 10.72
+   "mean": 6.32,
+   "floor": 2.03,
+   "ceiling": 10.78
   }
  },
  "minutes": {
-  "value": 21.7,
+  "value": 23.3,
   "source": "model"
  },
  "splits": {
@@ -2301,5 +2301,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Milwaukee"
+ "opp": "Atlanta"
 }
