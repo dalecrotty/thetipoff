@@ -772,3 +772,9 @@ main.legal .tablewrap { margin: 6px 0 14px; }
 .modebtn:focus-visible { outline: 2px solid var(--red-text); outline-offset: 2px; }
 .modebtn svg { display: block; width: 18px; height: 18px; }
 @media (max-width: 640px) { .modebtn { width: 32px; height: 32px; } }
+
+/* region switch in the footer (Australia / the US) */
+footer.rg .regionsw { margin: 10px 0 6px; font-size: 13px; }
+footer.rg .regionsw button { background: none; border: 0; padding: 0; font: inherit; color: var(--ink);
+  text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+footer.rg .regionsw button[aria-pressed="true"] { font-weight: 700; text-decoration: none; cursor: default; }

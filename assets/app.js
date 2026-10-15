@@ -3,6 +3,83 @@
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
+/* ---------- region: Australia or the US (brand plan, owner 15 Oct 2026) ----------
+   On-page words, tip times, the price order and the help line follow the
+   reader's region. Titles, URLs and what search engines index stay the
+   Australian default: crawlers always get it. The region comes from the
+   device's time zone (America/* is the US) until the reader picks one in
+   the footer ("dc.region"). Decimal odds everywhere, either way. */
+const REGION_KEY = "dc.region";
+const US_ZONE = /^(America\/|US\/|Pacific\/Honolulu$)/;
+const DEVICE_TZ = (() => {
+  try { return Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch { return ""; }
+})();
+const IS_BOT = /bot|crawl|spider|slurp|bingpreview|lighthouse|inspectiontool/i.test(navigator.userAgent || "");
+const REGION = (() => {
+  if (IS_BOT) return "au";
+  try { const r = localStorage.getItem(REGION_KEY); if (r === "au" || r === "us") return r; } catch { /* default */ }
+  return US_ZONE.test(DEVICE_TZ) ? "us" : "au";
+})();
+const US = REGION === "us";
+/* the zone times are shown in: Sydney for Australia; for the US the
+   device's own zone, or Eastern if the reader picked US from elsewhere.
+   The schedule page is "NBA games in Australian time", so it stays AEDT. */
+const SHOW_TZ = () => (!US || document.body?.dataset.page === "schedule") ? "Australia/Sydney"
+  : (US_ZONE.test(DEVICE_TZ) ? DEVICE_TZ : "America/New_York");
+const LOCALE = () => SHOW_TZ() === "Australia/Sydney" ? "en-AU" : "en-US";
+function zoneName(d) {
+  const z = (new Intl.DateTimeFormat(LOCALE(), { timeZone: SHOW_TZ(), timeZoneName: "short" })
+    .formatToParts(d).find(p => p.type === "timeZoneName") || {}).value || "";
+  return LOCALE() === "en-AU" ? z.replace(/^GMT\+11$/, "AEDT").replace(/^GMT\+10$/, "AEST")
+    : z.replace(/^([ECMP])[SD]T$/, "$1T");                 // EDT -> ET
+}
+const dayIn = (d, tz) => new Intl.DateTimeFormat("en-AU", { timeZone: tz, weekday: "short" }).format(d);
+/* the words that differ; the rest of the copy is shared */
+const US_WORDS = [[/\bBookmakers\b/g, "Sportsbooks"], [/\bbookmakers\b/g, "sportsbooks"],
+  [/\bBookmaker\b/g, "Sportsbook"], [/\bbookmaker\b/g, "sportsbook"],
+  [/\bsame game multis\b/gi, "same game parlays"], [/\bsame game multi\b/gi, "same game parlay"],
+  [/\bSGMs?\b/g, m => m.replace("SGM", "SGP")],
+  [/Times in Australian eastern time\./g, "Times in your time zone."]];
+function usWords(text) {
+  let out = text;
+  for (const [re, to] of US_WORDS) out = out.replace(re, to);
+  return out;
+}
+function regionPass(root) {
+  if (!US || !root) return;
+  // tip times written by the page builder: re-shown in the reader's zone
+  const els = sel => [...(root.matches?.(sel) ? [root] : []), ...(root.querySelectorAll?.(sel) || [])];
+  for (const t of els("time[datetime]")) {
+    if (t.dataset.region || document.body.dataset.page === "schedule") continue;
+    const d = new Date(t.getAttribute("datetime"));
+    if (isNaN(d)) continue;
+    const local = dayIn(d, SHOW_TZ()), syd = dayIn(d, "Australia/Sydney");
+    t.textContent = t.hasAttribute("data-day") ? whenAEDT(d.toISOString())
+      : `${local !== syd ? local + " " : ""}${aedtTime(d.toISOString())} ${zoneName(d)}`;
+    t.dataset.region = "us";
+  }
+  // words, in text and tooltips; the legal pages keep their wording
+  if (document.querySelector("main.legal")) return;
+  if (root.nodeType === 3) {                       // a lone text node
+    if (!root.parentElement?.closest("script, style, textarea, [data-noregion]")) {
+      const v = usWords(root.nodeValue);
+      if (v !== root.nodeValue) root.nodeValue = v;
+    }
+    return;
+  }
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode: n => n.parentElement?.closest("script, style, textarea, [data-noregion]")
+      ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+    const v = usWords(n.nodeValue);
+    if (v !== n.nodeValue) n.nodeValue = v;
+  }
+  for (const el of els("[title]")) {
+    const v = usWords(el.title);
+    if (v !== el.title) el.title = v;
+  }
+}
+
 /* ---------- result stamps ----------
    COVERED / NOT COVERED belongs to graded results only (The Drop and
    the graded plays), never to projections (brand, 15 Oct 2026). The word
@@ -175,16 +252,14 @@ function staleNotice(m) {
   return null;
 }
 
-/* "9:30am AEDT, Thu 8 Jan" — readers are in Australia */
+/* "9:30am AEDT, Thu 8 Jan" in Australia; "7:30pm ET, Wed Oct 14" for a
+   US reader (the region setting above) */
 function whenAEDT(iso) {
   const d = new Date(iso);
   if (isNaN(d)) return iso || "";
-  const day = new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Sydney",
+  const day = new Intl.DateTimeFormat(LOCALE(), { timeZone: SHOW_TZ(),
     weekday: "short", day: "numeric", month: "short" }).format(d);
-  const zone = (new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Sydney",
-    timeZoneName: "short" }).formatToParts(d).find(p => p.type === "timeZoneName")
-    || {}).value || "";
-  return `${aedtTime(iso)} ${zone.replace(/^GMT\+11$/, "AEDT").replace(/^GMT\+10$/, "AEST")}, ${day.replace(",", "")}`;
+  return `${aedtTime(iso)} ${zoneName(d)}, ${day.replace(/,/g, "")}`;
 }
 
 async function renderFreshness() {
@@ -541,12 +616,12 @@ async function initBoard() {
 
 /* ---------- movement since the morning (brief §5.4) ----------
    "22.4 at 9am → 25.1, Jokic out". The prior is the day's first run;
-   times are shown in Australian Eastern time, where the readers are. */
+   times are shown in Australian Eastern time, or a US reader's own. */
 function aedtTime(iso) {
   const d = new Date(iso);
   if (isNaN(d)) return "";
-  const parts = new Intl.DateTimeFormat("en-AU", {
-    timeZone: "Australia/Sydney", hour: "numeric", minute: "2-digit",
+  const parts = new Intl.DateTimeFormat(LOCALE(), {
+    timeZone: SHOW_TZ(), hour: "numeric", minute: "2-digit",
     hour12: true }).formatToParts(d);
   const get = t => (parts.find(p => p.type === t) || {}).value || "";
   const mins = get("minute");
@@ -617,7 +692,7 @@ function renderMovers(data) {
   const more = m.length > CAP;
   el.innerHTML = `<div class="section"><h2>Since this morning</h2></div>
     <p class="sub">Predictions that moved after news. Updated ${
-      ups.join(", ")} (AEDT).${more ? ` <a href="#" id="moversAll">All ${m.length} →</a>` : ""}</p>
+      ups.join(", ")} (${zoneName(new Date())}).${more ? ` <a href="#" id="moversAll">All ${m.length} →</a>` : ""}</p>
     <div class="tablewrap"><table><tbody>${m.map((r, i) => `<tr${i >= CAP ? ' class="more" hidden' : ""}>
       <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
       <td class="s">${teamBadge(r.team)}</td>
@@ -1824,7 +1899,7 @@ function mountSignup() {
   el.className = "signup";
   el.id = "signup";
   el.innerHTML = `
-    <div class="su-copy"><b>Email before 1 December: season one for A$69 (US$49), not A$99.</b>
+    <div class="su-copy"><b>Email before 1 December: season one for ${US ? "US$49 (A$69), not US$69" : "A$69 (US$49), not A$99"}.</b>
       <span>Leave your email and we'll send the offer when memberships open. One email, nothing else.</span></div>
     <form id="suForm" novalidate>
       <label class="vh" for="suEmail">Email address</label>
@@ -1833,7 +1908,7 @@ function mountSignup() {
       <button id="suBtn" type="submit">Sign up</button>
     </form>
     <p class="su-msg" id="suMsg" role="status"></p>
-    <p class="su-fine">Used only to send the offer when memberships open. The early-bird season pass is A$69 or US$49 for season one (1 December to the Finals); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
+    <p class="su-fine">Used only to send the offer when memberships open. The early-bird season pass is ${US ? "US$49 or A$69" : "A$69 or US$49"} for season one (1 December to the Finals); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
   foot.before(el);
   $("#suForm").addEventListener("submit", async ev => {
     ev.preventDefault();
@@ -1876,3 +1951,33 @@ addEventListener("DOMContentLoaded", () => {
       published yet. The morning run publishes them here.</div>`;
   });
 });
+
+/* ---------- region: apply it, and the footer switch ---------- */
+(function regionSetup() {
+  const foot = $("footer.rg");
+  if (foot) {
+    const sw = document.createElement("p");
+    sw.className = "regionsw";
+    const btn = (r, label) => `<button type="button" data-r="${r}" aria-pressed="${REGION === r}">${label}</button>`;
+    sw.innerHTML = `Showing the site for ${btn("au", "Australia")} · ${btn("us", "the US")}`;
+    (foot.querySelector(".social") || foot.lastElementChild)?.before(sw);
+    sw.addEventListener("click", ev => {
+      const r = ev.target.closest("button")?.dataset.r;
+      if (!r || r === REGION) return;
+      try { localStorage.setItem(REGION_KEY, r); } catch { /* this visit only */ }
+      location.reload();
+    });
+  }
+  if (!US) return;
+  document.documentElement.lang = "en-US";
+  // the US help line first
+  const rg = $("footer.rg .rgline");
+  if (rg && /1800 858 858/.test(rg.textContent) && /1-800-GAMBLER/.test(rg.textContent))
+    rg.innerHTML = `<b>21+</b> Gambling problem? Call 1-800-GAMBLER (US) · <b>18+</b> Gamble responsibly · `
+      + `<a href="https://www.gamblinghelponline.org.au">Gambling Help Online</a> 1800 858 858 (AU)`;
+  regionPass(document.body);
+  // tables and cards drawn later (data loads after the page) get the same pass
+  new MutationObserver(ms => {
+    for (const m of ms) for (const n of m.addedNodes) if (n.nodeType === 1 || n.nodeType === 3) regionPass(n);
+  }).observe(document.body, { childList: true, subtree: true });
+})();
