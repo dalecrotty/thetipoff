@@ -2,9 +2,77 @@
  "player_id": -779,
  "player": "Allen Graves",
  "team": "Toronto",
- "opp": "New York",
+ "projections": {
+  "3PM": {
+   "mean": 0.34,
+   "floor": 0.0,
+   "ceiling": 1.95
+  },
+  "AST": {
+   "mean": 0.54,
+   "floor": 0.0,
+   "ceiling": 2.13
+  },
+  "BLK": {
+   "mean": 0.17,
+   "floor": 0.0,
+   "ceiling": 1.17
+  },
+  "PTS": {
+   "mean": 2.85,
+   "floor": 0.0,
+   "ceiling": 9.64
+  },
+  "REB": {
+   "mean": 1.47,
+   "floor": 0.0,
+   "ceiling": 4.09
+  },
+  "STL": {
+   "mean": 0.26,
+   "floor": 0.0,
+   "ceiling": 1.21
+  },
+  "TOV": {
+   "mean": 0.34,
+   "floor": 0.0,
+   "ceiling": 2.0
+  },
+  "PRA": {
+   "mean": 4.85,
+   "floor": 0.0,
+   "ceiling": 13.56
+  },
+  "PR": {
+   "mean": 4.31,
+   "floor": 0.0,
+   "ceiling": 12.43
+  },
+  "PA": {
+   "mean": 3.38,
+   "floor": 0.0,
+   "ceiling": 10.17
+  },
+  "RA": {
+   "mean": 2.0,
+   "floor": 0.0,
+   "ceiling": 5.31
+  }
+ },
+ "minutes": {
+  "value": 7.3,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {},
+  "l10": {},
+  "l5": {},
+  "home": {},
+  "away": {}
+ },
  "lines": {},
+ "game_log": [],
  "recent_games": [],
- "hits": {},
- "members": "https://thetipoff.com.au/api.html#members"
+ "with_without_tonight": [],
+ "opp": "New York"
 }

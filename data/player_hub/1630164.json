@@ -2,8 +2,322 @@
  "player_id": 1630164,
  "player": "James Wiseman",
  "team": "New York",
- "opp": "Toronto",
+ "projections": {
+  "3PM": {
+   "mean": 0.01,
+   "floor": 0.0,
+   "ceiling": 0.01
+  },
+  "AST": {
+   "mean": 0.41,
+   "floor": 0.0,
+   "ceiling": 1.74
+  },
+  "BLK": {
+   "mean": 0.36,
+   "floor": 0.0,
+   "ceiling": 1.04
+  },
+  "PTS": {
+   "mean": 2.79,
+   "floor": 0.0,
+   "ceiling": 8.45
+  },
+  "REB": {
+   "mean": 1.88,
+   "floor": 0.04,
+   "ceiling": 4.07
+  },
+  "STL": {
+   "mean": 0.15,
+   "floor": 0.0,
+   "ceiling": 0.94
+  },
+  "TOV": {
+   "mean": 0.62,
+   "floor": 0.0,
+   "ceiling": 2.0
+  },
+  "PRA": {
+   "mean": 5.09,
+   "floor": 0.0,
+   "ceiling": 13.8
+  },
+  "PR": {
+   "mean": 4.67,
+   "floor": 0.0,
+   "ceiling": 12.79
+  },
+  "PA": {
+   "mean": 3.2,
+   "floor": 0.0,
+   "ceiling": 9.99
+  },
+  "RA": {
+   "mean": 2.3,
+   "floor": 0.0,
+   "ceiling": 5.6
+  }
+ },
+ "minutes": {
+  "value": 8.3,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 5,
+   "min_pg": 12.7,
+   "PTS": {
+    "pg": 3.8,
+    "pm": 0.299
+   },
+   "REB": {
+    "pg": 1.8,
+    "pm": 0.142
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.047
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.079
+   }
+  },
+  "l10": {
+   "games": 5,
+   "min_pg": 12.7,
+   "PTS": {
+    "pg": 3.8,
+    "pm": 0.299
+   },
+   "REB": {
+    "pg": 1.8,
+    "pm": 0.142
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.047
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.079
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 12.7,
+   "PTS": {
+    "pg": 3.8,
+    "pm": 0.299
+   },
+   "REB": {
+    "pg": 1.8,
+    "pm": 0.142
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.047
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.079
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 11.7,
+   "PTS": {
+    "pg": 3.0,
+    "pm": 0.257
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.086
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.086
+   }
+  },
+  "away": {
+   "games": 4,
+   "min_pg": 12.9,
+   "PTS": {
+    "pg": 4.0,
+    "pm": 0.309
+   },
+   "REB": {
+    "pg": 2.25,
+    "pm": 0.174
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.039
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.077
+   }
+  }
+ },
  "lines": {},
+ "game_log": [
+  {
+   "date": "2024-10-23",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2024-10-23_detroit_vs_indiana",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 5.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-10-25",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2025-10-25_indiana_vs_memphis",
+   "starter": true,
+   "rest": "3+",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 19.9,
+   "PTS": 4.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 3.0
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-12-20_indiana_vs_new-orleans",
+   "starter": false,
+   "rest": "55",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 14.7,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2025-12-22_boston_vs_indiana",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 12.2,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-23_indiana_vs_milwaukee",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 11.7,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0
+  }
+ ],
  "recent_games": [
   {
    "date": "2025-12-23",
@@ -12,8 +326,8 @@
    "game": "2025-12-23_indiana_vs_milwaukee",
    "starter": false,
    "rest": "0",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Bottom 10",
    "min": 11.7,
    "PTS": 3.0,
    "REB": 0.0,
@@ -30,8 +344,8 @@
    "game": "2025-12-22_boston_vs_indiana",
    "starter": false,
    "rest": "1",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Top 10",
    "min": 12.2,
    "PTS": 0.0,
    "REB": 1.0,
@@ -48,8 +362,8 @@
    "game": "2025-12-20_indiana_vs_new-orleans",
    "starter": false,
    "rest": "55",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Bottom 10",
    "min": 14.7,
    "PTS": 6.0,
    "REB": 3.0,
@@ -66,8 +380,8 @@
    "game": "2025-10-25_indiana_vs_memphis",
    "starter": true,
    "rest": "3+",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Bottom 10",
    "min": 19.9,
    "PTS": 4.0,
    "REB": 4.0,
@@ -84,8 +398,8 @@
    "game": "2024-10-23_detroit_vs_indiana",
    "starter": false,
    "rest": "",
-   "result": null,
-   "opp_tier": null,
+   "result": "W",
+   "opp_tier": "Top 10",
    "min": 5.0,
    "PTS": 6.0,
    "REB": 1.0,
@@ -96,6 +410,6 @@
    "TOV": 0.0
   }
  ],
- "hits": {},
- "members": "https://thetipoff.com.au/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Toronto"
 }
