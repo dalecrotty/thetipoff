@@ -8,7 +8,8 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
    reader's region. Titles, URLs and what search engines index stay the
    Australian default: crawlers always get it. The region comes from the
    device's time zone (America/* is the US) until the reader picks one in
-   the footer ("dc.region"). Decimal odds everywhere, either way. */
+   the footer ("dc.region"). Prices are decimal in Australia and American
+   for a US reader (owner, 15 Oct 2026: a .com sells to both). */
 const REGION_KEY = "dc.region";
 const US_ZONE = /^(America\/|US\/|Pacific\/Honolulu$)/;
 const DEVICE_TZ = (() => {
@@ -45,6 +46,16 @@ function usWords(text) {
   for (const [re, to] of US_WORDS) out = out.replace(re, to);
   return out;
 }
+/* decimal to American: 1.91 -> −110, 2.50 -> +150 (the minus is U+2212,
+   as in the spreads) */
+function american(dec) {
+  const d = Number(dec);
+  if (!isFinite(d) || d <= 1) return "—";
+  const a = d >= 2 ? Math.round((d - 1) * 100) : -Math.round(100 / (d - 1));
+  return a > 0 ? `+${a}` : `\u2212${-a}`;
+}
+const odds = dec => (dec === null || dec === undefined || isNaN(dec)) ? "—"
+  : US ? american(dec) : Number(dec).toFixed(2);
 function regionPass(root) {
   if (!US || !root) return;
   // tip times written by the page builder: re-shown in the reader's zone
@@ -57,6 +68,13 @@ function regionPass(root) {
     t.textContent = t.hasAttribute("data-day") ? whenAEDT(d.toISOString())
       : `${local !== syd ? local + " " : ""}${aedtTime(d.toISOString())} ${zoneName(d)}`;
     t.dataset.region = "us";
+  }
+  // prices written by the page builder (<data class="odds">), in American
+  for (const o of els("data.odds")) {
+    if (o.dataset.region) continue;
+    o.textContent = american(o.value);
+    o.title = `decimal ${o.value}`;
+    o.dataset.region = "us";
   }
   // words, in text and tooltips; the legal pages keep their wording
   if (document.querySelector("main.legal")) return;
@@ -356,7 +374,7 @@ function predTd(r) {
 function lineTd(r) {
   if (r.line == null) return `<td class="num dim">—</td>`;
   return `<td class="num"><span class="side">${fmt(r.line)}</span>${
-    r.price != null ? `<div class="sm" title="${r.book ? esc(r.book) : ""}">@ ${fmt(r.price, 2)}</div>` : ""}</td>`;
+    r.price != null ? `<div class="sm" title="${r.book ? esc(r.book) : ""}">@ ${odds(r.price)}</div>` : ""}</td>`;
 }
 function diffTd(r) {
   if (r.diff == null) return `<td class="num dim opt">—</td>`;
@@ -366,7 +384,7 @@ function diffTd(r) {
 }
 function priceTd(r) {
   if (r.price == null) return `<td class="num dim">—</td>`;
-  return `<td class="num">${fmt(r.price, 2)}${r.book
+  return `<td class="num">${odds(r.price)}${r.book
     ? `<div class="sm l">${esc(r.book)}</div>` : ""}</td>`;
 }
 /* The edge carries its side — "▼U 11.3%" — so an under never reads as an
@@ -380,7 +398,7 @@ function edgeTd(r) {
     ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ${pct(r.edge)}`
     : pct(r.edge);
   return `<td class="num"><span class="edge ${r.tier ? `hot ${r.side}` : "cold"}" title="${r.tier
-    ? `The ${r.side} ${r.line} at ${fmt(r.price, 2)}: our probability beats the bookmaker's (margin removed) by ${pct(r.edge)}`
+    ? `The ${r.side} ${r.line} at ${odds(r.price)}: our probability beats the bookmaker's (margin removed) by ${pct(r.edge)}`
     : "Below the threshold we'd call an edge"}">${label}</span>${r.diff != null
     ? `<div class="sm ph">diff ${r.diff > 0 ? "+" : ""}${fmt(r.diff)}</div>` : ""}</td>`;
 }
@@ -1367,7 +1385,7 @@ const sideGlyph = s => s === "over" ? "▲O" : "▼U";
 
 function tipBet(t) {
   return `${t.market_label} ${sideWord(t.side)} <b>${fmt(t.line)}</b> @ `
-    + `<b>${fmt(t.price, 2)}</b>, ${t.book_label}`;
+    + `<b>${odds(t.price)}</b>, ${t.book_label}`;
 }
 
 async function initTip() {
@@ -1379,10 +1397,10 @@ async function initTip() {
     const game = [t.team, t.opp].filter(Boolean).join(" v ");
     $("#tlead").innerHTML = `Today's Drop, for ${day}, is <b>${t.player}</b> `
       + `${sideWord(t.side).toLowerCase()} ${fmt(t.line)} ${t.market_label.toLowerCase()} `
-      + `at ${fmt(t.price, 2)} with ${t.book_label}; our projection is `
+      + `at ${odds(t.price)} with ${t.book_label}; our projection is `
       + `<span class="n">${fmt(t.model_proj)}</span>.`;
     const closed = t.closing_price != null
-      ? `Closed ${fmt(t.closing_line)} @ ${fmt(t.closing_price, 2)} · CLV ${pct(t.clv)}` : "";
+      ? `Closed ${fmt(t.closing_line)} @ ${odds(t.closing_price)} · CLV ${pct(t.clv)}` : "";
     const res = t.result ? ` · ${stamp(t.result)}${t.actual != null ? ` ${fmt(t.actual)}` : ""}` : "";
     $("#tcard").innerHTML = `<div class="tipcard">
       <div class="ctx">${day.toUpperCase()}${t.trial ? `<span class="tag trial">Preseason trial</span>` : ""}</div>
@@ -1417,8 +1435,8 @@ async function initTip() {
       <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}</td>
       <td class="s">${r.player}</td>
       <td class="s">${r.market_label} ${sideGlyph(r.side)} ${fmt(r.line)}</td>
-      <td class="num opt">${fmt(r.price, 2)}</td>
-      <td class="num opt">${r.closing_price != null ? (r.closing_line !== r.line ? fmt(r.closing_line) + " @ " : "") + fmt(r.closing_price, 2) : "—"}</td>
+      <td class="num opt">${odds(r.price)}</td>
+      <td class="num opt">${r.closing_price != null ? (r.closing_line !== r.line ? fmt(r.closing_line) + " @ " : "") + odds(r.closing_price) : "—"}</td>
       <td class="num ${r.clv > 0 ? "pos" : r.clv < 0 ? "neg" : ""}">${pct(r.clv)}</td>
       <td class="num">${stamp(r.result)}${r.actual != null && r.result ? `<div class="sm dim">${fmt(r.actual)}</div>` : ""}</td>
     </tr>`).join("")
@@ -1477,7 +1495,7 @@ async function initHome() {
   $("#hTip").innerHTML = `<div class="ph2"><span>The Drop</span><a href="tip.html">Record →</a></div>` + (t
     ? `<div class="tipmini">
         <div class="who">${esc(t.player)}</div>
-        <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${fmt(t.price, 2)}</b>, ${esc(t.book_label)}</div>
+        <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)}</div>
         <div class="sm">Our projection <b class="ours">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
       </div>`
     : `<p class="dim">Our biggest edge goes up around 8pm Sydney time the night before the games.</p>`)
