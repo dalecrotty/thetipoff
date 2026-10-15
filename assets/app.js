@@ -1,23 +1,17 @@
-/* thetipoff — shared page logic. Vanilla JS, no deps. */
+/* Drop Coverage — shared page logic. Vanilla JS, no deps. */
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
-/* ---------- theme ---------- */
-(function themeInit() {
-  const saved = localStorage.getItem("theme");
-  if (saved) document.documentElement.dataset.theme = saved;
-  addEventListener("DOMContentLoaded", () => {
-    const btn = $("#themeBtn");
-    if (!btn) return;
-    btn.onclick = () => {
-      const cur = document.documentElement.dataset.theme || "dark";  // dark-first
-      const next = cur === "dark" ? "light" : "dark";
-      document.documentElement.dataset.theme = next;
-      localStorage.setItem("theme", next);
-    };
-  });
-})();
+/* ---------- result stamps ----------
+   COVERED / NOT COVERED belongs to graded results only (The Drop and
+   the graded plays), never to projections (brand, 15 Oct 2026). The word
+   carries the meaning; the colour backs it up. */
+const stamp = r => r === "win" ? `<span class="stamp cov">Covered</span>`
+  : r === "loss" ? `<span class="stamp nc">Not covered</span>`
+  : r === "push" ? `<span class="stamp flat">Push</span>`
+  : r === "void" ? `<span class="stamp flat">Void</span>` : "—";
+try { localStorage.removeItem("theme"); } catch { /* the old dark/light switch */ }
 
 /* ---------- team identity ----------
    Colour + abbreviation per team, drawn as CSS/SVG. Deliberately NOT
@@ -98,7 +92,7 @@ async function loadJSON(path) {
 const DATA_API = "https://gpupsgkyyldqyfemtjml.supabase.co/functions/v1/data";
 window.DATA_LOCKED = false;
 function memberToken() {
-  try { return localStorage.getItem("tipoff.member_token") || ""; } catch { return ""; }
+  try { return localStorage.getItem("dc.member_token") || ""; } catch { return ""; }
 }
 async function loadData(name) {
   const pub = loadJSON(name.startsWith("hub/") ? `data/player_hub/${name.slice(4)}.json` : `data/${name}.json`)
@@ -303,7 +297,7 @@ const LEADER_COLS = [
   ["proj", "Pred", false, "our prediction"],
   ["line", "Line", false, "bookmaker line and price for the side we lean"],
   ["adiff", "Diff", false, "our prediction minus the line (sorts by size, overs and unders alike)", true],
-  ["edge", "Edge", false, "our probability minus the bookmaker's (margin removed), with the side it is on; green = a real edge"],
+  ["edge", "Edge", false, "our probability minus the bookmaker's (margin removed), with the side it is on; mint on navy = a real edge"],
   ["mu", "Matchup", false, "what tonight's opponent gives up to his position, and its rank (1st = softest)", true],
   ["l10_hit", "Hit L10", false, "how often our side landed in his last 10 games", true],
 ];
@@ -720,7 +714,7 @@ async function initPlayer() {
   const h = await loadData(`hub/${pid}`);
 
   $("#pname").textContent = h.player;
-  document.title = `${h.player} props and stats — the tipoff`;
+  document.title = `${h.player} Props Today: Projection vs the Line | Drop Coverage`;
   $("#psinglet").innerHTML = playerSinglet(h.team, h.number);
   const oppAb = h.opp ? teamMeta(h.opp)[0] : null;
   $("#pkicker").innerHTML = `${teamBadge(h.team)} ${esc(h.team || "")}${
@@ -835,7 +829,7 @@ async function initPlayer() {
     const v = parseFloat(lineEl.value);
     if (!isNaN(v) && v > 0) { lineInputs[stat] = v; renderLog(); }
   };
-  const rows = Object.entries(h.splits)
+  const rows = Object.entries(h.splits || {})   // the public cut has no splits
     .filter(([, v]) => v && v.games)
     .map(([k, v]) => `<tr><td class="s">${k}</td>
       <td class="num dim">${v.games}</td><td class="num">${fmt(v.min_pg)}</td>
@@ -1176,7 +1170,7 @@ async function initBoxscore() {
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
   $("#bsTitle").textContent = d.matchup;
   $("#bsSub").textContent = d.date;
-  document.title = `${d.matchup} ${d.date} — the tipoff`;
+  document.title = `${d.matchup} ${d.date} | Drop Coverage`;
   $("#bsTables").innerHTML = Object.entries(d.teams).map(([team, t]) => `
     <div class="section"><h2>${teamBadge(team)} ${esc(team)}</h2></div>
     <div class="tablewrap"><table>
@@ -1232,15 +1226,15 @@ async function initRecord() {
   const pl = d.plays || {};
   const graded = pl.n_graded ?? 0;
   $("#rplays").innerHTML = `
-    <div class="card"><div class="k">Won–lost</div><div class="v">${pl.won ?? 0}–${pl.lost ?? 0}</div><div class="r">${pl.push ?? 0} push · ${pl.void ?? 0} void · ${pl.open ?? 0} open</div></div>
+    <div class="card"><div class="k">Covered–not</div><div class="v">${pl.won ?? 0}–${pl.lost ?? 0}</div><div class="r">${pl.push ?? 0} push · ${pl.void ?? 0} void · ${pl.open ?? 0} open</div></div>
     <div class="card"><div class="k">Hit rate</div><div class="v">${pct(pl.hit)}</div><div class="r">${graded} graded</div></div>
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(pl.avg_clv)}</div><div class="r">${pl.n_clv ?? 0} closed · beat the close ${pct(pl.beat_close)}</div></div>
-    <div class="card"><div class="k">Return on stake</div><div class="v">${pl.roi_public ? pct(pl.roi) : "—"}</div><div class="r">${pl.roi_public ? `${fmt(pl.units, 1)} units, flat 1 unit` : `published from ${pl.public_roi_from ?? 100} graded plays`}</div></div>`;
+    <div class="card"><div class="k">Return on stake</div><div class="v">${pl.roi_public ? pct(pl.roi) : "—"}</div><div class="r">${pl.roi_public ? `${fmt(pl.units, 1)} units, flat 1 unit` : `published from ${pl.public_roi_from ?? 100} graded props`}</div></div>`;
   const t = d.tips;
   $("#rtip").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(t?.avg_clv)}</div><div class="r">${t?.n_clv ?? 0} graded at the close</div></div>
     <div class="card"><div class="k">Beat the close</div><div class="v">${pct(t?.beat_close)}</div></div>
-    <div class="card"><div class="k">Won–lost</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="tip.html">Every tip →</a></div></div>`;
+    <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="tip.html">Every Drop →</a></div></div>`;
   const e = d.edges || {};
   $("#redges").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(e.avg_clv)}</div><div class="r">${e.n_clv ?? 0} graded at the close</div></div>
@@ -1248,7 +1242,7 @@ async function initRecord() {
     <div class="card"><div class="k">Edges flagged</div><div class="v">${(e.n ?? 0).toLocaleString("en-AU")}</div></div>`;
 }
 
-/* ---------- Just the Tip ---------- */
+/* ---------- The Drop (internally: the tip) ---------- */
 function auDay(isoDate) {
   const d = new Date(isoDate + "T12:00:00Z");
   return new Intl.DateTimeFormat("en-AU", { timeZone: "UTC", weekday: "short",
@@ -1269,39 +1263,39 @@ async function initTip() {
   const day = auDay(d.au_game_date);
   if (t) {
     const game = [t.team, t.opp].filter(Boolean).join(" v ");
-    $("#tlead").innerHTML = `Our biggest edge for ${day} is <b>${t.player}</b> `
+    $("#tlead").innerHTML = `Today's Drop, for ${day}, is <b>${t.player}</b> `
       + `${sideWord(t.side).toLowerCase()} ${fmt(t.line)} ${t.market_label.toLowerCase()} `
-      + `at ${fmt(t.price, 2)} with ${t.book_label}; we predict `
+      + `at ${fmt(t.price, 2)} with ${t.book_label}; our projection is `
       + `<span class="n">${fmt(t.model_proj)}</span>.`;
     const closed = t.closing_price != null
       ? `Closed ${fmt(t.closing_line)} @ ${fmt(t.closing_price, 2)} · CLV ${pct(t.clv)}` : "";
-    const res = t.result ? ` · ${t.result}${t.actual != null ? ` (${fmt(t.actual)})` : ""}` : "";
+    const res = t.result ? ` · ${stamp(t.result)}${t.actual != null ? ` ${fmt(t.actual)}` : ""}` : "";
     $("#tcard").innerHTML = `<div class="tipcard">
       <div class="ctx">${day.toUpperCase()}${t.trial ? `<span class="tag trial">Preseason trial</span>` : ""}</div>
       <div class="who">${t.player}</div>
       <div class="ctx">${game}${t.game_start ? ` · tips off ${whenAEDT(t.game_start).split(",")[0]}` : ""}</div>
       <div class="bet">${tipBet(t)}</div>
       <div class="figs">
-        <div class="fig"><div class="k">Our prediction</div><div class="v ours">${fmt(t.model_proj)}</div></div>
+        <div class="fig"><div class="k">Our projection</div><div class="v ours">${fmt(t.model_proj)}</div></div>
         <div class="fig"><div class="k">Book line</div><div class="v">${fmt(t.line)}</div></div>
         <div class="fig"><div class="k">Edge ${sideGlyph(t.side)}</div><div class="v ${t.side}">${pct(t.edge)}</div></div>
       </div>
       <div class="foot">Posted ${t.posted_at ? whenAEDT(t.posted_at) : ""}${t.au_book ? "" : " · US line: no Australian book priced this player"}${closed ? " · " + closed : ""}${res}</div>
     </div>`;
   } else {
-    $("#tlead").textContent = `No tip is posted for ${day} yet. It goes up around `
+    $("#tlead").textContent = `No Drop is posted for ${day} yet. It goes up around `
       + `8pm Sydney time the night before the games, once the bookmakers' `
-      + `player lines are up; if none clears the rules, there's no tip.`;
+      + `player lines are up; if none clears the rules, there's no Drop.`;
   }
 
   const s = d.summary;
   $("#tnote").textContent = s.n_tips
-    ? `Regular-season tips only; preseason trial tips are listed below but not counted. Each tip names its bookmaker; a US book stands in where no Australian book priced the player.`
-    : `The record starts on opening night, 20 October (21 October AEDT). Preseason tips are a trial run: listed, never counted. Each tip names its bookmaker; a US book stands in where no Australian book priced the player.`;
+    ? `Regular-season Drops only; preseason trial Drops are listed below but not counted. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`
+    : `The record starts on opening night, 20 October (21 October AEDT). Preseason Drops are a trial run: listed, never counted. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`;
   $("#tcards").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(s.avg_clv)}</div><div class="r">${s.n_clv} graded at the close</div></div>
     <div class="card"><div class="k">Beat the close</div><div class="v">${pct(s.beat_close)}</div></div>
-    <div class="card"><div class="k">Won–lost</div><div class="v">${s.wins}–${s.losses}</div><div class="r">${s.pushes} push · ${s.voids} void</div></div>
+    <div class="card"><div class="k">Covered–not</div><div class="v">${s.wins}–${s.losses}</div><div class="r">${s.pushes} push · ${s.voids} void</div></div>
     <div class="card"><div class="k">Hit rate</div><div class="v">${pct(s.hit_rate)}</div></div>
     <div class="card"><div class="k">Return (flat)</div><div class="v">${pct(s.roi)}</div></div>`;
   const tb = $("#tips tbody");
@@ -1312,9 +1306,9 @@ async function initTip() {
       <td class="num opt">${fmt(r.price, 2)}</td>
       <td class="num opt">${r.closing_price != null ? (r.closing_line !== r.line ? fmt(r.closing_line) + " @ " : "") + fmt(r.closing_price, 2) : "—"}</td>
       <td class="num ${r.clv > 0 ? "pos" : r.clv < 0 ? "neg" : ""}">${pct(r.clv)}</td>
-      <td class="num">${r.result ?? "—"}</td>
+      <td class="num">${stamp(r.result)}${r.actual != null && r.result ? `<div class="sm dim">${fmt(r.actual)}</div>` : ""}</td>
     </tr>`).join("")
-    : `<tr><td colspan="7" class="empty">No tips yet. The first goes up the
+    : `<tr><td colspan="7" class="empty">No Drops yet. The first goes up the
        night before the first preseason games.</td></tr>`;
 }
 
@@ -1358,19 +1352,19 @@ async function initHome() {
   $("#hRecord").innerHTML = ps.n ? `<div class="cards">
     <div class="card"><div class="k">Points: average miss</div><div class="v">${fmt(ps.mae)}</div><div class="r">${ps.n.toLocaleString("en-AU")} player games</div></div>
     <div class="card"><div class="k">Inside our range</div><div class="v">${pct(ps.coverage)}</div><div class="r">target 80%</div></div>
-    <div class="card"><div class="k">Tip: avg CLV</div><div class="v">${pct(ts.avg_clv)}</div><div class="r">${ts.n_clv ?? 0} graded at the close</div></div>
-    <div class="card"><div class="k">Tip: won–lost</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="track-record.html">Full record →</a></div></div></div>`
-    : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the tip's closing-line value. <a href="track-record.html">How it's graded →</a></p>`;
+    <div class="card"><div class="k">The Drop: avg CLV</div><div class="v">${pct(ts.avg_clv)}</div><div class="r">${ts.n_clv ?? 0} graded at the close</div></div>
+    <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="track-record.html">Full record →</a></div></div></div>`
+    : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the Drop's closing-line value. <a href="track-record.html">How it's graded →</a></p>`;
   const games = gd?.games || [];
   if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${auDate(games[0].start)}`;
 
   const t = tips?.today;
   const rec = tips?.summary;
-  $("#hTip").innerHTML = `<div class="ph2"><span>Just the Tip</span><a href="tip.html">Record →</a></div>` + (t
+  $("#hTip").innerHTML = `<div class="ph2"><span>The Drop</span><a href="tip.html">Record →</a></div>` + (t
     ? `<div class="tipmini">
         <div class="who">${esc(t.player)}</div>
         <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${fmt(t.price, 2)}</b>, ${esc(t.book_label)}</div>
-        <div class="sm">Our prediction <b class="ours">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
+        <div class="sm">Our projection <b class="ours">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
       </div>`
     : `<p class="dim">Our biggest edge goes up around 8pm Sydney time the night before the games.</p>`)
     + (rec && rec.n_tips ? `<div class="sm dim">Season: ${rec.wins}–${rec.losses}, average CLV ${pct(rec.avg_clv)}</div>` : "");
@@ -1791,7 +1785,7 @@ function mountSignup() {
   el.className = "signup";
   el.id = "signup";
   el.innerHTML = `
-    <div class="su-copy"><b>Email before 1 December: season one for $69, not $99.</b>
+    <div class="su-copy"><b>Email before 1 December: season one for A$69 (US$49), not A$99.</b>
       <span>Leave your email and we'll send the offer when memberships open. One email, nothing else.</span></div>
     <form id="suForm" novalidate>
       <label class="vh" for="suEmail">Email address</label>
@@ -1800,7 +1794,7 @@ function mountSignup() {
       <button id="suBtn" type="submit">Sign up</button>
     </form>
     <p class="su-msg" id="suMsg" role="status"></p>
-    <p class="su-fine">Used only to send the offer when memberships open. The $69 season pass is for season one (1 December to the Finals, AUD); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
+    <p class="su-fine">Used only to send the offer when memberships open. The early-bird season pass is A$69 or US$49 for season one (1 December to the Finals); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
   foot.before(el);
   $("#suForm").addEventListener("submit", async ev => {
     ev.preventDefault();
@@ -1818,7 +1812,7 @@ function mountSignup() {
       if (r.ok && d.ok) {
         $("#suForm").hidden = true;
         msg.textContent = "You're on the list. We'll email you once, when memberships open."; msg.className = "su-msg ok";
-        window.tipoffEvent?.("sign_up", { method: "email", source_page: location.pathname });
+        window.dcEvent?.("sign_up", { method: "email", source_page: location.pathname });
       } else {
         msg.textContent = d.error || "That didn't go through. Try again in a minute."; msg.className = "su-msg err";
       }
