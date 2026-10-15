@@ -43,26 +43,28 @@
   --sans: "Archivo", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
   --mono: "DM Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
-/* night: navy ground, panels a step lighter, cream ink, maple rules.
-   Follows the device until the reader picks (data-theme, set before
-   paint from localStorage "dc.mode"). Court-red text lifts to 5.9:1 on
-   navy; court-red fills and the stripe stay as they are. */
+/* night: navy ground, cream ink, maple rules. Still the six colours
+   (brand kit): the panel is maple at 6% over navy, flattened (#232B41),
+   and small red text is court-red 40% toward cream, flattened (#DA7D6E,
+   5.5:1 on navy, 4.8:1 on a panel); court-red fills and the stripe stay
+   as they are. Follows the device until the reader picks (data-theme,
+   set before paint from localStorage "dc.mode"). */
 :root[data-theme="dark"] {
-  --ground: #16203A; --surface: #1D2948; --ink: #F5EAD3; --on-ink: #16203A;
+  --ground: var(--navy); --surface: #232B41; --ink: var(--cream); --on-ink: var(--navy);
   --rule: rgba(234, 215, 178, .42); --hairline: rgba(234, 215, 178, .14);
-  --sub: rgba(234, 215, 178, .72); --data: #0D1427;
+  --sub: var(--label-on-navy); --data: var(--navy);
   --tint: rgba(234, 215, 178, .05); --tint-2: rgba(234, 215, 178, .08);
-  --red-text: #F07A6E; --red-soft: rgba(240, 122, 110, .12);
+  --red-text: #DA7D6E; --red-soft: rgba(218, 125, 110, .12);
   --over: var(--mint); --fmark: url("/assets/brand/wordmark-stacked-night.svg");
   color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --ground: #16203A; --surface: #1D2948; --ink: #F5EAD3; --on-ink: #16203A;
+    --ground: var(--navy); --surface: #232B41; --ink: var(--cream); --on-ink: var(--navy);
     --rule: rgba(234, 215, 178, .42); --hairline: rgba(234, 215, 178, .14);
-    --sub: rgba(234, 215, 178, .72); --data: #0D1427;
+    --sub: var(--label-on-navy); --data: var(--navy);
     --tint: rgba(234, 215, 178, .05); --tint-2: rgba(234, 215, 178, .08);
-    --red-text: #F07A6E; --red-soft: rgba(240, 122, 110, .12);
+    --red-text: #DA7D6E; --red-soft: rgba(218, 125, 110, .12);
     --over: var(--mint); --fmark: url("/assets/brand/wordmark-stacked-night.svg");
     color-scheme: dark;
   }
