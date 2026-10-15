@@ -1,5 +1,6 @@
 /* Drop Coverage — static site styles (docs/brand/BRAND.md, tokens.json).
-   Light-first on maple, a printed game-day programme: square corners,
+   Day on maple, night on navy (the tokens below), a printed game-day
+   programme: square corners,
    borders not shadows, Archivo for words, DM Mono for every number.
    Six colours and no more:
      maple      the ground          cream      panels and tables
@@ -14,24 +15,57 @@
 :root {
   --maple: #EAD7B2; --cream: #F5EAD3; --navy: #16203A;
   --court-red: #C8352B; --mint: #7FD4A4; --brown: #5B4A2F;
-  --label-on-navy: rgba(234, 215, 178, .7); --hairline: rgba(22, 32, 58, .16);
+  --label-on-navy: rgba(234, 215, 178, .7);
 
-  --bg: var(--maple); --panel: var(--cream); --panel-2: rgba(22, 32, 58, .05);
-  --line: var(--hairline); --line-strong: var(--navy);
-  --ink: var(--navy); --muted: var(--brown); --faint: var(--brown);
-  --accent: var(--court-red); --accent-ink: var(--cream); --accent-soft: rgba(200, 53, 43, .08);
-  --signal: var(--navy); --signal-soft: var(--navy);
-  --bad: var(--court-red); --chip: rgba(22, 32, 58, .06);
-  --tierA: var(--mint); --tierB: var(--brown);
-  --over: var(--mint); --under: var(--court-red);
-  --good: var(--navy);
-  --dn: var(--court-red); --dn-soft: rgba(200, 53, 43, .08);
+  /* day (owner, 15 Oct 2026: day is maple and cream, night is navy).
+     Everything below reads these, so night only swaps them. */
+  --ground: var(--maple); --surface: var(--cream); --ink: var(--navy); --on-ink: var(--cream);
+  --rule: var(--navy); --hairline: rgba(22, 32, 58, .16); --sub: var(--brown);
+  --data: var(--navy); --tint: rgba(22, 32, 58, .05); --tint-2: rgba(22, 32, 58, .07);
+  --red-text: var(--court-red); --red-soft: rgba(200, 53, 43, .08);
+  --over: var(--navy); --under: var(--red-text);
+  --fmark: url("/assets/brand/wordmark-stacked.svg");
+  color-scheme: light;
+
+  /* the older names, kept so the page logic needn't change */
+  --bg: var(--ground); --panel: var(--surface); --panel-2: var(--tint);
+  --line: var(--hairline); --line-strong: var(--rule);
+  --muted: var(--sub); --faint: var(--sub);
+  --accent: var(--red-text); --accent-ink: var(--on-ink); --accent-soft: var(--red-soft);
+  --signal: var(--ink); --signal-soft: var(--data);
+  --bad: var(--red-text); --chip: var(--tint);
+  --tierA: var(--mint); --tierB: var(--sub);
+  --good: var(--ink);
+  --dn: var(--red-text); --dn-soft: var(--red-soft);
   /* no market shades: markets are told apart by their label */
-  --st-pts: var(--navy); --st-reb: var(--navy); --st-ast: var(--navy); --st-3pm: var(--navy);
-  --st-combo: var(--navy); --st-other: var(--navy);
+  --st-pts: var(--ink); --st-reb: var(--ink); --st-ast: var(--ink); --st-3pm: var(--ink);
+  --st-combo: var(--ink); --st-other: var(--ink);
   --sans: "Archivo", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
   --mono: "DM Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  color-scheme: light;
+}
+/* night: navy ground, panels a step lighter, cream ink, maple rules.
+   Follows the device until the reader picks (data-theme, set before
+   paint from localStorage "dc.mode"). Court-red text lifts to 5.9:1 on
+   navy; court-red fills and the stripe stay as they are. */
+:root[data-theme="dark"] {
+  --ground: #16203A; --surface: #1D2948; --ink: #F5EAD3; --on-ink: #16203A;
+  --rule: rgba(234, 215, 178, .42); --hairline: rgba(234, 215, 178, .14);
+  --sub: rgba(234, 215, 178, .72); --data: #0D1427;
+  --tint: rgba(234, 215, 178, .05); --tint-2: rgba(234, 215, 178, .08);
+  --red-text: #F07A6E; --red-soft: rgba(240, 122, 110, .12);
+  --over: var(--mint); --fmark: url("/assets/brand/wordmark-stacked-night.svg");
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #16203A; --surface: #1D2948; --ink: #F5EAD3; --on-ink: #16203A;
+    --rule: rgba(234, 215, 178, .42); --hairline: rgba(234, 215, 178, .14);
+    --sub: rgba(234, 215, 178, .72); --data: #0D1427;
+    --tint: rgba(234, 215, 178, .05); --tint-2: rgba(234, 215, 178, .08);
+    --red-text: #F07A6E; --red-soft: rgba(240, 122, 110, .12);
+    --over: var(--mint); --fmark: url("/assets/brand/wordmark-stacked-night.svg");
+    color-scheme: dark;
+  }
 }
 
 * { box-sizing: border-box; }
@@ -53,7 +87,7 @@ header.site {
   border-bottom: 1px solid var(--line); background: var(--panel);
   position: sticky; top: 0; z-index: 5;
 }
-.logo { text-decoration: none; display: inline-flex; flex: none; color: var(--navy); }
+.logo { text-decoration: none; display: inline-flex; flex: none; color: var(--ink); }
 /* the lane-line wordmark, live type (Wordmark component): Archivo 900 at
    70% width over a straight stripe, navy 36%, gap, court-red 13%, gap,
    navy to the end */
@@ -64,8 +98,8 @@ header.site {
 }
 .wm::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: .12em;
-  background: linear-gradient(90deg, var(--navy) 0 36%, transparent 36% 37.6%,
-    var(--court-red) 37.6% 50.6%, transparent 50.6% 52.2%, var(--navy) 52.2% 100%);
+  background: linear-gradient(90deg, var(--ink) 0 36%, transparent 36% 37.6%,
+    var(--court-red) 37.6% 50.6%, transparent 50.6% 52.2%, var(--ink) 52.2% 100%);
 }
 nav.site {
   display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none;
@@ -579,18 +613,18 @@ ul.plain.cols { columns: 2; column-gap: 24px; }
 .pst b { font-size: 16px; color: var(--ink); }
 
 /* ================= Drop Coverage brand layer (15 Oct 2026) ================= */
-body { background: var(--maple); color: var(--navy); font: 400 15.5px/1.5 var(--sans); }
+body { background: var(--ground); color: var(--ink); font: 400 15.5px/1.5 var(--sans); }
 b, strong { font-weight: 700; }
-::selection { background: var(--navy); color: var(--cream); }
+::selection { background: var(--ink); color: var(--on-ink); }
 
 /* header: maple, a navy rule; the nav in Archivo, sentence case */
-header.site { background: var(--maple); border-bottom: 2px solid var(--navy); height: 60px; }
+header.site { background: var(--ground); border-bottom: 2px solid var(--rule); height: 60px; }
 nav.site { mask-image: none; }
-nav.site a { color: var(--brown); font: 600 14.5px/1 var(--sans); font-stretch: 88%; border-radius: 0; }
-nav.site a:hover, nav.site a.on { color: var(--navy); }
-.fresh { background: var(--maple); color: var(--brown); border-bottom: 1px solid var(--hairline); }
-.fresh b { color: var(--navy); }
-.fresh.stale { border-left: 4px solid var(--court-red); background: var(--cream); }
+nav.site a { color: var(--sub); font: 600 14.5px/1 var(--sans); font-stretch: 88%; border-radius: 0; }
+nav.site a:hover, nav.site a.on { color: var(--ink); }
+.fresh { background: var(--ground); color: var(--sub); border-bottom: 1px solid var(--hairline); }
+.fresh b { color: var(--ink); }
+.fresh.stale { border-left: 4px solid var(--court-red); background: var(--surface); }
 
 /* type: one H1 per page in the page-title style, section heads in the
    section style, kickers and labels in DM Mono */
@@ -601,75 +635,76 @@ h1, main.static h1 {
 h1.home-h1 { font-size: 52px; max-width: 18ch; }
 .section h2, main.static h2, .prose h2 {
   font: 800 23px/1.1 var(--sans); font-stretch: 75%; text-transform: uppercase;
-  color: var(--navy); letter-spacing: 0; margin: 30px 0 10px;
+  color: var(--ink); letter-spacing: 0; margin: 30px 0 10px;
 }
 .section { margin: 30px 0 10px; }
 .section h2 { margin: 0 0 8px; }
-.grid2 .section h2 { color: var(--navy); font-size: 20px; }
+.grid2 .section h2 { color: var(--ink); font-size: 20px; }
 .kicker, .ph2, .card .k, th, .filters label, .fsel span, .daterange label, .msel summary .k, .pst .k {
-  font-family: var(--mono); color: var(--brown);
+  font-family: var(--mono); color: var(--sub);
 }
-p.lead { font-size: 18px; line-height: 1.45; color: var(--navy); }
-p.lead .n, .ours, .pv, .tipcard .fig .v.ours { color: var(--court-red); font-weight: 600; }
-p.sub, .sm, .dim, .mu { color: var(--brown); }
+p.lead { font-size: 18px; line-height: 1.45; color: var(--ink); }
+p.lead .n, .ours, .pv, .tipcard .fig .v.ours { color: var(--red-text); font-weight: 600; }
+p.sub, .sm, .dim, .mu { color: var(--sub); }
 a { text-underline-offset: 2px; }
-td a:hover, .lcard:hover b { color: var(--court-red); }
+td a:hover, .lcard:hover b { color: var(--red-text); }
 
 /* panels and tables: cream, a 2px navy frame, hairline rows */
 .tablewrap, .card, .panel, .gmini, .lcard, .game, .tipcard, .filters, .signup input[type=email],
 .controls select, .controls input, .fsel select, .filters select, .filters input,
 .daterange input[type="date"], .msel summary .v, .msel .list, .infotip, .stepper button, .stepper input {
-  border: 2px solid var(--navy); border-radius: 0;
+  border: 2px solid var(--rule); border-radius: 0;
 }
-.tablewrap, .card, .panel, .gmini, .lcard, .game, .tipcard, .filters { background: var(--cream); }
-.filters select, .filters input { background: var(--cream); }
-th { background: var(--cream); color: var(--brown); font-weight: 500; }
+.tablewrap, .card, .panel, .gmini, .lcard, .game, .tipcard, .filters { background: var(--surface); }
+.filters select, .filters input { background: var(--surface); }
+th { background: var(--surface); color: var(--sub); font-weight: 500; }
 th, td { border-bottom: 1px solid var(--hairline); }
-th.sorted { color: var(--navy); text-decoration: underline 2px var(--court-red); text-underline-offset: 3px; }
-tbody tr:hover td { background: rgba(22, 32, 58, .05); }
-.block .tablewrap { border-top: 2px solid var(--navy); }
-.card[data-stat] { border-top: 2px solid var(--navy); }
-.card .v { color: var(--navy); }
+th.sorted { color: var(--ink); text-decoration: underline 2px var(--court-red); text-underline-offset: 3px; }
+tbody tr:hover td { background: var(--tint); }
+.block .tablewrap { border-top: 2px solid var(--rule); }
+.card[data-stat] { border-top: 2px solid var(--rule); }
+.card .v { color: var(--ink); }
 .tipcard .fig { border: 1px solid var(--hairline); border-radius: 0; }
 .gmini:hover, .lcard:hover { border-color: var(--court-red); }
 
 /* chips and buttons: navy when on, square */
-.chip { border: 2px solid var(--navy); border-radius: 2px; color: var(--navy); background: transparent; }
-.chip:hover { background: rgba(22, 32, 58, .06); color: var(--navy); }
-.chip.on, .chip[data-s].on { background: var(--navy); color: var(--cream); border-color: var(--navy); }
+.chip { border: 2px solid var(--rule); border-radius: 2px; color: var(--ink); background: transparent; }
+.chip:hover { background: var(--tint); color: var(--ink); }
+.chip.on, .chip[data-s].on { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
 .block .section h2::before, .chip[data-s]::before { display: none; }
-.seg { border: 2px solid var(--navy); border-radius: 0; }
+.seg { border: 2px solid var(--rule); border-radius: 0; }
 .seg .chip { border: 0; }
-.seg .chip + .chip { border-left: 2px solid var(--navy); }
-.signup button { background: var(--navy); color: var(--cream); border-radius: 0; font-weight: 700; }
-.signup button:hover { background: #0e1528; }
+.seg .chip + .chip { border-left: 2px solid var(--rule); }
+.signup button { background: var(--ink); color: var(--on-ink); border-radius: 0; font-weight: 700; }
+.signup button:hover { opacity: .88; }
 .tbadge { border-radius: 2px; }
 
 /* edges: a clear edge is mint on a navy chip with its side glyph; below
    the threshold it's plain navy text, no colour */
-.edge.hot, .edge.hot.under { background: var(--navy); color: var(--mint); font-weight: 600; border-radius: 0; }
-.edge.warm { color: var(--navy); font-weight: 600; }
-.edge.cold { color: var(--brown); }
-.pos, .hit.good, table.summary-t .hi, .mv.up { color: var(--navy); font-weight: 700; }
-.neg, table.summary-t .lo, .mv.down { color: var(--court-red); font-weight: 600; }
-.mu.soft::before { color: var(--court-red); }
+.edge.hot, .edge.hot.under { background: var(--data); color: var(--mint); font-weight: 600; border-radius: 0; }
+.edge.warm { color: var(--ink); font-weight: 600; }
+.edge.cold { color: var(--sub); }
+.pos, .hit.good, table.summary-t .hi, .mv.up { color: var(--ink); font-weight: 700; }
+.neg, table.summary-t .lo, .mv.down { color: var(--red-text); font-weight: 600; }
+.mu.soft::before { color: var(--red-text); }
 .badge { border-radius: 0; }
-.badge.A { background: var(--navy); color: var(--mint); }
-.badge.B, .badge.src, .badge.over, .badge.under { background: rgba(22, 32, 58, .07); color: var(--navy); }
-.tipcard .fig .v.over, .tipcard .fig .v.under { color: var(--navy); }
-table.summary-t tr.linerow td { background: rgba(200, 53, 43, .07); }
+.badge.A { background: var(--data); color: var(--mint); }
+.badge.B, .badge.src, .badge.over, .badge.under { background: var(--tint-2); color: var(--ink); }
+.tipcard .fig .v.over, .tipcard .fig .v.under { color: var(--ink); }
+table.summary-t tr.linerow td { background: var(--red-soft); }
 
-/* the prop chart is a data panel: navy ground, the line in maple, bars
-   mint over the line and court red under, labels in the maple tint */
-.chartpanel { background: var(--navy); border: 0; border-radius: 0; }
-.chartpanel text { fill: var(--label-on-navy); }
-.chartpanel .gline { stroke: rgba(234, 215, 178, .14); }
-.chartpanel .propline { stroke: var(--maple); stroke-width: 3; }
-.chartpanel .proplbl { fill: var(--maple); }
-.chartpanel .projtick { stroke: var(--court-red); }
-.chartpanel .projlbl { fill: var(--cream); }
-.chartpanel + .legendrow, .legendrow { color: var(--brown); }
-.tip { background: var(--navy); color: var(--cream); border-radius: 0; }
+/* the prop chart sits on a panel like every table (owner, 15 Oct: no
+   navy backdrop): bars over the line navy by day and mint by night,
+   red under; the bookmaker line in ink, our prediction dashed red */
+.chartpanel { background: var(--surface); border: 2px solid var(--rule); border-radius: 0; }
+.chartpanel text { fill: var(--sub); }
+.chartpanel .gline { stroke: var(--hairline); }
+.chartpanel .propline { stroke: var(--ink); stroke-width: 2.5; }
+.chartpanel .proplbl { fill: var(--ink); }
+.chartpanel .projtick { stroke: var(--red-text); }
+.chartpanel .projlbl { fill: var(--red-text); }
+.chartpanel + .legendrow, .legendrow { color: var(--sub); }
+.tip { background: var(--ink); color: var(--on-ink); border-radius: 0; }
 
 /* result stamps (graded plays and Just the Tip only): the words carry
    the meaning, the colour backs it up */
@@ -679,18 +714,21 @@ table.summary-t tr.linerow td { background: rgba(200, 53, 43, .07); }
 }
 .stamp.cov { background: var(--mint); color: var(--navy); box-shadow: inset 0 0 0 2px var(--navy); }
 .stamp.nc { background: var(--court-red); color: var(--cream); box-shadow: inset 0 0 0 2px var(--cream); }
-.stamp.flat { background: transparent; color: var(--brown); box-shadow: inset 0 0 0 2px var(--brown); }
+.stamp.flat { background: transparent; color: var(--sub); box-shadow: inset 0 0 0 2px var(--sub); }
 
 /* footer: the stacked wordmark, both help lines, the links */
-footer.rg { background: var(--maple); border-top: 2px solid var(--navy); color: var(--brown);
+footer.rg { background: var(--ground); border-top: 2px solid var(--rule); color: var(--sub);
   font-size: 13.5px; padding: 28px 16px 34px; }
-footer.rg .fmark { display: inline-block; margin-bottom: 14px; }
-footer.rg .fmark img { display: block; width: 104px; height: auto; }
+/* the stacked wordmark: the img keeps the alt text and the size, the
+   colour comes from --fmark (navy by day, cream by night) */
+footer.rg .fmark { display: inline-block; margin-bottom: 14px;
+  background: var(--fmark) no-repeat center / contain; }
+footer.rg .fmark img { display: block; width: 104px; height: auto; visibility: hidden; }
 footer.rg .rgline { margin: 0 auto 6px; max-width: 70ch; }
-footer.rg b { color: var(--navy); }
-footer.rg a { color: var(--navy); }
+footer.rg b { color: var(--ink); }
+footer.rg a { color: var(--ink); }
 footer.rg .flinks { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 16px; margin: 14px 0 8px; font-weight: 600; }
-.signup { border-top: 2px solid var(--navy); }
+.signup { border-top: 2px solid var(--rule); }
 .signup .su-copy b { font: 800 19px/1.2 var(--sans); font-stretch: 80%; text-transform: uppercase; }
 
 /* legal pages */
@@ -723,3 +761,12 @@ main.legal .tablewrap { margin: 6px 0 14px; }
   table.stat td.s.sm { min-width: 10.5em; }
   table.stat td.s > a { white-space: nowrap; }
 }
+
+/* day / night switch (owner, 15 Oct 2026), added to the header by app.js */
+.modebtn { flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; padding: 0; background: transparent; color: var(--ink);
+  border: 2px solid var(--rule); border-radius: 0; cursor: pointer; }
+.modebtn:hover { background: var(--tint); }
+.modebtn:focus-visible { outline: 2px solid var(--red-text); outline-offset: 2px; }
+.modebtn svg { display: block; width: 18px; height: 18px; }
+@media (max-width: 640px) { .modebtn { width: 32px; height: 32px; } }

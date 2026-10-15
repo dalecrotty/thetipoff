@@ -11,7 +11,46 @@ const stamp = r => r === "win" ? `<span class="stamp cov">Covered</span>`
   : r === "loss" ? `<span class="stamp nc">Not covered</span>`
   : r === "push" ? `<span class="stamp flat">Push</span>`
   : r === "void" ? `<span class="stamp flat">Void</span>` : "—";
-try { localStorage.removeItem("theme"); } catch { /* the old dark/light switch */ }
+/* ---------- day / night (owner, 15 Oct 2026) ----------
+   Night is navy, day is maple and cream. A page follows the device until
+   the reader picks; the pick is kept as "dc.mode" and applied before
+   paint by the one-line script in each page's <head>. */
+const MODE_KEY = "dc.mode";
+const SUN = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+  aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 1.8v3M12 19.2v3M1.8 12h3M19.2 12h3
+  M4.8 4.8l2.1 2.1M17.1 17.1l2.1 2.1M4.8 19.2l2.1-2.1M17.1 6.9l2.1-2.1"/></svg>`;
+const MOON = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  <path d="M20.6 14.7A8.6 8.6 0 0 1 9.3 3.4a8.6 8.6 0 1 0 11.3 11.3z"/></svg>`;
+const nightNow = () => {
+  const t = document.documentElement.getAttribute("data-theme");
+  return t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+};
+function paintMode(btn) {
+  const night = nightNow();
+  for (const m of $$('meta[name="theme-color"]')) m.setAttribute("content", night ? "#16203A" : "#EAD7B2");
+  const label = night ? "Switch to day mode" : "Switch to night mode";
+  btn.innerHTML = night ? SUN : MOON;
+  btn.setAttribute("aria-label", label);
+  btn.title = label;
+}
+(function modeSwitch() {
+  try { localStorage.removeItem("theme"); } catch { /* the old dark/light switch */ }
+  const header = $("header.site");
+  if (!header) return;
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "modebtn";
+  header.appendChild(btn);
+  btn.addEventListener("click", () => {
+    const next = nightNow() ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem(MODE_KEY, next); } catch { /* private window: this page only */ }
+    paintMode(btn);
+  });
+  const mq = matchMedia("(prefers-color-scheme: dark)");
+  if (mq.addEventListener) mq.addEventListener("change", () => paintMode(btn));
+  paintMode(btn);
+})();
 
 /* ---------- team identity ----------
    Colour + abbreviation per team, drawn as CSS/SVG. Deliberately NOT
