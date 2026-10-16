@@ -479,6 +479,57 @@ function leadSentence(rows) {
     fmt(top.proj)}</span> points${opp} tonight${line}.`;
 }
 
+/* ---------- CSV export (docs/csv-export.md) ----------
+   One row per player, every market: our prediction and 80% range, the
+   bookmaker's line and price (decimal) and the edge, + on the over and −
+   on the under. The board's game / team / search filters decide the rows.
+   Free until the members' gate goes on (1 Dec 2026), then members only:
+   raw data free now, a reason to join later (owner, 16 Oct 2026). */
+const CSV_MARKETS = [["PTS", "points"], ["REB", "rebounds"], ["AST", "assists"], ["3PM", "threes"],
+  ["STL", "steals"], ["BLK", "blocks"], ["TOV", "turnovers"], ["PRA", "pra"], ["PR", "pr"], ["PA", "pa"], ["RA", "ra"]];
+function boardCsv(rows, start) {
+  const by = new Map();
+  for (const r of rows) {
+    if (!by.has(r.player_id)) by.set(r.player_id, { r, m: {} });
+    by.get(r.player_id).m[r.stat] = r;
+  }
+  const q = v => v == null ? "" : /[",\r\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
+  const n = (v, dp) => v == null || v === "" || isNaN(v) ? "" : Number(v).toFixed(dp);
+  const tip = iso => {
+    if (!iso) return "";
+    const p = Object.fromEntries(new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Sydney", year: "numeric",
+      month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" })
+      .formatToParts(new Date(iso)).map(x => [x.type, x.value]));
+    return `${p.year}-${p.month}-${p.day} ${p.hour}:${p.minute}`;
+  };
+  const head = ["id", "last_name", "first_name", "full_name", "team", "position", "opponent", "tip_off_aedt",
+    "status", "minutes", "book", ...CSV_MARKETS.flatMap(([, k]) =>
+      [k, `${k}_low`, `${k}_high`, `${k}_line`, `${k}_price`, `${k}_edge`])];
+  const out = [head.join(",")];
+  for (const { r, m } of by.values()) {
+    const name = String(r.player || "").split(" ");
+    const book = Object.values(m).find(x => x.book)?.book || "";
+    const row = [r.player_id, name.slice(1).join(" "), name[0], r.player, r.team, r.pos || "", r.opp || "",
+      tip(start[r.game]), r.injury_status || "", n(r.minutes, 1), book];
+    for (const [s] of CSV_MARKETS) {
+      const x = m[s];
+      const edge = x && x.edge != null ? (x.side === "under" ? -1 : 1) * x.edge * 100 : null;
+      row.push(...(x ? [n(x.proj, 1), n(x.floor, 1), n(x.ceiling, 1), n(x.line, 1), n(x.price, 2), n(edge, 1)]
+        : ["", "", "", "", "", ""]));
+    }
+    out.push(row.map(q).join(","));
+  }
+  return { text: "\ufeff" + out.join("\r\n"), players: by.size };   // the BOM: Excel reads UTF-8
+}
+function downloadFile(text, name, type = "text/csv;charset=utf-8") {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([text], { type }));
+  a.download = name;
+  document.body.append(a);
+  a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+}
+
 async function initBoard() {
   const meta = await renderFreshness();
   const data = await loadData("projections");
@@ -625,6 +676,20 @@ async function initBoard() {
     }).catch(() => {});
   }
   else if (wt && [...teamSel.options].some(o => o.value === wt)) teamSel.value = wt;
+  const csvBtn = $("#csvBtn");
+  if (csvBtn) {
+    if (window.DATA_LOCKED) { csvBtn.textContent = "CSV: members"; csvBtn.title = "The CSV export is part of membership"; }
+    csvBtn.onclick = async () => {
+      if (window.DATA_LOCKED) { location.href = "/api.html#members"; return; }
+      const gd = await loadData("games").catch(() => null);
+      const start = {};
+      (gd?.games || []).forEach(g => { start[`${g.home} vs ${g.away}`] = g.start; });
+      const { text, players } = boardCsv(rows.filter(shared), start);
+      const day = (meta && meta.slate_date) || new Date().toISOString().slice(0, 10);
+      downloadFile(text, `dropcoverage-predictions-${day}.csv`);
+      window.dcEvent?.("export_csv", { players });
+    };
+  }
   sortable($("#board"), rows, render);
   // default: biggest edge first; rows without a line after, by prediction
   rows.sort((a, b) => cmpBy(boardSort, -1)(a, b) || (b.proj ?? 0) - (a.proj ?? 0));
@@ -1463,7 +1528,13 @@ async function initTip() {
   }
 
   const s = d.summary;
-  $("#tnote").textContent = s.n_tips
+  // no preseason anywhere (owner, 16 Oct 2026): from opening night the
+  // preseason trial Drops leave the record; they were never counted
+  const seasonOn = new Date().toISOString().slice(0, 10) >= "2026-10-20";
+  const tipsShown = d.tips.filter(r => !(seasonOn && r.trial));
+  $("#tnote").textContent = seasonOn
+    ? `Regular-season Drops only. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`
+    : s.n_tips
     ? `Regular-season Drops only; preseason trial Drops are listed below but not counted. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`
     : `The record starts on opening night, 20 October (21 October AEDT). Preseason Drops are a trial run: listed, never counted. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`;
   $("#tcards").innerHTML = `
@@ -1473,7 +1544,7 @@ async function initTip() {
     <div class="card"><div class="k">Hit rate</div><div class="v">${pct(s.hit_rate)}</div></div>
     <div class="card"><div class="k">Return (flat)</div><div class="v">${pct(s.roi)}</div></div>`;
   const tb = $("#tips tbody");
-  tb.innerHTML = d.tips.length ? d.tips.map(r => `<tr class="${r.trial ? "trial" : ""}">
+  tb.innerHTML = tipsShown.length ? tipsShown.map(r => `<tr class="${r.trial ? "trial" : ""}">
       <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}</td>
       <td class="s">${r.player}</td>
       <td class="s">${r.market_label} ${sideGlyph(r.side)} ${fmt(r.line)}</td>
