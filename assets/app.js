@@ -1611,12 +1611,17 @@ const SITUATIONS = [
     f: (r, v) => v === "all" || (v === "out") === !!r.missing_top3 },
   { k: "group", label: "Opponent", opts: [["all", "All"], ["conf", "Conference"], ["nconf", "Non-conference"], ["div", "Division"], ["ndiv", "Non-division"]],
     f: (r, v) => v === "all" || (v === "conf" ? r.conf : v === "nconf" ? !r.conf : v === "div" ? r.div : !r.div) },
-  { k: "type", label: "Games", opts: [["reg", "Regular season"], ["post", "Play-in and playoffs"], ["all", "All"]],
-    f: (r, v) => v === "all" || (v === "post") === !!r.post },
+  /* game type (owner, 16 Oct 2026): exact, from the season-phase dates;
+     a game with no type is outside every known season and never counts
+     (no preseason anywhere). Rendered beside Season and Time frame. */
+  { k: "type", label: "Game type", opts: [["regular", "Regular season"], ["play_in", "Play-In"],
+      ["playoffs", "Playoffs"], ["cup_final", "NBA Cup final"], ["all", "All games"]],
+    f: (r, v) => { const ph = r.phase !== undefined ? r.phase : (r.post ? "playoffs" : "regular");
+      return ph !== null && (v === "all" || ph === v); } },
   { k: "cup", label: "NBA Cup", opts: [["all", "All"], ["cup", "Cup games"], ["not", "Not Cup"]],
     f: (r, v) => v === "all" || (v === "cup") === !!r.cup },
 ];
-const SIT_DEFAULT = Object.fromEntries(SITUATIONS.map(f => [f.k, f.k === "type" ? "reg" : "all"]));
+const SIT_DEFAULT = Object.fromEntries(SITUATIONS.map(f => [f.k, f.k === "type" ? "regular" : "all"]));
 
 const gameKey = r => r.date + "|" + (r.home ? r.team : r.opp);
 function trendStats(rows) {
@@ -1645,46 +1650,73 @@ function trendStats(rows) {
 }
 const rec = (a, b, c) => `${a}–${b}${c ? `–${c}` : ""}`;
 
-/* date range: from / to (YYYY-MM-DD), with presets; default this season */
-function seasonStartOf(d) {               // 1 October of the season the date is in
-  const y = d.getUTCMonth() >= 7 ? d.getUTCFullYear() : d.getUTCFullYear() - 1;
-  return `${y}-10-01`;
-}
-function dateRangeControl(el, data, onChange) {
+/* season, time frame and game type (owner, 16 Oct 2026). The season is
+   exact (2026-27 by default; last season until the first game of this one).
+   The time frame is the whole season, its last 14 or 30 days, or a date
+   range (the pickers appear only then). Game type lives in the situations
+   state (state.type) but sits here, beside the other two. */
+const seasonOfIso = iso => { const y = +iso.slice(0, 4), m = +iso.slice(5, 7), s0 = m >= 8 ? y : y - 1;
+  return `${s0}-${String(s0 + 1).slice(2)}`; };
+function dateRangeControl(el, data, onChange, state) {
   const today = new Date().toISOString().slice(0, 10);
-  const dates = (data.rows || []).map(r => r.date).sort();
-  const lo = dates[0] || today, hi = dates[dates.length - 1] || today;
-  const thisStart = seasonStartOf(new Date(today + "T12:00:00Z"));
-  const lastStart = `${+thisStart.slice(0, 4) - 1}-10-01`;
+  const rows = (data.rows || []).filter(r => r.phase !== null);
+  const sea = r => r.season || seasonOfIso(r.date);
+  const cur = seasonOfIso(today);
+  const has = sn => rows.some(r => sea(r) === sn);
+  const seasons = [...new Set([cur, ...rows.map(sea)])].sort().reverse();
+  const st = { season: has(cur) ? cur : (seasons.find(has) || cur), frame: "season", from: "", to: "" };
+  const fallback = st.season !== cur;
   const shift = (iso, days) => { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + days); return d.toISOString().slice(0, 10); };
-  const presets = [["season", "This season", thisStart, today], ["30", "Last 30 days", shift(today, -30), today],
-                   ["14", "Last 14 days", shift(today, -14), today], ["last", "Last season", lastStart, shift(thisStart, -1)],
-                   ["all", "Everything", lo, hi]];
-  const state = { from: thisStart, to: today };
-  if (!dates.some(d => d >= thisStart)) { state.from = lastStart; }   // before opening night: last season
+  const inSeason = r => st.season === "all" || sea(r) === st.season;
+  const typeF = SITUATIONS.find(f => f.k === "type");
+  // a past season's "last 30 days" ends at its last game of the chosen type
+  const bounds = () => { const ds = rows.filter(r => inSeason(r) && (!state || typeF.f(r, state.type)))
+      .map(r => r.date).sort();
+    return [ds[0] || today, ds[ds.length - 1] || today]; };
   el.innerHTML = `<div class="daterange">
-    <div class="chips">${presets.map(p => `<button class="chip" data-p="${p[0]}">${p[1]}</button>`).join("")}</div>
-    <div class="dates">
-      <label>From <input type="date" id="drFrom" min="${lo}" max="${hi}" value="${state.from}"></label>
-      <label>To <input type="date" id="drTo" min="${lo}" max="${hi}" value="${state.to}"></label>
+    <label class="fsel"><span>Season</span><select id="drSeason">${seasons.map(sn =>
+      `<option value="${sn}"${sn === st.season ? " selected" : ""}>${sn}</option>`).join("")}<option value="all">All seasons</option></select></label>
+    <label class="fsel"><span>Time frame</span><select id="drFrame"><option value="season">Whole season</option>
+      <option value="14">Last 14 days</option><option value="30">Last 30 days</option><option value="range">Date range</option></select></label>
+    ${state ? `<label class="fsel"><span>${typeF.label}</span><select id="drType">${typeF.opts.map(([v, t]) =>
+      `<option value="${v}"${state.type === v ? " selected" : ""}>${t}</option>`).join("")}</select></label>` : ""}
+    <div class="dates" id="drDates" hidden>
+      <label>From <input type="date" id="drFrom"></label>
+      <label>To <input type="date" id="drTo"></label>
     </div>
   </div>`;
-  const mark = () => $$(".chip", el).forEach(c => {
-    const p = presets.find(x => x[0] === c.dataset.p);
-    c.classList.toggle("on", p && p[2] === state.from && p[3] === state.to);
-  });
-  el.onclick = e => { const c = e.target.closest(".chip"); if (!c) return;
-    const p = presets.find(x => x[0] === c.dataset.p);
-    state.from = p[2]; state.to = p[3]; $("#drFrom", el).value = p[2]; $("#drTo", el).value = p[3]; mark(); onChange(); };
-  el.onchange = e => { if (e.target.id === "drFrom") state.from = e.target.value;
-    if (e.target.id === "drTo") state.to = e.target.value; mark(); onChange(); };
-  mark();
-  return { inRange: r => r.date >= state.from && r.date <= state.to, state,
-           label: () => { const p = presets.find(x => x[2] === state.from && x[3] === state.to);
-             return p ? p[1].toLowerCase() : `${auDay(state.from)} to ${auDay(state.to)}`; } };
+  const setDates = () => { const [lo, hi] = bounds();
+    for (const id of ["drFrom", "drTo"]) { const i = $("#" + id, el); i.min = lo; i.max = hi; }
+    st.from = $("#drFrom", el).value = lo; st.to = $("#drTo", el).value = hi; };
+  el.onchange = e => {
+    const id = e.target.id;
+    if (id === "drSeason") { st.season = e.target.value; setDates(); }
+    if (id === "drFrame") { st.frame = e.target.value; $("#drDates", el).hidden = st.frame !== "range"; if (st.frame === "range") setDates(); }
+    if (id === "drType" && state) state.type = e.target.value;
+    if (id === "drFrom") st.from = e.target.value;
+    if (id === "drTo") st.to = e.target.value;
+    onChange();
+  };
+  return {
+    state: st,
+    inRange: r => {
+      if (r.phase === null || !inSeason(r)) return false;
+      if (st.frame === "14" || st.frame === "30") {
+        const anchor = st.season === cur || st.season === "all" ? today : bounds()[1];
+        return r.date >= shift(anchor, -+st.frame) && r.date <= anchor;
+      }
+      if (st.frame === "range") return r.date >= st.from && r.date <= st.to;
+      return true;
+    },
+    label: () => st.frame === "range" ? `from ${auDay(st.from)} to ${auDay(st.to)}`
+      : st.frame === "season" ? (st.season === "all" ? "across all seasons" : `in ${st.season}`)
+      : `over the last ${st.frame} days${st.season === cur || st.season === "all" ? "" : ` of ${st.season}`}`,
+    note: () => fallback && st.season !== cur && !has(cur)
+      ? ` No ${cur} games yet: showing ${st.season} until opening night.` : "",
+  };
 }
 function situationControls(el, state, filters = SITUATIONS, onChange) {
-  el.innerHTML = filters.map(f => `<label class="fsel"><span>${f.label}</span>
+  el.innerHTML = filters.filter(f => f.k !== "type").map(f => `<label class="fsel"><span>${f.label}</span>
     <select data-k="${f.k}">${f.opts.map(([v, t]) => `<option value="${v}"${state[f.k] === v ? " selected" : ""}>${t}</option>`).join("")}</select></label>`).join("");
   el.onchange = e => { state[e.target.dataset.k] = e.target.value; onChange(); };
 }
@@ -1693,8 +1725,9 @@ const SIT_PHRASE = { venue: { home: "at home", away: "away" }, prev: { win: "aft
   band: { s: "spread 0–3", m: "spread 3.5–7", l: "spread 7.5+" }, total: { lo: "total under 220", mid: "total 220–234.5", hi: "total 235+" },
   rest: { "0": "on no rest", "1": "on 1 day's rest", "2": "on 2–3 days' rest", "4": "on 4+ days' rest", adv: "with a rest advantage", dis: "with a rest disadvantage", eq: "on equal rest", oppb2b: "v an opponent on a back-to-back" },
   top3: { out: "missing a top-3 player", in: "at full strength" }, group: { conf: "v conference", nconf: "v non-conference", div: "v division", ndiv: "v non-division" },
-  type: { post: "play-in and playoffs", all: "all games" }, cup: { cup: "NBA Cup games", not: "outside the NBA Cup" } };
-const situationLabel = state => SITUATIONS.filter(f => state[f.k] !== "all" && !(f.k === "type" && state[f.k] === "reg"))
+  type: { play_in: "in the play-in", playoffs: "in the playoffs", cup_final: "in the NBA Cup final", all: "in all games" },
+  cup: { cup: "NBA Cup games", not: "outside the NBA Cup" } };
+const situationLabel = state => SITUATIONS.filter(f => state[f.k] !== "all" && !(f.k === "type" && state[f.k] === "regular"))
   .map(f => (SIT_PHRASE[f.k] || {})[state[f.k]] || f.opts.find(o => o[0] === state[f.k])[1].toLowerCase());
 
 /* tonight's situation for one side of a game, from the bookmaker line and rest */
@@ -1793,7 +1826,7 @@ async function initTrends() {
     $("#tlead").innerHTML = !all.length
       ? `Game trends start with the first games of the season.`
       : `${subject} are <b>${rec(s.aw, s.al, s.ap)}</b> against the spread, ${range.label()}; `
-        + `these games have gone <b>${rec(ou.o, ou.u)}</b> over/under (${ou.games} games).`;
+        + `these games have gone <b>${rec(ou.o, ou.u)}</b> over/under (${ou.games} game${ou.games === 1 ? "" : "s"}).${range.note()}`;
     $("#tcards").innerHTML = `
       <div class="card"><div class="k">Games</div><div class="v">${ou.games}</div><div class="r">${s.n} team results</div></div>
       <div class="card"><div class="k">ATS${on.length ? "" : ", home"}</div><div class="v">${rec(s.aw, s.al)}</div><div class="r">${pct(s.ats_pct)} · ${s.ap} push</div></div>
@@ -1826,7 +1859,7 @@ async function initTrends() {
       : `<p class="dim">No games tonight. The table above covers every team.</p>`;
   };
   let sortKey = "ats_pct", sortDir = -1;
-  range = dateRangeControl($("#trange"), d, render);
+  range = dateRangeControl($("#trange"), d, render, state);
   situationControls($("#tfilters"), state, SITUATIONS, render);
   $("#small").addEventListener("change", render);
   $$("#trends th[data-k]").forEach(th => th.addEventListener("click", () => {
@@ -1905,7 +1938,7 @@ async function initTeam() {
     }
   };
   let showAll = false;
-  range = dateRangeControl($("#tmrange"), { rows: mine }, render);
+  range = dateRangeControl($("#tmrange"), { rows: mine }, render, state);
   situationControls($("#tmfilters"), state, SITUATIONS, render);
   if (players.length) {
     $("#tmww").innerHTML = `<div id="wwWith"></div><div id="wwWithout"></div>`;

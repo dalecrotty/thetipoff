@@ -379,7 +379,7 @@ td .sm + .sm { margin-top: 1px; }
   .filters .fgrid label:has(.minrange) { grid-column: span 1; }
   /* game trends and team pages: six filters a row, dates on the right */
   .sits { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
-  .daterange { justify-content: space-between; }   /* dates right of the chips, or left on their own row */
+  .daterange { justify-content: flex-start; }
   /* with / without: the two teammate pickers side by side, not five columns of nothing */
   #wPick { grid-template-columns: repeat(2, minmax(0, 320px)); }
   .controls > select { max-width: 320px; }
@@ -786,3 +786,7 @@ table.summary-t th, table.summary-t td { padding: 8px 7px; }
 table.summary-t .lineIn { width: 54px; -moz-appearance: textfield; appearance: textfield; }
 table.summary-t .lineIn::-webkit-inner-spin-button, table.summary-t .lineIn::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 table.savg { min-width: 760px; }
+
+/* game trends and team pages: season, time frame, game type side by side */
+.daterange .fsel select { min-width: 170px; }
+.daterange .dates { align-self: end; }
