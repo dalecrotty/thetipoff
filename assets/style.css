@@ -375,7 +375,7 @@ td .sm + .sm { margin-top: 1px; }
   .filters { position: sticky; top: 60px; z-index: 4; box-shadow: none;
     padding: 8px 12px 10px; }
   .filters summary { display: inline-block; margin: 0 0 6px; }
-  .filters .fgrid { grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 6px 8px; }
+  .filters .fgrid { grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px 8px; }
   .filters .fgrid label:has(.minrange) { grid-column: span 1; }
   /* game trends and team pages: six filters a row, dates on the right */
   .sits { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
@@ -778,3 +778,11 @@ footer.rg .regionsw { margin: 10px 0 6px; font-size: 13px; }
 footer.rg .regionsw button { background: none; border: 0; padding: 0; font: inherit; color: var(--ink);
   text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
 footer.rg .regionsw button[aria-pressed="true"] { font-weight: 700; text-decoration: none; cursor: default; }
+
+/* player page (owner, 16 Oct 2026): the summary carries minutes and shot
+   volume too, so wide screens get more room and tighter cells */
+@media (min-width: 900px) { main:has(#summary) { max-width: 1320px; } }
+table.summary-t th, table.summary-t td { padding: 8px 7px; }
+table.summary-t .lineIn { width: 54px; -moz-appearance: textfield; appearance: textfield; }
+table.summary-t .lineIn::-webkit-inner-spin-button, table.summary-t .lineIn::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+table.savg { min-width: 760px; }

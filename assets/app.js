@@ -730,6 +730,7 @@ const esc = s => String(s).replace(/[&<>"']/g,
   c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
 function statValue(g, stat) {
+  if (stat === "MIN") return g.min;
   if (stat === "PRA") return g.PTS + g.REB + g.AST;
   if (stat === "PR") return g.PTS + g.REB;
   if (stat === "PA") return g.PTS + g.AST;
@@ -856,13 +857,8 @@ async function initPlayer() {
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
   const P = h.projections || {};
   const L = h.lines || {};
-  // the page's answer in one sentence (brief section 9)
-  if (P.PTS) {
-    $("#plead").innerHTML = `<b>${esc(h.player)}</b> is predicted to score <span class="n">${
-      fmt(P.PTS.mean)}</span> points${h.opp ? ` against ${esc(h.opp)}` : ""} tonight${
-      L.PTS ? `; the line is <span class="n">${fmt(L.PTS.line)}</span>${
-        L.PTS.book ? ` at ${esc(L.PTS.book)}` : ""}` : ""}.`;
-  }
+  // no answer sentence on the interactive page (owner, 16 Oct 2026); the
+  // static player pages Google indexes keep theirs (brief section 9)
   // key teammates out tonight, and this player's own record without them
   const wwt = h.with_without_tonight || [];
   const wwEl = $("#wwTonight");
@@ -882,9 +878,37 @@ async function initPlayer() {
     ? strip.map(([k, v]) => `<span class="pst"><span class="k">${k}</span><b>${fmt(v)}</b></span>`).join("")
     : `<span class="dim">No prediction tonight.</span>`;
 
+  /* --- seasons (owner, 16 Oct 2026) ---
+     "This season" and "Last season" are exact NBA seasons, never a mix;
+     game type comes from the payload (regular, cup_final, play_in,
+     playoffs). A game with no type (null) is outside every known season,
+     so it never shows: no preseason anywhere. Older payloads without the
+     fields fall back to the date. */
+  const seasonOf = d => { const y = d.getMonth() >= 7 ? d.getFullYear() : d.getFullYear() - 1;
+    return `${y}-${String(y + 1).slice(2)}`; };
+  const curSeason = seasonOf(new Date());
+  const prevSeason = seasonOf(new Date(new Date().getFullYear() - 1, new Date().getMonth(), 15));
+  const sea = g => g.season || seasonOf(new Date(g.date + "T12:00:00"));
+  const phaseOf = g => g.phase !== undefined ? g.phase
+    : (/-0[4-7]-/.test(g.date) && g.date.slice(5) > "04-15" ? "playoffs" : "regular");
+  const SAVG = ["MIN", "PTS", "REB", "AST", "3PM", "FGM", "FGA", "3PA", "FTA", "STL", "BLK", "TOV"];
+
   /* --- interactive prop chart --- */
   const CHART_STATS = [...S, ...COMBOS];
-  const log = h.game_log || [];
+  const log = (h.game_log || []).filter(g => g.phase !== null);
+  // season averages, regular season only: this season, then last
+  const regular = season => log.filter(g => sea(g) === season && phaseOf(g) === "regular");
+  const savgRows = [curSeason, prevSeason].map(sn => [sn, regular(sn)]);
+  $("#savg thead").innerHTML = `<tr><th class="s">Season</th><th>G</th>${
+    SAVG.map(k => `<th>${k}</th>`).join("")}</tr>`;
+  $("#savg tbody").innerHTML = savgRows.map(([sn, gs]) => gs.length
+    ? `<tr><td class="s">${sn}</td><td class="num dim">${gs.length}</td>${SAVG.map(k => {
+        const v = gs.map(g => statValue(g, k)).filter(x => x != null);
+        return `<td class="num">${v.length ? (v.reduce((a, b) => a + b, 0) / v.length).toFixed(1) : "—"}</td>`;
+      }).join("")}</tr>`
+    : `<tr><td class="s">${sn}</td><td class="s dim" colspan="${SAVG.length + 1}">${
+        sn === curSeason ? "No games yet this season." : "No games on record."}</td></tr>`).join("");
+  $("#savgNote").textContent = "Regular-season games only, per game.";
   const lines = h.lines || {};
   let stat = lines.PTS ? "PTS" : (Object.keys(lines)[0] || "PTS");
   const COMBO_OF = { PRA: ["PTS", "REB", "AST"], PR: ["PTS", "REB"],
@@ -922,7 +946,8 @@ async function initPlayer() {
       hitCard("Last 10", games.slice(-10), line) +
       hitCard("Home", games.filter(home), line) +
       hitCard("Away", games.filter(g => !home(g)), line) +
-      hitCard("Season", all, line);
+      hitCard("This season", all.filter(g => sea(g) === curSeason), line) +
+      hitCard("Last season", all.filter(g => sea(g) === prevSeason), line);
     $("#propChart").innerHTML = games.length
       ? renderPropChart(games, line, projOf(stat))
       : `<div class="empty">No games match these filters.</div>`;
@@ -961,9 +986,10 @@ async function initPlayer() {
     const v = parseFloat(lineEl.value);
     if (!isNaN(v) && v > 0) { lineInputs[stat] = v; renderLog(); }
   };
+  const SPLIT_LABEL = { season: "All games", l10: "Last 10", l5: "Last 5", home: "Home", away: "Away" };
   const rows = Object.entries(h.splits || {})   // the public cut has no splits
     .filter(([, v]) => v && v.games)
-    .map(([k, v]) => `<tr><td class="s">${k}</td>
+    .map(([k, v]) => `<tr><td class="s">${SPLIT_LABEL[k] || k}</td>
       <td class="num dim">${v.games}</td><td class="num">${fmt(v.min_pg)}</td>
       ${S.map(s => `<td class="num">${v[s] ? fmt(v[s].pg) : "—"}</td>`).join("")}
     </tr>`);
@@ -995,9 +1021,15 @@ async function initPlayer() {
           res = resSel.value, tier = tierSel.value,
           lo = parseFloat($("#fMinLo").value),
           hi = parseFloat($("#fMinHi").value),
-          last = parseInt($("#fLast").value, 10);
+          lastSel = $("#fLast").value, type = $("#fType").value;
+    const last = lastSel === "custom" ? parseInt($("#fN").value, 10) : parseInt(lastSel, 10);
     let out = log.filter(g => {
       const home = (g.venue || "").toUpperCase().startsWith("H");
+      const ph = phaseOf(g);
+      if (type === "regular" && ph !== "regular") return false;
+      if (type === "playoffs" && ph !== "play_in" && ph !== "playoffs") return false;
+      if (lastSel === "this" && sea(g) !== curSeason) return false;
+      if (lastSel === "last" && sea(g) !== prevSeason) return false;
       if (loc === "H" && !home) return false;
       if (loc === "R" && home) return false;
       if (role === "start" && !g.starter) return false;
@@ -1011,7 +1043,7 @@ async function initPlayer() {
       if (!isNaN(hi) && g.min > hi) return false;
       return true;
     });
-    return last ? out.slice(-last) : out;
+    return last > 0 ? out.slice(-last) : out;
   };
 
   const median = a => {
@@ -1027,8 +1059,10 @@ async function initPlayer() {
 
     // the owner's summary block: stats across, measures down, on the
     // filtered games; the line row is editable (book line to start)
-    const SUM = [...S.slice(0, 4), ...COMBOS, ...S.slice(4)];
-    const vals = s => games.map(g => statValue(g, s));
+    // minutes first; shot volume last (owner, 16 Oct 2026): no line for those
+    const NOLINE = new Set(["MIN", "FGM", "FGA", "3PA", "FTA"]);
+    const SUM = ["MIN", ...S.slice(0, 4), ...COMBOS, ...S.slice(4), "FGM", "FGA", "3PA", "FTA"];
+    const vals = s => games.map(g => statValue(g, s)).filter(x => x != null && !isNaN(x));
     const head = `<tr><th class="s"></th>${SUM.map(s =>
       `<th data-s="${s}" class="st">${s}</th>`).join("")}</tr>`;
     const row = (label, fn, cls = "") => `<tr class="${cls}"><td class="s">${label}</td>${
@@ -1041,13 +1075,14 @@ async function initPlayer() {
     $("#summary tbody").innerHTML =
       row("Average", s => avg(s) == null ? "—" : avg(s).toFixed(1)) +
       row("Median", s => vals(s).length ? median(vals(s)).toFixed(1) : "—") +
-      row("Per 36", s => totMin > 0 ? (vals(s).reduce((a, b) => a + b, 0) / totMin * 36).toFixed(1) : "—", "dimrow") +
-      row("Prediction", s => P[s] ? `<b class="pv">${fmt(P[s].mean)}</b>` : "—", "sep") +
-      row("Line", s => `<input class="lineIn" data-s="${s}" type="number" step="0.5" value="${
+      row("Per 36", s => s !== "MIN" && totMin > 0 ? (vals(s).reduce((a, b) => a + b, 0) / totMin * 36).toFixed(1) : "—", "dimrow") +
+      row("Prediction", s => s === "MIN" ? (h.minutes ? `<b class="pv">${fmt(h.minutes.value)}</b>` : "—")
+        : P[s] ? `<b class="pv">${fmt(P[s].mean)}</b>` : "—", "sep") +
+      row("Line", s => NOLINE.has(s) ? "—" : `<input class="lineIn" data-s="${s}" type="number" step="0.5" value="${
         lineOf(s) ?? ""}" title="${L[s] ? `book line${L[s].book ? ` (${esc(L[s].book)})` : ""}` : "no book line: type one"}">`, "linerow") +
       row("Over", s => { const v = vals(s), l = lineOf(s);
-        return l == null ? "—" : `${v.filter(x => x > l).length}/${v.length}`; }, "dimrow") +
-      row("Hit rate", s => { const r = rate(s);
+        return NOLINE.has(s) || l == null ? "—" : `${v.filter(x => x > l).length}/${v.length}`; }, "dimrow") +
+      row("Hit rate", s => { const r = NOLINE.has(s) ? null : rate(s);
         return r == null ? "—" : `<span class="${r >= 0.6 ? "hi" : r <= 0.4 ? "lo" : ""}">${(r * 100).toFixed(0)}%</span>`; });
     $("#sumNote").textContent = `${games.length} of ${log.length} games · min avg ${
       games.length ? (totMin / games.length).toFixed(1) : "—"}. Hit rate = share of these games over the line; edit a line to test your own.`;
@@ -1058,7 +1093,7 @@ async function initPlayer() {
         renderLog();
       };
     });
-    const active = ["#fLoc", "#fRole", "#fRest", "#fResult", "#fTier", "#fOpp"]
+    const active = ["#fLoc", "#fRole", "#fRest", "#fResult", "#fTier", "#fOpp", "#fType"]
       .filter(sel => $(sel).value !== "all").length
       + (($("#fMinLo").value || $("#fMinHi").value) ? 1 : 0);
     $("#fCount").textContent = active ? `· ${active} on` : "";
@@ -1075,19 +1110,26 @@ async function initPlayer() {
       <td class="s">${g.starter
         ? '<span class="badge src">start</span>' : '<span class="dim">bench</span>'}</td>
       <td class="num">${fmt(g.min)}</td>
-      ${S.map(s => `<td class="num">${fmt(g[s], 0)}</td>`).join("")}
+      ${["PTS", "REB", "AST", "3PM", "FGM", "FGA", "3PA", "FTA", "STL", "BLK", "TOV"]
+        .map(s => `<td class="num${["FGM", "FGA", "3PA", "FTA"].includes(s) ? " dim" : ""}">${fmt(g[s], 0)}</td>`).join("")}
       <td class="num dim">${fmt(statValue(g, "PRA"), 0)}</td>
     </tr>`).join("")
-      || `<tr><td colspan="14" class="empty">No games match these filters.</td></tr>`;
+      || `<tr><td colspan="18" class="empty">${$("#fLast").value === "this" && !log.some(g => sea(g) === curSeason)
+        ? `No ${curSeason} games yet: the season starts 20 October. Pick “Last season” to see ${prevSeason}.`
+        : "No games match these filters."}</td></tr>`;
     redraw();
   };
 
   if (matchMedia("(max-width: 900px)").matches) $("#filterBox").open = false;
   ["#fLast", "#fLoc", "#fRole", "#fRest", "#fOpp", "#fResult",
-   "#fTier"].forEach(sel => $(sel).onchange = renderLog);
-  ["#fMinLo", "#fMinHi"].forEach(sel => $(sel).oninput = renderLog);
+   "#fTier", "#fType"].forEach(sel => $(sel).onchange = () => {
+    $("#fNWrap").hidden = $("#fLast").value !== "custom";
+    renderLog();
+  });
+  ["#fMinLo", "#fMinHi", "#fN"].forEach(sel => $(sel).oninput = renderLog);
   $("#fReset").onclick = () => {
-    $("#fLast").value = "20"; $("#fLoc").value = "all";
+    $("#fLast").value = "20"; $("#fType").value = "all"; $("#fN").value = "";
+    $("#fNWrap").hidden = true; $("#fLoc").value = "all";
     $("#fRole").value = "all"; $("#fRest").value = "all";
     oppSel.value = "all"; resSel.value = "all"; tierSel.value = "all";
     $("#fMinLo").value = ""; $("#fMinHi").value = "";

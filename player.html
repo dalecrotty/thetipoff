@@ -49,11 +49,17 @@
       <h1 id="pname">—</h1>
     </div>
   </div>
-  <p class="lead" id="plead"></p>
   <div id="wwTonight" hidden></div>
 
   <div class="section"><h2>Tonight's predictions</h2></div>
   <div class="pstrip" id="projCards"></div>
+
+  <!-- season averages (owner, 16 Oct 2026): this season and last, regular season only -->
+  <div class="section"><h2>Season averages</h2></div>
+  <div class="tablewrap">
+    <table id="savg" class="stat savg"><thead></thead><tbody></tbody></table>
+  </div>
+  <p class="sub" id="savgNote"></p>
 
   <!-- explorer: one filter bar drives the chart, hit rates, summary and log -->
   <div class="section"><h2>Explore his games</h2></div>
@@ -61,11 +67,17 @@
     <summary>Filters <span id="fCount" class="sm"></span></summary>
     <div class="fgrid">
       <label>Games<select id="fLast">
-        <option value="5">Last 5</option>
         <option value="10">Last 10</option>
-        <option value="15">Last 15</option>
         <option value="20" selected>Last 20</option>
-        <option value="0">Season</option>
+        <option value="this">This season</option>
+        <option value="last">Last season</option>
+        <option value="custom">Custom…</option>
+      </select></label>
+      <label id="fNWrap" hidden>Last N games<input id="fN" type="number" min="1" step="1" placeholder="e.g. 12"></label>
+      <label>Game type<select id="fType">
+        <option value="all" selected>All games</option>
+        <option value="regular">Regular season</option>
+        <option value="playoffs">Playoffs</option>
       </select></label>
       <label>Location<select id="fLoc">
         <option value="all">Home &amp; away</option>
@@ -131,13 +143,14 @@
         <th class="s">Date</th><th class="s">Opp</th><th class="s">H/A</th>
         <th class="s">W/L</th><th class="s">Role</th><th>Min</th>
         <th>PTS</th><th>REB</th><th>AST</th><th>3PM</th>
+        <th>FGM</th><th>FGA</th><th>3PA</th><th>FTA</th>
         <th>STL</th><th>BLK</th><th>TOV</th><th>PRA</th>
       </tr></thead>
       <tbody></tbody>
     </table>
   </div>
 
-  <div class="section"><h2>Season splits (per game)</h2></div>
+  <div class="section"><h2>Splits (per game, all games on record)</h2></div>
   <div class="tablewrap">
     <table id="splits">
       <thead><tr>
