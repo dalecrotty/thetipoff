@@ -38,11 +38,12 @@
 <div class="fresh" id="fresh">Loading…</div>
 <main>
   <h1>With &amp; Without</h1>
-  <p class="sub">Pick a player, then the teammates who must have
-    <b>played</b> (with) or <b>sat</b> (without). The comparison comes from
-    the games matching that lineup, against the player's full season.</p>
+  <p class="sub">Pick a season and a player, then the teammates who must have
+    <b>played</b> (with) or <b>sat</b> (without). The comparison sets the games
+    matching that lineup against the rest of his games in the season.</p>
 
   <div class="controls">
+    <select id="wSeason" aria-label="Season"></select>
     <select id="wTeam"></select>
     <select id="wPlayer"></select>
     <button class="chip" id="wReset">Clear</button>
@@ -50,10 +51,12 @@
   <div class="sits" id="wPick"></div>
 
   <div class="section"><h2>Comparison</h2></div>
+  <p class="lead" id="wChange"></p>
   <div class="tablewrap">
     <table id="wCompare">
       <thead><tr><th class="s">Split</th><th>G</th><th>Min</th>
         <th>PTS</th><th>REB</th><th>AST</th><th>3PM</th>
+        <th>FGM</th><th>FGA</th><th>3PA</th>
         <th>STL</th><th>BLK</th><th>TOV</th></tr></thead>
       <tbody></tbody>
     </table>
@@ -66,6 +69,7 @@
       <thead><tr><th class="s">Date</th><th class="s">Opp</th>
         <th class="s">H/A</th><th>Min</th>
         <th>PTS</th><th>REB</th><th>AST</th><th>3PM</th>
+        <th>FGM</th><th>FGA</th><th>3PA</th>
         <th>STL</th><th>BLK</th><th>TOV</th></tr></thead>
       <tbody></tbody>
     </table>

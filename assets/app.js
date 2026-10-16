@@ -1207,83 +1207,119 @@ async function initPlayer() {
 /* ---------- with & without page (in/out lineup explorer) ---------- */
 async function initWow() {
   await renderFreshness();
-  const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
+  const S = ["PTS", "REB", "AST", "3PM", "FGM", "FGA", "3PA", "STL", "BLK", "TOV"];
   const index = await loadJSON("data/teams/index.json");
-  const teamSel = $("#wTeam"), playerSel = $("#wPlayer");
+  const teamSel = $("#wTeam"), playerSel = $("#wPlayer"), seasonSel = $("#wSeason");
   teamSel.innerHTML = index.map(t =>
     `<option value="${esc(t.slug)}">${esc(t.team)}</option>`).join("");
+  const today = new Date().toISOString().slice(0, 10);
+  const cur = seasonOfIso(today);
 
   let team = null;                 // loaded team payload
   let focal = null;                // focal player id (string)
   // teammates who must have played (with) and who must have sat (without):
   // two multi-select pickers (owner, 6 Oct 2026), names -> ids
   let withP = new Set(), withoutP = new Set();
-  const idOf = {};
+  let idOf = {}, nameOf = {};
+  let season = null;               // a season label, "last2" or "all" (owner, 16 Oct 2026)
   const state = { get size() { return withP.size + withoutP.size; },
                   clear() { withP.clear(); withoutP.clear(); } };
 
+  // averages skip missing values (shot columns are blank on a few old rows)
   const avg = (games, pick) => {
-    if (!games.length) return null;
-    return games.reduce((a, g) => a + pick(g), 0) / games.length;
+    const v = games.map(pick).filter(x => x != null && !Number.isNaN(x));
+    return v.length ? v.reduce((a, x) => a + x, 0) / v.length : null;
   };
-
   const focalLine = g => g.lines[focal];
   const played = (g, id) => g.lines[id] !== undefined;
+  const gSeason = g => g.season || seasonOfIso(g.date);
+  const seasonsWithGames = () => [...new Set(team.games.map(gSeason))].sort().reverse();
+  const inSeason = g => season === "all" ? true
+    : season === "last2" ? seasonsWithGames().slice(0, 2).includes(gSeason(g))
+    : gSeason(g) === season;
+  const seasonGames = () => team.games.filter(inSeason);
 
-  const matching = () => team.games.filter(g => {
+  const matching = () => seasonGames().filter(g => {
     if (!focalLine(g)) return false;           // focal must have played
     for (const n of withP) if (!played(g, idOf[n])) return false;
     for (const n of withoutP) if (played(g, idOf[n])) return false;
     return true;
   });
 
-  const rowFor = (label, games) => {
+  const CELLS = [["min", g => focalLine(g).min]].concat(S.map(s => [s, g => focalLine(g)[s]]));
+  const NCOL = CELLS.length + 2;
+  const rowFor = (label, games, cls = "") => {
     if (!games.length)
-      return `<tr><td class="s">${label}</td><td class="num dim">0</td>
-        <td colspan="8" class="empty">no games</td></tr>`;
-    const cells = [["min", g => focalLine(g).min]]
-      .concat(S.map(s => [s, g => focalLine(g)[s]]));
-    return `<tr><td class="s"><b>${label}</b></td>
+      return `<tr class="${cls}"><td class="s">${label}</td><td class="num dim">0</td>
+        <td colspan="${CELLS.length}" class="empty">no games</td></tr>`;
+    return `<tr class="${cls}"><td class="s"><b>${label}</b></td>
       <td class="num dim">${games.length}</td>
-      ${cells.map(([, pick]) =>
-        `<td class="num">${avg(games, pick).toFixed(1)}</td>`).join("")}
+      ${CELLS.map(([, pick]) => { const v = avg(games, pick);
+        return `<td class="num">${v == null ? "—" : v.toFixed(1)}</td>`; }).join("")}
     </tr>`;
   };
-
-  const diffRow = (a, b) => {
-    if (!a.length || !b.length) return "";
-    const cells = [["min", g => focalLine(g).min]]
-      .concat(S.map(s => [s, g => focalLine(g)[s]]));
-    return `<tr><td class="s">Diff</td><td class="num dim">—</td>
-      ${cells.map(([, pick]) => {
-        const d = avg(b, pick) - avg(a, pick);
+  // matching lineup minus the rest of his games (owner: "without X, he
+  // attempts 70% more triples" — against the games X played)
+  const diffRow = (sel, rest) => {
+    if (!sel.length || !rest.length) return "";
+    return `<tr><td class="s">Difference</td><td class="num dim">—</td>
+      ${CELLS.map(([, pick]) => {
+        const a = avg(sel, pick), b = avg(rest, pick);
+        if (a == null || b == null) return `<td class="num dim">—</td>`;
+        const d = a - b;
         return `<td class="num ${d > 0 ? "pos" : d < 0 ? "neg" : "dim"}">${
           (d > 0 ? "+" : "") + d.toFixed(1)}</td>`;
       }).join("")}</tr>`;
   };
+  const lineupLabel = () => [withP.size ? `with ${[...withP].join(", ")}` : "",
+    withoutP.size ? `without ${[...withoutP].join(", ")}` : ""].filter(Boolean).join(", ");
+  const changeLine = (sel, rest) => {
+    if (!sel.length || !rest.length) return "";
+    const KEYS = [["PTS", "points"], ["FGA", "shots"], ["3PA", "3PA"], ["FTA", "free throws"], ["AST", "assists"],
+                  ["REB", "rebounds"], ["min", "minutes"]];
+    const moves = [];
+    for (const [k, word] of KEYS) {
+      const pick = k === "min" ? (g => focalLine(g).min) : (g => focalLine(g)[k]);
+      const a = avg(sel, pick), b = avg(rest, pick);
+      if (a == null || b == null || b < 0.5) continue;
+      const pct = (a - b) / b;
+      if (Math.abs(pct) >= 0.10) moves.push({ word, a, b, pct });
+    }
+    moves.sort((x, y) => Math.abs(y.pct) - Math.abs(x.pct));
+    const who = playerSel.selectedOptions[0]?.textContent || "He";
+    const lab = lineupLabel();
+    const head = `${lab.charAt(0).toUpperCase() + lab.slice(1)} (${sel.length} games against ${rest.length}), ${esc(who)}`;
+    if (!moves.length) return `${head} is within 10% of his other games on every main stat.`;
+    return `${head}: ` + moves.slice(0, 4).map(m =>
+      `${m.word} <b class="${m.pct > 0 ? "pos" : "neg"}">${m.pct > 0 ? "+" : "−"}${Math.abs(m.pct * 100).toFixed(0)}%</b> (${m.a.toFixed(1)} v ${m.b.toFixed(1)})`).join(", ") + ".";
+  };
 
   const renderMates = () => {
-    const mates = team.players.filter(p => String(p.id) !== focal).map(p => p.name);
-    mates.forEach(n => { idOf[n] = String(team.players.find(p => p.name === n).id); });
+    const games = seasonGames();
+    const ids = new Set(games.flatMap(g => Object.keys(g.lines)));
+    const mates = team.players.filter(p => String(p.id) !== focal && ids.has(String(p.id))).map(p => p.name);
     $("#wPick").innerHTML = `<div id="wWith"></div><div id="wWithout"></div>`;
     withP = multiSelect($("#wWith"), "With (played)", mates, render);
     withoutP = multiSelect($("#wWithout"), "Without (sat)", mates, render);
   };
 
   const render = () => {
-    const all = team.games.filter(focalLine);
+    const all = seasonGames().filter(focalLine);
     const sel = matching();
+    const selSet = new Set(sel);
+    const rest = all.filter(g => !selSet.has(g));
     const anyFilter = state.size > 0;
     $("#wCompare tbody").innerHTML =
-      rowFor("Season (all games)", all)
-      + (anyFilter ? rowFor("Matching lineup", sel) : "")
-      + (anyFilter ? diffRow(all, sel) : "");
-    $("#wNote").textContent = anyFilter
-      ? `${sel.length} of ${all.length} games match`
-        + (withP.size ? ` with ${[...withP].join(", ")}` : "")
-        + (withoutP.size ? ` without ${[...withoutP].join(", ")}` : "") + "."
-        + (sel.length < 5 ? " Small sample — read with caution." : "")
-      : "Pick teammates above to split the season.";
+      rowFor("All games", all)
+      + (anyFilter ? rowFor("Matching lineup", sel) + rowFor("Other games", rest, "thin") + diffRow(sel, rest) : "");
+    const fallback = season === cur || season === "all" || season === "last2" ? ""
+      : !team.games.some(g => gSeason(g) === cur) && seasonSel.dataset.auto === "1"
+        ? ` No ${cur} games yet: showing ${season} until opening night.` : "";
+    $("#wChange").innerHTML = anyFilter ? changeLine(sel, rest) : "";
+    $("#wNote").textContent = (anyFilter
+      ? `${sel.length} of ${all.length} games match.`
+        + (sel.length < 5 ? " Small sample: read with caution." : "")
+      : "Pick teammates above to split the games.") + fallback;
     $("#wLog tbody").innerHTML = sel.slice().reverse().map(g => {
       const l = focalLine(g);
       return `<tr>
@@ -1294,29 +1330,57 @@ async function initWow() {
         <td class="s">${teamBadge(g.opp)}</td>
         <td class="s dim">${(g.venue || "").toUpperCase().startsWith("H") ? "H" : "A"}</td>
         <td class="num">${fmt(l.min)}</td>
-        ${S.map(s => `<td class="num">${fmt(l[s], 0)}</td>`).join("")}
+        ${S.map(s => `<td class="num">${l[s] == null ? "—" : fmt(l[s], 0)}</td>`).join("")}
       </tr>`;
-    }).join("") || `<tr><td colspan="11" class="empty">No games match.</td></tr>`;
+    }).join("") || `<tr><td colspan="${NCOL + 2}" class="empty">No games match.</td></tr>`;
     const trs = $$("#wLog tbody tr");
     if (trs.length > 25 && !logAll) {
       trs.slice(25).forEach(t => t.hidden = true);
-      $("#wLog tbody").insertAdjacentHTML("beforeend", `<tr><td colspan="11" class="s"><a href="#" id="wLogAll">Show all ${trs.length} games →</a></td></tr>`);
+      $("#wLog tbody").insertAdjacentHTML("beforeend", `<tr><td colspan="${NCOL + 2}" class="s"><a href="#" id="wLogAll">Show all ${trs.length} games →</a></td></tr>`);
       $("#wLogAll").onclick = e => { e.preventDefault(); logAll = true; render(); };
     }
   };
   let logAll = false;
 
+  // the player list follows the season: who played for the team in it,
+  // most minutes first (owner, 16 Oct 2026)
+  const fillPlayers = () => {
+    const games = seasonGames();
+    const mins = {};
+    for (const g of games) for (const [id, l] of Object.entries(g.lines)) (mins[id] ||= []).push(l.min);
+    const med = a => { const s = a.slice().sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; };
+    const roster = team.players.filter(p => mins[String(p.id)])
+      .sort((a, b) => med(mins[String(b.id)]) - med(mins[String(a.id)]));
+    const keep = roster.some(p => String(p.id) === focal) ? focal : (roster[0] ? String(roster[0].id) : null);
+    playerSel.innerHTML = roster.map(p => `<option value="${p.id}">${esc(p.name)}</option>`).join("");
+    if (keep) playerSel.value = keep;
+    focal = playerSel.value || null;
+  };
+  const fillSeasons = () => {
+    const have = seasonsWithGames();
+    const opts = [...new Set([cur, ...have])].sort().reverse();
+    if (season == null || (!opts.includes(season) && season !== "last2" && season !== "all")) {
+      season = have.includes(cur) ? cur : (have[0] || cur);
+      seasonSel.dataset.auto = "1";
+    }
+    seasonSel.innerHTML = opts.map(s => `<option value="${s}">${s}</option>`).join("")
+      + `<option value="last2">Last 2 seasons</option><option value="all">All seasons</option>`;
+    seasonSel.value = season;
+  };
+
   const loadTeam = async slug => {
     team = await loadJSON(`data/teams/${slug}.json`);
+    idOf = {}; nameOf = {};
+    team.players.forEach(p => { idOf[p.name] = String(p.id); nameOf[String(p.id)] = p.name; });
     state.clear();
-    playerSel.innerHTML = team.players.map(p =>
-      `<option value="${p.id}">${esc(p.name)}</option>`).join("");   // ordered by minutes, unlabelled (owner, 12 Oct 2026)
-    focal = playerSel.value;
+    fillSeasons();
+    fillPlayers();
     renderMates();
     render();
   };
 
   teamSel.onchange = () => loadTeam(teamSel.value);
+  seasonSel.onchange = () => { season = seasonSel.value; seasonSel.dataset.auto = "0"; fillPlayers(); renderMates(); render(); };
   playerSel.onchange = () => { focal = playerSel.value; renderMates(); render(); };
   $("#wReset").onclick = () => { renderMates(); render(); };
   await loadTeam(teamSel.value);
