@@ -89,22 +89,13 @@ it's what turns a prediction and a line into a probability, and the
 inside it. <a href="/learn/what-the-prediction-ranges-mean.html">What the ranges mean</a>
 explains how they're built.</p>
 
-<h2>With and without a star</h2>
-<p>When a star sits, two things change for his teammates: who plays his minutes, and who
-takes his shots. The model handles both. His minutes go to the teammates who have picked
-them up before. Each teammate's scoring rate then moves by how that player has scored per
-minute in their games without the star. That's checked against how many of his recent
-games already came without the star, so a rate built while covering for him isn't lifted
-twice, and it comes back down when the star returns. A pair with only a few games apart
-leans on how big a share of the team's shots the missing player takes, until it has a
-record of its own. The board's note ("Jokić out: +3.1 without him") shows the raw
-per-game difference. The prediction uses the tested version, which is smaller, because
-most of that difference is minutes already counted.</p>
-
 <h2>What isn't in the prediction</h2>
-<p>Some things look like they should matter and didn't survive testing. Home and away made
-almost no difference once minutes were right. We show what we can as information and
-leave the number alone until the evidence says otherwise.</p>
+<p>Some things look like they should matter and didn't survive testing. When a star sits,
+the board shows how each teammate has done without him ("Jokić out: +3.1 without him"),
+but that shift isn't added to the prediction. Tested across last season, it mostly
+double-counts minutes the model already hands out. Home and away made almost no
+difference once minutes were right. We show these as information and leave the number
+alone until the evidence says otherwise.</p>
 
 <h2>Tested before it's used</h2>
 <p>Every piece above had to make predictions more accurate on games it hadn't seen (last

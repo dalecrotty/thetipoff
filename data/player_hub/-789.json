@@ -2,9 +2,77 @@
  "player_id": -789,
  "player": "Ebuka Okorie",
  "team": "Detroit",
- "opp": "Minnesota",
+ "projections": {
+  "3PM": {
+   "mean": 0.44,
+   "floor": 0.0,
+   "ceiling": 2.05
+  },
+  "AST": {
+   "mean": 0.88,
+   "floor": 0.0,
+   "ceiling": 2.48
+  },
+  "BLK": {
+   "mean": 0.07,
+   "floor": 0.0,
+   "ceiling": 1.14
+  },
+  "PTS": {
+   "mean": 2.95,
+   "floor": 0.0,
+   "ceiling": 9.75
+  },
+  "REB": {
+   "mean": 1.07,
+   "floor": 0.0,
+   "ceiling": 3.69
+  },
+  "STL": {
+   "mean": 0.28,
+   "floor": 0.0,
+   "ceiling": 1.24
+  },
+  "TOV": {
+   "mean": 0.44,
+   "floor": 0.0,
+   "ceiling": 2.1
+  },
+  "PRA": {
+   "mean": 4.9,
+   "floor": 0.0,
+   "ceiling": 13.62
+  },
+  "PR": {
+   "mean": 4.02,
+   "floor": 0.0,
+   "ceiling": 12.13
+  },
+  "PA": {
+   "mean": 3.84,
+   "floor": 0.0,
+   "ceiling": 10.62
+  },
+  "RA": {
+   "mean": 1.95,
+   "floor": 0.0,
+   "ceiling": 5.26
+  }
+ },
+ "minutes": {
+  "value": 7.7,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {},
+  "l10": {},
+  "l5": {},
+  "home": {},
+  "away": {}
+ },
  "lines": {},
+ "game_log": [],
  "recent_games": [],
- "hits": {},
- "members": "https://thetipoff.com.au/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Toronto"
 }

@@ -4,14 +4,14 @@
  "team": "Toronto",
  "projections": {
   "3PM": {
-   "mean": 0.21,
-   "floor": 0.02,
-   "ceiling": 0.21
+   "mean": 0.18,
+   "floor": 0.0,
+   "ceiling": 0.18
   },
   "AST": {
-   "mean": 0.48,
+   "mean": 0.4,
    "floor": 0.0,
-   "ceiling": 2.11
+   "ceiling": 2.0
   },
   "BLK": {
    "mean": 0.03,
@@ -19,48 +19,48 @@
    "ceiling": 1.1
   },
   "PTS": {
-   "mean": 1.38,
+   "mean": 1.18,
    "floor": 0.0,
-   "ceiling": 8.24
+   "ceiling": 7.97
   },
   "REB": {
-   "mean": 0.53,
+   "mean": 0.46,
    "floor": 0.0,
-   "ceiling": 3.19
+   "ceiling": 3.08
   },
   "STL": {
-   "mean": 0.16,
+   "mean": 0.15,
    "floor": 0.0,
-   "ceiling": 1.12
+   "ceiling": 1.11
   },
   "TOV": {
-   "mean": 0.26,
+   "mean": 0.23,
    "floor": 0.0,
-   "ceiling": 1.94
+   "ceiling": 1.89
   },
   "PRA": {
-   "mean": 2.4,
+   "mean": 2.03,
    "floor": 0.0,
-   "ceiling": 11.11
+   "ceiling": 10.75
   },
   "PR": {
-   "mean": 1.92,
+   "mean": 1.63,
    "floor": 0.0,
-   "ceiling": 10.03
+   "ceiling": 9.75
   },
   "PA": {
-   "mean": 1.87,
+   "mean": 1.58,
    "floor": 0.0,
-   "ceiling": 8.65
+   "ceiling": 8.36
   },
   "RA": {
-   "mean": 1.02,
+   "mean": 0.86,
    "floor": 0.0,
-   "ceiling": 4.32
+   "ceiling": 4.16
   }
  },
  "minutes": {
-  "value": 4.2,
+  "value": 3.6,
   "source": "fallback"
  },
  "splits": {
@@ -243,7 +243,13 @@
    "3PM": 0.0,
    "STL": 1.0,
    "BLK": 0.0,
-   "TOV": 0.0
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
   },
   {
    "date": "2025-12-09",
@@ -261,7 +267,13 @@
    "3PM": 0.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 1.0
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 3.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
   }
  ],
  "recent_games": [
@@ -281,7 +293,13 @@
    "3PM": 0.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 1.0
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 3.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
   },
   {
    "date": "2025-11-30",
@@ -299,9 +317,15 @@
    "3PM": 0.0,
    "STL": 1.0,
    "BLK": 0.0,
-   "TOV": 0.0
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
   }
  ],
  "with_without_tonight": [],
- "opp": "New York"
+ "opp": "Detroit"
 }
