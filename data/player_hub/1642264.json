@@ -226,14 +226,6 @@
   }
  },
  "lines": {
-  "3PM": {
-   "line": 1.5,
-   "side": "over",
-   "price": 2.38,
-   "book": "fanduel",
-   "edge": 0.1083,
-   "tier": "A"
-  },
   "PTS": {
    "line": 15.5,
    "side": "over",
@@ -249,14 +241,6 @@
    "book": "fanduel",
    "edge": 0.0643,
    "tier": "A"
-  },
-  "REB": {
-   "line": 5.5,
-   "side": "over",
-   "price": 2.1,
-   "book": "neds",
-   "edge": 0.0559,
-   "tier": "B"
   },
   "PRA": {
    "line": 28.5,
@@ -274,12 +258,28 @@
    "edge": 0.0335,
    "tier": "B"
   },
+  "3PM": {
+   "line": 1.5,
+   "side": "over",
+   "price": 2.38,
+   "book": "fanduel",
+   "edge": 0.0377,
+   "tier": null
+  },
   "AST": {
    "line": 6.5,
-   "side": "over",
-   "price": 2.02,
+   "side": "under",
+   "price": 1.73,
    "book": "neds",
-   "edge": 0.0135,
+   "edge": 0.028,
+   "tier": null
+  },
+  "REB": {
+   "line": 5.5,
+   "side": "over",
+   "price": 2.1,
+   "book": "neds",
+   "edge": 0.0128,
    "tier": null
   },
   "RA": {

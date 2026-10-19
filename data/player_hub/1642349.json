@@ -231,7 +231,7 @@
    "side": "over",
    "price": 1.6,
    "book": "neds",
-   "edge": 0.1477,
+   "edge": 0.1136,
    "tier": "A"
   },
   "RA": {
@@ -258,6 +258,14 @@
    "edge": 0.0594,
    "tier": "B"
   },
+  "3PM": {
+   "line": 1.5,
+   "side": "under",
+   "price": 1.41,
+   "book": "fanduel",
+   "edge": 0.0587,
+   "tier": "B"
+  },
   "PTS": {
    "line": 11.5,
    "side": "over",
@@ -274,21 +282,13 @@
    "edge": 0.0408,
    "tier": "B"
   },
-  "3PM": {
-   "line": 1.5,
-   "side": "over",
-   "price": 2.78,
-   "book": "fanduel",
-   "edge": 0.0402,
-   "tier": "B"
-  },
   "REB": {
    "line": 3.5,
-   "side": "over",
-   "price": 2.2,
+   "side": "under",
+   "price": 1.62,
    "book": "neds",
-   "edge": 0.0378,
-   "tier": "B"
+   "edge": 0.013,
+   "tier": null
   }
  },
  "game_log": [

@@ -258,20 +258,12 @@
    "edge": 0.1259,
    "tier": "A"
   },
-  "3PM": {
-   "line": 1.5,
-   "side": "over",
-   "price": 1.6,
+  "AST": {
+   "line": 2.5,
+   "side": "under",
+   "price": 2.25,
    "book": "neds",
-   "edge": 0.0761,
-   "tier": "A"
-  },
-  "REB": {
-   "line": 11.5,
-   "side": "over",
-   "price": 1.98,
-   "book": "neds",
-   "edge": 0.0307,
+   "edge": 0.0593,
    "tier": "B"
   },
   "RA": {
@@ -282,12 +274,20 @@
    "edge": 0.0143,
    "tier": null
   },
-  "AST": {
-   "line": 2.5,
-   "side": "under",
-   "price": 2.25,
+  "3PM": {
+   "line": 1.5,
+   "side": "over",
+   "price": 1.6,
    "book": "neds",
-   "edge": 0.0098,
+   "edge": 0.0132,
+   "tier": null
+  },
+  "REB": {
+   "line": 11.5,
+   "side": "under",
+   "price": 1.78,
+   "book": "neds",
+   "edge": 0.0083,
    "tier": null
   }
  },
