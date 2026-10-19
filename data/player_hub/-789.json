@@ -2,9 +2,78 @@
  "player_id": -789,
  "player": "Ebuka Okorie",
  "team": "Detroit",
- "opp": "Boston",
+ "projections": {
+  "3PM": {
+   "mean": 0.24,
+   "floor": 0.06,
+   "ceiling": 0.24
+  },
+  "AST": {
+   "mean": 0.48,
+   "floor": 0.0,
+   "ceiling": 2.07
+  },
+  "BLK": {
+   "mean": 0.04,
+   "floor": 0.0,
+   "ceiling": 1.1
+  },
+  "PTS": {
+   "mean": 1.59,
+   "floor": 0.0,
+   "ceiling": 8.39
+  },
+  "REB": {
+   "mean": 0.57,
+   "floor": 0.0,
+   "ceiling": 3.2
+  },
+  "STL": {
+   "mean": 0.15,
+   "floor": 0.0,
+   "ceiling": 1.11
+  },
+  "TOV": {
+   "mean": 0.24,
+   "floor": 0.0,
+   "ceiling": 1.9
+  },
+  "PRA": {
+   "mean": 2.64,
+   "floor": 0.0,
+   "ceiling": 11.36
+  },
+  "PR": {
+   "mean": 2.17,
+   "floor": 0.0,
+   "ceiling": 10.28
+  },
+  "PA": {
+   "mean": 2.07,
+   "floor": 0.0,
+   "ceiling": 8.85
+  },
+  "RA": {
+   "mean": 1.05,
+   "floor": 0.0,
+   "ceiling": 4.36
+  }
+ },
+ "minutes": {
+  "value": 2,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {},
+  "l10": {},
+  "l5": {},
+  "home": {},
+  "away": {}
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [],
  "recent_games": [],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Boston"
 }
