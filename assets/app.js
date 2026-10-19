@@ -56,6 +56,22 @@ function american(dec) {
 }
 const odds = dec => (dec === null || dec === undefined || isNaN(dec)) ? "—"
   : US ? american(dec) : Number(dec).toFixed(2);
+/* each site lists its own region's books and their props (owner, 19 Oct
+   2026): the rows carry the Australian book at the top level and the US
+   book under "us"; on the US site the US block takes the top level */
+const LINE_KEYS = ["line", "side", "price", "book", "edge", "p_us", "p_book", "tier", "gate_status", "l10_over", "l5_over"];
+function regionLines(rows) {
+  if (!US) return rows;
+  for (const r of rows || []) {
+    const u = r.us || {};
+    for (const k of LINE_KEYS) r[k] = u[k] === undefined ? null : u[k];
+  }
+  return rows;
+}
+const BOOK_NAMES = { sportsbet: "Sportsbet", tab: "TAB", neds: "Neds", ladbrokes_au: "Ladbrokes", pointsbetau: "PointsBet",
+  unibet: "Unibet", bet365_au: "bet365", fanduel: "FanDuel", draftkings: "DraftKings", betmgm: "BetMGM", williamhill_us: "Caesars",
+  betrivers: "BetRivers", bovada: "Bovada", betonlineag: "BetOnline", pinnacle: "Pinnacle" };
+const bookName = b => b ? (BOOK_NAMES[String(b).toLowerCase()] || String(b)) : "";
 function regionPass(root) {
   if (!US || !root) return;
   // tip times written by the page builder: re-shown in the reader's zone
@@ -293,9 +309,8 @@ async function renderFreshness() {
     el.innerHTML =
       (warn ? `<div class="staleline"><b>Out of date.</b> ${warn}</div>` : "") +
       `<span>Updated <b>${whenAEDT(m.computed_at)}</b>${build ? ` · ${build}` : ""}</span>` +
-      (m.lines_region === "us"
-        ? `<span>Lines from <b>US bookmakers</b> until Australian books price NBA player props</span>`
-        : m.lines_region === "au" ? `<span>Lines from <b>Australian bookmakers</b>; a US book stands in where no Australian book has priced a player</span>` : "") +
+      (US ? `<span>Lines from <b>US sportsbooks</b></span>`
+          : `<span>Lines from <b>Australian bookmakers</b></span>`) +
       (m.demo ? `<span class="demo">Demo: last season's replay, not live</span>` : "");
     return m;
   } catch {
@@ -374,7 +389,7 @@ function predTd(r) {
 function lineTd(r) {
   if (r.line == null) return `<td class="num dim">—</td>`;
   return `<td class="num"><span class="side">${fmt(r.line)}</span>${
-    r.price != null ? `<div class="sm" title="${r.book ? esc(r.book) : ""}">@ ${odds(r.price)}</div>` : ""}</td>`;
+    r.price != null ? `<div class="sm" title="${r.book ? esc(bookName(r.book)) : ""}">@ ${odds(r.price)}</div>` : ""}</td>`;
 }
 function diffTd(r) {
   if (r.diff == null) return `<td class="num dim opt">—</td>`;
@@ -385,7 +400,7 @@ function diffTd(r) {
 function priceTd(r) {
   if (r.price == null) return `<td class="num dim">—</td>`;
   return `<td class="num">${odds(r.price)}${r.book
-    ? `<div class="sm l">${esc(r.book)}</div>` : ""}</td>`;
+    ? `<div class="sm l">${esc(bookName(r.book))}</div>` : ""}</td>`;
 }
 /* The edge carries its side — "▼U 11.3%" — so an under never reads as an
    over. Only a clear edge (3%+) names a side; below that the value
@@ -477,7 +492,7 @@ function leadSentence(rows) {
   if (!top) return "";
   const opp = top.opp ? ` against ${esc(top.opp)}` : "";
   const line = top.line != null
-    ? `; the line is <span class="n">${fmt(top.line)}</span>${top.book ? ` at ${esc(top.book)}` : ""}` : "";
+    ? `; the line is <span class="n">${fmt(top.line)}</span>${top.book ? ` at ${esc(bookName(top.book))}` : ""}` : "";
   return `<b>${esc(top.player)}</b> is predicted to score <span class="n">${
     fmt(top.proj)}</span> points${opp} tonight${line}.`;
 }
@@ -511,7 +526,7 @@ function boardCsv(rows, start) {
   const out = [head.join(",")];
   for (const { r, m } of by.values()) {
     const name = String(r.player || "").split(" ");
-    const book = Object.values(m).find(x => x.book)?.book || "";
+    const book = bookName(Object.values(m).find(x => x.book)?.book || "");
     const row = [r.player_id, name.slice(1).join(" "), name[0], r.player, r.team, r.pos || "", r.opp || "",
       tip(start[r.game]), r.injury_status || "", n(r.minutes, 0), book];
     for (const [s] of CSV_MARKETS) {
@@ -536,7 +551,7 @@ function downloadFile(text, name, type = "text/csv;charset=utf-8") {
 async function initBoard() {
   const meta = await renderFreshness();
   const data = await loadData("projections");
-  let rows = data.rows;
+  let rows = regionLines(data.rows);
   // L10 from our side's point of view: an under that the player went
   // over in 4 of 10 landed 6 of 10
   rows.forEach(r => {
@@ -919,6 +934,7 @@ async function initPlayer() {
   q.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
   const pid = cur.player_id;
   const h = await loadData(`hub/${pid}`);
+  if (US) h.lines = h.lines_us || {};          // the US site: US books' lines
 
   $("#pname").textContent = h.player;
   document.title = `${h.player} Props Today: Projection vs the Line | Drop Coverage`;
@@ -1153,7 +1169,7 @@ async function initPlayer() {
       row("Prediction", s => s === "MIN" ? (h.minutes ? `<b class="pv">${fmt(h.minutes.value, 0)}</b>` : "—")
         : P[s] ? `<b class="pv">${fmt(P[s].mean)}</b>` : "—", "sep") +
       row("Line", s => NOLINE.has(s) ? "—" : `<input class="lineIn" data-s="${s}" type="number" step="0.5" value="${
-        lineOf(s) ?? ""}" title="${L[s] ? `book line${L[s].book ? ` (${esc(L[s].book)})` : ""}` : "no book line: type one"}">`, "linerow") +
+        lineOf(s) ?? ""}" title="${L[s] ? `book line${L[s].book ? ` (${esc(bookName(L[s].book))})` : ""}` : "no book line: type one"}">`, "linerow") +
       row("Over", s => { const v = vals(s), l = lineOf(s);
         return NOLINE.has(s) || l == null ? "—" : `${v.filter(x => x > l).length}/${v.length}`; }, "dimrow") +
       row("Hit rate", s => { const r = NOLINE.has(s) ? null : rate(s);
