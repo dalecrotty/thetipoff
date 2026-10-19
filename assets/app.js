@@ -359,7 +359,6 @@ function playerCell(r) {
   return `<td class="s pl"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${moveInfo(r)}
     <div class="sm">${teamBadge(r.team)}${esc(opp)}${
       r.minutes != null ? ` · ${fmt(r.minutes, 0)} min` : ""}${
-      r.rot_rank != null ? ` <span class="dim" title="rotation rank tonight">#${r.rot_rank}</span>` : ""}${
       r.minutes_source && r.minutes_source !== "model"
         ? ` <span class="badge src">${esc(r.minutes_source)}</span>` : ""}</div>${wwNote(r)}</td>`;
 }
@@ -946,7 +945,7 @@ async function initPlayer() {
   const strip = [["MIN", h.minutes ? h.minutes.value : null], ["PTS", P.PTS?.mean], ["3PM", P["3PM"]?.mean],
                  ["REB", P.REB?.mean], ["AST", P.AST?.mean]].filter(x => x[1] != null);
   $("#projCards").innerHTML = strip.length
-    ? strip.map(([k, v]) => `<span class="pst"><span class="k">${k}</span><b>${fmt(v)}</b></span>`).join("")
+    ? strip.map(([k, v]) => `<span class="pst"><span class="k">${k}</span><b>${fmt(v, k === "MIN" ? 0 : 1)}</b></span>`).join("")
     : `<span class="dim">No prediction tonight.</span>`;
 
   /* --- seasons (owner, 16 Oct 2026) ---
@@ -1061,7 +1060,7 @@ async function initPlayer() {
   const rows = Object.entries(h.splits || {})   // the public cut has no splits
     .filter(([, v]) => v && v.games)
     .map(([k, v]) => `<tr><td class="s">${SPLIT_LABEL[k] || k}</td>
-      <td class="num dim">${v.games}</td><td class="num">${fmt(v.min_pg)}</td>
+      <td class="num dim">${v.games}</td><td class="num">${fmt(v.min_pg, 0)}</td>
       ${S.map(s => `<td class="num">${v[s] ? fmt(v[s].pg) : "—"}</td>`).join("")}
     </tr>`);
   $("#splits tbody").innerHTML = rows.join("");
@@ -1180,7 +1179,7 @@ async function initPlayer() {
       <td class="s ${g.result === "W" ? "pos" : g.result === "L" ? "neg" : "dim"}">${g.result || "—"}</td>
       <td class="s">${g.starter
         ? '<span class="badge src">start</span>' : '<span class="dim">bench</span>'}</td>
-      <td class="num">${fmt(g.min)}</td>
+      <td class="num">${fmt(g.min, 0)}</td>
       ${["PTS", "REB", "AST", "3PM", "FGM", "FGA", "3PA", "FTA", "STL", "BLK", "TOV"]
         .map(s => `<td class="num${["FGM", "FGA", "3PA", "FTA"].includes(s) ? " dim" : ""}">${fmt(g[s], 0)}</td>`).join("")}
       <td class="num dim">${fmt(statValue(g, "PRA"), 0)}</td>
@@ -1335,7 +1334,7 @@ async function initWow() {
           : `<span class="dim">${g.date}</span>`}</td>
         <td class="s">${teamBadge(g.opp)}</td>
         <td class="s dim">${(g.venue || "").toUpperCase().startsWith("H") ? "H" : "A"}</td>
-        <td class="num">${fmt(l.min)}</td>
+        <td class="num">${fmt(l.min, 0)}</td>
         ${S.map(s => `<td class="num">${l[s] == null ? "—" : fmt(l[s], 0)}</td>`).join("")}
       </tr>`;
     }).join("") || `<tr><td colspan="${NCOL + 2}" class="empty">No games match.</td></tr>`;
@@ -1490,7 +1489,7 @@ async function initBoxscore() {
           <td class="s"><a href="player.html?id=${p.player_id}">
             ${esc(p.player)}</a>${p.starter
               ? ' <span class="badge src">start</span>' : ""}</td>
-          <td class="num">${fmt(p.min)}</td>
+          <td class="num">${fmt(p.min, 0)}</td>
           ${S.map(s => `<td class="num">${fmt(p[s], 0)}</td>`).join("")}
         </tr>`).join("")}
         <tr><td class="s"><b>Total</b></td>
