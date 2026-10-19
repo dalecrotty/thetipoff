@@ -83,50 +83,6 @@
    }
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "3PM",
-   "proj": 0.89,
-   "floor": 0.0,
-   "ceiling": 2.15,
-   "sigma": 1.08,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.015,
-   "mu_rank": 16,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": 1.24,
-   "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 42
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -166,7 +122,7 @@
    "floor": 0.02,
    "ceiling": 2.19,
    "sigma": 1.08,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -196,7 +152,7 @@
    "ww": null,
    "prior": 0.53,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 41
   },
   {
@@ -218,13 +174,13 @@
    "early": null,
    "gate_status": "passed",
    "us": {
-    "line": 1.5,
-    "price": 1.41,
-    "book": "betonlineag",
-    "price_over": 2.82,
-    "price_under": 1.41,
-    "l5_over": 0.0,
-    "l10_over": 0.0,
+    "line": 0.5,
+    "price": 2.35,
+    "book": "betrivers",
+    "price_over": 1.54,
+    "price_under": 2.35,
+    "l5_over": 0.8,
+    "l10_over": 0.5,
     "gate_status": "passed"
    }
   },
@@ -410,7 +366,7 @@
    "floor": 0.0,
    "ceiling": 3.81,
    "sigma": 1.41,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": 1.5,
@@ -458,7 +414,7 @@
    "ww": null,
    "prior": 1.45,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 23
   },
   {
@@ -469,16 +425,16 @@
    "game": "Boston vs Detroit",
    "stat": "3PM",
    "line": 2.5,
-   "price": 1.57,
-   "book": "neds",
-   "price_over": 1.57,
-   "price_under": 2.2,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 1.72,
+   "price_under": 2.08,
    "l5_over": 0.6,
    "l10_over": 0.5,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 2.5,
     "price": 1.63,
@@ -590,7 +546,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 61
+   "rank": 59
   },
   {
    "player_id": 1628401,
@@ -661,7 +617,7 @@
    "floor": 0.0,
    "ceiling": 0.01,
    "sigma": 0.32,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -692,7 +648,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 54
   },
   {
    "player_id": 1628969,
@@ -731,10 +687,10 @@
    "game": "New York vs Philadelphia",
    "stat": "3PM",
    "line": 2.5,
-   "price": 1.58,
-   "book": "neds",
-   "price_over": 2.2,
-   "price_under": 1.58,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68,
    "l5_over": 0.6,
    "l10_over": 0.4,
    "pos": "PG",
@@ -768,21 +724,21 @@
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
-   "price": 1.75,
-   "book": "neds",
-   "edge": 0.0638,
+   "price": 1.76,
+   "book": "sportsbet",
+   "edge": 0.0526,
    "p_us": 0.587,
-   "p_book": 0.523,
+   "p_book": 0.534,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
    "p_over": 0.413,
    "p_under": 0.587,
-   "fair_over": 0.477,
-   "fair_under": 0.523,
-   "price_over": 1.92,
-   "price_under": 1.75,
+   "fair_over": 0.466,
+   "fair_under": 0.534,
+   "price_over": 2.02,
+   "price_under": 1.76,
    "us": {
     "line": 1.5,
     "side": "under",
@@ -954,7 +910,7 @@
    "prior": 0.84,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 64
+   "rank": 62
   },
   {
    "player_id": 1629130,
@@ -1026,8 +982,8 @@
    "ww": null,
    "prior": 0.29,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 65
+   "move_reason": "Harris out",
+   "rank": 63
   },
   {
    "player_id": 1629640,
@@ -1040,7 +996,7 @@
    "floor": 0.0,
    "ceiling": 2.06,
    "sigma": 1.08,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": 0.5,
@@ -1089,7 +1045,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 43
+   "rank": 42
   },
   {
    "player_id": 1629674,
@@ -1162,7 +1118,7 @@
    "floor": 0.0,
    "ceiling": 4.71,
    "sigma": 1.69,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": 1.5,
@@ -1210,7 +1166,7 @@
    "ww": null,
    "prior": 2.46,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 13
   },
   {
@@ -1382,7 +1338,7 @@
    "floor": 0.2,
    "ceiling": 4.15,
    "sigma": 1.51,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": 1.5,
@@ -1440,13 +1396,13 @@
    "opp": "Boston",
    "game": "Boston vs Detroit",
    "stat": "3PM",
-   "line": 1.5,
-   "price": 1.52,
-   "book": "neds",
-   "price_over": 1.52,
-   "price_under": 2.3,
-   "l5_over": 0.8,
-   "l10_over": 0.9,
+   "line": 2.5,
+   "price": 2.5,
+   "book": "sportsbet",
+   "price_over": 2.5,
+   "price_under": 1.48,
+   "l5_over": 0.4,
+   "l10_over": 0.5,
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
@@ -1731,26 +1687,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -1781,26 +1717,26 @@
    "floor": 0.19,
    "ceiling": 4.13,
    "sigma": 1.51,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": 1.5,
-   "side": "over",
-   "price": 1.6,
-   "book": "neds",
-   "edge": 0.0231,
-   "p_us": 0.596,
-   "p_book": 0.573,
+   "side": "under",
+   "price": 2.4,
+   "book": "sportsbet",
+   "edge": 0.0158,
+   "p_us": 0.404,
+   "p_book": 0.388,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.8,
    "l5_over": 0.8,
    "p_over": 0.596,
    "p_under": 0.404,
-   "fair_over": 0.573,
-   "fair_under": 0.427,
-   "price_over": 1.6,
-   "price_under": 2.15,
+   "fair_over": 0.612,
+   "fair_under": 0.388,
+   "price_over": 1.52,
+   "price_under": 2.4,
    "us": {
     "line": 1.5,
     "side": "under",
@@ -1829,7 +1765,7 @@
    "ww": null,
    "prior": 1.9,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 16
   },
   {
@@ -2056,7 +1992,7 @@
    "prior": 0.38,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 73
+   "rank": 71
   },
   {
    "player_id": 1642264,
@@ -2069,7 +2005,7 @@
    "floor": 0.0,
    "ceiling": 3.04,
    "sigma": 1.36,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": 1.5,
@@ -2117,7 +2053,7 @@
    "ww": null,
    "prior": 1.21,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 30
   },
   {
@@ -2404,7 +2340,7 @@
    "floor": 0.0,
    "ceiling": 2.97,
    "sigma": 1.36,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": 1.5,
@@ -2452,7 +2388,7 @@
    "ww": null,
    "prior": 1.0,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 32
   },
   {
@@ -2545,8 +2481,8 @@
    "ww": null,
    "prior": 0.38,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 80
+   "move_reason": "Harris out",
+   "rank": 78
   },
   {
    "player_id": 1642873,
@@ -2630,7 +2566,7 @@
    "prior": 0.28,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": -789,
@@ -2753,8 +2689,8 @@
    "ww": null,
    "prior": 0.33,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 87
+   "move_reason": "Harris out",
+   "rank": 85
   },
   {
    "player_id": -752,
@@ -2798,7 +2734,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 88
+   "rank": 86
   },
   {
    "player_id": -781,
@@ -2842,7 +2778,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 55
+   "rank": 53
   },
   {
    "player_id": -787,
@@ -2886,7 +2822,7 @@
    "prior": 0.62,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": 2544,
@@ -2967,50 +2903,6 @@
    }
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "AST",
-   "proj": 1.39,
-   "floor": 0.0,
-   "ceiling": 2.99,
-   "sigma": 1.36,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.064,
-   "mu_rank": 23,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": 1.81,
-   "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 39
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -3041,7 +2933,7 @@
    "floor": 0.0,
    "ceiling": 2.03,
    "sigma": 1.07,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -3071,8 +2963,8 @@
    "ww": null,
    "prior": 0.37,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 53
+   "move_reason": "Harris out",
+   "rank": 52
   },
   {
    "player_id": 203484,
@@ -3276,7 +3168,7 @@
    "floor": 2.25,
    "ceiling": 9.63,
    "sigma": 2.93,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": 5.5,
@@ -3324,7 +3216,7 @@
    "ww": null,
    "prior": 5.39,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 9
   },
   {
@@ -3335,16 +3227,16 @@
    "game": "Boston vs Detroit",
    "stat": "AST",
    "line": 5.5,
-   "price": 1.78,
-   "book": "neds",
-   "price_over": 1.78,
-   "price_under": 1.98,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05,
    "l5_over": 0.6,
    "l10_over": 0.7,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 5.5,
     "price": 1.82,
@@ -3545,7 +3437,7 @@
    "floor": 0.0,
    "ceiling": 2.22,
    "sigma": 1.07,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -3575,8 +3467,8 @@
    "ww": null,
    "prior": 0.47,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 48
+   "move_reason": "Harris out",
+   "rank": 47
   },
   {
    "player_id": 1628969,
@@ -3615,10 +3507,10 @@
    "game": "New York vs Philadelphia",
    "stat": "AST",
    "line": 6.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.88,
-   "price_under": 1.85,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89,
    "l5_over": 0.2,
    "l10_over": 0.2,
    "pos": "PG",
@@ -3650,23 +3542,23 @@
    "minutes": 33,
    "rot_rank": 1,
    "minutes_source": "model",
-   "line": 6.5,
+   "line": 5.5,
    "side": "over",
-   "price": 1.77,
-   "book": "neds",
-   "edge": 0.0179,
-   "p_us": 0.546,
-   "p_book": 0.528,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "price": 1.74,
+   "book": "sportsbet",
+   "edge": 0.1305,
+   "p_us": 0.671,
+   "p_book": 0.541,
+   "tier": "A",
+   "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 0.8,
-   "p_over": 0.546,
-   "p_under": 0.454,
-   "fair_over": 0.528,
-   "fair_under": 0.472,
-   "price_over": 1.77,
-   "price_under": 1.98,
+   "p_over": 0.671,
+   "p_under": 0.329,
+   "fair_over": 0.541,
+   "fair_under": 0.459,
+   "price_over": 1.74,
+   "price_under": 2.05,
    "us": {
     "line": 6.5,
     "side": "over",
@@ -3820,7 +3712,7 @@
    "prior": 1.29,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 65
+   "rank": 63
   },
   {
    "player_id": 1629130,
@@ -3892,8 +3784,8 @@
    "ww": null,
    "prior": 0.72,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 66
+   "move_reason": "Harris out",
+   "rank": 64
   },
   {
    "player_id": 1629640,
@@ -3906,7 +3798,7 @@
    "floor": 0.0,
    "ceiling": 2.07,
    "sigma": 1.07,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
@@ -3937,7 +3829,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 51
   },
   {
    "player_id": 1629674,
@@ -4010,7 +3902,7 @@
    "floor": 0.16,
    "ceiling": 4.19,
    "sigma": 1.62,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": 2.5,
@@ -4239,7 +4131,7 @@
    "floor": 0.05,
    "ceiling": 3.12,
    "sigma": 1.28,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
@@ -4270,7 +4162,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 40
   },
   {
    "player_id": 1630595,
@@ -4280,10 +4172,10 @@
    "game": "Boston vs Detroit",
    "stat": "AST",
    "line": 9.5,
-   "price": 1.73,
-   "book": "neds",
-   "price_over": 2.02,
-   "price_under": 1.73,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74,
    "l5_over": 0.2,
    "l10_over": 0.3,
    "pos": "PG",
@@ -4381,7 +4273,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 39
   },
   {
    "player_id": 1631105,
@@ -4579,26 +4471,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -4629,26 +4501,26 @@
    "floor": 0.63,
    "ceiling": 5.63,
    "sigma": 2.03,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
-   "price": 2.25,
-   "book": "neds",
-   "edge": 0.047,
+   "price": 2.3,
+   "book": "sportsbet",
+   "edge": 0.0585,
    "p_us": 0.463,
-   "p_book": 0.416,
+   "p_book": 0.404,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.2,
    "p_over": 0.537,
    "p_under": 0.463,
-   "fair_over": 0.584,
-   "fair_under": 0.416,
-   "price_over": 1.6,
-   "price_under": 2.25,
+   "fair_over": 0.596,
+   "fair_under": 0.404,
+   "price_over": 1.56,
+   "price_under": 2.3,
    "us": {
     "line": 2.5,
     "side": "under",
@@ -4913,7 +4785,7 @@
    "prior": 2.79,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 73
+   "rank": 71
   },
   {
    "player_id": 1642264,
@@ -4926,7 +4798,7 @@
    "floor": 2.6,
    "ceiling": 9.99,
    "sigma": 2.93,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": 6.5,
@@ -4974,7 +4846,7 @@
    "ww": null,
    "prior": 5.51,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 6
   },
   {
@@ -5037,7 +4909,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 41
   },
   {
    "player_id": 1642278,
@@ -5261,7 +5133,7 @@
    "floor": 1.1,
    "ceiling": 6.8,
    "sigma": 2.26,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": 3.5,
@@ -5309,7 +5181,7 @@
    "ww": null,
    "prior": 2.89,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 18
   },
   {
@@ -5402,8 +5274,8 @@
    "ww": null,
    "prior": 0.4,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 80
+   "move_reason": "Harris out",
+   "rank": 78
   },
   {
    "player_id": 1642873,
@@ -5487,7 +5359,7 @@
    "prior": 0.81,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": -789,
@@ -5610,8 +5482,8 @@
    "ww": null,
    "prior": 1.08,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 87
+   "move_reason": "Harris out",
+   "rank": 85
   },
   {
    "player_id": -752,
@@ -5654,8 +5526,8 @@
    "ww": null,
    "prior": 0.5,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 88
+   "move_reason": "Harris out",
+   "rank": 86
   },
   {
    "player_id": -781,
@@ -5699,7 +5571,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 53
   },
   {
    "player_id": -787,
@@ -5743,7 +5615,7 @@
    "prior": 1.24,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": 2544,
@@ -5806,50 +5678,6 @@
    "us": null
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "BLK",
-   "proj": 0.42,
-   "floor": 0.0,
-   "ceiling": 1.03,
-   "sigma": 0.69,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.043,
-   "mu_rank": 11,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 28
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -5880,7 +5708,7 @@
    "floor": 0.0,
    "ceiling": 0.97,
    "sigma": 0.4,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -5911,7 +5739,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 54
   },
   {
    "player_id": 203484,
@@ -6075,7 +5903,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 35
   },
   {
    "player_id": 1628368,
@@ -6088,7 +5916,7 @@
    "floor": 0.0,
    "ceiling": 1.02,
    "sigma": 0.63,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": null,
@@ -6119,7 +5947,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 33
   },
   {
    "player_id": 1628369,
@@ -6276,7 +6104,7 @@
    "floor": 0.0,
    "ceiling": 1.9,
    "sigma": 0.75,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -6306,7 +6134,7 @@
    "ww": null,
    "prior": 0.28,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 21
   },
   {
@@ -6515,7 +6343,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 65
+   "rank": 63
   },
   {
    "player_id": 1629130,
@@ -6579,7 +6407,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 64
   },
   {
    "player_id": 1629640,
@@ -6592,7 +6420,7 @@
    "floor": 0.0,
    "ceiling": 0.99,
    "sigma": 0.4,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
@@ -6623,7 +6451,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 50
   },
   {
    "player_id": 1629674,
@@ -6696,7 +6524,7 @@
    "floor": 0.0,
    "ceiling": 1.06,
    "sigma": 0.69,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
@@ -6880,7 +6708,7 @@
    "floor": 0.0,
    "ceiling": 1.04,
    "sigma": 0.69,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
@@ -7059,7 +6887,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 31
+   "rank": 30
   },
   {
    "player_id": 1631119,
@@ -7103,7 +6931,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 34
+   "rank": 32
   },
   {
    "player_id": 1631126,
@@ -7166,26 +6994,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -7216,7 +7024,7 @@
    "floor": 1.51,
    "ceiling": 4.73,
    "sigma": 1.31,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": null,
@@ -7455,7 +7263,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 73
+   "rank": 71
   },
   {
    "player_id": 1642264,
@@ -7468,7 +7276,7 @@
    "floor": 0.0,
    "ceiling": 1.01,
    "sigma": 0.52,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": null,
@@ -7499,7 +7307,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 37
   },
   {
    "player_id": 1642272,
@@ -7543,7 +7351,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 59
+   "rank": 57
   },
   {
    "player_id": 1642278,
@@ -7627,7 +7435,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 39
   },
   {
    "player_id": 1642359,
@@ -7740,7 +7548,7 @@
    "floor": 0.01,
    "ceiling": 1.05,
    "sigma": 0.63,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": null,
@@ -7771,7 +7579,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 32
+   "rank": 31
   },
   {
    "player_id": 1642845,
@@ -7854,8 +7662,8 @@
    "ww": null,
    "prior": 0.16,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 80
+   "move_reason": "Harris out",
+   "rank": 78
   },
   {
    "player_id": 1642873,
@@ -7939,7 +7747,7 @@
    "prior": 0.18,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": -789,
@@ -8063,7 +7871,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 85
   },
   {
    "player_id": -752,
@@ -8106,8 +7914,8 @@
    "ww": null,
    "prior": 0.53,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 88
+   "move_reason": "Harris out",
+   "rank": 86
   },
   {
    "player_id": -781,
@@ -8195,7 +8003,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": 2544,
@@ -8276,50 +8084,6 @@
    }
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "PTS",
-   "proj": 9.05,
-   "floor": 2.02,
-   "ceiling": 16.48,
-   "sigma": 5.67,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.088,
-   "mu_rank": 30,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": 13.11,
-   "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 35
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -8359,7 +8123,7 @@
    "floor": 0.0,
    "ceiling": 10.35,
    "sigma": 4.33,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -8389,8 +8153,8 @@
    "ww": null,
    "prior": 2.61,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 48
+   "move_reason": "Harris out",
+   "rank": 47
   },
   {
    "player_id": 203484,
@@ -8412,10 +8176,10 @@
    "gate_status": "passed",
    "us": {
     "line": 4.5,
-    "price": 1.81,
-    "book": "betonlineag",
-    "price_over": 1.95,
-    "price_under": 1.81,
+    "price": 1.85,
+    "book": "betrivers",
+    "price_over": 1.87,
+    "price_under": 1.85,
     "l5_over": 0.8,
     "l10_over": 0.7,
     "gate_status": "passed"
@@ -8590,7 +8354,7 @@
    "prior": 9.22,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 45
+   "rank": 44
   },
   {
    "player_id": 1628368,
@@ -8603,7 +8367,7 @@
    "floor": 6.38,
    "ceiling": 23.25,
    "sigma": 6.61,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": 14.5,
@@ -8651,7 +8415,7 @@
    "ww": null,
    "prior": 13.59,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 17
   },
   {
@@ -8662,10 +8426,10 @@
    "game": "Boston vs Detroit",
    "stat": "PTS",
    "line": 26.5,
-   "price": 1.92,
-   "book": "neds",
-   "price_over": 1.82,
-   "price_under": 1.92,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89,
    "l5_over": 0.2,
    "l10_over": 0.1,
    "pos": "PF",
@@ -8872,7 +8636,7 @@
    "floor": 0.0,
    "ceiling": 8.97,
    "sigma": 4.33,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -8902,8 +8666,8 @@
    "ww": null,
    "prior": 1.82,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 53
+   "move_reason": "Harris out",
+   "rank": 52
   },
   {
    "player_id": 1628969,
@@ -8941,17 +8705,17 @@
    "opp": "Philadelphia",
    "game": "New York vs Philadelphia",
    "stat": "PTS",
-   "line": 26.5,
+   "line": 25.5,
    "price": 1.8,
-   "book": "neds",
+   "book": "sportsbet",
    "price_over": 1.8,
-   "price_under": 1.95,
+   "price_under": 1.96,
    "l5_over": 0.8,
    "l10_over": 0.6,
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 26.5,
     "price": 1.78,
@@ -8979,21 +8743,21 @@
    "minutes_source": "model",
    "line": 29.5,
    "side": "under",
-   "price": 1.88,
-   "book": "neds",
-   "edge": 0.1654,
+   "price": 1.96,
+   "book": "sportsbet",
+   "edge": 0.1826,
    "p_us": 0.661,
-   "p_book": 0.496,
+   "p_book": 0.479,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
    "p_over": 0.339,
    "p_under": 0.661,
-   "fair_over": 0.504,
-   "fair_under": 0.496,
-   "price_over": 1.85,
-   "price_under": 1.88,
+   "fair_over": 0.521,
+   "fair_under": 0.479,
+   "price_over": 1.8,
+   "price_under": 1.96,
    "us": {
     "line": 29.5,
     "side": "under",
@@ -9174,7 +8938,7 @@
    "prior": 6.06,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 65
+   "rank": 63
   },
   {
    "player_id": 1629130,
@@ -9246,8 +9010,8 @@
    "ww": null,
    "prior": 1.46,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 66
+   "move_reason": "Harris out",
+   "rank": 64
   },
   {
    "player_id": 1629640,
@@ -9260,7 +9024,7 @@
    "floor": 0.77,
    "ceiling": 13.85,
    "sigma": 5.01,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": 8.5,
@@ -9308,8 +9072,8 @@
    "ww": null,
    "prior": 6.1,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 46
+   "move_reason": "Harris out",
+   "rank": 45
   },
   {
    "player_id": 1629674,
@@ -9391,7 +9155,7 @@
    "floor": 3.37,
    "ceiling": 18.6,
    "sigma": 6.01,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": 11.5,
@@ -9439,7 +9203,7 @@
    "ww": null,
    "prior": 11.7,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 28
   },
   {
@@ -9620,7 +9384,7 @@
    "floor": 1.78,
    "ceiling": 16.24,
    "sigma": 5.67,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": 8.5,
@@ -9669,7 +9433,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 36
   },
   {
    "player_id": 1630595,
@@ -9679,10 +9443,10 @@
    "game": "Boston vs Detroit",
    "stat": "PTS",
    "line": 24.5,
-   "price": 1.88,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.88,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8,
    "l5_over": 0.4,
    "l10_over": 0.6,
    "pos": "PG",
@@ -9915,7 +9679,7 @@
    "prior": 5.46,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 50
+   "rank": 49
   },
   {
    "player_id": 1631126,
@@ -9978,26 +9742,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -10028,26 +9772,26 @@
    "floor": 13.27,
    "ceiling": 33.87,
    "sigma": 8.19,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": 26.5,
    "side": "under",
-   "price": 1.82,
-   "book": "neds",
-   "edge": 0.1247,
+   "price": 1.78,
+   "book": "sportsbet",
+   "edge": 0.109,
    "p_us": 0.638,
-   "p_book": 0.513,
+   "p_book": 0.529,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
    "p_over": 0.362,
    "p_under": 0.638,
-   "fair_over": 0.487,
-   "fair_under": 0.513,
-   "price_over": 1.92,
-   "price_under": 1.82,
+   "fair_over": 0.471,
+   "fair_under": 0.529,
+   "price_over": 2.0,
+   "price_under": 1.78,
    "us": {
     "line": 26.5,
     "side": "under",
@@ -10076,7 +9820,7 @@
    "ww": null,
    "prior": 22.62,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 5
   },
   {
@@ -10321,7 +10065,7 @@
    "prior": 3.33,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 73
+   "rank": 71
   },
   {
    "player_id": 1642264,
@@ -10334,7 +10078,7 @@
    "floor": 8.07,
    "ceiling": 25.6,
    "sigma": 6.89,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": 15.5,
@@ -10382,7 +10126,7 @@
    "ww": null,
    "prior": 14.48,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 14
   },
   {
@@ -10669,7 +10413,7 @@
    "floor": 8.25,
    "ceiling": 25.77,
    "sigma": 6.89,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": 14.5,
@@ -10717,7 +10461,7 @@
    "ww": null,
    "prior": 12.5,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 13
   },
   {
@@ -10810,8 +10554,8 @@
    "ww": null,
    "prior": 1.85,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 80
+   "move_reason": "Harris out",
+   "rank": 78
   },
   {
    "player_id": 1642873,
@@ -10895,7 +10639,7 @@
    "prior": 2.55,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": -789,
@@ -11018,8 +10762,8 @@
    "ww": null,
    "prior": 2.93,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 87
+   "move_reason": "Harris out",
+   "rank": 85
   },
   {
    "player_id": -752,
@@ -11062,8 +10806,8 @@
    "ww": null,
    "prior": 3.27,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 88
+   "move_reason": "Harris out",
+   "rank": 86
   },
   {
    "player_id": -781,
@@ -11107,7 +10851,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 51
   },
   {
    "player_id": -787,
@@ -11151,7 +10895,7 @@
    "prior": 4.14,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": 2544,
@@ -11232,50 +10976,6 @@
    }
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "REB",
-   "proj": 4.02,
-   "floor": 1.19,
-   "ceiling": 7.16,
-   "sigma": 2.37,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.046,
-   "mu_rank": 8,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": 5.27,
-   "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 26
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -11315,7 +11015,7 @@
    "floor": 0.0,
    "ceiling": 3.91,
    "sigma": 1.67,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -11345,8 +11045,8 @@
    "ww": null,
    "prior": 0.92,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 56
+   "move_reason": "Harris out",
+   "rank": 54
   },
   {
    "player_id": 203484,
@@ -11537,7 +11237,7 @@
    "prior": 3.1,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 48
+   "rank": 47
   },
   {
    "player_id": 1628368,
@@ -11550,7 +11250,7 @@
    "floor": 0.91,
    "ceiling": 6.87,
    "sigma": 2.37,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": 3.5,
@@ -11599,7 +11299,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 31
+   "rank": 30
   },
   {
    "player_id": 1628369,
@@ -11609,10 +11309,10 @@
    "game": "Boston vs Detroit",
    "stat": "REB",
    "line": 8.5,
-   "price": 1.92,
-   "book": "neds",
-   "price_over": 1.92,
-   "price_under": 1.82,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 1.68,
+   "price_under": 2.1,
    "l5_over": 0.6,
    "l10_over": 0.7,
    "pos": "PF",
@@ -11819,7 +11519,7 @@
    "floor": 1.07,
    "ceiling": 7.04,
    "sigma": 2.37,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -11849,8 +11549,8 @@
    "ww": null,
    "prior": 2.15,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 28
+   "move_reason": "Harris out",
+   "rank": 27
   },
   {
    "player_id": 1628969,
@@ -11888,13 +11588,13 @@
    "opp": "Philadelphia",
    "game": "New York vs Philadelphia",
    "stat": "REB",
-   "line": 3.5,
-   "price": 1.62,
-   "book": "neds",
-   "price_over": 2.2,
-   "price_under": 1.62,
-   "l5_over": 0.6,
-   "l10_over": 0.5,
+   "line": 2.5,
+   "price": 1.58,
+   "book": "sportsbet",
+   "price_over": 1.58,
+   "price_under": 2.25,
+   "l5_over": 1.0,
+   "l10_over": 0.9,
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
@@ -11926,21 +11626,21 @@
    "minutes_source": "model",
    "line": 4.5,
    "side": "under",
-   "price": 1.64,
-   "book": "neds",
-   "edge": 0.1197,
+   "price": 1.58,
+   "book": "sportsbet",
+   "edge": 0.1052,
    "p_us": 0.693,
-   "p_book": 0.573,
+   "p_book": 0.587,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.0,
    "l5_over": 0.0,
    "p_over": 0.307,
    "p_under": 0.693,
-   "fair_over": 0.427,
-   "fair_under": 0.573,
-   "price_over": 2.2,
-   "price_under": 1.64,
+   "fair_over": 0.413,
+   "fair_under": 0.587,
+   "price_over": 2.25,
+   "price_under": 1.58,
    "us": {
     "line": 4.5,
     "side": "under",
@@ -11970,7 +11670,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 33
+   "rank": 32
   },
   {
    "player_id": 1628989,
@@ -12103,7 +11803,7 @@
    "prior": 3.1,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 65
+   "rank": 63
   },
   {
    "player_id": 1629130,
@@ -12175,8 +11875,8 @@
    "ww": null,
    "prior": 0.62,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 66
+   "move_reason": "Harris out",
+   "rank": 64
   },
   {
    "player_id": 1629640,
@@ -12189,7 +11889,7 @@
    "floor": 0.99,
    "ceiling": 6.0,
    "sigma": 1.99,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": 3.5,
@@ -12237,8 +11937,8 @@
    "ww": null,
    "prior": 2.65,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 43
+   "move_reason": "Harris out",
+   "rank": 42
   },
   {
    "player_id": 1629674,
@@ -12320,7 +12020,7 @@
    "floor": 1.18,
    "ceiling": 7.6,
    "sigma": 2.52,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": 3.5,
@@ -12368,7 +12068,7 @@
    "ww": null,
    "prior": 4.5,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 25
   },
   {
@@ -12549,7 +12249,7 @@
    "floor": 1.66,
    "ceiling": 8.47,
    "sigma": 2.68,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": 4.5,
@@ -12608,10 +12308,10 @@
    "game": "Boston vs Detroit",
    "stat": "REB",
    "line": 5.5,
-   "price": 1.67,
-   "book": "neds",
-   "price_over": 2.15,
-   "price_under": 1.67,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74,
    "l5_over": 0.4,
    "l10_over": 0.3,
    "pos": "PG",
@@ -12844,7 +12544,7 @@
    "prior": 4.71,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 30
+   "rank": 29
   },
   {
    "player_id": 1631126,
@@ -12907,26 +12607,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -12957,26 +12637,26 @@
    "floor": 7.31,
    "ceiling": 16.48,
    "sigma": 3.62,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": 11.5,
    "side": "over",
-   "price": 1.98,
-   "book": "neds",
-   "edge": 0.0121,
+   "price": 2.05,
+   "book": "sportsbet",
+   "edge": 0.0264,
    "p_us": 0.485,
-   "p_book": 0.473,
+   "p_book": 0.459,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.3,
    "l5_over": 0.6,
    "p_over": 0.485,
    "p_under": 0.515,
-   "fair_over": 0.473,
-   "fair_under": 0.527,
-   "price_over": 1.98,
-   "price_under": 1.78,
+   "fair_over": 0.459,
+   "fair_under": 0.541,
+   "price_over": 2.05,
+   "price_under": 1.74,
    "us": {
     "line": 11.5,
     "side": "under",
@@ -13005,7 +12685,7 @@
    "ww": null,
    "prior": 11.26,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 2
   },
   {
@@ -13117,7 +12797,7 @@
    "prior": 3.14,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 27
+   "rank": 26
   },
   {
    "player_id": 1641737,
@@ -13250,7 +12930,7 @@
    "prior": 1.17,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 73
+   "rank": 71
   },
   {
    "player_id": 1642264,
@@ -13263,7 +12943,7 @@
    "floor": 2.18,
    "ceiling": 8.99,
    "sigma": 2.68,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": 5.5,
@@ -13311,7 +12991,7 @@
    "ww": null,
    "prior": 4.67,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 20
   },
   {
@@ -13374,7 +13054,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 51
+   "rank": 50
   },
   {
    "player_id": 1642278,
@@ -13476,7 +13156,7 @@
    "prior": 2.95,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 36
+   "rank": 35
   },
   {
    "player_id": 1642359,
@@ -13598,7 +13278,7 @@
    "floor": 2.32,
    "ceiling": 9.28,
    "sigma": 2.78,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": 4.5,
@@ -13646,7 +13326,7 @@
    "ww": null,
    "prior": 4.43,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 17
   },
   {
@@ -13739,8 +13419,8 @@
    "ww": null,
    "prior": 1.14,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 80
+   "move_reason": "Harris out",
+   "rank": 78
   },
   {
    "player_id": 1642873,
@@ -13824,7 +13504,7 @@
    "prior": 2.59,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": -789,
@@ -13947,8 +13627,8 @@
    "ww": null,
    "prior": 1.45,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 87
+   "move_reason": "Harris out",
+   "rank": 85
   },
   {
    "player_id": -752,
@@ -13991,8 +13671,8 @@
    "ww": null,
    "prior": 2.47,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 88
+   "move_reason": "Harris out",
+   "rank": 86
   },
   {
    "player_id": -781,
@@ -14036,7 +13716,7 @@
    "prior": 2.98,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 39
+   "rank": 38
   },
   {
    "player_id": -787,
@@ -14080,7 +13760,7 @@
    "prior": 1.5,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": 2544,
@@ -14143,50 +13823,6 @@
    "us": null
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "STL",
-   "proj": 0.77,
-   "floor": 0.0,
-   "ceiling": 2.0,
-   "sigma": 0.92,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.038,
-   "mu_rank": 20,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": 1.03,
-   "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 32
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -14217,7 +13853,7 @@
    "floor": 0.0,
    "ceiling": 1.1,
    "sigma": 0.76,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -14248,7 +13884,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 55
   },
   {
    "player_id": 203484,
@@ -14425,7 +14061,7 @@
    "floor": 0.04,
    "ceiling": 3.0,
    "sigma": 1.06,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": null,
@@ -14613,7 +14249,7 @@
    "floor": 0.0,
    "ceiling": 1.18,
    "sigma": 0.76,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -14643,8 +14279,8 @@
    "ww": null,
    "prior": 0.21,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 51
+   "move_reason": "Harris out",
+   "rank": 50
   },
   {
    "player_id": 1628969,
@@ -14852,7 +14488,7 @@
    "prior": 0.45,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 65
+   "rank": 63
   },
   {
    "player_id": 1629130,
@@ -14915,8 +14551,8 @@
    "ww": null,
    "prior": 0.3,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 66
+   "move_reason": "Harris out",
+   "rank": 64
   },
   {
    "player_id": 1629640,
@@ -14929,7 +14565,7 @@
    "floor": 0.0,
    "ceiling": 1.2,
    "sigma": 0.76,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
@@ -14960,7 +14596,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 49
+   "rank": 48
   },
   {
    "player_id": 1629674,
@@ -15033,7 +14669,7 @@
    "floor": 0.02,
    "ceiling": 2.07,
    "sigma": 0.99,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
@@ -15217,7 +14853,7 @@
    "floor": 0.01,
    "ceiling": 2.04,
    "sigma": 0.92,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
@@ -15440,7 +15076,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 56
   },
   {
    "player_id": 1631126,
@@ -15503,26 +15139,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -15553,7 +15169,7 @@
    "floor": 0.0,
    "ceiling": 2.06,
    "sigma": 0.96,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": null,
@@ -15792,7 +15408,7 @@
    "prior": 0.38,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 73
+   "rank": 71
   },
   {
    "player_id": 1642264,
@@ -15805,7 +15421,7 @@
    "floor": 0.02,
    "ceiling": 2.07,
    "sigma": 0.99,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": null,
@@ -15880,7 +15496,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 45
   },
   {
    "player_id": 1642278,
@@ -16077,7 +15693,7 @@
    "floor": 0.0,
    "ceiling": 2.0,
    "sigma": 0.96,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": null,
@@ -16107,7 +15723,7 @@
    "ww": null,
    "prior": 0.72,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 23
   },
   {
@@ -16192,7 +15808,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 80
+   "rank": 78
   },
   {
    "player_id": 1642873,
@@ -16276,7 +15892,7 @@
    "prior": 0.43,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": -789,
@@ -16399,8 +16015,8 @@
    "ww": null,
    "prior": 0.39,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 87
+   "move_reason": "Harris out",
+   "rank": 85
   },
   {
    "player_id": -752,
@@ -16443,8 +16059,8 @@
    "ww": null,
    "prior": 0.28,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 88
+   "move_reason": "Harris out",
+   "rank": 86
   },
   {
    "player_id": -781,
@@ -16488,7 +16104,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 53
+   "rank": 52
   },
   {
    "player_id": -787,
@@ -16532,7 +16148,7 @@
    "prior": 0.4,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": 2544,
@@ -16595,50 +16211,6 @@
    "us": null
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "TOV",
-   "proj": 0.75,
-   "floor": 0.0,
-   "ceiling": 2.0,
-   "sigma": 0.87,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.158,
-   "mu_rank": 3,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": 0.98,
-   "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 40
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -16669,7 +16241,7 @@
    "floor": 0.0,
    "ceiling": 1.81,
    "sigma": 0.8,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -16699,8 +16271,8 @@
    "ww": null,
    "prior": 0.23,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 51
+   "move_reason": "Harris out",
+   "rank": 50
   },
   {
    "player_id": 203484,
@@ -16864,7 +16436,7 @@
    "prior": 0.87,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 43
+   "rank": 42
   },
   {
    "player_id": 1628368,
@@ -16877,7 +16449,7 @@
    "floor": 0.69,
    "ceiling": 4.12,
    "sigma": 1.47,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": null,
@@ -16907,7 +16479,7 @@
    "ww": null,
    "prior": 2.13,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 12
   },
   {
@@ -17065,7 +16637,7 @@
    "floor": 0.0,
    "ceiling": 1.77,
    "sigma": 0.8,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -17095,8 +16667,8 @@
    "ww": null,
    "prior": 0.21,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 54
+   "move_reason": "Harris out",
+   "rank": 53
   },
   {
    "player_id": 1628969,
@@ -17304,7 +16876,7 @@
    "prior": 0.61,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 65
+   "rank": 63
   },
   {
    "player_id": 1629130,
@@ -17367,8 +16939,8 @@
    "ww": null,
    "prior": 0.28,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 66
+   "move_reason": "Harris out",
+   "rank": 64
   },
   {
    "player_id": 1629640,
@@ -17381,7 +16953,7 @@
    "floor": 0.0,
    "ceiling": 1.99,
    "sigma": 0.87,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
@@ -17412,7 +16984,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 40
   },
   {
    "player_id": 1629674,
@@ -17485,7 +17057,7 @@
    "floor": 0.0,
    "ceiling": 2.02,
    "sigma": 0.96,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
@@ -17669,7 +17241,7 @@
    "floor": 0.01,
    "ceiling": 2.02,
    "sigma": 0.8,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
@@ -17700,7 +17272,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 47
+   "rank": 46
   },
   {
    "player_id": 1630595,
@@ -17892,7 +17464,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 49
   },
   {
    "player_id": 1631126,
@@ -17955,26 +17527,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -18005,7 +17557,7 @@
    "floor": 0.69,
    "ceiling": 5.11,
    "sigma": 1.78,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": null,
@@ -18244,7 +17796,7 @@
    "prior": 1.51,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 73
+   "rank": 71
   },
   {
    "player_id": 1642264,
@@ -18257,7 +17809,7 @@
    "floor": 1.3,
    "ceiling": 5.72,
    "sigma": 1.78,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": null,
@@ -18287,7 +17839,7 @@
    "ww": null,
    "prior": 3.13,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 3
   },
   {
@@ -18529,7 +18081,7 @@
    "floor": 0.18,
    "ceiling": 4.04,
    "sigma": 1.41,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": null,
@@ -18559,7 +18111,7 @@
    "ww": null,
    "prior": 1.51,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
+   "move_reason": "Harris out",
    "rank": 16
   },
   {
@@ -18643,8 +18195,8 @@
    "ww": null,
    "prior": 0.3,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 80
+   "move_reason": "Harris out",
+   "rank": 78
   },
   {
    "player_id": 1642873,
@@ -18728,7 +18280,7 @@
    "prior": 0.31,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": -789,
@@ -18851,8 +18403,8 @@
    "ww": null,
    "prior": 0.44,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 87
+   "move_reason": "Harris out",
+   "rank": 85
   },
   {
    "player_id": -752,
@@ -18895,8 +18447,8 @@
    "ww": null,
    "prior": 0.64,
    "prior_at": "2026-10-11T06:22+00:00",
-   "move_reason": "minutes update",
-   "rank": 88
+   "move_reason": "Harris out",
+   "rank": 86
   },
   {
    "player_id": -781,
@@ -18984,7 +18536,7 @@
    "prior": 0.62,
    "prior_at": "2026-10-11T06:22+00:00",
    "move_reason": "Oweh out",
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": -789,
@@ -19048,7 +18600,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 60
   },
   {
    "player_id": -781,
@@ -19092,7 +18644,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 49
+   "rank": 48
   },
   {
    "player_id": -752,
@@ -19136,7 +18688,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 61
   },
   {
    "player_id": -729,
@@ -19237,50 +18789,6 @@
    }
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "PRA",
-   "proj": 14.47,
-   "floor": 5.09,
-   "ceiling": 23.64,
-   "sigma": 7.18,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.051,
-   "mu_rank": 25,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 35
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -19311,7 +18819,7 @@
    "floor": 0.0,
    "ceiling": 15.83,
    "sigma": 6.33,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -19342,7 +18850,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 53
   },
   {
    "player_id": 203484,
@@ -19533,7 +19041,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 44
   },
   {
    "player_id": 1628368,
@@ -19546,7 +19054,7 @@
    "floor": 13.56,
    "ceiling": 35.79,
    "sigma": 8.85,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": 23.5,
@@ -19604,13 +19112,13 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PRA",
-   "line": 41.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87,
-   "l5_over": 0.6,
-   "l10_over": 0.7,
+   "line": 42.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83,
+   "l5_over": 0.4,
+   "l10_over": 0.6,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
@@ -19815,7 +19323,7 @@
    "floor": 0.37,
    "ceiling": 16.81,
    "sigma": 6.33,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -19846,7 +19354,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 49
   },
   {
    "player_id": 1628969,
@@ -19884,17 +19392,17 @@
    "opp": "Philadelphia",
    "game": "New York vs Philadelphia",
    "stat": "PRA",
-   "line": 37.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87,
+   "line": 35.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96,
    "l5_over": 0.6,
-   "l10_over": 0.5,
+   "l10_over": 0.6,
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 37.5,
     "price": 1.8,
@@ -19922,21 +19430,21 @@
    "minutes_source": "model",
    "line": 40.5,
    "side": "under",
-   "price": 1.9,
-   "book": "pointsbetau",
-   "edge": 0.1593,
+   "price": 1.85,
+   "book": "sportsbet",
+   "edge": 0.1419,
    "p_us": 0.65,
-   "p_book": 0.491,
+   "p_book": 0.508,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
    "p_over": 0.35,
    "p_under": 0.65,
-   "fair_over": 0.509,
-   "fair_under": 0.491,
-   "price_over": 1.83,
-   "price_under": 1.9,
+   "fair_over": 0.492,
+   "fair_under": 0.508,
+   "price_over": 1.91,
+   "price_under": 1.85,
    "us": {
     "line": 40.5,
     "side": "under",
@@ -20090,7 +19598,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 67
   },
   {
    "player_id": 1629130,
@@ -20163,7 +19671,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 68
   },
   {
    "player_id": 1629640,
@@ -20176,7 +19684,7 @@
    "floor": 3.12,
    "ceiling": 19.56,
    "sigma": 6.33,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
@@ -20207,7 +19715,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 45
   },
   {
    "player_id": 1629674,
@@ -20300,7 +19808,7 @@
    "floor": 6.71,
    "ceiling": 27.2,
    "sigma": 7.99,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": 19.5,
@@ -20529,7 +20037,7 @@
    "floor": 5.57,
    "ceiling": 24.11,
    "sigma": 7.18,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
@@ -20569,11 +20077,11 @@
    "opp": "Boston",
    "game": "Boston vs Detroit",
    "stat": "PRA",
-   "line": 38.5,
-   "price": 1.9,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9,
+   "line": 39.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83,
    "l5_over": 0.4,
    "l10_over": 0.5,
    "pos": "PG",
@@ -20806,7 +20314,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 47
   },
   {
    "player_id": 1631126,
@@ -20869,26 +20377,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -20919,26 +20407,26 @@
    "floor": 26.12,
    "ceiling": 49.89,
    "sigma": 9.79,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
-   "line": 41.5,
+   "line": 40.5,
    "side": "under",
-   "price": 1.83,
-   "book": "pointsbetau",
-   "edge": 0.1264,
-   "p_us": 0.636,
-   "p_book": 0.509,
+   "price": 1.88,
+   "book": "sportsbet",
+   "edge": 0.0932,
+   "p_us": 0.593,
+   "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.2,
-   "p_over": 0.364,
-   "p_under": 0.636,
-   "fair_over": 0.491,
-   "fair_under": 0.509,
-   "price_over": 1.9,
-   "price_under": 1.83,
+   "p_over": 0.407,
+   "p_under": 0.593,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.88,
+   "price_under": 1.88,
    "us": {
     "line": 41.5,
     "side": "under",
@@ -21223,7 +20711,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 77
   },
   {
    "player_id": 1642264,
@@ -21236,7 +20724,7 @@
    "floor": 17.25,
    "ceiling": 39.52,
    "sigma": 8.94,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": 27.5,
@@ -21347,7 +20835,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 38
+   "rank": 37
   },
   {
    "player_id": 1642278,
@@ -21493,7 +20981,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": 1642359,
@@ -21615,7 +21103,7 @@
    "floor": 15.67,
    "ceiling": 37.9,
    "sigma": 8.85,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": 23.5,
@@ -21757,7 +21245,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 85
   },
   {
    "player_id": 1642873,
@@ -21841,7 +21329,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": -789,
@@ -21905,7 +21393,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 60
   },
   {
    "player_id": -781,
@@ -21949,7 +21437,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 49
+   "rank": 48
   },
   {
    "player_id": -752,
@@ -21993,7 +21481,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 61
   },
   {
    "player_id": -729,
@@ -22094,50 +21582,6 @@
    }
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "PR",
-   "proj": 13.07,
-   "floor": 4.57,
-   "ceiling": 21.69,
-   "sigma": 6.63,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.05,
-   "mu_rank": 25,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 35
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -22177,7 +21621,7 @@
    "floor": 0.0,
    "ceiling": 14.53,
    "sigma": 5.79,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -22208,7 +21652,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 51
   },
   {
    "player_id": 203484,
@@ -22399,7 +21843,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 45
   },
   {
    "player_id": 1628368,
@@ -22412,7 +21856,7 @@
    "floor": 9.22,
    "ceiling": 28.24,
    "sigma": 7.52,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": 18.5,
@@ -22471,10 +21915,10 @@
    "game": "Boston vs Detroit",
    "stat": "PR",
    "line": 35.5,
-   "price": 1.85,
-   "book": "pointsbetau",
-   "price_over": 1.85,
-   "price_under": 1.85,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96,
    "l5_over": 0.4,
    "l10_over": 0.5,
    "pos": "PF",
@@ -22681,7 +22125,7 @@
    "floor": 0.44,
    "ceiling": 15.32,
    "sigma": 5.79,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -22712,7 +22156,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 49
   },
   {
    "player_id": 1628969,
@@ -22750,17 +22194,17 @@
    "opp": "Philadelphia",
    "game": "New York vs Philadelphia",
    "stat": "PR",
-   "line": 30.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.87,
+   "line": 29.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8,
    "l5_over": 0.8,
    "l10_over": 0.6,
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 30.5,
     "price": 1.93,
@@ -22789,19 +22233,19 @@
    "line": 34.5,
    "side": "under",
    "price": 1.8,
-   "book": "pointsbetau",
-   "edge": 0.1943,
+   "book": "sportsbet",
+   "edge": 0.1865,
    "p_us": 0.708,
-   "p_book": 0.514,
+   "p_book": 0.521,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.2,
    "p_over": 0.292,
    "p_under": 0.708,
-   "fair_over": 0.486,
-   "fair_under": 0.514,
-   "price_over": 1.9,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
    "price_under": 1.8,
    "us": {
     "line": 33.5,
@@ -22965,7 +22409,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 67
   },
   {
    "player_id": 1629130,
@@ -23038,7 +22482,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 68
   },
   {
    "player_id": 1629640,
@@ -23051,7 +22495,7 @@
    "floor": 2.37,
    "ceiling": 18.44,
    "sigma": 6.24,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": 12.5,
@@ -23100,7 +22544,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 44
   },
   {
    "player_id": 1629674,
@@ -23202,7 +22646,7 @@
    "floor": 5.6,
    "ceiling": 23.95,
    "sigma": 7.16,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": 16.5,
@@ -23431,7 +22875,7 @@
    "floor": 5.1,
    "ceiling": 22.23,
    "sigma": 6.63,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": 14.5,
@@ -23490,10 +22934,10 @@
    "game": "Boston vs Detroit",
    "stat": "PR",
    "line": 29.5,
-   "price": 1.85,
-   "book": "pointsbetau",
+   "price": 1.91,
+   "book": "sportsbet",
    "price_over": 1.85,
-   "price_under": 1.85,
+   "price_under": 1.91,
    "l5_over": 0.4,
    "l10_over": 0.5,
    "pos": "PG",
@@ -23726,7 +23170,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 47
   },
   {
    "player_id": 1631126,
@@ -23789,26 +23233,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -23839,26 +23263,26 @@
    "floor": 23.81,
    "ceiling": 46.39,
    "sigma": 9.18,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": 37.5,
    "side": "under",
-   "price": 1.9,
-   "book": "pointsbetau",
-   "edge": 0.1076,
+   "price": 1.8,
+   "book": "sportsbet",
+   "edge": 0.0728,
    "p_us": 0.594,
-   "p_book": 0.486,
+   "p_book": 0.521,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
    "p_over": 0.406,
    "p_under": 0.594,
-   "fair_over": 0.514,
-   "fair_under": 0.486,
-   "price_over": 1.8,
-   "price_under": 1.9,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
    "us": {
     "line": 37.5,
     "side": "under",
@@ -24152,7 +23576,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 77
   },
   {
    "player_id": 1642264,
@@ -24165,7 +23589,7 @@
    "floor": 12.08,
    "ceiling": 32.84,
    "sigma": 8.13,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": 21.5,
@@ -24276,7 +23700,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 36
   },
   {
    "player_id": 1642278,
@@ -24422,7 +23846,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": 1642359,
@@ -24544,7 +23968,7 @@
    "floor": 12.71,
    "ceiling": 33.47,
    "sigma": 8.13,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": 19.5,
@@ -24686,7 +24110,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 85
   },
   {
    "player_id": 1642873,
@@ -24770,7 +24194,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": -789,
@@ -24834,7 +24258,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 60
   },
   {
    "player_id": -781,
@@ -24878,7 +24302,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 51
   },
   {
    "player_id": -752,
@@ -24922,7 +24346,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 61
   },
   {
    "player_id": -729,
@@ -25023,50 +24447,6 @@
    }
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "PA",
-   "proj": 10.44,
-   "floor": 2.91,
-   "ceiling": 18.14,
-   "sigma": 5.95,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.085,
-   "mu_rank": 30,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 38
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -25097,7 +24477,7 @@
    "floor": 0.0,
    "ceiling": 12.17,
    "sigma": 4.95,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -25128,7 +24508,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 49
   },
   {
    "player_id": 203484,
@@ -25319,7 +24699,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 40
   },
   {
    "player_id": 1628368,
@@ -25332,7 +24712,7 @@
    "floor": 11.82,
    "ceiling": 30.75,
    "sigma": 7.48,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": 20.5,
@@ -25391,10 +24771,10 @@
    "game": "Boston vs Detroit",
    "stat": "PA",
    "line": 32.5,
-   "price": 1.85,
-   "book": "pointsbetau",
-   "price_over": 1.85,
-   "price_under": 1.85,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92,
    "l5_over": 0.2,
    "l10_over": 0.1,
    "pos": "PF",
@@ -25601,7 +24981,7 @@
    "floor": 0.0,
    "ceiling": 10.98,
    "sigma": 4.95,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -25632,7 +25012,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 53
+   "rank": 52
   },
   {
    "player_id": 1628969,
@@ -25670,13 +25050,13 @@
    "opp": "Philadelphia",
    "game": "New York vs Philadelphia",
    "stat": "PA",
-   "line": 34.5,
+   "line": 32.5,
    "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96,
    "l5_over": 0.6,
-   "l10_over": 0.5,
+   "l10_over": 0.6,
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
@@ -25708,21 +25088,21 @@
    "minutes_source": "model",
    "line": 36.5,
    "side": "under",
-   "price": 1.85,
-   "book": "pointsbetau",
-   "edge": 0.1415,
+   "price": 1.8,
+   "book": "sportsbet",
+   "edge": 0.1202,
    "p_us": 0.641,
-   "p_book": 0.5,
+   "p_book": 0.521,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
    "p_over": 0.359,
    "p_under": 0.641,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.85,
-   "price_under": 1.85,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
    "us": {
     "line": 36.5,
     "side": "under",
@@ -25876,7 +25256,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 67
   },
   {
    "player_id": 1629130,
@@ -25949,7 +25329,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 68
   },
   {
    "player_id": 1629640,
@@ -25962,7 +25342,7 @@
    "floor": 1.04,
    "ceiling": 14.7,
    "sigma": 5.32,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
@@ -25993,7 +25373,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 45
   },
   {
    "player_id": 1629674,
@@ -26086,7 +25466,7 @@
    "floor": 4.53,
    "ceiling": 21.9,
    "sigma": 6.6,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": 14.5,
@@ -26315,7 +25695,7 @@
    "floor": 2.61,
    "ceiling": 17.84,
    "sigma": 5.95,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
@@ -26346,7 +25726,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 38
   },
   {
    "player_id": 1630595,
@@ -26356,10 +25736,10 @@
    "game": "Boston vs Detroit",
    "stat": "PA",
    "line": 33.5,
-   "price": 1.85,
-   "book": "pointsbetau",
-   "price_over": 1.85,
-   "price_under": 1.85,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9,
    "l5_over": 0.4,
    "l10_over": 0.6,
    "pos": "PG",
@@ -26592,7 +25972,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 49
+   "rank": 48
   },
   {
    "player_id": 1631126,
@@ -26655,26 +26035,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -26705,26 +26065,26 @@
    "floor": 15.73,
    "ceiling": 37.55,
    "sigma": 8.85,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": 29.5,
    "side": "under",
-   "price": 1.83,
-   "book": "pointsbetau",
-   "edge": 0.1271,
+   "price": 1.8,
+   "book": "sportsbet",
+   "edge": 0.1112,
    "p_us": 0.632,
-   "p_book": 0.505,
+   "p_book": 0.521,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
    "p_over": 0.368,
    "p_under": 0.632,
-   "fair_over": 0.495,
-   "fair_under": 0.505,
-   "price_over": 1.87,
-   "price_under": 1.83,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
    "us": {
     "line": 29.5,
     "side": "under",
@@ -27009,7 +26369,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 77
   },
   {
    "player_id": 1642264,
@@ -27022,7 +26382,7 @@
    "floor": 12.49,
    "ceiling": 32.61,
    "sigma": 7.86,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": 22.5,
@@ -27279,7 +26639,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": 1642359,
@@ -27401,7 +26761,7 @@
    "floor": 11.88,
    "ceiling": 30.81,
    "sigma": 7.48,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": 18.5,
@@ -27543,7 +26903,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 85
   },
   {
    "player_id": 1642873,
@@ -27627,7 +26987,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 87
   },
   {
    "player_id": -789,
@@ -27691,7 +27051,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 60
   },
   {
    "player_id": -781,
@@ -27735,7 +27095,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 47
+   "rank": 46
   },
   {
    "player_id": -752,
@@ -27779,7 +27139,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 61
   },
   {
    "player_id": -729,
@@ -27880,50 +27240,6 @@
    }
   },
   {
-   "player_id": 202699,
-   "player": "Tobias Harris",
-   "team": "San Antonio",
-   "opp": "Oklahoma City",
-   "game": "Oklahoma City vs San Antonio",
-   "stat": "RA",
-   "proj": 5.42,
-   "floor": 1.97,
-   "ceiling": 9.36,
-   "sigma": 3.02,
-   "minutes": 20,
-   "rot_rank": 7,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.017,
-   "mu_rank": 14,
-   "mu_n": 30,
-   "early": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 36
-  },
-  {
    "player_id": 203083,
    "player": "Andre Drummond",
    "team": "New York",
@@ -27954,7 +27270,7 @@
    "floor": 0.0,
    "ceiling": 5.74,
    "sigma": 2.46,
-   "minutes": 14,
+   "minutes": 15,
    "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
@@ -27985,7 +27301,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 56
   },
   {
    "player_id": 203484,
@@ -28176,7 +27492,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 44
   },
   {
    "player_id": 1628368,
@@ -28189,7 +27505,7 @@
    "floor": 4.61,
    "ceiling": 14.46,
    "sigma": 3.82,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 2,
    "minutes_source": "model",
    "line": 8.5,
@@ -28247,17 +27563,17 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "RA",
-   "line": 14.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9,
+   "line": 15.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74,
    "l5_over": 0.6,
    "l10_over": 0.7,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 14.5,
     "price": 1.83,
@@ -28458,7 +27774,7 @@
    "floor": 1.43,
    "ceiling": 8.23,
    "sigma": 2.69,
-   "minutes": 13,
+   "minutes": 14,
    "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
@@ -28489,7 +27805,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 38
   },
   {
    "player_id": 1628969,
@@ -28527,17 +27843,17 @@
    "opp": "Philadelphia",
    "game": "New York vs Philadelphia",
    "stat": "RA",
-   "line": 10.5,
-   "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 2.05,
-   "price_under": 1.74,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
+   "line": 9.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96,
+   "l5_over": 0.6,
+   "l10_over": 0.6,
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 9.5,
     "price": 2.04,
@@ -28563,23 +27879,23 @@
    "minutes": 33,
    "rot_rank": 1,
    "minutes_source": "model",
-   "line": 10.5,
-   "side": "under",
-   "price": 2.0,
-   "book": "pointsbetau",
-   "edge": 0.0014,
-   "p_us": 0.471,
-   "p_book": 0.469,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "line": 9.5,
+   "side": "over",
+   "price": 1.72,
+   "book": "sportsbet",
+   "edge": 0.0646,
+   "p_us": 0.612,
+   "p_book": 0.547,
+   "tier": "A",
+   "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.529,
-   "p_under": 0.471,
-   "fair_over": 0.531,
-   "fair_under": 0.469,
-   "price_over": 1.77,
-   "price_under": 2.0,
+   "p_over": 0.612,
+   "p_under": 0.388,
+   "fair_over": 0.547,
+   "fair_under": 0.453,
+   "price_over": 1.72,
+   "price_under": 2.08,
    "us": {
     "line": 10.5,
     "side": "over",
@@ -28733,7 +28049,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 67
   },
   {
    "player_id": 1629130,
@@ -28806,7 +28122,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 68
   },
   {
    "player_id": 1629640,
@@ -28819,7 +28135,7 @@
    "floor": 1.12,
    "ceiling": 7.17,
    "sigma": 2.46,
-   "minutes": 15,
+   "minutes": 16,
    "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
@@ -28850,7 +28166,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 47
   },
   {
    "player_id": 1629674,
@@ -28943,7 +28259,7 @@
    "floor": 2.12,
    "ceiling": 10.86,
    "sigma": 3.38,
-   "minutes": 28,
+   "minutes": 31,
    "rot_rank": 5,
    "minutes_source": "model",
    "line": 6.5,
@@ -29172,7 +28488,7 @@
    "floor": 2.26,
    "ceiling": 10.38,
    "sigma": 3.28,
-   "minutes": 24,
+   "minutes": 26,
    "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
@@ -29213,10 +28529,10 @@
    "game": "Boston vs Detroit",
    "stat": "RA",
    "line": 14.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86,
    "l5_over": 0.4,
    "l10_over": 0.2,
    "pos": "PG",
@@ -29449,7 +28765,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 36
   },
   {
    "player_id": 1631126,
@@ -29512,26 +28828,6 @@
    "us": null
   },
   {
-   "player_id": 1631230,
-   "player": "Dominick Barlow",
-   "team": "Philadelphia",
-   "opp": "New York",
-   "game": "New York vs Philadelphia",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631248,
    "player": "Baylor Scheierman",
    "team": "Boston",
@@ -29562,26 +28858,26 @@
    "floor": 8.63,
    "ceiling": 20.24,
    "sigma": 4.68,
-   "minutes": 33,
+   "minutes": 36,
    "rot_rank": 1,
    "minutes_source": "model",
    "line": 14.5,
-   "side": "under",
-   "price": 1.95,
-   "book": "pointsbetau",
-   "edge": 0.0043,
-   "p_us": 0.484,
-   "p_book": 0.48,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "side": "over",
+   "price": 1.96,
+   "book": "sportsbet",
+   "edge": 0.037,
+   "p_us": 0.516,
+   "p_book": 0.479,
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.1,
    "l5_over": 0.2,
    "p_over": 0.516,
    "p_under": 0.484,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
    "us": {
     "line": 14.5,
     "side": "under",
@@ -29866,7 +29162,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 77
   },
   {
    "player_id": 1642264,
@@ -29879,7 +29175,7 @@
    "floor": 6.64,
    "ceiling": 16.46,
    "sigma": 3.87,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 3,
    "minutes_source": "model",
    "line": 11.5,
@@ -29990,7 +29286,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 49
   },
   {
    "player_id": 1642278,
@@ -30136,7 +29432,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 82
+   "rank": 80
   },
   {
    "player_id": 1642359,
@@ -30258,7 +29554,7 @@
    "floor": 4.72,
    "ceiling": 14.56,
    "sigma": 3.82,
-   "minutes": 31,
+   "minutes": 34,
    "rot_rank": 4,
    "minutes_source": "model",
    "line": 8.5,
@@ -30400,7 +29696,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 85
   },
   {
    "player_id": 1642873,
@@ -30484,7 +29780,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 87
   }
  ],
  "movers": [],
@@ -30564,6 +29860,10 @@
   {
    "run_at": "2026-10-19T17:45+00:00",
    "trigger": "main"
+  },
+  {
+   "run_at": "2026-10-19T21:40+00:00",
+   "trigger": "injury_window"
   }
  ]
 }
