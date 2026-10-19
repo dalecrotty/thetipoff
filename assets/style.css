@@ -236,11 +236,13 @@ td.pl .tbadge { margin-right: 6px; }
 }
 
 /* ---- team identity ---- */
+/* team code: plain text, no fill and no team colours (owner, 19 Oct 2026:
+   a blue box on every row said nothing) */
 .tbadge {
   display: inline-flex; align-items: center; justify-content: center;
-  min-width: 34px; height: 18px; padding: 0 5px; border-radius: 0;
-  font: 600 10.5px/1 var(--mono); letter-spacing: 0.03em;
-  border: 1px solid; vertical-align: 1px;
+  min-width: 0; height: 18px; padding: 0; border-radius: 0;
+  font: 600 11px/1 var(--mono); letter-spacing: 0.04em; color: var(--ink);
+  border: 0; vertical-align: 1px;
 }
 .singlet { width: 44px; height: 46px; vertical-align: -12px; }
 .singlet text { font-family: var(--mono); }
@@ -587,9 +589,9 @@ tr.thin td { color: var(--muted); }
 .tmtonight { font: 13.5px/1.5 var(--sans); color: var(--muted); margin: 0 0 12px; }
 
 /* the "i" note on a moved prediction: one line on a phone, the detail on tap or hover */
-.info { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; margin-left: 3px;
+.info { display: inline-flex; align-items: center; justify-content: center; width: 12px; height: 12px; margin-left: 5px;
   border-radius: 50%; border: 1px solid var(--line-strong, var(--muted)); background: transparent; color: var(--muted);
-  font: 600 10px/1 var(--mono); cursor: pointer; vertical-align: 1px; padding: 0; }
+  font: 600 8px/1 var(--mono); cursor: pointer; vertical-align: 2px; padding: 0; }
 .info:hover { color: var(--ink); border-color: var(--ink); }
 .infotip { position: absolute; z-index: 30; max-width: 260px; background: var(--panel); color: var(--ink); border: 1px solid var(--line-strong, var(--line));
   border-radius: 0; padding: 7px 9px; font: 12px/1.45 var(--mono); box-shadow: none; }
@@ -679,11 +681,11 @@ tbody tr:hover td { background: var(--tint); }
 .seg .chip + .chip { border-left: 2px solid var(--rule); }
 .signup button { background: var(--ink); color: var(--on-ink); border-radius: 0; font-weight: 700; }
 .signup button:hover { opacity: .88; }
-.tbadge { border-radius: 2px; }
 
-/* edges: a clear edge is mint on a navy chip with its side glyph; below
-   the threshold it's plain navy text, no colour */
-.edge.hot, .edge.hot.under { background: var(--data); color: var(--mint); font-weight: 600; border-radius: 0; }
+/* edges: plain text in the ink; a clear edge is bold, the side glyph says
+   the side (owner, 19 Oct 2026: the navy chip with mint text read as a
+   result, and this isn't one) */
+.edge.hot, .edge.hot.under { background: transparent; color: var(--ink); font-weight: 700; border-radius: 0; }
 .edge.warm { color: var(--ink); font-weight: 600; }
 .edge.cold { color: var(--sub); }
 .pos, .hit.good, table.summary-t .hi, .mv.up { color: var(--ink); font-weight: 700; }

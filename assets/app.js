@@ -188,9 +188,8 @@ function teamMeta(team) {
 /** Small colour chip with the team code — for table cells. */
 function teamBadge(team, { withName = false } = {}) {
   if (!team) return "";
-  const [abbr, c1, c2] = teamMeta(team);
-  return `<span class="tbadge" style="background:${c1};color:${inkOn(c1)};
-    border-color:${c2}" title="${esc(team)}">${abbr}</span>` +
+  const [abbr] = teamMeta(team);
+  return `<span class="tbadge" title="${esc(team)}">${abbr}</span>` +
     (withName ? ` <span class="dim">${esc(team)}</span>` : "");
 }
 
@@ -357,7 +356,7 @@ const STAT_WORD = { PTS: "points", REB: "rebounds", AST: "assists",
 
 function playerCell(r) {
   const opp = r.opp ? ` v ${teamMeta(r.opp)[0]}` : "";
-  return `<td class="s pl"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>
+  return `<td class="s pl"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${moveInfo(r)}
     <div class="sm">${teamBadge(r.team)}${esc(opp)}${
       r.minutes != null ? ` · ${fmt(r.minutes)} min` : ""}${
       r.minutes_source && r.minutes_source !== "model"
@@ -738,9 +737,14 @@ function predCell(r, bold) {
   const v = bold ? `<b>${fmt(r.proj)}</b>` : fmt(r.proj);
   if (r.prior == null || r.proj == null) return v;
   const up = r.proj > r.prior;
+  return `${v} <span class="mv ${up ? "up" : "down"}">${up ? "▲" : "▼"}</span>`;
+}
+/* the note behind a moved prediction, as a small "i" next to the player's
+   name (owner, 19 Oct 2026: smaller, and out of the number column) */
+function moveInfo(r) {
+  if (r.prior == null || r.proj == null) return "";
   const was = `was ${fmt(r.prior)} at ${aedtTime(r.prior_at)}${r.move_reason ? ` · ${r.move_reason}` : ""}`;
-  return `${v} <span class="mv ${up ? "up" : "down"}">${up ? "▲" : "▼"}</span>`
-    + `<button class="info" type="button" aria-label="${esc(was)}" data-tip="${esc(was)}">i</button>`;
+  return `<button class="info" type="button" aria-label="${esc(was)}" data-tip="${esc(was)}">i</button>`;
 }
 /* one floating note for every "i" on the page: hover shows it, tap toggles it */
 addEventListener("DOMContentLoaded", () => {
