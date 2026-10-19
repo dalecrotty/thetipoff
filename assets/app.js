@@ -422,10 +422,11 @@ function priceTd(r) {
   return `<td class="num">${odds(r.price)}${r.book
     ? `<div class="sm l">${esc(bookName(r.book))}</div>` : ""}</td>`;
 }
-/* The edge carries its side — "▼U 11.3%" — so an under never reads as an
-   over. Only a clear edge (3%+) names a side; below that the value
-   side can come from the price rather than the line, so it's shown
-   muted and unsided. */
+/* Edge is one neutral number: our chance of the side minus the bookmaker's
+   (margin removed) at the region's reference book, with the book and its
+   price under it. The side and its chance live in the Chance column, so
+   neither is repeated here (owner, 19 Oct 2026). On phones, where the Diff
+   column is hidden, the diff shows under it. */
 function chanceTd(r) {
   if (r.chance == null) return `<td class="num dim">—</td>`;
   const over = r.side === "over";
@@ -434,20 +435,18 @@ function chanceTd(r) {
 }
 function edgeTd(r) {
   if (r.edge == null) return `<td class="num dim">—</td>`;
-  const over = r.side === "over";
-  if (r.edge != null && r.edge <= 0)
-    return `<td class="num"><span class="edge cold" title="the price at ${esc(bookName(r.book) || "the book")} doesn't pay for the chance">no value</span>${
-      (r.p_us != null && r.p_book != null) ? `<div class="sm ph">us ${Math.round(r.p_us * 100)}% · book ${Math.round(r.p_book * 100)}%</div>` : ""}</td>`;
-  const label = r.tier
-    ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ${pct(r.edge)}`
-    : pct(r.edge);
-  const chances = (r.p_us != null && r.p_book != null)
-    ? `<div class="sm ph">us ${Math.round(r.p_us * 100)}% · book ${Math.round(r.p_book * 100)}%</div>` : "";
-  return `<td class="num"><span class="edge ${r.tier ? `hot ${r.side}` : "cold"}" title="${r.tier
-    ? `The ${r.side} ${r.line} at ${odds(r.price)}: our chance of the ${r.side} landing minus the bookmaker's (margin removed). Ours ${
+  const book = r.book ? esc(bookName(r.book)) : "";
+  const price = r.price != null ? odds(r.price) : "";
+  const diff = r.diff != null ? `<div class="sm ph">diff ${r.diff > 0 ? "+" : ""}${fmt(r.diff)}</div>` : "";
+  if (r.edge <= 0)
+    return `<td class="num"><span class="edge cold" title="the price at ${book || "the book"} doesn't pay for the chance">no value</span>${
+      book ? `<div class="sm">${book} ${price}</div>` : ""}${diff}</td>`;
+  const title = r.tier
+    ? `Our chance of the ${r.side} ${fmt(r.line)} landing minus the bookmaker's (margin removed) at ${odds(r.price)}. Ours ${
         r.p_us != null ? Math.round(r.p_us * 100) + "%" : "—"}, the book's ${r.p_book != null ? Math.round(r.p_book * 100) + "%" : "—"}.`
-    : "Below the threshold we'd call an edge"}">${label}</span>${chances}${r.diff != null
-    ? `<div class="sm ph">diff ${r.diff > 0 ? "+" : ""}${fmt(r.diff)}</div>` : ""}</td>`;
+    : "Below the threshold we'd call an edge";
+  return `<td class="num"><span class="edge ${r.tier ? "hot" : "cold"}" title="${title}">+${Math.max(1, Math.round(r.edge * 100))}%</span>${
+    book ? `<div class="sm">v ${book} ${price}</div>` : ""}${diff}</td>`;
 }
 function ordinal(n) {
   const t = n % 100, u = n % 10;
