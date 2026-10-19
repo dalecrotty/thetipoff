@@ -2,9 +2,77 @@
  "player_id": -752,
  "player": "Tarris Reed Jr.",
  "team": "San Antonio",
- "opp": "Oklahoma City",
+ "projections": {
+  "3PM": {
+   "mean": 0.02,
+   "floor": 0.0,
+   "ceiling": 0.02
+  },
+  "AST": {
+   "mean": 0.43,
+   "floor": 0.0,
+   "ceiling": 2.03
+  },
+  "BLK": {
+   "mean": 0.46,
+   "floor": 0.0,
+   "ceiling": 1.19
+  },
+  "PTS": {
+   "mean": 2.81,
+   "floor": 0.0,
+   "ceiling": 9.61
+  },
+  "REB": {
+   "mean": 2.12,
+   "floor": 0.0,
+   "ceiling": 4.75
+  },
+  "STL": {
+   "mean": 0.24,
+   "floor": 0.0,
+   "ceiling": 1.19
+  },
+  "TOV": {
+   "mean": 0.55,
+   "floor": 0.0,
+   "ceiling": 2.21
+  },
+  "PRA": {
+   "mean": 5.36,
+   "floor": 0.0,
+   "ceiling": 14.08
+  },
+  "PR": {
+   "mean": 4.93,
+   "floor": 0.0,
+   "ceiling": 13.05
+  },
+  "PA": {
+   "mean": 3.24,
+   "floor": 0.0,
+   "ceiling": 10.02
+  },
+  "RA": {
+   "mean": 2.56,
+   "floor": 0.0,
+   "ceiling": 5.86
+  }
+ },
+ "minutes": {
+  "value": 7.7,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {},
+  "l10": {},
+  "l5": {},
+  "home": {},
+  "away": {}
+ },
  "lines": {},
+ "game_log": [],
  "recent_games": [],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Oklahoma City"
 }

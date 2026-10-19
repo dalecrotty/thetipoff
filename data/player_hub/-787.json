@@ -2,9 +2,77 @@
  "player_id": -787,
  "player": "Bennett Stirtz",
  "team": "Oklahoma City",
- "opp": "San Antonio",
+ "projections": {
+  "3PM": {
+   "mean": 0.58,
+   "floor": 0.0,
+   "ceiling": 2.19
+  },
+  "AST": {
+   "mean": 1.17,
+   "floor": 0.0,
+   "ceiling": 3.31
+  },
+  "BLK": {
+   "mean": 0.1,
+   "floor": 0.0,
+   "ceiling": 1.16
+  },
+  "PTS": {
+   "mean": 3.91,
+   "floor": 0.0,
+   "ceiling": 10.71
+  },
+  "REB": {
+   "mean": 1.41,
+   "floor": 0.0,
+   "ceiling": 4.04
+  },
+  "STL": {
+   "mean": 0.37,
+   "floor": 0.0,
+   "ceiling": 1.33
+  },
+  "TOV": {
+   "mean": 0.59,
+   "floor": 0.0,
+   "ceiling": 2.25
+  },
+  "PRA": {
+   "mean": 6.5,
+   "floor": 0.0,
+   "ceiling": 15.22
+  },
+  "PR": {
+   "mean": 5.33,
+   "floor": 0.0,
+   "ceiling": 13.44
+  },
+  "PA": {
+   "mean": 5.09,
+   "floor": 0.0,
+   "ceiling": 11.87
+  },
+  "RA": {
+   "mean": 2.59,
+   "floor": 0.0,
+   "ceiling": 5.89
+  }
+ },
+ "minutes": {
+  "value": 10.2,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {},
+  "l10": {},
+  "l5": {},
+  "home": {},
+  "away": {}
+ },
  "lines": {},
+ "game_log": [],
  "recent_games": [],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "San Antonio"
 }
