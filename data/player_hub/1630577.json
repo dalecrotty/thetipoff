@@ -4,63 +4,63 @@
  "team": "San Antonio",
  "projections": {
   "3PM": {
-   "mean": 2.04,
-   "floor": 0.11,
-   "ceiling": 4.05
+   "mean": 2.4,
+   "floor": 0.1,
+   "ceiling": 4.7
   },
   "AST": {
-   "mean": 1.27,
+   "mean": 1.5,
    "floor": 0.0,
-   "ceiling": 3.06
+   "ceiling": 3.09
   },
   "BLK": {
-   "mean": 0.41,
+   "mean": 0.48,
    "floor": 0.0,
-   "ceiling": 1.02
+   "ceiling": 1.88
   },
   "PTS": {
-   "mean": 8.4,
-   "floor": 1.8,
-   "ceiling": 14.96
+   "mean": 9.87,
+   "floor": 2.71,
+   "ceiling": 17.94
   },
   "REB": {
-   "mean": 4.58,
-   "floor": 1.58,
-   "ceiling": 8.0
+   "mean": 5.38,
+   "floor": 2.24,
+   "ceiling": 9.05
   },
   "STL": {
-   "mean": 0.78,
-   "floor": 0.0,
-   "ceiling": 2.01
+   "mean": 0.91,
+   "floor": 0.02,
+   "ceiling": 2.07
   },
   "TOV": {
-   "mean": 0.61,
+   "mean": 0.71,
    "floor": 0.0,
-   "ceiling": 1.99
+   "ceiling": 1.97
   },
   "PRA": {
-   "mean": 14.26,
-   "floor": 5.17,
-   "ceiling": 23.08
+   "mean": 16.75,
+   "floor": 6.52,
+   "ceiling": 27.01
   },
   "PR": {
-   "mean": 12.98,
-   "floor": 4.48,
-   "ceiling": 21.6
+   "mean": 15.25,
+   "floor": 6.14,
+   "ceiling": 24.49
   },
   "PA": {
-   "mean": 9.68,
-   "floor": 2.15,
-   "ceiling": 17.38
+   "mean": 11.37,
+   "floor": 3.49,
+   "ceiling": 19.67
   },
   "RA": {
-   "mean": 5.85,
-   "floor": 1.98,
-   "ceiling": 10.09
+   "mean": 6.88,
+   "floor": 2.59,
+   "ceiling": 11.33
   }
  },
  "minutes": {
-  "value": 22,
+  "value": 27,
   "source": "model"
  },
  "splits": {
@@ -226,37 +226,37 @@
   }
  },
  "lines": {
-  "PR": {
-   "line": 13.5,
-   "side": "under",
-   "price": 1.98,
-   "book": "fanduel",
-   "edge": 0.0586,
-   "tier": "B"
+  "REB": {
+   "line": 4.5,
+   "side": "over",
+   "price": 1.75,
+   "book": "draftkings",
+   "edge": 0.1052,
+   "tier": "A"
   },
   "3PM": {
    "line": 1.5,
    "side": "over",
    "price": 1.59,
    "book": "draftkings",
-   "edge": 0.0504,
-   "tier": "B"
+   "edge": 0.1023,
+   "tier": "A"
+  },
+  "PR": {
+   "line": 13.5,
+   "side": "over",
+   "price": 1.77,
+   "book": "fanduel",
+   "edge": 0.0692,
+   "tier": "A"
   },
   "PTS": {
    "line": 8.5,
-   "side": "under",
-   "price": 1.98,
+   "side": "over",
+   "price": 1.77,
    "book": "fanduel",
-   "edge": 0.0356,
-   "tier": "B"
-  },
-  "REB": {
-   "line": 4.5,
-   "side": "under",
-   "price": 2.01,
-   "book": "draftkings",
-   "edge": 0.0213,
-   "tier": null
+   "edge": 0.0688,
+   "tier": "A"
   }
  },
  "game_log": [
