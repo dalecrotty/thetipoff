@@ -359,6 +359,7 @@ function playerCell(r) {
   return `<td class="s pl"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${moveInfo(r)}
     <div class="sm">${teamBadge(r.team)}${esc(opp)}${
       r.minutes != null ? ` · ${fmt(r.minutes)} min` : ""}${
+      r.rot_rank != null ? ` <span class="dim" title="rotation rank tonight">#${r.rot_rank}</span>` : ""}${
       r.minutes_source && r.minutes_source !== "model"
         ? ` <span class="badge src">${esc(r.minutes_source)}</span>` : ""}</div>${wwNote(r)}</td>`;
 }
