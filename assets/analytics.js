@@ -8,7 +8,11 @@ window.dcEvent = (name, params) => {
   if (typeof window.gtag === "function") window.gtag("event", name, params || {});
 };
 
-if (GA4_ID) {
+// Automated browsers (Playwright, Puppeteer, Selenium set navigator.webdriver)
+// are not readers: screenshot and check runs stay out of the counts.
+const automated = !!(navigator && navigator.webdriver);
+
+if (GA4_ID && !automated) {
   const s = document.createElement("script");
   s.async = true;
   s.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
