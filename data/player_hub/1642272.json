@@ -60,7 +60,7 @@
   }
  },
  "minutes": {
-  "value": 17.0,
+  "value": 14,
   "source": "model"
  },
  "splits": {
@@ -234,6 +234,14 @@
    "edge": 0.1346,
    "tier": "A"
   },
+  "REB": {
+   "line": 2.5,
+   "side": "under",
+   "price": 1.79,
+   "book": "draftkings",
+   "edge": 0.1189,
+   "tier": "A"
+  },
   "PR": {
    "line": 12.5,
    "side": "under",
@@ -242,12 +250,20 @@
    "edge": 0.1149,
    "tier": "A"
   },
+  "RA": {
+   "line": 3.5,
+   "side": "under",
+   "price": 2.02,
+   "book": "draftkings",
+   "edge": 0.1136,
+   "tier": "A"
+  },
   "PA": {
    "line": 11.5,
    "side": "under",
-   "price": 1.83,
+   "price": 1.84,
    "book": "draftkings",
-   "edge": 0.0968,
+   "edge": 0.0995,
    "tier": "A"
   },
   "PTS": {
@@ -269,9 +285,9 @@
   "AST": {
    "line": 1.5,
    "side": "under",
-   "price": 1.56,
+   "price": 1.57,
    "book": "draftkings",
-   "edge": 0.0065,
+   "edge": 0.0111,
    "tier": null
   }
  },
