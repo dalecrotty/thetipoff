@@ -4,63 +4,63 @@
  "team": "New York",
  "projections": {
   "3PM": {
-   "mean": 0.49,
+   "mean": 0.75,
    "floor": 0.0,
-   "ceiling": 1.83
+   "ceiling": 2.0
   },
   "AST": {
-   "mean": 1.24,
-   "floor": 0.0,
-   "ceiling": 3.02
+   "mean": 1.91,
+   "floor": 0.13,
+   "ceiling": 4.03
   },
   "BLK": {
-   "mean": 0.61,
-   "floor": 0.02,
-   "ceiling": 2.01
+   "mean": 0.93,
+   "floor": 0.0,
+   "ceiling": 2.11
   },
   "PTS": {
-   "mean": 5.04,
-   "floor": 0.0,
-   "ceiling": 10.71
+   "mean": 7.75,
+   "floor": 1.15,
+   "ceiling": 14.31
   },
   "REB": {
-   "mean": 6.95,
-   "floor": 2.49,
-   "ceiling": 11.66
+   "mean": 10.68,
+   "floor": 6.22,
+   "ceiling": 15.39
   },
   "STL": {
-   "mean": 0.52,
+   "mean": 0.79,
    "floor": 0.0,
-   "ceiling": 1.95
+   "ceiling": 2.02
   },
   "TOV": {
-   "mean": 0.94,
-   "floor": 0.0,
-   "ceiling": 2.07
+   "mean": 1.44,
+   "floor": 0.01,
+   "ceiling": 3.07
   },
   "PRA": {
-   "mean": 13.24,
-   "floor": 4.15,
-   "ceiling": 22.06
+   "mean": 20.35,
+   "floor": 10.58,
+   "ceiling": 30.7
   },
   "PR": {
-   "mean": 12.0,
-   "floor": 3.94,
-   "ceiling": 19.94
+   "mean": 18.44,
+   "floor": 9.28,
+   "ceiling": 28.3
   },
   "PA": {
-   "mean": 6.29,
-   "floor": 0.42,
-   "ceiling": 13.07
+   "mean": 9.66,
+   "floor": 2.13,
+   "ceiling": 17.36
   },
   "RA": {
-   "mean": 8.19,
-   "floor": 3.96,
-   "ceiling": 12.99
+   "mean": 12.59,
+   "floor": 6.53,
+   "ceiling": 18.15
   }
  },
  "minutes": {
-  "value": 16.5,
+  "value": 25.3,
   "source": "model"
  },
  "splits": {
@@ -231,24 +231,24 @@
    "side": "over",
    "price": 1.92,
    "book": "neds",
-   "edge": 0.0648,
+   "edge": 0.3984,
+   "tier": "A"
+  },
+  "PR": {
+   "line": 12.5,
+   "side": "over",
+   "price": 1.93,
+   "book": "fanduel",
+   "edge": 0.3117,
    "tier": "A"
   },
   "PTS": {
    "line": 5.5,
-   "side": "under",
-   "price": 1.89,
-   "book": "fanduel",
-   "edge": 0.0464,
-   "tier": "B"
-  },
-  "PR": {
-   "line": 12.5,
-   "side": "under",
+   "side": "over",
    "price": 1.85,
    "book": "fanduel",
-   "edge": 0.027,
-   "tier": null
+   "edge": 0.1636,
+   "tier": "A"
   }
  },
  "game_log": [
