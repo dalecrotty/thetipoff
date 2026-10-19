@@ -509,7 +509,7 @@ function boardCsv(rows, start) {
     const name = String(r.player || "").split(" ");
     const book = Object.values(m).find(x => x.book)?.book || "";
     const row = [r.player_id, name.slice(1).join(" "), name[0], r.player, r.team, r.pos || "", r.opp || "",
-      tip(start[r.game]), r.injury_status || "", n(r.minutes, 1), book];
+      tip(start[r.game]), r.injury_status || "", n(r.minutes, 0), book];
     for (const [s] of CSV_MARKETS) {
       const x = m[s];
       const edge = x && x.edge != null ? (x.side === "under" ? -1 : 1) * x.edge * 100 : null;
