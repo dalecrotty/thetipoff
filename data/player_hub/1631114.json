@@ -4,63 +4,63 @@
  "team": "Oklahoma City",
  "projections": {
   "3PM": {
-   "mean": 1.18,
+   "mean": 1.28,
    "floor": 0.0,
-   "ceiling": 2.91
+   "ceiling": 3.01
   },
   "AST": {
-   "mean": 5.72,
-   "floor": 2.22,
-   "ceiling": 9.6
+   "mean": 6.2,
+   "floor": 2.69,
+   "ceiling": 10.08
   },
   "BLK": {
-   "mean": 0.38,
-   "floor": 0.01,
-   "ceiling": 1.06
+   "mean": 0.41,
+   "floor": 0.0,
+   "ceiling": 1.02
   },
   "PTS": {
-   "mean": 19.47,
-   "floor": 10.52,
-   "ceiling": 29.26
+   "mean": 21.09,
+   "floor": 12.14,
+   "ceiling": 30.88
   },
   "REB": {
-   "mean": 4.86,
-   "floor": 1.72,
-   "ceiling": 8.53
+   "mean": 5.27,
+   "floor": 2.12,
+   "ceiling": 8.94
   },
   "STL": {
-   "mean": 1.33,
+   "mean": 1.44,
    "floor": 0.0,
-   "ceiling": 2.87
+   "ceiling": 2.98
   },
   "TOV": {
-   "mean": 1.93,
-   "floor": 0.1,
-   "ceiling": 3.97
+   "mean": 2.1,
+   "floor": 0.0,
+   "ceiling": 4.36
   },
   "PRA": {
-   "mean": 30.06,
-   "floor": 17.8,
-   "ceiling": 41.56
+   "mean": 32.56,
+   "floor": 20.3,
+   "ceiling": 44.06
   },
   "PR": {
-   "mean": 24.34,
-   "floor": 12.68,
-   "ceiling": 35.26
+   "mean": 26.36,
+   "floor": 14.7,
+   "ceiling": 37.28
   },
   "PA": {
-   "mean": 25.2,
-   "floor": 15.12,
-   "ceiling": 35.24
+   "mean": 27.29,
+   "floor": 16.41,
+   "ceiling": 38.24
   },
   "RA": {
-   "mean": 10.58,
-   "floor": 4.52,
-   "ceiling": 16.14
+   "mean": 11.47,
+   "floor": 5.4,
+   "ceiling": 17.02
   }
  },
  "minutes": {
-  "value": 30,
+  "value": 33,
   "source": "model"
  },
  "splits": {
@@ -231,7 +231,7 @@
    "side": "over",
    "price": 1.98,
    "book": "neds",
-   "edge": 0.1988,
+   "edge": 0.259,
    "tier": "A"
   },
   "PRA": {
@@ -239,7 +239,7 @@
    "side": "over",
    "price": 1.89,
    "book": "fanduel",
-   "edge": 0.1504,
+   "edge": 0.2421,
    "tier": "A"
   },
   "PA": {
@@ -247,7 +247,7 @@
    "side": "over",
    "price": 1.8,
    "book": "fanduel",
-   "edge": 0.1496,
+   "edge": 0.2337,
    "tier": "A"
   },
   "PR": {
@@ -255,15 +255,7 @@
    "side": "over",
    "price": 1.85,
    "book": "fanduel",
-   "edge": 0.1171,
-   "tier": "A"
-  },
-  "RA": {
-   "line": 8.5,
-   "side": "over",
-   "price": 1.68,
-   "book": "fanduel",
-   "edge": 0.1148,
+   "edge": 0.1981,
    "tier": "A"
   },
   "PTS": {
@@ -271,7 +263,15 @@
    "side": "over",
    "price": 1.92,
    "book": "neds",
-   "edge": 0.1091,
+   "edge": 0.1839,
+   "tier": "A"
+  },
+  "RA": {
+   "line": 8.5,
+   "side": "over",
+   "price": 1.68,
+   "book": "fanduel",
+   "edge": 0.1791,
    "tier": "A"
   },
   "REB": {
@@ -279,7 +279,7 @@
    "side": "over",
    "price": 2.05,
    "book": "neds",
-   "edge": 0.1053,
+   "edge": 0.1693,
    "tier": "A"
   },
   "3PM": {
@@ -287,7 +287,7 @@
    "side": "over",
    "price": 2.94,
    "book": "fanduel",
-   "edge": 0.0891,
+   "edge": 0.1177,
    "tier": "A"
   }
  },

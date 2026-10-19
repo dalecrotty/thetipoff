@@ -4,63 +4,63 @@
  "team": "San Antonio",
  "projections": {
   "3PM": {
-   "mean": 2.12,
-   "floor": 0.19,
-   "ceiling": 4.13
+   "mean": 2.27,
+   "floor": 0.06,
+   "ceiling": 4.77
   },
   "AST": {
-   "mean": 1.33,
-   "floor": 0.04,
-   "ceiling": 3.11
+   "mean": 1.42,
+   "floor": 0.0,
+   "ceiling": 3.01
   },
   "BLK": {
-   "mean": 0.43,
+   "mean": 0.46,
    "floor": 0.0,
-   "ceiling": 1.04
+   "ceiling": 1.07
   },
   "PTS": {
-   "mean": 8.75,
-   "floor": 1.73,
-   "ceiling": 16.18
+   "mean": 9.33,
+   "floor": 2.31,
+   "ceiling": 16.76
   },
   "REB": {
-   "mean": 4.77,
-   "floor": 1.63,
-   "ceiling": 8.44
+   "mean": 5.09,
+   "floor": 1.94,
+   "ceiling": 8.76
   },
   "STL": {
-   "mean": 0.81,
+   "mean": 0.86,
    "floor": 0.0,
-   "ceiling": 2.04
-  },
-  "TOV": {
-   "mean": 0.63,
-   "floor": 0.01,
    "ceiling": 2.02
   },
+  "TOV": {
+   "mean": 0.67,
+   "floor": 0.0,
+   "ceiling": 1.93
+  },
   "PRA": {
-   "mean": 14.86,
-   "floor": 5.48,
-   "ceiling": 24.02
+   "mean": 15.84,
+   "floor": 6.47,
+   "ceiling": 25.01
   },
   "PR": {
-   "mean": 13.53,
-   "floor": 5.02,
-   "ceiling": 22.15
+   "mean": 14.42,
+   "floor": 5.31,
+   "ceiling": 23.67
   },
   "PA": {
-   "mean": 10.08,
-   "floor": 2.55,
-   "ceiling": 17.78
+   "mean": 10.75,
+   "floor": 2.88,
+   "ceiling": 19.05
   },
   "RA": {
-   "mean": 6.1,
-   "floor": 2.23,
-   "ceiling": 10.34
+   "mean": 6.5,
+   "floor": 2.21,
+   "ceiling": 10.96
   }
  },
  "minutes": {
-  "value": 23,
+  "value": 25,
   "source": "model"
  },
  "splits": {
@@ -231,31 +231,31 @@
    "side": "over",
    "price": 1.59,
    "book": "draftkings",
-   "edge": 0.0714,
+   "edge": 0.0784,
    "tier": "A"
-  },
-  "PR": {
-   "line": 13.5,
-   "side": "under",
-   "price": 1.98,
-   "book": "fanduel",
-   "edge": 0.0264,
-   "tier": null
-  },
-  "PTS": {
-   "line": 8.5,
-   "side": "under",
-   "price": 1.98,
-   "book": "fanduel",
-   "edge": 0.0095,
-   "tier": null
   },
   "REB": {
    "line": 4.5,
    "side": "over",
    "price": 1.75,
    "book": "draftkings",
-   "edge": 0.0092,
+   "edge": 0.0598,
+   "tier": "B"
+  },
+  "PTS": {
+   "line": 8.5,
+   "side": "over",
+   "price": 1.77,
+   "book": "fanduel",
+   "edge": 0.0325,
+   "tier": "B"
+  },
+  "PR": {
+   "line": 13.5,
+   "side": "over",
+   "price": 1.77,
+   "book": "fanduel",
+   "edge": 0.0236,
    "tier": null
   }
  },

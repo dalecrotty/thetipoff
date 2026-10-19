@@ -4,63 +4,63 @@
  "team": "San Antonio",
  "projections": {
   "3PM": {
-   "mean": 1.95,
-   "floor": 0.02,
-   "ceiling": 3.96
+   "mean": 2.08,
+   "floor": 0.14,
+   "ceiling": 4.09
   },
   "AST": {
-   "mean": 2.68,
-   "floor": 0.27,
-   "ceiling": 4.98
+   "mean": 2.85,
+   "floor": 0.45,
+   "ceiling": 5.16
   },
   "BLK": {
-   "mean": 2.76,
-   "floor": 1.27,
-   "ceiling": 4.49
+   "mean": 2.94,
+   "floor": 1.45,
+   "ceiling": 4.67
   },
   "PTS": {
-   "mean": 21.78,
-   "floor": 11.35,
-   "ceiling": 31.96
+   "mean": 23.22,
+   "floor": 12.79,
+   "ceiling": 33.4
   },
   "REB": {
-   "mean": 10.82,
-   "floor": 6.36,
-   "ceiling": 15.53
+   "mean": 11.54,
+   "floor": 7.07,
+   "ceiling": 16.24
   },
   "STL": {
-   "mean": 0.92,
-   "floor": 0.02,
-   "ceiling": 2.07
+   "mean": 0.98,
+   "floor": 0.0,
+   "ceiling": 2.04
   },
   "TOV": {
-   "mean": 2.61,
-   "floor": 1.01,
-   "ceiling": 4.44
+   "mean": 2.79,
+   "floor": 0.63,
+   "ceiling": 5.05
   },
   "PRA": {
-   "mean": 35.29,
-   "floor": 23.03,
-   "ceiling": 46.79
+   "mean": 37.62,
+   "floor": 25.36,
+   "ceiling": 49.12
   },
   "PR": {
-   "mean": 32.61,
-   "floor": 20.95,
-   "ceiling": 43.53
+   "mean": 34.76,
+   "floor": 23.1,
+   "ceiling": 45.68
   },
   "PA": {
-   "mean": 24.46,
-   "floor": 14.39,
-   "ceiling": 34.51
+   "mean": 26.08,
+   "floor": 16.0,
+   "ceiling": 36.12
   },
   "RA": {
-   "mean": 13.5,
-   "floor": 7.44,
-   "ceiling": 19.05
+   "mean": 14.39,
+   "floor": 8.33,
+   "ceiling": 19.95
   }
  },
  "minutes": {
-  "value": 30,
+  "value": 32,
   "source": "model"
  },
  "splits": {
@@ -226,28 +226,12 @@
   }
  },
  "lines": {
-  "PRA": {
-   "line": 40.5,
-   "side": "under",
-   "price": 1.91,
-   "book": "fanduel",
-   "edge": 0.2299,
-   "tier": "A"
-  },
   "PA": {
    "line": 29.5,
    "side": "under",
    "price": 1.85,
    "book": "fanduel",
-   "edge": 0.2169,
-   "tier": "A"
-  },
-  "PR": {
-   "line": 37.5,
-   "side": "under",
-   "price": 1.88,
-   "book": "fanduel",
-   "edge": 0.2169,
+   "edge": 0.1503,
    "tier": "A"
   },
   "PTS": {
@@ -255,40 +239,56 @@
    "side": "under",
    "price": 1.82,
    "book": "neds",
-   "edge": 0.2104,
+   "edge": 0.1468,
    "tier": "A"
   },
-  "RA": {
-   "line": 14.5,
+  "PRA": {
+   "line": 40.5,
    "side": "under",
-   "price": 1.78,
+   "price": 1.91,
    "book": "fanduel",
-   "edge": 0.067,
+   "edge": 0.1366,
    "tier": "A"
   },
-  "AST": {
-   "line": 2.5,
+  "PR": {
+   "line": 37.5,
    "side": "under",
-   "price": 2.25,
-   "book": "neds",
-   "edge": 0.047,
-   "tier": "B"
-  },
-  "REB": {
-   "line": 11.5,
-   "side": "under",
-   "price": 1.78,
-   "book": "neds",
-   "edge": 0.0467,
-   "tier": "B"
+   "price": 1.88,
+   "book": "fanduel",
+   "edge": 0.1259,
+   "tier": "A"
   },
   "3PM": {
    "line": 1.5,
    "side": "over",
    "price": 1.6,
    "book": "neds",
-   "edge": 0.044,
+   "edge": 0.0761,
+   "tier": "A"
+  },
+  "REB": {
+   "line": 11.5,
+   "side": "over",
+   "price": 1.98,
+   "book": "neds",
+   "edge": 0.0307,
    "tier": "B"
+  },
+  "RA": {
+   "line": 14.5,
+   "side": "over",
+   "price": 1.96,
+   "book": "fanduel",
+   "edge": 0.0143,
+   "tier": null
+  },
+  "AST": {
+   "line": 2.5,
+   "side": "under",
+   "price": 2.25,
+   "book": "neds",
+   "edge": 0.0098,
+   "tier": null
   }
  },
  "game_log": [
