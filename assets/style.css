@@ -806,3 +806,6 @@ table.savg { min-width: 760px; }
 /* game trends and team pages: season, time frame, game type side by side */
 .daterange .fsel select { min-width: 170px; }
 .daterange .dates { align-self: end; }
+
+/* the chance column: the side we favour, coloured like the edge */
+td .ov { color: var(--over-ink); } td .un { color: var(--under-ink); }

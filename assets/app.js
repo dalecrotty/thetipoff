@@ -68,6 +68,26 @@ function regionLines(rows) {
   }
   return rows;
 }
+/* the side we favour and its chance, from the line alone (owner, 19 Oct
+   2026: rank by our chance of the side, not by one book's price). The
+   edge is then the value at the region's reference book, and can be
+   nil when the price doesn't pay for the chance. */
+function favour(r) {
+  if (!r || r.p_over == null) return r;
+  const over = r.p_over >= 0.5;
+  const chance = over ? r.p_over : (r.p_under != null ? r.p_under : 1 - r.p_over);
+  const fair = over ? r.fair_over : r.fair_under;
+  const sameSide = r.side === (over ? "over" : "under");
+  r.side = over ? "over" : "under";
+  r.chance = chance;
+  r.p_us = chance;
+  r.p_book = fair == null ? null : fair;
+  r.price = over ? (r.price_over ?? r.price) : (r.price_under ?? r.price);
+  r.edge = fair == null ? null : +(chance - fair).toFixed(4);
+  if (!sameSide || r.edge == null || r.edge <= 0) { r.tier = null; if (r.edge != null && r.edge <= 0) r.gate_status = "no value"; }
+  return r;
+}
+const favourLines = L => { for (const k of Object.keys(L || {})) favour(L[k]); return L; };
 const BOOK_NAMES = { sportsbet: "Sportsbet", tab: "TAB", neds: "Neds", ladbrokes_au: "Ladbrokes", pointsbetau: "PointsBet",
   unibet: "Unibet", bet365_au: "bet365", fanduel: "FanDuel", draftkings: "DraftKings", betmgm: "BetMGM", williamhill_us: "Caesars",
   betrivers: "BetRivers", bovada: "Bovada", betonlineag: "BetOnline", pinnacle: "Pinnacle" };
@@ -406,9 +426,18 @@ function priceTd(r) {
    over. Only a clear edge (3%+) names a side; below that the value
    side can come from the price rather than the line, so it's shown
    muted and unsided. */
+function chanceTd(r) {
+  if (r.chance == null) return `<td class="num dim">—</td>`;
+  const over = r.side === "over";
+  return `<td class="num" title="our chance that the ${r.side} ${fmt(r.line)} lands, from the line alone"><b class="${
+    over ? "ov" : "un"}">${over ? "O" : "U"} ${Math.round(r.chance * 100)}%</b></td>`;
+}
 function edgeTd(r) {
   if (r.edge == null) return `<td class="num dim">—</td>`;
   const over = r.side === "over";
+  if (r.edge != null && r.edge <= 0)
+    return `<td class="num"><span class="edge cold" title="the price at ${esc(bookName(r.book) || "the book")} doesn't pay for the chance">no value</span>${
+      (r.p_us != null && r.p_book != null) ? `<div class="sm ph">us ${Math.round(r.p_us * 100)}% · book ${Math.round(r.p_book * 100)}%</div>` : ""}</td>`;
   const label = r.tier
     ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ${pct(r.edge)}`
     : pct(r.edge);
@@ -445,9 +474,10 @@ function hitTd(r) {
 const LEADER_COLS = [
   ["player", "Player", true, ""],
   ["proj", "Pred", false, "our prediction"],
-  ["line", "Line", false, "bookmaker line and price for the side we lean"],
+  ["line", "Line", false, "bookmaker line and price for the side we favour"],
   ["adiff", "Diff", false, "our prediction minus the line (sorts by size, overs and unders alike)", true],
-  ["edge", "Edge", false, "our probability minus the bookmaker's (margin removed), with the side it is on; mint on navy = a real edge"],
+  ["chance", "Chance", false, "how likely our side is to land, from the line alone (the ranking)"],
+  ["edge", "Edge", false, "our chance minus the bookmaker's (margin removed) at the reference book: the value in the price"],
   ["mu", "Matchup", false, "what tonight's opponent gives up to his position, and its rank (1st = softest)", true],
   ["l10_hit", "Hit L10", false, "how often our side landed in his last 10 games", true],
 ];
@@ -457,8 +487,8 @@ const LEADER_COLS = [
    2-point gap at 1.91 outranks a 2-point gap the bookmaker has already
    priced in at 1.64, and a 0.5 line can't win on percentage alone.
    Rows without a line fall to the bottom, biggest prediction first. */
-const SORTS = { edge: "Edge", adiff: "Diff", adpct: "Diff %", proj: "Prediction" };
-let boardSort = "edge";
+const SORTS = { chance: "Chance", edge: "Edge", adiff: "Diff", adpct: "Diff %", proj: "Prediction" };
+let boardSort = "chance";
 
 function leaderTable(stat, rows, titled) {
   // the ACTIVE SORT COLUMN picks the population: default = the 15
@@ -473,9 +503,9 @@ function leaderTable(stat, rows, titled) {
         data-k="${k}"${title ? ` title="${title}"` : ""}>${label}${
       k === s.k ? (s.dir === -1 ? " ▾" : " ▴") : ""}</th>`).join("");
   const body = top.length ? top.map(r => `<tr>
-        ${playerCell(r)}${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${muTd(r)}${hitTd(r)}
+        ${playerCell(r)}${predTd(r)}${lineTd(r)}${diffTd(r)}${chanceTd(r)}${edgeTd(r)}${muTd(r)}${hitTd(r)}
       </tr>`).join("")
-    : `<tr><td colspan="7" class="empty">No players match.</td></tr>`;
+    : `<tr><td colspan="8" class="empty">No players match.</td></tr>`;
   return `<div class="block" data-stat="${stat}">${titled
       ? `<div class="section"><h2>${STAT_WORD[stat] || stat}</h2></div>` : ""}
     <div class="tablewrap"><table class="board lead" data-stat="${stat}">
@@ -552,6 +582,7 @@ async function initBoard() {
   const meta = await renderFreshness();
   const data = await loadData("projections");
   let rows = regionLines(data.rows);
+  rows.forEach(favour);
   // L10 from our side's point of view: an under that the player went
   // over in 4 of 10 landed 6 of 10
   rows.forEach(r => {
@@ -560,7 +591,7 @@ async function initBoard() {
     r.adiff = r.diff == null ? null : Math.abs(r.diff);
     r.adpct = r.diff_pct == null ? null : Math.abs(r.diff_pct);
     // the side we call on a real edge, else the way our prediction leans
-    const lean = r.tier ? r.side : (r.diff == null ? null : r.diff >= 0 ? "over" : "under");
+    const lean = r.side || (r.diff == null ? null : r.diff >= 0 ? "over" : "under");
     r.lean = lean;
     r.l10_hit = r.l10_over == null || !lean ? null
       : (lean === "under" ? 1 - r.l10_over : r.l10_over);
@@ -676,8 +707,8 @@ async function initBoard() {
     tbody.innerHTML = view.map(r => `<tr>
       ${playerCell(r)}
       <td class="s" data-stat="${r.stat}"><span class="side mkt">${r.stat}</span></td>
-      ${predTd(r)}${lineTd(r)}${diffTd(r)}${edgeTd(r)}${muTd(r)}${hitTd(r)}
-    </tr>`).join("") || `<tr><td colspan="9" class="empty">No rows match.</td></tr>`;
+      ${predTd(r)}${lineTd(r)}${diffTd(r)}${chanceTd(r)}${edgeTd(r)}${muTd(r)}${hitTd(r)}
+    </tr>`).join("") || `<tr><td colspan="10" class="empty">No rows match.</td></tr>`;
   };
 
   [statSel, tierSel, teamSel, gameSel].forEach(el => el.onchange = render);
@@ -946,7 +977,7 @@ async function initPlayer() {
 
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
   const P = h.projections || {};
-  const L = h.lines || {};
+  const L = favourLines(h.lines || {});
   // no answer sentence on the interactive page (owner, 16 Oct 2026); the
   // static player pages Google indexes keep theirs (brief section 9)
   // key teammates out tonight, and this player's own record without them
@@ -999,7 +1030,7 @@ async function initPlayer() {
     : `<tr><td class="s">${sn}</td><td class="s dim" colspan="${SAVG.length + 1}">${
         sn === curSeason ? "No games yet this season." : "No games on record."}</td></tr>`).join("");
   $("#savgNote").textContent = "Regular-season games only, per game.";
-  const lines = h.lines || {};
+  const lines = favourLines(h.lines || {});
   let stat = lines.PTS ? "PTS" : (Object.keys(lines)[0] || "PTS");
   const COMBO_OF = { PRA: ["PTS", "REB", "AST"], PR: ["PTS", "REB"],
                      PA: ["PTS", "AST"], RA: ["REB", "AST"] };
