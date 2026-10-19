@@ -2,8 +2,49 @@
  "player_id": 1628401,
  "player": "Derrick White",
  "team": "Boston",
- "opp": "Philadelphia",
- "lines": {},
+ "opp": "Detroit",
+ "lines": {
+  "PA": {
+   "line": 20.5,
+   "price": 1.82,
+   "book": "unibet"
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.98,
+   "book": "neds"
+  },
+  "PRA": {
+   "line": 24.5,
+   "price": 1.8,
+   "book": "unibet"
+  },
+  "PR": {
+   "line": 20.5,
+   "price": 1.74,
+   "book": "unibet"
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 1.7,
+   "book": "neds"
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.87,
+   "book": "neds"
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.65,
+   "book": "unibet"
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.75,
+   "book": "neds"
+  }
+ },
  "recent_games": [
   {
    "date": "2026-05-02",
@@ -126,6 +167,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

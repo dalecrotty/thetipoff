@@ -2,8 +2,24 @@
  "player_id": 1641775,
  "player": "Jordan Walsh",
  "team": "Boston",
- "opp": "Philadelphia",
- "lines": {},
+ "opp": "Detroit",
+ "lines": {
+  "PTS": {
+   "line": 4.5,
+   "price": 1.98,
+   "book": "neds"
+  },
+  "PR": {
+   "line": 8.5,
+   "price": 1.74,
+   "book": "fanduel"
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.7,
+   "book": "neds"
+  }
+ },
  "recent_games": [
   {
    "date": "2026-05-02",
@@ -126,6 +142,17 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

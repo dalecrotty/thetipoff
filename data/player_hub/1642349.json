@@ -2,8 +2,49 @@
  "player_id": 1642349,
  "player": "Ajay Mitchell",
  "team": "Oklahoma City",
- "opp": "Houston",
- "lines": {},
+ "opp": "San Antonio",
+ "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.6,
+   "book": "neds"
+  },
+  "RA": {
+   "line": 6.5,
+   "price": 2.06,
+   "book": "unibet"
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.42,
+   "book": "unibet"
+  },
+  "PA": {
+   "line": 15.5,
+   "price": 2.07,
+   "book": "unibet"
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.92,
+   "book": "neds"
+  },
+  "PRA": {
+   "line": 18.5,
+   "price": 2.0,
+   "book": "unibet"
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.62,
+   "book": "neds"
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.7,
+   "book": "unibet"
+  }
+ },
  "recent_games": [
   {
    "date": "2026-05-22",
@@ -21,7 +62,13 @@
    "3PM": 0.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 3.0
+   "TOV": 3.0,
+   "FGM": 1.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-05-20",
@@ -39,7 +86,13 @@
    "3PM": 0.0,
    "STL": 4.0,
    "BLK": 1.0,
-   "TOV": 3.0
+   "TOV": 3.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-05-18",
@@ -57,7 +110,13 @@
    "3PM": 0.0,
    "STL": 2.0,
    "BLK": 0.0,
-   "TOV": 0.0
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-05-11",
@@ -75,7 +134,13 @@
    "3PM": 1.0,
    "STL": 4.0,
    "BLK": 0.0,
-   "TOV": 1.0
+   "TOV": 1.0,
+   "FGM": 12.0,
+   "FGA": 19.0,
+   "3PA": 4.0,
+   "FTA": 3.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-05-09",
@@ -93,9 +158,36 @@
    "3PM": 2.0,
    "STL": 3.0,
    "BLK": 0.0,
-   "TOV": 0.0
+   "TOV": 0.0,
+   "FGM": 10.0,
+   "FGA": 17.0,
+   "3PA": 4.0,
+   "FTA": 3.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

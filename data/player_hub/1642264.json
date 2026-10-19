@@ -2,8 +2,49 @@
  "player_id": 1642264,
  "player": "Stephon Castle",
  "team": "San Antonio",
- "opp": "Sacramento",
- "lines": {},
+ "opp": "Oklahoma City",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 2.43,
+   "book": "unibet"
+  },
+  "PRA": {
+   "line": 28.5,
+   "price": 1.77,
+   "book": "unibet"
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.73,
+   "book": "neds"
+  },
+  "PR": {
+   "line": 22.5,
+   "price": 1.74,
+   "book": "unibet"
+  },
+  "RA": {
+   "line": 11.5,
+   "price": 1.81,
+   "book": "unibet"
+  },
+  "PA": {
+   "line": 22.5,
+   "price": 1.83,
+   "book": "unibet"
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.82,
+   "book": "neds"
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 2.1,
+   "book": "neds"
+  }
+ },
  "recent_games": [
   {
    "date": "2026-06-13",
@@ -126,6 +167,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
