@@ -185,11 +185,12 @@ function teamMeta(team) {
                              "#667085", "#98a2b3"];
 }
 
-/** Small colour chip with the team code — for table cells. */
+/** Small colour chip with the team code, in the team's colours — for
+    table cells (owner, 19 Oct 2026: the chip makes the rows stand out). */
 function teamBadge(team, { withName = false } = {}) {
   if (!team) return "";
-  const [abbr] = teamMeta(team);
-  return `<span class="tbadge" title="${esc(team)}">${abbr}</span>` +
+  const [abbr, c1, c2] = teamMeta(team);
+  return `<span class="tbadge" style="background:${c1};color:${inkOn(c1)};border-color:${c2}" title="${esc(team)}">${abbr}</span>` +
     (withName ? ` <span class="dim">${esc(team)}</span>` : "");
 }
 
