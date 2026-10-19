@@ -24,6 +24,10 @@
   --data: var(--navy); --tint: rgba(22, 32, 58, .05); --tint-2: rgba(22, 32, 58, .07);
   --red-text: var(--court-red); --red-soft: rgba(200, 53, 43, .08);
   --over: var(--navy); --under: var(--red-text);
+  /* over in green, under in red (owner, 19 Oct 2026). The brand's mint is
+     invisible on maple, so day mode gets a deep green that reads on it
+     (5.6:1 on maple); night mode uses mint on navy. */
+  --over-ink: #1F6B3F; --under-ink: var(--red-text);
   --fmark: url("/assets/brand/wordmark-stacked.svg");
   color-scheme: light;
 
@@ -55,7 +59,7 @@
   --sub: var(--label-on-navy); --data: var(--navy);
   --tint: rgba(234, 215, 178, .05); --tint-2: rgba(234, 215, 178, .08);
   --red-text: #DA7D6E; --red-soft: rgba(218, 125, 110, .12);
-  --over: var(--mint); --fmark: url("/assets/brand/wordmark-stacked-night.svg");
+  --over: var(--mint); --over-ink: var(--mint); --fmark: url("/assets/brand/wordmark-stacked-night.svg");
   color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
@@ -65,7 +69,7 @@
     --sub: var(--label-on-navy); --data: var(--navy);
     --tint: rgba(234, 215, 178, .05); --tint-2: rgba(234, 215, 178, .08);
     --red-text: #DA7D6E; --red-soft: rgba(218, 125, 110, .12);
-    --over: var(--mint); --fmark: url("/assets/brand/wordmark-stacked-night.svg");
+    --over: var(--mint); --over-ink: var(--mint); --fmark: url("/assets/brand/wordmark-stacked-night.svg");
     color-scheme: dark;
   }
 }
@@ -593,6 +597,13 @@ tr.thin td { color: var(--muted); }
   border-radius: 50%; border: 1px solid var(--line-strong, var(--muted)); background: transparent; color: var(--muted);
   font: 600 8px/1 var(--mono); cursor: pointer; vertical-align: 2px; padding: 0; }
 .info:hover { color: var(--ink); border-color: var(--ink); }
+/* the arrow and the "i" as one hoverable mark */
+.info.mvwrap { width: auto; height: auto; border: 0; border-radius: 0; gap: 3px; font: 600 11px/1 var(--mono); }
+.info.mvwrap .i { display: inline-flex; align-items: center; justify-content: center; width: 12px; height: 12px;
+  border-radius: 50%; border: 1px solid var(--line-strong, var(--muted)); font: 600 8px/1 var(--mono); color: var(--muted); }
+.info.mvwrap:hover .i { color: var(--ink); border-color: var(--ink); }
+.info.mvwrap .mv.up { color: var(--over-ink); }
+.info.mvwrap .mv.down { color: var(--under-ink); }
 .infotip { position: absolute; z-index: 30; max-width: 260px; background: var(--panel); color: var(--ink); border: 1px solid var(--line-strong, var(--line));
   border-radius: 0; padding: 7px 9px; font: 12px/1.45 var(--mono); box-shadow: none; }
 td .was { display: none; }
@@ -686,6 +697,9 @@ tbody tr:hover td { background: var(--tint); }
    the side (owner, 19 Oct 2026: the navy chip with mint text read as a
    result, and this isn't one) */
 .edge.hot, .edge.hot.under { background: transparent; color: var(--ink); font-weight: 700; border-radius: 0; }
+.edge.hot.over { color: var(--over-ink); }
+.edge.hot.under { color: var(--under-ink); }
+.edge.hot .ar { color: inherit; }
 .edge.warm { color: var(--ink); font-weight: 600; }
 .edge.cold { color: var(--sub); }
 .pos, .hit.good, table.summary-t .hi, .mv.up { color: var(--ink); font-weight: 700; }

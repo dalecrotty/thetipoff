@@ -358,7 +358,7 @@ function playerCell(r) {
   const opp = r.opp ? ` v ${teamMeta(r.opp)[0]}` : "";
   return `<td class="s pl"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${moveInfo(r)}
     <div class="sm">${teamBadge(r.team)}${esc(opp)}${
-      r.minutes != null ? ` · ${fmt(r.minutes)} min` : ""}${
+      r.minutes != null ? ` · ${fmt(r.minutes, 0)} min` : ""}${
       r.rot_rank != null ? ` <span class="dim" title="rotation rank tonight">#${r.rot_rank}</span>` : ""}${
       r.minutes_source && r.minutes_source !== "model"
         ? ` <span class="badge src">${esc(r.minutes_source)}</span>` : ""}</div>${wwNote(r)}</td>`;
@@ -735,17 +735,18 @@ function wwNote(r) {
    4:46am, Jokic out") sits behind it, on hover or tap, so the row stays
    one line on a phone (owner, 6 Oct 2026). */
 function predCell(r, bold) {
-  const v = bold ? `<b>${fmt(r.proj)}</b>` : fmt(r.proj);
-  if (r.prior == null || r.proj == null) return v;
-  const up = r.proj > r.prior;
-  return `${v} <span class="mv ${up ? "up" : "down"}">${up ? "▲" : "▼"}</span>`;
+  return bold ? `<b>${fmt(r.proj)}</b>` : fmt(r.proj);
 }
-/* the note behind a moved prediction, as a small "i" next to the player's
-   name (owner, 19 Oct 2026: smaller, and out of the number column) */
+/* a moved prediction: the arrow and the "i" sit together next to the
+   player's name, and hovering either says what moved, from what, when and
+   why (owner, 19 Oct 2026) */
 function moveInfo(r) {
   if (r.prior == null || r.proj == null) return "";
-  const was = `was ${fmt(r.prior)} at ${aedtTime(r.prior_at)}${r.move_reason ? ` · ${r.move_reason}` : ""}`;
-  return `<button class="info" type="button" aria-label="${esc(was)}" data-tip="${esc(was)}">i</button>`;
+  const up = r.proj > r.prior;
+  const was = `Prediction moved ${up ? "up" : "down"}: ${fmt(r.prior)} at ${aedtTime(r.prior_at)} to ${fmt(r.proj)} now${
+    r.move_reason ? ` · ${r.move_reason}` : ""}`;
+  return `<span class="info mvwrap" role="button" tabindex="0" aria-label="${esc(was)}" data-tip="${esc(was)}"><span class="mv ${
+    up ? "up" : "down"}">${up ? "▲" : "▼"}</span><span class="i">i</span></span>`;
 }
 /* one floating note for every "i" on the page: hover shows it, tap toggles it */
 addEventListener("DOMContentLoaded", () => {
@@ -922,7 +923,7 @@ async function initPlayer() {
   const oppAb = h.opp ? teamMeta(h.opp)[0] : null;
   $("#pkicker").innerHTML = `${teamBadge(h.team)} ${esc(h.team || "")}${
     oppAb ? ` · v ${esc(oppAb)} tonight` : ""}${h.minutes
-    ? ` · ${fmt(h.minutes.value)} min predicted` : ""}`;
+    ? ` · ${fmt(h.minutes.value, 0)} min predicted` : ""}`;
 
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
   const P = h.projections || {};
@@ -1146,7 +1147,7 @@ async function initPlayer() {
       row("Average", s => avg(s) == null ? "—" : avg(s).toFixed(1)) +
       row("Median", s => vals(s).length ? median(vals(s)).toFixed(1) : "—") +
       row("Per 36", s => s !== "MIN" && totMin > 0 ? (vals(s).reduce((a, b) => a + b, 0) / totMin * 36).toFixed(1) : "—", "dimrow") +
-      row("Prediction", s => s === "MIN" ? (h.minutes ? `<b class="pv">${fmt(h.minutes.value)}</b>` : "—")
+      row("Prediction", s => s === "MIN" ? (h.minutes ? `<b class="pv">${fmt(h.minutes.value, 0)}</b>` : "—")
         : P[s] ? `<b class="pv">${fmt(P[s].mean)}</b>` : "—", "sep") +
       row("Line", s => NOLINE.has(s) ? "—" : `<input class="lineIn" data-s="${s}" type="number" step="0.5" value="${
         lineOf(s) ?? ""}" title="${L[s] ? `book line${L[s].book ? ` (${esc(L[s].book)})` : ""}` : "no book line: type one"}">`, "linerow") +
