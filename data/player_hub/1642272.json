@@ -4,63 +4,63 @@
  "team": "Oklahoma City",
  "projections": {
   "3PM": {
-   "mean": 1.78,
+   "mean": 1.57,
    "floor": 0.06,
-   "ceiling": 3.96
+   "ceiling": 3.15
   },
   "AST": {
-   "mean": 1.27,
+   "mean": 1.12,
    "floor": 0.0,
-   "ceiling": 3.05
+   "ceiling": 2.9
   },
   "BLK": {
-   "mean": 0.06,
+   "mean": 0.05,
    "floor": 0.0,
    "ceiling": 0.94
   },
   "PTS": {
-   "mean": 9.88,
-   "floor": 2.72,
-   "ceiling": 17.95
+   "mean": 8.72,
+   "floor": 1.69,
+   "ceiling": 16.15
   },
   "REB": {
-   "mean": 2.13,
-   "floor": 0.28,
-   "ceiling": 4.31
+   "mean": 1.88,
+   "floor": 0.03,
+   "ceiling": 4.06
   },
   "STL": {
-   "mean": 0.45,
+   "mean": 0.39,
    "floor": 0.0,
-   "ceiling": 1.24
+   "ceiling": 1.19
   },
   "TOV": {
-   "mean": 0.87,
+   "mean": 0.77,
    "floor": 0.0,
-   "ceiling": 2.0
+   "ceiling": 2.02
   },
   "PRA": {
-   "mean": 13.27,
-   "floor": 4.18,
-   "ceiling": 22.1
+   "mean": 11.72,
+   "floor": 3.1,
+   "ceiling": 20.5
   },
   "PR": {
-   "mean": 12.01,
-   "floor": 3.95,
-   "ceiling": 19.95
+   "mean": 10.6,
+   "floor": 2.87,
+   "ceiling": 18.94
   },
   "PA": {
-   "mean": 11.15,
-   "floor": 3.27,
-   "ceiling": 19.44
+   "mean": 9.84,
+   "floor": 2.31,
+   "ceiling": 17.54
   },
   "RA": {
-   "mean": 3.39,
-   "floor": 0.64,
-   "ceiling": 6.7
+   "mean": 2.99,
+   "floor": 0.25,
+   "ceiling": 6.3
   }
  },
  "minutes": {
-  "value": 19.3,
+  "value": 17.0,
   "source": "model"
  },
  "splits": {
@@ -226,20 +226,52 @@
   }
  },
  "lines": {
-  "3PM": {
-   "line": 1.5,
-   "side": "over",
-   "price": 1.62,
-   "book": "neds",
-   "edge": 0.012,
-   "tier": null
+  "PRA": {
+   "line": 13.5,
+   "side": "under",
+   "price": 2.0,
+   "book": "fanduel",
+   "edge": 0.1346,
+   "tier": "A"
+  },
+  "PR": {
+   "line": 12.5,
+   "side": "under",
+   "price": 1.88,
+   "book": "fanduel",
+   "edge": 0.1149,
+   "tier": "A"
+  },
+  "PA": {
+   "line": 11.5,
+   "side": "under",
+   "price": 1.83,
+   "book": "draftkings",
+   "edge": 0.0968,
+   "tier": "A"
   },
   "PTS": {
    "line": 9.5,
-   "side": "over",
-   "price": 1.8,
+   "side": "under",
+   "price": 1.94,
    "book": "neds",
-   "edge": 0.0085,
+   "edge": 0.0721,
+   "tier": "A"
+  },
+  "3PM": {
+   "line": 1.5,
+   "side": "under",
+   "price": 2.15,
+   "book": "neds",
+   "edge": 0.0469,
+   "tier": "B"
+  },
+  "AST": {
+   "line": 1.5,
+   "side": "under",
+   "price": 1.56,
+   "book": "draftkings",
+   "edge": 0.0065,
    "tier": null
   }
  },
