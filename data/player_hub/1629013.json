@@ -4,63 +4,63 @@
  "team": "New York",
  "projections": {
   "3PM": {
-   "mean": 1.71,
+   "mean": 1.85,
    "floor": 0.0,
-   "ceiling": 3.89
+   "ceiling": 3.86
   },
   "AST": {
-   "mean": 1.0,
-   "floor": 0.03,
-   "ceiling": 2.33
+   "mean": 1.09,
+   "floor": 0.0,
+   "ceiling": 2.87
   },
   "BLK": {
-   "mean": 0.12,
-   "floor": 0.0,
-   "ceiling": 1.0
+   "mean": 0.13,
+   "floor": 0.01,
+   "ceiling": 1.01
   },
   "PTS": {
-   "mean": 7.24,
-   "floor": 1.03,
-   "ceiling": 14.11
+   "mean": 7.84,
+   "floor": 1.23,
+   "ceiling": 14.39
   },
   "REB": {
-   "mean": 1.51,
+   "mean": 1.63,
    "floor": 0.0,
-   "ceiling": 3.69
+   "ceiling": 3.82
   },
   "STL": {
-   "mean": 0.43,
+   "mean": 0.47,
    "floor": 0.0,
-   "ceiling": 1.23
+   "ceiling": 1.26
   },
   "TOV": {
-   "mean": 0.51,
+   "mean": 0.56,
    "floor": 0.0,
-   "ceiling": 1.9
+   "ceiling": 1.94
   },
   "PRA": {
-   "mean": 9.76,
-   "floor": 2.03,
-   "ceiling": 18.47
+   "mean": 10.55,
+   "floor": 2.83,
+   "ceiling": 19.27
   },
   "PR": {
-   "mean": 8.75,
-   "floor": 1.99,
-   "ceiling": 16.87
+   "mean": 9.47,
+   "floor": 1.74,
+   "ceiling": 17.81
   },
   "PA": {
-   "mean": 8.25,
-   "floor": 1.56,
-   "ceiling": 15.23
+   "mean": 8.92,
+   "floor": 2.24,
+   "ceiling": 15.9
   },
   "RA": {
-   "mean": 2.51,
+   "mean": 2.72,
    "floor": 0.0,
-   "ceiling": 5.82
+   "ceiling": 6.02
   }
  },
  "minutes": {
-  "value": 19.4,
+  "value": 21.0,
   "source": "model"
  },
  "splits": {
@@ -226,21 +226,21 @@
   }
  },
  "lines": {
-  "PTS": {
-   "line": 8.5,
-   "side": "under",
-   "price": 1.8,
-   "book": "neds",
-   "edge": 0.0727,
-   "tier": "A"
-  },
   "3PM": {
    "line": 1.5,
    "side": "over",
    "price": 1.68,
    "book": "neds",
-   "edge": 0.0162,
-   "tier": null
+   "edge": 0.0495,
+   "tier": "B"
+  },
+  "PTS": {
+   "line": 8.5,
+   "side": "under",
+   "price": 1.8,
+   "book": "neds",
+   "edge": 0.0317,
+   "tier": "B"
   }
  },
  "game_log": [

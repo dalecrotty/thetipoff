@@ -4,63 +4,63 @@
  "team": "New York",
  "projections": {
   "3PM": {
-   "mean": 0.48,
+   "mean": 0.37,
+   "floor": 0.0,
+   "ceiling": 1.71
+  },
+  "AST": {
+   "mean": 1.44,
+   "floor": 0.0,
+   "ceiling": 3.03
+  },
+  "BLK": {
+   "mean": 0.03,
+   "floor": 0.0,
+   "ceiling": 0.92
+  },
+  "PTS": {
+   "mean": 2.33,
+   "floor": 0.0,
+   "ceiling": 7.99
+  },
+  "REB": {
+   "mean": 0.75,
+   "floor": 0.0,
+   "ceiling": 2.94
+  },
+  "STL": {
+   "mean": 0.15,
+   "floor": 0.0,
+   "ceiling": 0.94
+  },
+  "TOV": {
+   "mean": 0.44,
    "floor": 0.0,
    "ceiling": 1.82
   },
-  "AST": {
-   "mean": 1.89,
-   "floor": 0.11,
-   "ceiling": 4.01
-  },
-  "BLK": {
-   "mean": 0.04,
-   "floor": 0.0,
-   "ceiling": 0.93
-  },
-  "PTS": {
-   "mean": 3.07,
-   "floor": 0.0,
-   "ceiling": 8.73
-  },
-  "REB": {
-   "mean": 0.99,
-   "floor": 0.0,
-   "ceiling": 3.17
-  },
-  "STL": {
-   "mean": 0.19,
-   "floor": 0.0,
-   "ceiling": 0.99
-  },
-  "TOV": {
-   "mean": 0.58,
-   "floor": 0.0,
-   "ceiling": 1.96
-  },
   "PRA": {
-   "mean": 5.95,
+   "mean": 4.51,
    "floor": 0.0,
-   "ceiling": 14.66
+   "ceiling": 13.23
   },
   "PR": {
-   "mean": 4.06,
+   "mean": 3.08,
    "floor": 0.0,
-   "ceiling": 12.17
+   "ceiling": 11.19
   },
   "PA": {
-   "mean": 4.96,
+   "mean": 3.76,
    "floor": 0.0,
-   "ceiling": 11.75
+   "ceiling": 10.55
   },
   "RA": {
-   "mean": 2.88,
-   "floor": 0.14,
-   "ceiling": 6.19
+   "mean": 2.19,
+   "floor": 0.0,
+   "ceiling": 5.49
   }
  },
  "minutes": {
-  "value": 7.3,
+  "value": 5.5,
   "source": "model"
  },
  "splits": {

@@ -4,63 +4,63 @@
  "team": "New York",
  "projections": {
   "3PM": {
-   "mean": 0.57,
+   "mean": 0.49,
    "floor": 0.0,
-   "ceiling": 1.91
+   "ceiling": 1.83
   },
   "AST": {
-   "mean": 1.46,
+   "mean": 1.24,
    "floor": 0.0,
-   "ceiling": 3.05
+   "ceiling": 3.02
   },
   "BLK": {
-   "mean": 0.71,
-   "floor": 0.0,
-   "ceiling": 2.02
+   "mean": 0.61,
+   "floor": 0.02,
+   "ceiling": 2.01
   },
   "PTS": {
-   "mean": 5.93,
-   "floor": 0.85,
-   "ceiling": 11.59
+   "mean": 5.04,
+   "floor": 0.0,
+   "ceiling": 10.71
   },
   "REB": {
-   "mean": 8.17,
-   "floor": 3.7,
-   "ceiling": 12.87
+   "mean": 6.95,
+   "floor": 2.49,
+   "ceiling": 11.66
   },
   "STL": {
-   "mean": 0.61,
+   "mean": 0.52,
    "floor": 0.0,
-   "ceiling": 1.97
+   "ceiling": 1.95
   },
   "TOV": {
-   "mean": 1.1,
+   "mean": 0.94,
    "floor": 0.0,
-   "ceiling": 2.09
+   "ceiling": 2.07
   },
   "PRA": {
-   "mean": 15.55,
-   "floor": 6.18,
-   "ceiling": 24.72
+   "mean": 13.24,
+   "floor": 4.15,
+   "ceiling": 22.06
   },
   "PR": {
-   "mean": 14.09,
-   "floor": 4.98,
-   "ceiling": 23.34
+   "mean": 12.0,
+   "floor": 3.94,
+   "ceiling": 19.94
   },
   "PA": {
-   "mean": 7.38,
-   "floor": 1.52,
-   "ceiling": 14.17
+   "mean": 6.29,
+   "floor": 0.42,
+   "ceiling": 13.07
   },
   "RA": {
-   "mean": 9.63,
-   "floor": 4.75,
-   "ceiling": 14.6
+   "mean": 8.19,
+   "floor": 3.96,
+   "ceiling": 12.99
   }
  },
  "minutes": {
-  "value": 19.3,
+  "value": 16.5,
   "source": "model"
  },
  "splits": {
@@ -231,24 +231,24 @@
    "side": "over",
    "price": 1.92,
    "book": "neds",
-   "edge": 0.197,
-   "tier": "A"
-  },
-  "PR": {
-   "line": 12.5,
-   "side": "over",
-   "price": 1.89,
-   "book": "fanduel",
-   "edge": 0.094,
+   "edge": 0.0648,
    "tier": "A"
   },
   "PTS": {
    "line": 5.5,
-   "side": "over",
+   "side": "under",
+   "price": 1.89,
+   "book": "fanduel",
+   "edge": 0.0464,
+   "tier": "B"
+  },
+  "PR": {
+   "line": 12.5,
+   "side": "under",
    "price": 1.85,
    "book": "fanduel",
-   "edge": 0.0374,
-   "tier": "B"
+   "edge": 0.027,
+   "tier": null
   }
  },
  "game_log": [
