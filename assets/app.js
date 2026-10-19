@@ -397,9 +397,12 @@ function edgeTd(r) {
   const label = r.tier
     ? `<span class="ar">${over ? "▲" : "▼"}</span>${over ? "O" : "U"} ${pct(r.edge)}`
     : pct(r.edge);
+  const chances = (r.p_us != null && r.p_book != null)
+    ? `<div class="sm ph">us ${Math.round(r.p_us * 100)}% · book ${Math.round(r.p_book * 100)}%</div>` : "";
   return `<td class="num"><span class="edge ${r.tier ? `hot ${r.side}` : "cold"}" title="${r.tier
-    ? `The ${r.side} ${r.line} at ${odds(r.price)}: our probability beats the bookmaker's (margin removed) by ${pct(r.edge)}`
-    : "Below the threshold we'd call an edge"}">${label}</span>${r.diff != null
+    ? `The ${r.side} ${r.line} at ${odds(r.price)}: our chance of the ${r.side} landing minus the bookmaker's (margin removed). Ours ${
+        r.p_us != null ? Math.round(r.p_us * 100) + "%" : "—"}, the book's ${r.p_book != null ? Math.round(r.p_book * 100) + "%" : "—"}.`
+    : "Below the threshold we'd call an edge"}">${label}</span>${chances}${r.diff != null
     ? `<div class="sm ph">diff ${r.diff > 0 ? "+" : ""}${fmt(r.diff)}</div>` : ""}</td>`;
 }
 function ordinal(n) {
