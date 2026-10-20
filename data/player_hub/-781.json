@@ -2,9 +2,78 @@
  "player_id": -781,
  "player": "Aday Mara",
  "team": "Oklahoma City",
- "opp": "San Antonio",
+ "projections": {
+  "3PM": {
+   "mean": 0.02,
+   "floor": 0.0,
+   "ceiling": 0.02
+  },
+  "AST": {
+   "mean": 0.67,
+   "floor": 0.0,
+   "ceiling": 2.3
+  },
+  "BLK": {
+   "mean": 0.71,
+   "floor": 0.0,
+   "ceiling": 2.28
+  },
+  "PTS": {
+   "mean": 4.38,
+   "floor": 0.0,
+   "ceiling": 11.24
+  },
+  "REB": {
+   "mean": 3.31,
+   "floor": 0.39,
+   "ceiling": 6.57
+  },
+  "STL": {
+   "mean": 0.37,
+   "floor": 0.0,
+   "ceiling": 1.33
+  },
+  "TOV": {
+   "mean": 0.86,
+   "floor": 0.0,
+   "ceiling": 2.23
+  },
+  "PRA": {
+   "mean": 8.37,
+   "floor": 0.64,
+   "ceiling": 17.08
+  },
+  "PR": {
+   "mean": 7.69,
+   "floor": 0.93,
+   "ceiling": 15.81
+  },
+  "PA": {
+   "mean": 5.05,
+   "floor": 0.0,
+   "ceiling": 11.84
+  },
+  "RA": {
+   "mean": 3.99,
+   "floor": 1.24,
+   "ceiling": 7.29
+  }
+ },
+ "minutes": {
+  "value": 12,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {},
+  "l10": {},
+  "l5": {},
+  "home": {},
+  "away": {}
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [],
  "recent_games": [],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "San Antonio"
 }
