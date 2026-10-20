@@ -3,7 +3,10 @@
  "computed_at": "2026-10-20T17:46+00:00",
  "build": "main",
  "model_version": "engine-v1.21-ot+rolefix+play+injstatus+rotation+wwusage2+topshrink+open15+openpack+dfsspread+ctx+depth+dvp5fade120+dvpnoprevpo+b2brate+rookie1+pts093+sigma_v3+scoring_v1",
- "status": "ok",
+ "status": "stale",
  "last_ok_at": "2026-10-20T17:46+00:00",
- "lines_region": "au"
+ "lines_region": "au",
+ "stale_since": "2026-10-20T18:46+00:00",
+ "stale_job": "late-refresh",
+ "stale_reason": "KeyError: 'closing_line'"
 }
