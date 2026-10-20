@@ -11,22 +11,22 @@
   "AST": {
    "mean": 0.87,
    "floor": 0.0,
-   "ceiling": 2.2
+   "ceiling": 2.22
   },
   "BLK": {
    "mean": 0.33,
    "floor": 0.0,
-   "ceiling": 1.0
+   "ceiling": 1.01
   },
   "PTS": {
-   "mean": 7.38,
-   "floor": 0.77,
-   "ceiling": 13.93
+   "mean": 7.36,
+   "floor": 0.91,
+   "ceiling": 14.01
   },
   "REB": {
-   "mean": 3.73,
-   "floor": 0.9,
-   "ceiling": 6.86
+   "mean": 3.72,
+   "floor": 0.95,
+   "ceiling": 6.84
   },
   "STL": {
    "mean": 0.9,
@@ -34,29 +34,29 @@
    "ceiling": 2.06
   },
   "TOV": {
-   "mean": 1.02,
+   "mean": 1.01,
    "floor": 0.0,
-   "ceiling": 2.01
+   "ceiling": 2.02
   },
   "PRA": {
-   "mean": 11.97,
-   "floor": 3.35,
-   "ceiling": 20.75
+   "mean": 11.95,
+   "floor": 3.33,
+   "ceiling": 20.73
   },
   "PR": {
-   "mean": 11.11,
-   "floor": 3.05,
-   "ceiling": 19.05
+   "mean": 11.09,
+   "floor": 3.03,
+   "ceiling": 19.03
   },
   "PA": {
-   "mean": 8.24,
-   "floor": 1.56,
-   "ceiling": 15.22
+   "mean": 8.23,
+   "floor": 1.55,
+   "ceiling": 15.21
   },
   "RA": {
-   "mean": 4.6,
-   "floor": 1.24,
-   "ceiling": 8.04
+   "mean": 4.59,
+   "floor": 1.23,
+   "ceiling": 8.03
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "REB": {
    "line": 2.5,
-   "p_over": 0.686,
-   "p_under": 0.314,
+   "p_over": 0.685,
+   "p_under": 0.315,
    "fair_over": 0.52,
    "fair_under": 0.48,
    "price_over": 1.8,
@@ -237,13 +237,13 @@
    "side": "over",
    "price": 1.8,
    "book": "tab",
-   "edge": 0.166,
+   "edge": 0.1652,
    "tier": "A"
   },
   "PRA": {
    "line": 9.5,
-   "p_over": 0.643,
-   "p_under": 0.357,
+   "p_over": 0.642,
+   "p_under": 0.358,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -251,13 +251,13 @@
    "side": "over",
    "price": 1.95,
    "book": "tab",
-   "edge": 0.1634,
+   "edge": 0.1624,
    "tier": "A"
   },
   "3PM": {
    "line": 0.5,
-   "p_over": 0.497,
-   "p_under": 0.503,
+   "p_over": 0.496,
+   "p_under": 0.504,
    "fair_over": 0.434,
    "fair_under": 0.566,
    "price_over": 2.15,
@@ -265,7 +265,7 @@
    "side": "over",
    "price": 2.15,
    "book": "tab",
-   "edge": 0.0624,
+   "edge": 0.0618,
    "tier": "B"
   },
   "AST": {
@@ -279,7 +279,7 @@
    "side": "over",
    "price": 1.8,
    "book": "tab",
-   "edge": 0.0492,
+   "edge": 0.0488,
    "tier": "B"
   }
  },
