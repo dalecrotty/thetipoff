@@ -45,7 +45,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -75,7 +75,7 @@
    "prior": 0.86,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 56
+   "rank": 57
   },
   {
    "player_id": 202331,
@@ -447,7 +447,7 @@
    "ceiling": 3.08,
    "sigma": 1.4,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": 0.5,
    "side": "over",
@@ -756,7 +756,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
@@ -786,7 +786,7 @@
    "prior": 1.21,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 60
+   "rank": 61
   },
   {
    "player_id": 1629011,
@@ -800,7 +800,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -830,7 +830,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 61
+   "rank": 62
   },
   {
    "player_id": 1629013,
@@ -1000,7 +1000,7 @@
    "game": "Oklahoma City vs San Antonio",
    "stat": "3PM",
    "line": 0.5,
-   "price": 2.45,
+   "price": 1.53,
    "book": "pointsbetau",
    "price_over": 1.53,
    "price_under": 2.45,
@@ -1009,16 +1009,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 0.5,
-    "price": 2.41,
+    "price": 1.53,
     "book": "draftkings",
     "price_over": 1.53,
     "price_under": 2.41,
     "l5_over": 0.4,
     "l10_over": 0.6,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -1033,7 +1033,7 @@
    "ceiling": 0.02,
    "sigma": 0.31,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -1063,7 +1063,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 53
   },
   {
    "player_id": 1629750,
@@ -1179,7 +1179,7 @@
    "ceiling": 1.64,
    "sigma": 0.79,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -1209,7 +1209,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 51
   },
   {
    "player_id": 1630198,
@@ -1285,7 +1285,7 @@
    "ceiling": 5.01,
    "sigma": 1.73,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
@@ -1367,7 +1367,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -1397,7 +1397,7 @@
    "prior": 0.59,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 64
+   "rank": 65
   },
   {
    "player_id": 1630573,
@@ -1411,7 +1411,7 @@
    "ceiling": 4.77,
    "sigma": 1.73,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": 1.5,
    "side": "over",
@@ -1459,7 +1459,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 10
+   "rank": 11
   },
   {
    "player_id": 1630577,
@@ -1478,16 +1478,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 1.5,
-    "price": 2.44,
+    "price": 1.52,
     "book": "draftkings",
     "price_over": 1.52,
     "price_under": 2.44,
     "l5_over": 0.8,
     "l10_over": 0.8,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -1498,9 +1498,9 @@
    "game": "Boston vs Detroit",
    "stat": "3PM",
    "proj": 2.22,
-   "floor": 0.01,
-   "ceiling": 4.75,
-   "sigma": 1.73,
+   "floor": 0.0,
+   "ceiling": 4.49,
+   "sigma": 1.88,
    "minutes": 34,
    "rot_rank": 1,
    "minutes_source": "model",
@@ -1550,7 +1550,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 11
+   "rank": 12
   },
   {
    "player_id": 1630631,
@@ -1613,7 +1613,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -1643,7 +1643,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 65
+   "rank": 66
   },
   {
    "player_id": 1631114,
@@ -1746,7 +1746,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -1776,7 +1776,7 @@
    "prior": 0.7,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 67
+   "rank": 68
   },
   {
    "player_id": 1631248,
@@ -1785,26 +1785,26 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "3PM",
-   "proj": 1.46,
+   "proj": 0.73,
    "floor": 0.0,
-   "ceiling": 3.07,
-   "sigma": 1.4,
-   "minutes": 20,
-   "rot_rank": 5,
+   "ceiling": 1.99,
+   "sigma": 1.05,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": 1.5,
-   "side": "over",
-   "price": 2.65,
+   "side": "under",
+   "price": 1.45,
    "book": "tab",
-   "edge": 0.0642,
-   "p_us": 0.418,
-   "p_book": 0.354,
-   "tier": "B",
+   "edge": 0.1837,
+   "p_us": 0.83,
+   "p_book": 0.646,
+   "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.418,
-   "p_under": 0.582,
+   "p_over": 0.17,
+   "p_under": 0.83,
    "fair_over": 0.354,
    "fair_under": 0.646,
    "price_over": 2.65,
@@ -1820,7 +1820,7 @@
    "prior": 1.19,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 28
+   "rank": 46
   },
   {
    "player_id": 1641705,
@@ -1893,7 +1893,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 51
+   "rank": 52
   },
   {
    "player_id": 1641712,
@@ -1971,26 +1971,26 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "3PM",
-   "proj": 0.39,
+   "proj": 0.78,
    "floor": 0.0,
-   "ceiling": 1.72,
-   "sigma": 0.79,
-   "minutes": 10,
-   "rot_rank": 10,
+   "ceiling": 2.04,
+   "sigma": 1.05,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 0.5,
    "side": "under",
    "price": 2.2,
    "book": "tab",
-   "edge": 0.2572,
-   "p_us": 0.681,
+   "edge": 0.0472,
+   "p_us": 0.471,
    "p_book": 0.424,
-   "tier": "A",
+   "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.2,
-   "p_over": 0.319,
-   "p_under": 0.681,
+   "p_over": 0.529,
+   "p_under": 0.471,
    "fair_over": 0.576,
    "fair_under": 0.424,
    "price_over": 1.62,
@@ -2006,7 +2006,7 @@
    "prior": 0.56,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 49
+   "rank": 45
   },
   {
    "player_id": 1641842,
@@ -2020,7 +2020,7 @@
    "ceiling": 1.97,
    "sigma": 1.05,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": 0.5,
    "side": "over",
@@ -2050,7 +2050,7 @@
    "prior": 0.4,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 45
+   "rank": 47
   },
   {
    "player_id": 1642264,
@@ -2211,7 +2211,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -2241,7 +2241,7 @@
    "prior": 0.6,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1642449,
@@ -2255,7 +2255,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -2285,7 +2285,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1642450,
@@ -2449,7 +2449,7 @@
    "prior": 0.29,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 47
+   "rank": 49
   },
   {
    "player_id": 1642868,
@@ -2483,7 +2483,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -2567,7 +2567,7 @@
    "ceiling": 0.0,
    "sigma": 0.31,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -2780,7 +2780,7 @@
    "ceiling": 1.36,
    "sigma": 1.06,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -2810,7 +2810,7 @@
    "prior": 2.09,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": 202331,
@@ -3164,7 +3164,7 @@
    "ceiling": 3.03,
    "sigma": 1.3,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
@@ -3212,7 +3212,7 @@
    "prior": 0.84,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 42
+   "rank": 41
   },
   {
    "player_id": 1628384,
@@ -3482,7 +3482,7 @@
    "ceiling": 1.36,
    "sigma": 1.06,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
@@ -3512,7 +3512,7 @@
    "prior": 2.34,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 62
+   "rank": 63
   },
   {
    "player_id": 1629011,
@@ -3526,7 +3526,7 @@
    "ceiling": 2.17,
    "sigma": 1.06,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -3556,7 +3556,7 @@
    "prior": 0.44,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 49
+   "rank": 51
   },
   {
    "player_id": 1629013,
@@ -3732,7 +3732,7 @@
    "ceiling": 3.08,
    "sigma": 1.33,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": 1.5,
    "side": "over",
@@ -3806,7 +3806,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 57
   },
   {
    "player_id": 1630170,
@@ -3878,7 +3878,7 @@
    "ceiling": 3.15,
    "sigma": 1.33,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 1.5,
    "side": "over",
@@ -3926,7 +3926,7 @@
    "prior": 0.82,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 36
+   "rank": 35
   },
   {
    "player_id": 1630198,
@@ -3984,7 +3984,7 @@
    "ceiling": 7.43,
    "sigma": 2.27,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": 4.5,
    "side": "under",
@@ -4066,7 +4066,7 @@
    "ceiling": 1.36,
    "sigma": 1.06,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -4096,7 +4096,7 @@
    "prior": 0.68,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 65
+   "rank": 66
   },
   {
    "player_id": 1630573,
@@ -4110,7 +4110,7 @@
    "ceiling": 2.93,
    "sigma": 1.3,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": 0.5,
    "side": "over",
@@ -4285,7 +4285,7 @@
    "ceiling": 4.21,
    "sigma": 1.65,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": 2.5,
    "side": "over",
@@ -4436,7 +4436,7 @@
    "ceiling": 1.36,
    "sigma": 1.06,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -4466,7 +4466,7 @@
    "prior": 0.57,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 67
+   "rank": 68
   },
   {
    "player_id": 1631248,
@@ -4475,26 +4475,26 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "AST",
-   "proj": 1.56,
-   "floor": 0.04,
-   "ceiling": 3.16,
-   "sigma": 1.33,
-   "minutes": 20,
-   "rot_rank": 5,
+   "proj": 0.78,
+   "floor": 0.0,
+   "ceiling": 2.14,
+   "sigma": 1.06,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": 1.5,
-   "side": "over",
-   "price": 3.0,
+   "side": "under",
+   "price": 1.36,
    "book": "tab",
-   "edge": 0.1407,
-   "p_us": 0.453,
-   "p_book": 0.312,
-   "tier": "A",
-   "gate_status": "passed",
+   "edge": 0.126,
+   "p_us": 0.814,
+   "p_book": 0.688,
+   "tier": null,
+   "gate_status": "failed:price_band",
    "l10_over": 0.3,
    "l5_over": 0.2,
-   "p_over": 0.453,
-   "p_under": 0.547,
+   "p_over": 0.186,
+   "p_under": 0.814,
    "fair_over": 0.312,
    "fair_under": 0.688,
    "price_over": 3.0,
@@ -4507,10 +4507,10 @@
    "pos": "SG",
    "pos_usual": "SG",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 35
+   "prior": 1.27,
+   "prior_at": "2026-10-19T02:07+00:00",
+   "move_reason": "minutes update",
+   "rank": 52
   },
   {
    "player_id": 1641705,
@@ -4679,26 +4679,26 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "AST",
-   "proj": 0.58,
+   "proj": 1.16,
    "floor": 0.0,
-   "ceiling": 1.94,
-   "sigma": 1.06,
-   "minutes": 10,
-   "rot_rank": 10,
+   "ceiling": 2.97,
+   "sigma": 1.3,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 0.5,
-   "side": "under",
-   "price": 2.35,
+   "side": "over",
+   "price": 1.55,
    "book": "tab",
-   "edge": 0.168,
-   "p_us": 0.565,
-   "p_book": 0.397,
+   "edge": 0.0707,
+   "p_us": 0.673,
+   "p_book": 0.603,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.4,
-   "p_over": 0.435,
-   "p_under": 0.565,
+   "p_over": 0.673,
+   "p_under": 0.327,
    "fair_over": 0.603,
    "fair_under": 0.397,
    "price_over": 1.55,
@@ -4711,10 +4711,10 @@
    "pos": "PF",
    "pos_usual": "SF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 55
+   "prior": 0.83,
+   "prior_at": "2026-10-19T02:07+00:00",
+   "move_reason": "minutes update",
+   "rank": 43
   },
   {
    "player_id": 1641842,
@@ -4728,7 +4728,7 @@
    "ceiling": 2.22,
    "sigma": 1.06,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": 0.5,
    "side": "over",
@@ -4758,7 +4758,7 @@
    "prior": 0.49,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 48
+   "rank": 50
   },
   {
    "player_id": 1642264,
@@ -4919,7 +4919,7 @@
    "ceiling": 1.36,
    "sigma": 1.06,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -4949,7 +4949,7 @@
    "prior": 0.56,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1642449,
@@ -4963,7 +4963,7 @@
    "ceiling": 1.36,
    "sigma": 1.06,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -4993,7 +4993,7 @@
    "prior": 0.76,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1642450,
@@ -5157,7 +5157,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 59
   },
   {
    "player_id": 1642868,
@@ -5191,7 +5191,7 @@
    "ceiling": 1.36,
    "sigma": 1.06,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -5275,7 +5275,7 @@
    "ceiling": 1.63,
    "sigma": 1.06,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -5479,7 +5479,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -5509,7 +5509,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": 202331,
@@ -5553,7 +5553,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 23
+   "rank": 25
   },
   {
    "player_id": 203083,
@@ -5777,7 +5777,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 29
+   "rank": 30
   },
   {
    "player_id": 1628381,
@@ -5791,7 +5791,7 @@
    "ceiling": 2.0,
    "sigma": 0.84,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6019,7 +6019,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6049,7 +6049,7 @@
    "prior": 0.28,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 62
+   "rank": 63
   },
   {
    "player_id": 1629011,
@@ -6063,7 +6063,7 @@
    "ceiling": 3.04,
    "sigma": 1.31,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6197,7 +6197,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 46
   },
   {
    "player_id": 1629162,
@@ -6251,7 +6251,7 @@
    "ceiling": 2.91,
    "sigma": 1.31,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6325,7 +6325,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 38
+   "rank": 39
   },
   {
    "player_id": 1630170,
@@ -6379,7 +6379,7 @@
    "ceiling": 2.87,
    "sigma": 1.31,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6453,7 +6453,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 50
   },
   {
    "player_id": 1630202,
@@ -6467,7 +6467,7 @@
    "ceiling": 0.96,
    "sigma": 0.42,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6497,7 +6497,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 49
+   "rank": 51
   },
   {
    "player_id": 1630540,
@@ -6531,7 +6531,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6561,7 +6561,7 @@
    "prior": 0.28,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 65
+   "rank": 66
   },
   {
    "player_id": 1630573,
@@ -6575,7 +6575,7 @@
    "ceiling": 1.04,
    "sigma": 0.5,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6605,7 +6605,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 43
   },
   {
    "player_id": 1630577,
@@ -6723,7 +6723,7 @@
    "ceiling": 2.61,
    "sigma": 1.31,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6847,7 +6847,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6877,7 +6877,7 @@
    "prior": 0.21,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 67
+   "rank": 68
   },
   {
    "player_id": 1631248,
@@ -6886,12 +6886,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "BLK",
-   "proj": 0.1,
+   "proj": 0.05,
    "floor": 0.0,
-   "ceiling": 0.99,
+   "ceiling": 0.94,
    "sigma": 0.4,
-   "minutes": 20,
-   "rot_rank": 5,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6921,7 +6921,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 58
   },
   {
    "player_id": 1641705,
@@ -7054,12 +7054,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "BLK",
-   "proj": 0.31,
-   "floor": 0.01,
-   "ceiling": 1.04,
-   "sigma": 0.52,
-   "minutes": 10,
-   "rot_rank": 10,
+   "proj": 0.61,
+   "floor": 0.0,
+   "ceiling": 1.92,
+   "sigma": 0.84,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -7086,10 +7086,10 @@
    "pos": "PF",
    "pos_usual": "SF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 36
+   "prior": 0.43,
+   "prior_at": "2026-10-19T02:07+00:00",
+   "move_reason": "minutes update",
+   "rank": 18
   },
   {
    "player_id": 1641842,
@@ -7103,7 +7103,7 @@
    "ceiling": 1.01,
    "sigma": 0.63,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -7133,7 +7133,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 34
+   "rank": 36
   },
   {
    "player_id": 1642264,
@@ -7267,7 +7267,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -7297,7 +7297,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1642449,
@@ -7311,7 +7311,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -7341,7 +7341,7 @@
    "prior": 0.36,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1642450,
@@ -7385,7 +7385,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 43
+   "rank": 44
   },
   {
    "player_id": 1642844,
@@ -7469,7 +7469,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 41
   },
   {
    "player_id": 1642868,
@@ -7503,7 +7503,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -7587,7 +7587,7 @@
    "ceiling": 1.07,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -7800,7 +7800,7 @@
    "ceiling": 5.72,
    "sigma": 4.32,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -7830,7 +7830,7 @@
    "prior": 3.6,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": 202331,
@@ -8202,7 +8202,7 @@
    "ceiling": 23.43,
    "sigma": 6.66,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": 11.5,
    "side": "over",
@@ -8520,7 +8520,7 @@
    "ceiling": 5.72,
    "sigma": 4.32,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -8550,7 +8550,7 @@
    "prior": 6.84,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 62
+   "rank": 63
   },
   {
    "player_id": 1629011,
@@ -8564,7 +8564,7 @@
    "ceiling": 13.94,
    "sigma": 4.94,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": 6.5,
    "side": "over",
@@ -8782,7 +8782,7 @@
    "game": "Oklahoma City vs San Antonio",
    "stat": "PTS",
    "line": 7.5,
-   "price": 2.05,
+   "price": 1.74,
    "book": "sportsbet",
    "price_over": 1.74,
    "price_under": 2.05,
@@ -8794,7 +8794,7 @@
    "gate_status": "passed",
    "us": {
     "line": 7.5,
-    "price": 2.04,
+    "price": 1.72,
     "book": "fanduel",
     "price_over": 1.72,
     "price_under": 2.04,
@@ -8815,7 +8815,7 @@
    "ceiling": 17.18,
    "sigma": 5.59,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": 9.5,
    "side": "over",
@@ -8863,7 +8863,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 33
+   "rank": 34
   },
   {
    "player_id": 1629750,
@@ -8979,7 +8979,7 @@
    "ceiling": 20.37,
    "sigma": 6.19,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 7.5,
    "side": "over",
@@ -9103,7 +9103,7 @@
    "ceiling": 24.49,
    "sigma": 6.91,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": 16.5,
    "side": "under",
@@ -9185,7 +9185,7 @@
    "ceiling": 5.72,
    "sigma": 4.32,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -9215,7 +9215,7 @@
    "prior": 5.85,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 65
+   "rank": 66
   },
   {
    "player_id": 1630573,
@@ -9229,7 +9229,7 @@
    "ceiling": 14.87,
    "sigma": 5.17,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": 6.5,
    "side": "over",
@@ -9277,7 +9277,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 40
   },
   {
    "player_id": 1630577,
@@ -9287,7 +9287,7 @@
    "game": "Oklahoma City vs San Antonio",
    "stat": "PTS",
    "line": 8.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -9296,16 +9296,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 8.5,
-    "price": 1.96,
+    "price": 1.78,
     "book": "fanduel",
     "price_over": 1.78,
     "price_under": 1.96,
     "l5_over": 0.6,
     "l10_over": 0.7,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -9431,7 +9431,7 @@
    "ceiling": 22.57,
    "sigma": 6.66,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": 16.5,
    "side": "under",
@@ -9582,7 +9582,7 @@
    "ceiling": 5.72,
    "sigma": 4.32,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -9612,7 +9612,7 @@
    "prior": 3.42,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 67
+   "rank": 68
   },
   {
    "player_id": 1631248,
@@ -9621,12 +9621,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PTS",
-   "proj": 7.18,
-   "floor": 0.73,
-   "ceiling": 13.83,
-   "sigma": 5.17,
-   "minutes": 20,
-   "rot_rank": 5,
+   "proj": 3.59,
+   "floor": 0.0,
+   "ceiling": 9.31,
+   "sigma": 4.32,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -9656,7 +9656,7 @@
    "prior": 5.84,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 42
+   "rank": 56
   },
   {
    "player_id": 1641705,
@@ -9747,7 +9747,7 @@
    "prior": 7.73,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 38
+   "rank": 39
   },
   {
    "player_id": 1641712,
@@ -9825,44 +9825,44 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PTS",
-   "proj": 2.34,
+   "proj": 4.67,
    "floor": 0.0,
-   "ceiling": 8.05,
+   "ceiling": 10.39,
    "sigma": 4.32,
-   "minutes": 10,
-   "rot_rank": 10,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 4.5,
-   "side": "under",
-   "price": 1.89,
+   "side": "over",
+   "price": 1.85,
    "book": "unibet",
-   "edge": 0.1931,
-   "p_us": 0.688,
-   "p_book": 0.495,
-   "tier": "A",
-   "gate_status": "passed",
+   "edge": 0.0135,
+   "p_us": 0.519,
+   "p_book": 0.505,
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.0,
-   "p_over": 0.312,
-   "p_under": 0.688,
+   "p_over": 0.519,
+   "p_under": 0.481,
    "fair_over": 0.505,
    "fair_under": 0.495,
    "price_over": 1.85,
    "price_under": 1.89,
    "us": {
     "line": 4.5,
-    "side": "under",
-    "price": 1.88,
+    "side": "over",
+    "price": 1.83,
     "book": "betrivers",
-    "edge": 0.1945,
-    "p_us": 0.688,
-    "p_book": 0.493,
-    "tier": "A",
-    "gate_status": "passed",
+    "edge": 0.0121,
+    "p_us": 0.519,
+    "p_book": 0.507,
+    "tier": null,
+    "gate_status": "failed:edge_below_tier",
     "l10_over": 0.4,
     "l5_over": 0.0,
-    "p_over": 0.312,
-    "p_under": 0.688,
+    "p_over": 0.519,
+    "p_under": 0.481,
     "fair_over": 0.507,
     "fair_under": 0.493,
     "price_over": 1.83,
@@ -9878,7 +9878,7 @@
    "prior": 3.4,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 57
+   "rank": 49
   },
   {
    "player_id": 1641842,
@@ -9892,7 +9892,7 @@
    "ceiling": 14.01,
    "sigma": 5.17,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -9922,7 +9922,7 @@
    "prior": 4.16,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 41
+   "rank": 42
   },
   {
    "player_id": 1642264,
@@ -10083,7 +10083,7 @@
    "ceiling": 5.72,
    "sigma": 4.32,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -10113,7 +10113,7 @@
    "prior": 2.2,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1642449,
@@ -10127,7 +10127,7 @@
    "ceiling": 5.72,
    "sigma": 4.32,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -10157,7 +10157,7 @@
    "prior": 4.47,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1642450,
@@ -10219,7 +10219,7 @@
    "prior": 11.79,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 37
+   "rank": 38
   },
   {
    "player_id": 1642844,
@@ -10321,7 +10321,7 @@
    "prior": 1.86,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 56
+   "rank": 58
   },
   {
    "player_id": 1642868,
@@ -10355,7 +10355,7 @@
    "ceiling": 5.72,
    "sigma": 4.32,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -10439,7 +10439,7 @@
    "ceiling": 6.86,
    "sigma": 4.32,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -10652,7 +10652,7 @@
    "ceiling": 2.21,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -10682,7 +10682,7 @@
    "prior": 1.16,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": 202331,
@@ -11045,7 +11045,7 @@
    "ceiling": 10.0,
    "sigma": 2.8,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": 5.5,
    "side": "over",
@@ -11213,7 +11213,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 29
+   "rank": 31
   },
   {
    "player_id": 1628404,
@@ -11363,7 +11363,7 @@
    "ceiling": 2.21,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
@@ -11393,7 +11393,7 @@
    "prior": 2.5,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 62
+   "rank": 63
   },
   {
    "player_id": 1629011,
@@ -11407,7 +11407,7 @@
    "ceiling": 14.33,
    "sigma": 3.58,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": 8.5,
    "side": "over",
@@ -11577,7 +11577,7 @@
    "prior": 2.1,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 46
+   "rank": 47
   },
   {
    "player_id": 1629162,
@@ -11607,7 +11607,7 @@
    "game": "Oklahoma City vs San Antonio",
    "stat": "REB",
    "line": 3.5,
-   "price": 2.08,
+   "price": 1.72,
    "book": "sportsbet",
    "price_over": 1.72,
    "price_under": 2.08,
@@ -11616,16 +11616,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 3.5,
-    "price": 2.06,
+    "price": 1.71,
     "book": "fanduel",
     "price_over": 1.71,
     "price_under": 2.06,
     "l5_over": 0.6,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -11636,11 +11636,11 @@
    "game": "Boston vs Detroit",
    "stat": "REB",
    "proj": 7.74,
-   "floor": 3.97,
-   "ceiling": 11.81,
-   "sigma": 3.18,
+   "floor": 3.15,
+   "ceiling": 12.33,
+   "sigma": 3.58,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": 7.5,
    "side": "over",
@@ -11732,7 +11732,7 @@
    "prior": 1.88,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 49
+   "rank": 50
   },
   {
    "player_id": 1630170,
@@ -11804,7 +11804,7 @@
    "ceiling": 9.85,
    "sigma": 2.8,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 4.5,
    "side": "over",
@@ -11896,7 +11896,7 @@
    "prior": 1.13,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 44
+   "rank": 45
   },
   {
    "player_id": 1630202,
@@ -11910,7 +11910,7 @@
    "ceiling": 5.92,
    "sigma": 2.14,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": 3.5,
    "side": "under",
@@ -11958,7 +11958,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 43
   },
   {
    "player_id": 1630540,
@@ -11992,7 +11992,7 @@
    "ceiling": 2.21,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -12022,7 +12022,7 @@
    "prior": 2.46,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 65
+   "rank": 66
   },
   {
    "player_id": 1630573,
@@ -12036,7 +12036,7 @@
    "ceiling": 6.09,
    "sigma": 2.14,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": 2.5,
    "side": "over",
@@ -12066,7 +12066,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 40
   },
   {
    "player_id": 1630577,
@@ -12076,7 +12076,7 @@
    "game": "Oklahoma City vs San Antonio",
    "stat": "REB",
    "line": 4.5,
-   "price": 2.05,
+   "price": 1.74,
    "book": "sportsbet",
    "price_over": 1.74,
    "price_under": 2.05,
@@ -12088,13 +12088,13 @@
    "gate_status": "passed",
    "us": {
     "line": 4.5,
-    "price": 1.96,
+    "price": 1.79,
     "book": "draftkings",
     "price_over": 1.79,
     "price_under": 1.96,
     "l5_over": 0.6,
     "l10_over": 0.7,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -12157,7 +12157,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 22
+   "rank": 23
   },
   {
    "player_id": 1630631,
@@ -12220,7 +12220,7 @@
    "ceiling": 14.14,
    "sigma": 3.58,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": 9.5,
    "side": "under",
@@ -12371,7 +12371,7 @@
    "ceiling": 2.21,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -12401,7 +12401,7 @@
    "prior": 1.33,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 67
+   "rank": 68
   },
   {
    "player_id": 1631248,
@@ -12410,26 +12410,26 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "REB",
-   "proj": 3.55,
-   "floor": 1.11,
-   "ceiling": 6.27,
-   "sigma": 2.14,
-   "minutes": 20,
-   "rot_rank": 5,
+   "proj": 1.78,
+   "floor": 0.0,
+   "ceiling": 3.99,
+   "sigma": 1.67,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": 2.5,
-   "side": "over",
-   "price": 1.95,
+   "side": "under",
+   "price": 1.8,
    "book": "tab",
-   "edge": 0.178,
-   "p_us": 0.658,
-   "p_book": 0.48,
+   "edge": 0.214,
+   "p_us": 0.734,
+   "p_book": 0.52,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.8,
-   "p_over": 0.658,
-   "p_under": 0.342,
+   "p_over": 0.266,
+   "p_under": 0.734,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -12445,7 +12445,7 @@
    "prior": 2.89,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 36
+   "rank": 54
   },
   {
    "player_id": 1641705,
@@ -12614,44 +12614,44 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "REB",
-   "proj": 2.09,
-   "floor": 0.31,
-   "ceiling": 4.3,
-   "sigma": 1.67,
-   "minutes": 10,
-   "rot_rank": 10,
+   "proj": 4.17,
+   "floor": 1.01,
+   "ceiling": 7.65,
+   "sigma": 2.62,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 3.5,
-   "side": "under",
-   "price": 1.6,
+   "side": "over",
+   "price": 2.2,
    "book": "sportsbet",
-   "edge": 0.2514,
-   "p_us": 0.83,
-   "p_book": 0.579,
+   "edge": 0.1513,
+   "p_us": 0.572,
+   "p_book": 0.421,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.4,
-   "p_over": 0.17,
-   "p_under": 0.83,
+   "p_over": 0.572,
+   "p_under": 0.428,
    "fair_over": 0.421,
    "fair_under": 0.579,
    "price_over": 2.2,
    "price_under": 1.6,
    "us": {
     "line": 3.5,
-    "side": "under",
-    "price": 1.62,
+    "side": "over",
+    "price": 2.26,
     "book": "fanduel",
-    "edge": 0.2478,
-    "p_us": 0.83,
-    "p_book": 0.582,
+    "edge": 0.1548,
+    "p_us": 0.572,
+    "p_book": 0.418,
     "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.3,
     "l5_over": 0.4,
-    "p_over": 0.17,
-    "p_under": 0.83,
+    "p_over": 0.572,
+    "p_under": 0.428,
     "fair_over": 0.418,
     "fair_under": 0.582,
     "price_over": 2.26,
@@ -12667,7 +12667,7 @@
    "prior": 3.01,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 52
+   "rank": 26
   },
   {
    "player_id": 1641842,
@@ -12681,7 +12681,7 @@
    "ceiling": 6.84,
    "sigma": 2.31,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": 2.5,
    "side": "over",
@@ -12711,7 +12711,7 @@
    "prior": 2.1,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 33
+   "rank": 35
   },
   {
    "player_id": 1642264,
@@ -12872,7 +12872,7 @@
    "ceiling": 2.21,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -12902,7 +12902,7 @@
    "prior": 0.68,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1642449,
@@ -12916,7 +12916,7 @@
    "ceiling": 2.21,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -12946,7 +12946,7 @@
    "prior": 3.68,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1642450,
@@ -13008,7 +13008,7 @@
    "prior": 3.14,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 48
+   "rank": 49
   },
   {
    "player_id": 1642844,
@@ -13110,7 +13110,7 @@
    "prior": 1.62,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 45
+   "rank": 46
   },
   {
    "player_id": 1642868,
@@ -13144,7 +13144,7 @@
    "ceiling": 2.21,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -13228,7 +13228,7 @@
    "ceiling": 2.65,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -13432,7 +13432,7 @@
    "ceiling": 0.8,
    "sigma": 0.75,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -13462,7 +13462,7 @@
    "prior": 0.56,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": 202331,
@@ -13744,7 +13744,7 @@
    "ceiling": 2.0,
    "sigma": 0.98,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -13774,7 +13774,7 @@
    "prior": 0.59,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 29
+   "rank": 30
   },
   {
    "player_id": 1628384,
@@ -13972,7 +13972,7 @@
    "ceiling": 0.8,
    "sigma": 0.75,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14002,7 +14002,7 @@
    "prior": 0.73,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 62
+   "rank": 63
   },
   {
    "player_id": 1629011,
@@ -14016,7 +14016,7 @@
    "ceiling": 2.89,
    "sigma": 1.17,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14150,7 +14150,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 36
   },
   {
    "player_id": 1629162,
@@ -14204,7 +14204,7 @@
    "ceiling": 2.03,
    "sigma": 0.88,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14234,7 +14234,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 38
   },
   {
    "player_id": 1629750,
@@ -14278,7 +14278,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 33
+   "rank": 34
   },
   {
    "player_id": 1630170,
@@ -14332,7 +14332,7 @@
    "ceiling": 2.08,
    "sigma": 0.97,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14406,7 +14406,7 @@
    "prior": 0.3,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 38
+   "rank": 39
   },
   {
    "player_id": 1630202,
@@ -14420,7 +14420,7 @@
    "ceiling": 1.97,
    "sigma": 0.88,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14484,7 +14484,7 @@
    "ceiling": 0.8,
    "sigma": 0.75,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14514,7 +14514,7 @@
    "prior": 0.29,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 65
+   "rank": 66
   },
   {
    "player_id": 1630573,
@@ -14528,7 +14528,7 @@
    "ceiling": 1.14,
    "sigma": 0.75,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14558,7 +14558,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 53
   },
   {
    "player_id": 1630577,
@@ -14676,7 +14676,7 @@
    "ceiling": 1.98,
    "sigma": 0.88,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14706,7 +14706,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 36
+   "rank": 37
   },
   {
    "player_id": 1631114,
@@ -14800,7 +14800,7 @@
    "ceiling": 0.8,
    "sigma": 0.75,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14830,7 +14830,7 @@
    "prior": 0.28,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 67
+   "rank": 68
   },
   {
    "player_id": 1631248,
@@ -14839,12 +14839,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "STL",
-   "proj": 0.63,
+   "proj": 0.31,
    "floor": 0.0,
-   "ceiling": 2.0,
-   "sigma": 0.88,
-   "minutes": 20,
-   "rot_rank": 5,
+   "ceiling": 1.11,
+   "sigma": 0.75,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14871,10 +14871,10 @@
    "pos": "SG",
    "pos_usual": "SG",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 39
+   "prior": 0.56,
+   "prior_at": "2026-10-19T02:07+00:00",
+   "move_reason": "minutes update",
+   "rank": 55
   },
   {
    "player_id": 1641705,
@@ -15007,12 +15007,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "STL",
-   "proj": 0.4,
-   "floor": 0.0,
-   "ceiling": 1.2,
-   "sigma": 0.75,
-   "minutes": 10,
-   "rot_rank": 10,
+   "proj": 0.81,
+   "floor": 0.01,
+   "ceiling": 2.04,
+   "sigma": 0.93,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -15042,7 +15042,7 @@
    "prior": 0.58,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 50
+   "rank": 32
   },
   {
    "player_id": 1641842,
@@ -15056,7 +15056,7 @@
    "ceiling": 2.06,
    "sigma": 0.98,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -15086,7 +15086,7 @@
    "prior": 0.51,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 28
+   "rank": 29
   },
   {
    "player_id": 1642264,
@@ -15220,7 +15220,7 @@
    "ceiling": 0.8,
    "sigma": 0.75,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -15250,7 +15250,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1642449,
@@ -15264,7 +15264,7 @@
    "ceiling": 0.8,
    "sigma": 0.75,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -15294,7 +15294,7 @@
    "prior": 0.18,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1642450,
@@ -15422,7 +15422,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 49
   },
   {
    "player_id": 1642868,
@@ -15456,7 +15456,7 @@
    "ceiling": 0.8,
    "sigma": 0.75,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -15540,7 +15540,7 @@
    "ceiling": 0.96,
    "sigma": 0.75,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -15744,7 +15744,7 @@
    "ceiling": 1.4,
    "sigma": 0.77,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -15774,7 +15774,7 @@
    "prior": 0.49,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": 202331,
@@ -16056,7 +16056,7 @@
    "ceiling": 2.98,
    "sigma": 1.29,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16284,7 +16284,7 @@
    "ceiling": 1.4,
    "sigma": 0.77,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16314,7 +16314,7 @@
    "prior": 0.78,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 62
+   "rank": 63
   },
   {
    "player_id": 1629011,
@@ -16328,7 +16328,7 @@
    "ceiling": 2.05,
    "sigma": 0.98,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16358,7 +16358,7 @@
    "prior": 0.49,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 35
+   "rank": 36
   },
   {
    "player_id": 1629013,
@@ -16462,7 +16462,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 41
   },
   {
    "player_id": 1629162,
@@ -16516,7 +16516,7 @@
    "ceiling": 2.01,
    "sigma": 1.03,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16590,7 +16590,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 58
   },
   {
    "player_id": 1630170,
@@ -16644,7 +16644,7 @@
    "ceiling": 2.88,
    "sigma": 1.14,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16732,7 +16732,7 @@
    "ceiling": 3.0,
    "sigma": 1.14,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16796,7 +16796,7 @@
    "ceiling": 1.4,
    "sigma": 0.77,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16826,7 +16826,7 @@
    "prior": 0.52,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 65
+   "rank": 66
   },
   {
    "player_id": 1630573,
@@ -16840,7 +16840,7 @@
    "ceiling": 1.75,
    "sigma": 0.77,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16870,7 +16870,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 55
+   "rank": 56
   },
   {
    "player_id": 1630577,
@@ -16988,7 +16988,7 @@
    "ceiling": 4.01,
    "sigma": 1.41,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -17112,7 +17112,7 @@
    "ceiling": 1.4,
    "sigma": 0.77,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -17142,7 +17142,7 @@
    "prior": 0.24,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "minutes update",
-   "rank": 67
+   "rank": 68
   },
   {
    "player_id": 1631248,
@@ -17151,12 +17151,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "TOV",
-   "proj": 0.68,
+   "proj": 0.34,
    "floor": 0.0,
-   "ceiling": 1.94,
-   "sigma": 0.88,
-   "minutes": 20,
-   "rot_rank": 5,
+   "ceiling": 1.74,
+   "sigma": 0.77,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -17183,10 +17183,10 @@
    "pos": "SG",
    "pos_usual": "SG",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 45
+   "prior": 0.58,
+   "prior_at": "2026-10-19T02:07+00:00",
+   "move_reason": "minutes update",
+   "rank": 57
   },
   {
    "player_id": 1641705,
@@ -17319,12 +17319,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "TOV",
-   "proj": 0.29,
+   "proj": 0.57,
    "floor": 0.0,
-   "ceiling": 1.69,
+   "ceiling": 1.97,
    "sigma": 0.77,
-   "minutes": 10,
-   "rot_rank": 10,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -17351,10 +17351,10 @@
    "pos": "PF",
    "pos_usual": "SF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 58
+   "prior": 0.36,
+   "prior_at": "2026-10-19T02:07+00:00",
+   "move_reason": "minutes update",
+   "rank": 50
   },
   {
    "player_id": 1641842,
@@ -17368,7 +17368,7 @@
    "ceiling": 2.02,
    "sigma": 1.03,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -17532,7 +17532,7 @@
    "ceiling": 1.4,
    "sigma": 0.77,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -17562,7 +17562,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1642449,
@@ -17576,7 +17576,7 @@
    "ceiling": 1.4,
    "sigma": 0.77,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -17606,7 +17606,7 @@
    "prior": 0.56,
    "prior_at": "2026-10-19T02:07+00:00",
    "move_reason": "Prince, Harkless, Jones out",
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1642450,
@@ -17734,7 +17734,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 53
+   "rank": 54
   },
   {
    "player_id": 1642868,
@@ -17768,7 +17768,7 @@
    "ceiling": 1.4,
    "sigma": 0.77,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -17852,7 +17852,7 @@
    "ceiling": 1.68,
    "sigma": 0.77,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -18036,7 +18036,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -18066,7 +18066,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": -787,
@@ -18189,7 +18189,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -18219,7 +18219,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 64
   },
   {
    "player_id": 202331,
@@ -18573,7 +18573,7 @@
    "ceiling": 32.51,
    "sigma": 8.18,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": 18.5,
    "side": "over",
@@ -18891,7 +18891,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": 9.5,
    "side": "under",
@@ -18921,7 +18921,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 67
   },
   {
    "player_id": 1629011,
@@ -18935,7 +18935,7 @@
    "ceiling": 27.92,
    "sigma": 7.99,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -19087,7 +19087,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 33
+   "rank": 34
   },
   {
    "player_id": 1629162,
@@ -19141,7 +19141,7 @@
    "ceiling": 29.31,
    "sigma": 7.86,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": 17.5,
    "side": "over",
@@ -19215,7 +19215,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 55
   },
   {
    "player_id": 1630164,
@@ -19307,7 +19307,7 @@
    "ceiling": 30.23,
    "sigma": 7.86,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 14.5,
    "side": "over",
@@ -19399,7 +19399,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 36
   },
   {
    "player_id": 1630202,
@@ -19413,7 +19413,7 @@
    "ceiling": 33.68,
    "sigma": 8.18,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": 23.5,
    "side": "under",
@@ -19495,7 +19495,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -19525,7 +19525,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 71
   },
   {
    "player_id": 1630573,
@@ -19539,7 +19539,7 @@
    "ceiling": 21.54,
    "sigma": 6.89,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": 10.5,
    "side": "over",
@@ -19569,7 +19569,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 42
   },
   {
    "player_id": 1630577,
@@ -19714,7 +19714,7 @@
    "ceiling": 37.01,
    "sigma": 8.85,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": 28.5,
    "side": "under",
@@ -19865,7 +19865,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -19895,7 +19895,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1631248,
@@ -19904,26 +19904,26 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PRA",
-   "proj": 12.3,
-   "floor": 3.68,
-   "ceiling": 21.08,
-   "sigma": 7.07,
-   "minutes": 20,
-   "rot_rank": 5,
+   "proj": 6.15,
+   "floor": 0.0,
+   "ceiling": 14.86,
+   "sigma": 6.33,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": 9.5,
-   "side": "over",
-   "price": 1.95,
+   "side": "under",
+   "price": 1.8,
    "book": "tab",
-   "edge": 0.1813,
-   "p_us": 0.661,
-   "p_book": 0.48,
+   "edge": 0.1689,
+   "p_us": 0.689,
+   "p_book": 0.52,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.661,
-   "p_under": 0.339,
+   "p_over": 0.311,
+   "p_under": 0.689,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -19939,7 +19939,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 57
   },
   {
    "player_id": 1641705,
@@ -20128,26 +20128,26 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PRA",
-   "proj": 5.01,
-   "floor": 0.0,
-   "ceiling": 13.72,
+   "proj": 10.01,
+   "floor": 2.29,
+   "ceiling": 18.72,
    "sigma": 6.33,
-   "minutes": 10,
-   "rot_rank": 10,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 9.5,
-   "side": "under",
-   "price": 1.9,
+   "side": "over",
+   "price": 1.85,
    "book": "tab",
-   "edge": 0.2524,
-   "p_us": 0.746,
-   "p_book": 0.493,
-   "tier": "A",
-   "gate_status": "passed",
+   "edge": 0.0271,
+   "p_us": 0.534,
+   "p_book": 0.507,
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.3,
    "l5_over": 0.2,
-   "p_over": 0.254,
-   "p_under": 0.746,
+   "p_over": 0.534,
+   "p_under": 0.466,
    "fair_over": 0.507,
    "fair_under": 0.493,
    "price_over": 1.85,
@@ -20163,7 +20163,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 47
   },
   {
    "player_id": 1641842,
@@ -20177,7 +20177,7 @@
    "ceiling": 20.73,
    "sigma": 7.07,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": 9.5,
    "side": "over",
@@ -20388,7 +20388,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20418,7 +20418,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 79
   },
   {
    "player_id": 1642449,
@@ -20432,7 +20432,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20462,7 +20462,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 80
   },
   {
    "player_id": 1642450,
@@ -20524,7 +20524,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 36
+   "rank": 37
   },
   {
    "player_id": 1642844,
@@ -20626,7 +20626,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 58
   },
   {
    "player_id": 1642868,
@@ -20660,7 +20660,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20744,7 +20744,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -20774,7 +20774,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": -787,
@@ -20897,7 +20897,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20927,7 +20927,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 64
   },
   {
    "player_id": 202331,
@@ -21290,7 +21290,7 @@
    "ceiling": 31.75,
    "sigma": 8.13,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": 16.5,
    "side": "over",
@@ -21608,7 +21608,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -21638,7 +21638,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 67
   },
   {
    "player_id": 1629011,
@@ -21652,7 +21652,7 @@
    "ceiling": 26.25,
    "sigma": 7.55,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": 14.5,
    "side": "over",
@@ -21822,7 +21822,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 32
+   "rank": 33
   },
   {
    "player_id": 1629162,
@@ -21852,7 +21852,7 @@
    "game": "Oklahoma City vs San Antonio",
    "stat": "PR",
    "line": 12.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -21864,7 +21864,7 @@
    "gate_status": "passed",
    "us": {
     "line": 12.5,
-    "price": 1.77,
+    "price": 1.98,
     "book": "fanduel",
     "price_over": 1.98,
     "price_under": 1.77,
@@ -21885,7 +21885,7 @@
    "ceiling": 26.89,
    "sigma": 7.55,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": 16.5,
    "side": "over",
@@ -22069,7 +22069,7 @@
    "ceiling": 28.19,
    "sigma": 7.52,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 13.5,
    "side": "over",
@@ -22161,7 +22161,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 36
   },
   {
    "player_id": 1630202,
@@ -22175,7 +22175,7 @@
    "ceiling": 28.64,
    "sigma": 7.52,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": 19.5,
    "side": "under",
@@ -22257,7 +22257,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -22287,7 +22287,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 71
   },
   {
    "player_id": 1630573,
@@ -22301,7 +22301,7 @@
    "ceiling": 19.54,
    "sigma": 6.4,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -22331,7 +22331,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 38
+   "rank": 39
   },
   {
    "player_id": 1630577,
@@ -22341,7 +22341,7 @@
    "game": "Oklahoma City vs San Antonio",
    "stat": "PR",
    "line": 13.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -22350,16 +22350,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 13.5,
-    "price": 1.96,
+    "price": 1.78,
     "book": "fanduel",
     "price_over": 1.78,
     "price_under": 1.96,
     "l5_over": 0.4,
     "l10_over": 0.6,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -22370,9 +22370,9 @@
    "game": "Boston vs Detroit",
    "stat": "PR",
    "proj": 27.51,
-   "floor": 17.51,
-   "ceiling": 38.23,
-   "sigma": 8.4,
+   "floor": 15.85,
+   "ceiling": 38.43,
+   "sigma": 9.18,
    "minutes": 34,
    "rot_rank": 1,
    "minutes_source": "model",
@@ -22485,7 +22485,7 @@
    "ceiling": 34.16,
    "sigma": 8.13,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": 25.5,
    "side": "under",
@@ -22636,7 +22636,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -22666,7 +22666,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1631248,
@@ -22675,12 +22675,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PR",
-   "proj": 10.74,
-   "floor": 3.01,
-   "ceiling": 19.08,
-   "sigma": 6.24,
-   "minutes": 20,
-   "rot_rank": 5,
+   "proj": 5.37,
+   "floor": 0.0,
+   "ceiling": 13.48,
+   "sigma": 5.79,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -22710,7 +22710,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 43
+   "rank": 57
   },
   {
    "player_id": 1641705,
@@ -22801,7 +22801,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 31
+   "rank": 32
   },
   {
    "player_id": 1641712,
@@ -22899,44 +22899,44 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PR",
-   "proj": 4.42,
-   "floor": 0.0,
-   "ceiling": 12.54,
+   "proj": 8.85,
+   "floor": 2.08,
+   "ceiling": 16.96,
    "sigma": 5.79,
-   "minutes": 10,
-   "rot_rank": 10,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 7.5,
-   "side": "under",
-   "price": 1.92,
+   "side": "over",
+   "price": 1.84,
    "book": "sportsbet",
-   "edge": 0.1971,
-   "p_us": 0.686,
-   "p_book": 0.489,
+   "edge": 0.0901,
+   "p_us": 0.601,
+   "p_book": 0.511,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.2,
-   "p_over": 0.314,
-   "p_under": 0.686,
+   "p_over": 0.601,
+   "p_under": 0.399,
    "fair_over": 0.511,
    "fair_under": 0.489,
    "price_over": 1.84,
    "price_under": 1.92,
    "us": {
     "line": 7.5,
-    "side": "under",
-    "price": 1.93,
+    "side": "over",
+    "price": 1.85,
     "book": "fanduel",
-    "edge": 0.197,
-    "p_us": 0.686,
-    "p_book": 0.489,
+    "edge": 0.0901,
+    "p_us": 0.601,
+    "p_book": 0.511,
     "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.3,
     "l5_over": 0.2,
-    "p_over": 0.314,
-    "p_under": 0.686,
+    "p_over": 0.601,
+    "p_under": 0.399,
     "fair_over": 0.511,
     "fair_under": 0.489,
     "price_over": 1.85,
@@ -22952,7 +22952,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 47
   },
   {
    "player_id": 1641842,
@@ -22966,7 +22966,7 @@
    "ceiling": 19.03,
    "sigma": 6.4,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -22996,7 +22996,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 41
   },
   {
    "player_id": 1642264,
@@ -23177,7 +23177,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -23207,7 +23207,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 79
   },
   {
    "player_id": 1642449,
@@ -23221,7 +23221,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -23251,7 +23251,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 80
   },
   {
    "player_id": 1642450,
@@ -23313,7 +23313,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 43
   },
   {
    "player_id": 1642844,
@@ -23415,7 +23415,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 58
   },
   {
    "player_id": 1642868,
@@ -23449,7 +23449,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -23533,7 +23533,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -23563,7 +23563,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": -787,
@@ -23686,7 +23686,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -23716,7 +23716,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 64
   },
   {
    "player_id": 202331,
@@ -24070,7 +24070,7 @@
    "ceiling": 24.98,
    "sigma": 6.92,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": 13.5,
    "side": "over",
@@ -24388,7 +24388,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -24418,7 +24418,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 67
   },
   {
    "player_id": 1629011,
@@ -24432,7 +24432,7 @@
    "ceiling": 14.9,
    "sigma": 5.32,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -24638,7 +24638,7 @@
    "ceiling": 19.52,
    "sigma": 6.24,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -24668,7 +24668,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 36
+   "rank": 37
   },
   {
    "player_id": 1629750,
@@ -24804,7 +24804,7 @@
    "ceiling": 22.88,
    "sigma": 6.6,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": 9.5,
    "side": "over",
@@ -24910,7 +24910,7 @@
    "ceiling": 30.25,
    "sigma": 7.48,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": 20.5,
    "side": "under",
@@ -24992,7 +24992,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -25022,7 +25022,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 71
   },
   {
    "player_id": 1630573,
@@ -25036,7 +25036,7 @@
    "ceiling": 17.05,
    "sigma": 5.95,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -25066,7 +25066,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 40
   },
   {
    "player_id": 1630577,
@@ -25211,7 +25211,7 @@
    "ceiling": 25.13,
    "sigma": 6.92,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": 18.5,
    "side": "under",
@@ -25362,7 +25362,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -25392,7 +25392,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1631248,
@@ -25401,12 +25401,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PA",
-   "proj": 8.75,
-   "floor": 2.06,
-   "ceiling": 15.72,
-   "sigma": 5.32,
-   "minutes": 20,
-   "rot_rank": 5,
+   "proj": 4.37,
+   "floor": 0.0,
+   "ceiling": 11.16,
+   "sigma": 4.95,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -25436,7 +25436,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 55
   },
   {
    "player_id": 1641705,
@@ -25625,12 +25625,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "PA",
-   "proj": 2.92,
+   "proj": 5.84,
    "floor": 0.0,
-   "ceiling": 9.7,
+   "ceiling": 12.62,
    "sigma": 4.95,
-   "minutes": 10,
-   "rot_rank": 10,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -25660,7 +25660,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 50
   },
   {
    "player_id": 1641842,
@@ -25674,7 +25674,7 @@
    "ceiling": 15.21,
    "sigma": 5.32,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -25885,7 +25885,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -25915,7 +25915,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 79
   },
   {
    "player_id": 1642449,
@@ -25929,7 +25929,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -25959,7 +25959,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 80
   },
   {
    "player_id": 1642450,
@@ -26123,7 +26123,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 58
   },
   {
    "player_id": 1642868,
@@ -26157,7 +26157,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -26241,7 +26241,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "fallback",
    "line": null,
    "side": null,
@@ -26271,7 +26271,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 59
+   "rank": 60
   },
   {
    "player_id": -787,
@@ -26394,7 +26394,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -26424,7 +26424,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 64
   },
   {
    "player_id": 202331,
@@ -26778,7 +26778,7 @@
    "ceiling": 12.23,
    "sigma": 3.46,
    "minutes": 29,
-   "rot_rank": 2,
+   "rot_rank": 3,
    "minutes_source": "model",
    "line": 6.5,
    "side": "over",
@@ -27096,7 +27096,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27126,7 +27126,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 67
   },
   {
    "player_id": 1629011,
@@ -27140,7 +27140,7 @@
    "ceiling": 15.57,
    "sigma": 3.87,
    "minutes": 24,
-   "rot_rank": 4,
+   "rot_rank": 6,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27292,7 +27292,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 41
   },
   {
    "player_id": 1629162,
@@ -27346,7 +27346,7 @@
    "ceiling": 14.19,
    "sigma": 3.82,
    "minutes": 24,
-   "rot_rank": 7,
+   "rot_rank": 5,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27420,7 +27420,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 55
   },
   {
    "player_id": 1630164,
@@ -27512,7 +27512,7 @@
    "ceiling": 12.41,
    "sigma": 3.46,
    "minutes": 19,
-   "rot_rank": 9,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27604,7 +27604,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 47
   },
   {
    "player_id": 1630202,
@@ -27618,7 +27618,7 @@
    "ceiling": 12.25,
    "sigma": 3.46,
    "minutes": 29,
-   "rot_rank": 6,
+   "rot_rank": 4,
    "minutes_source": "model",
    "line": 7.5,
    "side": "under",
@@ -27700,7 +27700,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27730,7 +27730,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 71
   },
   {
    "player_id": 1630573,
@@ -27744,7 +27744,7 @@
    "ceiling": 7.94,
    "sigma": 2.69,
    "minutes": 22,
-   "rot_rank": 8,
+   "rot_rank": 7,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27774,7 +27774,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 43
   },
   {
    "player_id": 1630577,
@@ -27919,7 +27919,7 @@
    "ceiling": 16.8,
    "sigma": 3.87,
    "minutes": 29,
-   "rot_rank": 3,
+   "rot_rank": 2,
    "minutes_source": "model",
    "line": 11.5,
    "side": "over",
@@ -28070,7 +28070,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28100,7 +28100,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 1631248,
@@ -28109,12 +28109,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "RA",
-   "proj": 5.11,
-   "floor": 1.67,
-   "ceiling": 9.06,
-   "sigma": 3.02,
-   "minutes": 20,
-   "rot_rank": 5,
+   "proj": 2.56,
+   "floor": 0.0,
+   "ceiling": 5.86,
+   "sigma": 2.46,
+   "minutes": 10,
+   "rot_rank": 10,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28144,7 +28144,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 57
   },
   {
    "player_id": 1641705,
@@ -28333,12 +28333,12 @@
    "opp": "Detroit",
    "game": "Boston vs Detroit",
    "stat": "RA",
-   "proj": 2.67,
-   "floor": 0.0,
-   "ceiling": 5.97,
-   "sigma": 2.46,
-   "minutes": 10,
-   "rot_rank": 10,
+   "proj": 5.34,
+   "floor": 1.89,
+   "ceiling": 9.28,
+   "sigma": 3.02,
+   "minutes": 20,
+   "rot_rank": 8,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28368,7 +28368,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 55
+   "rank": 36
   },
   {
    "player_id": 1641842,
@@ -28382,7 +28382,7 @@
    "ceiling": 8.03,
    "sigma": 2.69,
    "minutes": 19,
-   "rot_rank": 8,
+   "rot_rank": 9,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28412,7 +28412,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 42
   },
   {
    "player_id": 1642264,
@@ -28593,7 +28593,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28623,7 +28623,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 79
   },
   {
    "player_id": 1642449,
@@ -28637,7 +28637,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28667,7 +28667,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 80
   },
   {
    "player_id": 1642450,
@@ -28831,7 +28831,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 53
+   "rank": 54
   },
   {
    "player_id": 1642868,
@@ -28865,7 +28865,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 17,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -29058,6 +29058,10 @@
   },
   {
    "run_at": "2026-10-20T22:48+00:00",
+   "trigger": "manual"
+  },
+  {
+   "run_at": "2026-10-20T23:07+00:00",
    "trigger": "manual"
   }
  ]
