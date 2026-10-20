@@ -1665,12 +1665,12 @@ async function initTip() {
   const tb = $("#tips tbody");
   tb.innerHTML = tipsShown.length ? tipsShown.map(r => `<tr class="${r.trial ? "trial" : ""}">
       <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}</td>
-      <td class="s">${r.player}</td>
+      <td class="s">${r.player}${r.withdrawn_reason ? `<div class="sm dim">${esc(r.withdrawn_reason)}</div>` : ""}</td>
       <td class="s">${r.market_label} ${sideGlyph(r.side)} ${fmt(r.line)}</td>
       <td class="num opt">${odds(r.price)}</td>
       <td class="num opt">${r.closing_price != null ? (r.closing_line !== r.line ? fmt(r.closing_line) + " @ " : "") + odds(r.closing_price) : "—"}</td>
       <td class="num ${r.clv > 0 ? "pos" : r.clv < 0 ? "neg" : ""}">${pct(r.clv)}</td>
-      <td class="num">${stamp(r.result)}${r.actual != null && r.result ? `<div class="sm dim">${fmt(r.actual)}</div>` : ""}</td>
+      <td class="num">${r.withdrawn_reason ? `<span class="stamp flat">Withdrawn</span>` : stamp(r.result)}${r.actual != null && r.result ? `<div class="sm dim">${fmt(r.actual)}</div>` : ""}</td>
     </tr>`).join("")
     : `<tr><td colspan="7" class="empty">No Drops yet. The first goes up the
        night before the first preseason games.</td></tr>`;
