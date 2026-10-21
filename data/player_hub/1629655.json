@@ -2,8 +2,30 @@
  "player_id": 1629655,
  "player": "Daniel Gafford",
  "team": "Dallas",
- "opp": "Atlanta",
- "lines": {},
+ "opp": "Houston",
+ "lines": {
+  "PR": {
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.76,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 1.72,
+   "price_under": 2.08
+  }
+ },
  "recent_games": [
   {
    "date": "2026-04-05",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

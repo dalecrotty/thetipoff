@@ -2,8 +2,37 @@
  "player_id": 201572,
  "player": "Brook Lopez",
  "team": "LA Clippers",
- "opp": "Denver",
- "lines": {},
+ "opp": "Sacramento",
+ "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "PTS": {
+   "line": 10.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-04-15",
@@ -12,8 +41,8 @@
    "game": "2026-04-15_golden-state_vs_la-clippers",
    "starter": true,
    "rest": "2",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Middle 10",
    "min": 37.2,
    "PTS": 17.0,
    "REB": 5.0,
@@ -21,7 +50,13 @@
    "3PM": 1.0,
    "STL": 2.0,
    "BLK": 1.0,
-   "TOV": 0.0
+   "TOV": 0.0,
+   "FGM": 7.0,
+   "FGA": 16.0,
+   "3PA": 6.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "play_in"
   },
   {
    "date": "2026-04-12",
@@ -30,8 +65,8 @@
    "game": "2026-04-12_golden-state_vs_la-clippers",
    "starter": true,
    "rest": "1",
-   "result": null,
-   "opp_tier": null,
+   "result": "W",
+   "opp_tier": "Middle 10",
    "min": 22.8,
    "PTS": 7.0,
    "REB": 8.0,
@@ -39,7 +74,13 @@
    "3PM": 1.0,
    "STL": 1.0,
    "BLK": 0.0,
-   "TOV": 1.0
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 8.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
   },
   {
    "date": "2026-04-10",
@@ -48,8 +89,8 @@
    "game": "2026-04-10_la-clippers_vs_portland",
    "starter": true,
    "rest": "1",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Middle 10",
    "min": 36.2,
    "PTS": 21.0,
    "REB": 6.0,
@@ -57,7 +98,13 @@
    "3PM": 5.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 2.0
+   "TOV": 2.0,
+   "FGM": 8.0,
+   "FGA": 15.0,
+   "3PA": 11.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
   },
   {
    "date": "2026-04-08",
@@ -66,8 +113,8 @@
    "game": "2026-04-08_la-clippers_vs_oklahoma-city",
    "starter": true,
    "rest": "0",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Top 10",
    "min": 30.4,
    "PTS": 16.0,
    "REB": 6.0,
@@ -75,7 +122,13 @@
    "3PM": 3.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 1.0
+   "TOV": 1.0,
+   "FGM": 6.0,
+   "FGA": 12.0,
+   "3PA": 5.0,
+   "FTA": 3.0,
+   "season": "2025-26",
+   "phase": "regular"
   },
   {
    "date": "2026-04-07",
@@ -84,8 +137,8 @@
    "game": "2026-04-07_dallas_vs_la-clippers",
    "starter": true,
    "rest": "1",
-   "result": null,
-   "opp_tier": null,
+   "result": "W",
+   "opp_tier": "Bottom 10",
    "min": 25.3,
    "PTS": 9.0,
    "REB": 11.0,
@@ -93,9 +146,31 @@
    "3PM": 1.0,
    "STL": 0.0,
    "BLK": 4.0,
-   "TOV": 1.0
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 3.0,
+   "FTA": 1.0,
+   "season": "2025-26",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thetipoff.com.au/api.html#members"
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
+ "members": "https://thedropcoverage.com/api.html#members"
 }

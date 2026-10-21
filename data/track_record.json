@@ -1,8 +1,129 @@
 {
  "calibration": {
-  "asof": "2026-10-20",
+  "asof": "2026-10-21",
   "season_start": "2026-10-20",
-  "markets": []
+  "markets": [
+   {
+    "stat": "PTS",
+    "label": "Points",
+    "windows": {
+     "7d": {
+      "n": 66,
+      "mae": 4.94,
+      "bias": 0.43,
+      "coverage": 0.7727,
+      "below": 0.1364,
+      "above": 0.0909
+     },
+     "30d": {
+      "n": 66,
+      "mae": 4.94,
+      "bias": 0.43,
+      "coverage": 0.7727,
+      "below": 0.1364,
+      "above": 0.0909
+     },
+     "season": {
+      "n": 66,
+      "mae": 4.94,
+      "bias": 0.43,
+      "coverage": 0.7727,
+      "below": 0.1364,
+      "above": 0.0909
+     }
+    }
+   },
+   {
+    "stat": "REB",
+    "label": "Rebounds",
+    "windows": {
+     "7d": {
+      "n": 66,
+      "mae": 1.77,
+      "bias": -0.04,
+      "coverage": 0.803,
+      "below": 0.1061,
+      "above": 0.0909
+     },
+     "30d": {
+      "n": 66,
+      "mae": 1.77,
+      "bias": -0.04,
+      "coverage": 0.803,
+      "below": 0.1061,
+      "above": 0.0909
+     },
+     "season": {
+      "n": 66,
+      "mae": 1.77,
+      "bias": -0.04,
+      "coverage": 0.803,
+      "below": 0.1061,
+      "above": 0.0909
+     }
+    }
+   },
+   {
+    "stat": "AST",
+    "label": "Assists",
+    "windows": {
+     "7d": {
+      "n": 66,
+      "mae": 1.19,
+      "bias": 0.19,
+      "coverage": 0.8182,
+      "below": 0.1061,
+      "above": 0.0758
+     },
+     "30d": {
+      "n": 66,
+      "mae": 1.19,
+      "bias": 0.19,
+      "coverage": 0.8182,
+      "below": 0.1061,
+      "above": 0.0758
+     },
+     "season": {
+      "n": 66,
+      "mae": 1.19,
+      "bias": 0.19,
+      "coverage": 0.8182,
+      "below": 0.1061,
+      "above": 0.0758
+     }
+    }
+   },
+   {
+    "stat": "3PM",
+    "label": "Threes",
+    "windows": {
+     "7d": {
+      "n": 66,
+      "mae": 0.99,
+      "bias": 0.02,
+      "coverage": 0.7879,
+      "below": 0.0909,
+      "above": 0.1212
+     },
+     "30d": {
+      "n": 66,
+      "mae": 0.99,
+      "bias": 0.02,
+      "coverage": 0.7879,
+      "below": 0.0909,
+      "above": 0.1212
+     },
+     "season": {
+      "n": 66,
+      "mae": 0.99,
+      "bias": 0.02,
+      "coverage": 0.7879,
+      "below": 0.0909,
+      "above": 0.1212
+     }
+    }
+   }
+  ]
  },
  "tips": {
   "n_tips": 1,

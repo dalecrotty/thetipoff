@@ -2,8 +2,65 @@
  "player_id": 1629111,
  "player": "Jock Landale",
  "team": "Atlanta",
- "opp": "Dallas",
- "lines": {},
+ "opp": "Orlando",
+ "lines": {
+  "PR": {
+   "line": 11.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.6,
+   "book": "sportsbet",
+   "price_over": 1.6,
+   "price_under": 2.2
+  },
+  "RA": {
+   "line": 5.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PA": {
+   "line": 8.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.87
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 2.15,
+   "book": "pointsbetau",
+   "price_over": 1.69,
+   "price_under": 2.15
+  }
+ },
  "recent_games": [
   {
    "date": "2026-04-01",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 5,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

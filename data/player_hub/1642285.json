@@ -2,8 +2,65 @@
  "player_id": 1642285,
  "player": "Cam Spencer",
  "team": "Memphis",
- "opp": "Charlotte",
- "lines": {},
+ "opp": "Utah",
+ "lines": {
+  "REB": {
+   "line": 2.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "PA": {
+   "line": 10.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 1.78,
+   "price_under": 2.0
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
+  "RA": {
+   "line": 6.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PR": {
+   "line": 9.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.3,
+   "book": "sportsbet",
+   "price_over": 2.3,
+   "price_under": 1.56
+  }
+ },
  "recent_games": [
   {
    "date": "2026-04-06",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

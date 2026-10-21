@@ -4,7 +4,7 @@
   {
    "id": 1630595,
    "name": "Cade Cunningham",
-   "games": 148,
+   "games": 149,
    "med_min": 36.0
   },
   {
@@ -22,7 +22,7 @@
   {
    "id": 1631105,
    "name": "Jalen Duren",
-   "games": 162,
+   "games": 163,
    "med_min": 28.2
   },
   {
@@ -34,13 +34,19 @@
   {
    "id": 1629130,
    "name": "Duncan Robinson",
-   "games": 90,
-   "med_min": 27.7
+   "games": 91,
+   "med_min": 27.8
+  },
+  {
+   "id": 1628381,
+   "name": "John Collins",
+   "games": 1,
+   "med_min": 25.0
   },
   {
    "id": 1641709,
    "name": "Ausar Thompson",
-   "games": 146,
+   "games": 147,
    "med_min": 25.0
   },
   {
@@ -58,8 +64,8 @@
   {
    "id": 1628989,
    "name": "Kevin Huerter",
-   "games": 30,
-   "med_min": 20.5
+   "games": 31,
+   "med_min": 20.4
   },
   {
    "id": 1630191,
@@ -76,8 +82,14 @@
   {
    "id": 1642450,
    "name": "Daniss Jenkins",
-   "games": 92,
-   "med_min": 19.3
+   "games": 93,
+   "med_min": 19.2
+  },
+  {
+   "id": 1630198,
+   "name": "Isaiah Joe",
+   "games": 1,
+   "med_min": 19.0
   },
   {
    "id": 1631199,
@@ -88,13 +100,13 @@
   {
    "id": 1641842,
    "name": "Ronald Holland II",
-   "games": 168,
+   "games": 169,
    "med_min": 17.0
   },
   {
    "id": 1629750,
    "name": "Javonte Green",
-   "games": 93,
+   "games": 94,
    "med_min": 16.5
   },
   {
@@ -112,8 +124,8 @@
   {
    "id": 1630194,
    "name": "Paul Reed",
-   "games": 119,
-   "med_min": 11.0
+   "games": 120,
+   "med_min": 11.2
   },
   {
    "id": 1631111,
@@ -31435,6 +31447,181 @@
      "TOV": 0.0,
      "FGM": 0.0,
      "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-20",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-10-20_boston_vs_detroit",
+   "lines": {
+    "1641709": {
+     "min": 33.0,
+     "PTS": 11.0,
+     "REB": 11.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 4.0,
+     "FGA": 8.0,
+     "3PA": 1.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1630595": {
+     "min": 35.0,
+     "PTS": 22.0,
+     "REB": 4.0,
+     "AST": 8.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 5.0,
+     "FGM": 8.0,
+     "FGA": 18.0,
+     "3PA": 6.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1642450": {
+     "min": 15.0,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629130": {
+     "min": 28.0,
+     "PTS": 21.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 5.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 5.0,
+     "FGA": 10.0,
+     "3PA": 9.0,
+     "FTA": 8.0,
+     "starter": true
+    },
+    "1630198": {
+     "min": 19.0,
+     "PTS": 8.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 9.0,
+     "3PA": 7.0,
+     "FTA": 3.0,
+     "starter": false
+    },
+    "1631105": {
+     "min": 28.0,
+     "PTS": 22.0,
+     "REB": 9.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 8.0,
+     "FGA": 13.0,
+     "3PA": 0.0,
+     "FTA": 7.0,
+     "starter": true
+    },
+    "1629750": {
+     "min": 18.0,
+     "PTS": 19.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 5.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 5.0,
+     "FGA": 10.0,
+     "3PA": 8.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1628381": {
+     "min": 25.0,
+     "PTS": 6.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1628989": {
+     "min": 18.0,
+     "PTS": 3.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 4.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630194": {
+     "min": 17.0,
+     "PTS": 6.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1641842": {
+     "min": 3.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
      "3PA": 1.0,
      "FTA": 0.0,
      "starter": false

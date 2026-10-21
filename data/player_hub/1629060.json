@@ -2,8 +2,65 @@
  "player_id": 1629060,
  "player": "Rui Hachimura",
  "team": "LA Clippers",
- "opp": "Denver",
- "lines": {},
+ "opp": "Sacramento",
+ "lines": {
+  "PRA": {
+   "line": 26.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PR": {
+   "line": 25.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 19.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PA": {
+   "line": 21.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 6.5,
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  }
+ },
  "recent_games": [
   {
    "date": "2026-05-11",
@@ -12,8 +69,8 @@
    "game": "2026-05-11_la-lakers_vs_oklahoma-city",
    "starter": true,
    "rest": "1",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Top 10",
    "min": 43.2,
    "PTS": 25.0,
    "REB": 5.0,
@@ -21,7 +78,13 @@
    "3PM": 4.0,
    "STL": 0.0,
    "BLK": 1.0,
-   "TOV": 0.0
+   "TOV": 0.0,
+   "FGM": 9.0,
+   "FGA": 15.0,
+   "3PA": 8.0,
+   "FTA": 3.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-05-09",
@@ -30,8 +93,8 @@
    "game": "2026-05-09_la-lakers_vs_oklahoma-city",
    "starter": true,
    "rest": "1",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Top 10",
    "min": 38.7,
    "PTS": 21.0,
    "REB": 5.0,
@@ -39,7 +102,13 @@
    "3PM": 5.0,
    "STL": 1.0,
    "BLK": 0.0,
-   "TOV": 1.0
+   "TOV": 1.0,
+   "FGM": 7.0,
+   "FGA": 14.0,
+   "3PA": 8.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-05-07",
@@ -48,8 +117,8 @@
    "game": "2026-05-07_la-lakers_vs_oklahoma-city",
    "starter": true,
    "rest": "1",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Top 10",
    "min": 38.8,
    "PTS": 16.0,
    "REB": 4.0,
@@ -57,7 +126,13 @@
    "3PM": 4.0,
    "STL": 1.0,
    "BLK": 0.0,
-   "TOV": 2.0
+   "TOV": 2.0,
+   "FGM": 6.0,
+   "FGA": 10.0,
+   "3PA": 7.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-05-05",
@@ -66,8 +141,8 @@
    "game": "2026-05-05_la-lakers_vs_oklahoma-city",
    "starter": true,
    "rest": "3",
-   "result": null,
-   "opp_tier": null,
+   "result": "L",
+   "opp_tier": "Top 10",
    "min": 36.9,
    "PTS": 18.0,
    "REB": 2.0,
@@ -75,7 +150,13 @@
    "3PM": 3.0,
    "STL": 1.0,
    "BLK": 1.0,
-   "TOV": 1.0
+   "TOV": 1.0,
+   "FGM": 7.0,
+   "FGA": 13.0,
+   "3PA": 6.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-05-01",
@@ -84,8 +165,8 @@
    "game": "2026-05-01_houston_vs_la-lakers",
    "starter": true,
    "rest": "1",
-   "result": null,
-   "opp_tier": null,
+   "result": "W",
+   "opp_tier": "Top 10",
    "min": 34.7,
    "PTS": 21.0,
    "REB": 6.0,
@@ -93,9 +174,36 @@
    "3PM": 5.0,
    "STL": 0.0,
    "BLK": 1.0,
-   "TOV": 0.0
+   "TOV": 0.0,
+   "FGM": 8.0,
+   "FGA": 15.0,
+   "3PA": 7.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   }
  ],
- "hits": {},
- "members": "https://thetipoff.com.au/api.html#members"
+ "hits": {
+  "PTS": {
+   "line": 19.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 5,
+   "n": 5
+  }
+ },
+ "members": "https://thedropcoverage.com/api.html#members"
 }

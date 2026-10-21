@@ -2,8 +2,37 @@
  "player_id": 1630167,
  "player": "Obi Toppin",
  "team": "Indiana",
- "opp": "Milwaukee",
- "lines": {},
+ "opp": "New Orleans",
+ "lines": {
+  "PTS": {
+   "line": 10.5,
+   "price": 1.76,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.3,
+   "book": "sportsbet",
+   "price_over": 2.3,
+   "price_under": 1.56
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  }
+ },
  "recent_games": [
   {
    "date": "2026-04-12",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -2,8 +2,65 @@
  "player_id": 1630572,
  "player": "Sandro Mamukelashvili",
  "team": "LA Lakers",
- "opp": "Denver",
- "lines": {},
+ "opp": "Golden State",
+ "lines": {
+  "PTS": {
+   "line": 10.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "PRA": {
+   "line": 18.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PR": {
+   "line": 16.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PA": {
+   "line": 13.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.77
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 2.2,
+   "book": "pointsbetau",
+   "price_over": 2.2,
+   "price_under": 1.67
+  }
+ },
  "recent_games": [
   {
    "date": "2026-05-03",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

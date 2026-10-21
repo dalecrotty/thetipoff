@@ -2,8 +2,65 @@
  "player_id": 201142,
  "player": "Kevin Durant",
  "team": "Houston",
- "opp": "Oklahoma City",
- "lines": {},
+ "opp": "Dallas",
+ "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
+  },
+  "PA": {
+   "line": 27.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 33.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 23.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PR": {
+   "line": 29.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 2.5,
+   "book": "sportsbet",
+   "price_over": 2.5,
+   "price_under": 1.48
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  }
+ },
  "recent_games": [
   {
    "date": "2026-04-21",
@@ -21,7 +78,13 @@
    "3PM": 1.0,
    "STL": 1.0,
    "BLK": 1.0,
-   "TOV": 9.0
+   "TOV": 9.0,
+   "FGM": 7.0,
+   "FGA": 12.0,
+   "3PA": 4.0,
+   "FTA": 9.0,
+   "season": "2025-26",
+   "phase": "playoffs"
   },
   {
    "date": "2026-04-10",
@@ -39,7 +102,13 @@
    "3PM": 0.0,
    "STL": 1.0,
    "BLK": 2.0,
-   "TOV": 3.0
+   "TOV": 3.0,
+   "FGM": 13.0,
+   "FGA": 18.0,
+   "3PA": 1.0,
+   "FTA": 9.0,
+   "season": "2025-26",
+   "phase": "regular"
   },
   {
    "date": "2026-04-09",
@@ -57,7 +126,13 @@
    "3PM": 3.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 3.0
+   "TOV": 3.0,
+   "FGM": 10.0,
+   "FGA": 18.0,
+   "3PA": 6.0,
+   "FTA": 8.0,
+   "season": "2025-26",
+   "phase": "regular"
   },
   {
    "date": "2026-04-07",
@@ -75,7 +150,13 @@
    "3PM": 5.0,
    "STL": 0.0,
    "BLK": 0.0,
-   "TOV": 2.0
+   "TOV": 2.0,
+   "FGM": 8.0,
+   "FGA": 20.0,
+   "3PA": 9.0,
+   "FTA": 3.0,
+   "season": "2025-26",
+   "phase": "regular"
   },
   {
    "date": "2026-04-05",
@@ -93,9 +174,36 @@
    "3PM": 3.0,
    "STL": 0.0,
    "BLK": 3.0,
-   "TOV": 3.0
+   "TOV": 3.0,
+   "FGM": 10.0,
+   "FGA": 17.0,
+   "3PA": 6.0,
+   "FTA": 9.0,
+   "season": "2025-26",
+   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 23.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

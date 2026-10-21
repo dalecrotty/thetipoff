@@ -2,8 +2,30 @@
  "player_id": 1641744,
  "player": "Zach Edey",
  "team": "Memphis",
- "opp": "Charlotte",
- "lines": {},
+ "opp": "Utah",
+ "lines": {
+  "PR": {
+   "line": 22.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 10.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  }
+ },
  "recent_games": [
   {
    "date": "2025-12-07",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 10.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
