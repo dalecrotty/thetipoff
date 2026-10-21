@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-10-21",
- "model_version": "engine-v1.21-ot+rolefix+play+injstatus+rotation+wwusage2+topshrink+open15+openpack+dfsspread+ctx+depth+dvp5fade120+dvpnoprevpo+b2brate+rookie1+pre50+pts093+sigma_v3+scoring_v1",
+ "model_version": "engine-v1.21-ot+rolefix+play+injstatus+rotation+wwusage2+topshrink+open15+openpack+ownstart+dfsspread+ctx+depth+dvp5fade120+dvpnoprevpo+b2brate+rookie1+pre50+pts093+sigma_v3+scoring_v1",
  "free_game": "Indiana vs New Orleans",
  "members": "https://thedropcoverage.com/api.html#members",
  "rows": [
@@ -1102,7 +1102,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -3942,7 +3942,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -4129,26 +4129,6 @@
     "l10_over": 0.6,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1630598,
@@ -4680,7 +4660,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -4710,7 +4690,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 245
+   "rank": 244
   },
   {
    "player_id": 1631123,
@@ -5084,7 +5064,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -5114,7 +5094,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 252
   },
   {
    "player_id": 1631260,
@@ -5535,7 +5515,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -5565,7 +5545,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 255
+   "rank": 254
   },
   {
    "player_id": 1641739,
@@ -5752,7 +5732,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -5782,7 +5762,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 260
+   "rank": 259
   },
   {
    "player_id": 1641778,
@@ -6247,7 +6227,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 267
+   "rank": 266
   },
   {
    "player_id": 1642275,
@@ -6459,7 +6439,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -6489,7 +6469,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 274
+   "rank": 273
   },
   {
    "player_id": 1642363,
@@ -6616,26 +6596,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -7192,7 +7152,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -7222,7 +7182,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 285
+   "rank": 283
   },
   {
    "player_id": 1642883,
@@ -7470,26 +7430,6 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -9176,7 +9116,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -12061,7 +12001,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -12248,26 +12188,6 @@
     "l10_over": 0.3,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1630598,
@@ -12790,7 +12710,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -12820,7 +12740,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 249
+   "rank": 248
   },
   {
    "player_id": 1631123,
@@ -13203,7 +13123,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -13233,7 +13153,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 257
+   "rank": 256
   },
   {
    "player_id": 1631260,
@@ -13654,7 +13574,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -13684,7 +13604,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 259
+   "rank": 258
   },
   {
    "player_id": 1641739,
@@ -13871,7 +13791,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -13901,7 +13821,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1641778,
@@ -14605,7 +14525,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14635,7 +14555,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642363,
@@ -14753,26 +14673,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -15338,7 +15238,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -15368,7 +15268,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 285
+   "rank": 283
   },
   {
    "player_id": 1642883,
@@ -15616,26 +15516,6 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -17106,7 +16986,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -19370,7 +19250,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -19518,26 +19398,6 @@
    "l10_over": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -19982,7 +19842,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20012,7 +19872,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 249
+   "rank": 248
   },
   {
    "player_id": 1631123,
@@ -20350,7 +20210,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20380,7 +20240,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 257
+   "rank": 256
   },
   {
    "player_id": 1631260,
@@ -20738,7 +20598,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20768,7 +20628,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 259
+   "rank": 258
   },
   {
    "player_id": 1641739,
@@ -20946,7 +20806,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20976,7 +20836,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1641778,
@@ -21554,7 +21414,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -21584,7 +21444,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642363,
@@ -21702,26 +21562,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -22206,7 +22046,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -22236,7 +22076,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 285
+   "rank": 283
   },
   {
    "player_id": 1642883,
@@ -22475,26 +22315,6 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -24154,7 +23974,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27093,7 +26913,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27280,26 +27100,6 @@
     "l10_over": 0.4,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1630598,
@@ -27831,7 +27631,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -27861,7 +27661,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 249
+   "rank": 248
   },
   {
    "player_id": 1631123,
@@ -28253,7 +28053,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28283,7 +28083,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 257
+   "rank": 256
   },
   {
    "player_id": 1631260,
@@ -28704,7 +28504,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28734,7 +28534,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 259
+   "rank": 258
   },
   {
    "player_id": 1641739,
@@ -28930,7 +28730,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28960,7 +28760,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1641778,
@@ -29673,7 +29473,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -29703,7 +29503,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642363,
@@ -29830,26 +29630,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -30433,7 +30213,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -30463,7 +30243,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 285
+   "rank": 283
   },
   {
    "player_id": 1642883,
@@ -30711,26 +30491,6 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -32453,7 +32213,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -35374,7 +35134,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -35561,26 +35321,6 @@
     "l10_over": 0.7,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1630598,
@@ -36112,7 +35852,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -36142,7 +35882,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 249
+   "rank": 248
   },
   {
    "player_id": 1631123,
@@ -36534,7 +36274,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -36564,7 +36304,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 257
+   "rank": 256
   },
   {
    "player_id": 1631260,
@@ -36985,7 +36725,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -37015,7 +36755,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 259
+   "rank": 258
   },
   {
    "player_id": 1641739,
@@ -37211,7 +36951,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -37241,7 +36981,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1641778,
@@ -37954,7 +37694,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -37984,7 +37724,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642363,
@@ -38111,26 +37851,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -38714,7 +38434,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -38744,7 +38464,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 285
+   "rank": 283
   },
   {
    "player_id": 1642883,
@@ -38992,26 +38712,6 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -40482,7 +40182,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -42746,7 +42446,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -42894,26 +42594,6 @@
    "l10_over": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -43358,7 +43038,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -43388,7 +43068,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 249
+   "rank": 248
   },
   {
    "player_id": 1631123,
@@ -43726,7 +43406,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -43756,7 +43436,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 257
+   "rank": 256
   },
   {
    "player_id": 1631260,
@@ -44114,7 +43794,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -44144,7 +43824,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 259
+   "rank": 258
   },
   {
    "player_id": 1641739,
@@ -44322,7 +44002,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -44352,7 +44032,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1641778,
@@ -44930,7 +44610,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -44960,7 +44640,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642363,
@@ -45078,26 +44758,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -45582,7 +45242,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -45612,7 +45272,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 285
+   "rank": 283
   },
   {
    "player_id": 1642883,
@@ -45851,26 +45511,6 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -47278,7 +46918,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -49542,7 +49182,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -49690,26 +49330,6 @@
    "l10_over": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -50154,7 +49774,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -50184,7 +49804,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 249
+   "rank": 248
   },
   {
    "player_id": 1631123,
@@ -50522,7 +50142,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -50552,7 +50172,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 257
+   "rank": 256
   },
   {
    "player_id": 1631260,
@@ -50910,7 +50530,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -50940,7 +50560,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 259
+   "rank": 258
   },
   {
    "player_id": 1641739,
@@ -51118,7 +50738,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -51148,7 +50768,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1641778,
@@ -51726,7 +51346,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -51756,7 +51376,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642363,
@@ -51874,26 +51494,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -52378,7 +51978,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -52408,7 +52008,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 285
+   "rank": 283
   },
   {
    "player_id": 1642883,
@@ -52647,26 +52247,6 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -54753,7 +54333,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -57620,7 +57200,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -57807,26 +57387,6 @@
     "l10_over": 0.4,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1630598,
@@ -58349,7 +57909,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -58379,7 +57939,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1631123,
@@ -58782,7 +58342,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -58812,7 +58372,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1631260,
@@ -59253,7 +58813,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -59283,7 +58843,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 266
+   "rank": 265
   },
   {
    "player_id": 1641739,
@@ -59490,7 +59050,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -59520,7 +59080,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 271
+   "rank": 270
   },
   {
    "player_id": 1641778,
@@ -60224,7 +59784,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -60254,7 +59814,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 283
+   "rank": 282
   },
   {
    "player_id": 1642363,
@@ -60372,26 +59932,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -60977,7 +60517,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -61007,7 +60547,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 294
+   "rank": 292
   },
   {
    "player_id": 1642883,
@@ -61175,26 +60715,6 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -62917,7 +62437,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -65829,7 +65349,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -66016,26 +65536,6 @@
     "l10_over": 0.5,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1630598,
@@ -66567,7 +66067,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -66597,7 +66097,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1631123,
@@ -67009,7 +66509,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -67039,7 +66539,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1631260,
@@ -67480,7 +66980,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -67510,7 +67010,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 266
+   "rank": 265
   },
   {
    "player_id": 1641739,
@@ -67726,7 +67226,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -67756,7 +67256,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 271
+   "rank": 270
   },
   {
    "player_id": 1641778,
@@ -68451,7 +67951,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -68481,7 +67981,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 283
+   "rank": 282
   },
   {
    "player_id": 1642363,
@@ -68608,26 +68108,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -69213,7 +68693,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -69243,7 +68723,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 294
+   "rank": 292
   },
   {
    "player_id": 1642883,
@@ -69411,26 +68891,6 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -71081,7 +70541,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -73903,7 +73363,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -74090,26 +73550,6 @@
     "l10_over": 0.5,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1630598,
@@ -74623,7 +74063,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -74653,7 +74093,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1631123,
@@ -75038,7 +74478,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -75068,7 +74508,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1631260,
@@ -75509,7 +74949,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -75539,7 +74979,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 266
+   "rank": 265
   },
   {
    "player_id": 1641739,
@@ -75746,7 +75186,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -75776,7 +75216,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 271
+   "rank": 270
   },
   {
    "player_id": 1641778,
@@ -76453,7 +75893,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -76483,7 +75923,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 283
+   "rank": 282
   },
   {
    "player_id": 1642363,
@@ -76601,26 +76041,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -77179,7 +76599,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -77209,7 +76629,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 294
+   "rank": 292
   },
   {
    "player_id": 1642883,
@@ -77377,26 +76797,6 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -79047,7 +78447,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -81860,7 +81260,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 15,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -82047,26 +81447,6 @@
     "l10_over": 0.5,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1630592,
-   "player": "Jalen Wilson",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PF",
-   "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1630598,
@@ -82580,7 +81960,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -82610,7 +81990,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1631123,
@@ -82995,7 +82375,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -83025,7 +82405,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 263
+   "rank": 262
   },
   {
    "player_id": 1631260,
@@ -83466,7 +82846,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -83496,7 +82876,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 266
+   "rank": 265
   },
   {
    "player_id": 1641739,
@@ -83703,7 +83083,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 11,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -83733,7 +83113,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 271
+   "rank": 270
   },
   {
    "player_id": 1641778,
@@ -84401,7 +83781,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 11,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -84431,7 +83811,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 283
+   "rank": 282
   },
   {
    "player_id": 1642363,
@@ -84549,26 +83929,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642484,
-   "player": "RayJ Dennis",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -85127,7 +84487,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 15,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -85157,7 +84517,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 294
+   "rank": 292
   },
   {
    "player_id": 1642883,
@@ -85325,26 +84685,6 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1642933,
-   "player": "Keshon Gilbert",
-   "team": "Atlanta",
-   "opp": "Orlando",
-   "game": "Atlanta vs Orlando",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": 4,
    "gate_status": null,
    "us": null
   },
@@ -85518,6 +84858,10 @@
   {
    "run_at": "2026-10-21T20:21+00:00",
    "trigger": "manual"
+  },
+  {
+   "run_at": "2026-10-21T21:36+00:00",
+   "trigger": "news"
   }
  ]
 }
