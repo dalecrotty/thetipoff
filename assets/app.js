@@ -866,7 +866,8 @@ function niceTicks(vmax) {
 }
 
 function renderPropChart(games, line, proj) {
-  // games chronological: [{date, opp, v}] — bars over/under vs the line
+  // games chronological: [{date, opp, v, dim?}] — bars over/under vs the
+  // line; a dim game (With & Without: outside the picked lineup) is faded
   const W = 920, H = 250, m = { t: 14, r: 52, b: 30, l: 8 };
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
   const n = games.length;
@@ -899,12 +900,13 @@ function renderPropChart(games, line, proj) {
     const top = y(g.v), base = m.t + ih;
     const hue = g.v > line ? "var(--over)" : "var(--under)";
     const r = Math.min(4, bw / 2, Math.max(0, base - top));
+    const fade = g.dim ? ` opacity="0.25"` : "";
     const bar = g.v <= 0
       ? `<line x1="${x}" x2="${x + bw}" y1="${base}" y2="${base}"
-           stroke="${hue}" stroke-width="2"></line>`
+           stroke="${hue}" stroke-width="2"${fade}></line>`
       : `<path d="M${x},${base} V${top + r} Q${x},${top} ${x + r},${top}
            H${x + bw - r} Q${x + bw},${top} ${x + bw},${top + r}
-           V${base} Z" fill="${hue}"></path>`;
+           V${base} Z" fill="${hue}"${fade}></path>`;
     parts.push(`<g class="barhit" data-i="${i}">
       <rect x="${m.l + i * slot}" y="${m.t}" width="${slot}" height="${ih}"
         fill="transparent"></rect>${bar}</g>`);
@@ -1394,8 +1396,77 @@ async function initWow() {
       $("#wLog tbody").insertAdjacentHTML("beforeend", `<tr><td colspan="${NCOL + 2}" class="s"><a href="#" id="wLogAll">Show all ${trs.length} games →</a></td></tr>`);
       $("#wLogAll").onclick = e => { e.preventDefault(); logAll = true; render(); };
     }
+    renderChart(all, sel);
   };
   let logAll = false;
+
+  /* --- game by game (owner, 21 Oct 2026: the player page's graph) ---
+     every game of his in the season, matching-lineup games in full and
+     the rest faded; one line per stat, defaulting to just under his
+     average in the season's games (no book line on this page) */
+  const WSTATS = ["PTS", "REB", "AST", "3PM", "PRA", "PR", "PA", "RA", "MIN"];
+  let wStat = "PTS";
+  const wLines = {};
+  const statOf = (g, k) => statValue({ ...focalLine(g), min: focalLine(g).min }, k);
+  const defaultLine = (games, k) => {
+    const v = games.map(g => statOf(g, k)).filter(x => x != null && !Number.isNaN(x));
+    return v.length ? Math.max(0.5, Math.floor(v.reduce((a, x) => a + x, 0) / v.length) + 0.5) : 0.5;
+  };
+  const renderChart = (all, sel) => {
+    const anyFilter = state.size > 0;
+    const selSet = new Set(sel);
+    const line = wLines[wStat] ?? defaultLine(all, wStat);
+    $$(".chip", $("#wStatChips")).forEach(c => c.classList.toggle("on", c.dataset.s === wStat));
+    $("#wLineVal").value = line;
+    $("#wLineSrc").textContent = wLines[wStat] != null ? "custom line" : "line: just under his average";
+    const games = all.map(g => ({ date: g.date, opp: g.opp, min: focalLine(g).min,
+                                  v: statOf(g, wStat), dim: anyFilter && !selSet.has(g) }))
+      .filter(g => g.v != null && !Number.isNaN(g.v));
+    const matched = games.filter(g => !g.dim), other = games.filter(g => g.dim);
+    const lab = lineupLabel();
+    $("#wHitCards").innerHTML = anyFilter
+      ? hitCard(lab.charAt(0).toUpperCase() + lab.slice(1), matched, line)
+        + hitCard("Other games", other, line) + hitCard("All games", games, line)
+      : hitCard("All games", games, line) + hitCard("Last 10", games.slice(-10), line)
+        + hitCard("Last 5", games.slice(-5), line);
+    $("#wChart").innerHTML = games.length
+      ? renderPropChart(games, line, null)
+      : `<div class="empty">No games this season yet.</div>`;
+    $("#wFadeKey").hidden = !anyFilter;
+    $("#wChartNote").textContent = `${anyFilter ? `${matched.length} of ${games.length}` : games.length} games · line ${line}`;
+    const tip = $("#wTip"), panel = $("#wPanel");
+    $$(".barhit", $("#wChart")).forEach(gEl => {
+      const g = games[+gEl.dataset.i];
+      gEl.addEventListener("pointermove", ev => {
+        tip.replaceChildren();
+        const b = document.createElement("b");
+        b.textContent = `${g.v} ${wStat}`;
+        const d = document.createElement("div");
+        d.textContent = `${g.date} · ${g.opp || "—"} · ${fmt(g.min, 0)} min`
+          + (anyFilter ? (g.dim ? " · other game" : " · matching lineup") : "");
+        tip.append(b, d);
+        const r = panel.getBoundingClientRect();
+        tip.style.left = Math.min(ev.clientX - r.x + 12, r.width - 190) + "px";
+        tip.style.top = (ev.clientY - r.y - 44) + "px";
+        tip.style.opacity = 1;
+      });
+      gEl.addEventListener("pointerleave", () => tip.style.opacity = 0);
+    });
+  };
+  $("#wStatChips").innerHTML = WSTATS.map(k => `<button class="chip" data-s="${k}">${k}</button>`).join("");
+  $("#wStatChips").onclick = e => {
+    const c = e.target.closest(".chip");
+    if (!c) return;
+    wStat = c.dataset.s;
+    render();
+  };
+  const curLine = () => wLines[wStat] ?? defaultLine(seasonGames().filter(focalLine), wStat);
+  $("#wLineDown").onclick = () => { wLines[wStat] = Math.max(0.5, curLine() - 0.5); render(); };
+  $("#wLineUp").onclick = () => { wLines[wStat] = curLine() + 0.5; render(); };
+  $("#wLineVal").onchange = () => {
+    const v = parseFloat($("#wLineVal").value);
+    if (!isNaN(v) && v > 0) { wLines[wStat] = v; render(); }
+  };
 
   // the player list follows the season: who played for the team in it,
   // most minutes first (owner, 16 Oct 2026)
@@ -1436,7 +1507,7 @@ async function initWow() {
 
   teamSel.onchange = () => loadTeam(teamSel.value);
   seasonSel.onchange = () => { season = seasonSel.value; seasonSel.dataset.auto = "0"; fillPlayers(); renderMates(); render(); };
-  playerSel.onchange = () => { focal = playerSel.value; renderMates(); render(); };
+  playerSel.onchange = () => { focal = playerSel.value; Object.keys(wLines).forEach(k => delete wLines[k]); renderMates(); render(); };
   $("#wReset").onclick = () => { renderMates(); render(); };
   await loadTeam(teamSel.value);
 }
