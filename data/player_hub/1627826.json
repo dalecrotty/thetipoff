@@ -10,23 +10,23 @@
   },
   "AST": {
    "mean": 2.24,
-   "floor": 0.17,
-   "ceiling": 4.2
+   "floor": 0.16,
+   "ceiling": 4.22
   },
   "BLK": {
    "mean": 0.98,
    "floor": 0.0,
-   "ceiling": 2.71
+   "ceiling": 2.7
   },
   "PTS": {
-   "mean": 13.89,
-   "floor": 5.64,
-   "ceiling": 22.51
+   "mean": 13.87,
+   "floor": 5.79,
+   "ceiling": 22.88
   },
   "REB": {
-   "mean": 11.44,
-   "floor": 6.97,
-   "ceiling": 16.14
+   "mean": 11.42,
+   "floor": 6.83,
+   "ceiling": 16.02
   },
   "STL": {
    "mean": 0.4,
@@ -36,27 +36,27 @@
   "TOV": {
    "mean": 1.58,
    "floor": 0.0,
-   "ceiling": 3.03
+   "ceiling": 3.01
   },
   "PRA": {
-   "mean": 27.57,
-   "floor": 15.31,
-   "ceiling": 39.08
+   "mean": 27.53,
+   "floor": 15.27,
+   "ceiling": 39.03
   },
   "PR": {
-   "mean": 25.33,
-   "floor": 13.67,
-   "ceiling": 36.25
+   "mean": 25.29,
+   "floor": 13.63,
+   "ceiling": 36.21
   },
   "PA": {
-   "mean": 16.14,
-   "floor": 7.14,
-   "ceiling": 25.2
+   "mean": 16.11,
+   "floor": 7.11,
+   "ceiling": 25.17
   },
   "RA": {
-   "mean": 13.68,
-   "floor": 7.62,
-   "ceiling": 19.23
+   "mean": 13.66,
+   "floor": 7.6,
+   "ceiling": 19.21
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 14.5,
-   "p_over": 0.464,
-   "p_under": 0.536,
+   "p_over": 0.463,
+   "p_under": 0.537,
    "fair_over": 0.541,
    "fair_under": 0.459,
    "price_over": 1.74,
@@ -237,13 +237,13 @@
    "side": "under",
    "price": 2.05,
    "book": "sportsbet",
-   "edge": 0.0768,
+   "edge": 0.0782,
    "tier": "A"
   },
   "PA": {
    "line": 17.5,
-   "p_over": 0.424,
-   "p_under": 0.576,
+   "p_over": 0.422,
+   "p_under": 0.578,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.88,
@@ -251,13 +251,13 @@
    "side": "under",
    "price": 1.88,
    "book": "sportsbet",
-   "edge": 0.0765,
+   "edge": 0.078,
    "tier": "A"
   },
   "PRA": {
    "line": 28.5,
-   "p_over": 0.459,
-   "p_under": 0.541,
+   "p_over": 0.457,
+   "p_under": 0.543,
    "fair_over": 0.513,
    "fair_under": 0.487,
    "price_over": 1.83,
@@ -265,13 +265,13 @@
    "side": "under",
    "price": 1.93,
    "book": "sportsbet",
-   "edge": 0.0544,
+   "edge": 0.0563,
    "tier": "B"
   },
   "PR": {
    "line": 26.5,
-   "p_over": 0.446,
-   "p_under": 0.554,
+   "p_over": 0.444,
+   "p_under": 0.556,
    "fair_over": 0.495,
    "fair_under": 0.505,
    "price_over": 1.9,
@@ -279,13 +279,13 @@
    "side": "under",
    "price": 1.86,
    "book": "sportsbet",
-   "edge": 0.0491,
+   "edge": 0.051,
    "tier": "B"
   },
   "AST": {
    "line": 2.5,
-   "p_over": 0.383,
-   "p_under": 0.617,
+   "p_over": 0.382,
+   "p_under": 0.618,
    "fair_over": 0.413,
    "fair_under": 0.587,
    "price_over": 2.25,
@@ -293,13 +293,13 @@
    "side": "under",
    "price": 1.58,
    "book": "sportsbet",
-   "edge": 0.0296,
-   "tier": null
+   "edge": 0.0302,
+   "tier": "B"
   },
   "RA": {
    "line": 13.5,
-   "p_over": 0.515,
-   "p_under": 0.485,
+   "p_over": 0.514,
+   "p_under": 0.486,
    "fair_over": 0.492,
    "fair_under": 0.508,
    "price_over": 1.91,
@@ -307,13 +307,13 @@
    "side": "over",
    "price": 1.91,
    "book": "sportsbet",
-   "edge": 0.0231,
+   "edge": 0.0215,
    "tier": null
   },
   "REB": {
    "line": 11.5,
-   "p_over": 0.456,
-   "p_under": 0.544,
+   "p_over": 0.455,
+   "p_under": 0.545,
    "fair_over": 0.459,
    "fair_under": 0.541,
    "price_over": 2.05,
@@ -321,15 +321,15 @@
    "side": "under",
    "price": 1.74,
    "book": "sportsbet",
-   "edge": 0.0028,
+   "edge": 0.0042,
    "tier": null
   }
  },
  "lines_us": {
   "PA": {
    "line": 17.5,
-   "p_over": 0.424,
-   "p_under": 0.576,
+   "p_over": 0.422,
+   "p_under": 0.578,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.88,
@@ -337,13 +337,13 @@
    "side": "under",
    "price": 1.88,
    "book": "fanduel",
-   "edge": 0.0765,
+   "edge": 0.078,
    "tier": "A"
   },
   "PTS": {
    "line": 14.5,
-   "p_over": 0.464,
-   "p_under": 0.536,
+   "p_over": 0.463,
+   "p_under": 0.537,
    "fair_over": 0.537,
    "fair_under": 0.463,
    "price_over": 1.74,
@@ -351,13 +351,13 @@
    "side": "under",
    "price": 2.02,
    "book": "fanduel",
-   "edge": 0.0732,
+   "edge": 0.0746,
    "tier": "A"
   },
   "PRA": {
    "line": 28.5,
-   "p_over": 0.459,
-   "p_under": 0.541,
+   "p_over": 0.457,
+   "p_under": 0.543,
    "fair_over": 0.515,
    "fair_under": 0.485,
    "price_over": 1.82,
@@ -365,13 +365,13 @@
    "side": "under",
    "price": 1.93,
    "book": "fanduel",
-   "edge": 0.0557,
+   "edge": 0.0576,
    "tier": "B"
   },
   "PR": {
    "line": 26.5,
-   "p_over": 0.446,
-   "p_under": 0.554,
+   "p_over": 0.444,
+   "p_under": 0.556,
    "fair_over": 0.495,
    "fair_under": 0.505,
    "price_over": 1.89,
@@ -379,27 +379,13 @@
    "side": "under",
    "price": 1.85,
    "book": "fanduel",
-   "edge": 0.0491,
+   "edge": 0.0509,
    "tier": "B"
-  },
-  "RA": {
-   "line": 13.5,
-   "p_over": 0.515,
-   "p_under": 0.485,
-   "fair_over": 0.495,
-   "fair_under": 0.505,
-   "price_over": 1.89,
-   "price_under": 1.85,
-   "side": "over",
-   "price": 1.89,
-   "book": "fanduel",
-   "edge": 0.0205,
-   "tier": null
   },
   "AST": {
    "line": 2.5,
-   "p_over": 0.383,
-   "p_under": 0.617,
+   "p_over": 0.382,
+   "p_under": 0.618,
    "fair_over": 0.402,
    "fair_under": 0.598,
    "price_over": 2.32,
@@ -407,13 +393,27 @@
    "side": "under",
    "price": 1.56,
    "book": "fanduel",
-   "edge": 0.0191,
+   "edge": 0.0197,
+   "tier": null
+  },
+  "RA": {
+   "line": 13.5,
+   "p_over": 0.514,
+   "p_under": 0.486,
+   "fair_over": 0.495,
+   "fair_under": 0.505,
+   "price_over": 1.89,
+   "price_under": 1.85,
+   "side": "over",
+   "price": 1.89,
+   "book": "fanduel",
+   "edge": 0.0189,
    "tier": null
   },
   "REB": {
    "line": 11.5,
-   "p_over": 0.456,
-   "p_under": 0.544,
+   "p_over": 0.455,
+   "p_under": 0.545,
    "fair_over": 0.457,
    "fair_under": 0.543,
    "price_over": 2.04,
@@ -421,7 +421,7 @@
    "side": "under",
    "price": 1.72,
    "book": "fanduel",
-   "edge": 0.0011,
+   "edge": 0.0026,
    "tier": null
   }
  },

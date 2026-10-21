@@ -5,12 +5,12 @@
  "projections": {
   "3PM": {
    "mean": 1.74,
-   "floor": 0.03,
-   "ceiling": 3.92
+   "floor": 0.02,
+   "ceiling": 3.94
   },
   "AST": {
-   "mean": 1.96,
-   "floor": 0.18,
+   "mean": 1.95,
+   "floor": 0.15,
    "ceiling": 4.07
   },
   "BLK": {
@@ -19,14 +19,14 @@
    "ceiling": 0.99
   },
   "PTS": {
-   "mean": 14.82,
-   "floor": 6.56,
-   "ceiling": 23.43
+   "mean": 14.79,
+   "floor": 6.71,
+   "ceiling": 23.8
   },
   "REB": {
    "mean": 4.23,
-   "floor": 1.24,
-   "ceiling": 7.65
+   "floor": 1.06,
+   "ceiling": 7.7
   },
   "STL": {
    "mean": 0.75,
@@ -35,28 +35,28 @@
   },
   "TOV": {
    "mean": 0.79,
-   "floor": 0.0,
-   "ceiling": 2.04
+   "floor": 0.01,
+   "ceiling": 2.05
   },
   "PRA": {
-   "mean": 21.01,
-   "floor": 11.18,
-   "ceiling": 31.59
+   "mean": 20.98,
+   "floor": 11.15,
+   "ceiling": 31.55
   },
   "PR": {
-   "mean": 19.05,
-   "floor": 9.9,
-   "ceiling": 28.92
+   "mean": 19.02,
+   "floor": 9.87,
+   "ceiling": 28.89
   },
   "PA": {
-   "mean": 16.78,
-   "floor": 7.78,
-   "ceiling": 25.84
+   "mean": 16.75,
+   "floor": 7.75,
+   "ceiling": 25.81
   },
   "RA": {
-   "mean": 6.19,
-   "floor": 2.32,
-   "ceiling": 10.43
+   "mean": 6.18,
+   "floor": 2.31,
+   "ceiling": 10.42
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 11.5,
-   "p_over": 0.697,
-   "p_under": 0.303,
+   "p_over": 0.695,
+   "p_under": 0.305,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -237,15 +237,15 @@
    "side": "over",
    "price": 1.95,
    "book": "neds",
-   "edge": 0.2167,
+   "edge": 0.2153,
    "tier": "A"
   }
  },
  "lines_us": {
   "PTS": {
    "line": 10.5,
-   "p_over": 0.749,
-   "p_under": 0.251,
+   "p_over": 0.747,
+   "p_under": 0.253,
    "fair_over": 0.495,
    "fair_under": 0.505,
    "price_over": 1.9,
@@ -253,7 +253,7 @@
    "side": "over",
    "price": 1.9,
    "book": "betonlineag",
-   "edge": 0.2539,
+   "edge": 0.2527,
    "tier": "A"
   },
   "AST": {
@@ -267,13 +267,13 @@
    "side": "over",
    "price": 2.22,
    "book": "betonlineag",
-   "edge": 0.1418,
+   "edge": 0.1412,
    "tier": "A"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.5,
-   "p_under": 0.5,
+   "p_over": 0.499,
+   "p_under": 0.501,
    "fair_over": 0.398,
    "fair_under": 0.602,
    "price_over": 2.36,
@@ -281,7 +281,7 @@
    "side": "over",
    "price": 2.36,
    "book": "betonlineag",
-   "edge": 0.1021,
+   "edge": 0.1013,
    "tier": "A"
   }
  },
