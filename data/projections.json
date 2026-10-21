@@ -123,7 +123,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 2.5,
     "price": 1.74,
@@ -132,7 +132,7 @@
     "price_under": 1.74,
     "l5_over": 0.2,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -250,7 +250,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "3PM",
    "line": 1.5,
-   "price": 1.64,
+   "price": 2.15,
    "book": "sportsbet",
    "price_over": 2.15,
    "price_under": 1.64,
@@ -262,7 +262,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 1.5,
-    "price": 1.61,
+    "price": 2.25,
     "book": "draftkings",
     "price_over": 2.25,
     "price_under": 1.61,
@@ -312,7 +312,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -342,7 +342,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 217
+   "rank": 211
   },
   {
    "player_id": 201939,
@@ -390,7 +390,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 1.5,
     "price": 1.72,
@@ -399,7 +399,7 @@
     "price_under": 2.05,
     "l5_over": 0.6,
     "l10_over": 0.6,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -952,7 +952,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 94
+   "rank": 99
   },
   {
    "player_id": 1626164,
@@ -1132,7 +1132,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 222
+   "rank": 216
   },
   {
    "player_id": 1626220,
@@ -1467,7 +1467,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 224
+   "rank": 218
   },
   {
    "player_id": 1627827,
@@ -1958,26 +1958,6 @@
    }
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -2054,16 +2034,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 1.5,
-    "price": 2.18,
+    "price": 1.63,
     "book": "fanduel",
     "price_over": 2.18,
     "price_under": 1.63,
     "l5_over": 0.4,
     "l10_over": 0.5,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -2230,7 +2210,7 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 0.5,
     "price": 2.11,
@@ -2239,7 +2219,7 @@
     "price_under": 2.11,
     "l5_over": 1.0,
     "l10_over": 0.7,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -2322,7 +2302,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 55
   },
   {
    "player_id": 1629618,
@@ -2386,7 +2366,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 211
+   "rank": 206
   },
   {
    "player_id": 1629628,
@@ -2434,7 +2414,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 1.5,
     "price": 1.63,
@@ -2443,7 +2423,7 @@
     "price_under": 1.63,
     "l5_over": 0.4,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -2541,7 +2521,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 2.5,
     "price": 1.6,
@@ -2550,7 +2530,7 @@
     "price_under": 2.24,
     "l5_over": 0.6,
     "l10_over": 0.8,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -2583,26 +2563,6 @@
    }
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -2610,7 +2570,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "3PM",
    "line": 1.5,
-   "price": 1.48,
+   "price": 2.5,
    "book": "sportsbet",
    "price_over": 2.5,
    "price_under": 1.48,
@@ -2619,16 +2579,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 1.5,
-    "price": 1.48,
+    "price": 2.54,
     "book": "fanduel",
     "price_over": 2.54,
     "price_under": 1.48,
     "l5_over": 0.0,
     "l10_over": 0.2,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -2751,7 +2711,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 130
   },
   {
    "player_id": 1629675,
@@ -2799,7 +2759,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 1.5,
     "price": 1.65,
@@ -2808,7 +2768,7 @@
     "price_under": 1.65,
     "l5_over": 0.0,
     "l10_over": 0.2,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -3109,7 +3069,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 67
+   "rank": 66
   },
   {
    "player_id": 1630182,
@@ -3391,7 +3351,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 0.5,
     "price": 2.1,
@@ -3400,7 +3360,7 @@
     "price_under": 2.1,
     "l5_over": 0.4,
     "l10_over": 0.6,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -3592,7 +3552,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 118
+   "rank": 117
   },
   {
    "player_id": 1630530,
@@ -3842,7 +3802,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "3PM",
    "line": 1.5,
-   "price": 2.05,
+   "price": 1.74,
    "book": "sportsbet",
    "price_over": 2.05,
    "price_under": 1.74,
@@ -3854,7 +3814,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 1.5,
-    "price": 2.02,
+    "price": 1.74,
     "book": "fanduel",
     "price_over": 2.02,
     "price_under": 1.74,
@@ -4012,7 +3972,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 242
+   "rank": 237
   },
   {
    "player_id": 1630572,
@@ -4227,7 +4187,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 1.5,
     "price": 1.89,
@@ -4236,7 +4196,7 @@
     "price_under": 1.89,
     "l5_over": 0.4,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -4403,7 +4363,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 0.5,
-    "price": 2.35,
+    "price": 1.56,
     "book": "draftkings",
     "price_over": 2.35,
     "price_under": 1.56,
@@ -4449,7 +4409,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -4570,7 +4530,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 173
+   "rank": 174
   },
   {
    "player_id": 1631099,
@@ -4720,7 +4680,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -4750,7 +4710,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 250
+   "rank": 245
   },
   {
    "player_id": 1631123,
@@ -4869,26 +4829,6 @@
     "l10_over": 0.0,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1631169,
@@ -5144,7 +5084,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -5174,7 +5114,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 258
+   "rank": 253
   },
   {
    "player_id": 1631260,
@@ -5463,7 +5403,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 110
+   "rank": 111
   },
   {
    "player_id": 1641718,
@@ -5493,26 +5433,6 @@
     "l10_over": 0.3,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1641724,
@@ -5615,7 +5535,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -5645,7 +5565,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 260
+   "rank": 255
   },
   {
    "player_id": 1641739,
@@ -5832,7 +5752,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -5862,7 +5782,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 265
+   "rank": 260
   },
   {
    "player_id": 1641778,
@@ -6327,7 +6247,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 267
   },
   {
    "player_id": 1642275,
@@ -6569,7 +6489,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 279
+   "rank": 274
   },
   {
    "player_id": 1642363,
@@ -6878,7 +6798,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 102
   },
   {
    "player_id": 1642848,
@@ -6989,7 +6909,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 199
+   "rank": 197
   },
   {
    "player_id": 1642853,
@@ -7272,7 +7192,7 @@
    "ceiling": 0.0,
    "sigma": 0.32,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -7302,7 +7222,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 285
   },
   {
    "player_id": 1642883,
@@ -7843,26 +7763,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -742,
    "player": "Caleb Wilson",
    "team": "Chicago",
@@ -8177,6 +8077,26 @@
    }
   },
   {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "3PM",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -8475,7 +8395,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -8505,7 +8425,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 228
+   "rank": 221
   },
   {
    "player_id": 201939,
@@ -8671,7 +8591,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "AST",
    "line": 5.5,
-   "price": 2.15,
+   "price": 1.64,
    "book": "sportsbet",
    "price_over": 1.64,
    "price_under": 2.15,
@@ -8680,16 +8600,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 5.5,
-    "price": 2.2,
+    "price": 1.62,
     "book": "fanduel",
     "price_over": 1.62,
     "price_under": 2.2,
     "l5_over": 1.0,
     "l10_over": 0.9,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -8729,7 +8649,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 3.5,
     "price": 2.04,
@@ -8738,7 +8658,7 @@
     "price_under": 1.72,
     "l5_over": 0.2,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -9286,7 +9206,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 231
+   "rank": 224
   },
   {
    "player_id": 1626220,
@@ -9475,7 +9395,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 9
+   "rank": 10
   },
   {
    "player_id": 1627751,
@@ -9586,7 +9506,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 47
+   "rank": 48
   },
   {
    "player_id": 1627826,
@@ -10139,26 +10059,6 @@
    }
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -10414,13 +10314,13 @@
    "gate_status": null,
    "us": {
     "line": 1.5,
-    "price": 1.89,
+    "price": 1.85,
     "book": "draftkings",
     "price_over": 1.89,
     "price_under": 1.85,
     "l5_over": 0.6,
     "l10_over": 0.6,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -10731,7 +10631,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "AST",
    "line": 3.5,
-   "price": 2.25,
+   "price": 1.58,
    "book": "sportsbet",
    "price_over": 2.25,
    "price_under": 1.58,
@@ -10743,7 +10643,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 3.5,
-    "price": 2.32,
+    "price": 1.56,
     "book": "fanduel",
     "price_over": 2.32,
     "price_under": 1.56,
@@ -10780,26 +10680,6 @@
     "l10_over": 0.5,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1629652,
@@ -10941,7 +10821,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 163
+   "rank": 161
   },
   {
    "player_id": 1629675,
@@ -10992,13 +10872,13 @@
    "gate_status": null,
    "us": {
     "line": 1.5,
-    "price": 1.48,
+    "price": 2.58,
     "book": "betonlineag",
     "price_over": 2.58,
     "price_under": 1.48,
     "l5_over": 0.2,
     "l10_over": 0.3,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -11299,7 +11179,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 128
+   "rank": 127
   },
   {
    "player_id": 1630182,
@@ -11581,16 +11461,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 3.5,
-    "price": 2.02,
+    "price": 1.74,
     "book": "fanduel",
     "price_over": 2.02,
     "price_under": 1.74,
     "l5_over": 0.2,
     "l10_over": 0.6,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -11782,7 +11662,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 90
+   "rank": 89
   },
   {
    "player_id": 1630530,
@@ -12211,7 +12091,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 247
+   "rank": 242
   },
   {
    "player_id": 1630572,
@@ -12500,7 +12380,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 160
   },
   {
    "player_id": 1630658,
@@ -12769,7 +12649,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 164
+   "rank": 162
   },
   {
    "player_id": 1631099,
@@ -12910,7 +12790,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -12940,7 +12820,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 249
   },
   {
    "player_id": 1631123,
@@ -13059,26 +12939,6 @@
     "l10_over": 0.0,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1631169,
@@ -13329,7 +13189,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 142
+   "rank": 141
   },
   {
    "player_id": 1631255,
@@ -13343,7 +13203,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -13373,7 +13233,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 262
+   "rank": 257
   },
   {
    "player_id": 1631260,
@@ -13694,26 +13554,6 @@
    }
   },
   {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1641724,
    "player": "Jett Howard",
    "team": "Dallas",
@@ -13814,7 +13654,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -13844,7 +13684,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 259
   },
   {
    "player_id": 1641739,
@@ -14017,7 +13857,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 145
   },
   {
    "player_id": 1641771,
@@ -14031,7 +13871,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -14061,7 +13901,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 268
+   "rank": 263
   },
   {
    "player_id": 1641778,
@@ -14553,7 +14393,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 138
+   "rank": 137
   },
   {
    "player_id": 1642275,
@@ -14795,7 +14635,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 275
   },
   {
    "player_id": 1642363,
@@ -14985,7 +14825,7 @@
    "game": "Dallas vs Houston",
    "stat": "AST",
    "line": 5.5,
-   "price": 2.25,
+   "price": 1.58,
    "book": "sportsbet",
    "price_over": 2.25,
    "price_under": 1.58,
@@ -14994,16 +14834,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 5.5,
-    "price": 2.24,
+    "price": 1.6,
     "book": "fanduel",
     "price_over": 2.24,
     "price_under": 1.6,
     "l5_over": 0.4,
     "l10_over": 0.3,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -15498,7 +15338,7 @@
    "ceiling": 1.33,
    "sigma": 1.07,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -15528,7 +15368,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 285
   },
   {
    "player_id": 1642883,
@@ -16069,26 +15909,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -742,
    "player": "Caleb Wilson",
    "team": "Chicago",
@@ -16403,6 +16223,26 @@
    }
   },
   {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "AST",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -16484,7 +16324,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 56
   },
   {
    "player_id": -328,
@@ -16638,7 +16478,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -16668,7 +16508,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 228
+   "rank": 221
   },
   {
    "player_id": 201939,
@@ -17296,7 +17136,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 231
+   "rank": 224
   },
   {
    "player_id": 1626220,
@@ -17524,7 +17364,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 83
+   "rank": 81
   },
   {
    "player_id": 1627826,
@@ -17568,7 +17408,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 33
+   "rank": 31
   },
   {
    "player_id": 1627827,
@@ -17946,26 +17786,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -18459,26 +18279,6 @@
    "us": null
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -18744,7 +18544,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 151
+   "rank": 152
   },
   {
    "player_id": 1630168,
@@ -19252,7 +19052,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 85
   },
   {
    "player_id": 1630530,
@@ -19296,7 +19096,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 84
+   "rank": 82
   },
   {
    "player_id": 1630532,
@@ -19600,7 +19400,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 247
+   "rank": 242
   },
   {
    "player_id": 1630572,
@@ -19844,7 +19644,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 13
+   "rank": 12
   },
   {
    "player_id": 1630658,
@@ -20182,7 +19982,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20212,7 +20012,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 249
   },
   {
    "player_id": 1631123,
@@ -20310,26 +20110,6 @@
    "l10_over": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -20556,7 +20336,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 221
+   "rank": 217
   },
   {
    "player_id": 1631255,
@@ -20570,7 +20350,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -20600,7 +20380,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 262
+   "rank": 257
   },
   {
    "player_id": 1631260,
@@ -20844,7 +20624,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 138
+   "rank": 139
   },
   {
    "player_id": 1641718,
@@ -20862,26 +20642,6 @@
    "l10_over": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -20978,7 +20738,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -21008,7 +20768,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 259
   },
   {
    "player_id": 1641739,
@@ -21172,7 +20932,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 204
+   "rank": 203
   },
   {
    "player_id": 1641771,
@@ -21186,7 +20946,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -21216,7 +20976,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 268
+   "rank": 263
   },
   {
    "player_id": 1641778,
@@ -21600,7 +21360,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 8
+   "rank": 7
   },
   {
    "player_id": 1642275,
@@ -21824,7 +21584,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 275
   },
   {
    "player_id": 1642363,
@@ -22172,7 +21932,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 53
   },
   {
    "player_id": 1642853,
@@ -22446,7 +22206,7 @@
    "ceiling": 0.89,
    "sigma": 0.4,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -22476,7 +22236,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 285
   },
   {
    "player_id": 1642883,
@@ -22999,26 +22759,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -742,
    "player": "Caleb Wilson",
    "team": "Chicago",
@@ -23279,6 +23019,26 @@
    "us": null
   },
   {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "BLK",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -23388,7 +23148,7 @@
    "game": "Dallas vs Houston",
    "stat": "PTS",
    "line": 20.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -23400,7 +23160,7 @@
    "gate_status": "passed",
    "us": {
     "line": 20.5,
-    "price": 1.77,
+    "price": 1.98,
     "book": "fanduel",
     "price_over": 1.98,
     "price_under": 1.77,
@@ -23586,7 +23346,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -23616,7 +23376,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 228
+   "rank": 221
   },
   {
    "player_id": 201939,
@@ -23664,7 +23424,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 12.5,
     "price": 1.89,
@@ -23673,7 +23433,7 @@
     "price_under": 1.85,
     "l5_over": 0.6,
     "l10_over": 0.7,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -23791,7 +23551,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "PTS",
    "line": 8.5,
-   "price": 1.78,
+   "price": 2.0,
    "book": "sportsbet",
    "price_over": 2.0,
    "price_under": 1.78,
@@ -23800,16 +23560,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 8.5,
-    "price": 1.76,
+    "price": 2.0,
     "book": "fanduel",
     "price_over": 2.0,
     "price_under": 1.76,
     "l5_over": 0.0,
     "l10_over": 0.2,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -24244,7 +24004,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 97
+   "rank": 93
   },
   {
    "player_id": 1626164,
@@ -24424,7 +24184,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 231
+   "rank": 224
   },
   {
    "player_id": 1626220,
@@ -24613,7 +24373,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 43
+   "rank": 44
   },
   {
    "player_id": 1627751,
@@ -24724,7 +24484,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 10
+   "rank": 9
   },
   {
    "player_id": 1627826,
@@ -24786,7 +24546,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 75
   },
   {
    "player_id": 1627827,
@@ -25277,26 +25037,6 @@
    }
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -25364,7 +25104,7 @@
    "game": "Dallas vs Houston",
    "stat": "PTS",
    "line": 12.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -25376,7 +25116,7 @@
    "gate_status": "passed",
    "us": {
     "line": 12.5,
-    "price": 1.82,
+    "price": 1.93,
     "book": "fanduel",
     "price_over": 1.82,
     "price_under": 1.93,
@@ -25650,7 +25390,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 65
+   "rank": 64
   },
   {
    "player_id": 1629618,
@@ -25938,26 +25678,6 @@
    }
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -25965,7 +25685,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PTS",
    "line": 5.5,
-   "price": 2.02,
+   "price": 1.76,
    "book": "sportsbet",
    "price_over": 1.76,
    "price_under": 2.02,
@@ -25977,7 +25697,7 @@
    "gate_status": "passed",
    "us": {
     "line": 5.5,
-    "price": 2.0,
+    "price": 1.76,
     "book": "fanduel",
     "price_over": 1.76,
     "price_under": 2.0,
@@ -26115,7 +25835,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 183
+   "rank": 184
   },
   {
    "player_id": 1629675,
@@ -26154,7 +25874,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "PTS",
    "line": 6.5,
-   "price": 1.78,
+   "price": 1.96,
    "book": "neds",
    "price_over": 1.96,
    "price_under": 1.78,
@@ -26163,10 +25883,10 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 6.5,
-    "price": 1.74,
+    "price": 2.07,
     "book": "draftkings",
     "price_over": 2.07,
     "price_under": 1.74,
@@ -26322,7 +26042,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 95
+   "rank": 91
   },
   {
    "player_id": 1630168,
@@ -26332,7 +26052,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PTS",
    "line": 13.5,
-   "price": 1.9,
+   "price": 1.86,
    "book": "sportsbet",
    "price_over": 1.9,
    "price_under": 1.86,
@@ -26341,16 +26061,16 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 13.5,
-    "price": 1.89,
+    "price": 1.85,
     "book": "fanduel",
     "price_over": 1.89,
     "price_under": 1.85,
     "l5_over": 0.4,
     "l10_over": 0.5,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -26482,7 +26202,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 67
+   "rank": 66
   },
   {
    "player_id": 1630182,
@@ -27233,7 +26953,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PTS",
    "line": 20.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -27242,16 +26962,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 20.5,
-    "price": 1.77,
+    "price": 1.98,
     "book": "fanduel",
     "price_over": 1.77,
     "price_under": 1.98,
     "l5_over": 0.4,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -27403,7 +27123,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 247
+   "rank": 242
   },
   {
    "player_id": 1630572,
@@ -27692,7 +27412,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 154
+   "rank": 155
   },
   {
    "player_id": 1630658,
@@ -28049,7 +27769,7 @@
    "game": "Dallas vs Houston",
    "stat": "PTS",
    "line": 9.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -28058,7 +27778,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 9.5,
     "price": 1.98,
@@ -28067,7 +27787,7 @@
     "price_under": 1.98,
     "l5_over": 0.8,
     "l10_over": 0.5,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -28111,7 +27831,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28141,7 +27861,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 249
   },
   {
    "player_id": 1631123,
@@ -28269,26 +27989,6 @@
     "l10_over": 0.0,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1631169,
@@ -28539,7 +28239,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 208
+   "rank": 206
   },
   {
    "player_id": 1631255,
@@ -28553,7 +28253,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -28583,7 +28283,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 262
+   "rank": 257
   },
   {
    "player_id": 1631260,
@@ -28872,7 +28572,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 151
+   "rank": 152
   },
   {
    "player_id": 1641718,
@@ -28902,26 +28602,6 @@
     "l10_over": 0.4,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1641724,
@@ -29024,7 +28704,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -29054,7 +28734,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 259
   },
   {
    "player_id": 1641739,
@@ -29236,7 +28916,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 178
+   "rank": 180
   },
   {
    "player_id": 1641771,
@@ -29250,7 +28930,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -29280,7 +28960,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 268
+   "rank": 263
   },
   {
    "player_id": 1641778,
@@ -29772,7 +29452,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 158
+   "rank": 159
   },
   {
    "player_id": 1642275,
@@ -30023,7 +29703,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 275
   },
   {
    "player_id": 1642363,
@@ -30443,7 +30123,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 129
+   "rank": 127
   },
   {
    "player_id": 1642853,
@@ -30753,7 +30433,7 @@
    "ceiling": 5.67,
    "sigma": 4.33,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -30783,7 +30463,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 285
   },
   {
    "player_id": 1642883,
@@ -31324,26 +31004,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -742,
    "player": "Caleb Wilson",
    "team": "Chicago",
@@ -31658,6 +31318,26 @@
    }
   },
   {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "PTS",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -31757,7 +31437,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 129
+   "rank": 131
   },
   {
    "player_id": -328,
@@ -31767,7 +31447,7 @@
    "game": "Dallas vs Houston",
    "stat": "REB",
    "line": 3.5,
-   "price": 1.78,
+   "price": 2.0,
    "book": "sportsbet",
    "price_over": 2.0,
    "price_under": 1.78,
@@ -31776,16 +31456,16 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 3.5,
-    "price": 1.72,
+    "price": 2.04,
     "book": "fanduel",
     "price_over": 2.04,
     "price_under": 1.72,
     "l5_over": 0.8,
     "l10_over": 0.6,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -31965,7 +31645,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -31995,7 +31675,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 228
+   "rank": 221
   },
   {
    "player_id": 201939,
@@ -32034,7 +31714,7 @@
    "game": "Phoenix vs Portland",
    "stat": "REB",
    "line": 3.5,
-   "price": 1.68,
+   "price": 2.1,
    "book": "sportsbet",
    "price_over": 1.68,
    "price_under": 2.1,
@@ -32046,7 +31726,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 3.5,
-    "price": 1.68,
+    "price": 2.12,
     "book": "fanduel",
     "price_over": 1.68,
     "price_under": 2.12,
@@ -32170,7 +31850,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "REB",
    "line": 5.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -32179,16 +31859,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 5.5,
-    "price": 1.8,
+    "price": 1.94,
     "book": "fanduel",
     "price_over": 1.94,
     "price_under": 1.8,
     "l5_over": 0.4,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -32228,7 +31908,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 2.5,
     "price": 1.56,
@@ -32237,7 +31917,7 @@
     "price_under": 2.34,
     "l5_over": 0.8,
     "l10_over": 0.8,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -32623,7 +32303,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 65
   },
   {
    "player_id": 1626164,
@@ -32803,7 +32483,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 231
+   "rank": 224
   },
   {
    "player_id": 1626220,
@@ -32992,7 +32672,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 44
   },
   {
    "player_id": 1627751,
@@ -33103,7 +32783,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 35
   },
   {
    "player_id": 1627826,
@@ -33656,26 +33336,6 @@
    }
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -33752,7 +33412,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 5.5,
     "price": 1.8,
@@ -33761,7 +33421,7 @@
     "price_under": 1.94,
     "l5_over": 0.6,
     "l10_over": 0.8,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -33928,7 +33588,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "REB",
    "line": 3.5,
-   "price": 1.58,
+   "price": 2.25,
    "book": "sportsbet",
    "price_over": 1.58,
    "price_under": 2.25,
@@ -33937,16 +33597,16 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 3.5,
-    "price": 1.58,
+    "price": 2.28,
     "book": "fanduel",
     "price_over": 1.58,
     "price_under": 2.28,
     "l5_over": 0.6,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -34159,7 +33819,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 3.5,
     "price": 2.3,
@@ -34168,7 +33828,7 @@
     "price_under": 1.57,
     "l5_over": 0.2,
     "l10_over": 0.3,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -34284,7 +33944,7 @@
     "price_under": 2.3,
     "l5_over": 0.6,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -34317,26 +33977,6 @@
    }
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -34344,7 +33984,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "REB",
    "line": 2.5,
-   "price": 1.89,
+   "price": 1.87,
    "book": "sportsbet",
    "price_over": 1.87,
    "price_under": 1.89,
@@ -34382,7 +34022,7 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 6.5,
     "price": 1.72,
@@ -34391,7 +34031,7 @@
     "price_under": 2.04,
     "l5_over": 0.6,
     "l10_over": 0.8,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -34533,7 +34173,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "REB",
    "line": 2.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -34542,16 +34182,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 2.5,
-    "price": 1.98,
+    "price": 1.77,
     "book": "fanduel",
     "price_over": 1.77,
     "price_under": 1.98,
     "l5_over": 0.2,
     "l10_over": 0.2,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -34701,7 +34341,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 92
+   "rank": 91
   },
   {
    "player_id": 1630168,
@@ -34711,7 +34351,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "REB",
    "line": 7.5,
-   "price": 2.08,
+   "price": 1.72,
    "book": "sportsbet",
    "price_over": 2.08,
    "price_under": 1.72,
@@ -34720,16 +34360,16 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 7.5,
-    "price": 2.08,
+    "price": 1.69,
     "book": "fanduel",
     "price_over": 2.08,
     "price_under": 1.69,
     "l5_over": 0.2,
     "l10_over": 0.2,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -34843,7 +34483,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 100
   },
   {
    "player_id": 1630182,
@@ -35116,7 +34756,7 @@
    "game": "Dallas vs Houston",
    "stat": "REB",
    "line": 3.5,
-   "price": 1.76,
+   "price": 2.02,
    "book": "sportsbet",
    "price_over": 1.76,
    "price_under": 2.02,
@@ -35125,16 +34765,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 3.5,
-    "price": 1.74,
+    "price": 2.02,
     "book": "draftkings",
     "price_over": 1.74,
     "price_under": 2.02,
     "l5_over": 0.6,
     "l10_over": 0.6,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -35388,7 +35028,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 68
   },
   {
    "player_id": 1630532,
@@ -35594,7 +35234,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "REB",
    "line": 10.5,
-   "price": 2.1,
+   "price": 1.68,
    "book": "sportsbet",
    "price_over": 2.1,
    "price_under": 1.68,
@@ -35603,16 +35243,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 10.5,
-    "price": 2.1,
+    "price": 1.68,
     "book": "fanduel",
     "price_over": 2.1,
     "price_under": 1.68,
     "l5_over": 0.0,
     "l10_over": 0.3,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -35764,7 +35404,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 247
+   "rank": 242
   },
   {
    "player_id": 1630572,
@@ -35970,7 +35610,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "REB",
    "line": 5.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -35982,7 +35622,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 5.5,
-    "price": 1.93,
+    "price": 1.82,
     "book": "fanduel",
     "price_over": 1.82,
     "price_under": 1.93,
@@ -36152,7 +35792,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 6.5,
     "price": 1.85,
@@ -36161,7 +35801,7 @@
     "price_under": 1.89,
     "l5_over": 0.4,
     "l10_over": 0.6,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -36322,7 +35962,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 158
+   "rank": 159
   },
   {
    "player_id": 1631099,
@@ -36472,7 +36112,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -36502,7 +36142,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 249
   },
   {
    "player_id": 1631123,
@@ -36630,26 +36270,6 @@
     "l10_over": 0.2,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1631169,
@@ -36914,7 +36534,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -36944,7 +36564,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 262
+   "rank": 257
   },
   {
    "player_id": 1631260,
@@ -37233,7 +36853,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 118
+   "rank": 119
   },
   {
    "player_id": 1641718,
@@ -37263,26 +36883,6 @@
     "l10_over": 0.2,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1641724,
@@ -37385,7 +36985,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -37415,7 +37015,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 259
   },
   {
    "player_id": 1641739,
@@ -37597,7 +37197,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 178
+   "rank": 177
   },
   {
    "player_id": 1641771,
@@ -37611,7 +37211,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -37641,7 +37241,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 268
+   "rank": 263
   },
   {
    "player_id": 1641778,
@@ -38133,7 +37733,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 24
+   "rank": 23
   },
   {
    "player_id": 1642275,
@@ -38384,7 +37984,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 275
   },
   {
    "player_id": 1642363,
@@ -38583,7 +38183,7 @@
    "game": "Dallas vs Houston",
    "stat": "REB",
    "line": 6.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -38592,16 +38192,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 6.5,
-    "price": 1.93,
+    "price": 1.82,
     "book": "fanduel",
     "price_over": 1.93,
     "price_under": 1.82,
     "l5_over": 0.6,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -38693,7 +38293,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 107
+   "rank": 106
   },
   {
    "player_id": 1642848,
@@ -39114,7 +38714,7 @@
    "ceiling": 2.18,
    "sigma": 1.67,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -39144,7 +38744,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 285
   },
   {
    "player_id": 1642883,
@@ -39685,26 +39285,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -742,
    "player": "Caleb Wilson",
    "team": "Chicago",
@@ -40019,6 +39599,26 @@
    }
   },
   {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "REB",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -40254,7 +39854,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -40284,7 +39884,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 228
+   "rank": 221
   },
   {
    "player_id": 201939,
@@ -40768,7 +40368,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 50
   },
   {
    "player_id": 1626164,
@@ -40912,7 +40512,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 231
+   "rank": 224
   },
   {
    "player_id": 1626220,
@@ -41184,7 +40784,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 194
+   "rank": 192
   },
   {
    "player_id": 1627827,
@@ -41567,26 +41167,6 @@
    "us": null
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -41932,7 +41512,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 86
+   "rank": 84
   },
   {
    "player_id": 1629628,
@@ -42075,26 +41655,6 @@
    "us": null
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -42216,7 +41776,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 210
+   "rank": 209
   },
   {
    "player_id": 1629675,
@@ -42484,7 +42044,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 128
+   "rank": 129
   },
   {
    "player_id": 1630182,
@@ -43216,7 +42776,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 247
+   "rank": 242
   },
   {
    "player_id": 1630572,
@@ -43460,7 +43020,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 201
+   "rank": 199
   },
   {
    "player_id": 1630658,
@@ -43684,7 +43244,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 185
+   "rank": 182
   },
   {
    "player_id": 1631099,
@@ -43798,7 +43358,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -43828,7 +43388,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 249
   },
   {
    "player_id": 1631123,
@@ -43926,26 +43486,6 @@
    "l10_over": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -44172,7 +43712,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 204
+   "rank": 202
   },
   {
    "player_id": 1631255,
@@ -44186,7 +43726,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -44216,7 +43756,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 262
+   "rank": 257
   },
   {
    "player_id": 1631260,
@@ -44460,7 +44000,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 154
+   "rank": 153
   },
   {
    "player_id": 1641718,
@@ -44478,26 +44018,6 @@
    "l10_over": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -44594,7 +44114,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -44624,7 +44144,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 259
   },
   {
    "player_id": 1641739,
@@ -44802,7 +44322,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -44832,7 +44352,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 268
+   "rank": 263
   },
   {
    "player_id": 1641778,
@@ -45216,7 +44736,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 205
+   "rank": 203
   },
   {
    "player_id": 1642275,
@@ -45440,7 +44960,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 275
   },
   {
    "player_id": 1642363,
@@ -45704,7 +45224,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 38
   },
   {
    "player_id": 1642848,
@@ -45788,7 +45308,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 119
+   "rank": 118
   },
   {
    "player_id": 1642853,
@@ -46062,7 +45582,7 @@
    "ceiling": 0.79,
    "sigma": 0.76,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -46092,7 +45612,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 285
   },
   {
    "player_id": 1642883,
@@ -46615,26 +46135,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -742,
    "player": "Caleb Wilson",
    "team": "Chicago",
@@ -46895,6 +46395,26 @@
    "us": null
   },
   {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "STL",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -46976,7 +46496,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 91
+   "rank": 88
   },
   {
    "player_id": -328,
@@ -47130,7 +46650,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -47160,7 +46680,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 228
+   "rank": 221
   },
   {
    "player_id": 201939,
@@ -47644,7 +47164,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 127
   },
   {
    "player_id": 1626164,
@@ -47788,7 +47308,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 231
+   "rank": 224
   },
   {
    "player_id": 1626220,
@@ -47932,7 +47452,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 10
+   "rank": 9
   },
   {
    "player_id": 1627751,
@@ -48060,7 +47580,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 85
   },
   {
    "player_id": 1627827,
@@ -48443,26 +47963,6 @@
    "us": null
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -48744,7 +48244,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 32
   },
   {
    "player_id": 1629618,
@@ -48808,7 +48308,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 57
   },
   {
    "player_id": 1629628,
@@ -48951,26 +48451,6 @@
    "us": null
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -49092,7 +48572,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 164
+   "rank": 165
   },
   {
    "player_id": 1629675,
@@ -49236,7 +48716,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 138
+   "rank": 136
   },
   {
    "player_id": 1630168,
@@ -49744,7 +49224,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 129
+   "rank": 126
   },
   {
    "player_id": 1630530,
@@ -49788,7 +49268,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 81
+   "rank": 79
   },
   {
    "player_id": 1630532,
@@ -50092,7 +49572,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 247
+   "rank": 242
   },
   {
    "player_id": 1630572,
@@ -50336,7 +49816,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 177
+   "rank": 176
   },
   {
    "player_id": 1630658,
@@ -50560,7 +50040,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 140
+   "rank": 139
   },
   {
    "player_id": 1631099,
@@ -50674,7 +50154,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -50704,7 +50184,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 249
   },
   {
    "player_id": 1631123,
@@ -50802,26 +50282,6 @@
    "l10_over": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -51048,7 +50508,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 193
+   "rank": 194
   },
   {
    "player_id": 1631255,
@@ -51062,7 +50522,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -51092,7 +50552,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 262
+   "rank": 257
   },
   {
    "player_id": 1631260,
@@ -51336,7 +50796,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 116
+   "rank": 114
   },
   {
    "player_id": 1641718,
@@ -51354,26 +50814,6 @@
    "l10_over": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -51470,7 +50910,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -51500,7 +50940,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 259
   },
   {
    "player_id": 1641739,
@@ -51678,7 +51118,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -51708,7 +51148,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 268
+   "rank": 263
   },
   {
    "player_id": 1641778,
@@ -52316,7 +51756,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 275
   },
   {
    "player_id": 1642363,
@@ -52938,7 +52378,7 @@
    "ceiling": 1.38,
    "sigma": 0.8,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -52968,7 +52408,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 285
   },
   {
    "player_id": 1642883,
@@ -53491,26 +52931,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -742,
    "player": "Caleb Wilson",
    "team": "Chicago",
@@ -53771,6 +53191,26 @@
    "us": null
   },
   {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "TOV",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -791,
    "player": "Hannes Steinbach",
    "team": "Charlotte",
@@ -53786,6 +53226,26 @@
    "l10_over": null,
    "pos": "PF",
    "pos_usual": "PF",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "PRA",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
    "early": 0,
    "gate_status": null,
    "us": null
@@ -54214,26 +53674,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -54343,7 +53783,7 @@
    "game": "Dallas vs Houston",
    "stat": "PRA",
    "line": 28.5,
-   "price": 1.89,
+   "price": 1.87,
    "book": "sportsbet",
    "price_over": 1.87,
    "price_under": 1.89,
@@ -54532,7 +53972,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -54562,7 +54002,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 234
+   "rank": 226
   },
   {
    "player_id": 201939,
@@ -54728,7 +54168,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "PRA",
    "line": 20.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -54740,7 +54180,7 @@
    "gate_status": "passed",
    "us": {
     "line": 20.5,
-    "price": 1.8,
+    "price": 1.96,
     "book": "fanduel",
     "price_over": 1.96,
     "price_under": 1.8,
@@ -55172,7 +54612,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 105
+   "rank": 104
   },
   {
    "player_id": 1626164,
@@ -55343,7 +54783,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 237
+   "rank": 229
   },
   {
    "player_id": 1626220,
@@ -55532,7 +54972,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 28
+   "rank": 29
   },
   {
    "player_id": 1627751,
@@ -55643,7 +55083,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 17
+   "rank": 16
   },
   {
    "player_id": 1627826,
@@ -55705,7 +55145,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 45
   },
   {
    "player_id": 1627827,
@@ -56196,26 +55636,6 @@
    }
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -56283,7 +55703,7 @@
    "game": "Dallas vs Houston",
    "stat": "PRA",
    "line": 20.5,
-   "price": 1.91,
+   "price": 1.85,
    "book": "sportsbet",
    "price_over": 1.91,
    "price_under": 1.85,
@@ -56468,16 +55888,16 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 12.5,
-    "price": 1.77,
+    "price": 1.98,
     "book": "fanduel",
     "price_over": 1.77,
     "price_under": 1.98,
     "l5_over": 0.6,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -56642,7 +56062,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 40
   },
   {
    "player_id": 1629628,
@@ -56839,26 +56259,6 @@
    }
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -56998,7 +56398,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 199
+   "rank": 198
   },
   {
    "player_id": 1629675,
@@ -57037,7 +56437,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "PRA",
    "line": 10.5,
-   "price": 1.83,
+   "price": 1.9,
    "book": "pointsbetau",
    "price_over": 1.9,
    "price_under": 1.83,
@@ -57049,7 +56449,7 @@
    "gate_status": "passed",
    "us": {
     "line": 10.5,
-    "price": 1.81,
+    "price": 1.93,
     "book": "draftkings",
     "price_over": 1.93,
     "price_under": 1.81,
@@ -57205,7 +56605,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 101
   },
   {
    "player_id": 1630168,
@@ -57215,7 +56615,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PRA",
    "line": 23.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -57224,16 +56624,16 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 23.5,
-    "price": 1.94,
+    "price": 1.8,
     "book": "fanduel",
     "price_over": 1.94,
     "price_under": 1.8,
     "l5_over": 0.4,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -57338,7 +56738,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 91
+   "rank": 88
   },
   {
    "player_id": 1630182,
@@ -57620,7 +57020,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 19.5,
     "price": 1.91,
@@ -57821,7 +57221,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 143
   },
   {
    "player_id": 1630530,
@@ -57883,7 +57283,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 41
   },
   {
    "player_id": 1630532,
@@ -58080,7 +57480,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PRA",
    "line": 38.5,
-   "price": 1.86,
+   "price": 1.9,
    "book": "sportsbet",
    "price_over": 1.86,
    "price_under": 1.9,
@@ -58092,7 +57492,7 @@
    "gate_status": "passed",
    "us": {
     "line": 38.5,
-    "price": 1.85,
+    "price": 1.89,
     "book": "fanduel",
     "price_over": 1.85,
     "price_under": 1.89,
@@ -58250,7 +57650,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 247
   },
   {
    "player_id": 1630572,
@@ -58539,7 +57939,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 166
+   "rank": 165
   },
   {
    "player_id": 1630658,
@@ -58808,7 +58208,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 161
+   "rank": 160
   },
   {
    "player_id": 1631099,
@@ -58949,7 +58349,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -58979,7 +58379,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 260
+   "rank": 254
   },
   {
    "player_id": 1631123,
@@ -59118,26 +58518,6 @@
     "l10_over": 0.0,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1631169,
@@ -59388,7 +58768,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 207
+   "rank": 205
   },
   {
    "player_id": 1631255,
@@ -59402,7 +58782,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -59432,7 +58812,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 269
+   "rank": 263
   },
   {
    "player_id": 1631260,
@@ -59741,7 +59121,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 146
+   "rank": 145
   },
   {
    "player_id": 1641718,
@@ -59771,26 +59151,6 @@
     "l10_over": 0.4,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1641724,
@@ -59893,7 +59253,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -59923,7 +59283,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 266
   },
   {
    "player_id": 1641739,
@@ -60116,7 +59476,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 185
+   "rank": 186
   },
   {
    "player_id": 1641771,
@@ -60130,7 +59490,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -60160,7 +59520,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 277
+   "rank": 271
   },
   {
    "player_id": 1641778,
@@ -60652,7 +60012,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 125
+   "rank": 124
   },
   {
    "player_id": 1642275,
@@ -60894,7 +60254,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 283
   },
   {
    "player_id": 1642363,
@@ -61194,7 +60554,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 57
   },
   {
    "player_id": 1642848,
@@ -61305,7 +60665,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 116
+   "rank": 115
   },
   {
    "player_id": 1642853,
@@ -61617,7 +60977,7 @@
    "ceiling": 8.71,
    "sigma": 6.33,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -61647,7 +61007,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 299
+   "rank": 294
   },
   {
    "player_id": 1642883,
@@ -61994,6 +61354,26 @@
    "l10_over": null,
    "pos": "PF",
    "pos_usual": "PF",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "PR",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
    "early": 0,
    "gate_status": null,
    "us": null
@@ -62422,26 +61802,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -62551,7 +61911,7 @@
    "game": "Dallas vs Houston",
    "stat": "PR",
    "line": 23.5,
-   "price": 1.89,
+   "price": 1.87,
    "book": "sportsbet",
    "price_over": 1.87,
    "price_under": 1.89,
@@ -62563,7 +61923,7 @@
    "gate_status": "passed",
    "us": {
     "line": 23.5,
-    "price": 1.88,
+    "price": 1.85,
     "book": "fanduel",
     "price_over": 1.85,
     "price_under": 1.88,
@@ -62749,7 +62109,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -62779,7 +62139,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 234
+   "rank": 226
   },
   {
    "player_id": 201939,
@@ -62827,7 +62187,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 16.5,
     "price": 1.88,
@@ -62836,7 +62196,7 @@
     "price_under": 1.88,
     "l5_over": 0.6,
     "l10_over": 0.7,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -62954,7 +62314,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "PR",
    "line": 13.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -62963,16 +62323,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 13.5,
-    "price": 1.98,
+    "price": 1.77,
     "book": "fanduel",
     "price_over": 1.77,
     "price_under": 1.98,
     "l5_over": 0.0,
     "l10_over": 0.3,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -63407,7 +62767,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 96
+   "rank": 92
   },
   {
    "player_id": 1626164,
@@ -63587,7 +62947,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 237
+   "rank": 229
   },
   {
    "player_id": 1626220,
@@ -63776,7 +63136,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 38
+   "rank": 39
   },
   {
    "player_id": 1627751,
@@ -63887,7 +63247,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 13
+   "rank": 11
   },
   {
    "player_id": 1627826,
@@ -63949,7 +63309,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 34
+   "rank": 35
   },
   {
    "player_id": 1627827,
@@ -64431,26 +63791,6 @@
    }
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -64530,7 +63870,7 @@
    "gate_status": "passed",
    "us": {
     "line": 18.5,
-    "price": 1.85,
+    "price": 1.89,
     "book": "fanduel",
     "price_over": 1.85,
     "price_under": 1.89,
@@ -64712,7 +64052,7 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 11.5,
     "price": 1.98,
@@ -64721,7 +64061,7 @@
     "price_under": 1.77,
     "l5_over": 0.6,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -64804,7 +64144,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 93
+   "rank": 90
   },
   {
    "player_id": 1629618,
@@ -64886,7 +64226,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 27
+   "rank": 28
   },
   {
    "player_id": 1629628,
@@ -65092,26 +64432,6 @@
    }
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -65119,7 +64439,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PR",
    "line": 8.5,
-   "price": 1.91,
+   "price": 1.85,
    "book": "sportsbet",
    "price_over": 1.85,
    "price_under": 1.91,
@@ -65131,7 +64451,7 @@
    "gate_status": "passed",
    "us": {
     "line": 8.5,
-    "price": 1.89,
+    "price": 1.85,
     "book": "fanduel",
     "price_over": 1.85,
     "price_under": 1.89,
@@ -65269,7 +64589,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 201
+   "rank": 200
   },
   {
    "player_id": 1629675,
@@ -65308,7 +64628,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "PR",
    "line": 9.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -65317,16 +64637,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 9.5,
-    "price": 1.82,
+    "price": 1.93,
     "book": "fanduel",
     "price_over": 1.93,
     "price_under": 1.82,
     "l5_over": 0.0,
     "l10_over": 0.2,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -65476,7 +64796,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 98
   },
   {
    "player_id": 1630168,
@@ -65486,7 +64806,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PR",
    "line": 20.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -65495,16 +64815,16 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 20.5,
-    "price": 1.8,
+    "price": 1.94,
     "book": "fanduel",
     "price_over": 1.8,
     "price_under": 1.94,
     "l5_over": 0.4,
     "l10_over": 0.5,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -65618,7 +64938,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 85
+   "rank": 83
   },
   {
    "player_id": 1630182,
@@ -66101,7 +65421,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 154
+   "rank": 152
   },
   {
    "player_id": 1630530,
@@ -66163,7 +65483,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 33
+   "rank": 34
   },
   {
    "player_id": 1630532,
@@ -66369,7 +65689,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PR",
    "line": 31.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -66378,16 +65698,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 31.5,
-    "price": 1.94,
+    "price": 1.8,
     "book": "fanduel",
     "price_over": 1.94,
     "price_under": 1.8,
     "l5_over": 0.2,
     "l10_over": 0.2,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -66539,7 +65859,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 247
   },
   {
    "player_id": 1630572,
@@ -66828,7 +66148,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 161
   },
   {
    "player_id": 1630658,
@@ -67097,7 +66417,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 158
+   "rank": 156
   },
   {
    "player_id": 1631099,
@@ -67194,7 +66514,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 12.5,
     "price": 2.0,
@@ -67203,7 +66523,7 @@
     "price_under": 2.0,
     "l5_over": 0.8,
     "l10_over": 0.5,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -67247,7 +66567,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -67277,7 +66597,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 260
+   "rank": 254
   },
   {
    "player_id": 1631123,
@@ -67425,26 +66745,6 @@
     "l10_over": 0.0,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1631169,
@@ -67695,7 +66995,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 212
+   "rank": 210
   },
   {
    "player_id": 1631255,
@@ -67709,7 +67009,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -67739,7 +67039,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 269
+   "rank": 263
   },
   {
    "player_id": 1631260,
@@ -68048,7 +67348,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 151
+   "rank": 148
   },
   {
    "player_id": 1641718,
@@ -68078,26 +67378,6 @@
     "l10_over": 0.5,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1641724,
@@ -68200,7 +67480,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -68230,7 +67510,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 266
   },
   {
    "player_id": 1641739,
@@ -68432,7 +67712,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 181
+   "rank": 182
   },
   {
    "player_id": 1641771,
@@ -68446,7 +67726,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -68476,7 +67756,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 277
+   "rank": 271
   },
   {
    "player_id": 1641778,
@@ -68959,7 +68239,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 114
+   "rank": 112
   },
   {
    "player_id": 1642275,
@@ -69201,7 +68481,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 283
   },
   {
    "player_id": 1642363,
@@ -69510,7 +68790,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 61
   },
   {
    "player_id": 1642848,
@@ -69603,7 +68883,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 112
+   "rank": 110
   },
   {
    "player_id": 1642853,
@@ -69933,7 +69213,7 @@
    "ceiling": 8.11,
    "sigma": 5.79,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -69963,7 +69243,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 299
+   "rank": 294
   },
   {
    "player_id": 1642883,
@@ -70310,6 +69590,26 @@
    "l10_over": null,
    "pos": "PF",
    "pos_usual": "PF",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "PA",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
    "early": 0,
    "gate_status": null,
    "us": null
@@ -70738,26 +70038,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -70867,7 +70147,7 @@
    "game": "Dallas vs Houston",
    "stat": "PA",
    "line": 24.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -70879,7 +70159,7 @@
    "gate_status": "passed",
    "us": {
     "line": 24.5,
-    "price": 1.96,
+    "price": 1.78,
     "book": "fanduel",
     "price_over": 1.78,
     "price_under": 1.96,
@@ -71056,7 +70336,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -71086,7 +70366,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 234
+   "rank": 226
   },
   {
    "player_id": 201939,
@@ -71252,7 +70532,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "PA",
    "line": 14.5,
-   "price": 1.87,
+   "price": 1.89,
    "book": "sportsbet",
    "price_over": 1.89,
    "price_under": 1.87,
@@ -71669,7 +70949,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 111
+   "rank": 109
   },
   {
    "player_id": 1626164,
@@ -71831,7 +71111,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 237
+   "rank": 229
   },
   {
    "player_id": 1626220,
@@ -72020,7 +71300,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 29
+   "rank": 30
   },
   {
    "player_id": 1627751,
@@ -72184,7 +71464,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 83
   },
   {
    "player_id": 1627827,
@@ -72675,26 +71955,6 @@
    }
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -72762,7 +72022,7 @@
    "game": "Dallas vs Houston",
    "stat": "PA",
    "line": 14.5,
-   "price": 1.84,
+   "price": 1.92,
    "book": "sportsbet",
    "price_over": 1.84,
    "price_under": 1.92,
@@ -72774,7 +72034,7 @@
    "gate_status": "passed",
    "us": {
     "line": 14.5,
-    "price": 1.85,
+    "price": 1.89,
     "book": "fanduel",
     "price_over": 1.85,
     "price_under": 1.89,
@@ -72956,7 +72216,7 @@
     "price_under": 1.85,
     "l5_over": 0.6,
     "l10_over": 0.7,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -73039,7 +72299,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 36
   },
   {
    "player_id": 1629618,
@@ -73121,7 +72381,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 44
+   "rank": 43
   },
   {
    "player_id": 1629628,
@@ -73318,26 +72578,6 @@
    }
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -73477,7 +72717,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 186
+   "rank": 188
   },
   {
    "player_id": 1629675,
@@ -73528,7 +72768,7 @@
    "gate_status": "passed",
    "us": {
     "line": 7.5,
-    "price": 1.83,
+    "price": 1.92,
     "book": "draftkings",
     "price_over": 1.92,
     "price_under": 1.83,
@@ -73666,7 +72906,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 100
   },
   {
    "player_id": 1630168,
@@ -73676,7 +72916,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PA",
    "line": 15.5,
-   "price": 1.8,
+   "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -73688,7 +72928,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 15.5,
-    "price": 1.8,
+    "price": 1.96,
     "book": "fanduel",
     "price_over": 1.8,
     "price_under": 1.96,
@@ -73799,7 +73039,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 77
+   "rank": 75
   },
   {
    "player_id": 1630182,
@@ -74273,7 +73513,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 139
+   "rank": 138
   },
   {
    "player_id": 1630530,
@@ -74335,7 +73575,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 39
   },
   {
    "player_id": 1630532,
@@ -74523,7 +73763,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "PA",
    "line": 28.5,
-   "price": 1.84,
+   "price": 1.92,
    "book": "sportsbet",
    "price_over": 1.84,
    "price_under": 1.92,
@@ -74532,16 +73772,16 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 28.5,
-    "price": 1.83,
+    "price": 1.91,
     "book": "fanduel",
     "price_over": 1.83,
     "price_under": 1.91,
     "l5_over": 0.2,
     "l10_over": 0.1,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -74693,7 +73933,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 247
   },
   {
    "player_id": 1630572,
@@ -75251,7 +74491,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 154
+   "rank": 153
   },
   {
    "player_id": 1631099,
@@ -75383,7 +74623,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -75413,7 +74653,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 260
+   "rank": 254
   },
   {
    "player_id": 1631123,
@@ -75542,26 +74782,6 @@
    "pos_usual": "SG",
    "early": null,
    "gate_status": "failed:edge_below_tier",
-   "us": null
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
    "us": null
   },
   {
@@ -75804,7 +75024,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 201
+   "rank": 199
   },
   {
    "player_id": 1631255,
@@ -75818,7 +75038,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -75848,7 +75068,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 269
+   "rank": 263
   },
   {
    "player_id": 1631260,
@@ -76157,7 +75377,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 147
   },
   {
    "player_id": 1641718,
@@ -76187,26 +75407,6 @@
     "l10_over": 0.3,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1641724,
@@ -76309,7 +75509,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -76339,7 +75539,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 266
   },
   {
    "player_id": 1641739,
@@ -76532,7 +75732,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 181
+   "rank": 184
   },
   {
    "player_id": 1641771,
@@ -76546,7 +75746,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -76576,7 +75776,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 277
+   "rank": 271
   },
   {
    "player_id": 1641778,
@@ -77283,7 +76483,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 283
   },
   {
    "player_id": 1642363,
@@ -77583,7 +76783,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 49
   },
   {
    "player_id": 1642848,
@@ -77676,7 +76876,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 124
+   "rank": 122
   },
   {
    "player_id": 1642853,
@@ -77979,7 +77179,7 @@
    "ceiling": 6.78,
    "sigma": 4.95,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -78009,7 +77209,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 299
+   "rank": 294
   },
   {
    "player_id": 1642883,
@@ -78356,6 +77556,26 @@
    "l10_over": null,
    "pos": "PF",
    "pos_usual": "PF",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
+   "player_id": -790,
+   "player": "Sergio de Larrea",
+   "team": "Dallas",
+   "opp": "Houston",
+   "game": "Dallas vs Houston",
+   "stat": "RA",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "PG",
+   "pos_usual": "PG",
    "early": 0,
    "gate_status": null,
    "us": null
@@ -78784,26 +78004,6 @@
    "us": null
   },
   {
-   "player_id": -727,
-   "player": "Dailyn Swain",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": 0,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": -650,
    "player": "Trey Lyles",
    "team": "Minnesota",
@@ -78913,7 +78113,7 @@
    "game": "Dallas vs Houston",
    "stat": "RA",
    "line": 8.5,
-   "price": 1.74,
+   "price": 2.05,
    "book": "sportsbet",
    "price_over": 2.05,
    "price_under": 1.74,
@@ -78922,16 +78122,16 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 8.5,
-    "price": 1.74,
+    "price": 2.02,
     "book": "fanduel",
     "price_over": 2.02,
     "price_under": 1.74,
     "l5_over": 0.6,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -79102,7 +78302,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -79132,7 +78332,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 234
+   "rank": 226
   },
   {
    "player_id": 201939,
@@ -79298,7 +78498,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "RA",
    "line": 11.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -79310,7 +78510,7 @@
    "gate_status": "passed",
    "us": {
     "line": 11.5,
-    "price": 1.96,
+    "price": 1.78,
     "book": "fanduel",
     "price_over": 1.78,
     "price_under": 1.96,
@@ -79715,7 +78915,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 114
+   "rank": 115
   },
   {
    "player_id": 1626164,
@@ -79877,7 +79077,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 237
+   "rank": 229
   },
   {
    "player_id": 1626220,
@@ -80230,7 +79430,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 18
+   "rank": 17
   },
   {
    "player_id": 1627827,
@@ -80712,26 +79912,6 @@
    }
   },
   {
-   "player_id": 1629012,
-   "player": "Collin Sexton",
-   "team": "LA Lakers",
-   "opp": "Golden State",
-   "game": "Golden State vs LA Lakers",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629018,
    "player": "Gary Trent Jr.",
    "team": "Milwaukee",
@@ -80799,7 +79979,7 @@
    "game": "Dallas vs Houston",
    "stat": "RA",
    "line": 7.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -80808,7 +79988,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 7.5,
     "price": 1.88,
@@ -80817,7 +79997,7 @@
     "price_under": 1.88,
     "l5_over": 0.2,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -80987,13 +80167,13 @@
    "gate_status": null,
    "us": {
     "line": 5.5,
-    "price": 1.76,
+    "price": 2.0,
     "book": "draftkings",
     "price_over": 1.76,
     "price_under": 2.0,
     "l5_over": 0.6,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -81076,7 +80256,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 22
+   "rank": 21
   },
   {
    "player_id": 1629618,
@@ -81158,7 +80338,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 68
+   "rank": 66
   },
   {
    "player_id": 1629628,
@@ -81355,26 +80535,6 @@
    }
   },
   {
-   "player_id": 1629646,
-   "player": "Charles Bassey",
-   "team": "Golden State",
-   "opp": "LA Lakers",
-   "game": "Golden State vs LA Lakers",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629652,
    "player": "Luguentz Dort",
    "team": "Atlanta",
@@ -81514,7 +80674,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 211
+   "rank": 210
   },
   {
    "player_id": 1629675,
@@ -81553,7 +80713,7 @@
    "game": "Golden State vs LA Lakers",
    "stat": "RA",
    "line": 4.5,
-   "price": 1.56,
+   "price": 2.4,
    "book": "pointsbetau",
    "price_over": 2.4,
    "price_under": 1.56,
@@ -81562,7 +80722,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 3.5,
     "price": 1.69,
@@ -81571,7 +80731,7 @@
     "price_under": 2.09,
     "l5_over": 0.2,
     "l10_over": 0.3,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -81836,7 +80996,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 129
   },
   {
    "player_id": 1630182,
@@ -82100,7 +81260,7 @@
    "game": "Dallas vs Houston",
    "stat": "RA",
    "line": 7.5,
-   "price": 2.0,
+   "price": 1.78,
    "book": "sportsbet",
    "price_over": 2.0,
    "price_under": 1.78,
@@ -82109,16 +81269,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 7.5,
-    "price": 2.04,
+    "price": 1.72,
     "book": "fanduel",
     "price_over": 2.04,
     "price_under": 1.72,
     "l5_over": 0.2,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -82310,7 +81470,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 138
+   "rank": 136
   },
   {
    "player_id": 1630530,
@@ -82372,7 +81532,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 65
+   "rank": 63
   },
   {
    "player_id": 1630532,
@@ -82560,7 +81720,7 @@
    "game": "Atlanta vs Orlando",
    "stat": "RA",
    "line": 17.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -82569,10 +81729,10 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 17.5,
-    "price": 1.98,
+    "price": 1.78,
     "book": "fanduel",
     "price_over": 1.98,
     "price_under": 1.78,
@@ -82730,7 +81890,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 247
   },
   {
    "player_id": 1630572,
@@ -83019,7 +82179,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 163
+   "rank": 164
   },
   {
    "player_id": 1630658,
@@ -83288,7 +82448,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 173
+   "rank": 174
   },
   {
    "player_id": 1631099,
@@ -83420,7 +82580,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 14,
+   "rot_rank": 16,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -83450,7 +82610,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 260
+   "rank": 254
   },
   {
    "player_id": 1631123,
@@ -83579,26 +82739,6 @@
    "pos_usual": "SG",
    "early": null,
    "gate_status": "passed",
-   "us": null
-  },
-  {
-   "player_id": 1631166,
-   "player": "Drew Timme",
-   "team": "Phoenix",
-   "opp": "Portland",
-   "game": "Phoenix vs Portland",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
    "us": null
   },
   {
@@ -83855,7 +82995,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 16,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -83885,7 +83025,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 269
+   "rank": 263
   },
   {
    "player_id": 1631260,
@@ -84194,7 +83334,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 133
+   "rank": 131
   },
   {
    "player_id": 1641718,
@@ -84224,26 +83364,6 @@
     "l10_over": 0.1,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 1641722,
-   "player": "Jordan Hawkins",
-   "team": "Chicago",
-   "opp": "Toronto",
-   "game": "Chicago vs Toronto",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
   },
   {
    "player_id": 1641724,
@@ -84346,7 +83466,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 12,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -84376,7 +83496,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 266
   },
   {
    "player_id": 1641739,
@@ -84583,7 +83703,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 12,
+   "rot_rank": 13,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -84613,7 +83733,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 277
+   "rank": 271
   },
   {
    "player_id": 1641778,
@@ -85078,7 +84198,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 55
   },
   {
    "player_id": 1642275,
@@ -85311,7 +84431,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 289
+   "rank": 283
   },
   {
    "player_id": 1642363,
@@ -85501,7 +84621,7 @@
    "game": "Dallas vs Houston",
    "stat": "RA",
    "line": 11.5,
-   "price": 1.87,
+   "price": 1.89,
    "book": "sportsbet",
    "price_over": 1.87,
    "price_under": 1.89,
@@ -85510,16 +84630,16 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 11.5,
-    "price": 1.8,
+    "price": 1.94,
     "book": "fanduel",
     "price_over": 1.8,
     "price_under": 1.94,
     "l5_over": 0.4,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -85611,7 +84731,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 83
+   "rank": 82
   },
   {
    "player_id": 1642848,
@@ -85704,7 +84824,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 73
+   "rank": 70
   },
   {
    "player_id": 1642853,
@@ -86007,7 +85127,7 @@
    "ceiling": 3.3,
    "sigma": 2.46,
    "minutes": 0,
-   "rot_rank": 13,
+   "rot_rank": 14,
    "minutes_source": "model",
    "line": null,
    "side": null,
@@ -86037,7 +85157,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 299
+   "rank": 294
   },
   {
    "player_id": 1642883,
@@ -86374,6 +85494,30 @@
   {
    "run_at": "2026-10-21T17:46+00:00",
    "trigger": "main"
+  },
+  {
+   "run_at": "2026-10-21T18:06+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-10-21T18:36+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-10-21T19:06+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-10-21T19:36+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-10-21T20:06+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-10-21T20:21+00:00",
+   "trigger": "manual"
   }
  ]
 }
