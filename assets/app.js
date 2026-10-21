@@ -1589,9 +1589,10 @@ async function initRecord() {
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(pl.avg_clv)}</div><div class="r">${pl.n_clv ?? 0} closed · beat the close ${pct(pl.beat_close)}</div></div>
     <div class="card"><div class="k">Return on stake</div><div class="v">${pl.roi_public ? pct(pl.roi) : "—"}</div><div class="r">${pl.roi_public ? `${fmt(pl.units, 1)} units, flat 1 unit` : `published from ${pl.public_roi_from ?? 100} graded props`}</div></div>`;
   const t = d.tips;
+  const tOpen = t?.averages_public, tLater = dropsLater(t);
   $("#rtip").innerHTML = `
-    <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(t?.avg_clv)}</div><div class="r">${t?.n_clv ?? 0} graded at the close</div></div>
-    <div class="card"><div class="k">Beat the close</div><div class="v">${pct(t?.beat_close)}</div></div>
+    <div class="card"><div class="k">Avg CLV</div><div class="v">${tOpen ? pct(t.avg_clv) : "—"}</div><div class="r">${tOpen ? `${t.n_clv ?? 0} graded at the close` : tLater}</div></div>
+    <div class="card"><div class="k">Beat the close</div><div class="v">${tOpen ? pct(t.beat_close) : "—"}</div>${tOpen ? "" : `<div class="r">${tLater}</div>`}</div>
     <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="tip.html">Every Drop →</a></div></div>`;
   const e = d.edges || {};
   $("#redges").innerHTML = `
@@ -1601,6 +1602,13 @@ async function initRecord() {
 }
 
 /* ---------- The Drop (internally: the tip) ---------- */
+// the record's averages show once 30 Drops are graded (owner, 21 Oct 2026;
+// tip.AVERAGES_FROM): one result is mostly luck
+function dropsLater(s) {
+  const from = s?.averages_from ?? 30,
+        n = s?.n_graded ?? ((s?.wins ?? 0) + (s?.losses ?? 0) + (s?.pushes ?? 0));
+  return `from ${from} graded Drops (${n} so far)`;
+}
 function auDay(isoDate) {
   const d = new Date(isoDate + "T12:00:00Z");
   return new Intl.DateTimeFormat("en-AU", { timeZone: "UTC", weekday: "short",
@@ -1653,15 +1661,17 @@ async function initTip() {
   const tipsShown = d.tips.filter(r => !(seasonOn && r.trial));
   $("#tnote").textContent = seasonOn
     ? `Regular-season Drops only. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`
+      + (s.averages_public ? "" : ` The averages show once ${s.averages_from ?? 30} Drops are graded: one result is mostly luck.`)
     : s.n_tips
     ? `Regular-season Drops only; preseason trial Drops are listed below but not counted. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`
     : `The record starts on opening night, 20 October (21 October AEDT). Preseason Drops are a trial run: listed, never counted. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`;
+  const open = s.averages_public, later = `<div class="r">${dropsLater(s)}</div>`;
   $("#tcards").innerHTML = `
-    <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(s.avg_clv)}</div><div class="r">${s.n_clv} graded at the close</div></div>
-    <div class="card"><div class="k">Beat the close</div><div class="v">${pct(s.beat_close)}</div></div>
+    <div class="card"><div class="k">Avg CLV</div><div class="v">${open ? pct(s.avg_clv) : "—"}</div>${open ? `<div class="r">${s.n_clv} graded at the close</div>` : later}</div>
+    <div class="card"><div class="k">Beat the close</div><div class="v">${open ? pct(s.beat_close) : "—"}</div>${open ? "" : later}</div>
     <div class="card"><div class="k">Covered–not</div><div class="v">${s.wins}–${s.losses}</div><div class="r">${s.pushes} push · ${s.voids} void</div></div>
-    <div class="card"><div class="k">Hit rate</div><div class="v">${pct(s.hit_rate)}</div></div>
-    <div class="card"><div class="k">Return (flat)</div><div class="v">${pct(s.roi)}</div></div>`;
+    <div class="card"><div class="k">Hit rate</div><div class="v">${open ? pct(s.hit_rate) : "—"}</div>${open ? "" : later}</div>
+    <div class="card"><div class="k">Return (flat)</div><div class="v">${open ? pct(s.roi) : "—"}</div>${open ? "" : later}</div>`;
   const tb = $("#tips tbody");
   tb.innerHTML = tipsShown.length ? tipsShown.map(r => `<tr class="${r.trial ? "trial" : ""}">
       <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}</td>
@@ -1716,7 +1726,7 @@ async function initHome() {
   $("#hRecord").innerHTML = ps.n ? `<div class="cards">
     <div class="card"><div class="k">Points: average miss</div><div class="v">${fmt(ps.mae)}</div><div class="r">${ps.n.toLocaleString("en-AU")} player games</div></div>
     <div class="card"><div class="k">Inside our range</div><div class="v">${pct(ps.coverage)}</div><div class="r">target 80%</div></div>
-    <div class="card"><div class="k">The Drop: avg CLV</div><div class="v">${pct(ts.avg_clv)}</div><div class="r">${ts.n_clv ?? 0} graded at the close</div></div>
+    <div class="card"><div class="k">The Drop: avg CLV</div><div class="v">${ts.averages_public ? pct(ts.avg_clv) : "—"}</div><div class="r">${ts.averages_public ? `${ts.n_clv ?? 0} graded at the close` : dropsLater(ts)}</div></div>
     <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="track-record.html">Full record →</a></div></div></div>`
     : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the Drop's closing-line value. <a href="track-record.html">How it's graded →</a></p>`;
   const games = gd?.games || [];
