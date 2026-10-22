@@ -4,6 +4,27 @@
  "team": "Golden State",
  "opp": "LA Lakers",
  "lines": {
+  "RA": {
+   "line": 11.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 19.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
   "3PM": {
    "line": 1.5,
    "price": 2.75,
@@ -11,54 +32,33 @@
    "price_over": 2.75,
    "price_under": 1.4
   },
-  "RA": {
-   "line": 11.5,
+  "PA": {
+   "line": 13.5,
    "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96
   },
-  "AST": {
-   "line": 5.5,
-   "price": 1.64,
-   "book": "sportsbet",
-   "price_over": 1.64,
-   "price_under": 2.15
-  },
-  "PRA": {
-   "line": 20.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "PA": {
-   "line": 14.5,
-   "price": 1.89,
-   "book": "sportsbet",
-   "price_over": 1.89,
-   "price_under": 1.87
-  },
-  "REB": {
-   "line": 5.5,
+  "PR": {
+   "line": 13.5,
    "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8
   },
   "PTS": {
-   "line": 8.5,
-   "price": 2.0,
-   "book": "sportsbet",
-   "price_over": 2.0,
-   "price_under": 1.78
-  },
-  "PR": {
-   "line": 13.5,
+   "line": 7.5,
    "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74
   }
  },
  "recent_games": [
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 8.5,
+   "line": 7.5,
    "over": 0,
    "n": 5
   },
