@@ -58,8 +58,12 @@ const odds = dec => (dec === null || dec === undefined || isNaN(dec)) ? "—"
   : US ? american(dec) : Number(dec).toFixed(2);
 /* each site lists its own region's books and their props (owner, 19 Oct
    2026): the rows carry the Australian book at the top level and the US
-   book under "us"; on the US site the US block takes the top level */
-const LINE_KEYS = ["line", "side", "price", "book", "edge", "p_us", "p_book", "tier", "gate_status", "l10_over", "l5_over"];
+   book under "us"; on the US site the US block takes the top level, its
+   chances and both prices too (22 Oct 2026: without them the US board set
+   our chance against the Australian line beside the US one, and showed the
+   Australian book's price under the US book's name) */
+const LINE_KEYS = ["line", "side", "price", "book", "edge", "p_us", "p_book", "tier", "gate_status", "l10_over", "l5_over",
+  "p_over", "p_under", "fair_over", "fair_under", "price_over", "price_under"];
 function regionLines(rows) {
   if (!US) return rows;
   for (const r of rows || []) {
@@ -100,6 +104,14 @@ function regionPass(root) {
     if (t.dataset.region || document.body.dataset.page === "schedule") continue;
     const d = new Date(t.getAttribute("datetime"));
     if (isNaN(d)) continue;
+    if (t.dataset.when) {                          // the day and the time, both in the reader's zone
+      const long = t.dataset.when === "long";
+      const day = new Intl.DateTimeFormat("en-US", { timeZone: SHOW_TZ(), weekday: long ? "long" : "short",
+        month: long ? "long" : "short", day: "numeric" }).format(d);
+      t.textContent = `${long ? day : day.replace(/,/g, "")}${t.dataset.sep || ", "}${aedtTime(d.toISOString())} ${zoneName(d)}`;
+      t.dataset.region = "us";
+      continue;
+    }
     const local = dayIn(d, SHOW_TZ()), syd = dayIn(d, "Australia/Sydney");
     t.textContent = t.hasAttribute("data-day") ? whenAEDT(d.toISOString())
       : `${local !== syd ? local + " " : ""}${aedtTime(d.toISOString())} ${zoneName(d)}`;
@@ -1044,8 +1056,9 @@ async function initPlayer() {
   let stat = lines.PTS ? "PTS" : (Object.keys(lines)[0] || "PTS");
   const COMBO_OF = { PRA: ["PTS", "REB", "AST"], PR: ["PTS", "REB"],
                      PA: ["PTS", "AST"], RA: ["REB", "AST"] };
-  const projOf = s => h.projections[s]?.mean ?? (COMBO_OF[s]
-    ? COMBO_OF[s].reduce((a, k) => a + (h.projections[k]?.mean || 0), 0)
+  // the public file (members' columns locked) carries no projections
+  const projOf = s => h.projections?.[s]?.mean ?? (COMBO_OF[s]
+    ? COMBO_OF[s].reduce((a, k) => a + (h.projections?.[k]?.mean || 0), 0)
     : undefined);
   const defLine = s => lines[s] ? lines[s].line
     : (projOf(s) != null ? Math.floor(projOf(s)) + 0.5 : 0.5);
@@ -1730,7 +1743,7 @@ async function initTip() {
     </div>`;
   } else {
     $("#tlead").textContent = `No Drop is posted for ${day} yet. It goes up around `
-      + `8pm Sydney time the night before the games, once the bookmakers' `
+      + `7pm Sydney time the night before the games, once the bookmakers' `
       + `player lines are up; if none clears the rules, there's no Drop.`;
   }
 
@@ -1778,6 +1791,10 @@ function auDate(iso) {
   return new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Sydney",
     weekday: "short", day: "numeric", month: "short" }).format(new Date(iso)).replace(",", "");
 }
+/* the slate's day in the reader's zone: "Fri 23 Oct" in Australia, "Thu Oct
+   22" for a US reader (the schedule page keeps auDate, it's Australian time) */
+const slateDay = iso => new Intl.DateTimeFormat(LOCALE(), { timeZone: SHOW_TZ(),
+  weekday: "short", day: "numeric", month: "short" }).format(new Date(iso)).replace(/,/g, "");
 const code = t => teamMeta(t)[0];
 const signed = v => v == null ? "—" : (v > 0 ? "+" : v < 0 ? "−" : "") + fmt(Math.abs(v));
 /* "GSW −4.9": the favoured side and its spread, from a home line */
@@ -1810,7 +1827,7 @@ async function initHome() {
     <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="track-record.html">Full record →</a></div></div></div>`
     : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the Drop's closing-line value. <a href="track-record.html">How it's graded →</a></p>`;
   const games = gd?.games || [];
-  if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${auDate(games[0].start)}`;
+  if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${slateDay(games[0].start)}`;
 
   const t = tips?.today;
   const rec = tips?.summary;
@@ -1820,10 +1837,10 @@ async function initHome() {
         <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)}</div>
         <div class="sm">Our projection <b class="ours">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
       </div>`
-    : `<p class="dim">Our biggest edge goes up around 8pm Sydney time the night before the games.</p>`)
+    : `<p class="dim">Our biggest edge goes up around 7pm Sydney time the night before the games.</p>`)
     + (rec && rec.n_tips ? `<div class="sm dim">Season: ${rec.wins}–${rec.losses}, average CLV ${pct(rec.avg_clv)}</div>` : "");
 
-  const rows = (board?.rows || []).filter(r => r.edge != null && r.line != null && r.tier)
+  const rows = regionLines(board?.rows || []).map(favour).filter(r => r.edge != null && r.line != null && r.tier)
     .sort((a, b) => b.edge - a.edge).slice(0, 6);
   $("#hEdges").innerHTML = `<div class="ph2"><span>Biggest edges tonight</span><a href="predictions.html">All predictions →</a></div>` + (rows.length
     ? `<table class="mini"><tbody>${rows.map(r => `<tr>
@@ -2145,7 +2162,7 @@ async function initTrends() {
   $$("#trends th[data-k]").forEach(th => th.addEventListener("click", () => {
     const k = th.dataset.k; sortDir = sortKey === k ? -sortDir : (k === "team" ? 1 : -1); sortKey = k; render();
   }));
-  if (games.length && games[0].start) $("#tday").textContent = auDate(games[0].start);
+  if (games.length && games[0].start) $("#tday").textContent = slateDay(games[0].start);
   render();
 }
 
