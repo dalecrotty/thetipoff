@@ -965,6 +965,15 @@ async function initPlayer() {
   q.addEventListener("change", go);
   q.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
   const pid = cur.player_id;
+  // the player's name address is the canonical one (/players/<name>.html,
+  // the page Google indexes); this ID address is the tool on top of it
+  loadJSON("data/player_pages.json").then(pages => {
+    const url = pages && pages[String(pid)];
+    if (!url) return;
+    let link = document.querySelector('link[rel="canonical"]');
+    if (!link) { link = document.createElement("link"); link.rel = "canonical"; document.head.appendChild(link); }
+    link.href = `https://thedropcoverage.com${url}`;
+  }).catch(() => {});
   const h = await loadData(`hub/${pid}`);
   if (US) h.lines = h.lines_us || {};          // the US site: US books' lines
 
