@@ -2,6 +2,12 @@
  "team": "Washington",
  "players": [
   {
+   "id": 203076,
+   "name": "Anthony Davis",
+   "games": 1,
+   "med_min": 34.0
+  },
+  {
    "id": 1642882,
    "name": "Julian Reese",
    "games": 13,
@@ -28,7 +34,7 @@
   {
    "id": 1641731,
    "name": "Bilal Coulibaly",
-   "games": 115,
+   "games": 116,
    "med_min": 30.0
   },
   {
@@ -52,8 +58,8 @@
   {
    "id": 1642267,
    "name": "Bub Carrington",
-   "games": 164,
-   "med_min": 28.2
+   "games": 165,
+   "med_min": 28.1
   },
   {
    "id": 1641732,
@@ -64,13 +70,13 @@
   {
    "id": 1642273,
    "name": "Kyshawn George",
-   "games": 116,
+   "games": 117,
    "med_min": 28.0
   },
   {
    "id": 1642259,
    "name": "Alexandre Sarr",
-   "games": 115,
+   "games": 116,
    "med_min": 27.0
   },
   {
@@ -82,7 +88,7 @@
   {
    "id": 1642848,
    "name": "Tre Johnson",
-   "games": 60,
+   "games": 61,
    "med_min": 24.2
   },
   {
@@ -94,8 +100,8 @@
   {
    "id": 203114,
    "name": "Khris Middleton",
-   "games": 48,
-   "med_min": 23.5
+   "games": 49,
+   "med_min": 23.0
   },
   {
    "id": 1642860,
@@ -118,13 +124,13 @@
   {
    "id": 1630551,
    "name": "Justin Champagnie",
-   "games": 130,
-   "med_min": 21.4
+   "games": 131,
+   "med_min": 21.3
   },
   {
    "id": 1629027,
    "name": "Trae Young",
-   "games": 5,
+   "games": 6,
    "med_min": 21.2
   },
   {
@@ -180,6 +186,12 @@
    "name": "Tristan Vukcevic",
    "games": 84,
    "med_min": 15.4
+  },
+  {
+   "id": 1629028,
+   "name": "Deandre Ayton",
+   "games": 1,
+   "med_min": 15.0
   },
   {
    "id": 1642358,
@@ -28633,6 +28645,166 @@
      "FGA": 7.0,
      "3PA": 0.0,
      "FTA": 4.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-21",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2026-10-21_milwaukee_vs_washington",
+   "lines": {
+    "1642259": {
+     "min": 24.0,
+     "PTS": 6.0,
+     "REB": 9.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 9.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "203076": {
+     "min": 34.0,
+     "PTS": 34.0,
+     "REB": 12.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 11.0,
+     "FGA": 20.0,
+     "3PA": 3.0,
+     "FTA": 14.0,
+     "starter": true
+    },
+    "1641731": {
+     "min": 29.0,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 4.0,
+     "BLK": 2.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 6.0,
+     "3PA": 3.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1642267": {
+     "min": 19.0,
+     "PTS": 10.0,
+     "REB": 1.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 3.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1629028": {
+     "min": 15.0,
+     "PTS": 11.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 0.0,
+     "FGM": 5.0,
+     "FGA": 6.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630551": {
+     "min": 21.0,
+     "PTS": 8.0,
+     "REB": 8.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 4.0,
+     "3PA": 2.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "203114": {
+     "min": 12.0,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642273": {
+     "min": 29.0,
+     "PTS": 18.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "FGM": 8.0,
+     "FGA": 14.0,
+     "3PA": 6.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1629027": {
+     "min": 38.0,
+     "PTS": 20.0,
+     "REB": 0.0,
+     "AST": 13.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 13.0,
+     "3PA": 6.0,
+     "FTA": 16.0,
+     "starter": true
+    },
+    "1642848": {
+     "min": 19.0,
+     "PTS": 8.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 2.0,
+     "FTA": 2.0,
      "starter": false
     }
    }

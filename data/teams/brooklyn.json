@@ -2,9 +2,21 @@
  "team": "Brooklyn",
  "players": [
   {
+   "id": 203944,
+   "name": "Julius Randle",
+   "games": 1,
+   "med_min": 38.0
+  },
+  {
    "id": 203471,
    "name": "Dennis Schroder",
    "games": 23,
+   "med_min": 34.0
+  },
+  {
+   "id": 1631165,
+   "name": "Keon Ellis",
+   "games": 1,
    "med_min": 34.0
   },
   {
@@ -16,8 +28,8 @@
   {
    "id": 1629008,
    "name": "Michael Porter Jr.",
-   "games": 52,
-   "med_min": 33.2
+   "games": 53,
+   "med_min": 33.4
   },
   {
    "id": 1629661,
@@ -58,7 +70,7 @@
   {
    "id": 1642856,
    "name": "Egor Demin",
-   "games": 52,
+   "games": 53,
    "med_min": 26.4
   },
   {
@@ -76,7 +88,7 @@
   {
    "id": 1641730,
    "name": "Noah Clowney",
-   "games": 112,
+   "games": 113,
    "med_min": 26.0
   },
   {
@@ -106,14 +118,8 @@
   {
    "id": 1642849,
    "name": "Nolan Traore",
-   "games": 56,
-   "med_min": 22.9
-  },
-  {
-   "id": 1643052,
-   "name": "Chaney Johnson",
-   "games": 17,
-   "med_min": 22.2
+   "games": 57,
+   "med_min": 22.8
   },
   {
    "id": 1630592,
@@ -125,6 +131,12 @@
    "id": 1642874,
    "name": "Danny Wolf",
    "games": 57,
+   "med_min": 21.8
+  },
+  {
+   "id": 1643052,
+   "name": "Chaney Johnson",
+   "games": 18,
    "med_min": 21.8
   },
   {
@@ -158,6 +170,12 @@
    "med_min": 21.0
   },
   {
+   "id": -743,
+   "name": "Mikel Brown Jr.",
+   "games": 1,
+   "med_min": 20.0
+  },
+  {
    "id": 1642879,
    "name": "Ben Saraf",
    "games": 44,
@@ -172,7 +190,7 @@
   {
    "id": 1630549,
    "name": "Day'Ron Sharpe",
-   "games": 112,
+   "games": 113,
    "med_min": 18.0
   },
   {
@@ -186,6 +204,12 @@
    "name": "Ochai Agbaji",
    "games": 20,
    "med_min": 16.5
+  },
+  {
+   "id": 1629021,
+   "name": "Moritz Wagner",
+   "games": 1,
+   "med_min": 16.0
   },
   {
    "id": -601,
@@ -27592,6 +27616,166 @@
      "FGA": 16.0,
      "3PA": 10.0,
      "FTA": 8.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-21",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2026-10-21_brooklyn_vs_charlotte",
+   "lines": {
+    "1630549": {
+     "min": 30.0,
+     "PTS": 8.0,
+     "REB": 8.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 3.0,
+     "TOV": 2.0,
+     "FGM": 4.0,
+     "FGA": 5.0,
+     "3PA": 0.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1642856": {
+     "min": 27.0,
+     "PTS": 4.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 2.0,
+     "FGA": 10.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "203944": {
+     "min": 38.0,
+     "PTS": 33.0,
+     "REB": 8.0,
+     "AST": 7.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "FGM": 11.0,
+     "FGA": 18.0,
+     "3PA": 5.0,
+     "FTA": 11.0,
+     "starter": true
+    },
+    "1631165": {
+     "min": 34.0,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1629008": {
+     "min": 34.0,
+     "PTS": 26.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 5.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 10.0,
+     "FGA": 21.0,
+     "3PA": 11.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1629021": {
+     "min": 16.0,
+     "PTS": 7.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1641730": {
+     "min": 22.0,
+     "PTS": 9.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1642849": {
+     "min": 16.0,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 0.0,
+     "FGA": 4.0,
+     "3PA": 0.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1643052": {
+     "min": 5.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-743": {
+     "min": 20.0,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 8.0,
+     "3PA": 3.0,
+     "FTA": 1.0,
      "starter": false
     }
    }

@@ -2,9 +2,90 @@
  "player_id": 1642845,
  "player": "VJ Edgecombe",
  "team": "Philadelphia",
- "opp": "New York",
- "lines": {},
+ "opp": "Cleveland",
+ "lines": {
+  "RA": {
+   "line": 7.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PRA": {
+   "line": 17.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PA": {
+   "line": 12.5,
+   "price": 1.76,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 10.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.2,
+   "book": "sportsbet",
+   "price_over": 2.2,
+   "price_under": 1.6
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-20",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-10-20_new-york_vs_philadelphia",
+   "starter": true,
+   "rest": "162",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 35.0,
+   "PTS": 9.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 10.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-05-10",
    "opp": "New York",
@@ -100,32 +181,29 @@
    "FTA": 2.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-05-02",
-   "opp": "Boston",
-   "venue": "R",
-   "game": "2026-05-02_boston_vs_philadelphia",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 43.7,
-   "PTS": 23.0,
-   "REB": 6.0,
-   "AST": 4.0,
-   "3PM": 5.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 3.0,
-   "FGM": 8.0,
-   "FGA": 17.0,
-   "3PA": 11.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

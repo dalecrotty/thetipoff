@@ -4,91 +4,91 @@
  "team": "Oklahoma City",
  "projections": {
   "3PM": {
-   "mean": 1.44,
+   "mean": 1.61,
    "floor": 0.0,
-   "ceiling": 3.05
+   "ceiling": 3.79
   },
   "AST": {
-   "mean": 7.19,
-   "floor": 3.64,
-   "ceiling": 11.01
+   "mean": 7.63,
+   "floor": 4.12,
+   "ceiling": 11.51
   },
   "BLK": {
-   "mean": 0.77,
+   "mean": 0.93,
    "floor": 0.0,
-   "ceiling": 1.95
+   "ceiling": 2.66
   },
   "PTS": {
-   "mean": 26.15,
-   "floor": 16.14,
-   "ceiling": 36.28
+   "mean": 28.32,
+   "floor": 17.9,
+   "ceiling": 38.5
   },
   "REB": {
-   "mean": 3.63,
-   "floor": 1.19,
-   "ceiling": 6.35
+   "mean": 3.9,
+   "floor": 1.06,
+   "ceiling": 7.03
   },
   "STL": {
-   "mean": 1.26,
+   "mean": 1.46,
    "floor": 0.0,
-   "ceiling": 2.96
+   "ceiling": 3.0
   },
   "TOV": {
-   "mean": 2.44,
-   "floor": 0.31,
-   "ceiling": 4.69
+   "mean": 2.43,
+   "floor": 0.83,
+   "ceiling": 4.26
   },
   "PRA": {
-   "mean": 36.99,
-   "floor": 24.72,
-   "ceiling": 48.49
+   "mean": 39.85,
+   "floor": 27.59,
+   "ceiling": 51.36
   },
   "PR": {
-   "mean": 29.79,
-   "floor": 18.13,
-   "ceiling": 40.71
+   "mean": 32.23,
+   "floor": 20.56,
+   "ceiling": 43.15
   },
   "PA": {
-   "mean": 33.35,
-   "floor": 22.47,
-   "ceiling": 44.3
+   "mean": 35.96,
+   "floor": 25.07,
+   "ceiling": 46.9
   },
   "RA": {
-   "mean": 10.83,
-   "floor": 6.04,
-   "ceiling": 15.86
+   "mean": 11.53,
+   "floor": 6.74,
+   "ceiling": 16.55
   }
  },
  "minutes": {
-  "value": 33,
+  "value": 35,
   "source": "model"
  },
  "splits": {
   "season": {
-   "games": 160,
+   "games": 161,
    "min_pg": 34.0,
    "PTS": {
     "pg": 31.48,
     "pm": 0.926
    },
    "REB": {
-    "pg": 4.49,
+    "pg": 4.5,
     "pm": 0.132
    },
    "AST": {
-    "pg": 6.59,
+    "pg": 6.58,
     "pm": 0.194
    },
    "3PM": {
-    "pg": 1.86,
+    "pg": 1.87,
     "pm": 0.055
    },
    "STL": {
-    "pg": 1.54,
-    "pm": 0.045
+    "pg": 1.55,
+    "pm": 0.046
    },
    "BLK": {
-    "pg": 0.88,
+    "pg": 0.89,
     "pm": 0.026
    },
    "TOV": {
@@ -98,62 +98,62 @@
   },
   "l10": {
    "games": 10,
-   "min_pg": 36.6,
+   "min_pg": 37.4,
    "PTS": {
-    "pg": 26.1,
-    "pm": 0.713
+    "pg": 27.1,
+    "pm": 0.724
    },
    "REB": {
-    "pg": 2.7,
-    "pm": 0.074
+    "pg": 3.1,
+    "pm": 0.083
    },
    "AST": {
-    "pg": 8.1,
-    "pm": 0.221
+    "pg": 8.3,
+    "pm": 0.222
    },
    "3PM": {
-    "pg": 1.3,
-    "pm": 0.036
+    "pg": 1.5,
+    "pm": 0.04
    },
    "STL": {
-    "pg": 1.6,
-    "pm": 0.044
+    "pg": 1.8,
+    "pm": 0.048
    },
    "BLK": {
-    "pg": 0.8,
-    "pm": 0.022
+    "pg": 1.1,
+    "pm": 0.029
    },
    "TOV": {
-    "pg": 3.0,
-    "pm": 0.082
+    "pg": 2.9,
+    "pm": 0.078
    }
   },
   "l5": {
    "games": 5,
-   "min_pg": 35.2,
+   "min_pg": 35.1,
    "PTS": {
-    "pg": 25.4,
-    "pm": 0.722
+    "pg": 26.6,
+    "pm": 0.757
    },
    "REB": {
-    "pg": 2.6,
-    "pm": 0.074
+    "pg": 3.4,
+    "pm": 0.097
    },
    "AST": {
-    "pg": 8.2,
-    "pm": 0.233
+    "pg": 6.6,
+    "pm": 0.188
    },
    "3PM": {
-    "pg": 1.2,
-    "pm": 0.034
-   },
-   "STL": {
     "pg": 1.4,
     "pm": 0.04
    },
+   "STL": {
+    "pg": 2.0,
+    "pm": 0.057
+   },
    "BLK": {
-    "pg": 0.6,
-    "pm": 0.017
+    "pg": 1.0,
+    "pm": 0.028
    },
    "TOV": {
     "pg": 3.4,
@@ -193,85 +193,71 @@
    }
   },
   "away": {
-   "games": 75,
+   "games": 76,
    "min_pg": 34.1,
    "PTS": {
-    "pg": 31.04,
-    "pm": 0.911
+    "pg": 31.05,
+    "pm": 0.91
    },
    "REB": {
-    "pg": 4.08,
+    "pg": 4.11,
     "pm": 0.12
    },
    "AST": {
-    "pg": 6.57,
-    "pm": 0.193
+    "pg": 6.54,
+    "pm": 0.192
    },
    "3PM": {
-    "pg": 1.92,
-    "pm": 0.056
+    "pg": 1.93,
+    "pm": 0.057
    },
    "STL": {
-    "pg": 1.44,
-    "pm": 0.042
+    "pg": 1.46,
+    "pm": 0.043
    },
    "BLK": {
-    "pg": 0.73,
+    "pg": 0.76,
     "pm": 0.022
    },
    "TOV": {
-    "pg": 2.76,
+    "pg": 2.75,
     "pm": 0.081
    }
   }
  },
  "lines": {
-  "PR": {
-   "line": 33.5,
-   "p_over": 0.332,
-   "p_under": 0.668,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "side": "under",
-   "price": 1.8,
+  "AST": {
+   "line": 6.5,
+   "p_over": 0.594,
+   "p_under": 0.406,
+   "fair_over": 0.471,
+   "fair_under": 0.529,
+   "price_over": 2.0,
+   "price_under": 1.78,
+   "side": "over",
+   "price": 2.0,
    "book": "sportsbet",
-   "edge": 0.1471,
+   "edge": 0.1234,
+   "tier": "A"
+  },
+  "PR": {
+   "line": 34.5,
+   "p_over": 0.395,
+   "p_under": 0.605,
+   "fair_over": 0.505,
+   "fair_under": 0.495,
+   "price_over": 1.86,
+   "price_under": 1.9,
+   "side": "under",
+   "price": 1.9,
+   "book": "sportsbet",
+   "edge": 0.1105,
    "tier": "A"
   },
   "PTS": {
-   "line": 29.5,
-   "p_over": 0.337,
-   "p_under": 0.663,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "side": "under",
-   "price": 1.8,
-   "book": "sportsbet",
-   "edge": 0.1422,
-   "tier": "A"
-  },
-  "PRA": {
-   "line": 39.5,
-   "p_over": 0.39,
-   "p_under": 0.61,
-   "fair_over": 0.497,
-   "fair_under": 0.503,
-   "price_over": 1.89,
-   "price_under": 1.87,
-   "side": "under",
-   "price": 1.87,
-   "book": "sportsbet",
-   "edge": 0.1077,
-   "tier": "A"
-  },
-  "PA": {
-   "line": 35.5,
-   "p_over": 0.401,
-   "p_under": 0.599,
+   "line": 30.5,
+   "p_over": 0.392,
+   "p_under": 0.608,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.88,
@@ -279,96 +265,81 @@
    "side": "under",
    "price": 1.88,
    "book": "sportsbet",
-   "edge": 0.0993,
-   "tier": "A"
-  },
-  "AST": {
-   "line": 6.5,
-   "p_over": 0.545,
-   "p_under": 0.455,
-   "fair_over": 0.453,
-   "fair_under": 0.547,
-   "price_over": 2.08,
-   "price_under": 1.72,
-   "side": "over",
-   "price": 2.08,
-   "book": "sportsbet",
-   "edge": 0.0923,
-   "tier": "A"
-  },
-  "3PM": {
-   "line": 1.5,
-   "p_over": 0.412,
-   "p_under": 0.588,
-   "fair_over": 0.492,
-   "fair_under": 0.508,
-   "price_over": 1.91,
-   "price_under": 1.85,
-   "side": "under",
-   "price": 1.85,
-   "book": "sportsbet",
-   "edge": 0.0797,
-   "tier": "A"
-  },
-  "REB": {
-   "line": 3.5,
-   "p_over": 0.477,
-   "p_under": 0.523,
-   "fair_over": 0.556,
-   "fair_under": 0.444,
-   "price_over": 1.68,
-   "price_under": 2.1,
-   "side": "under",
-   "price": 2.1,
-   "book": "sportsbet",
-   "edge": 0.0787,
+   "edge": 0.108,
    "tier": "A"
   },
   "RA": {
    "line": 10.5,
-   "p_over": 0.528,
-   "p_under": 0.472,
-   "fair_over": 0.459,
-   "fair_under": 0.541,
-   "price_over": 2.05,
-   "price_under": 1.74,
+   "p_over": 0.586,
+   "p_under": 0.414,
+   "fair_over": 0.492,
+   "fair_under": 0.508,
+   "price_over": 1.91,
+   "price_under": 1.85,
    "side": "over",
-   "price": 2.05,
-   "book": "sportsbet",
-   "edge": 0.0688,
-   "tier": "A"
-  }
- },
- "lines_us": {
-  "PTS": {
-   "line": 29.5,
-   "p_over": 0.337,
-   "p_under": 0.663,
-   "fair_over": 0.508,
-   "fair_under": 0.492,
-   "price_over": 1.85,
-   "price_under": 1.91,
-   "side": "under",
    "price": 1.91,
-   "book": "betright",
-   "edge": 0.1714,
+   "book": "sportsbet",
+   "edge": 0.0938,
    "tier": "A"
   },
-  "AST": {
-   "line": 6.5,
-   "p_over": 0.545,
-   "p_under": 0.455,
-   "fair_over": 0.458,
-   "fair_under": 0.542,
-   "price_over": 2.05,
-   "price_under": 1.73,
-   "side": "over",
+  "3PM": {
+   "line": 1.5,
+   "p_over": 0.462,
+   "p_under": 0.538,
+   "fair_over": 0.541,
+   "fair_under": 0.459,
+   "price_over": 1.74,
+   "price_under": 2.05,
+   "side": "under",
    "price": 2.05,
-   "book": "betright",
-   "edge": 0.0873,
+   "book": "sportsbet",
+   "edge": 0.0789,
    "tier": "A"
+  },
+  "PRA": {
+   "line": 41.5,
+   "p_over": 0.427,
+   "p_under": 0.573,
+   "fair_over": 0.487,
+   "fair_under": 0.513,
+   "price_over": 1.93,
+   "price_under": 1.83,
+   "side": "under",
+   "price": 1.83,
+   "book": "sportsbet",
+   "edge": 0.0594,
+   "tier": "B"
+  },
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.525,
+   "p_under": 0.475,
+   "fair_over": 0.579,
+   "fair_under": 0.421,
+   "price_over": 1.6,
+   "price_under": 2.2,
+   "side": "under",
+   "price": 2.2,
+   "book": "sportsbet",
+   "edge": 0.0542,
+   "tier": "B"
+  },
+  "PA": {
+   "line": 37.5,
+   "p_over": 0.428,
+   "p_under": 0.572,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
+   "side": "under",
+   "price": 1.8,
+   "book": "sportsbet",
+   "edge": 0.0504,
+   "tier": "B"
   }
  },
+ "lines_us": {},
  "game_log": [
   {
    "date": "2024-10-24",
@@ -4209,9 +4180,57 @@
    "FTA": 11.0,
    "season": "2025-26",
    "phase": "playoffs"
+  },
+  {
+   "date": "2026-10-20",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-10-20_oklahoma-city_vs_san-antonio",
+   "starter": true,
+   "rest": "142",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 36.0,
+   "PTS": 32.0,
+   "REB": 6.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 3.0,
+   "BLK": 3.0,
+   "TOV": 2.0,
+   "FGM": 13.0,
+   "FGA": 27.0,
+   "3PA": 7.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
  "recent_games": [
+  {
+   "date": "2026-10-20",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-10-20_oklahoma-city_vs_san-antonio",
+   "starter": true,
+   "rest": "142",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 36.0,
+   "PTS": 32.0,
+   "REB": 6.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 3.0,
+   "BLK": 3.0,
+   "TOV": 2.0,
+   "FGM": 13.0,
+   "FGA": 27.0,
+   "3PA": 7.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-05-30",
    "opp": "San Antonio",
@@ -4427,32 +4446,8 @@
    "FTA": 7.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-05-07",
-   "opp": "LA Lakers",
-   "venue": "H",
-   "game": "2026-05-07_la-lakers_vs_oklahoma-city",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 27.9,
-   "PTS": 22.0,
-   "REB": 2.0,
-   "AST": 2.0,
-   "3PM": 1.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 3.0,
-   "FGM": 7.0,
-   "FGA": 13.0,
-   "3PA": 3.0,
-   "FTA": 9.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
  "with_without_tonight": [],
- "opp": "San Antonio"
+ "opp": "Denver"
 }

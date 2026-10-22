@@ -4,76 +4,250 @@
  "team": "Oklahoma City",
  "projections": {
   "3PM": {
-   "mean": 0.02,
+   "mean": 0.32,
    "floor": 0.0,
-   "ceiling": 0.02
+   "ceiling": 1.93
   },
   "AST": {
-   "mean": 0.98,
+   "mean": 0.96,
    "floor": 0.0,
-   "ceiling": 2.61
+   "ceiling": 2.55
   },
   "BLK": {
-   "mean": 0.9,
+   "mean": 0.52,
    "floor": 0.0,
-   "ceiling": 2.31
+   "ceiling": 2.21
   },
   "PTS": {
-   "mean": 5.38,
+   "mean": 5.23,
    "floor": 0.0,
-   "ceiling": 12.24
+   "ceiling": 12.03
   },
   "REB": {
-   "mean": 3.55,
-   "floor": 0.63,
-   "ceiling": 6.81
+   "mean": 2.63,
+   "floor": 0.0,
+   "ceiling": 5.6
   },
   "STL": {
-   "mean": 0.23,
+   "mean": 0.21,
    "floor": 0.0,
-   "ceiling": 1.19
+   "ceiling": 1.17
   },
   "TOV": {
-   "mean": 1.06,
+   "mean": 0.68,
    "floor": 0.0,
-   "ceiling": 2.26
+   "ceiling": 2.18
   },
   "PRA": {
-   "mean": 9.92,
-   "floor": 2.2,
-   "ceiling": 18.63
+   "mean": 8.82,
+   "floor": 1.1,
+   "ceiling": 17.53
   },
   "PR": {
-   "mean": 8.94,
-   "floor": 2.17,
-   "ceiling": 17.05
+   "mean": 7.86,
+   "floor": 1.09,
+   "ceiling": 15.97
   },
   "PA": {
-   "mean": 6.37,
-   "floor": 0.5,
-   "ceiling": 13.15
+   "mean": 6.19,
+   "floor": 0.32,
+   "ceiling": 12.97
   },
   "RA": {
-   "mean": 4.54,
-   "floor": 1.18,
-   "ceiling": 7.98
+   "mean": 3.59,
+   "floor": 0.84,
+   "ceiling": 6.89
   }
  },
  "minutes": {
-  "value": 12,
+  "value": 11,
   "source": "fallback"
  },
  "splits": {
-  "season": {},
-  "l10": {},
-  "l5": {},
+  "season": {
+   "games": 1,
+   "min_pg": 12.0,
+   "PTS": {
+    "pg": 7.0,
+    "pm": 0.583
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.167
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.083
+   }
+  },
+  "l10": {
+   "games": 1,
+   "min_pg": 12.0,
+   "PTS": {
+    "pg": 7.0,
+    "pm": 0.583
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.167
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.083
+   }
+  },
+  "l5": {
+   "games": 1,
+   "min_pg": 12.0,
+   "PTS": {
+    "pg": 7.0,
+    "pm": 0.583
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.167
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.083
+   }
+  },
   "home": {},
-  "away": {}
+  "away": {
+   "games": 1,
+   "min_pg": 12.0,
+   "PTS": {
+    "pg": 7.0,
+    "pm": 0.583
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.167
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.083
+   }
+  }
  },
  "lines": {},
  "lines_us": {},
- "game_log": [],
- "recent_games": [],
+ "game_log": [
+  {
+   "date": "2026-10-20",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-10-20_oklahoma-city_vs_san-antonio",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 12.0,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 4.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
+ "recent_games": [
+  {
+   "date": "2026-10-20",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-10-20_oklahoma-city_vs_san-antonio",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 12.0,
+   "PTS": 7.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 4.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "with_without_tonight": [],
- "opp": "San Antonio"
+ "opp": "Denver"
 }

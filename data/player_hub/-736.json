@@ -2,78 +2,34 @@
  "player_id": -736,
  "player": "Koa Peat",
  "team": "Phoenix",
- "projections": {
-  "3PM": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 0.0
-  },
-  "AST": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 1.63
-  },
-  "BLK": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 1.07
-  },
-  "PTS": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 6.86
-  },
-  "REB": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 2.65
-  },
-  "STL": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 0.96
-  },
-  "TOV": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 1.68
-  },
-  "PRA": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 8.71
-  },
-  "PR": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 8.11
-  },
-  "PA": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 6.78
-  },
-  "RA": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 3.3
-  }
- },
- "minutes": {
-  "value": 0,
-  "source": "fallback"
- },
- "splits": {
-  "season": {},
-  "l10": {},
-  "l5": {},
-  "home": {},
-  "away": {}
- },
+ "opp": null,
  "lines": {},
- "lines_us": {},
- "game_log": [],
- "recent_games": [],
- "with_without_tonight": [],
- "opp": "Portland"
+ "recent_games": [
+  {
+   "date": "2026-10-21",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2026-10-21_phoenix_vs_portland",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 7.0,
+   "PTS": 4.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
+ "hits": {},
+ "members": "https://thedropcoverage.com/api.html#members"
 }

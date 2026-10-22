@@ -2,66 +2,33 @@
  "player_id": 1627884,
  "player": "Derrick Jones Jr.",
  "team": "LA Clippers",
- "opp": "Sacramento",
- "lines": {
-  "PRA": {
-   "line": 17.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "PA": {
-   "line": 13.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "PTS": {
-   "line": 12.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "PR": {
-   "line": 16.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.45,
-   "book": "sportsbet",
-   "price_over": 2.6,
-   "price_under": 1.45
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 2.1,
-   "book": "sportsbet",
-   "price_over": 1.68,
-   "price_under": 2.1
-  },
-  "RA": {
-   "line": 5.5,
-   "price": 1.91,
-   "book": "sportsbet",
-   "price_over": 1.85,
-   "price_under": 1.91
-  },
-  "AST": {
-   "line": 1.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.83
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-21",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-10-21_la-clippers_vs_sacramento",
+   "starter": true,
+   "rest": "188",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 26.0,
+   "PTS": 8.0,
+   "REB": 6.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 4.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-04-15",
    "opp": "Golden State",
@@ -157,53 +124,8 @@
    "FTA": 2.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-04-07",
-   "opp": "Dallas",
-   "venue": "H",
-   "game": "2026-04-07_dallas_vs_la-clippers",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Bottom 10",
-   "min": 23.5,
-   "PTS": 11.0,
-   "REB": 10.0,
-   "AST": 2.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 1.0,
-   "TOV": 0.0,
-   "FGM": 4.0,
-   "FGA": 10.0,
-   "3PA": 2.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 12.5,
-   "over": 1,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 3,
-   "n": 5
-  },
-  "AST": {
-   "line": 1.5,
-   "over": 1,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

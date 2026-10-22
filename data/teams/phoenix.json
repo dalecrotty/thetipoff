@@ -10,8 +10,8 @@
   {
    "id": 1626164,
    "name": "Devin Booker",
-   "games": 145,
-   "med_min": 36.6
+   "games": 146,
+   "med_min": 36.5
   },
   {
    "id": 203078,
@@ -22,14 +22,20 @@
   {
    "id": 1628415,
    "name": "Dillon Brooks",
-   "games": 62,
-   "med_min": 32.5
+   "games": 63,
+   "med_min": 32.3
   },
   {
    "id": 1630224,
    "name": "Jalen Green",
-   "games": 38,
-   "med_min": 30.6
+   "games": 39,
+   "med_min": 30.4
+  },
+  {
+   "id": 1628970,
+   "name": "Miles Bridges",
+   "games": 1,
+   "med_min": 29.0
   },
   {
    "id": 1626145,
@@ -46,8 +52,8 @@
   {
    "id": 1631221,
    "name": "Collin Gillespie",
-   "games": 118,
-   "med_min": 26.8
+   "games": 119,
+   "med_min": 26.5
   },
   {
    "id": 1628960,
@@ -70,19 +76,19 @@
   {
    "id": 1630692,
    "name": "Jordan Goodwin",
-   "games": 73,
-   "med_min": 23.1
+   "games": 74,
+   "med_min": 23.0
   },
   {
    "id": 1642345,
    "name": "Oso Ighodaro",
-   "games": 148,
-   "med_min": 20.9
+   "games": 149,
+   "med_min": 20.8
   },
   {
    "id": 1642346,
    "name": "Ryan Dunn",
-   "games": 148,
+   "games": 149,
    "med_min": 20.0
   },
   {
@@ -118,8 +124,8 @@
   {
    "id": 1631123,
    "name": "Jamaree Bouyea",
-   "games": 51,
-   "med_min": 12.6
+   "games": 52,
+   "med_min": 12.5
   },
   {
    "id": 1629599,
@@ -136,8 +142,8 @@
   {
    "id": 1642853,
    "name": "Rasheer Fleming",
-   "games": 60,
-   "med_min": 9.7
+   "games": 61,
+   "med_min": 9.8
   },
   {
    "id": 1630587,
@@ -146,16 +152,34 @@
    "med_min": 9.5
   },
   {
+   "id": 1641871,
+   "name": "Duop Reath",
+   "games": 1,
+   "med_min": 9.0
+  },
+  {
    "id": -659,
    "name": "Bol Bol",
    "games": 36,
    "med_min": 8.5
   },
   {
+   "id": -736,
+   "name": "Koa Peat",
+   "games": 1,
+   "med_min": 7.0
+  },
+  {
+   "id": 1630311,
+   "name": "Pat Spencer",
+   "games": 1,
+   "med_min": 7.0
+  },
+  {
    "id": 1642863,
    "name": "Khaman Maluach",
-   "games": 51,
-   "med_min": 5.8
+   "games": 52,
+   "med_min": 6.1
   },
   {
    "id": -681,
@@ -29991,6 +30015,226 @@
      "FGM": 0.0,
      "FGA": 1.0,
      "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-21",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2026-10-21_phoenix_vs_portland",
+   "lines": {
+    "1631221": {
+     "min": 21.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 4.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 0.0,
+     "FGA": 8.0,
+     "3PA": 8.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "1626164": {
+     "min": 29.0,
+     "PTS": 23.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 7.0,
+     "FGA": 13.0,
+     "3PA": 0.0,
+     "FTA": 9.0,
+     "starter": true
+    },
+    "1628415": {
+     "min": 27.0,
+     "PTS": 10.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 4.0,
+     "FGA": 11.0,
+     "3PA": 2.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1641871": {
+     "min": 9.0,
+     "PTS": 5.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630224": {
+     "min": 25.0,
+     "PTS": 10.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 4.0,
+     "FGA": 12.0,
+     "3PA": 6.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630692": {
+     "min": 22.0,
+     "PTS": 3.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 4.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642863": {
+     "min": 17.0,
+     "PTS": 2.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1628970": {
+     "min": 29.0,
+     "PTS": 8.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 11.0,
+     "3PA": 5.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1642345": {
+     "min": 15.0,
+     "PTS": 8.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 7.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630311": {
+     "min": 7.0,
+     "PTS": 3.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642853": {
+     "min": 12.0,
+     "PTS": 1.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 5.0,
+     "3PA": 3.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1642346": {
+     "min": 14.0,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1631123": {
+     "min": 7.0,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "-736": {
+     "min": 7.0,
+     "PTS": 4.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 0.0,
      "FTA": 0.0,
      "starter": false
     }
