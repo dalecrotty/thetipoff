@@ -225,8 +225,94 @@
    }
   }
  },
- "lines": {},
- "lines_us": {},
+ "lines": {
+  "PR": {
+   "line": 8.5,
+   "p_over": 0.606,
+   "p_under": 0.394,
+   "fair_over": 0.529,
+   "fair_under": 0.471,
+   "price_over": 1.78,
+   "price_under": 2.0,
+   "side": "over",
+   "price": 1.78,
+   "book": "sportsbet",
+   "edge": 0.0768,
+   "tier": "A"
+  },
+  "PTS": {
+   "line": 5.5,
+   "p_over": 0.552,
+   "p_under": 0.448,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.96,
+   "book": "sportsbet",
+   "edge": 0.0737,
+   "tier": "A"
+  },
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.541,
+   "p_under": 0.459,
+   "fair_over": 0.496,
+   "fair_under": 0.504,
+   "price_over": 1.89,
+   "price_under": 1.86,
+   "side": "over",
+   "price": 1.89,
+   "book": "sportsbet",
+   "edge": 0.0451,
+   "tier": "B"
+  }
+ },
+ "lines_us": {
+  "PTS": {
+   "line": 5.5,
+   "p_over": 0.552,
+   "p_under": 0.448,
+   "fair_over": 0.472,
+   "fair_under": 0.528,
+   "price_over": 1.98,
+   "price_under": 1.77,
+   "side": "over",
+   "price": 1.98,
+   "book": "fanduel",
+   "edge": 0.0804,
+   "tier": "A"
+  },
+  "PR": {
+   "line": 8.5,
+   "p_over": 0.606,
+   "p_under": 0.394,
+   "fair_over": 0.532,
+   "fair_under": 0.468,
+   "price_over": 1.76,
+   "price_under": 2.0,
+   "side": "over",
+   "price": 1.76,
+   "book": "fanduel",
+   "edge": 0.074,
+   "tier": "A"
+  },
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.541,
+   "p_under": 0.459,
+   "fair_over": 0.516,
+   "fair_under": 0.484,
+   "price_over": 1.81,
+   "price_under": 1.93,
+   "side": "over",
+   "price": 1.81,
+   "book": "draftkings",
+   "edge": 0.025,
+   "tier": null
+  }
+ },
  "game_log": [
   {
    "date": "2024-10-24",

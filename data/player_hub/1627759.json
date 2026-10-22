@@ -4,36 +4,29 @@
  "team": "Philadelphia",
  "opp": "Cleveland",
  "lines": {
-  "PRA": {
-   "line": 30.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
   "PA": {
    "line": 24.5,
-   "price": 1.96,
+   "price": 1.86,
    "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
+   "price_over": 1.86,
+   "price_under": 1.9
   },
-  "PR": {
-   "line": 26.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "PTS": {
-   "line": 19.5,
+  "PRA": {
+   "line": 30.5,
    "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96
   },
-  "RA": {
-   "line": 9.5,
+  "PTS": {
+   "line": 20.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 26.5,
    "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
@@ -41,10 +34,17 @@
   },
   "3PM": {
    "line": 1.5,
-   "price": 2.05,
+   "price": 2.08,
    "book": "sportsbet",
-   "price_over": 2.05,
-   "price_under": 1.74
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
   },
   "AST": {
    "line": 3.5,
@@ -54,11 +54,11 @@
    "price_under": 2.1
   },
   "REB": {
-   "line": 5.5,
-   "price": 1.72,
+   "line": 6.5,
+   "price": 2.1,
    "book": "sportsbet",
-   "price_over": 1.72,
-   "price_under": 2.08
+   "price_over": 2.1,
+   "price_under": 1.68
   }
  },
  "recent_games": [
@@ -185,12 +185,12 @@
  ],
  "hits": {
   "PTS": {
-   "line": 19.5,
-   "over": 3,
+   "line": 20.5,
+   "over": 2,
    "n": 5
   },
   "REB": {
-   "line": 5.5,
+   "line": 6.5,
    "over": 3,
    "n": 5
   },
