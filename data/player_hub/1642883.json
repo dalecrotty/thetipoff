@@ -4,33 +4,47 @@
  "team": "Charlotte",
  "opp": "Atlanta",
  "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 2.6,
+   "book": "tab",
+   "price_over": 2.6,
+   "price_under": 1.46
+  },
   "REB": {
    "line": 3.5,
-   "price": 2.05,
-   "book": "neds",
-   "price_over": 2.05,
-   "price_under": 1.7
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
   },
   "PR": {
-   "line": 11.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.74
+   "line": 10.5,
+   "price": 1.77,
+   "book": "neds",
+   "price_over": 1.77,
+   "price_under": 1.98
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.69,
-   "book": "pointsbetau",
-   "price_over": 2.15,
-   "price_under": 1.69
+   "price": 1.75,
+   "book": "tab",
+   "price_over": 2.0,
+   "price_under": 1.75
   },
   "PTS": {
    "line": 7.5,
-   "price": 1.92,
-   "book": "sportsbet",
-   "price_over": 1.92,
-   "price_under": 1.84
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.83
   }
  },
  "recent_games": [
@@ -163,6 +177,11 @@
   },
   "REB": {
    "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
    "over": 1,
    "n": 5
   },

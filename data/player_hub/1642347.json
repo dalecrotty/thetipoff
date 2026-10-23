@@ -4,12 +4,33 @@
  "team": "Toronto",
  "opp": "Washington",
  "lines": {
+  "PA": {
+   "line": 8.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "PTS": {
+   "line": 4.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
   "AST": {
    "line": 3.5,
-   "price": 1.71,
-   "book": "pointsbetau",
-   "price_over": 1.71,
-   "price_under": 2.1
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "PRA": {
+   "line": 10.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
   }
  },
  "recent_games": [
@@ -135,6 +156,11 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
   "AST": {
    "line": 3.5,
    "over": 5,

@@ -2,8 +2,167 @@
  "player_id": 1643060,
  "player": "Hayden Gray",
  "team": "Boston",
- "opp": null,
+ "projections": {},
+ "minutes": null,
+ "splits": {
+  "season": {
+   "games": 1,
+   "min_pg": 24.8,
+   "PTS": {
+    "pg": 6.0,
+    "pm": 0.242
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.04
+   }
+  },
+  "l10": {
+   "games": 1,
+   "min_pg": 24.8,
+   "PTS": {
+    "pg": 6.0,
+    "pm": 0.242
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.04
+   }
+  },
+  "l5": {
+   "games": 1,
+   "min_pg": 24.8,
+   "PTS": {
+    "pg": 6.0,
+    "pm": 0.242
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.04
+   }
+  },
+  "home": {},
+  "away": {
+   "games": 1,
+   "min_pg": 24.8,
+   "PTS": {
+    "pg": 6.0,
+    "pm": 0.242
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.04
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-04-12",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-04-12_la-lakers_vs_utah",
+   "starter": false,
+   "rest": "3+",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 24.8,
+   "PTS": 6.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-04-12",
@@ -30,6 +189,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": null
 }
