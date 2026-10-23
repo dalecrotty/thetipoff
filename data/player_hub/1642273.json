@@ -4,13 +4,6 @@
  "team": "Washington",
  "opp": "Toronto",
  "lines": {
-  "RA": {
-   "line": 7.5,
-   "price": 2.1,
-   "book": "sportsbet",
-   "price_over": 2.1,
-   "price_under": 1.68
-  },
   "REB": {
    "line": 3.5,
    "price": 1.83,
@@ -18,12 +11,12 @@
    "price_over": 1.83,
    "price_under": 1.91
   },
-  "AST": {
-   "line": 2.5,
-   "price": 1.64,
-   "book": "neds",
-   "price_over": 1.64,
-   "price_under": 2.15
+  "RA": {
+   "line": 7.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
   },
   "3PM": {
    "line": 1.5,
@@ -32,13 +25,6 @@
    "price_over": 1.58,
    "price_under": 2.2
   },
-  "PRA": {
-   "line": 22.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
   "PR": {
    "line": 18.5,
    "price": 1.8,
@@ -46,12 +32,19 @@
    "price_over": 1.8,
    "price_under": 1.96
   },
-  "PA": {
-   "line": 17.5,
-   "price": 1.8,
+  "PRA": {
+   "line": 22.5,
+   "price": 1.96,
    "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.64,
+   "book": "neds",
+   "price_over": 1.64,
+   "price_under": 2.15
   },
   "PTS": {
    "line": 14.5,
@@ -59,6 +52,13 @@
    "book": "neds",
    "price_over": 1.9,
    "price_under": 1.85
+  },
+  "PA": {
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
   }
  },
  "recent_games": [
