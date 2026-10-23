@@ -2,16 +2,241 @@
  "player_id": -741,
  "player": "Brayden Burries",
  "team": "Milwaukee",
- "opp": "Chicago",
- "lines": {
+ "projections": {
+  "3PM": {
+   "mean": 0.87,
+   "floor": 0.0,
+   "ceiling": 2.38
+  },
+  "AST": {
+   "mean": 1.74,
+   "floor": 0.0,
+   "ceiling": 4.28
+  },
+  "BLK": {
+   "mean": 0.27,
+   "floor": 0.0,
+   "ceiling": 1.15
+  },
   "PTS": {
-   "line": 7.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.88
+   "mean": 9.01,
+   "floor": 0.93,
+   "ceiling": 17.94
+  },
+  "REB": {
+   "mean": 3.89,
+   "floor": 0.57,
+   "ceiling": 7.63
+  },
+  "STL": {
+   "mean": 1.06,
+   "floor": 0.0,
+   "ceiling": 3.27
+  },
+  "TOV": {
+   "mean": 1.07,
+   "floor": 0.0,
+   "ceiling": 2.28
+  },
+  "PRA": {
+   "mean": 14.64,
+   "floor": 5.27,
+   "ceiling": 23.81
+  },
+  "PR": {
+   "mean": 12.91,
+   "floor": 4.4,
+   "ceiling": 21.53
+  },
+  "PA": {
+   "mean": 10.75,
+   "floor": 2.87,
+   "ceiling": 19.05
+  },
+  "RA": {
+   "mean": 5.63,
+   "floor": 1.76,
+   "ceiling": 9.87
   }
  },
+ "minutes": {
+  "value": 18,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 1,
+   "min_pg": 16.0,
+   "PTS": {
+    "pg": 12.0,
+    "pm": 0.75
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.312
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.125
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.062
+   }
+  },
+  "l10": {
+   "games": 1,
+   "min_pg": 16.0,
+   "PTS": {
+    "pg": 12.0,
+    "pm": 0.75
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.312
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.125
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.062
+   }
+  },
+  "l5": {
+   "games": 1,
+   "min_pg": 16.0,
+   "PTS": {
+    "pg": 12.0,
+    "pm": 0.75
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.312
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.125
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.062
+   }
+  },
+  "home": {},
+  "away": {
+   "games": 1,
+   "min_pg": 16.0,
+   "PTS": {
+    "pg": 12.0,
+    "pm": 0.75
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.312
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.125
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.062
+   }
+  }
+ },
+ "lines": {
+  "PTS": {
+   "line": 6.5,
+   "p_over": 0.676,
+   "p_under": 0.324,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.9,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.9,
+   "book": "pointsbetau",
+   "edge": 0.1764,
+   "tier": null
+  }
+ },
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2026-10-21_milwaukee_vs_washington",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 16.0,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 0.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -38,12 +263,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 7.5,
-   "over": 1,
-   "n": 1
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Chicago"
 }

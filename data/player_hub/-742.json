@@ -2,65 +2,368 @@
  "player_id": -742,
  "player": "Caleb Wilson",
  "team": "Chicago",
- "opp": "Milwaukee",
+ "projections": {
+  "3PM": {
+   "mean": 1.82,
+   "floor": 0.0,
+   "ceiling": 4.46
+  },
+  "AST": {
+   "mean": 2.52,
+   "floor": 0.0,
+   "ceiling": 5.19
+  },
+  "BLK": {
+   "mean": 0.73,
+   "floor": 0.0,
+   "ceiling": 2.3
+  },
+  "PTS": {
+   "mean": 16.38,
+   "floor": 6.01,
+   "ceiling": 27.09
+  },
+  "REB": {
+   "mean": 5.98,
+   "floor": 1.82,
+   "ceiling": 10.44
+  },
+  "STL": {
+   "mean": 1.4,
+   "floor": 0.0,
+   "ceiling": 3.25
+  },
+  "TOV": {
+   "mean": 3.6,
+   "floor": 1.04,
+   "ceiling": 6.29
+  },
+  "PRA": {
+   "mean": 24.88,
+   "floor": 14.32,
+   "ceiling": 36.55
+  },
+  "PR": {
+   "mean": 22.36,
+   "floor": 12.65,
+   "ceiling": 33.41
+  },
+  "PA": {
+   "mean": 18.9,
+   "floor": 10.34,
+   "ceiling": 29.26
+  },
+  "RA": {
+   "mean": 8.5,
+   "floor": 4.27,
+   "ceiling": 13.3
+  }
+ },
+ "minutes": {
+  "value": 33,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 1,
+   "min_pg": 32.0,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.125
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "STL": {
+    "pg": 3.0,
+    "pm": 0.094
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 9.0,
+    "pm": 0.281
+   }
+  },
+  "l10": {
+   "games": 1,
+   "min_pg": 32.0,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.125
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "STL": {
+    "pg": 3.0,
+    "pm": 0.094
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 9.0,
+    "pm": 0.281
+   }
+  },
+  "l5": {
+   "games": 1,
+   "min_pg": 32.0,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.125
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "STL": {
+    "pg": 3.0,
+    "pm": 0.094
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 9.0,
+    "pm": 0.281
+   }
+  },
+  "home": {},
+  "away": {
+   "games": 1,
+   "min_pg": 32.0,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.125
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "STL": {
+    "pg": 3.0,
+    "pm": 0.094
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 9.0,
+    "pm": 0.281
+   }
+  }
+ },
  "lines": {
+  "REB": {
+   "line": 6.5,
+   "p_over": 0.389,
+   "p_under": 0.611,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
+   "side": "under",
+   "price": 1.9,
+   "book": "neds",
+   "edge": 0.1174,
+   "tier": null
+  },
   "PR": {
    "line": 25.5,
-   "price": 1.84,
-   "book": "sportsbet",
-   "price_over": 1.92,
-   "price_under": 1.84
+   "p_over": 0.358,
+   "p_under": 0.642,
+   "fair_over": 0.469,
+   "fair_under": 0.531,
+   "price_over": 1.97,
+   "price_under": 1.74,
+   "side": "under",
+   "price": 1.74,
+   "book": "unibet",
+   "edge": 0.1112,
+   "tier": null
   },
   "PRA": {
    "line": 27.5,
-   "price": 1.93,
-   "book": "sportsbet",
-   "price_over": 1.83,
-   "price_under": 1.93
-  },
-  "REB": {
-   "line": 6.5,
-   "price": 1.92,
-   "book": "sportsbet",
-   "price_over": 1.84,
-   "price_under": 1.92
+   "p_over": 0.387,
+   "p_under": 0.613,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "under",
+   "price": 1.87,
+   "book": "unibet",
+   "edge": 0.1131,
+   "tier": null
   },
   "PTS": {
    "line": 18.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "p_over": 0.383,
+   "p_under": 0.617,
+   "fair_over": 0.485,
+   "fair_under": 0.515,
+   "price_over": 1.93,
+   "price_under": 1.82,
+   "side": "under",
+   "price": 1.82,
+   "book": "unibet",
+   "edge": 0.1024,
+   "tier": null
   },
   "PA": {
-   "line": 20.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
+   "line": 21.5,
+   "p_over": 0.374,
+   "p_under": 0.626,
+   "fair_over": 0.476,
+   "fair_under": 0.524,
+   "price_over": 1.95,
+   "price_under": 1.77,
+   "side": "under",
+   "price": 1.77,
+   "book": "unibet",
+   "edge": 0.1018,
+   "tier": null
   },
   "RA": {
-   "line": 9.5,
-   "price": 1.72,
+   "line": 8.5,
+   "p_over": 0.5,
+   "p_under": 0.5,
+   "fair_over": 0.541,
+   "fair_under": 0.459,
+   "price_over": 1.74,
+   "price_under": 2.05,
+   "side": "under",
+   "price": 2.05,
    "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
+   "edge": 0.0406,
+   "tier": null
   },
   "AST": {
    "line": 2.5,
-   "price": 1.72,
-   "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
+   "p_over": 0.451,
+   "p_under": 0.549,
+   "fair_over": 0.504,
+   "fair_under": 0.496,
+   "price_over": 1.85,
+   "price_under": 1.88,
+   "side": "under",
+   "price": 1.88,
+   "book": "unibet",
+   "edge": 0.0532,
+   "tier": null
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.87,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "p_over": 0.521,
+   "p_under": 0.479,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.0117,
+   "tier": null
   }
  },
+ "lines_us": {
+  "REB": {
+   "line": 6.5,
+   "p_over": 0.389,
+   "p_under": 0.611,
+   "fair_over": 0.488,
+   "fair_under": 0.512,
+   "price_over": 1.92,
+   "price_under": 1.83,
+   "side": "under",
+   "price": 1.83,
+   "book": "betright",
+   "edge": 0.0988,
+   "tier": null
+  },
+  "PTS": {
+   "line": 17.5,
+   "p_over": 0.437,
+   "p_under": 0.563,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.88,
+   "price_under": 1.88,
+   "side": "under",
+   "price": 1.88,
+   "book": "betright",
+   "edge": 0.0626,
+   "tier": null
+  }
+ },
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2026-10-21_chicago_vs_toronto",
+   "starter": true,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 32.0,
+   "PTS": 16.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 9.0,
+   "FGM": 7.0,
+   "FGA": 21.0,
+   "3PA": 8.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -87,27 +390,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 18.5,
-   "over": 0,
-   "n": 1
-  },
-  "REB": {
-   "line": 6.5,
-   "over": 0,
-   "n": 1
-  },
-  "AST": {
-   "line": 2.5,
-   "over": 0,
-   "n": 1
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 0,
-   "n": 1
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Milwaukee"
 }
