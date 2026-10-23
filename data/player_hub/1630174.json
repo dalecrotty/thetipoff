@@ -4,63 +4,63 @@
  "team": "Indiana",
  "projections": {
   "3PM": {
-   "mean": 2.13,
-   "floor": 0.19,
-   "ceiling": 4.1
+   "mean": 1.97,
+   "floor": 0.02,
+   "ceiling": 3.93
   },
   "AST": {
-   "mean": 1.27,
-   "floor": 0.01,
-   "ceiling": 3.08
+   "mean": 1.18,
+   "floor": 0.0,
+   "ceiling": 2.98
   },
   "BLK": {
-   "mean": 0.44,
+   "mean": 0.4,
    "floor": 0.0,
-   "ceiling": 1.05
+   "ceiling": 1.01
   },
   "PTS": {
-   "mean": 13.38,
-   "floor": 5.3,
-   "ceiling": 22.39
+   "mean": 12.35,
+   "floor": 4.36,
+   "ceiling": 20.53
   },
   "REB": {
-   "mean": 3.64,
-   "floor": 1.2,
-   "ceiling": 6.35
+   "mean": 3.36,
+   "floor": 0.92,
+   "ceiling": 6.07
   },
   "STL": {
-   "mean": 0.55,
+   "mean": 0.51,
    "floor": 0.0,
-   "ceiling": 2.0
+   "ceiling": 1.96
   },
   "TOV": {
-   "mean": 1.19,
+   "mean": 1.1,
    "floor": 0.0,
-   "ceiling": 2.92
+   "ceiling": 2.11
   },
   "PRA": {
-   "mean": 18.29,
-   "floor": 8.06,
-   "ceiling": 28.56
+   "mean": 16.89,
+   "floor": 6.66,
+   "ceiling": 27.15
   },
   "PR": {
-   "mean": 17.02,
-   "floor": 7.74,
-   "ceiling": 26.43
+   "mean": 15.71,
+   "floor": 6.6,
+   "ceiling": 24.95
   },
   "PA": {
-   "mean": 14.66,
-   "floor": 6.04,
-   "ceiling": 23.98
+   "mean": 13.53,
+   "floor": 5.3,
+   "ceiling": 22.67
   },
   "RA": {
-   "mean": 4.91,
-   "floor": 1.46,
-   "ceiling": 8.86
+   "mean": 4.53,
+   "floor": 1.17,
+   "ceiling": 7.98
   }
  },
  "minutes": {
-  "value": 26,
+  "value": 24,
   "source": "model"
  },
  "splits": {
@@ -226,24 +226,10 @@
   }
  },
  "lines": {
-  "PTS": {
-   "line": 12.5,
-   "p_over": 0.554,
-   "p_under": 0.446,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
-   "side": "over",
-   "price": 1.87,
-   "book": "neds",
-   "edge": 0.0543,
-   "tier": "B"
-  },
   "REB": {
    "line": 3.5,
-   "p_over": 0.477,
-   "p_under": 0.523,
+   "p_over": 0.424,
+   "p_under": 0.576,
    "fair_over": 0.524,
    "fair_under": 0.476,
    "price_over": 1.78,
@@ -251,43 +237,43 @@
    "side": "under",
    "price": 1.96,
    "book": "neds",
-   "edge": 0.0466,
-   "tier": "B"
+   "edge": 0.1004,
+   "tier": "A"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.599,
-   "p_under": 0.401,
+   "p_over": 0.56,
+   "p_under": 0.44,
    "fair_over": 0.573,
    "fair_under": 0.427,
    "price_over": 1.6,
    "price_under": 2.15,
-   "side": "over",
-   "price": 1.6,
+   "side": "under",
+   "price": 2.15,
    "book": "neds",
-   "edge": 0.0261,
+   "edge": 0.0131,
+   "tier": null
+  },
+  "PTS": {
+   "line": 12.5,
+   "p_over": 0.491,
+   "p_under": 0.509,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "under",
+   "price": 1.87,
+   "book": "neds",
+   "edge": 0.0091,
    "tier": null
   }
  },
  "lines_us": {
-  "PTS": {
-   "line": 12.5,
-   "p_over": 0.554,
-   "p_under": 0.446,
-   "fair_over": 0.497,
-   "fair_under": 0.503,
-   "price_over": 1.89,
-   "price_under": 1.87,
-   "side": "over",
-   "price": 1.89,
-   "book": "betonlineag",
-   "edge": 0.0569,
-   "tier": "B"
-  },
   "REB": {
    "line": 3.5,
-   "p_over": 0.477,
-   "p_under": 0.523,
+   "p_over": 0.424,
+   "p_under": 0.576,
    "fair_over": 0.513,
    "fair_under": 0.487,
    "price_over": 1.83,
@@ -295,21 +281,35 @@
    "side": "under",
    "price": 1.93,
    "book": "betonlineag",
-   "edge": 0.0358,
-   "tier": "B"
+   "edge": 0.0896,
+   "tier": "A"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.599,
-   "p_under": 0.401,
+   "p_over": 0.56,
+   "p_under": 0.44,
    "fair_over": 0.591,
    "fair_under": 0.409,
    "price_over": 1.59,
    "price_under": 2.3,
-   "side": "over",
-   "price": 1.59,
+   "side": "under",
+   "price": 2.3,
    "book": "betonlineag",
-   "edge": 0.0082,
+   "edge": 0.031,
+   "tier": null
+  },
+  "PTS": {
+   "line": 12.5,
+   "p_over": 0.491,
+   "p_under": 0.509,
+   "fair_over": 0.497,
+   "fair_under": 0.503,
+   "price_over": 1.89,
+   "price_under": 1.87,
+   "side": "under",
+   "price": 1.87,
+   "book": "betonlineag",
+   "edge": 0.0065,
    "tier": null
   }
  },
