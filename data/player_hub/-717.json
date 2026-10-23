@@ -4,63 +4,63 @@
  "team": "Denver",
  "projections": {
   "3PM": {
-   "mean": 0.57,
+   "mean": 0.78,
    "floor": 0.0,
-   "ceiling": 2.17
+   "ceiling": 2.29
   },
   "AST": {
-   "mean": 0.62,
+   "mean": 0.84,
+   "floor": 0.0,
+   "ceiling": 2.47
+  },
+  "BLK": {
+   "mean": 0.58,
+   "floor": 0.0,
+   "ceiling": 2.27
+  },
+  "PTS": {
+   "mean": 6.4,
+   "floor": 0.0,
+   "ceiling": 14.6
+  },
+  "REB": {
+   "mean": 3.04,
+   "floor": 0.47,
+   "ceiling": 6.58
+  },
+  "STL": {
+   "mean": 0.51,
    "floor": 0.0,
    "ceiling": 2.25
   },
-  "BLK": {
-   "mean": 0.42,
-   "floor": 0.0,
-   "ceiling": 1.16
-  },
-  "PTS": {
-   "mean": 4.69,
-   "floor": 0.0,
-   "ceiling": 11.56
-  },
-  "REB": {
-   "mean": 2.23,
-   "floor": 0.0,
-   "ceiling": 5.16
-  },
-  "STL": {
-   "mean": 0.37,
-   "floor": 0.0,
-   "ceiling": 1.33
-  },
   "TOV": {
-   "mean": 0.46,
+   "mean": 0.63,
    "floor": 0.0,
-   "ceiling": 2.14
+   "ceiling": 2.31
   },
   "PRA": {
-   "mean": 7.54,
-   "floor": 0.0,
-   "ceiling": 16.26
+   "mean": 10.29,
+   "floor": 2.57,
+   "ceiling": 19.0
   },
   "PR": {
-   "mean": 6.92,
-   "floor": 0.16,
-   "ceiling": 15.04
+   "mean": 9.44,
+   "floor": 1.71,
+   "ceiling": 17.78
   },
   "PA": {
-   "mean": 5.31,
-   "floor": 0.0,
-   "ceiling": 12.1
+   "mean": 7.25,
+   "floor": 1.38,
+   "ceiling": 14.03
   },
   "RA": {
-   "mean": 2.85,
-   "floor": 0.1,
-   "ceiling": 6.15
+   "mean": 3.89,
+   "floor": 1.14,
+   "ceiling": 7.19
   }
  },
  "minutes": {
-  "value": 11,
+  "value": 15,
   "source": "fallback"
  },
  "splits": {
