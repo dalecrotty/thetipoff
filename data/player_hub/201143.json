@@ -2,8 +2,44 @@
  "player_id": 201143,
  "player": "Al Horford",
  "team": "Golden State",
- "opp": null,
- "lines": {},
+ "opp": "Memphis",
+ "lines": {
+  "PRA": {
+   "line": 13.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.6,
+   "book": "sportsbet",
+   "price_over": 1.6,
+   "price_under": 2.2
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.4,
+   "book": "sportsbet",
+   "price_over": 2.4,
+   "price_under": 1.52
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -126,6 +162,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

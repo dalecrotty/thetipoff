@@ -2,8 +2,65 @@
  "player_id": 1629660,
  "player": "Ty Jerome",
  "team": "Memphis",
- "opp": null,
- "lines": {},
+ "opp": "Golden State",
+ "lines": {
+  "PTS": {
+   "line": 21.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.83
+  },
+  "PA": {
+   "line": 28.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 25.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 32.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 21.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

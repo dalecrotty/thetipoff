@@ -2,8 +2,65 @@
  "player_id": 1630532,
  "player": "Franz Wagner",
  "team": "Orlando",
- "opp": null,
- "lines": {},
+ "opp": "Minnesota",
+ "lines": {
+  "AST": {
+   "line": 5.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PR": {
+   "line": 25.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PTS": {
+   "line": 20.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PRA": {
+   "line": 31.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PA": {
+   "line": 25.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 20.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

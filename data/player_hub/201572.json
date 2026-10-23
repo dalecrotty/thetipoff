@@ -2,8 +2,37 @@
  "player_id": 201572,
  "player": "Brook Lopez",
  "team": "LA Clippers",
- "opp": null,
- "lines": {},
+ "opp": "LA Lakers",
+ "lines": {
+  "REB": {
+   "line": 5.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PR": {
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

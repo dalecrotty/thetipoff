@@ -2,8 +2,65 @@
  "player_id": -737,
  "player": "Darryn Peterson",
  "team": "Utah",
- "opp": null,
- "lines": {},
+ "opp": "New Orleans",
+ "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "PA": {
+   "line": 17.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PRA": {
+   "line": 21.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.91
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -30,6 +87,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 0,
+   "n": 1
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 0,
+   "n": 1
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 0,
+   "n": 1
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 0,
+   "n": 1
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

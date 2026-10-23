@@ -4,13 +4,13 @@
   {
    "id": 203999,
    "name": "Nikola Jokic",
-   "games": 141,
+   "games": 142,
    "med_min": 37.0
   },
   {
    "id": 1627750,
    "name": "Jamal Murray",
-   "games": 148,
+   "games": 149,
    "med_min": 37.0
   },
   {
@@ -22,20 +22,26 @@
   {
    "id": 1631128,
    "name": "Christian Braun",
-   "games": 129,
+   "games": 130,
    "med_min": 33.0
   },
   {
    "id": 1629661,
    "name": "Cameron Johnson",
-   "games": 60,
-   "med_min": 31.0
+   "games": 61,
+   "med_min": 30.9
   },
   {
    "id": 203932,
    "name": "Aaron Gordon",
-   "games": 90,
+   "games": 91,
    "med_min": 30.0
+  },
+  {
+   "id": 201942,
+   "name": "DeMar DeRozan",
+   "games": 1,
+   "med_min": 28.0
   },
   {
    "id": 203501,
@@ -62,6 +68,12 @@
    "med_min": 24.3
   },
   {
+   "id": -703,
+   "name": "Alpha Diallo",
+   "games": 1,
+   "med_min": 22.0
+  },
+  {
    "id": 1642461,
    "name": "Spencer Jones",
    "games": 88,
@@ -72,6 +84,12 @@
    "name": "Julian Strawther",
    "games": 124,
    "med_min": 18.6
+  },
+  {
+   "id": -717,
+   "name": "Trevon Brazile",
+   "games": 1,
+   "med_min": 18.0
   },
   {
    "id": 1629618,
@@ -98,6 +116,12 @@
    "med_min": 11.0
   },
   {
+   "id": 1628963,
+   "name": "Marvin Bagley III",
+   "games": 1,
+   "med_min": 11.0
+  },
+  {
    "id": 1630192,
    "name": "Zeke Nnaji",
    "games": 111,
@@ -112,8 +136,8 @@
   {
    "id": 1626145,
    "name": "Tyus Jones",
-   "games": 14,
-   "med_min": 6.6
+   "games": 15,
+   "med_min": 7.5
   },
   {
    "id": 1631223,
@@ -140,22 +164,34 @@
    "med_min": 4.9
   },
   {
-   "id": 1641747,
-   "name": "DaRon Holmes II",
-   "games": 27,
-   "med_min": 4.2
-  },
-  {
    "id": 1641725,
    "name": "Trey Alexander",
    "games": 23,
    "med_min": 4.0
   },
   {
+   "id": 1641747,
+   "name": "DaRon Holmes II",
+   "games": 28,
+   "med_min": 3.7
+  },
+  {
    "id": 1641790,
    "name": "PJ Hall",
    "games": 19,
    "med_min": 3.0
+  },
+  {
+   "id": -710,
+   "name": "Bryce Hopkins",
+   "games": 1,
+   "med_min": 2.0
+  },
+  {
+   "id": 1642948,
+   "name": "Ryan Nembhard",
+   "games": 1,
+   "med_min": 2.0
   }
  ],
  "games": [
@@ -28375,6 +28411,211 @@
      "FGA": 3.0,
      "3PA": 0.0,
      "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-10-22_denver_vs_oklahoma-city",
+   "lines": {
+    "203932": {
+     "min": 29.0,
+     "PTS": 20.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 6.0,
+     "FGA": 9.0,
+     "3PA": 4.0,
+     "FTA": 6.0,
+     "starter": true
+    },
+    "1629661": {
+     "min": 11.0,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1631128": {
+     "min": 33.0,
+     "PTS": 7.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 10.0,
+     "3PA": 6.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1641747": {
+     "min": 2.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "201942": {
+     "min": 28.0,
+     "PTS": 13.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "FGM": 5.0,
+     "FGA": 9.0,
+     "3PA": 1.0,
+     "FTA": 6.0,
+     "starter": false
+    },
+    "1627750": {
+     "min": 37.0,
+     "PTS": 6.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 6.0,
+     "FGM": 2.0,
+     "FGA": 11.0,
+     "3PA": 1.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1628963": {
+     "min": 11.0,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "203999": {
+     "min": 35.0,
+     "PTS": 13.0,
+     "REB": 7.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 19.0,
+     "3PA": 7.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1642948": {
+     "min": 2.0,
+     "PTS": 5.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1626145": {
+     "min": 10.0,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-703": {
+     "min": 22.0,
+     "PTS": 4.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-710": {
+     "min": 2.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-717": {
+     "min": 18.0,
+     "PTS": 4.0,
+     "REB": 12.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 2.0,
      "starter": false
     }
    }

@@ -2,8 +2,23 @@
  "player_id": 1629652,
  "player": "Luguentz Dort",
  "team": "Atlanta",
- "opp": null,
- "lines": {},
+ "opp": "Charlotte",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 2.5,
+   "book": "sportsbet",
+   "price_over": 2.5,
+   "price_under": 1.48
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -126,6 +141,17 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

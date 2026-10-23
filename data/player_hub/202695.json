@@ -2,8 +2,65 @@
  "player_id": 202695,
  "player": "Kawhi Leonard",
  "team": "Toronto",
- "opp": null,
- "lines": {},
+ "opp": "Washington",
+ "lines": {
+  "PRA": {
+   "line": 34.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PA": {
+   "line": 28.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 31.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 24.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 2.25,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 24.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

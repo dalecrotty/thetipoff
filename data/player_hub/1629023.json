@@ -2,8 +2,44 @@
  "player_id": 1629023,
  "player": "P.J. Washington",
  "team": "Dallas",
- "opp": null,
- "lines": {},
+ "opp": "Indiana",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 20.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -126,6 +162,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

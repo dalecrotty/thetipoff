@@ -2,8 +2,65 @@
  "player_id": -782,
  "player": "Yaxel Lendeborg",
  "team": "Golden State",
- "opp": null,
- "lines": {},
+ "opp": "Memphis",
+ "lines": {
+  "PTS": {
+   "line": 15.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PA": {
+   "line": 18.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 25.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PR": {
+   "line": 22.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.91
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.25,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.56,
+   "book": "sportsbet",
+   "price_over": 1.56,
+   "price_under": 2.3
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -30,6 +87,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 0,
+   "n": 1
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 0,
+   "n": 1
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 0,
+   "n": 1
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 0,
+   "n": 1
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

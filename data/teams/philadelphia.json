@@ -4,32 +4,32 @@
   {
    "id": 1630178,
    "name": "Tyrese Maxey",
-   "games": 135,
+   "games": 136,
    "med_min": 39.0
-  },
-  {
-   "id": 1642845,
-   "name": "VJ Edgecombe",
-   "games": 88,
-   "med_min": 36.5
   },
   {
    "id": 1627759,
    "name": "Jaylen Brown",
-   "games": 1,
-   "med_min": 35.0
+   "games": 2,
+   "med_min": 36.5
   },
   {
-   "id": 2544,
-   "name": "LeBron James",
-   "games": 1,
-   "med_min": 34.0
+   "id": 1642845,
+   "name": "VJ Edgecombe",
+   "games": 89,
+   "med_min": 36.5
   },
   {
    "id": 1626162,
    "name": "Kelly Oubre Jr.",
    "games": 122,
    "med_min": 34.0
+  },
+  {
+   "id": 2544,
+   "name": "LeBron James",
+   "games": 2,
+   "med_min": 33.5
   },
   {
    "id": 202331,
@@ -46,8 +46,8 @@
   {
    "id": 203954,
    "name": "Joel Embiid",
-   "games": 65,
-   "med_min": 31.9
+   "games": 66,
+   "med_min": 32.1
   },
   {
    "id": -610,
@@ -82,14 +82,8 @@
   {
    "id": 203484,
    "name": "Kentavious Caldwell-Pope",
-   "games": 1,
-   "med_min": 26.0
-  },
-  {
-   "id": 1629014,
-   "name": "Anfernee Simons",
-   "games": 1,
-   "med_min": 25.0
+   "games": 2,
+   "med_min": 25.5
   },
   {
    "id": 1631230,
@@ -120,6 +114,12 @@
    "name": "KJ Martin",
    "games": 24,
    "med_min": 21.5
+  },
+  {
+   "id": 1629014,
+   "name": "Anfernee Simons",
+   "games": 2,
+   "med_min": 21.0
   },
   {
    "id": 1642272,
@@ -182,15 +182,15 @@
    "med_min": 16.0
   },
   {
-   "id": 1641737,
-   "name": "Adem Bona",
-   "games": 141,
-   "med_min": 15.8
-  },
-  {
    "id": 1630570,
    "name": "Trendon Watford",
    "games": 60,
+   "med_min": 15.4
+  },
+  {
+   "id": 1641737,
+   "name": "Adem Bona",
+   "games": 142,
    "med_min": 15.4
   },
   {
@@ -220,7 +220,7 @@
   {
    "id": 1631133,
    "name": "Jabari Walker",
-   "games": 71,
+   "games": 72,
    "med_min": 10.3
   },
   {
@@ -29645,6 +29645,151 @@
      "FGA": 10.0,
      "3PA": 3.0,
      "FTA": 2.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-10-22_cleveland_vs_philadelphia",
+   "lines": {
+    "1641737": {
+     "min": 14.0,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629014": {
+     "min": 17.0,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 4.0,
+     "3PA": 4.0,
+     "FTA": 3.0,
+     "starter": false
+    },
+    "1631133": {
+     "min": 4.0,
+     "PTS": 2.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1627759": {
+     "min": 38.0,
+     "PTS": 21.0,
+     "REB": 8.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 10.0,
+     "FGA": 20.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "203954": {
+     "min": 34.0,
+     "PTS": 24.0,
+     "REB": 7.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 8.0,
+     "FGA": 16.0,
+     "3PA": 4.0,
+     "FTA": 9.0,
+     "starter": true
+    },
+    "203484": {
+     "min": 25.0,
+     "PTS": 3.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "2544": {
+     "min": 33.0,
+     "PTS": 17.0,
+     "REB": 10.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 5.0,
+     "FGM": 5.0,
+     "FGA": 14.0,
+     "3PA": 4.0,
+     "FTA": 7.0,
+     "starter": true
+    },
+    "1630178": {
+     "min": 42.0,
+     "PTS": 32.0,
+     "REB": 3.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 12.0,
+     "FGA": 23.0,
+     "3PA": 7.0,
+     "FTA": 8.0,
+     "starter": true
+    },
+    "1642845": {
+     "min": 33.0,
+     "PTS": 11.0,
+     "REB": 7.0,
+     "AST": 6.0,
+     "3PM": 1.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 11.0,
+     "3PA": 4.0,
+     "FTA": 3.0,
      "starter": true
     }
    }
