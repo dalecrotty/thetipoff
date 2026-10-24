@@ -360,6 +360,10 @@ async function renderFreshness() {
 const fmt = (v, dp = 1) => (v === null || v === undefined) ? "—"
   : (typeof v === "number" ? v.toFixed(dp) : v);
 const pct = v => (v === null || v === undefined) ? "—" : (v * 100).toFixed(1) + "%";
+/* "+1.43u", "−1u": the Drop's units (flat 1 unit each, owner 24 Oct 2026) */
+const unitsTxt = v => (v === null || v === undefined) ? "—"
+  : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(2).replace(/\.?0+$/, "") + "u";
+const unitsCls = v => v > 0 ? "pos" : v < 0 ? "neg" : "";
 
 function sortable(table, rows, render) {
   let key = null, dir = -1;
@@ -1686,7 +1690,8 @@ async function initRecord() {
   $("#rtip").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${tOpen ? pct(t.avg_clv) : "—"}</div><div class="r">${tOpen ? `${t.n_clv ?? 0} graded at the close` : tLater}</div></div>
     <div class="card"><div class="k">Beat the close</div><div class="v">${tOpen ? pct(t.beat_close) : "—"}</div>${tOpen ? "" : `<div class="r">${tLater}</div>`}</div>
-    <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="tip.html">Every Drop →</a></div></div>`;
+    <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="tip.html">Every Drop →</a></div></div>
+    <div class="card"><div class="k">Units</div><div class="v ${unitsCls(t?.units)}">${unitsTxt(t?.units ?? 0)}</div><div class="r">1 unit on every Drop</div></div>`;
   const e = d.edges || {};
   $("#redges").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(e.avg_clv)}</div><div class="r">${e.n_clv ?? 0} graded at the close</div></div>
@@ -1763,6 +1768,7 @@ async function initTip() {
     <div class="card"><div class="k">Avg CLV</div><div class="v">${open ? pct(s.avg_clv) : "—"}</div>${open ? `<div class="r">${s.n_clv} graded at the close</div>` : later}</div>
     <div class="card"><div class="k">Beat the close</div><div class="v">${open ? pct(s.beat_close) : "—"}</div>${open ? "" : later}</div>
     <div class="card"><div class="k">Covered–not</div><div class="v">${s.wins}–${s.losses}</div><div class="r">${s.pushes} push · ${s.voids} void</div></div>
+    <div class="card"><div class="k">Units</div><div class="v ${unitsCls(s.units)}">${unitsTxt(s.units ?? 0)}</div><div class="r">1 unit on every Drop · ${s.n_graded ?? 0} graded</div></div>
     <div class="card"><div class="k">Hit rate</div><div class="v">${open ? pct(s.hit_rate) : "—"}</div>${open ? "" : later}</div>
     <div class="card"><div class="k">Return (flat)</div><div class="v">${open ? pct(s.roi) : "—"}</div>${open ? "" : later}</div>`;
   const tb = $("#tips tbody");
@@ -1774,8 +1780,9 @@ async function initTip() {
       <td class="num opt">${r.closing_price != null ? (r.closing_line !== r.line ? fmt(r.closing_line) + " @ " : "") + odds(r.closing_price) : "—"}</td>
       <td class="num ${r.clv > 0 ? "pos" : r.clv < 0 ? "neg" : ""}">${pct(r.clv)}</td>
       <td class="num">${stamp(r.result)}${r.actual != null && r.result ? `<div class="sm dim">${fmt(r.actual)}</div>` : ""}</td>
+      <td class="num ${unitsCls(r.units)}">${r.units != null ? unitsTxt(r.units) : `<span class="dim">${fmt(r.stake ?? 1, 0)}u</span>`}</td>
     </tr>`).join("")
-    : `<tr><td colspan="7" class="empty">No Drops yet. The first goes up the
+    : `<tr><td colspan="8" class="empty">No Drops yet. The first goes up the
        night before the first preseason games.</td></tr>`;
 }
 
@@ -1834,11 +1841,11 @@ async function initHome() {
   $("#hTip").innerHTML = `<div class="ph2"><span>The Drop</span><a href="tip.html">Record →</a></div>` + (t
     ? `<div class="tipmini">
         <div class="who">${esc(t.player)}</div>
-        <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)}</div>
+        <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)} · ${fmt(t.stake ?? 1, 0)} unit</div>
         <div class="sm">Our projection <b class="ours">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
       </div>`
     : `<p class="dim">Our biggest edge goes up around 7pm Sydney time the night before the games.</p>`)
-    + (rec && rec.n_tips ? `<div class="sm dim">Season: ${rec.wins}–${rec.losses}, average CLV ${pct(rec.avg_clv)}</div>` : "");
+    + (rec && rec.n_tips ? `<div class="sm dim">Season: ${rec.wins}–${rec.losses}, ${unitsTxt(rec.units ?? 0)} (1 unit each)</div>` : "");
 
   const rows = regionLines(board?.rows || []).map(favour).filter(r => r.edge != null && r.line != null && r.tier)
     .sort((a, b) => b.edge - a.edge).slice(0, 6);
