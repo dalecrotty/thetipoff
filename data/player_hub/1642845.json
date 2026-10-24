@@ -4,13 +4,6 @@
  "team": "Philadelphia",
  "opp": "Milwaukee",
  "lines": {
-  "AST": {
-   "line": 2.5,
-   "price": 1.7,
-   "book": "neds",
-   "price_over": 1.7,
-   "price_under": 2.1
-  },
   "REB": {
    "line": 6.5,
    "price": 1.68,
@@ -18,47 +11,54 @@
    "price_over": 2.1,
    "price_under": 1.68
   },
+  "AST": {
+   "line": 3.5,
+   "price": 2.05,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.72
+  },
   "PR": {
    "line": 20.5,
-   "price": 1.76,
+   "price": 1.77,
    "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.76
-  },
-  "RA": {
-   "line": 9.5,
-   "price": 2.08,
-   "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
+   "price_over": 1.95,
+   "price_under": 1.77
   },
   "PTS": {
    "line": 13.5,
-   "price": 1.92,
-   "book": "sportsbet",
-   "price_over": 1.84,
-   "price_under": 1.92
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 2.05,
+   "price": 2.0,
    "book": "pointsbetau",
-   "price_over": 1.74,
-   "price_under": 2.05
+   "price_over": 1.83,
+   "price_under": 2.0
   },
   "PRA": {
    "line": 23.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
+   "price": 1.91,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.68,
+   "book": "neds",
+   "price_over": 1.68,
+   "price_under": 2.1
   },
   "PA": {
    "line": 17.5,
-   "price": 1.8,
+   "price": 1.87,
    "book": "pointsbetau",
    "price_over": 1.87,
-   "price_under": 1.8
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.8,
+   "price_under": 1.95
   }
  },
  "recent_games": [
@@ -195,8 +195,8 @@
    "n": 5
   },
   "AST": {
-   "line": 2.5,
-   "over": 4,
+   "line": 3.5,
+   "over": 3,
    "n": 5
   },
   "3PM": {
