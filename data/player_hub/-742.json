@@ -3,7 +3,64 @@
  "player": "Caleb Wilson",
  "team": "Chicago",
  "opp": "Milwaukee",
- "lines": {},
+ "lines": {
+  "PR": {
+   "line": 25.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PRA": {
+   "line": 27.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PTS": {
+   "line": 18.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PA": {
+   "line": 20.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.87,
+   "book": "unibet",
+   "price_over": 1.87,
+   "price_under": 1.87
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -30,6 +87,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 18.5,
+   "over": 0,
+   "n": 1
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 0,
+   "n": 1
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 0,
+   "n": 1
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 0,
+   "n": 1
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
