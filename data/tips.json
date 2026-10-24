@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T08:02+00:00",
+ "generated_at": "2026-10-24T08:21+00:00",
  "slate_date": "2026-10-24",
  "au_game_date": "2026-10-25",
  "today": {
@@ -30,7 +30,9 @@
   "clv_method": null,
   "actual": null,
   "result": null,
-  "x_post_id": null
+  "x_post_id": null,
+  "stake": 1.0,
+  "units": null
  },
  "summary": {
   "n_tips": 5,
@@ -42,7 +44,9 @@
   "pushes": 0,
   "voids": 0,
   "hit_rate": 0.75,
-  "roi": 0.35,
+  "roi": 0.35000000000000003,
+  "units": 1.4,
+  "stake_units": 1.0,
   "n_trial": 1,
   "n_graded": 4,
   "averages_from": 30,
@@ -77,7 +81,9 @@
    "clv_method": null,
    "actual": null,
    "result": null,
-   "x_post_id": null
+   "x_post_id": null,
+   "stake": 1.0,
+   "units": null
   },
   {
    "slate_date": "2026-10-23",
@@ -107,7 +113,9 @@
    "clv_method": "line_adjusted",
    "actual": 6.0,
    "result": "win",
-   "x_post_id": "2113561256523362574"
+   "x_post_id": "2113561256523362574",
+   "stake": 1.0,
+   "units": 0.72
   },
   {
    "slate_date": "2026-10-22",
@@ -137,7 +145,9 @@
    "clv_method": "line_adjusted",
    "actual": 25.0,
    "result": "win",
-   "x_post_id": "2113225662987161782"
+   "x_post_id": "2113225662987161782",
+   "stake": 1.0,
+   "units": 0.88
   },
   {
    "slate_date": "2026-10-21",
@@ -167,7 +177,9 @@
    "clv_method": "line_adjusted",
    "actual": 12.0,
    "result": "loss",
-   "x_post_id": "2112827570198602226"
+   "x_post_id": "2112827570198602226",
+   "stake": 1.0,
+   "units": -1.0
   },
   {
    "slate_date": "2026-10-20",
@@ -197,7 +209,9 @@
    "clv_method": "line_adjusted",
    "actual": 14.0,
    "result": "win",
-   "x_post_id": null
+   "x_post_id": null,
+   "stake": 1.0,
+   "units": 0.8
   },
   {
    "slate_date": "2026-10-07",
@@ -227,7 +241,9 @@
    "clv_method": null,
    "actual": 3.0,
    "result": "loss",
-   "x_post_id": null
+   "x_post_id": null,
+   "stake": 1.0,
+   "units": -1.0
   }
  ],
  "rules": {
