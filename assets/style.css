@@ -660,6 +660,9 @@ h1.home-h1 { font-size: 52px; max-width: 18ch; }
 }
 p.lead { font-size: 18px; line-height: 1.45; color: var(--ink); }
 p.lead .n, .ours, .pv, .tipcard .fig .v.ours { color: var(--red-text); font-weight: 600; }
+/* the Drop's projection takes its side's colour (owner, 24 Oct 2026): green over, red under */
+p.lead .n.ov, .ours.ov, .tipcard .fig .v.ours.ov { color: var(--over-ink); }
+p.lead .n.un, .ours.un, .tipcard .fig .v.ours.un { color: var(--under-ink); }
 p.sub, .sm, .dim, .mu { color: var(--sub); }
 a { text-underline-offset: 2px; }
 td a:hover, .lcard:hover b { color: var(--red-text); }

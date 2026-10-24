@@ -364,6 +364,8 @@ const pct = v => (v === null || v === undefined) ? "—" : (v * 100).toFixed(1) 
 const unitsTxt = v => (v === null || v === undefined) ? "—"
   : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(2).replace(/\.?0+$/, "") + "u";
 const unitsCls = v => v > 0 ? "pos" : v < 0 ? "neg" : "";
+/* the Drop's projection in its side's colour: green over, red under (owner, 24 Oct 2026) */
+const sideCls = side => side === "over" ? "ov" : side === "under" ? "un" : "";
 
 function sortable(table, rows, render) {
   let key = null, dir = -1;
@@ -1730,7 +1732,7 @@ async function initTip() {
     $("#tlead").innerHTML = `Today's Drop, for ${day}, is <b>${t.player}</b> `
       + `${sideWord(t.side).toLowerCase()} ${fmt(t.line)} ${t.market_label.toLowerCase()} `
       + `at ${odds(t.price)} with ${t.book_label}; our projection is `
-      + `<span class="n">${fmt(t.model_proj)}</span>.`;
+      + `<span class="n ${sideCls(t.side)}">${fmt(t.model_proj)}</span>.`;
     const closed = t.closing_price != null
       ? `Closed ${fmt(t.closing_line)} @ ${odds(t.closing_price)} · CLV ${pct(t.clv)}` : "";
     const res = t.result ? ` · ${stamp(t.result)}${t.actual != null ? ` ${fmt(t.actual)}` : ""}` : "";
@@ -1740,7 +1742,7 @@ async function initTip() {
       <div class="ctx">${game}${t.game_start ? ` · tips off ${whenAEDT(t.game_start).split(",")[0]}` : ""}</div>
       <div class="bet">${tipBet(t)}</div>
       <div class="figs">
-        <div class="fig"><div class="k">Our projection</div><div class="v ours">${fmt(t.model_proj)}</div></div>
+        <div class="fig"><div class="k">Our projection</div><div class="v ours ${sideCls(t.side)}">${fmt(t.model_proj)}</div></div>
         <div class="fig"><div class="k">Book line</div><div class="v">${fmt(t.line)}</div></div>
         <div class="fig"><div class="k">Edge ${sideGlyph(t.side)}</div><div class="v ${t.side}">${pct(t.edge)}</div></div>
       </div>
@@ -1842,7 +1844,7 @@ async function initHome() {
     ? `<div class="tipmini">
         <div class="who">${esc(t.player)}</div>
         <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)} · ${fmt(t.stake ?? 1, 0)} unit</div>
-        <div class="sm">Our projection <b class="ours">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
+        <div class="sm">Our projection <b class="ours ${sideCls(t.side)}">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
       </div>`
     : `<p class="dim">Our biggest edge goes up around 7pm Sydney time the night before the games.</p>`)
     + (rec && rec.n_tips ? `<div class="sm dim">Season: ${rec.wins}–${rec.losses}, ${unitsTxt(rec.units ?? 0)} (1 unit each)</div>` : "");
