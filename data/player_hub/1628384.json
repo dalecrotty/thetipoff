@@ -2,66 +2,33 @@
  "player_id": 1628384,
  "player": "O.G. Anunoby",
  "team": "New York",
- "opp": "Boston",
- "lines": {
-  "PTS": {
-   "line": 15.5,
-   "price": 1.92,
-   "book": "neds",
-   "price_over": 1.92,
-   "price_under": 1.82
-  },
-  "PR": {
-   "line": 20.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.8,
-   "price_under": 1.9
-  },
-  "AST": {
-   "line": 1.5,
-   "price": 2.17,
-   "book": "unibet",
-   "price_over": 1.64,
-   "price_under": 2.17
-  },
-  "PA": {
-   "line": 17.5,
-   "price": 1.86,
-   "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.9
-  },
-  "3PM": {
-   "line": 2.5,
-   "price": 2.35,
-   "book": "pointsbetau",
-   "price_over": 2.35,
-   "price_under": 1.57
-  },
-  "PRA": {
-   "line": 22.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "REB": {
-   "line": 4.5,
-   "price": 1.83,
-   "book": "neds",
-   "price_over": 1.83,
-   "price_under": 1.91
-  },
-  "RA": {
-   "line": 7.5,
-   "price": 1.66,
-   "book": "unibet",
-   "price_over": 2.12,
-   "price_under": 1.66
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-23_boston_vs_new-york",
+   "starter": true,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 34.0,
+   "PTS": 20.0,
+   "REB": 10.0,
+   "AST": 8.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 5.0,
+   "FGA": 11.0,
+   "3PA": 6.0,
+   "FTA": 10.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-20",
    "opp": "Philadelphia",
@@ -157,53 +124,8 @@
    "FTA": 9.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-06-05",
-   "opp": "San Antonio",
-   "venue": "R",
-   "game": "2026-06-05_new-york_vs_san-antonio",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 36.8,
-   "PTS": 17.0,
-   "REB": 4.0,
-   "AST": 3.0,
-   "3PM": 2.0,
-   "STL": 2.0,
-   "BLK": 2.0,
-   "TOV": 0.0,
-   "FGM": 5.0,
-   "FGA": 10.0,
-   "3PA": 5.0,
-   "FTA": 5.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 15.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 4.5,
-   "over": 3,
-   "n": 5
-  },
-  "AST": {
-   "line": 1.5,
-   "over": 1,
-   "n": 5
-  },
-  "3PM": {
-   "line": 2.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

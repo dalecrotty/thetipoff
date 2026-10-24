@@ -4,7 +4,7 @@
   {
    "id": -328,
    "name": "Kyrie Irving",
-   "games": 51,
+   "games": 52,
    "med_min": 38.0
   },
   {
@@ -16,13 +16,13 @@
   {
    "id": 1642843,
    "name": "Cooper Flagg",
-   "games": 71,
+   "games": 72,
    "med_min": 33.9
   },
   {
    "id": 1629023,
    "name": "P.J. Washington",
-   "games": 114,
+   "games": 115,
    "med_min": 33.0
   },
   {
@@ -34,13 +34,19 @@
   {
    "id": 1631108,
    "name": "Max Christie",
-   "games": 110,
-   "med_min": 29.8
+   "games": 111,
+   "med_min": 29.9
+  },
+  {
+   "id": 1642258,
+   "name": "Zaccharie Risacher",
+   "games": 2,
+   "med_min": 29.5
   },
   {
    "id": 1630230,
    "name": "Naji Marshall",
-   "games": 144,
+   "games": 145,
    "med_min": 29.0
   },
   {
@@ -50,10 +56,10 @@
    "med_min": 28.0
   },
   {
-   "id": 1642258,
-   "name": "Zaccharie Risacher",
-   "games": 1,
-   "med_min": 27.0
+   "id": 1631204,
+   "name": "Marcus Sasser",
+   "games": 2,
+   "med_min": 25.5
   },
   {
    "id": 202691,
@@ -74,12 +80,6 @@
    "med_min": 24.0
   },
   {
-   "id": 1631204,
-   "name": "Marcus Sasser",
-   "games": 1,
-   "med_min": 24.0
-  },
-  {
    "id": 1630314,
    "name": "Brandon Williams",
    "games": 99,
@@ -94,7 +94,7 @@
   {
    "id": 1629655,
    "name": "Daniel Gafford",
-   "games": 113,
+   "games": 114,
    "med_min": 21.0
   },
   {
@@ -158,6 +158,12 @@
    "med_min": 16.0
   },
   {
+   "id": -730,
+   "name": "Morez Johnson Jr.",
+   "games": 2,
+   "med_min": 15.5
+  },
+  {
    "id": -670,
    "name": "Kessler Edwards",
    "games": 39,
@@ -176,16 +182,10 @@
    "med_min": 14.2
   },
   {
-   "id": -730,
-   "name": "Morez Johnson Jr.",
-   "games": 1,
-   "med_min": 14.0
-  },
-  {
    "id": 1630619,
    "name": "Moussa Cisse",
-   "games": 39,
-   "med_min": 13.5
+   "games": 40,
+   "med_min": 13.4
   },
   {
    "id": 1641890,
@@ -218,12 +218,6 @@
    "med_min": 7.4
   },
   {
-   "id": -790,
-   "name": "Sergio de Larrea",
-   "games": 1,
-   "med_min": 7.0
-  },
-  {
    "id": -690,
    "name": "Kylor Kelley",
    "games": 8,
@@ -236,10 +230,28 @@
    "med_min": 5.0
   },
   {
+   "id": -790,
+   "name": "Sergio de Larrea",
+   "games": 2,
+   "med_min": 4.0
+  },
+  {
    "id": -647,
    "name": "Jazian Gortman",
    "games": 16,
    "med_min": 2.0
+  },
+  {
+   "id": -757,
+   "name": "Tobi Lawal",
+   "games": 1,
+   "med_min": 1.0
+  },
+  {
+   "id": 1642383,
+   "name": "Walter Clayton Jr.",
+   "games": 1,
+   "med_min": 1.0
   }
  ],
  "games": [
@@ -28753,6 +28765,211 @@
      "FGM": 0.0,
      "FGA": 1.0,
      "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-10-23_dallas_vs_indiana",
+   "lines": {
+    "1642843": {
+     "min": 17.0,
+     "PTS": 14.0,
+     "REB": 5.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 4.0,
+     "FGA": 6.0,
+     "3PA": 2.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1629655": {
+     "min": 15.0,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "-328": {
+     "min": 25.0,
+     "PTS": 24.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 5.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 8.0,
+     "FGA": 15.0,
+     "3PA": 10.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1631204": {
+     "min": 27.0,
+     "PTS": 6.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 5.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1631108": {
+     "min": 38.0,
+     "PTS": 16.0,
+     "REB": 4.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 7.0,
+     "FGA": 14.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630619": {
+     "min": 1.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630230": {
+     "min": 33.0,
+     "PTS": 15.0,
+     "REB": 4.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 7.0,
+     "FGA": 15.0,
+     "3PA": 4.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1629023": {
+     "min": 33.0,
+     "PTS": 20.0,
+     "REB": 13.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 3.0,
+     "TOV": 2.0,
+     "FGM": 6.0,
+     "FGA": 11.0,
+     "3PA": 4.0,
+     "FTA": 8.0,
+     "starter": true
+    },
+    "1642383": {
+     "min": 1.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642258": {
+     "min": 32.0,
+     "PTS": 11.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 3.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 11.0,
+     "3PA": 4.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "-730": {
+     "min": 17.0,
+     "PTS": 8.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 5.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "-757": {
+     "min": 1.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-790": {
+     "min": 1.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
      "FTA": 0.0,
      "starter": false
     }

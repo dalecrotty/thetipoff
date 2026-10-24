@@ -2,59 +2,83 @@
  "player_id": 203507,
  "player": "Giannis Antetokounmpo",
  "team": "Miami",
- "opp": "Detroit",
+ "opp": "Charlotte",
  "lines": {
-  "PR": {
-   "line": 38.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.83,
-   "price_under": 1.89
-  },
   "PTS": {
    "line": 28.5,
-   "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.91,
-   "price_under": 1.83
-  },
-  "PRA": {
-   "line": 44.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.83,
-   "price_under": 1.91
-  },
-  "PA": {
-   "line": 34.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.83
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
   },
   "AST": {
    "line": 5.5,
-   "price": 2.1,
+   "price": 1.96,
    "book": "sportsbet",
-   "price_over": 1.68,
-   "price_under": 2.1
+   "price_over": 1.8,
+   "price_under": 1.96
   },
   "RA": {
    "line": 16.5,
    "price": 1.96,
    "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PA": {
+   "line": 34.5,
+   "price": 1.96,
+   "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8
   },
+  "PR": {
+   "line": 39.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
   "REB": {
    "line": 10.5,
-   "price": 1.83,
-   "book": "pointsbetau",
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
+  "PRA": {
+   "line": 45.5,
+   "price": 1.9,
+   "book": "sportsbet",
    "price_over": 1.9,
-   "price_under": 1.83
+   "price_under": 1.86
   }
  },
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-10-23_detroit_vs_miami",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 33.0,
+   "PTS": 36.0,
+   "REB": 12.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 3.0,
+   "FGM": 15.0,
+   "FGA": 26.0,
+   "3PA": 3.0,
+   "FTA": 8.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Minnesota",
@@ -150,46 +174,22 @@
    "FTA": 5.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-03-07",
-   "opp": "Utah",
-   "venue": "H",
-   "game": "2026-03-07_milwaukee_vs_utah",
-   "starter": true,
-   "rest": "2",
-   "result": "W",
-   "opp_tier": "Bottom 10",
-   "min": 27.0,
-   "PTS": 27.0,
-   "REB": 9.0,
-   "AST": 8.0,
-   "3PM": 0.0,
-   "STL": 4.0,
-   "BLK": 0.0,
-   "TOV": 2.0,
-   "FGM": 9.0,
-   "FGA": 14.0,
-   "3PA": 2.0,
-   "FTA": 15.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
    "line": 28.5,
-   "over": 3,
+   "over": 4,
    "n": 5
   },
   "REB": {
    "line": 10.5,
-   "over": 1,
+   "over": 2,
    "n": 5
   },
   "AST": {
    "line": 5.5,
-   "over": 2,
+   "over": 1,
    "n": 5
   }
  },

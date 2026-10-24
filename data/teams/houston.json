@@ -4,19 +4,19 @@
   {
    "id": 201142,
    "name": "Kevin Durant",
-   "games": 80,
+   "games": 81,
    "med_min": 37.0
   },
   {
    "id": 1641708,
    "name": "Amen Thompson",
-   "games": 155,
+   "games": 156,
    "med_min": 37.0
   },
   {
    "id": -161,
    "name": "Fred VanVleet",
-   "games": 61,
+   "games": 62,
    "med_min": 36.0
   },
   {
@@ -28,7 +28,7 @@
   {
    "id": 1631095,
    "name": "Jabari Smith Jr.",
-   "games": 141,
+   "games": 142,
    "med_min": 34.0
   },
   {
@@ -40,20 +40,20 @@
   {
    "id": 1630578,
    "name": "Alperen Sengun",
-   "games": 155,
+   "games": 156,
    "med_min": 33.0
-  },
-  {
-   "id": 203935,
-   "name": "Marcus Smart",
-   "games": 1,
-   "med_min": 26.0
   },
   {
    "id": 1631106,
    "name": "Tari Eason",
-   "games": 124,
+   "games": 125,
    "med_min": 25.0
+  },
+  {
+   "id": 203935,
+   "name": "Marcus Smart",
+   "games": 2,
+   "med_min": 23.5
   },
   {
    "id": 1642263,
@@ -70,7 +70,7 @@
   {
    "id": 203500,
    "name": "Steven Adams",
-   "games": 88,
+   "games": 89,
    "med_min": 17.0
   },
   {
@@ -92,12 +92,6 @@
    "med_min": 14.0
   },
   {
-   "id": 203992,
-   "name": "Bogdan Bogdanovic",
-   "games": 1,
-   "med_min": 13.0
-  },
-  {
    "id": 1628988,
    "name": "Aaron Holiday",
    "games": 125,
@@ -114,6 +108,12 @@
    "name": "Clint Capela",
    "games": 80,
    "med_min": 11.9
+  },
+  {
+   "id": 203992,
+   "name": "Bogdan Bogdanovic",
+   "games": 2,
+   "med_min": 11.0
   },
   {
    "id": 1629111,
@@ -28547,6 +28547,151 @@
      "FGA": 1.0,
      "3PA": 1.0,
      "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-10-23_houston_vs_san-antonio",
+   "lines": {
+    "1630578": {
+     "min": 36.0,
+     "PTS": 29.0,
+     "REB": 7.0,
+     "AST": 7.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 10.0,
+     "FGA": 20.0,
+     "3PA": 4.0,
+     "FTA": 8.0,
+     "starter": true
+    },
+    "1641708": {
+     "min": 36.0,
+     "PTS": 20.0,
+     "REB": 10.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 2.0,
+     "TOV": 2.0,
+     "FGM": 9.0,
+     "FGA": 15.0,
+     "3PA": 2.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "203992": {
+     "min": 9.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-161": {
+     "min": 32.0,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 3.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 10.0,
+     "3PA": 8.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1631095": {
+     "min": 34.0,
+     "PTS": 7.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 5.0,
+     "3PA": 2.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "201142": {
+     "min": 37.0,
+     "PTS": 20.0,
+     "REB": 7.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 5.0,
+     "FGA": 10.0,
+     "3PA": 2.0,
+     "FTA": 8.0,
+     "starter": true
+    },
+    "203935": {
+     "min": 21.0,
+     "PTS": 5.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "203500": {
+     "min": 9.0,
+     "PTS": 4.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1631106": {
+     "min": 27.0,
+     "PTS": 12.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 8.0,
+     "3PA": 2.0,
+     "FTA": 4.0,
      "starter": false
     }
    }

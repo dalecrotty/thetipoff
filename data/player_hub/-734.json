@@ -2,66 +2,33 @@
  "player_id": -734,
  "player": "Cameron Boozer",
  "team": "Memphis",
- "opp": "Golden State",
- "lines": {
-  "PA": {
-   "line": 20.5,
-   "price": 1.9,
-   "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.9
-  },
-  "PRA": {
-   "line": 29.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
-  },
-  "PTS": {
-   "line": 16.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PR": {
-   "line": 25.5,
-   "price": 1.74,
-   "book": "unibet",
-   "price_over": 2.0,
-   "price_under": 1.74
-  },
-  "AST": {
-   "line": 4.5,
-   "price": 1.71,
-   "book": "pointsbetau",
-   "price_over": 2.1,
-   "price_under": 1.71
-  },
-  "RA": {
-   "line": 12.5,
-   "price": 1.88,
-   "book": "sportsbet",
-   "price_over": 1.87,
-   "price_under": 1.88
-  },
-  "REB": {
-   "line": 8.5,
-   "price": 1.75,
-   "book": "unibet",
-   "price_over": 2.0,
-   "price_under": 1.75
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.48,
-   "book": "sportsbet",
-   "price_over": 2.5,
-   "price_under": 1.48
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2026-10-23_golden-state_vs_memphis",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 37.0,
+   "PTS": 25.0,
+   "REB": 13.0,
+   "AST": 6.0,
+   "3PM": 4.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 6.0,
+   "FGM": 6.0,
+   "FGA": 13.0,
+   "3PA": 7.0,
+   "FTA": 9.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Utah",
@@ -87,27 +54,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 16.5,
-   "over": 0,
-   "n": 1
-  },
-  "REB": {
-   "line": 8.5,
-   "over": 1,
-   "n": 1
-  },
-  "AST": {
-   "line": 4.5,
-   "over": 1,
-   "n": 1
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 0,
-   "n": 1
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

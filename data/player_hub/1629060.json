@@ -2,38 +2,33 @@
  "player_id": 1629060,
  "player": "Rui Hachimura",
  "team": "LA Clippers",
- "opp": "LA Lakers",
- "lines": {
-  "REB": {
-   "line": 5.5,
-   "price": 1.97,
-   "book": "unibet",
-   "price_over": 1.77,
-   "price_under": 1.97
-  },
-  "PR": {
-   "line": 23.5,
-   "price": 1.87,
-   "book": "sportsbet",
-   "price_over": 1.89,
-   "price_under": 1.87
-  },
-  "PTS": {
-   "line": 17.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "3PM": {
-   "line": 2.5,
-   "price": 1.67,
-   "book": "pointsbetau",
-   "price_over": 2.2,
-   "price_under": 1.67
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-10-23_la-clippers_vs_la-lakers",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 33.0,
+   "PTS": 16.0,
+   "REB": 6.0,
+   "AST": 1.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 14.0,
+   "3PA": 6.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Sacramento",
@@ -129,48 +124,8 @@
    "FTA": 0.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-05-05",
-   "opp": "Oklahoma City",
-   "venue": "R",
-   "game": "2026-05-05_la-lakers_vs_oklahoma-city",
-   "starter": true,
-   "rest": "3",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 36.9,
-   "PTS": 18.0,
-   "REB": 2.0,
-   "AST": 2.0,
-   "3PM": 3.0,
-   "STL": 1.0,
-   "BLK": 1.0,
-   "TOV": 1.0,
-   "FGM": 7.0,
-   "FGA": 13.0,
-   "3PA": 6.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 17.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 5.5,
-   "over": 1,
-   "n": 5
-  },
-  "3PM": {
-   "line": 2.5,
-   "over": 4,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

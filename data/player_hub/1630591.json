@@ -2,66 +2,33 @@
  "player_id": 1630591,
  "player": "Jalen Suggs",
  "team": "Orlando",
- "opp": "Minnesota",
- "lines": {
-  "RA": {
-   "line": 8.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "AST": {
-   "line": 4.5,
-   "price": 1.88,
-   "book": "neds",
-   "price_over": 1.88,
-   "price_under": 1.85
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.9
-  },
-  "3PM": {
-   "line": 2.5,
-   "price": 1.6,
-   "book": "sportsbet",
-   "price_over": 2.2,
-   "price_under": 1.6
-  },
-  "PTS": {
-   "line": 13.5,
-   "price": 1.82,
-   "book": "neds",
-   "price_over": 1.94,
-   "price_under": 1.82
-  },
-  "PRA": {
-   "line": 21.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.85
-  },
-  "PR": {
-   "line": 17.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.77
-  },
-  "PA": {
-   "line": 17.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.87
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-10-23_minnesota_vs_orlando",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 34.0,
+   "PTS": 14.0,
+   "REB": 6.0,
+   "AST": 6.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 3.0,
+   "FGM": 6.0,
+   "FGA": 12.0,
+   "3PA": 4.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Atlanta",
@@ -157,53 +124,8 @@
    "FTA": 1.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-04-27",
-   "opp": "Detroit",
-   "venue": "H",
-   "game": "2026-04-27_detroit_vs_orlando",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 35.4,
-   "PTS": 5.0,
-   "REB": 2.0,
-   "AST": 2.0,
-   "3PM": 1.0,
-   "STL": 2.0,
-   "BLK": 1.0,
-   "TOV": 3.0,
-   "FGM": 1.0,
-   "FGA": 13.0,
-   "3PA": 11.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 13.5,
-   "over": 0,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 2,
-   "n": 5
-  },
-  "AST": {
-   "line": 4.5,
-   "over": 3,
-   "n": 5
-  },
-  "3PM": {
-   "line": 2.5,
-   "over": 0,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

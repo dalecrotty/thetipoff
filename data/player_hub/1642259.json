@@ -2,52 +2,83 @@
  "player_id": 1642259,
  "player": "Alexandre Sarr",
  "team": "Washington",
- "opp": "Toronto",
+ "opp": "Chicago",
  "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 1.44,
+  "RA": {
+   "line": 7.5,
+   "price": 1.68,
    "book": "sportsbet",
-   "price_over": 2.6,
-   "price_under": 1.44
-  },
-  "AST": {
-   "line": 2.5,
-   "price": 1.58,
-   "book": "neds",
-   "price_over": 2.3,
-   "price_under": 1.58
-  },
-  "REB": {
-   "line": 6.5,
-   "price": 2.0,
-   "book": "unibet",
-   "price_over": 1.76,
-   "price_under": 2.0
+   "price_over": 1.68,
+   "price_under": 2.1
   },
   "PTS": {
-   "line": 12.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "line": 11.5,
+   "price": 1.95,
+   "book": "neds",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 13.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
   },
   "PRA": {
-   "line": 21.5,
+   "line": 19.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PR": {
+   "line": 18.5,
    "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8
   },
-  "PR": {
-   "line": 19.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.83
+  "REB": {
+   "line": 6.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.45,
+   "book": "sportsbet",
+   "price_over": 2.6,
+   "price_under": 1.45
   }
  },
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-10-23_toronto_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 25.0,
+   "PTS": 7.0,
+   "REB": 4.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Milwaukee",
@@ -143,45 +174,16 @@
    "FTA": 0.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-03-14",
-   "opp": "Boston",
-   "venue": "R",
-   "game": "2026-03-14_boston_vs_washington",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 22.1,
-   "PTS": 4.0,
-   "REB": 5.0,
-   "AST": 0.0,
-   "3PM": 1.0,
-   "STL": 2.0,
-   "BLK": 1.0,
-   "TOV": 3.0,
-   "FGM": 1.0,
-   "FGA": 9.0,
-   "3PA": 5.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 12.5,
+   "line": 11.5,
    "over": 1,
    "n": 5
   },
   "REB": {
    "line": 6.5,
-   "over": 2,
-   "n": 5
-  },
-  "AST": {
-   "line": 2.5,
    "over": 2,
    "n": 5
   },

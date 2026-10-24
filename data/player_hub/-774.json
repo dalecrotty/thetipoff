@@ -2,66 +2,33 @@
  "player_id": -774,
  "player": "Darius Acuff Jr.",
  "team": "Sacramento",
- "opp": "Portland",
- "lines": {
-  "REB": {
-   "line": 2.5,
-   "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 1.74,
-   "price_under": 2.05
-  },
-  "AST": {
-   "line": 4.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8
-  },
-  "PA": {
-   "line": 22.5,
-   "price": 1.78,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.78
-  },
-  "RA": {
-   "line": 7.5,
-   "price": 2.05,
-   "book": "unibet",
-   "price_over": 2.05,
-   "price_under": 1.72
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 2.15,
-   "book": "pointsbetau",
-   "price_over": 1.69,
-   "price_under": 2.15
-  },
-  "PTS": {
-   "line": 17.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.88
-  },
-  "PRA": {
-   "line": 25.5,
-   "price": 1.8,
-   "book": "unibet",
-   "price_over": 1.94,
-   "price_under": 1.8
-  },
-  "PR": {
-   "line": 20.5,
-   "price": 1.9,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.8
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-10-23_portland_vs_sacramento",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 37.0,
+   "PTS": 33.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 10.0,
+   "FGA": 26.0,
+   "3PA": 11.0,
+   "FTA": 12.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "LA Clippers",
@@ -87,27 +54,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 17.5,
-   "over": 0,
-   "n": 1
-  },
-  "REB": {
-   "line": 2.5,
-   "over": 1,
-   "n": 1
-  },
-  "AST": {
-   "line": 4.5,
-   "over": 0,
-   "n": 1
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 0,
-   "n": 1
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

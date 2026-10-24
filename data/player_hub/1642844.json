@@ -2,66 +2,90 @@
  "player_id": 1642844,
  "player": "Dylan Harper",
  "team": "San Antonio",
- "opp": "Houston",
+ "opp": "Dallas",
  "lines": {
-  "AST": {
+  "REB": {
    "line": 4.5,
-   "price": 1.73,
-   "book": "unibet",
-   "price_over": 2.04,
-   "price_under": 1.73
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
   },
   "PR": {
+   "line": 21.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 26.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.6,
+   "book": "sportsbet",
+   "price_over": 2.2,
+   "price_under": 1.6
+  },
+  "PTS": {
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 2.2,
+   "book": "sportsbet",
+   "price_over": 1.6,
+   "price_under": 2.2
+  },
+  "PA": {
    "line": 21.5,
    "price": 1.91,
    "book": "sportsbet",
    "price_over": 1.91,
    "price_under": 1.85
-  },
-  "REB": {
-   "line": 4.5,
-   "price": 1.69,
-   "book": "pointsbetau",
-   "price_over": 1.69,
-   "price_under": 2.15
-  },
-  "PA": {
-   "line": 21.5,
-   "price": 1.79,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.79
-  },
-  "RA": {
-   "line": 9.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.85
-  },
-  "PTS": {
-   "line": 16.5,
-   "price": 1.93,
-   "book": "sportsbet",
-   "price_over": 1.93,
-   "price_under": 1.83
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.5,
-   "book": "sportsbet",
-   "price_over": 2.45,
-   "price_under": 1.5
-  },
-  "PRA": {
-   "line": 26.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.83
   }
  },
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-10-23_houston_vs_san-antonio",
+   "starter": true,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 36.0,
+   "PTS": 20.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 8.0,
+   "FGA": 15.0,
+   "3PA": 4.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-20",
    "opp": "Oklahoma City",
@@ -157,46 +181,22 @@
    "FTA": 2.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-06-05",
-   "opp": "New York",
-   "venue": "H",
-   "game": "2026-06-05_new-york_vs_san-antonio",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 32.3,
-   "PTS": 15.0,
-   "REB": 6.0,
-   "AST": 3.0,
-   "3PM": 0.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 2.0,
-   "FGM": 6.0,
-   "FGA": 12.0,
-   "3PA": 3.0,
-   "FTA": 4.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 16.5,
-   "over": 3,
+   "line": 17.5,
+   "over": 4,
    "n": 5
   },
   "REB": {
    "line": 4.5,
-   "over": 4,
+   "over": 3,
    "n": 5
   },
   "AST": {
-   "line": 4.5,
-   "over": 1,
+   "line": 3.5,
+   "over": 3,
    "n": 5
   },
   "3PM": {

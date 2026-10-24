@@ -2,8 +2,43 @@
  "player_id": 1629638,
  "player": "Nickeil Alexander-Walker",
  "team": "Atlanta",
- "opp": "Charlotte",
+ "opp": "Houston",
  "lines": {
+  "PRA": {
+   "line": 24.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "PTS": {
+   "line": 18.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 21.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PR": {
+   "line": 21.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.82
+  },
   "RA": {
    "line": 6.5,
    "price": 2.1,
@@ -11,57 +46,46 @@
    "price_over": 2.1,
    "price_under": 1.68
   },
-  "3PM": {
-   "line": 2.5,
-   "price": 1.79,
-   "book": "unibet",
-   "price_over": 1.79,
-   "price_under": 1.95
-  },
-  "PR": {
-   "line": 21.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.8,
-   "price_under": 1.9
-  },
-  "PTS": {
-   "line": 18.5,
-   "price": 1.88,
-   "book": "neds",
-   "price_over": 1.88,
-   "price_under": 1.85
-  },
-  "PRA": {
-   "line": 25.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
   "AST": {
    "line": 2.5,
-   "price": 1.64,
+   "price": 1.62,
    "book": "neds",
-   "price_over": 1.64,
+   "price_over": 1.62,
    "price_under": 2.2
-  },
-  "PA": {
-   "line": 21.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
   },
   "REB": {
    "line": 2.5,
-   "price": 1.58,
+   "price": 1.57,
    "book": "neds",
-   "price_over": 1.58,
+   "price_over": 1.57,
    "price_under": 2.3
   }
  },
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2026-10-23_atlanta_vs_charlotte",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 27.0,
+   "PTS": 14.0,
+   "REB": 3.0,
+   "AST": 5.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 12.0,
+   "3PA": 7.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Orlando",
@@ -157,30 +181,6 @@
    "FTA": 0.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-04-23",
-   "opp": "New York",
-   "venue": "H",
-   "game": "2026-04-23_atlanta_vs_new-york",
-   "starter": true,
-   "rest": "2",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 37.5,
-   "PTS": 14.0,
-   "REB": 3.0,
-   "AST": 0.0,
-   "3PM": 3.0,
-   "STL": 1.0,
-   "BLK": 1.0,
-   "TOV": 2.0,
-   "FGM": 4.0,
-   "FGA": 12.0,
-   "3PA": 7.0,
-   "FTA": 3.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
  "hits": {
@@ -196,12 +196,12 @@
   },
   "AST": {
    "line": 2.5,
-   "over": 2,
+   "over": 3,
    "n": 5
   },
   "3PM": {
    "line": 2.5,
-   "over": 4,
+   "over": 3,
    "n": 5
   }
  },

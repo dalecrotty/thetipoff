@@ -2,66 +2,90 @@
  "player_id": 1629639,
  "player": "Tyler Herro",
  "team": "Milwaukee",
- "opp": "Chicago",
+ "opp": "Philadelphia",
  "lines": {
-  "PTS": {
-   "line": 23.5,
-   "price": 1.83,
-   "book": "neds",
-   "price_over": 1.91,
+  "RA": {
+   "line": 8.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PRA": {
+   "line": 29.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
    "price_under": 1.83
   },
-  "RA": {
-   "line": 9.5,
-   "price": 1.97,
-   "book": "unibet",
-   "price_over": 1.97,
-   "price_under": 1.76
-  },
-  "3PM": {
-   "line": 2.5,
-   "price": 2.3,
-   "book": "pointsbetau",
-   "price_over": 1.59,
-   "price_under": 2.3
-  },
   "PA": {
-   "line": 28.5,
-   "price": 1.89,
+   "line": 25.5,
+   "price": 1.92,
    "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.89
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "PR": {
+   "line": 24.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PTS": {
+   "line": 20.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
   },
   "REB": {
    "line": 3.5,
-   "price": 1.6,
+   "price": 1.74,
    "book": "sportsbet",
-   "price_over": 1.6,
-   "price_under": 2.2
+   "price_over": 1.74,
+   "price_under": 2.05
   },
-  "PR": {
-   "line": 27.5,
-   "price": 1.83,
+  "3PM": {
+   "line": 2.5,
+   "price": 2.0,
    "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.83
-  },
-  "AST": {
-   "line": 5.5,
-   "price": 2.1,
-   "book": "pointsbetau",
-   "price_over": 2.1,
-   "price_under": 1.71
-  },
-  "PRA": {
-   "line": 32.5,
-   "price": 1.92,
-   "book": "sportsbet",
-   "price_over": 1.84,
-   "price_under": 1.92
+   "price_over": 1.77,
+   "price_under": 2.0
   }
  },
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2026-10-23_chicago_vs_milwaukee",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 32.0,
+   "PTS": 34.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 12.0,
+   "FGA": 24.0,
+   "3PA": 10.0,
+   "FTA": 7.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Washington",
@@ -157,36 +181,12 @@
    "FTA": 0.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-04-07",
-   "opp": "Toronto",
-   "venue": "R",
-   "game": "2026-04-07_miami_vs_toronto",
-   "starter": true,
-   "rest": "5",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 30.0,
-   "PTS": 14.0,
-   "REB": 5.0,
-   "AST": 6.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 5.0,
-   "FGA": 8.0,
-   "3PA": 4.0,
-   "FTA": 4.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 23.5,
-   "over": 1,
+   "line": 20.5,
+   "over": 3,
    "n": 5
   },
   "REB": {
@@ -195,13 +195,13 @@
    "n": 5
   },
   "AST": {
-   "line": 5.5,
-   "over": 4,
+   "line": 4.5,
+   "over": 3,
    "n": 5
   },
   "3PM": {
    "line": 2.5,
-   "over": 3,
+   "over": 4,
    "n": 5
   }
  },

@@ -2,66 +2,90 @@
  "player_id": 1641706,
  "player": "Brandon Miller",
  "team": "Charlotte",
- "opp": "Atlanta",
+ "opp": "Miami",
  "lines": {
-  "PRA": {
-   "line": 34.5,
-   "price": 1.81,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.81
-  },
-  "PR": {
-   "line": 30.5,
-   "price": 1.81,
-   "book": "unibet",
-   "price_over": 1.91,
-   "price_under": 1.81
-  },
-  "PA": {
-   "line": 28.5,
-   "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.81,
-   "price_under": 1.91
-  },
-  "PTS": {
-   "line": 24.5,
-   "price": 1.93,
-   "book": "unibet",
-   "price_over": 1.8,
-   "price_under": 1.93
-  },
-  "REB": {
-   "line": 5.5,
-   "price": 1.68,
-   "book": "sportsbet",
-   "price_over": 2.1,
-   "price_under": 1.68
-  },
-  "3PM": {
-   "line": 3.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
   "AST": {
    "line": 3.5,
-   "price": 1.92,
-   "book": "neds",
-   "price_over": 1.82,
-   "price_under": 1.92
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 31.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 25.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
   },
   "RA": {
    "line": 8.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 1.9
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PR": {
+   "line": 27.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 22.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
   }
  },
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2026-10-23_atlanta_vs_charlotte",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 23.0,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 14.0,
+   "3PA": 11.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Brooklyn",
@@ -157,36 +181,12 @@
    "FTA": 7.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-04-10",
-   "opp": "Detroit",
-   "venue": "H",
-   "game": "2026-04-10_charlotte_vs_detroit",
-   "starter": true,
-   "rest": "2",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 31.2,
-   "PTS": 22.0,
-   "REB": 3.0,
-   "AST": 0.0,
-   "3PM": 2.0,
-   "STL": 4.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 9.0,
-   "FGA": 20.0,
-   "3PA": 8.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 24.5,
-   "over": 0,
+   "line": 22.5,
+   "over": 1,
    "n": 5
   },
   "REB": {

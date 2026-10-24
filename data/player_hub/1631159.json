@@ -2,45 +2,33 @@
  "player_id": 1631159,
  "player": "Leonard Miller",
  "team": "Chicago",
- "opp": "Milwaukee",
- "lines": {
-  "REB": {
-   "line": 5.5,
-   "price": 1.72,
-   "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.4,
-   "book": "sportsbet",
-   "price_over": 2.75,
-   "price_under": 1.4
-  },
-  "PRA": {
-   "line": 16.5,
-   "price": 1.84,
-   "book": "sportsbet",
-   "price_over": 1.92,
-   "price_under": 1.84
-  },
-  "PR": {
-   "line": 14.5,
-   "price": 1.92,
-   "book": "sportsbet",
-   "price_over": 1.84,
-   "price_under": 1.92
-  },
-  "PTS": {
-   "line": 9.5,
-   "price": 1.78,
-   "book": "sportsbet",
-   "price_over": 2.0,
-   "price_under": 1.78
-  }
- },
+ "opp": "Washington",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2026-10-23_chicago_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 24.0,
+   "PTS": 19.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 7.0,
+   "FGA": 11.0,
+   "3PA": 5.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Toronto",
@@ -136,48 +124,8 @@
    "FTA": 2.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-04-07",
-   "opp": "Washington",
-   "venue": "R",
-   "game": "2026-04-07_chicago_vs_washington",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Bottom 10",
-   "min": 25.1,
-   "PTS": 13.0,
-   "REB": 8.0,
-   "AST": 1.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 2.0,
-   "TOV": 0.0,
-   "FGM": 5.0,
-   "FGA": 11.0,
-   "3PA": 6.0,
-   "FTA": 3.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 9.5,
-   "over": 4,
-   "n": 5
-  },
-  "REB": {
-   "line": 5.5,
-   "over": 5,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -2,66 +2,33 @@
  "player_id": 201950,
  "player": "Jrue Holiday",
  "team": "Portland",
- "opp": "Sacramento",
- "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 1.9,
-   "book": "sportsbet",
-   "price_over": 1.9,
-   "price_under": 1.86
-  },
-  "RA": {
-   "line": 7.5,
-   "price": 2.06,
-   "book": "unibet",
-   "price_over": 2.06,
-   "price_under": 1.71
-  },
-  "PA": {
-   "line": 15.5,
-   "price": 1.89,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.82
-  },
-  "PTS": {
-   "line": 11.5,
-   "price": 1.87,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PRA": {
-   "line": 19.5,
-   "price": 1.96,
-   "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.78
-  },
-  "PR": {
-   "line": 15.5,
-   "price": 1.93,
-   "book": "sportsbet",
-   "price_over": 1.93,
-   "price_under": 1.83
-  },
-  "AST": {
-   "line": 3.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.85
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-23",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2026-10-23_portland_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 26.0,
+   "PTS": 12.0,
+   "REB": 2.0,
+   "AST": 8.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 10.0,
+   "3PA": 9.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Phoenix",
@@ -157,53 +124,8 @@
    "FTA": 0.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-04-21",
-   "opp": "San Antonio",
-   "venue": "R",
-   "game": "2026-04-21_portland_vs_san-antonio",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 39.0,
-   "PTS": 16.0,
-   "REB": 5.0,
-   "AST": 9.0,
-   "3PM": 2.0,
-   "STL": 1.0,
-   "BLK": 2.0,
-   "TOV": 5.0,
-   "FGM": 6.0,
-   "FGA": 17.0,
-   "3PA": 6.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 11.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 5,
-   "n": 5
-  },
-  "AST": {
-   "line": 3.5,
-   "over": 4,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }
