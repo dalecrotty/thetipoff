@@ -4,54 +4,61 @@
  "team": "Chicago",
  "opp": "Washington",
  "lines": {
-  "REB": {
-   "line": 7.5,
-   "price": 2.1,
-   "book": "neds",
-   "price_over": 2.1,
-   "price_under": 1.68
-  },
-  "PTS": {
-   "line": 12.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.8,
-   "price_under": 1.95
-  },
   "3PM": {
    "line": 1.5,
    "price": 2.05,
+   "book": "unibet",
+   "price_over": 2.05,
+   "price_under": 1.72
+  },
+  "PR": {
+   "line": 21.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PRA": {
+   "line": 23.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.74,
    "book": "pointsbetau",
    "price_over": 2.05,
    "price_under": 1.74
   },
-  "PR": {
-   "line": 21.5,
-   "price": 1.85,
-   "book": "sportsbet",
-   "price_over": 1.85,
-   "price_under": 1.91
-  },
-  "PRA": {
-   "line": 23.5,
-   "price": 1.91,
-   "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85
-  },
   "PA": {
    "line": 14.5,
-   "price": 1.8,
+   "price": 1.83,
    "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "REB": {
+   "line": 8.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
   },
   "RA": {
    "line": 9.5,
-   "price": 1.78,
-   "book": "sportsbet",
-   "price_over": 1.78,
-   "price_under": 2.0
+   "price": 1.8,
+   "book": "unibet",
+   "price_over": 1.8,
+   "price_under": 1.94
   }
  },
  "recent_games": [
@@ -178,13 +185,18 @@
  ],
  "hits": {
   "PTS": {
-   "line": 12.5,
+   "line": 13.5,
    "over": 3,
    "n": 5
   },
   "REB": {
-   "line": 7.5,
-   "over": 2,
+   "line": 8.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
    "n": 5
   },
   "3PM": {

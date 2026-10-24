@@ -3,7 +3,64 @@
  "player": "Max Christie",
  "team": "Dallas",
  "opp": "San Antonio",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.64,
+   "book": "unibet",
+   "price_over": 2.18,
+   "price_under": 1.64
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 1.67,
+   "price_under": 2.12
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PRA": {
+   "line": 17.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "RA": {
+   "line": 5.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

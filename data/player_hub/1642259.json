@@ -4,33 +4,47 @@
  "team": "Washington",
  "opp": "Chicago",
  "lines": {
-  "RA": {
-   "line": 7.5,
-   "price": 1.68,
-   "book": "sportsbet",
-   "price_over": 1.68,
-   "price_under": 2.1
+  "AST": {
+   "line": 1.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 1.67,
+   "price_under": 2.12
   },
-  "PTS": {
-   "line": 11.5,
-   "price": 1.95,
-   "book": "neds",
-   "price_over": 1.95,
-   "price_under": 1.8
+  "RA": {
+   "line": 8.5,
+   "price": 2.08,
+   "book": "unibet",
+   "price_over": 2.08,
+   "price_under": 1.7
   },
   "PA": {
    "line": 13.5,
-   "price": 1.91,
+   "price": 1.88,
    "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85
+   "price_over": 1.88,
+   "price_under": 1.88
   },
   "PRA": {
-   "line": 19.5,
-   "price": 1.8,
+   "line": 20.5,
+   "price": 1.96,
    "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.56,
+   "book": "unibet",
+   "price_over": 2.33,
+   "price_under": 1.56
   },
   "PR": {
    "line": 18.5,
@@ -41,17 +55,10 @@
   },
   "REB": {
    "line": 6.5,
-   "price": 1.82,
-   "book": "neds",
-   "price_over": 1.92,
-   "price_under": 1.82
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.45,
+   "price": 1.78,
    "book": "sportsbet",
-   "price_over": 2.6,
-   "price_under": 1.45
+   "price_over": 2.0,
+   "price_under": 1.78
   }
  },
  "recent_games": [
@@ -185,6 +192,11 @@
   "REB": {
    "line": 6.5,
    "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 5,
    "n": 5
   },
   "3PM": {
