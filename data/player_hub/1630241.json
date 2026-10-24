@@ -6,11 +6,11 @@
   "3PM": {
    "mean": 2.46,
    "floor": 0.25,
-   "ceiling": 4.97
+   "ceiling": 4.99
   },
   "AST": {
    "mean": 1.92,
-   "floor": 0.14,
+   "floor": 0.11,
    "ceiling": 4.04
   },
   "BLK": {
@@ -19,14 +19,14 @@
    "ceiling": 0.99
   },
   "PTS": {
-   "mean": 9.67,
-   "floor": 2.64,
+   "mean": 9.65,
+   "floor": 2.92,
    "ceiling": 17.1
   },
   "REB": {
-   "mean": 2.47,
-   "floor": 0.09,
-   "ceiling": 4.94
+   "mean": 2.46,
+   "floor": 0.2,
+   "ceiling": 4.9
   },
   "STL": {
    "mean": 0.7,
@@ -36,27 +36,27 @@
   "TOV": {
    "mean": 0.67,
    "floor": 0.0,
-   "ceiling": 1.93
+   "ceiling": 1.94
   },
   "PRA": {
-   "mean": 14.06,
-   "floor": 4.97,
-   "ceiling": 22.88
+   "mean": 14.03,
+   "floor": 4.94,
+   "ceiling": 22.86
   },
   "PR": {
-   "mean": 12.14,
-   "floor": 4.08,
-   "ceiling": 20.08
+   "mean": 12.12,
+   "floor": 4.06,
+   "ceiling": 20.06
   },
   "PA": {
-   "mean": 11.59,
-   "floor": 3.71,
-   "ceiling": 19.89
+   "mean": 11.57,
+   "floor": 3.69,
+   "ceiling": 19.87
   },
   "RA": {
-   "mean": 4.39,
-   "floor": 1.03,
-   "ceiling": 7.83
+   "mean": 4.38,
+   "floor": 1.02,
+   "ceiling": 7.82
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 8.5,
-   "p_over": 0.584,
-   "p_under": 0.416,
+   "p_over": 0.583,
+   "p_under": 0.417,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -237,13 +237,13 @@
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.1057,
+   "edge": 0.1045,
    "tier": "A"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.669,
-   "p_under": 0.331,
+   "p_over": 0.668,
+   "p_under": 0.332,
    "fair_over": 0.592,
    "fair_under": 0.408,
    "price_over": 1.57,
@@ -251,15 +251,15 @@
    "side": "over",
    "price": 1.57,
    "book": "unibet",
-   "edge": 0.0764,
+   "edge": 0.0757,
    "tier": "A"
   }
  },
  "lines_us": {
   "PTS": {
    "line": 8.5,
-   "p_over": 0.584,
-   "p_under": 0.416,
+   "p_over": 0.583,
+   "p_under": 0.417,
    "fair_over": 0.472,
    "fair_under": 0.528,
    "price_over": 1.98,
@@ -267,13 +267,13 @@
    "side": "over",
    "price": 1.98,
    "book": "fanduel",
-   "edge": 0.1124,
+   "edge": 0.1112,
    "tier": "A"
   },
   "3PM": {
    "line": 2.5,
-   "p_over": 0.433,
-   "p_under": 0.567,
+   "p_over": 0.432,
+   "p_under": 0.568,
    "fair_over": 0.384,
    "fair_under": 0.616,
    "price_over": 2.45,
@@ -281,7 +281,7 @@
    "side": "over",
    "price": 2.45,
    "book": "bovada",
-   "edge": 0.0481,
+   "edge": 0.0473,
    "tier": "B"
   }
  },
