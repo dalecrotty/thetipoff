@@ -3,7 +3,64 @@
  "player": "Alexandre Sarr",
  "team": "Washington",
  "opp": "Chicago",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 1.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 1.67,
+   "price_under": 2.12
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 2.08,
+   "book": "unibet",
+   "price_over": 2.08,
+   "price_under": 1.7
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.56,
+   "book": "unibet",
+   "price_over": 2.33,
+   "price_under": 1.56
+  },
+  "PA": {
+   "line": 13.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 20.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
