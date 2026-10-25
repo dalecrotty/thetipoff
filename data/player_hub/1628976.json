@@ -2,8 +2,30 @@
  "player_id": 1628976,
  "player": "Wendell Carter Jr.",
  "team": "Orlando",
- "opp": null,
- "lines": {},
+ "opp": "New York",
+ "lines": {
+  "PTS": {
+   "line": 11.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 7.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 19.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +148,17 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

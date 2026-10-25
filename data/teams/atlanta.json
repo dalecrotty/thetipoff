@@ -10,26 +10,26 @@
   {
    "id": 1630552,
    "name": "Jalen Johnson",
-   "games": 116,
+   "games": 117,
    "med_min": 36.0
   },
   {
    "id": 1630700,
    "name": "Dyson Daniels",
-   "games": 160,
+   "games": 161,
    "med_min": 34.0
   },
   {
    "id": 1629638,
    "name": "Nickeil Alexander-Walker",
-   "games": 86,
+   "games": 87,
    "med_min": 33.7
   },
   {
    "id": 203468,
    "name": "CJ McCollum",
-   "games": 49,
-   "med_min": 29.2
+   "games": 50,
+   "med_min": 29.3
   },
   {
    "id": 1629631,
@@ -40,7 +40,13 @@
   {
    "id": 1630168,
    "name": "Onyeka Okongwu",
-   "games": 156,
+   "games": 157,
+   "med_min": 29.0
+  },
+  {
+   "id": 1630598,
+   "name": "Aaron Wiggins",
+   "games": 3,
    "med_min": 29.0
   },
   {
@@ -48,12 +54,6 @@
    "name": "Caris LeVert",
    "games": 26,
    "med_min": 27.5
-  },
-  {
-   "id": 1630598,
-   "name": "Aaron Wiggins",
-   "games": 2,
-   "med_min": 27.0
   },
   {
    "id": 203992,
@@ -80,16 +80,16 @@
    "med_min": 24.0
   },
   {
-   "id": 1629652,
-   "name": "Luguentz Dort",
-   "games": 2,
-   "med_min": 23.5
-  },
-  {
    "id": 1642258,
    "name": "Zaccharie Risacher",
    "games": 145,
    "med_min": 23.3
+  },
+  {
+   "id": 1629652,
+   "name": "Luguentz Dort",
+   "games": 3,
+   "med_min": 23.0
   },
   {
    "id": 1630228,
@@ -122,12 +122,6 @@
    "med_min": 20.8
   },
   {
-   "id": -778,
-   "name": "Kingston Flemings",
-   "games": 2,
-   "med_min": 20.0
-  },
-  {
    "id": 1626204,
    "name": "Larry Nance Jr.",
    "games": 24,
@@ -142,7 +136,7 @@
   {
    "id": 1629111,
    "name": "Jock Landale",
-   "games": 25,
+   "games": 26,
    "med_min": 18.6
   },
   {
@@ -150,6 +144,12 @@
    "name": "Corey Kispert",
    "games": 45,
    "med_min": 15.9
+  },
+  {
+   "id": -778,
+   "name": "Kingston Flemings",
+   "games": 3,
+   "med_min": 15.0
   },
   {
    "id": 1631243,
@@ -28295,6 +28295,151 @@
      "FGM": 2.0,
      "FGA": 5.0,
      "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-10-24_atlanta_vs_houston",
+   "lines": {
+    "1630598": {
+     "min": 29.0,
+     "PTS": 16.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 6.0,
+     "FGA": 13.0,
+     "3PA": 9.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "203468": {
+     "min": 30.0,
+     "PTS": 17.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 7.0,
+     "FGA": 14.0,
+     "3PA": 5.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1630700": {
+     "min": 29.0,
+     "PTS": 18.0,
+     "REB": 8.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 8.0,
+     "FGA": 11.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1630552": {
+     "min": 38.0,
+     "PTS": 26.0,
+     "REB": 9.0,
+     "AST": 16.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 8.0,
+     "FGA": 19.0,
+     "3PA": 7.0,
+     "FTA": 10.0,
+     "starter": true
+    },
+    "1629111": {
+     "min": 19.0,
+     "PTS": 2.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "FGM": 1.0,
+     "FGA": 5.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629652": {
+     "min": 23.0,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629638": {
+     "min": 32.0,
+     "PTS": 18.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 4.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 7.0,
+     "FGA": 16.0,
+     "3PA": 12.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1630168": {
+     "min": 26.0,
+     "PTS": 8.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 8.0,
+     "3PA": 5.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "-778": {
+     "min": 15.0,
+     "PTS": 2.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 4.0,
+     "3PA": 2.0,
      "FTA": 0.0,
      "starter": false
     }

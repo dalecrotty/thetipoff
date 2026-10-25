@@ -2,9 +2,90 @@
  "player_id": 1629008,
  "player": "Michael Porter Jr.",
  "team": "Brooklyn",
- "opp": "Cleveland",
- "lines": {},
+ "opp": "Indiana",
+ "lines": {
+  "PRA": {
+   "line": 30.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 28.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PTS": {
+   "line": 21.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "PA": {
+   "line": 24.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 2.05,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.73
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 2.3,
+   "book": "neds",
+   "price_over": 2.3,
+   "price_under": 1.58
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-24",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2026-10-24_brooklyn_vs_cleveland",
+   "starter": true,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 33.0,
+   "PTS": 28.0,
+   "REB": 9.0,
+   "AST": 1.0,
+   "3PM": 4.0,
+   "STL": 4.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 10.0,
+   "FGA": 18.0,
+   "3PA": 9.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-21",
    "opp": "Charlotte",
@@ -100,32 +181,29 @@
    "FTA": 3.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-03-03",
-   "opp": "Miami",
-   "venue": "R",
-   "game": "2026-03-03_brooklyn_vs_miami",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 26.5,
-   "PTS": 9.0,
-   "REB": 3.0,
-   "AST": 3.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0,
-   "FGM": 3.0,
-   "FGA": 17.0,
-   "3PA": 9.0,
-   "FTA": 4.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 21.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

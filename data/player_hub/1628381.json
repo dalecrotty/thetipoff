@@ -2,8 +2,37 @@
  "player_id": 1628381,
  "player": "John Collins",
  "team": "Detroit",
- "opp": null,
- "lines": {},
+ "opp": "Philadelphia",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 2.25,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  },
+  "PTS": {
+   "line": 14.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 20.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 14.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

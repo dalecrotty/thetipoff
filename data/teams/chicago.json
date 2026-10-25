@@ -10,8 +10,14 @@
   {
    "id": -742,
    "name": "Caleb Wilson",
-   "games": 2,
-   "med_min": 32.5
+   "games": 3,
+   "med_min": 33.0
+  },
+  {
+   "id": 1626181,
+   "name": "Norman Powell",
+   "games": 3,
+   "med_min": 33.0
   },
   {
    "id": 1629632,
@@ -34,7 +40,7 @@
   {
    "id": 1630581,
    "name": "Josh Giddey",
-   "games": 126,
+   "games": 127,
    "med_min": 31.0
   },
   {
@@ -56,15 +62,9 @@
    "med_min": 28.0
   },
   {
-   "id": 1626181,
-   "name": "Norman Powell",
-   "games": 2,
-   "med_min": 27.5
-  },
-  {
    "id": 1630200,
    "name": "Tre Jones",
-   "games": 85,
+   "games": 86,
    "med_min": 27.0
   },
   {
@@ -76,25 +76,25 @@
   {
    "id": 1630171,
    "name": "Isaac Okoro",
-   "games": 65,
+   "games": 66,
    "med_min": 26.3
   },
   {
    "id": 1641824,
    "name": "Matas Buzelis",
-   "games": 159,
-   "med_min": 25.2
-  },
-  {
-   "id": 1631159,
-   "name": "Leonard Miller",
-   "games": 29,
-   "med_min": 25.1
+   "games": 160,
+   "med_min": 25.6
   },
   {
    "id": 1627824,
    "name": "Guerschon Yabusele",
    "games": 26,
+   "med_min": 24.5
+  },
+  {
+   "id": 1631159,
+   "name": "Leonard Miller",
+   "games": 30,
    "med_min": 24.5
   },
   {
@@ -130,20 +130,20 @@
   {
    "id": 1628380,
    "name": "Zach Collins",
-   "games": 39,
+   "games": 40,
    "med_min": 18.0
   },
   {
    "id": 1630188,
    "name": "Jalen Smith",
-   "games": 119,
-   "med_min": 16.6
+   "games": 120,
+   "med_min": 16.7
   },
   {
    "id": 1627741,
    "name": "Buddy Hield",
-   "games": 2,
-   "med_min": 14.5
+   "games": 3,
+   "med_min": 15.0
   },
   {
    "id": -821,
@@ -28995,6 +28995,166 @@
      "FGA": 14.0,
      "3PA": 6.0,
      "FTA": 6.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-10-24_chicago_vs_washington",
+   "lines": {
+    "1627741": {
+     "min": 16.0,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 7.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630171": {
+     "min": 14.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630188": {
+     "min": 24.0,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 11.0,
+     "3PA": 7.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1630581": {
+     "min": 30.0,
+     "PTS": 9.0,
+     "REB": 8.0,
+     "AST": 10.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 3.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1631159": {
+     "min": 21.0,
+     "PTS": 7.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 8.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1641824": {
+     "min": 35.0,
+     "PTS": 21.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 7.0,
+     "FGA": 13.0,
+     "3PA": 7.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1626181": {
+     "min": 33.0,
+     "PTS": 18.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 4.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 4.0,
+     "FGA": 12.0,
+     "3PA": 7.0,
+     "FTA": 7.0,
+     "starter": true
+    },
+    "1630200": {
+     "min": 18.0,
+     "PTS": 10.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 1.0,
+     "FTA": 3.0,
+     "starter": false
+    },
+    "1628380": {
+     "min": 11.0,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-742": {
+     "min": 38.0,
+     "PTS": 30.0,
+     "REB": 14.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 10.0,
+     "FGA": 24.0,
+     "3PA": 9.0,
+     "FTA": 11.0,
      "starter": true
     }
    }

@@ -2,8 +2,65 @@
  "player_id": 1630217,
  "player": "Desmond Bane",
  "team": "Orlando",
- "opp": null,
- "lines": {},
+ "opp": "New York",
+ "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 27.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "PA": {
+   "line": 23.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.67,
+   "book": "pointsbetau",
+   "price_over": 2.1,
+   "price_under": 1.67
+  },
+  "PR": {
+   "line": 23.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PTS": {
+   "line": 19.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.71,
+   "book": "pointsbetau",
+   "price_over": 2.1,
+   "price_under": 1.71
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 19.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

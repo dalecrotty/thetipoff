@@ -2,8 +2,281 @@
  "player_id": -779,
  "player": "Allen Graves",
  "team": "Toronto",
- "opp": null,
+ "projections": {
+  "3PM": {
+   "mean": 0.47,
+   "floor": 0.0,
+   "ceiling": 2.07
+  },
+  "AST": {
+   "mean": 0.78,
+   "floor": 0.0,
+   "ceiling": 2.37
+  },
+  "BLK": {
+   "mean": 0.6,
+   "floor": 0.0,
+   "ceiling": 2.28
+  },
+  "PTS": {
+   "mean": 5.15,
+   "floor": 0.0,
+   "ceiling": 11.95
+  },
+  "REB": {
+   "mean": 3.1,
+   "floor": 0.54,
+   "ceiling": 6.56
+  },
+  "STL": {
+   "mean": 0.52,
+   "floor": 0.0,
+   "ceiling": 2.25
+  },
+  "TOV": {
+   "mean": 0.64,
+   "floor": 0.0,
+   "ceiling": 2.3
+  },
+  "PRA": {
+   "mean": 9.03,
+   "floor": 1.31,
+   "ceiling": 17.74
+  },
+  "PR": {
+   "mean": 8.25,
+   "floor": 1.48,
+   "ceiling": 16.36
+  },
+  "PA": {
+   "mean": 5.93,
+   "floor": 0.06,
+   "ceiling": 12.71
+  },
+  "RA": {
+   "mean": 3.88,
+   "floor": 1.13,
+   "ceiling": 7.18
+  }
+ },
+ "minutes": {
+  "value": 14,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 2,
+   "min_pg": 12.5,
+   "PTS": {
+    "pg": 3.5,
+    "pm": 0.28
+   },
+   "REB": {
+    "pg": 3.5,
+    "pm": 0.28
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 2.0,
+    "pm": 0.16
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l10": {
+   "games": 2,
+   "min_pg": 12.5,
+   "PTS": {
+    "pg": 3.5,
+    "pm": 0.28
+   },
+   "REB": {
+    "pg": 3.5,
+    "pm": 0.28
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 2.0,
+    "pm": 0.16
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l5": {
+   "games": 2,
+   "min_pg": 12.5,
+   "PTS": {
+    "pg": 3.5,
+    "pm": 0.28
+   },
+   "REB": {
+    "pg": 3.5,
+    "pm": 0.28
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 2.0,
+    "pm": 0.16
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 19.0,
+   "PTS": {
+    "pg": 5.0,
+    "pm": 0.263
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.263
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.053
+   },
+   "BLK": {
+    "pg": 3.0,
+    "pm": 0.158
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 1,
+   "min_pg": 6.0,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.333
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.333
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.167
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2026-10-21_chicago_vs_toronto",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 19.0,
+   "PTS": 5.0,
+   "REB": 5.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 3.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2026-10-23_toronto_vs_washington",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 6.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -54,6 +327,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Minnesota"
 }

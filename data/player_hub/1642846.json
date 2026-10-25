@@ -2,8 +2,37 @@
  "player_id": 1642846,
  "player": "Ace Bailey",
  "team": "Utah",
- "opp": null,
- "lines": {},
+ "opp": "LA Lakers",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.95,
+   "book": "neds",
+   "price_over": 1.95,
+   "price_under": 1.73
+  },
+  "PTS": {
+   "line": 10.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.94
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

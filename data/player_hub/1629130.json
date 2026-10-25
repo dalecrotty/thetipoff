@@ -2,8 +2,37 @@
  "player_id": 1629130,
  "player": "Duncan Robinson",
  "team": "Detroit",
- "opp": null,
- "lines": {},
+ "opp": "Philadelphia",
+ "lines": {
+  "3PM": {
+   "line": 2.5,
+   "price": 1.91,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.77
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.8
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 2.25,
+   "book": "pointsbetau",
+   "price_over": 2.25,
+   "price_under": 1.63
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +155,22 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

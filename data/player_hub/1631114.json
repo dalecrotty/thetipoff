@@ -2,8 +2,65 @@
  "player_id": 1631114,
  "player": "Jalen Williams",
  "team": "Oklahoma City",
- "opp": null,
- "lines": {},
+ "opp": "LA Clippers",
+ "lines": {
+  "RA": {
+   "line": 8.5,
+   "price": 1.74,
+   "book": "pointsbetau",
+   "price_over": 1.74,
+   "price_under": 1.95
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 2.2,
+   "book": "pointsbetau",
+   "price_over": 2.2,
+   "price_under": 1.67
+  },
+  "PRA": {
+   "line": 26.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "PA": {
+   "line": 22.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 17.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "PR": {
+   "line": 22.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.87
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.44,
+   "book": "sportsbet",
+   "price_over": 2.6,
+   "price_under": 1.44
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-22",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 17.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
