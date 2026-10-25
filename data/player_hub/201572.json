@@ -3,7 +3,29 @@
  "player": "Brook Lopez",
  "team": "LA Clippers",
  "opp": "Oklahoma City",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 9.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.74
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
