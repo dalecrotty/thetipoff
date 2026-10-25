@@ -2,8 +2,377 @@
  "player_id": 1630164,
  "player": "James Wiseman",
  "team": "New York",
- "opp": "Orlando",
+ "projections": {
+  "3PM": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.0
+  },
+  "AST": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.36
+  },
+  "BLK": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.89
+  },
+  "PTS": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 5.72
+  },
+  "REB": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 2.21
+  },
+  "STL": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.8
+  },
+  "TOV": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.4
+  },
+  "PRA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 8.71
+  },
+  "PR": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 8.11
+  },
+  "PA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 6.78
+  },
+  "RA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 3.3
+  }
+ },
+ "minutes": {
+  "value": 0,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 6,
+   "min_pg": 10.9,
+   "PTS": {
+    "pg": 3.17,
+    "pm": 0.29
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.137
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.046
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.17,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.83,
+    "pm": 0.076
+   }
+  },
+  "l10": {
+   "games": 6,
+   "min_pg": 10.9,
+   "PTS": {
+    "pg": 3.17,
+    "pm": 0.29
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.137
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.046
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.17,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.83,
+    "pm": 0.076
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 12.1,
+   "PTS": {
+    "pg": 2.6,
+    "pm": 0.215
+   },
+   "REB": {
+    "pg": 1.6,
+    "pm": 0.132
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.05
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.017
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.083
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 11.7,
+   "PTS": {
+    "pg": 3.0,
+    "pm": 0.257
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.086
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.086
+   }
+  },
+  "away": {
+   "games": 5,
+   "min_pg": 10.8,
+   "PTS": {
+    "pg": 3.2,
+    "pm": 0.298
+   },
+   "REB": {
+    "pg": 1.8,
+    "pm": 0.167
+   },
+   "AST": {
+    "pg": 0.4,
+    "pm": 0.037
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 0.8,
+    "pm": 0.074
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2024-10-23",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2024-10-23_detroit_vs_indiana",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 5.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-10-25",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2025-10-25_indiana_vs_memphis",
+   "starter": true,
+   "rest": "3+",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 19.9,
+   "PTS": 4.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 3.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-12-20",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-12-20_indiana_vs_new-orleans",
+   "starter": false,
+   "rest": "55",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 14.7,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 5.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-12-22",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2025-12-22_boston_vs_indiana",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 12.2,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-12-23",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2025-12-23_indiana_vs_milwaukee",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 11.7,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-23_boston_vs_new-york",
+   "starter": false,
+   "rest": "303",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 0.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -124,8 +493,32 @@
    "FTA": 0.0,
    "season": "2025-26",
    "phase": "regular"
+  },
+  {
+   "date": "2024-10-23",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2024-10-23_detroit_vs_indiana",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 5.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2024-25",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Orlando"
 }
