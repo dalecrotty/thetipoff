@@ -4,13 +4,6 @@
  "team": "Philadelphia",
  "opp": "Detroit",
  "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 2.05,
-   "price_under": 1.74
-  },
   "AST": {
    "line": 7.5,
    "price": 1.68,
@@ -18,30 +11,30 @@
    "price_over": 2.1,
    "price_under": 1.68
   },
-  "PR": {
-   "line": 26.5,
-   "price": 1.9,
-   "book": "sportsbet",
-   "price_over": 1.9,
-   "price_under": 1.86
+  "3PM": {
+   "line": 1.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.89,
+   "price_under": 1.83
   },
-  "PTS": {
-   "line": 19.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
+  "RA": {
+   "line": 14.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
   },
   "PRA": {
-   "line": 33.5,
-   "price": 1.84,
-   "book": "sportsbet",
-   "price_over": 1.84,
-   "price_under": 1.92
+   "line": 34.5,
+   "price": 1.78,
+   "book": "unibet",
+   "price_over": 1.96,
+   "price_under": 1.78
   },
   "PA": {
    "line": 26.5,
-   "price": 1.92,
+   "price": 1.84,
    "book": "sportsbet",
    "price_over": 1.92,
    "price_under": 1.84
@@ -53,12 +46,19 @@
    "price_over": 1.97,
    "price_under": 1.77
   },
-  "RA": {
-   "line": 14.5,
-   "price": 1.85,
+  "PR": {
+   "line": 26.5,
+   "price": 1.88,
    "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.85
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "PTS": {
+   "line": 19.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
   }
  },
  "recent_games": [
@@ -185,8 +185,8 @@
  ],
  "hits": {
   "PTS": {
-   "line": 18.5,
-   "over": 3,
+   "line": 19.5,
+   "over": 2,
    "n": 5
   },
   "REB": {
