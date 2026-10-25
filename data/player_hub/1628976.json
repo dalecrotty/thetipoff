@@ -4,26 +4,54 @@
  "team": "Orlando",
  "opp": "New York",
  "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
   "PTS": {
    "line": 11.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 18.5,
    "price": 1.91,
-   "book": "unibet",
+   "book": "neds",
    "price_over": 1.91,
    "price_under": 1.83
   },
-  "REB": {
-   "line": 7.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8
+  "PA": {
+   "line": 13.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.02
   },
-  "PR": {
-   "line": 19.5,
-   "price": 1.96,
-   "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.76
+  "RA": {
+   "line": 9.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 20.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.78,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.96
   }
  },
  "recent_games": [
@@ -155,7 +183,12 @@
    "n": 5
   },
   "REB": {
-   "line": 7.5,
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
    "over": 1,
    "n": 5
   }

@@ -16,7 +16,7 @@
   "BLK": {
    "mean": 0.87,
    "floor": 0.0,
-   "ceiling": 2.04
+   "ceiling": 2.59
   },
   "PTS": {
    "mean": 6.07,
@@ -225,7 +225,22 @@
    }
   }
  },
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 5.5,
+   "p_over": 0.558,
+   "p_under": 0.442,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "over",
+   "price": 1.87,
+   "book": "tab",
+   "edge": 0.0577,
+   "tier": "B"
+  }
+ },
  "lines_us": {},
  "game_log": [
   {
