@@ -3,7 +3,43 @@
  "player": "Rui Hachimura",
  "team": "LA Clippers",
  "opp": "Oklahoma City",
- "lines": {},
+ "lines": {
+  "PR": {
+   "line": 22.5,
+   "price": 1.8,
+   "book": "unibet",
+   "price_over": 1.92,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 23.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "PTS": {
+   "line": 16.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.75,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.56,
+   "book": "unibet",
+   "price_over": 1.56,
+   "price_under": 2.33
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +162,22 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 16.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 5,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

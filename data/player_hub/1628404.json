@@ -3,7 +3,64 @@
  "player": "Josh Hart",
  "team": "New York",
  "opp": "Orlando",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 7.5,
+   "price": 1.91,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.83
+  },
+  "RA": {
+   "line": 12.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.89,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.89
+  },
+  "PRA": {
+   "line": 24.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 20.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 17.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.96,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.96
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 1.95,
+   "book": "unibet",
+   "price_over": 1.79,
+   "price_under": 1.95
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
