@@ -4,6 +4,13 @@
  "team": "Phoenix",
  "opp": "Oklahoma City",
  "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 1.6,
+   "book": "unibet",
+   "price_over": 2.25,
+   "price_under": 1.6
+  },
   "PRA": {
    "line": 12.5,
    "price": 1.83,
@@ -11,33 +18,26 @@
    "price_over": 1.93,
    "price_under": 1.83
   },
-  "REB": {
-   "line": 3.5,
-   "price": 2.08,
-   "book": "unibet",
-   "price_over": 1.7,
-   "price_under": 2.08
-  },
-  "PR": {
-   "line": 11.5,
-   "price": 1.67,
-   "book": "unibet",
-   "price_over": 2.1,
-   "price_under": 1.67
-  },
-  "PTS": {
-   "line": 6.5,
-   "price": 1.85,
-   "book": "tab",
-   "price_over": 1.9,
-   "price_under": 1.85
-  },
   "3PM": {
    "line": 1.5,
    "price": 1.52,
    "book": "sportsbet",
    "price_over": 2.4,
    "price_under": 1.52
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.8,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 5.5,
+   "price": 1.75,
+   "book": "unibet",
+   "price_over": 1.75,
+   "price_under": 2.0
   }
  },
  "recent_games": [
@@ -164,13 +164,13 @@
  ],
  "hits": {
   "PTS": {
-   "line": 6.5,
+   "line": 5.5,
    "over": 3,
    "n": 5
   },
   "REB": {
-   "line": 3.5,
-   "over": 3,
+   "line": 4.5,
+   "over": 1,
    "n": 5
   },
   "3PM": {
