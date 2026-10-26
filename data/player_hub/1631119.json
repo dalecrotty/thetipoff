@@ -3,7 +3,57 @@
  "player": "Jaylin Williams",
  "team": "Oklahoma City",
  "opp": "Phoenix",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 1.65,
+   "book": "neds",
+   "price_over": 2.15,
+   "price_under": 1.65
+  },
+  "PA": {
+   "line": 12.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "PRA": {
+   "line": 19.5,
+   "price": 1.98,
+   "book": "neds",
+   "price_over": 1.77,
+   "price_under": 1.98
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.94,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 16.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 7.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.73
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-25",
@@ -126,6 +176,22 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
