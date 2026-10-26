@@ -230,14 +230,14 @@
    "line": 10.5,
    "p_over": 0.61,
    "p_under": 0.39,
-   "fair_over": 0.511,
-   "fair_under": 0.489,
-   "price_over": 1.84,
-   "price_under": 1.92,
+   "fair_over": 0.513,
+   "fair_under": 0.487,
+   "price_over": 1.83,
+   "price_under": 1.93,
    "side": "over",
-   "price": 1.84,
+   "price": 1.83,
    "book": "sportsbet",
-   "edge": 0.099,
+   "edge": 0.0964,
    "tier": "A"
   },
   "PTS": {
@@ -269,7 +269,50 @@
    "tier": "B"
   }
  },
- "lines_us": {},
+ "lines_us": {
+  "PR": {
+   "line": 10.5,
+   "p_over": 0.61,
+   "p_under": 0.39,
+   "fair_over": 0.493,
+   "fair_under": 0.507,
+   "price_over": 1.9,
+   "price_under": 1.85,
+   "side": "over",
+   "price": 1.9,
+   "book": "betmgm",
+   "edge": 0.1163,
+   "tier": "A"
+  },
+  "PTS": {
+   "line": 5.5,
+   "p_over": 0.631,
+   "p_under": 0.369,
+   "fair_over": 0.516,
+   "fair_under": 0.484,
+   "price_over": 1.83,
+   "price_under": 1.95,
+   "side": "over",
+   "price": 1.83,
+   "book": "draftkings",
+   "edge": 0.1147,
+   "tier": "A"
+  },
+  "REB": {
+   "line": 4.5,
+   "p_over": 0.554,
+   "p_under": 0.446,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "over",
+   "price": 1.87,
+   "book": "betmgm",
+   "edge": 0.0537,
+   "tier": "B"
+  }
+ },
  "game_log": [
   {
    "date": "2025-10-22",

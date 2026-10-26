@@ -4,26 +4,61 @@
  "team": "Golden State",
  "opp": "Denver",
  "lines": {
+  "RA": {
+   "line": 5.5,
+   "price": 1.68,
+   "book": "unibet",
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 1.63,
+   "book": "unibet",
+   "price_over": 1.63,
+   "price_under": 2.18
+  },
   "PR": {
-   "line": 12.5,
-   "price": 1.91,
-   "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85
+   "line": 11.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 1.67,
+   "price_under": 2.1
+  },
+  "PA": {
+   "line": 10.5,
+   "price": 1.76,
+   "book": "unibet",
+   "price_over": 1.76,
+   "price_under": 1.96
   },
   "PTS": {
-   "line": 8.5,
-   "price": 1.91,
-   "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85
+   "line": 7.5,
+   "price": 1.63,
+   "book": "unibet",
+   "price_over": 1.63,
+   "price_under": 2.18
   },
   "REB": {
    "line": 3.5,
-   "price": 1.74,
-   "book": "sportsbet",
-   "price_over": 1.74,
-   "price_under": 2.05
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.44,
+   "book": "unibet",
+   "price_over": 1.44,
+   "price_under": 2.63
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.45,
+   "book": "unibet",
+   "price_over": 1.45,
+   "price_under": 2.6
   }
  },
  "recent_games": [
@@ -150,13 +185,23 @@
  ],
  "hits": {
   "PTS": {
-   "line": 8.5,
+   "line": 7.5,
    "over": 3,
    "n": 5
   },
   "REB": {
    "line": 3.5,
    "over": 5,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
    "n": 5
   }
  },
