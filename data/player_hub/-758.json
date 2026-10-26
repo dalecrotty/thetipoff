@@ -2,8 +2,281 @@
  "player_id": -758,
  "player": "Emanuel Sharp",
  "team": "Sacramento",
- "opp": "Memphis",
+ "projections": {
+  "3PM": {
+   "mean": 0.92,
+   "floor": 0.0,
+   "ceiling": 2.43
+  },
+  "AST": {
+   "mean": 1.02,
+   "floor": 0.0,
+   "ceiling": 2.65
+  },
+  "BLK": {
+   "mean": 0.2,
+   "floor": 0.0,
+   "ceiling": 1.15
+  },
+  "PTS": {
+   "mean": 5.91,
+   "floor": 0.0,
+   "ceiling": 14.11
+  },
+  "REB": {
+   "mean": 2.11,
+   "floor": 0.0,
+   "ceiling": 4.77
+  },
+  "STL": {
+   "mean": 0.84,
+   "floor": 0.0,
+   "ceiling": 2.23
+  },
+  "TOV": {
+   "mean": 0.72,
+   "floor": 0.0,
+   "ceiling": 2.24
+  },
+  "PRA": {
+   "mean": 9.05,
+   "floor": 1.33,
+   "ceiling": 17.77
+  },
+  "PR": {
+   "mean": 8.03,
+   "floor": 1.26,
+   "ceiling": 16.14
+  },
+  "PA": {
+   "mean": 6.94,
+   "floor": 1.07,
+   "ceiling": 13.72
+  },
+  "RA": {
+   "mean": 3.14,
+   "floor": 0.39,
+   "ceiling": 6.44
+  }
+ },
+ "minutes": {
+  "value": 15,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 2,
+   "min_pg": 15.5,
+   "PTS": {
+    "pg": 6.5,
+    "pm": 0.419
+   },
+   "REB": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "3PM": {
+    "pg": 1.5,
+    "pm": 0.097
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.032
+   }
+  },
+  "l10": {
+   "games": 2,
+   "min_pg": 15.5,
+   "PTS": {
+    "pg": 6.5,
+    "pm": 0.419
+   },
+   "REB": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "3PM": {
+    "pg": 1.5,
+    "pm": 0.097
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.032
+   }
+  },
+  "l5": {
+   "games": 2,
+   "min_pg": 15.5,
+   "PTS": {
+    "pg": 6.5,
+    "pm": 0.419
+   },
+   "REB": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "3PM": {
+    "pg": 1.5,
+    "pm": 0.097
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.032
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.032
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 14.0,
+   "PTS": {
+    "pg": 5.0,
+    "pm": 0.357
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.071
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.071
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 1,
+   "min_pg": 17.0,
+   "PTS": {
+    "pg": 8.0,
+    "pm": 0.471
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.059
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.118
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.059
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.059
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-10-21_la-clippers_vs_sacramento",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 17.0,
+   "PTS": 8.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 6.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-10-23_portland_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 14.0,
+   "PTS": 5.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -54,6 +327,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Memphis"
 }
