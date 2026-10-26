@@ -1294,7 +1294,7 @@ async function initPlayer() {
 
     $("#gamelog tbody").innerHTML = games.slice().reverse().map(g => `<tr>
       <td class="s">${g.game
-        ? `<a href="boxscore.html?g=${encodeURIComponent(g.game)}"
+        ? `<a href="/boxscore.html?g=${encodeURIComponent(g.game)}"
              target="_blank" rel="noopener" title="open box score">${g.date} ↗</a>`
         : `<span class="dim">${g.date}</span>`}</td>
       <td class="s">${teamBadge(g.opp)}${g.opp_tier
@@ -1453,7 +1453,7 @@ async function initWow() {
       const l = focalLine(g);
       return `<tr>
         <td class="s">${g.game
-          ? `<a href="boxscore.html?g=${encodeURIComponent(g.game)}"
+          ? `<a href="/boxscore.html?g=${encodeURIComponent(g.game)}"
                target="_blank" rel="noopener">${g.date} ↗</a>`
           : `<span class="dim">${g.date}</span>`}</td>
         <td class="s">${teamBadge(g.opp)}</td>
@@ -1736,7 +1736,7 @@ async function initRecord() {
   $("#rtip").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${tOpen ? pct(t.avg_clv) : "—"}</div><div class="r">${tOpen ? `${t.n_clv ?? 0} graded at the close` : tLater}</div></div>
     <div class="card"><div class="k">Beat the close</div><div class="v">${tOpen ? pct(t.beat_close) : "—"}</div>${tOpen ? "" : `<div class="r">${tLater}</div>`}</div>
-    <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="tip.html">Every Drop →</a></div></div>
+    <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="/tip.html">Every Drop →</a></div></div>
     <div class="card"><div class="k">Units</div><div class="v ${unitsCls(t?.units)}">${unitsTxt(t?.units ?? 0)}</div><div class="r">1 unit on every Drop</div></div>`;
   const e = d.edges || {};
   $("#redges").innerHTML = `
@@ -1877,14 +1877,14 @@ async function initHome() {
     <div class="card"><div class="k">Points: average miss</div><div class="v">${fmt(ps.mae)}</div><div class="r">${ps.n.toLocaleString("en-AU")} player games</div></div>
     <div class="card"><div class="k">Inside our range</div><div class="v">${pct(ps.coverage)}</div><div class="r">target 80%</div></div>
     <div class="card"><div class="k">The Drop: avg CLV</div><div class="v">${ts.averages_public ? pct(ts.avg_clv) : "—"}</div><div class="r">${ts.averages_public ? `${ts.n_clv ?? 0} graded at the close` : dropsLater(ts)}</div></div>
-    <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="track-record.html">Full record →</a></div></div></div>`
-    : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the Drop's closing-line value. <a href="track-record.html">How it's graded →</a></p>`;
+    <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="/track-record.html">Full record →</a></div></div></div>`
+    : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the Drop's closing-line value. <a href="/track-record.html">How it's graded →</a></p>`;
   const games = gd?.games || [];
   if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${slateDay(games[0].start)}`;
 
   const t = tips?.today;
   const rec = tips?.summary;
-  $("#hTip").innerHTML = `<div class="ph2"><span>The Drop</span><a href="tip.html">Record →</a></div>` + (t
+  $("#hTip").innerHTML = `<div class="ph2"><span>The Drop</span><a href="/tip.html">Record →</a></div>` + (t
     ? `<div class="tipmini">
         <div class="who">${esc(t.player)}</div>
         <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)} · ${fmt(t.stake ?? 1, 0)} unit</div>
@@ -1895,7 +1895,7 @@ async function initHome() {
 
   const rows = regionLines(board?.rows || []).map(favour).filter(r => r.edge != null && r.line != null && r.tier)
     .sort((a, b) => b.edge - a.edge).slice(0, 6);
-  $("#hEdges").innerHTML = `<div class="ph2"><span>Biggest edges tonight</span><a href="predictions.html">All predictions →</a></div>` + (rows.length
+  $("#hEdges").innerHTML = `<div class="ph2"><span>Biggest edges tonight</span><a href="/predictions.html">All predictions →</a></div>` + (rows.length
     ? `<table class="mini"><tbody>${rows.map(r => `<tr>
         <td class="s"><a href="${pHref(r.player_id)}">${esc(r.player)}</a> <span class="sm dim">${esc(STAT_WORD[r.stat] || r.stat)}</span></td>
         <td class="num"><span class="ours">${fmt(r.proj)}</span> <span class="dim">v ${fmt(r.line)}</span></td>
@@ -1914,8 +1914,9 @@ async function initHome() {
 /* the board, filtered to one game: its label there is "Home vs Away" */
 /* a game's own page (dated, /nba/games/...), written by the pipeline; the
    board filtered to the game is linked from there */
-const gameHref = g => g.url ? g.url.replace(/^\//, "") : `predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
-const boardHref = g => `predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
+// absolute: these links are built on pages under /players/ and /nba/ too
+const gameHref = g => g.url || `/predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
+const boardHref = g => `/predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
 const TEAM_NICK = { Atlanta: "Hawks", Boston: "Celtics", Brooklyn: "Nets", Charlotte: "Hornets",
   Chicago: "Bulls", Cleveland: "Cavaliers", Dallas: "Mavericks", Denver: "Nuggets", Detroit: "Pistons",
   "Golden State": "Warriors", Houston: "Rockets", Indiana: "Pacers", "LA Clippers": "Clippers",
