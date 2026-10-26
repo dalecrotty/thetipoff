@@ -2,9 +2,90 @@
  "player_id": 1628983,
  "player": "Shai Gilgeous-Alexander",
  "team": "Oklahoma City",
- "opp": "LA Clippers",
- "lines": {},
+ "opp": "Phoenix",
+ "lines": {
+  "PRA": {
+   "line": 42.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 37.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.92
+  },
+  "PR": {
+   "line": 35.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PTS": {
+   "line": 31.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.4,
+   "book": "sportsbet",
+   "price_over": 1.52,
+   "price_under": 2.4
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.83
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.58,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-25",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-10-25_la-clippers_vs_oklahoma-city",
+   "starter": true,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 36.0,
+   "PTS": 34.0,
+   "REB": 6.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 13.0,
+   "FGA": 26.0,
+   "3PA": 5.0,
+   "FTA": 8.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-22",
    "opp": "Denver",
@@ -100,32 +181,29 @@
    "FTA": 3.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-05-26",
-   "opp": "San Antonio",
-   "venue": "H",
-   "game": "2026-05-26_oklahoma-city_vs_san-antonio",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 37.1,
-   "PTS": 32.0,
-   "REB": 2.0,
-   "AST": 9.0,
-   "3PM": 2.0,
-   "STL": 2.0,
-   "BLK": 1.0,
-   "TOV": 6.0,
-   "FGM": 7.0,
-   "FGA": 19.0,
-   "3PA": 3.0,
-   "FTA": 17.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 31.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

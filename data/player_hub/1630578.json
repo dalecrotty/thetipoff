@@ -2,8 +2,65 @@
  "player_id": 1630578,
  "player": "Alperen Sengun",
  "team": "Houston",
- "opp": null,
- "lines": {},
+ "opp": "Atlanta",
+ "lines": {
+  "REB": {
+   "line": 9.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.02
+  },
+  "PA": {
+   "line": 25.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.71
+  },
+  "RA": {
+   "line": 14.5,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 2.02,
+   "price_under": 1.76
+  },
+  "PRA": {
+   "line": 34.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "PTS": {
+   "line": 20.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "PR": {
+   "line": 29.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 20.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 9.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -2,8 +2,65 @@
  "player_id": 201939,
  "player": "Stephen Curry",
  "team": "Golden State",
- "opp": null,
- "lines": {},
+ "opp": "Denver",
+ "lines": {
+  "PRA": {
+   "line": 32.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PA": {
+   "line": 29.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PTS": {
+   "line": 24.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PR": {
+   "line": 28.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 1.78,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.9
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 1.55,
+   "book": "neds",
+   "price_over": 1.55,
+   "price_under": 2.35
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 24.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

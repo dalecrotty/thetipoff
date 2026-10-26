@@ -2,8 +2,65 @@
  "player_id": 1628415,
  "player": "Dillon Brooks",
  "team": "Phoenix",
- "opp": null,
- "lines": {},
+ "opp": "Oklahoma City",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.94,
+   "book": "neds",
+   "price_over": 1.94,
+   "price_under": 1.75
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 2.4,
+   "book": "sportsbet",
+   "price_over": 1.52,
+   "price_under": 2.4
+  },
+  "PRA": {
+   "line": 21.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "PA": {
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 1.78,
+   "price_under": 2.0
+  },
+  "RA": {
+   "line": 5.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "PR": {
+   "line": 19.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

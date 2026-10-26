@@ -2,8 +2,65 @@
  "player_id": 203110,
  "player": "Draymond Green",
  "team": "Golden State",
- "opp": null,
- "lines": {},
+ "opp": "Denver",
+ "lines": {
+  "RA": {
+   "line": 11.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
+  },
+  "PTS": {
+   "line": 7.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.83
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.75,
+   "book": "sportsbet",
+   "price_over": 2.75,
+   "price_under": 1.4
+  },
+  "PR": {
+   "line": 12.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 18.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PA": {
+   "line": 13.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.65,
+   "book": "neds",
+   "price_over": 2.15,
+   "price_under": 1.65
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 7.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 0,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

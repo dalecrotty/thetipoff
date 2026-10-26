@@ -4,7 +4,7 @@
   {
    "id": 1629029,
    "name": "Luka Doncic",
-   "games": 94,
+   "games": 95,
    "med_min": 37.0
   },
   {
@@ -16,7 +16,7 @@
   {
    "id": 1630559,
    "name": "Austin Reaves",
-   "games": 132,
+   "games": 133,
    "med_min": 36.0
   },
   {
@@ -24,12 +24,6 @@
    "name": "LeBron James",
    "games": 140,
    "med_min": 34.8
-  },
-  {
-   "id": 1631117,
-   "name": "Walker Kessler",
-   "games": 2,
-   "med_min": 32.5
   },
   {
    "id": 1629060,
@@ -50,10 +44,16 @@
    "med_min": 30.0
   },
   {
-   "id": 1629656,
-   "name": "Quentin Grimes",
-   "games": 2,
-   "med_min": 29.0
+   "id": 1630533,
+   "name": "Ziaire Williams",
+   "games": 3,
+   "med_min": 30.0
+  },
+  {
+   "id": 1631117,
+   "name": "Walker Kessler",
+   "games": 3,
+   "med_min": 30.0
   },
   {
    "id": 1631108,
@@ -68,10 +68,10 @@
    "med_min": 27.6
   },
   {
-   "id": 1630533,
-   "name": "Ziaire Williams",
-   "games": 2,
-   "med_min": 27.5
+   "id": 1629656,
+   "name": "Quentin Grimes",
+   "games": 3,
+   "med_min": 27.0
   },
   {
    "id": 1626156,
@@ -88,20 +88,20 @@
   {
    "id": 1631222,
    "name": "Jake LaRavia",
-   "games": 91,
+   "games": 92,
    "med_min": 24.1
   },
   {
    "id": 1629680,
    "name": "Matisse Thybulle",
-   "games": 2,
-   "med_min": 23.5
+   "games": 3,
+   "med_min": 24.0
   },
   {
    "id": 1630572,
    "name": "Sandro Mamukelashvili",
-   "games": 2,
-   "med_min": 23.0
+   "games": 3,
+   "med_min": 22.0
   },
   {
    "id": 1629216,
@@ -114,6 +114,12 @@
    "name": "Cam Reddish",
    "games": 33,
    "med_min": 19.0
+  },
+  {
+   "id": 1629012,
+   "name": "Collin Sexton",
+   "games": 2,
+   "med_min": 18.0
   },
   {
    "id": 1630692,
@@ -132,12 +138,6 @@
    "name": "Jarred Vanderbilt",
    "games": 108,
    "med_min": 16.3
-  },
-  {
-   "id": 1629012,
-   "name": "Collin Sexton",
-   "games": 1,
-   "med_min": 16.0
   },
   {
    "id": 1642261,
@@ -161,12 +161,6 @@
    "id": -697,
    "name": "Markieff Morris",
    "games": 8,
-   "med_min": 10.0
-  },
-  {
-   "id": 1626172,
-   "name": "Kevon Looney",
-   "games": 2,
    "med_min": 10.0
   },
   {
@@ -221,6 +215,12 @@
    "id": -646,
    "name": "Armel Traore",
    "games": 9,
+   "med_min": 5.0
+  },
+  {
+   "id": 1626172,
+   "name": "Kevon Looney",
+   "games": 3,
    "med_min": 5.0
   },
   {
@@ -30136,6 +30136,166 @@
      "FGA": 7.0,
      "3PA": 3.0,
      "FTA": 3.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2026-10-25_la-lakers_vs_utah",
+   "lines": {
+    "1630559": {
+     "min": 36.0,
+     "PTS": 29.0,
+     "REB": 1.0,
+     "AST": 4.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 2.0,
+     "TOV": 3.0,
+     "FGM": 7.0,
+     "FGA": 12.0,
+     "3PA": 5.0,
+     "FTA": 13.0,
+     "starter": true
+    },
+    "1629012": {
+     "min": 20.0,
+     "PTS": 13.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 11.0,
+     "3PA": 5.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1631222": {
+     "min": 15.0,
+     "PTS": 0.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1626172": {
+     "min": 5.0,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1629029": {
+     "min": 38.0,
+     "PTS": 52.0,
+     "REB": 8.0,
+     "AST": 10.0,
+     "3PM": 8.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 17.0,
+     "FGA": 30.0,
+     "3PA": 18.0,
+     "FTA": 11.0,
+     "starter": true
+    },
+    "1629680": {
+     "min": 26.0,
+     "PTS": 11.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 8.0,
+     "3PA": 7.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1629656": {
+     "min": 20.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630572": {
+     "min": 21.0,
+     "PTS": 9.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 2.0,
+     "FTA": 6.0,
+     "starter": false
+    },
+    "1631117": {
+     "min": 28.0,
+     "PTS": 2.0,
+     "REB": 7.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630533": {
+     "min": 30.0,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 9.0,
+     "3PA": 7.0,
+     "FTA": 2.0,
      "starter": true
     }
    }

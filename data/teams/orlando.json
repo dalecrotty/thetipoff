@@ -10,13 +10,13 @@
   {
    "id": 1630217,
    "name": "Desmond Bane",
-   "games": 93,
+   "games": 94,
    "med_min": 34.5
   },
   {
    "id": 1630532,
    "name": "Franz Wagner",
-   "games": 102,
+   "games": 103,
    "med_min": 34.0
   },
   {
@@ -28,25 +28,25 @@
   {
    "id": 1630591,
    "name": "Jalen Suggs",
-   "games": 103,
+   "games": 104,
    "med_min": 30.0
   },
   {
    "id": 1628976,
    "name": "Wendell Carter Jr.",
-   "games": 157,
+   "games": 158,
    "med_min": 28.9
   },
   {
    "id": 1641710,
    "name": "Anthony Black",
-   "games": 151,
+   "games": 152,
    "med_min": 27.0
   },
   {
    "id": 1641783,
    "name": "Tristan da Silva",
-   "games": 162,
+   "games": 163,
    "med_min": 22.5
   },
   {
@@ -94,8 +94,8 @@
   {
    "id": 1631288,
    "name": "Jamal Cain",
-   "games": 51,
-   "med_min": 12.3
+   "games": 52,
+   "med_min": 12.6
   },
   {
    "id": 1631216,
@@ -130,8 +130,14 @@
   {
    "id": 1642859,
    "name": "Jase Richardson",
-   "games": 58,
+   "games": 59,
    "med_min": 7.6
+  },
+  {
+   "id": 202696,
+   "name": "Nikola Vucevic",
+   "games": 3,
+   "med_min": 5.0
   },
   {
    "id": 1630644,
@@ -144,12 +150,6 @@
    "name": "Orlando Robinson",
    "games": 4,
    "med_min": 4.9
-  },
-  {
-   "id": 202696,
-   "name": "Nikola Vucevic",
-   "games": 2,
-   "med_min": 4.5
   },
   {
    "id": 1631457,
@@ -31177,6 +31177,151 @@
      "3PA": 0.0,
      "FTA": 0.0,
      "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-10-25_new-york_vs_orlando",
+   "lines": {
+    "1641710": {
+     "min": 26.0,
+     "PTS": 18.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 5.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 6.0,
+     "FGA": 11.0,
+     "3PA": 7.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630217": {
+     "min": 35.0,
+     "PTS": 22.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 3.0,
+     "FGM": 6.0,
+     "FGA": 13.0,
+     "3PA": 9.0,
+     "FTA": 8.0,
+     "starter": true
+    },
+    "1630532": {
+     "min": 37.0,
+     "PTS": 23.0,
+     "REB": 13.0,
+     "AST": 9.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 9.0,
+     "FGA": 23.0,
+     "3PA": 3.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1630591": {
+     "min": 34.0,
+     "PTS": 4.0,
+     "REB": 6.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 2.0,
+     "FGA": 8.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1631288": {
+     "min": 15.0,
+     "PTS": 5.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1642859": {
+     "min": 17.0,
+     "PTS": 6.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 7.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "202696": {
+     "min": 15.0,
+     "PTS": 5.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1641783": {
+     "min": 27.0,
+     "PTS": 19.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 5.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 7.0,
+     "FGA": 13.0,
+     "3PA": 9.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628976": {
+     "min": 33.0,
+     "PTS": 9.0,
+     "REB": 10.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 1.0,
+     "FTA": 4.0,
+     "starter": true
     }
    }
   }

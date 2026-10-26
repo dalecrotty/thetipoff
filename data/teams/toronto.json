@@ -10,25 +10,25 @@
   {
    "id": 1630567,
    "name": "Scottie Barnes",
-   "games": 154,
+   "games": 155,
    "med_min": 34.0
   },
   {
    "id": 1629628,
    "name": "RJ Barrett",
-   "games": 124,
+   "games": 125,
    "med_min": 32.0
   },
   {
    "id": 1630193,
    "name": "Immanuel Quickley",
-   "games": 105,
-   "med_min": 31.5
+   "games": 106,
+   "med_min": 31.4
   },
   {
    "id": 1627751,
    "name": "Jakob Poeltl",
-   "games": 112,
+   "games": 113,
    "med_min": 27.0
   },
   {
@@ -64,19 +64,19 @@
   {
    "id": 1642867,
    "name": "Collin Murray-Boyles",
-   "games": 66,
+   "games": 67,
    "med_min": 22.1
   },
   {
    "id": 1642266,
    "name": "Ja'Kobe Walter",
-   "games": 133,
+   "games": 134,
    "med_min": 22.0
   },
   {
    "id": 1642347,
    "name": "Jamal Shead",
-   "games": 166,
+   "games": 167,
    "med_min": 21.3
   },
   {
@@ -102,6 +102,12 @@
    "name": "Gradey Dick",
    "games": 133,
    "med_min": 19.4
+  },
+  {
+   "id": -779,
+   "name": "Allen Graves",
+   "games": 3,
+   "med_min": 19.0
   },
   {
    "id": 1628971,
@@ -134,15 +140,9 @@
    "med_min": 12.6
   },
   {
-   "id": -779,
-   "name": "Allen Graves",
-   "games": 2,
-   "med_min": 12.5
-  },
-  {
    "id": 1642419,
    "name": "Jamison Battle",
-   "games": 128,
+   "games": 129,
    "med_min": 12.0
   },
   {
@@ -150,6 +150,12 @@
    "name": "Bruno Fernando",
    "games": 17,
    "med_min": 9.0
+  },
+  {
+   "id": 203937,
+   "name": "Kyle Anderson",
+   "games": 2,
+   "med_min": 8.0
   },
   {
    "id": 1628365,
@@ -170,40 +176,34 @@
    "med_min": 6.6
   },
   {
+   "id": -709,
+   "name": "Jaden Bradley",
+   "games": 3,
+   "med_min": 5.0
+  },
+  {
    "id": -626,
    "name": "Ulrich Chomche",
    "games": 7,
    "med_min": 5.0
   },
   {
-   "id": 203937,
-   "name": "Kyle Anderson",
-   "games": 1,
-   "med_min": 5.0
+   "id": 1631218,
+   "name": "Trayce Jackson-Davis",
+   "games": 23,
+   "med_min": 3.8
   },
   {
    "id": 1642918,
    "name": "Alijah Martin",
-   "games": 25,
+   "games": 26,
    "med_min": 3.6
-  },
-  {
-   "id": 1631218,
-   "name": "Trayce Jackson-Davis",
-   "games": 22,
-   "med_min": 3.5
   },
   {
    "id": 202066,
    "name": "Garrett Temple",
    "games": 51,
    "med_min": 3.3
-  },
-  {
-   "id": -709,
-   "name": "Jaden Bradley",
-   "games": 2,
-   "med_min": 3.0
   },
   {
    "id": 1628964,
@@ -30439,6 +30439,211 @@
      "FGA": 1.0,
      "3PA": 0.0,
      "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-10-25_minnesota_vs_toronto",
+   "lines": {
+    "1642918": {
+     "min": 7.0,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642867": {
+     "min": 19.0,
+     "PTS": 3.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630193": {
+     "min": 28.0,
+     "PTS": 19.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 7.0,
+     "FGA": 15.0,
+     "3PA": 8.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1642266": {
+     "min": 31.0,
+     "PTS": 22.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 5.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 7.0,
+     "FGA": 12.0,
+     "3PA": 8.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1627751": {
+     "min": 19.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642347": {
+     "min": 21.0,
+     "PTS": 4.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 8.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642419": {
+     "min": 13.0,
+     "PTS": 4.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 5.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "203937": {
+     "min": 11.0,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629628": {
+     "min": 32.0,
+     "PTS": 20.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 9.0,
+     "FGA": 21.0,
+     "3PA": 3.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1630567": {
+     "min": 28.0,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 4.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 0.0,
+     "FGA": 12.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1631218": {
+     "min": 6.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "-709": {
+     "min": 5.0,
+     "PTS": 6.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "-779": {
+     "min": 20.0,
+     "PTS": 11.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 5.0,
+     "FGA": 7.0,
+     "3PA": 3.0,
+     "FTA": 1.0,
      "starter": false
     }
    }

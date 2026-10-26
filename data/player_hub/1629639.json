@@ -2,8 +2,65 @@
  "player_id": 1629639,
  "player": "Tyler Herro",
  "team": "Milwaukee",
- "opp": null,
- "lines": {},
+ "opp": "Indiana",
+ "lines": {
+  "AST": {
+   "line": 4.5,
+   "price": 2.2,
+   "book": "neds",
+   "price_over": 2.2,
+   "price_under": 1.64
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 2.2,
+   "book": "pointsbetau",
+   "price_over": 1.67,
+   "price_under": 2.2
+  },
+  "PTS": {
+   "line": 23.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PR": {
+   "line": 27.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "PRA": {
+   "line": 31.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PA": {
+   "line": 27.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 23.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -2,9 +2,62 @@
  "player_id": 1630545,
  "player": "Terrence Shannon Jr.",
  "team": "Minnesota",
- "opp": "Toronto",
- "lines": {},
+ "opp": "Cleveland",
+ "lines": {
+  "PTS": {
+   "line": 7.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 1.78,
+   "price_under": 2.0
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.4,
+   "book": "sportsbet",
+   "price_over": 2.75,
+   "price_under": 1.4
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-25",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-10-25_minnesota_vs_toronto",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 23.0,
+   "PTS": 15.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 5.0,
+   "FGA": 6.0,
+   "3PA": 3.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-23",
    "opp": "Orlando",
@@ -100,32 +153,24 @@
    "FTA": 2.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-05-10",
-   "opp": "San Antonio",
-   "venue": "H",
-   "game": "2026-05-10_minnesota_vs_san-antonio",
-   "starter": false,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 19.8,
-   "PTS": 8.0,
-   "REB": 2.0,
-   "AST": 2.0,
-   "3PM": 2.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 2.0,
-   "FGM": 3.0,
-   "FGA": 12.0,
-   "3PA": 5.0,
-   "FTA": 0.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 7.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

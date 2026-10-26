@@ -2,8 +2,23 @@
  "player_id": 1631108,
  "player": "Max Christie",
  "team": "Dallas",
- "opp": null,
- "lines": {},
+ "opp": "Miami",
+ "lines": {
+  "3PM": {
+   "line": 2.5,
+   "price": 2.2,
+   "book": "neds",
+   "price_over": 2.2,
+   "price_under": 1.58
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.95,
+   "book": "neds",
+   "price_over": 1.95,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -126,6 +141,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

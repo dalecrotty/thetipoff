@@ -10,19 +10,19 @@
   {
    "id": -774,
    "name": "Darius Acuff Jr.",
-   "games": 2,
+   "games": 3,
    "med_min": 36.0
   },
   {
    "id": 203897,
    "name": "Zach LaVine",
-   "games": 73,
-   "med_min": 35.4
+   "games": 74,
+   "med_min": 35.5
   },
   {
    "id": 1627734,
    "name": "Domantas Sabonis",
-   "games": 91,
+   "games": 92,
    "med_min": 35.0
   },
   {
@@ -46,7 +46,7 @@
   {
    "id": 1628370,
    "name": "Malik Monk",
-   "games": 128,
+   "games": 129,
    "med_min": 27.9
   },
   {
@@ -64,8 +64,8 @@
   {
    "id": 1631342,
    "name": "Daeqwon Plowden",
-   "games": 34,
-   "med_min": 26.1
+   "games": 35,
+   "med_min": 25.7
   },
   {
    "id": 203471,
@@ -82,13 +82,13 @@
   {
    "id": 1629631,
    "name": "De'Andre Hunter",
-   "games": 4,
-   "med_min": 24.8
+   "games": 5,
+   "med_min": 25.0
   },
   {
    "id": 1630173,
    "name": "Precious Achiuwa",
-   "games": 75,
+   "games": 76,
    "med_min": 23.7
   },
   {
@@ -136,8 +136,8 @@
   {
    "id": -758,
    "name": "Emanuel Sharp",
-   "games": 2,
-   "med_min": 15.5
+   "games": 3,
+   "med_min": 14.0
   },
   {
    "id": 202685,
@@ -150,6 +150,12 @@
    "name": "Patrick Baldwin Jr.",
    "games": 6,
    "med_min": 13.8
+  },
+  {
+   "id": 1642367,
+   "name": "Jonathan Mogbo",
+   "games": 2,
+   "med_min": 13.0
   },
   {
    "id": 1629234,
@@ -185,12 +191,6 @@
    "id": 1628365,
    "name": "Markelle Fultz",
    "games": 21,
-   "med_min": 8.0
-  },
-  {
-   "id": 1642367,
-   "name": "Jonathan Mogbo",
-   "games": 1,
    "med_min": 8.0
   },
   {
@@ -27717,6 +27717,151 @@
      "FGA": 26.0,
      "3PA": 11.0,
      "FTA": 12.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-10-25_memphis_vs_sacramento",
+   "lines": {
+    "1631342": {
+     "min": 16.0,
+     "PTS": 3.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629631": {
+     "min": 29.0,
+     "PTS": 7.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 7.0,
+     "3PA": 5.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1627734": {
+     "min": 35.0,
+     "PTS": 15.0,
+     "REB": 15.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 6.0,
+     "FGA": 8.0,
+     "3PA": 0.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1642367": {
+     "min": 18.0,
+     "PTS": 7.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 4.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628370": {
+     "min": 12.0,
+     "PTS": 6.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 8.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "203897": {
+     "min": 40.0,
+     "PTS": 37.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 13.0,
+     "FGA": 25.0,
+     "3PA": 10.0,
+     "FTA": 8.0,
+     "starter": true
+    },
+    "1630173": {
+     "min": 39.0,
+     "PTS": 12.0,
+     "REB": 10.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 3.0,
+     "TOV": 0.0,
+     "FGM": 6.0,
+     "FGA": 13.0,
+     "3PA": 0.0,
+     "FTA": 6.0,
+     "starter": true
+    },
+    "-758": {
+     "min": 14.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-774": {
+     "min": 36.0,
+     "PTS": 22.0,
+     "REB": 3.0,
+     "AST": 7.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 9.0,
+     "FGA": 23.0,
+     "3PA": 9.0,
+     "FTA": 2.0,
      "starter": true
     }
    }
