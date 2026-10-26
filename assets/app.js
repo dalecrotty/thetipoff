@@ -973,6 +973,48 @@ function hitCard(label, games, line) {
 }
 
 /* ---------- player hub page ---------- */
+// the find-a-player box (the hub and the players list): a name from the
+// datalist, or a unique part of one, goes to his page
+function wirePlayerSearch(idx, curId) {
+  const q = $("#playerQ");
+  if (!q) return;
+  const label = p => `${p.player} (${p.team})`;
+  const go = () => {
+    const v = q.value.trim().toLowerCase();
+    const hit = idx.find(p => label(p).toLowerCase() === v)
+      || (v.length > 2 && idx.filter(p => p.player.toLowerCase().includes(v)).length === 1
+          && idx.find(p => p.player.toLowerCase().includes(v)));
+    if (hit && String(hit.player_id) !== String(curId))
+      location.href = pHref(hit.player_id);
+  };
+  q.addEventListener("change", go);
+  q.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
+}
+
+// /players/: the search bar at the top (owner, 26 Oct 2026); typing also
+// narrows the team lists underneath, so the page works without the datalist
+async function initPlayers() {
+  const idx = await loadJSON("data/player_hub/index.json");
+  const label = p => `${p.player} (${p.team})`;
+  $("#playerList").innerHTML = idx.map(p =>
+    `<option value="${esc(label(p))}"></option>`).join("");
+  wirePlayerSearch(idx, null);
+  const q = $("#playerQ");
+  const sections = [...$$("main.static ul.plain")].map(ul => ({ ul, h: ul.previousElementSibling }));
+  q.addEventListener("input", () => {
+    const v = q.value.trim().toLowerCase().replace(/\s*\(.*$/, "");
+    for (const { ul, h } of sections) {
+      let shown = 0;
+      for (const li of ul.children) {
+        const on = !v || li.textContent.toLowerCase().includes(v);
+        li.hidden = !on; shown += on;
+      }
+      ul.hidden = !shown;
+      if (h && h.tagName === "H2") h.hidden = !shown;
+    }
+  });
+}
+
 async function initPlayer() {
   // a name page carries its player's id; the ID address forwards to the
   // name page where there is one, and to the players list with no id
@@ -990,17 +1032,7 @@ async function initPlayer() {
   const want = pinned || qid;
   const cur = idx.find(p => String(p.player_id) === want) || (pinned ? null : idx[0]);
   if (!cur) { const st = $("#pstatic"); if (st) st.hidden = false; return; }   // no hub: the page's own tables stand
-  const q = $("#playerQ");
-  const go = () => {
-    const v = q.value.trim().toLowerCase();
-    const hit = idx.find(p => label(p).toLowerCase() === v)
-      || (v.length > 2 && idx.filter(p => p.player.toLowerCase().includes(v)).length === 1
-          && idx.find(p => p.player.toLowerCase().includes(v)));
-    if (hit && String(hit.player_id) !== String(cur.player_id))
-      location.href = pHref(hit.player_id);
-  };
-  q.addEventListener("change", go);
-  q.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
+  wirePlayerSearch(idx, cur.player_id);
   const pid = cur.player_id;
   const h = await loadData(`hub/${pid}`);
   const st = $("#pstatic");
@@ -2351,7 +2383,7 @@ addEventListener("DOMContentLoaded", mountSignup);
 /* ---------- boot ---------- */
 addEventListener("DOMContentLoaded", () => {
   const page = document.body.dataset.page;
-  const boot = { board: initBoard, player: initPlayer,
+  const boot = { board: initBoard, player: initPlayer, players: initPlayers,
                  wow: initWow, record: initRecord, tip: initTip,
                  home: initHome, trends: initTrends, team: initTeam, schedule: initSchedule,
                  matchups: initMatchups, boxscore: initBoxscore }[page];
