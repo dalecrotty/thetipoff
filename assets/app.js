@@ -266,6 +266,16 @@ async function loadJSON(path) {
   return r.json();
 }
 
+/* Player links go to the player's name address (owner, 26 Oct 2026: "our
+   URL is player IDs, not the player name"): data/player_pages.json maps id
+   to /players/<name>.html, and "_full" says those are the full player
+   pages. Before the first build that writes them, and for a player without
+   one, the ID address (player.html?id=) stands. */
+let PLAYER_PAGES = {};
+const playerPagesReady = loadJSON("data/player_pages.json")
+  .then(p => { if (p && p._full) PLAYER_PAGES = p; }).catch(() => {});
+const pHref = id => PLAYER_PAGES[String(id)] || `/player.html?id=${id}`;
+
 /* The members' data (api.html#members). The public file under /data
    carries the free columns; the full payload comes from the data endpoint,
    open to everyone until 1 December and then to members. If the endpoint
@@ -410,7 +420,7 @@ const STAT_WORD = { PTS: "points", REB: "rebounds", AST: "assists",
 
 function playerCell(r) {
   const opp = r.opp ? ` v ${teamMeta(r.opp)[0]}` : "";
-  return `<td class="s pl"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a>${moveInfo(r)}
+  return `<td class="s pl"><a href="${pHref(r.player_id)}">${esc(r.player)}</a>${moveInfo(r)}
     <div class="sm">${teamBadge(r.team)}${esc(opp)}${
       r.minutes != null ? ` · ${fmt(r.minutes, 0)} min` : ""}${
       r.minutes_source && r.minutes_source !== "model"
@@ -849,7 +859,7 @@ function renderMovers(data) {
     <p class="sub">Predictions that moved after news. Updated ${
       ups.join(", ")} (${zoneName(new Date())}).${more ? ` <a href="#" id="moversAll">All ${m.length} →</a>` : ""}</p>
     <div class="tablewrap"><table><tbody>${m.map((r, i) => `<tr${i >= CAP ? ' class="more" hidden' : ""}>
-      <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a></td>
+      <td class="s"><a href="${pHref(r.player_id)}">${esc(r.player)}</a></td>
       <td class="s">${teamBadge(r.team)}</td>
       <td class="s">${r.stat}</td>
       <td class="num dim">${fmt(r.prior)}</td>
@@ -964,13 +974,22 @@ function hitCard(label, games, line) {
 
 /* ---------- player hub page ---------- */
 async function initPlayer() {
+  // a name page carries its player's id; the ID address forwards to the
+  // name page where there is one, and to the players list with no id
+  const pinned = document.body.dataset.pid;
+  const qid = new URLSearchParams(location.search).get("id");
+  if (!pinned && PLAYER_PAGES._full) {
+    const to = qid ? PLAYER_PAGES[qid] : "/players/";
+    if (to) { location.replace(to + location.hash); return; }
+  }
   await renderFreshness();
   const idx = await loadJSON("data/player_hub/index.json");
   const label = p => `${p.player} (${p.team})`;
   $("#playerList").innerHTML = idx.map(p =>
     `<option value="${esc(label(p))}"></option>`).join("");
-  const want = new URLSearchParams(location.search).get("id");
-  const cur = idx.find(p => String(p.player_id) === want) || idx[0];
+  const want = pinned || qid;
+  const cur = idx.find(p => String(p.player_id) === want) || (pinned ? null : idx[0]);
+  if (!cur) { const st = $("#pstatic"); if (st) st.hidden = false; return; }   // no hub: the page's own tables stand
   const q = $("#playerQ");
   const go = () => {
     const v = q.value.trim().toLowerCase();
@@ -978,21 +997,14 @@ async function initPlayer() {
       || (v.length > 2 && idx.filter(p => p.player.toLowerCase().includes(v)).length === 1
           && idx.find(p => p.player.toLowerCase().includes(v)));
     if (hit && String(hit.player_id) !== String(cur.player_id))
-      location.search = `?id=${hit.player_id}`;
+      location.href = pHref(hit.player_id);
   };
   q.addEventListener("change", go);
   q.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
   const pid = cur.player_id;
-  // the player's name address is the canonical one (/players/<name>.html,
-  // the page Google indexes); this ID address is the tool on top of it
-  loadJSON("data/player_pages.json").then(pages => {
-    const url = pages && pages[String(pid)];
-    if (!url) return;
-    let link = document.querySelector('link[rel="canonical"]');
-    if (!link) { link = document.createElement("link"); link.rel = "canonical"; document.head.appendChild(link); }
-    link.href = `https://thedropcoverage.com${url}`;
-  }).catch(() => {});
   const h = await loadData(`hub/${pid}`);
+  const st = $("#pstatic");
+  if (st) st.hidden = true;          // the page draws its own from here
   if (US) h.lines = h.lines_us || {};          // the US site: US books' lines
 
   $("#pname").textContent = h.player;
@@ -1635,7 +1647,7 @@ async function initBoxscore() {
         ${S.map(s => `<th>${s}</th>`).join("")}</tr></thead>
       <tbody>
         ${t.players.map(p => `<tr>
-          <td class="s"><a href="player.html?id=${p.player_id}">
+          <td class="s"><a href="${pHref(p.player_id)}">
             ${esc(p.player)}</a>${p.starter
               ? ' <span class="badge src">start</span>' : ""}</td>
           <td class="num">${fmt(p.min, 0)}</td>
@@ -1853,7 +1865,7 @@ async function initHome() {
     .sort((a, b) => b.edge - a.edge).slice(0, 6);
   $("#hEdges").innerHTML = `<div class="ph2"><span>Biggest edges tonight</span><a href="predictions.html">All predictions →</a></div>` + (rows.length
     ? `<table class="mini"><tbody>${rows.map(r => `<tr>
-        <td class="s"><a href="player.html?id=${r.player_id}">${esc(r.player)}</a> <span class="sm dim">${esc(STAT_WORD[r.stat] || r.stat)}</span></td>
+        <td class="s"><a href="${pHref(r.player_id)}">${esc(r.player)}</a> <span class="sm dim">${esc(STAT_WORD[r.stat] || r.stat)}</span></td>
         <td class="num"><span class="ours">${fmt(r.proj)}</span> <span class="dim">v ${fmt(r.line)}</span></td>
         <td class="num">${edgeSpan(r)}</td></tr>`).join("")}</tbody></table>`
     : `<p class="dim">Edges appear once the bookmakers post tonight's player lines.</p>`);
@@ -2343,8 +2355,10 @@ addEventListener("DOMContentLoaded", () => {
                  wow: initWow, record: initRecord, tip: initTip,
                  home: initHome, trends: initTrends, team: initTeam, schedule: initSchedule,
                  matchups: initMatchups, boxscore: initBoxscore }[page];
-  if (boot) boot().catch(e => {
+  if (boot) playerPagesReady.then(() => boot()).catch(e => {
     console.error(e);
+    const st = $("#pstatic");
+    if (st) { st.hidden = false; return; }      // a name page: its own tables stand
     const m = $("main");
     if (m) m.innerHTML = `<div class="empty">This page's numbers aren't
       published yet. The morning run publishes them here.</div>`;
