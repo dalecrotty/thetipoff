@@ -38,9 +38,11 @@
 <div class="fresh" id="fresh">Loading…</div>
 <main>
   <h1>Matchups — what each defence gives up to each position</h1>
-  <p class="sub">Per-minute production allowed to each position, as a %
-    above (+) or below (−) the league rate for that position. Thin
-    samples show as — rather than a fake number. Click a column to sort.</p>
+  <p class="sub">What each defence allows to each position and role, as a %
+    above (+) or below (−) what those players normally produce per
+    possession, with the sample's minutes beside it. Thin samples read
+    small and the thinnest show as — rather than a fake number. Click a
+    column to sort.</p>
   <div class="controls">
     <div class="chips" id="posChips"></div>
     <select id="winSel">
@@ -50,7 +52,7 @@
       <option value="last">Last season</option>
     </select>
     <select id="modeSel" aria-label="Reading">
-      <option value="pct">% v league</option>
+      <option value="pct">% v players' own rates</option>
       <option value="game">Per game</option>
     </select>
   </div>
@@ -59,6 +61,7 @@
       <thead><tr>
         <th class="s" data-k="team">Vs team</th>
         <th data-k="minutes" title="sample minutes in the cell">Min</th>
+        <th data-k="pace" title="the games' possessions per 48 minutes">Pace</th>
         <th data-k="PTS">PTS</th><th data-k="REB">REB</th>
         <th data-k="AST">AST</th><th data-k="3PM">3PM</th>
         <th data-k="STL">STL</th><th data-k="BLK">BLK</th>

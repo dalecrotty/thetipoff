@@ -812,3 +812,7 @@ table.savg { min-width: 760px; }
 
 /* the chance column: the side we favour, coloured like the edge */
 td .ov { color: var(--over-ink); } td .un { color: var(--under-ink); }
+
+/* matchups: a breath between the position chips and the role chips */
+.chips .chipgap { display: inline-block; width: 14px; }
+.chip.role { opacity: .92; }

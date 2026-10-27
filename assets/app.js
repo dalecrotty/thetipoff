@@ -1589,10 +1589,12 @@ async function initMatchups() {
   await renderFreshness();
   const data = await loadData("matchups");
   const S = ["PTS", "REB", "AST", "3PM", "STL", "BLK", "TOV"];
-  const ORDER = ["PG", "SG", "SF", "PF", "C", "G", "F"];
-  const positions = [...new Set(
-    Object.values(data.windows).flat().map(r => r.pos))]
-    .sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
+  const ORDER = ["PG", "SG", "SF", "PF", "C", "G", "F",
+                 "Ball handler", "Shooter", "Wing", "Rim big", "Stretch big"];
+  const allRows = Object.values(data.windows).flat();
+  const byOrder = (a, b) => ORDER.indexOf(a) - ORDER.indexOf(b);
+  const positions = [...new Set(allRows.filter(r => (r.kind || "position") === "position").map(r => r.pos))].sort(byOrder);
+  const roles = [...new Set(allRows.filter(r => r.kind === "role").map(r => r.pos))].sort(byOrder);
   let pos = positions[0];
   const winSel = $("#winSel");
   [...winSel.options].forEach(o => { if (!data.windows[o.value]) o.remove(); });
@@ -1600,7 +1602,19 @@ async function initMatchups() {
   if (data.coverage != null) {
     const note = document.createElement("p");
     note.className = "sub";
-    note.innerHTML = `Built from our own box scores. Positions are each
+    const own = data.basis === "own-rate per possession";
+    note.innerHTML = own
+      ? `Built from our own box scores. Each player-game is measured against what
+      that player normally produces per possession (his other games this season
+      and last), so the number is how much more (+) or less (−) a defence allowed
+      than those players' own rates, pooled over minutes and shrunk toward even
+      while the sample is thin. Pace is the games' possessions per 48 and is
+      shown on its own rather than mixed in. Positions are each player's usual
+      spot, covering <b>${(data.coverage * 100).toFixed(0)}%</b> of minutes;
+      roles come from each player's own profile${roles.length ? " (" + roles.map(r =>
+      `${esc(r)}: ${esc((data.roles || {})[r] || "")}`).join("; ") + ")" : ""}.
+      "Per game" is what the group scored against that defence per game.`
+      : `Built from our own box scores. Positions are each
       player's usual spot (PG/SG/SF/PF/C), covering <b>${(data.coverage * 100).toFixed(0)}%</b>
       of minutes played; players without one are left out rather than guessed.
       "% v league" is per minute against the league rate for the position;
@@ -1608,7 +1622,9 @@ async function initMatchups() {
     $("#posChips").parentElement.after(note);
   }
   $("#posChips").innerHTML = positions.map(p =>
-    `<button class="chip" data-p="${esc(p)}">${esc(p)}</button>`).join("");
+    `<button class="chip" data-p="${esc(p)}">${esc(p)}</button>`).join("")
+    + (roles.length ? `<span class="chipgap" aria-hidden="true"></span>` + roles.map(p =>
+    `<button class="chip role" data-p="${esc(p)}">${esc(p)}</button>`).join("") : "");
 
   let rows = [], sortK = "PTS", sortDir = -1;
   // two readings of the same cell: % against the league rate for the
@@ -1630,21 +1646,25 @@ async function initMatchups() {
     rows = data.windows[win]
       .filter(r => r.pos === pos)
       .sort((a, b) => {
-        const kk = sortK === "minutes" || sortK === "team" ? sortK : key(sortK);
+        const kk = sortK === "minutes" || sortK === "team" || sortK === "pace" ? sortK : key(sortK);
         const x = a[kk], y = b[kk];
         if (x == null && y == null) return 0;
         if (x == null) return 1;
         if (y == null) return -1;
         return (x < y ? -1 : x > y ? 1 : 0) * -sortDir;
       });
-    const lgRow = mode === "pct" ? "" : `<tr class="thin"><td class="s dim">League average, ${esc(pos)}</td><td class="num dim"></td>${
+    const lgPace = (data.league || {})[win]?.pace;
+    const pcell = v => v == null ? `<td class="num dim">—</td>`
+      : `<td class="num ${lgPace != null && v > lgPace * 1.02 ? "pos" : lgPace != null && v < lgPace * 0.98 ? "neg" : ""}">${v.toFixed(1)}</td>`;
+    const lgRow = mode === "pct" ? "" : `<tr class="thin"><td class="s dim">League average, ${esc(pos)}</td><td class="num dim"></td><td class="num dim">${lgPace == null ? "" : lgPace.toFixed(1)}</td>${
       S.map(s => `<td class="num dim">${lg[s] == null ? "—" : fmt(lg[s])}</td>`).join("")}</tr>`;
     $("#mx tbody").innerHTML = (rows.map(r => `<tr>
       <td class="s">${teamBadge(r.team, {withName: true})}</td>
       <td class="num dim">${mode === "pct" ? (r.minutes ?? "—") : (r.games ?? "—")}</td>
+      ${pcell(r.pace)}
       ${S.map(s => mode === "pct" ? cell(r[s]) : gcell(r["g_" + s], lg[s])).join("")}
     </tr>`).join("") + lgRow) ||
-      `<tr><td colspan="9" class="empty">No teams meet the sample floor
+      `<tr><td colspan="10" class="empty">No teams meet the sample floor
        in this window.</td></tr>`;
     const th = $("#mx th[data-k=minutes]");
     if (th) th.textContent = mode === "pct" ? "Min" : "G";
