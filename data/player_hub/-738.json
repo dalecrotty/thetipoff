@@ -2,8 +2,305 @@
  "player_id": -738,
  "player": "Christian Anderson",
  "team": "Charlotte",
- "opp": "Washington",
+ "projections": {
+  "3PM": {
+   "mean": 0.46,
+   "floor": 0.0,
+   "ceiling": 1.8
+  },
+  "AST": {
+   "mean": 1.26,
+   "floor": 0.0,
+   "ceiling": 3.07
+  },
+  "BLK": {
+   "mean": 0.24,
+   "floor": 0.01,
+   "ceiling": 1.03
+  },
+  "PTS": {
+   "mean": 4.23,
+   "floor": 0.0,
+   "ceiling": 9.95
+  },
+  "REB": {
+   "mean": 1.96,
+   "floor": 0.19,
+   "ceiling": 4.18
+  },
+  "STL": {
+   "mean": 0.56,
+   "floor": 0.0,
+   "ceiling": 2.0
+  },
+  "TOV": {
+   "mean": 1.03,
+   "floor": 0.0,
+   "ceiling": 2.04
+  },
+  "PRA": {
+   "mean": 7.46,
+   "floor": 0.0,
+   "ceiling": 16.18
+  },
+  "PR": {
+   "mean": 6.2,
+   "floor": 0.0,
+   "ceiling": 14.31
+  },
+  "PA": {
+   "mean": 5.5,
+   "floor": 0.0,
+   "ceiling": 12.28
+  },
+  "RA": {
+   "mean": 3.23,
+   "floor": 0.48,
+   "ceiling": 6.53
+  }
+ },
+ "minutes": {
+  "value": 12,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 3,
+   "min_pg": 10.7,
+   "PTS": {
+    "pg": 0.67,
+    "pm": 0.062
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.094
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.125
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.67,
+    "pm": 0.062
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.188
+   }
+  },
+  "l10": {
+   "games": 3,
+   "min_pg": 10.7,
+   "PTS": {
+    "pg": 0.67,
+    "pm": 0.062
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.094
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.125
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.67,
+    "pm": 0.062
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.188
+   }
+  },
+  "l5": {
+   "games": 3,
+   "min_pg": 10.7,
+   "PTS": {
+    "pg": 0.67,
+    "pm": 0.062
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.094
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.125
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.67,
+    "pm": 0.062
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.188
+   }
+  },
+  "home": {
+   "games": 2,
+   "min_pg": 9.5,
+   "PTS": {
+    "pg": 1.0,
+    "pm": 0.105
+   },
+   "REB": {
+    "pg": 0.5,
+    "pm": 0.053
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.105
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.053
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.211
+   }
+  },
+  "away": {
+   "games": 1,
+   "min_pg": 13.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.154
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.154
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 2.0,
+    "pm": 0.154
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.154
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2026-10-21_brooklyn_vs_charlotte",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 13.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 0.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2026-10-23_atlanta_vs_charlotte",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 16.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 3.0,
+   "FGM": 1.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-10-24_charlotte_vs_miami",
+   "starter": false,
+   "rest": "0",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 2.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -78,6 +375,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Washington"
 }

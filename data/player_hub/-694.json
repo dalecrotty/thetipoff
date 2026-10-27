@@ -2,8 +2,270 @@
  "player_id": -694,
  "player": "Marcus Garrett",
  "team": "Charlotte",
- "opp": null,
+ "projections": {},
+ "minutes": null,
+ "splits": {
+  "season": {
+   "games": 4,
+   "min_pg": 19.8,
+   "PTS": {
+    "pg": 7.0,
+    "pm": 0.354
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.076
+   },
+   "AST": {
+    "pg": 3.25,
+    "pm": 0.165
+   },
+   "3PM": {
+    "pg": 0.75,
+    "pm": 0.038
+   },
+   "STL": {
+    "pg": 0.75,
+    "pm": 0.038
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.025
+   },
+   "TOV": {
+    "pg": 1.5,
+    "pm": 0.076
+   }
+  },
+  "l10": {
+   "games": 4,
+   "min_pg": 19.8,
+   "PTS": {
+    "pg": 7.0,
+    "pm": 0.354
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.076
+   },
+   "AST": {
+    "pg": 3.25,
+    "pm": 0.165
+   },
+   "3PM": {
+    "pg": 0.75,
+    "pm": 0.038
+   },
+   "STL": {
+    "pg": 0.75,
+    "pm": 0.038
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.025
+   },
+   "TOV": {
+    "pg": 1.5,
+    "pm": 0.076
+   }
+  },
+  "l5": {
+   "games": 4,
+   "min_pg": 19.8,
+   "PTS": {
+    "pg": 7.0,
+    "pm": 0.354
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.076
+   },
+   "AST": {
+    "pg": 3.25,
+    "pm": 0.165
+   },
+   "3PM": {
+    "pg": 0.75,
+    "pm": 0.038
+   },
+   "STL": {
+    "pg": 0.75,
+    "pm": 0.038
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.025
+   },
+   "TOV": {
+    "pg": 1.5,
+    "pm": 0.076
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 24.0,
+   "PTS": {
+    "pg": 12.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 3.0,
+    "pm": 0.125
+   },
+   "AST": {
+    "pg": 3.0,
+    "pm": 0.125
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.042
+   },
+   "STL": {
+    "pg": 3.0,
+    "pm": 0.125
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.042
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.083
+   }
+  },
+  "away": {
+   "games": 3,
+   "min_pg": 18.3,
+   "PTS": {
+    "pg": 5.33,
+    "pm": 0.291
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.055
+   },
+   "AST": {
+    "pg": 3.33,
+    "pm": 0.182
+   },
+   "3PM": {
+    "pg": 0.67,
+    "pm": 0.036
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.018
+   },
+   "TOV": {
+    "pg": 1.33,
+    "pm": 0.073
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2025-03-12",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2025-03-12_atlanta_vs_charlotte",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 19.0,
+   "PTS": 4.0,
+   "REB": 1.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 2.0,
+   "FGA": 6.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-14",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2025-03-14_charlotte_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 19.0,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-16",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2025-03-16_charlotte_vs_la-clippers",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 17.0,
+   "PTS": 7.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 5.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-18",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2025-03-18_atlanta_vs_charlotte",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 24.0,
+   "PTS": 12.0,
+   "REB": 3.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 10.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2024-25",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2025-03-18",
@@ -102,6 +364,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": null
 }

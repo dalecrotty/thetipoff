@@ -3,7 +3,29 @@
  "player": "Mitchell Robinson",
  "team": "Boston",
  "opp": "Chicago",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 7.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PR": {
+   "line": 14.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-23",
@@ -126,6 +148,17 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
