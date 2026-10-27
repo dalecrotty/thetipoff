@@ -4,6 +4,13 @@
  "team": "LA Lakers",
  "opp": "Portland",
  "lines": {
+  "RA": {
+   "line": 11.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 1.9
+  },
   "REB": {
    "line": 10.5,
    "price": 2.05,
@@ -13,10 +20,10 @@
   },
   "PR": {
    "line": 22.5,
-   "price": 1.8,
-   "book": "neds",
-   "price_over": 1.8,
-   "price_under": 1.95
+   "price": 1.77,
+   "book": "ladbrokes_au",
+   "price_over": 1.77,
+   "price_under": 1.98
   },
   "PRA": {
    "line": 24.5,
@@ -25,12 +32,26 @@
    "price_over": 1.8,
    "price_under": 1.96
   },
+  "AST": {
+   "line": 1.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
   "PTS": {
    "line": 12.5,
-   "price": 1.83,
+   "price": 1.8,
    "book": "neds",
-   "price_over": 1.83,
-   "price_under": 1.91
+   "price_over": 1.8,
+   "price_under": 1.94
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.87
   }
  },
  "recent_games": [
@@ -163,6 +184,11 @@
   },
   "REB": {
    "line": 10.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
    "over": 2,
    "n": 5
   }
