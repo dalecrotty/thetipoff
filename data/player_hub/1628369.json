@@ -4,13 +4,6 @@
  "team": "Boston",
  "opp": "Brooklyn",
  "lines": {
-  "AST": {
-   "line": 7.5,
-   "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 2.05,
-   "price_under": 1.74
-  },
   "3PM": {
    "line": 2.5,
    "price": 2.1,
@@ -18,47 +11,54 @@
    "price_over": 1.62,
    "price_under": 2.1
   },
-  "PRA": {
-   "line": 43.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PA": {
-   "line": 34.5,
-   "price": 1.85,
-   "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85
+  "AST": {
+   "line": 7.5,
+   "price": 1.66,
+   "book": "unibet",
+   "price_over": 2.14,
+   "price_under": 1.66
   },
   "RA": {
-   "line": 16.5,
-   "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.74
-  },
-  "PTS": {
-   "line": 27.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
-  },
-  "PR": {
-   "line": 36.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.8
+   "line": 14.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.02
   },
   "REB": {
    "line": 8.5,
-   "price": 1.96,
+   "price": 2.05,
    "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.73
+  },
+  "PA": {
+   "line": 34.5,
+   "price": 1.79,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.79
+  },
+  "PTS": {
+   "line": 26.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "PR": {
+   "line": 35.5,
+   "price": 1.96,
+   "book": "sportsbet",
    "price_over": 1.96,
-   "price_under": 1.78
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 42.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
   }
  },
  "recent_games": [
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 27.5,
+   "line": 26.5,
    "over": 1,
    "n": 5
   },
