@@ -1609,8 +1609,10 @@ async function initMatchups() {
       games this season for the season and month views, last season's for last
       season, both faded together for the model view), so the number is how much
       more (+) or less (−) a defence allowed than those players' own rates, pooled
-      over minutes and shrunk toward even while the sample is thin. Pace is the games' possessions per 48 and is
-      shown on its own rather than mixed in. Positions are each player's usual
+      over minutes. Early in the season the number is pulled toward even until the
+      sample builds; the raw figure sits in each cell's tooltip and under "raw %",
+      so a small number beside a bigger one elsewhere is method, not doubt. Pace
+      is the games' possessions per 48 and is shown on its own rather than mixed in. Positions are each player's usual
       spot, covering <b>${(data.coverage * 100).toFixed(0)}%</b> of minutes;
       roles come from each player's own profile${roles.length ? " (" + roles.map(r =>
       `${esc(r)}: ${esc((data.roles || {})[r] || "")}`).join("; ") + ")" : ""}.
@@ -1633,16 +1635,20 @@ async function initMatchups() {
   let mode = "pct";
   const modeSel = $("#modeSel");
   if (modeSel) modeSel.onchange = () => { mode = modeSel.value; render(); };
-  const cell = v => v == null ? `<td class="num dim">—</td>`
-    : `<td class="num ${v > 0.03 ? "pos" : v < -0.03 ? "neg" : ""}">
-         ${(v > 0 ? "+" : "") + (v * 100).toFixed(0)}%</td>`;
+  const pct = v => (v > 0 ? "+" : "") + (v * 100).toFixed(0) + "%";
+  const cell = (v, raw, mins) => v == null ? `<td class="num dim">—</td>`
+    : `<td class="num ${v > 0.03 ? "pos" : v < -0.03 ? "neg" : ""}" title="${raw == null ? "" :
+         `raw ${pct(raw)} from ${mins ?? "—"} min; pulled toward even until the sample builds`}">
+         ${pct(v)}</td>`;
+  const rcell = v => v == null ? `<td class="num dim">—</td>`
+    : `<td class="num dim ${v > 0.03 ? "pos" : v < -0.03 ? "neg" : ""}">${pct(v)}</td>`;
   const gcell = (v, lg) => v == null ? `<td class="num dim">—</td>`
     : `<td class="num ${lg != null && v > lg * 1.03 ? "pos" : lg != null && v < lg * 0.97 ? "neg" : ""}">${fmt(v)}</td>`;
   const render = () => {
     $$(".chip", $("#posChips")).forEach(c =>
       c.classList.toggle("on", c.dataset.p === pos));
     const win = $("#winSel").value;
-    const key = s => mode === "pct" ? s : "g_" + s;
+    const key = s => mode === "pct" ? s : mode === "raw" ? "raw_" + s : "g_" + s;
     const lg = (data.league || {})[win]?.[pos] || {};
     rows = data.windows[win]
       .filter(r => r.pos === pos)
@@ -1657,18 +1663,18 @@ async function initMatchups() {
     const lgPace = (data.league || {})[win]?.pace;
     const pcell = v => v == null ? `<td class="num dim">—</td>`
       : `<td class="num ${lgPace != null && v > lgPace * 1.02 ? "pos" : lgPace != null && v < lgPace * 0.98 ? "neg" : ""}">${v.toFixed(1)}</td>`;
-    const lgRow = mode === "pct" ? "" : `<tr class="thin"><td class="s dim">League average, ${esc(pos)}</td><td class="num dim"></td><td class="num dim">${lgPace == null ? "" : lgPace.toFixed(1)}</td>${
+    const lgRow = mode !== "game" ? "" : `<tr class="thin"><td class="s dim">League average, ${esc(pos)}</td><td class="num dim"></td><td class="num dim">${lgPace == null ? "" : lgPace.toFixed(1)}</td>${
       S.map(s => `<td class="num dim">${lg[s] == null ? "—" : fmt(lg[s])}</td>`).join("")}</tr>`;
     $("#mx tbody").innerHTML = (rows.map(r => `<tr>
       <td class="s">${teamBadge(r.team, {withName: true})}</td>
-      <td class="num dim">${mode === "pct" ? (r.minutes ?? "—") : (r.games ?? "—")}</td>
+      <td class="num dim">${mode === "game" ? (r.games ?? "—") : (r.minutes ?? "—")}</td>
       ${pcell(r.pace)}
-      ${S.map(s => mode === "pct" ? cell(r[s]) : gcell(r["g_" + s], lg[s])).join("")}
+      ${S.map(s => mode === "pct" ? cell(r[s], r["raw_" + s], r.minutes) : mode === "raw" ? rcell(r["raw_" + s]) : gcell(r["g_" + s], lg[s])).join("")}
     </tr>`).join("") + lgRow) ||
       `<tr><td colspan="10" class="empty">No teams meet the sample floor
        in this window.</td></tr>`;
     const th = $("#mx th[data-k=minutes]");
-    if (th) th.textContent = mode === "pct" ? "Min" : "G";
+    if (th) th.textContent = mode === "game" ? "G" : "Min";
   };
   $$("th[data-k]", $("#mx")).forEach(th => th.onclick = () => {
     const k = th.dataset.k;
