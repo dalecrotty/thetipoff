@@ -2,8 +2,65 @@
  "player_id": 1628368,
  "player": "De'Aaron Fox",
  "team": "San Antonio",
- "opp": null,
- "lines": {},
+ "opp": "Sacramento",
+ "lines": {
+  "AST": {
+   "line": 6.5,
+   "price": 2.15,
+   "book": "pointsbetau",
+   "price_over": 2.15,
+   "price_under": 1.69
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.71
+  },
+  "PA": {
+   "line": 22.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.98,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.98
+  },
+  "PRA": {
+   "line": 26.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 19.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

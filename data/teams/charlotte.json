@@ -4,19 +4,13 @@
   {
    "id": 203471,
    "name": "Dennis Schroder",
-   "games": 3,
-   "med_min": 35.0
-  },
-  {
-   "id": 1629675,
-   "name": "Naz Reid",
-   "games": 3,
-   "med_min": 33.0
+   "games": 4,
+   "med_min": 35.5
   },
   {
    "id": 1641706,
    "name": "Brandon Miller",
-   "games": 97,
+   "games": 98,
    "med_min": 32.7
   },
   {
@@ -32,6 +26,12 @@
    "med_min": 32.0
   },
   {
+   "id": 1629675,
+   "name": "Naz Reid",
+   "games": 4,
+   "med_min": 31.0
+  },
+  {
    "id": 1630163,
    "name": "LaMelo Ball",
    "games": 121,
@@ -40,8 +40,8 @@
   {
    "id": 1628960,
    "name": "Grayson Allen",
-   "games": 3,
-   "med_min": 29.0
+   "games": 4,
+   "med_min": 28.5
   },
   {
    "id": 1631109,
@@ -82,25 +82,19 @@
   {
    "id": 1631217,
    "name": "Moussa Diabate",
-   "games": 148,
+   "games": 149,
    "med_min": 22.5
   },
   {
    "id": 1642883,
    "name": "Sion James",
-   "games": 87,
-   "med_min": 22.1
+   "games": 88,
+   "med_min": 22.2
   },
   {
    "id": 1629012,
    "name": "Collin Sexton",
    "games": 42,
-   "med_min": 21.4
-  },
-  {
-   "id": 1641750,
-   "name": "Ryan Kalkbrenner",
-   "games": 74,
    "med_min": 21.4
   },
   {
@@ -114,6 +108,12 @@
    "name": "Grant Williams",
    "games": 54,
    "med_min": 20.7
+  },
+  {
+   "id": 1641750,
+   "name": "Ryan Kalkbrenner",
+   "games": 75,
+   "med_min": 20.6
   },
   {
    "id": 1629632,
@@ -160,7 +160,7 @@
   {
    "id": 1642275,
    "name": "Tidjane Salaun",
-   "games": 100,
+   "games": 101,
    "med_min": 18.0
   },
   {
@@ -173,12 +173,6 @@
    "id": 203994,
    "name": "Jusuf Nurkic",
    "games": 26,
-   "med_min": 17.0
-  },
-  {
-   "id": 1626220,
-   "name": "Royce O'Neale",
-   "games": 3,
    "med_min": 17.0
   },
   {
@@ -206,15 +200,21 @@
    "med_min": 14.4
   },
   {
-   "id": -738,
-   "name": "Christian Anderson",
-   "games": 3,
-   "med_min": 13.0
+   "id": 1626220,
+   "name": "Royce O'Neale",
+   "games": 4,
+   "med_min": 14.0
   },
   {
    "id": -791,
    "name": "Hannes Steinbach",
    "games": 1,
+   "med_min": 12.0
+  },
+  {
+   "id": -738,
+   "name": "Christian Anderson",
+   "games": 4,
    "med_min": 12.0
   },
   {
@@ -29513,6 +29513,166 @@
      "FGM": 0.0,
      "FGA": 2.0,
      "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-26",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-10-26_charlotte_vs_washington",
+   "lines": {
+    "1641706": {
+     "min": 36.0,
+     "PTS": 39.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 5.0,
+     "STL": 3.0,
+     "BLK": 2.0,
+     "TOV": 2.0,
+     "FGM": 15.0,
+     "FGA": 28.0,
+     "3PA": 10.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "203471": {
+     "min": 36.0,
+     "PTS": 8.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 15.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1628960": {
+     "min": 28.0,
+     "PTS": 15.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 8.0,
+     "3PA": 5.0,
+     "FTA": 7.0,
+     "starter": false
+    },
+    "1631217": {
+     "min": 35.0,
+     "PTS": 11.0,
+     "REB": 17.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 3.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 6.0,
+     "3PA": 0.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1629675": {
+     "min": 29.0,
+     "PTS": 18.0,
+     "REB": 12.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 8.0,
+     "FGA": 22.0,
+     "3PA": 8.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1626220": {
+     "min": 7.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1641750": {
+     "min": 13.0,
+     "PTS": 6.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 4.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642883": {
+     "min": 29.0,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642275": {
+     "min": 16.0,
+     "PTS": 5.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-738": {
+     "min": 11.0,
+     "PTS": 3.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 3.0,
      "FTA": 0.0,
      "starter": false
     }

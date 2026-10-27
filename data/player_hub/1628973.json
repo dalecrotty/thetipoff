@@ -2,8 +2,65 @@
  "player_id": 1628973,
  "player": "Jalen Brunson",
  "team": "New York",
- "opp": null,
- "lines": {},
+ "opp": "Detroit",
+ "lines": {
+  "PTS": {
+   "line": 24.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PR": {
+   "line": 28.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.63,
+   "book": "pointsbetau",
+   "price_over": 2.25,
+   "price_under": 1.63
+  },
+  "PA": {
+   "line": 30.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.87
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 34.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.56,
+   "book": "pointsbetau",
+   "price_over": 2.4,
+   "price_under": 1.56
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-25",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 24.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
