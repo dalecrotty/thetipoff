@@ -2,65 +2,461 @@
  "player_id": -737,
  "player": "Darryn Peterson",
  "team": "Utah",
- "opp": "Memphis",
- "lines": {
-  "REB": {
-   "line": 3.5,
-   "price": 1.78,
-   "book": "neds",
-   "price_over": 1.78,
-   "price_under": 1.98
+ "projections": {
+  "3PM": {
+   "mean": 0.9,
+   "floor": 0.01,
+   "ceiling": 2.16
   },
+  "AST": {
+   "mean": 2.73,
+   "floor": 0.34,
+   "ceiling": 4.96
+  },
+  "BLK": {
+   "mean": 0.45,
+   "floor": 0.0,
+   "ceiling": 1.06
+  },
+  "PTS": {
+   "mean": 13.23,
+   "floor": 5.15,
+   "ceiling": 22.24
+  },
+  "REB": {
+   "mean": 4.85,
+   "floor": 1.62,
+   "ceiling": 8.0
+  },
+  "STL": {
+   "mean": 1.15,
+   "floor": 0.02,
+   "ceiling": 2.99
+  },
+  "TOV": {
+   "mean": 1.31,
+   "floor": 0.05,
+   "ceiling": 3.04
+  },
+  "PRA": {
+   "mean": 20.82,
+   "floor": 10.99,
+   "ceiling": 31.4
+  },
+  "PR": {
+   "mean": 18.08,
+   "floor": 8.93,
+   "ceiling": 27.95
+  },
+  "PA": {
+   "mean": 15.97,
+   "floor": 6.98,
+   "ceiling": 25.03
+  },
+  "RA": {
+   "mean": 7.59,
+   "floor": 3.47,
+   "ceiling": 12.31
+  }
+ },
+ "minutes": {
+  "value": 31,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 3,
+   "min_pg": 30.3,
+   "PTS": {
+    "pg": 10.67,
+    "pm": 0.352
+   },
+   "REB": {
+    "pg": 3.33,
+    "pm": 0.11
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.066
+   },
+   "3PM": {
+    "pg": 0.33,
+    "pm": 0.011
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.033
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.022
+   }
+  },
+  "l10": {
+   "games": 3,
+   "min_pg": 30.3,
+   "PTS": {
+    "pg": 10.67,
+    "pm": 0.352
+   },
+   "REB": {
+    "pg": 3.33,
+    "pm": 0.11
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.066
+   },
+   "3PM": {
+    "pg": 0.33,
+    "pm": 0.011
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.033
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.022
+   }
+  },
+  "l5": {
+   "games": 3,
+   "min_pg": 30.3,
+   "PTS": {
+    "pg": 10.67,
+    "pm": 0.352
+   },
+   "REB": {
+    "pg": 3.33,
+    "pm": 0.11
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.066
+   },
+   "3PM": {
+    "pg": 0.33,
+    "pm": 0.011
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.033
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.022
+   }
+  },
+  "home": {
+   "games": 2,
+   "min_pg": 30.0,
+   "PTS": {
+    "pg": 11.5,
+    "pm": 0.383
+   },
+   "REB": {
+    "pg": 3.0,
+    "pm": 0.1
+   },
+   "AST": {
+    "pg": 1.5,
+    "pm": 0.05
+   },
+   "3PM": {
+    "pg": 0.5,
+    "pm": 0.017
+   },
+   "STL": {
+    "pg": 1.5,
+    "pm": 0.05
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.017
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.017
+   }
+  },
+  "away": {
+   "games": 1,
+   "min_pg": 31.0,
+   "PTS": {
+    "pg": 9.0,
+    "pm": 0.29
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.129
+   },
+   "AST": {
+    "pg": 3.0,
+    "pm": 0.097
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.032
+   }
+  }
+ },
+ "lines": {
   "3PM": {
    "line": 1.5,
-   "price": 1.5,
+   "p_over": 0.229,
+   "p_under": 0.771,
+   "fair_over": 0.367,
+   "fair_under": 0.633,
+   "price_over": 2.55,
+   "price_under": 1.48,
+   "side": "under",
+   "price": 1.48,
+   "book": "unibet",
+   "edge": 0.1379,
+   "tier": null
+  },
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.673,
+   "p_under": 0.327,
+   "fair_over": 0.541,
+   "fair_under": 0.459,
+   "price_over": 1.74,
+   "price_under": 2.05,
+   "side": "over",
+   "price": 1.74,
    "book": "pointsbetau",
-   "price_over": 2.5,
-   "price_under": 1.5
+   "edge": 0.1326,
+   "tier": null
   },
   "PR": {
    "line": 15.5,
-   "price": 1.85,
+   "p_over": 0.641,
+   "p_under": 0.359,
+   "fair_over": 0.531,
+   "fair_under": 0.469,
+   "price_over": 1.77,
+   "price_under": 2.0,
+   "side": "over",
+   "price": 1.77,
    "book": "pointsbetau",
-   "price_over": 1.85,
-   "price_under": 1.85
+   "edge": 0.1108,
+   "tier": null
   },
   "AST": {
    "line": 3.5,
-   "price": 1.63,
-   "book": "pointsbetau",
-   "price_over": 2.25,
-   "price_under": 1.63
-  },
-  "PTS": {
-   "line": 11.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.88
-  },
-  "PRA": {
-   "line": 18.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.8,
-   "price_under": 1.95
+   "p_over": 0.298,
+   "p_under": 0.702,
+   "fair_over": 0.399,
+   "fair_under": 0.601,
+   "price_over": 2.35,
+   "price_under": 1.56,
+   "side": "under",
+   "price": 1.56,
+   "book": "unibet",
+   "edge": 0.1012,
+   "tier": null
   },
   "RA": {
    "line": 6.5,
-   "price": 1.72,
-   "book": "unibet",
-   "price_over": 1.72,
-   "price_under": 2.05
+   "p_over": 0.632,
+   "p_under": 0.368,
+   "fair_over": 0.536,
+   "fair_under": 0.464,
+   "price_over": 1.75,
+   "price_under": 2.02,
+   "side": "over",
+   "price": 1.75,
+   "book": "ladbrokes_au",
+   "edge": 0.0966,
+   "tier": null
+  },
+  "PRA": {
+   "line": 18.5,
+   "p_over": 0.619,
+   "p_under": 0.381,
+   "fair_over": 0.533,
+   "fair_under": 0.467,
+   "price_over": 1.75,
+   "price_under": 2.0,
+   "side": "over",
+   "price": 1.75,
+   "book": "ladbrokes_au",
+   "edge": 0.0856,
+   "tier": null
+  },
+  "PTS": {
+   "line": 11.5,
+   "p_over": 0.606,
+   "p_under": 0.394,
+   "fair_over": 0.52,
+   "fair_under": 0.48,
+   "price_over": 1.8,
+   "price_under": 1.95,
+   "side": "over",
+   "price": 1.8,
+   "book": "tab",
+   "edge": 0.086,
+   "tier": null
   },
   "PA": {
    "line": 14.5,
-   "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 1.74,
-   "price_under": 1.95
+   "p_over": 0.583,
+   "p_under": 0.417,
+   "fair_over": 0.533,
+   "fair_under": 0.467,
+   "price_over": 1.75,
+   "price_under": 2.0,
+   "side": "over",
+   "price": 1.75,
+   "book": "ladbrokes_au",
+   "edge": 0.0496,
+   "tier": null
   }
  },
+ "lines_us": {
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.673,
+   "p_under": 0.327,
+   "fair_over": 0.566,
+   "fair_under": 0.434,
+   "price_over": 1.65,
+   "price_under": 2.15,
+   "side": "over",
+   "price": 1.65,
+   "book": "betright",
+   "edge": 0.1077,
+   "tier": null
+  },
+  "AST": {
+   "line": 2.5,
+   "p_over": 0.499,
+   "p_under": 0.501,
+   "fair_over": 0.576,
+   "fair_under": 0.424,
+   "price_over": 1.62,
+   "price_under": 2.2,
+   "side": "under",
+   "price": 2.2,
+   "book": "betright",
+   "edge": 0.0765,
+   "tier": null
+  },
+  "PTS": {
+   "line": 12.5,
+   "p_over": 0.545,
+   "p_under": 0.455,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.96,
+   "book": "betright",
+   "edge": 0.0665,
+   "tier": null
+  }
+ },
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-10-21_memphis_vs_utah",
+   "starter": true,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 31.0,
+   "PTS": 9.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 7.0,
+   "3PA": 1.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2026-10-23_new-orleans_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 30.0,
+   "PTS": 15.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 6.0,
+   "FGA": 12.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-25",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-10-25_la-lakers_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 30.0,
+   "PTS": 8.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 13.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-25",
@@ -135,27 +531,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 11.5,
-   "over": 1,
-   "n": 3
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 1,
-   "n": 3
-  },
-  "AST": {
-   "line": 3.5,
-   "over": 0,
-   "n": 3
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 0,
-   "n": 3
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Memphis"
 }
