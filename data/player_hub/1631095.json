@@ -3,7 +3,36 @@
  "player": "Jabari Smith Jr.",
  "team": "Houston",
  "opp": "Atlanta",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 13.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
+  "PR": {
+   "line": 19.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.88
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.59,
+   "book": "pointsbetau",
+   "price_over": 1.59,
+   "price_under": 2.3
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -126,6 +155,22 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

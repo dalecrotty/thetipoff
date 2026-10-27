@@ -3,7 +3,64 @@
  "player": "Andrew Wiggins",
  "team": "Miami",
  "opp": "Dallas",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 11.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 16.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.95,
+   "book": "unibet",
+   "price_over": 1.95,
+   "price_under": 1.77
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.78,
+   "book": "unibet",
+   "price_over": 1.96,
+   "price_under": 1.78
+  },
+  "PRA": {
+   "line": 19.5,
+   "price": 2.02,
+   "book": "unibet",
+   "price_over": 2.02,
+   "price_under": 1.73
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.75
+  },
+  "RA": {
+   "line": 6.5,
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.81
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.57,
+   "book": "unibet",
+   "price_over": 1.57,
+   "price_under": 2.28
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

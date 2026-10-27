@@ -3,7 +3,36 @@
  "player": "Rudy Gobert",
  "team": "Minnesota",
  "opp": "Cleveland",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 11.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 22.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PR": {
+   "line": 21.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-25",
@@ -126,6 +155,17 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 11.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

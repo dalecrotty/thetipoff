@@ -3,7 +3,64 @@
  "player": "Davion Mitchell",
  "team": "Miami",
  "opp": "Dallas",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 10.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 13.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 20.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PA": {
+   "line": 17.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.3,
+   "book": "pointsbetau",
+   "price_over": 2.3,
+   "price_under": 1.59
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.81
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 2.05,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.7
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.05
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-24",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 5,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

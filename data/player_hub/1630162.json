@@ -3,7 +3,64 @@
  "player": "Anthony Edwards",
  "team": "Minnesota",
  "opp": "Cleveland",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.7
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 1.76,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  },
+  "PTS": {
+   "line": 28.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 1.63,
+   "book": "pointsbetau",
+   "price_over": 2.25,
+   "price_under": 1.63
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.76,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  },
+  "PR": {
+   "line": 32.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PRA": {
+   "line": 35.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PA": {
+   "line": 30.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-25",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 28.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
