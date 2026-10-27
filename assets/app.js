@@ -1605,10 +1605,11 @@ async function initMatchups() {
     const own = data.basis === "own-rate per possession";
     note.innerHTML = own
       ? `Built from our own box scores. Each player-game is measured against what
-      that player normally produces per possession (his other games this season
-      and last), so the number is how much more (+) or less (−) a defence allowed
-      than those players' own rates, pooled over minutes and shrunk toward even
-      while the sample is thin. Pace is the games' possessions per 48 and is
+      that player normally produces per possession in the same window (his other
+      games this season for the season and month views, last season's for last
+      season, both faded together for the model view), so the number is how much
+      more (+) or less (−) a defence allowed than those players' own rates, pooled
+      over minutes and shrunk toward even while the sample is thin. Pace is the games' possessions per 48 and is
       shown on its own rather than mixed in. Positions are each player's usual
       spot, covering <b>${(data.coverage * 100).toFixed(0)}%</b> of minutes;
       roles come from each player's own profile${roles.length ? " (" + roles.map(r =>
