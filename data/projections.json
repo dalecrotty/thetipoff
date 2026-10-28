@@ -4487,11 +4487,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "3PM",
-   "proj": 0.86,
-   "floor": 0.0,
-   "ceiling": 2.12,
+   "proj": 0.94,
+   "floor": 0.03,
+   "ceiling": 2.2,
    "sigma": 1.08,
-   "minutes": 21,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -4522,7 +4522,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 163
+   "rank": 155
   },
   {
    "player_id": 1641737,
@@ -6442,7 +6442,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 163
   },
   {
    "player_id": 1642434,
@@ -6539,26 +6539,26 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "3PM",
-   "proj": 1.12,
+   "proj": 1.04,
    "floor": 0.0,
-   "ceiling": 3.38,
+   "ceiling": 3.3,
    "sigma": 1.18,
-   "minutes": 28,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": 1.5,
    "side": "under",
    "price": 1.56,
    "book": "pointsbetau",
-   "edge": 0.087,
-   "p_us": 0.693,
+   "edge": 0.1148,
+   "p_us": 0.721,
    "p_book": 0.606,
    "tier": null,
    "gate_status": "failed:unconfirmed_rotation",
    "l10_over": null,
    "l5_over": null,
-   "p_over": 0.307,
-   "p_under": 0.693,
+   "p_over": 0.279,
+   "p_under": 0.721,
    "fair_over": 0.394,
    "fair_under": 0.606,
    "price_over": 2.4,
@@ -6574,7 +6574,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 133
+   "rank": 141
   },
   {
    "player_id": -755,
@@ -10318,7 +10318,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 120
+   "rank": 119
   },
   {
    "player_id": 1630245,
@@ -11434,7 +11434,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 118
+   "rank": 117
   },
   {
    "player_id": 1631217,
@@ -11863,11 +11863,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "AST",
-   "proj": 1.33,
-   "floor": 0.04,
-   "ceiling": 3.11,
-   "sigma": 1.28,
-   "minutes": 21,
+   "proj": 1.45,
+   "floor": 0.0,
+   "ceiling": 3.05,
+   "sigma": 1.36,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -11898,7 +11898,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 172
+   "rank": 163
   },
   {
    "player_id": 1641737,
@@ -13915,26 +13915,26 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "AST",
-   "proj": 2.16,
+   "proj": 2.0,
    "floor": 0.0,
-   "ceiling": 4.52,
+   "ceiling": 4.36,
    "sigma": 1.62,
-   "minutes": 28,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": 2.5,
    "side": "under",
    "price": 1.61,
    "book": "unibet",
-   "edge": 0.0567,
-   "p_us": 0.637,
+   "edge": 0.0955,
+   "p_us": 0.676,
    "p_book": 0.581,
    "tier": null,
    "gate_status": "failed:unconfirmed_rotation",
    "l10_over": null,
    "l5_over": null,
-   "p_over": 0.363,
-   "p_under": 0.637,
+   "p_over": 0.324,
+   "p_under": 0.676,
    "fair_over": 0.419,
    "fair_under": 0.581,
    "price_over": 2.23,
@@ -13950,7 +13950,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 117
+   "rank": 125
   },
   {
    "player_id": -755,
@@ -19239,11 +19239,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "BLK",
-   "proj": 0.63,
+   "proj": 0.69,
    "floor": 0.0,
-   "ceiling": 1.94,
+   "ceiling": 2.0,
    "sigma": 0.85,
-   "minutes": 21,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -19274,7 +19274,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 63
   },
   {
    "player_id": 1641737,
@@ -21291,11 +21291,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "BLK",
-   "proj": 0.64,
+   "proj": 0.59,
    "floor": 0.0,
-   "ceiling": 2.21,
-   "sigma": 0.85,
-   "minutes": 28,
+   "ceiling": 2.28,
+   "sigma": 0.75,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -21326,7 +21326,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 68
+   "rank": 71
   },
   {
    "player_id": -755,
@@ -25070,7 +25070,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 149
+   "rank": 150
   },
   {
    "player_id": 1630245,
@@ -26615,11 +26615,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "PTS",
-   "proj": 8.46,
-   "floor": 1.86,
-   "ceiling": 15.02,
-   "sigma": 5.22,
-   "minutes": 21,
+   "proj": 9.27,
+   "floor": 2.24,
+   "ceiling": 16.7,
+   "sigma": 5.67,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -26647,10 +26647,10 @@
    "pos": "SF",
    "pos_usual": "SF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 153
+   "prior": 8.46,
+   "prior_at": "2026-10-28T17:46+00:00",
+   "move_reason": "minutes update",
+   "rank": 142
   },
   {
    "player_id": 1641737,
@@ -28667,26 +28667,26 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "PTS",
-   "proj": 12.77,
-   "floor": 3.43,
-   "ceiling": 22.86,
+   "proj": 11.86,
+   "floor": 2.51,
+   "ceiling": 21.95,
    "sigma": 6.27,
-   "minutes": 28,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": 10.5,
    "side": "over",
    "price": 1.81,
    "book": "unibet",
-   "edge": 0.1298,
-   "p_us": 0.646,
+   "edge": 0.0726,
+   "p_us": 0.589,
    "p_book": 0.516,
    "tier": null,
    "gate_status": "failed:unconfirmed_rotation",
    "l10_over": null,
    "l5_over": null,
-   "p_over": 0.646,
-   "p_under": 0.354,
+   "p_over": 0.589,
+   "p_under": 0.411,
    "fair_over": 0.516,
    "fair_under": 0.484,
    "price_over": 1.81,
@@ -28699,10 +28699,10 @@
    "pos": "SF",
    "pos_usual": "SF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 91
+   "prior": 12.77,
+   "prior_at": "2026-10-28T17:46+00:00",
+   "move_reason": "minutes update",
+   "rank": 103
   },
   {
    "player_id": -755,
@@ -33562,7 +33562,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 77
   },
   {
    "player_id": 1631217,
@@ -33991,11 +33991,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "REB",
-   "proj": 3.4,
-   "floor": 0.95,
-   "ceiling": 6.17,
-   "sigma": 2.18,
-   "minutes": 21,
+   "proj": 3.72,
+   "floor": 0.89,
+   "ceiling": 6.86,
+   "sigma": 2.37,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -34023,10 +34023,10 @@
    "pos": "SF",
    "pos_usual": "SF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 146
+   "prior": 3.4,
+   "prior_at": "2026-10-28T17:46+00:00",
+   "move_reason": "minutes update",
+   "rank": 130
   },
   {
    "player_id": 1641737,
@@ -34662,7 +34662,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 77
+   "rank": 76
   },
   {
    "player_id": 1642275,
@@ -35946,7 +35946,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 141
+   "rank": 142
   },
   {
    "player_id": 1642434,
@@ -36043,26 +36043,26 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "REB",
-   "proj": 5.43,
+   "proj": 5.04,
    "floor": 1.27,
-   "ceiling": 9.62,
-   "sigma": 2.78,
-   "minutes": 28,
+   "ceiling": 9.44,
+   "sigma": 2.68,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": 4.5,
    "side": "over",
    "price": 1.94,
    "book": "neds",
-   "edge": 0.1143,
-   "p_us": 0.596,
+   "edge": 0.0585,
+   "p_us": 0.54,
    "p_book": 0.481,
    "tier": null,
    "gate_status": "failed:unconfirmed_rotation",
    "l10_over": null,
    "l5_over": null,
-   "p_over": 0.596,
-   "p_under": 0.404,
+   "p_over": 0.54,
+   "p_under": 0.46,
    "fair_over": 0.481,
    "fair_under": 0.519,
    "price_over": 1.94,
@@ -36075,10 +36075,10 @@
    "pos": "SF",
    "pos_usual": "SF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 70
+   "prior": 5.43,
+   "prior_at": "2026-10-28T17:46+00:00",
+   "move_reason": "minutes update",
+   "rank": 81
   },
   {
    "player_id": -755,
@@ -37150,7 +37150,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 44
+   "rank": 43
   },
   {
    "player_id": 201939,
@@ -37274,7 +37274,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 55
   },
   {
    "player_id": 203083,
@@ -41367,11 +41367,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "STL",
-   "proj": 1.07,
+   "proj": 1.17,
    "floor": 0.0,
-   "ceiling": 2.91,
-   "sigma": 1.06,
-   "minutes": 21,
+   "ceiling": 2.89,
+   "sigma": 1.18,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -41402,7 +41402,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 71
+   "rank": 54
   },
   {
    "player_id": 1641737,
@@ -43419,11 +43419,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "STL",
-   "proj": 1.29,
+   "proj": 1.2,
    "floor": 0.0,
-   "ceiling": 3.14,
+   "ceiling": 3.05,
    "sigma": 1.27,
-   "minutes": 28,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -43454,7 +43454,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 51
   },
   {
    "player_id": -755,
@@ -48743,11 +48743,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "TOV",
-   "proj": 1.09,
+   "proj": 1.19,
    "floor": 0.0,
-   "ceiling": 2.08,
-   "sigma": 1.04,
-   "minutes": 21,
+   "ceiling": 2.93,
+   "sigma": 1.16,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -48778,7 +48778,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 141
+   "rank": 132
   },
   {
    "player_id": 1641737,
@@ -50795,11 +50795,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "TOV",
-   "proj": 1.33,
+   "proj": 1.23,
    "floor": 0.0,
-   "ceiling": 3.41,
+   "ceiling": 3.32,
    "sigma": 1.16,
-   "minutes": 28,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -50830,7 +50830,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 114
+   "rank": 130
   },
   {
    "player_id": -755,
@@ -51883,26 +51883,26 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "PRA",
-   "proj": 20.36,
-   "floor": 10.59,
-   "ceiling": 30.71,
+   "proj": 18.91,
+   "floor": 9.14,
+   "ceiling": 29.26,
    "sigma": 7.86,
-   "minutes": 28,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": 18.5,
    "side": "over",
    "price": 1.94,
    "book": "unibet",
-   "edge": 0.1166,
-   "p_us": 0.596,
+   "edge": 0.0414,
+   "p_us": 0.521,
    "p_book": 0.48,
    "tier": null,
    "gate_status": "failed:unconfirmed_rotation",
    "l10_over": null,
    "l5_over": null,
-   "p_over": 0.596,
-   "p_under": 0.404,
+   "p_over": 0.521,
+   "p_under": 0.479,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.94,
@@ -51918,7 +51918,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 110
   },
   {
    "player_id": -768,
@@ -55450,7 +55450,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 163
   },
   {
    "player_id": 1630245,
@@ -57015,11 +57015,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "PRA",
-   "proj": 13.19,
-   "floor": 4.1,
-   "ceiling": 22.02,
-   "sigma": 6.89,
-   "minutes": 21,
+   "proj": 14.45,
+   "floor": 5.08,
+   "ceiling": 23.62,
+   "sigma": 7.18,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -57050,7 +57050,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 163
+   "rank": 152
   },
   {
    "player_id": 1641737,
@@ -57438,7 +57438,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 107
   },
   {
    "player_id": 1642261,
@@ -57790,7 +57790,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 110
+   "rank": 109
   },
   {
    "player_id": 1642347,
@@ -59259,26 +59259,26 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "PR",
-   "proj": 18.2,
-   "floor": 9.05,
-   "ceiling": 28.07,
-   "sigma": 7.52,
-   "minutes": 28,
+   "proj": 16.9,
+   "floor": 7.63,
+   "ceiling": 26.31,
+   "sigma": 7.55,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": 16.5,
    "side": "over",
    "price": 2.04,
    "book": "unibet",
-   "edge": 0.1382,
-   "p_us": 0.594,
+   "edge": 0.0662,
+   "p_us": 0.522,
    "p_book": 0.456,
    "tier": null,
    "gate_status": "failed:unconfirmed_rotation",
    "l10_over": null,
    "l5_over": null,
-   "p_over": 0.594,
-   "p_under": 0.406,
+   "p_over": 0.522,
+   "p_under": 0.478,
    "fair_over": 0.456,
    "fair_under": 0.544,
    "price_over": 2.04,
@@ -59294,7 +59294,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 90
+   "rank": 107
   },
   {
    "player_id": -768,
@@ -64391,11 +64391,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "PR",
-   "proj": 11.87,
-   "floor": 3.81,
-   "ceiling": 19.81,
-   "sigma": 6.4,
-   "minutes": 21,
+   "proj": 13.0,
+   "floor": 4.49,
+   "ceiling": 21.62,
+   "sigma": 6.63,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -64426,7 +64426,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 160
+   "rank": 147
   },
   {
    "player_id": 1641737,
@@ -64814,7 +64814,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 105
+   "rank": 104
   },
   {
    "player_id": 1642261,
@@ -66635,26 +66635,26 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "PA",
-   "proj": 14.93,
-   "floor": 6.32,
-   "ceiling": 24.26,
+   "proj": 13.87,
+   "floor": 5.25,
+   "ceiling": 23.2,
    "sigma": 6.92,
-   "minutes": 28,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": 13.5,
    "side": "over",
    "price": 1.94,
    "book": "unibet",
-   "edge": 0.1059,
-   "p_us": 0.584,
+   "edge": 0.0433,
+   "p_us": 0.522,
    "p_book": 0.478,
    "tier": null,
    "gate_status": "failed:unconfirmed_rotation",
    "l10_over": null,
    "l5_over": null,
-   "p_over": 0.584,
-   "p_under": 0.416,
+   "p_over": 0.522,
+   "p_under": 0.478,
    "fair_over": 0.478,
    "fair_under": 0.522,
    "price_over": 1.94,
@@ -66670,7 +66670,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 97
+   "rank": 110
   },
   {
    "player_id": -768,
@@ -71767,11 +71767,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "PA",
-   "proj": 9.79,
-   "floor": 2.26,
-   "ceiling": 17.49,
-   "sigma": 5.95,
-   "minutes": 21,
+   "proj": 10.73,
+   "floor": 2.85,
+   "ceiling": 19.02,
+   "sigma": 6.24,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -71802,7 +71802,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 159
+   "rank": 148
   },
   {
    "player_id": 1641737,
@@ -72542,7 +72542,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 102
   },
   {
    "player_id": 1642347,
@@ -74011,26 +74011,26 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "RA",
-   "proj": 7.59,
-   "floor": 3.47,
-   "ceiling": 12.31,
+   "proj": 7.04,
+   "floor": 2.93,
+   "ceiling": 11.77,
    "sigma": 3.46,
-   "minutes": 28,
+   "minutes": 26,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": 6.5,
    "side": "over",
    "price": 1.76,
    "book": "sportsbet",
-   "edge": 0.098,
-   "p_us": 0.632,
+   "edge": 0.0329,
+   "p_us": 0.567,
    "p_book": 0.534,
    "tier": null,
    "gate_status": "failed:unconfirmed_rotation",
    "l10_over": null,
    "l5_over": null,
-   "p_over": 0.632,
-   "p_under": 0.368,
+   "p_over": 0.567,
+   "p_under": 0.433,
    "fair_over": 0.534,
    "fair_under": 0.466,
    "price_over": 1.76,
@@ -74046,7 +74046,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 107
+   "rank": 115
   },
   {
    "player_id": -768,
@@ -74618,7 +74618,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 171
+   "rank": 172
   },
   {
    "player_id": -650,
@@ -78694,7 +78694,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 113
+   "rank": 112
   },
   {
    "player_id": 1631217,
@@ -79143,11 +79143,11 @@
    "opp": "Cleveland",
    "game": "Cleveland vs Washington",
    "stat": "RA",
-   "proj": 4.73,
-   "floor": 1.37,
-   "ceiling": 8.17,
-   "sigma": 2.69,
-   "minutes": 21,
+   "proj": 5.18,
+   "floor": 1.73,
+   "ceiling": 9.12,
+   "sigma": 3.02,
+   "minutes": 23,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -79178,7 +79178,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 172
+   "rank": 160
   },
   {
    "player_id": 1641737,
@@ -81154,6 +81154,10 @@
   {
    "run_at": "2026-10-28T18:37+00:00",
    "trigger": "news"
+  },
+  {
+   "run_at": "2026-10-28T19:36+00:00",
+   "trigger": "lineups"
   }
  ]
 }
