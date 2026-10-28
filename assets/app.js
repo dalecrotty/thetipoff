@@ -79,15 +79,21 @@ function regionLines(rows) {
 function favour(r) {
   if (!r || r.p_over == null) return r;
   const over = r.p_over >= 0.5;
-  const chance = over ? r.p_over : (r.p_under != null ? r.p_under : 1 - r.p_over);
+  const raw = over ? r.p_over : (r.p_under != null ? r.p_under : 1 - r.p_over);
   const fair = over ? r.fair_over : r.fair_under;
   const sameSide = r.side === (over ? "over" : "under");
   r.side = over ? "over" : "under";
+  /* the chance shown is ours pulled halfway to the bookmaker's (28 Oct 2026:
+     the raw model chance overstates by 10-15 points through the 60-80%
+     band; the pulled chance lands where it says and is what the graded
+     props are picked on). The raw chance stays in the tooltip and in the
+     edge, which is still ours minus the book's. */
+  const chance = fair == null ? raw : +(0.5 * raw + 0.5 * fair).toFixed(4);
   r.chance = chance;
-  r.p_us = chance;
+  r.p_us = raw;
   r.p_book = fair == null ? null : fair;
   r.price = over ? (r.price_over ?? r.price) : (r.price_under ?? r.price);
-  r.edge = fair == null ? null : +(chance - fair).toFixed(4);
+  r.edge = fair == null ? null : +(raw - fair).toFixed(4);
   if (!sameSide || r.edge == null || r.edge <= 0) { r.tier = null; if (r.edge != null && r.edge <= 0) r.gate_status = "no value"; }
   return r;
 }
@@ -458,7 +464,8 @@ function priceTd(r) {
 function chanceTd(r) {
   if (r.chance == null) return `<td class="num dim">—</td>`;
   const over = r.side === "over";
-  return `<td class="num" title="our chance that the ${r.side} ${fmt(r.line)} lands, from the line alone"><b class="${
+  const raw = r.p_us != null && r.p_book != null ? ` (our model ${Math.round(r.p_us * 100)}%, the bookmaker ${Math.round(r.p_book * 100)}%; the figure shown is halfway between, which is where results have landed)` : "";
+  return `<td class="num" title="our chance that the ${r.side} ${fmt(r.line)} lands${raw}"><b class="${
     over ? "ov" : "un"}">${over ? "O" : "U"} ${Math.round(r.chance * 100)}%</b></td>`;
 }
 function edgeTd(r) {
@@ -503,7 +510,7 @@ const LEADER_COLS = [
   ["proj", "Pred", false, "our prediction"],
   ["line", "Line", false, "bookmaker line and price for the side we favour"],
   ["adiff", "Diff", false, "our prediction minus the line (sorts by size, overs and unders alike)", true],
-  ["chance", "Chance", false, "how likely our side is to land, from the line alone (the ranking)"],
+  ["chance", "Chance", false, "how likely our side is to land: our model's chance pulled halfway to the bookmaker's (the ranking)"],
   ["edge", "Edge", false, "our chance minus the bookmaker's (margin removed) at the reference book: the value in the price"],
   ["mu", "Matchup", false, "what tonight's opponent gives up to his position, and its rank (1st = softest)", true],
   ["l10_hit", "Hit L10", false, "how often our side landed in his last 10 games", true],
