@@ -2288,9 +2288,10 @@ async function initTeam() {
     let rows = mine.filter(r => range.inRange(r) && SITUATIONS.every(f => f.f(r, state[f.k])));
     if (withoutP.size) rows = rows.filter(r => [...withoutP].every(p => r.absent.includes(p)));
     // "with X": X played in that game (a mid-season arrival isn't "with"
-    // before he joined); rows from before `played` existed fall back
+    // before he joined); rows from before `played` existed, or with no
+    // rotation yet (an empty list), fall back to "not listed absent"
     if (withP.size) rows = rows.filter(r => [...withP].every(p =>
-      r.played ? r.played.includes(p) : !r.absent.includes(p)));
+      r.played && r.played.length ? r.played.includes(p) : !r.absent.includes(p)));
     const st = trendStats(rows);
     const on = situationLabel(state);
     const who = [nick(team), ...(withP.size ? [`with ${[...withP].join(", ")}`] : []),
