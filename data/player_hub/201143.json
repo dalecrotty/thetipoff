@@ -3,7 +3,29 @@
  "player": "Al Horford",
  "team": "Golden State",
  "opp": "Minnesota",
- "lines": {},
+ "lines": {
+  "3PM": {
+   "line": 0.5,
+   "price": 1.45,
+   "book": "sportsbet",
+   "price_over": 1.45,
+   "price_under": 2.6
+  },
+  "PTS": {
+   "line": 4.5,
+   "price": 1.68,
+   "book": "unibet",
+   "price_over": 1.68,
+   "price_under": 2.08
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -126,6 +148,22 @@
    "phase": "play_in"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

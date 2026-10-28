@@ -3,7 +3,36 @@
  "player": "Terrence Shannon Jr.",
  "team": "Minnesota",
  "opp": "Golden State",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 1.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.74,
+   "book": "unibet",
+   "price_over": 2.02,
+   "price_under": 1.74
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.88
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -126,6 +155,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

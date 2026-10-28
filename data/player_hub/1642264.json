@@ -4,26 +4,33 @@
  "team": "San Antonio",
  "opp": "Utah",
  "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 2.45,
-   "book": "neds",
-   "price_over": 1.46,
-   "price_under": 2.45
-  },
   "AST": {
+   "line": 6.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.62,
+   "book": "unibet",
+   "price_over": 2.23,
+   "price_under": 1.62
+  },
+  "REB": {
    "line": 5.5,
-   "price": 2.0,
-   "book": "neds",
-   "price_over": 1.75,
-   "price_under": 2.0
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
   },
   "PTS": {
    "line": 17.5,
-   "price": 1.9,
-   "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.85
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.95
   }
  },
  "recent_games": [
@@ -154,13 +161,18 @@
    "over": 2,
    "n": 5
   },
-  "AST": {
+  "REB": {
    "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
    "over": 1,
    "n": 5
   },
   "3PM": {
-   "line": 1.5,
+   "line": 2.5,
    "over": 4,
    "n": 5
   }

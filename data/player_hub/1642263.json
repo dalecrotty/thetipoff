@@ -3,7 +3,29 @@
  "player": "Reed Sheppard",
  "team": "Houston",
  "opp": "Milwaukee",
- "lines": {},
+ "lines": {
+  "3PM": {
+   "line": 2.5,
+   "price": 2.05,
+   "book": "pointsbetau",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.75,
+   "book": "tab",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -126,6 +148,22 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
