@@ -2,8 +2,226 @@
  "player_id": -735,
  "player": "Meleek Thomas",
  "team": "Cleveland",
- "opp": null,
+ "projections": {
+  "3PM": {
+   "mean": 1.02,
+   "floor": 0.0,
+   "ceiling": 3.27
+  },
+  "AST": {
+   "mean": 1.03,
+   "floor": 0.0,
+   "ceiling": 2.62
+  },
+  "BLK": {
+   "mean": 0.27,
+   "floor": 0.0,
+   "ceiling": 1.14
+  },
+  "PTS": {
+   "mean": 7.35,
+   "floor": 0.0,
+   "ceiling": 15.22
+  },
+  "REB": {
+   "mean": 2.58,
+   "floor": 0.0,
+   "ceiling": 5.55
+  },
+  "STL": {
+   "mean": 0.8,
+   "floor": 0.0,
+   "ceiling": 2.28
+  },
+  "TOV": {
+   "mean": 0.84,
+   "floor": 0.0,
+   "ceiling": 2.2
+  },
+  "PRA": {
+   "mean": 10.96,
+   "floor": 2.34,
+   "ceiling": 19.74
+  },
+  "PR": {
+   "mean": 9.93,
+   "floor": 2.2,
+   "ceiling": 18.27
+  },
+  "PA": {
+   "mean": 8.38,
+   "floor": 1.7,
+   "ceiling": 15.36
+  },
+  "RA": {
+   "mean": 3.61,
+   "floor": 0.86,
+   "ceiling": 6.91
+  }
+ },
+ "minutes": {
+  "value": 15,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 1,
+   "min_pg": 19.0,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.842
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.105
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 4.0,
+    "pm": 0.211
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.053
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.105
+   }
+  },
+  "l10": {
+   "games": 1,
+   "min_pg": 19.0,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.842
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.105
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 4.0,
+    "pm": 0.211
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.053
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.105
+   }
+  },
+  "l5": {
+   "games": 1,
+   "min_pg": 19.0,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.842
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.105
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 4.0,
+    "pm": 0.211
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.053
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.105
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 19.0,
+   "PTS": {
+    "pg": 16.0,
+    "pm": 0.842
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.105
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 4.0,
+    "pm": 0.211
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.053
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.105
+   }
+  },
+  "away": {}
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-26",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-10-26_cleveland_vs_minnesota",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 19.0,
+   "PTS": 16.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 6.0,
+   "FGA": 10.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -30,6 +248,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Washington"
 }

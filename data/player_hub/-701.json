@@ -2,8 +2,305 @@
  "player_id": -701,
  "player": "Mario Hezonja",
  "team": "Cleveland",
- "opp": null,
+ "projections": {
+  "3PM": {
+   "mean": 0.87,
+   "floor": 0.0,
+   "ceiling": 2.12
+  },
+  "AST": {
+   "mean": 1.26,
+   "floor": 0.0,
+   "ceiling": 3.04
+  },
+  "BLK": {
+   "mean": 0.35,
+   "floor": 0.0,
+   "ceiling": 1.02
+  },
+  "PTS": {
+   "mean": 6.66,
+   "floor": 0.45,
+   "ceiling": 13.53
+  },
+  "REB": {
+   "mean": 3.48,
+   "floor": 1.03,
+   "ceiling": 6.26
+  },
+  "STL": {
+   "mean": 0.8,
+   "floor": 0.0,
+   "ceiling": 2.03
+  },
+  "TOV": {
+   "mean": 0.91,
+   "floor": 0.0,
+   "ceiling": 2.05
+  },
+  "PRA": {
+   "mean": 11.41,
+   "floor": 2.79,
+   "ceiling": 20.19
+  },
+  "PR": {
+   "mean": 10.15,
+   "floor": 2.42,
+   "ceiling": 18.48
+  },
+  "PA": {
+   "mean": 7.92,
+   "floor": 1.24,
+   "ceiling": 14.9
+  },
+  "RA": {
+   "mean": 4.75,
+   "floor": 1.39,
+   "ceiling": 8.19
+  }
+ },
+ "minutes": {
+  "value": 15,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 3,
+   "min_pg": 18.0,
+   "PTS": {
+    "pg": 7.33,
+    "pm": 0.407
+   },
+   "REB": {
+    "pg": 3.67,
+    "pm": 0.204
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.074
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.056
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.056
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 1.33,
+    "pm": 0.074
+   }
+  },
+  "l10": {
+   "games": 3,
+   "min_pg": 18.0,
+   "PTS": {
+    "pg": 7.33,
+    "pm": 0.407
+   },
+   "REB": {
+    "pg": 3.67,
+    "pm": 0.204
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.074
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.056
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.056
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 1.33,
+    "pm": 0.074
+   }
+  },
+  "l5": {
+   "games": 3,
+   "min_pg": 18.0,
+   "PTS": {
+    "pg": 7.33,
+    "pm": 0.407
+   },
+   "REB": {
+    "pg": 3.67,
+    "pm": 0.204
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.074
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.056
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.056
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 1.33,
+    "pm": 0.074
+   }
+  },
+  "home": {
+   "games": 2,
+   "min_pg": 17.5,
+   "PTS": {
+    "pg": 6.0,
+    "pm": 0.343
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.229
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.057
+   },
+   "3PM": {
+    "pg": 1.5,
+    "pm": 0.086
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.029
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.114
+   }
+  },
+  "away": {
+   "games": 1,
+   "min_pg": 19.0,
+   "PTS": {
+    "pg": 10.0,
+    "pm": 0.526
+   },
+   "REB": {
+    "pg": 3.0,
+    "pm": 0.158
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.105
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 2.0,
+    "pm": 0.105
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.053
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-22",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2026-10-22_cleveland_vs_philadelphia",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 19.0,
+   "PTS": 10.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 5.0,
+   "FGA": 13.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2026-10-24_brooklyn_vs_cleveland",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 20.0,
+   "PTS": 9.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 3.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-10-26_cleveland_vs_minnesota",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 15.0,
+   "PTS": 3.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 5.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -78,6 +375,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Washington"
 }

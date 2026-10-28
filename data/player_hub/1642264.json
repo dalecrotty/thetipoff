@@ -2,9 +2,55 @@
  "player_id": 1642264,
  "player": "Stephon Castle",
  "team": "San Antonio",
- "opp": "Sacramento",
- "lines": {},
+ "opp": "Utah",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 2.45,
+   "book": "neds",
+   "price_over": 1.46,
+   "price_under": 2.45
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 2.0,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "PTS": {
+   "line": 17.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.9,
+   "price_under": 1.85
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-27",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-10-27_sacramento_vs_san-antonio",
+   "starter": true,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 27.0,
+   "PTS": 15.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 4.0,
+   "FGA": 11.0,
+   "3PA": 8.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-24",
    "opp": "Dallas",
@@ -100,32 +146,24 @@
    "FTA": 6.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-06-10",
-   "opp": "New York",
-   "venue": "R",
-   "game": "2026-06-10_new-york_vs_san-antonio",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 25.9,
-   "PTS": 13.0,
-   "REB": 5.0,
-   "AST": 5.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 3.0,
-   "FGM": 2.0,
-   "FGA": 7.0,
-   "3PA": 3.0,
-   "FTA": 8.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 17.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

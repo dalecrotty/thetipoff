@@ -2,8 +2,37 @@
  "player_id": 1626181,
  "player": "Norman Powell",
  "team": "Chicago",
- "opp": null,
- "lines": {},
+ "opp": "New York",
+ "lines": {
+  "PTS": {
+   "line": 18.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 22.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.77
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 2.0,
+   "book": "neds",
+   "price_over": 2.0,
+   "price_under": 1.7
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 2.2,
+   "book": "neds",
+   "price_over": 2.2,
+   "price_under": 1.62
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -126,6 +155,22 @@
    "phase": "play_in"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 18.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -2,8 +2,65 @@
  "player_id": 1641706,
  "player": "Brandon Miller",
  "team": "Charlotte",
- "opp": null,
- "lines": {},
+ "opp": "Detroit",
+ "lines": {
+  "PTS": {
+   "line": 24.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
+  "PA": {
+   "line": 27.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 30.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 33.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 2.3,
+   "book": "pointsbetau",
+   "price_over": 1.59,
+   "price_under": 2.3
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.69,
+   "book": "pointsbetau",
+   "price_over": 1.69,
+   "price_under": 2.15
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -126,6 +183,27 @@
    "phase": "play_in"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 24.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

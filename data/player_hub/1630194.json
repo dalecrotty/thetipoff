@@ -2,9 +2,48 @@
  "player_id": 1630194,
  "player": "Paul Reed",
  "team": "Detroit",
- "opp": "New York",
- "lines": {},
+ "opp": "Charlotte",
+ "lines": {
+  "PTS": {
+   "line": 13.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 9.5,
+   "price": 1.77,
+   "book": "neds",
+   "price_over": 1.98,
+   "price_under": 1.77
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-27",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-10-27_detroit_vs_new-york",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 26.0,
+   "PTS": 22.0,
+   "REB": 9.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 9.0,
+   "FGA": 12.0,
+   "3PA": 1.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-25",
    "opp": "Philadelphia",
@@ -100,32 +139,19 @@
    "FTA": 0.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-05-15",
-   "opp": "Cleveland",
-   "venue": "R",
-   "game": "2026-05-15_cleveland_vs_detroit",
-   "starter": false,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 16.2,
-   "PTS": 17.0,
-   "REB": 6.0,
-   "AST": 1.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 1.0,
-   "TOV": 3.0,
-   "FGM": 7.0,
-   "FGA": 9.0,
-   "3PA": 1.0,
-   "FTA": 3.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 9.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

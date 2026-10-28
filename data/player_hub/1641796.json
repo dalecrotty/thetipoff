@@ -2,8 +2,37 @@
  "player_id": 1641796,
  "player": "Pelle Larsson",
  "team": "Miami",
- "opp": null,
- "lines": {},
+ "opp": "Atlanta",
+ "lines": {
+  "PR": {
+   "line": 12.5,
+   "price": 1.82,
+   "book": "unibet",
+   "price_over": 1.82,
+   "price_under": 1.89
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 1.63,
+   "book": "pointsbetau",
+   "price_over": 1.63,
+   "price_under": 2.25
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.53,
+   "book": "unibet",
+   "price_over": 1.53,
+   "price_under": 2.4
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -126,6 +155,22 @@
    "phase": "play_in"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
