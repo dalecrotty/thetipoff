@@ -5,18 +5,60 @@
  "opp": "Charlotte",
  "lines": {
   "PTS": {
-   "line": 13.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.9
+   "line": 12.5,
+   "price": 1.92,
+   "book": "unibet",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "PA": {
+   "line": 15.5,
+   "price": 1.97,
+   "book": "unibet",
+   "price_over": 1.97,
+   "price_under": 1.75
+  },
+  "PR": {
+   "line": 21.5,
+   "price": 1.97,
+   "book": "unibet",
+   "price_over": 1.97,
+   "price_under": 1.75
+  },
+  "PRA": {
+   "line": 23.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.81,
+   "book": "unibet",
+   "price_over": 1.81,
+   "price_under": 1.93
   },
   "REB": {
-   "line": 9.5,
-   "price": 1.77,
-   "book": "neds",
-   "price_over": 1.98,
-   "price_under": 1.77
+   "line": 8.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 3.1,
+   "book": "pointsbetau",
+   "price_over": 3.1,
+   "price_under": 1.36
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85
   }
  },
  "recent_games": [
@@ -143,13 +185,23 @@
  ],
  "hits": {
   "PTS": {
-   "line": 13.5,
+   "line": 12.5,
    "over": 2,
    "n": 5
   },
   "REB": {
-   "line": 9.5,
-   "over": 1,
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 2,
    "n": 5
   }
  },

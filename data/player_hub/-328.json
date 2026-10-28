@@ -4,33 +4,61 @@
  "team": "Dallas",
  "opp": "Oklahoma City",
  "lines": {
+  "RA": {
+   "line": 7.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 23.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PRA": {
+   "line": 27.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.91
+  },
   "REB": {
    "line": 3.5,
-   "price": 1.78,
-   "book": "neds",
-   "price_over": 1.78,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PTS": {
+   "line": 19.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PA": {
+   "line": 23.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
    "price_under": 1.96
   },
   "3PM": {
    "line": 2.5,
-   "price": 2.1,
-   "book": "neds",
-   "price_over": 1.62,
-   "price_under": 2.1
-  },
-  "PTS": {
-   "line": 20.5,
-   "price": 1.87,
-   "book": "neds",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "price": 1.97,
+   "book": "unibet",
+   "price_over": 1.77,
+   "price_under": 1.97
   },
   "AST": {
    "line": 3.5,
-   "price": 2.2,
-   "book": "neds",
-   "price_over": 1.62,
-   "price_under": 2.2
+   "price": 1.74,
+   "book": "pointsbetau",
+   "price_over": 1.74,
+   "price_under": 2.05
   }
  },
  "recent_games": [
@@ -157,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 20.5,
+   "line": 19.5,
    "over": 2,
    "n": 5
   },
