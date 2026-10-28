@@ -1358,7 +1358,7 @@ async function initWow() {
   let withP = new Set(), withoutP = new Set();
   let idOf = {}, nameOf = {};
   let season = null;               // a season label, "last2" or "all" (owner, 16 Oct 2026)
-  let lastN = 0;                   // game by game: 0 = every game, else his last N (owner, 28 Oct 2026)
+  let lastN = 0;                   // 0 = every game of his in the season, else his last N (owner, 28 Oct 2026)
   const state = { get size() { return withP.size + withoutP.size; },
                   clear() { withP.clear(); withoutP.clear(); } };
 
@@ -1375,8 +1375,20 @@ async function initWow() {
     : season === "last2" ? seasonsWithGames().slice(0, 2).includes(gSeason(g))
     : gSeason(g) === season;
   const seasonGames = () => team.games.filter(inSeason);
+  // the page's window: the season's games, or his last N of them when a
+  // number is typed beside the line (games he played, newest N); the
+  // comparison, the chart and the log all read from it (owner, 28 Oct
+  // 2026: "make the comparison table follow the number too"); the
+  // teammate list and the roster stay on the whole season
+  const windowGames = () => {
+    const g = seasonGames();
+    if (!lastN) return g;
+    const mine = g.filter(focalLine).slice().sort((x, y) => (x.date < y.date ? 1 : x.date > y.date ? -1 : 0)).slice(0, lastN);
+    const keep = new Set(mine);
+    return g.filter(x => keep.has(x));
+  };
 
-  const matching = () => seasonGames().filter(g => {
+  const matching = () => windowGames().filter(g => {
     if (!focalLine(g)) return false;           // focal must have played
     for (const n of withP) if (!played(g, idOf[n])) return false;
     for (const n of withoutP) if (played(g, idOf[n])) return false;
@@ -1441,7 +1453,7 @@ async function initWow() {
   };
 
   const render = () => {
-    const all = seasonGames().filter(focalLine);
+    const all = windowGames().filter(focalLine);
     const sel = matching();
     const selSet = new Set(sel);
     const rest = all.filter(g => !selSet.has(g));
@@ -1453,10 +1465,11 @@ async function initWow() {
       : !team.games.some(g => gSeason(g) === cur) && seasonSel.dataset.auto === "1"
         ? ` No ${cur} games yet: showing ${season} until opening night.` : "";
     $("#wChange").innerHTML = anyFilter ? changeLine(sel, rest) : "";
+    const win = lastN ? ` (his last ${all.length})` : "";
     $("#wNote").textContent = (anyFilter
-      ? `${sel.length} of ${all.length} games match.`
+      ? `${sel.length} of ${all.length} games match${win}.`
         + (sel.length < 5 ? " Small sample: read with caution." : "")
-      : "Pick teammates above to split the games.") + fallback;
+      : `Pick teammates above to split the games${win}.`) + fallback;
     $("#wLog tbody").innerHTML = sel.slice().reverse().map(g => {
       const l = focalLine(g);
       return `<tr>
@@ -1499,13 +1512,11 @@ async function initWow() {
     $$(".chip", $("#wStatChips")).forEach(c => c.classList.toggle("on", c.dataset.s === wStat));
     $("#wLineVal").value = line;
     $("#wLineSrc").textContent = wLines[wStat] != null ? "custom line" : "line: just under his average";
-    // the game-by-game window: every game of his in the season, or his
-    // last N of them when a number is typed beside the line (owner, 28 Oct
-    // 2026); the comparison above stays on the season
-    const season_ = all.map(g => ({ date: g.date, opp: g.opp, min: focalLine(g).min,
-                                    v: statOf(g, wStat), dim: anyFilter && !selSet.has(g) }))
+    // `all` is already the page's window (every game of his in the season,
+    // or his last N when a number is typed beside the line)
+    const games = all.map(g => ({ date: g.date, opp: g.opp, min: focalLine(g).min,
+                                  v: statOf(g, wStat), dim: anyFilter && !selSet.has(g) }))
       .filter(g => g.v != null && !Number.isNaN(g.v));
-    const games = lastN ? season_.slice(-lastN) : season_;
     const matched = games.filter(g => !g.dim), other = games.filter(g => g.dim);
     const lab = lineupLabel();
     const allLabel = lastN ? `Last ${games.length}` : "All games";
@@ -1547,7 +1558,7 @@ async function initWow() {
     wStat = c.dataset.s;
     render();
   };
-  const curLine = () => wLines[wStat] ?? defaultLine(seasonGames().filter(focalLine), wStat);
+  const curLine = () => wLines[wStat] ?? defaultLine(windowGames().filter(focalLine), wStat);
   $("#wLineDown").onclick = () => { wLines[wStat] = Math.max(0.5, curLine() - 0.5); render(); };
   $("#wLineUp").onclick = () => { wLines[wStat] = curLine() + 0.5; render(); };
   $("#wLineVal").onchange = () => {
