@@ -1763,11 +1763,24 @@ async function initRecord() {
     : `<tr><td colspan="5" class="empty">Fills in from opening night.</td></tr>`;
   const pl = d.plays || {};
   const graded = pl.n_graded ?? 0;
+  const since = pl.rule_since
+    ? ` since ${new Date(pl.rule_since + "T00:00:00").toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" })}`
+    : "";
+  // the rule in force (chance and winners, 28 Oct 2026) is the headline;
+  // the props graded under the earlier rules stay on the record beneath
+  const ea = pl.earlier;
+  const earlier = ea && (ea.n_graded ?? 0)
+    ? `<p class="sub">Under the earlier rules (20 to 27 October, a 5-point then a 15-point edge over the bookmaker):
+       <b>${ea.won ?? 0}–${ea.lost ?? 0}</b>, ${ea.push ?? 0} push, ${ea.void ?? 0} void, hit rate <b>${pct(ea.hit)}</b>,
+       average CLV ${pct(ea.avg_clv)} over ${ea.n_clv ?? 0} closed, ${fmt(ea.units, 1)} units flat (${pct(ea.roi)}).
+       Kept on the record.</p>`
+    : "";
   $("#rplays").innerHTML = `
-    <div class="card"><div class="k">Covered–not</div><div class="v">${pl.won ?? 0}–${pl.lost ?? 0}</div><div class="r">${pl.push ?? 0} push · ${pl.void ?? 0} void · ${pl.open ?? 0} open</div></div>
-    <div class="card"><div class="k">Hit rate</div><div class="v">${pct(pl.hit)}</div><div class="r">${graded} graded</div></div>
+    <div class="card"><div class="k">Covered–not</div><div class="v">${pl.won ?? 0}–${pl.lost ?? 0}</div><div class="r">${pl.push ?? 0} push · ${pl.void ?? 0} void · ${pl.open ?? 0} open${since}</div></div>
+    <div class="card"><div class="k">Hit rate</div><div class="v">${pct(pl.hit)}</div><div class="r">${graded} graded under the rule in force</div></div>
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(pl.avg_clv)}</div><div class="r">${pl.n_clv ?? 0} closed · beat the close ${pct(pl.beat_close)}</div></div>
     <div class="card"><div class="k">Return on stake</div><div class="v">${pl.roi_public ? pct(pl.roi) : "—"}</div><div class="r">${pl.roi_public ? `${fmt(pl.units, 1)} units, flat 1 unit` : `published from ${pl.public_roi_from ?? 100} graded props`}</div></div>`;
+  $("#rplays").insertAdjacentHTML("afterend", earlier);
   const t = d.tips;
   const tOpen = t?.averages_public, tLater = dropsLater(t);
   $("#rtip").innerHTML = `
