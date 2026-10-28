@@ -126,7 +126,7 @@
   ]
  },
  "tips": {
-  "n_tips": 8,
+  "n_tips": 9,
   "n_clv": 8,
   "avg_clv": -0.008871008641754358,
   "beat_close": 0.375,
@@ -150,20 +150,20 @@
   "beat_close": 0.5456
  },
  "plays": {
-  "n_locked": 276,
-  "n_graded": 275,
-  "won": 137,
-  "lost": 138,
+  "n_locked": 0,
+  "n_graded": 0,
+  "won": 0,
+  "lost": 0,
   "push": 0,
-  "void": 1,
+  "void": 0,
   "open": 0,
-  "hit": 0.4982,
-  "units": -23.66,
-  "roi": -0.086,
-  "roi_public": true,
-  "n_clv": 271,
-  "avg_clv": -0.0031,
-  "beat_close": 0.4723,
+  "hit": null,
+  "units": null,
+  "roi": null,
+  "roi_public": false,
+  "n_clv": 0,
+  "avg_clv": null,
+  "beat_close": null,
   "public_roi_from": 100,
   "edge_min": 0.15,
   "floors": {
@@ -176,7 +176,37 @@
   "rule": "chance",
   "shrink": 0.5,
   "min_chance": 0.62,
-  "min_value": 0.08
+  "min_value": 0.08,
+  "rule_since": "2026-10-28",
+  "earlier": {
+   "n_locked": 276,
+   "n_graded": 275,
+   "won": 137,
+   "lost": 138,
+   "push": 0,
+   "void": 1,
+   "open": 0,
+   "hit": 0.4982,
+   "units": -23.66,
+   "roi": -0.086,
+   "roi_public": true,
+   "n_clv": 271,
+   "avg_clv": -0.0031,
+   "beat_close": 0.4723,
+   "public_roi_from": 100,
+   "edge_min": 0.15,
+   "floors": {
+    "PTS": 1.5,
+    "PRA": 2.0,
+    "REB": 1.0,
+    "AST": 1.0,
+    "3PM": 0.5
+   },
+   "rule": "chance",
+   "shrink": 0.5,
+   "min_chance": 0.62,
+   "min_value": 0.08
+  }
  },
  "season_start": "2026-10-20"
 }
