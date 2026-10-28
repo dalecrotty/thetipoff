@@ -276,6 +276,13 @@ td.pl .tbadge { margin-right: 6px; }
   border-left: 0; border-right: 0; background: var(--panel); color: var(--ink);
   font: 600 14px var(--mono); font-variant-numeric: tabular-nums;
 }
+/* "Last N games" beside the line: a typed number, blank = every game */
+.lastn { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--sub); white-space: nowrap; }
+.lastn input {
+  width: 64px; height: 34px; text-align: center; border: 2px solid var(--rule); border-radius: 0;
+  background: var(--panel); color: var(--ink); font: 600 14px var(--mono); font-variant-numeric: tabular-nums;
+}
+.lastn input:focus { outline: 1px solid var(--accent); border-color: var(--accent); }
 .hitcards { display: grid; gap: 8px; margin: 12px 0;
   grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); }
 .hitcards .card .v { font-size: 18px; }

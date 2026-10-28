@@ -40,19 +40,10 @@
   <h1>With &amp; Without</h1>
   <p class="sub">Pick a season and a player, then the teammates who must have
     <b>played</b> (with) or <b>sat</b> (without). The comparison sets the games
-    matching that lineup against the rest of his games in the window: the
-    season, or his last few games of it.</p>
+    matching that lineup against the rest of his games in the season.</p>
 
   <div class="controls">
     <select id="wSeason" aria-label="Season"></select>
-    <select id="wLast" aria-label="Last games">
-      <option value="0">All his games</option>
-      <option value="5">Last 5 games</option>
-      <option value="10">Last 10 games</option>
-      <option value="15">Last 15 games</option>
-      <option value="20">Last 20 games</option>
-      <option value="30">Last 30 games</option>
-    </select>
     <select id="wTeam"></select>
     <select id="wPlayer"></select>
     <button class="chip" id="wReset">Clear</button>
@@ -81,6 +72,7 @@
       <button id="wLineUp" aria-label="line up">+</button>
     </span>
     <span class="sub" id="wLineSrc" style="align-self:center;margin:0"></span>
+    <label class="lastn">Last <input id="wLastN" type="number" min="1" step="1" inputmode="numeric" placeholder="all" aria-label="last games"> games</label>
   </div>
   <div class="hitcards" id="wHitCards"></div>
   <div class="chartpanel" id="wPanel">
