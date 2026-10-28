@@ -1358,6 +1358,7 @@ async function initWow() {
   let withP = new Set(), withoutP = new Set();
   let idOf = {}, nameOf = {};
   let season = null;               // a season label, "last2" or "all" (owner, 16 Oct 2026)
+  let lastN = 0;                   // 0 = every game in the window; else his last N (owner, 28 Oct 2026)
   const state = { get size() { return withP.size + withoutP.size; },
                   clear() { withP.clear(); withoutP.clear(); } };
 
@@ -1374,8 +1375,18 @@ async function initWow() {
     : season === "last2" ? seasonsWithGames().slice(0, 2).includes(gSeason(g))
     : gSeason(g) === season;
   const seasonGames = () => team.games.filter(inSeason);
+  // the comparison window: the season's games, or his last N of them
+  // (games he played, newest first); the teammate list and the roster
+  // stay on the whole season
+  const windowGames = () => {
+    const g = seasonGames();
+    if (!lastN) return g;
+    const mine = g.filter(focalLine).slice().sort((x, y) => (x.date < y.date ? 1 : x.date > y.date ? -1 : 0)).slice(0, lastN);
+    const keep = new Set(mine);
+    return g.filter(x => keep.has(x));
+  };
 
-  const matching = () => seasonGames().filter(g => {
+  const matching = () => windowGames().filter(g => {
     if (!focalLine(g)) return false;           // focal must have played
     for (const n of withP) if (!played(g, idOf[n])) return false;
     for (const n of withoutP) if (played(g, idOf[n])) return false;
@@ -1440,7 +1451,7 @@ async function initWow() {
   };
 
   const render = () => {
-    const all = seasonGames().filter(focalLine);
+    const all = windowGames().filter(focalLine);
     const sel = matching();
     const selSet = new Set(sel);
     const rest = all.filter(g => !selSet.has(g));
@@ -1452,10 +1463,11 @@ async function initWow() {
       : !team.games.some(g => gSeason(g) === cur) && seasonSel.dataset.auto === "1"
         ? ` No ${cur} games yet: showing ${season} until opening night.` : "";
     $("#wChange").innerHTML = anyFilter ? changeLine(sel, rest) : "";
+    const win = lastN ? ` (his last ${Math.min(lastN, all.length)} games)` : "";
     $("#wNote").textContent = (anyFilter
-      ? `${sel.length} of ${all.length} games match.`
+      ? `${sel.length} of ${all.length} games match${win}.`
         + (sel.length < 5 ? " Small sample: read with caution." : "")
-      : "Pick teammates above to split the games.") + fallback;
+      : `Pick teammates above to split the games${win}.`) + fallback;
     $("#wLog tbody").innerHTML = sel.slice().reverse().map(g => {
       const l = focalLine(g);
       return `<tr>
@@ -1586,6 +1598,7 @@ async function initWow() {
 
   teamSel.onchange = () => loadTeam(teamSel.value);
   seasonSel.onchange = () => { season = seasonSel.value; seasonSel.dataset.auto = "0"; fillPlayers(); renderMates(); render(); };
+  $("#wLast").onchange = e => { lastN = +e.target.value || 0; render(); };
   playerSel.onchange = () => { focal = playerSel.value; Object.keys(wLines).forEach(k => delete wLines[k]); renderMates(); render(); };
   $("#wReset").onclick = () => { renderMates(); render(); };
   await loadTeam(teamSel.value);
