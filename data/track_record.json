@@ -151,15 +151,15 @@
  },
  "plays": {
   "n_locked": 276,
-  "n_graded": 273,
-  "won": 136,
-  "lost": 137,
+  "n_graded": 275,
+  "won": 137,
+  "lost": 138,
   "push": 0,
   "void": 1,
-  "open": 2,
+  "open": 0,
   "hit": 0.4982,
-  "units": -23.56,
-  "roi": -0.0863,
+  "units": -23.66,
+  "roi": -0.086,
   "roi_public": true,
   "n_clv": 271,
   "avg_clv": -0.0031,
@@ -172,7 +172,11 @@
    "REB": 1.0,
    "AST": 1.0,
    "3PM": 0.5
-  }
+  },
+  "rule": "chance",
+  "shrink": 0.5,
+  "min_chance": 0.62,
+  "min_value": 0.08
  },
  "season_start": "2026-10-20"
 }
