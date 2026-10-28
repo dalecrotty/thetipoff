@@ -1617,8 +1617,11 @@ async function initMatchups() {
       season, both faded together for the model view), so the number is how much
       more (+) or less (−) a defence allowed than those players' own rates, pooled
       over minutes. Early in the season the number is pulled toward even until the
-      sample builds; the raw figure sits in each cell's tooltip and under "raw %",
-      so a small number beside a bigger one elsewhere is method, not doubt. Pace
+      sample builds, and the pull is set so the number shown is what lands: over
+      last season, a shown +5% landed about +5% for points, a little under for
+      rebounds and assists, and about two-thirds of it for threes. The raw figure
+      sits in each cell's tooltip and under "raw %", so a small number beside a
+      bigger one elsewhere is method, not doubt. Pace
       is the games' possessions per 48 and is shown on its own rather than mixed in. Positions are each player's usual
       spot, covering <b>${(data.coverage * 100).toFixed(0)}%</b> of minutes;
       roles come from each player's own profile${roles.length ? " (" + roles.map(r =>
