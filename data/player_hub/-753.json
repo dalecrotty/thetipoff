@@ -2,8 +2,226 @@
  "player_id": -753,
  "player": "Nick Martinelli",
  "team": "LA Clippers",
- "opp": "LA Lakers",
+ "projections": {
+  "3PM": {
+   "mean": 0.23,
+   "floor": 0.04,
+   "ceiling": 0.23
+  },
+  "AST": {
+   "mean": 0.38,
+   "floor": 0.0,
+   "ceiling": 2.01
+  },
+  "BLK": {
+   "mean": 0.07,
+   "floor": 0.0,
+   "ceiling": 1.14
+  },
+  "PTS": {
+   "mean": 1.94,
+   "floor": 0.0,
+   "ceiling": 8.8
+  },
+  "REB": {
+   "mean": 0.92,
+   "floor": 0.0,
+   "ceiling": 3.57
+  },
+  "STL": {
+   "mean": 0.14,
+   "floor": 0.0,
+   "ceiling": 1.1
+  },
+  "TOV": {
+   "mean": 0.23,
+   "floor": 0.0,
+   "ceiling": 1.92
+  },
+  "PRA": {
+   "mean": 3.23,
+   "floor": 0.0,
+   "ceiling": 11.95
+  },
+  "PR": {
+   "mean": 2.86,
+   "floor": 0.0,
+   "ceiling": 10.97
+  },
+  "PA": {
+   "mean": 2.31,
+   "floor": 0.0,
+   "ceiling": 9.1
+  },
+  "RA": {
+   "mean": 1.3,
+   "floor": 0.0,
+   "ceiling": 4.6
+  }
+ },
+ "minutes": {
+  "value": 5,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 1,
+   "min_pg": 2.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.5
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.5
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l10": {
+   "games": 1,
+   "min_pg": 2.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.5
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.5
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l5": {
+   "games": 1,
+   "min_pg": 2.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.5
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.5
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 2.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.5
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.5
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {}
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-10-21_la-clippers_vs_sacramento",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-21",
@@ -30,6 +248,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "LA Lakers"
 }

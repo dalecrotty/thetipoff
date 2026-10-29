@@ -2,8 +2,405 @@
  "player_id": -788,
  "player": "Keaton Wagler",
  "team": "LA Clippers",
- "opp": "LA Lakers",
- "lines": {},
+ "projections": {
+  "3PM": {
+   "mean": 1.74,
+   "floor": 0.02,
+   "ceiling": 3.94
+  },
+  "AST": {
+   "mean": 3.39,
+   "floor": 1.09,
+   "ceiling": 6.05
+  },
+  "BLK": {
+   "mean": 0.28,
+   "floor": 0.0,
+   "ceiling": 1.01
+  },
+  "PTS": {
+   "mean": 12.93,
+   "floor": 4.94,
+   "ceiling": 21.12
+  },
+  "REB": {
+   "mean": 5.03,
+   "floor": 1.8,
+   "ceiling": 8.18
+  },
+  "STL": {
+   "mean": 1.15,
+   "floor": 0.02,
+   "ceiling": 2.99
+  },
+  "TOV": {
+   "mean": 2.02,
+   "floor": 0.18,
+   "ceiling": 4.07
+  },
+  "PRA": {
+   "mean": 21.36,
+   "floor": 11.53,
+   "ceiling": 31.93
+  },
+  "PR": {
+   "mean": 17.97,
+   "floor": 8.69,
+   "ceiling": 27.37
+  },
+  "PA": {
+   "mean": 16.33,
+   "floor": 7.33,
+   "ceiling": 25.39
+  },
+  "RA": {
+   "mean": 8.42,
+   "floor": 4.18,
+   "ceiling": 13.22
+  }
+ },
+ "minutes": {
+  "value": 29,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 3,
+   "min_pg": 26.3,
+   "PTS": {
+    "pg": 13.0,
+    "pm": 0.494
+   },
+   "REB": {
+    "pg": 4.33,
+    "pm": 0.165
+   },
+   "AST": {
+    "pg": 4.0,
+    "pm": 0.152
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.076
+   },
+   "STL": {
+    "pg": 1.33,
+    "pm": 0.051
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 3.0,
+    "pm": 0.114
+   }
+  },
+  "l10": {
+   "games": 3,
+   "min_pg": 26.3,
+   "PTS": {
+    "pg": 13.0,
+    "pm": 0.494
+   },
+   "REB": {
+    "pg": 4.33,
+    "pm": 0.165
+   },
+   "AST": {
+    "pg": 4.0,
+    "pm": 0.152
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.076
+   },
+   "STL": {
+    "pg": 1.33,
+    "pm": 0.051
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 3.0,
+    "pm": 0.114
+   }
+  },
+  "l5": {
+   "games": 3,
+   "min_pg": 26.3,
+   "PTS": {
+    "pg": 13.0,
+    "pm": 0.494
+   },
+   "REB": {
+    "pg": 4.33,
+    "pm": 0.165
+   },
+   "AST": {
+    "pg": 4.0,
+    "pm": 0.152
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.076
+   },
+   "STL": {
+    "pg": 1.33,
+    "pm": 0.051
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 3.0,
+    "pm": 0.114
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 29.0,
+   "PTS": {
+    "pg": 15.0,
+    "pm": 0.517
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.172
+   },
+   "AST": {
+    "pg": 5.0,
+    "pm": 0.172
+   },
+   "3PM": {
+    "pg": 3.0,
+    "pm": 0.103
+   },
+   "STL": {
+    "pg": 2.0,
+    "pm": 0.069
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.034
+   }
+  },
+  "away": {
+   "games": 2,
+   "min_pg": 25.0,
+   "PTS": {
+    "pg": 12.0,
+    "pm": 0.48
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.16
+   },
+   "AST": {
+    "pg": 3.5,
+    "pm": 0.14
+   },
+   "3PM": {
+    "pg": 1.5,
+    "pm": 0.06
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 4.0,
+    "pm": 0.16
+   }
+  }
+ },
+ "lines": {
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.697,
+   "p_under": 0.303,
+   "fair_over": 0.568,
+   "fair_under": 0.432,
+   "price_over": 1.67,
+   "price_under": 2.2,
+   "side": "over",
+   "price": 1.67,
+   "book": "pointsbetau",
+   "edge": 0.1283,
+   "tier": null
+  },
+  "3PM": {
+   "line": 1.5,
+   "p_over": 0.5,
+   "p_under": 0.5,
+   "fair_over": 0.573,
+   "fair_under": 0.427,
+   "price_over": 1.6,
+   "price_under": 2.15,
+   "side": "under",
+   "price": 2.15,
+   "book": "neds",
+   "edge": 0.0733,
+   "tier": null
+  },
+  "AST": {
+   "line": 3.5,
+   "p_over": 0.43,
+   "p_under": 0.57,
+   "fair_over": 0.489,
+   "fair_under": 0.511,
+   "price_over": 1.91,
+   "price_under": 1.83,
+   "side": "under",
+   "price": 1.83,
+   "book": "unibet",
+   "edge": 0.0595,
+   "tier": null
+  },
+  "PTS": {
+   "line": 13.5,
+   "p_over": 0.467,
+   "p_under": 0.533,
+   "fair_over": 0.49,
+   "fair_under": 0.51,
+   "price_over": 1.95,
+   "price_under": 1.87,
+   "side": "under",
+   "price": 1.87,
+   "book": "pointsbetau",
+   "edge": 0.023,
+   "tier": null
+  }
+ },
+ "lines_us": {
+  "REB": {
+   "line": 4.5,
+   "p_over": 0.538,
+   "p_under": 0.462,
+   "fair_over": 0.424,
+   "fair_under": 0.576,
+   "price_over": 2.2,
+   "price_under": 1.62,
+   "side": "over",
+   "price": 2.2,
+   "book": "betright",
+   "edge": 0.1141,
+   "tier": null
+  },
+  "PTS": {
+   "line": 13.5,
+   "p_over": 0.467,
+   "p_under": 0.533,
+   "fair_over": 0.493,
+   "fair_under": 0.507,
+   "price_over": 1.91,
+   "price_under": 1.86,
+   "side": "under",
+   "price": 1.86,
+   "book": "betright",
+   "edge": 0.0269,
+   "tier": null
+  },
+  "AST": {
+   "line": 3.5,
+   "p_over": 0.43,
+   "p_under": 0.57,
+   "fair_over": 0.444,
+   "fair_under": 0.556,
+   "price_over": 2.1,
+   "price_under": 1.68,
+   "side": "under",
+   "price": 1.68,
+   "book": "betright",
+   "edge": 0.0147,
+   "tier": null
+  }
+ },
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-10-21_la-clippers_vs_sacramento",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 29.0,
+   "PTS": 15.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 3.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 6.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-10-23_la-clippers_vs_la-lakers",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 24.0,
+   "PTS": 13.0,
+   "REB": 3.0,
+   "AST": 3.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 2.0,
+   "FGA": 8.0,
+   "3PA": 5.0,
+   "FTA": 9.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-25",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-10-25_la-clippers_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 26.0,
+   "PTS": 11.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 2.0,
+   "FGA": 7.0,
+   "3PA": 4.0,
+   "FTA": 6.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-25",
@@ -78,6 +475,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "LA Lakers"
 }
