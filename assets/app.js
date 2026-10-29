@@ -1522,7 +1522,9 @@ async function initWow() {
   const renderChart = (all, sel) => {
     const anyFilter = state.size > 0;
     const selSet = new Set(sel);
-    const line = wLines[wStat] ?? defaultLine(all, wStat);
+    // the default line is his season average, never the window's: changing
+    // the games shown must not move the line (owner, 29 Oct 2026)
+    const line = wLines[wStat] ?? defaultLine(seasonGames().filter(focalLine), wStat);
     $$(".chip", $("#wStatChips")).forEach(c => c.classList.toggle("on", c.dataset.s === wStat));
     $("#wLineVal").value = line;
     $("#wLineSrc").textContent = wLines[wStat] != null ? "custom line" : "line: just under his average";
@@ -1582,7 +1584,7 @@ async function initWow() {
     wStat = c.dataset.s;
     render();
   };
-  const curLine = () => wLines[wStat] ?? defaultLine(windowGames().filter(focalLine), wStat);
+  const curLine = () => wLines[wStat] ?? defaultLine(seasonGames().filter(focalLine), wStat);
   $("#wLineDown").onclick = () => { wLines[wStat] = Math.max(0.5, curLine() - 0.5); render(); };
   $("#wLineUp").onclick = () => { wLines[wStat] = curLine() + 0.5; render(); };
   $("#wLineVal").onchange = () => {
