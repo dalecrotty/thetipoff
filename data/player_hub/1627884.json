@@ -4,12 +4,26 @@
  "team": "LA Clippers",
  "opp": "LA Lakers",
  "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 2.35,
+   "book": "pointsbetau",
+   "price_over": 2.35,
+   "price_under": 1.57
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.89,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.89
+  },
   "PTS": {
    "line": 11.5,
-   "price": 1.82,
-   "book": "neds",
-   "price_over": 1.82,
-   "price_under": 1.92
+   "price": 1.8,
+   "book": "unibet",
+   "price_over": 1.8,
+   "price_under": 1.93
   }
  },
  "recent_games": [
@@ -137,6 +151,16 @@
  "hits": {
   "PTS": {
    "line": 11.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
    "over": 2,
    "n": 5
   }
