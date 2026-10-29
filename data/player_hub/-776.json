@@ -2,9 +2,191 @@
  "player_id": -776,
  "player": "AJ Dybantsa",
  "team": "Washington",
- "opp": "Cleveland",
- "lines": {},
+ "projections": {
+  "3PM": {
+   "mean": 0.8,
+   "floor": 0.0,
+   "ceiling": 2.31
+  },
+  "AST": {
+   "mean": 1.54,
+   "floor": 0.0,
+   "ceiling": 3.46
+  },
+  "BLK": {
+   "mean": 0.46,
+   "floor": 0.0,
+   "ceiling": 1.19
+  },
+  "PTS": {
+   "mean": 9.11,
+   "floor": 1.03,
+   "ceiling": 18.04
+  },
+  "REB": {
+   "mean": 3.87,
+   "floor": 0.55,
+   "ceiling": 7.61
+  },
+  "STL": {
+   "mean": 0.92,
+   "floor": 0.0,
+   "ceiling": 2.2
+  },
+  "TOV": {
+   "mean": 0.95,
+   "floor": 0.0,
+   "ceiling": 2.31
+  },
+  "PRA": {
+   "mean": 14.52,
+   "floor": 5.15,
+   "ceiling": 23.69
+  },
+  "PR": {
+   "mean": 12.98,
+   "floor": 4.48,
+   "ceiling": 21.6
+  },
+  "PA": {
+   "mean": 10.65,
+   "floor": 2.77,
+   "ceiling": 18.95
+  },
+  "RA": {
+   "mean": 5.41,
+   "floor": 1.96,
+   "ceiling": 9.36
+  }
+ },
+ "minutes": {
+  "value": 20,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {},
+  "l10": {},
+  "l5": {},
+  "home": {},
+  "away": {}
+ },
+ "lines": {
+  "PRA": {
+   "line": 18.5,
+   "p_over": 0.289,
+   "p_under": 0.711,
+   "fair_over": 0.505,
+   "fair_under": 0.495,
+   "price_over": 1.86,
+   "price_under": 1.9,
+   "side": "under",
+   "price": 1.9,
+   "book": "sportsbet",
+   "edge": 0.2163,
+   "tier": null
+  },
+  "AST": {
+   "line": 2.5,
+   "p_over": 0.207,
+   "p_under": 0.793,
+   "fair_over": 0.419,
+   "fair_under": 0.581,
+   "price_over": 2.23,
+   "price_under": 1.61,
+   "side": "under",
+   "price": 1.61,
+   "book": "unibet",
+   "edge": 0.2128,
+   "tier": null
+  },
+  "3PM": {
+   "line": 1.5,
+   "p_over": 0.194,
+   "p_under": 0.806,
+   "fair_over": 0.394,
+   "fair_under": 0.606,
+   "price_over": 2.4,
+   "price_under": 1.56,
+   "side": "under",
+   "price": 1.56,
+   "book": "pointsbetau",
+   "edge": 0.1995,
+   "tier": null
+  },
+  "RA": {
+   "line": 7.5,
+   "p_over": 0.249,
+   "p_under": 0.751,
+   "fair_over": 0.444,
+   "fair_under": 0.556,
+   "price_over": 2.1,
+   "price_under": 1.68,
+   "side": "under",
+   "price": 1.68,
+   "book": "unibet",
+   "edge": 0.1957,
+   "tier": null
+  },
+  "PA": {
+   "line": 13.5,
+   "p_over": 0.33,
+   "p_under": 0.67,
+   "fair_over": 0.521,
+   "fair_under": 0.479,
+   "price_over": 1.8,
+   "price_under": 1.96,
+   "side": "under",
+   "price": 1.96,
+   "book": "sportsbet",
+   "edge": 0.1914,
+   "tier": null
+  },
+  "PR": {
+   "line": 16.5,
+   "p_over": 0.3,
+   "p_under": 0.7,
+   "fair_over": 0.486,
+   "fair_under": 0.514,
+   "price_over": 1.9,
+   "price_under": 1.8,
+   "side": "under",
+   "price": 1.8,
+   "book": "pointsbetau",
+   "edge": 0.186,
+   "tier": null
+  },
+  "REB": {
+   "line": 4.5,
+   "p_over": 0.348,
+   "p_under": 0.652,
+   "fair_over": 0.525,
+   "fair_under": 0.475,
+   "price_over": 1.78,
+   "price_under": 1.97,
+   "side": "under",
+   "price": 1.97,
+   "book": "unibet",
+   "edge": 0.1775,
+   "tier": null
+  },
+  "PTS": {
+   "line": 11.5,
+   "p_over": 0.34,
+   "p_under": 0.66,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "under",
+   "price": 1.87,
+   "book": "neds",
+   "edge": 0.1601,
+   "tier": null
+  }
+ },
+ "lines_us": {},
+ "game_log": [],
  "recent_games": [],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Cleveland"
 }

@@ -4,26 +4,47 @@
  "team": "Milwaukee",
  "opp": "Houston",
  "lines": {
-  "PTS": {
-   "line": 11.5,
-   "price": 1.92,
+  "REB": {
+   "line": 5.5,
+   "price": 1.96,
    "book": "sportsbet",
-   "price_over": 1.92,
-   "price_under": 1.84
+   "price_over": 1.8,
+   "price_under": 1.96
   },
   "AST": {
    "line": 2.5,
-   "price": 1.74,
-   "book": "sportsbet",
-   "price_over": 1.74,
-   "price_under": 2.05
+   "price": 1.65,
+   "book": "neds",
+   "price_over": 1.65,
+   "price_under": 2.15
   },
-  "REB": {
-   "line": 5.5,
-   "price": 1.76,
-   "book": "unibet",
-   "price_over": 1.97,
-   "price_under": 1.76
+  "PA": {
+   "line": 15.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 21.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.91
   },
   "3PM": {
    "line": 1.5,
@@ -31,6 +52,13 @@
    "book": "sportsbet",
    "price_over": 2.25,
    "price_under": 1.58
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
   }
  },
  "recent_games": [
@@ -157,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 11.5,
+   "line": 12.5,
    "over": 3,
    "n": 5
   },
