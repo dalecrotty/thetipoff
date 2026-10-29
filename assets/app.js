@@ -1381,20 +1381,25 @@ async function initWow() {
   // comparison, the chart and the log all read from it (owner, 28 Oct
   // 2026: "make the comparison table follow the number too"); the
   // teammate list and the roster stay on the whole season
-  const windowGames = () => {
-    const g = seasonGames();
-    if (!lastN) return g;
-    const mine = g.filter(focalLine).slice().sort((x, y) => (x.date < y.date ? 1 : x.date > y.date ? -1 : 0)).slice(0, lastN);
-    const keep = new Set(mine);
-    return g.filter(x => keep.has(x));
-  };
-
-  const matching = () => windowGames().filter(g => {
+  const fits = g => {                        // the lineup filter
     if (!focalLine(g)) return false;           // focal must have played
     for (const n of withP) if (!played(g, idOf[n])) return false;
     for (const n of withoutP) if (played(g, idOf[n])) return false;
     return true;
-  });
+  };
+  // with "matching games only" ticked, the last N are his last N matching
+  // games, not the last N of everything (owner, 29 Oct 2026)
+  const onlyOn = () => onlyMatch && state.size > 0;
+  const windowGames = () => {
+    const g = seasonGames();
+    if (!lastN) return g;
+    const pool = onlyOn() ? g.filter(fits) : g.filter(focalLine);
+    const mine = pool.slice().sort((x, y) => (x.date < y.date ? 1 : x.date > y.date ? -1 : 0)).slice(0, lastN);
+    const keep = new Set(mine);
+    return g.filter(x => keep.has(x));
+  };
+
+  const matching = () => windowGames().filter(fits);
 
   const CELLS = [["min", g => focalLine(g).min]].concat(S.map(s => [s, g => focalLine(g)[s]]));
   const NCOL = CELLS.length + 2;
@@ -1457,17 +1462,25 @@ async function initWow() {
     const all = windowGames().filter(focalLine);
     const sel = matching();
     const selSet = new Set(sel);
-    const rest = all.filter(g => !selSet.has(g));
     const anyFilter = state.size > 0;
+    // "matching only" with a last-N: the window is his last N matching
+    // games, so the other games are his non-matching games of the season
+    const lastOnly = onlyOn() && lastN > 0;
+    const seasonAll = seasonGames().filter(focalLine);
+    const rest = lastOnly ? seasonAll.filter(g => !fits(g)) : all.filter(g => !selSet.has(g));
     $("#wCompare tbody").innerHTML =
-      rowFor("All games", all)
-      + (anyFilter ? rowFor("Matching lineup", sel) + rowFor("Other games", rest, "thin") + diffRow(sel, rest) : "");
+      rowFor("All games", lastOnly ? seasonAll : all)
+      + (anyFilter ? rowFor(lastOnly ? `Matching lineup, last ${sel.length}` : "Matching lineup", sel)
+                     + rowFor("Other games", rest, "thin") + diffRow(sel, rest) : "");
     const fallback = season === cur || season === "all" || season === "last2" ? ""
       : !team.games.some(g => gSeason(g) === cur) && seasonSel.dataset.auto === "1"
         ? ` No ${cur} games yet: showing ${season} until opening night.` : "";
     $("#wChange").innerHTML = anyFilter ? changeLine(sel, rest) : "";
     const win = lastN ? ` (his last ${all.length})` : "";
-    $("#wNote").textContent = (anyFilter
+    $("#wNote").textContent = (lastOnly
+      ? `His last ${sel.length} matching game${sel.length === 1 ? "" : "s"} against his ${rest.length} other game${rest.length === 1 ? "" : "s"} this season.`
+        + (sel.length < 5 ? " Small sample: read with caution." : "")
+      : anyFilter
       ? `${sel.length} of ${all.length} games match${win}.`
         + (sel.length < 5 ? " Small sample: read with caution." : "")
       : `Pick teammates above to split the games${win}.`) + fallback;
@@ -1537,10 +1550,12 @@ async function initWow() {
       ? renderPropChart(shown, line, null)
       : `<div class="empty">${only ? "No games match this lineup." : "No games this season yet."}</div>`;
     $("#wFadeKey").hidden = !anyFilter || only;
-    $("#wChartNote").textContent = (only
+    $("#wChartNote").textContent = (only && lastN
+      ? `his last ${matched.length} matching game${matched.length === 1 ? "" : "s"}`
+      : only
       ? `${matched.length} matching game${matched.length === 1 ? "" : "s"} of ${games.length}`
-      : `${anyFilter ? `${matched.length} of ${games.length}` : games.length} games`)
-      + (lastN ? ` (his last ${games.length})` : "") + ` · line ${line}`;
+      : `${anyFilter ? `${matched.length} of ${games.length}` : games.length} games`
+        + (lastN ? ` (his last ${games.length})` : "")) + ` · line ${line}`;
     const tip = $("#wTip"), panel = $("#wPanel");
     $$(".barhit", $("#wChart")).forEach(gEl => {
       const g = shown[+gEl.dataset.i];
