@@ -1359,6 +1359,7 @@ async function initWow() {
   let idOf = {}, nameOf = {};
   let season = null;               // a season label, "last2" or "all" (owner, 16 Oct 2026)
   let lastN = 0;                   // 0 = every game of his in the season, else his last N (owner, 28 Oct 2026)
+  let onlyMatch = false;           // chart: drop the faded games while a lineup filter is on (owner, 29 Oct 2026)
   const state = { get size() { return withP.size + withoutP.size; },
                   clear() { withP.clear(); withoutP.clear(); } };
 
@@ -1518,6 +1519,12 @@ async function initWow() {
                                   v: statOf(g, wStat), dim: anyFilter && !selSet.has(g) }))
       .filter(g => g.v != null && !Number.isNaN(g.v));
     const matched = games.filter(g => !g.dim), other = games.filter(g => g.dim);
+    // the tick-box (owner, 29 Oct 2026): with a lineup filter on, the
+    // chart can show the matching games alone instead of fading the rest;
+    // the cards still count both
+    const only = anyFilter && onlyMatch;
+    const shown = only ? matched : games;
+    $("#wOnlyWrap").hidden = !anyFilter;
     const lab = lineupLabel();
     const allLabel = lastN ? `Last ${games.length}` : "All games";
     $("#wHitCards").innerHTML = anyFilter
@@ -1526,15 +1533,17 @@ async function initWow() {
       : hitCard(allLabel, games, line)
         + (games.length > 10 ? hitCard("Last 10", games.slice(-10), line) : "")
         + (games.length > 5 ? hitCard("Last 5", games.slice(-5), line) : "");
-    $("#wChart").innerHTML = games.length
-      ? renderPropChart(games, line, null)
-      : `<div class="empty">No games this season yet.</div>`;
-    $("#wFadeKey").hidden = !anyFilter;
-    $("#wChartNote").textContent = `${anyFilter ? `${matched.length} of ${games.length}` : games.length} games`
+    $("#wChart").innerHTML = shown.length
+      ? renderPropChart(shown, line, null)
+      : `<div class="empty">${only ? "No games match this lineup." : "No games this season yet."}</div>`;
+    $("#wFadeKey").hidden = !anyFilter || only;
+    $("#wChartNote").textContent = (only
+      ? `${matched.length} matching game${matched.length === 1 ? "" : "s"} of ${games.length}`
+      : `${anyFilter ? `${matched.length} of ${games.length}` : games.length} games`)
       + (lastN ? ` (his last ${games.length})` : "") + ` · line ${line}`;
     const tip = $("#wTip"), panel = $("#wPanel");
     $$(".barhit", $("#wChart")).forEach(gEl => {
-      const g = games[+gEl.dataset.i];
+      const g = shown[+gEl.dataset.i];
       gEl.addEventListener("pointermove", ev => {
         tip.replaceChildren();
         const b = document.createElement("b");
@@ -1606,6 +1615,7 @@ async function initWow() {
   teamSel.onchange = () => loadTeam(teamSel.value);
   seasonSel.onchange = () => { season = seasonSel.value; seasonSel.dataset.auto = "0"; fillPlayers(); renderMates(); render(); };
   $("#wLastN").oninput = e => { lastN = Math.max(0, Math.floor(+e.target.value) || 0); render(); };
+  $("#wOnly").onchange = e => { onlyMatch = e.target.checked; render(); };
   playerSel.onchange = () => { focal = playerSel.value; Object.keys(wLines).forEach(k => delete wLines[k]); renderMates(); render(); };
   $("#wReset").onclick = () => { renderMates(); render(); };
   await loadTeam(teamSel.value);
