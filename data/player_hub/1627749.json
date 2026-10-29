@@ -2,9 +2,55 @@
  "player_id": 1627749,
  "player": "Dejounte Murray",
  "team": "New Orleans",
- "opp": "Denver",
- "lines": {},
+ "opp": "Sacramento",
+ "lines": {
+  "AST": {
+   "line": 6.5,
+   "price": 2.1,
+   "book": "ladbrokes_au",
+   "price_over": 2.1,
+   "price_under": 1.7
+  },
+  "PTS": {
+   "line": 16.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.91,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.83
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-28",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-10-28_denver_vs_new-orleans",
+   "starter": true,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 30.0,
+   "PTS": 10.0,
+   "REB": 8.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 4.0,
+   "FGA": 11.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-24",
    "opp": "Denver",
@@ -100,32 +146,24 @@
    "FTA": 1.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-03-29",
-   "opp": "Houston",
-   "venue": "H",
-   "game": "2026-03-29_houston_vs_new-orleans",
-   "starter": true,
-   "rest": "2",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 28.2,
-   "PTS": 19.0,
-   "REB": 4.0,
-   "AST": 6.0,
-   "3PM": 1.0,
-   "STL": 1.0,
-   "BLK": 1.0,
-   "TOV": 1.0,
-   "FGM": 8.0,
-   "FGA": 14.0,
-   "3PA": 3.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 16.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

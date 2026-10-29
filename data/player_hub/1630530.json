@@ -2,9 +2,62 @@
  "player_id": 1630530,
  "player": "Trey Murphy III",
  "team": "New Orleans",
- "opp": "Denver",
- "lines": {},
+ "opp": "Sacramento",
+ "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.7
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.91,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.83
+  },
+  "PTS": {
+   "line": 18.5,
+   "price": 1.82,
+   "book": "ladbrokes_au",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.72,
+   "book": "neds",
+   "price_over": 1.72,
+   "price_under": 1.98
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-28",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-10-28_denver_vs_new-orleans",
+   "starter": true,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 30.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 3.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 7.0,
+   "3PA": 7.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-24",
    "opp": "Denver",
@@ -100,32 +153,29 @@
    "FTA": 2.0,
    "season": "2025-26",
    "phase": "regular"
-  },
-  {
-   "date": "2026-04-02",
-   "opp": "Portland",
-   "venue": "R",
-   "game": "2026-04-02_new-orleans_vs_portland",
-   "starter": true,
-   "rest": "8",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 36.4,
-   "PTS": 19.0,
-   "REB": 8.0,
-   "AST": 2.0,
-   "3PM": 1.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 7.0,
-   "FGA": 17.0,
-   "3PA": 6.0,
-   "FTA": 4.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 18.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -10,7 +10,7 @@
   {
    "id": 1628389,
    "name": "Bam Adebayo",
-   "games": 156,
+   "games": 157,
    "med_min": 34.0
   },
   {
@@ -22,20 +22,20 @@
   {
    "id": 203952,
    "name": "Andrew Wiggins",
-   "games": 90,
-   "med_min": 31.6
+   "games": 91,
+   "med_min": 31.5
   },
   {
    "id": 203507,
    "name": "Giannis Antetokounmpo",
-   "games": 4,
-   "med_min": 31.5
+   "games": 5,
+   "med_min": 31.0
   },
   {
    "id": 1630558,
    "name": "Davion Mitchell",
-   "games": 105,
-   "med_min": 30.7
+   "games": 106,
+   "med_min": 30.8
   },
   {
    "id": 1626181,
@@ -62,27 +62,27 @@
    "med_min": 25.5
   },
   {
-   "id": 1626171,
-   "name": "Bobby Portis",
-   "games": 4,
-   "med_min": 24.5
-  },
-  {
    "id": 1629130,
    "name": "Duncan Robinson",
    "games": 74,
    "med_min": 24.5
   },
   {
+   "id": 1626171,
+   "name": "Bobby Portis",
+   "games": 5,
+   "med_min": 24.0
+  },
+  {
    "id": 1641796,
    "name": "Pelle Larsson",
-   "games": 129,
+   "games": 130,
    "med_min": 24.0
   },
   {
    "id": 1631107,
    "name": "Nikola Jovic",
-   "games": 96,
+   "games": 97,
    "med_min": 23.0
   },
   {
@@ -90,6 +90,12 @@
    "name": "Kel'el Ware",
    "games": 142,
    "med_min": 22.0
+  },
+  {
+   "id": 203501,
+   "name": "Tim Hardaway Jr.",
+   "games": 5,
+   "med_min": 21.0
   },
   {
    "id": 203937,
@@ -102,18 +108,6 @@
    "name": "Josh Richardson",
    "games": 8,
    "med_min": 20.5
-  },
-  {
-   "id": 202691,
-   "name": "Klay Thompson",
-   "games": 4,
-   "med_min": 20.0
-  },
-  {
-   "id": 203501,
-   "name": "Tim Hardaway Jr.",
-   "games": 4,
-   "med_min": 19.5
   },
   {
    "id": 1631323,
@@ -130,8 +124,14 @@
   {
    "id": 1630696,
    "name": "Dru Smith",
-   "games": 86,
+   "games": 87,
    "med_min": 17.4
+  },
+  {
+   "id": 202691,
+   "name": "Klay Thompson",
+   "games": 5,
+   "med_min": 17.0
   },
   {
    "id": 1642857,
@@ -28248,6 +28248,166 @@
      "FGA": 5.0,
      "3PA": 4.0,
      "FTA": 4.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2026-10-28_atlanta_vs_miami",
+   "lines": {
+    "203952": {
+     "min": 29.0,
+     "PTS": 18.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "FGM": 6.0,
+     "FGA": 9.0,
+     "3PA": 7.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1628389": {
+     "min": 33.0,
+     "PTS": 24.0,
+     "REB": 9.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 8.0,
+     "FGA": 16.0,
+     "3PA": 1.0,
+     "FTA": 9.0,
+     "starter": true
+    },
+    "1626171": {
+     "min": 23.0,
+     "PTS": 11.0,
+     "REB": 9.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 11.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630558": {
+     "min": 34.0,
+     "PTS": 10.0,
+     "REB": 1.0,
+     "AST": 10.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 12.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630696": {
+     "min": 14.0,
+     "PTS": 3.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "203507": {
+     "min": 31.0,
+     "PTS": 24.0,
+     "REB": 18.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 11.0,
+     "FGA": 18.0,
+     "3PA": 2.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "202691": {
+     "min": 17.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 4.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1631107": {
+     "min": 7.0,
+     "PTS": 5.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1641796": {
+     "min": 31.0,
+     "PTS": 17.0,
+     "REB": 6.0,
+     "AST": 8.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 6.0,
+     "FGA": 12.0,
+     "3PA": 3.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "203501": {
+     "min": 22.0,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "FGM": 6.0,
+     "FGA": 10.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
      "starter": false
     }
    }

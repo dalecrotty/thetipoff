@@ -2,9 +2,62 @@
  "player_id": 1628378,
  "player": "Donovan Mitchell",
  "team": "Cleveland",
- "opp": "Washington",
- "lines": {},
+ "opp": "Atlanta",
+ "lines": {
+  "AST": {
+   "line": 5.5,
+   "price": 1.7,
+   "book": "ladbrokes_au",
+   "price_over": 2.1,
+   "price_under": 1.7
+  },
+  "PTS": {
+   "line": 23.5,
+   "price": 1.8,
+   "book": "ladbrokes_au",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-28",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-10-28_cleveland_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 31.0,
+   "PTS": 19.0,
+   "REB": 5.0,
+   "AST": 7.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 5.0,
+   "FGM": 6.0,
+   "FGA": 13.0,
+   "3PA": 5.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-26",
    "opp": "Minnesota",
@@ -100,32 +153,29 @@
    "FTA": 10.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-05-23",
-   "opp": "New York",
-   "venue": "H",
-   "game": "2026-05-23_cleveland_vs_new-york",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 38.3,
-   "PTS": 23.0,
-   "REB": 1.0,
-   "AST": 4.0,
-   "3PM": 3.0,
-   "STL": 3.0,
-   "BLK": 0.0,
-   "TOV": 5.0,
-   "FGM": 9.0,
-   "FGA": 21.0,
-   "3PA": 10.0,
-   "FTA": 6.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 23.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -2,9 +2,55 @@
  "player_id": 1628386,
  "player": "Jarrett Allen",
  "team": "Cleveland",
- "opp": "Washington",
- "lines": {},
+ "opp": "Atlanta",
+ "lines": {
+  "AST": {
+   "line": 1.5,
+   "price": 2.25,
+   "book": "pointsbetau",
+   "price_over": 1.63,
+   "price_under": 2.25
+  },
+  "REB": {
+   "line": 8.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 2.0
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.82,
+   "book": "ladbrokes_au",
+   "price_over": 1.82,
+   "price_under": 1.92
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-10-28",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-10-28_cleveland_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 30.0,
+   "PTS": 8.0,
+   "REB": 12.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 3.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 6.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-26",
    "opp": "Minnesota",
@@ -100,32 +146,24 @@
    "FTA": 0.0,
    "season": "2025-26",
    "phase": "playoffs"
-  },
-  {
-   "date": "2026-05-23",
-   "opp": "New York",
-   "venue": "H",
-   "game": "2026-05-23_cleveland_vs_new-york",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 35.9,
-   "PTS": 17.0,
-   "REB": 7.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0,
-   "FGM": 7.0,
-   "FGA": 9.0,
-   "3PA": 0.0,
-   "FTA": 4.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
