@@ -2283,7 +2283,10 @@ async function initTrends() {
       <div class="card"><div class="k">Vs spread${on.length ? "" : ", home"}</div><div class="v">${signed(s.mvs)}</div><div class="r">avg pts</div></div>`;
     const by = {};
     rows.forEach(r => (by[r.team] = by[r.team] || []).push(r));
-    let teams = Object.entries(by).map(([team, rs]) => ({ team, ...trendStats(rs) }));
+    let teams = Object.entries(by).map(([team, rs]) => {
+      const l10 = trendStats(rs.filter(r => r.spread != null).slice().sort((a, b) => a.date < b.date ? 1 : -1).slice(0, 10));
+      return { team, ...trendStats(rs), l10, l10_pct: l10.ats_pct };
+    });
     const small = $("#small").checked;
     const hidden = teams.filter(t => t.n < 5).length;
     if (!small) teams = teams.filter(t => t.n >= 5);
@@ -2294,9 +2297,10 @@ async function initTrends() {
       <td class="num">${t.n}</td>
       <td class="num">${rec(t.w, t.l)}</td>
       <td class="num">${rec(t.aw, t.al, t.ap)}<div class="sm dim">${pct(t.ats_pct)}</div></td>
+      <td class="num">${rec(t.l10.aw, t.l10.al, t.l10.ap)}</td>
       <td class="num opt">${rec(t.o, t.u, t.p)}<div class="sm dim">${pct(t.ov_pct)}</div></td>
       <td class="num ${t.mvs > 0 ? "pos" : ""}">${signed(t.mvs)}</td></tr>`).join("")
-      : `<tr><td colspan="6" class="empty">${all.length
+      : `<tr><td colspan="7" class="empty">${all.length
         ? `No team has 5 games in this situation and range${hidden ? ` (${hidden} with fewer: tick the box above)` : ""}.`
         : "No games yet."}</td></tr>`;
     $("#small").parentElement.lastChild.textContent = ` Show teams with fewer than 5 games${hidden && !small ? ` (${hidden} hidden)` : ""}`;
