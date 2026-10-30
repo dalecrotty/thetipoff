@@ -6,17 +6,31 @@
  "lines": {
   "3PM": {
    "line": 1.5,
-   "price": 1.65,
-   "book": "neds",
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.74,
+   "book": "pointsbetau",
    "price_over": 2.05,
-   "price_under": 1.65
+   "price_under": 1.74
   },
   "PTS": {
    "line": 11.5,
-   "price": 1.92,
-   "book": "neds",
-   "price_over": 1.92,
-   "price_under": 1.82
+   "price": 1.94,
+   "book": "unibet",
+   "price_over": 1.94,
+   "price_under": 1.79
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.83
   }
  },
  "recent_games": [
@@ -145,6 +159,11 @@
   "PTS": {
    "line": 11.5,
    "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 0,
    "n": 5
   },
   "3PM": {

@@ -3,7 +3,36 @@
  "player": "Jarace Walker",
  "team": "Indiana",
  "opp": "Miami",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 5.5,
+   "price": 1.94,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.94
+  },
+  "PR": {
+   "line": 16.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 10.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

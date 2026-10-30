@@ -3,7 +3,64 @@
  "player": "Pelle Larsson",
  "team": "Miami",
  "opp": "Indiana",
- "lines": {},
+ "lines": {
+  "PRA": {
+   "line": 18.5,
+   "price": 1.78,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.96
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "PTS": {
+   "line": 10.5,
+   "price": 1.76,
+   "book": "unibet",
+   "price_over": 1.76,
+   "price_under": 1.97
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 2.6,
+   "book": "unibet",
+   "price_over": 1.45,
+   "price_under": 2.6
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
