@@ -2,8 +2,30 @@
  "player_id": 203497,
  "player": "Rudy Gobert",
  "team": "Minnesota",
- "opp": null,
- "lines": {},
+ "opp": "LA Clippers",
+ "lines": {
+  "REB": {
+   "line": 11.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 21.5,
+   "price": 1.85,
+   "book": "pointsbetau",
+   "price_over": 1.85,
+   "price_under": 1.85
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 11.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

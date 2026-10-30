@@ -2,8 +2,65 @@
  "player_id": 1628369,
  "player": "Jayson Tatum",
  "team": "Boston",
- "opp": null,
- "lines": {},
+ "opp": "Chicago",
+ "lines": {
+  "RA": {
+   "line": 15.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "REB": {
+   "line": 8.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PRA": {
+   "line": 43.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.91
+  },
+  "PR": {
+   "line": 36.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 27.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "PA": {
+   "line": 35.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 2.25,
+   "book": "pointsbetau",
+   "price_over": 1.63,
+   "price_under": 2.25
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.69,
+   "book": "pointsbetau",
+   "price_over": 1.69,
+   "price_under": 2.15
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-27",
@@ -126,6 +183,27 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 27.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

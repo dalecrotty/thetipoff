@@ -2,8 +2,65 @@
  "player_id": 1641764,
  "player": "Brandin Podziemski",
  "team": "Golden State",
- "opp": null,
- "lines": {},
+ "opp": "LA Lakers",
+ "lines": {
+  "PTS": {
+   "line": 14.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.25,
+   "book": "neds",
+   "price_over": 1.55,
+   "price_under": 2.25
+  },
+  "PA": {
+   "line": 18.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "PRA": {
+   "line": 24.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PR": {
+   "line": 20.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 2.02,
+   "price_under": 1.73
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +183,27 @@
    "phase": "play_in"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 14.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

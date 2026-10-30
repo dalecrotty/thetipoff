@@ -2,8 +2,65 @@
  "player_id": 1628973,
  "player": "Jalen Brunson",
  "team": "New York",
- "opp": null,
- "lines": {},
+ "opp": "Philadelphia",
+ "lines": {
+  "REB": {
+   "line": 2.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.7
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.55,
+   "book": "neds",
+   "price_over": 1.55,
+   "price_under": 2.25
+  },
+  "PR": {
+   "line": 29.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 26.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "PRA": {
+   "line": 35.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "PA": {
+   "line": 32.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 1.9
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 1.78,
+   "price_under": 2.0
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 26.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

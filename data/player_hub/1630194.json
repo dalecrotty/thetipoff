@@ -2,8 +2,58 @@
  "player_id": 1630194,
  "player": "Paul Reed",
  "team": "Detroit",
- "opp": null,
- "lines": {},
+ "opp": "Brooklyn",
+ "lines": {
+  "PA": {
+   "line": 17.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.86
+  },
+  "PTS": {
+   "line": 14.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "PR": {
+   "line": 24.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 26.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "REB": {
+   "line": 9.5,
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 2.1,
+   "price_under": 1.7
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 2.3,
+   "book": "neds",
+   "price_over": 2.3,
+   "price_under": 1.58
+  },
+  "RA": {
+   "line": 11.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +176,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 14.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 9.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -2,8 +2,65 @@
  "player_id": 1630559,
  "player": "Austin Reaves",
  "team": "LA Lakers",
- "opp": null,
- "lines": {},
+ "opp": "Golden State",
+ "lines": {
+  "PTS": {
+   "line": 23.5,
+   "price": 1.96,
+   "book": "neds",
+   "price_over": 1.96,
+   "price_under": 1.78
+  },
+  "PA": {
+   "line": 29.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 27.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 33.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.46,
+   "book": "neds",
+   "price_over": 1.46,
+   "price_under": 2.45
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 2.02,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.02
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 23.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
