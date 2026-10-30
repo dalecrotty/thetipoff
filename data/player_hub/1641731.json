@@ -11,52 +11,52 @@
   "AST": {
    "mean": 1.17,
    "floor": 0.0,
-   "ceiling": 2.96
+   "ceiling": 2.98
   },
   "BLK": {
    "mean": 0.64,
    "floor": 0.0,
-   "ceiling": 1.95
+   "ceiling": 1.94
   },
   "PTS": {
-   "mean": 8.44,
-   "floor": 1.83,
-   "ceiling": 14.99
+   "mean": 8.42,
+   "floor": 1.96,
+   "ceiling": 15.07
   },
   "REB": {
-   "mean": 3.17,
-   "floor": 1.03,
-   "ceiling": 6.05
+   "mean": 3.16,
+   "floor": 1.02,
+   "ceiling": 6.11
   },
   "STL": {
    "mean": 1.14,
-   "floor": 0.01,
-   "ceiling": 2.97
+   "floor": 0.0,
+   "ceiling": 2.98
   },
   "TOV": {
    "mean": 1.05,
    "floor": 0.0,
-   "ceiling": 2.04
+   "ceiling": 2.06
   },
   "PRA": {
-   "mean": 12.78,
-   "floor": 3.69,
-   "ceiling": 21.6
+   "mean": 12.76,
+   "floor": 3.67,
+   "ceiling": 21.58
   },
   "PR": {
-   "mean": 11.6,
-   "floor": 3.55,
-   "ceiling": 19.55
+   "mean": 11.58,
+   "floor": 3.53,
+   "ceiling": 19.53
   },
   "PA": {
-   "mean": 9.61,
-   "floor": 2.08,
-   "ceiling": 17.31
+   "mean": 9.6,
+   "floor": 2.06,
+   "ceiling": 17.29
   },
   "RA": {
    "mean": 4.34,
    "floor": 0.98,
-   "ceiling": 7.79
+   "ceiling": 7.78
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "REB": {
    "line": 3.5,
-   "p_over": 0.386,
-   "p_under": 0.614,
+   "p_over": 0.385,
+   "p_under": 0.615,
    "fair_over": 0.487,
    "fair_under": 0.513,
    "price_over": 1.92,
@@ -237,13 +237,13 @@
    "side": "under",
    "price": 1.82,
    "book": "neds",
-   "edge": 0.1008,
+   "edge": 0.1017,
    "tier": "A"
   },
   "PR": {
    "line": 12.5,
-   "p_over": 0.443,
-   "p_under": 0.557,
+   "p_over": 0.441,
+   "p_under": 0.559,
    "fair_over": 0.491,
    "fair_under": 0.509,
    "price_over": 1.9,
@@ -251,13 +251,13 @@
    "side": "under",
    "price": 1.83,
    "book": "ladbrokes_au",
-   "edge": 0.0481,
+   "edge": 0.0493,
    "tier": "B"
   },
   "PTS": {
    "line": 8.5,
-   "p_over": 0.495,
-   "p_under": 0.505,
+   "p_over": 0.494,
+   "p_under": 0.506,
    "fair_over": 0.52,
    "fair_under": 0.48,
    "price_over": 1.8,
@@ -265,7 +265,7 @@
    "side": "under",
    "price": 1.95,
    "book": "tab",
-   "edge": 0.025,
+   "edge": 0.0262,
    "tier": null
   }
  },
