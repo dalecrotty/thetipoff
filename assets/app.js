@@ -427,7 +427,7 @@ const STAT_WORD = { PTS: "points", REB: "rebounds", AST: "assists",
 function playerCell(r) {
   const opp = r.opp ? ` v ${teamMeta(r.opp)[0]}` : "";
   return `<td class="s pl"><a href="${pHref(r.player_id)}">${esc(r.player)}</a>${moveInfo(r)}
-    <div class="sm">${teamBadge(r.team)}${esc(opp)}${
+    <div class="sm"><a href="${teamHref(r.team)}" title="${esc(r.team)} game trends">${teamBadge(r.team)}</a>${esc(opp)}${
       r.minutes != null ? ` · ${fmt(r.minutes, 0)} min` : ""}${
       r.minutes_source && r.minutes_source !== "model"
         ? ` <span class="badge src">${esc(r.minutes_source)}</span>` : ""}</div>${wwNote(r)}</td>`;
@@ -867,7 +867,7 @@ function renderMovers(data) {
       ups.join(", ")} (${zoneName(new Date())}).${more ? ` <a href="#" id="moversAll">All ${m.length} →</a>` : ""}</p>
     <div class="tablewrap"><table><tbody>${m.map((r, i) => `<tr${i >= CAP ? ' class="more" hidden' : ""}>
       <td class="s"><a href="${pHref(r.player_id)}">${esc(r.player)}</a></td>
-      <td class="s">${teamBadge(r.team)}</td>
+      <td class="s"><a href="${teamHref(r.team)}" title="${esc(r.team)} game trends">${teamBadge(r.team)}</a></td>
       <td class="s">${r.stat}</td>
       <td class="num dim">${fmt(r.prior)}</td>
       <td class="num">→ <b>${fmt(r.now)}</b></td>
@@ -2357,7 +2357,7 @@ async function initTeam() {
     const who = [nick(team), ...(withP.size ? [`with ${[...withP].join(", ")}`] : []),
                  ...(withoutP.size ? [`without ${[...withoutP].join(", ")}`] : []), ...on].join(", ");
     $("#tmlead").innerHTML = st.n
-      ? `${esc(who)}: <b>${rec(st.w, st.l)}</b> straight up, <b>${rec(st.aw, st.al, st.ap)}</b> against the spread, `
+      ? `${esc(who)}: ATS record <b>${rec(st.aw, st.al, st.ap)}</b>, <b>${rec(st.w, st.l)}</b> straight up, `
         + `overs <b>${rec(st.o, st.u, st.p)}</b>, ${range.label()} (${st.n} games).`
       : `${esc(who)}: no games match, ${range.label()}.`;
     $("#tmcards").innerHTML = `
