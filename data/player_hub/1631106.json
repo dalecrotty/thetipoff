@@ -4,19 +4,54 @@
  "team": "Houston",
  "opp": "Dallas",
  "lines": {
+  "REB": {
+   "line": 5.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 16.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.02
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
   "PRA": {
    "line": 18.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96
   },
+  "PTS": {
+   "line": 10.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
   "PA": {
    "line": 12.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.65,
+   "book": "pointsbetau",
+   "price_over": 2.65,
+   "price_under": 1.44
   },
   "AST": {
    "line": 1.5,
@@ -24,41 +59,6 @@
    "book": "sportsbet",
    "price_over": 2.08,
    "price_under": 1.72
-  },
-  "PR": {
-   "line": 17.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "PTS": {
-   "line": 11.5,
-   "price": 1.82,
-   "book": "neds",
-   "price_over": 1.92,
-   "price_under": 1.82
-  },
-  "RA": {
-   "line": 7.5,
-   "price": 1.78,
-   "book": "sportsbet",
-   "price_over": 2.0,
-   "price_under": 1.78
-  },
-  "REB": {
-   "line": 5.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.44,
-   "book": "pointsbetau",
-   "price_over": 2.65,
-   "price_under": 1.44
   }
  },
  "recent_games": [
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 11.5,
+   "line": 10.5,
    "over": 3,
    "n": 5
   },
