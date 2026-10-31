@@ -226,19 +226,33 @@
   }
  },
  "lines": {
-  "REB": {
-   "line": 5.5,
-   "p_over": 0.437,
-   "p_under": 0.563,
-   "fair_over": 0.469,
-   "fair_under": 0.531,
-   "price_over": 2.0,
-   "price_under": 1.77,
-   "side": "under",
-   "price": 1.77,
+  "RA": {
+   "line": 7.5,
+   "p_over": 0.567,
+   "p_under": 0.433,
+   "fair_over": 0.528,
+   "fair_under": 0.472,
+   "price_over": 1.74,
+   "price_under": 1.95,
+   "side": "over",
+   "price": 1.74,
    "book": "pointsbetau",
-   "edge": 0.0326,
+   "edge": 0.0388,
    "tier": "B"
+  },
+  "PR": {
+   "line": 27.5,
+   "p_over": 0.468,
+   "p_under": 0.532,
+   "fair_over": 0.492,
+   "fair_under": 0.508,
+   "price_over": 1.91,
+   "price_under": 1.85,
+   "side": "under",
+   "price": 1.85,
+   "book": "sportsbet",
+   "edge": 0.0242,
+   "tier": null
   },
   "PTS": {
    "line": 22.5,
@@ -252,6 +266,48 @@
    "price": 1.78,
    "book": "sportsbet",
    "edge": 0.0238,
+   "tier": null
+  },
+  "PRA": {
+   "line": 29.5,
+   "p_over": 0.5,
+   "p_under": 0.5,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
+   "side": "under",
+   "price": 1.9,
+   "book": "pointsbetau",
+   "edge": 0.0091,
+   "tier": null
+  },
+  "PA": {
+   "line": 24.5,
+   "p_over": 0.483,
+   "p_under": 0.517,
+   "fair_over": 0.503,
+   "fair_under": 0.497,
+   "price_over": 1.87,
+   "price_under": 1.89,
+   "side": "under",
+   "price": 1.89,
+   "book": "sportsbet",
+   "edge": 0.0193,
+   "tier": null
+  },
+  "REB": {
+   "line": 5.5,
+   "p_over": 0.437,
+   "p_under": 0.563,
+   "fair_over": 0.453,
+   "fair_under": 0.547,
+   "price_over": 2.08,
+   "price_under": 1.72,
+   "side": "under",
+   "price": 1.72,
+   "book": "sportsbet",
+   "edge": 0.0158,
    "tier": null
   },
   "AST": {
