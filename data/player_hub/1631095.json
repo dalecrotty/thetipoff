@@ -3,7 +3,36 @@
  "player": "Jabari Smith Jr.",
  "team": "Houston",
  "opp": "Oklahoma City",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 5.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.94
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.57,
+   "book": "neds",
+   "price_over": 1.57,
+   "price_under": 2.2
+  },
+  "PR": {
+   "line": 20.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-30",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

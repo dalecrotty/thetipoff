@@ -3,7 +3,36 @@
  "player": "Cameron Boozer",
  "team": "Memphis",
  "opp": "Sacramento",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 17.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.1,
+   "book": "neds",
+   "price_over": 1.62,
+   "price_under": 2.1
+  },
+  "REB": {
+   "line": 8.5,
+   "price": 2.1,
+   "book": "neds",
+   "price_over": 2.1,
+   "price_under": 1.7
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 2.05,
+   "book": "neds",
+   "price_over": 1.7,
+   "price_under": 2.05
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-29",
@@ -126,6 +155,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 17.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 8.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

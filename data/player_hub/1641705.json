@@ -3,7 +3,64 @@
  "player": "Victor Wembanyama",
  "team": "San Antonio",
  "opp": "Minnesota",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.97,
+   "book": "unibet",
+   "price_over": 1.97,
+   "price_under": 1.77
+  },
+  "PA": {
+   "line": 27.5,
+   "price": 1.95,
+   "book": "unibet",
+   "price_over": 1.95,
+   "price_under": 1.77
+  },
+  "RA": {
+   "line": 13.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 38.5,
+   "price": 1.89,
+   "book": "unibet",
+   "price_over": 1.89,
+   "price_under": 1.83
+  },
+  "PTS": {
+   "line": 24.5,
+   "price": 1.89,
+   "book": "unibet",
+   "price_over": 1.89,
+   "price_under": 1.83
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.66,
+   "book": "unibet",
+   "price_over": 1.66,
+   "price_under": 2.15
+  },
+  "PR": {
+   "line": 36.5,
+   "price": 1.97,
+   "book": "unibet",
+   "price_over": 1.97,
+   "price_under": 1.76
+  },
+  "REB": {
+   "line": 10.5,
+   "price": 1.77,
+   "book": "neds",
+   "price_over": 1.77,
+   "price_under": 1.98
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 24.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 10.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -3,7 +3,50 @@
  "player": "Sam Merrill",
  "team": "Cleveland",
  "opp": "Milwaukee",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 2.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.57,
+   "book": "unibet",
+   "price_over": 1.57,
+   "price_under": 2.28
+  },
+  "PR": {
+   "line": 12.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PA": {
+   "line": 11.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 14.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-29",
@@ -126,6 +169,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
