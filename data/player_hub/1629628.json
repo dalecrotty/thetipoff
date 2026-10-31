@@ -2,66 +2,33 @@
  "player_id": 1629628,
  "player": "RJ Barrett",
  "team": "Toronto",
- "opp": "Orlando",
- "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "RA": {
-   "line": 8.5,
-   "price": 1.71,
-   "book": "unibet",
-   "price_over": 1.71,
-   "price_under": 2.06
-  },
-  "PTS": {
-   "line": 23.5,
-   "price": 1.81,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.81
-  },
-  "AST": {
-   "line": 3.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PR": {
-   "line": 28.5,
-   "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.81,
-   "price_under": 1.91
-  },
-  "PA": {
-   "line": 25.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "PRA": {
-   "line": 31.5,
-   "price": 1.83,
-   "book": "sportsbet",
-   "price_over": 1.83,
-   "price_under": 1.93
-  },
-  "REB": {
-   "line": 5.5,
-   "price": 1.89,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.83
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2026-10-30_orlando_vs_toronto",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 34.0,
+   "PTS": 9.0,
+   "REB": 3.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 5.0,
+   "FGM": 3.0,
+   "FGA": 10.0,
+   "3PA": 4.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-28",
    "opp": "Orlando",
@@ -157,53 +124,8 @@
    "FTA": 7.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-05-03",
-   "opp": "Cleveland",
-   "venue": "R",
-   "game": "2026-05-03_cleveland_vs_toronto",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 43.0,
-   "PTS": 23.0,
-   "REB": 4.0,
-   "AST": 6.0,
-   "3PM": 1.0,
-   "STL": 3.0,
-   "BLK": 0.0,
-   "TOV": 3.0,
-   "FGM": 9.0,
-   "FGA": 25.0,
-   "3PA": 6.0,
-   "FTA": 5.0,
-   "season": "2025-26",
-   "phase": "playoffs"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 23.5,
-   "over": 1,
-   "n": 5
-  },
-  "REB": {
-   "line": 5.5,
-   "over": 2,
-   "n": 5
-  },
-  "AST": {
-   "line": 3.5,
-   "over": 3,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 1,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

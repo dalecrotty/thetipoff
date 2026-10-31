@@ -2,66 +2,33 @@
  "player_id": -788,
  "player": "Keaton Wagler",
  "team": "LA Clippers",
- "opp": "Minnesota",
- "lines": {
-  "REB": {
-   "line": 3.5,
-   "price": 1.72,
-   "book": "neds",
-   "price_over": 1.72,
-   "price_under": 2.05
-  },
-  "RA": {
-   "line": 6.5,
-   "price": 1.77,
-   "book": "neds",
-   "price_over": 1.77,
-   "price_under": 1.98
-  },
-  "PR": {
-   "line": 16.5,
-   "price": 1.85,
-   "book": "ladbrokes_au",
-   "price_over": 1.85,
-   "price_under": 1.88
-  },
-  "PRA": {
-   "line": 18.5,
-   "price": 1.7,
-   "book": "neds",
-   "price_over": 1.7,
-   "price_under": 2.1
-  },
-  "PA": {
-   "line": 15.5,
-   "price": 1.88,
-   "book": "ladbrokes_au",
-   "price_over": 1.88,
-   "price_under": 1.87
-  },
-  "AST": {
-   "line": 2.5,
-   "price": 1.7,
-   "book": "neds",
-   "price_over": 1.7,
-   "price_under": 2.05
-  },
-  "PTS": {
-   "line": 12.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.9
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.88,
-   "book": "neds",
-   "price_over": 1.88,
-   "price_under": 1.78
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-10-30_la-clippers_vs_minnesota",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 25.0,
+   "PTS": 12.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 11.0,
+   "3PA": 5.0,
+   "FTA": 8.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-28",
    "opp": "LA Lakers",
@@ -159,27 +126,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 12.5,
-   "over": 3,
-   "n": 4
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 3,
-   "n": 4
-  },
-  "AST": {
-   "line": 2.5,
-   "over": 3,
-   "n": 4
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 3,
-   "n": 4
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

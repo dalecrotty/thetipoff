@@ -4,13 +4,13 @@
   {
    "id": 203999,
    "name": "Nikola Jokic",
-   "games": 145,
+   "games": 146,
    "med_min": 37.0
   },
   {
    "id": 1627750,
    "name": "Jamal Murray",
-   "games": 152,
+   "games": 153,
    "med_min": 37.0
   },
   {
@@ -22,26 +22,20 @@
   {
    "id": 1631128,
    "name": "Christian Braun",
-   "games": 133,
+   "games": 134,
    "med_min": 33.0
   },
   {
    "id": 1629661,
    "name": "Cameron Johnson",
-   "games": 61,
-   "med_min": 30.9
+   "games": 62,
+   "med_min": 31.0
   },
   {
    "id": 203932,
    "name": "Aaron Gordon",
-   "games": 94,
+   "games": 95,
    "med_min": 30.0
-  },
-  {
-   "id": 201942,
-   "name": "DeMar DeRozan",
-   "games": 4,
-   "med_min": 27.0
   },
   {
    "id": 203501,
@@ -53,6 +47,12 @@
    "id": 201566,
    "name": "Russell Westbrook",
    "games": 75,
+   "med_min": 26.0
+  },
+  {
+   "id": 201942,
+   "name": "DeMar DeRozan",
+   "games": 5,
    "med_min": 26.0
   },
   {
@@ -68,12 +68,6 @@
    "med_min": 24.3
   },
   {
-   "id": -717,
-   "name": "Trevon Brazile",
-   "games": 4,
-   "med_min": 23.0
-  },
-  {
    "id": -703,
    "name": "Alpha Diallo",
    "games": 1,
@@ -84,6 +78,12 @@
    "name": "Spencer Jones",
    "games": 88,
    "med_min": 19.9
+  },
+  {
+   "id": -717,
+   "name": "Trevon Brazile",
+   "games": 5,
+   "med_min": 19.0
   },
   {
    "id": 1631124,
@@ -124,14 +124,14 @@
   {
    "id": 1628963,
    "name": "Marvin Bagley III",
-   "games": 4,
+   "games": 5,
    "med_min": 11.0
   },
   {
    "id": 1626145,
    "name": "Tyus Jones",
-   "games": 18,
-   "med_min": 9.4
+   "games": 19,
+   "med_min": 9.8
   },
   {
    "id": 1630192,
@@ -29133,6 +29133,151 @@
      "3PA": 3.0,
      "FTA": 0.0,
      "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-10-30",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-10-30_denver_vs_phoenix",
+   "lines": {
+    "203932": {
+     "min": 29.0,
+     "PTS": 15.0,
+     "REB": 4.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 4.0,
+     "FGA": 9.0,
+     "3PA": 4.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1629661": {
+     "min": 34.0,
+     "PTS": 12.0,
+     "REB": 9.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 13.0,
+     "3PA": 8.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1631128": {
+     "min": 37.0,
+     "PTS": 31.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 7.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 11.0,
+     "FGA": 16.0,
+     "3PA": 9.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "201942": {
+     "min": 24.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 5.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1627750": {
+     "min": 37.0,
+     "PTS": 39.0,
+     "REB": 8.0,
+     "AST": 5.0,
+     "3PM": 7.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 5.0,
+     "FGM": 10.0,
+     "FGA": 18.0,
+     "3PA": 9.0,
+     "FTA": 15.0,
+     "starter": true
+    },
+    "1628963": {
+     "min": 11.0,
+     "PTS": 0.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "203999": {
+     "min": 37.0,
+     "PTS": 18.0,
+     "REB": 7.0,
+     "AST": 10.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "FGM": 8.0,
+     "FGA": 13.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1626145": {
+     "min": 11.0,
+     "PTS": 3.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-717": {
+     "min": 19.0,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 2.0,
+     "starter": false
     }
    }
   }

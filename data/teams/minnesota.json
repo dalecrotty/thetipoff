@@ -16,20 +16,14 @@
   {
    "id": 1630183,
    "name": "Jaden McDaniels",
-   "games": 172,
+   "games": 173,
    "med_min": 33.0
   },
   {
    "id": 203497,
    "name": "Rudy Gobert",
-   "games": 165,
+   "games": 166,
    "med_min": 32.6
-  },
-  {
-   "id": 1630228,
-   "name": "Jonathan Kuminga",
-   "games": 5,
-   "med_min": 30.0
   },
   {
    "id": 1628978,
@@ -40,14 +34,20 @@
   {
    "id": 1630245,
    "name": "Ayo Dosunmu",
-   "games": 39,
-   "med_min": 28.6
+   "games": 40,
+   "med_min": 28.8
   },
   {
    "id": 1630163,
    "name": "LaMelo Ball",
-   "games": 5,
-   "med_min": 28.0
+   "games": 6,
+   "med_min": 28.5
+  },
+  {
+   "id": 1630228,
+   "name": "Jonathan Kuminga",
+   "games": 6,
+   "med_min": 28.5
   },
   {
    "id": 1629675,
@@ -68,6 +68,12 @@
    "med_min": 22.1
   },
   {
+   "id": -650,
+   "name": "Trey Lyles",
+   "games": 6,
+   "med_min": 15.5
+  },
+  {
    "id": 203937,
    "name": "Kyle Anderson",
    "games": 27,
@@ -76,26 +82,20 @@
   {
    "id": 1630538,
    "name": "Bones Hyland",
-   "games": 90,
-   "med_min": 14.6
-  },
-  {
-   "id": -650,
-   "name": "Trey Lyles",
-   "games": 5,
-   "med_min": 14.0
+   "games": 91,
+   "med_min": 14.7
   },
   {
    "id": 1641740,
    "name": "Jaylen Clark",
-   "games": 118,
-   "med_min": 12.1
+   "games": 119,
+   "med_min": 12.2
   },
   {
    "id": 1630545,
    "name": "Terrence Shannon Jr.",
-   "games": 89,
-   "med_min": 11.1
+   "games": 90,
+   "med_min": 11.4
   },
   {
    "id": 1642265,
@@ -106,8 +106,8 @@
   {
    "id": 1642866,
    "name": "Joan Beringer",
-   "games": 50,
-   "med_min": 5.1
+   "games": 51,
+   "med_min": 5.2
   },
   {
    "id": -633,
@@ -146,12 +146,6 @@
    "med_min": 4.0
   },
   {
-   "id": 1642389,
-   "name": "Zyon Pullin",
-   "games": 6,
-   "med_min": 4.0
-  },
-  {
    "id": 1642402,
    "name": "Enrique Freeman",
    "games": 4,
@@ -170,6 +164,12 @@
    "med_min": 3.1
   },
   {
+   "id": 1642389,
+   "name": "Zyon Pullin",
+   "games": 7,
+   "med_min": 3.1
+  },
+  {
    "id": -674,
    "name": "PJ Dozier",
    "games": 9,
@@ -178,7 +178,7 @@
   {
    "id": 1642262,
    "name": "Cody Williams",
-   "games": 3,
+   "games": 4,
    "med_min": 3.0
   },
   {
@@ -190,7 +190,7 @@
   {
    "id": -739,
    "name": "Isaiah Evans",
-   "games": 3,
+   "games": 4,
    "med_min": 2.0
   },
   {
@@ -31031,6 +31031,211 @@
      "FGM": 3.0,
      "FGA": 5.0,
      "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-30",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-10-30_la-clippers_vs_minnesota",
+   "lines": {
+    "1630245": {
+     "min": 30.0,
+     "PTS": 15.0,
+     "REB": 7.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 6.0,
+     "FGA": 11.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630538": {
+     "min": 20.0,
+     "PTS": 19.0,
+     "REB": 0.0,
+     "AST": 8.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 8.0,
+     "FGA": 16.0,
+     "3PA": 9.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642262": {
+     "min": 2.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630183": {
+     "min": 33.0,
+     "PTS": 23.0,
+     "REB": 6.0,
+     "AST": 7.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 11.0,
+     "FGA": 15.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1641740": {
+     "min": 17.0,
+     "PTS": 5.0,
+     "REB": 0.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642866": {
+     "min": 18.0,
+     "PTS": 4.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630228": {
+     "min": 22.0,
+     "PTS": 5.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 6.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630163": {
+     "min": 29.0,
+     "PTS": 24.0,
+     "REB": 4.0,
+     "AST": 7.0,
+     "3PM": 6.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 9.0,
+     "FGA": 20.0,
+     "3PA": 15.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "203497": {
+     "min": 30.0,
+     "PTS": 9.0,
+     "REB": 13.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 7.0,
+     "3PA": 0.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1630545": {
+     "min": 20.0,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1642389": {
+     "min": 2.0,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-650": {
+     "min": 17.0,
+     "PTS": 10.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 7.0,
+     "3PA": 3.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "-739": {
+     "min": 2.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
      "FTA": 0.0,
      "starter": false
     }

@@ -2,45 +2,33 @@
  "player_id": 1630174,
  "player": "Aaron Nesmith",
  "team": "Indiana",
- "opp": "Miami",
- "lines": {
-  "PTS": {
-   "line": 12.5,
-   "price": 1.82,
-   "book": "unibet",
-   "price_over": 1.82,
-   "price_under": 1.93
-  },
-  "PR": {
-   "line": 16.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.83
-  },
-  "PRA": {
-   "line": 18.5,
-   "price": 1.84,
-   "book": "sportsbet",
-   "price_over": 1.84,
-   "price_under": 1.92
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.64,
-   "book": "sportsbet",
-   "price_over": 1.64,
-   "price_under": 2.15
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 1.97,
-   "book": "unibet",
-   "price_over": 1.97,
-   "price_under": 1.77
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2026-10-30_indiana_vs_miami",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 21.0,
+   "PTS": 9.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 3.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-28",
    "opp": "Philadelphia",
@@ -136,48 +124,8 @@
    "FTA": 6.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-03-27",
-   "opp": "LA Clippers",
-   "venue": "H",
-   "game": "2026-03-27_indiana_vs_la-clippers",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 35.4,
-   "PTS": 26.0,
-   "REB": 7.0,
-   "AST": 2.0,
-   "3PM": 4.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 5.0,
-   "FGM": 10.0,
-   "FGA": 14.0,
-   "3PA": 5.0,
-   "FTA": 2.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 12.5,
-   "over": 4,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 2,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 4,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

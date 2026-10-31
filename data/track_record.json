@@ -1,6 +1,6 @@
 {
  "calibration": {
-  "asof": "2026-10-30",
+  "asof": "2026-10-31",
   "season_start": "2026-10-20",
   "markets": [
    {
@@ -8,28 +8,28 @@
     "label": "Points",
     "windows": {
      "7d": {
-      "n": 1214,
-      "mae": 4.35,
-      "bias": 0.39,
-      "coverage": 0.8295,
-      "below": 0.0956,
-      "above": 0.075
+      "n": 1172,
+      "mae": 4.29,
+      "bias": 0.33,
+      "coverage": 0.8311,
+      "below": 0.093,
+      "above": 0.0759
      },
      "30d": {
-      "n": 1571,
-      "mae": 4.42,
-      "bias": 0.46,
-      "coverage": 0.8269,
-      "below": 0.0987,
-      "above": 0.0745
+      "n": 1801,
+      "mae": 4.38,
+      "bias": 0.45,
+      "coverage": 0.8279,
+      "below": 0.0977,
+      "above": 0.0744
      },
      "season": {
-      "n": 1571,
-      "mae": 4.42,
-      "bias": 0.46,
-      "coverage": 0.8269,
-      "below": 0.0987,
-      "above": 0.0745
+      "n": 1801,
+      "mae": 4.38,
+      "bias": 0.45,
+      "coverage": 0.8279,
+      "below": 0.0977,
+      "above": 0.0744
      }
     }
    },
@@ -38,27 +38,27 @@
     "label": "Rebounds",
     "windows": {
      "7d": {
-      "n": 1214,
-      "mae": 1.85,
-      "bias": -0.03,
-      "coverage": 0.8072,
-      "below": 0.0964,
+      "n": 1172,
+      "mae": 1.82,
+      "bias": -0.06,
+      "coverage": 0.8106,
+      "below": 0.093,
       "above": 0.0964
      },
      "30d": {
-      "n": 1571,
-      "mae": 1.83,
+      "n": 1801,
+      "mae": 1.82,
       "bias": -0.02,
-      "coverage": 0.8084,
-      "below": 0.0961,
+      "coverage": 0.8112,
+      "below": 0.0933,
       "above": 0.0955
      },
      "season": {
-      "n": 1571,
-      "mae": 1.83,
+      "n": 1801,
+      "mae": 1.82,
       "bias": -0.02,
-      "coverage": 0.8084,
-      "below": 0.0961,
+      "coverage": 0.8112,
+      "below": 0.0933,
       "above": 0.0955
      }
     }
@@ -68,28 +68,28 @@
     "label": "Assists",
     "windows": {
      "7d": {
-      "n": 1214,
-      "mae": 1.25,
-      "bias": -0.05,
-      "coverage": 0.8237,
-      "below": 0.0807,
-      "above": 0.0956
+      "n": 1172,
+      "mae": 1.26,
+      "bias": -0.07,
+      "coverage": 0.8148,
+      "below": 0.0794,
+      "above": 0.1058
      },
      "30d": {
-      "n": 1571,
+      "n": 1801,
       "mae": 1.27,
-      "bias": 0.04,
-      "coverage": 0.8141,
-      "below": 0.091,
-      "above": 0.0948
+      "bias": 0.03,
+      "coverage": 0.814,
+      "below": 0.0883,
+      "above": 0.0977
      },
      "season": {
-      "n": 1571,
+      "n": 1801,
       "mae": 1.27,
-      "bias": 0.04,
-      "coverage": 0.8141,
-      "below": 0.091,
-      "above": 0.0948
+      "bias": 0.03,
+      "coverage": 0.814,
+      "below": 0.0883,
+      "above": 0.0977
      }
     }
    },
@@ -98,28 +98,28 @@
     "label": "Threes",
     "windows": {
      "7d": {
-      "n": 1214,
-      "mae": 0.85,
-      "bias": 0.01,
-      "coverage": 0.7883,
-      "below": 0.0947,
-      "above": 0.117
+      "n": 1172,
+      "mae": 0.87,
+      "bias": -0.03,
+      "coverage": 0.7858,
+      "below": 0.093,
+      "above": 0.1212
      },
      "30d": {
-      "n": 1571,
+      "n": 1801,
       "mae": 0.85,
-      "bias": 0.05,
-      "coverage": 0.7893,
-      "below": 0.098,
-      "above": 0.1127
+      "bias": 0.02,
+      "coverage": 0.7929,
+      "below": 0.0949,
+      "above": 0.1122
      },
      "season": {
-      "n": 1571,
+      "n": 1801,
       "mae": 0.85,
-      "bias": 0.05,
-      "coverage": 0.7893,
-      "below": 0.098,
-      "above": 0.1127
+      "bias": 0.02,
+      "coverage": 0.7929,
+      "below": 0.0949,
+      "above": 0.1122
      }
     }
    }

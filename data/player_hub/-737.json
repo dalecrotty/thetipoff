@@ -2,8 +2,353 @@
  "player_id": -737,
  "player": "Darryn Peterson",
  "team": "Utah",
- "opp": null,
+ "projections": {
+  "3PM": {
+   "mean": 1.2,
+   "floor": 0.0,
+   "ceiling": 2.93
+  },
+  "AST": {
+   "mean": 2.78,
+   "floor": 0.38,
+   "ceiling": 5.09
+  },
+  "BLK": {
+   "mean": 0.34,
+   "floor": 0.0,
+   "ceiling": 1.02
+  },
+  "PTS": {
+   "mean": 12.48,
+   "floor": 4.69,
+   "ceiling": 20.88
+  },
+  "REB": {
+   "mean": 4.85,
+   "floor": 1.71,
+   "ceiling": 8.52
+  },
+  "STL": {
+   "mean": 1.08,
+   "floor": 0.0,
+   "ceiling": 2.91
+  },
+  "TOV": {
+   "mean": 1.22,
+   "floor": 0.0,
+   "ceiling": 2.96
+  },
+  "PRA": {
+   "mean": 20.11,
+   "floor": 10.34,
+   "ceiling": 30.46
+  },
+  "PR": {
+   "mean": 17.33,
+   "floor": 8.05,
+   "ceiling": 26.74
+  },
+  "PA": {
+   "mean": 15.26,
+   "floor": 6.65,
+   "ceiling": 24.59
+  },
+  "RA": {
+   "mean": 7.63,
+   "floor": 3.52,
+   "ceiling": 12.35
+  }
+ },
+ "minutes": {
+  "value": 29,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 5,
+   "min_pg": 28.6,
+   "PTS": {
+    "pg": 12.8,
+    "pm": 0.448
+   },
+   "REB": {
+    "pg": 4.4,
+    "pm": 0.154
+   },
+   "AST": {
+    "pg": 2.6,
+    "pm": 0.091
+   },
+   "3PM": {
+    "pg": 1.4,
+    "pm": 0.049
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.035
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.007
+   },
+   "TOV": {
+    "pg": 0.8,
+    "pm": 0.028
+   }
+  },
+  "l10": {
+   "games": 5,
+   "min_pg": 28.6,
+   "PTS": {
+    "pg": 12.8,
+    "pm": 0.448
+   },
+   "REB": {
+    "pg": 4.4,
+    "pm": 0.154
+   },
+   "AST": {
+    "pg": 2.6,
+    "pm": 0.091
+   },
+   "3PM": {
+    "pg": 1.4,
+    "pm": 0.049
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.035
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.007
+   },
+   "TOV": {
+    "pg": 0.8,
+    "pm": 0.028
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 28.6,
+   "PTS": {
+    "pg": 12.8,
+    "pm": 0.448
+   },
+   "REB": {
+    "pg": 4.4,
+    "pm": 0.154
+   },
+   "AST": {
+    "pg": 2.6,
+    "pm": 0.091
+   },
+   "3PM": {
+    "pg": 1.4,
+    "pm": 0.049
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.035
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.007
+   },
+   "TOV": {
+    "pg": 0.8,
+    "pm": 0.028
+   }
+  },
+  "home": {
+   "games": 4,
+   "min_pg": 28.0,
+   "PTS": {
+    "pg": 13.75,
+    "pm": 0.491
+   },
+   "REB": {
+    "pg": 4.5,
+    "pm": 0.161
+   },
+   "AST": {
+    "pg": 2.5,
+    "pm": 0.089
+   },
+   "3PM": {
+    "pg": 1.75,
+    "pm": 0.062
+   },
+   "STL": {
+    "pg": 1.25,
+    "pm": 0.045
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 0.75,
+    "pm": 0.027
+   }
+  },
+  "away": {
+   "games": 1,
+   "min_pg": 31.0,
+   "PTS": {
+    "pg": 9.0,
+    "pm": 0.29
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.129
+   },
+   "AST": {
+    "pg": 3.0,
+    "pm": 0.097
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.032
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-10-21_memphis_vs_utah",
+   "starter": true,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 31.0,
+   "PTS": 9.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 7.0,
+   "3PA": 1.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2026-10-23_new-orleans_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 30.0,
+   "PTS": 15.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 6.0,
+   "FGA": 12.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-25",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-10-25_la-lakers_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 30.0,
+   "PTS": 8.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 13.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-10-26_memphis_vs_utah",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 26.0,
+   "PTS": 14.0,
+   "REB": 7.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 5.0,
+   "FGA": 18.0,
+   "3PA": 5.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-10-28_san-antonio_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 26.0,
+   "PTS": 18.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 4.0,
+   "FGA": 13.0,
+   "3PA": 8.0,
+   "FTA": 7.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +471,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Portland"
 }

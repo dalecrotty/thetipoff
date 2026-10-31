@@ -2,66 +2,33 @@
  "player_id": 203507,
  "player": "Giannis Antetokounmpo",
  "team": "Miami",
- "opp": "Indiana",
- "lines": {
-  "3PM": {
-   "line": 0.5,
-   "price": 1.72,
-   "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
-  },
-  "AST": {
-   "line": 6.5,
-   "price": 1.73,
-   "book": "neds",
-   "price_over": 2.02,
-   "price_under": 1.73
-  },
-  "RA": {
-   "line": 18.5,
-   "price": 1.68,
-   "book": "unibet",
-   "price_over": 2.1,
-   "price_under": 1.68
-  },
-  "PA": {
-   "line": 37.5,
-   "price": 1.96,
-   "book": "neds",
-   "price_over": 1.78,
-   "price_under": 1.96
-  },
-  "PRA": {
-   "line": 49.5,
-   "price": 1.9,
-   "book": "neds",
-   "price_over": 1.83,
-   "price_under": 1.9
-  },
-  "REB": {
-   "line": 11.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PTS": {
-   "line": 31.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PR": {
-   "line": 42.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2026-10-30_indiana_vs_miami",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 31.0,
+   "PTS": 31.0,
+   "REB": 18.0,
+   "AST": 10.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 13.0,
+   "FGA": 19.0,
+   "3PA": 2.0,
+   "FTA": 6.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-28",
    "opp": "Atlanta",
@@ -157,53 +124,8 @@
    "FTA": 8.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-21",
-   "opp": "Minnesota",
-   "venue": "H",
-   "game": "2026-10-21_miami_vs_minnesota",
-   "starter": true,
-   "rest": "219",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 30.0,
-   "PTS": 35.0,
-   "REB": 6.0,
-   "AST": 1.0,
-   "3PM": 0.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 3.0,
-   "FGM": 13.0,
-   "FGA": 19.0,
-   "3PA": 2.0,
-   "FTA": 14.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 31.5,
-   "over": 2,
-   "n": 5
-  },
-  "REB": {
-   "line": 11.5,
-   "over": 3,
-   "n": 5
-  },
-  "AST": {
-   "line": 6.5,
-   "over": 1,
-   "n": 5
-  },
-  "3PM": {
-   "line": 0.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

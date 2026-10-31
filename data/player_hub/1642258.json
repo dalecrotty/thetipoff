@@ -2,38 +2,33 @@
  "player_id": 1642258,
  "player": "Zaccharie Risacher",
  "team": "Dallas",
- "opp": "Houston",
- "lines": {
-  "PR": {
-   "line": 12.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.88
-  },
-  "PTS": {
-   "line": 8.5,
-   "price": 1.97,
-   "book": "unibet",
-   "price_over": 1.97,
-   "price_under": 1.77
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 1.64,
-   "book": "sportsbet",
-   "price_over": 1.64,
-   "price_under": 2.15
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 2.75,
-   "book": "unibet",
-   "price_over": 2.75,
-   "price_under": 1.42
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-10-30_dallas_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 28.0,
+   "PTS": 12.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 4.0,
+   "FGA": 9.0,
+   "3PA": 6.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-28",
    "opp": "Oklahoma City",
@@ -129,48 +124,8 @@
    "FTA": 2.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-21",
-   "opp": "Houston",
-   "venue": "R",
-   "game": "2026-10-21_dallas_vs_houston",
-   "starter": false,
-   "rest": "173",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 27.0,
-   "PTS": 4.0,
-   "REB": 6.0,
-   "AST": 2.0,
-   "3PM": 0.0,
-   "STL": 5.0,
-   "BLK": 0.0,
-   "TOV": 3.0,
-   "FGM": 2.0,
-   "FGA": 7.0,
-   "3PA": 4.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 8.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 5,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 1,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

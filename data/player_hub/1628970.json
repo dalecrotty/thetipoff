@@ -2,66 +2,33 @@
  "player_id": 1628970,
  "player": "Miles Bridges",
  "team": "Phoenix",
- "opp": "Denver",
- "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 2.1,
-   "book": "pointsbetau",
-   "price_over": 1.71,
-   "price_under": 2.1
-  },
-  "REB": {
-   "line": 5.5,
-   "price": 2.2,
-   "book": "pointsbetau",
-   "price_over": 1.67,
-   "price_under": 2.2
-  },
-  "PRA": {
-   "line": 24.5,
-   "price": 1.81,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.81
-  },
-  "PR": {
-   "line": 21.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.85
-  },
-  "PA": {
-   "line": 18.5,
-   "price": 1.78,
-   "book": "unibet",
-   "price_over": 1.95,
-   "price_under": 1.78
-  },
-  "AST": {
-   "line": 2.5,
-   "price": 2.02,
-   "book": "sportsbet",
-   "price_over": 1.76,
-   "price_under": 2.02
-  },
-  "RA": {
-   "line": 8.5,
-   "price": 1.91,
-   "book": "neds",
-   "price_over": 1.83,
-   "price_under": 1.91
-  },
-  "PTS": {
-   "line": 15.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.85
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "Denver",
+   "venue": "H",
+   "game": "2026-10-30_denver_vs_phoenix",
+   "starter": true,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 37.0,
+   "PTS": 24.0,
+   "REB": 10.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 3.0,
+   "TOV": 0.0,
+   "FGM": 10.0,
+   "FGA": 19.0,
+   "3PA": 7.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-26",
    "opp": "Oklahoma City",
@@ -157,53 +124,8 @@
    "FTA": 4.0,
    "season": "2025-26",
    "phase": "play_in"
-  },
-  {
-   "date": "2026-04-14",
-   "opp": "Miami",
-   "venue": "H",
-   "game": "2026-04-14_charlotte_vs_miami",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Middle 10",
-   "min": 43.5,
-   "PTS": 28.0,
-   "REB": 9.0,
-   "AST": 2.0,
-   "3PM": 5.0,
-   "STL": 1.0,
-   "BLK": 3.0,
-   "TOV": 0.0,
-   "FGM": 10.0,
-   "FGA": 18.0,
-   "3PA": 10.0,
-   "FTA": 3.0,
-   "season": "2025-26",
-   "phase": "play_in"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 15.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 5.5,
-   "over": 3,
-   "n": 5
-  },
-  "AST": {
-   "line": 2.5,
-   "over": 2,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

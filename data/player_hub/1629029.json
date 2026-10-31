@@ -2,66 +2,33 @@
  "player_id": 1629029,
  "player": "Luka Doncic",
  "team": "LA Lakers",
- "opp": "Golden State",
- "lines": {
-  "PA": {
-   "line": 41.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.8,
-   "price_under": 1.87
-  },
-  "PRA": {
-   "line": 48.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9
-  },
-  "PR": {
-   "line": 40.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.8,
-   "price_under": 1.9
-  },
-  "PTS": {
-   "line": 33.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9
-  },
-  "RA": {
-   "line": 14.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 1.9
-  },
-  "AST": {
-   "line": 7.5,
-   "price": 1.88,
-   "book": "sportsbet",
-   "price_over": 1.88,
-   "price_under": 1.88
-  },
-  "REB": {
-   "line": 6.5,
-   "price": 1.71,
-   "book": "pointsbetau",
-   "price_over": 1.71,
-   "price_under": 2.1
-  },
-  "3PM": {
-   "line": 4.5,
-   "price": 2.1,
-   "book": "pointsbetau",
-   "price_over": 2.1,
-   "price_under": 1.71
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2026-10-30_golden-state_vs_la-lakers",
+   "starter": true,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 37.0,
+   "PTS": 37.0,
+   "REB": 7.0,
+   "AST": 5.0,
+   "3PM": 6.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 3.0,
+   "FGM": 12.0,
+   "FGA": 27.0,
+   "3PA": 16.0,
+   "FTA": 8.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-27",
    "opp": "Portland",
@@ -157,53 +124,8 @@
    "FTA": 9.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-04-02",
-   "opp": "Oklahoma City",
-   "venue": "R",
-   "game": "2026-04-02_la-lakers_vs_oklahoma-city",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 25.7,
-   "PTS": 12.0,
-   "REB": 4.0,
-   "AST": 7.0,
-   "3PM": 1.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 6.0,
-   "FGM": 3.0,
-   "FGA": 10.0,
-   "3PA": 7.0,
-   "FTA": 6.0,
-   "season": "2025-26",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 33.5,
-   "over": 2,
-   "n": 5
-  },
-  "REB": {
-   "line": 6.5,
-   "over": 2,
-   "n": 5
-  },
-  "AST": {
-   "line": 7.5,
-   "over": 2,
-   "n": 5
-  },
-  "3PM": {
-   "line": 4.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

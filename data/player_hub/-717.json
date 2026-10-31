@@ -2,31 +2,33 @@
  "player_id": -717,
  "player": "Trevon Brazile",
  "team": "Denver",
- "opp": "Phoenix",
- "lines": {
-  "PTS": {
-   "line": 7.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "PR": {
-   "line": 12.5,
-   "price": 1.9,
-   "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.85
-  },
-  "REB": {
-   "line": 4.5,
-   "price": 1.75,
-   "book": "neds",
-   "price_over": 1.75,
-   "price_under": 2.0
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-10-30_denver_vs_phoenix",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 19.0,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-28",
    "opp": "New Orleans",
@@ -124,17 +126,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 7.5,
-   "over": 2,
-   "n": 4
-  },
-  "REB": {
-   "line": 4.5,
-   "over": 3,
-   "n": 4
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

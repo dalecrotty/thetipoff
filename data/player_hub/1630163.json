@@ -2,66 +2,33 @@
  "player_id": 1630163,
  "player": "LaMelo Ball",
  "team": "Minnesota",
- "opp": "LA Clippers",
- "lines": {
-  "REB": {
-   "line": 4.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
-  },
-  "AST": {
-   "line": 7.5,
-   "price": 1.94,
-   "book": "unibet",
-   "price_over": 1.94,
-   "price_under": 1.79
-  },
-  "PR": {
-   "line": 25.5,
-   "price": 1.73,
-   "book": "unibet",
-   "price_over": 2.0,
-   "price_under": 1.73
-  },
-  "3PM": {
-   "line": 3.5,
-   "price": 1.9,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9
-  },
-  "PA": {
-   "line": 27.5,
-   "price": 1.88,
-   "book": "sportsbet",
-   "price_over": 1.88,
-   "price_under": 1.88
-  },
-  "PRA": {
-   "line": 32.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.83
-  },
-  "RA": {
-   "line": 11.5,
-   "price": 1.86,
-   "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.9
-  },
-  "PTS": {
-   "line": 20.5,
-   "price": 1.87,
-   "book": "neds",
-   "price_over": 1.87,
-   "price_under": 1.87
-  }
- },
+ "opp": "San Antonio",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-30",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-10-30_la-clippers_vs_minnesota",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 29.0,
+   "PTS": 24.0,
+   "REB": 4.0,
+   "AST": 7.0,
+   "3PM": 6.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 9.0,
+   "FGA": 20.0,
+   "3PA": 15.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-28",
    "opp": "Golden State",
@@ -157,53 +124,8 @@
    "FTA": 2.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-21",
-   "opp": "Miami",
-   "venue": "R",
-   "game": "2026-10-21_miami_vs_minnesota",
-   "starter": true,
-   "rest": "186",
-   "result": "W",
-   "opp_tier": "Middle 10",
-   "min": 29.0,
-   "PTS": 21.0,
-   "REB": 2.0,
-   "AST": 6.0,
-   "3PM": 5.0,
-   "STL": 2.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 7.0,
-   "FGA": 17.0,
-   "3PA": 13.0,
-   "FTA": 3.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 20.5,
-   "over": 1,
-   "n": 5
-  },
-  "REB": {
-   "line": 4.5,
-   "over": 1,
-   "n": 5
-  },
-  "AST": {
-   "line": 7.5,
-   "over": 2,
-   "n": 5
-  },
-  "3PM": {
-   "line": 3.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }
