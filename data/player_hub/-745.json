@@ -2,8 +2,226 @@
  "player_id": -745,
  "player": "Maliq Brown",
  "team": "San Antonio",
- "opp": "Minnesota",
+ "projections": {
+  "3PM": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.0
+  },
+  "AST": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.63
+  },
+  "BLK": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.07
+  },
+  "PTS": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 6.86
+  },
+  "REB": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 2.65
+  },
+  "STL": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.96
+  },
+  "TOV": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.68
+  },
+  "PRA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 8.71
+  },
+  "PR": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 8.11
+  },
+  "PA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 6.78
+  },
+  "RA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 3.3
+  }
+ },
+ "minutes": {
+  "value": 0,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 1,
+   "min_pg": 1.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 1.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l10": {
+   "games": 1,
+   "min_pg": 1.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 1.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l5": {
+   "games": 1,
+   "min_pg": 1.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 1.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 1.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 1.0
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {}
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-20",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-10-20_oklahoma-city_vs_san-antonio",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 0.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-20",
@@ -30,6 +248,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Minnesota"
 }
