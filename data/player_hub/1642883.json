@@ -4,26 +4,61 @@
  "team": "Charlotte",
  "opp": "Philadelphia",
  "lines": {
-  "PTS": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.56,
+   "book": "sportsbet",
+   "price_over": 2.3,
+   "price_under": 1.56
+  },
+  "RA": {
    "line": 6.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.85
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.81
   },
   "REB": {
    "line": 3.5,
-   "price": 2.0,
+   "price": 2.04,
+   "book": "unibet",
+   "price_over": 2.04,
+   "price_under": 1.73
+  },
+  "PTS": {
+   "line": 5.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PA": {
+   "line": 8.5,
+   "price": 1.98,
    "book": "neds",
-   "price_over": 2.0,
-   "price_under": 1.75
+   "price_over": 1.77,
+   "price_under": 1.98
   },
   "AST": {
-   "line": 3.5,
-   "price": 1.6,
+   "line": 2.5,
+   "price": 2.25,
+   "book": "pointsbetau",
+   "price_over": 1.63,
+   "price_under": 2.25
+  },
+  "PR": {
+   "line": 9.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 11.5,
+   "price": 2.2,
    "book": "neds",
-   "price_over": 2.25,
-   "price_under": 1.6
+   "price_over": 1.64,
+   "price_under": 2.2
   }
  },
  "recent_games": [
@@ -150,8 +185,8 @@
  ],
  "hits": {
   "PTS": {
-   "line": 6.5,
-   "over": 0,
+   "line": 5.5,
+   "over": 1,
    "n": 5
   },
   "REB": {
@@ -160,8 +195,13 @@
    "n": 5
   },
   "AST": {
-   "line": 3.5,
-   "over": 3,
+   "line": 2.5,
+   "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 0,
    "n": 5
   }
  },

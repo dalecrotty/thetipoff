@@ -4,19 +4,12 @@
  "team": "Minnesota",
  "opp": "San Antonio",
  "lines": {
-  "REB": {
-   "line": 4.5,
-   "price": 1.72,
-   "book": "neds",
-   "price_over": 1.72,
-   "price_under": 2.05
-  },
-  "PTS": {
-   "line": 13.5,
-   "price": 1.95,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8
+  "AST": {
+   "line": 2.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 2.12,
+   "price_under": 1.67
   },
   "RA": {
    "line": 7.5,
@@ -27,38 +20,45 @@
   },
   "PR": {
    "line": 18.5,
-   "price": 1.86,
-   "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.9
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.88
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.71,
+   "book": "unibet",
+   "price_over": 1.71,
+   "price_under": 2.07
+  },
+  "PRA": {
+   "line": 20.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.02
   },
   "PA": {
    "line": 15.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.83
-  },
-  "PRA": {
-   "line": 21.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
-  },
-  "AST": {
-   "line": 2.5,
-   "price": 1.64,
-   "book": "sportsbet",
-   "price_over": 2.15,
-   "price_under": 1.64
+   "price": 1.8,
+   "book": "unibet",
+   "price_over": 1.8,
+   "price_under": 1.92
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.59,
+   "price": 1.58,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 2.1,
    "book": "pointsbetau",
-   "price_over": 2.3,
-   "price_under": 1.59
+   "price_over": 2.1,
+   "price_under": 1.71
   }
  },
  "recent_games": [
@@ -185,12 +185,12 @@
  ],
  "hits": {
   "PTS": {
-   "line": 13.5,
-   "over": 1,
+   "line": 12.5,
+   "over": 2,
    "n": 5
   },
   "REB": {
-   "line": 4.5,
+   "line": 5.5,
    "over": 2,
    "n": 5
   },
