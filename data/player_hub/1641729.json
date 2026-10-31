@@ -3,7 +3,22 @@
  "player": "Brice Sensabaugh",
  "team": "Utah",
  "opp": "Portland",
- "lines": {},
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.56,
+   "book": "sportsbet",
+   "price_over": 2.3,
+   "price_under": 1.56
+  },
+  "PTS": {
+   "line": 7.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.95
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-28",
@@ -126,6 +141,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 7.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
