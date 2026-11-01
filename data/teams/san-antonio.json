@@ -4,26 +4,26 @@
   {
    "id": 1628368,
    "name": "De'Aaron Fox",
-   "games": 116,
+   "games": 117,
    "med_min": 33.0
   },
   {
    "id": 1630170,
    "name": "Devin Vassell",
-   "games": 160,
-   "med_min": 32.0
+   "games": 161,
+   "med_min": 32.1
   },
   {
    "id": 1641705,
    "name": "Victor Wembanyama",
-   "games": 138,
+   "games": 139,
    "med_min": 32.0
   },
   {
    "id": 1642264,
    "name": "Stephon Castle",
-   "games": 178,
-   "med_min": 30.0
+   "games": 179,
+   "med_min": 29.9
   },
   {
    "id": 101108,
@@ -34,7 +34,7 @@
   {
    "id": 1630577,
    "name": "Julian Champagnie",
-   "games": 193,
+   "games": 194,
    "med_min": 26.8
   },
   {
@@ -46,13 +46,13 @@
   {
    "id": 1642844,
    "name": "Dylan Harper",
-   "games": 98,
+   "games": 99,
    "med_min": 23.6
   },
   {
    "id": 1629640,
    "name": "Keldon Johnson",
-   "games": 188,
+   "games": 189,
    "med_min": 23.0
   },
   {
@@ -64,7 +64,7 @@
   {
    "id": 1628436,
    "name": "Luke Kornet",
-   "games": 97,
+   "games": 98,
    "med_min": 19.1
   },
   {
@@ -98,15 +98,15 @@
    "med_min": 10.0
   },
   {
+   "id": 1642868,
+   "name": "Carter Bryant",
+   "games": 99,
+   "med_min": 9.7
+  },
+  {
    "id": 1629646,
    "name": "Charles Bassey",
    "games": 34,
-   "med_min": 9.5
-  },
-  {
-   "id": 1642868,
-   "name": "Carter Bryant",
-   "games": 98,
    "med_min": 9.5
   },
   {
@@ -34776,6 +34776,151 @@
      "FGA": 25.0,
      "3PA": 10.0,
      "FTA": 4.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-10-31_minnesota_vs_san-antonio",
+   "lines": {
+    "1642868": {
+     "min": 11.0,
+     "PTS": 6.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628368": {
+     "min": 35.0,
+     "PTS": 22.0,
+     "REB": 8.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "FGM": 8.0,
+     "FGA": 10.0,
+     "3PA": 1.0,
+     "FTA": 7.0,
+     "starter": true
+    },
+    "1630170": {
+     "min": 34.0,
+     "PTS": 9.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 6.0,
+     "3PA": 1.0,
+     "FTA": 6.0,
+     "starter": true
+    },
+    "1642844": {
+     "min": 39.0,
+     "PTS": 25.0,
+     "REB": 7.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 9.0,
+     "FGA": 17.0,
+     "3PA": 5.0,
+     "FTA": 6.0,
+     "starter": true
+    },
+    "1630577": {
+     "min": 27.0,
+     "PTS": 12.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 7.0,
+     "FTA": 3.0,
+     "starter": false
+    },
+    "1629640": {
+     "min": 24.0,
+     "PTS": 2.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628436": {
+     "min": 14.0,
+     "PTS": 2.0,
+     "REB": 8.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642264": {
+     "min": 22.0,
+     "PTS": 0.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 0.0,
+     "FGA": 4.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1641705": {
+     "min": 34.0,
+     "PTS": 43.0,
+     "REB": 7.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 6.0,
+     "TOV": 3.0,
+     "FGM": 17.0,
+     "FGA": 34.0,
+     "3PA": 8.0,
+     "FTA": 9.0,
      "starter": true
     }
    }

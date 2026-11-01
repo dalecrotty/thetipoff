@@ -2,8 +2,65 @@
  "player_id": 1628976,
  "player": "Wendell Carter Jr.",
  "team": "Orlando",
- "opp": null,
- "lines": {},
+ "opp": "Boston",
+ "lines": {
+  "PRA": {
+   "line": 21.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 19.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.83
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "PA": {
+   "line": 13.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 7.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 2.25,
+   "book": "sportsbet",
+   "price_over": 1.58,
+   "price_under": 2.25
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.56,
+   "book": "pointsbetau",
+   "price_over": 1.56,
+   "price_under": 2.4
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-30",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -4,8 +4,8 @@
   {
    "id": 1628983,
    "name": "Shai Gilgeous-Alexander",
-   "games": 165,
-   "med_min": 34.7
+   "games": 166,
+   "med_min": 34.4
   },
   {
    "id": 1631114,
@@ -34,20 +34,20 @@
   {
    "id": 1628392,
    "name": "Isaiah Hartenstein",
-   "games": 125,
-   "med_min": 26.0
+   "games": 126,
+   "med_min": 25.9
   },
   {
    "id": 1642349,
    "name": "Ajay Mitchell",
-   "games": 110,
+   "games": 111,
    "med_min": 23.6
   },
   {
    "id": -751,
    "name": "Josh Dix",
-   "games": 2,
-   "med_min": 23.0
+   "games": 3,
+   "med_min": 22.0
   },
   {
    "id": 1630598,
@@ -68,16 +68,28 @@
    "med_min": 20.0
   },
   {
+   "id": -787,
+   "name": "Bennett Stirtz",
+   "games": 6,
+   "med_min": 18.0
+  },
+  {
    "id": 1642272,
    "name": "Jared McCain",
-   "games": 50,
-   "med_min": 17.9
+   "games": 51,
+   "med_min": 18.0
   },
   {
    "id": 1631119,
    "name": "Jaylin Williams",
-   "games": 132,
-   "med_min": 17.3
+   "games": 133,
+   "med_min": 17.4
+  },
+  {
+   "id": -781,
+   "name": "Aday Mara",
+   "games": 6,
+   "med_min": 17.0
   },
   {
    "id": 1642362,
@@ -88,20 +100,14 @@
   {
    "id": 1629026,
    "name": "Kenrich Williams",
-   "games": 142,
-   "med_min": 14.3
+   "games": 143,
+   "med_min": 14.4
   },
   {
-   "id": -781,
-   "name": "Aday Mara",
-   "games": 5,
-   "med_min": 14.0
-  },
-  {
-   "id": -787,
-   "name": "Bennett Stirtz",
-   "games": 5,
-   "med_min": 11.0
+   "id": 1642877,
+   "name": "Micah Peavy",
+   "games": 2,
+   "med_min": 9.5
   },
   {
    "id": 1631172,
@@ -124,7 +130,7 @@
   {
    "id": 1642964,
    "name": "Brooks Barnhizer",
-   "games": 44,
+   "games": 45,
    "med_min": 6.8
   },
   {
@@ -137,12 +143,6 @@
    "id": -698,
    "name": "Alex Ducas",
    "games": 21,
-   "med_min": 5.0
-  },
-  {
-   "id": 1642877,
-   "name": "Micah Peavy",
-   "games": 1,
    "med_min": 5.0
   },
   {
@@ -33328,6 +33328,181 @@
      "FGA": 5.0,
      "3PA": 3.0,
      "FTA": 2.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-10-31_houston_vs_oklahoma-city",
+   "lines": {
+    "1642349": {
+     "min": 26.0,
+     "PTS": 6.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 9.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642964": {
+     "min": 6.0,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 3.0,
+     "starter": false
+    },
+    "1628392": {
+     "min": 25.0,
+     "PTS": 10.0,
+     "REB": 7.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 8.0,
+     "3PA": 2.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1642272": {
+     "min": 28.0,
+     "PTS": 10.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 14.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1631119": {
+     "min": 26.0,
+     "PTS": 3.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 3.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "1629026": {
+     "min": 21.0,
+     "PTS": 11.0,
+     "REB": 7.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 6.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1642877": {
+     "min": 14.0,
+     "PTS": 2.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628983": {
+     "min": 31.0,
+     "PTS": 26.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 10.0,
+     "FGA": 20.0,
+     "3PA": 6.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "-751": {
+     "min": 9.0,
+     "PTS": 7.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-781": {
+     "min": 28.0,
+     "PTS": 7.0,
+     "REB": 9.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 4.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 0.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "-787": {
+     "min": 26.0,
+     "PTS": 11.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 8.0,
+     "3PA": 6.0,
+     "FTA": 0.0,
      "starter": false
     }
    }

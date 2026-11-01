@@ -2,38 +2,33 @@
  "player_id": 1630596,
  "player": "Evan Mobley",
  "team": "Cleveland",
- "opp": "Milwaukee",
- "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 2.4,
-   "book": "pointsbetau",
-   "price_over": 2.4,
-   "price_under": 1.56
-  },
-  "REB": {
-   "line": 9.5,
-   "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 2.05,
-   "price_under": 1.74
-  },
-  "AST": {
-   "line": 3.5,
-   "price": 1.93,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.81
-  },
-  "PTS": {
-   "line": 17.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.88
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-10-31",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2026-10-31_cleveland_vs_milwaukee",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 25.0,
+   "PTS": 27.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 11.0,
+   "FGA": 16.0,
+   "3PA": 5.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-29",
    "opp": "Atlanta",
@@ -129,53 +124,8 @@
    "FTA": 7.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-22",
-   "opp": "Philadelphia",
-   "venue": "R",
-   "game": "2026-10-22_cleveland_vs_philadelphia",
-   "starter": true,
-   "rest": "149",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 34.0,
-   "PTS": 18.0,
-   "REB": 8.0,
-   "AST": 2.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 7.0,
-   "FGA": 13.0,
-   "3PA": 4.0,
-   "FTA": 3.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 17.5,
-   "over": 4,
-   "n": 5
-  },
-  "REB": {
-   "line": 9.5,
-   "over": 3,
-   "n": 5
-  },
-  "AST": {
-   "line": 3.5,
-   "over": 2,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

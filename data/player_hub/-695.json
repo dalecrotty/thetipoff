@@ -2,8 +2,510 @@
  "player_id": -695,
  "player": "Jared Rhoden",
  "team": "Toronto",
- "opp": null,
+ "projections": {},
+ "minutes": null,
+ "splits": {
+  "season": {
+   "games": 14,
+   "min_pg": 16.3,
+   "PTS": {
+    "pg": 8.43,
+    "pm": 0.518
+   },
+   "REB": {
+    "pg": 3.0,
+    "pm": 0.184
+   },
+   "AST": {
+    "pg": 1.14,
+    "pm": 0.07
+   },
+   "3PM": {
+    "pg": 0.86,
+    "pm": 0.053
+   },
+   "STL": {
+    "pg": 0.71,
+    "pm": 0.044
+   },
+   "BLK": {
+    "pg": 0.14,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 0.64,
+    "pm": 0.039
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 21.6,
+   "PTS": {
+    "pg": 11.4,
+    "pm": 0.528
+   },
+   "REB": {
+    "pg": 3.8,
+    "pm": 0.176
+   },
+   "AST": {
+    "pg": 1.4,
+    "pm": 0.065
+   },
+   "3PM": {
+    "pg": 1.2,
+    "pm": 0.056
+   },
+   "STL": {
+    "pg": 0.9,
+    "pm": 0.042
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 0.8,
+    "pm": 0.037
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 22.2,
+   "PTS": {
+    "pg": 14.4,
+    "pm": 0.649
+   },
+   "REB": {
+    "pg": 4.8,
+    "pm": 0.216
+   },
+   "AST": {
+    "pg": 2.6,
+    "pm": 0.117
+   },
+   "3PM": {
+    "pg": 1.6,
+    "pm": 0.072
+   },
+   "STL": {
+    "pg": 1.4,
+    "pm": 0.063
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.045
+   }
+  },
+  "home": {
+   "games": 8,
+   "min_pg": 21.9,
+   "PTS": {
+    "pg": 11.5,
+    "pm": 0.526
+   },
+   "REB": {
+    "pg": 4.62,
+    "pm": 0.211
+   },
+   "AST": {
+    "pg": 1.5,
+    "pm": 0.069
+   },
+   "3PM": {
+    "pg": 1.38,
+    "pm": 0.063
+   },
+   "STL": {
+    "pg": 0.88,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 0.12,
+    "pm": 0.006
+   },
+   "TOV": {
+    "pg": 0.88,
+    "pm": 0.04
+   }
+  },
+  "away": {
+   "games": 6,
+   "min_pg": 8.8,
+   "PTS": {
+    "pg": 4.33,
+    "pm": 0.491
+   },
+   "REB": {
+    "pg": 0.83,
+    "pm": 0.094
+   },
+   "AST": {
+    "pg": 0.67,
+    "pm": 0.075
+   },
+   "3PM": {
+    "pg": 0.17,
+    "pm": 0.019
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.057
+   },
+   "BLK": {
+    "pg": 0.17,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 0.33,
+    "pm": 0.038
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2024-11-04",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2024-11-04_charlotte_vs_minnesota",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 7.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2024-11-08",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2024-11-08_charlotte_vs_indiana",
+   "starter": false,
+   "rest": "3",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2024-11-12",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2024-11-12_charlotte_vs_orlando",
+   "starter": false,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2024-11-17",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2024-11-17_charlotte_vs_cleveland",
+   "starter": false,
+   "rest": "4",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 2.0,
+   "PTS": 0.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-02-23",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2025-02-23_phoenix_vs_toronto",
+   "starter": false,
+   "rest": "97",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-04",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-03-04_orlando_vs_toronto",
+   "starter": false,
+   "rest": "8",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 21.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-07",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2025-03-07_toronto_vs_utah",
+   "starter": false,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 28.0,
+   "PTS": 14.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 10.0,
+   "3PA": 3.0,
+   "FTA": 6.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-08",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-03-08_toronto_vs_washington",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 29.0,
+   "PTS": 13.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 3.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 2.0,
+   "FTA": 6.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-10",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-03-10_toronto_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 26.0,
+   "PTS": 11.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 9.0,
+   "3PA": 8.0,
+   "FTA": 2.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-12",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2025-03-12_philadelphia_vs_toronto",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 43.0,
+   "PTS": 25.0,
+   "REB": 12.0,
+   "AST": 5.0,
+   "3PM": 4.0,
+   "STL": 4.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 9.0,
+   "FGA": 19.0,
+   "3PA": 10.0,
+   "FTA": 4.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-04-01",
+   "opp": "Chicago",
+   "venue": "R",
+   "game": "2025-04-01_chicago_vs_toronto",
+   "starter": false,
+   "rest": "19",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 4.0,
+   "PTS": 8.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 1.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-04-04",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2025-04-04_detroit_vs_toronto",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 17.0,
+   "PTS": 6.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-04-06",
+   "opp": "Brooklyn",
+   "venue": "R",
+   "game": "2025-04-06_brooklyn_vs_toronto",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 17.0,
+   "PTS": 10.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 7.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-04-09",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2025-04-09_charlotte_vs_toronto",
+   "starter": false,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 30.0,
+   "PTS": 23.0,
+   "REB": 7.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 8.0,
+   "FGA": 12.0,
+   "3PA": 5.0,
+   "FTA": 4.0,
+   "season": "2024-25",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2025-04-09",
@@ -124,8 +626,128 @@
    "FTA": 4.0,
    "season": "2024-25",
    "phase": "regular"
+  },
+  {
+   "date": "2025-03-10",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-03-10_toronto_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 26.0,
+   "PTS": 11.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 9.0,
+   "3PA": 8.0,
+   "FTA": 2.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-08",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-03-08_toronto_vs_washington",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 29.0,
+   "PTS": 13.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 3.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 2.0,
+   "FTA": 6.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-07",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2025-03-07_toronto_vs_utah",
+   "starter": false,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 28.0,
+   "PTS": 14.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 10.0,
+   "3PA": 3.0,
+   "FTA": 6.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-03-04",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2025-03-04_orlando_vs_toronto",
+   "starter": false,
+   "rest": "8",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 21.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-02-23",
+   "opp": "Phoenix",
+   "venue": "H",
+   "game": "2025-02-23_phoenix_vs_toronto",
+   "starter": false,
+   "rest": "97",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 1.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2024-25",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": null
 }
