@@ -2,8 +2,281 @@
  "player_id": -756,
  "player": "Braden Smith",
  "team": "Indiana",
- "opp": "Brooklyn",
+ "projections": {
+  "3PM": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.0
+  },
+  "AST": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.6
+  },
+  "BLK": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.06
+  },
+  "PTS": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 6.8
+  },
+  "REB": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 2.62
+  },
+  "STL": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.95
+  },
+  "TOV": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.66
+  },
+  "PRA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 8.71
+  },
+  "PR": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 8.11
+  },
+  "PA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 6.78
+  },
+  "RA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 3.3
+  }
+ },
+ "minutes": {
+  "value": 0,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 2,
+   "min_pg": 8.5,
+   "PTS": {
+    "pg": 0.5,
+    "pm": 0.059
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.118
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.059
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l10": {
+   "games": 2,
+   "min_pg": 8.5,
+   "PTS": {
+    "pg": 0.5,
+    "pm": 0.059
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.118
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.059
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l5": {
+   "games": 2,
+   "min_pg": 8.5,
+   "PTS": {
+    "pg": 0.5,
+    "pm": 0.059
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.118
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.059
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 5.0,
+   "PTS": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.2
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 1,
+   "min_pg": 12.0,
+   "PTS": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-28",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-10-28_indiana_vs_philadelphia",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 5.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 0.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2026-10-30_indiana_vs_miami",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 12.0,
+   "PTS": 1.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-30",
@@ -54,6 +327,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Brooklyn"
 }
