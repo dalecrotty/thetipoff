@@ -2,37 +2,533 @@
  "player_id": -782,
  "player": "Yaxel Lendeborg",
  "team": "Golden State",
- "opp": "LA Clippers",
- "lines": {
-  "REB": {
-   "line": 7.5,
-   "price": 1.91,
-   "book": "neds",
-   "price_over": 1.91,
-   "price_under": 1.83
+ "projections": {
+  "3PM": {
+   "mean": 2.01,
+   "floor": 0.06,
+   "ceiling": 3.97
   },
   "AST": {
-   "line": 4.5,
-   "price": 2.2,
-   "book": "neds",
-   "price_over": 2.2,
-   "price_under": 1.64
+   "mean": 4.55,
+   "floor": 1.56,
+   "ceiling": 7.64
+  },
+  "BLK": {
+   "mean": 0.68,
+   "floor": 0.0,
+   "ceiling": 1.98
   },
   "PTS": {
-   "line": 20.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.83
+   "mean": 19.67,
+   "floor": 10.09,
+   "ceiling": 29.22
+  },
+  "REB": {
+   "mean": 8.49,
+   "floor": 3.91,
+   "ceiling": 13.09
+  },
+  "STL": {
+   "mean": 1.16,
+   "floor": 0.03,
+   "ceiling": 3.0
+  },
+  "TOV": {
+   "mean": 3.2,
+   "floor": 1.07,
+   "ceiling": 5.45
+  },
+  "PRA": {
+   "mean": 32.72,
+   "floor": 20.46,
+   "ceiling": 44.22
+  },
+  "PR": {
+   "mean": 28.17,
+   "floor": 16.51,
+   "ceiling": 39.09
+  },
+  "PA": {
+   "mean": 24.23,
+   "floor": 14.15,
+   "ceiling": 34.27
+  },
+  "RA": {
+   "mean": 13.05,
+   "floor": 6.99,
+   "ceiling": 18.6
+  }
+ },
+ "minutes": {
+  "value": 35,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 6,
+   "min_pg": 32.0,
+   "PTS": {
+    "pg": 19.83,
+    "pm": 0.62
+   },
+   "REB": {
+    "pg": 7.83,
+    "pm": 0.245
+   },
+   "AST": {
+    "pg": 3.33,
+    "pm": 0.104
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.062
+   },
+   "STL": {
+    "pg": 0.83,
+    "pm": 0.026
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 3.83,
+    "pm": 0.12
+   }
+  },
+  "l10": {
+   "games": 6,
+   "min_pg": 32.0,
+   "PTS": {
+    "pg": 19.83,
+    "pm": 0.62
+   },
+   "REB": {
+    "pg": 7.83,
+    "pm": 0.245
+   },
+   "AST": {
+    "pg": 3.33,
+    "pm": 0.104
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.062
+   },
+   "STL": {
+    "pg": 0.83,
+    "pm": 0.026
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 3.83,
+    "pm": 0.12
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 32.6,
+   "PTS": {
+    "pg": 21.4,
+    "pm": 0.656
+   },
+   "REB": {
+    "pg": 8.8,
+    "pm": 0.27
+   },
+   "AST": {
+    "pg": 3.6,
+    "pm": 0.11
+   },
+   "3PM": {
+    "pg": 2.2,
+    "pm": 0.067
+   },
+   "STL": {
+    "pg": 0.8,
+    "pm": 0.025
+   },
+   "BLK": {
+    "pg": 0.6,
+    "pm": 0.018
+   },
+   "TOV": {
+    "pg": 4.6,
+    "pm": 0.141
+   }
+  },
+  "home": {
+   "games": 2,
+   "min_pg": 30.5,
+   "PTS": {
+    "pg": 12.0,
+    "pm": 0.393
+   },
+   "REB": {
+    "pg": 7.0,
+    "pm": 0.23
+   },
+   "AST": {
+    "pg": 3.0,
+    "pm": 0.098
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.033
+   },
+   "STL": {
+    "pg": 1.5,
+    "pm": 0.049
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 5.5,
+    "pm": 0.18
+   }
+  },
+  "away": {
+   "games": 4,
+   "min_pg": 32.8,
+   "PTS": {
+    "pg": 23.75,
+    "pm": 0.725
+   },
+   "REB": {
+    "pg": 8.25,
+    "pm": 0.252
+   },
+   "AST": {
+    "pg": 3.5,
+    "pm": 0.107
+   },
+   "3PM": {
+    "pg": 2.5,
+    "pm": 0.076
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.015
+   },
+   "BLK": {
+    "pg": 0.75,
+    "pm": 0.023
+   },
+   "TOV": {
+    "pg": 3.0,
+    "pm": 0.092
+   }
+  }
+ },
+ "lines": {
+  "RA": {
+   "line": 11.5,
+   "p_over": 0.628,
+   "p_under": 0.372,
+   "fair_over": 0.513,
+   "fair_under": 0.487,
+   "price_over": 1.82,
+   "price_under": 1.92,
+   "side": "over",
+   "price": 1.82,
+   "book": "neds",
+   "edge": 0.1148,
+   "tier": null
+  },
+  "REB": {
+   "line": 7.5,
+   "p_over": 0.57,
+   "p_under": 0.43,
+   "fair_over": 0.487,
+   "fair_under": 0.513,
+   "price_over": 1.92,
+   "price_under": 1.82,
+   "side": "over",
+   "price": 1.92,
+   "book": "neds",
+   "edge": 0.0838,
+   "tier": null
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.72,
-   "book": "unibet",
-   "price_over": 1.72,
-   "price_under": 2.05
+   "p_over": 0.57,
+   "p_under": 0.43,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.0608,
+   "tier": null
+  },
+  "PRA": {
+   "line": 30.5,
+   "p_over": 0.592,
+   "p_under": 0.408,
+   "fair_over": 0.539,
+   "fair_under": 0.461,
+   "price_over": 1.73,
+   "price_under": 2.02,
+   "side": "over",
+   "price": 1.73,
+   "book": "neds",
+   "edge": 0.0532,
+   "tier": null
+  },
+  "AST": {
+   "line": 4.5,
+   "p_over": 0.463,
+   "p_under": 0.537,
+   "fair_over": 0.427,
+   "fair_under": 0.573,
+   "price_over": 2.2,
+   "price_under": 1.64,
+   "side": "over",
+   "price": 2.2,
+   "book": "neds",
+   "edge": 0.0358,
+   "tier": null
+  },
+  "PR": {
+   "line": 26.5,
+   "p_over": 0.573,
+   "p_under": 0.427,
+   "fair_over": 0.527,
+   "fair_under": 0.473,
+   "price_over": 1.78,
+   "price_under": 1.98,
+   "side": "over",
+   "price": 1.78,
+   "book": "neds",
+   "edge": 0.0462,
+   "tier": null
+  },
+  "PTS": {
+   "line": 19.5,
+   "p_over": 0.508,
+   "p_under": 0.492,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.9,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.9,
+   "book": "pointsbetau",
+   "edge": 0.0085,
+   "tier": null
+  },
+  "PA": {
+   "line": 23.5,
+   "p_over": 0.534,
+   "p_under": 0.466,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.0247,
+   "tier": null
   }
  },
+ "lines_us": {
+  "REB": {
+   "line": 7.5,
+   "p_over": 0.57,
+   "p_under": 0.43,
+   "fair_over": 0.505,
+   "fair_under": 0.495,
+   "price_over": 1.86,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.86,
+   "book": "betright",
+   "edge": 0.0651,
+   "tier": null
+  },
+  "AST": {
+   "line": 4.5,
+   "p_over": 0.463,
+   "p_under": 0.537,
+   "fair_over": 0.444,
+   "fair_under": 0.556,
+   "price_over": 2.1,
+   "price_under": 1.68,
+   "side": "over",
+   "price": 2.1,
+   "book": "betright",
+   "edge": 0.0185,
+   "tier": null
+  },
+  "PTS": {
+   "line": 20.5,
+   "p_over": 0.459,
+   "p_under": 0.541,
+   "fair_over": 0.473,
+   "fair_under": 0.527,
+   "price_over": 1.98,
+   "price_under": 1.78,
+   "side": "under",
+   "price": 1.78,
+   "book": "betright",
+   "edge": 0.0149,
+   "tier": null
+  }
+ },
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-10-21_golden-state_vs_la-lakers",
+   "starter": true,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 29.0,
+   "PTS": 12.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 5.0,
+   "FGA": 11.0,
+   "3PA": 4.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-10-23_golden-state_vs_memphis",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 37.0,
+   "PTS": 18.0,
+   "REB": 13.0,
+   "AST": 6.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 6.0,
+   "FGM": 4.0,
+   "FGA": 11.0,
+   "3PA": 3.0,
+   "FTA": 12.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-10-24_golden-state_vs_phoenix",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 36.0,
+   "PTS": 26.0,
+   "REB": 9.0,
+   "AST": 5.0,
+   "3PM": 6.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 9.0,
+   "FGA": 19.0,
+   "3PA": 11.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-10-26_denver_vs_golden-state",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 31.0,
+   "PTS": 31.0,
+   "REB": 12.0,
+   "AST": 6.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 3.0,
+   "FGM": 9.0,
+   "FGA": 19.0,
+   "3PA": 8.0,
+   "FTA": 13.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-10-28_golden-state_vs_minnesota",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 35.0,
+   "PTS": 26.0,
+   "REB": 9.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 7.0,
+   "FGM": 11.0,
+   "FGA": 20.0,
+   "3PA": 5.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-10-30_golden-state_vs_la-lakers",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 24.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 5.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-30",
@@ -153,29 +649,32 @@
    "FTA": 12.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-10-21",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-10-21_golden-state_vs_la-lakers",
+   "starter": true,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 29.0,
+   "PTS": 12.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 5.0,
+   "FGA": 11.0,
+   "3PA": 4.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 20.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 7.5,
-   "over": 4,
-   "n": 5
-  },
-  "AST": {
-   "line": 4.5,
-   "over": 3,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 2,
-   "n": 5
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "LA Clippers"
 }

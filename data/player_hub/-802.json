@@ -2,8 +2,329 @@
  "player_id": -802,
  "player": "Graham Ike",
  "team": "Golden State",
- "opp": "LA Clippers",
+ "projections": {
+  "3PM": {
+   "mean": 0.84,
+   "floor": 0.0,
+   "ceiling": 2.1
+  },
+  "AST": {
+   "mean": 1.67,
+   "floor": 0.0,
+   "ceiling": 3.79
+  },
+  "BLK": {
+   "mean": 0.34,
+   "floor": 0.0,
+   "ceiling": 1.02
+  },
+  "PTS": {
+   "mean": 8.17,
+   "floor": 1.71,
+   "ceiling": 14.82
+  },
+  "REB": {
+   "mean": 4.27,
+   "floor": 1.1,
+   "ceiling": 7.74
+  },
+  "STL": {
+   "mean": 0.8,
+   "floor": 0.0,
+   "ceiling": 2.03
+  },
+  "TOV": {
+   "mean": 0.96,
+   "floor": 0.02,
+   "ceiling": 2.1
+  },
+  "PRA": {
+   "mean": 14.1,
+   "floor": 5.01,
+   "ceiling": 22.92
+  },
+  "PR": {
+   "mean": 12.43,
+   "floor": 3.93,
+   "ceiling": 21.06
+  },
+  "PA": {
+   "mean": 9.84,
+   "floor": 2.3,
+   "ceiling": 17.53
+  },
+  "RA": {
+   "mean": 5.93,
+   "floor": 2.06,
+   "ceiling": 10.17
+  }
+ },
+ "minutes": {
+  "value": 18,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 4,
+   "min_pg": 13.2,
+   "PTS": {
+    "pg": 8.25,
+    "pm": 0.623
+   },
+   "REB": {
+    "pg": 3.5,
+    "pm": 0.264
+   },
+   "AST": {
+    "pg": 1.25,
+    "pm": 0.094
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.075
+   },
+   "STL": {
+    "pg": 0.75,
+    "pm": 0.057
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.038
+   }
+  },
+  "l10": {
+   "games": 4,
+   "min_pg": 13.2,
+   "PTS": {
+    "pg": 8.25,
+    "pm": 0.623
+   },
+   "REB": {
+    "pg": 3.5,
+    "pm": 0.264
+   },
+   "AST": {
+    "pg": 1.25,
+    "pm": 0.094
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.075
+   },
+   "STL": {
+    "pg": 0.75,
+    "pm": 0.057
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.038
+   }
+  },
+  "l5": {
+   "games": 4,
+   "min_pg": 13.2,
+   "PTS": {
+    "pg": 8.25,
+    "pm": 0.623
+   },
+   "REB": {
+    "pg": 3.5,
+    "pm": 0.264
+   },
+   "AST": {
+    "pg": 1.25,
+    "pm": 0.094
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.075
+   },
+   "STL": {
+    "pg": 0.75,
+    "pm": 0.057
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.038
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 12.0,
+   "PTS": {
+    "pg": 10.0,
+    "pm": 0.833
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.167
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.167
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.083
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 3,
+   "min_pg": 13.7,
+   "PTS": {
+    "pg": 7.67,
+    "pm": 0.561
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.293
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.098
+   },
+   "3PM": {
+    "pg": 0.67,
+    "pm": 0.049
+   },
+   "STL": {
+    "pg": 0.67,
+    "pm": 0.049
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.024
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.049
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-10-21_golden-state_vs_la-lakers",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 12.0,
+   "PTS": 8.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-10-23_golden-state_vs_memphis",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 12.0,
+   "PTS": 10.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 7.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-10-24_golden-state_vs_phoenix",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 26.0,
+   "PTS": 12.0,
+   "REB": 10.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 13.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-10-26_denver_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 3.0,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 1.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-26",
@@ -102,6 +423,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "LA Clippers"
 }

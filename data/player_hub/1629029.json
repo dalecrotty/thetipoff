@@ -4,19 +4,47 @@
  "team": "LA Lakers",
  "opp": "Toronto",
  "lines": {
+  "PA": {
+   "line": 39.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "PRA": {
+   "line": 47.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
   "PTS": {
    "line": 32.5,
-   "price": 1.83,
+   "price": 1.87,
    "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9
+   "price_over": 1.87,
+   "price_under": 1.95
+  },
+  "PR": {
+   "line": 40.5,
+   "price": 1.91,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.83
+  },
+  "RA": {
+   "line": 13.5,
+   "price": 1.65,
+   "book": "neds",
+   "price_over": 1.65,
+   "price_under": 2.15
   },
   "AST": {
    "line": 6.5,
-   "price": 1.77,
+   "price": 1.65,
    "book": "neds",
-   "price_over": 1.77,
-   "price_under": 1.98
+   "price_over": 1.65,
+   "price_under": 2.15
   },
   "3PM": {
    "line": 4.5,
@@ -27,10 +55,10 @@
   },
   "REB": {
    "line": 7.5,
-   "price": 2.05,
+   "price": 2.1,
    "book": "pointsbetau",
-   "price_over": 2.05,
-   "price_under": 1.74
+   "price_over": 2.1,
+   "price_under": 1.71
   }
  },
  "recent_games": [
