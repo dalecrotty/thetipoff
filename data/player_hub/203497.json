@@ -4,33 +4,26 @@
  "team": "Minnesota",
  "opp": "Milwaukee",
  "lines": {
-  "PRA": {
-   "line": 22.5,
-   "price": 2.08,
-   "book": "unibet",
-   "price_over": 1.7,
-   "price_under": 2.08
+  "PTS": {
+   "line": 10.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
   },
-  "PR": {
-   "line": 21.5,
-   "price": 1.88,
+  "REB": {
+   "line": 10.5,
+   "price": 1.96,
    "book": "unibet",
-   "price_over": 1.83,
-   "price_under": 1.88
+   "price_over": 1.78,
+   "price_under": 1.96
   },
-  "RA": {
-   "line": 12.5,
-   "price": 2.06,
+  "AST": {
+   "line": 1.5,
+   "price": 1.89,
    "book": "unibet",
-   "price_over": 1.71,
-   "price_under": 2.06
-  },
-  "PA": {
-   "line": 11.5,
-   "price": 1.97,
-   "book": "unibet",
-   "price_over": 1.76,
-   "price_under": 1.97
+   "price_over": 1.85,
+   "price_under": 1.89
   }
  },
  "recent_games": [
@@ -155,6 +148,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 10.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

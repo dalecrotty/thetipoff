@@ -4,33 +4,26 @@
  "team": "Sacramento",
  "opp": "Dallas",
  "lines": {
-  "RA": {
-   "line": 19.5,
+  "AST": {
+   "line": 6.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "REB": {
+   "line": 13.5,
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.81
+  },
+  "PTS": {
+   "line": 14.5,
    "price": 1.78,
    "book": "unibet",
    "price_over": 1.78,
    "price_under": 1.96
-  },
-  "PRA": {
-   "line": 35.5,
-   "price": 1.9,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
-  },
-  "PA": {
-   "line": 21.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.83
-  },
-  "PR": {
-   "line": 28.5,
-   "price": 1.85,
-   "book": "pointsbetau",
-   "price_over": 1.85,
-   "price_under": 1.85
   }
  },
  "recent_games": [
@@ -155,6 +148,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 14.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 13.5,
+   "over": 5,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
