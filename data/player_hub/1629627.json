@@ -4,26 +4,19 @@
  "team": "New Orleans",
  "opp": "Memphis",
  "lines": {
-  "PA": {
-   "line": 24.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.83
-  },
-  "PTS": {
-   "line": 21.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
   "RA": {
    "line": 7.5,
    "price": 1.85,
    "book": "unibet",
    "price_over": 1.85,
    "price_under": 1.88
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 2.0,
+   "book": "neds",
+   "price_over": 2.0,
+   "price_under": 1.75
   },
   "PRA": {
    "line": 27.5,
@@ -32,6 +25,13 @@
    "price_over": 2.05,
    "price_under": 1.72
   },
+  "PA": {
+   "line": 22.5,
+   "price": 2.12,
+   "book": "unibet",
+   "price_over": 2.12,
+   "price_under": 1.66
+  },
   "PR": {
    "line": 24.5,
    "price": 1.96,
@@ -39,19 +39,19 @@
    "price_over": 1.96,
    "price_under": 1.76
   },
-  "AST": {
-   "line": 2.5,
-   "price": 1.97,
+  "PTS": {
+   "line": 19.5,
+   "price": 2.08,
    "book": "unibet",
-   "price_over": 1.97,
-   "price_under": 1.76
+   "price_over": 2.08,
+   "price_under": 1.7
   },
   "REB": {
    "line": 5.5,
-   "price": 1.67,
-   "book": "neds",
-   "price_over": 2.15,
-   "price_under": 1.67
+   "price": 2.17,
+   "book": "unibet",
+   "price_over": 2.17,
+   "price_under": 1.64
   }
  },
  "recent_games": [
@@ -178,7 +178,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 21.5,
+   "line": 19.5,
    "over": 3,
    "n": 5
   },
