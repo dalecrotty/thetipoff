@@ -10,20 +10,20 @@
   {
    "id": 1630567,
    "name": "Scottie Barnes",
-   "games": 157,
+   "games": 158,
    "med_min": 34.0
   },
   {
    "id": 1629628,
    "name": "RJ Barrett",
-   "games": 127,
+   "games": 128,
    "med_min": 32.0
   },
   {
    "id": 1630193,
    "name": "Immanuel Quickley",
-   "games": 108,
-   "med_min": 31.4
+   "games": 109,
+   "med_min": 31.5
   },
   {
    "id": 1627751,
@@ -62,21 +62,21 @@
    "med_min": 23.5
   },
   {
-   "id": 1642867,
-   "name": "Collin Murray-Boyles",
-   "games": 69,
-   "med_min": 22.1
-  },
-  {
    "id": 1642266,
    "name": "Ja'Kobe Walter",
-   "games": 136,
+   "games": 137,
    "med_min": 22.0
+  },
+  {
+   "id": 1642867,
+   "name": "Collin Murray-Boyles",
+   "games": 70,
+   "med_min": 21.9
   },
   {
    "id": 1642347,
    "name": "Jamal Shead",
-   "games": 169,
+   "games": 170,
    "med_min": 21.4
   },
   {
@@ -110,12 +110,6 @@
    "med_min": 19.0
   },
   {
-   "id": -779,
-   "name": "Allen Graves",
-   "games": 5,
-   "med_min": 18.0
-  },
-  {
    "id": 1628449,
    "name": "Chris Boucher",
    "games": 50,
@@ -134,6 +128,12 @@
    "med_min": 14.8
   },
   {
+   "id": -779,
+   "name": "Allen Graves",
+   "games": 6,
+   "med_min": 14.0
+  },
+  {
    "id": 1630639,
    "name": "A.J. Lawson",
    "games": 57,
@@ -142,7 +142,7 @@
   {
    "id": 1642419,
    "name": "Jamison Battle",
-   "games": 131,
+   "games": 132,
    "med_min": 12.0
   },
   {
@@ -172,7 +172,7 @@
   {
    "id": -709,
    "name": "Jaden Bradley",
-   "games": 4,
+   "games": 5,
    "med_min": 5.0
   },
   {
@@ -184,20 +184,20 @@
   {
    "id": 203937,
    "name": "Kyle Anderson",
-   "games": 3,
+   "games": 4,
    "med_min": 5.0
   },
   {
    "id": 1631218,
    "name": "Trayce Jackson-Davis",
-   "games": 25,
+   "games": 26,
    "med_min": 3.8
   },
   {
    "id": 1642918,
    "name": "Alijah Martin",
-   "games": 27,
-   "med_min": 3.6
+   "games": 28,
+   "med_min": 3.8
   },
   {
    "id": 202066,
@@ -31008,6 +31008,196 @@
      "FGM": 2.0,
      "FGA": 2.0,
      "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-01",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-11-01_la-lakers_vs_toronto",
+   "lines": {
+    "1642867": {
+     "min": 20.0,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 2.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1642918": {
+     "min": 16.0,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630193": {
+     "min": 33.0,
+     "PTS": 12.0,
+     "REB": 6.0,
+     "AST": 7.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 13.0,
+     "3PA": 11.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1642266": {
+     "min": 33.0,
+     "PTS": 11.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 12.0,
+     "3PA": 9.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642347": {
+     "min": 25.0,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "1642419": {
+     "min": 17.0,
+     "PTS": 20.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 7.0,
+     "FGA": 14.0,
+     "3PA": 10.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "203937": {
+     "min": 4.0,
+     "PTS": 2.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629628": {
+     "min": 32.0,
+     "PTS": 22.0,
+     "REB": 10.0,
+     "AST": 5.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 9.0,
+     "FGA": 18.0,
+     "3PA": 9.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630567": {
+     "min": 36.0,
+     "PTS": 29.0,
+     "REB": 6.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "FGM": 11.0,
+     "FGA": 20.0,
+     "3PA": 3.0,
+     "FTA": 13.0,
+     "starter": true
+    },
+    "1631218": {
+     "min": 9.0,
+     "PTS": 5.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "-709": {
+     "min": 4.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "-779": {
+     "min": 10.0,
+     "PTS": 3.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 5.0,
+     "3PA": 3.0,
      "FTA": 2.0,
      "starter": false
     }

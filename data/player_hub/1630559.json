@@ -2,66 +2,90 @@
  "player_id": 1630559,
  "player": "Austin Reaves",
  "team": "LA Lakers",
- "opp": "Toronto",
+ "opp": "Miami",
  "lines": {
-  "PRA": {
-   "line": 32.5,
-   "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.91,
-   "price_under": 1.83
+  "PR": {
+   "line": 27.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 22.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.95
   },
   "PA": {
    "line": 28.5,
-   "price": 1.91,
+   "price": 1.83,
    "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85
+   "price_over": 1.83,
+   "price_under": 1.93
   },
-  "PR": {
-   "line": 26.5,
+  "PRA": {
+   "line": 32.5,
    "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96
   },
-  "PTS": {
-   "line": 22.5,
-   "price": 1.81,
-   "book": "unibet",
-   "price_over": 1.81,
-   "price_under": 1.93
-  },
   "RA": {
-   "line": 8.5,
-   "price": 1.62,
-   "book": "neds",
-   "price_over": 1.62,
-   "price_under": 2.2
-  },
-  "AST": {
-   "line": 5.5,
-   "price": 2.2,
-   "book": "pointsbetau",
-   "price_over": 2.2,
-   "price_under": 1.67
+   "line": 9.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
   },
   "REB": {
    "line": 3.5,
-   "price": 1.75,
-   "book": "unibet",
-   "price_over": 1.75,
-   "price_under": 2.0
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
   },
   "3PM": {
-   "line": 1.5,
-   "price": 1.5,
-   "book": "neds",
-   "price_over": 1.5,
-   "price_under": 2.35
+   "line": 2.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-01",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-11-01_la-lakers_vs_toronto",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 39.0,
+   "PTS": 19.0,
+   "REB": 3.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 6.0,
+   "FGA": 16.0,
+   "3PA": 7.0,
+   "FTA": 6.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-30",
    "opp": "Golden State",
@@ -157,36 +181,12 @@
    "FTA": 13.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-23",
-   "opp": "LA Clippers",
-   "venue": "H",
-   "game": "2026-10-23_la-clippers_vs_la-lakers",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Middle 10",
-   "min": 38.0,
-   "PTS": 28.0,
-   "REB": 2.0,
-   "AST": 9.0,
-   "3PM": 3.0,
-   "STL": 2.0,
-   "BLK": 0.0,
-   "TOV": 6.0,
-   "FGM": 10.0,
-   "FGA": 13.0,
-   "3PA": 5.0,
-   "FTA": 6.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
    "line": 22.5,
-   "over": 3,
+   "over": 2,
    "n": 5
   },
   "REB": {
@@ -196,12 +196,12 @@
   },
   "AST": {
    "line": 5.5,
-   "over": 2,
+   "over": 1,
    "n": 5
   },
   "3PM": {
-   "line": 1.5,
-   "over": 3,
+   "line": 2.5,
+   "over": 2,
    "n": 5
   }
  },
