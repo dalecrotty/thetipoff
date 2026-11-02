@@ -3,7 +3,29 @@
  "player": "Georges Niang",
  "team": "Golden State",
  "opp": "Phoenix",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 3.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 2.12,
+   "price_under": 1.67
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-01",
@@ -126,6 +148,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

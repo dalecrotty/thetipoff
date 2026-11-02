@@ -4,8 +4,15 @@
  "team": "Portland",
  "opp": "Denver",
  "lines": {
-  "PR": {
-   "line": 13.5,
+  "PTS": {
+   "line": 5.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "REB": {
+   "line": 6.5,
    "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
@@ -134,6 +141,17 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
