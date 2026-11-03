@@ -3,7 +3,22 @@
  "player": "Day'Ron Sharpe",
  "team": "Brooklyn",
  "opp": "New York",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 7.5,
+   "price": 1.8,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 2.12,
+   "price_under": 1.67
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-01",
@@ -126,6 +141,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "REB": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
