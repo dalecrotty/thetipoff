@@ -2,38 +2,33 @@
  "player_id": 201572,
  "player": "Brook Lopez",
  "team": "LA Clippers",
- "opp": "Toronto",
- "lines": {
-  "PTS": {
-   "line": 10.5,
-   "price": 1.95,
-   "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
-  },
-  "REB": {
-   "line": 4.5,
-   "price": 2.15,
-   "book": "neds",
-   "price_over": 2.15,
-   "price_under": 1.64
-  },
-  "AST": {
-   "line": 1.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 2.15,
-   "book": "pointsbetau",
-   "price_over": 2.15,
-   "price_under": 1.69
-  }
- },
+ "opp": "Miami",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-02",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-11-02_la-clippers_vs_toronto",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 22.0,
+   "PTS": 12.0,
+   "REB": 6.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 5.0,
+   "FGA": 10.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-01",
    "opp": "Golden State",
@@ -42,7 +37,7 @@
    "starter": false,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 19.0,
    "PTS": 7.0,
    "REB": 2.0,
@@ -66,7 +61,7 @@
    "starter": false,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Top 10",
+   "opp_tier": "Middle 10",
    "min": 21.0,
    "PTS": 13.0,
    "REB": 6.0,
@@ -129,53 +124,8 @@
    "FTA": 3.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-23",
-   "opp": "LA Lakers",
-   "venue": "R",
-   "game": "2026-10-23_la-clippers_vs_la-lakers",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 20.0,
-   "PTS": 22.0,
-   "REB": 4.0,
-   "AST": 0.0,
-   "3PM": 2.0,
-   "STL": 0.0,
-   "BLK": 3.0,
-   "TOV": 2.0,
-   "FGM": 8.0,
-   "FGA": 9.0,
-   "3PA": 2.0,
-   "FTA": 5.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 10.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 4.5,
-   "over": 1,
-   "n": 5
-  },
-  "AST": {
-   "line": 1.5,
-   "over": 2,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

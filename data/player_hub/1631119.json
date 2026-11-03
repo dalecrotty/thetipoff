@@ -4,36 +4,88 @@
  "team": "Oklahoma City",
  "opp": "Cleveland",
  "lines": {
-  "REB": {
-   "line": 5.5,
-   "price": 1.78,
-   "book": "neds",
-   "price_over": 1.78,
-   "price_under": 1.98
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 2.02,
-   "book": "neds",
-   "price_over": 2.02,
-   "price_under": 1.68
-  },
   "PTS": {
-   "line": 6.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.89
+   "line": 7.5,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74
   },
   "AST": {
    "line": 2.5,
-   "price": 2.3,
-   "book": "neds",
-   "price_over": 2.3,
-   "price_under": 1.58
+   "price": 1.6,
+   "book": "sportsbet",
+   "price_over": 2.2,
+   "price_under": 1.6
+  },
+  "PA": {
+   "line": 9.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 15.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "PR": {
+   "line": 13.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-02",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2026-11-02_cleveland_vs_oklahoma-city",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 20.0,
+   "PTS": 3.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 6.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-10-31",
    "opp": "Houston",
@@ -66,7 +118,7 @@
    "starter": false,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 20.0,
    "PTS": 0.0,
    "REB": 5.0,
@@ -90,7 +142,7 @@
    "starter": false,
    "rest": "0",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 26.0,
    "PTS": 6.0,
    "REB": 6.0,
@@ -114,7 +166,7 @@
    "starter": false,
    "rest": "2",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 5.0,
    "PTS": 0.0,
    "REB": 0.0,
@@ -129,46 +181,22 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-22",
-   "opp": "Denver",
-   "venue": "H",
-   "game": "2026-10-22_denver_vs_oklahoma-city",
-   "starter": false,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Top 10",
-   "min": 15.0,
-   "PTS": 3.0,
-   "REB": 7.0,
-   "AST": 3.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0,
-   "FGM": 1.0,
-   "FGA": 4.0,
-   "3PA": 4.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 6.5,
+   "line": 7.5,
    "over": 0,
    "n": 5
   },
   "REB": {
-   "line": 5.5,
-   "over": 2,
+   "line": 6.5,
+   "over": 0,
    "n": 5
   },
   "AST": {
    "line": 2.5,
-   "over": 2,
+   "over": 1,
    "n": 5
   },
   "3PM": {

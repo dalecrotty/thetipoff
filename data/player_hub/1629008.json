@@ -2,24 +2,33 @@
  "player_id": 1629008,
  "player": "Michael Porter Jr.",
  "team": "Brooklyn",
- "opp": "New York",
- "lines": {
-  "REB": {
-   "line": 6.5,
-   "price": 1.93,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.81
-  },
-  "AST": {
-   "line": 1.5,
-   "price": 1.75,
-   "book": "tab",
-   "price_over": 1.75,
-   "price_under": 2.0
-  }
- },
+ "opp": "Charlotte",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-02",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-02_brooklyn_vs_new-york",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 37.0,
+   "PTS": 18.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 6.0,
+   "FGA": 13.0,
+   "3PA": 11.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-01",
    "opp": "Indiana",
@@ -115,43 +124,8 @@
    "FTA": 3.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-24",
-   "opp": "Cleveland",
-   "venue": "R",
-   "game": "2026-10-24_brooklyn_vs_cleveland",
-   "starter": true,
-   "rest": "2",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 33.0,
-   "PTS": 28.0,
-   "REB": 9.0,
-   "AST": 1.0,
-   "3PM": 4.0,
-   "STL": 4.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 10.0,
-   "FGA": 18.0,
-   "3PA": 9.0,
-   "FTA": 4.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "REB": {
-   "line": 6.5,
-   "over": 4,
-   "n": 5
-  },
-  "AST": {
-   "line": 1.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

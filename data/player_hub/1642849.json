@@ -2,24 +2,33 @@
  "player_id": 1642849,
  "player": "Nolan Traore",
  "team": "Brooklyn",
- "opp": "New York",
- "lines": {
-  "REB": {
-   "line": 2.5,
-   "price": 1.65,
-   "book": "neds",
-   "price_over": 2.15,
-   "price_under": 1.65
-  },
-  "AST": {
-   "line": 4.5,
-   "price": 1.52,
-   "book": "tab",
-   "price_over": 2.45,
-   "price_under": 1.52
-  }
- },
+ "opp": "Charlotte",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-02",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-02_brooklyn_vs_new-york",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 24.0,
+   "PTS": 17.0,
+   "REB": 3.0,
+   "AST": 4.0,
+   "3PM": 5.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 6.0,
+   "FGA": 8.0,
+   "3PA": 6.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-01",
    "opp": "Indiana",
@@ -115,43 +124,8 @@
    "FTA": 3.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-24",
-   "opp": "Cleveland",
-   "venue": "R",
-   "game": "2026-10-24_brooklyn_vs_cleveland",
-   "starter": false,
-   "rest": "2",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 5.0,
-   "PTS": 3.0,
-   "REB": 2.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 1.0,
-   "FGA": 2.0,
-   "3PA": 0.0,
-   "FTA": 2.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "REB": {
-   "line": 2.5,
-   "over": 0,
-   "n": 5
-  },
-  "AST": {
-   "line": 4.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

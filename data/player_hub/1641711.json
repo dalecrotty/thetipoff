@@ -2,31 +2,33 @@
  "player_id": 1641711,
  "player": "Gradey Dick",
  "team": "LA Clippers",
- "opp": "Toronto",
- "lines": {
-  "PTS": {
-   "line": 8.5,
-   "price": 1.87,
-   "book": "tab",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.48,
-   "book": "pointsbetau",
-   "price_over": 2.6,
-   "price_under": 1.48
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8
-  }
- },
+ "opp": "Miami",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-02",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-11-02_la-clippers_vs_toronto",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 29.0,
+   "PTS": 12.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 11.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-01",
    "opp": "Golden State",
@@ -35,7 +37,7 @@
    "starter": false,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 3.0,
    "PTS": 0.0,
    "REB": 1.0,
@@ -59,7 +61,7 @@
    "starter": false,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Top 10",
+   "opp_tier": "Middle 10",
    "min": 12.0,
    "PTS": 3.0,
    "REB": 0.0,
@@ -122,48 +124,8 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-23",
-   "opp": "LA Lakers",
-   "venue": "R",
-   "game": "2026-10-23_la-clippers_vs_la-lakers",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 12.0,
-   "PTS": 6.0,
-   "REB": 4.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 3.0,
-   "FGA": 5.0,
-   "3PA": 0.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 8.5,
-   "over": 0,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 2,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 1,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }
