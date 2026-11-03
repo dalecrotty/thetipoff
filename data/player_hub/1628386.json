@@ -5,25 +5,32 @@
  "opp": "Oklahoma City",
  "lines": {
   "PTS": {
-   "line": 12.5,
-   "price": 2.05,
-   "book": "pointsbetau",
-   "price_over": 2.05,
+   "line": 11.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
    "price_under": 1.8
   },
   "REB": {
    "line": 8.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.81
   },
-  "AST": {
-   "line": 1.5,
-   "price": 2.05,
-   "book": "sportsbet",
-   "price_over": 2.05,
-   "price_under": 1.74
+  "3PM": {
+   "line": 0.5,
+   "price": 1.09,
+   "book": "tab",
+   "price_over": 6.5,
+   "price_under": 1.09
   }
  },
  "recent_games": [
@@ -150,7 +157,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 12.5,
+   "line": 11.5,
    "over": 3,
    "n": 5
   },
@@ -162,6 +169,11 @@
   "AST": {
    "line": 1.5,
    "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 2,
    "n": 5
   }
  },
