@@ -4,6 +4,13 @@
  "team": "Toronto",
  "opp": "LA Clippers",
  "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
   "PTS": {
    "line": 20.5,
    "price": 1.96,
@@ -11,24 +18,45 @@
    "price_over": 1.96,
    "price_under": 1.8
   },
-  "AST": {
-   "line": 3.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 2.0
+  "PR": {
+   "line": 25.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.02
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.97,
-   "book": "unibet",
-   "price_over": 1.77,
-   "price_under": 1.97
+   "price": 2.05,
+   "book": "tab",
+   "price_over": 1.72,
+   "price_under": 2.05
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 29.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.02
+  },
+  "PA": {
+   "line": 24.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
   },
   "REB": {
    "line": 5.5,
    "price": 1.87,
-   "book": "neds",
+   "book": "pointsbetau",
    "price_over": 1.87,
    "price_under": 1.87
   }
