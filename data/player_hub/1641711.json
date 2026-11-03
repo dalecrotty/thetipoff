@@ -6,17 +6,24 @@
  "lines": {
   "PTS": {
    "line": 8.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
    "price_under": 1.8
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.4,
-   "book": "sportsbet",
-   "price_over": 2.75,
-   "price_under": 1.4
+   "price": 1.48,
+   "book": "pointsbetau",
+   "price_over": 2.6,
+   "price_under": 1.48
   }
  },
  "recent_games": [
@@ -145,6 +152,11 @@
   "PTS": {
    "line": 8.5,
    "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
    "n": 5
   },
   "3PM": {

@@ -3,7 +3,15 @@
  "player": "Lauri Markkanen",
  "team": "Utah",
  "opp": "San Antonio",
- "lines": {},
+ "lines": {
+  "3PM": {
+   "line": 2.5,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 2.02,
+   "price_under": 1.76
+  }
+ },
  "recent_games": [
   {
    "date": "2026-10-31",
@@ -126,6 +134,12 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "3PM": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
