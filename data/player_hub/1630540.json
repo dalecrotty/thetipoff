@@ -4,19 +4,33 @@
  "team": "New York",
  "opp": "Brooklyn",
  "lines": {
+  "AST": {
+   "line": 1.5,
+   "price": 1.6,
+   "book": "tab",
+   "price_over": 2.25,
+   "price_under": 1.6
+  },
+  "REB": {
+   "line": 1.5,
+   "price": 1.75,
+   "book": "tab",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
   "PTS": {
    "line": 6.5,
-   "price": 1.8,
-   "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.83
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.56,
-   "book": "pointsbetau",
-   "price_over": 2.4,
-   "price_under": 1.56
+   "price": 1.68,
+   "book": "tab",
+   "price_over": 2.1,
+   "price_under": 1.68
   }
  },
  "recent_games": [
@@ -145,6 +159,16 @@
   "PTS": {
    "line": 6.5,
    "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 0,
    "n": 5
   },
   "3PM": {
