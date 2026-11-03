@@ -3,7 +3,36 @@
  "player": "Noah Clowney",
  "team": "Brooklyn",
  "opp": "New York",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 6.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.55,
+   "book": "unibet",
+   "price_over": 2.35,
+   "price_under": 1.55
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.38,
+   "book": "tab",
+   "price_over": 2.9,
+   "price_under": 1.38
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-01",
@@ -126,6 +155,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 0,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
