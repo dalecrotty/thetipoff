@@ -4,63 +4,63 @@
  "team": "Detroit",
  "projections": {
   "3PM": {
-   "mean": 0.72,
+   "mean": 0.76,
    "floor": 0.0,
-   "ceiling": 1.97
-  },
-  "AST": {
-   "mean": 1.48,
-   "floor": 0.0,
-   "ceiling": 3.07
-  },
-  "BLK": {
-   "mean": 0.6,
-   "floor": 0.02,
    "ceiling": 2.01
   },
+  "AST": {
+   "mean": 1.55,
+   "floor": 0.02,
+   "ceiling": 3.15
+  },
+  "BLK": {
+   "mean": 0.64,
+   "floor": 0.0,
+   "ceiling": 1.95
+  },
   "PTS": {
-   "mean": 7.8,
-   "floor": 1.2,
-   "ceiling": 14.35
+   "mean": 8.21,
+   "floor": 1.61,
+   "ceiling": 14.76
   },
   "REB": {
-   "mean": 4.27,
-   "floor": 1.28,
-   "ceiling": 7.69
+   "mean": 4.5,
+   "floor": 1.5,
+   "ceiling": 7.92
   },
   "STL": {
-   "mean": 0.91,
-   "floor": 0.01,
-   "ceiling": 2.06
+   "mean": 0.95,
+   "floor": 0.0,
+   "ceiling": 2.02
   },
   "TOV": {
-   "mean": 1.25,
-   "floor": 0.0,
-   "ceiling": 2.99
+   "mean": 1.32,
+   "floor": 0.05,
+   "ceiling": 3.05
   },
   "PRA": {
-   "mean": 13.55,
-   "floor": 4.46,
-   "ceiling": 22.37
+   "mean": 14.27,
+   "floor": 5.17,
+   "ceiling": 23.09
   },
   "PR": {
-   "mean": 12.08,
-   "floor": 4.02,
-   "ceiling": 20.02
+   "mean": 12.71,
+   "floor": 4.21,
+   "ceiling": 21.33
   },
   "PA": {
-   "mean": 9.28,
-   "floor": 1.75,
-   "ceiling": 16.98
+   "mean": 9.77,
+   "floor": 2.23,
+   "ceiling": 17.46
   },
   "RA": {
-   "mean": 5.75,
-   "floor": 1.88,
-   "ceiling": 9.99
+   "mean": 6.05,
+   "floor": 2.18,
+   "ceiling": 10.29
   }
  },
  "minutes": {
-  "value": 19,
+  "value": 20,
   "source": "model"
  },
  "splits": {
