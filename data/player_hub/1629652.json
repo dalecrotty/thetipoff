@@ -4,59 +4,59 @@
  "team": "Atlanta",
  "projections": {
   "3PM": {
-   "mean": 1.9,
+   "mean": 1.89,
    "floor": 0.0,
-   "ceiling": 3.86
+   "ceiling": 3.85
   },
   "AST": {
-   "mean": 1.66,
+   "mean": 1.65,
    "floor": 0.0,
-   "ceiling": 3.78
+   "ceiling": 3.76
   },
   "BLK": {
-   "mean": 0.32,
+   "mean": 0.31,
    "floor": 0.0,
    "ceiling": 0.99
   },
   "PTS": {
-   "mean": 11.3,
-   "floor": 4.05,
-   "ceiling": 19.2
+   "mean": 11.23,
+   "floor": 3.98,
+   "ceiling": 19.13
   },
   "REB": {
-   "mean": 3.87,
-   "floor": 1.1,
-   "ceiling": 6.99
+   "mean": 3.85,
+   "floor": 1.08,
+   "ceiling": 6.96
   },
   "STL": {
-   "mean": 1.03,
-   "floor": 0.04,
+   "mean": 1.02,
+   "floor": 0.03,
    "ceiling": 2.09
   },
   "TOV": {
-   "mean": 0.84,
+   "mean": 0.83,
    "floor": 0.0,
-   "ceiling": 1.98
+   "ceiling": 1.97
   },
   "PRA": {
-   "mean": 16.83,
-   "floor": 6.6,
-   "ceiling": 27.1
+   "mean": 16.72,
+   "floor": 6.49,
+   "ceiling": 26.99
   },
   "PR": {
-   "mean": 15.18,
-   "floor": 6.06,
-   "ceiling": 24.42
+   "mean": 15.08,
+   "floor": 5.96,
+   "ceiling": 24.32
   },
   "PA": {
-   "mean": 12.96,
-   "floor": 4.73,
-   "ceiling": 22.1
+   "mean": 12.87,
+   "floor": 4.64,
+   "ceiling": 22.01
   },
   "RA": {
-   "mean": 5.53,
-   "floor": 1.66,
-   "ceiling": 9.77
+   "mean": 5.5,
+   "floor": 2.05,
+   "ceiling": 9.44
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 9.5,
-   "p_over": 0.626,
-   "p_under": 0.374,
+   "p_over": 0.621,
+   "p_under": 0.379,
    "fair_over": 0.478,
    "fair_under": 0.522,
    "price_over": 2.0,
@@ -237,13 +237,13 @@
    "side": "over",
    "price": 2.0,
    "book": "pointsbetau",
-   "edge": 0.1484,
+   "edge": 0.1434,
    "tier": "A"
   },
   "PR": {
    "line": 13.5,
-   "p_over": 0.593,
-   "p_under": 0.407,
+   "p_over": 0.588,
+   "p_under": 0.412,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -251,13 +251,13 @@
    "side": "over",
    "price": 1.95,
    "book": "pointsbetau",
-   "edge": 0.1131,
+   "edge": 0.1077,
    "tier": "A"
   },
   "PA": {
    "line": 11.5,
-   "p_over": 0.59,
-   "p_under": 0.41,
+   "p_over": 0.585,
+   "p_under": 0.415,
    "fair_over": 0.493,
    "fair_under": 0.507,
    "price_over": 1.88,
@@ -265,13 +265,13 @@
    "side": "over",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0966,
+   "edge": 0.0914,
    "tier": "A"
   },
   "PRA": {
    "line": 15.5,
-   "p_over": 0.566,
-   "p_under": 0.434,
+   "p_over": 0.561,
+   "p_under": 0.439,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -279,13 +279,13 @@
    "side": "over",
    "price": 1.95,
    "book": "tab",
-   "edge": 0.0863,
+   "edge": 0.0809,
    "tier": "A"
   },
   "RA": {
    "line": 5.5,
-   "p_over": 0.504,
-   "p_under": 0.496,
+   "p_over": 0.499,
+   "p_under": 0.501,
    "fair_over": 0.467,
    "fair_under": 0.533,
    "price_over": 2.0,
@@ -293,13 +293,13 @@
    "side": "over",
    "price": 2.0,
    "book": "unibet",
-   "edge": 0.0376,
+   "edge": 0.0328,
    "tier": "B"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.542,
-   "p_under": 0.458,
+   "p_over": 0.539,
+   "p_under": 0.461,
    "fair_over": 0.531,
    "fair_under": 0.469,
    "price_over": 1.77,
@@ -307,13 +307,13 @@
    "side": "over",
    "price": 1.77,
    "book": "pointsbetau",
-   "edge": 0.0119,
+   "edge": 0.0087,
    "tier": null
   },
   "REB": {
    "line": 3.5,
-   "p_over": 0.521,
-   "p_under": 0.479,
+   "p_over": 0.516,
+   "p_under": 0.484,
    "fair_over": 0.516,
    "fair_under": 0.484,
    "price_over": 1.81,
@@ -321,13 +321,13 @@
    "side": "over",
    "price": 1.81,
    "book": "unibet",
-   "edge": 0.0048,
+   "edge": 0.0003,
    "tier": null
   },
   "AST": {
    "line": 1.5,
-   "p_over": 0.482,
-   "p_under": 0.518,
+   "p_over": 0.479,
+   "p_under": 0.521,
    "fair_over": 0.488,
    "fair_under": 0.512,
    "price_over": 1.92,
@@ -335,7 +335,7 @@
    "side": "under",
    "price": 1.83,
    "book": "unibet",
-   "edge": 0.006,
+   "edge": 0.0092,
    "tier": null
   }
  },
