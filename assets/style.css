@@ -487,6 +487,9 @@ table.mini td { padding: 7px 6px; border-bottom: 1px solid var(--line); }
 table.mini tr:last-child td { border-bottom: 0; }
 table.mini td.s a { color: var(--ink); font-weight: 600; }
 table.mini .sm { font: 12px var(--mono); }
+/* the home page's plain links to tonight's pages (4 Nov 2026) */
+.tlinks { margin: 14px 0 0; }
+.tlinks p.sub { margin: 0 0 8px; max-width: none; line-height: 1.7; }
 .gstrip { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 1fr);
   gap: 8px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
 .gmini { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 0;
