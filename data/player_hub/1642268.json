@@ -4,13 +4,6 @@
  "team": "Utah",
  "opp": "New Orleans",
  "lines": {
-  "PTS": {
-   "line": 7.5,
-   "price": 2.1,
-   "book": "pointsbetau",
-   "price_over": 2.1,
-   "price_under": 1.77
-  },
   "RA": {
    "line": 6.5,
    "price": 1.85,
@@ -24,6 +17,13 @@
    "book": "neds",
    "price_over": 2.05,
    "price_under": 1.7
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 2.1
   },
   "REB": {
    "line": 2.5,
@@ -157,8 +157,8 @@
  ],
  "hits": {
   "PTS": {
-   "line": 7.5,
-   "over": 1,
+   "line": 6.5,
+   "over": 4,
    "n": 5
   },
   "REB": {
