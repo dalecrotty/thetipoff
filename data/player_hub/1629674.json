@@ -4,13 +4,6 @@
  "team": "Boston",
  "opp": "Milwaukee",
  "lines": {
-  "PTS": {
-   "line": 10.5,
-   "price": 1.93,
-   "book": "sportsbet",
-   "price_over": 1.93,
-   "price_under": 1.83
-  },
   "PR": {
    "line": 17.5,
    "price": 1.85,
@@ -18,12 +11,19 @@
    "price_over": 1.85,
    "price_under": 1.85
   },
-  "REB": {
-   "line": 7.5,
-   "price": 1.68,
+  "PTS": {
+   "line": 10.5,
+   "price": 1.93,
    "book": "sportsbet",
-   "price_over": 2.1,
-   "price_under": 1.68
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.71,
+   "book": "pointsbetau",
+   "price_over": 1.71,
+   "price_under": 2.1
   }
  },
  "recent_games": [
@@ -155,7 +155,7 @@
    "n": 5
   },
   "REB": {
-   "line": 7.5,
+   "line": 6.5,
    "over": 1,
    "n": 5
   }
