@@ -3,7 +3,64 @@
  "player": "Josh Hart",
  "team": "New York",
  "opp": "Chicago",
- "lines": {},
+ "lines": {
+  "RA": {
+   "line": 11.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 21.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.71,
+   "book": "pointsbetau",
+   "price_over": 1.71,
+   "price_under": 2.1
+  },
+  "PR": {
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 13.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 7.5,
+   "price": 2.02,
+   "book": "neds",
+   "price_over": 2.02,
+   "price_under": 1.73
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-02",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

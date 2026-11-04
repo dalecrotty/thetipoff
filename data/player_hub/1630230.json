@@ -3,7 +3,57 @@
  "player": "Naji Marshall",
  "team": "Dallas",
  "opp": "San Antonio",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 2.25,
+   "book": "pointsbetau",
+   "price_over": 2.25,
+   "price_under": 1.63
+  },
+  "RA": {
+   "line": 6.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 1.78,
+   "price_under": 2.0
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PRA": {
+   "line": 18.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "PR": {
+   "line": 14.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-02",
@@ -126,6 +176,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
