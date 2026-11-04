@@ -2,8 +2,401 @@
  "player_id": -778,
  "player": "Kingston Flemings",
  "team": "Atlanta",
- "opp": "Washington",
+ "projections": {
+  "3PM": {
+   "mean": 1.04,
+   "floor": 0.0,
+   "ceiling": 2.91
+  },
+  "AST": {
+   "mean": 5.12,
+   "floor": 2.09,
+   "ceiling": 8.3
+  },
+  "BLK": {
+   "mean": 0.32,
+   "floor": 0.0,
+   "ceiling": 0.99
+  },
+  "PTS": {
+   "mean": 9.69,
+   "floor": 2.66,
+   "ceiling": 17.12
+  },
+  "REB": {
+   "mean": 3.86,
+   "floor": 1.03,
+   "ceiling": 7.0
+  },
+  "STL": {
+   "mean": 1.07,
+   "floor": 0.0,
+   "ceiling": 2.91
+  },
+  "TOV": {
+   "mean": 1.87,
+   "floor": 0.04,
+   "ceiling": 3.9
+  },
+  "PRA": {
+   "mean": 18.68,
+   "floor": 8.91,
+   "ceiling": 29.04
+  },
+  "PR": {
+   "mean": 13.56,
+   "floor": 5.06,
+   "ceiling": 22.18
+  },
+  "PA": {
+   "mean": 14.82,
+   "floor": 6.2,
+   "ceiling": 24.15
+  },
+  "RA": {
+   "mean": 8.99,
+   "floor": 4.11,
+   "ceiling": 13.96
+  }
+ },
+ "minutes": {
+  "value": 25,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 7,
+   "min_pg": 20.3,
+   "PTS": {
+    "pg": 7.14,
+    "pm": 0.352
+   },
+   "REB": {
+    "pg": 2.86,
+    "pm": 0.141
+   },
+   "AST": {
+    "pg": 4.57,
+    "pm": 0.225
+   },
+   "3PM": {
+    "pg": 0.71,
+    "pm": 0.035
+   },
+   "STL": {
+    "pg": 0.86,
+    "pm": 0.042
+   },
+   "BLK": {
+    "pg": 0.29,
+    "pm": 0.014
+   },
+   "TOV": {
+    "pg": 2.29,
+    "pm": 0.113
+   }
+  },
+  "l10": {
+   "games": 7,
+   "min_pg": 20.3,
+   "PTS": {
+    "pg": 7.14,
+    "pm": 0.352
+   },
+   "REB": {
+    "pg": 2.86,
+    "pm": 0.141
+   },
+   "AST": {
+    "pg": 4.57,
+    "pm": 0.225
+   },
+   "3PM": {
+    "pg": 0.71,
+    "pm": 0.035
+   },
+   "STL": {
+    "pg": 0.86,
+    "pm": 0.042
+   },
+   "BLK": {
+    "pg": 0.29,
+    "pm": 0.014
+   },
+   "TOV": {
+    "pg": 2.29,
+    "pm": 0.113
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 20.4,
+   "PTS": {
+    "pg": 9.0,
+    "pm": 0.441
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.098
+   },
+   "AST": {
+    "pg": 4.2,
+    "pm": 0.206
+   },
+   "3PM": {
+    "pg": 0.8,
+    "pm": 0.039
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.049
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.01
+   },
+   "TOV": {
+    "pg": 2.2,
+    "pm": 0.108
+   }
+  },
+  "home": {
+   "games": 3,
+   "min_pg": 19.7,
+   "PTS": {
+    "pg": 9.0,
+    "pm": 0.458
+   },
+   "REB": {
+    "pg": 2.33,
+    "pm": 0.119
+   },
+   "AST": {
+    "pg": 4.0,
+    "pm": 0.203
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.051
+   },
+   "STL": {
+    "pg": 0.33,
+    "pm": 0.017
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.017
+   },
+   "TOV": {
+    "pg": 1.33,
+    "pm": 0.068
+   }
+  },
+  "away": {
+   "games": 4,
+   "min_pg": 20.8,
+   "PTS": {
+    "pg": 5.75,
+    "pm": 0.277
+   },
+   "REB": {
+    "pg": 3.25,
+    "pm": 0.157
+   },
+   "AST": {
+    "pg": 5.0,
+    "pm": 0.241
+   },
+   "3PM": {
+    "pg": 0.5,
+    "pm": 0.024
+   },
+   "STL": {
+    "pg": 1.25,
+    "pm": 0.06
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.012
+   },
+   "TOV": {
+    "pg": 3.0,
+    "pm": 0.145
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2026-10-21_atlanta_vs_orlando",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 15.0,
+   "PTS": 0.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 0.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2026-10-23_atlanta_vs_charlotte",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 25.0,
+   "PTS": 5.0,
+   "REB": 6.0,
+   "AST": 8.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-10-24_atlanta_vs_houston",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 15.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 1.0,
+   "FGA": 4.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-10-26_atlanta_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 3.0,
+   "FGA": 4.0,
+   "3PA": 1.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-10-28_atlanta_vs_miami",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 28.0,
+   "PTS": 23.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 9.0,
+   "FGA": 12.0,
+   "3PA": 5.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-29",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-10-29_atlanta_vs_cleveland",
+   "starter": false,
+   "rest": "0",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 16.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 4.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-31",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-10-31_atlanta_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 25.0,
+   "PTS": 12.0,
+   "REB": 2.0,
+   "AST": 6.0,
+   "3PM": 1.0,
+   "STL": 4.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 2.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-10-31",
@@ -124,8 +517,56 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2026-10-23_atlanta_vs_charlotte",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 25.0,
+   "PTS": 5.0,
+   "REB": 6.0,
+   "AST": 8.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-21",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2026-10-21_atlanta_vs_orlando",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 15.0,
+   "PTS": 0.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 0.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Washington"
 }
