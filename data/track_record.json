@@ -160,15 +160,18 @@
   "hit": 0.7609,
   "units": 14.01,
   "roi": 0.3046,
-  "roi_public": false,
+  "roi_public": true,
   "n_clv": 28,
   "avg_clv": 0.0329,
   "beat_close": 0.6429,
-  "public_roi_from": 100,
+  "public_roi_from": 0,
   "edge_min": 0.15,
   "floors": {
    "PTS": 1.5,
    "PRA": 2.0,
+   "PR": 2.0,
+   "PA": 2.0,
+   "RA": 1.5,
    "REB": 1.0,
    "AST": 1.0,
    "3PM": 0.5
@@ -193,11 +196,14 @@
    "n_clv": 271,
    "avg_clv": 0.0035,
    "beat_close": 0.5277,
-   "public_roi_from": 100,
+   "public_roi_from": 0,
    "edge_min": 0.15,
    "floors": {
     "PTS": 1.5,
     "PRA": 2.0,
+    "PR": 2.0,
+    "PA": 2.0,
+    "RA": 1.5,
     "REB": 1.0,
     "AST": 1.0,
     "3PM": 0.5
@@ -205,8 +211,12 @@
    "rule": "chance",
    "shrink": 0.5,
    "min_chance": 0.62,
-   "min_value": 0.08
-  }
+   "min_value": 0.08,
+   "avg_price": 1.845,
+   "break_even": 0.542
+  },
+  "avg_price": 1.72,
+  "break_even": 0.5814
  },
  "season_start": "2026-10-20"
 }

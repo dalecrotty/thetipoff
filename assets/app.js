@@ -1824,9 +1824,9 @@ async function initRecord() {
     : "";
   $("#rplays").innerHTML = `
     <div class="card"><div class="k">Covered–not</div><div class="v">${pl.won ?? 0}–${pl.lost ?? 0}</div><div class="r">${pl.push ?? 0} push · ${pl.void ?? 0} void · ${pl.open ?? 0} open${since}</div></div>
-    <div class="card"><div class="k">Hit rate</div><div class="v">${pct(pl.hit)}</div><div class="r">${graded} graded under the rule in force</div></div>
+    <div class="card"><div class="k">Hit rate</div><div class="v">${pct(pl.hit)}</div><div class="r">${graded} graded under the rule in force${pl.avg_price ? ` · average price ${odds(pl.avg_price)}, breaks even at ${pct(pl.break_even)}` : ""}</div></div>
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(pl.avg_clv)}</div><div class="r">${pl.n_clv ?? 0} closed · beat the close ${pct(pl.beat_close)}</div></div>
-    <div class="card"><div class="k">Return on stake</div><div class="v">${pl.roi_public ? pct(pl.roi) : "—"}</div><div class="r">${pl.roi_public ? `${fmt(pl.units, 1)} units, flat 1 unit` : `published from ${pl.public_roi_from ?? 100} graded props`}</div></div>`;
+    <div class="card"><div class="k">Units</div><div class="v ${unitsCls(pl.units)}">${pl.roi_public ? unitsTxt(pl.units) : "—"}</div><div class="r">${pl.roi_public ? `${pl.roi > 0 ? "+" : ""}${pct(pl.roi)} return on stake · 1 unit each` : "from the first graded prop"}</div></div>`;
   $("#rplays").insertAdjacentHTML("afterend", earlier);
   const t = d.tips;
   const tOpen = t?.averages_public, tLater = dropsLater(t);
