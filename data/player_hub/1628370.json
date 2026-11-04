@@ -4,12 +4,54 @@
  "team": "Sacramento",
  "opp": "LA Lakers",
  "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.8,
+   "book": "unibet",
+   "price_over": 1.8,
+   "price_under": 1.93
+  },
+  "RA": {
+   "line": 3.5,
+   "price": 1.72,
+   "book": "unibet",
+   "price_over": 1.72,
+   "price_under": 2.05
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 1.94,
+   "book": "unibet",
+   "price_over": 1.94,
+   "price_under": 1.79
+  },
+  "PA": {
+   "line": 12.5,
+   "price": 2.0,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.74
+  },
   "PTS": {
    "line": 8.5,
    "price": 1.8,
    "book": "pointsbetau",
    "price_over": 1.8,
    "price_under": 1.95
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.94,
+   "book": "unibet",
+   "price_over": 1.94,
+   "price_under": 1.79
+  },
+  "REB": {
+   "line": 1.5,
+   "price": 2.7,
+   "book": "unibet",
+   "price_over": 2.7,
+   "price_under": 1.43
   },
   "3PM": {
    "line": 1.5,
@@ -145,6 +187,16 @@
   "PTS": {
    "line": 8.5,
    "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 3,
    "n": 5
   },
   "3PM": {
