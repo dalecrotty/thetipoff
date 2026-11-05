@@ -3,7 +3,50 @@
  "player": "Andre Drummond",
  "team": "New York",
  "opp": "Chicago",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 4.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.72,
+   "book": "ladbrokes_au",
+   "price_over": 1.72,
+   "price_under": 2.05
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.18,
+   "book": "tab",
+   "price_over": 4.5,
+   "price_under": 1.18
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 3.1,
+   "book": "tab",
+   "price_over": 3.1,
+   "price_under": 1.34
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.94,
+   "book": "unibet",
+   "price_over": 1.94,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.85,
+   "price_under": 1.9
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-02",
@@ -126,6 +169,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 0,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
