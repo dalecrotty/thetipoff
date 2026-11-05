@@ -5,25 +5,25 @@
  "opp": "Miami",
  "lines": {
   "REB": {
-   "line": 2.5,
-   "price": 1.94,
+   "line": 3.5,
+   "price": 1.78,
    "book": "neds",
-   "price_over": 1.8,
-   "price_under": 1.94
+   "price_over": 1.96,
+   "price_under": 1.78
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.6,
+   "book": "neds",
+   "price_over": 2.25,
+   "price_under": 1.6
   },
   "PTS": {
-   "line": 7.5,
-   "price": 1.92,
+   "line": 8.5,
+   "price": 1.87,
    "book": "neds",
-   "price_over": 1.92,
-   "price_under": 1.82
-  },
-  "PR": {
-   "line": 9.5,
-   "price": 1.72,
-   "book": "neds",
-   "price_over": 1.72,
-   "price_under": 2.05
+   "price_over": 1.87,
+   "price_under": 1.87
   }
  },
  "recent_games": [
@@ -150,13 +150,18 @@
  ],
  "hits": {
   "PTS": {
-   "line": 7.5,
+   "line": 8.5,
    "over": 4,
    "n": 5
   },
   "REB": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
    "line": 2.5,
-   "over": 5,
+   "over": 1,
    "n": 5
   }
  },

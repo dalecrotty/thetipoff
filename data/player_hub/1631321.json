@@ -3,7 +3,36 @@
  "player": "Sidy Cissoko",
  "team": "Portland",
  "opp": "Phoenix",
- "lines": {},
+ "lines": {
+  "PR": {
+   "line": 7.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "PTS": {
+   "line": 4.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 2.05
+  },
+  "PRA": {
+   "line": 9.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-02",
@@ -126,6 +155,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
