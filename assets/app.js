@@ -2292,7 +2292,8 @@ async function initTrends() {
     if (!small) teams = teams.filter(t => t.n >= 5);
     teams.sort((a, b) => { const x = a[sortKey], y = b[sortKey];
       if (x == null) return 1; if (y == null) return -1; return (x < y ? -1 : x > y ? 1 : 0) * sortDir; });
-    $("#trends tbody").innerHTML = teams.length ? teams.map(t => `<tr class="${t.n < 10 ? "thin" : ""}">
+    // no greyed rows for small samples (owner, 5 Nov 2026): n is in its own column
+    $("#trends tbody").innerHTML = teams.length ? teams.map(t => `<tr>
       <td class="s"><a href="${teamHref(t.team)}">${teamBadge(t.team)} <span class="tn">${esc(t.team)}</span></a></td>
       <td class="num">${t.n}</td>
       <td class="num">${rec(t.w, t.l)}</td>
