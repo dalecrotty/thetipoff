@@ -4,63 +4,63 @@
  "team": "Phoenix",
  "projections": {
   "3PM": {
-   "mean": 0.05,
+   "mean": 0.06,
    "floor": 0.0,
-   "ceiling": 0.05
+   "ceiling": 0.06
   },
   "AST": {
-   "mean": 0.09,
+   "mean": 0.11,
    "floor": 0.0,
-   "ceiling": 1.42
+   "ceiling": 1.44
   },
   "BLK": {
-   "mean": 0.04,
-   "floor": 0.0,
-   "ceiling": 0.93
-  },
-  "PTS": {
-   "mean": 0.66,
-   "floor": 0.0,
-   "ceiling": 6.33
-  },
-  "REB": {
-   "mean": 0.32,
-   "floor": 0.0,
-   "ceiling": 2.51
-  },
-  "STL": {
    "mean": 0.05,
    "floor": 0.0,
-   "ceiling": 0.85
+   "ceiling": 0.94
   },
-  "TOV": {
-   "mean": 0.09,
+  "PTS": {
+   "mean": 0.83,
    "floor": 0.0,
-   "ceiling": 1.48
+   "ceiling": 6.49
   },
-  "PRA": {
-   "mean": 1.08,
-   "floor": 0.0,
-   "ceiling": 9.79
-  },
-  "PR": {
-   "mean": 0.98,
-   "floor": 0.0,
-   "ceiling": 9.1
-  },
-  "PA": {
-   "mean": 0.75,
-   "floor": 0.0,
-   "ceiling": 7.54
-  },
-  "RA": {
+  "REB": {
    "mean": 0.41,
    "floor": 0.0,
-   "ceiling": 3.72
+   "ceiling": 2.59
+  },
+  "STL": {
+   "mean": 0.07,
+   "floor": 0.0,
+   "ceiling": 0.86
+  },
+  "TOV": {
+   "mean": 0.12,
+   "floor": 0.0,
+   "ceiling": 1.5
+  },
+  "PRA": {
+   "mean": 1.35,
+   "floor": 0.0,
+   "ceiling": 10.06
+  },
+  "PR": {
+   "mean": 1.23,
+   "floor": 0.0,
+   "ceiling": 9.35
+  },
+  "PA": {
+   "mean": 0.94,
+   "floor": 0.0,
+   "ceiling": 7.73
+  },
+  "RA": {
+   "mean": 0.52,
+   "floor": 0.0,
+   "ceiling": 3.83
   }
  },
  "minutes": {
-  "value": 1,
+  "value": 2,
   "source": "fallback"
  },
  "splits": {
