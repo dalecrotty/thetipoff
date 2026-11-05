@@ -2,38 +2,33 @@
  "player_id": -776,
  "player": "AJ Dybantsa",
  "team": "Washington",
- "opp": "Atlanta",
- "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 1.73,
-   "book": "unibet",
-   "price_over": 2.02,
-   "price_under": 1.73
-  },
-  "PTS": {
-   "line": 18.5,
-   "price": 1.87,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "AST": {
-   "line": 2.5,
-   "price": 1.6,
-   "book": "neds",
-   "price_over": 2.25,
-   "price_under": 1.6
-  },
-  "REB": {
-   "line": 5.5,
-   "price": 1.87,
-   "book": "tab",
-   "price_over": 1.87,
-   "price_under": 1.87
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-04",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2026-11-04_atlanta_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 32.0,
+   "PTS": 9.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 12.0,
+   "3PA": 1.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-02",
    "opp": "Orlando",
@@ -66,7 +61,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 30.0,
    "PTS": 17.0,
    "REB": 8.0,
@@ -107,27 +102,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 18.5,
-   "over": 2,
-   "n": 3
-  },
-  "REB": {
-   "line": 5.5,
-   "over": 1,
-   "n": 3
-  },
-  "AST": {
-   "line": 2.5,
-   "over": 0,
-   "n": 3
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 0,
-   "n": 3
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

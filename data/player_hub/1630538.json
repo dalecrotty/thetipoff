@@ -2,52 +2,33 @@
  "player_id": 1630538,
  "player": "Bones Hyland",
  "team": "Minnesota",
- "opp": "Houston",
- "lines": {
-  "PTS": {
-   "line": 6.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.8,
-   "price_under": 2.05
-  },
-  "PA": {
-   "line": 9.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "REB": {
-   "line": 1.5,
-   "price": 2.75,
-   "book": "tab",
-   "price_over": 2.75,
-   "price_under": 1.42
-  },
-  "PRA": {
-   "line": 10.5,
-   "price": 1.76,
-   "book": "sportsbet",
-   "price_over": 1.76,
-   "price_under": 2.02
-  },
-  "AST": {
-   "line": 2.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-04",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-11-04_houston_vs_minnesota",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 16.0,
+   "PTS": 19.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 4.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 7.0,
+   "FGA": 13.0,
+   "3PA": 7.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-02",
    "opp": "Milwaukee",
@@ -128,7 +109,7 @@
    "starter": false,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Top 10",
+   "opp_tier": "Middle 10",
    "min": 16.0,
    "PTS": 13.0,
    "REB": 1.0,
@@ -143,53 +124,8 @@
    "FTA": 2.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-26",
-   "opp": "Cleveland",
-   "venue": "R",
-   "game": "2026-10-26_cleveland_vs_minnesota",
-   "starter": false,
-   "rest": "0",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 5.0,
-   "PTS": 0.0,
-   "REB": 1.0,
-   "AST": 2.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0,
-   "FGM": 0.0,
-   "FGA": 1.0,
-   "3PA": 1.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 6.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 1.5,
-   "over": 0,
-   "n": 5
-  },
-  "AST": {
-   "line": 2.5,
-   "over": 4,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

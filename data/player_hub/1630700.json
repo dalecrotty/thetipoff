@@ -2,17 +2,33 @@
  "player_id": 1630700,
  "player": "Dyson Daniels",
  "team": "Atlanta",
- "opp": "Washington",
- "lines": {
-  "AST": {
-   "line": 5.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-04",
+   "opp": "Washington",
+   "venue": "R",
+   "game": "2026-11-04_atlanta_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 34.0,
+   "PTS": 8.0,
+   "REB": 16.0,
+   "AST": 8.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 4.0,
+   "FGA": 13.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-02",
    "opp": "Indiana",
@@ -93,7 +109,7 @@
    "starter": true,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 28.0,
    "PTS": 7.0,
    "REB": 4.0,
@@ -108,38 +124,8 @@
    "FTA": 2.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-26",
-   "opp": "Houston",
-   "venue": "R",
-   "game": "2026-10-26_atlanta_vs_houston",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 28.0,
-   "PTS": 4.0,
-   "REB": 0.0,
-   "AST": 4.0,
-   "3PM": 0.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 0.0,
-   "FGM": 2.0,
-   "FGA": 8.0,
-   "3PA": 1.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "AST": {
-   "line": 5.5,
-   "over": 1,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

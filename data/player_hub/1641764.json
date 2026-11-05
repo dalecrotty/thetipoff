@@ -2,8 +2,65 @@
  "player_id": 1641764,
  "player": "Brandin Podziemski",
  "team": "Golden State",
- "opp": null,
- "lines": {},
+ "opp": "Miami",
+ "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 2.0,
+   "book": "neds",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
+  "PR": {
+   "line": 21.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PRA": {
+   "line": 25.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PA": {
+   "line": 20.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.94
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.67,
+   "book": "neds",
+   "price_over": 1.67,
+   "price_under": 2.15
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.57,
+   "book": "pointsbetau",
+   "price_over": 2.35,
+   "price_under": 1.57
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-02",
@@ -85,7 +142,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 32.0,
    "PTS": 8.0,
    "REB": 5.0,
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

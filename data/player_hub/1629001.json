@@ -2,8 +2,65 @@
  "player_id": 1629001,
  "player": "De'Anthony Melton",
  "team": "Golden State",
- "opp": null,
- "lines": {},
+ "opp": "Miami",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 2.05,
+   "book": "pointsbetau",
+   "price_over": 2.05,
+   "price_under": 1.74
+  },
+  "RA": {
+   "line": 5.5,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "PR": {
+   "line": 14.5,
+   "price": 2.1,
+   "book": "pointsbetau",
+   "price_over": 2.1,
+   "price_under": 1.67
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "PRA": {
+   "line": 16.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "PA": {
+   "line": 12.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-02",
@@ -85,7 +142,7 @@
    "starter": false,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 20.0,
    "PTS": 8.0,
    "REB": 6.0,
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 5,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

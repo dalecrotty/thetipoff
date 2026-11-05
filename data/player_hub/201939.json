@@ -2,8 +2,65 @@
  "player_id": 201939,
  "player": "Stephen Curry",
  "team": "Golden State",
- "opp": null,
- "lines": {},
+ "opp": "Miami",
+ "lines": {
+  "PTS": {
+   "line": 26.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.88,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 1.68,
+   "book": "neds",
+   "price_over": 1.68,
+   "price_under": 2.02
+  },
+  "PR": {
+   "line": 30.5,
+   "price": 1.85,
+   "book": "pointsbetau",
+   "price_over": 1.85,
+   "price_under": 1.85
+  },
+  "PA": {
+   "line": 32.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "PRA": {
+   "line": 36.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 1.72,
+   "book": "neds",
+   "price_over": 1.72,
+   "price_under": 2.05
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-02",
@@ -61,7 +118,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 32.0,
    "PTS": 44.0,
    "REB": 8.0,
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 26.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
