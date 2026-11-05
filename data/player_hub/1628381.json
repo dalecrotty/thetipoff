@@ -4,12 +4,12 @@
  "team": "Detroit",
  "opp": "Philadelphia",
  "lines": {
-  "PRA": {
-   "line": 19.5,
-   "price": 1.8,
+  "AST": {
+   "line": 0.5,
+   "price": 2.45,
    "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
+   "price_over": 1.52,
+   "price_under": 2.45
   },
   "PTS": {
    "line": 11.5,
@@ -17,13 +17,6 @@
    "book": "tab",
    "price_over": 1.8,
    "price_under": 1.95
-  },
-  "PR": {
-   "line": 17.5,
-   "price": 1.98,
-   "book": "neds",
-   "price_over": 1.77,
-   "price_under": 1.98
   },
   "REB": {
    "line": 6.5,
@@ -171,6 +164,11 @@
   "REB": {
    "line": 6.5,
    "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 0.5,
+   "over": 2,
    "n": 5
   },
   "3PM": {

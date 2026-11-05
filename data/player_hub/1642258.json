@@ -4,19 +4,26 @@
  "team": "Dallas",
  "opp": "San Antonio",
  "lines": {
-  "PTS": {
-   "line": 9.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
+  "REB": {
+   "line": 3.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 2.0
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.4,
+   "price": 1.44,
+   "book": "pointsbetau",
+   "price_over": 2.65,
+   "price_under": 1.44
+  },
+  "PTS": {
+   "line": 7.5,
+   "price": 1.96,
    "book": "sportsbet",
-   "price_over": 2.75,
-   "price_under": 1.4
+   "price_over": 1.96,
+   "price_under": 1.8
   }
  },
  "recent_games": [
@@ -143,8 +150,13 @@
  ],
  "hits": {
   "PTS": {
-   "line": 9.5,
+   "line": 7.5,
    "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 5,
    "n": 5
   },
   "3PM": {
