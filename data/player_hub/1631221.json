@@ -4,11 +4,25 @@
  "team": "Phoenix",
  "opp": "Portland",
  "lines": {
+  "RA": {
+   "line": 5.5,
+   "price": 1.52,
+   "book": "neds",
+   "price_over": 1.52,
+   "price_under": 2.45
+  },
   "AST": {
    "line": 3.5,
-   "price": 1.94,
-   "book": "neds",
-   "price_over": 1.94,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "PTS": {
+   "line": 10.5,
+   "price": 1.8,
+   "book": "tab",
+   "price_over": 1.95,
    "price_under": 1.8
   },
   "3PM": {
@@ -25,12 +39,26 @@
    "price_over": 1.7,
    "price_under": 2.05
   },
-  "PTS": {
-   "line": 9.5,
-   "price": 1.88,
+  "PR": {
+   "line": 13.5,
+   "price": 1.68,
    "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.88
+   "price_over": 2.07,
+   "price_under": 1.68
+  },
+  "PA": {
+   "line": 12.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 2.0
+  },
+  "PRA": {
+   "line": 16.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
   }
  },
  "recent_games": [
@@ -157,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 9.5,
+   "line": 10.5,
    "over": 2,
    "n": 5
   },
