@@ -4,63 +4,63 @@
  "team": "Orlando",
  "projections": {
   "3PM": {
-   "mean": 0.87,
+   "mean": 0.84,
    "floor": 0.0,
-   "ceiling": 2.12
+   "ceiling": 2.1
   },
   "AST": {
-   "mean": 0.68,
+   "mean": 0.66,
    "floor": 0.0,
    "ceiling": 2.01
   },
   "BLK": {
-   "mean": 0.14,
+   "mean": 0.13,
    "floor": 0.0,
    "ceiling": 0.97
   },
   "PTS": {
-   "mean": 6.39,
-   "floor": 0.18,
-   "ceiling": 13.26
+   "mean": 6.2,
+   "floor": 0.14,
+   "ceiling": 13.03
   },
   "REB": {
-   "mean": 2.45,
-   "floor": 0.07,
-   "ceiling": 4.92
+   "mean": 2.37,
+   "floor": 0.11,
+   "ceiling": 4.81
   },
   "STL": {
-   "mean": 0.35,
+   "mean": 0.34,
    "floor": 0.0,
    "ceiling": 1.14
   },
   "TOV": {
-   "mean": 0.86,
+   "mean": 0.83,
    "floor": 0.0,
-   "ceiling": 1.99
+   "ceiling": 1.97
   },
   "PRA": {
-   "mean": 9.52,
-   "floor": 1.8,
-   "ceiling": 18.23
+   "mean": 9.23,
+   "floor": 1.51,
+   "ceiling": 17.94
   },
   "PR": {
-   "mean": 8.84,
-   "floor": 2.08,
-   "ceiling": 16.96
+   "mean": 8.57,
+   "floor": 1.81,
+   "ceiling": 16.69
   },
   "PA": {
-   "mean": 7.07,
-   "floor": 1.2,
-   "ceiling": 13.85
+   "mean": 6.86,
+   "floor": 0.99,
+   "ceiling": 13.64
   },
   "RA": {
-   "mean": 3.13,
-   "floor": 0.38,
-   "ceiling": 6.43
+   "mean": 3.03,
+   "floor": 0.28,
+   "ceiling": 6.33
   }
  },
  "minutes": {
-  "value": 17,
+  "value": 16,
   "source": "model"
  },
  "splits": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 6.5,
-   "p_over": 0.492,
-   "p_under": 0.508,
+   "p_over": 0.478,
+   "p_under": 0.522,
    "fair_over": 0.468,
    "fair_under": 0.532,
    "price_over": 2.05,
@@ -237,13 +237,13 @@
    "side": "over",
    "price": 2.05,
    "book": "pointsbetau",
-   "edge": 0.0243,
+   "edge": 0.0101,
    "tier": null
   },
   "PRA": {
    "line": 9.5,
-   "p_over": 0.501,
-   "p_under": 0.499,
+   "p_over": 0.484,
+   "p_under": 0.516,
    "fair_over": 0.52,
    "fair_under": 0.48,
    "price_over": 1.8,
@@ -251,13 +251,13 @@
    "side": "under",
    "price": 1.95,
    "book": "tab",
-   "edge": 0.0188,
-   "tier": null
+   "edge": 0.0358,
+   "tier": "B"
   },
   "3PM": {
    "line": 0.5,
-   "p_over": 0.564,
-   "p_under": 0.436,
+   "p_over": 0.553,
+   "p_under": 0.447,
    "fair_over": 0.58,
    "fair_under": 0.42,
    "price_over": 1.63,
@@ -265,7 +265,7 @@
    "side": "under",
    "price": 2.25,
    "book": "pointsbetau",
-   "edge": 0.0156,
+   "edge": 0.0265,
    "tier": null
   }
  },
