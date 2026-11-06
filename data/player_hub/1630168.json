@@ -3,7 +3,64 @@
  "player": "Onyeka Okongwu",
  "team": "Atlanta",
  "opp": "Washington",
- "lines": {},
+ "lines": {
+  "PA": {
+   "line": 19.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.77
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 2.1,
+   "price_under": 1.67
+  },
+  "PRA": {
+   "line": 27.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 24.5,
+   "price": 1.85,
+   "book": "pointsbetau",
+   "price_over": 1.85,
+   "price_under": 1.85
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "RA": {
+   "line": 11.5,
+   "price": 1.89,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.89
+  },
+  "REB": {
+   "line": 8.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.9,
+   "price_under": 1.78
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 8.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

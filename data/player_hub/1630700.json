@@ -3,7 +3,57 @@
  "player": "Dyson Daniels",
  "team": "Atlanta",
  "opp": "Washington",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 12.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "PA": {
+   "line": 17.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 24.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PR": {
+   "line": 19.5,
+   "price": 1.73,
+   "book": "unibet",
+   "price_over": 2.02,
+   "price_under": 1.73
+  },
+  "RA": {
+   "line": 12.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -126,6 +176,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
