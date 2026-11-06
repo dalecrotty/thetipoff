@@ -60,7 +60,7 @@
   }
  },
  "minutes": {
-  "value": 17,
+  "value": 18,
   "source": "model"
  },
  "splits": {
@@ -230,46 +230,75 @@
    "line": 5.5,
    "p_over": 0.554,
    "p_under": 0.446,
-   "fair_over": 0.483,
-   "fair_under": 0.517,
-   "price_over": 1.93,
-   "price_under": 1.8,
+   "fair_over": 0.522,
+   "fair_under": 0.478,
+   "price_over": 1.83,
+   "price_under": 2.0,
    "side": "over",
-   "price": 1.93,
-   "book": "unibet",
-   "edge": 0.0713,
-   "tier": "A"
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.0316,
+   "tier": "B"
   },
   "PR": {
-   "line": 11.5,
-   "p_over": 0.513,
-   "p_under": 0.487,
-   "fair_over": 0.461,
-   "fair_under": 0.539,
-   "price_over": 2.02,
-   "price_under": 1.73,
+   "line": 10.5,
+   "p_over": 0.576,
+   "p_under": 0.424,
+   "fair_over": 0.563,
+   "fair_under": 0.437,
+   "price_over": 1.67,
+   "price_under": 2.15,
    "side": "over",
-   "price": 2.02,
-   "book": "unibet",
-   "edge": 0.0516,
-   "tier": "B"
+   "price": 1.67,
+   "book": "neds",
+   "edge": 0.0131,
+   "tier": null
   },
   "REB": {
    "line": 5.5,
    "p_over": 0.481,
    "p_under": 0.519,
-   "fair_over": 0.483,
-   "fair_under": 0.517,
-   "price_over": 1.93,
-   "price_under": 1.8,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.88,
+   "price_under": 1.88,
    "side": "under",
-   "price": 1.8,
-   "book": "unibet",
-   "edge": 0.0019,
+   "price": 1.88,
+   "book": "sportsbet",
+   "edge": 0.0194,
+   "tier": null
+  },
+  "PRA": {
+   "line": 12.5,
+   "p_over": 0.488,
+   "p_under": 0.512,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "under",
+   "price": 1.87,
+   "book": "tab",
+   "edge": 0.0119,
    "tier": null
   }
  },
- "lines_us": {},
+ "lines_us": {
+  "REB": {
+   "line": 5.5,
+   "p_over": 0.481,
+   "p_under": 0.519,
+   "fair_over": 0.476,
+   "fair_under": 0.524,
+   "price_over": 1.98,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.98,
+   "book": "betright",
+   "edge": 0.0044,
+   "tier": null
+  }
+ },
  "game_log": [
   {
    "date": "2025-10-24",
