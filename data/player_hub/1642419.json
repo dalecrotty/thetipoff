@@ -4,63 +4,63 @@
  "team": "Toronto",
  "projections": {
   "3PM": {
-   "mean": 2.11,
-   "floor": 0.17,
-   "ceiling": 4.07
+   "mean": 2.68,
+   "floor": 0.29,
+   "ceiling": 4.95
   },
   "AST": {
-   "mean": 0.59,
+   "mean": 0.83,
    "floor": 0.0,
-   "ceiling": 1.95
+   "ceiling": 2.19
   },
   "BLK": {
-   "mean": 0.08,
+   "mean": 0.09,
    "floor": 0.0,
-   "ceiling": 0.97
+   "ceiling": 0.98
   },
   "PTS": {
-   "mean": 9.41,
-   "floor": 2.68,
-   "ceiling": 16.86
+   "mean": 10.7,
+   "floor": 3.46,
+   "ceiling": 18.61
   },
   "REB": {
-   "mean": 2.69,
-   "floor": 0.42,
-   "ceiling": 5.12
+   "mean": 3.22,
+   "floor": 0.78,
+   "ceiling": 5.94
   },
   "STL": {
-   "mean": 0.46,
-   "floor": 0.01,
-   "ceiling": 1.26
+   "mean": 0.51,
+   "floor": 0.0,
+   "ceiling": 1.96
   },
   "TOV": {
-   "mean": 0.61,
-   "floor": 0.01,
-   "ceiling": 2.01
+   "mean": 0.67,
+   "floor": 0.0,
+   "ceiling": 1.94
   },
   "PRA": {
-   "mean": 12.7,
-   "floor": 3.61,
-   "ceiling": 21.52
+   "mean": 14.76,
+   "floor": 5.39,
+   "ceiling": 23.93
   },
   "PR": {
-   "mean": 12.1,
-   "floor": 4.05,
-   "ceiling": 20.05
+   "mean": 13.93,
+   "floor": 5.42,
+   "ceiling": 22.55
   },
   "PA": {
-   "mean": 10.01,
-   "floor": 2.48,
-   "ceiling": 17.71
+   "mean": 11.54,
+   "floor": 3.66,
+   "ceiling": 19.84
   },
   "RA": {
-   "mean": 3.28,
-   "floor": 0.53,
-   "ceiling": 6.58
+   "mean": 4.06,
+   "floor": 1.31,
+   "ceiling": 7.36
   }
  },
  "minutes": {
-  "value": 20,
+  "value": 22,
   "source": "model"
  },
  "splits": {
@@ -3687,6 +3687,14 @@
    "phase": "playoffs"
   }
  ],
- "with_without_tonight": [],
+ "with_without_tonight": [
+  {
+   "star": "Scottie Barnes",
+   "n_without": 16,
+   "PTS": 0.8,
+   "REB": 0.2,
+   "AST": 0.2
+  }
+ ],
  "opp": "Milwaukee"
 }

@@ -2,67 +2,8 @@
  "player_id": 1630567,
  "player": "Scottie Barnes",
  "team": "Toronto",
- "projections": {
-  "3PM": {
-   "mean": 0.25,
-   "floor": 0.09,
-   "ceiling": 0.25
-  },
-  "AST": {
-   "mean": 1.91,
-   "floor": 0.1,
-   "ceiling": 4.03
-  },
-  "BLK": {
-   "mean": 0.4,
-   "floor": 0.0,
-   "ceiling": 1.01
-  },
-  "PTS": {
-   "mean": 7.22,
-   "floor": 0.77,
-   "ceiling": 13.87
-  },
-  "REB": {
-   "mean": 2.32,
-   "floor": 0.06,
-   "ceiling": 4.75
-  },
-  "STL": {
-   "mean": 0.57,
-   "floor": 0.01,
-   "ceiling": 2.02
-  },
-  "TOV": {
-   "mean": 0.99,
-   "floor": 0.04,
-   "ceiling": 2.13
-  },
-  "PRA": {
-   "mean": 11.45,
-   "floor": 2.83,
-   "ceiling": 20.23
-  },
-  "PR": {
-   "mean": 9.54,
-   "floor": 1.81,
-   "ceiling": 17.88
-  },
-  "PA": {
-   "mean": 9.13,
-   "floor": 1.6,
-   "ceiling": 16.83
-  },
-  "RA": {
-   "mean": 4.22,
-   "floor": 0.87,
-   "ceiling": 7.67
-  }
- },
- "minutes": {
-  "value": 11,
-  "source": "model"
- },
+ "projections": {},
+ "minutes": null,
  "splits": {
   "season": {
    "games": 160,
@@ -225,106 +166,7 @@
    }
   }
  },
- "lines": {
-  "RA": {
-   "line": 13.5,
-   "p_over": 0.0,
-   "p_under": 1.0,
-   "fair_over": 0.556,
-   "fair_under": 0.444,
-   "price_over": 1.68,
-   "price_under": 2.1,
-   "side": "under",
-   "price": 2.1,
-   "book": "neds",
-   "edge": 0.5553,
-   "tier": "A"
-  },
-  "REB": {
-   "line": 7.5,
-   "p_over": 0.006,
-   "p_under": 0.994,
-   "fair_over": 0.527,
-   "fair_under": 0.473,
-   "price_over": 1.78,
-   "price_under": 1.98,
-   "side": "under",
-   "price": 1.98,
-   "book": "neds",
-   "edge": 0.5208,
-   "tier": "A"
-  },
-  "PRA": {
-   "line": 36.5,
-   "p_over": 0.0,
-   "p_under": 1.0,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
-   "side": "under",
-   "price": 1.95,
-   "book": "neds",
-   "edge": 0.5199,
-   "tier": "A"
-  },
-  "PA": {
-   "line": 28.5,
-   "p_over": 0.001,
-   "p_under": 0.999,
-   "fair_over": 0.519,
-   "fair_under": 0.481,
-   "price_over": 1.8,
-   "price_under": 1.94,
-   "side": "under",
-   "price": 1.94,
-   "book": "neds",
-   "edge": 0.5181,
-   "tier": "A"
-  },
-  "PTS": {
-   "line": 23.5,
-   "p_over": 0.001,
-   "p_under": 0.999,
-   "fair_over": 0.48,
-   "fair_under": 0.52,
-   "price_over": 1.95,
-   "price_under": 1.8,
-   "side": "under",
-   "price": 1.8,
-   "book": "tab",
-   "edge": 0.4788,
-   "tier": "A"
-  },
-  "PR": {
-   "line": 30.5,
-   "p_over": 0.001,
-   "p_under": 0.999,
-   "fair_over": 0.501,
-   "fair_under": 0.499,
-   "price_over": 1.87,
-   "price_under": 1.88,
-   "side": "under",
-   "price": 1.88,
-   "book": "neds",
-   "edge": 0.5007,
-   "tier": "A"
-  },
-  "AST": {
-   "line": 6.5,
-   "p_over": 0.007,
-   "p_under": 0.993,
-   "fair_over": 0.456,
-   "fair_under": 0.544,
-   "price_over": 2.05,
-   "price_under": 1.72,
-   "side": "under",
-   "price": 1.72,
-   "book": "neds",
-   "edge": 0.4497,
-   "tier": "A"
-  }
- },
+ "lines": {},
  "lines_us": {},
  "game_log": [
   {
@@ -4411,5 +4253,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Milwaukee"
+ "opp": null
 }

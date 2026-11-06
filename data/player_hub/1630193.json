@@ -2,67 +2,8 @@
  "player_id": 1630193,
  "player": "Immanuel Quickley",
  "team": "Toronto",
- "projections": {
-  "3PM": {
-   "mean": 0.89,
-   "floor": 0.0,
-   "ceiling": 2.14
-  },
-  "AST": {
-   "mean": 1.99,
-   "floor": 0.0,
-   "ceiling": 3.98
-  },
-  "BLK": {
-   "mean": 0.01,
-   "floor": 0.0,
-   "ceiling": 0.9
-  },
-  "PTS": {
-   "mean": 5.41,
-   "floor": 0.58,
-   "ceiling": 11.12
-  },
-  "REB": {
-   "mean": 1.2,
-   "floor": 0.0,
-   "ceiling": 3.41
-  },
-  "STL": {
-   "mean": 0.41,
-   "floor": 0.0,
-   "ceiling": 1.21
-  },
-  "TOV": {
-   "mean": 0.36,
-   "floor": 0.0,
-   "ceiling": 1.76
-  },
-  "PRA": {
-   "mean": 8.6,
-   "floor": 0.88,
-   "ceiling": 17.31
-  },
-  "PR": {
-   "mean": 6.6,
-   "floor": 0.0,
-   "ceiling": 14.72
-  },
-  "PA": {
-   "mean": 7.4,
-   "floor": 1.54,
-   "ceiling": 14.19
-  },
-  "RA": {
-   "mean": 3.19,
-   "floor": 0.44,
-   "ceiling": 6.49
-  }
- },
- "minutes": {
-  "value": 10,
-  "source": "model"
- },
+ "projections": {},
+ "minutes": null,
  "splits": {
   "season": {
    "games": 111,
@@ -225,120 +166,7 @@
    }
   }
  },
- "lines": {
-  "PRA": {
-   "line": 30.5,
-   "p_over": 0.001,
-   "p_under": 0.999,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
-   "side": "under",
-   "price": 1.95,
-   "book": "pointsbetau",
-   "edge": 0.5194,
-   "tier": "A"
-  },
-  "REB": {
-   "line": 4.5,
-   "p_over": 0.011,
-   "p_under": 0.989,
-   "fair_over": 0.418,
-   "fair_under": 0.582,
-   "price_over": 2.23,
-   "price_under": 1.6,
-   "side": "under",
-   "price": 1.6,
-   "book": "unibet",
-   "edge": 0.4071,
-   "tier": "A"
-  },
-  "RA": {
-   "line": 10.5,
-   "p_over": 0.002,
-   "p_under": 0.998,
-   "fair_over": 0.528,
-   "fair_under": 0.472,
-   "price_over": 1.74,
-   "price_under": 1.95,
-   "side": "under",
-   "price": 1.95,
-   "book": "pointsbetau",
-   "edge": 0.5262,
-   "tier": "A"
-  },
-  "PTS": {
-   "line": 19.5,
-   "p_over": 0.001,
-   "p_under": 0.999,
-   "fair_over": 0.522,
-   "fair_under": 0.478,
-   "price_over": 1.83,
-   "price_under": 2.0,
-   "side": "under",
-   "price": 2.0,
-   "book": "pointsbetau",
-   "edge": 0.5215,
-   "tier": "A"
-  },
-  "AST": {
-   "line": 6.5,
-   "p_over": 0.008,
-   "p_under": 0.992,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
-   "side": "under",
-   "price": 1.95,
-   "book": "pointsbetau",
-   "edge": 0.5119,
-   "tier": "A"
-  },
-  "PA": {
-   "line": 26.5,
-   "p_over": 0.0,
-   "p_under": 1.0,
-   "fair_over": 0.511,
-   "fair_under": 0.489,
-   "price_over": 1.83,
-   "price_under": 1.91,
-   "side": "under",
-   "price": 1.91,
-   "book": "neds",
-   "edge": 0.5105,
-   "tier": "A"
-  },
-  "PR": {
-   "line": 23.5,
-   "p_over": 0.004,
-   "p_under": 0.996,
-   "fair_over": 0.513,
-   "fair_under": 0.487,
-   "price_over": 1.82,
-   "price_under": 1.92,
-   "side": "under",
-   "price": 1.92,
-   "book": "neds",
-   "edge": 0.5096,
-   "tier": "A"
-  },
-  "3PM": {
-   "line": 3.5,
-   "p_over": 0.018,
-   "p_under": 0.982,
-   "fair_over": 0.401,
-   "fair_under": 0.599,
-   "price_over": 2.35,
-   "price_under": 1.57,
-   "side": "under",
-   "price": 1.57,
-   "book": "pointsbetau",
-   "edge": 0.3829,
-   "tier": "A"
-  }
- },
+ "lines": {},
  "lines_us": {},
  "game_log": [
   {
@@ -3249,5 +3077,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": "Milwaukee"
+ "opp": null
 }
