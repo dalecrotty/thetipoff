@@ -1878,7 +1878,7 @@ async function initTip() {
       ? `Closed ${fmt(t.closing_line)} @ ${odds(t.closing_price)} · CLV ${pct(t.clv)}` : "";
     const res = t.result ? ` · ${stamp(t.result)}${t.actual != null ? ` ${fmt(t.actual)}` : ""}` : "";
     $("#tcard").innerHTML = `<div class="tipcard">
-      <div class="ctx">${day.toUpperCase()}${t.trial ? `<span class="tag trial">Preseason trial</span>` : ""}</div>
+      <div class="ctx">${day.toUpperCase()}${t.trial ? `<span class="tag trial">Preseason trial</span>` : ""}${t.late ? `<span class="tag late" title="Nothing qualified the night before or at the morning build; picked at the lock on fresh lines, about 90 minutes before tip">Late Drop</span>` : ""}</div>
       <div class="who">${t.player}</div>
       <div class="ctx">${game}${t.game_start ? ` · tips off ${whenAEDT(t.game_start).split(",")[0]}` : ""}</div>
       <div class="bet">${tipBet(t)}</div>
@@ -1916,7 +1916,7 @@ async function initTip() {
     <div class="card"><div class="k">Return (flat)</div><div class="v">${open ? pct(s.roi) : "—"}</div>${open ? "" : later}</div>`;
   const tb = $("#tips tbody");
   tb.innerHTML = tipsShown.length ? tipsShown.map(r => `<tr class="${r.trial ? "trial" : ""}">
-      <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}</td>
+      <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}${r.late ? " · late" : ""}</td>
       <td class="s">${r.player}</td>
       <td class="s">${r.market_label} ${sideGlyph(r.side)} ${fmt(r.line)}</td>
       <td class="num opt">${odds(r.price)}</td>
@@ -1985,9 +1985,9 @@ async function initHome() {
     ? `<div class="tipmini">
         <div class="who">${esc(t.player)}</div>
         <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)} · ${fmt(t.stake ?? 1, 0)} unit</div>
-        <div class="sm">Our projection <b class="ours ${sideCls(t.side)}">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
+        <div class="sm">Our projection <b class="ours ${sideCls(t.side)}">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}${t.late ? ` · <span class="tag late">Late Drop</span>` : ""}</div>
       </div>`
-    : `<p class="dim">Our biggest edge goes up around 7pm Sydney time the night before the games.</p>`)
+    : `<p class="dim">Our biggest edge goes up around 7pm Sydney time the night before the games, or at the lock 90 minutes before tip when nothing qualified earlier.</p>`)
     + (rec && rec.n_tips ? `<div class="sm dim">Season: ${rec.wins}–${rec.losses}, ${unitsTxt(rec.units ?? 0)} (1 unit each)</div>` : "");
 
   const rows = regionLines(board?.rows || []).map(favour).filter(r => r.edge != null && r.line != null && r.tier)
