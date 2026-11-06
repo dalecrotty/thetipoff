@@ -3,7 +3,29 @@
  "player": "Sandro Mamukelashvili",
  "team": "LA Lakers",
  "opp": "Portland",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 2.4,
+   "book": "unibet",
+   "price_over": 1.51,
+   "price_under": 2.4
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -126,6 +148,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -4,12 +4,19 @@
  "team": "Washington",
  "opp": "Atlanta",
  "lines": {
+  "REB": {
+   "line": 3.5,
+   "price": 2.17,
+   "book": "unibet",
+   "price_over": 2.17,
+   "price_under": 1.63
+  },
   "PTS": {
-   "line": 8.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
+   "line": 7.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.88
   },
   "PR": {
    "line": 11.5,
@@ -18,19 +25,12 @@
    "price_over": 1.77,
    "price_under": 1.95
   },
-  "REB": {
-   "line": 3.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
   "3PM": {
    "line": 0.5,
-   "price": 2.5,
+   "price": 2.25,
    "book": "pointsbetau",
-   "price_over": 1.5,
-   "price_under": 2.5
+   "price_over": 1.63,
+   "price_under": 2.25
   },
   "PRA": {
    "line": 14.5,
@@ -164,7 +164,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 8.5,
+   "line": 7.5,
    "over": 1,
    "n": 5
   },
