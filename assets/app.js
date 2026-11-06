@@ -1878,7 +1878,7 @@ async function initTip() {
       ? `Closed ${fmt(t.closing_line)} @ ${odds(t.closing_price)} · CLV ${pct(t.clv)}` : "";
     const res = t.result ? ` · ${stamp(t.result)}${t.actual != null ? ` ${fmt(t.actual)}` : ""}` : "";
     $("#tcard").innerHTML = `<div class="tipcard">
-      <div class="ctx">${day.toUpperCase()}${t.trial ? `<span class="tag trial">Preseason trial</span>` : ""}${t.late ? `<span class="tag late" title="Nothing qualified the night before or at the morning build; picked at the lock on fresh lines, about 90 minutes before tip">Late Drop</span>` : ""}</div>
+      <div class="ctx">${day.toUpperCase()}${t.trial ? `<span class="tag trial">Preseason trial</span>` : ""}</div>
       <div class="who">${t.player}</div>
       <div class="ctx">${game}${t.game_start ? ` · tips off ${whenAEDT(t.game_start).split(",")[0]}` : ""}</div>
       <div class="bet">${tipBet(t)}</div>
@@ -1890,9 +1890,7 @@ async function initTip() {
       <div class="foot">Posted ${t.posted_at ? whenAEDT(t.posted_at) : ""}${t.au_book ? "" : " · US line: no Australian book priced this player"}${closed ? " · " + closed : ""}${res}</div>
     </div>`;
   } else {
-    $("#tlead").textContent = `No Drop is posted for ${day} yet. It goes up around `
-      + `7pm Sydney time the night before the games, once the bookmakers' `
-      + `player lines are up; if none clears the rules, there's no Drop.`;
+    $("#tlead").textContent = `No Drop is posted for ${day} yet. ` + noDropYet(d);
   }
 
   const s = d.summary;
@@ -1916,7 +1914,7 @@ async function initTip() {
     <div class="card"><div class="k">Return (flat)</div><div class="v">${open ? pct(s.roi) : "—"}</div>${open ? "" : later}</div>`;
   const tb = $("#tips tbody");
   tb.innerHTML = tipsShown.length ? tipsShown.map(r => `<tr class="${r.trial ? "trial" : ""}">
-      <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}${r.late ? " · late" : ""}</td>
+      <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}</td>
       <td class="s">${r.player}</td>
       <td class="s">${r.market_label} ${sideGlyph(r.side)} ${fmt(r.line)}</td>
       <td class="num opt">${odds(r.price)}</td>
@@ -1936,6 +1934,17 @@ function dayAfter(iso) {
 }
 
 /* ---------- Games section: shared ---------- */
+/* No Drop posted yet for the slate: say so and when the next check is
+   (owner, 6 Nov 2026: one Drop a day; we aim for the first run and prefer
+   accuracy over time). tips.next_check comes from the dispatcher's plan. */
+const CHECK_WORDS = { night: "the 7pm Sydney pass", retry: "the late-evening retry",
+  main: "the morning build", lock: "the lock 90 minutes before the next tips" };
+function noDropYet(tips) {
+  const n = tips?.next_check;
+  const when = n ? `${CHECK_WORDS[n.kind] || "the next run"}, ${whenAEDT(n.at)}` : null;
+  return `No Drop yet. Nothing has cleared the bar${when ? `; the next check is ${when}` : " at today's checks"}. `
+    + `One Drop a day: we aim for the first run and would rather be right than early.`;
+}
 /* The Australian date a slate is played on, from its first tip. */
 function auDate(iso) {
   return new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Sydney",
@@ -1985,9 +1994,9 @@ async function initHome() {
     ? `<div class="tipmini">
         <div class="who">${esc(t.player)}</div>
         <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)} · ${fmt(t.stake ?? 1, 0)} unit</div>
-        <div class="sm">Our projection <b class="ours ${sideCls(t.side)}">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}${t.late ? ` · <span class="tag late">Late Drop</span>` : ""}</div>
+        <div class="sm">Our projection <b class="ours ${sideCls(t.side)}">${fmt(t.model_proj)}</b> · edge ${edgeSpan(t)}${t.trial ? ` · <span class="tag trial">Preseason trial</span>` : ""}</div>
       </div>`
-    : `<p class="dim">Our biggest edge goes up around 7pm Sydney time the night before the games, or at the lock 90 minutes before tip when nothing qualified earlier.</p>`)
+    : `<p class="dim">${noDropYet(tips)}</p>`)
     + (rec && rec.n_tips ? `<div class="sm dim">Season: ${rec.wins}–${rec.losses}, ${unitsTxt(rec.units ?? 0)} (1 unit each)</div>` : "");
 
   const rows = regionLines(board?.rows || []).map(favour).filter(r => r.edge != null && r.line != null && r.tier)

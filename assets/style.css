@@ -456,7 +456,7 @@ table.summary-t .lo { color: var(--dn); font-weight: 600; }
 .tipcard .fig .v.over { color: var(--signal); }
 .tipcard .fig .v.under { color: var(--dn); }
 .tipcard .foot { color: var(--muted); font: 12px/1.4 var(--mono); margin-top: 10px; }
-.tag.trial, .tag.late { display: inline-block; padding: 2px 7px; border-radius: 0; margin-left: 6px;
+.tag.trial { display: inline-block; padding: 2px 7px; border-radius: 0; margin-left: 6px;
   background: var(--chip); color: var(--muted); font: 600 10.5px/1.2 var(--mono);
   letter-spacing: .05em; text-transform: uppercase; vertical-align: middle; }
 .prose { max-width: 70ch; color: var(--ink); font-size: 15px; line-height: 1.55; }
