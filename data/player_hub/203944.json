@@ -2,8 +2,37 @@
  "player_id": 203944,
  "player": "Julius Randle",
  "team": "Brooklyn",
- "opp": null,
- "lines": {},
+ "opp": "Atlanta",
+ "lines": {
+  "PTS": {
+   "line": 19.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 2.0,
+   "price_under": 1.7
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.98,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.98
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -13,7 +42,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 31.0,
    "PTS": 22.0,
    "REB": 3.0,
@@ -61,7 +90,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 37.0,
    "PTS": 20.0,
    "REB": 5.0,
@@ -126,6 +155,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 19.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

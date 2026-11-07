@@ -4,19 +4,19 @@
   {
    "id": 201935,
    "name": "James Harden",
-   "games": 52,
-   "med_min": 35.2
+   "games": 53,
+   "med_min": 35.0
   },
   {
    "id": 1628378,
    "name": "Donovan Mitchell",
-   "games": 167,
+   "games": 168,
    "med_min": 34.0
   },
   {
    "id": 1630596,
    "name": "Evan Mobley",
-   "games": 162,
+   "games": 163,
    "med_min": 32.8
   },
   {
@@ -26,16 +26,16 @@
    "med_min": 32.0
   },
   {
-   "id": 1631212,
-   "name": "Peyton Watson",
-   "games": 6,
-   "med_min": 29.0
-  },
-  {
    "id": 1628386,
    "name": "Jarrett Allen",
    "games": 164,
    "med_min": 28.2
+  },
+  {
+   "id": 1631212,
+   "name": "Peyton Watson",
+   "games": 7,
+   "med_min": 28.0
   },
   {
    "id": 1629631,
@@ -58,8 +58,8 @@
   {
    "id": 1630241,
    "name": "Sam Merrill",
-   "games": 148,
-   "med_min": 22.9
+   "games": 149,
+   "med_min": 22.8
   },
   {
    "id": 1628366,
@@ -80,15 +80,21 @@
    "med_min": 21.7
   },
   {
+   "id": -735,
+   "name": "Meleek Thomas",
+   "games": 6,
+   "med_min": 21.5
+  },
+  {
    "id": 1642281,
    "name": "Jaylon Tyson",
    "games": 135,
    "med_min": 20.1
   },
   {
-   "id": -735,
-   "name": "Meleek Thomas",
-   "games": 5,
+   "id": -701,
+   "name": "Mario Hezonja",
+   "games": 9,
    "med_min": 20.0
   },
   {
@@ -102,12 +108,6 @@
    "name": "Ty Jerome",
    "games": 70,
    "med_min": 20.0
-  },
-  {
-   "id": -701,
-   "name": "Mario Hezonja",
-   "games": 8,
-   "med_min": 19.5
   },
   {
    "id": 203471,
@@ -130,8 +130,8 @@
   {
    "id": 1641854,
    "name": "Craig Porter",
-   "games": 128,
-   "med_min": 14.2
+   "games": 129,
+   "med_min": 14.0
   },
   {
    "id": -610,
@@ -142,7 +142,7 @@
   {
    "id": 1628418,
    "name": "Thomas Bryant",
-   "games": 72,
+   "games": 73,
    "med_min": 12.4
   },
   {
@@ -154,8 +154,14 @@
   {
    "id": 1642878,
    "name": "Tyrese Proctor",
-   "games": 61,
-   "med_min": 10.1
+   "games": 62,
+   "med_min": 10.3
+  },
+  {
+   "id": 1642400,
+   "name": "Tristan Enaruna",
+   "games": 12,
+   "med_min": 7.5
   },
   {
    "id": 1629750,
@@ -167,12 +173,6 @@
    "id": 1630846,
    "name": "Olivier Sarr",
    "games": 4,
-   "med_min": 7.0
-  },
-  {
-   "id": 1642400,
-   "name": "Tristan Enaruna",
-   "games": 11,
    "med_min": 7.0
   },
   {
@@ -204,6 +204,12 @@
    "name": "JT Thor",
    "games": 9,
    "med_min": 4.0
+  },
+  {
+   "id": 1641807,
+   "name": "Norchad Omier",
+   "games": 1,
+   "med_min": 3.0
   },
   {
    "id": 1642468,
@@ -33225,6 +33231,196 @@
      "FGA": 9.0,
      "3PA": 7.0,
      "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-11-06_cleveland_vs_philadelphia",
+   "lines": {
+    "1641854": {
+     "min": 3.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628378": {
+     "min": 33.0,
+     "PTS": 23.0,
+     "REB": 7.0,
+     "AST": 8.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "FGM": 7.0,
+     "FGA": 18.0,
+     "3PA": 6.0,
+     "FTA": 10.0,
+     "starter": true
+    },
+    "1630596": {
+     "min": 32.0,
+     "PTS": 22.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 8.0,
+     "FGA": 13.0,
+     "3PA": 4.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "201935": {
+     "min": 30.0,
+     "PTS": 17.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 4.0,
+     "FGA": 11.0,
+     "3PA": 7.0,
+     "FTA": 7.0,
+     "starter": true
+    },
+    "1631212": {
+     "min": 28.0,
+     "PTS": 13.0,
+     "REB": 9.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 6.0,
+     "FGA": 14.0,
+     "3PA": 4.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1630241": {
+     "min": 13.0,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1628418": {
+     "min": 16.0,
+     "PTS": 13.0,
+     "REB": 6.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 5.0,
+     "3PA": 1.0,
+     "FTA": 5.0,
+     "starter": false
+    },
+    "1642878": {
+     "min": 19.0,
+     "PTS": 3.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 4.0,
+     "3PA": 1.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "1641807": {
+     "min": 3.0,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642400": {
+     "min": 8.0,
+     "PTS": 1.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "-701": {
+     "min": 27.0,
+     "PTS": 15.0,
+     "REB": 10.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 6.0,
+     "FGA": 13.0,
+     "3PA": 8.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "-735": {
+     "min": 27.0,
+     "PTS": 12.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 4.0,
+     "FGA": 7.0,
+     "3PA": 4.0,
+     "FTA": 2.0,
      "starter": false
     }
    }

@@ -16,31 +16,31 @@
   {
    "id": 1630700,
    "name": "Dyson Daniels",
-   "games": 167,
+   "games": 168,
    "med_min": 34.0
   },
   {
    "id": 1629638,
    "name": "Nickeil Alexander-Walker",
-   "games": 93,
-   "med_min": 33.5
+   "games": 94,
+   "med_min": 33.4
   },
   {
    "id": 203468,
    "name": "CJ McCollum",
-   "games": 56,
-   "med_min": 29.3
+   "games": 57,
+   "med_min": 29.2
+  },
+  {
+   "id": 1630168,
+   "name": "Onyeka Okongwu",
+   "games": 164,
+   "med_min": 29.1
   },
   {
    "id": 1629631,
    "name": "De'Andre Hunter",
    "games": 37,
-   "med_min": 29.0
-  },
-  {
-   "id": 1630168,
-   "name": "Onyeka Okongwu",
-   "games": 163,
    "med_min": 29.0
   },
   {
@@ -50,9 +50,21 @@
    "med_min": 27.5
   },
   {
+   "id": 1629652,
+   "name": "Luguentz Dort",
+   "games": 10,
+   "med_min": 26.0
+  },
+  {
    "id": 203992,
    "name": "Bogdan Bogdanovic",
    "games": 24,
+   "med_min": 25.5
+  },
+  {
+   "id": 1630598,
+   "name": "Aaron Wiggins",
+   "games": 10,
    "med_min": 25.5
   },
   {
@@ -74,22 +86,16 @@
    "med_min": 24.0
   },
   {
-   "id": 1629652,
-   "name": "Luguentz Dort",
-   "games": 9,
-   "med_min": 24.0
-  },
-  {
-   "id": 1630598,
-   "name": "Aaron Wiggins",
-   "games": 9,
-   "med_min": 24.0
-  },
-  {
    "id": 1642258,
    "name": "Zaccharie Risacher",
    "games": 145,
    "med_min": 23.3
+  },
+  {
+   "id": -778,
+   "name": "Kingston Flemings",
+   "games": 9,
+   "med_min": 23.0
   },
   {
    "id": 1630228,
@@ -122,12 +128,6 @@
    "med_min": 20.8
   },
   {
-   "id": -778,
-   "name": "Kingston Flemings",
-   "games": 8,
-   "med_min": 20.5
-  },
-  {
    "id": 1626204,
    "name": "Larry Nance Jr.",
    "games": 24,
@@ -148,8 +148,14 @@
   {
    "id": 1630557,
    "name": "Corey Kispert",
-   "games": 49,
+   "games": 50,
    "med_min": 15.8
+  },
+  {
+   "id": -760,
+   "name": "Zuby Ejiofor",
+   "games": 5,
+   "med_min": 15.0
   },
   {
    "id": 1631243,
@@ -174,12 +180,6 @@
    "name": "Keaton Wallace",
    "games": 87,
    "med_min": 11.7
-  },
-  {
-   "id": -760,
-   "name": "Zuby Ejiofor",
-   "games": 4,
-   "med_min": 11.5
   },
   {
    "id": 1631132,
@@ -29445,6 +29445,151 @@
      "FGM": 6.0,
      "FGA": 9.0,
      "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-11-06_atlanta_vs_washington",
+   "lines": {
+    "1630598": {
+     "min": 29.0,
+     "PTS": 19.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 8.0,
+     "FGA": 12.0,
+     "3PA": 7.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "203468": {
+     "min": 23.0,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 1.0,
+     "FGA": 10.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630557": {
+     "min": 16.0,
+     "PTS": 7.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 5.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630700": {
+     "min": 35.0,
+     "PTS": 13.0,
+     "REB": 9.0,
+     "AST": 12.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 6.0,
+     "FGA": 9.0,
+     "3PA": 1.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1629652": {
+     "min": 32.0,
+     "PTS": 25.0,
+     "REB": 7.0,
+     "AST": 4.0,
+     "3PM": 5.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 9.0,
+     "FGA": 15.0,
+     "3PA": 7.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1629638": {
+     "min": 33.0,
+     "PTS": 28.0,
+     "REB": 2.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 7.0,
+     "FGA": 20.0,
+     "3PA": 12.0,
+     "FTA": 10.0,
+     "starter": true
+    },
+    "1630168": {
+     "min": 33.0,
+     "PTS": 22.0,
+     "REB": 10.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 4.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 8.0,
+     "FGA": 12.0,
+     "3PA": 3.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "-760": {
+     "min": 15.0,
+     "PTS": 10.0,
+     "REB": 5.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 6.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-778": {
+     "min": 25.0,
+     "PTS": 11.0,
+     "REB": 1.0,
+     "AST": 6.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 9.0,
+     "3PA": 3.0,
      "FTA": 0.0,
      "starter": true
     }

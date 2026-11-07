@@ -2,8 +2,65 @@
  "player_id": 203999,
  "player": "Nikola Jokic",
  "team": "Denver",
- "opp": null,
- "lines": {},
+ "opp": "Indiana",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 21.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "PTS": {
+   "line": 26.5,
+   "price": 1.91,
+   "book": "unibet",
+   "price_over": 1.82,
+   "price_under": 1.91
+  },
+  "PA": {
+   "line": 36.5,
+   "price": 1.91,
+   "book": "unibet",
+   "price_over": 1.82,
+   "price_under": 1.91
+  },
+  "PR": {
+   "line": 38.5,
+   "price": 1.92,
+   "book": "unibet",
+   "price_over": 1.81,
+   "price_under": 1.92
+  },
+  "PRA": {
+   "line": 48.5,
+   "price": 1.92,
+   "book": "unibet",
+   "price_over": 1.81,
+   "price_under": 1.92
+  },
+  "AST": {
+   "line": 9.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "REB": {
+   "line": 11.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 26.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 11.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 9.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
