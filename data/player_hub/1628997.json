@@ -3,7 +3,50 @@
  "player": "Caleb Martin",
  "team": "Dallas",
  "opp": "Utah",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 3.5,
+   "price": 1.72,
+   "book": "tab",
+   "price_over": 2.05,
+   "price_under": 1.72
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.8,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 4.5,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 2.02,
+   "price_under": 1.76
+  },
+  "PR": {
+   "line": 7.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PRA": {
+   "line": 10.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.85,
+   "price_under": 1.9
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -126,6 +169,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
