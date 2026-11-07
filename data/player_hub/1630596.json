@@ -3,7 +3,36 @@
  "player": "Evan Mobley",
  "team": "Cleveland",
  "opp": "Philadelphia",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 9.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PTS": {
+   "line": 17.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.6,
+   "book": "sportsbet",
+   "price_over": 2.6,
+   "price_under": 1.45
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -126,6 +155,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 17.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 9.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
