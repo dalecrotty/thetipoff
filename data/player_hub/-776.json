@@ -2,65 +2,386 @@
  "player_id": -776,
  "player": "AJ Dybantsa",
  "team": "Washington",
- "opp": "Atlanta",
+ "projections": {
+  "3PM": {
+   "mean": 1.04,
+   "floor": 0.0,
+   "ceiling": 2.92
+  },
+  "AST": {
+   "mean": 2.4,
+   "floor": 0.01,
+   "ceiling": 4.63
+  },
+  "BLK": {
+   "mean": 0.49,
+   "floor": 0.0,
+   "ceiling": 1.91
+  },
+  "PTS": {
+   "mean": 16.53,
+   "floor": 7.89,
+   "ceiling": 25.46
+  },
+  "REB": {
+   "mean": 6.21,
+   "floor": 2.75,
+   "ceiling": 9.93
+  },
+  "STL": {
+   "mean": 1.31,
+   "floor": 0.0,
+   "ceiling": 3.0
+  },
+  "TOV": {
+   "mean": 1.54,
+   "floor": 0.0,
+   "ceiling": 2.98
+  },
+  "PRA": {
+   "mean": 25.15,
+   "floor": 14.59,
+   "ceiling": 36.82
+  },
+  "PR": {
+   "mean": 22.75,
+   "floor": 13.04,
+   "ceiling": 33.79
+  },
+  "PA": {
+   "mean": 18.94,
+   "floor": 10.37,
+   "ceiling": 29.3
+  },
+  "RA": {
+   "mean": 8.62,
+   "floor": 4.39,
+   "ceiling": 13.42
+  }
+ },
+ "minutes": {
+  "value": 32,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 4,
+   "min_pg": 30.5,
+   "PTS": {
+    "pg": 16.5,
+    "pm": 0.541
+   },
+   "REB": {
+    "pg": 5.25,
+    "pm": 0.172
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.066
+   },
+   "3PM": {
+    "pg": 0.75,
+    "pm": 0.025
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.033
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.25,
+    "pm": 0.041
+   }
+  },
+  "l10": {
+   "games": 4,
+   "min_pg": 30.5,
+   "PTS": {
+    "pg": 16.5,
+    "pm": 0.541
+   },
+   "REB": {
+    "pg": 5.25,
+    "pm": 0.172
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.066
+   },
+   "3PM": {
+    "pg": 0.75,
+    "pm": 0.025
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.033
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.25,
+    "pm": 0.041
+   }
+  },
+  "l5": {
+   "games": 4,
+   "min_pg": 30.5,
+   "PTS": {
+    "pg": 16.5,
+    "pm": 0.541
+   },
+   "REB": {
+    "pg": 5.25,
+    "pm": 0.172
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.066
+   },
+   "3PM": {
+    "pg": 0.75,
+    "pm": 0.025
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.033
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.25,
+    "pm": 0.041
+   }
+  },
+  "home": {
+   "games": 2,
+   "min_pg": 31.0,
+   "PTS": {
+    "pg": 13.0,
+    "pm": 0.419
+   },
+   "REB": {
+    "pg": 7.0,
+    "pm": 0.226
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.065
+   },
+   "3PM": {
+    "pg": 0.5,
+    "pm": 0.016
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.016
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.016
+   }
+  },
+  "away": {
+   "games": 2,
+   "min_pg": 30.0,
+   "PTS": {
+    "pg": 20.0,
+    "pm": 0.667
+   },
+   "REB": {
+    "pg": 3.5,
+    "pm": 0.117
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.067
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.033
+   },
+   "STL": {
+    "pg": 1.5,
+    "pm": 0.05
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.067
+   }
+  }
+ },
  "lines": {
   "PTS": {
    "line": 19.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PR": {
-   "line": 25.5,
-   "price": 1.86,
-   "book": "sportsbet",
+   "p_over": 0.338,
+   "p_under": 0.662,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
    "price_over": 1.9,
-   "price_under": 1.86
-  },
-  "PA": {
-   "line": 21.5,
-   "price": 1.83,
+   "price_under": 1.9,
+   "side": "under",
+   "price": 1.9,
    "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.83
-  },
-  "PRA": {
-   "line": 28.5,
-   "price": 1.8,
-   "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
-  },
-  "RA": {
-   "line": 7.5,
-   "price": 1.74,
-   "book": "unibet",
-   "price_over": 1.74,
-   "price_under": 2.0
+   "edge": 0.1616,
+   "tier": null
   },
   "3PM": {
    "line": 1.5,
+   "p_over": 0.278,
+   "p_under": 0.722,
+   "fair_over": 0.375,
+   "fair_under": 0.625,
+   "price_over": 2.5,
+   "price_under": 1.5,
+   "side": "under",
    "price": 1.5,
    "book": "pointsbetau",
-   "price_over": 2.5,
-   "price_under": 1.5
+   "edge": 0.0969,
+   "tier": null
   },
   "AST": {
    "line": 1.5,
-   "price": 1.6,
+   "p_over": 0.669,
+   "p_under": 0.331,
+   "fair_over": 0.589,
+   "fair_under": 0.411,
+   "price_over": 1.57,
+   "price_under": 2.25,
+   "side": "over",
+   "price": 1.57,
    "book": "unibet",
-   "price_over": 1.6,
-   "price_under": 2.23
+   "edge": 0.0799,
+   "tier": null
   },
   "REB": {
    "line": 5.5,
-   "price": 1.82,
+   "p_over": 0.555,
+   "p_under": 0.445,
+   "fair_over": 0.519,
+   "fair_under": 0.481,
+   "price_over": 1.8,
+   "price_under": 1.94,
+   "side": "over",
+   "price": 1.8,
    "book": "neds",
-   "price_over": 1.82,
-   "price_under": 1.92
+   "edge": 0.0366,
+   "tier": null
   }
  },
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-28",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2026-10-28_cleveland_vs_washington",
+   "starter": true,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 27.0,
+   "PTS": 19.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 8.0,
+   "FGA": 12.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2026-10-30_charlotte_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 30.0,
+   "PTS": 17.0,
+   "REB": 8.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 11.0,
+   "3PA": 4.0,
+   "FTA": 7.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2026-11-02_orlando_vs_washington",
+   "starter": true,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 33.0,
+   "PTS": 21.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 7.0,
+   "FGA": 17.0,
+   "3PA": 4.0,
+   "FTA": 6.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2026-11-04_atlanta_vs_washington",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 32.0,
+   "PTS": 9.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 12.0,
+   "3PA": 1.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -159,27 +480,6 @@
    "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 19.5,
-   "over": 1,
-   "n": 4
-  },
-  "REB": {
-   "line": 5.5,
-   "over": 2,
-   "n": 4
-  },
-  "AST": {
-   "line": 1.5,
-   "over": 3,
-   "n": 4
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 0,
-   "n": 4
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Atlanta"
 }
