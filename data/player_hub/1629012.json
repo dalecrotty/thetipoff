@@ -225,7 +225,64 @@
    }
   }
  },
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 8.5,
+   "p_over": 0.582,
+   "p_under": 0.418,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.85,
+   "book": "neds",
+   "edge": 0.0751,
+   "tier": "A"
+  },
+  "PA": {
+   "line": 11.5,
+   "p_over": 0.501,
+   "p_under": 0.499,
+   "fair_over": 0.449,
+   "fair_under": 0.551,
+   "price_over": 2.1,
+   "price_under": 1.71,
+   "side": "over",
+   "price": 2.1,
+   "book": "pointsbetau",
+   "edge": 0.0521,
+   "tier": "B"
+  },
+  "AST": {
+   "line": 1.5,
+   "p_over": 0.545,
+   "p_under": 0.455,
+   "fair_over": 0.591,
+   "fair_under": 0.409,
+   "price_over": 1.59,
+   "price_under": 2.3,
+   "side": "under",
+   "price": 2.3,
+   "book": "pointsbetau",
+   "edge": 0.0458,
+   "tier": "B"
+  },
+  "3PM": {
+   "line": 0.5,
+   "p_over": 0.55,
+   "p_under": 0.45,
+   "fair_over": 0.58,
+   "fair_under": 0.42,
+   "price_over": 1.63,
+   "price_under": 2.25,
+   "side": "under",
+   "price": 2.25,
+   "book": "pointsbetau",
+   "edge": 0.0304,
+   "tier": null
+  }
+ },
  "lines_us": {},
  "game_log": [
   {
