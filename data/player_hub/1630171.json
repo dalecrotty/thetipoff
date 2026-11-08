@@ -4,59 +4,59 @@
  "team": "Chicago",
  "projections": {
   "3PM": {
-   "mean": 0.87,
-   "floor": 0.0,
-   "ceiling": 2.13
+   "mean": 0.93,
+   "floor": 0.02,
+   "ceiling": 2.19
   },
   "AST": {
-   "mean": 1.45,
+   "mean": 1.48,
    "floor": 0.0,
-   "ceiling": 3.05
+   "ceiling": 3.08
   },
   "BLK": {
-   "mean": 0.45,
+   "mean": 0.46,
    "floor": 0.0,
-   "ceiling": 1.06
+   "ceiling": 1.07
   },
   "PTS": {
-   "mean": 7.93,
-   "floor": 1.33,
-   "ceiling": 14.49
+   "mean": 8.21,
+   "floor": 1.61,
+   "ceiling": 14.77
   },
   "REB": {
-   "mean": 2.33,
-   "floor": 0.0,
-   "ceiling": 4.81
+   "mean": 2.41,
+   "floor": 0.03,
+   "ceiling": 4.88
   },
   "STL": {
-   "mean": 0.6,
+   "mean": 0.61,
    "floor": 0.0,
-   "ceiling": 1.97
+   "ceiling": 1.98
   },
   "TOV": {
-   "mean": 0.68,
+   "mean": 0.7,
    "floor": 0.0,
-   "ceiling": 1.93
+   "ceiling": 1.95
   },
   "PRA": {
-   "mean": 11.72,
-   "floor": 3.1,
-   "ceiling": 20.5
+   "mean": 12.1,
+   "floor": 3.48,
+   "ceiling": 20.88
   },
   "PR": {
-   "mean": 10.27,
-   "floor": 2.54,
-   "ceiling": 18.6
+   "mean": 10.62,
+   "floor": 2.89,
+   "ceiling": 18.96
   },
   "PA": {
-   "mean": 9.39,
-   "floor": 1.86,
-   "ceiling": 17.09
+   "mean": 9.7,
+   "floor": 2.16,
+   "ceiling": 17.39
   },
   "RA": {
-   "mean": 3.79,
-   "floor": 1.04,
-   "ceiling": 7.09
+   "mean": 3.89,
+   "floor": 1.14,
+   "ceiling": 7.19
   }
  },
  "minutes": {
@@ -225,7 +225,22 @@
    }
   }
  },
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 7.5,
+   "p_over": 0.555,
+   "p_under": 0.445,
+   "fair_over": 0.522,
+   "fair_under": 0.478,
+   "price_over": 1.83,
+   "price_under": 2.0,
+   "side": "over",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.0328,
+   "tier": "B"
+  }
+ },
  "lines_us": {},
  "game_log": [
   {
