@@ -226,48 +226,6 @@
   }
  },
  "lines": {
-  "PR": {
-   "line": 9.5,
-   "p_over": 0.742,
-   "p_under": 0.258,
-   "fair_over": 0.524,
-   "fair_under": 0.476,
-   "price_over": 1.78,
-   "price_under": 1.96,
-   "side": "over",
-   "price": 1.78,
-   "book": "neds",
-   "edge": 0.2175,
-   "tier": "A"
-  },
-  "REB": {
-   "line": 2.5,
-   "p_over": 0.764,
-   "p_under": 0.236,
-   "fair_over": 0.566,
-   "fair_under": 0.434,
-   "price_over": 1.65,
-   "price_under": 2.15,
-   "side": "over",
-   "price": 1.65,
-   "book": "neds",
-   "edge": 0.1986,
-   "tier": "A"
-  },
-  "PTS": {
-   "line": 6.5,
-   "p_over": 0.726,
-   "p_under": 0.274,
-   "fair_over": 0.528,
-   "fair_under": 0.472,
-   "price_over": 1.77,
-   "price_under": 1.98,
-   "side": "over",
-   "price": 1.77,
-   "book": "neds",
-   "edge": 0.1985,
-   "tier": "A"
-  },
   "AST": {
    "line": 1.5,
    "p_over": 0.695,
@@ -282,6 +240,20 @@
    "edge": 0.1619,
    "tier": "A"
   },
+  "PR": {
+   "line": 11.5,
+   "p_over": 0.643,
+   "p_under": 0.357,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.85,
+   "book": "neds",
+   "edge": 0.1364,
+   "tier": "A"
+  },
   "PRA": {
    "line": 13.5,
    "p_over": 0.653,
@@ -294,6 +266,34 @@
    "price": 1.8,
    "book": "tab",
    "edge": 0.1333,
+   "tier": "A"
+  },
+  "PTS": {
+   "line": 7.5,
+   "p_over": 0.663,
+   "p_under": 0.337,
+   "fair_over": 0.532,
+   "fair_under": 0.468,
+   "price_over": 1.8,
+   "price_under": 2.05,
+   "side": "over",
+   "price": 1.8,
+   "book": "pointsbetau",
+   "edge": 0.1303,
+   "tier": "A"
+  },
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.593,
+   "p_under": 0.407,
+   "fair_over": 0.476,
+   "fair_under": 0.524,
+   "price_over": 1.96,
+   "price_under": 1.78,
+   "side": "over",
+   "price": 1.96,
+   "book": "neds",
+   "edge": 0.1173,
    "tier": "A"
   },
   "3PM": {
@@ -311,7 +311,22 @@
    "tier": null
   }
  },
- "lines_us": {},
+ "lines_us": {
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.593,
+   "p_under": 0.407,
+   "fair_over": 0.493,
+   "fair_under": 0.507,
+   "price_over": 1.91,
+   "price_under": 1.86,
+   "side": "over",
+   "price": 1.91,
+   "book": "betright",
+   "edge": 0.0999,
+   "tier": "A"
+  }
+ },
  "game_log": [
   {
    "date": "2024-10-23",
