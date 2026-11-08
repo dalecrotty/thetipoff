@@ -2,8 +2,191 @@
  "player_id": -727,
  "player": "Dailyn Swain",
  "team": "Chicago",
- "opp": null,
+ "projections": {},
+ "minutes": null,
+ "splits": {
+  "season": {
+   "games": 2,
+   "min_pg": 9.5,
+   "PTS": {
+    "pg": 2.5,
+    "pm": 0.263
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.158
+   },
+   "AST": {
+    "pg": 1.5,
+    "pm": 0.158
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.105
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.211
+   }
+  },
+  "l10": {
+   "games": 2,
+   "min_pg": 9.5,
+   "PTS": {
+    "pg": 2.5,
+    "pm": 0.263
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.158
+   },
+   "AST": {
+    "pg": 1.5,
+    "pm": 0.158
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.105
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.211
+   }
+  },
+  "l5": {
+   "games": 2,
+   "min_pg": 9.5,
+   "PTS": {
+    "pg": 2.5,
+    "pm": 0.263
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.158
+   },
+   "AST": {
+    "pg": 1.5,
+    "pm": 0.158
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.105
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.211
+   }
+  },
+  "home": {},
+  "away": {
+   "games": 2,
+   "min_pg": 9.5,
+   "PTS": {
+    "pg": 2.5,
+    "pm": 0.263
+   },
+   "REB": {
+    "pg": 1.5,
+    "pm": 0.158
+   },
+   "AST": {
+    "pg": 1.5,
+    "pm": 0.158
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.105
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 2.0,
+    "pm": 0.211
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-26",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-26_boston_vs_chicago",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 12.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 1.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-04_chicago_vs_new-york",
+   "starter": false,
+   "rest": "8",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 7.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-04",
@@ -54,6 +237,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": null
 }
