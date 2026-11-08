@@ -4,12 +4,61 @@
  "team": "Utah",
  "opp": "Minnesota",
  "lines": {
+  "REB": {
+   "line": 6.5,
+   "price": 1.77,
+   "book": "unibet",
+   "price_over": 1.95,
+   "price_under": 1.77
+  },
   "3PM": {
    "line": 1.5,
-   "price": 2.4,
+   "price": 2.3,
    "book": "pointsbetau",
-   "price_over": 1.56,
-   "price_under": 2.4
+   "price_over": 1.59,
+   "price_under": 2.3
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.79,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.79
+  },
+  "PRA": {
+   "line": 23.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.87,
+   "price_under": 1.85
+  },
+  "PR": {
+   "line": 21.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.87,
+   "price_under": 1.85
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
+  },
+  "PA": {
+   "line": 17.5,
+   "price": 1.74,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.74
+  },
+  "PTS": {
+   "line": 14.5,
+   "price": 1.94,
+   "book": "unibet",
+   "price_over": 1.79,
+   "price_under": 1.94
   }
  },
  "recent_games": [
@@ -135,6 +184,21 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 14.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  },
   "3PM": {
    "line": 1.5,
    "over": 0,
