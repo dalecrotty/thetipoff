@@ -4,33 +4,61 @@
  "team": "Phoenix",
  "opp": "Houston",
  "lines": {
-  "PTS": {
-   "line": 16.5,
-   "price": 1.8,
-   "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
+  "RA": {
+   "line": 5.5,
+   "price": 1.55,
+   "book": "neds",
+   "price_over": 1.55,
+   "price_under": 2.35
   },
   "AST": {
    "line": 2.5,
-   "price": 1.69,
-   "book": "pointsbetau",
-   "price_over": 1.69,
-   "price_under": 2.15
+   "price": 1.68,
+   "book": "neds",
+   "price_over": 1.68,
+   "price_under": 2.1
   },
   "3PM": {
    "line": 1.5,
-   "price": 2.0,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 21.5,
+   "price": 1.87,
    "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 2.0
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
   },
   "REB": {
    "line": 3.5,
-   "price": 1.83,
+   "price": 2.0,
    "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "PA": {
+   "line": 18.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.88,
+   "price_under": 1.87
   }
  },
  "recent_games": [
@@ -157,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 16.5,
+   "line": 15.5,
    "over": 2,
    "n": 5
   },
