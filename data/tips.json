@@ -1,41 +1,10 @@
 {
- "generated_at": "2026-11-08T08:02+00:00",
+ "generated_at": "2026-11-08T09:00+00:00",
  "slate_date": "2026-11-08",
  "au_game_date": "2026-11-09",
- "today": {
-  "slate_date": "2026-11-08",
-  "player_id": 1642843,
-  "player": "Cooper Flagg",
-  "team": "Dallas",
-  "opp": "Brooklyn",
-  "game_start": "2026-11-09T00:30:00+00:00",
-  "market": "player_threes",
-  "market_label": "Threes",
-  "book": "sportsbet",
-  "book_label": "Sportsbet",
-  "side": "under",
-  "line": 1.5,
-  "price": 1.72,
-  "model_proj": 0.980762032326577,
-  "model_prob": 0.742804097987114,
-  "fair_prob": 0.547368421052632,
-  "edge": 0.195435676934483,
-  "au_book": true,
-  "trial": false,
-  "posted_at": "2026-11-08T08:01:44.038011+00:00",
-  "posted_by": "tip (first)",
-  "closing_line": null,
-  "closing_price": null,
-  "clv": null,
-  "clv_method": null,
-  "actual": null,
-  "result": null,
-  "x_post_id": null,
-  "stake": 1.0,
-  "units": null
- },
+ "today": null,
  "summary": {
-  "n_tips": 19,
+  "n_tips": 18,
   "n_clv": 16,
   "avg_clv": 0.05255606320703098,
   "beat_close": 0.9375,
@@ -53,38 +22,6 @@
   "averages_public": false
  },
  "tips": [
-  {
-   "slate_date": "2026-11-08",
-   "player_id": 1642843,
-   "player": "Cooper Flagg",
-   "team": "Dallas",
-   "opp": "Brooklyn",
-   "game_start": "2026-11-09T00:30:00+00:00",
-   "market": "player_threes",
-   "market_label": "Threes",
-   "book": "sportsbet",
-   "book_label": "Sportsbet",
-   "side": "under",
-   "line": 1.5,
-   "price": 1.72,
-   "model_proj": 0.980762032326577,
-   "model_prob": 0.742804097987114,
-   "fair_prob": 0.547368421052632,
-   "edge": 0.195435676934483,
-   "au_book": true,
-   "trial": false,
-   "posted_at": "2026-11-08T08:01:44.038011+00:00",
-   "posted_by": "tip (first)",
-   "closing_line": null,
-   "closing_price": null,
-   "clv": null,
-   "clv_method": null,
-   "actual": null,
-   "result": null,
-   "x_post_id": null,
-   "stake": 1.0,
-   "units": null
-  },
   {
    "slate_date": "2026-11-07",
    "player_id": 1629614,
@@ -694,7 +631,10 @@
    "units": -1.0
   }
  ],
- "next_check": null,
+ "next_check": {
+  "at": "2026-11-08T11:00+00:00",
+  "kind": "retry"
+ },
  "rules": {
   "price_floor": 1.7,
   "books": [
@@ -709,11 +649,7 @@
    "Points",
    "Rebounds",
    "Assists",
-   "Threes",
-   "Pts + Reb + Ast",
-   "Pts + Reb",
-   "Pts + Ast",
-   "Reb + Ast"
+   "Threes"
   ]
  }
 }
