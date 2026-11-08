@@ -4,8 +4,8 @@
   {
    "id": 1628983,
    "name": "Shai Gilgeous-Alexander",
-   "games": 169,
-   "med_min": 34.7
+   "games": 170,
+   "med_min": 34.4
   },
   {
    "id": 1631114,
@@ -34,20 +34,20 @@
   {
    "id": 1628392,
    "name": "Isaiah Hartenstein",
-   "games": 129,
+   "games": 130,
    "med_min": 26.0
   },
   {
    "id": 1642349,
    "name": "Ajay Mitchell",
-   "games": 114,
-   "med_min": 24.2
+   "games": 115,
+   "med_min": 24.1
   },
   {
    "id": -787,
    "name": "Bennett Stirtz",
-   "games": 9,
-   "med_min": 22.0
+   "games": 10,
+   "med_min": 23.0
   },
   {
    "id": 1630598,
@@ -64,20 +64,26 @@
   {
    "id": -781,
    "name": "Aday Mara",
-   "games": 9,
+   "games": 10,
    "med_min": 20.0
   },
   {
    "id": 1627936,
    "name": "Alex Caruso",
-   "games": 131,
+   "games": 132,
    "med_min": 20.0
   },
   {
    "id": 1642272,
    "name": "Jared McCain",
-   "games": 54,
-   "med_min": 18.7
+   "games": 55,
+   "med_min": 19.2
+  },
+  {
+   "id": -751,
+   "name": "Josh Dix",
+   "games": 6,
+   "med_min": 18.0
   },
   {
    "id": 1631119,
@@ -86,28 +92,22 @@
    "med_min": 17.4
   },
   {
+   "id": 1642877,
+   "name": "Micah Peavy",
+   "games": 6,
+   "med_min": 17.0
+  },
+  {
    "id": 1642362,
    "name": "Payton Sandfort",
    "games": 4,
    "med_min": 16.4
   },
   {
-   "id": 1642877,
-   "name": "Micah Peavy",
-   "games": 5,
-   "med_min": 16.0
-  },
-  {
-   "id": -751,
-   "name": "Josh Dix",
-   "games": 5,
-   "med_min": 15.0
-  },
-  {
    "id": 1629026,
    "name": "Kenrich Williams",
-   "games": 146,
-   "med_min": 14.8
+   "games": 147,
+   "med_min": 14.9
   },
   {
    "id": 1631172,
@@ -130,8 +130,8 @@
   {
    "id": 1642964,
    "name": "Brooks Barnhizer",
-   "games": 46,
-   "med_min": 6.6
+   "games": 47,
+   "med_min": 6.8
   },
   {
    "id": 1642260,
@@ -140,15 +140,15 @@
    "med_min": 6.3
   },
   {
+   "id": 1631207,
+   "name": "Dalen Terry",
+   "games": 2,
+   "med_min": 5.5
+  },
+  {
    "id": -698,
    "name": "Alex Ducas",
    "games": 21,
-   "med_min": 5.0
-  },
-  {
-   "id": 1631207,
-   "name": "Dalen Terry",
-   "games": 1,
    "med_min": 5.0
   },
   {
@@ -34004,6 +34004,196 @@
      "FGA": 5.0,
      "3PA": 2.0,
      "FTA": 2.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-07",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2026-11-07_oklahoma-city_vs_washington",
+   "lines": {
+    "1642349": {
+     "min": 22.0,
+     "PTS": 12.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 14.0,
+     "3PA": 2.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1627936": {
+     "min": 13.0,
+     "PTS": 0.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 2.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642964": {
+     "min": 8.0,
+     "PTS": 2.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1631207": {
+     "min": 6.0,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628392": {
+     "min": 18.0,
+     "PTS": 2.0,
+     "REB": 14.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 5.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642272": {
+     "min": 23.0,
+     "PTS": 19.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 8.0,
+     "FGA": 10.0,
+     "3PA": 4.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "1629026": {
+     "min": 23.0,
+     "PTS": 9.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 2.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1642877": {
+     "min": 23.0,
+     "PTS": 7.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628983": {
+     "min": 29.0,
+     "PTS": 30.0,
+     "REB": 2.0,
+     "AST": 9.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 11.0,
+     "FGA": 20.0,
+     "3PA": 5.0,
+     "FTA": 6.0,
+     "starter": true
+    },
+    "-751": {
+     "min": 21.0,
+     "PTS": 2.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-781": {
+     "min": 27.0,
+     "PTS": 18.0,
+     "REB": 8.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 3.0,
+     "TOV": 1.0,
+     "FGM": 8.0,
+     "FGA": 10.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "-787": {
+     "min": 29.0,
+     "PTS": 11.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 12.0,
+     "3PA": 8.0,
+     "FTA": 3.0,
      "starter": false
     }
    }

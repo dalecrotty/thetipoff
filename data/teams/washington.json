@@ -10,7 +10,7 @@
   {
    "id": 1629027,
    "name": "Trae Young",
-   "games": 14,
+   "games": 15,
    "med_min": 34.0
   },
   {
@@ -22,8 +22,8 @@
   {
    "id": -776,
    "name": "AJ Dybantsa",
-   "games": 5,
-   "med_min": 32.0
+   "games": 6,
+   "med_min": 31.5
   },
   {
    "id": 203468,
@@ -44,16 +44,16 @@
    "med_min": 30.0
   },
   {
-   "id": 1641731,
-   "name": "Bilal Coulibaly",
-   "games": 124,
-   "med_min": 29.4
-  },
-  {
    "id": 1642955,
    "name": "Kadary Richmond",
    "games": 3,
    "med_min": 29.4
+  },
+  {
+   "id": 1641731,
+   "name": "Bilal Coulibaly",
+   "games": 125,
+   "med_min": 29.3
   },
   {
    "id": 1631214,
@@ -68,6 +68,12 @@
    "med_min": 28.5
   },
   {
+   "id": 1642273,
+   "name": "Kyshawn George",
+   "games": 126,
+   "med_min": 28.2
+  },
+  {
    "id": 1641732,
    "name": "Colby Jones",
    "games": 15,
@@ -76,19 +82,13 @@
   {
    "id": 1642267,
    "name": "Bub Carrington",
-   "games": 173,
-   "med_min": 28.0
-  },
-  {
-   "id": 1642273,
-   "name": "Kyshawn George",
-   "games": 125,
+   "games": 174,
    "med_min": 28.0
   },
   {
    "id": 1642259,
    "name": "Alexandre Sarr",
-   "games": 123,
+   "games": 124,
    "med_min": 27.0
   },
   {
@@ -100,8 +100,8 @@
   {
    "id": 1642848,
    "name": "Tre Johnson",
-   "games": 68,
-   "med_min": 24.0
+   "games": 69,
+   "med_min": 24.1
   },
   {
    "id": -608,
@@ -142,7 +142,7 @@
   {
    "id": 1642860,
    "name": "Will Riley",
-   "games": 81,
+   "games": 82,
    "med_min": 20.9
   },
   {
@@ -196,8 +196,8 @@
   {
    "id": 1629028,
    "name": "Deandre Ayton",
-   "games": 9,
-   "med_min": 15.0
+   "games": 10,
+   "med_min": 14.5
   },
   {
    "id": 1642358,
@@ -232,8 +232,8 @@
   {
    "id": 1630264,
    "name": "Anthony Gill",
-   "games": 103,
-   "med_min": 7.2
+   "games": 104,
+   "med_min": 7.3
   },
   {
    "id": -625,
@@ -260,15 +260,15 @@
    "med_min": 2.0
   },
   {
+   "id": 1630544,
+   "name": "Tre Mann",
+   "games": 4,
+   "med_min": 2.0
+  },
+  {
    "id": -640,
    "name": "Reece Beekman",
    "games": 1,
-   "med_min": 1.0
-  },
-  {
-   "id": 1630544,
-   "name": "Tre Mann",
-   "games": 3,
    "med_min": 1.0
   }
  ],
@@ -30214,6 +30214,181 @@
      "FGA": 13.0,
      "3PA": 1.0,
      "FTA": 4.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-11-07",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-11-07_oklahoma-city_vs_washington",
+   "lines": {
+    "1642259": {
+     "min": 28.0,
+     "PTS": 15.0,
+     "REB": 14.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 7.0,
+     "FGA": 17.0,
+     "3PA": 9.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630264": {
+     "min": 9.0,
+     "PTS": 1.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 4.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1641731": {
+     "min": 20.0,
+     "PTS": 0.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 0.0,
+     "FGA": 8.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642267": {
+     "min": 21.0,
+     "PTS": 9.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 5.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629028": {
+     "min": 7.0,
+     "PTS": 2.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642273": {
+     "min": 30.0,
+     "PTS": 14.0,
+     "REB": 7.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 3.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 16.0,
+     "3PA": 8.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1629027": {
+     "min": 28.0,
+     "PTS": 4.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 1.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1642848": {
+     "min": 28.0,
+     "PTS": 4.0,
+     "REB": 0.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 15.0,
+     "3PA": 7.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630544": {
+     "min": 18.0,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 2.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 5.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642860": {
+     "min": 20.0,
+     "PTS": 5.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 5.0,
+     "3PA": 3.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "-776": {
+     "min": 31.0,
+     "PTS": 19.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 7.0,
+     "FGA": 15.0,
+     "3PA": 5.0,
+     "FTA": 6.0,
      "starter": true
     }
    }
