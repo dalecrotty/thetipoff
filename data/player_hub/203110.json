@@ -4,12 +4,19 @@
  "team": "Golden State",
  "opp": "Orlando",
  "lines": {
+  "PA": {
+   "line": 10.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
   "AST": {
-   "line": 6.5,
-   "price": 2.15,
-   "book": "sportsbet",
-   "price_over": 2.15,
-   "price_under": 1.64
+   "line": 5.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
   },
   "REB": {
    "line": 5.5,
@@ -20,10 +27,31 @@
   },
   "PTS": {
    "line": 4.5,
-   "price": 1.78,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 2.0
+  },
+  "PRA": {
+   "line": 15.5,
+   "price": 1.75,
    "book": "neds",
-   "price_over": 1.78,
-   "price_under": 1.96
+   "price_over": 1.75,
+   "price_under": 2.02
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.67,
+   "book": "neds",
+   "price_over": 1.67,
+   "price_under": 2.15
+  },
+  "PR": {
+   "line": 9.5,
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 1.7,
+   "price_under": 2.05
   }
  },
  "recent_games": [
@@ -160,8 +188,8 @@
    "n": 5
   },
   "AST": {
-   "line": 6.5,
-   "over": 3,
+   "line": 5.5,
+   "over": 4,
    "n": 5
   }
  },

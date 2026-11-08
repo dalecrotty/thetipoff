@@ -3,7 +3,36 @@
  "player": "Bilal Coulibaly",
  "team": "Washington",
  "opp": "Oklahoma City",
- "lines": {},
+ "lines": {
+  "PR": {
+   "line": 10.5,
+   "price": 1.72,
+   "book": "ladbrokes_au",
+   "price_over": 1.72,
+   "price_under": 2.05
+  },
+  "PTS": {
+   "line": 7.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 2.02,
+   "book": "neds",
+   "price_over": 2.02,
+   "price_under": 1.73
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-06",
@@ -126,6 +155,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
