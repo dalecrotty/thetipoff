@@ -406,7 +406,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1627734,
@@ -550,7 +550,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 146
+   "rank": 147
   },
   {
    "player_id": 1627759,
@@ -559,17 +559,17 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 1.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 2.0,
+   "l5_over": 0.6,
+   "l10_over": 0.7,
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": null,
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -633,26 +633,6 @@
    "us": null
   },
   {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "3PM",
-   "line": 3.5,
-   "price": 1.5,
-   "book": "sportsbet",
-   "price_over": 2.45,
-   "price_under": 1.5,
-   "l5_over": 0.6,
-   "l10_over": 0.5,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1628381,
    "player": "John Collins",
    "team": "Detroit",
@@ -694,7 +674,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 88
   },
   {
    "player_id": 1628389,
@@ -812,21 +792,21 @@
    "minutes_source": "model",
    "line": 1.5,
    "side": "over",
-   "price": 2.45,
-   "book": "tab",
-   "edge": 0.0095,
+   "price": 2.5,
+   "book": "pointsbetau",
+   "edge": 0.0174,
    "p_us": 0.392,
-   "p_book": 0.383,
+   "p_book": 0.375,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.3,
    "l5_over": 0.6,
    "p_over": 0.392,
    "p_under": 0.608,
-   "fair_over": 0.383,
-   "fair_under": 0.617,
-   "price_over": 2.45,
-   "price_under": 1.52,
+   "fair_over": 0.375,
+   "fair_under": 0.625,
+   "price_over": 2.5,
+   "price_under": 1.5,
    "us": null,
    "mu": 0.059,
    "mu_rank": 8,
@@ -982,7 +962,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 64
   },
   {
    "player_id": 1629014,
@@ -991,17 +971,17 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 1.5,
+   "price": 1.63,
+   "book": "pointsbetau",
+   "price_over": 1.63,
+   "price_under": 2.25,
+   "l5_over": 0.4,
+   "l10_over": 0.4,
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": null,
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -1066,7 +1046,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 150
+   "rank": 151
   },
   {
    "player_id": 1629021,
@@ -1144,21 +1124,21 @@
    "minutes_source": "model",
    "line": 3.5,
    "side": "over",
-   "price": 2.1,
-   "book": "neds",
-   "edge": 0.1239,
+   "price": 2.15,
+   "book": "pointsbetau",
+   "edge": 0.1223,
    "p_us": 0.562,
-   "p_book": 0.439,
+   "p_book": 0.44,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.4,
    "p_over": 0.562,
    "p_under": 0.438,
-   "fair_over": 0.439,
-   "fair_under": 0.561,
-   "price_over": 2.1,
-   "price_under": 1.64,
+   "fair_over": 0.44,
+   "fair_under": 0.56,
+   "price_over": 2.15,
+   "price_under": 1.69,
    "us": null,
    "mu": 0.059,
    "mu_rank": 8,
@@ -1388,21 +1368,21 @@
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
-   "price": 1.77,
-   "book": "pointsbetau",
-   "edge": 0.103,
+   "price": 1.75,
+   "book": "neds",
+   "edge": 0.1104,
    "p_us": 0.634,
-   "p_book": 0.531,
+   "p_book": 0.523,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.1,
    "l5_over": 0.0,
    "p_over": 0.366,
    "p_under": 0.634,
-   "fair_over": 0.469,
-   "fair_under": 0.531,
-   "price_over": 2.0,
-   "price_under": 1.77,
+   "fair_over": 0.477,
+   "fair_under": 0.523,
+   "price_over": 1.92,
+   "price_under": 1.75,
    "us": null,
    "mu": 0.025,
    "mu_rank": 14,
@@ -1414,7 +1394,7 @@
    "prior": 1.04,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 53
+   "rank": 54
   },
   {
    "player_id": 1629673,
@@ -1472,21 +1452,21 @@
    "minutes_source": "model",
    "line": 1.5,
    "side": "over",
-   "price": 2.1,
-   "book": "tab",
-   "edge": 0.0941,
+   "price": 1.96,
+   "book": "unibet",
+   "edge": 0.064,
    "p_us": 0.539,
-   "p_book": 0.444,
-   "tier": "A",
+   "p_book": 0.475,
+   "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
    "p_over": 0.539,
    "p_under": 0.461,
-   "fair_over": 0.444,
-   "fair_under": 0.556,
-   "price_over": 2.1,
-   "price_under": 1.68,
+   "fair_over": 0.475,
+   "fair_under": 0.525,
+   "price_over": 1.96,
+   "price_under": 1.77,
    "us": null,
    "mu": 0.025,
    "mu_rank": 14,
@@ -1507,17 +1487,17 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 0.5,
+   "price": 2.16,
+   "book": "unibet",
+   "price_over": 1.64,
+   "price_under": 2.16,
+   "l5_over": 0.2,
+   "l10_over": 0.3,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": null,
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -1562,7 +1542,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 55
   },
   {
    "player_id": 1630163,
@@ -1760,21 +1740,21 @@
    "minutes_source": "model",
    "line": 0.5,
    "side": "over",
-   "price": 2.6,
+   "price": 2.5,
    "book": "pointsbetau",
-   "edge": 0.0486,
+   "edge": 0.0363,
    "p_us": 0.411,
-   "p_book": 0.363,
-   "tier": "B",
-   "gate_status": "passed",
+   "p_book": 0.375,
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.4,
    "p_over": 0.411,
    "p_under": 0.589,
-   "fair_over": 0.363,
-   "fair_under": 0.637,
-   "price_over": 2.6,
-   "price_under": 1.48,
+   "fair_over": 0.375,
+   "fair_under": 0.625,
+   "price_over": 2.5,
+   "price_under": 1.5,
    "us": null,
    "mu": 0.027,
    "mu_rank": 11,
@@ -1786,7 +1766,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
+   "rank": 108
   },
   {
    "player_id": 1630200,
@@ -2296,21 +2276,21 @@
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
-   "price": 1.75,
-   "book": "tab",
-   "edge": 0.061,
+   "price": 1.71,
+   "book": "pointsbetau",
+   "edge": 0.0431,
    "p_us": 0.594,
-   "p_book": 0.533,
+   "p_book": 0.551,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
    "p_over": 0.406,
    "p_under": 0.594,
-   "fair_over": 0.467,
-   "fair_under": 0.533,
-   "price_over": 2.0,
-   "price_under": 1.75,
+   "fair_over": 0.449,
+   "fair_under": 0.551,
+   "price_over": 2.1,
+   "price_under": 1.71,
    "us": null,
    "mu": 0.049,
    "mu_rank": 8,
@@ -2322,7 +2302,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 14
+   "rank": 13
   },
   {
    "player_id": 1630619,
@@ -2550,7 +2530,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 133
+   "rank": 134
   },
   {
    "player_id": 1631121,
@@ -2788,21 +2768,21 @@
    "minutes_source": "model",
    "line": 0.5,
    "side": "under",
-   "price": 2.45,
+   "price": 2.4,
    "book": "pointsbetau",
-   "edge": 0.0194,
+   "edge": 0.0099,
    "p_us": 0.404,
-   "p_book": 0.384,
+   "p_book": 0.394,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.7,
    "l5_over": 1.0,
    "p_over": 0.596,
    "p_under": 0.404,
-   "fair_over": 0.616,
-   "fair_under": 0.384,
-   "price_over": 1.53,
-   "price_under": 2.45,
+   "fair_over": 0.606,
+   "fair_under": 0.394,
+   "price_over": 1.56,
+   "price_under": 2.4,
    "us": null,
    "mu": -0.044,
    "mu_rank": 21,
@@ -2814,7 +2794,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 81
+   "rank": 80
   },
   {
    "player_id": 1631248,
@@ -2958,7 +2938,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 136
+   "rank": 137
   },
   {
    "player_id": 1641711,
@@ -3017,7 +2997,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -3486,7 +3466,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 131
   },
   {
    "player_id": 1642358,
@@ -3570,7 +3550,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 177
+   "rank": 176
   },
   {
    "player_id": 1642404,
@@ -3614,7 +3594,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 178
+   "rank": 177
   },
   {
    "player_id": 1642449,
@@ -3658,7 +3638,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 179
+   "rank": 178
   },
   {
    "player_id": 1642450,
@@ -3702,7 +3682,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 58
   },
   {
    "player_id": 1642843,
@@ -3752,16 +3732,16 @@
    "game": "Minnesota vs Utah",
    "stat": "3PM",
    "line": 1.5,
-   "price": 2.3,
-   "book": "pointsbetau",
-   "price_over": 1.59,
-   "price_under": 2.3,
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15,
    "l5_over": 0.0,
    "l10_over": 0.2,
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -3946,7 +3926,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 135
+   "rank": 136
   },
   {
    "player_id": 1642882,
@@ -4190,7 +4170,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 186
+   "rank": 185
   },
   {
    "player_id": -771,
@@ -4234,7 +4214,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 186
   },
   {
    "player_id": 1643133,
@@ -4278,7 +4258,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 187
   },
   {
    "player_id": 1643024,
@@ -4322,7 +4302,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": -739,
@@ -5053,7 +5033,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 149
   },
   {
    "player_id": 1627734,
@@ -5215,7 +5195,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 150
+   "rank": 151
   },
   {
    "player_id": 1627759,
@@ -5224,18 +5204,27 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 3.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 1.72,
+   "price_under": 2.08,
+   "l5_over": 0.6,
+   "l10_over": 0.8,
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": null,
-   "us": null
+   "gate_status": "failed:edge_below_tier",
+   "us": {
+    "line": 3.5,
+    "price": 2.2,
+    "book": "betright",
+    "price_over": 1.62,
+    "price_under": 2.2,
+    "l5_over": 0.6,
+    "l10_over": 0.8,
+    "gate_status": "passed"
+   }
   },
   {
    "player_id": 1627884,
@@ -5307,26 +5296,6 @@
    }
   },
   {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "AST",
-   "line": 1.5,
-   "price": 1.74,
-   "book": "unibet",
-   "price_over": 1.74,
-   "price_under": 2.0,
-   "l5_over": 0.4,
-   "l10_over": 0.6,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1628381,
    "player": "John Collins",
    "team": "Detroit",
@@ -5340,23 +5309,23 @@
    "minutes": 25,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 0.5,
-   "side": "under",
-   "price": 2.25,
-   "book": "tab",
-   "edge": 0.0966,
-   "p_us": 0.512,
-   "p_book": 0.416,
-   "tier": "A",
-   "gate_status": "passed",
-   "l10_over": 0.4,
-   "l5_over": 0.4,
-   "p_over": 0.488,
-   "p_under": 0.512,
-   "fair_over": 0.584,
-   "fair_under": 0.416,
-   "price_over": 1.6,
-   "price_under": 2.25,
+   "line": null,
+   "side": null,
+   "price": null,
+   "book": null,
+   "edge": null,
+   "p_us": null,
+   "p_book": null,
+   "tier": null,
+   "gate_status": null,
+   "l10_over": null,
+   "l5_over": null,
+   "p_over": null,
+   "p_under": null,
+   "fair_over": null,
+   "fair_under": null,
+   "price_over": null,
+   "price_under": null,
    "us": null,
    "mu": 0.078,
    "mu_rank": 6,
@@ -5368,7 +5337,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 132
   },
   {
    "player_id": 1628389,
@@ -5484,23 +5453,23 @@
    "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 2.5,
-   "side": "under",
-   "price": 1.5,
-   "book": "tab",
-   "edge": 0.0029,
-   "p_us": 0.628,
-   "p_book": 0.625,
+   "line": null,
+   "side": null,
+   "price": null,
+   "book": null,
+   "edge": null,
+   "p_us": null,
+   "p_book": null,
    "tier": null,
-   "gate_status": "failed:edge_below_tier",
-   "l10_over": 0.3,
-   "l5_over": 0.6,
-   "p_over": 0.372,
-   "p_under": 0.628,
-   "fair_over": 0.375,
-   "fair_under": 0.625,
-   "price_over": 2.5,
-   "price_under": 1.5,
+   "gate_status": null,
+   "l10_over": null,
+   "l5_over": null,
+   "p_over": null,
+   "p_under": null,
+   "fair_over": null,
+   "fair_under": null,
+   "price_over": null,
+   "price_under": null,
    "us": null,
    "mu": 0.049,
    "mu_rank": 10,
@@ -5512,7 +5481,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 60
+   "rank": 61
   },
   {
    "player_id": 1628997,
@@ -5656,7 +5625,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 53
   },
   {
    "player_id": 1629014,
@@ -5665,17 +5634,17 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 1.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "l5_over": 0.4,
+   "l10_over": 0.4,
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": null,
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -5746,7 +5715,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 153
+   "rank": 154
   },
   {
    "player_id": 1629021,
@@ -5824,21 +5793,21 @@
    "minutes_source": "model",
    "line": 2.5,
    "side": "over",
-   "price": 2.25,
-   "book": "neds",
-   "edge": 0.0753,
+   "price": 2.2,
+   "book": "pointsbetau",
+   "edge": 0.0593,
    "p_us": 0.491,
-   "p_book": 0.416,
-   "tier": "A",
+   "p_book": 0.432,
+   "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.2,
    "p_over": 0.491,
    "p_under": 0.509,
-   "fair_over": 0.416,
-   "fair_under": 0.584,
-   "price_over": 2.25,
-   "price_under": 1.6,
+   "fair_over": 0.432,
+   "fair_under": 0.568,
+   "price_over": 2.2,
+   "price_under": 1.67,
    "us": null,
    "mu": 0.049,
    "mu_rank": 10,
@@ -5850,7 +5819,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 51
   },
   {
    "player_id": 1629611,
@@ -6130,7 +6099,7 @@
    "prior": 2.58,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 41
+   "rank": 42
   },
   {
    "player_id": 1629673,
@@ -6188,21 +6157,21 @@
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
-   "price": 1.8,
-   "book": "tab",
-   "edge": 0.042,
+   "price": 1.69,
+   "book": "pointsbetau",
+   "edge": 0.0021,
    "p_us": 0.562,
-   "p_book": 0.52,
-   "tier": "B",
-   "gate_status": "passed",
+   "p_book": 0.56,
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.6,
    "p_over": 0.438,
    "p_under": 0.562,
-   "fair_over": 0.48,
-   "fair_under": 0.52,
-   "price_over": 1.95,
-   "price_under": 1.8,
+   "fair_over": 0.44,
+   "fair_under": 0.56,
+   "price_over": 2.15,
+   "price_under": 1.69,
    "us": null,
    "mu": -0.1,
    "mu_rank": 27,
@@ -6278,7 +6247,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 135
+   "rank": 136
   },
   {
    "player_id": 1630163,
@@ -6493,22 +6462,22 @@
    "rot_rank": null,
    "minutes_source": "model",
    "line": 2.5,
-   "side": "under",
-   "price": 1.72,
-   "book": "tab",
-   "edge": 0.0067,
-   "p_us": 0.551,
-   "p_book": 0.544,
+   "side": "over",
+   "price": 2.2,
+   "book": "neds",
+   "edge": 0.0254,
+   "p_us": 0.449,
+   "p_book": 0.424,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.6,
    "p_over": 0.449,
    "p_under": 0.551,
-   "fair_over": 0.456,
-   "fair_under": 0.544,
-   "price_over": 2.05,
-   "price_under": 1.72,
+   "fair_over": 0.424,
+   "fair_under": 0.576,
+   "price_over": 2.2,
+   "price_under": 1.62,
    "us": null,
    "mu": -0.092,
    "mu_rank": 23,
@@ -6520,7 +6489,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 55
   },
   {
    "player_id": 1630200,
@@ -6723,23 +6692,23 @@
    "minutes": 25,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 1.5,
-   "side": "over",
-   "price": 2.3,
-   "book": "tab",
-   "edge": 0.1013,
-   "p_us": 0.508,
-   "p_book": 0.407,
-   "tier": "A",
-   "gate_status": "passed",
-   "l10_over": 0.5,
-   "l5_over": 0.4,
-   "p_over": 0.508,
-   "p_under": 0.492,
-   "fair_over": 0.407,
-   "fair_under": 0.593,
-   "price_over": 2.3,
-   "price_under": 1.58,
+   "line": null,
+   "side": null,
+   "price": null,
+   "book": null,
+   "edge": null,
+   "p_us": null,
+   "p_book": null,
+   "tier": null,
+   "gate_status": null,
+   "l10_over": null,
+   "l5_over": null,
+   "p_over": null,
+   "p_under": null,
+   "fair_over": null,
+   "fair_under": null,
+   "price_over": null,
+   "price_under": null,
    "us": null,
    "mu": -0.022,
    "mu_rank": 19,
@@ -6867,21 +6836,21 @@
    "minutes_source": "model",
    "line": 6.5,
    "side": "under",
-   "price": 1.85,
-   "book": "tab",
-   "edge": 0.1398,
+   "price": 1.8,
+   "book": "unibet",
+   "edge": 0.129,
    "p_us": 0.646,
-   "p_book": 0.507,
+   "p_book": 0.517,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.0,
    "p_over": 0.354,
    "p_under": 0.646,
-   "fair_over": 0.493,
-   "fair_under": 0.507,
-   "price_over": 1.9,
-   "price_under": 1.85,
+   "fair_over": 0.483,
+   "fair_under": 0.517,
+   "price_over": 1.93,
+   "price_under": 1.8,
    "us": {
     "line": 6.5,
     "side": "under",
@@ -7227,7 +7196,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1631097,
@@ -7345,21 +7314,21 @@
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
-   "price": 1.77,
+   "price": 1.74,
    "book": "pointsbetau",
-   "edge": 0.0279,
+   "edge": 0.0175,
    "p_us": 0.558,
-   "p_book": 0.531,
+   "p_book": 0.541,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.6,
    "p_over": 0.442,
    "p_under": 0.558,
-   "fair_over": 0.469,
-   "fair_under": 0.531,
-   "price_over": 2.0,
-   "price_under": 1.77,
+   "fair_over": 0.459,
+   "fair_under": 0.541,
+   "price_over": 2.05,
+   "price_under": 1.74,
    "us": null,
    "mu": -0.152,
    "mu_rank": 27,
@@ -7609,21 +7578,21 @@
    "minutes_source": "model",
    "line": 1.5,
    "side": "over",
-   "price": 2.15,
+   "price": 2.05,
    "book": "pointsbetau",
-   "edge": 0.1378,
+   "edge": 0.1188,
    "p_us": 0.578,
-   "p_book": 0.44,
+   "p_book": 0.459,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.8,
    "p_over": 0.578,
    "p_under": 0.422,
-   "fair_over": 0.44,
-   "fair_under": 0.56,
-   "price_over": 2.15,
-   "price_under": 1.69,
+   "fair_over": 0.459,
+   "fair_under": 0.541,
+   "price_over": 2.05,
+   "price_under": 1.74,
    "us": null,
    "mu": -0.022,
    "mu_rank": 19,
@@ -7759,21 +7728,21 @@
    "minutes_source": "model",
    "line": 4.5,
    "side": "under",
-   "price": 1.8,
-   "book": "pointsbetau",
-   "edge": 0.0964,
+   "price": 1.78,
+   "book": "sportsbet",
+   "edge": 0.0873,
    "p_us": 0.616,
-   "p_book": 0.52,
+   "p_book": 0.529,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
    "p_over": 0.384,
    "p_under": 0.616,
-   "fair_over": 0.48,
-   "fair_under": 0.52,
-   "price_over": 1.95,
-   "price_under": 1.8,
+   "fair_over": 0.471,
+   "fair_under": 0.529,
+   "price_over": 2.0,
+   "price_under": 1.78,
    "us": {
     "line": 4.5,
     "side": "under",
@@ -7865,7 +7834,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 5.5,
-    "price": 1.98,
+    "price": 1.78,
     "book": "betright",
     "price_over": 1.78,
     "price_under": 1.98,
@@ -8346,7 +8315,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 138
+   "rank": 139
   },
   {
    "player_id": 1642358,
@@ -8430,7 +8399,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 179
+   "rank": 178
   },
   {
    "player_id": 1642404,
@@ -8474,7 +8443,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 180
+   "rank": 179
   },
   {
    "player_id": 1642449,
@@ -8518,7 +8487,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1642450,
@@ -8857,7 +8826,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 125
+   "rank": 127
   },
   {
    "player_id": 1642882,
@@ -9101,7 +9070,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 186
+   "rank": 185
   },
   {
    "player_id": -771,
@@ -9145,7 +9114,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 186
   },
   {
    "player_id": 1643133,
@@ -9189,7 +9158,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 187
   },
   {
    "player_id": 1643024,
@@ -9239,7 +9208,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": -739,
@@ -9952,7 +9921,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 149
   },
   {
    "player_id": 1627734,
@@ -10096,7 +10065,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 150
+   "rank": 151
   },
   {
    "player_id": 1627759,
@@ -10174,26 +10143,6 @@
    "l10_over": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -10384,7 +10333,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 79
+   "rank": 78
   },
   {
    "player_id": 1628997,
@@ -10528,7 +10477,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 86
+   "rank": 85
   },
   {
    "player_id": 1629014,
@@ -10612,7 +10561,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 153
+   "rank": 154
   },
   {
    "player_id": 1629021,
@@ -10960,7 +10909,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 77
   },
   {
    "player_id": 1629673,
@@ -11108,7 +11057,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 68
   },
   {
    "player_id": 1630163,
@@ -11536,7 +11485,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 83
+   "rank": 82
   },
   {
    "player_id": 1630538,
@@ -11660,7 +11609,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 51
+   "rank": 50
   },
   {
    "player_id": 1630568,
@@ -11744,7 +11693,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 47
+   "rank": 46
   },
   {
    "player_id": 1630573,
@@ -11952,7 +11901,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1631097,
@@ -12808,7 +12757,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 57
   },
   {
    "player_id": 1642066,
@@ -13032,7 +12981,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 143
+   "rank": 144
   },
   {
    "player_id": 1642358,
@@ -13116,7 +13065,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 179
+   "rank": 178
   },
   {
    "player_id": 1642404,
@@ -13160,7 +13109,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 180
+   "rank": 179
   },
   {
    "player_id": 1642449,
@@ -13492,7 +13441,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 142
+   "rank": 143
   },
   {
    "player_id": 1642882,
@@ -13736,7 +13685,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 186
+   "rank": 185
   },
   {
    "player_id": -771,
@@ -13780,7 +13729,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 186
   },
   {
    "player_id": 1643133,
@@ -13824,7 +13773,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 187
   },
   {
    "player_id": 1643024,
@@ -13868,7 +13817,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": -739,
@@ -14617,7 +14566,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 149
   },
   {
    "player_id": 1627734,
@@ -14779,7 +14728,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 150
+   "rank": 151
   },
   {
    "player_id": 1627759,
@@ -14788,18 +14737,27 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 21.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78,
+   "l5_over": 0.4,
+   "l10_over": 0.4,
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": null,
-   "us": null
+   "gate_status": "passed",
+   "us": {
+    "line": 21.5,
+    "price": 1.88,
+    "book": "betright",
+    "price_over": 1.88,
+    "price_under": 1.88,
+    "l5_over": 0.4,
+    "l10_over": 0.4,
+    "gate_status": "passed"
+   }
   },
   {
    "player_id": 1627884,
@@ -14871,35 +14829,6 @@
    }
   },
   {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "PTS",
-   "line": 19.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.95,
-   "l5_over": 0.6,
-   "l10_over": 0.5,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 20.5,
-    "price": 1.92,
-    "book": "betright",
-    "price_over": 1.92,
-    "price_under": 1.85,
-    "l5_over": 0.6,
-    "l10_over": 0.5,
-    "gate_status": "passed"
-   }
-  },
-  {
    "player_id": 1628381,
    "player": "John Collins",
    "team": "Detroit",
@@ -14959,7 +14888,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 61
   },
   {
    "player_id": 1628389,
@@ -15121,7 +15050,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 102
   },
   {
    "player_id": 1628997,
@@ -15292,7 +15221,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 53
   },
   {
    "player_id": 1629014,
@@ -15301,18 +15230,27 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 8.5,
+   "price": 1.78,
+   "book": "unibet",
+   "price_over": 1.78,
+   "price_under": 1.95,
+   "l5_over": 0.4,
+   "l10_over": 0.4,
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": null,
-   "us": null
+   "gate_status": "passed",
+   "us": {
+    "line": 9.5,
+    "price": 1.96,
+    "book": "betright",
+    "price_over": 1.96,
+    "price_under": 1.8,
+    "l5_over": 0.4,
+    "l10_over": 0.4,
+    "gate_status": "passed"
+   }
   },
   {
    "player_id": 1629018,
@@ -15382,7 +15320,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 153
+   "rank": 154
   },
   {
    "player_id": 1629021,
@@ -15513,7 +15451,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 23
+   "rank": 22
   },
   {
    "player_id": 1629611,
@@ -15661,25 +15599,25 @@
    "game": "Minnesota vs Utah",
    "stat": "PTS",
    "line": 8.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 2.0,
+   "price": 1.91,
+   "book": "unibet",
+   "price_over": 1.91,
+   "price_under": 1.82,
    "l5_over": 0.2,
    "l10_over": 0.4,
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 8.5,
-    "price": 1.9,
+    "price": 1.86,
     "book": "betright",
     "price_over": 1.86,
     "price_under": 1.9,
     "l5_over": 0.2,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -15811,7 +15749,7 @@
    "prior": 8.96,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 56
+   "rank": 55
   },
   {
    "player_id": 1629673,
@@ -15904,7 +15842,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 86
+   "rank": 87
   },
   {
    "player_id": 1629731,
@@ -15913,17 +15851,17 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 4.5,
+   "price": 1.8,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8,
+   "l5_over": 0.2,
+   "l10_over": 0.3,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": null,
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -15968,7 +15906,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
+   "rank": 111
   },
   {
    "player_id": 1630163,
@@ -16495,7 +16433,7 @@
    "prior": 11.81,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 71
+   "rank": 70
   },
   {
    "player_id": 1630538,
@@ -16611,21 +16549,21 @@
    "minutes_source": "model",
    "line": 25.5,
    "side": "under",
-   "price": 1.85,
-   "book": "unibet",
-   "edge": 0.0968,
+   "price": 1.95,
+   "book": "tab",
+   "edge": 0.1195,
    "p_us": 0.599,
-   "p_book": 0.503,
+   "p_book": 0.48,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
    "p_over": 0.401,
    "p_under": 0.599,
-   "fair_over": 0.497,
-   "fair_under": 0.503,
-   "price_over": 1.87,
-   "price_under": 1.85,
+   "fair_over": 0.52,
+   "fair_under": 0.48,
+   "price_over": 1.8,
+   "price_under": 1.95,
    "us": {
     "line": 25.5,
     "side": "under",
@@ -16719,21 +16657,21 @@
    "minutes_source": "model",
    "line": 10.5,
    "side": "under",
-   "price": 1.8,
-   "book": "sportsbet",
-   "edge": 0.0719,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.071,
    "p_us": 0.593,
-   "p_book": 0.521,
+   "p_book": 0.522,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
    "p_over": 0.407,
    "p_under": 0.593,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
+   "fair_over": 0.478,
+   "fair_under": 0.522,
+   "price_over": 2.0,
+   "price_under": 1.83,
    "us": {
     "line": 9.5,
     "side": "under",
@@ -16859,23 +16797,23 @@
    "minutes": 35,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 25.5,
+   "line": 26.5,
    "side": "under",
-   "price": 1.95,
+   "price": 1.8,
    "book": "tab",
-   "edge": 0.0805,
-   "p_us": 0.56,
-   "p_book": 0.48,
+   "edge": 0.0895,
+   "p_us": 0.61,
+   "p_book": 0.52,
    "tier": "A",
    "gate_status": "passed",
-   "l10_over": 0.4,
-   "l5_over": 0.6,
-   "p_over": 0.44,
-   "p_under": 0.56,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
+   "l10_over": 0.2,
+   "l5_over": 0.4,
+   "p_over": 0.39,
+   "p_under": 0.61,
+   "fair_over": 0.48,
+   "fair_under": 0.52,
+   "price_over": 1.95,
+   "price_under": 1.8,
    "us": {
     "line": 25.5,
     "side": "under",
@@ -16989,7 +16927,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 143
+   "rank": 144
   },
   {
    "player_id": 1631097,
@@ -17107,21 +17045,21 @@
    "minutes_source": "model",
    "line": 13.5,
    "side": "under",
-   "price": 1.9,
-   "book": "tab",
-   "edge": 0.0093,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "edge": 0.0131,
    "p_us": 0.503,
-   "p_book": 0.493,
+   "p_book": 0.49,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.8,
    "p_over": 0.497,
    "p_under": 0.503,
-   "fair_over": 0.507,
-   "fair_under": 0.493,
-   "price_over": 1.85,
-   "price_under": 1.9,
+   "fair_over": 0.51,
+   "fair_under": 0.49,
+   "price_over": 1.87,
+   "price_under": 1.95,
    "us": {
     "line": 13.5,
     "side": "over",
@@ -17398,21 +17336,21 @@
    "minutes_source": "model",
    "line": 7.5,
    "side": "under",
-   "price": 1.95,
+   "price": 1.9,
    "book": "tab",
-   "edge": 0.0837,
+   "edge": 0.0703,
    "p_us": 0.564,
-   "p_book": 0.48,
+   "p_book": 0.493,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.6,
    "p_over": 0.436,
    "p_under": 0.564,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
    "us": null,
    "mu": -0.052,
    "mu_rank": 22,
@@ -17430,7 +17368,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 105
+   "rank": 106
   },
   {
    "player_id": 1631248,
@@ -17592,7 +17530,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 68
   },
   {
    "player_id": 1641711,
@@ -17660,7 +17598,7 @@
     "price_under": 1.83,
     "l5_over": 0.4,
     "l10_over": 0.5,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -17905,7 +17843,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 96
+   "rank": 95
   },
   {
    "player_id": 1642066,
@@ -18135,7 +18073,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1642358,
@@ -18219,7 +18157,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 179
+   "rank": 178
   },
   {
    "player_id": 1642404,
@@ -18263,7 +18201,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 180
+   "rank": 179
   },
   {
    "player_id": 1642449,
@@ -18307,7 +18245,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1642450,
@@ -18428,16 +18366,16 @@
    "game": "Minnesota vs Utah",
    "stat": "PTS",
    "line": 14.5,
-   "price": 1.94,
-   "book": "unibet",
-   "price_over": 1.79,
-   "price_under": 1.94,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.9,
    "l5_over": 0.4,
    "l10_over": 0.5,
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 14.5,
     "price": 1.88,
@@ -18446,7 +18384,7 @@
     "price_under": 1.88,
     "l5_over": 0.4,
     "l10_over": 0.5,
-    "gate_status": "failed:edge_below_tier"
+    "gate_status": "passed"
    }
   },
   {
@@ -18664,7 +18602,7 @@
    "prior": 3.61,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 139
+   "rank": 140
   },
   {
    "player_id": 1642882,
@@ -18908,7 +18846,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 186
+   "rank": 185
   },
   {
    "player_id": -771,
@@ -18952,7 +18890,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 186
   },
   {
    "player_id": 1643133,
@@ -18996,7 +18934,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 187
   },
   {
    "player_id": 1643024,
@@ -19046,7 +18984,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": -739,
@@ -19786,7 +19724,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 149
   },
   {
    "player_id": 1627734,
@@ -19948,7 +19886,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 150
+   "rank": 151
   },
   {
    "player_id": 1627759,
@@ -19957,18 +19895,27 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 6.5,
+   "price": 2.0,
+   "book": "unibet",
+   "price_over": 1.74,
+   "price_under": 2.0,
+   "l5_over": 0.6,
+   "l10_over": 0.6,
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": null,
-   "us": null
+   "gate_status": "passed",
+   "us": {
+    "line": 6.5,
+    "price": 1.96,
+    "book": "betright",
+    "price_over": 1.8,
+    "price_under": 1.96,
+    "l5_over": 0.6,
+    "l10_over": 0.6,
+    "gate_status": "passed"
+   }
   },
   {
    "player_id": 1627884,
@@ -20031,35 +19978,6 @@
    "us": null
   },
   {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "REB",
-   "line": 6.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83,
-   "l5_over": 0.6,
-   "l10_over": 0.6,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 6.5,
-    "price": 1.82,
-    "book": "betright",
-    "price_over": 1.95,
-    "price_under": 1.82,
-    "l5_over": 0.6,
-    "l10_over": 0.6,
-    "gate_status": "passed"
-   }
-  },
-  {
    "player_id": 1628381,
    "player": "John Collins",
    "team": "Detroit",
@@ -20119,7 +20037,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 38
   },
   {
    "player_id": 1628389,
@@ -20244,23 +20162,23 @@
    "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 2.5,
-   "side": "under",
-   "price": 1.75,
-   "book": "tab",
-   "edge": 0.0379,
-   "p_us": 0.571,
-   "p_book": 0.533,
-   "tier": "B",
-   "gate_status": "passed",
-   "l10_over": 0.3,
-   "l5_over": 0.0,
-   "p_over": 0.429,
-   "p_under": 0.571,
-   "fair_over": 0.467,
-   "fair_under": 0.533,
-   "price_over": 2.0,
-   "price_under": 1.75,
+   "line": null,
+   "side": null,
+   "price": null,
+   "book": null,
+   "edge": null,
+   "p_us": null,
+   "p_book": null,
+   "tier": null,
+   "gate_status": null,
+   "l10_over": null,
+   "l5_over": null,
+   "p_over": null,
+   "p_under": null,
+   "fair_over": null,
+   "fair_under": null,
+   "price_over": null,
+   "price_under": null,
    "us": null,
    "mu": -0.102,
    "mu_rank": 27,
@@ -20425,7 +20343,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 117
+   "rank": 119
   },
   {
    "player_id": 1629014,
@@ -20434,17 +20352,17 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 2.5,
+   "price": 1.56,
+   "book": "pointsbetau",
+   "price_over": 2.4,
+   "price_under": 1.56,
+   "l5_over": 0.0,
+   "l10_over": 0.3,
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": null,
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -20515,7 +20433,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 153
+   "rank": 154
   },
   {
    "player_id": 1629021,
@@ -20602,21 +20520,21 @@
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
-   "price": 1.83,
+   "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0188,
+   "edge": 0.0282,
    "p_us": 0.528,
-   "p_book": 0.509,
+   "p_book": 0.5,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.2,
    "l5_over": 0.2,
    "p_over": 0.472,
    "p_under": 0.528,
-   "fair_over": 0.491,
-   "fair_under": 0.509,
-   "price_over": 1.9,
-   "price_under": 1.83,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
    "us": null,
    "mu": -0.102,
    "mu_rank": 27,
@@ -20873,39 +20791,39 @@
    "minutes_source": "model",
    "line": 2.5,
    "side": "over",
-   "price": 1.63,
+   "price": 1.59,
    "book": "pointsbetau",
-   "edge": 0.1192,
+   "edge": 0.1078,
    "p_us": 0.699,
-   "p_book": 0.58,
+   "p_book": 0.591,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
    "p_over": 0.699,
    "p_under": 0.301,
-   "fair_over": 0.58,
-   "fair_under": 0.42,
-   "price_over": 1.63,
-   "price_under": 2.25,
+   "fair_over": 0.591,
+   "fair_under": 0.409,
+   "price_over": 1.59,
+   "price_under": 2.3,
    "us": {
-    "line": 3.5,
+    "line": 2.5,
     "side": "over",
-    "price": 2.3,
+    "price": 1.6,
     "book": "betright",
-    "edge": 0.1075,
-    "p_us": 0.51,
-    "p_book": 0.403,
+    "edge": 0.1147,
+    "p_us": 0.699,
+    "p_book": 0.584,
     "tier": "A",
     "gate_status": "passed",
-    "l10_over": 0.3,
-    "l5_over": 0.2,
-    "p_over": 0.51,
-    "p_under": 0.49,
-    "fair_over": 0.403,
-    "fair_under": 0.597,
-    "price_over": 2.3,
-    "price_under": 1.55
+    "l10_over": 0.5,
+    "l5_over": 0.4,
+    "p_over": 0.699,
+    "p_under": 0.301,
+    "fair_over": 0.584,
+    "fair_under": 0.416,
+    "price_over": 1.6,
+    "price_under": 2.25
    },
    "mu": 0.048,
    "mu_rank": 7,
@@ -20917,7 +20835,7 @@
    "prior": 3.03,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 71
+   "rank": 70
   },
   {
    "player_id": 1629673,
@@ -20984,21 +20902,21 @@
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
-   "price": 1.92,
-   "book": "neds",
-   "edge": 0.0507,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "edge": 0.0574,
    "p_us": 0.537,
-   "p_book": 0.487,
+   "p_book": 0.48,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.2,
    "p_over": 0.463,
    "p_under": 0.537,
-   "fair_over": 0.513,
-   "fair_under": 0.487,
-   "price_over": 1.82,
-   "price_under": 1.92,
+   "fair_over": 0.52,
+   "fair_under": 0.48,
+   "price_over": 1.8,
+   "price_under": 1.95,
    "us": null,
    "mu": 0.048,
    "mu_rank": 7,
@@ -21019,17 +20937,17 @@
    "opp": "Chicago",
    "game": "Chicago vs Philadelphia",
    "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
+   "line": 3.5,
+   "price": 2.1,
+   "book": "pointsbetau",
+   "price_over": 1.71,
+   "price_under": 2.1,
+   "l5_over": 0.6,
+   "l10_over": 0.4,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": null,
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -21547,22 +21465,22 @@
    "rot_rank": null,
    "minutes_source": "model",
    "line": 2.5,
-   "side": "over",
-   "price": 1.72,
-   "book": "tab",
-   "edge": 0.0087,
-   "p_us": 0.552,
-   "p_book": 0.544,
+   "side": "under",
+   "price": 2.15,
+   "book": "pointsbetau",
+   "edge": 0.0074,
+   "p_us": 0.448,
+   "p_book": 0.44,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.4,
    "p_over": 0.552,
    "p_under": 0.448,
-   "fair_over": 0.544,
-   "fair_under": 0.456,
-   "price_over": 1.72,
-   "price_under": 2.05,
+   "fair_over": 0.56,
+   "fair_under": 0.44,
+   "price_over": 1.69,
+   "price_under": 2.15,
    "us": {
     "line": 2.5,
     "side": "under",
@@ -21699,21 +21617,21 @@
    "minutes_source": "model",
    "line": 4.5,
    "side": "under",
-   "price": 1.68,
-   "book": "sportsbet",
-   "edge": 0.1375,
+   "price": 1.71,
+   "book": "pointsbetau",
+   "edge": 0.1419,
    "p_us": 0.693,
-   "p_book": 0.556,
+   "p_book": 0.551,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.1,
    "l5_over": 0.0,
    "p_over": 0.307,
    "p_under": 0.693,
-   "fair_over": 0.444,
-   "fair_under": 0.556,
+   "fair_over": 0.449,
+   "fair_under": 0.551,
    "price_over": 2.1,
-   "price_under": 1.68,
+   "price_under": 1.71,
    "us": {
     "line": 4.5,
     "side": "under",
@@ -21749,7 +21667,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 76
+   "rank": 75
   },
   {
    "player_id": 1630568,
@@ -21851,7 +21769,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 51
+   "rank": 50
   },
   {
    "player_id": 1630573,
@@ -21993,7 +21911,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 36
+   "rank": 35
   },
   {
    "player_id": 1630619,
@@ -22077,7 +21995,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1631097,
@@ -22527,7 +22445,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 65
+   "rank": 64
   },
   {
    "player_id": 1631248,
@@ -22654,21 +22572,21 @@
    "minutes_source": "model",
    "line": 6.5,
    "side": "over",
-   "price": 1.85,
-   "book": "tab",
-   "edge": 0.0865,
+   "price": 1.82,
+   "book": "neds",
+   "edge": 0.0798,
    "p_us": 0.593,
-   "p_book": 0.507,
+   "p_book": 0.513,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
    "p_over": 0.593,
    "p_under": 0.407,
-   "fair_over": 0.507,
-   "fair_under": 0.493,
-   "price_over": 1.85,
-   "price_under": 1.9,
+   "fair_over": 0.513,
+   "fair_under": 0.487,
+   "price_over": 1.82,
+   "price_under": 1.92,
    "us": {
     "line": 6.5,
     "side": "over",
@@ -23011,7 +22929,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 61
   },
   {
    "player_id": 1642066,
@@ -23250,7 +23168,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1642358,
@@ -23334,7 +23252,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 179
+   "rank": 178
   },
   {
    "player_id": 1642404,
@@ -23378,7 +23296,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 180
+   "rank": 179
   },
   {
    "player_id": 1642449,
@@ -23422,7 +23340,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 132
   },
   {
    "player_id": 1642450,
@@ -23752,7 +23670,7 @@
    "prior": 2.48,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 120
+   "rank": 123
   },
   {
    "player_id": 1642882,
@@ -23996,7 +23914,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 186
+   "rank": 185
   },
   {
    "player_id": -771,
@@ -24040,7 +23958,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 186
   },
   {
    "player_id": 1643133,
@@ -24084,7 +24002,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 187
   },
   {
    "player_id": 1643024,
@@ -24134,7 +24052,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": -739,
@@ -24204,10 +24122,10 @@
    "game": "Minnesota vs Utah",
    "stat": "REB",
    "line": 4.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.83,
-   "price_under": 1.88,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72,
    "l5_over": 0.2,
    "l10_over": 0.22,
    "pos": "SG",
@@ -24856,7 +24774,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 149
   },
   {
    "player_id": 1627734,
@@ -25000,7 +24918,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 150
+   "rank": 151
   },
   {
    "player_id": 1627759,
@@ -25078,26 +24996,6 @@
    "l10_over": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -25432,7 +25330,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 61
+   "rank": 60
   },
   {
    "player_id": 1629014,
@@ -25516,7 +25414,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 153
+   "rank": 154
   },
   {
    "player_id": 1629021,
@@ -26856,7 +26754,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1631097,
@@ -27936,7 +27834,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 143
+   "rank": 144
   },
   {
    "player_id": 1642358,
@@ -28020,7 +27918,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 179
+   "rank": 178
   },
   {
    "player_id": 1642404,
@@ -28064,7 +27962,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 180
+   "rank": 179
   },
   {
    "player_id": 1642449,
@@ -28108,7 +28006,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1642450,
@@ -28396,7 +28294,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 140
+   "rank": 141
   },
   {
    "player_id": 1642882,
@@ -28640,7 +28538,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 186
+   "rank": 185
   },
   {
    "player_id": -771,
@@ -28684,7 +28582,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 186
   },
   {
    "player_id": 1643133,
@@ -28728,7 +28626,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 187
   },
   {
    "player_id": 1643024,
@@ -28772,7 +28670,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": -739,
@@ -29476,7 +29374,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 149
   },
   {
    "player_id": 1627734,
@@ -29620,7 +29518,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 150
+   "rank": 151
   },
   {
    "player_id": 1627759,
@@ -29698,26 +29596,6 @@
    "l10_over": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -29908,7 +29786,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 94
+   "rank": 95
   },
   {
    "player_id": 1628997,
@@ -30136,7 +30014,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 153
+   "rank": 154
   },
   {
    "player_id": 1629021,
@@ -30632,7 +30510,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 138
+   "rank": 139
   },
   {
    "player_id": 1630163,
@@ -31060,7 +30938,7 @@
    "prior": 1.17,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 89
+   "rank": 90
   },
   {
    "player_id": 1630538,
@@ -31268,7 +31146,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 101
   },
   {
    "player_id": 1630573,
@@ -31476,7 +31354,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 141
+   "rank": 142
   },
   {
    "player_id": 1631097,
@@ -32332,7 +32210,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 64
+   "rank": 65
   },
   {
    "player_id": 1642066,
@@ -32556,7 +32434,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 142
+   "rank": 143
   },
   {
    "player_id": 1642358,
@@ -32640,7 +32518,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 179
+   "rank": 178
   },
   {
    "player_id": 1642404,
@@ -32684,7 +32562,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 180
+   "rank": 179
   },
   {
    "player_id": 1642449,
@@ -32728,7 +32606,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 140
+   "rank": 141
   },
   {
    "player_id": 1642450,
@@ -33016,7 +32894,7 @@
    "prior": 0.94,
    "prior_at": "2026-11-08T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 111
+   "rank": 114
   },
   {
    "player_id": 1642882,
@@ -33260,7 +33138,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 186
+   "rank": 185
   },
   {
    "player_id": -771,
@@ -33304,7 +33182,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 186
   },
   {
    "player_id": 1643133,
@@ -33348,7 +33226,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 187
   },
   {
    "player_id": 1643024,
@@ -33392,7 +33270,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": -739,
@@ -33736,7 +33614,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 146
+   "rank": 147
   },
   {
    "player_id": -788,
@@ -33840,7 +33718,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 147
+   "rank": 148
   },
   {
    "player_id": -765,
@@ -34029,13 +33907,13 @@
    "opp": "Minnesota",
    "game": "Minnesota vs Utah",
    "stat": "PRA",
-   "line": 24.5,
-   "price": 1.8,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.8,
-   "l5_over": 0.4,
-   "l10_over": 0.33,
+   "line": 22.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96,
+   "l5_over": 0.8,
+   "l10_over": 0.56,
    "pos": "SG",
    "pos_usual": "SG",
    "early": 9,
@@ -34524,7 +34402,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 157
+   "rank": 158
   },
   {
    "player_id": 1627734,
@@ -34668,7 +34546,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 159
+   "rank": 160
   },
   {
    "player_id": 1627759,
@@ -34751,26 +34629,6 @@
    "us": null
   },
   {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "PRA",
-   "line": 28.5,
-   "price": 1.88,
-   "book": "sportsbet",
-   "price_over": 1.88,
-   "price_under": 1.88,
-   "l5_over": 0.6,
-   "l10_over": 0.7,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1628381,
    "player": "John Collins",
    "team": "Detroit",
@@ -34812,7 +34670,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 65
   },
   {
    "player_id": 1628389,
@@ -34956,7 +34814,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 101
   },
   {
    "player_id": 1628997,
@@ -35073,22 +34931,22 @@
    "rot_rank": null,
    "minutes_source": "model",
    "line": 16.5,
-   "side": "over",
-   "price": 1.92,
+   "side": "under",
+   "price": 1.87,
    "book": "sportsbet",
-   "edge": 0.0066,
-   "p_us": 0.496,
-   "p_book": 0.489,
+   "edge": 0.0013,
+   "p_us": 0.504,
+   "p_book": 0.503,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.3,
    "l5_over": 0.2,
    "p_over": 0.496,
    "p_under": 0.504,
-   "fair_over": 0.489,
-   "fair_under": 0.511,
-   "price_over": 1.92,
-   "price_under": 1.84,
+   "fair_over": 0.497,
+   "fair_under": 0.503,
+   "price_over": 1.89,
+   "price_under": 1.87,
    "us": null,
    "mu": -0.126,
    "mu_rank": 30,
@@ -35100,7 +34958,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 69
   },
   {
    "player_id": 1629014,
@@ -35190,7 +35048,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 163
   },
   {
    "player_id": 1629021,
@@ -35538,7 +35396,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 59
+   "rank": 58
   },
   {
    "player_id": 1629673,
@@ -35686,7 +35544,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 113
+   "rank": 115
   },
   {
    "player_id": 1630163,
@@ -35884,20 +35742,20 @@
    "minutes_source": "model",
    "line": 22.5,
    "side": "over",
-   "price": 1.67,
+   "price": 1.68,
    "book": "neds",
-   "edge": 0.0969,
+   "edge": 0.0984,
    "p_us": 0.654,
-   "p_book": 0.557,
+   "p_book": 0.556,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.2,
    "p_over": 0.654,
    "p_under": 0.346,
-   "fair_over": 0.557,
-   "fair_under": 0.443,
-   "price_over": 1.67,
+   "fair_over": 0.556,
+   "fair_under": 0.444,
+   "price_over": 1.68,
    "price_under": 2.1,
    "us": null,
    "mu": -0.015,
@@ -35910,7 +35768,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 30
+   "rank": 29
   },
   {
    "player_id": 1630200,
@@ -36114,7 +35972,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 83
+   "rank": 82
   },
   {
    "player_id": 1630538,
@@ -36244,7 +36102,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 11
+   "rank": 12
   },
   {
    "player_id": 1630568,
@@ -36426,21 +36284,21 @@
    "minutes_source": "model",
    "line": 40.5,
    "side": "under",
-   "price": 1.9,
+   "price": 1.95,
    "book": "tab",
-   "edge": 0.0977,
+   "edge": 0.1111,
    "p_us": 0.591,
-   "p_book": 0.493,
+   "p_book": 0.48,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.6,
    "p_over": 0.409,
    "p_under": 0.591,
-   "fair_over": 0.507,
-   "fair_under": 0.493,
-   "price_over": 1.85,
-   "price_under": 1.9,
+   "fair_over": 0.52,
+   "fair_under": 0.48,
+   "price_over": 1.8,
+   "price_under": 1.95,
    "us": null,
    "mu": -0.015,
    "mu_rank": 19,
@@ -36536,7 +36394,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1631097,
@@ -36652,23 +36510,23 @@
    "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 26.5,
+   "line": 25.5,
    "side": "over",
-   "price": 1.95,
+   "price": 1.8,
    "book": "tab",
-   "edge": 0.0245,
-   "p_us": 0.505,
-   "p_book": 0.48,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "edge": 0.0328,
+   "p_us": 0.553,
+   "p_book": 0.52,
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
-   "p_over": 0.505,
-   "p_under": 0.495,
-   "fair_over": 0.48,
-   "fair_under": 0.52,
-   "price_over": 1.95,
-   "price_under": 1.8,
+   "p_over": 0.553,
+   "p_under": 0.447,
+   "fair_over": 0.52,
+   "fair_under": 0.48,
+   "price_over": 1.8,
+   "price_under": 1.95,
    "us": null,
    "mu": -0.059,
    "mu_rank": 25,
@@ -36680,7 +36538,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 28
+   "rank": 27
   },
   {
    "player_id": 1631121,
@@ -37153,7 +37011,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -37628,7 +37486,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1642358,
@@ -37732,7 +37590,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": 1642404,
@@ -37776,7 +37634,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 190
+   "rank": 189
   },
   {
    "player_id": 1642449,
@@ -37820,7 +37678,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 142
+   "rank": 143
   },
   {
    "player_id": 1642450,
@@ -37914,10 +37772,10 @@
    "game": "Minnesota vs Utah",
    "stat": "PRA",
    "line": 23.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.85,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8,
    "l5_over": 0.2,
    "l10_over": 0.3,
    "pos": "SF",
@@ -38134,7 +37992,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 139
+   "rank": 140
   },
   {
    "player_id": 1642882,
@@ -38284,7 +38142,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 194
+   "rank": 193
   },
   {
    "player_id": 1643052,
@@ -38348,7 +38206,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 195
+   "rank": 194
   },
   {
    "player_id": -789,
@@ -38392,7 +38250,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 146
+   "rank": 147
   },
   {
    "player_id": -788,
@@ -38496,7 +38354,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 147
+   "rank": 148
   },
   {
    "player_id": -765,
@@ -38685,13 +38543,13 @@
    "opp": "Minnesota",
    "game": "Minnesota vs Utah",
    "stat": "PR",
-   "line": 20.5,
-   "price": 1.74,
-   "book": "unibet",
-   "price_over": 2.0,
-   "price_under": 1.74,
-   "l5_over": 0.4,
-   "l10_over": 0.33,
+   "line": 18.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9,
+   "l5_over": 0.6,
+   "l10_over": 0.44,
    "pos": "SG",
    "pos_usual": "SG",
    "early": 9,
@@ -39180,7 +39038,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 157
+   "rank": 158
   },
   {
    "player_id": 1627734,
@@ -39324,7 +39182,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 159
+   "rank": 160
   },
   {
    "player_id": 1627759,
@@ -39407,26 +39265,6 @@
    "us": null
   },
   {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "PR",
-   "line": 26.5,
-   "price": 1.89,
-   "book": "sportsbet",
-   "price_over": 1.89,
-   "price_under": 1.87,
-   "l5_over": 0.6,
-   "l10_over": 0.6,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1628381,
    "player": "John Collins",
    "team": "Detroit",
@@ -39442,21 +39280,21 @@
    "minutes_source": "model",
    "line": 17.5,
    "side": "under",
-   "price": 1.83,
+   "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0662,
+   "edge": 0.0756,
    "p_us": 0.576,
-   "p_book": 0.509,
+   "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.0,
    "p_over": 0.424,
    "p_under": 0.576,
-   "fair_over": 0.491,
-   "fair_under": 0.509,
-   "price_over": 1.9,
-   "price_under": 1.83,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
    "us": null,
    "mu": -0.004,
    "mu_rank": 17,
@@ -39468,7 +39306,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 56
   },
   {
    "player_id": 1628389,
@@ -39612,7 +39450,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
+   "rank": 110
   },
   {
    "player_id": 1628997,
@@ -39846,7 +39684,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 163
   },
   {
    "player_id": 1629021,
@@ -40168,21 +40006,21 @@
    "minutes_source": "model",
    "line": 14.5,
    "side": "over",
-   "price": 1.87,
+   "price": 1.88,
    "book": "unibet",
-   "edge": 0.0364,
+   "edge": 0.0405,
    "p_us": 0.534,
-   "p_book": 0.497,
+   "p_book": 0.493,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.0,
    "p_over": 0.534,
    "p_under": 0.466,
-   "fair_over": 0.497,
-   "fair_under": 0.503,
-   "price_over": 1.87,
-   "price_under": 1.85,
+   "fair_over": 0.493,
+   "fair_under": 0.507,
+   "price_over": 1.88,
+   "price_under": 1.83,
    "us": null,
    "mu": 0.002,
    "mu_rank": 15,
@@ -40194,7 +40032,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 62
   },
   {
    "player_id": 1629673,
@@ -40252,21 +40090,21 @@
    "minutes_source": "model",
    "line": 9.5,
    "side": "over",
-   "price": 1.78,
+   "price": 1.76,
    "book": "sportsbet",
-   "edge": 0.0643,
+   "edge": 0.059,
    "p_us": 0.593,
-   "p_book": 0.529,
-   "tier": "A",
+   "p_book": 0.534,
+   "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
    "p_over": 0.593,
    "p_under": 0.407,
-   "fair_over": 0.529,
-   "fair_under": 0.471,
-   "price_over": 1.78,
-   "price_under": 2.0,
+   "fair_over": 0.534,
+   "fair_under": 0.466,
+   "price_over": 1.76,
+   "price_under": 2.02,
    "us": null,
    "mu": 0.001,
    "mu_rank": 15,
@@ -40342,7 +40180,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 112
+   "rank": 114
   },
   {
    "player_id": 1630163,
@@ -40540,21 +40378,21 @@
    "minutes_source": "model",
    "line": 20.5,
    "side": "over",
-   "price": 1.73,
+   "price": 1.75,
    "book": "neds",
-   "edge": 0.0993,
+   "edge": 0.1058,
    "p_us": 0.642,
-   "p_book": 0.542,
+   "p_book": 0.536,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.2,
    "p_over": 0.642,
    "p_under": 0.358,
-   "fair_over": 0.542,
-   "fair_under": 0.458,
-   "price_over": 1.73,
-   "price_under": 2.05,
+   "fair_over": 0.536,
+   "fair_under": 0.464,
+   "price_over": 1.75,
+   "price_under": 2.02,
    "us": null,
    "mu": -0.007,
    "mu_rank": 17,
@@ -40566,7 +40404,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 26
+   "rank": 25
   },
   {
    "player_id": 1630200,
@@ -40770,7 +40608,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 81
+   "rank": 80
   },
   {
    "player_id": 1630538,
@@ -40900,7 +40738,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 14
+   "rank": 13
   },
   {
    "player_id": 1630568,
@@ -40958,21 +40796,21 @@
    "minutes_source": "model",
    "line": 15.5,
    "side": "under",
-   "price": 1.87,
-   "book": "neds",
-   "edge": 0.105,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "edge": 0.1144,
    "p_us": 0.605,
-   "p_book": 0.5,
+   "p_book": 0.491,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.2,
    "p_over": 0.395,
    "p_under": 0.605,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
    "us": null,
    "mu": -0.013,
    "mu_rank": 19,
@@ -41192,7 +41030,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1631097,
@@ -41310,21 +41148,21 @@
    "minutes_source": "model",
    "line": 24.5,
    "side": "over",
-   "price": 1.92,
+   "price": 1.91,
    "book": "sportsbet",
-   "edge": 0.0355,
+   "edge": 0.0329,
    "p_us": 0.525,
-   "p_book": 0.489,
+   "p_book": 0.492,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
    "p_over": 0.525,
    "p_under": 0.475,
-   "fair_over": 0.489,
-   "fair_under": 0.511,
-   "price_over": 1.92,
-   "price_under": 1.84,
+   "fair_over": 0.492,
+   "fair_under": 0.508,
+   "price_over": 1.91,
+   "price_under": 1.85,
    "us": null,
    "mu": -0.054,
    "mu_rank": 23,
@@ -41336,7 +41174,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 19
+   "rank": 18
   },
   {
    "player_id": 1631121,
@@ -41724,21 +41562,21 @@
    "minutes_source": "model",
    "line": 17.5,
    "side": "over",
-   "price": 1.88,
-   "book": "unibet",
-   "edge": 0.0109,
+   "price": 1.9,
+   "book": "neds",
+   "edge": 0.0162,
    "p_us": 0.507,
-   "p_book": 0.496,
+   "p_book": 0.491,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.6,
    "p_over": 0.507,
    "p_under": 0.493,
-   "fair_over": 0.496,
-   "fair_under": 0.504,
-   "price_over": 1.88,
-   "price_under": 1.85,
+   "fair_over": 0.491,
+   "fair_under": 0.509,
+   "price_over": 1.9,
+   "price_under": 1.83,
    "us": null,
    "mu": 0.005,
    "mu_rank": 12,
@@ -41750,7 +41588,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 47
   },
   {
    "player_id": 1641711,
@@ -41809,7 +41647,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -42054,7 +41892,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 88
+   "rank": 87
   },
   {
    "player_id": 1642066,
@@ -42284,7 +42122,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1642358,
@@ -42388,7 +42226,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": 1642404,
@@ -42432,7 +42270,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 190
+   "rank": 189
   },
   {
    "player_id": 1642449,
@@ -42476,7 +42314,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 142
+   "rank": 143
   },
   {
    "player_id": 1642450,
@@ -42520,7 +42358,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 86
   },
   {
    "player_id": 1642843,
@@ -42569,11 +42407,11 @@
    "opp": "Minnesota",
    "game": "Minnesota vs Utah",
    "stat": "PR",
-   "line": 21.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.85,
+   "line": 20.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.95,
    "l5_over": 0.2,
    "l10_over": 0.3,
    "pos": "SF",
@@ -42790,7 +42628,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 139
+   "rank": 140
   },
   {
    "player_id": 1642882,
@@ -42940,7 +42778,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 194
+   "rank": 193
   },
   {
    "player_id": 1643052,
@@ -43004,7 +42842,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 195
+   "rank": 194
   },
   {
    "player_id": -789,
@@ -43048,7 +42886,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 146
+   "rank": 147
   },
   {
    "player_id": -788,
@@ -43152,7 +42990,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 147
+   "rank": 148
   },
   {
    "player_id": -765,
@@ -43836,7 +43674,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 157
+   "rank": 158
   },
   {
    "player_id": 1627734,
@@ -43980,7 +43818,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 159
+   "rank": 160
   },
   {
    "player_id": 1627759,
@@ -44063,26 +43901,6 @@
    "us": null
   },
   {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "PA",
-   "line": 21.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96,
-   "l5_over": 0.6,
-   "l10_over": 0.6,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1628381,
    "player": "John Collins",
    "team": "Detroit",
@@ -44124,7 +43942,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 75
+   "rank": 74
   },
   {
    "player_id": 1628389,
@@ -44268,7 +44086,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 95
+   "rank": 96
   },
   {
    "player_id": 1628997,
@@ -44412,7 +44230,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 55
   },
   {
    "player_id": 1629014,
@@ -44502,7 +44320,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 163
   },
   {
    "player_id": 1629021,
@@ -44606,7 +44424,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 30
+   "rank": 29
   },
   {
    "player_id": 1629611,
@@ -44736,7 +44554,7 @@
    "game": "Minnesota vs Utah",
    "stat": "PA",
    "line": 10.5,
-   "price": 1.8,
+   "price": 1.93,
    "book": "unibet",
    "price_over": 1.93,
    "price_under": 1.8,
@@ -44824,21 +44642,21 @@
    "minutes_source": "model",
    "line": 14.5,
    "side": "under",
-   "price": 1.96,
-   "book": "sportsbet",
-   "edge": 0.019,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "edge": 0.0071,
    "p_us": 0.498,
-   "p_book": 0.479,
+   "p_book": 0.491,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.2,
    "l5_over": 0.0,
    "p_over": 0.502,
    "p_under": 0.498,
-   "fair_over": 0.521,
-   "fair_under": 0.479,
-   "price_over": 1.8,
-   "price_under": 1.96,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
    "us": null,
    "mu": -0.033,
    "mu_rank": 21,
@@ -44850,7 +44668,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 55
+   "rank": 54
   },
   {
    "player_id": 1629673,
@@ -44908,21 +44726,21 @@
    "minutes_source": "model",
    "line": 8.5,
    "side": "over",
-   "price": 1.87,
+   "price": 1.8,
    "book": "pointsbetau",
-   "edge": 0.0959,
+   "edge": 0.0759,
    "p_us": 0.596,
-   "p_book": 0.5,
+   "p_book": 0.52,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
    "p_over": 0.596,
    "p_under": 0.404,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
+   "fair_over": 0.52,
+   "fair_under": 0.48,
+   "price_over": 1.8,
+   "price_under": 1.95,
    "us": null,
    "mu": -0.027,
    "mu_rank": 20,
@@ -44934,7 +44752,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 89
   },
   {
    "player_id": 1629731,
@@ -44998,7 +44816,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 116
+   "rank": 117
   },
   {
    "player_id": 1630163,
@@ -45222,7 +45040,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 36
+   "rank": 37
   },
   {
    "player_id": 1630200,
@@ -45426,7 +45244,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 71
+   "rank": 70
   },
   {
    "player_id": 1630538,
@@ -45556,7 +45374,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 8
+   "rank": 9
   },
   {
    "player_id": 1630568,
@@ -45848,7 +45666,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 143
+   "rank": 144
   },
   {
    "player_id": 1631097,
@@ -45964,23 +45782,23 @@
    "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 14.5,
-   "side": "over",
-   "price": 1.8,
+   "line": 15.5,
+   "side": "under",
+   "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0087,
-   "p_us": 0.529,
-   "p_book": 0.52,
+   "edge": 0.0189,
+   "p_us": 0.528,
+   "p_book": 0.509,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
-   "l10_over": 0.6,
-   "l5_over": 0.8,
-   "p_over": 0.529,
-   "p_under": 0.471,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
+   "l10_over": 0.5,
+   "l5_over": 0.6,
+   "p_over": 0.472,
+   "p_under": 0.528,
+   "fair_over": 0.491,
+   "fair_under": 0.509,
+   "price_over": 1.9,
+   "price_under": 1.83,
    "us": null,
    "mu": -0.105,
    "mu_rank": 27,
@@ -45992,7 +45810,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 51
   },
   {
    "player_id": 1631121,
@@ -46228,23 +46046,23 @@
    "minutes": 24,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 9.5,
+   "line": 8.5,
    "side": "under",
-   "price": 1.67,
-   "book": "unibet",
-   "edge": 0.0052,
-   "p_us": 0.562,
-   "p_book": 0.557,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "edge": 0.0087,
+   "p_us": 0.489,
+   "p_book": 0.48,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
-   "l10_over": 0.5,
-   "l5_over": 0.8,
-   "p_over": 0.438,
-   "p_under": 0.562,
-   "fair_over": 0.443,
-   "fair_under": 0.557,
-   "price_over": 2.1,
-   "price_under": 1.67,
+   "l10_over": 0.6,
+   "l5_over": 1.0,
+   "p_over": 0.511,
+   "p_under": 0.489,
+   "fair_over": 0.52,
+   "fair_under": 0.48,
+   "price_over": 1.8,
+   "price_under": 1.95,
    "us": null,
    "mu": -0.046,
    "mu_rank": 21,
@@ -46262,7 +46080,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 101
   },
   {
    "player_id": 1631248,
@@ -46380,21 +46198,21 @@
    "minutes_source": "model",
    "line": 15.5,
    "side": "under",
-   "price": 1.77,
-   "book": "pointsbetau",
-   "edge": 0.0465,
+   "price": 1.76,
+   "book": "sportsbet",
+   "edge": 0.0426,
    "p_us": 0.577,
-   "p_book": 0.531,
+   "p_book": 0.534,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.4,
    "p_over": 0.423,
    "p_under": 0.577,
-   "fair_over": 0.469,
-   "fair_under": 0.531,
-   "price_over": 2.0,
-   "price_under": 1.77,
+   "fair_over": 0.466,
+   "fair_under": 0.534,
+   "price_over": 2.02,
+   "price_under": 1.76,
    "us": null,
    "mu": -0.003,
    "mu_rank": 14,
@@ -46406,7 +46224,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 56
   },
   {
    "player_id": 1641711,
@@ -46940,7 +46758,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1642358,
@@ -47044,7 +46862,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": 1642404,
@@ -47088,7 +46906,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 190
+   "rank": 189
   },
   {
    "player_id": 1642449,
@@ -47132,7 +46950,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1642450,
@@ -47176,7 +46994,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 65
+   "rank": 64
   },
   {
    "player_id": 1642843,
@@ -47225,11 +47043,11 @@
    "opp": "Minnesota",
    "game": "Minnesota vs Utah",
    "stat": "PA",
-   "line": 17.5,
-   "price": 1.74,
-   "book": "unibet",
-   "price_over": 2.0,
-   "price_under": 1.74,
+   "line": 16.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87,
    "l5_over": 0.2,
    "l10_over": 0.3,
    "pos": "SF",
@@ -47446,7 +47264,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 140
+   "rank": 141
   },
   {
    "player_id": 1642882,
@@ -47596,7 +47414,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 194
+   "rank": 193
   },
   {
    "player_id": 1643052,
@@ -47660,7 +47478,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 195
+   "rank": 194
   },
   {
    "player_id": -789,
@@ -47704,7 +47522,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 146
+   "rank": 147
   },
   {
    "player_id": -788,
@@ -47808,7 +47626,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 147
+   "rank": 148
   },
   {
    "player_id": -765,
@@ -47998,10 +47816,10 @@
    "game": "Minnesota vs Utah",
    "stat": "RA",
    "line": 8.5,
-   "price": 1.97,
-   "book": "unibet",
-   "price_over": 1.76,
-   "price_under": 1.97,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8,
    "l5_over": 0.4,
    "l10_over": 0.33,
    "pos": "SG",
@@ -48492,7 +48310,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 157
+   "rank": 158
   },
   {
    "player_id": 1627734,
@@ -48636,7 +48454,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 159
+   "rank": 160
   },
   {
    "player_id": 1627759,
@@ -48719,26 +48537,6 @@
    "us": null
   },
   {
-   "player_id": 1628374,
-   "player": "Lauri Markkanen",
-   "team": "Utah",
-   "opp": "Minnesota",
-   "game": "Minnesota vs Utah",
-   "stat": "RA",
-   "line": 8.5,
-   "price": 1.96,
-   "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.77,
-   "l5_over": 0.6,
-   "l10_over": 0.6,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
-   "us": null
-  },
-  {
    "player_id": 1628381,
    "player": "John Collins",
    "team": "Detroit",
@@ -48780,7 +48578,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 73
+   "rank": 71
   },
   {
    "player_id": 1628389,
@@ -48924,7 +48722,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 97
+   "rank": 98
   },
   {
    "player_id": 1628997,
@@ -49068,7 +48866,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 99
   },
   {
    "player_id": 1629014,
@@ -49158,7 +48956,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 163
   },
   {
    "player_id": 1629021,
@@ -49482,19 +49280,19 @@
    "side": "over",
    "price": 1.64,
    "book": "neds",
-   "edge": 0.1199,
+   "edge": 0.1142,
    "p_us": 0.687,
-   "p_book": 0.567,
+   "p_book": 0.573,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
    "p_over": 0.687,
    "p_under": 0.313,
-   "fair_over": 0.567,
-   "fair_under": 0.433,
+   "fair_over": 0.573,
+   "fair_under": 0.427,
    "price_over": 1.64,
-   "price_under": 2.15,
+   "price_under": 2.2,
    "us": null,
    "mu": -0.018,
    "mu_rank": 18,
@@ -49506,7 +49304,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 57
   },
   {
    "player_id": 1629673,
@@ -49563,22 +49361,22 @@
    "rot_rank": null,
    "minutes_source": "model",
    "line": 4.5,
-   "side": "over",
-   "price": 2.2,
+   "side": "under",
+   "price": 1.67,
    "book": "pointsbetau",
-   "edge": 0.0107,
-   "p_us": 0.436,
-   "p_book": 0.426,
+   "edge": 0.0067,
+   "p_us": 0.564,
+   "p_book": 0.557,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.1,
    "l5_over": 0.2,
    "p_over": 0.436,
    "p_under": 0.564,
-   "fair_over": 0.426,
-   "fair_under": 0.574,
-   "price_over": 2.2,
-   "price_under": 1.63,
+   "fair_over": 0.443,
+   "fair_under": 0.557,
+   "price_over": 2.1,
+   "price_under": 1.67,
    "us": null,
    "mu": -0.005,
    "mu_rank": 15,
@@ -49590,7 +49388,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 109
   },
   {
    "player_id": 1629731,
@@ -49654,7 +49452,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 117
+   "rank": 119
   },
   {
    "player_id": 1630163,
@@ -50082,7 +49880,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 95
+   "rank": 96
   },
   {
    "player_id": 1630538,
@@ -50296,7 +50094,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 68
+   "rank": 67
   },
   {
    "player_id": 1630573,
@@ -50395,7 +50193,7 @@
    "line": 14.5,
    "side": "under",
    "price": 1.88,
-   "book": "neds",
+   "book": "unibet",
    "edge": 0.0374,
    "p_us": 0.533,
    "p_book": 0.496,
@@ -50504,7 +50302,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 146
   },
   {
    "player_id": 1631097,
@@ -50622,21 +50420,21 @@
    "minutes_source": "model",
    "line": 12.5,
    "side": "over",
-   "price": 1.87,
+   "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.063,
+   "edge": 0.0535,
    "p_us": 0.553,
-   "p_book": 0.49,
-   "tier": "A",
+   "p_book": 0.5,
+   "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.8,
    "p_over": 0.553,
    "p_under": 0.447,
-   "fair_over": 0.49,
-   "fair_under": 0.51,
-   "price_over": 1.87,
-   "price_under": 1.8,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.83,
+   "price_under": 1.83,
    "us": null,
    "mu": -0.018,
    "mu_rank": 16,
@@ -50918,7 +50716,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 76
+   "rank": 75
   },
   {
    "player_id": 1631248,
@@ -51036,20 +50834,20 @@
    "minutes_source": "model",
    "line": 10.5,
    "side": "over",
-   "price": 1.65,
+   "price": 1.67,
    "book": "neds",
-   "edge": 0.034,
+   "edge": 0.037,
    "p_us": 0.6,
-   "p_book": 0.566,
+   "p_book": 0.563,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
    "p_over": 0.6,
    "p_under": 0.4,
-   "fair_over": 0.566,
-   "fair_under": 0.434,
-   "price_over": 1.65,
+   "fair_over": 0.563,
+   "fair_under": 0.437,
+   "price_over": 1.67,
    "price_under": 2.15,
    "us": null,
    "mu": -0.021,
@@ -51596,7 +51394,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1642358,
@@ -51700,7 +51498,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": 1642404,
@@ -51744,7 +51542,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 190
+   "rank": 189
   },
   {
    "player_id": 1642449,
@@ -51788,7 +51586,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 139
+   "rank": 140
   },
   {
    "player_id": 1642450,
@@ -51832,7 +51630,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 60
+   "rank": 59
   },
   {
    "player_id": 1642843,
@@ -52102,7 +51900,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 133
   },
   {
    "player_id": 1642882,
@@ -52252,7 +52050,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 194
+   "rank": 193
   },
   {
    "player_id": 1643052,
@@ -52316,7 +52114,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 195
+   "rank": 194
   }
  ],
  "movers": [],
@@ -52356,6 +52154,10 @@
   {
    "run_at": "2026-11-08T22:46+00:00",
    "trigger": "late"
+  },
+  {
+   "run_at": "2026-11-08T23:21+00:00",
+   "trigger": "lineups"
   }
  ]
 }
