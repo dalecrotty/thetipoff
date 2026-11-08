@@ -813,7 +813,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -5426,7 +5426,7 @@
    "pos": "PG",
    "pos_usual": "PG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 6.5,
     "price": 1.75,
@@ -13942,10 +13942,10 @@
    "game": "Cleveland vs New York",
    "stat": "PTS",
    "line": 19.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.83,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.88,
    "l5_over": 0.4,
    "l10_over": 0.4,
    "pos": "C",
@@ -40755,7 +40755,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
+   "rank": 108
   },
   {
    "player_id": -756,
@@ -43403,7 +43403,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 132
+   "rank": 131
   },
   {
    "player_id": 1631166,
@@ -49210,6 +49210,10 @@
   },
   {
    "run_at": "2026-11-08T00:38+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-11-08T00:46+00:00",
    "trigger": "lineups"
   }
  ]
