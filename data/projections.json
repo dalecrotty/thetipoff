@@ -4467,7 +4467,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 94
+   "rank": 93
   },
   {
    "player_id": 201935,
@@ -4564,7 +4564,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 19
+   "rank": 18
   },
   {
    "player_id": 201942,
@@ -5566,7 +5566,7 @@
    "prior": 0.0,
    "prior_at": "2026-11-07T18:46+00:00",
    "move_reason": "Bane out",
-   "rank": 66
+   "rank": 65
   },
   {
    "player_id": 1628976,
@@ -6095,7 +6095,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 6.5,
     "price": 2.1,
@@ -7154,7 +7154,7 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -7362,7 +7362,7 @@
    "game": "Portland vs San Antonio",
    "stat": "AST",
    "line": 1.5,
-   "price": 2.02,
+   "price": 1.72,
    "book": "unibet",
    "price_over": 2.02,
    "price_under": 1.72,
@@ -13443,17 +13443,17 @@
    "opp": "San Antonio",
    "game": "Portland vs San Antonio",
    "stat": "PTS",
-   "line": 19.5,
-   "price": 1.87,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.85,
-   "l5_over": 0.8,
-   "l10_over": 0.6,
+   "line": 20.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.83,
+   "l5_over": 0.6,
+   "l10_over": 0.5,
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 20.5,
     "price": 1.96,
@@ -13687,7 +13687,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 12.5,
     "price": 1.94,
@@ -14736,7 +14736,7 @@
    "prior": 12.8,
    "prior_at": "2026-11-07T18:46+00:00",
    "move_reason": "Bane out",
-   "rank": 44
+   "rank": 43
   },
   {
    "player_id": 1628983,
@@ -16931,7 +16931,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": {
     "line": 16.5,
     "price": 1.83,
@@ -18711,13 +18711,13 @@
    "opp": "San Antonio",
    "game": "Portland vs San Antonio",
    "stat": "REB",
-   "line": 3.5,
-   "price": 1.63,
-   "book": "pointsbetau",
-   "price_over": 1.63,
-   "price_under": 2.25,
-   "l5_over": 0.8,
-   "l10_over": 0.8,
+   "line": 4.5,
+   "price": 2.02,
+   "book": "neds",
+   "price_over": 2.02,
+   "price_under": 1.73,
+   "l5_over": 0.4,
+   "l10_over": 0.4,
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
@@ -19395,7 +19395,7 @@
     "price_under": 1.73,
     "l5_over": 0.2,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -20181,16 +20181,16 @@
    "game": "Portland vs San Antonio",
    "stat": "REB",
    "line": 4.5,
-   "price": 2.15,
-   "book": "pointsbetau",
-   "price_over": 2.15,
-   "price_under": 1.69,
+   "price": 1.92,
+   "book": "unibet",
+   "price_over": 1.92,
+   "price_under": 1.81,
    "l5_over": 1.0,
    "l10_over": 0.8,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 4.5,
     "price": 2.1,
@@ -21464,7 +21464,7 @@
    "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 11.5,
-    "price": 1.91,
+    "price": 1.85,
     "book": "betright",
     "price_over": 1.91,
     "price_under": 1.85,
@@ -34376,7 +34376,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 5
+   "rank": 4
   },
   {
    "player_id": 1630540,
@@ -41325,7 +41325,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -49665,6 +49665,10 @@
   },
   {
    "run_at": "2026-11-08T01:34+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-11-08T02:36+00:00",
    "trigger": "lineups"
   }
  ]
