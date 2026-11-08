@@ -6047,7 +6047,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 2.5,
     "price": 2.2,
@@ -13491,7 +13491,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 90
+   "rank": 91
   },
   {
    "player_id": -742,
@@ -20651,7 +20651,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 2.5,
     "price": 2.3,
@@ -20660,7 +20660,7 @@
     "price_under": 2.3,
     "l5_over": 0.4,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -48823,7 +48823,7 @@
    "game": "Detroit vs LA Lakers",
    "stat": "RA",
    "line": 5.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.8,
    "price_under": 1.96,
@@ -48832,7 +48832,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -51553,6 +51553,10 @@
   {
    "run_at": "2026-11-08T19:01+00:00",
    "trigger": "pretip"
+  },
+  {
+   "run_at": "2026-11-08T19:21+00:00",
+   "trigger": "lineups"
   }
  ]
 }
