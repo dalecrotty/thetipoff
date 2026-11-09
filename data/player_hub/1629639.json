@@ -4,14 +4,14 @@
  "team": "Milwaukee",
  "projections": {
   "3PM": {
-   "mean": 2.66,
-   "floor": 0.26,
-   "ceiling": 4.93
+   "mean": 2.65,
+   "floor": 0.44,
+   "ceiling": 5.18
   },
   "AST": {
-   "mean": 4.72,
-   "floor": 1.73,
-   "ceiling": 7.81
+   "mean": 4.71,
+   "floor": 1.72,
+   "ceiling": 7.8
   },
   "BLK": {
    "mean": 0.19,
@@ -19,44 +19,44 @@
    "ceiling": 0.98
   },
   "PTS": {
-   "mean": 21.49,
-   "floor": 11.91,
-   "ceiling": 31.03
+   "mean": 21.42,
+   "floor": 11.84,
+   "ceiling": 30.97
   },
   "REB": {
-   "mean": 4.46,
-   "floor": 1.29,
-   "ceiling": 7.93
+   "mean": 4.44,
+   "floor": 1.27,
+   "ceiling": 7.92
   },
   "STL": {
-   "mean": 0.83,
-   "floor": 0.0,
-   "ceiling": 1.98
+   "mean": 0.82,
+   "floor": 0.02,
+   "ceiling": 2.05
   },
   "TOV": {
-   "mean": 2.13,
+   "mean": 2.12,
    "floor": 0.0,
-   "ceiling": 4.38
+   "ceiling": 4.37
   },
   "PRA": {
-   "mean": 30.67,
-   "floor": 20.03,
-   "ceiling": 42.3
+   "mean": 30.58,
+   "floor": 19.93,
+   "ceiling": 42.2
   },
   "PR": {
-   "mean": 25.95,
-   "floor": 14.29,
-   "ceiling": 36.87
+   "mean": 25.87,
+   "floor": 14.2,
+   "ceiling": 36.79
   },
   "PA": {
-   "mean": 26.21,
-   "floor": 16.14,
-   "ceiling": 36.26
+   "mean": 26.13,
+   "floor": 16.06,
+   "ceiling": 36.17
   },
   "RA": {
-   "mean": 9.18,
-   "floor": 4.3,
-   "ceiling": 14.15
+   "mean": 9.15,
+   "floor": 4.27,
+   "ceiling": 14.12
   }
  },
  "minutes": {
@@ -228,64 +228,64 @@
  "lines": {
   "PA": {
    "line": 23.5,
-   "p_over": 0.625,
-   "p_under": 0.375,
-   "fair_over": 0.524,
-   "fair_under": 0.476,
-   "price_over": 1.78,
-   "price_under": 1.96,
+   "p_over": 0.622,
+   "p_under": 0.378,
+   "fair_over": 0.519,
+   "fair_under": 0.481,
+   "price_over": 1.8,
+   "price_under": 1.94,
    "side": "over",
-   "price": 1.78,
+   "price": 1.8,
    "book": "neds",
-   "edge": 0.1013,
-   "tier": "A"
-  },
-  "RA": {
-   "line": 8.5,
-   "p_over": 0.571,
-   "p_under": 0.429,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "side": "over",
-   "price": 1.96,
-   "book": "sportsbet",
-   "edge": 0.0924,
+   "edge": 0.103,
    "tier": "A"
   },
   "PRA": {
    "line": 27.5,
-   "p_over": 0.63,
-   "p_under": 0.37,
-   "fair_over": 0.539,
-   "fair_under": 0.461,
-   "price_over": 1.73,
+   "p_over": 0.626,
+   "p_under": 0.374,
+   "fair_over": 0.536,
+   "fair_under": 0.464,
+   "price_over": 1.75,
    "price_under": 2.02,
    "side": "over",
-   "price": 1.73,
-   "book": "neds",
-   "edge": 0.0912,
+   "price": 1.75,
+   "book": "ladbrokes_au",
+   "edge": 0.0903,
    "tier": "A"
   },
   "PTS": {
    "line": 19.5,
-   "p_over": 0.596,
-   "p_under": 0.404,
-   "fair_over": 0.507,
-   "fair_under": 0.493,
+   "p_over": 0.593,
+   "p_under": 0.407,
+   "fair_over": 0.504,
+   "fair_under": 0.496,
    "price_over": 1.85,
-   "price_under": 1.9,
+   "price_under": 1.88,
    "side": "over",
    "price": 1.85,
    "book": "neds",
-   "edge": 0.0898,
+   "edge": 0.0892,
+   "tier": "A"
+  },
+  "RA": {
+   "line": 8.5,
+   "p_over": 0.568,
+   "p_under": 0.432,
+   "fair_over": 0.483,
+   "fair_under": 0.517,
+   "price_over": 1.93,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.93,
+   "book": "unibet",
+   "edge": 0.0856,
    "tier": "A"
   },
   "PR": {
    "line": 23.5,
-   "p_over": 0.606,
-   "p_under": 0.394,
+   "p_over": 0.603,
+   "p_under": 0.397,
    "fair_over": 0.524,
    "fair_under": 0.476,
    "price_over": 1.78,
@@ -293,13 +293,13 @@
    "side": "over",
    "price": 1.78,
    "book": "neds",
-   "edge": 0.082,
+   "edge": 0.0785,
    "tier": "A"
   },
   "AST": {
    "line": 4.5,
-   "p_over": 0.491,
-   "p_under": 0.509,
+   "p_over": 0.488,
+   "p_under": 0.512,
    "fair_over": 0.44,
    "fair_under": 0.56,
    "price_over": 2.15,
@@ -307,13 +307,13 @@
    "side": "over",
    "price": 2.15,
    "book": "pointsbetau",
-   "edge": 0.0507,
+   "edge": 0.0483,
    "tier": "B"
   },
   "3PM": {
    "line": 2.5,
-   "p_over": 0.476,
-   "p_under": 0.524,
+   "p_over": 0.474,
+   "p_under": 0.526,
    "fair_over": 0.521,
    "fair_under": 0.479,
    "price_over": 1.8,
@@ -321,52 +321,66 @@
    "side": "under",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0455,
+   "edge": 0.0472,
    "tier": "B"
   },
   "REB": {
    "line": 4.5,
-   "p_over": 0.448,
-   "p_under": 0.552,
-   "fair_over": 0.449,
-   "fair_under": 0.551,
-   "price_over": 2.1,
-   "price_under": 1.71,
+   "p_over": 0.445,
+   "p_under": 0.555,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
    "side": "under",
-   "price": 1.71,
-   "book": "pointsbetau",
-   "edge": 0.0011,
-   "tier": null
+   "price": 1.8,
+   "book": "sportsbet",
+   "edge": 0.0334,
+   "tier": "B"
   }
  },
  "lines_us": {
-  "AST": {
-   "line": 4.5,
-   "p_over": 0.491,
-   "p_under": 0.509,
-   "fair_over": 0.424,
-   "fair_under": 0.576,
-   "price_over": 2.2,
-   "price_under": 1.62,
-   "side": "over",
-   "price": 2.2,
-   "book": "betright",
-   "edge": 0.0667,
-   "tier": "A"
-  },
   "PTS": {
    "line": 20.5,
-   "p_over": 0.548,
-   "p_under": 0.452,
-   "fair_over": 0.485,
-   "fair_under": 0.515,
-   "price_over": 1.94,
-   "price_under": 1.83,
+   "p_over": 0.545,
+   "p_under": 0.455,
+   "fair_over": 0.473,
+   "fair_under": 0.527,
+   "price_over": 1.98,
+   "price_under": 1.78,
    "side": "over",
-   "price": 1.94,
+   "price": 1.98,
    "book": "betright",
-   "edge": 0.0629,
+   "edge": 0.0716,
    "tier": "A"
+  },
+  "AST": {
+   "line": 4.5,
+   "p_over": 0.488,
+   "p_under": 0.512,
+   "fair_over": 0.419,
+   "fair_under": 0.581,
+   "price_over": 2.25,
+   "price_under": 1.62,
+   "side": "over",
+   "price": 2.25,
+   "book": "betright",
+   "edge": 0.0698,
+   "tier": "A"
+  },
+  "REB": {
+   "line": 4.5,
+   "p_over": 0.445,
+   "p_under": 0.555,
+   "fair_over": 0.473,
+   "fair_under": 0.527,
+   "price_over": 1.98,
+   "price_under": 1.78,
+   "side": "under",
+   "price": 1.78,
+   "book": "betright",
+   "edge": 0.028,
+   "tier": null
   }
  },
  "game_log": [
