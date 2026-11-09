@@ -4,20 +4,6 @@
  "team": "New Orleans",
  "opp": "Golden State",
  "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 1.64,
-   "book": "sportsbet",
-   "price_over": 2.15,
-   "price_under": 1.64
-  },
-  "PTS": {
-   "line": 16.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.83
-  },
   "RA": {
    "line": 10.5,
    "price": 1.92,
@@ -25,19 +11,12 @@
    "price_over": 1.92,
    "price_under": 1.84
   },
-  "PR": {
-   "line": 21.5,
-   "price": 1.89,
-   "book": "unibet",
-   "price_over": 1.83,
-   "price_under": 1.89
-  },
-  "PA": {
-   "line": 22.5,
-   "price": 1.77,
-   "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.77
+  "3PM": {
+   "line": 1.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
   },
   "AST": {
    "line": 5.5,
@@ -47,18 +26,39 @@
    "price_under": 1.74
   },
   "PRA": {
-   "line": 27.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.83
+   "line": 26.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PA": {
+   "line": 21.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
   },
   "REB": {
    "line": 5.5,
-   "price": 1.73,
+   "price": 2.05,
    "book": "neds",
    "price_over": 2.05,
    "price_under": 1.73
+  },
+  "PR": {
+   "line": 21.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
   }
  },
  "recent_games": [
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 16.5,
+   "line": 15.5,
    "over": 2,
    "n": 5
   },
