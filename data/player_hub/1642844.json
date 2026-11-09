@@ -11,7 +11,7 @@
   "AST": {
    "mean": 3.94,
    "floor": 1.23,
-   "ceiling": 6.93
+   "ceiling": 6.92
   },
   "BLK": {
    "mean": 0.29,
@@ -19,17 +19,17 @@
    "ceiling": 1.01
   },
   "PTS": {
-   "mean": 17.5,
-   "floor": 9.11,
-   "ceiling": 26.63
+   "mean": 17.49,
+   "floor": 9.1,
+   "ceiling": 26.62
   },
   "REB": {
    "mean": 5.62,
    "floor": 2.16,
-   "ceiling": 9.11
+   "ceiling": 9.12
   },
   "STL": {
-   "mean": 0.95,
+   "mean": 0.96,
    "floor": 0.0,
    "ceiling": 2.02
   },
@@ -39,19 +39,19 @@
    "ceiling": 3.89
   },
   "PRA": {
-   "mean": 27.07,
-   "floor": 16.5,
-   "ceiling": 38.73
+   "mean": 27.05,
+   "floor": 16.49,
+   "ceiling": 38.72
   },
   "PR": {
-   "mean": 23.13,
-   "floor": 13.42,
-   "ceiling": 34.17
+   "mean": 23.12,
+   "floor": 13.41,
+   "ceiling": 34.16
   },
   "PA": {
-   "mean": 21.44,
-   "floor": 12.88,
-   "ceiling": 31.8
+   "mean": 21.43,
+   "floor": 12.86,
+   "ceiling": 31.79
   },
   "RA": {
    "mean": 9.56,
@@ -228,8 +228,8 @@
  "lines": {
   "AST": {
    "line": 4.5,
-   "p_over": 0.36,
-   "p_under": 0.64,
+   "p_over": 0.359,
+   "p_under": 0.641,
    "fair_over": 0.472,
    "fair_under": 0.528,
    "price_over": 1.98,
@@ -237,13 +237,13 @@
    "side": "under",
    "price": 1.77,
    "book": "neds",
-   "edge": 0.1123,
+   "edge": 0.1128,
    "tier": "A"
   },
   "PTS": {
    "line": 16.5,
-   "p_over": 0.561,
-   "p_under": 0.439,
+   "p_over": 0.56,
+   "p_under": 0.44,
    "fair_over": 0.493,
    "fair_under": 0.507,
    "price_over": 1.88,
@@ -251,13 +251,13 @@
    "side": "over",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0674,
+   "edge": 0.0668,
    "tier": "A"
   },
   "PR": {
    "line": 22.5,
-   "p_over": 0.533,
-   "p_under": 0.467,
+   "p_over": 0.532,
+   "p_under": 0.468,
    "fair_over": 0.475,
    "fair_under": 0.525,
    "price_over": 1.96,
@@ -265,7 +265,7 @@
    "side": "over",
    "price": 1.96,
    "book": "unibet",
-   "edge": 0.0584,
+   "edge": 0.0578,
    "tier": "B"
   },
   "3PM": {
@@ -279,7 +279,7 @@
    "side": "over",
    "price": 2.75,
    "book": "pointsbetau",
-   "edge": 0.0285,
+   "edge": 0.0284,
    "tier": null
   },
   "PA": {
@@ -293,13 +293,13 @@
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0184,
+   "edge": 0.0178,
    "tier": null
   },
   "RA": {
    "line": 9.5,
-   "p_over": 0.507,
-   "p_under": 0.493,
+   "p_over": 0.506,
+   "p_under": 0.494,
    "fair_over": 0.512,
    "fair_under": 0.488,
    "price_over": 1.82,
@@ -307,7 +307,7 @@
    "side": "under",
    "price": 1.91,
    "book": "unibet",
-   "edge": 0.0054,
+   "edge": 0.0056,
    "tier": null
   },
   "PRA": {
@@ -321,13 +321,13 @@
    "side": "over",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0341,
+   "edge": 0.0335,
    "tier": "B"
   },
   "REB": {
    "line": 5.5,
-   "p_over": 0.474,
-   "p_under": 0.526,
+   "p_over": 0.475,
+   "p_under": 0.525,
    "fair_over": 0.491,
    "fair_under": 0.509,
    "price_over": 1.9,
@@ -335,7 +335,7 @@
    "side": "under",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0162,
+   "edge": 0.0161,
    "tier": null
   }
  },
@@ -445,7 +445,7 @@
    "starter": false,
    "rest": "2",
    "result": "W",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 24.8,
    "PTS": 13.0,
    "REB": 2.0,
@@ -469,7 +469,7 @@
    "starter": false,
    "rest": "2",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 11.0,
    "PTS": 12.0,
    "REB": 1.0,
@@ -1405,7 +1405,7 @@
    "starter": false,
    "rest": "7",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 25.9,
    "PTS": 17.0,
    "REB": 1.0,
@@ -1717,7 +1717,7 @@
    "starter": false,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 26.5,
    "PTS": 5.0,
    "REB": 6.0,
@@ -1765,7 +1765,7 @@
    "starter": false,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 24.5,
    "PTS": 21.0,
    "REB": 4.0,

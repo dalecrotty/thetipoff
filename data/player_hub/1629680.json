@@ -11,6 +11,13 @@
    "price_over": 2.1,
    "price_under": 1.68
   },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.58,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  },
   "PTS": {
    "line": 5.5,
    "price": 1.83,
@@ -24,16 +31,33 @@
    "book": "sportsbet",
    "price_over": 2.05,
    "price_under": 1.74
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 1.58,
-   "book": "sportsbet",
-   "price_over": 2.25,
-   "price_under": 1.58
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-08",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2026-11-08_detroit_vs_la-lakers",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 28.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 4.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-06",
    "opp": "Portland",
@@ -90,7 +114,7 @@
    "starter": true,
    "rest": "0",
    "result": "W",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 19.0,
    "PTS": 6.0,
    "REB": 1.0,
@@ -129,41 +153,17 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-30",
-   "opp": "Golden State",
-   "venue": "R",
-   "game": "2026-10-30_golden-state_vs_la-lakers",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 28.0,
-   "PTS": 10.0,
-   "REB": 3.0,
-   "AST": 0.0,
-   "3PM": 1.0,
-   "STL": 3.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 2.0,
-   "FGA": 6.0,
-   "3PA": 3.0,
-   "FTA": 5.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
    "line": 5.5,
-   "over": 3,
+   "over": 2,
    "n": 5
   },
   "REB": {
    "line": 2.5,
-   "over": 1,
+   "over": 0,
    "n": 5
   },
   "3PM": {

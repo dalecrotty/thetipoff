@@ -5,13 +5,13 @@
  "projections": {
   "3PM": {
    "mean": 2.11,
-   "floor": 0.18,
+   "floor": 0.17,
    "ceiling": 4.12
   },
   "AST": {
    "mean": 1.37,
-   "floor": 0.08,
-   "ceiling": 3.15
+   "floor": 0.0,
+   "ceiling": 2.97
   },
   "BLK": {
    "mean": 0.35,
@@ -20,13 +20,13 @@
   },
   "PTS": {
    "mean": 8.5,
-   "floor": 1.89,
+   "floor": 1.9,
    "ceiling": 15.05
   },
   "REB": {
-   "mean": 4.25,
-   "floor": 1.25,
-   "ceiling": 7.67
+   "mean": 4.26,
+   "floor": 1.26,
+   "ceiling": 7.68
   },
   "STL": {
    "mean": 0.74,
@@ -39,14 +39,14 @@
    "ceiling": 1.93
   },
   "PRA": {
-   "mean": 14.12,
-   "floor": 5.03,
-   "ceiling": 22.94
+   "mean": 14.13,
+   "floor": 5.04,
+   "ceiling": 22.96
   },
   "PR": {
-   "mean": 12.75,
-   "floor": 4.25,
-   "ceiling": 21.37
+   "mean": 12.76,
+   "floor": 4.26,
+   "ceiling": 21.38
   },
   "PA": {
    "mean": 9.87,
@@ -54,9 +54,9 @@
    "ceiling": 17.57
   },
   "RA": {
-   "mean": 5.62,
-   "floor": 1.75,
-   "ceiling": 9.86
+   "mean": 5.63,
+   "floor": 1.76,
+   "ceiling": 9.87
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PR": {
    "line": 14.5,
-   "p_over": 0.397,
-   "p_under": 0.603,
+   "p_over": 0.398,
+   "p_under": 0.602,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.85,
@@ -237,7 +237,7 @@
    "side": "under",
    "price": 1.85,
    "book": "pointsbetau",
-   "edge": 0.1026,
+   "edge": 0.102,
    "tier": "A"
   },
   "PTS": {
@@ -256,8 +256,8 @@
   },
   "REB": {
    "line": 4.5,
-   "p_over": 0.413,
-   "p_under": 0.587,
+   "p_over": 0.414,
+   "p_under": 0.586,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -265,7 +265,7 @@
    "side": "under",
    "price": 1.8,
    "book": "sportsbet",
-   "edge": 0.0658,
+   "edge": 0.0644,
    "tier": "A"
   },
   "3PM": {
@@ -279,7 +279,7 @@
    "side": "under",
    "price": 1.57,
    "book": "pointsbetau",
-   "edge": 0.0512,
+   "edge": 0.0517,
    "tier": "B"
   }
  },
@@ -773,7 +773,7 @@
    "starter": true,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 28.0,
    "PTS": 9.0,
    "REB": 6.0,
@@ -1253,7 +1253,7 @@
    "starter": false,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 22.0,
    "PTS": 5.0,
    "REB": 3.0,
@@ -1373,7 +1373,7 @@
    "starter": false,
    "rest": "0",
    "result": "L",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 17.0,
    "PTS": 6.0,
    "REB": 2.0,
@@ -1541,7 +1541,7 @@
    "starter": false,
    "rest": "7",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 16.0,
    "PTS": 15.0,
    "REB": 2.0,
@@ -2213,7 +2213,7 @@
    "starter": true,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 30.0,
    "PTS": 23.0,
    "REB": 5.0,
@@ -2357,7 +2357,7 @@
    "starter": true,
    "rest": "2",
    "result": "W",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 30.6,
    "PTS": 2.0,
    "REB": 5.0,
@@ -2381,7 +2381,7 @@
    "starter": true,
    "rest": "2",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 28.9,
    "PTS": 9.0,
    "REB": 5.0,
@@ -2621,7 +2621,7 @@
    "starter": true,
    "rest": "2",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 30.1,
    "PTS": 10.0,
    "REB": 12.0,
@@ -3581,7 +3581,7 @@
    "starter": true,
    "rest": "7",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 22.4,
    "PTS": 8.0,
    "REB": 6.0,
@@ -3941,7 +3941,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 33.8,
    "PTS": 14.0,
    "REB": 2.0,
@@ -3989,7 +3989,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 21.9,
    "PTS": 3.0,
    "REB": 5.0,

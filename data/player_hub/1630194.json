@@ -4,19 +4,19 @@
  "team": "Detroit",
  "opp": "Washington",
  "lines": {
-  "PA": {
-   "line": 14.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
   "PTS": {
    "line": 11.5,
    "price": 1.76,
    "book": "sportsbet",
    "price_over": 1.76,
    "price_under": 2.02
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
   },
   "PRA": {
    "line": 22.5,
@@ -34,7 +34,7 @@
   },
   "AST": {
    "line": 2.5,
-   "price": 2.25,
+   "price": 1.6,
    "book": "neds",
    "price_over": 2.25,
    "price_under": 1.6
@@ -55,6 +55,30 @@
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-08",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-11-08_detroit_vs_la-lakers",
+   "starter": true,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 20.0,
+   "PTS": 8.0,
+   "REB": 10.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-04",
    "opp": "Philadelphia",
@@ -150,36 +174,12 @@
    "FTA": 4.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-27",
-   "opp": "New York",
-   "venue": "R",
-   "game": "2026-10-27_detroit_vs_new-york",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 26.0,
-   "PTS": 22.0,
-   "REB": 9.0,
-   "AST": 3.0,
-   "3PM": 1.0,
-   "STL": 2.0,
-   "BLK": 1.0,
-   "TOV": 2.0,
-   "FGM": 9.0,
-   "FGA": 12.0,
-   "3PA": 1.0,
-   "FTA": 4.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
    "line": 11.5,
-   "over": 3,
+   "over": 2,
    "n": 5
   },
   "REB": {
@@ -189,7 +189,7 @@
   },
   "AST": {
    "line": 2.5,
-   "over": 3,
+   "over": 2,
    "n": 5
   }
  },

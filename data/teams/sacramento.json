@@ -4,7 +4,7 @@
   {
    "id": -774,
    "name": "Darius Acuff Jr.",
-   "games": 9,
+   "games": 10,
    "med_min": 37.0
   },
   {
@@ -16,8 +16,8 @@
   {
    "id": 203897,
    "name": "Zach LaVine",
-   "games": 80,
-   "med_min": 35.3
+   "games": 81,
+   "med_min": 35.2
   },
   {
    "id": 1627734,
@@ -28,7 +28,7 @@
   {
    "id": 1631099,
    "name": "Keegan Murray",
-   "games": 101,
+   "games": 102,
    "med_min": 35.0
   },
   {
@@ -40,8 +40,8 @@
   {
    "id": 1629631,
    "name": "De'Andre Hunter",
-   "games": 10,
-   "med_min": 30.5
+   "games": 11,
+   "med_min": 31.0
   },
   {
    "id": 201566,
@@ -52,7 +52,7 @@
   {
    "id": 1628370,
    "name": "Malik Monk",
-   "games": 135,
+   "games": 136,
    "med_min": 27.4
   },
   {
@@ -70,7 +70,7 @@
   {
    "id": 1631342,
    "name": "Daeqwon Plowden",
-   "games": 38,
+   "games": 39,
    "med_min": 25.7
   },
   {
@@ -82,7 +82,7 @@
   {
    "id": 1630173,
    "name": "Precious Achiuwa",
-   "games": 82,
+   "games": 83,
    "med_min": 23.7
   },
   {
@@ -90,12 +90,6 @@
    "name": "Nique Clifford",
    "games": 83,
    "med_min": 23.7
-  },
-  {
-   "id": 1641778,
-   "name": "Leaky Black",
-   "games": 4,
-   "med_min": 23.5
   },
   {
    "id": 1628989,
@@ -110,9 +104,15 @@
    "med_min": 22.0
   },
   {
+   "id": 1641778,
+   "name": "Leaky Black",
+   "games": 5,
+   "med_min": 22.0
+  },
+  {
    "id": 1642928,
    "name": "Dylan Cardwell",
-   "games": 46,
+   "games": 47,
    "med_min": 20.9
   },
   {
@@ -134,16 +134,16 @@
    "med_min": 18.1
   },
   {
-   "id": -758,
-   "name": "Emanuel Sharp",
-   "games": 9,
+   "id": 1642367,
+   "name": "Jonathan Mogbo",
+   "games": 5,
    "med_min": 18.0
   },
   {
-   "id": 1642367,
-   "name": "Jonathan Mogbo",
-   "games": 4,
-   "med_min": 18.0
+   "id": -758,
+   "name": "Emanuel Sharp",
+   "games": 10,
+   "med_min": 17.5
   },
   {
    "id": 1631222,
@@ -28858,6 +28858,181 @@
      "FGA": 20.0,
      "3PA": 9.0,
      "FTA": 2.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-11-08_miami_vs_sacramento",
+   "lines": {
+    "1631342": {
+     "min": 12.0,
+     "PTS": 6.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629631": {
+     "min": 31.0,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 11.0,
+     "3PA": 7.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1642928": {
+     "min": 18.0,
+     "PTS": 4.0,
+     "REB": 9.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642367": {
+     "min": 2.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1631099": {
+     "min": 23.0,
+     "PTS": 10.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 10.0,
+     "3PA": 3.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1628370": {
+     "min": 21.0,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 9.0,
+     "3PA": 3.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "203897": {
+     "min": 25.0,
+     "PTS": 15.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 6.0,
+     "FGA": 10.0,
+     "3PA": 5.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1630173": {
+     "min": 36.0,
+     "PTS": 7.0,
+     "REB": 14.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 6.0,
+     "FGM": 3.0,
+     "FGA": 5.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1641778": {
+     "min": 20.0,
+     "PTS": 6.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 4.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-758": {
+     "min": 12.0,
+     "PTS": 5.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 5.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-774": {
+     "min": 39.0,
+     "PTS": 32.0,
+     "REB": 5.0,
+     "AST": 10.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "FGM": 11.0,
+     "FGA": 21.0,
+     "3PA": 7.0,
+     "FTA": 7.0,
      "starter": true
     }
    }
