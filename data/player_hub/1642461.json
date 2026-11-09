@@ -3,7 +3,22 @@
  "player": "Spencer Jones",
  "team": "Denver",
  "opp": "Houston",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 2.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PTS": {
+   "line": 4.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-07",
@@ -126,6 +141,17 @@
    "phase": "playoffs"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
