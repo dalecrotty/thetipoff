@@ -4,11 +4,25 @@
  "team": "Utah",
  "opp": "Minnesota",
  "lines": {
+  "REB": {
+   "line": 3.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
   "PTS": {
-   "line": 5.5,
-   "price": 1.9,
+   "line": 6.5,
+   "price": 1.83,
    "book": "pointsbetau",
-   "price_over": 1.9,
+   "price_over": 2.0,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 9.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.86,
    "price_under": 1.9
   }
  },
@@ -136,8 +150,13 @@
  ],
  "hits": {
   "PTS": {
-   "line": 5.5,
+   "line": 6.5,
    "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
    "n": 5
   }
  },
