@@ -2,8 +2,37 @@
  "player_id": 1631106,
  "player": "Tari Eason",
  "team": "Houston",
- "opp": null,
- "lines": {},
+ "opp": "Denver",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.58,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 14.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-07",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

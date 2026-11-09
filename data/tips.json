@@ -1,39 +1,8 @@
 {
- "generated_at": "2026-11-09T04:40+00:00",
- "slate_date": "2026-11-08",
- "au_game_date": "2026-11-09",
- "today": {
-  "slate_date": "2026-11-08",
-  "player_id": 1641740,
-  "player": "Jaylen Clark",
-  "team": "Minnesota",
-  "opp": "Utah",
-  "game_start": "2026-11-09T00:00:00+00:00",
-  "market": "player_rebounds",
-  "market_label": "Rebounds",
-  "book": "pointsbetau",
-  "book_label": "PointsBet",
-  "side": "under",
-  "line": 2.5,
-  "price": 1.83,
-  "model_proj": 1.60188660368018,
-  "model_prob": 0.777923875551085,
-  "fair_prob": 0.509383378016086,
-  "edge": 0.268540497535,
-  "au_book": true,
-  "trial": false,
-  "posted_at": "2026-11-08T09:50:33.180288+00:00",
-  "posted_by": "tip (board)",
-  "closing_line": 2.5,
-  "closing_price": 1.71,
-  "clv": 0.0417977243461187,
-  "clv_method": "price",
-  "actual": 2.0,
-  "result": "win",
-  "x_post_id": "2119385422073631135",
-  "stake": 1.0,
-  "units": 0.83
- },
+ "generated_at": "2026-11-09T08:02+00:00",
+ "slate_date": "2026-11-09",
+ "au_game_date": "2026-11-10",
+ "today": null,
  "summary": {
   "n_tips": 19,
   "n_clv": 17,
@@ -694,7 +663,10 @@
    "units": -1.0
   }
  ],
- "next_check": null,
+ "next_check": {
+  "at": "2026-11-09T11:00+00:00",
+  "kind": "retry"
+ },
  "rules": {
   "price_floor": 1.7,
   "books": [

@@ -1,6 +1,6 @@
 {
  "calibration": {
-  "asof": "2026-11-08",
+  "asof": "2026-11-09",
   "season_start": "2026-10-20",
   "markets": [
    {
@@ -8,12 +8,12 @@
     "label": "Points",
     "windows": {
      "7d": {
-      "n": 1136,
+      "n": 1048,
       "mae": 4.21,
-      "bias": 0.31,
-      "coverage": 0.8336,
-      "below": 0.0827,
-      "above": 0.0836
+      "bias": 0.3,
+      "coverage": 0.8302,
+      "below": 0.0859,
+      "above": 0.084
      },
      "30d": {
       "n": 3097,
@@ -38,12 +38,12 @@
     "label": "Rebounds",
     "windows": {
      "7d": {
-      "n": 1136,
-      "mae": 1.79,
+      "n": 1048,
+      "mae": 1.78,
       "bias": -0.09,
-      "coverage": 0.8107,
-      "below": 0.0854,
-      "above": 0.1039
+      "coverage": 0.813,
+      "below": 0.084,
+      "above": 0.1031
      },
      "30d": {
       "n": 3097,
@@ -68,12 +68,12 @@
     "label": "Assists",
     "windows": {
      "7d": {
-      "n": 1136,
+      "n": 1048,
       "mae": 1.31,
-      "bias": 0.03,
-      "coverage": 0.8019,
-      "below": 0.0986,
-      "above": 0.0995
+      "bias": 0.04,
+      "coverage": 0.8006,
+      "below": 0.1031,
+      "above": 0.0964
      },
      "30d": {
       "n": 3097,
@@ -98,12 +98,12 @@
     "label": "Threes",
     "windows": {
      "7d": {
-      "n": 1136,
-      "mae": 0.84,
-      "bias": -0.05,
-      "coverage": 0.7658,
-      "below": 0.1188,
-      "above": 0.1153
+      "n": 1048,
+      "mae": 0.83,
+      "bias": -0.04,
+      "coverage": 0.77,
+      "below": 0.1202,
+      "above": 0.1097
      },
      "30d": {
       "n": 3097,
