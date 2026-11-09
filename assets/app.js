@@ -319,6 +319,13 @@ const STALE_HOURS = 24;
 
 function staleNotice(m) {
   const lastGood = m.last_ok_at || m.computed_at;
+  // last night's box scores missing (9 Nov 2026): the numbers are tonight's
+  // but a game short for the teams named, and The Drop is held
+  if (m.status === "partial") {
+    return `Box scores from <b>${esc(m.partial_games || "some of last night's games")}</b> `
+      + `haven't loaded yet, so predictions for those teams are missing their latest game. `
+      + `They update on the next run.`;
+  }
   if (m.status === "stale") {
     return `These are the numbers from <b>${whenAEDT(lastGood)}</b>. Tonight's run `
       + `did not complete, so nothing here has been updated since.`;
