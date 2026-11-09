@@ -3,7 +3,29 @@
  "player": "Daniel Gafford",
  "team": "Dallas",
  "opp": "Indiana",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 8.5,
+   "price": 1.71,
+   "book": "unibet",
+   "price_over": 1.71,
+   "price_under": 2.05
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.81,
+   "price_under": 1.93
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.73,
+   "book": "unibet",
+   "price_over": 1.73,
+   "price_under": 2.02
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-08",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
