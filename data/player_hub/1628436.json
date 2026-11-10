@@ -4,12 +4,33 @@
  "team": "San Antonio",
  "opp": "Phoenix",
  "lines": {
-  "PTS": {
-   "line": 5.5,
-   "price": 1.8,
+  "PRA": {
+   "line": 11.5,
+   "price": 1.87,
    "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 3.5,
+   "price": 1.74,
+   "book": "pointsbetau",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 8.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
   }
  },
  "recent_games": [
@@ -136,8 +157,13 @@
  ],
  "hits": {
   "PTS": {
-   "line": 5.5,
+   "line": 3.5,
    "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
    "n": 5
   }
  },
