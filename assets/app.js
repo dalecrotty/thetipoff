@@ -1461,13 +1461,22 @@ async function initWow() {
       `${m.word} <b class="${m.pct > 0 ? "pos" : "neg"}">${m.pct > 0 ? "+" : "−"}${Math.abs(m.pct * 100).toFixed(0)}%</b> (${m.a.toFixed(1)} v ${m.b.toFixed(1)})`).join(", ") + ".";
   };
 
-  const renderMates = () => {
+  // keep: carry the with/without picks over (owner, 11 Nov 2026: "Many
+  // people would be going through player by player without say Jalen
+  // Williams, and wouldnt want to reset it every time the player changes");
+  // a pick that is now the player himself, or didn't play in the season, drops
+  // the picks as last chosen, so one set aside while its player is the
+  // one being looked at comes back on the next player
+  let chosen = [[], []];
+  const onPick = () => { chosen = [[...withP], [...withoutP]]; render(); };
+  const renderMates = (keep = false) => {
+    if (!keep) chosen = [[], []];
     const games = seasonGames();
     const ids = new Set(games.flatMap(g => Object.keys(g.lines)));
     const mates = team.players.filter(p => String(p.id) !== focal && ids.has(String(p.id))).map(p => p.name);
     $("#wPick").innerHTML = `<div id="wWith"></div><div id="wWithout"></div>`;
-    withP = multiSelect($("#wWith"), "With (played)", mates, render);
-    withoutP = multiSelect($("#wWithout"), "Without (sat)", mates, render);
+    withP = multiSelect($("#wWith"), "With (played)", mates, onPick, chosen[0]);
+    withoutP = multiSelect($("#wWithout"), "Without (sat)", mates, onPick, chosen[1]);
   };
 
   const render = () => {
@@ -1642,10 +1651,10 @@ async function initWow() {
   };
 
   teamSel.onchange = () => loadTeam(teamSel.value);
-  seasonSel.onchange = () => { season = seasonSel.value; seasonSel.dataset.auto = "0"; fillPlayers(); renderMates(); render(); };
+  seasonSel.onchange = () => { season = seasonSel.value; seasonSel.dataset.auto = "0"; fillPlayers(); renderMates(true); render(); };
   $("#wLastN").oninput = e => { lastN = Math.max(0, Math.floor(+e.target.value) || 0); render(); };
   $("#wOnly").onchange = e => { onlyMatch = e.target.checked; render(); };
-  playerSel.onchange = () => { focal = playerSel.value; Object.keys(wLines).forEach(k => delete wLines[k]); renderMates(); render(); };
+  playerSel.onchange = () => { focal = playerSel.value; Object.keys(wLines).forEach(k => delete wLines[k]); renderMates(true); render(); };
   $("#wReset").onclick = () => { renderMates(); render(); };
   await loadTeam(teamSel.value);
 }
@@ -2345,10 +2354,14 @@ async function initTrends() {
 /* ---------- team page: the game log, filters, with / without ---------- */
 /* a compact multi-select: a button that opens a checklist (native multi-
    selects are unusable on a phone) */
-function multiSelect(el, label, options, onChange) {
-  const picked = new Set();
-  el.innerHTML = `<details class="msel"><summary><span class="k">${esc(label)}</span><span class="v">Anyone</span></summary>
-    <div class="list">${options.map(o => `<label><input type="checkbox" value="${esc(o)}"> ${esc(o)}</label>`).join("")}</div></details>`;
+function multiSelect(el, label, options, onChange, initial = []) {
+  // initial: names ticked from the start (kept across a change of player
+  // on the With/Without page, owner 11 Nov 2026); names not on offer drop
+  const picked = new Set(initial.filter(o => options.includes(o)));
+  el.innerHTML = `<details class="msel"><summary><span class="k">${esc(label)}</span><span class="v">${
+      picked.size ? esc([...picked].join(", ")) : "Anyone"}</span></summary>
+    <div class="list">${options.map(o => `<label><input type="checkbox" value="${esc(o)}"${
+      picked.has(o) ? " checked" : ""}> ${esc(o)}</label>`).join("")}</div></details>`;
   const det = $("details", el), v = $(".v", el);
   det.addEventListener("change", e => {
     if (e.target.checked) picked.add(e.target.value); else picked.delete(e.target.value);
