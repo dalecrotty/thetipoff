@@ -4,59 +4,59 @@
  "team": "Houston",
  "projections": {
   "3PM": {
-   "mean": 1.06,
+   "mean": 1.03,
    "floor": 0.0,
-   "ceiling": 2.93
+   "ceiling": 2.91
   },
   "AST": {
-   "mean": 2.01,
-   "floor": 0.0,
-   "ceiling": 3.99
+   "mean": 1.96,
+   "floor": 0.15,
+   "ceiling": 4.08
   },
   "BLK": {
-   "mean": 0.27,
+   "mean": 0.26,
    "floor": 0.0,
    "ceiling": 1.0
   },
   "PTS": {
-   "mean": 7.23,
-   "floor": 0.77,
+   "mean": 7.05,
+   "floor": 0.99,
    "ceiling": 13.88
   },
   "REB": {
-   "mean": 1.97,
-   "floor": 0.2,
-   "ceiling": 4.18
+   "mean": 1.92,
+   "floor": 0.15,
+   "ceiling": 4.13
   },
   "STL": {
-   "mean": 1.14,
-   "floor": 0.01,
-   "ceiling": 2.98
+   "mean": 1.11,
+   "floor": 0.0,
+   "ceiling": 2.95
   },
   "TOV": {
-   "mean": 1.4,
+   "mean": 1.37,
    "floor": 0.0,
-   "ceiling": 3.02
+   "ceiling": 2.99
   },
   "PRA": {
-   "mean": 11.2,
-   "floor": 2.58,
-   "ceiling": 19.98
+   "mean": 10.93,
+   "floor": 2.3,
+   "ceiling": 19.71
   },
   "PR": {
-   "mean": 9.2,
-   "floor": 2.43,
-   "ceiling": 17.31
+   "mean": 8.97,
+   "floor": 2.2,
+   "ceiling": 17.08
   },
   "PA": {
-   "mean": 9.23,
-   "floor": 1.7,
-   "ceiling": 16.93
+   "mean": 9.01,
+   "floor": 2.32,
+   "ceiling": 15.98
   },
   "RA": {
-   "mean": 3.98,
-   "floor": 1.23,
-   "ceiling": 7.28
+   "mean": 3.88,
+   "floor": 1.13,
+   "ceiling": 7.18
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "3PM": {
    "line": 1.5,
-   "p_over": 0.283,
-   "p_under": 0.717,
+   "p_over": 0.274,
+   "p_under": 0.726,
    "fair_over": 0.433,
    "fair_under": 0.567,
    "price_over": 2.15,
@@ -237,21 +237,21 @@
    "side": "under",
    "price": 1.64,
    "book": "sportsbet",
-   "edge": 0.1493,
+   "edge": 0.1584,
    "tier": "A"
   },
   "PTS": {
    "line": 6.5,
-   "p_over": 0.56,
-   "p_under": 0.44,
-   "fair_over": 0.481,
-   "fair_under": 0.519,
+   "p_over": 0.545,
+   "p_under": 0.455,
+   "fair_over": 0.483,
+   "fair_under": 0.517,
    "price_over": 1.93,
-   "price_under": 1.79,
+   "price_under": 1.8,
    "side": "over",
    "price": 1.93,
    "book": "unibet",
-   "edge": 0.0784,
+   "edge": 0.0624,
    "tier": "A"
   }
  },
