@@ -275,12 +275,17 @@ async function loadJSON(path) {
 /* Player links go to the player's name address (owner, 26 Oct 2026: "our
    URL is player IDs, not the player name"): data/player_pages.json maps id
    to /players/<name>.html, and "_full" says those are the full player
-   pages. Before the first build that writes them, and for a player without
-   one, the ID address (player.html?id=) stands. */
+   pages. One address per page (owner, 10 Nov 2026): a player without a name
+   page is named, not linked (pLink); the ID address is only where the
+   search box sends someone with no name page to go to (pHref). */
 let PLAYER_PAGES = {};
 const playerPagesReady = loadJSON("data/player_pages.json")
   .then(p => { if (p && p._full) PLAYER_PAGES = p; }).catch(() => {});
 const pHref = id => PLAYER_PAGES[String(id)] || `/player.html?id=${id}`;
+const pLink = (id, name) => {
+  const to = PLAYER_PAGES[String(id)];
+  return to ? `<a href="${to}">${esc(name)}</a>` : esc(name);
+};
 
 /* The members' data (api.html#members). The public file under /data
    carries the free columns; the full payload comes from the data endpoint,
@@ -433,7 +438,7 @@ const STAT_WORD = { PTS: "points", REB: "rebounds", AST: "assists",
 
 function playerCell(r) {
   const opp = r.opp ? ` v ${teamMeta(r.opp)[0]}` : "";
-  return `<td class="s pl"><a href="${pHref(r.player_id)}">${esc(r.player)}</a>${moveInfo(r)}
+  return `<td class="s pl">${pLink(r.player_id, r.player)}${moveInfo(r)}
     <div class="sm"><a href="${teamHref(r.team)}" title="${esc(r.team)} game trends">${teamBadge(r.team)}</a>${esc(opp)}${
       r.minutes != null ? ` · ${fmt(r.minutes, 0)} min` : ""}${
       r.minutes_source && r.minutes_source !== "model"
@@ -873,7 +878,7 @@ function renderMovers(data) {
     <p class="sub">Predictions that moved after news. Updated ${
       ups.join(", ")} (${zoneName(new Date())}).${more ? ` <a href="#" id="moversAll">All ${m.length} →</a>` : ""}</p>
     <div class="tablewrap"><table><tbody>${m.map((r, i) => `<tr${i >= CAP ? ' class="more" hidden' : ""}>
-      <td class="s"><a href="${pHref(r.player_id)}">${esc(r.player)}</a></td>
+      <td class="s">${pLink(r.player_id, r.player)}</td>
       <td class="s"><a href="${teamHref(r.team)}" title="${esc(r.team)} game trends">${teamBadge(r.team)}</a></td>
       <td class="s">${r.stat}</td>
       <td class="num dim">${fmt(r.prior)}</td>
@@ -1770,8 +1775,7 @@ async function initBoxscore() {
         ${S.map(s => `<th>${s}</th>`).join("")}</tr></thead>
       <tbody>
         ${t.players.map(p => `<tr>
-          <td class="s"><a href="${pHref(p.player_id)}">
-            ${esc(p.player)}</a>${p.starter
+          <td class="s">${pLink(p.player_id, p.player)}${p.starter
               ? ' <span class="badge src">start</span>' : ""}</td>
           <td class="num">${fmt(p.min, 0)}</td>
           ${S.map(s => `<td class="num">${fmt(p[s], 0)}</td>`).join("")}
@@ -2010,7 +2014,7 @@ async function initHome() {
     .sort((a, b) => b.edge - a.edge).slice(0, 6);
   $("#hEdges").innerHTML = `<div class="ph2"><span>Biggest edges tonight</span><a href="/predictions.html">All predictions →</a></div>` + (rows.length
     ? `<table class="mini"><tbody>${rows.map(r => `<tr>
-        <td class="s"><a href="${pHref(r.player_id)}">${esc(r.player)}</a> <span class="sm dim">${esc(STAT_WORD[r.stat] || r.stat)}</span></td>
+        <td class="s">${pLink(r.player_id, r.player)} <span class="sm dim">${esc(STAT_WORD[r.stat] || r.stat)}</span></td>
         <td class="num"><span class="ours">${fmt(r.proj)}</span> <span class="dim">v ${fmt(r.line)}</span></td>
         <td class="num">${edgeSpan(r)}</td></tr>`).join("")}</tbody></table>`
     : `<p class="dim">Edges appear once the bookmakers post tonight's player lines.</p>`);
@@ -2455,48 +2459,88 @@ const SIGNUP = {
   key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdwdXBzZ2t5eWxkcXlmZW10am1sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3NDQ5NjQsImV4cCI6MjA5NzMyMDk2NH0.QKumwzupWA_61YodHozZmHE32HTIlHnoquXxaNzlvBA",
 };
 
-function mountSignup() {
-  const foot = $("footer.rg");
-  if (!foot || $("#signup")) return;
+/* One sign-up box, `where` naming it ("footer" on every page, "top" near
+   the top of the API page, today's tips and every team page; owner, 10 Nov
+   2026). Ids carry `where`, so two boxes can share a page.
+
+   The GA4 event (owner, 10 Nov 2026: "Fire the GA4 sign_up event only after
+   the sign-up succeeds, with the page it happened on"): sign_up goes once
+   the function has answered ok, never on a typo or a refusal, with
+   source_page (the page) and form_location (which box). One sign-up is one
+   event: a browser that has signed up says so in every box on the page and
+   on later pages (dc.signed_up), so it can't send a second. The function's
+   answer never says whether an address was already on the list. */
+const SIGNED_UP = "dc.signed_up";
+const signedUp = () => { try { return localStorage.getItem(SIGNED_UP) === "1"; } catch { return false; } };
+const ON_LIST = "You're on the list. We'll email you once, when memberships open.";
+
+function signupBox(where) {
+  const id = where === "footer" ? "signup" : `signup-${where}`;
+  if (document.getElementById(id)) return null;
   const el = document.createElement("section");
-  el.className = "signup";
-  el.id = "signup";
+  el.className = `signup su-${where}`;
+  el.id = id;
   el.innerHTML = `
     <div class="su-copy"><b>Email before 1 December: season one for ${US ? "US$49 (A$69), not US$69" : "A$69 (US$49), not A$99"}.</b>
       <span>Leave your email and we'll send the offer when memberships open. One email, nothing else.</span></div>
-    <form id="suForm" novalidate>
-      <label class="vh" for="suEmail">Email address</label>
-      <input id="suEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
-      <input id="suWebsite" class="vh" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button id="suBtn" type="submit">Sign up</button>
+    <form class="su-form" novalidate>
+      <label class="vh" for="suEmail-${where}">Email address</label>
+      <input id="suEmail-${where}" class="su-email" type="email" autocomplete="email" placeholder="you@example.com" required>
+      <input class="vh su-web" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="su-btn" type="submit">Sign up</button>
     </form>
-    <p class="su-msg" id="suMsg" role="status"></p>
+    <p class="su-msg" role="status"></p>
     <p class="su-fine">Used only to send the offer when memberships open. The early-bird season pass is ${US ? "US$49 or A$69" : "A$69 or US$49"} for season one (1 December to the Finals); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
-  foot.before(el);
-  $("#suForm").addEventListener("submit", async ev => {
+  const form = el.querySelector("form"), msg = el.querySelector(".su-msg"), btn = el.querySelector(".su-btn");
+  if (signedUp()) { form.hidden = true; msg.textContent = ON_LIST; msg.className = "su-msg ok"; }
+  let busy = false;
+  form.addEventListener("submit", async ev => {
     ev.preventDefault();
-    const email = $("#suEmail").value.trim();
-    const msg = $("#suMsg"), btn = $("#suBtn");
+    if (busy) return;
+    const email = el.querySelector(".su-email").value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
       msg.textContent = "That email address doesn't look right."; msg.className = "su-msg err"; return;
     }
-    btn.disabled = true; btn.textContent = "Signing up…"; msg.textContent = "";
+    const honey = el.querySelector(".su-web").value;
+    busy = true; btn.disabled = true; btn.textContent = "Signing up…"; msg.textContent = "";
     try {
       const r = await fetch(SIGNUP.url, { method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": `Bearer ${SIGNUP.key}` },
-        body: JSON.stringify({ email, page: location.pathname, website: $("#suWebsite").value }) });
+        body: JSON.stringify({ email, page: location.pathname, website: honey }) });
       const d = await r.json().catch(() => ({}));
       if (r.ok && d.ok) {
-        $("#suForm").hidden = true;
-        msg.textContent = "You're on the list. We'll email you once, when memberships open."; msg.className = "su-msg ok";
-        window.dcEvent?.("sign_up", { method: "email", source_page: location.pathname });
+        const first = !signedUp();
+        try { localStorage.setItem(SIGNED_UP, "1"); } catch {}
+        // every box on the page now says so
+        document.querySelectorAll("section.signup").forEach(box => {
+          box.querySelector("form").hidden = true;
+          const m = box.querySelector(".su-msg"); m.textContent = ON_LIST; m.className = "su-msg ok";
+        });
+        if (first && !honey)
+          window.dcEvent?.("sign_up", { method: "email", source_page: location.pathname, form_location: where });
       } else {
         msg.textContent = d.error || "That didn't go through. Try again in a minute."; msg.className = "su-msg err";
       }
     } catch {
       msg.textContent = "That didn't go through. Try again in a minute."; msg.className = "su-msg err";
-    } finally { btn.disabled = false; btn.textContent = "Sign up"; }
+    } finally { busy = false; btn.disabled = false; btn.textContent = "Sign up"; }
   });
+  return el;
+}
+
+// a box near the top of these pages too (owner, 10 Nov 2026), under the
+// page's opening paragraph
+const SIGNUP_TOP = [/^\/api\.html$/, /^\/nba\/tips-today\/?(index\.html)?$/, /^\/teams\/(?!index\.html$)[a-z0-9-]+\.html$/];
+
+function mountSignup() {
+  const foot = $("footer.rg");
+  if (foot) { const box = signupBox("footer"); if (box) foot.before(box); }
+  if (SIGNUP_TOP.some(re => re.test(location.pathname))) {
+    const main = $("main");
+    const anchor = main && (main.querySelector("p.lead") || main.querySelector("h1"));
+    const box = anchor && signupBox("top");
+    if (box) anchor.after(box);
+  }
 }
 addEventListener("DOMContentLoaded", mountSignup);
 

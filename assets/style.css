@@ -573,8 +573,11 @@ table.rec { min-width: 0; }
 .signup .su-msg.err { color: var(--dn); }
 .signup .su-fine { grid-column: 1 / -1; margin: 0; color: var(--faint); font-size: 12.5px; }
 .signup .su-fine a { color: var(--muted); }
+/* near the top of a page (10 Nov 2026): inside the page's column, boxed */
+.signup.su-top { max-width: none; margin: 4px 0 20px; border: 1px solid var(--line); background: var(--panel); }
 @media (max-width: 640px) {
   .signup { grid-template-columns: minmax(0, 1fr); margin-top: 16px; }
+  .signup.su-top { margin-top: 4px; }
   .signup form { width: 100%; }
   .signup input[type=email] { flex: 1; width: auto; min-width: 0; }
 }
