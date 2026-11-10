@@ -4,12 +4,33 @@
  "team": "Sacramento",
  "opp": "Orlando",
  "lines": {
+  "AST": {
+   "line": 4.5,
+   "price": 1.63,
+   "book": "unibet",
+   "price_over": 2.17,
+   "price_under": 1.63
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.57,
+   "book": "unibet",
+   "price_over": 2.28,
+   "price_under": 1.57
+  },
   "PTS": {
    "line": 8.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 13.5,
+   "price": 2.06,
+   "book": "unibet",
+   "price_over": 2.06,
+   "price_under": 1.7
   }
  },
  "recent_games": [
@@ -138,6 +159,16 @@
   "PTS": {
    "line": 8.5,
    "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
    "n": 5
   }
  },

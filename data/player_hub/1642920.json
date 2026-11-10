@@ -4,12 +4,19 @@
  "team": "LA Clippers",
  "opp": "Phoenix",
  "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.7,
+   "book": "unibet",
+   "price_over": 2.07,
+   "price_under": 1.7
+  },
   "PTS": {
-   "line": 7.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
+   "line": 6.5,
+   "price": 1.77,
+   "book": "unibet",
+   "price_over": 1.77,
+   "price_under": 1.96
   }
  },
  "recent_games": [
@@ -136,7 +143,12 @@
  ],
  "hits": {
   "PTS": {
-   "line": 7.5,
+   "line": 6.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
    "over": 3,
    "n": 5
   }
