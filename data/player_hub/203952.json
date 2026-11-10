@@ -2,8 +2,51 @@
  "player_id": 203952,
  "player": "Andrew Wiggins",
  "team": "Miami",
- "opp": null,
- "lines": {},
+ "opp": "Utah",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 2.35,
+   "book": "unibet",
+   "price_over": 2.35,
+   "price_under": 1.54
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "PR": {
+   "line": 13.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "RA": {
+   "line": 4.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
+  },
+  "PRA": {
+   "line": 14.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-08",
@@ -126,6 +169,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

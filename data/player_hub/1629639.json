@@ -2,8 +2,30 @@
  "player_id": 1629639,
  "player": "Tyler Herro",
  "team": "Milwaukee",
- "opp": null,
- "lines": {},
+ "opp": "New York",
+ "lines": {
+  "PTS": {
+   "line": 19.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.72,
+   "book": "neds",
+   "price_over": 1.96,
+   "price_under": 1.72
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 2.15,
+   "book": "neds",
+   "price_over": 2.15,
+   "price_under": 1.65
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-08",
@@ -126,6 +148,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 19.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

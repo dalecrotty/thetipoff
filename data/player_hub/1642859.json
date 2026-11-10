@@ -2,8 +2,65 @@
  "player_id": 1642859,
  "player": "Jase Richardson",
  "team": "Orlando",
- "opp": null,
- "lines": {},
+ "opp": "Sacramento",
+ "lines": {
+  "RA": {
+   "line": 5.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "PA": {
+   "line": 11.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 1.76,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  },
+  "PR": {
+   "line": 11.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 1.98,
+   "book": "neds",
+   "price_over": 1.98,
+   "price_under": 1.77
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.44,
+   "book": "sportsbet",
+   "price_over": 2.6,
+   "price_under": 1.44
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-07",
@@ -61,7 +118,7 @@
    "starter": true,
    "rest": "0",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Bottom 10",
    "min": 29.0,
    "PTS": 9.0,
    "REB": 1.0,
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

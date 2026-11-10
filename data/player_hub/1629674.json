@@ -2,8 +2,44 @@
  "player_id": 1629674,
  "player": "Neemias Queta",
  "team": "Boston",
- "opp": null,
- "lines": {},
+ "opp": "Philadelphia",
+ "lines": {
+  "PTS": {
+   "line": 8.5,
+   "price": 1.76,
+   "book": "unibet",
+   "price_over": 1.76,
+   "price_under": 1.97
+  },
+  "PR": {
+   "line": 16.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "PRA": {
+   "line": 18.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "REB": {
+   "line": 6.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-08",
@@ -37,7 +73,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 15.0,
    "PTS": 4.0,
    "REB": 3.0,
@@ -126,6 +162,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

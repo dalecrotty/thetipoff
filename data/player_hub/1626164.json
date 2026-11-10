@@ -2,9 +2,90 @@
  "player_id": 1626164,
  "player": "Devin Booker",
  "team": "Phoenix",
- "opp": "San Antonio",
- "lines": {},
+ "opp": "LA Clippers",
+ "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 2.45,
+   "book": "sportsbet",
+   "price_over": 1.5,
+   "price_under": 2.45
+  },
+  "PR": {
+   "line": 29.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PTS": {
+   "line": 26.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PRA": {
+   "line": 34.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.91
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "PA": {
+   "line": 31.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 1.76,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-11-09",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-11-09_phoenix_vs_san-antonio",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 29.0,
+   "PTS": 32.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 10.0,
+   "FGA": 17.0,
+   "3PA": 5.0,
+   "FTA": 10.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-07",
    "opp": "Houston",
@@ -100,32 +181,29 @@
    "FTA": 8.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-30",
-   "opp": "Denver",
-   "venue": "H",
-   "game": "2026-10-30_denver_vs_phoenix",
-   "starter": true,
-   "rest": "3",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 39.0,
-   "PTS": 20.0,
-   "REB": 2.0,
-   "AST": 5.0,
-   "3PM": 3.0,
-   "STL": 2.0,
-   "BLK": 0.0,
-   "TOV": 4.0,
-   "FGM": 7.0,
-   "FGA": 19.0,
-   "3PA": 7.0,
-   "FTA": 4.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 26.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 0,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 5,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
