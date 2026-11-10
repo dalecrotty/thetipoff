@@ -4,12 +4,61 @@
  "team": "Milwaukee",
  "opp": "New York",
  "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.52,
+   "book": "sportsbet",
+   "price_over": 2.4,
+   "price_under": 1.52
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.67,
+   "book": "neds",
+   "price_over": 1.67,
+   "price_under": 2.15
+  },
   "PTS": {
    "line": 13.5,
-   "price": 1.92,
+   "price": 1.85,
    "book": "neds",
-   "price_over": 1.92,
-   "price_under": 1.82
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "PA": {
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
+  "PRA": {
+   "line": 22.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
   }
  },
  "recent_games": [
@@ -137,6 +186,21 @@
  "hits": {
   "PTS": {
    "line": 13.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
    "over": 3,
    "n": 5
   }
