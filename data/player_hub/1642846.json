@@ -4,33 +4,61 @@
  "team": "Utah",
  "opp": "Miami",
  "lines": {
+  "RA": {
+   "line": 7.5,
+   "price": 1.77,
+   "book": "unibet",
+   "price_over": 1.77,
+   "price_under": 1.95
+  },
   "AST": {
    "line": 1.5,
-   "price": 1.61,
+   "price": 1.6,
    "book": "unibet",
-   "price_over": 1.61,
+   "price_over": 1.6,
    "price_under": 2.23
+  },
+  "PA": {
+   "line": 18.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 24.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
   },
   "3PM": {
    "line": 2.5,
-   "price": 1.63,
-   "book": "pointsbetau",
-   "price_over": 2.25,
-   "price_under": 1.63
+   "price": 1.6,
+   "book": "unibet",
+   "price_over": 2.23,
+   "price_under": 1.6
   },
   "REB": {
    "line": 5.5,
-   "price": 1.8,
+   "price": 1.78,
    "book": "neds",
-   "price_over": 1.8,
-   "price_under": 1.95
+   "price_over": 1.78,
+   "price_under": 1.98
+  },
+  "PR": {
+   "line": 22.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
   },
   "PTS": {
-   "line": 17.5,
+   "line": 16.5,
    "price": 1.83,
-   "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.83
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
   }
  },
  "recent_games": [
@@ -157,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 17.5,
+   "line": 16.5,
    "over": 0,
    "n": 5
   },
