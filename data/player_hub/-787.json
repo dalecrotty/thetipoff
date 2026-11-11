@@ -4,28 +4,28 @@
  "team": "Oklahoma City",
  "projections": {
   "3PM": {
-   "mean": 1.34,
-   "floor": 0.05,
-   "ceiling": 3.07
+   "mean": 1.32,
+   "floor": 0.04,
+   "ceiling": 3.05
   },
   "AST": {
-   "mean": 1.42,
+   "mean": 1.4,
    "floor": 0.0,
-   "ceiling": 3.02
+   "ceiling": 3.0
   },
   "BLK": {
-   "mean": 0.18,
+   "mean": 0.17,
    "floor": 0.0,
    "ceiling": 1.01
   },
   "PTS": {
-   "mean": 7.78,
-   "floor": 1.18,
-   "ceiling": 14.34
+   "mean": 7.7,
+   "floor": 1.24,
+   "ceiling": 14.35
   },
   "REB": {
-   "mean": 2.08,
-   "floor": 0.23,
+   "mean": 2.05,
+   "floor": 0.28,
    "ceiling": 4.26
   },
   "STL": {
@@ -34,29 +34,29 @@
    "ceiling": 2.01
   },
   "TOV": {
-   "mean": 0.74,
+   "mean": 0.73,
    "floor": 0.0,
    "ceiling": 1.99
   },
   "PRA": {
-   "mean": 11.28,
-   "floor": 2.66,
-   "ceiling": 20.06
+   "mean": 11.15,
+   "floor": 2.53,
+   "ceiling": 19.93
   },
   "PR": {
-   "mean": 9.86,
-   "floor": 2.13,
-   "ceiling": 18.2
+   "mean": 9.75,
+   "floor": 2.02,
+   "ceiling": 18.09
   },
   "PA": {
-   "mean": 9.21,
-   "floor": 1.67,
-   "ceiling": 16.9
+   "mean": 9.1,
+   "floor": 1.57,
+   "ceiling": 16.8
   },
   "RA": {
-   "mean": 3.5,
-   "floor": 0.75,
-   "ceiling": 6.8
+   "mean": 3.45,
+   "floor": 0.71,
+   "ceiling": 6.76
   }
  },
  "minutes": {
@@ -226,10 +226,24 @@
   }
  },
  "lines": {
+  "PTS": {
+   "line": 6.5,
+   "p_over": 0.592,
+   "p_under": 0.408,
+   "fair_over": 0.48,
+   "fair_under": 0.52,
+   "price_over": 1.95,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.95,
+   "book": "pointsbetau",
+   "edge": 0.1119,
+   "tier": null
+  },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.38,
-   "p_under": 0.62,
+   "p_over": 0.374,
+   "p_under": 0.626,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -237,21 +251,7 @@
    "side": "under",
    "price": 1.8,
    "book": "sportsbet",
-   "edge": 0.0992,
-   "tier": null
-  },
-  "PTS": {
-   "line": 6.5,
-   "p_over": 0.598,
-   "p_under": 0.402,
-   "fair_over": 0.525,
-   "fair_under": 0.475,
-   "price_over": 1.77,
-   "price_under": 1.96,
-   "side": "over",
-   "price": 1.77,
-   "book": "unibet",
-   "edge": 0.0729,
+   "edge": 0.1047,
    "tier": null
   }
  },

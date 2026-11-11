@@ -4,40 +4,33 @@
  "team": "Philadelphia",
  "opp": "Boston",
  "lines": {
-  "RA": {
-   "line": 12.5,
-   "price": 1.71,
-   "book": "unibet",
-   "price_over": 2.05,
-   "price_under": 1.71
+  "REB": {
+   "line": 8.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
   },
   "AST": {
    "line": 3.5,
-   "price": 2.08,
+   "price": 2.1,
    "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
-  },
-  "PRA": {
-   "line": 31.5,
-   "price": 1.9,
-   "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.9
-  },
-  "PA": {
-   "line": 22.5,
-   "price": 1.87,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.85
+   "price_over": 2.1,
+   "price_under": 1.68
   },
   "3PM": {
    "line": 0.5,
-   "price": 1.64,
+   "price": 1.68,
    "book": "sportsbet",
-   "price_over": 1.64,
-   "price_under": 2.15
+   "price_over": 1.68,
+   "price_under": 2.1
+  },
+  "PTS": {
+   "line": 18.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.88
   }
  },
  "recent_games": [
@@ -163,6 +156,16 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 18.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
   "AST": {
    "line": 3.5,
    "over": 2,

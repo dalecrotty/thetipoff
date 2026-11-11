@@ -4,59 +4,59 @@
  "team": "Oklahoma City",
  "projections": {
   "3PM": {
-   "mean": 1.88,
+   "mean": 1.87,
    "floor": 0.0,
-   "ceiling": 3.89
+   "ceiling": 3.83
   },
   "AST": {
-   "mean": 1.7,
+   "mean": 1.69,
    "floor": 0.0,
    "ceiling": 3.81
   },
   "BLK": {
    "mean": 0.2,
    "floor": 0.0,
-   "ceiling": 0.98
+   "ceiling": 0.99
   },
   "PTS": {
-   "mean": 13.54,
-   "floor": 5.29,
-   "ceiling": 22.16
+   "mean": 13.49,
+   "floor": 5.41,
+   "ceiling": 22.5
   },
   "REB": {
-   "mean": 3.06,
-   "floor": 0.92,
-   "ceiling": 5.94
+   "mean": 3.04,
+   "floor": 0.9,
+   "ceiling": 5.99
   },
   "STL": {
    "mean": 0.89,
    "floor": 0.0,
-   "ceiling": 2.05
+   "ceiling": 2.04
   },
   "TOV": {
    "mean": 1.57,
    "floor": 0.0,
-   "ceiling": 3.03
+   "ceiling": 3.0
   },
   "PRA": {
-   "mean": 18.3,
-   "floor": 8.07,
-   "ceiling": 28.56
+   "mean": 18.22,
+   "floor": 7.99,
+   "ceiling": 28.49
   },
   "PR": {
-   "mean": 16.6,
-   "floor": 7.33,
-   "ceiling": 26.01
+   "mean": 16.54,
+   "floor": 7.26,
+   "ceiling": 25.94
   },
   "PA": {
-   "mean": 15.24,
-   "floor": 6.62,
-   "ceiling": 24.57
+   "mean": 15.18,
+   "floor": 6.56,
+   "ceiling": 24.51
   },
   "RA": {
-   "mean": 4.76,
-   "floor": 1.4,
-   "ceiling": 8.2
+   "mean": 4.73,
+   "floor": 1.37,
+   "ceiling": 8.18
   }
  },
  "minutes": {
@@ -228,48 +228,77 @@
  "lines": {
   "3PM": {
    "line": 1.5,
-   "p_over": 0.536,
-   "p_under": 0.464,
-   "fair_over": 0.551,
-   "fair_under": 0.449,
-   "price_over": 1.71,
-   "price_under": 2.1,
+   "p_over": 0.534,
+   "p_under": 0.466,
+   "fair_over": 0.568,
+   "fair_under": 0.432,
+   "price_over": 1.67,
+   "price_under": 2.2,
    "side": "under",
-   "price": 2.1,
+   "price": 2.2,
    "book": "pointsbetau",
-   "edge": 0.0149,
+   "edge": 0.0348,
    "tier": null
   },
-  "PA": {
-   "line": 14.5,
-   "p_over": 0.544,
-   "p_under": 0.456,
-   "fair_over": 0.489,
-   "fair_under": 0.511,
-   "price_over": 1.92,
-   "price_under": 1.84,
+  "PTS": {
+   "line": 12.5,
+   "p_over": 0.561,
+   "p_under": 0.439,
+   "fair_over": 0.491,
+   "fair_under": 0.509,
+   "price_over": 1.9,
+   "price_under": 1.83,
    "side": "over",
-   "price": 1.92,
-   "book": "sportsbet",
-   "edge": 0.0545,
-   "tier": "B"
+   "price": 1.9,
+   "book": "neds",
+   "edge": 0.0704,
+   "tier": "A"
   },
-  "PRA": {
-   "line": 17.5,
-   "p_over": 0.54,
-   "p_under": 0.46,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.88,
-   "price_under": 1.88,
+  "REB": {
+   "line": 2.5,
+   "p_over": 0.565,
+   "p_under": 0.435,
+   "fair_over": 0.568,
+   "fair_under": 0.432,
+   "price_over": 1.67,
+   "price_under": 2.2,
+   "side": "under",
+   "price": 2.2,
+   "book": "pointsbetau",
+   "edge": 0.0038,
+   "tier": null
+  }
+ },
+ "lines_us": {
+  "PTS": {
+   "line": 12.5,
+   "p_over": 0.561,
+   "p_under": 0.439,
+   "fair_over": 0.495,
+   "fair_under": 0.505,
+   "price_over": 1.9,
+   "price_under": 1.86,
    "side": "over",
-   "price": 1.88,
-   "book": "sportsbet",
-   "edge": 0.0399,
+   "price": 1.9,
+   "book": "betright",
+   "edge": 0.0664,
+   "tier": "A"
+  },
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.361,
+   "p_under": 0.639,
+   "fair_over": 0.406,
+   "fair_under": 0.594,
+   "price_over": 2.3,
+   "price_under": 1.57,
+   "side": "under",
+   "price": 1.57,
+   "book": "betright",
+   "edge": 0.0448,
    "tier": "B"
   }
  },
- "lines_us": {},
  "game_log": [
   {
    "date": "2024-10-23",
