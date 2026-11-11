@@ -2,8 +2,30 @@
  "player_id": -735,
  "player": "Meleek Thomas",
  "team": "Cleveland",
- "opp": null,
- "lines": {},
+ "opp": "New York",
+ "lines": {
+  "PTS": {
+   "line": 8.5,
+   "price": 1.96,
+   "book": "unibet",
+   "price_over": 1.96,
+   "price_under": 1.77
+  },
+  "PR": {
+   "line": 11.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.04,
+   "book": "unibet",
+   "price_over": 2.04,
+   "price_under": 1.72
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-09",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 5,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

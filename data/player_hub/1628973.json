@@ -2,9 +2,90 @@
  "player_id": 1628973,
  "player": "Jalen Brunson",
  "team": "New York",
- "opp": "Milwaukee",
- "lines": {},
+ "opp": "Cleveland",
+ "lines": {
+  "AST": {
+   "line": 6.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.68,
+   "book": "unibet",
+   "price_over": 2.08,
+   "price_under": 1.68
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PTS": {
+   "line": 25.5,
+   "price": 1.87,
+   "book": "unibet",
+   "price_over": 1.87,
+   "price_under": 1.85
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.72,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "PR": {
+   "line": 29.5,
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.79
+  },
+  "PRA": {
+   "line": 36.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 32.5,
+   "price": 1.89,
+   "book": "unibet",
+   "price_over": 1.89,
+   "price_under": 1.83
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-11-10",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2026-11-10_milwaukee_vs_new-york",
+   "starter": true,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 28.0,
+   "PTS": 23.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 7.0,
+   "FGA": 18.0,
+   "3PA": 3.0,
+   "FTA": 8.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-07",
    "opp": "Cleveland",
@@ -100,32 +181,29 @@
    "FTA": 6.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-10-28",
-   "opp": "Chicago",
-   "venue": "R",
-   "game": "2026-10-28_chicago_vs_new-york",
-   "starter": true,
-   "rest": "0",
-   "result": "W",
-   "opp_tier": "Bottom 10",
-   "min": 35.0,
-   "PTS": 38.0,
-   "REB": 1.0,
-   "AST": 7.0,
-   "3PM": 6.0,
-   "STL": 2.0,
-   "BLK": 0.0,
-   "TOV": 2.0,
-   "FGM": 13.0,
-   "FGA": 25.0,
-   "3PA": 10.0,
-   "FTA": 8.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 25.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

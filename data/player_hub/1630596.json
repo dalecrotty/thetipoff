@@ -2,8 +2,65 @@
  "player_id": 1630596,
  "player": "Evan Mobley",
  "team": "Cleveland",
- "opp": null,
- "lines": {},
+ "opp": "New York",
+ "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 2.4,
+   "book": "sportsbet",
+   "price_over": 2.4,
+   "price_under": 1.52
+  },
+  "REB": {
+   "line": 8.5,
+   "price": 1.81,
+   "book": "unibet",
+   "price_over": 1.92,
+   "price_under": 1.81
+  },
+  "PA": {
+   "line": 19.5,
+   "price": 1.96,
+   "book": "unibet",
+   "price_over": 1.96,
+   "price_under": 1.77
+  },
+  "PTS": {
+   "line": 15.5,
+   "price": 1.82,
+   "book": "unibet",
+   "price_over": 1.82,
+   "price_under": 1.89
+  },
+  "RA": {
+   "line": 11.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PRA": {
+   "line": 27.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.88
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.6,
+   "book": "sportsbet",
+   "price_over": 2.6,
+   "price_under": 1.45
+  },
+  "PR": {
+   "line": 24.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-09",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 15.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

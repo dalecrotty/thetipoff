@@ -28,14 +28,14 @@
   {
    "id": 1629636,
    "name": "Darius Garland",
-   "games": 29,
-   "med_min": 30.4
+   "games": 30,
+   "med_min": 30.3
   },
   {
    "id": 1629060,
    "name": "Rui Hachimura",
-   "games": 7,
-   "med_min": 30.0
+   "games": 8,
+   "med_min": 29.5
   },
   {
    "id": 1631097,
@@ -52,13 +52,13 @@
   {
    "id": 1627739,
    "name": "Kris Dunn",
-   "games": 166,
+   "games": 167,
    "med_min": 26.0
   },
   {
    "id": 1627884,
    "name": "Derrick Jones Jr.",
-   "games": 136,
+   "games": 137,
    "med_min": 25.0
   },
   {
@@ -70,14 +70,8 @@
   {
    "id": -788,
    "name": "Keaton Wagler",
-   "games": 9,
+   "games": 10,
    "med_min": 24.0
-  },
-  {
-   "id": 1629622,
-   "name": "Max Strus",
-   "games": 3,
-   "med_min": 23.0
   },
   {
    "id": 203992,
@@ -86,16 +80,22 @@
    "med_min": 22.9
   },
   {
-   "id": 201572,
-   "name": "Brook Lopez",
-   "games": 85,
-   "med_min": 21.4
+   "id": 1629622,
+   "name": "Max Strus",
+   "games": 4,
+   "med_min": 22.5
   },
   {
    "id": 1642920,
    "name": "Kobe Sanders",
-   "games": 78,
-   "med_min": 21.3
+   "games": 79,
+   "med_min": 21.6
+  },
+  {
+   "id": 201572,
+   "name": "Brook Lopez",
+   "games": 86,
+   "med_min": 21.2
   },
   {
    "id": 203078,
@@ -122,22 +122,22 @@
    "med_min": 19.0
   },
   {
-   "id": 1630543,
-   "name": "Isaiah Jackson",
-   "games": 25,
-   "med_min": 17.9
-  },
-  {
    "id": 201587,
    "name": "Nicolas Batum",
    "games": 152,
    "med_min": 17.7
   },
   {
+   "id": 1630543,
+   "name": "Isaiah Jackson",
+   "games": 26,
+   "med_min": 17.6
+  },
+  {
    "id": 1641711,
    "name": "Gradey Dick",
-   "games": 9,
-   "med_min": 17.0
+   "games": 10,
+   "med_min": 17.5
   },
   {
    "id": -666,
@@ -158,6 +158,12 @@
    "med_min": 13.8
   },
   {
+   "id": -740,
+   "name": "Baba Miller",
+   "games": 9,
+   "med_min": 9.0
+  },
+  {
    "id": 1642949,
    "name": "Yanic Konan Niederhauser",
    "games": 41,
@@ -168,12 +174,6 @@
    "name": "Bones Hyland",
    "games": 20,
    "med_min": 8.0
-  },
-  {
-   "id": -740,
-   "name": "Baba Miller",
-   "games": 8,
-   "med_min": 7.5
   },
   {
    "id": 1629234,
@@ -197,6 +197,12 @@
    "id": -655,
    "name": "Patty Mills",
    "games": 12,
+   "med_min": 6.0
+  },
+  {
+   "id": 1629618,
+   "name": "Jalen Pickett",
+   "games": 5,
    "med_min": 6.0
   },
   {
@@ -234,12 +240,6 @@
    "name": "Patrick Baldwin Jr.",
    "games": 4,
    "med_min": 4.2
-  },
-  {
-   "id": 1629618,
-   "name": "Jalen Pickett",
-   "games": 4,
-   "med_min": 4.0
   },
   {
    "id": 1641807,
@@ -30785,6 +30785,196 @@
      "FGA": 5.0,
      "3PA": 4.0,
      "FTA": 4.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-11-10_la-clippers_vs_phoenix",
+   "lines": {
+    "201572": {
+     "min": 19.0,
+     "PTS": 8.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 2.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1629636": {
+     "min": 25.0,
+     "PTS": 13.0,
+     "REB": 5.0,
+     "AST": 6.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 5.0,
+     "FGA": 12.0,
+     "3PA": 6.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1627884": {
+     "min": 24.0,
+     "PTS": 11.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 8.0,
+     "3PA": 5.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1641711": {
+     "min": 19.0,
+     "PTS": 10.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 9.0,
+     "3PA": 4.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "1630543": {
+     "min": 16.0,
+     "PTS": 4.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629618": {
+     "min": 8.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642920": {
+     "min": 26.0,
+     "PTS": 9.0,
+     "REB": 3.0,
+     "AST": 7.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 2.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1627739": {
+     "min": 19.0,
+     "PTS": 3.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 4.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1629622": {
+     "min": 22.0,
+     "PTS": 12.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 5.0,
+     "FGA": 12.0,
+     "3PA": 8.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629060": {
+     "min": 23.0,
+     "PTS": 13.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 10.0,
+     "3PA": 5.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "-740": {
+     "min": 16.0,
+     "PTS": 13.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 4.0,
+     "3PA": 1.0,
+     "FTA": 6.0,
+     "starter": false
+    },
+    "-788": {
+     "min": 23.0,
+     "PTS": 11.0,
+     "REB": 0.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 12.0,
+     "3PA": 7.0,
+     "FTA": 5.0,
      "starter": false
     }
    }
