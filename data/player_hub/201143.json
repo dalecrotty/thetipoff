@@ -5,57 +5,57 @@
  "projections": {
   "3PM": {
    "mean": 1.16,
-   "floor": 0.04,
+   "floor": 0.05,
    "ceiling": 3.04
   },
   "AST": {
    "mean": 1.97,
    "floor": 0.0,
-   "ceiling": 3.94
+   "ceiling": 3.95
   },
   "BLK": {
-   "mean": 0.88,
+   "mean": 0.87,
    "floor": 0.0,
-   "ceiling": 2.06
+   "ceiling": 2.05
   },
   "PTS": {
    "mean": 5.66,
-   "floor": 0.58,
-   "ceiling": 11.32
+   "floor": 0.83,
+   "ceiling": 11.37
   },
   "REB": {
    "mean": 3.57,
-   "floor": 1.12,
-   "ceiling": 6.35
+   "floor": 1.13,
+   "ceiling": 6.28
   },
   "STL": {
    "mean": 0.45,
    "floor": 0.0,
-   "ceiling": 1.24
+   "ceiling": 1.25
   },
   "TOV": {
    "mean": 0.68,
    "floor": 0.0,
-   "ceiling": 1.93
+   "ceiling": 1.94
   },
   "PRA": {
-   "mean": 11.2,
-   "floor": 2.58,
-   "ceiling": 19.98
+   "mean": 11.19,
+   "floor": 2.57,
+   "ceiling": 19.97
   },
   "PR": {
-   "mean": 9.23,
-   "floor": 1.5,
-   "ceiling": 17.57
+   "mean": 9.22,
+   "floor": 2.46,
+   "ceiling": 17.34
   },
   "PA": {
    "mean": 7.63,
-   "floor": 0.95,
-   "ceiling": 14.61
+   "floor": 0.94,
+   "ceiling": 14.6
   },
   "RA": {
    "mean": 5.54,
-   "floor": 1.67,
+   "floor": 1.66,
    "ceiling": 9.78
   }
  },
@@ -242,8 +242,8 @@
   },
   "PR": {
    "line": 8.5,
-   "p_over": 0.548,
-   "p_under": 0.452,
+   "p_over": 0.554,
+   "p_under": 0.446,
    "fair_over": 0.466,
    "fair_under": 0.534,
    "price_over": 2.02,
@@ -251,7 +251,7 @@
    "side": "over",
    "price": 2.02,
    "book": "sportsbet",
-   "edge": 0.0824,
+   "edge": 0.0888,
    "tier": "A"
   },
   "3PM": {
@@ -265,13 +265,13 @@
    "side": "over",
    "price": 1.48,
    "book": "unibet",
-   "edge": 0.0363,
+   "edge": 0.0358,
    "tier": null
   },
   "REB": {
    "line": 3.5,
-   "p_over": 0.465,
-   "p_under": 0.535,
+   "p_over": 0.464,
+   "p_under": 0.536,
    "fair_over": 0.478,
    "fair_under": 0.522,
    "price_over": 1.94,
@@ -279,7 +279,7 @@
    "side": "under",
    "price": 1.78,
    "book": "unibet",
-   "edge": 0.0134,
+   "edge": 0.0144,
    "tier": null
   }
  },

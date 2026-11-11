@@ -3,7 +3,43 @@
  "player": "Jamal Shead",
  "team": "Toronto",
  "opp": "Boston",
- "lines": {},
+ "lines": {
+  "PA": {
+   "line": 14.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 16.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 7.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.53,
+   "book": "unibet",
+   "price_over": 1.53,
+   "price_under": 2.38
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-09",
@@ -126,6 +162,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 7.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
