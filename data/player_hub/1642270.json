@@ -3,7 +3,36 @@
  "player": "Donovan Clingan",
  "team": "Portland",
  "opp": "Oklahoma City",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 10.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 2.4,
+   "book": "unibet",
+   "price_over": 1.51,
+   "price_under": 2.4
+  },
+  "REB": {
+   "line": 10.5,
+   "price": 1.91,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.83
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.43,
+   "book": "unibet",
+   "price_over": 1.43,
+   "price_under": 2.63
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-10",
@@ -126,6 +155,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 10.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
