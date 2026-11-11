@@ -3,7 +3,15 @@
  "player": "Isaac Okoro",
  "team": "Chicago",
  "opp": "San Antonio",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 7.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.91
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-08",
@@ -126,6 +134,12 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 7.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

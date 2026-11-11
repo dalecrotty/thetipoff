@@ -6,10 +6,24 @@
  "lines": {
   "PTS": {
    "line": 7.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.78,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.96
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
   }
  },
  "recent_games": [
@@ -137,6 +151,11 @@
  "hits": {
   "PTS": {
    "line": 7.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
    "over": 3,
    "n": 5
   }

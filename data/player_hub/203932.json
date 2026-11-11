@@ -3,7 +3,64 @@
  "player": "Aaron Gordon",
  "team": "Denver",
  "opp": "Memphis",
- "lines": {},
+ "lines": {
+  "RA": {
+   "line": 6.5,
+   "price": 1.65,
+   "book": "neds",
+   "price_over": 1.65,
+   "price_under": 2.15
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.58,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 2.0,
+   "book": "tab",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.67,
+   "book": "unibet",
+   "price_over": 2.1,
+   "price_under": 1.67
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 19.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "PR": {
+   "line": 17.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.9,
+   "price_under": 1.85
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-09",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
