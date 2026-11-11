@@ -4,12 +4,47 @@
  "team": "Utah",
  "opp": "Miami",
  "lines": {
+  "REB": {
+   "line": 3.5,
+   "price": 1.72,
+   "book": "tab",
+   "price_over": 1.72,
+   "price_under": 2.05
+  },
   "PTS": {
    "line": 7.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.36,
+   "book": "sportsbet",
+   "price_over": 2.9,
+   "price_under": 1.36
+  },
+  "PRA": {
+   "line": 12.5,
    "price": 1.85,
    "book": "tab",
-   "price_over": 1.9,
-   "price_under": 1.85
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 11.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
   }
  },
  "recent_games": [
@@ -138,6 +173,21 @@
   "PTS": {
    "line": 7.5,
    "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
    "n": 5
   }
  },
