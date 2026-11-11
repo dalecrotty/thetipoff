@@ -11,9 +11,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "3PM",
-   "proj": 2.19,
+   "proj": 2.17,
    "floor": 0.0,
-   "ceiling": 4.5,
+   "ceiling": 4.48,
    "sigma": 1.88,
    "minutes": 33,
    "rot_rank": null,
@@ -22,15 +22,15 @@
    "side": "over",
    "price": 1.68,
    "book": "sportsbet",
-   "edge": 0.0565,
-   "p_us": 0.612,
+   "edge": 0.052,
+   "p_us": 0.608,
    "p_book": 0.556,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.8,
-   "p_over": 0.612,
-   "p_under": 0.388,
+   "p_over": 0.608,
+   "p_under": 0.392,
    "fair_over": 0.556,
    "fair_under": 0.444,
    "price_over": 1.68,
@@ -46,7 +46,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 28
+   "rank": 29
   },
   {
    "player_id": -781,
@@ -175,26 +175,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "3PM",
-   "proj": 1.41,
+   "proj": 1.4,
    "floor": 0.0,
-   "ceiling": 2.99,
+   "ceiling": 2.98,
    "sigma": 1.36,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
    "price": 1.74,
    "book": "sportsbet",
-   "edge": 0.0568,
-   "p_us": 0.598,
+   "edge": 0.0611,
+   "p_us": 0.602,
    "p_book": 0.541,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.402,
-   "p_under": 0.598,
+   "p_over": 0.398,
+   "p_under": 0.602,
    "fair_over": 0.459,
    "fair_under": 0.541,
    "price_over": 2.05,
@@ -210,7 +210,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 73
+   "rank": 75
   },
   {
    "player_id": -161,
@@ -318,7 +318,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 61
   },
   {
    "player_id": 201143,
@@ -327,9 +327,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "3PM",
-   "proj": 1.17,
-   "floor": 0.06,
-   "ceiling": 3.05,
+   "proj": 1.16,
+   "floor": 0.04,
+   "ceiling": 3.04,
    "sigma": 1.18,
    "minutes": 18,
    "rot_rank": null,
@@ -338,15 +338,15 @@
    "side": "over",
    "price": 1.48,
    "book": "unibet",
-   "edge": 0.0402,
-   "p_us": 0.668,
+   "edge": 0.0363,
+   "p_us": 0.664,
    "p_book": 0.628,
-   "tier": "B",
-   "gate_status": "passed",
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.668,
-   "p_under": 0.332,
+   "p_over": 0.664,
+   "p_under": 0.336,
    "fair_over": 0.628,
    "fair_under": 0.372,
    "price_over": 1.48,
@@ -431,9 +431,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "3PM",
-   "proj": 4.55,
-   "floor": 2.25,
-   "ceiling": 6.86,
+   "proj": 4.5,
+   "floor": 2.21,
+   "ceiling": 6.81,
    "sigma": 1.88,
    "minutes": 32,
    "rot_rank": null,
@@ -442,15 +442,15 @@
    "side": "over",
    "price": 2.1,
    "book": "pointsbetau",
-   "edge": 0.0071,
-   "p_us": 0.456,
+   "edge": 0.0004,
+   "p_us": 0.449,
    "p_book": 0.449,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.8,
-   "p_over": 0.456,
-   "p_under": 0.544,
+   "p_over": 0.449,
+   "p_under": 0.551,
    "fair_over": 0.449,
    "fair_under": 0.551,
    "price_over": 2.1,
@@ -597,7 +597,7 @@
    "stat": "3PM",
    "proj": 0.81,
    "floor": 0.0,
-   "ceiling": 2.07,
+   "ceiling": 2.06,
    "sigma": 1.08,
    "minutes": 31,
    "rot_rank": null,
@@ -630,7 +630,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 132
+   "rank": 131
   },
   {
    "player_id": 203114,
@@ -754,7 +754,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 114
+   "rank": 117
   },
   {
    "player_id": 203937,
@@ -936,26 +936,6 @@
    "l10_over": 0.7,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "3PM",
-   "line": 1.5,
-   "price": 1.96,
-   "book": "unibet",
-   "price_over": 1.77,
-   "price_under": 1.96,
-   "l5_over": 0.4,
-   "l10_over": 0.3,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": "passed",
    "us": null
@@ -1587,9 +1567,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "3PM",
-   "proj": 1.7,
+   "proj": 1.69,
    "floor": 0.0,
-   "ceiling": 3.89,
+   "ceiling": 3.87,
    "sigma": 1.41,
    "minutes": 22,
    "rot_rank": null,
@@ -1598,15 +1578,15 @@
    "side": "under",
    "price": 1.84,
    "book": "sportsbet",
-   "edge": 0.0001,
-   "p_us": 0.511,
+   "edge": 0.0045,
+   "p_us": 0.515,
    "p_book": 0.511,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.4,
-   "p_over": 0.489,
-   "p_under": 0.511,
+   "p_over": 0.485,
+   "p_under": 0.515,
    "fair_over": 0.489,
    "fair_under": 0.511,
    "price_over": 1.92,
@@ -1622,7 +1602,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 54
   },
   {
    "player_id": 1629004,
@@ -2126,7 +2106,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 218
+   "rank": 216
   },
   {
    "player_id": 1629651,
@@ -2144,26 +2124,6 @@
    "l10_over": null,
    "pos": "C",
    "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -2265,7 +2225,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -2610,7 +2570,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 220
+   "rank": 218
   },
   {
    "player_id": 1630264,
@@ -2829,7 +2789,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -2914,7 +2874,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 163
   },
   {
    "player_id": 1630579,
@@ -2985,7 +2945,7 @@
    "stat": "3PM",
    "proj": 0.72,
    "floor": 0.0,
-   "ceiling": 1.98,
+   "ceiling": 1.97,
    "sigma": 1.08,
    "minutes": 20,
    "rot_rank": null,
@@ -3182,7 +3142,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 19
+   "rank": 20
   },
   {
    "player_id": 1631106,
@@ -3226,7 +3186,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 117
+   "rank": 119
   },
   {
    "player_id": 1631117,
@@ -3350,7 +3310,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 229
+   "rank": 227
   },
   {
    "player_id": 1631157,
@@ -3540,16 +3500,16 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "3PM",
    "line": 0.5,
-   "price": 2.4,
-   "book": "pointsbetau",
+   "price": 1.56,
+   "book": "unibet",
    "price_over": 1.56,
-   "price_under": 2.4,
+   "price_under": 2.3,
    "l5_over": 0.6,
    "l10_over": 0.6,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -3774,7 +3734,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 180
+   "rank": 178
   },
   {
    "player_id": 1641710,
@@ -4083,26 +4043,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "3PM",
-   "proj": 2.3,
-   "floor": 0.09,
-   "ceiling": 4.81,
+   "proj": 2.27,
+   "floor": 0.06,
+   "ceiling": 4.78,
    "sigma": 1.69,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
    "price": 1.57,
    "book": "pointsbetau",
-   "edge": 0.0064,
-   "p_us": 0.606,
+   "edge": 0.0129,
+   "p_us": 0.612,
    "p_book": 0.599,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.394,
-   "p_under": 0.606,
+   "p_over": 0.388,
+   "p_under": 0.612,
    "fair_over": 0.401,
    "fair_under": 0.599,
    "price_over": 2.35,
@@ -4362,7 +4322,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 67
   },
   {
    "player_id": 1642264,
@@ -4806,7 +4766,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 250
+   "rank": 248
   },
   {
    "player_id": 1642419,
@@ -4890,7 +4850,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 249
   },
   {
    "player_id": 1642504,
@@ -5474,7 +5434,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 140
+   "rank": 139
   },
   {
    "player_id": 1642959,
@@ -5578,7 +5538,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 261
+   "rank": 259
   },
   {
    "player_id": 1643052,
@@ -6182,7 +6142,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 278
   },
   {
    "player_id": -802,
@@ -6226,7 +6186,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 281
+   "rank": 279
   },
   {
    "player_id": 1643257,
@@ -6315,9 +6275,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 4.14,
-   "floor": 1.44,
-   "ceiling": 7.13,
+   "proj": 4.11,
+   "floor": 1.4,
+   "ceiling": 7.09,
    "sigma": 2.26,
    "minutes": 33,
    "rot_rank": null,
@@ -6326,15 +6286,15 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0672,
-   "p_us": 0.567,
+   "edge": 0.0609,
+   "p_us": 0.561,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.567,
-   "p_under": 0.433,
+   "p_over": 0.561,
+   "p_under": 0.439,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -6497,11 +6457,11 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 1.57,
-   "floor": 0.04,
-   "ceiling": 3.17,
+   "proj": 1.56,
+   "floor": 0.02,
+   "ceiling": 3.15,
    "sigma": 1.36,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -6532,7 +6492,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 126
+   "rank": 125
   },
   {
    "player_id": -161,
@@ -6649,9 +6609,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 1.99,
+   "proj": 1.97,
    "floor": 0.0,
-   "ceiling": 3.96,
+   "ceiling": 3.94,
    "sigma": 1.62,
    "minutes": 18,
    "rot_rank": null,
@@ -6690,7 +6650,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 107
+   "rank": 108
   },
   {
    "player_id": 201144,
@@ -6768,9 +6728,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 4.75,
-   "floor": 1.24,
-   "ceiling": 8.63,
+   "proj": 4.7,
+   "floor": 1.2,
+   "ceiling": 8.58,
    "sigma": 2.93,
    "minutes": 32,
    "rot_rank": null,
@@ -6779,15 +6739,15 @@
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0161,
-   "p_us": 0.495,
+   "edge": 0.0089,
+   "p_us": 0.488,
    "p_book": 0.479,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.6,
-   "p_over": 0.495,
-   "p_under": 0.505,
+   "p_over": 0.488,
+   "p_under": 0.512,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -6809,7 +6769,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 30
+   "rank": 31
   },
   {
    "player_id": 201942,
@@ -6938,9 +6898,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 8.07,
-   "floor": 4.56,
-   "ceiling": 11.95,
+   "proj": 7.99,
+   "floor": 4.48,
+   "ceiling": 11.87,
    "sigma": 2.93,
    "minutes": 31,
    "rot_rank": null,
@@ -6949,15 +6909,15 @@
    "side": "over",
    "price": 1.69,
    "book": "pointsbetau",
-   "edge": 0.1921,
-   "p_us": 0.752,
+   "edge": 0.1854,
+   "p_us": 0.745,
    "p_book": 0.56,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.9,
    "l5_over": 0.8,
-   "p_over": 0.752,
-   "p_under": 0.248,
+   "p_over": 0.745,
+   "p_under": 0.255,
    "fair_over": 0.56,
    "fair_under": 0.44,
    "price_over": 1.69,
@@ -7314,26 +7274,6 @@
    "pos_usual": "SF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "AST",
-   "line": 1.5,
-   "price": 2.18,
-   "book": "unibet",
-   "price_over": 1.63,
-   "price_under": 2.18,
-   "l5_over": 0.8,
-   "l10_over": 0.7,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -7769,7 +7709,7 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "AST",
    "line": 2.5,
-   "price": 1.78,
+   "price": 1.98,
    "book": "neds",
    "price_over": 1.98,
    "price_under": 1.78,
@@ -8035,9 +7975,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 2.19,
-   "floor": 0.12,
-   "ceiling": 4.16,
+   "proj": 2.17,
+   "floor": 0.1,
+   "ceiling": 4.14,
    "sigma": 1.62,
    "minutes": 22,
    "rot_rank": null,
@@ -8046,15 +7986,15 @@
    "side": "over",
    "price": 1.56,
    "book": "unibet",
-   "edge": 0.0276,
-   "p_us": 0.623,
+   "edge": 0.023,
+   "p_us": 0.619,
    "p_book": 0.596,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.623,
-   "p_under": 0.377,
+   "p_over": 0.619,
+   "p_under": 0.381,
    "fair_over": 0.596,
    "fair_under": 0.404,
    "price_over": 1.56,
@@ -8076,7 +8016,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 91
   },
   {
    "player_id": 1629004,
@@ -8590,9 +8530,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 0.49,
+   "proj": 0.48,
    "floor": 0.0,
-   "ceiling": 1.82,
+   "ceiling": 1.81,
    "sigma": 1.07,
    "minutes": 12,
    "rot_rank": null,
@@ -8625,7 +8565,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 203
+   "rank": 202
   },
   {
    "player_id": 1629651,
@@ -8643,26 +8583,6 @@
    "l10_over": null,
    "pos": "C",
    "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "AST",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -9145,7 +9065,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 222
+   "rank": 220
   },
   {
    "player_id": 1630264,
@@ -9563,9 +9483,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 2.15,
-   "floor": 0.08,
-   "ceiling": 4.12,
+   "proj": 2.13,
+   "floor": 0.06,
+   "ceiling": 4.09,
    "sigma": 1.62,
    "minutes": 20,
    "rot_rank": null,
@@ -9574,15 +9494,15 @@
    "side": "over",
    "price": 1.6,
    "book": "unibet",
-   "edge": 0.0311,
-   "p_us": 0.613,
+   "edge": 0.0261,
+   "p_us": 0.608,
    "p_book": 0.582,
-   "tier": "B",
-   "gate_status": "passed",
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.2,
-   "p_over": 0.613,
-   "p_under": 0.387,
+   "p_over": 0.608,
+   "p_under": 0.392,
    "fair_over": 0.582,
    "fair_under": 0.418,
    "price_over": 1.6,
@@ -9604,7 +9524,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 93
+   "rank": 96
   },
   {
    "player_id": 1630631,
@@ -9768,7 +9688,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 103
   },
   {
    "player_id": 1631106,
@@ -9812,7 +9732,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 147
+   "rank": 146
   },
   {
    "player_id": 1631117,
@@ -9936,7 +9856,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 230
+   "rank": 228
   },
   {
    "player_id": 1631157,
@@ -10035,7 +9955,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -10678,26 +10598,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "AST",
-   "proj": 3.68,
-   "floor": 0.97,
-   "ceiling": 6.67,
+   "proj": 3.63,
+   "floor": 0.93,
+   "ceiling": 6.62,
    "sigma": 2.26,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 2.5,
    "side": "over",
    "price": 1.62,
    "book": "unibet",
-   "edge": 0.1046,
-   "p_us": 0.678,
+   "edge": 0.0976,
+   "p_us": 0.671,
    "p_book": 0.574,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.678,
-   "p_under": 0.322,
+   "p_over": 0.671,
+   "p_under": 0.329,
    "fair_over": 0.574,
    "fair_under": 0.426,
    "price_over": 1.62,
@@ -10719,7 +10639,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 49
+   "rank": 51
   },
   {
    "player_id": 1641765,
@@ -10963,7 +10883,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 92
+   "rank": 94
   },
   {
    "player_id": 1642264,
@@ -11434,7 +11354,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 249
   },
   {
    "player_id": 1642419,
@@ -11518,7 +11438,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 252
+   "rank": 250
   },
   {
    "player_id": 1642504,
@@ -12126,7 +12046,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 171
+   "rank": 170
   },
   {
    "player_id": 1642959,
@@ -12230,7 +12150,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 261
+   "rank": 259
   },
   {
    "player_id": 1643052,
@@ -12834,7 +12754,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 278
   },
   {
    "player_id": -802,
@@ -12878,7 +12798,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 281
+   "rank": 279
   },
   {
    "player_id": 1643257,
@@ -13135,7 +13055,7 @@
    "floor": 0.0,
    "ceiling": 1.01,
    "sigma": 0.43,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -13210,7 +13130,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 107
   },
   {
    "player_id": -105,
@@ -13283,9 +13203,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "BLK",
-   "proj": 0.89,
+   "proj": 0.88,
    "floor": 0.0,
-   "ceiling": 2.07,
+   "ceiling": 2.06,
    "sigma": 0.97,
    "minutes": 18,
    "rot_rank": null,
@@ -13318,7 +13238,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 29
+   "rank": 31
   },
   {
    "player_id": 201144,
@@ -13422,7 +13342,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 136
+   "rank": 135
   },
   {
    "player_id": 201942,
@@ -13551,9 +13471,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "BLK",
-   "proj": 0.74,
-   "floor": 0.01,
-   "ceiling": 2.05,
+   "proj": 0.73,
+   "floor": 0.0,
+   "ceiling": 2.04,
    "sigma": 0.85,
    "minutes": 31,
    "rot_rank": null,
@@ -13710,7 +13630,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 123
+   "rank": 124
   },
   {
    "player_id": 203937,
@@ -13794,7 +13714,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 204
+   "rank": 203
   },
   {
    "player_id": 203999,
@@ -13892,26 +13812,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -14543,7 +14443,7 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "BLK",
-   "proj": 0.29,
+   "proj": 0.28,
    "floor": 0.0,
    "ceiling": 1.01,
    "sigma": 0.52,
@@ -15049,7 +14949,7 @@
    "stat": "BLK",
    "proj": 0.92,
    "floor": 0.0,
-   "ceiling": 2.11,
+   "ceiling": 2.1,
    "sigma": 0.97,
    "minutes": 12,
    "rot_rank": null,
@@ -15100,26 +15000,6 @@
    "l10_over": null,
    "pos": "C",
    "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -15566,7 +15446,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 221
+   "rank": 219
   },
   {
    "player_id": 1630264,
@@ -15870,7 +15750,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 15
+   "rank": 14
   },
   {
    "player_id": 1630579,
@@ -15941,7 +15821,7 @@
    "stat": "BLK",
    "proj": 0.28,
    "floor": 0.0,
-   "ceiling": 1.01,
+   "ceiling": 1.0,
    "sigma": 0.52,
    "minutes": 20,
    "rot_rank": null,
@@ -16306,7 +16186,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 229
+   "rank": 227
   },
   {
    "player_id": 1631157,
@@ -17041,9 +16921,9 @@
    "stat": "BLK",
    "proj": 0.27,
    "floor": 0.0,
-   "ceiling": 1.0,
+   "ceiling": 0.99,
    "sigma": 0.52,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -17074,7 +16954,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 122
+   "rank": 123
   },
   {
    "player_id": 1641765,
@@ -17318,7 +17198,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 102
   },
   {
    "player_id": 1642264,
@@ -17762,7 +17642,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 250
+   "rank": 248
   },
   {
    "player_id": 1642419,
@@ -17846,7 +17726,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 249
   },
   {
    "player_id": 1642504,
@@ -18534,7 +18414,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 261
+   "rank": 259
   },
   {
    "player_id": 1643052,
@@ -19138,7 +19018,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 278
   },
   {
    "player_id": -802,
@@ -19182,7 +19062,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 281
+   "rank": 279
   },
   {
    "player_id": 1643257,
@@ -19271,9 +19151,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 20.94,
-   "floor": 10.51,
-   "ceiling": 31.12,
+   "proj": 20.75,
+   "floor": 10.32,
+   "ceiling": 30.92,
    "sigma": 8.19,
    "minutes": 33,
    "rot_rank": null,
@@ -19282,15 +19162,15 @@
    "side": "over",
    "price": 1.77,
    "book": "unibet",
-   "edge": 0.1383,
-   "p_us": 0.664,
+   "edge": 0.1297,
+   "p_us": 0.655,
    "p_book": 0.525,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.664,
-   "p_under": 0.336,
+   "p_over": 0.655,
+   "p_under": 0.345,
    "fair_over": 0.525,
    "fair_under": 0.475,
    "price_over": 1.77,
@@ -19306,7 +19186,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 22
+   "rank": 23
   },
   {
    "player_id": -781,
@@ -19453,26 +19333,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 8.49,
-   "floor": 1.89,
-   "ceiling": 15.04,
+   "proj": 8.41,
+   "floor": 1.81,
+   "ceiling": 14.96,
    "sigma": 5.22,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 7.5,
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0975,
-   "p_us": 0.576,
+   "edge": 0.0914,
+   "p_us": 0.57,
    "p_book": 0.479,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.8,
-   "p_over": 0.576,
-   "p_under": 0.424,
+   "p_over": 0.57,
+   "p_under": 0.43,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -19532,7 +19412,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 71
   },
   {
    "player_id": -105,
@@ -19605,9 +19485,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 5.72,
-   "floor": 0.64,
-   "ceiling": 11.39,
+   "proj": 5.66,
+   "floor": 0.58,
+   "ceiling": 11.32,
    "sigma": 4.33,
    "minutes": 18,
    "rot_rank": null,
@@ -19616,15 +19496,15 @@
    "side": "over",
    "price": 1.8,
    "book": "pointsbetau",
-   "edge": 0.1009,
-   "p_us": 0.621,
+   "edge": 0.0947,
+   "p_us": 0.615,
    "p_book": 0.52,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
-   "p_over": 0.621,
-   "p_under": 0.379,
+   "p_over": 0.615,
+   "p_under": 0.385,
    "fair_over": 0.52,
    "fair_under": 0.48,
    "price_over": 1.8,
@@ -19646,7 +19526,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 163
+   "rank": 162
   },
   {
    "player_id": 201144,
@@ -19724,9 +19604,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 28.43,
-   "floor": 18.0,
-   "ceiling": 38.6,
+   "proj": 28.15,
+   "floor": 17.72,
+   "ceiling": 38.33,
    "sigma": 8.19,
    "minutes": 32,
    "rot_rank": null,
@@ -19735,15 +19615,15 @@
    "side": "over",
    "price": 1.87,
    "book": "neds",
-   "edge": 0.1404,
-   "p_us": 0.64,
+   "edge": 0.1278,
+   "p_us": 0.628,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.8,
-   "p_over": 0.64,
-   "p_under": 0.36,
+   "p_over": 0.628,
+   "p_under": 0.372,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -19912,9 +19792,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 5.37,
-   "floor": 0.29,
-   "ceiling": 11.04,
+   "proj": 5.32,
+   "floor": 0.24,
+   "ceiling": 10.98,
    "sigma": 4.33,
    "minutes": 31,
    "rot_rank": null,
@@ -19923,15 +19803,15 @@
    "side": "over",
    "price": 1.95,
    "book": "pointsbetau",
-   "edge": 0.1071,
-   "p_us": 0.587,
+   "edge": 0.1018,
+   "p_us": 0.582,
    "p_book": 0.48,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.0,
-   "p_over": 0.587,
-   "p_under": 0.413,
+   "p_over": 0.582,
+   "p_under": 0.418,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -20095,7 +19975,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 142
   },
   {
    "player_id": 203937,
@@ -20188,7 +20068,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": 203999,
@@ -20316,26 +20196,6 @@
     "l10_over": 0.6,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "PTS",
-   "line": 8.5,
-   "price": 1.88,
-   "book": "sportsbet",
-   "price_over": 1.88,
-   "price_under": 1.88,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
-   "us": null
   },
   {
    "player_id": 1626172,
@@ -20814,17 +20674,17 @@
    "opp": "LA Lakers",
    "game": "LA Lakers vs Milwaukee",
    "stat": "PTS",
-   "line": 10.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.88,
+   "line": 9.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 2.0,
    "l5_over": 0.4,
    "l10_over": 0.6,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -21099,9 +20959,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 9.81,
-   "floor": 2.78,
-   "ceiling": 17.24,
+   "proj": 9.72,
+   "floor": 2.69,
+   "ceiling": 17.15,
    "sigma": 5.67,
    "minutes": 22,
    "rot_rank": null,
@@ -21110,15 +20970,15 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0942,
-   "p_us": 0.594,
+   "edge": 0.0878,
+   "p_us": 0.588,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.594,
-   "p_under": 0.406,
+   "p_over": 0.588,
+   "p_under": 0.412,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -21140,7 +21000,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 101
   },
   {
    "player_id": 1629004,
@@ -21663,9 +21523,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 6.08,
-   "floor": 1.0,
-   "ceiling": 11.75,
+   "proj": 6.03,
+   "floor": 0.95,
+   "ceiling": 11.69,
    "sigma": 4.33,
    "minutes": 12,
    "rot_rank": null,
@@ -21698,7 +21558,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 151
+   "rank": 152
   },
   {
    "player_id": 1629651,
@@ -21718,26 +21578,6 @@
    "pos_usual": "C",
    "early": null,
    "gate_status": "failed:edge_below_tier",
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "PTS",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
    "us": null
   },
   {
@@ -22272,7 +22112,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 222
+   "rank": 220
   },
   {
    "player_id": 1630264,
@@ -22690,9 +22530,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 7.13,
-   "floor": 0.92,
-   "ceiling": 14.0,
+   "proj": 7.06,
+   "floor": 0.85,
+   "ceiling": 13.93,
    "sigma": 5.01,
    "minutes": 20,
    "rot_rank": null,
@@ -22701,15 +22541,15 @@
    "side": "under",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0316,
-   "p_us": 0.528,
+   "edge": 0.0369,
+   "p_us": 0.533,
    "p_book": 0.496,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
-   "p_over": 0.472,
-   "p_under": 0.528,
+   "p_over": 0.467,
+   "p_under": 0.533,
    "fair_over": 0.504,
    "fair_under": 0.496,
    "price_over": 1.85,
@@ -22731,7 +22571,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 144
+   "rank": 145
   },
   {
    "player_id": 1630631,
@@ -22939,7 +22779,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
+   "rank": 111
   },
   {
    "player_id": 1631117,
@@ -23081,7 +22921,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 230
+   "rank": 228
   },
   {
    "player_id": 1631157,
@@ -23280,16 +23120,16 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "PTS",
    "line": 6.5,
-   "price": 1.8,
-   "book": "neds",
-   "price_over": 1.95,
-   "price_under": 1.8,
+   "price": 2.0,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.74,
    "l5_over": 0.6,
    "l10_over": 0.5,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -23841,26 +23681,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PTS",
-   "proj": 16.1,
-   "floor": 7.71,
-   "ceiling": 25.24,
+   "proj": 15.91,
+   "floor": 7.52,
+   "ceiling": 25.04,
    "sigma": 6.89,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 15.5,
    "side": "over",
    "price": 2.0,
    "book": "sportsbet",
-   "edge": 0.0656,
-   "p_us": 0.537,
+   "edge": 0.0539,
+   "p_us": 0.525,
    "p_book": 0.471,
-   "tier": "A",
+   "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.537,
-   "p_under": 0.463,
+   "p_over": 0.525,
+   "p_under": 0.475,
    "fair_over": 0.471,
    "fair_under": 0.529,
    "price_over": 2.0,
@@ -23882,7 +23722,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 46
   },
   {
    "player_id": 1641765,
@@ -24624,7 +24464,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 249
   },
   {
    "player_id": 1642419,
@@ -24708,7 +24548,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 252
+   "rank": 250
   },
   {
    "player_id": 1642504,
@@ -25447,7 +25287,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 261
+   "rank": 259
   },
   {
    "player_id": 1643052,
@@ -26078,7 +25918,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 278
   },
   {
    "player_id": -802,
@@ -26122,7 +25962,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 281
+   "rank": 279
   },
   {
    "player_id": 1643257,
@@ -26211,9 +26051,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 7.05,
-   "floor": 2.58,
-   "ceiling": 11.75,
+   "proj": 6.98,
+   "floor": 2.52,
+   "ceiling": 11.69,
    "sigma": 3.62,
    "minutes": 33,
    "rot_rank": null,
@@ -26222,15 +26062,15 @@
    "side": "over",
    "price": 1.95,
    "book": "neds",
-   "edge": 0.0475,
-   "p_us": 0.527,
+   "edge": 0.0396,
+   "p_us": 0.52,
    "p_book": 0.48,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.527,
-   "p_under": 0.473,
+   "p_over": 0.52,
+   "p_under": 0.48,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -26246,7 +26086,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 24
+   "rank": 26
   },
   {
    "player_id": -781,
@@ -26393,26 +26233,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 2.68,
-   "floor": 0.3,
-   "ceiling": 5.16,
+   "proj": 2.66,
+   "floor": 0.28,
+   "ceiling": 5.13,
    "sigma": 1.79,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
    "price": 1.88,
    "book": "sportsbet",
-   "edge": 0.0121,
-   "p_us": 0.512,
+   "edge": 0.0178,
+   "p_us": 0.518,
    "p_book": 0.5,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.4,
-   "p_over": 0.488,
-   "p_under": 0.512,
+   "p_over": 0.482,
+   "p_under": 0.518,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.88,
@@ -26428,7 +26268,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 143
+   "rank": 144
   },
   {
    "player_id": -161,
@@ -26536,7 +26376,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 38
+   "rank": 40
   },
   {
    "player_id": 201143,
@@ -26545,9 +26385,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 3.61,
-   "floor": 1.16,
-   "ceiling": 6.39,
+   "proj": 3.57,
+   "floor": 1.12,
+   "ceiling": 6.35,
    "sigma": 2.18,
    "minutes": 18,
    "rot_rank": null,
@@ -26556,15 +26396,15 @@
    "side": "under",
    "price": 1.78,
    "book": "unibet",
-   "edge": 0.0057,
-   "p_us": 0.527,
+   "edge": 0.0134,
+   "p_us": 0.535,
    "p_book": 0.522,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.473,
-   "p_under": 0.527,
+   "p_over": 0.465,
+   "p_under": 0.535,
    "fair_over": 0.478,
    "fair_under": 0.522,
    "price_over": 1.94,
@@ -26586,7 +26426,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 104
+   "rank": 107
   },
   {
    "player_id": 201144,
@@ -26664,9 +26504,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 3.49,
-   "floor": 1.04,
-   "ceiling": 6.27,
+   "proj": 3.46,
+   "floor": 1.01,
+   "ceiling": 6.23,
    "sigma": 2.18,
    "minutes": 32,
    "rot_rank": null,
@@ -26675,15 +26515,15 @@
    "side": "under",
    "price": 2.2,
    "book": "pointsbetau",
-   "edge": 0.1186,
-   "p_us": 0.55,
+   "edge": 0.1251,
+   "p_us": 0.557,
    "p_book": 0.432,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.8,
-   "p_over": 0.45,
-   "p_under": 0.55,
+   "p_over": 0.443,
+   "p_under": 0.557,
    "fair_over": 0.568,
    "fair_under": 0.432,
    "price_over": 1.67,
@@ -26705,7 +26545,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 111
   },
   {
    "player_id": 201942,
@@ -26852,9 +26692,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 5.16,
-   "floor": 2.02,
-   "ceiling": 8.83,
+   "proj": 5.11,
+   "floor": 1.97,
+   "ceiling": 8.78,
    "sigma": 2.68,
    "minutes": 31,
    "rot_rank": null,
@@ -26863,15 +26703,15 @@
    "side": "under",
    "price": 1.69,
    "book": "pointsbetau",
-   "edge": 0.0333,
-   "p_us": 0.593,
+   "edge": 0.041,
+   "p_us": 0.601,
    "p_book": 0.56,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.2,
-   "p_over": 0.407,
-   "p_under": 0.593,
+   "p_over": 0.399,
+   "p_under": 0.601,
    "fair_over": 0.44,
    "fair_under": 0.56,
    "price_over": 2.15,
@@ -26893,7 +26733,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 60
+   "rank": 62
   },
   {
    "player_id": 203114,
@@ -27026,7 +26866,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 170
+   "rank": 171
   },
   {
    "player_id": 203937,
@@ -27119,7 +26959,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 202
+   "rank": 201
   },
   {
    "player_id": 203999,
@@ -27235,26 +27075,6 @@
    "l10_over": 0.4,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "REB",
-   "line": 4.5,
-   "price": 2.15,
-   "book": "sportsbet",
-   "price_over": 1.64,
-   "price_under": 2.15,
-   "l5_over": 0.8,
-   "l10_over": 0.7,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": "passed",
    "us": null
@@ -28012,9 +27832,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 3.38,
-   "floor": 0.93,
-   "ceiling": 6.15,
+   "proj": 3.35,
+   "floor": 0.9,
+   "ceiling": 6.12,
    "sigma": 2.18,
    "minutes": 22,
    "rot_rank": null,
@@ -28023,15 +27843,15 @@
    "side": "under",
    "price": 1.67,
    "book": "pointsbetau",
-   "edge": 0.0035,
-   "p_us": 0.572,
+   "edge": 0.0096,
+   "p_us": 0.578,
    "p_book": 0.568,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.8,
    "l5_over": 0.8,
-   "p_over": 0.428,
-   "p_under": 0.572,
+   "p_over": 0.422,
+   "p_under": 0.578,
    "fair_over": 0.432,
    "fair_under": 0.568,
    "price_over": 2.2,
@@ -28053,7 +27873,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 115
+   "rank": 117
   },
   {
    "player_id": 1629004,
@@ -28558,9 +28378,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 4.25,
-   "floor": 1.25,
-   "ceiling": 7.67,
+   "proj": 4.21,
+   "floor": 1.22,
+   "ceiling": 7.64,
    "sigma": 2.52,
    "minutes": 12,
    "rot_rank": null,
@@ -28593,7 +28413,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 81
+   "rank": 80
   },
   {
    "player_id": 1629651,
@@ -28613,26 +28433,6 @@
    "pos_usual": "C",
    "early": null,
    "gate_status": "passed",
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "REB",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
    "us": null
   },
   {
@@ -29167,7 +28967,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 222
+   "rank": 220
   },
   {
    "player_id": 1630264,
@@ -29585,9 +29385,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 3.61,
-   "floor": 1.16,
-   "ceiling": 6.39,
+   "proj": 3.58,
+   "floor": 1.13,
+   "ceiling": 6.35,
    "sigma": 2.18,
    "minutes": 20,
    "rot_rank": null,
@@ -29596,15 +29396,15 @@
    "side": "under",
    "price": 2.05,
    "book": "sportsbet",
-   "edge": 0.0675,
-   "p_us": 0.527,
+   "edge": 0.0742,
+   "p_us": 0.533,
    "p_book": 0.459,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.4,
-   "p_over": 0.473,
-   "p_under": 0.527,
+   "p_over": 0.467,
+   "p_under": 0.533,
    "fair_over": 0.541,
    "fair_under": 0.459,
    "price_over": 1.74,
@@ -29626,7 +29426,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 105
+   "rank": 106
   },
   {
    "player_id": 1630631,
@@ -29790,7 +29590,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 27
+   "rank": 28
   },
   {
    "player_id": 1631106,
@@ -29834,7 +29634,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 46
   },
   {
    "player_id": 1631117,
@@ -29844,7 +29644,7 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "REB",
    "line": 11.5,
-   "price": 1.75,
+   "price": 2.02,
    "book": "neds",
    "price_over": 2.02,
    "price_under": 1.75,
@@ -29976,7 +29776,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 230
+   "rank": 228
   },
   {
    "player_id": 1631157,
@@ -30184,7 +29984,7 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "REB",
    "line": 3.5,
-   "price": 1.74,
+   "price": 2.05,
    "book": "sportsbet",
    "price_over": 2.05,
    "price_under": 1.74,
@@ -30193,7 +29993,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -30427,7 +30227,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 28
+   "rank": 29
   },
   {
    "player_id": 1641710,
@@ -30754,26 +30554,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "REB",
-   "proj": 5.21,
-   "floor": 2.07,
-   "ceiling": 8.88,
+   "proj": 5.15,
+   "floor": 2.01,
+   "ceiling": 8.82,
    "sigma": 2.68,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 4.5,
    "side": "over",
    "price": 1.82,
    "book": "neds",
-   "edge": 0.0522,
-   "p_us": 0.566,
+   "edge": 0.0431,
+   "p_us": 0.556,
    "p_book": 0.513,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.566,
-   "p_under": 0.434,
+   "p_over": 0.556,
+   "p_under": 0.444,
    "fair_over": 0.513,
    "fair_under": 0.487,
    "price_over": 1.82,
@@ -30795,7 +30595,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 55
+   "rank": 61
   },
   {
    "player_id": 1641765,
@@ -31066,7 +30866,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 191
   },
   {
    "player_id": 1642264,
@@ -31555,7 +31355,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 249
   },
   {
    "player_id": 1642419,
@@ -31639,7 +31439,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 252
+   "rank": 250
   },
   {
    "player_id": 1642504,
@@ -32256,7 +32056,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 179
+   "rank": 180
   },
   {
    "player_id": 1642959,
@@ -32360,7 +32160,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 261
+   "rank": 259
   },
   {
    "player_id": 1643052,
@@ -32982,7 +32782,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 278
   },
   {
    "player_id": -802,
@@ -33026,7 +32826,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 281
+   "rank": 279
   },
   {
    "player_id": 1643257,
@@ -33115,9 +32915,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "STL",
-   "proj": 1.16,
-   "floor": 0.03,
-   "ceiling": 2.99,
+   "proj": 1.15,
+   "floor": 0.02,
+   "ceiling": 2.98,
    "sigma": 1.06,
    "minutes": 33,
    "rot_rank": null,
@@ -33150,7 +32950,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 45
   },
   {
    "player_id": -781,
@@ -33279,11 +33079,11 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "STL",
-   "proj": 0.55,
+   "proj": 0.54,
    "floor": 0.0,
-   "ceiling": 1.99,
+   "ceiling": 1.98,
    "sigma": 0.81,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -33314,7 +33114,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 139
+   "rank": 141
   },
   {
    "player_id": -161,
@@ -33358,7 +33158,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 19
+   "rank": 20
   },
   {
    "player_id": -105,
@@ -33422,7 +33222,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 109
   },
   {
    "player_id": 201143,
@@ -33433,7 +33233,7 @@
    "stat": "STL",
    "proj": 0.45,
    "floor": 0.0,
-   "ceiling": 1.25,
+   "ceiling": 1.24,
    "sigma": 0.76,
    "minutes": 18,
    "rot_rank": null,
@@ -33466,7 +33266,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 166
+   "rank": 165
   },
   {
    "player_id": 201144,
@@ -33535,9 +33335,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "STL",
-   "proj": 1.12,
+   "proj": 1.11,
    "floor": 0.0,
-   "ceiling": 2.95,
+   "ceiling": 2.94,
    "sigma": 1.06,
    "minutes": 32,
    "rot_rank": null,
@@ -33570,7 +33370,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 53
   },
   {
    "player_id": 201942,
@@ -33699,9 +33499,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "STL",
-   "proj": 1.32,
-   "floor": 0.02,
-   "ceiling": 3.04,
+   "proj": 1.31,
+   "floor": 0.01,
+   "ceiling": 3.03,
    "sigma": 1.18,
    "minutes": 31,
    "rot_rank": null,
@@ -33734,7 +33534,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 22
+   "rank": 25
   },
   {
    "player_id": 203114,
@@ -33942,7 +33742,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 189
   },
   {
    "player_id": 203999,
@@ -34040,26 +33840,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -34691,9 +34471,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "STL",
-   "proj": 1.42,
+   "proj": 1.41,
    "floor": 0.0,
-   "ceiling": 2.96,
+   "ceiling": 2.95,
    "sigma": 1.27,
    "minutes": 22,
    "rot_rank": null,
@@ -34726,7 +34506,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 13
+   "rank": 16
   },
   {
    "player_id": 1629004,
@@ -35253,26 +35033,6 @@
    "us": null
   },
   {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1629660,
    "player": "Ty Jerome",
    "team": "Memphis",
@@ -35714,7 +35474,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 222
+   "rank": 220
   },
   {
    "player_id": 1630264,
@@ -36018,7 +35778,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 43
+   "rank": 42
   },
   {
    "player_id": 1630579,
@@ -36087,9 +35847,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "STL",
-   "proj": 0.87,
+   "proj": 0.86,
    "floor": 0.0,
-   "ceiling": 2.03,
+   "ceiling": 2.02,
    "sigma": 0.99,
    "minutes": 20,
    "rot_rank": null,
@@ -36122,7 +35882,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 81
+   "rank": 83
   },
   {
    "player_id": 1630631,
@@ -36286,7 +36046,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 105
   },
   {
    "player_id": 1631106,
@@ -36330,7 +36090,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 33
+   "rank": 32
   },
   {
    "player_id": 1631117,
@@ -36454,7 +36214,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 230
+   "rank": 228
   },
   {
    "player_id": 1631157,
@@ -37187,11 +36947,11 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "STL",
-   "proj": 1.26,
+   "proj": 1.24,
    "floor": 0.0,
-   "ceiling": 2.98,
+   "ceiling": 2.96,
    "sigma": 1.18,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -37222,7 +36982,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 28
+   "rank": 33
   },
   {
    "player_id": 1641765,
@@ -37910,7 +37670,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 249
   },
   {
    "player_id": 1642419,
@@ -37994,7 +37754,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 252
+   "rank": 250
   },
   {
    "player_id": 1642504,
@@ -38578,7 +38338,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 91
+   "rank": 92
   },
   {
    "player_id": 1642959,
@@ -38682,7 +38442,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 261
+   "rank": 259
   },
   {
    "player_id": 1643052,
@@ -39286,7 +39046,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 278
   },
   {
    "player_id": -802,
@@ -39330,7 +39090,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 281
+   "rank": 279
   },
   {
    "player_id": 1643257,
@@ -39419,9 +39179,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 3.51,
-   "floor": 1.36,
-   "ceiling": 5.78,
+   "proj": 3.48,
+   "floor": 1.33,
+   "ceiling": 5.75,
    "sigma": 1.78,
    "minutes": 33,
    "rot_rank": null,
@@ -39583,11 +39343,11 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 1.22,
+   "proj": 1.21,
    "floor": 0.0,
-   "ceiling": 2.96,
+   "ceiling": 2.95,
    "sigma": 1.16,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -39618,7 +39378,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 102
   },
   {
    "player_id": -161,
@@ -39662,7 +39422,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 76
+   "rank": 77
   },
   {
    "player_id": -105,
@@ -39735,9 +39495,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 0.69,
+   "proj": 0.68,
    "floor": 0.0,
-   "ceiling": 1.94,
+   "ceiling": 1.93,
    "sigma": 0.87,
    "minutes": 18,
    "rot_rank": null,
@@ -39770,7 +39530,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 163
+   "rank": 164
   },
   {
    "player_id": 201144,
@@ -39839,9 +39599,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 2.57,
-   "floor": 0.42,
-   "ceiling": 4.84,
+   "proj": 2.55,
+   "floor": 0.39,
+   "ceiling": 4.81,
    "sigma": 1.78,
    "minutes": 32,
    "rot_rank": null,
@@ -40003,9 +39763,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 3.1,
-   "floor": 0.94,
-   "ceiling": 5.36,
+   "proj": 3.06,
+   "floor": 0.91,
+   "ceiling": 5.33,
    "sigma": 1.78,
    "minutes": 31,
    "rot_rank": null,
@@ -40162,7 +39922,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 77
+   "rank": 78
   },
   {
    "player_id": 203937,
@@ -40246,7 +40006,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 176
+   "rank": 174
   },
   {
    "player_id": 203999,
@@ -40344,26 +40104,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -40995,9 +40735,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 1.63,
+   "proj": 1.61,
    "floor": 0.0,
-   "ceiling": 3.09,
+   "ceiling": 3.07,
    "sigma": 1.29,
    "minutes": 22,
    "rot_rank": null,
@@ -41030,7 +40770,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 65
+   "rank": 67
   },
   {
    "player_id": 1629004,
@@ -41499,7 +41239,7 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 0.69,
+   "proj": 0.68,
    "floor": 0.0,
    "ceiling": 1.94,
    "sigma": 0.87,
@@ -41534,7 +41274,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 164
+   "rank": 165
   },
   {
    "player_id": 1629651,
@@ -41552,26 +41292,6 @@
    "l10_over": null,
    "pos": "C",
    "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -42018,7 +41738,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 222
+   "rank": 220
   },
   {
    "player_id": 1630264,
@@ -42391,9 +42111,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 1.37,
+   "proj": 1.36,
    "floor": 0.0,
-   "ceiling": 2.99,
+   "ceiling": 2.98,
    "sigma": 1.27,
    "minutes": 20,
    "rot_rank": null,
@@ -42426,7 +42146,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 90
   },
   {
    "player_id": 1630631,
@@ -42590,7 +42310,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 100
   },
   {
    "player_id": 1631106,
@@ -42634,7 +42354,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 103
   },
   {
    "player_id": 1631117,
@@ -42758,7 +42478,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 230
+   "rank": 228
   },
   {
    "player_id": 1631157,
@@ -43182,7 +42902,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 41
   },
   {
    "player_id": 1641710,
@@ -43491,11 +43211,11 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "TOV",
-   "proj": 1.73,
-   "floor": 0.09,
-   "ceiling": 3.18,
+   "proj": 1.71,
+   "floor": 0.07,
+   "ceiling": 3.16,
    "sigma": 1.29,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -43526,7 +43246,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 59
+   "rank": 61
   },
   {
    "player_id": 1641765,
@@ -43770,7 +43490,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 112
+   "rank": 114
   },
   {
    "player_id": 1642264,
@@ -44214,7 +43934,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 249
   },
   {
    "player_id": 1642419,
@@ -44298,7 +44018,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 252
+   "rank": 250
   },
   {
    "player_id": 1642504,
@@ -44882,7 +44602,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 183
+   "rank": 181
   },
   {
    "player_id": 1642959,
@@ -44986,7 +44706,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 261
+   "rank": 259
   },
   {
    "player_id": 1643052,
@@ -45590,7 +45310,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 280
+   "rank": 278
   },
   {
    "player_id": -802,
@@ -45634,7 +45354,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 281
+   "rank": 279
   },
   {
    "player_id": 1643257,
@@ -45798,7 +45518,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 212
+   "rank": 211
   },
   {
    "player_id": -787,
@@ -45847,9 +45567,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 32.14,
-   "floor": 21.5,
-   "ceiling": 43.77,
+   "proj": 31.84,
+   "floor": 21.2,
+   "ceiling": 43.47,
    "sigma": 8.94,
    "minutes": 33,
    "rot_rank": null,
@@ -45858,15 +45578,15 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.1482,
-   "p_us": 0.648,
+   "edge": 0.1367,
+   "p_us": 0.637,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 0.8,
-   "p_over": 0.648,
-   "p_under": 0.352,
+   "p_over": 0.637,
+   "p_under": 0.363,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -46106,7 +45826,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 218
+   "rank": 217
   },
   {
    "player_id": -752,
@@ -46375,26 +46095,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 12.75,
-   "floor": 3.66,
-   "ceiling": 21.57,
+   "proj": 12.63,
+   "floor": 3.54,
+   "ceiling": 21.45,
    "sigma": 6.89,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 11.5,
    "side": "over",
    "price": 1.95,
    "book": "pointsbetau",
-   "edge": 0.0897,
-   "p_us": 0.57,
+   "edge": 0.0831,
+   "p_us": 0.563,
    "p_book": 0.48,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.8,
-   "p_over": 0.57,
-   "p_under": 0.43,
+   "p_over": 0.563,
+   "p_under": 0.437,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -46410,7 +46130,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 134
+   "rank": 136
   },
   {
    "player_id": -161,
@@ -46527,9 +46247,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 11.33,
-   "floor": 2.71,
-   "ceiling": 20.11,
+   "proj": 11.2,
+   "floor": 2.58,
+   "ceiling": 19.98,
    "sigma": 7.07,
    "minutes": 18,
    "rot_rank": null,
@@ -46637,9 +46357,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 36.67,
-   "floor": 24.41,
-   "ceiling": 48.18,
+   "proj": 36.32,
+   "floor": 24.06,
+   "ceiling": 47.82,
    "sigma": 9.79,
    "minutes": 32,
    "rot_rank": null,
@@ -46648,15 +46368,15 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0898,
-   "p_us": 0.59,
+   "edge": 0.0755,
+   "p_us": 0.575,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.6,
-   "p_over": 0.59,
-   "p_under": 0.41,
+   "p_over": 0.575,
+   "p_under": 0.425,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -46807,10 +46527,10 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 18.6,
-   "floor": 8.83,
-   "ceiling": 28.95,
-   "sigma": 7.86,
+   "proj": 18.42,
+   "floor": 8.19,
+   "ceiling": 28.68,
+   "sigma": 7.99,
    "minutes": 31,
    "rot_rank": null,
    "minutes_source": "model",
@@ -46818,15 +46538,15 @@
    "side": "over",
    "price": 2.05,
    "book": "pointsbetau",
-   "edge": 0.1495,
-   "p_us": 0.609,
+   "edge": 0.1358,
+   "p_us": 0.595,
    "p_book": 0.459,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.4,
-   "p_over": 0.609,
-   "p_under": 0.391,
+   "p_over": 0.595,
+   "p_under": 0.405,
    "fair_over": 0.459,
    "fair_under": 0.541,
    "price_over": 2.05,
@@ -46848,7 +46568,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 82
+   "rank": 86
   },
   {
    "player_id": 203114,
@@ -47056,7 +46776,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 198
+   "rank": 196
   },
   {
    "player_id": 203999,
@@ -47156,26 +46876,6 @@
    "pos_usual": "SF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "PRA",
-   "line": 16.5,
-   "price": 1.79,
-   "book": "unibet",
-   "price_over": 1.94,
-   "price_under": 1.79,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "passed",
    "us": null
   },
   {
@@ -47565,11 +47265,11 @@
    "opp": "LA Lakers",
    "game": "LA Lakers vs Milwaukee",
    "stat": "PRA",
-   "line": 18.5,
-   "price": 1.72,
-   "book": "unibet",
-   "price_over": 2.02,
-   "price_under": 1.72,
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8,
    "l5_over": 0.4,
    "l10_over": 0.6,
    "pos": "PF",
@@ -47805,9 +47505,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 15.38,
-   "floor": 6.01,
-   "ceiling": 24.55,
+   "proj": 15.24,
+   "floor": 5.87,
+   "ceiling": 24.41,
    "sigma": 7.18,
    "minutes": 22,
    "rot_rank": null,
@@ -47816,15 +47516,15 @@
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0693,
-   "p_us": 0.548,
+   "edge": 0.0617,
+   "p_us": 0.54,
    "p_book": 0.479,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.548,
-   "p_under": 0.452,
+   "p_over": 0.54,
+   "p_under": 0.46,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -47846,7 +47546,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 104
   },
   {
    "player_id": 1629004,
@@ -48315,9 +48015,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 10.82,
-   "floor": 3.1,
-   "ceiling": 19.53,
+   "proj": 10.73,
+   "floor": 3.01,
+   "ceiling": 19.44,
    "sigma": 6.33,
    "minutes": 12,
    "rot_rank": null,
@@ -48368,26 +48068,6 @@
    "l10_over": null,
    "pos": "C",
    "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "PRA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -48854,7 +48534,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 237
+   "rank": 235
   },
   {
    "player_id": 1630264,
@@ -49227,9 +48907,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 12.9,
-   "floor": 3.81,
-   "ceiling": 21.72,
+   "proj": 12.77,
+   "floor": 3.68,
+   "ceiling": 21.59,
    "sigma": 6.89,
    "minutes": 20,
    "rot_rank": null,
@@ -49238,15 +48918,15 @@
    "side": "under",
    "price": 1.89,
    "book": "unibet",
-   "edge": 0.043,
-   "p_us": 0.535,
+   "edge": 0.0503,
+   "p_us": 0.542,
    "p_book": 0.492,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.4,
-   "p_over": 0.465,
-   "p_under": 0.535,
+   "p_over": 0.458,
+   "p_under": 0.542,
    "fair_over": 0.508,
    "fair_under": 0.492,
    "price_over": 1.83,
@@ -49268,7 +48948,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 132
   },
   {
    "player_id": 1630631,
@@ -49476,7 +49156,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 100
   },
   {
    "player_id": 1631117,
@@ -49620,7 +49300,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 246
+   "rank": 244
   },
   {
    "player_id": 1631157,
@@ -49710,16 +49390,16 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "PRA",
    "line": 21.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.83,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8,
    "l5_over": 0.6,
    "l10_over": 0.6,
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -50393,26 +50073,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PRA",
-   "proj": 25.0,
-   "floor": 14.43,
-   "ceiling": 36.66,
+   "proj": 24.7,
+   "floor": 14.13,
+   "ceiling": 36.36,
    "sigma": 8.85,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 23.5,
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0934,
-   "p_us": 0.572,
+   "edge": 0.079,
+   "p_us": 0.558,
    "p_book": 0.479,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.572,
-   "p_under": 0.428,
+   "p_over": 0.558,
+   "p_under": 0.442,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -50434,7 +50114,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 49
   },
   {
    "player_id": 1641765,
@@ -50698,7 +50378,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 143
+   "rank": 142
   },
   {
    "player_id": 1642264,
@@ -51162,7 +50842,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 270
+   "rank": 268
   },
   {
    "player_id": 1642419,
@@ -51266,7 +50946,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 270
   },
   {
    "player_id": 1642504,
@@ -52000,7 +51680,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 282
+   "rank": 280
   },
   {
    "player_id": 1643024,
@@ -52144,7 +51824,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 212
+   "rank": 211
   },
   {
    "player_id": -787,
@@ -52193,10 +51873,10 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 27.99,
-   "floor": 16.33,
-   "ceiling": 38.92,
-   "sigma": 9.18,
+   "proj": 27.74,
+   "floor": 17.74,
+   "ceiling": 38.46,
+   "sigma": 8.4,
    "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
@@ -52204,15 +51884,15 @@
    "side": "over",
    "price": 1.8,
    "book": "pointsbetau",
-   "edge": 0.136,
-   "p_us": 0.65,
+   "edge": 0.1255,
+   "p_us": 0.639,
    "p_book": 0.514,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 0.8,
-   "p_over": 0.65,
-   "p_under": 0.35,
+   "p_over": 0.639,
+   "p_under": 0.361,
    "fair_over": 0.514,
    "fair_under": 0.486,
    "price_over": 1.8,
@@ -52228,7 +51908,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 21
+   "rank": 22
   },
   {
    "player_id": -781,
@@ -52452,7 +52132,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 218
+   "rank": 217
   },
   {
    "player_id": -752,
@@ -52721,26 +52401,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 11.18,
-   "floor": 3.12,
-   "ceiling": 19.12,
+   "proj": 11.07,
+   "floor": 3.01,
+   "ceiling": 19.01,
    "sigma": 6.4,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 9.5,
    "side": "over",
    "price": 1.8,
    "book": "sportsbet",
-   "edge": 0.0838,
-   "p_us": 0.605,
+   "edge": 0.0773,
+   "p_us": 0.599,
    "p_book": 0.521,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.605,
-   "p_under": 0.395,
+   "p_over": 0.599,
+   "p_under": 0.401,
    "fair_over": 0.521,
    "fair_under": 0.479,
    "price_over": 1.8,
@@ -52800,7 +52480,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 85
+   "rank": 87
   },
   {
    "player_id": -105,
@@ -52873,9 +52553,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 9.33,
-   "floor": 1.6,
-   "ceiling": 17.67,
+   "proj": 9.23,
+   "floor": 1.5,
+   "ceiling": 17.57,
    "sigma": 6.24,
    "minutes": 18,
    "rot_rank": null,
@@ -52884,15 +52564,15 @@
    "side": "over",
    "price": 2.02,
    "book": "sportsbet",
-   "edge": 0.0893,
-   "p_us": 0.555,
+   "edge": 0.0824,
+   "p_us": 0.548,
    "p_book": 0.466,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.555,
-   "p_under": 0.445,
+   "p_over": 0.548,
+   "p_under": 0.452,
    "fair_over": 0.466,
    "fair_under": 0.534,
    "price_over": 2.02,
@@ -52914,7 +52594,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 153
+   "rank": 155
   },
   {
    "player_id": 201144,
@@ -52983,9 +52663,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 31.92,
-   "floor": 20.26,
-   "ceiling": 42.84,
+   "proj": 31.62,
+   "floor": 19.95,
+   "ceiling": 42.54,
    "sigma": 9.18,
    "minutes": 32,
    "rot_rank": null,
@@ -52994,15 +52674,15 @@
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0834,
-   "p_us": 0.562,
+   "edge": 0.0701,
+   "p_us": 0.549,
    "p_book": 0.479,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.6,
-   "p_over": 0.562,
-   "p_under": 0.438,
+   "p_over": 0.549,
+   "p_under": 0.451,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -53153,9 +52833,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 10.53,
-   "floor": 2.8,
-   "ceiling": 18.87,
+   "proj": 10.43,
+   "floor": 2.7,
+   "ceiling": 18.77,
    "sigma": 6.24,
    "minutes": 31,
    "rot_rank": null,
@@ -53164,15 +52844,15 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0734,
-   "p_us": 0.568,
+   "edge": 0.0666,
+   "p_us": 0.561,
    "p_book": 0.495,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.0,
-   "p_over": 0.568,
-   "p_under": 0.432,
+   "p_over": 0.561,
+   "p_under": 0.439,
    "fair_over": 0.495,
    "fair_under": 0.505,
    "price_over": 1.87,
@@ -53194,7 +52874,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 137
+   "rank": 139
   },
   {
    "player_id": 203114,
@@ -53318,7 +52998,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 158
+   "rank": 157
   },
   {
    "player_id": 203937,
@@ -53402,7 +53082,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 197
+   "rank": 195
   },
   {
    "player_id": 203999,
@@ -53500,26 +53180,6 @@
    "l10_over": 0.7,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "PR",
-   "line": 14.5,
-   "price": 1.78,
-   "book": "unibet",
-   "price_over": 1.94,
-   "price_under": 1.78,
-   "l5_over": 0.4,
-   "l10_over": 0.5,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": "passed",
    "us": null
@@ -53911,11 +53571,11 @@
    "opp": "LA Lakers",
    "game": "LA Lakers vs Milwaukee",
    "stat": "PR",
-   "line": 15.5,
-   "price": 1.79,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.79,
+   "line": 14.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.83,
    "l5_over": 0.4,
    "l10_over": 0.6,
    "pos": "PF",
@@ -54151,9 +53811,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 13.19,
-   "floor": 4.68,
-   "ceiling": 21.81,
+   "proj": 13.07,
+   "floor": 4.56,
+   "ceiling": 21.69,
    "sigma": 6.63,
    "minutes": 22,
    "rot_rank": null,
@@ -54162,15 +53822,15 @@
    "side": "over",
    "price": 2.0,
    "book": "pointsbetau",
-   "edge": 0.0761,
-   "p_us": 0.541,
+   "edge": 0.0688,
+   "p_us": 0.534,
    "p_book": 0.465,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.541,
-   "p_under": 0.459,
+   "p_over": 0.534,
+   "p_under": 0.466,
    "fair_over": 0.465,
    "fair_under": 0.535,
    "price_over": 2.0,
@@ -54192,7 +53852,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 106
   },
   {
    "player_id": 1629004,
@@ -54661,9 +54321,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 10.33,
-   "floor": 2.6,
-   "ceiling": 18.67,
+   "proj": 10.24,
+   "floor": 2.51,
+   "ceiling": 18.58,
    "sigma": 6.24,
    "minutes": 12,
    "rot_rank": null,
@@ -54696,7 +54356,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 140
+   "rank": 141
   },
   {
    "player_id": 1629651,
@@ -54716,26 +54376,6 @@
    "pos_usual": "C",
    "early": null,
    "gate_status": "passed",
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "PR",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
    "us": null
   },
   {
@@ -55200,7 +54840,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 237
+   "rank": 235
   },
   {
    "player_id": 1630264,
@@ -55411,15 +55051,15 @@
    "stat": "PR",
    "line": 13.5,
    "price": 1.96,
-   "book": "sportsbet",
+   "book": "unibet",
    "price_over": 1.96,
-   "price_under": 1.8,
+   "price_under": 1.77,
    "l5_over": 0.4,
    "l10_over": 0.4,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -55573,9 +55213,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 10.75,
-   "floor": 3.01,
-   "ceiling": 19.08,
+   "proj": 10.64,
+   "floor": 2.91,
+   "ceiling": 18.98,
    "sigma": 6.24,
    "minutes": 20,
    "rot_rank": null,
@@ -55584,15 +55224,15 @@
    "side": "under",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0502,
-   "p_us": 0.546,
+   "edge": 0.0567,
+   "p_us": 0.553,
    "p_book": 0.496,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
-   "p_over": 0.454,
-   "p_under": 0.546,
+   "p_over": 0.447,
+   "p_under": 0.553,
    "fair_over": 0.504,
    "fair_under": 0.496,
    "price_over": 1.85,
@@ -55822,7 +55462,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 91
   },
   {
    "player_id": 1631117,
@@ -55966,7 +55606,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 246
+   "rank": 244
   },
   {
    "player_id": 1631157,
@@ -56056,7 +55696,7 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "PR",
    "line": 18.5,
-   "price": 1.84,
+   "price": 1.92,
    "book": "sportsbet",
    "price_over": 1.92,
    "price_under": 1.84,
@@ -56065,7 +55705,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -56156,16 +55796,16 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "PR",
    "line": 9.5,
-   "price": 1.85,
-   "book": "pointsbetau",
-   "price_over": 1.85,
+   "price": 1.87,
+   "book": "unibet",
+   "price_over": 1.87,
    "price_under": 1.85,
    "l5_over": 0.6,
    "l10_over": 0.6,
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -56739,26 +56379,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PR",
-   "proj": 21.32,
-   "floor": 11.61,
-   "ceiling": 32.36,
+   "proj": 21.06,
+   "floor": 11.35,
+   "ceiling": 32.11,
    "sigma": 8.13,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 19.5,
    "side": "over",
    "price": 1.8,
    "book": "pointsbetau",
-   "edge": 0.0813,
-   "p_us": 0.595,
+   "edge": 0.0682,
+   "p_us": 0.582,
    "p_book": 0.514,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 0.8,
-   "p_over": 0.595,
-   "p_under": 0.405,
+   "p_over": 0.582,
+   "p_under": 0.418,
    "fair_over": 0.514,
    "fair_under": 0.486,
    "price_over": 1.8,
@@ -56780,7 +56420,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 51
   },
   {
    "player_id": 1641765,
@@ -57044,7 +56684,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 147
   },
   {
    "player_id": 1642264,
@@ -57508,7 +57148,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 270
+   "rank": 268
   },
   {
    "player_id": 1642419,
@@ -57612,7 +57252,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 270
   },
   {
    "player_id": 1642504,
@@ -58242,7 +57882,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 188
   },
   {
    "player_id": 1642959,
@@ -58346,7 +57986,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 282
+   "rank": 280
   },
   {
    "player_id": 1643024,
@@ -58490,7 +58130,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 212
+   "rank": 211
   },
   {
    "player_id": -787,
@@ -58539,9 +58179,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 25.09,
-   "floor": 15.01,
-   "ceiling": 35.13,
+   "proj": 24.86,
+   "floor": 14.78,
+   "ceiling": 34.9,
    "sigma": 7.86,
    "minutes": 33,
    "rot_rank": null,
@@ -58550,15 +58190,15 @@
    "side": "over",
    "price": 1.77,
    "book": "pointsbetau",
-   "edge": 0.146,
-   "p_us": 0.664,
+   "edge": 0.136,
+   "p_us": 0.654,
    "p_book": 0.518,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 0.8,
-   "p_over": 0.664,
-   "p_under": 0.336,
+   "p_over": 0.654,
+   "p_under": 0.346,
    "fair_over": 0.518,
    "fair_under": 0.482,
    "price_over": 1.77,
@@ -58574,7 +58214,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 26
+   "rank": 27
   },
   {
    "player_id": -781,
@@ -58798,7 +58438,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 218
+   "rank": 217
   },
   {
    "player_id": -752,
@@ -59067,26 +58707,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 10.06,
-   "floor": 2.53,
-   "ceiling": 17.76,
+   "proj": 9.97,
+   "floor": 2.44,
+   "ceiling": 17.67,
    "sigma": 5.95,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 8.5,
    "side": "over",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.1048,
-   "p_us": 0.605,
+   "edge": 0.0986,
+   "p_us": 0.599,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.605,
-   "p_under": 0.395,
+   "p_over": 0.599,
+   "p_under": 0.401,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.83,
@@ -59102,7 +58742,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 124
+   "rank": 125
   },
   {
    "player_id": -161,
@@ -59146,7 +58786,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 55
   },
   {
    "player_id": -105,
@@ -59219,9 +58859,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 7.71,
-   "floor": 1.03,
-   "ceiling": 14.69,
+   "proj": 7.63,
+   "floor": 0.95,
+   "ceiling": 14.61,
    "sigma": 5.32,
    "minutes": 18,
    "rot_rank": null,
@@ -59260,7 +58900,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 154
+   "rank": 155
   },
   {
    "player_id": 201144,
@@ -59329,9 +58969,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 33.18,
-   "floor": 22.3,
-   "ceiling": 44.13,
+   "proj": 32.86,
+   "floor": 21.98,
+   "ceiling": 43.81,
    "sigma": 8.85,
    "minutes": 32,
    "rot_rank": null,
@@ -59340,15 +58980,15 @@
    "side": "over",
    "price": 1.84,
    "book": "sportsbet",
-   "edge": 0.1132,
-   "p_us": 0.624,
+   "edge": 0.0989,
+   "p_us": 0.61,
    "p_book": 0.511,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.8,
-   "p_over": 0.624,
-   "p_under": 0.376,
+   "p_over": 0.61,
+   "p_under": 0.39,
    "fair_over": 0.511,
    "fair_under": 0.489,
    "price_over": 1.84,
@@ -59499,9 +59139,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 13.44,
-   "floor": 5.21,
-   "ceiling": 22.58,
+   "proj": 13.31,
+   "floor": 5.08,
+   "ceiling": 22.45,
    "sigma": 6.6,
    "minutes": 31,
    "rot_rank": null,
@@ -59510,15 +59150,15 @@
    "side": "over",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.1765,
-   "p_us": 0.677,
+   "edge": 0.169,
+   "p_us": 0.669,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
-   "p_over": 0.677,
-   "p_under": 0.323,
+   "p_over": 0.669,
+   "p_under": 0.331,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.83,
@@ -59540,7 +59180,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 90
   },
   {
    "player_id": 203114,
@@ -59664,7 +59304,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 142
+   "rank": 141
   },
   {
    "player_id": 203937,
@@ -59748,7 +59388,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 190
+   "rank": 189
   },
   {
    "player_id": 203999,
@@ -59848,26 +59488,6 @@
    "pos_usual": "SF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "PA",
-   "line": 10.5,
-   "price": 1.91,
-   "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -60267,7 +59887,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -60497,9 +60117,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 12.0,
-   "floor": 4.13,
-   "ceiling": 20.3,
+   "proj": 11.89,
+   "floor": 4.02,
+   "ceiling": 20.19,
    "sigma": 6.24,
    "minutes": 22,
    "rot_rank": null,
@@ -60508,15 +60128,15 @@
    "side": "over",
    "price": 1.8,
    "book": "sportsbet",
-   "edge": 0.0754,
-   "p_us": 0.597,
+   "edge": 0.0684,
+   "p_us": 0.59,
    "p_book": 0.521,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.597,
-   "p_under": 0.403,
+   "p_over": 0.59,
+   "p_under": 0.41,
    "fair_over": 0.521,
    "fair_under": 0.479,
    "price_over": 1.8,
@@ -60538,7 +60158,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 101
   },
   {
    "player_id": 1629004,
@@ -61007,9 +60627,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 6.57,
-   "floor": 0.7,
-   "ceiling": 13.35,
+   "proj": 6.51,
+   "floor": 0.65,
+   "ceiling": 13.3,
    "sigma": 4.95,
    "minutes": 12,
    "rot_rank": null,
@@ -61042,7 +60662,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 166
+   "rank": 168
   },
   {
    "player_id": 1629651,
@@ -61060,26 +60680,6 @@
    "l10_over": null,
    "pos": "C",
    "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "PA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -61546,7 +61146,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 237
+   "rank": 235
   },
   {
    "player_id": 1630264,
@@ -61919,9 +61519,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 9.28,
-   "floor": 1.75,
-   "ceiling": 16.98,
+   "proj": 9.19,
+   "floor": 1.66,
+   "ceiling": 16.89,
    "sigma": 5.95,
    "minutes": 20,
    "rot_rank": null,
@@ -61930,15 +61530,15 @@
    "side": "under",
    "price": 1.89,
    "book": "unibet",
-   "edge": 0.0226,
-   "p_us": 0.515,
+   "edge": 0.0287,
+   "p_us": 0.521,
    "p_book": 0.492,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.2,
-   "p_over": 0.485,
-   "p_under": 0.515,
+   "p_over": 0.479,
+   "p_under": 0.521,
    "fair_over": 0.508,
    "fair_under": 0.492,
    "price_over": 1.83,
@@ -61960,7 +61560,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 137
+   "rank": 139
   },
   {
    "player_id": 1630631,
@@ -62124,7 +61724,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 58
   },
   {
    "player_id": 1631106,
@@ -62168,7 +61768,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 114
+   "rank": 115
   },
   {
    "player_id": 1631117,
@@ -62312,7 +61912,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 246
+   "rank": 244
   },
   {
    "player_id": 1631157,
@@ -62411,7 +62011,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -63085,26 +62685,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "PA",
-   "proj": 19.78,
-   "floor": 11.22,
-   "ceiling": 30.14,
+   "proj": 19.54,
+   "floor": 10.98,
+   "ceiling": 29.9,
    "sigma": 7.48,
-   "minutes": 34,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 18.5,
    "side": "over",
    "price": 1.92,
    "book": "sportsbet",
-   "edge": 0.0867,
-   "p_us": 0.576,
+   "edge": 0.0727,
+   "p_us": 0.562,
    "p_book": 0.489,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.576,
-   "p_under": 0.424,
+   "p_over": 0.562,
+   "p_under": 0.438,
    "fair_over": 0.489,
    "fair_under": 0.511,
    "price_over": 1.92,
@@ -63854,7 +63454,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 270
+   "rank": 268
   },
   {
    "player_id": 1642419,
@@ -63958,7 +63558,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 270
   },
   {
    "player_id": 1642504,
@@ -64588,7 +64188,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 177
+   "rank": 176
   },
   {
    "player_id": 1642959,
@@ -64692,7 +64292,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 282
+   "rank": 280
   },
   {
    "player_id": 1643024,
@@ -64836,7 +64436,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 212
+   "rank": 211
   },
   {
    "player_id": -787,
@@ -64885,9 +64485,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 11.2,
-   "floor": 6.41,
-   "ceiling": 16.22,
+   "proj": 11.09,
+   "floor": 6.3,
+   "ceiling": 16.12,
    "sigma": 3.87,
    "minutes": 33,
    "rot_rank": null,
@@ -64896,15 +64496,15 @@
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0797,
-   "p_us": 0.558,
+   "edge": 0.0711,
+   "p_us": 0.55,
    "p_book": 0.479,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.558,
-   "p_under": 0.442,
+   "p_over": 0.55,
+   "p_under": 0.45,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -64920,7 +64520,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 23
+   "rank": 24
   },
   {
    "player_id": -781,
@@ -65144,7 +64744,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 218
+   "rank": 217
   },
   {
    "player_id": -752,
@@ -65413,26 +65013,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 4.25,
-   "floor": 0.9,
-   "ceiling": 7.7,
+   "proj": 4.21,
+   "floor": 0.86,
+   "ceiling": 7.66,
    "sigma": 2.69,
-   "minutes": 21,
+   "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 3.5,
    "side": "over",
    "price": 1.77,
    "book": "pointsbetau",
-   "edge": 0.0956,
-   "p_us": 0.613,
+   "edge": 0.0897,
+   "p_us": 0.607,
    "p_book": 0.518,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.613,
-   "p_under": 0.387,
+   "p_over": 0.607,
+   "p_under": 0.393,
    "fair_over": 0.518,
    "fair_under": 0.482,
    "price_over": 1.77,
@@ -65448,7 +65048,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 148
+   "rank": 151
   },
   {
    "player_id": -161,
@@ -65565,9 +65165,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 5.61,
-   "floor": 1.74,
-   "ceiling": 9.85,
+   "proj": 5.54,
+   "floor": 1.67,
+   "ceiling": 9.78,
    "sigma": 3.28,
    "minutes": 18,
    "rot_rank": null,
@@ -65606,7 +65206,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 112
+   "rank": 113
   },
   {
    "player_id": 201144,
@@ -65675,9 +65275,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 8.24,
-   "floor": 4.01,
-   "ceiling": 13.04,
+   "proj": 8.16,
+   "floor": 3.93,
+   "ceiling": 12.96,
    "sigma": 3.56,
    "minutes": 32,
    "rot_rank": null,
@@ -65686,15 +65286,15 @@
    "side": "under",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0275,
-   "p_us": 0.527,
+   "edge": 0.0359,
+   "p_us": 0.536,
    "p_book": 0.5,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.6,
-   "p_over": 0.473,
-   "p_under": 0.527,
+   "p_over": 0.464,
+   "p_under": 0.536,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.83,
@@ -65716,7 +65316,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 65
   },
   {
    "player_id": 201942,
@@ -65845,9 +65445,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 13.23,
-   "floor": 7.17,
-   "ceiling": 18.78,
+   "proj": 13.1,
+   "floor": 7.04,
+   "ceiling": 18.65,
    "sigma": 4.68,
    "minutes": 31,
    "rot_rank": null,
@@ -65856,15 +65456,15 @@
    "side": "over",
    "price": 1.92,
    "book": "sportsbet",
-   "edge": 0.1535,
-   "p_us": 0.643,
+   "edge": 0.143,
+   "p_us": 0.632,
    "p_book": 0.489,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
-   "p_over": 0.643,
-   "p_under": 0.357,
+   "p_over": 0.632,
+   "p_under": 0.368,
    "fair_over": 0.489,
    "fair_under": 0.511,
    "price_over": 1.92,
@@ -65886,7 +65486,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 11
+   "rank": 13
   },
   {
    "player_id": 203114,
@@ -66094,7 +65694,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 202
+   "rank": 201
   },
   {
    "player_id": 203999,
@@ -66194,26 +65794,6 @@
    "pos_usual": "SF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1626167,
-   "player": "Myles Turner",
-   "team": "Milwaukee",
-   "opp": "LA Lakers",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "RA",
-   "line": 6.5,
-   "price": 2.0,
-   "book": "sportsbet",
-   "price_over": 1.78,
-   "price_under": 2.0,
-   "l5_over": 0.8,
-   "l10_over": 0.6,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -66604,7 +66184,7 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "RA",
    "line": 6.5,
-   "price": 2.02,
+   "price": 1.76,
    "book": "sportsbet",
    "price_over": 1.76,
    "price_under": 2.02,
@@ -66613,7 +66193,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -66843,9 +66423,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 5.58,
-   "floor": 1.7,
-   "ceiling": 9.81,
+   "proj": 5.52,
+   "floor": 1.65,
+   "ceiling": 9.76,
    "sigma": 3.28,
    "minutes": 22,
    "rot_rank": null,
@@ -66854,15 +66434,15 @@
    "side": "over",
    "price": 2.1,
    "book": "unibet",
-   "edge": 0.067,
-   "p_us": 0.51,
+   "edge": 0.0602,
+   "p_us": 0.503,
    "p_book": 0.443,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 0.8,
-   "p_over": 0.51,
-   "p_under": 0.49,
+   "p_over": 0.503,
+   "p_under": 0.497,
    "fair_over": 0.443,
    "fair_under": 0.557,
    "price_over": 2.1,
@@ -66884,7 +66464,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 113
+   "rank": 114
   },
   {
    "player_id": 1629004,
@@ -67353,9 +66933,9 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 4.74,
-   "floor": 1.38,
-   "ceiling": 8.18,
+   "proj": 4.7,
+   "floor": 1.34,
+   "ceiling": 8.14,
    "sigma": 2.69,
    "minutes": 12,
    "rot_rank": null,
@@ -67388,7 +66968,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 133
+   "rank": 134
   },
   {
    "player_id": 1629651,
@@ -67406,26 +66986,6 @@
    "l10_over": null,
    "pos": "C",
    "pos_usual": "C",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1629656,
-   "player": "Quentin Grimes",
-   "team": "LA Lakers",
-   "opp": "Milwaukee",
-   "game": "LA Lakers vs Milwaukee",
-   "stat": "RA",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
    "early": null,
    "gate_status": null,
    "us": null
@@ -67892,7 +67452,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 237
+   "rank": 235
   },
   {
    "player_id": 1630264,
@@ -68265,26 +67825,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 5.77,
-   "floor": 1.9,
-   "ceiling": 10.01,
+   "proj": 5.71,
+   "floor": 1.84,
+   "ceiling": 9.95,
    "sigma": 3.28,
    "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 5.5,
-   "side": "over",
-   "price": 1.74,
+   "side": "under",
+   "price": 2.0,
    "book": "unibet",
-   "edge": 0.0006,
-   "p_us": 0.535,
-   "p_book": 0.535,
+   "edge": 0.007,
+   "p_us": 0.472,
+   "p_book": 0.465,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.4,
-   "p_over": 0.535,
-   "p_under": 0.465,
+   "p_over": 0.528,
+   "p_under": 0.472,
    "fair_over": 0.535,
    "fair_under": 0.465,
    "price_over": 1.74,
@@ -68306,7 +67866,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 106
+   "rank": 109
   },
   {
    "player_id": 1630631,
@@ -68470,7 +68030,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 53
   },
   {
    "player_id": 1631106,
@@ -68514,7 +68074,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 85
+   "rank": 86
   },
   {
    "player_id": 1631117,
@@ -68658,7 +68218,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 246
+   "rank": 244
   },
   {
    "player_id": 1631157,
@@ -68748,10 +68308,10 @@
    "game": "LA Lakers vs Milwaukee",
    "stat": "RA",
    "line": 7.5,
-   "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.82,
-   "price_under": 1.91,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8,
    "l5_over": 0.4,
    "l10_over": 0.5,
    "pos": "SF",
@@ -69431,26 +68991,26 @@
    "opp": "Houston",
    "game": "Golden State vs Houston",
    "stat": "RA",
-   "proj": 8.9,
-   "floor": 4.02,
-   "ceiling": 13.86,
-   "sigma": 3.82,
-   "minutes": 34,
+   "proj": 8.79,
+   "floor": 4.55,
+   "ceiling": 13.59,
+   "sigma": 3.56,
+   "minutes": 33,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 7.5,
    "side": "over",
    "price": 1.78,
    "book": "sportsbet",
-   "edge": 0.1139,
-   "p_us": 0.643,
+   "edge": 0.1226,
+   "p_us": 0.652,
    "p_book": 0.529,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.643,
-   "p_under": 0.357,
+   "p_over": 0.652,
+   "p_under": 0.348,
    "fair_over": 0.529,
    "fair_under": 0.471,
    "price_over": 1.78,
@@ -69472,7 +69032,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 56
   },
   {
    "player_id": 1641765,
@@ -69736,7 +69296,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 163
+   "rank": 164
   },
   {
    "player_id": 1642264,
@@ -70200,7 +69760,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 270
+   "rank": 268
   },
   {
    "player_id": 1642419,
@@ -70304,7 +69864,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 272
+   "rank": 270
   },
   {
    "player_id": 1642504,
@@ -70934,7 +70494,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 188
   },
   {
    "player_id": 1642959,
@@ -71038,7 +70598,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 282
+   "rank": 280
   },
   {
    "player_id": 1643024,
@@ -71106,6 +70666,10 @@
   {
    "run_at": "2026-11-11T18:46+00:00",
    "trigger": "main"
+  },
+  {
+   "run_at": "2026-11-11T19:06+00:00",
+   "trigger": "lineups"
   }
  ]
 }
