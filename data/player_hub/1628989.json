@@ -4,6 +4,13 @@
  "team": "Detroit",
  "opp": "Washington",
  "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
   "PTS": {
    "line": 9.5,
    "price": 1.83,
@@ -13,10 +20,10 @@
   },
   "PRA": {
    "line": 16.5,
-   "price": 1.85,
+   "price": 1.95,
    "book": "tab",
-   "price_over": 1.85,
-   "price_under": 1.9
+   "price_over": 1.95,
+   "price_under": 1.8
   },
   "3PM": {
    "line": 1.5,
@@ -24,6 +31,13 @@
    "book": "neds",
    "price_over": 2.0,
    "price_under": 1.7
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.8,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
   }
  },
  "recent_games": [
@@ -152,6 +166,16 @@
   "PTS": {
    "line": 9.5,
    "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 4,
    "n": 5
   },
   "3PM": {
