@@ -4,19 +4,19 @@
   {
    "id": 201935,
    "name": "James Harden",
-   "games": 55,
-   "med_min": 35.0
+   "games": 56,
+   "med_min": 34.9
   },
   {
    "id": 1628378,
    "name": "Donovan Mitchell",
-   "games": 170,
+   "games": 171,
    "med_min": 34.0
   },
   {
    "id": 1630596,
    "name": "Evan Mobley",
-   "games": 165,
+   "games": 166,
    "med_min": 32.8
   },
   {
@@ -26,16 +26,16 @@
    "med_min": 32.0
   },
   {
-   "id": 1628386,
-   "name": "Jarrett Allen",
-   "games": 165,
-   "med_min": 28.2
-  },
-  {
    "id": 1631212,
    "name": "Peyton Watson",
-   "games": 9,
-   "med_min": 28.0
+   "games": 10,
+   "med_min": 28.5
+  },
+  {
+   "id": 1628386,
+   "name": "Jarrett Allen",
+   "games": 166,
+   "med_min": 28.2
   },
   {
    "id": 1629631,
@@ -52,8 +52,8 @@
   {
    "id": -735,
    "name": "Meleek Thomas",
-   "games": 8,
-   "med_min": 23.5
+   "games": 9,
+   "med_min": 23.0
   },
   {
    "id": 1627747,
@@ -88,7 +88,7 @@
   {
    "id": 1642281,
    "name": "Jaylon Tyson",
-   "games": 135,
+   "games": 136,
    "med_min": 20.1
   },
   {
@@ -112,7 +112,7 @@
   {
    "id": -701,
    "name": "Mario Hezonja",
-   "games": 11,
+   "games": 12,
    "med_min": 19.0
   },
   {
@@ -154,8 +154,8 @@
   {
    "id": 1642878,
    "name": "Tyrese Proctor",
-   "games": 64,
-   "med_min": 10.5
+   "games": 65,
+   "med_min": 10.7
   },
   {
    "id": 1641807,
@@ -33770,6 +33770,151 @@
      "FGM": 7.0,
      "FGA": 12.0,
      "3PA": 6.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-11_cleveland_vs_new-york",
+   "lines": {
+    "1628378": {
+     "min": 36.0,
+     "PTS": 23.0,
+     "REB": 7.0,
+     "AST": 6.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "FGM": 8.0,
+     "FGA": 15.0,
+     "3PA": 7.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1630596": {
+     "min": 33.0,
+     "PTS": 10.0,
+     "REB": 5.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 8.0,
+     "3PA": 2.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "201935": {
+     "min": 33.0,
+     "PTS": 32.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 5.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 9.0,
+     "FGA": 14.0,
+     "3PA": 7.0,
+     "FTA": 11.0,
+     "starter": true
+    },
+    "1628386": {
+     "min": 32.0,
+     "PTS": 11.0,
+     "REB": 14.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 7.0,
+     "3PA": 0.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1642281": {
+     "min": 23.0,
+     "PTS": 3.0,
+     "REB": 0.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 5.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1631212": {
+     "min": 30.0,
+     "PTS": 7.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 4.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 12.0,
+     "3PA": 5.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1642878": {
+     "min": 23.0,
+     "PTS": 15.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 6.0,
+     "FGA": 12.0,
+     "3PA": 8.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-701": {
+     "min": 7.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-735": {
+     "min": 22.0,
+     "PTS": 14.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 6.0,
+     "FGA": 11.0,
+     "3PA": 4.0,
      "FTA": 0.0,
      "starter": false
     }

@@ -4,7 +4,7 @@
   {
    "id": 1629029,
    "name": "Luka Doncic",
-   "games": 102,
+   "games": 103,
    "med_min": 37.0
   },
   {
@@ -16,7 +16,7 @@
   {
    "id": 1630559,
    "name": "Austin Reaves",
-   "games": 141,
+   "games": 142,
    "med_min": 36.0
   },
   {
@@ -32,12 +32,6 @@
    "med_min": 30.8
   },
   {
-   "id": 1631117,
-   "name": "Walker Kessler",
-   "games": 12,
-   "med_min": 30.5
-  },
-  {
    "id": 203935,
    "name": "Marcus Smart",
    "games": 72,
@@ -47,6 +41,12 @@
    "id": 1627827,
    "name": "Dorian Finney-Smith",
    "games": 43,
+   "med_min": 30.0
+  },
+  {
+   "id": 1631117,
+   "name": "Walker Kessler",
+   "games": 13,
    "med_min": 30.0
   },
   {
@@ -82,26 +82,26 @@
   {
    "id": 1631222,
    "name": "Jake LaRavia",
-   "games": 101,
+   "games": 102,
    "med_min": 24.8
   },
   {
    "id": 1629680,
    "name": "Matisse Thybulle",
-   "games": 12,
-   "med_min": 24.0
-  },
-  {
-   "id": 1630533,
-   "name": "Ziaire Williams",
-   "games": 9,
+   "games": 13,
    "med_min": 24.0
   },
   {
    "id": 1630572,
    "name": "Sandro Mamukelashvili",
-   "games": 12,
-   "med_min": 23.0
+   "games": 13,
+   "med_min": 24.0
+  },
+  {
+   "id": 1630533,
+   "name": "Ziaire Williams",
+   "games": 10,
+   "med_min": 23.5
   },
   {
    "id": 1629216,
@@ -130,13 +130,13 @@
   {
    "id": 1629012,
    "name": "Collin Sexton",
-   "games": 11,
+   "games": 12,
    "med_min": 16.0
   },
   {
    "id": 1629020,
    "name": "Jarred Vanderbilt",
-   "games": 115,
+   "games": 116,
    "med_min": 16.0
   },
   {
@@ -214,19 +214,19 @@
   {
    "id": 1626172,
    "name": "Kevon Looney",
-   "games": 4,
+   "games": 5,
    "med_min": 5.0
-  },
-  {
-   "id": 1642355,
-   "name": "Bronny James",
-   "games": 81,
-   "med_min": 4.6
   },
   {
    "id": 1642876,
    "name": "Adou Thiero",
-   "games": 34,
+   "games": 35,
+   "med_min": 4.6
+  },
+  {
+   "id": 1642355,
+   "name": "Bronny James",
+   "games": 82,
    "med_min": 4.5
   },
   {
@@ -250,13 +250,13 @@
   {
    "id": -771,
    "name": "Cameron Carr",
-   "games": 4,
+   "games": 5,
    "med_min": 1.0
   },
   {
    "id": 1630702,
    "name": "Jaden Hardy",
-   "games": 6,
+   "games": 7,
    "med_min": 1.0
   },
   {
@@ -31912,6 +31912,226 @@
      "FGM": 1.0,
      "FGA": 2.0,
      "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2026-11-11_la-lakers_vs_milwaukee",
+   "lines": {
+    "1642876": {
+     "min": 14.0,
+     "PTS": 2.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 0.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630559": {
+     "min": 25.0,
+     "PTS": 18.0,
+     "REB": 3.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 6.0,
+     "FGA": 10.0,
+     "3PA": 3.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1642355": {
+     "min": 4.0,
+     "PTS": 4.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1629012": {
+     "min": 13.0,
+     "PTS": 10.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 8.0,
+     "3PA": 3.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630702": {
+     "min": 4.0,
+     "PTS": 3.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1631222": {
+     "min": 21.0,
+     "PTS": 0.0,
+     "REB": 9.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 4.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1629020": {
+     "min": 9.0,
+     "PTS": 4.0,
+     "REB": 3.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1626172": {
+     "min": 4.0,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1629029": {
+     "min": 32.0,
+     "PTS": 32.0,
+     "REB": 5.0,
+     "AST": 5.0,
+     "3PM": 5.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "FGM": 10.0,
+     "FGA": 25.0,
+     "3PA": 12.0,
+     "FTA": 10.0,
+     "starter": true
+    },
+    "1629680": {
+     "min": 23.0,
+     "PTS": 8.0,
+     "REB": 5.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 3.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 4.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630572": {
+     "min": 26.0,
+     "PTS": 23.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 5.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 9.0,
+     "FGA": 15.0,
+     "3PA": 8.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1631117": {
+     "min": 29.0,
+     "PTS": 10.0,
+     "REB": 11.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 10.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630533": {
+     "min": 20.0,
+     "PTS": 9.0,
+     "REB": 1.0,
+     "AST": 5.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 5.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-771": {
+     "min": 13.0,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 0.0,
+     "FGA": 3.0,
+     "3PA": 3.0,
      "FTA": 0.0,
      "starter": false
     }

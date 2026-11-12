@@ -2,8 +2,65 @@
  "player_id": 1630163,
  "player": "LaMelo Ball",
  "team": "Minnesota",
- "opp": null,
- "lines": {},
+ "opp": "Dallas",
+ "lines": {
+  "PA": {
+   "line": 26.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 2.0,
+   "book": "neds",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 2.15,
+   "book": "pointsbetau",
+   "price_over": 1.69,
+   "price_under": 2.15
+  },
+  "PRA": {
+   "line": 31.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 20.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "PR": {
+   "line": 24.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-08",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 20.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
