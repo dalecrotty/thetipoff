@@ -4,29 +4,29 @@
  "team": "Dallas",
  "projections": {
   "3PM": {
-   "mean": 0.7,
+   "mean": 0.69,
    "floor": 0.0,
    "ceiling": 1.95
   },
   "AST": {
    "mean": 1.0,
-   "floor": 0.02,
-   "ceiling": 2.33
+   "floor": 0.04,
+   "ceiling": 2.36
   },
   "BLK": {
    "mean": 0.61,
    "floor": 0.02,
-   "ceiling": 2.01
+   "ceiling": 2.02
   },
   "PTS": {
    "mean": 6.09,
-   "floor": 1.02,
-   "ceiling": 11.76
+   "floor": 0.03,
+   "ceiling": 12.92
   },
   "REB": {
-   "mean": 3.4,
-   "floor": 0.94,
-   "ceiling": 6.17
+   "mean": 3.39,
+   "floor": 0.95,
+   "ceiling": 6.11
   },
   "STL": {
    "mean": 0.79,
@@ -36,17 +36,17 @@
   "TOV": {
    "mean": 0.84,
    "floor": 0.0,
-   "ceiling": 1.97
+   "ceiling": 1.98
   },
   "PRA": {
    "mean": 10.49,
-   "floor": 2.77,
-   "ceiling": 19.21
+   "floor": 2.76,
+   "ceiling": 19.2
   },
   "PR": {
-   "mean": 9.49,
-   "floor": 1.76,
-   "ceiling": 17.83
+   "mean": 9.48,
+   "floor": 1.75,
+   "ceiling": 17.82
   },
   "PA": {
    "mean": 7.1,
@@ -54,8 +54,8 @@
    "ceiling": 13.88
   },
   "RA": {
-   "mean": 4.4,
-   "floor": 1.04,
+   "mean": 4.39,
+   "floor": 1.03,
    "ceiling": 7.84
   }
  },
@@ -228,8 +228,8 @@
  "lines": {
   "REB": {
    "line": 2.5,
-   "p_over": 0.631,
-   "p_under": 0.369,
+   "p_over": 0.63,
+   "p_under": 0.37,
    "fair_over": 0.44,
    "fair_under": 0.56,
    "price_over": 2.15,
@@ -237,7 +237,7 @@
    "side": "over",
    "price": 2.15,
    "book": "pointsbetau",
-   "edge": 0.191,
+   "edge": 0.1901,
    "tier": "A"
   },
   "PR": {
@@ -251,7 +251,7 @@
    "side": "over",
    "price": 2.0,
    "book": "pointsbetau",
-   "edge": 0.1597,
+   "edge": 0.1594,
    "tier": "A"
   },
   "PTS": {
@@ -270,8 +270,8 @@
   },
   "3PM": {
    "line": 0.5,
-   "p_over": 0.489,
-   "p_under": 0.511,
+   "p_over": 0.488,
+   "p_under": 0.512,
    "fair_over": 0.491,
    "fair_under": 0.509,
    "price_over": 1.9,
@@ -279,7 +279,7 @@
    "side": "under",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0019,
+   "edge": 0.0025,
    "tier": null
   }
  },
