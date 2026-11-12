@@ -2,8 +2,473 @@
  "player_id": 1642855,
  "player": "Noa Essengue",
  "team": "Chicago",
- "opp": "San Antonio",
+ "projections": {
+  "3PM": {
+   "mean": 0.48,
+   "floor": 0.0,
+   "ceiling": 1.81
+  },
+  "AST": {
+   "mean": 0.8,
+   "floor": 0.0,
+   "ceiling": 2.16
+  },
+  "BLK": {
+   "mean": 0.26,
+   "floor": 0.0,
+   "ceiling": 0.99
+  },
+  "PTS": {
+   "mean": 5.45,
+   "floor": 0.63,
+   "ceiling": 11.17
+  },
+  "REB": {
+   "mean": 3.25,
+   "floor": 0.81,
+   "ceiling": 5.97
+  },
+  "STL": {
+   "mean": 0.56,
+   "floor": 0.0,
+   "ceiling": 2.01
+  },
+  "TOV": {
+   "mean": 0.76,
+   "floor": 0.0,
+   "ceiling": 2.03
+  },
+  "PRA": {
+   "mean": 9.51,
+   "floor": 1.79,
+   "ceiling": 18.23
+  },
+  "PR": {
+   "mean": 8.71,
+   "floor": 1.94,
+   "ceiling": 16.82
+  },
+  "PA": {
+   "mean": 6.26,
+   "floor": 0.39,
+   "ceiling": 13.04
+  },
+  "RA": {
+   "mean": 4.06,
+   "floor": 1.31,
+   "ceiling": 7.36
+  }
+ },
+ "minutes": {
+  "value": 16,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 10,
+   "min_pg": 11.8,
+   "PTS": {
+    "pg": 4.2,
+    "pm": 0.356
+   },
+   "REB": {
+    "pg": 2.8,
+    "pm": 0.237
+   },
+   "AST": {
+    "pg": 0.3,
+    "pm": 0.025
+   },
+   "3PM": {
+    "pg": 0.3,
+    "pm": 0.025
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.042
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.017
+   },
+   "TOV": {
+    "pg": 0.7,
+    "pm": 0.059
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 11.8,
+   "PTS": {
+    "pg": 4.2,
+    "pm": 0.356
+   },
+   "REB": {
+    "pg": 2.8,
+    "pm": 0.237
+   },
+   "AST": {
+    "pg": 0.3,
+    "pm": 0.025
+   },
+   "3PM": {
+    "pg": 0.3,
+    "pm": 0.025
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.042
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.017
+   },
+   "TOV": {
+    "pg": 0.7,
+    "pm": 0.059
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 13.8,
+   "PTS": {
+    "pg": 7.4,
+    "pm": 0.536
+   },
+   "REB": {
+    "pg": 4.0,
+    "pm": 0.29
+   },
+   "AST": {
+    "pg": 0.4,
+    "pm": 0.029
+   },
+   "3PM": {
+    "pg": 0.6,
+    "pm": 0.043
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.014
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.043
+   }
+  },
+  "home": {
+   "games": 3,
+   "min_pg": 9.6,
+   "PTS": {
+    "pg": 4.33,
+    "pm": 0.45
+   },
+   "REB": {
+    "pg": 2.33,
+    "pm": 0.242
+   },
+   "AST": {
+    "pg": 0.67,
+    "pm": 0.069
+   },
+   "3PM": {
+    "pg": 0.33,
+    "pm": 0.035
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {
+   "games": 7,
+   "min_pg": 12.7,
+   "PTS": {
+    "pg": 4.14,
+    "pm": 0.325
+   },
+   "REB": {
+    "pg": 3.0,
+    "pm": 0.236
+   },
+   "AST": {
+    "pg": 0.14,
+    "pm": 0.011
+   },
+   "3PM": {
+    "pg": 0.29,
+    "pm": 0.022
+   },
+   "STL": {
+    "pg": 0.71,
+    "pm": 0.056
+   },
+   "BLK": {
+    "pg": 0.29,
+    "pm": 0.022
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.079
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2025-11-22",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-11-22_chicago_vs_washington",
+   "starter": false,
+   "rest": "3+",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 3.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-11-24",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-11-24_chicago_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 2.1,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-21",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2026-10-21_chicago_vs_toronto",
+   "starter": false,
+   "rest": "330",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 10.0,
+   "PTS": 1.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 0.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2026-10-23_chicago_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 17.0,
+   "PTS": 4.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-26_boston_vs_chicago",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 16.0,
+   "PTS": 0.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2026-10-28_chicago_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 10.0,
+   "PTS": 3.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 1.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-30_boston_vs_chicago",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 16.0,
+   "PTS": 10.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 3.0,
+   "FGA": 7.0,
+   "3PA": 3.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2026-11-02_chicago_vs_philadelphia",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 14.0,
+   "PTS": 8.0,
+   "REB": 6.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 7.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-04_chicago_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 14.0,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-08",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-11-08_chicago_vs_philadelphia",
+   "starter": false,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 15.0,
+   "PTS": 10.0,
+   "REB": 7.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 7.0,
+   "3PA": 3.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-08",
@@ -124,8 +589,128 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-26_boston_vs_chicago",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 16.0,
+   "PTS": 0.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Milwaukee",
+   "venue": "R",
+   "game": "2026-10-23_chicago_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 17.0,
+   "PTS": 4.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-21",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2026-10-21_chicago_vs_toronto",
+   "starter": false,
+   "rest": "330",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 10.0,
+   "PTS": 1.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 0.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-11-24",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2025-11-24_chicago_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 2.1,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2025-11-22",
+   "opp": "Washington",
+   "venue": "H",
+   "game": "2025-11-22_chicago_vs_washington",
+   "starter": false,
+   "rest": "3+",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 3.9,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "San Antonio"
 }
