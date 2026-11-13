@@ -5,13 +5,13 @@
  "projections": {
   "3PM": {
    "mean": 0.63,
-   "floor": 0.0,
-   "ceiling": 1.97
+   "floor": 0.01,
+   "ceiling": 1.96
   },
   "AST": {
-   "mean": 1.8,
-   "floor": 0.02,
-   "ceiling": 3.92
+   "mean": 1.79,
+   "floor": 0.0,
+   "ceiling": 3.91
   },
   "BLK": {
    "mean": 0.16,
@@ -20,13 +20,13 @@
   },
   "PTS": {
    "mean": 5.1,
-   "floor": 0.02,
-   "ceiling": 10.77
+   "floor": 0.27,
+   "ceiling": 10.82
   },
   "REB": {
    "mean": 1.91,
-   "floor": 0.07,
-   "ceiling": 4.1
+   "floor": 0.14,
+   "ceiling": 4.12
   },
   "STL": {
    "mean": 0.35,
@@ -41,10 +41,10 @@
   "PRA": {
    "mean": 8.81,
    "floor": 1.09,
-   "ceiling": 17.53
+   "ceiling": 17.52
   },
   "PR": {
-   "mean": 7.02,
+   "mean": 7.01,
    "floor": 0.25,
    "ceiling": 15.13
   },
@@ -56,7 +56,7 @@
   "RA": {
    "mean": 3.71,
    "floor": 0.96,
-   "ceiling": 7.02
+   "ceiling": 7.01
   }
  },
  "minutes": {
