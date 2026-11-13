@@ -12,11 +12,11 @@
    "price_under": 1.56
   },
   "REB": {
-   "line": 3.5,
-   "price": 2.0,
-   "book": "sportsbet",
-   "price_over": 1.78,
-   "price_under": 2.0
+   "line": 4.5,
+   "price": 1.62,
+   "book": "tab",
+   "price_over": 2.2,
+   "price_under": 1.62
   },
   "PTS": {
    "line": 10.5,
@@ -27,17 +27,24 @@
   },
   "PR": {
    "line": 14.5,
-   "price": 1.94,
+   "price": 1.91,
    "book": "neds",
-   "price_over": 1.94,
-   "price_under": 1.8
+   "price_over": 1.91,
+   "price_under": 1.83
   },
   "PRA": {
    "line": 16.5,
-   "price": 1.95,
+   "price": 1.87,
    "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 2.2,
+   "book": "tab",
+   "price_over": 2.2,
+   "price_under": 1.62
   }
  },
  "recent_games": [
@@ -169,8 +176,13 @@
    "n": 5
   },
   "REB": {
-   "line": 3.5,
-   "over": 2,
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
    "n": 5
   },
   "3PM": {
