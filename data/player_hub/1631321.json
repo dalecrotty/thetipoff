@@ -2,8 +2,65 @@
  "player_id": 1631321,
  "player": "Sidy Cissoko",
  "team": "Portland",
- "opp": null,
- "lines": {},
+ "opp": "Sacramento",
+ "lines": {
+  "RA": {
+   "line": 5.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "PA": {
+   "line": 10.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PRA": {
+   "line": 14.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "PR": {
+   "line": 11.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.5,
+   "book": "sportsbet",
+   "price_over": 1.5,
+   "price_under": 2.45
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-11",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

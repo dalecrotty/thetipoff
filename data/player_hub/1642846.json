@@ -2,8 +2,65 @@
  "player_id": 1642846,
  "player": "Ace Bailey",
  "team": "Utah",
- "opp": null,
- "lines": {},
+ "opp": "Houston",
+ "lines": {
+  "PR": {
+   "line": 19.5,
+   "price": 2.0,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.74
+  },
+  "PRA": {
+   "line": 21.5,
+   "price": 1.97,
+   "book": "unibet",
+   "price_over": 1.97,
+   "price_under": 1.75
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.87
+  },
+  "PA": {
+   "line": 15.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.2,
+   "book": "neds",
+   "price_over": 1.58,
+   "price_under": 2.2
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 2.1,
+   "book": "unibet",
+   "price_over": 2.1,
+   "price_under": 1.67
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 2.02,
+   "price_under": 1.76
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.6,
+   "book": "unibet",
+   "price_over": 1.6,
+   "price_under": 2.23
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-11",
@@ -13,7 +70,7 @@
    "starter": true,
    "rest": "0",
    "result": "L",
-   "opp_tier": "Bottom 10",
+   "opp_tier": "Middle 10",
    "min": 31.0,
    "PTS": 18.0,
    "REB": 7.0,
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

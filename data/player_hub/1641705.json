@@ -2,8 +2,65 @@
  "player_id": 1641705,
  "player": "Victor Wembanyama",
  "team": "San Antonio",
- "opp": null,
- "lines": {},
+ "opp": "Golden State",
+ "lines": {
+  "PTS": {
+   "line": 26.5,
+   "price": 1.79,
+   "book": "unibet",
+   "price_over": 1.79,
+   "price_under": 1.93
+  },
+  "PA": {
+   "line": 30.5,
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 38.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "PRA": {
+   "line": 41.5,
+   "price": 1.87,
+   "book": "unibet",
+   "price_over": 1.87,
+   "price_under": 1.85
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.15,
+   "book": "neds",
+   "price_over": 1.6,
+   "price_under": 2.15
+  },
+  "RA": {
+   "line": 14.5,
+   "price": 2.0,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.74
+  },
+  "REB": {
+   "line": 11.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.64,
+   "book": "neds",
+   "price_over": 1.64,
+   "price_under": 2.2
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-11",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 26.5,
+   "over": 5,
+   "n": 5
+  },
+  "REB": {
+   "line": 11.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
