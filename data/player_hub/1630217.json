@@ -4,18 +4,60 @@
  "team": "Orlando",
  "opp": "Milwaukee",
  "lines": {
+  "RA": {
+   "line": 7.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 2.1,
+   "book": "pointsbetau",
+   "price_over": 2.1,
+   "price_under": 1.71
+  },
   "3PM": {
    "line": 3.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PRA": {
+   "line": 27.5,
    "price": 1.87,
    "book": "pointsbetau",
    "price_over": 1.87,
    "price_under": 1.87
   },
+  "AST": {
+   "line": 2.5,
+   "price": 1.6,
+   "book": "sportsbet",
+   "price_over": 1.6,
+   "price_under": 2.2
+  },
   "PTS": {
    "line": 20.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 24.5,
    "price": 1.87,
-   "book": "pointsbetau",
+   "book": "unibet",
    "price_over": 1.87,
+   "price_under": 1.85
+  },
+  "PA": {
+   "line": 23.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
    "price_under": 1.87
   }
  },
@@ -145,6 +187,16 @@
   "PTS": {
    "line": 20.5,
    "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
    "n": 5
   },
   "3PM": {

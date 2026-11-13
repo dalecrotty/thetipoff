@@ -4,12 +4,12 @@
  "team": "Oklahoma City",
  "projections": {
   "3PM": {
-   "mean": 1.99,
-   "floor": 0.06,
-   "ceiling": 4.0
+   "mean": 2.0,
+   "floor": 0.07,
+   "ceiling": 4.01
   },
   "AST": {
-   "mean": 1.51,
+   "mean": 1.52,
    "floor": 0.0,
    "ceiling": 3.11
   },
@@ -19,19 +19,19 @@
    "ceiling": 1.01
   },
   "PTS": {
-   "mean": 9.36,
-   "floor": 2.33,
-   "ceiling": 16.79
+   "mean": 9.4,
+   "floor": 2.37,
+   "ceiling": 16.83
   },
   "REB": {
    "mean": 1.33,
    "floor": 0.0,
-   "ceiling": 3.51
+   "ceiling": 3.52
   },
   "STL": {
    "mean": 0.92,
    "floor": 0.0,
-   "ceiling": 1.98
+   "ceiling": 1.99
   },
   "TOV": {
    "mean": 0.7,
@@ -39,24 +39,24 @@
    "ceiling": 1.95
   },
   "PRA": {
-   "mean": 12.2,
-   "floor": 3.57,
-   "ceiling": 20.98
+   "mean": 12.26,
+   "floor": 3.63,
+   "ceiling": 21.04
   },
   "PR": {
-   "mean": 10.69,
-   "floor": 2.95,
-   "ceiling": 19.02
+   "mean": 10.74,
+   "floor": 3.01,
+   "ceiling": 19.07
   },
   "PA": {
-   "mean": 10.87,
-   "floor": 2.99,
-   "ceiling": 19.17
+   "mean": 10.92,
+   "floor": 3.05,
+   "ceiling": 19.22
   },
   "RA": {
-   "mean": 2.84,
-   "floor": 0.09,
-   "ceiling": 6.14
+   "mean": 2.85,
+   "floor": 0.1,
+   "ceiling": 6.16
   }
  },
  "minutes": {
@@ -228,22 +228,22 @@
  "lines": {
   "PTS": {
    "line": 7.5,
-   "p_over": 0.633,
-   "p_under": 0.367,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
+   "p_over": 0.636,
+   "p_under": 0.364,
+   "fair_over": 0.512,
+   "fair_under": 0.488,
+   "price_over": 1.82,
+   "price_under": 1.91,
    "side": "over",
-   "price": 1.8,
-   "book": "pointsbetau",
-   "edge": 0.1126,
+   "price": 1.82,
+   "book": "unibet",
+   "edge": 0.1236,
    "tier": "A"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.566,
-   "p_under": 0.434,
+   "p_over": 0.568,
+   "p_under": 0.432,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -251,11 +251,40 @@
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0868,
+   "edge": 0.0892,
    "tier": "A"
   }
  },
- "lines_us": {},
+ "lines_us": {
+  "3PM": {
+   "line": 1.5,
+   "p_over": 0.568,
+   "p_under": 0.432,
+   "fair_over": 0.443,
+   "fair_under": 0.557,
+   "price_over": 2.1,
+   "price_under": 1.67,
+   "side": "over",
+   "price": 2.1,
+   "book": "betmgm",
+   "edge": 0.1249,
+   "tier": "A"
+  },
+  "PTS": {
+   "line": 7.5,
+   "p_over": 0.636,
+   "p_under": 0.364,
+   "fair_over": 0.512,
+   "fair_under": 0.488,
+   "price_over": 1.82,
+   "price_under": 1.91,
+   "side": "over",
+   "price": 1.82,
+   "book": "betrivers",
+   "edge": 0.1236,
+   "tier": "A"
+  }
+ },
  "game_log": [
   {
    "date": "2026-10-20",

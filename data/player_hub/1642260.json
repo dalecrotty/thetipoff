@@ -2,8 +2,67 @@
  "player_id": 1642260,
  "player": "Nikola Topic",
  "team": "Oklahoma City",
- "projections": {},
- "minutes": null,
+ "projections": {
+  "3PM": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.0
+  },
+  "AST": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.33
+  },
+  "BLK": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.89
+  },
+  "PTS": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 5.67
+  },
+  "REB": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 2.18
+  },
+  "STL": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 0.79
+  },
+  "TOV": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 1.38
+  },
+  "PRA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 8.71
+  },
+  "PR": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 8.11
+  },
+  "PA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 6.78
+  },
+  "RA": {
+   "mean": 0.0,
+   "floor": 0.0,
+   "ceiling": 3.3
+  }
+ },
+ "minutes": {
+  "value": 0,
+  "source": "model"
+ },
  "splits": {
   "season": {
    "games": 19,
@@ -868,6 +927,14 @@
    "phase": "regular"
   }
  ],
- "with_without_tonight": [],
- "opp": null
+ "with_without_tonight": [
+  {
+   "star": "Jalen Williams",
+   "n_without": 15,
+   "PTS": 2.5,
+   "REB": 0.1,
+   "AST": 0.9
+  }
+ ],
+ "opp": "LA Clippers"
 }
