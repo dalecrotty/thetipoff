@@ -226,6 +226,20 @@
   }
  },
  "lines": {
+  "PTS": {
+   "line": 4.5,
+   "p_over": 0.633,
+   "p_under": 0.367,
+   "fair_over": 0.478,
+   "fair_under": 0.522,
+   "price_over": 2.0,
+   "price_under": 1.83,
+   "side": "over",
+   "price": 2.0,
+   "book": "pointsbetau",
+   "edge": 0.1555,
+   "tier": "A"
+  },
   "PRA": {
    "line": 9.5,
    "p_over": 0.655,
@@ -240,20 +254,6 @@
    "edge": 0.1486,
    "tier": "A"
   },
-  "PTS": {
-   "line": 4.5,
-   "p_over": 0.633,
-   "p_under": 0.367,
-   "fair_over": 0.487,
-   "fair_under": 0.513,
-   "price_over": 1.92,
-   "price_under": 1.82,
-   "side": "over",
-   "price": 1.92,
-   "book": "neds",
-   "edge": 0.1467,
-   "tier": "A"
-  },
   "PR": {
    "line": 8.5,
    "p_over": 0.684,
@@ -264,7 +264,7 @@
    "price_under": 2.1,
    "side": "over",
    "price": 1.7,
-   "book": "neds",
+   "book": "ladbrokes_au",
    "edge": 0.1318,
    "tier": "A"
   },
@@ -272,15 +272,29 @@
    "line": 4.5,
    "p_over": 0.59,
    "p_under": 0.41,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
+   "fair_over": 0.48,
+   "fair_under": 0.52,
+   "price_over": 1.95,
+   "price_under": 1.8,
    "side": "over",
-   "price": 1.87,
-   "book": "neds",
-   "edge": 0.0901,
+   "price": 1.95,
+   "book": "tab",
+   "edge": 0.1101,
    "tier": "A"
+  },
+  "AST": {
+   "line": 0.5,
+   "p_over": 0.48,
+   "p_under": 0.52,
+   "fair_over": 0.444,
+   "fair_under": 0.556,
+   "price_over": 2.1,
+   "price_under": 1.68,
+   "side": "over",
+   "price": 2.1,
+   "book": "tab",
+   "edge": 0.036,
+   "tier": "B"
   }
  },
  "lines_us": {},
