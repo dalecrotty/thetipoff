@@ -4,12 +4,26 @@
  "team": "Golden State",
  "opp": "San Antonio",
  "lines": {
+  "PR": {
+   "line": 6.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
   "PTS": {
    "line": 4.5,
-   "price": 1.88,
+   "price": 1.9,
    "book": "sportsbet",
-   "price_over": 1.88,
-   "price_under": 1.88
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "REB": {
+   "line": 1.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
   }
  },
  "recent_games": [
@@ -137,6 +151,11 @@
  "hits": {
   "PTS": {
    "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 1.5,
    "over": 3,
    "n": 5
   }
