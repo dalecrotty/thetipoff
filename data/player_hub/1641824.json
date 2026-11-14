@@ -4,6 +4,20 @@
  "team": "Chicago",
  "opp": "Minnesota",
  "lines": {
+  "REB": {
+   "line": 6.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 23.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
   "PTS": {
    "line": 16.5,
    "price": 1.95,
@@ -11,19 +25,19 @@
    "price_over": 1.8,
    "price_under": 1.95
   },
-  "PR": {
-   "line": 22.5,
-   "price": 1.78,
-   "book": "unibet",
-   "price_over": 1.94,
-   "price_under": 1.78
-  },
   "PRA": {
-   "line": 23.5,
-   "price": 1.96,
+   "line": 24.5,
+   "price": 1.84,
    "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PA": {
+   "line": 18.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
   },
   "3PM": {
    "line": 2.5,
@@ -32,26 +46,12 @@
    "price_over": 2.45,
    "price_under": 1.53
   },
-  "PA": {
-   "line": 18.5,
-   "price": 1.86,
-   "book": "sportsbet",
-   "price_over": 1.9,
-   "price_under": 1.86
-  },
-  "REB": {
-   "line": 5.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
   "RA": {
    "line": 7.5,
-   "price": 1.85,
+   "price": 1.92,
    "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85
+   "price_over": 1.84,
+   "price_under": 1.92
   }
  },
  "recent_games": [
@@ -183,8 +183,8 @@
    "n": 5
   },
   "REB": {
-   "line": 5.5,
-   "over": 1,
+   "line": 6.5,
+   "over": 0,
    "n": 5
   },
   "3PM": {
