@@ -2,8 +2,586 @@
  "player_id": -765,
  "player": "Ryan Conwell",
  "team": "Miami",
- "opp": "Detroit",
- "lines": {},
+ "projections": {
+  "3PM": {
+   "mean": 1.58,
+   "floor": 0.07,
+   "ceiling": 3.16
+  },
+  "AST": {
+   "mean": 2.32,
+   "floor": 0.25,
+   "ceiling": 4.28
+  },
+  "BLK": {
+   "mean": 0.2,
+   "floor": 0.0,
+   "ceiling": 0.99
+  },
+  "PTS": {
+   "mean": 9.88,
+   "floor": 2.72,
+   "ceiling": 17.95
+  },
+  "REB": {
+   "mean": 2.96,
+   "floor": 0.82,
+   "ceiling": 5.84
+  },
+  "STL": {
+   "mean": 0.91,
+   "floor": 0.02,
+   "ceiling": 2.07
+  },
+  "TOV": {
+   "mean": 1.01,
+   "floor": 0.0,
+   "ceiling": 2.0
+  },
+  "PRA": {
+   "mean": 15.16,
+   "floor": 5.79,
+   "ceiling": 24.33
+  },
+  "PR": {
+   "mean": 12.84,
+   "floor": 4.34,
+   "ceiling": 21.46
+  },
+  "PA": {
+   "mean": 12.2,
+   "floor": 3.97,
+   "ceiling": 21.34
+  },
+  "RA": {
+   "mean": 5.28,
+   "floor": 1.83,
+   "ceiling": 9.23
+  }
+ },
+ "minutes": {
+  "value": 25,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 10,
+   "min_pg": 14.5,
+   "PTS": {
+    "pg": 5.8,
+    "pm": 0.4
+   },
+   "REB": {
+    "pg": 1.6,
+    "pm": 0.11
+   },
+   "AST": {
+    "pg": 1.3,
+    "pm": 0.09
+   },
+   "3PM": {
+    "pg": 1.3,
+    "pm": 0.09
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.041
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.034
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 14.5,
+   "PTS": {
+    "pg": 5.8,
+    "pm": 0.4
+   },
+   "REB": {
+    "pg": 1.6,
+    "pm": 0.11
+   },
+   "AST": {
+    "pg": 1.3,
+    "pm": 0.09
+   },
+   "3PM": {
+    "pg": 1.3,
+    "pm": 0.09
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.041
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.034
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 24.0,
+   "PTS": {
+    "pg": 8.8,
+    "pm": 0.367
+   },
+   "REB": {
+    "pg": 2.8,
+    "pm": 0.117
+   },
+   "AST": {
+    "pg": 2.0,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 2.0,
+    "pm": 0.083
+   },
+   "STL": {
+    "pg": 0.8,
+    "pm": 0.033
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.042
+   }
+  },
+  "home": {
+   "games": 4,
+   "min_pg": 11.5,
+   "PTS": {
+    "pg": 6.5,
+    "pm": 0.565
+   },
+   "REB": {
+    "pg": 1.25,
+    "pm": 0.109
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.087
+   },
+   "3PM": {
+    "pg": 1.25,
+    "pm": 0.109
+   },
+   "STL": {
+    "pg": 0.25,
+    "pm": 0.022
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.043
+   }
+  },
+  "away": {
+   "games": 6,
+   "min_pg": 16.5,
+   "PTS": {
+    "pg": 5.33,
+    "pm": 0.323
+   },
+   "REB": {
+    "pg": 1.83,
+    "pm": 0.111
+   },
+   "AST": {
+    "pg": 1.5,
+    "pm": 0.091
+   },
+   "3PM": {
+    "pg": 1.33,
+    "pm": 0.081
+   },
+   "STL": {
+    "pg": 0.83,
+    "pm": 0.051
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.03
+   }
+  }
+ },
+ "lines": {
+  "PTS": {
+   "line": 7.5,
+   "p_over": 0.665,
+   "p_under": 0.335,
+   "fair_over": 0.51,
+   "fair_under": 0.49,
+   "price_over": 1.87,
+   "price_under": 1.95,
+   "side": "over",
+   "price": 1.87,
+   "book": "pointsbetau",
+   "edge": 0.1545,
+   "tier": null
+  },
+  "PR": {
+   "line": 10.5,
+   "p_over": 0.638,
+   "p_under": 0.362,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "over",
+   "price": 1.87,
+   "book": "pointsbetau",
+   "edge": 0.138,
+   "tier": null
+  },
+  "PRA": {
+   "line": 12.5,
+   "p_over": 0.642,
+   "p_under": 0.358,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.1327,
+   "tier": null
+  },
+  "PA": {
+   "line": 10.5,
+   "p_over": 0.604,
+   "p_under": 0.396,
+   "fair_over": 0.48,
+   "fair_under": 0.52,
+   "price_over": 1.95,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.95,
+   "book": "pointsbetau",
+   "edge": 0.1245,
+   "tier": null
+  },
+  "RA": {
+   "line": 4.5,
+   "p_over": 0.614,
+   "p_under": 0.386,
+   "fair_over": 0.539,
+   "fair_under": 0.461,
+   "price_over": 1.73,
+   "price_under": 2.02,
+   "side": "over",
+   "price": 1.73,
+   "book": "neds",
+   "edge": 0.0753,
+   "tier": null
+  },
+  "REB": {
+   "line": 2.5,
+   "p_over": 0.548,
+   "p_under": 0.452,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.96,
+   "book": "sportsbet",
+   "edge": 0.069,
+   "tier": null
+  },
+  "3PM": {
+   "line": 1.5,
+   "p_over": 0.454,
+   "p_under": 0.546,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "under",
+   "price": 1.87,
+   "book": "pointsbetau",
+   "edge": 0.046,
+   "tier": null
+  },
+  "AST": {
+   "line": 2.5,
+   "p_over": 0.402,
+   "p_under": 0.598,
+   "fair_over": 0.433,
+   "fair_under": 0.567,
+   "price_over": 2.15,
+   "price_under": 1.64,
+   "side": "under",
+   "price": 1.64,
+   "book": "sportsbet",
+   "edge": 0.0305,
+   "tier": null
+  }
+ },
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-10-21_miami_vs_minnesota",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-10-23_detroit_vs_miami",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 3.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2026-10-24_charlotte_vs_miami",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 4.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2026-10-30_indiana_vs_miami",
+   "starter": false,
+   "rest": "5",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 7.0,
+   "PTS": 4.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-11-02_la-lakers_vs_miami",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 8.0,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-11-04_la-clippers_vs_miami",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 17.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-05",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2026-11-05_golden-state_vs_miami",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 30.0,
+   "PTS": 13.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 3.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 9.0,
+   "3PA": 6.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-08",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2026-11-08_miami_vs_sacramento",
+   "starter": false,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 19.0,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-10",
+   "opp": "Utah",
+   "venue": "R",
+   "game": "2026-11-10_miami_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 21.0,
+   "PTS": 5.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 7.0,
+   "3PA": 6.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-13",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-11-13_cleveland_vs_miami",
+   "starter": false,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 33.0,
+   "PTS": 20.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 6.0,
+   "FGA": 12.0,
+   "3PA": 9.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-13",
@@ -124,8 +702,128 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "LA Lakers",
+   "venue": "R",
+   "game": "2026-11-02_la-lakers_vs_miami",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 8.0,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 4.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2026-10-30_indiana_vs_miami",
+   "starter": false,
+   "rest": "5",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 7.0,
+   "PTS": 4.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Charlotte",
+   "venue": "R",
+   "game": "2026-10-24_charlotte_vs_miami",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 4.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-10-23_detroit_vs_miami",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 3.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-21",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-10-21_miami_vs_minnesota",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 3.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Detroit"
 }
