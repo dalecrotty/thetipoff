@@ -4,63 +4,63 @@
  "team": "New Orleans",
  "projections": {
   "3PM": {
-   "mean": 0.16,
-   "floor": 0.0,
-   "ceiling": 0.16
+   "mean": 0.2,
+   "floor": 0.02,
+   "ceiling": 0.2
   },
   "AST": {
-   "mean": 0.29,
+   "mean": 0.35,
+   "floor": 0.0,
+   "ceiling": 1.95
+  },
+  "BLK": {
+   "mean": 0.09,
+   "floor": 0.0,
+   "ceiling": 1.15
+  },
+  "PTS": {
+   "mean": 1.72,
+   "floor": 0.0,
+   "ceiling": 8.52
+  },
+  "REB": {
+   "mean": 0.79,
+   "floor": 0.0,
+   "ceiling": 3.41
+  },
+  "STL": {
+   "mean": 0.2,
+   "floor": 0.0,
+   "ceiling": 1.15
+  },
+  "TOV": {
+   "mean": 0.23,
    "floor": 0.0,
    "ceiling": 1.89
   },
-  "BLK": {
-   "mean": 0.07,
-   "floor": 0.0,
-   "ceiling": 1.14
-  },
-  "PTS": {
-   "mean": 1.42,
-   "floor": 0.0,
-   "ceiling": 8.22
-  },
-  "REB": {
-   "mean": 0.65,
-   "floor": 0.0,
-   "ceiling": 3.27
-  },
-  "STL": {
-   "mean": 0.16,
-   "floor": 0.0,
-   "ceiling": 1.11
-  },
-  "TOV": {
-   "mean": 0.19,
-   "floor": 0.0,
-   "ceiling": 1.85
-  },
   "PRA": {
-   "mean": 2.36,
+   "mean": 2.86,
    "floor": 0.0,
-   "ceiling": 11.08
+   "ceiling": 11.58
   },
   "PR": {
-   "mean": 2.07,
+   "mean": 2.51,
    "floor": 0.0,
-   "ceiling": 10.19
+   "ceiling": 10.63
   },
   "PA": {
-   "mean": 1.71,
+   "mean": 2.07,
    "floor": 0.0,
-   "ceiling": 8.5
+   "ceiling": 8.86
   },
   "RA": {
-   "mean": 0.94,
+   "mean": 1.14,
    "floor": 0.0,
-   "ceiling": 4.25
+   "ceiling": 4.45
   }
  },
  "minutes": {
-  "value": 4,
+  "value": 5,
   "source": "fallback"
  },
  "splits": {

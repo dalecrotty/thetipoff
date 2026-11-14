@@ -115,7 +115,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 71
   },
   {
    "player_id": -701,
@@ -188,7 +188,7 @@
    "floor": 0.0,
    "ceiling": 0.0,
    "sigma": 0.32,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -219,27 +219,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "3PM",
-   "line": 2.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "l5_over": 0.4,
-   "l10_over": 0.6,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
+   "rank": 98
   },
   {
    "player_id": 201942,
@@ -283,7 +263,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 86
+   "rank": 85
   },
   {
    "player_id": 202691,
@@ -445,7 +425,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 40
   },
   {
    "player_id": 203944,
@@ -547,7 +527,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 43
+   "rank": 44
   },
   {
    "player_id": 1626145,
@@ -591,7 +571,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 75
+   "rank": 74
   },
   {
    "player_id": 1626171,
@@ -704,7 +684,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 3
+   "rank": 4
   },
   {
    "player_id": 1627752,
@@ -724,26 +704,6 @@
    "pos_usual": "SF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "3PM",
-   "line": 2.5,
-   "price": 1.88,
-   "book": "neds",
-   "price_over": 1.88,
-   "price_under": 1.8,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -782,26 +742,6 @@
    "l10_over": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "3PM",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -897,7 +837,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 94
+   "rank": 93
   },
   {
    "player_id": 1628989,
@@ -1074,7 +1014,7 @@
    "game": "Denver vs New Orleans",
    "stat": "3PM",
    "proj": 0.15,
-   "floor": 0.0,
+   "floor": 0.01,
    "ceiling": 0.15,
    "sigma": 0.32,
    "minutes": 32,
@@ -1108,7 +1048,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 93
+   "rank": 92
   },
   {
    "player_id": 1629651,
@@ -1192,7 +1132,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 15
+   "rank": 14
   },
   {
    "player_id": 1629673,
@@ -1201,9 +1141,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "3PM",
-   "proj": 1.9,
-   "floor": 0.0,
-   "ceiling": 3.91,
+   "proj": 1.94,
+   "floor": 0.01,
+   "ceiling": 3.95,
    "sigma": 1.51,
    "minutes": 21,
    "rot_rank": null,
@@ -1212,15 +1152,15 @@
    "side": "over",
    "price": 1.92,
    "book": "neds",
-   "edge": 0.0658,
-   "p_us": 0.543,
+   "edge": 0.0771,
+   "p_us": 0.554,
    "p_book": 0.477,
-   "tier": "B",
+   "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.543,
-   "p_under": 0.457,
+   "p_over": 0.554,
+   "p_under": 0.446,
    "fair_over": 0.477,
    "fair_under": 0.523,
    "price_over": 1.92,
@@ -1343,30 +1283,30 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "3PM",
-   "proj": 2.68,
-   "floor": 0.39,
-   "ceiling": 4.99,
+   "proj": 2.78,
+   "floor": 0.48,
+   "ceiling": 5.08,
    "sigma": 1.88,
    "minutes": 32,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 2.5,
    "side": "over",
-   "price": 2.05,
-   "book": "pointsbetau",
-   "edge": 0.0221,
-   "p_us": 0.481,
-   "p_book": 0.459,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "price": 2.1,
+   "book": "neds",
+   "edge": 0.0651,
+   "p_us": 0.501,
+   "p_book": 0.435,
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.6,
-   "p_over": 0.481,
-   "p_under": 0.519,
-   "fair_over": 0.459,
-   "fair_under": 0.541,
-   "price_over": 2.05,
-   "price_under": 1.74,
+   "p_over": 0.501,
+   "p_under": 0.499,
+   "fair_over": 0.435,
+   "fair_under": 0.565,
+   "price_over": 2.1,
+   "price_under": 1.62,
    "us": null,
    "mu": 0.152,
    "mu_rank": 2,
@@ -1500,7 +1440,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 105
+   "rank": 103
   },
   {
    "player_id": 1630194,
@@ -1647,9 +1587,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "3PM",
-   "proj": 1.21,
+   "proj": 1.22,
    "floor": 0.0,
-   "ceiling": 2.94,
+   "ceiling": 2.95,
    "sigma": 1.24,
    "minutes": 28,
    "rot_rank": null,
@@ -1658,15 +1598,15 @@
    "side": "under",
    "price": 1.58,
    "book": "sportsbet",
-   "edge": 0.0762,
-   "p_us": 0.664,
+   "edge": 0.0733,
+   "p_us": 0.661,
    "p_book": 0.587,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.2,
    "l5_over": 0.2,
-   "p_over": 0.336,
-   "p_under": 0.664,
+   "p_over": 0.339,
+   "p_under": 0.661,
    "fair_over": 0.413,
    "fair_under": 0.587,
    "price_over": 2.25,
@@ -1682,7 +1622,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 45
   },
   {
    "player_id": 1630538,
@@ -1901,50 +1841,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "3PM",
-   "proj": 0.45,
-   "floor": 0.0,
-   "ceiling": 1.79,
-   "sigma": 0.81,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.009,
-   "mu_rank": 18,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 77
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -2046,7 +1942,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 49
   },
   {
    "player_id": 1631159,
@@ -2149,37 +2045,17 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "3PM",
-   "line": 1.5,
-   "price": 1.67,
-   "book": "pointsbetau",
-   "price_over": 2.2,
-   "price_under": 1.67,
-   "l5_over": 0.4,
-   "l10_over": 0.3,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "3PM",
-   "proj": 0.87,
-   "floor": 0.0,
-   "ceiling": 2.12,
+   "proj": 0.94,
+   "floor": 0.02,
+   "ceiling": 2.19,
    "sigma": 1.08,
-   "minutes": 18,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -2210,7 +2086,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 59
   },
   {
    "player_id": 1631323,
@@ -2623,7 +2499,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 122
+   "rank": 120
   },
   {
    "player_id": 1642281,
@@ -2642,7 +2518,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -2692,11 +2568,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "3PM",
-   "proj": 0.13,
-   "floor": 0.0,
-   "ceiling": 0.13,
+   "proj": 0.16,
+   "floor": 0.01,
+   "ceiling": 0.16,
    "sigma": 0.32,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -2727,7 +2603,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 96
+   "rank": 91
   },
   {
    "player_id": 1642377,
@@ -2889,7 +2765,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 64
   },
   {
    "player_id": 1642843,
@@ -2953,7 +2829,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 36
   },
   {
    "player_id": 1642849,
@@ -2991,9 +2867,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "3PM",
-   "proj": 0.27,
+   "proj": 0.28,
    "floor": 0.0,
-   "ceiling": 1.61,
+   "ceiling": 1.62,
    "sigma": 0.81,
    "minutes": 22,
    "rot_rank": null,
@@ -3026,7 +2902,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 86
   },
   {
    "player_id": 1642855,
@@ -3148,7 +3024,7 @@
    "floor": 0.0,
    "ceiling": 0.0,
    "sigma": 0.32,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -3179,7 +3055,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 127
+   "rank": 125
   },
   {
    "player_id": 1642907,
@@ -3297,11 +3173,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "3PM",
-   "proj": 0.16,
-   "floor": 0.0,
-   "ceiling": 0.16,
+   "proj": 0.2,
+   "floor": 0.02,
+   "ceiling": 0.2,
    "sigma": 0.32,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -3332,7 +3208,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 92
+   "rank": 90
   },
   {
    "player_id": -721,
@@ -3341,11 +3217,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "3PM",
-   "proj": 0.29,
+   "proj": 0.35,
    "floor": 0.0,
-   "ceiling": 1.9,
+   "ceiling": 1.95,
    "sigma": 0.81,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -3376,7 +3252,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 85
+   "rank": 84
   },
   {
    "player_id": -703,
@@ -3420,7 +3296,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 128
   },
   {
    "player_id": -710,
@@ -3464,7 +3340,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 129
   },
   {
    "player_id": 1642434,
@@ -3676,6 +3552,26 @@
    "us": null
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "3PM",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -735,
    "player": "Meleek Thomas",
    "team": "Cleveland",
@@ -3786,7 +3682,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 99
+   "rank": 98
   },
   {
    "player_id": -701,
@@ -3864,11 +3760,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 0.0,
+   "proj": 0.49,
    "floor": 0.0,
-   "ceiling": 1.33,
+   "ceiling": 1.82,
    "sigma": 1.07,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -3902,39 +3798,10 @@
      "delta": -0.2
     }
    ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 104
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "AST",
-   "line": 6.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "l5_over": 0.2,
-   "l10_over": 0.2,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 6.5,
-    "price": 1.78,
-    "book": "betright",
-    "price_over": 1.98,
-    "price_under": 1.78,
-    "l5_over": 0.2,
-    "l10_over": 0.2,
-    "gate_status": "passed"
-   }
+   "prior": 0.0,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 96
   },
   {
    "player_id": 201942,
@@ -3978,7 +3845,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 36
   },
   {
    "player_id": 202691,
@@ -4426,7 +4293,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 7
+   "rank": 8
   },
   {
    "player_id": 1627752,
@@ -4447,35 +4314,6 @@
    "early": null,
    "gate_status": null,
    "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "AST",
-   "line": 5.5,
-   "price": 2.23,
-   "book": "unibet",
-   "price_over": 2.23,
-   "price_under": 1.6,
-   "l5_over": 0.6,
-   "l10_over": 0.6,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 5.5,
-    "price": 2.15,
-    "book": "betright",
-    "price_over": 2.15,
-    "price_under": 1.67,
-    "l5_over": 0.6,
-    "l10_over": 0.6,
-    "gate_status": "passed"
-   }
   },
   {
    "player_id": 1628380,
@@ -4515,26 +4353,6 @@
    "pos_usual": "PF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "AST",
-   "line": 1.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.85,
-   "l5_over": 0.2,
-   "l10_over": 0.4,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -4628,7 +4446,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 94
+   "rank": 93
   },
   {
    "player_id": 1628989,
@@ -4804,9 +4622,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 3.57,
-   "floor": 0.86,
-   "ceiling": 6.55,
+   "proj": 3.67,
+   "floor": 0.96,
+   "ceiling": 6.65,
    "sigma": 2.26,
    "minutes": 32,
    "rot_rank": null,
@@ -4815,15 +4633,15 @@
    "side": "over",
    "price": 2.2,
    "book": "pointsbetau",
-   "edge": 0.033,
-   "p_us": 0.465,
+   "edge": 0.0516,
+   "p_us": 0.483,
    "p_book": 0.432,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.465,
-   "p_under": 0.535,
+   "p_over": 0.483,
+   "p_under": 0.517,
    "fair_over": 0.432,
    "fair_under": 0.568,
    "price_over": 2.2,
@@ -4833,15 +4651,15 @@
     "side": "over",
     "price": 2.25,
     "book": "betright",
-    "edge": 0.0489,
-    "p_us": 0.465,
+    "edge": 0.0676,
+    "p_us": 0.483,
     "p_book": 0.416,
-    "tier": "B",
+    "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.4,
     "l5_over": 0.4,
-    "p_over": 0.465,
-    "p_under": 0.535,
+    "p_over": 0.483,
+    "p_under": 0.517,
     "fair_over": 0.416,
     "fair_under": 0.584,
     "price_over": 2.25,
@@ -4863,7 +4681,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 25
+   "rank": 26
   },
   {
    "player_id": 1629651,
@@ -4965,9 +4783,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 3.05,
-   "floor": 0.77,
-   "ceiling": 5.76,
+   "proj": 3.12,
+   "floor": 0.84,
+   "ceiling": 5.83,
    "sigma": 2.03,
    "minutes": 21,
    "rot_rank": null,
@@ -4976,15 +4794,15 @@
    "side": "over",
    "price": 1.75,
    "book": "neds",
-   "edge": 0.0323,
-   "p_us": 0.566,
+   "edge": 0.0463,
+   "p_us": 0.58,
    "p_book": 0.533,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.566,
-   "p_under": 0.434,
+   "p_over": 0.58,
+   "p_under": 0.42,
    "fair_over": 0.533,
    "fair_under": 0.467,
    "price_over": 1.75,
@@ -5113,9 +4931,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 2.74,
-   "floor": 0.34,
-   "ceiling": 5.05,
+   "proj": 2.83,
+   "floor": 0.43,
+   "ceiling": 5.14,
    "sigma": 1.78,
    "minutes": 32,
    "rot_rank": null,
@@ -5124,15 +4942,15 @@
    "side": "over",
    "price": 1.98,
    "book": "neds",
-   "edge": 0.0282,
-   "p_us": 0.5,
+   "edge": 0.0486,
+   "p_us": 0.521,
    "p_book": 0.472,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.5,
-   "p_under": 0.5,
+   "p_over": 0.521,
+   "p_under": 0.479,
    "fair_over": 0.472,
    "fair_under": 0.528,
    "price_over": 1.98,
@@ -5154,7 +4972,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 35
   },
   {
    "player_id": 1630183,
@@ -5276,7 +5094,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 106
   },
   {
    "player_id": 1630194,
@@ -5432,9 +5250,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 2.28,
-   "floor": 0.2,
-   "ceiling": 4.24,
+   "proj": 2.29,
+   "floor": 0.22,
+   "ceiling": 4.26,
    "sigma": 1.62,
    "minutes": 28,
    "rot_rank": null,
@@ -5443,15 +5261,15 @@
    "side": "over",
    "price": 1.65,
    "book": "unibet",
-   "edge": 0.0771,
-   "p_us": 0.642,
+   "edge": 0.0806,
+   "p_us": 0.645,
    "p_book": 0.565,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.642,
-   "p_under": 0.358,
+   "p_over": 0.645,
+   "p_under": 0.355,
    "fair_over": 0.565,
    "fair_under": 0.435,
    "price_over": 1.65,
@@ -5692,56 +5510,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "AST",
-   "proj": 1.17,
-   "floor": 0.0,
-   "ceiling": 2.95,
-   "sigma": 1.28,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.072,
-   "mu_rank": 8,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": [
-    {
-     "star": "Trey Murphy III",
-     "n": 3,
-     "delta": -1.1
-    }
-   ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 77
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -5946,37 +5714,17 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "AST",
-   "line": 2.5,
-   "price": 2.15,
-   "book": "neds",
-   "price_over": 2.15,
-   "price_under": 1.67,
-   "l5_over": 0.4,
-   "l10_over": 0.5,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 1.09,
+   "proj": 1.18,
    "floor": 0.0,
-   "ceiling": 2.87,
+   "ceiling": 2.96,
    "sigma": 1.28,
-   "minutes": 18,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -6013,7 +5761,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 80
+   "rank": 76
   },
   {
    "player_id": 1631323,
@@ -6400,9 +6148,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 1.83,
-   "floor": 0.05,
-   "ceiling": 3.95,
+   "proj": 1.9,
+   "floor": 0.12,
+   "ceiling": 4.02,
    "sigma": 1.46,
    "minutes": 22,
    "rot_rank": null,
@@ -6510,11 +6258,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 0.7,
+   "proj": 0.87,
    "floor": 0.0,
-   "ceiling": 2.03,
+   "ceiling": 2.2,
    "sigma": 1.07,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -6545,7 +6293,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 91
+   "rank": 85
   },
   {
    "player_id": 1642377,
@@ -6707,7 +6455,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 96
+   "rank": 95
   },
   {
    "player_id": 1642843,
@@ -6804,7 +6552,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 12
+   "rank": 11
   },
   {
    "player_id": 1642849,
@@ -6842,9 +6590,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 2.73,
-   "floor": 0.33,
-   "ceiling": 5.04,
+   "proj": 2.82,
+   "floor": 0.41,
+   "ceiling": 5.12,
    "sigma": 1.78,
    "minutes": 22,
    "rot_rank": null,
@@ -6883,7 +6631,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 38
+   "rank": 37
   },
   {
    "player_id": 1642855,
@@ -7001,11 +6749,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 0.28,
+   "proj": 0.37,
    "floor": 0.0,
-   "ceiling": 1.61,
+   "ceiling": 1.7,
    "sigma": 1.07,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -7036,7 +6784,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 100
   },
   {
    "player_id": 1642907,
@@ -7154,11 +6902,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 0.29,
+   "proj": 0.35,
    "floor": 0.0,
-   "ceiling": 1.89,
+   "ceiling": 1.95,
    "sigma": 1.07,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -7198,11 +6946,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "AST",
-   "proj": 0.37,
+   "proj": 0.43,
    "floor": 0.0,
-   "ceiling": 1.96,
+   "ceiling": 2.03,
    "sigma": 1.07,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -7233,7 +6981,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 99
   },
   {
    "player_id": -703,
@@ -7277,7 +7025,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 128
   },
   {
    "player_id": -710,
@@ -7321,7 +7069,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 129
   },
   {
    "player_id": 1642434,
@@ -7533,6 +7281,26 @@
    "us": null
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "AST",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -735,
    "player": "Meleek Thomas",
    "team": "Cleveland",
@@ -7703,11 +7471,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.0,
+   "proj": 0.34,
    "floor": 0.0,
-   "ceiling": 0.89,
-   "sigma": 0.4,
-   "minutes": 0,
+   "ceiling": 1.01,
+   "sigma": 0.63,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -7735,30 +7503,10 @@
    "pos": "C",
    "pos_usual": "C",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 103
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
+   "prior": 0.0,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 61
   },
   {
    "player_id": 201942,
@@ -7946,7 +7694,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 55
   },
   {
    "player_id": 203944,
@@ -8030,7 +7778,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 14
+   "rank": 12
   },
   {
    "player_id": 1626145,
@@ -8178,7 +7926,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 41
   },
   {
    "player_id": 1627752,
@@ -8196,26 +7944,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -8256,26 +7984,6 @@
    "l10_over": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -8362,7 +8070,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 42
   },
   {
    "player_id": 1628989,
@@ -8511,9 +8219,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.57,
+   "proj": 0.58,
    "floor": 0.0,
-   "ceiling": 1.97,
+   "ceiling": 1.98,
    "sigma": 0.75,
    "minutes": 32,
    "rot_rank": null,
@@ -8630,7 +8338,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 65
+   "rank": 67
   },
   {
    "player_id": 1629673,
@@ -8639,9 +8347,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.43,
+   "proj": 0.44,
    "floor": 0.0,
-   "ceiling": 1.04,
+   "ceiling": 1.05,
    "sigma": 0.69,
    "minutes": 21,
    "rot_rank": null,
@@ -8763,9 +8471,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.17,
+   "proj": 0.18,
    "floor": 0.0,
-   "ceiling": 1.0,
+   "ceiling": 1.01,
    "sigma": 0.43,
    "minutes": 32,
    "rot_rank": null,
@@ -8798,7 +8506,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 85
+   "rank": 84
   },
   {
    "player_id": 1630183,
@@ -8902,7 +8610,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 107
+   "rank": 105
   },
   {
    "player_id": 1630194,
@@ -9031,9 +8739,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.51,
+   "proj": 0.52,
    "floor": 0.0,
-   "ceiling": 1.91,
+   "ceiling": 1.92,
    "sigma": 0.75,
    "minutes": 28,
    "rot_rank": null,
@@ -9249,50 +8957,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "BLK",
-   "proj": 0.08,
-   "floor": 0.0,
-   "ceiling": 0.97,
-   "sigma": 0.4,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.042,
-   "mu_rank": 19,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 98
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -9497,37 +9161,17 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "BLK",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.73,
+   "proj": 0.79,
    "floor": 0.0,
-   "ceiling": 2.04,
-   "sigma": 0.85,
-   "minutes": 18,
+   "ceiling": 1.97,
+   "sigma": 0.97,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -9558,7 +9202,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 24
+   "rank": 23
   },
   {
    "player_id": 1631323,
@@ -9927,9 +9571,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 1.57,
-   "floor": 0.08,
-   "ceiling": 3.3,
+   "proj": 1.63,
+   "floor": 0.14,
+   "ceiling": 3.35,
    "sigma": 1.31,
    "minutes": 22,
    "rot_rank": null,
@@ -9962,7 +9606,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 2
+   "rank": 1
   },
   {
    "player_id": 1642281,
@@ -10031,11 +9675,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.03,
+   "proj": 0.04,
    "floor": 0.0,
-   "ceiling": 0.92,
+   "ceiling": 0.93,
    "sigma": 0.4,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -10066,7 +9710,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 100
   },
   {
    "player_id": 1642377,
@@ -10210,7 +9854,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 26
+   "rank": 27
   },
   {
    "player_id": 1642843,
@@ -10274,7 +9918,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 31
+   "rank": 32
   },
   {
    "player_id": 1642849,
@@ -10303,9 +9947,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.8,
+   "proj": 0.83,
    "floor": 0.0,
-   "ceiling": 1.98,
+   "ceiling": 2.01,
    "sigma": 0.97,
    "minutes": 22,
    "rot_rank": null,
@@ -10338,7 +9982,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 21
+   "rank": 22
   },
   {
    "player_id": 1642855,
@@ -10447,11 +10091,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.13,
-   "floor": 0.01,
-   "ceiling": 1.01,
-   "sigma": 0.4,
-   "minutes": 4,
+   "proj": 0.16,
+   "floor": 0.0,
+   "ceiling": 0.99,
+   "sigma": 0.43,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -10482,7 +10126,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 90
+   "rank": 88
   },
   {
    "player_id": 1642907,
@@ -10591,11 +10235,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.07,
+   "proj": 0.09,
    "floor": 0.0,
-   "ceiling": 1.14,
+   "ceiling": 1.15,
    "sigma": 0.4,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -10626,7 +10270,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 99
+   "rank": 96
   },
   {
    "player_id": -721,
@@ -10635,11 +10279,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "BLK",
-   "proj": 0.11,
+   "proj": 0.13,
    "floor": 0.0,
-   "ceiling": 1.17,
-   "sigma": 0.4,
-   "minutes": 4,
+   "ceiling": 1.13,
+   "sigma": 0.43,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -10670,7 +10314,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 92
+   "rank": 91
   },
   {
    "player_id": -703,
@@ -10714,7 +10358,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 128
   },
   {
    "player_id": -710,
@@ -10758,7 +10402,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 129
   },
   {
    "player_id": 1642434,
@@ -10961,6 +10605,26 @@
    "us": null
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "BLK",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -735,
    "player": "Meleek Thomas",
    "team": "Cleveland",
@@ -11062,7 +10726,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 88
   },
   {
    "player_id": -701,
@@ -11140,11 +10804,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 0.0,
+   "proj": 2.22,
    "floor": 0.0,
-   "ceiling": 5.67,
+   "ceiling": 7.88,
    "sigma": 4.33,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -11178,39 +10842,10 @@
      "delta": 0.4
     }
    ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 104
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PTS",
-   "line": 17.5,
-   "price": 1.92,
-   "book": "unibet",
-   "price_over": 1.92,
-   "price_under": 1.81,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 17.5,
-    "price": 1.75,
-    "book": "betright",
-    "price_over": 1.75,
-    "price_under": 2.0,
-    "l5_over": 0.4,
-    "l10_over": 0.4,
-    "gate_status": "passed"
-   }
+   "prior": 0.0,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 97
   },
   {
    "player_id": 201942,
@@ -11581,7 +11216,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 4
+   "rank": 3
   },
   {
    "player_id": 1626145,
@@ -11625,7 +11260,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 95
+   "rank": 94
   },
   {
    "player_id": 1626171,
@@ -11756,7 +11391,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 5
+   "rank": 4
   },
   {
    "player_id": 1627752,
@@ -11777,35 +11412,6 @@
    "early": null,
    "gate_status": null,
    "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PTS",
-   "line": 23.5,
-   "price": 1.82,
-   "book": "unibet",
-   "price_over": 1.82,
-   "price_under": 1.91,
-   "l5_over": 0.4,
-   "l10_over": 0.3,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 24.5,
-    "price": 1.96,
-    "book": "betright",
-    "price_over": 1.96,
-    "price_under": 1.8,
-    "l5_over": 0.4,
-    "l10_over": 0.3,
-    "gate_status": "passed"
-   }
   },
   {
    "player_id": 1628380,
@@ -11846,35 +11452,6 @@
    "early": null,
    "gate_status": null,
    "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PTS",
-   "line": 13.5,
-   "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.91,
-   "price_under": 1.82,
-   "l5_over": 0.2,
-   "l10_over": 0.4,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 13.5,
-    "price": 1.86,
-    "book": "betright",
-    "price_over": 1.86,
-    "price_under": 1.9,
-    "l5_over": 0.2,
-    "l10_over": 0.4,
-    "gate_status": "passed"
-   }
   },
   {
    "player_id": 1628389,
@@ -11967,7 +11544,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 88
+   "rank": 87
   },
   {
    "player_id": 1628989,
@@ -12152,9 +11729,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 22.62,
-   "floor": 12.19,
-   "ceiling": 32.79,
+   "proj": 23.25,
+   "floor": 12.82,
+   "ceiling": 33.42,
    "sigma": 8.19,
    "minutes": 32,
    "rot_rank": null,
@@ -12163,15 +11740,15 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0922,
-   "p_us": 0.603,
+   "edge": 0.1216,
+   "p_us": 0.632,
    "p_book": 0.51,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.603,
-   "p_under": 0.397,
+   "p_over": 0.632,
+   "p_under": 0.368,
    "fair_over": 0.51,
    "fair_under": 0.49,
    "price_over": 1.87,
@@ -12181,15 +11758,15 @@
     "side": "over",
     "price": 1.95,
     "book": "betright",
-    "edge": 0.1212,
-    "p_us": 0.603,
+    "edge": 0.1507,
+    "p_us": 0.632,
     "p_book": 0.481,
     "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.7,
     "l5_over": 0.8,
-    "p_over": 0.603,
-    "p_under": 0.397,
+    "p_over": 0.632,
+    "p_under": 0.368,
     "fair_over": 0.481,
     "fair_under": 0.519,
     "price_over": 1.95,
@@ -12208,10 +11785,10 @@
      "delta": 0.9
     }
    ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 7
+   "prior": 22.41,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 6
   },
   {
    "player_id": 1629651,
@@ -12331,30 +11908,30 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 10.38,
-   "floor": 3.22,
-   "ceiling": 18.45,
+   "proj": 10.63,
+   "floor": 3.46,
+   "ceiling": 18.69,
    "sigma": 6.01,
    "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 10.5,
+   "line": 9.5,
    "side": "over",
-   "price": 1.89,
-   "book": "unibet",
-   "edge": 0.0008,
-   "p_us": 0.493,
-   "p_book": 0.492,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "price": 1.83,
+   "book": "neds",
+   "edge": 0.0705,
+   "p_us": 0.58,
+   "p_book": 0.509,
+   "tier": "A",
+   "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.493,
-   "p_under": 0.507,
-   "fair_over": 0.492,
-   "fair_under": 0.508,
-   "price_over": 1.89,
-   "price_under": 1.83,
+   "p_over": 0.58,
+   "p_under": 0.42,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
    "us": null,
    "mu": -0.06,
    "mu_rank": 27,
@@ -12372,7 +11949,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 52
   },
   {
    "player_id": 1629750,
@@ -12479,9 +12056,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 20.22,
-   "floor": 11.26,
-   "ceiling": 30.0,
+   "proj": 20.91,
+   "floor": 11.95,
+   "ceiling": 30.69,
    "sigma": 7.46,
    "minutes": 32,
    "rot_rank": null,
@@ -12490,15 +12067,15 @@
    "side": "over",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.1085,
-   "p_us": 0.631,
+   "edge": 0.14,
+   "p_us": 0.662,
    "p_book": 0.522,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
-   "p_over": 0.631,
-   "p_under": 0.369,
+   "p_over": 0.662,
+   "p_under": 0.338,
    "fair_over": 0.522,
    "fair_under": 0.478,
    "price_over": 1.83,
@@ -12508,15 +12085,15 @@
     "side": "over",
     "price": 1.98,
     "book": "betright",
-    "edge": 0.1101,
-    "p_us": 0.583,
+    "edge": 0.1429,
+    "p_us": 0.616,
     "p_book": 0.473,
     "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.3,
     "l5_over": 0.2,
-    "p_over": 0.583,
-    "p_under": 0.417,
+    "p_over": 0.616,
+    "p_under": 0.384,
     "fair_over": 0.473,
     "fair_under": 0.527,
     "price_over": 1.98,
@@ -12535,10 +12112,10 @@
      "delta": 5.6
     }
    ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 11
+   "prior": 20.03,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 9
   },
   {
    "player_id": 1630183,
@@ -12660,7 +12237,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 106
   },
   {
    "player_id": 1630194,
@@ -12825,9 +12402,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 7.91,
-   "floor": 1.3,
-   "ceiling": 14.46,
+   "proj": 7.96,
+   "floor": 1.36,
+   "ceiling": 14.52,
    "sigma": 5.22,
    "minutes": 28,
    "rot_rank": null,
@@ -12836,15 +12413,15 @@
    "side": "over",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0094,
-   "p_us": 0.532,
+   "edge": 0.0137,
+   "p_us": 0.536,
    "p_book": 0.522,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.532,
-   "p_under": 0.468,
+   "p_over": 0.536,
+   "p_under": 0.464,
    "fair_over": 0.522,
    "fair_under": 0.478,
    "price_over": 1.83,
@@ -12866,7 +12443,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 71
   },
   {
    "player_id": 1630538,
@@ -13094,56 +12671,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "PTS",
-   "proj": 6.39,
-   "floor": 0.18,
-   "ceiling": 13.26,
-   "sigma": 5.01,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.043,
-   "mu_rank": 25,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": [
-    {
-     "star": "Trey Murphy III",
-     "n": 3,
-     "delta": -3.8
-    }
-   ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 82
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -13366,61 +12893,32 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PTS",
-   "line": 12.5,
-   "price": 1.8,
-   "book": "neds",
-   "price_over": 1.8,
-   "price_under": 1.94,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 12.5,
-    "price": 1.78,
-    "book": "betright",
-    "price_over": 1.78,
-    "price_under": 1.98,
-    "l5_over": 0.4,
-    "l10_over": 0.4,
-    "gate_status": "passed"
-   }
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 7.71,
-   "floor": 1.11,
-   "ceiling": 14.27,
+   "proj": 8.35,
+   "floor": 1.74,
+   "ceiling": 14.9,
    "sigma": 5.22,
-   "minutes": 18,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 5.5,
    "side": "over",
    "price": 1.8,
    "book": "sportsbet",
-   "edge": 0.145,
-   "p_us": 0.666,
+   "edge": 0.1884,
+   "p_us": 0.71,
    "p_book": 0.521,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
-   "p_over": 0.666,
-   "p_under": 0.334,
+   "p_over": 0.71,
+   "p_under": 0.29,
    "fair_over": 0.521,
    "fair_under": 0.479,
    "price_over": 1.8,
@@ -13439,10 +12937,10 @@
      "delta": 2.2
     }
    ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 73
+   "prior": 7.63,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 67
   },
   {
    "player_id": 1631323,
@@ -13838,9 +13336,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 7.05,
-   "floor": 0.84,
-   "ceiling": 13.92,
+   "proj": 7.3,
+   "floor": 1.09,
+   "ceiling": 14.18,
    "sigma": 5.01,
    "minutes": 22,
    "rot_rank": null,
@@ -13849,15 +13347,15 @@
    "side": "over",
    "price": 1.95,
    "book": "tab",
-   "edge": 0.1453,
-   "p_us": 0.625,
+   "edge": 0.1652,
+   "p_us": 0.645,
    "p_book": 0.48,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 1.0,
-   "p_over": 0.625,
-   "p_under": 0.375,
+   "p_over": 0.645,
+   "p_under": 0.355,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
@@ -13879,7 +13377,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 75
   },
   {
    "player_id": 1642281,
@@ -13948,11 +13446,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 1.84,
+   "proj": 2.31,
    "floor": 0.0,
-   "ceiling": 7.51,
+   "ceiling": 7.97,
    "sigma": 4.33,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -13983,7 +13481,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 99
+   "rank": 96
   },
   {
    "player_id": 1642377,
@@ -14136,7 +13634,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 92
+   "rank": 91
   },
   {
    "player_id": 1642843,
@@ -14233,7 +13731,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 17
+   "rank": 16
   },
   {
    "player_id": 1642849,
@@ -14271,9 +13769,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 11.85,
-   "floor": 4.06,
-   "ceiling": 20.25,
+   "proj": 12.22,
+   "floor": 4.43,
+   "ceiling": 20.63,
    "sigma": 6.27,
    "minutes": 22,
    "rot_rank": null,
@@ -14312,7 +13810,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 44
+   "rank": 40
   },
   {
    "player_id": 1642855,
@@ -14430,11 +13928,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 1.62,
+   "proj": 2.1,
    "floor": 0.0,
-   "ceiling": 7.29,
+   "ceiling": 7.77,
    "sigma": 4.33,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -14465,7 +13963,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 100
   },
   {
    "player_id": 1642907,
@@ -14574,11 +14072,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 1.42,
+   "proj": 1.72,
    "floor": 0.0,
-   "ceiling": 8.22,
+   "ceiling": 8.52,
    "sigma": 4.33,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -14609,7 +14107,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 101
   },
   {
    "player_id": -721,
@@ -14618,11 +14116,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PTS",
-   "proj": 1.82,
+   "proj": 2.15,
    "floor": 0.0,
-   "ceiling": 8.62,
+   "ceiling": 8.95,
    "sigma": 4.33,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -14653,7 +14151,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 98
   },
   {
    "player_id": -703,
@@ -14697,7 +14195,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 128
   },
   {
    "player_id": -710,
@@ -14741,7 +14239,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 129
   },
   {
    "player_id": 1642434,
@@ -14953,6 +14451,26 @@
    "us": null
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "PTS",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -735,
    "player": "Meleek Thomas",
    "team": "Cleveland",
@@ -14960,7 +14478,7 @@
    "game": "Cleveland vs Dallas",
    "stat": "REB",
    "line": 3.5,
-   "price": 1.63,
+   "price": 2.25,
    "book": "pointsbetau",
    "price_over": 2.25,
    "price_under": 1.63,
@@ -15054,7 +14572,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 43
   },
   {
    "player_id": -701,
@@ -15132,26 +14650,26 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 0.0,
-   "floor": 0.0,
-   "ceiling": 2.18,
-   "sigma": 1.67,
-   "minutes": 0,
+   "proj": 3.09,
+   "floor": 0.96,
+   "ceiling": 5.97,
+   "sigma": 1.99,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 6.5,
    "side": "under",
    "price": 1.71,
    "book": "pointsbetau",
-   "edge": 0.4488,
-   "p_us": 1.0,
+   "edge": 0.3943,
+   "p_us": 0.946,
    "p_book": 0.551,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.6,
-   "p_over": 0.0,
-   "p_under": 1.0,
+   "p_over": 0.054,
+   "p_under": 0.946,
    "fair_over": 0.449,
    "fair_under": 0.551,
    "price_over": 2.1,
@@ -15170,39 +14688,10 @@
      "delta": 2.5
     }
    ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 104
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "REB",
-   "line": 4.5,
-   "price": 2.1,
-   "book": "sportsbet",
-   "price_over": 2.1,
-   "price_under": 1.68,
-   "l5_over": 0.4,
-   "l10_over": 0.5,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 4.5,
-    "price": 2.0,
-    "book": "betright",
-    "price_over": 2.0,
-    "price_under": 1.75,
-    "l5_over": 0.4,
-    "l10_over": 0.5,
-    "gate_status": "passed"
-   }
+   "prior": 0.0,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 64
   },
   {
    "player_id": 201942,
@@ -15435,7 +14924,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 30
+   "rank": 35
   },
   {
    "player_id": 203944,
@@ -15599,7 +15088,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 99
+   "rank": 98
   },
   {
    "player_id": 1626171,
@@ -15730,7 +15219,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 44
+   "rank": 46
   },
   {
    "player_id": 1627752,
@@ -15751,35 +15240,6 @@
    "early": null,
    "gate_status": null,
    "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "REB",
-   "line": 4.5,
-   "price": 2.1,
-   "book": "pointsbetau",
-   "price_over": 2.1,
-   "price_under": 1.71,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": "passed",
-   "us": {
-    "line": 4.5,
-    "price": 2.05,
-    "book": "betright",
-    "price_over": 2.05,
-    "price_under": 1.73,
-    "l5_over": 0.4,
-    "l10_over": 0.4,
-    "gate_status": "passed"
-   }
   },
   {
    "player_id": 1628380,
@@ -15820,35 +15280,6 @@
    "early": null,
    "gate_status": null,
    "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "REB",
-   "line": 9.5,
-   "price": 1.75,
-   "book": "neds",
-   "price_over": 2.0,
-   "price_under": 1.75,
-   "l5_over": 0.2,
-   "l10_over": 0.3,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
-   "us": {
-    "line": 9.5,
-    "price": 2.1,
-    "book": "betright",
-    "price_over": 2.1,
-    "price_under": 1.7,
-    "l5_over": 0.2,
-    "l10_over": 0.3,
-    "gate_status": "failed:edge_below_tier"
-   }
   },
   {
    "player_id": 1628389,
@@ -15941,7 +15372,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 64
+   "rank": 66
   },
   {
    "player_id": 1628989,
@@ -16126,9 +15557,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 5.64,
-   "floor": 2.18,
-   "ceiling": 9.14,
+   "proj": 5.8,
+   "floor": 2.34,
+   "ceiling": 9.29,
    "sigma": 2.78,
    "minutes": 32,
    "rot_rank": null,
@@ -16137,33 +15568,33 @@
    "side": "under",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0266,
-   "p_us": 0.523,
+   "edge": 0.0045,
+   "p_us": 0.501,
    "p_book": 0.496,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.2,
-   "p_over": 0.477,
-   "p_under": 0.523,
+   "p_over": 0.499,
+   "p_under": 0.501,
    "fair_over": 0.504,
    "fair_under": 0.496,
    "price_over": 1.85,
    "price_under": 1.88,
    "us": {
     "line": 5.5,
-    "side": "under",
-    "price": 1.86,
+    "side": "over",
+    "price": 1.88,
     "book": "betright",
-    "edge": 0.0199,
-    "p_us": 0.523,
-    "p_book": 0.503,
+    "edge": 0.0022,
+    "p_us": 0.499,
+    "p_book": 0.497,
     "tier": null,
     "gate_status": "failed:edge_below_tier",
     "l10_over": 0.4,
     "l5_over": 0.2,
-    "p_over": 0.477,
-    "p_under": 0.523,
+    "p_over": 0.499,
+    "p_under": 0.501,
     "fair_over": 0.497,
     "fair_under": 0.503,
     "price_over": 1.88,
@@ -16185,7 +15616,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 24
+   "rank": 25
   },
   {
    "player_id": 1629651,
@@ -16305,7 +15736,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 52
   },
   {
    "player_id": 1629673,
@@ -16314,9 +15745,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 1.86,
-   "floor": 0.02,
-   "ceiling": 4.04,
+   "proj": 1.9,
+   "floor": 0.06,
+   "ceiling": 4.09,
    "sigma": 1.67,
    "minutes": 21,
    "rot_rank": null,
@@ -16462,44 +15893,44 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 4.86,
-   "floor": 1.71,
-   "ceiling": 8.53,
+   "proj": 5.02,
+   "floor": 1.88,
+   "ceiling": 8.69,
    "sigma": 2.68,
    "minutes": 32,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 4.5,
-   "side": "under",
-   "price": 1.92,
+   "side": "over",
+   "price": 1.82,
    "book": "neds",
-   "edge": 0.0014,
-   "p_us": 0.488,
-   "p_book": 0.487,
+   "edge": 0.0239,
+   "p_us": 0.537,
+   "p_book": 0.513,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.512,
-   "p_under": 0.488,
+   "p_over": 0.537,
+   "p_under": 0.463,
    "fair_over": 0.513,
    "fair_under": 0.487,
    "price_over": 1.82,
    "price_under": 1.92,
    "us": {
     "line": 4.5,
-    "side": "under",
-    "price": 2.0,
+    "side": "over",
+    "price": 1.75,
     "book": "betright",
-    "edge": 0.0214,
-    "p_us": 0.488,
-    "p_book": 0.467,
+    "edge": 0.004,
+    "p_us": 0.537,
+    "p_book": 0.533,
     "tier": null,
     "gate_status": "failed:edge_below_tier",
     "l10_over": 0.4,
     "l5_over": 0.4,
-    "p_over": 0.512,
-    "p_under": 0.488,
+    "p_over": 0.537,
+    "p_under": 0.463,
     "fair_over": 0.533,
     "fair_under": 0.467,
     "price_over": 1.75,
@@ -16643,7 +16074,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 106
   },
   {
    "player_id": 1630194,
@@ -16808,9 +16239,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 3.31,
-   "floor": 0.85,
-   "ceiling": 6.08,
+   "proj": 3.33,
+   "floor": 0.88,
+   "ceiling": 6.11,
    "sigma": 2.18,
    "minutes": 28,
    "rot_rank": null,
@@ -16819,15 +16250,15 @@
    "side": "under",
    "price": 1.64,
    "book": "neds",
-   "edge": 0.0132,
-   "p_us": 0.586,
+   "edge": 0.0086,
+   "p_us": 0.581,
    "p_book": 0.573,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.414,
-   "p_under": 0.586,
+   "p_over": 0.419,
+   "p_under": 0.581,
    "fair_over": 0.427,
    "fair_under": 0.573,
    "price_over": 2.2,
@@ -16837,15 +16268,15 @@
     "side": "under",
     "price": 1.67,
     "book": "betright",
-    "edge": 0.0233,
-    "p_us": 0.586,
+    "edge": 0.0186,
+    "p_us": 0.581,
     "p_book": 0.563,
     "tier": null,
     "gate_status": "failed:edge_below_tier",
     "l10_over": 0.5,
     "l5_over": 0.4,
-    "p_over": 0.414,
-    "p_under": 0.586,
+    "p_over": 0.419,
+    "p_under": 0.581,
     "fair_over": 0.437,
     "fair_under": 0.563,
     "price_over": 2.15,
@@ -16867,7 +16298,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 59
   },
   {
    "player_id": 1630538,
@@ -17095,56 +16526,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "REB",
-   "proj": 2.01,
-   "floor": 0.17,
-   "ceiling": 4.2,
-   "sigma": 1.67,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.01,
-   "mu_rank": 11,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": [
-    {
-     "star": "Trey Murphy III",
-     "n": 3,
-     "delta": 0.8
-    }
-   ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 87
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -17264,7 +16645,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 47
   },
   {
    "player_id": 1631159,
@@ -17367,61 +16748,32 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "REB",
-   "line": 4.5,
-   "price": 1.9,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83,
-   "l5_over": 0.6,
-   "l10_over": 0.5,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
-   "us": {
-    "line": 4.5,
-    "price": 1.88,
-    "book": "betright",
-    "price_over": 1.88,
-    "price_under": 1.86,
-    "l5_over": 0.6,
-    "l10_over": 0.5,
-    "gate_status": "failed:edge_below_tier"
-   }
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 4.25,
-   "floor": 1.25,
-   "ceiling": 7.67,
+   "proj": 4.59,
+   "floor": 1.6,
+   "ceiling": 8.01,
    "sigma": 2.52,
-   "minutes": 18,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 3.5,
    "side": "over",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0747,
-   "p_us": 0.584,
+   "edge": 0.1282,
+   "p_us": 0.638,
    "p_book": 0.509,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.4,
-   "p_over": 0.584,
-   "p_under": 0.416,
+   "p_over": 0.638,
+   "p_under": 0.362,
    "fair_over": 0.509,
    "fair_under": 0.491,
    "price_over": 1.83,
@@ -17440,10 +16792,10 @@
      "delta": 0.8
     }
    ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 42
+   "prior": 4.2,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 41
   },
   {
    "player_id": 1631323,
@@ -17848,9 +17200,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 7.14,
-   "floor": 3.29,
-   "ceiling": 11.14,
+   "proj": 7.4,
+   "floor": 3.55,
+   "ceiling": 11.4,
    "sigma": 3.17,
    "minutes": 22,
    "rot_rank": null,
@@ -17859,15 +17211,15 @@
    "side": "over",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.172,
-   "p_us": 0.665,
+   "edge": 0.1987,
+   "p_us": 0.692,
    "p_book": 0.493,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.8,
-   "p_over": 0.665,
-   "p_under": 0.335,
+   "p_over": 0.692,
+   "p_under": 0.308,
    "fair_over": 0.493,
    "fair_under": 0.507,
    "price_over": 1.88,
@@ -17886,9 +17238,9 @@
      "delta": 0.3
     }
    ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
+   "prior": 7.08,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
    "rank": 13
   },
   {
@@ -17958,11 +17310,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 0.56,
+   "proj": 0.7,
    "floor": 0.0,
-   "ceiling": 2.75,
+   "ceiling": 2.89,
    "sigma": 1.67,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -17993,7 +17345,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 101
   },
   {
    "player_id": 1642377,
@@ -18146,7 +17498,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 72
   },
   {
    "player_id": 1642843,
@@ -18243,7 +17595,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 31
+   "rank": 36
   },
   {
    "player_id": 1642849,
@@ -18281,9 +17633,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 7.05,
-   "floor": 3.19,
-   "ceiling": 11.05,
+   "proj": 7.27,
+   "floor": 3.41,
+   "ceiling": 11.27,
    "sigma": 3.17,
    "minutes": 22,
    "rot_rank": null,
@@ -18322,7 +17674,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 16
+   "rank": 15
   },
   {
    "player_id": 1642855,
@@ -18440,11 +17792,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 1.23,
+   "proj": 1.6,
    "floor": 0.0,
-   "ceiling": 3.42,
+   "ceiling": 3.78,
    "sigma": 1.67,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -18472,10 +17824,10 @@
    "pos": "PF",
    "pos_usual": "PF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 97
+   "prior": 1.23,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 95
   },
   {
    "player_id": 1642907,
@@ -18584,11 +17936,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 0.65,
+   "proj": 0.79,
    "floor": 0.0,
-   "ceiling": 3.27,
+   "ceiling": 3.41,
    "sigma": 1.67,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -18619,7 +17971,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 99
   },
   {
    "player_id": -721,
@@ -18628,11 +17980,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "REB",
-   "proj": 0.92,
+   "proj": 1.08,
    "floor": 0.0,
-   "ceiling": 3.54,
+   "ceiling": 3.7,
    "sigma": 1.67,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -18663,7 +18015,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 97
   },
   {
    "player_id": -703,
@@ -18707,7 +18059,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 128
   },
   {
    "player_id": -710,
@@ -18751,7 +18103,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 129
   },
   {
    "player_id": 1642434,
@@ -18963,6 +18315,26 @@
    "us": null
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "REB",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -735,
    "player": "Meleek Thomas",
    "team": "Cleveland",
@@ -19064,7 +18436,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 80
+   "rank": 81
   },
   {
    "player_id": -701,
@@ -19133,11 +18505,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.0,
+   "proj": 0.16,
    "floor": 0.0,
-   "ceiling": 0.79,
+   "ceiling": 0.95,
    "sigma": 0.76,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -19165,30 +18537,10 @@
    "pos": "C",
    "pos_usual": "C",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 104
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
+   "prior": 0.0,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 100
   },
   {
    "player_id": 201942,
@@ -19232,7 +18584,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 70
   },
   {
    "player_id": 202691,
@@ -19460,7 +18812,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 6
+   "rank": 8
   },
   {
    "player_id": 1626145,
@@ -19504,7 +18856,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 74
+   "rank": 77
   },
   {
    "player_id": 1626171,
@@ -19631,26 +18983,6 @@
    "us": null
   },
   {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1628380,
    "player": "Zach Collins",
    "team": "Chicago",
@@ -19686,26 +19018,6 @@
    "l10_over": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -19792,7 +19104,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 97
+   "rank": 96
   },
   {
    "player_id": 1628989,
@@ -19941,10 +19253,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 1.37,
-   "floor": 0.07,
-   "ceiling": 3.09,
-   "sigma": 1.18,
+   "proj": 1.41,
+   "floor": 0.0,
+   "ceiling": 2.95,
+   "sigma": 1.27,
    "minutes": 32,
    "rot_rank": null,
    "minutes_source": "model",
@@ -19976,7 +19288,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 8
+   "rank": 7
   },
   {
    "player_id": 1629651,
@@ -20060,7 +19372,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 36
   },
   {
    "player_id": 1629673,
@@ -20069,9 +19381,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.65,
-   "floor": 0.0,
-   "ceiling": 2.01,
+   "proj": 0.66,
+   "floor": 0.01,
+   "ceiling": 2.03,
    "sigma": 0.88,
    "minutes": 21,
    "rot_rank": null,
@@ -20193,9 +19505,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.85,
+   "proj": 0.88,
    "floor": 0.0,
-   "ceiling": 2.01,
+   "ceiling": 2.04,
    "sigma": 0.99,
    "minutes": 32,
    "rot_rank": null,
@@ -20228,7 +19540,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 41
   },
   {
    "player_id": 1630183,
@@ -20332,7 +19644,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 106
   },
   {
    "player_id": 1630194,
@@ -20461,9 +19773,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 1.35,
+   "proj": 1.36,
    "floor": 0.0,
-   "ceiling": 2.89,
+   "ceiling": 2.9,
    "sigma": 1.27,
    "minutes": 28,
    "rot_rank": null,
@@ -20496,7 +19808,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 11
+   "rank": 10
   },
   {
    "player_id": 1630538,
@@ -20679,50 +19991,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "STL",
-   "proj": 0.38,
-   "floor": 0.0,
-   "ceiling": 1.17,
-   "sigma": 0.76,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.072,
-   "mu_rank": 21,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 90
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -20824,7 +20092,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 16
+   "rank": 15
   },
   {
    "player_id": 1631159,
@@ -20927,37 +20195,17 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "STL",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.51,
+   "proj": 0.55,
    "floor": 0.0,
-   "ceiling": 1.95,
+   "ceiling": 1.99,
    "sigma": 0.81,
-   "minutes": 18,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -20988,7 +20236,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 77
+   "rank": 74
   },
   {
    "player_id": 1631323,
@@ -21357,9 +20605,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.31,
+   "proj": 0.32,
    "floor": 0.0,
-   "ceiling": 1.11,
+   "ceiling": 1.12,
    "sigma": 0.76,
    "minutes": 22,
    "rot_rank": null,
@@ -21392,7 +20640,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 93
+   "rank": 91
   },
   {
    "player_id": 1642281,
@@ -21461,11 +20709,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.14,
+   "proj": 0.18,
    "floor": 0.0,
-   "ceiling": 0.94,
+   "ceiling": 0.97,
    "sigma": 0.76,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -21496,7 +20744,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 99
   },
   {
    "player_id": 1642377,
@@ -21640,7 +20888,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1642843,
@@ -21704,7 +20952,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 7
+   "rank": 9
   },
   {
    "player_id": 1642849,
@@ -21733,9 +20981,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.75,
+   "proj": 0.77,
    "floor": 0.0,
-   "ceiling": 1.98,
+   "ceiling": 2.0,
    "sigma": 0.92,
    "minutes": 22,
    "rot_rank": null,
@@ -21768,7 +21016,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 55
   },
   {
    "player_id": 1642855,
@@ -21877,11 +21125,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.19,
+   "proj": 0.25,
    "floor": 0.0,
-   "ceiling": 0.99,
+   "ceiling": 1.05,
    "sigma": 0.76,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -21912,7 +21160,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 93
   },
   {
    "player_id": 1642907,
@@ -22021,11 +21269,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.16,
+   "proj": 0.2,
    "floor": 0.0,
-   "ceiling": 1.11,
+   "ceiling": 1.15,
    "sigma": 0.76,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -22056,7 +21304,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 98
   },
   {
    "player_id": -721,
@@ -22065,11 +21313,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "STL",
-   "proj": 0.18,
+   "proj": 0.21,
    "floor": 0.0,
-   "ceiling": 1.13,
+   "ceiling": 1.17,
    "sigma": 0.76,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -22100,7 +21348,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 99
+   "rank": 97
   },
   {
    "player_id": -703,
@@ -22144,7 +21392,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 128
   },
   {
    "player_id": -710,
@@ -22188,7 +21436,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 129
   },
   {
    "player_id": 1642434,
@@ -22391,6 +21639,26 @@
    "us": null
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "STL",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -735,
    "player": "Meleek Thomas",
    "team": "Cleveland",
@@ -22492,7 +21760,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 91
+   "rank": 90
   },
   {
    "player_id": -701,
@@ -22561,11 +21829,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 0.0,
+   "proj": 0.39,
    "floor": 0.0,
-   "ceiling": 1.38,
+   "ceiling": 1.78,
    "sigma": 0.8,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -22593,30 +21861,10 @@
    "pos": "C",
    "pos_usual": "C",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 104
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": null,
-   "us": null
+   "prior": 0.0,
+   "prior_at": "2026-11-14T18:46+00:00",
+   "move_reason": "Mathurin out",
+   "rank": 97
   },
   {
    "player_id": 201942,
@@ -22660,7 +21908,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 73
   },
   {
    "player_id": 202691,
@@ -22888,7 +22136,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 5
+   "rank": 4
   },
   {
    "player_id": 1626145,
@@ -22932,7 +22180,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 93
+   "rank": 91
   },
   {
    "player_id": 1626171,
@@ -23036,7 +22284,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 18
+   "rank": 17
   },
   {
    "player_id": 1627752,
@@ -23054,26 +22302,6 @@
    "l10_over": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SG",
-   "pos_usual": "SG",
    "early": null,
    "gate_status": null,
    "us": null
@@ -23114,26 +22342,6 @@
    "l10_over": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "C",
-   "pos_usual": "C",
    "early": null,
    "gate_status": null,
    "us": null
@@ -23220,7 +22428,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 90
+   "rank": 89
   },
   {
    "player_id": 1628989,
@@ -23369,10 +22577,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 2.09,
-   "floor": 0.26,
-   "ceiling": 4.12,
-   "sigma": 1.41,
+   "proj": 2.15,
+   "floor": 0.55,
+   "ceiling": 3.98,
+   "sigma": 1.47,
    "minutes": 32,
    "rot_rank": null,
    "minutes_source": "model",
@@ -23404,7 +22612,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 20
+   "rank": 16
   },
   {
    "player_id": 1629651,
@@ -23497,10 +22705,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 1.51,
-   "floor": 0.08,
-   "ceiling": 3.13,
-   "sigma": 1.27,
+   "proj": 1.55,
+   "floor": 0.0,
+   "ceiling": 3.0,
+   "sigma": 1.29,
    "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
@@ -23532,7 +22740,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 38
   },
   {
    "player_id": 1629750,
@@ -23621,9 +22829,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 1.05,
+   "proj": 1.09,
    "floor": 0.0,
-   "ceiling": 2.04,
+   "ceiling": 2.08,
    "sigma": 1.04,
    "minutes": 32,
    "rot_rank": null,
@@ -23656,7 +22864,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 61
+   "rank": 58
   },
   {
    "player_id": 1630183,
@@ -23760,7 +22968,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 106
   },
   {
    "player_id": 1630194,
@@ -23891,7 +23099,7 @@
    "stat": "TOV",
    "proj": 1.34,
    "floor": 0.0,
-   "ceiling": 2.96,
+   "ceiling": 2.97,
    "sigma": 1.27,
    "minutes": 28,
    "rot_rank": null,
@@ -23924,7 +23132,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 44
   },
   {
    "player_id": 1630538,
@@ -24107,50 +23315,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "TOV",
-   "proj": 0.96,
-   "floor": 0.01,
-   "ceiling": 2.1,
-   "sigma": 0.96,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.123,
-   "mu_rank": 27,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 70
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -24252,7 +23416,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 73
+   "rank": 74
   },
   {
    "player_id": 1631159,
@@ -24355,37 +23519,17 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "TOV",
-   "line": null,
-   "price": null,
-   "book": null,
-   "price_over": null,
-   "price_under": null,
-   "l5_over": null,
-   "l10_over": null,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": null,
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 0.89,
-   "floor": 0.0,
-   "ceiling": 2.03,
+   "proj": 0.96,
+   "floor": 0.01,
+   "ceiling": 2.1,
    "sigma": 0.96,
-   "minutes": 18,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -24416,7 +23560,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 75
+   "rank": 71
   },
   {
    "player_id": 1631323,
@@ -24785,9 +23929,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 0.85,
+   "proj": 0.88,
    "floor": 0.0,
-   "ceiling": 1.98,
+   "ceiling": 2.01,
    "sigma": 0.96,
    "minutes": 22,
    "rot_rank": null,
@@ -24820,7 +23964,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 76
   },
   {
    "player_id": 1642281,
@@ -24889,11 +24033,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 0.29,
+   "proj": 0.36,
    "floor": 0.0,
-   "ceiling": 1.67,
+   "ceiling": 1.75,
    "sigma": 0.8,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -24924,7 +24068,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 98
   },
   {
    "player_id": 1642377,
@@ -25068,7 +24212,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 96
+   "rank": 94
   },
   {
    "player_id": 1642843,
@@ -25132,7 +24276,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 10
+   "rank": 8
   },
   {
    "player_id": 1642849,
@@ -25161,9 +24305,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 2.27,
-   "floor": 0.12,
-   "ceiling": 4.54,
+   "proj": 2.34,
+   "floor": 0.19,
+   "ceiling": 4.61,
    "sigma": 1.78,
    "minutes": 22,
    "rot_rank": null,
@@ -25196,7 +24340,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 16
+   "rank": 14
   },
   {
    "player_id": 1642855,
@@ -25305,11 +24449,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 0.31,
+   "proj": 0.4,
    "floor": 0.0,
-   "ceiling": 1.7,
+   "ceiling": 1.79,
    "sigma": 0.8,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -25340,7 +24484,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 95
   },
   {
    "player_id": 1642907,
@@ -25449,11 +24593,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 0.19,
+   "proj": 0.23,
    "floor": 0.0,
-   "ceiling": 1.85,
+   "ceiling": 1.89,
    "sigma": 0.8,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -25484,7 +24628,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 100
   },
   {
    "player_id": -721,
@@ -25493,11 +24637,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "TOV",
-   "proj": 0.34,
+   "proj": 0.4,
    "floor": 0.0,
-   "ceiling": 2.0,
+   "ceiling": 2.06,
    "sigma": 0.8,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -25528,7 +24672,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 97
+   "rank": 96
   },
   {
    "player_id": -703,
@@ -25572,7 +24716,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 130
+   "rank": 128
   },
   {
    "player_id": -710,
@@ -25616,7 +24760,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 131
+   "rank": 129
   },
   {
    "player_id": 1642434,
@@ -25819,6 +24963,26 @@
    "us": null
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "TOV",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -785,
    "player": "Karim Lopez",
    "team": "Memphis",
@@ -25977,6 +25141,26 @@
    }
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "PRA",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -730,
    "player": "Morez Johnson Jr.",
    "team": "Dallas",
@@ -26003,11 +25187,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 2.36,
+   "proj": 2.86,
    "floor": 0.0,
-   "ceiling": 11.08,
+   "ceiling": 11.58,
    "sigma": 6.33,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -26038,7 +25222,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 102
   },
   {
    "player_id": -721,
@@ -26047,11 +25231,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 3.11,
+   "proj": 3.66,
    "floor": 0.0,
-   "ceiling": 11.82,
+   "ceiling": 12.38,
    "sigma": 6.33,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -26082,7 +25266,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 99
   },
   {
    "player_id": -717,
@@ -26170,7 +25354,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 107
+   "rank": 106
   },
   {
    "player_id": -703,
@@ -26214,7 +25398,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 107
   },
   {
    "player_id": -701,
@@ -26283,11 +25467,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 0.0,
+   "proj": 5.8,
    "floor": 0.0,
-   "ceiling": 8.71,
+   "ceiling": 14.52,
    "sigma": 6.33,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -26324,27 +25508,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PRA",
-   "line": 28.5,
-   "price": 1.93,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.79,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
+   "rank": 95
   },
   {
    "player_id": 201942,
@@ -26550,7 +25714,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 39
+   "rank": 40
   },
   {
    "player_id": 203944,
@@ -26687,7 +25851,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 95
+   "rank": 94
   },
   {
    "player_id": 1626171,
@@ -26800,7 +25964,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 6
+   "rank": 5
   },
   {
    "player_id": 1627752,
@@ -26820,26 +25984,6 @@
    "pos_usual": "SF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PRA",
-   "line": 33.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.85,
-   "l5_over": 0.8,
-   "l10_over": 0.5,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": "passed",
    "us": null
   },
   {
@@ -26880,26 +26024,6 @@
    "pos_usual": "PF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PRA",
-   "line": 24.5,
-   "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.91,
-   "price_under": 1.82,
-   "l5_over": 0.2,
-   "l10_over": 0.3,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "passed",
    "us": null
   },
   {
@@ -26993,7 +26117,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 88
+   "rank": 87
   },
   {
    "player_id": 1628989,
@@ -27169,10 +26293,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 31.83,
-   "floor": 21.19,
-   "ceiling": 43.46,
-   "sigma": 8.94,
+   "proj": 32.72,
+   "floor": 20.46,
+   "ceiling": 44.22,
+   "sigma": 9.79,
    "minutes": 32,
    "rot_rank": null,
    "minutes_source": "model",
@@ -27180,15 +26304,15 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0964,
-   "p_us": 0.596,
+   "edge": 0.1317,
+   "p_us": 0.632,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.596,
-   "p_under": 0.404,
+   "p_over": 0.632,
+   "p_under": 0.368,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -27210,7 +26334,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 10
+   "rank": 8
   },
   {
    "player_id": 1629651,
@@ -27303,7 +26427,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 43
   },
   {
    "player_id": 1629673,
@@ -27312,9 +26436,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 15.3,
-   "floor": 5.92,
-   "ceiling": 24.47,
+   "proj": 15.65,
+   "floor": 6.28,
+   "ceiling": 24.82,
    "sigma": 7.18,
    "minutes": 21,
    "rot_rank": null,
@@ -27323,15 +26447,15 @@
    "side": "over",
    "price": 2.0,
    "book": "sportsbet",
-   "edge": 0.0178,
-   "p_us": 0.489,
+   "edge": 0.0374,
+   "p_us": 0.508,
    "p_book": 0.471,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.489,
-   "p_under": 0.511,
+   "p_over": 0.508,
+   "p_under": 0.492,
    "fair_over": 0.471,
    "fair_under": 0.529,
    "price_over": 2.0,
@@ -27460,9 +26584,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 27.82,
-   "floor": 17.17,
-   "ceiling": 39.44,
+   "proj": 28.77,
+   "floor": 18.12,
+   "ceiling": 40.39,
    "sigma": 8.94,
    "minutes": 32,
    "rot_rank": null,
@@ -27471,15 +26595,15 @@
    "side": "over",
    "price": 1.9,
    "book": "sportsbet",
-   "edge": 0.101,
-   "p_us": 0.596,
+   "edge": 0.1389,
+   "p_us": 0.634,
    "p_book": 0.495,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.596,
-   "p_under": 0.404,
+   "p_over": 0.634,
+   "p_under": 0.366,
    "fair_over": 0.495,
    "fair_under": 0.505,
    "price_over": 1.9,
@@ -27501,7 +26625,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 18
+   "rank": 15
   },
   {
    "player_id": 1630183,
@@ -27623,7 +26747,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 113
+   "rank": 111
   },
   {
    "player_id": 1630194,
@@ -27779,9 +26903,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 13.49,
-   "floor": 4.4,
-   "ceiling": 22.32,
+   "proj": 13.59,
+   "floor": 4.5,
+   "ceiling": 22.41,
    "sigma": 6.89,
    "minutes": 28,
    "rot_rank": null,
@@ -27790,15 +26914,15 @@
    "side": "over",
    "price": 1.78,
    "book": "sportsbet",
-   "edge": 0.0266,
-   "p_us": 0.556,
+   "edge": 0.0319,
+   "p_us": 0.561,
    "p_book": 0.529,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.556,
-   "p_under": 0.444,
+   "p_over": 0.561,
+   "p_under": 0.439,
    "fair_over": 0.529,
    "fair_under": 0.471,
    "price_over": 1.78,
@@ -28039,56 +27163,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "PRA",
-   "proj": 9.57,
-   "floor": 1.85,
-   "ceiling": 18.29,
-   "sigma": 6.33,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.018,
-   "mu_rank": 21,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": [
-    {
-     "star": "Trey Murphy III",
-     "n": 3,
-     "delta": -4.1
-    }
-   ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 87
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -28190,7 +27264,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 44
+   "rank": 45
   },
   {
    "player_id": 1631159,
@@ -28293,37 +27367,17 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PRA",
-   "line": 20.5,
-   "price": 1.95,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 13.05,
-   "floor": 3.96,
-   "ceiling": 21.87,
+   "proj": 14.12,
+   "floor": 5.03,
+   "ceiling": 22.94,
    "sigma": 6.89,
-   "minutes": 18,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -28360,7 +27414,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 74
+   "rank": 68
   },
   {
    "player_id": 1631323,
@@ -28787,10 +27841,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 16.03,
-   "floor": 6.65,
-   "ceiling": 25.2,
-   "sigma": 7.18,
+   "proj": 16.61,
+   "floor": 6.38,
+   "ceiling": 26.87,
+   "sigma": 7.99,
    "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
@@ -28828,7 +27882,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 53
   },
   {
    "player_id": 1642281,
@@ -28897,11 +27951,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 3.11,
+   "proj": 3.88,
    "floor": 0.0,
-   "ceiling": 11.82,
+   "ceiling": 12.6,
    "sigma": 6.33,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -28932,7 +27986,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 98
   },
   {
    "player_id": 1642377,
@@ -29134,7 +28188,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 91
+   "rank": 90
   },
   {
    "player_id": 1642843,
@@ -29204,7 +28258,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 15
+   "rank": 13
   },
   {
    "player_id": 1642849,
@@ -29242,9 +28296,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 21.63,
-   "floor": 11.8,
-   "ceiling": 32.21,
+   "proj": 22.31,
+   "floor": 12.48,
+   "ceiling": 32.89,
    "sigma": 8.18,
    "minutes": 22,
    "rot_rank": null,
@@ -29401,11 +28455,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PRA",
-   "proj": 3.14,
+   "proj": 4.07,
    "floor": 0.0,
-   "ceiling": 11.85,
+   "ceiling": 12.78,
    "sigma": 6.33,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -29436,7 +28490,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 97
   },
   {
    "player_id": 1642907,
@@ -29684,7 +28738,7 @@
    "game": "Cleveland vs Dallas",
    "stat": "PR",
    "line": 16.5,
-   "price": 1.83,
+   "price": 1.87,
    "book": "pointsbetau",
    "price_over": 1.87,
    "price_under": 1.83,
@@ -29693,7 +28747,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -29713,6 +28767,26 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
+   "gate_status": null,
+   "us": null
+  },
+  {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "PR",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
    "gate_status": null,
    "us": null
   },
@@ -29743,11 +28817,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 2.07,
+   "proj": 2.51,
    "floor": 0.0,
-   "ceiling": 10.19,
+   "ceiling": 10.63,
    "sigma": 5.79,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -29778,7 +28852,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 102
   },
   {
    "player_id": -721,
@@ -29787,11 +28861,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 2.74,
+   "proj": 3.23,
    "floor": 0.0,
-   "ceiling": 10.86,
+   "ceiling": 11.34,
    "sigma": 5.79,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -29822,7 +28896,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 97
   },
   {
    "player_id": -717,
@@ -29910,7 +28984,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 107
+   "rank": 106
   },
   {
    "player_id": -703,
@@ -29954,7 +29028,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 107
   },
   {
    "player_id": -701,
@@ -30023,11 +29097,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 0.0,
+   "proj": 5.31,
    "floor": 0.0,
-   "ceiling": 8.11,
+   "ceiling": 13.43,
    "sigma": 5.79,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -30064,27 +29138,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PR",
-   "line": 22.5,
-   "price": 2.02,
-   "book": "unibet",
-   "price_over": 2.02,
-   "price_under": 1.73,
-   "l5_over": 0.6,
-   "l10_over": 0.5,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
+   "rank": 94
   },
   {
    "player_id": 201942,
@@ -30128,7 +29182,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 64
   },
   {
    "player_id": 202691,
@@ -30299,7 +29353,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 38
+   "rank": 39
   },
   {
    "player_id": 203944,
@@ -30558,7 +29612,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 7
+   "rank": 6
   },
   {
    "player_id": 1627752,
@@ -30578,26 +29632,6 @@
    "pos_usual": "SF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PR",
-   "line": 28.5,
-   "price": 1.9,
-   "book": "sportsbet",
-   "price_over": 1.9,
-   "price_under": 1.86,
-   "l5_over": 0.8,
-   "l10_over": 0.5,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": "passed",
    "us": null
   },
   {
@@ -30638,26 +29672,6 @@
    "pos_usual": "PF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PR",
-   "line": 22.5,
-   "price": 1.87,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.85,
-   "l5_over": 0.2,
-   "l10_over": 0.3,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "passed",
    "us": null
   },
   {
@@ -30918,9 +29932,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 28.26,
-   "floor": 16.6,
-   "ceiling": 39.18,
+   "proj": 29.05,
+   "floor": 17.39,
+   "ceiling": 39.97,
    "sigma": 9.18,
    "minutes": 32,
    "rot_rank": null,
@@ -30929,15 +29943,15 @@
    "side": "over",
    "price": 1.88,
    "book": "sportsbet",
-   "edge": 0.0769,
-   "p_us": 0.577,
+   "edge": 0.1103,
+   "p_us": 0.61,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.577,
-   "p_under": 0.423,
+   "p_over": 0.61,
+   "p_under": 0.39,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.88,
@@ -30959,7 +29973,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 9
+   "rank": 7
   },
   {
    "player_id": 1629651,
@@ -31052,7 +30066,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 41
   },
   {
    "player_id": 1629673,
@@ -31061,10 +30075,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 12.25,
-   "floor": 4.19,
-   "ceiling": 20.19,
-   "sigma": 6.4,
+   "proj": 12.53,
+   "floor": 4.03,
+   "ceiling": 21.15,
+   "sigma": 6.63,
    "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
@@ -31072,15 +30086,15 @@
    "side": "over",
    "price": 1.8,
    "book": "sportsbet",
-   "edge": 0.026,
-   "p_us": 0.547,
+   "edge": 0.0405,
+   "p_us": 0.562,
    "p_book": 0.521,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.547,
-   "p_under": 0.453,
+   "p_over": 0.562,
+   "p_under": 0.438,
    "fair_over": 0.521,
    "fair_under": 0.479,
    "price_over": 1.8,
@@ -31102,7 +30116,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 66
+   "rank": 63
   },
   {
    "player_id": 1629750,
@@ -31209,9 +30223,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 25.08,
-   "floor": 15.08,
-   "ceiling": 35.8,
+   "proj": 25.93,
+   "floor": 15.93,
+   "ceiling": 36.65,
    "sigma": 8.4,
    "minutes": 32,
    "rot_rank": null,
@@ -31220,15 +30234,15 @@
    "side": "over",
    "price": 1.85,
    "book": "sportsbet",
-   "edge": 0.1035,
-   "p_us": 0.611,
+   "edge": 0.139,
+   "p_us": 0.647,
    "p_book": 0.508,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
-   "p_over": 0.611,
-   "p_under": 0.389,
+   "p_over": 0.647,
+   "p_under": 0.353,
    "fair_over": 0.508,
    "fair_under": 0.492,
    "price_over": 1.85,
@@ -31250,7 +30264,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 13
+   "rank": 12
   },
   {
    "player_id": 1630183,
@@ -31372,7 +30386,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 113
+   "rank": 111
   },
   {
    "player_id": 1630194,
@@ -31528,9 +30542,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 11.22,
-   "floor": 3.16,
-   "ceiling": 19.16,
+   "proj": 11.3,
+   "floor": 3.24,
+   "ceiling": 19.24,
    "sigma": 6.4,
    "minutes": 28,
    "rot_rank": null,
@@ -31539,15 +30553,15 @@
    "side": "under",
    "price": 1.68,
    "book": "unibet",
-   "edge": 0.0288,
-   "p_us": 0.582,
+   "edge": 0.0238,
+   "p_us": 0.577,
    "p_book": 0.553,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.2,
-   "p_over": 0.418,
-   "p_under": 0.582,
+   "p_over": 0.423,
+   "p_under": 0.577,
    "fair_over": 0.447,
    "fair_under": 0.553,
    "price_over": 2.08,
@@ -31569,7 +30583,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 75
+   "rank": 74
   },
   {
    "player_id": 1630538,
@@ -31797,56 +30811,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "PR",
-   "proj": 8.4,
-   "floor": 1.64,
-   "ceiling": 16.52,
-   "sigma": 5.79,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.029,
-   "mu_rank": 23,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": [
-    {
-     "star": "Trey Murphy III",
-     "n": 3,
-     "delta": -3.0
-    }
-   ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 90
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -31948,7 +30912,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 44
   },
   {
    "player_id": 1631159,
@@ -32051,52 +31015,32 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PR",
-   "line": 18.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "l5_over": 0.2,
-   "l10_over": 0.3,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "failed:edge_below_tier",
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 11.96,
-   "floor": 3.9,
-   "ceiling": 19.91,
-   "sigma": 6.4,
-   "minutes": 18,
+   "proj": 12.94,
+   "floor": 4.44,
+   "ceiling": 21.56,
+   "sigma": 6.63,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 9.5,
    "side": "over",
    "price": 1.86,
    "book": "sportsbet",
-   "edge": 0.147,
-   "p_us": 0.652,
+   "edge": 0.1927,
+   "p_us": 0.698,
    "p_book": 0.505,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.652,
-   "p_under": 0.348,
+   "p_over": 0.698,
+   "p_under": 0.302,
    "fair_over": 0.505,
    "fair_under": 0.495,
    "price_over": 1.86,
@@ -32118,7 +31062,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 61
   },
   {
    "player_id": 1631323,
@@ -32545,9 +31489,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 14.19,
-   "floor": 5.08,
-   "ceiling": 23.44,
+   "proj": 14.71,
+   "floor": 5.6,
+   "ceiling": 23.96,
    "sigma": 7.16,
    "minutes": 22,
    "rot_rank": null,
@@ -32556,15 +31500,15 @@
    "side": "over",
    "price": 2.0,
    "book": "unibet",
-   "edge": 0.1824,
-   "p_us": 0.648,
+   "edge": 0.209,
+   "p_us": 0.674,
    "p_book": 0.465,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.8,
-   "p_over": 0.648,
-   "p_under": 0.352,
+   "p_over": 0.674,
+   "p_under": 0.326,
    "fair_over": 0.465,
    "fair_under": 0.535,
    "price_over": 2.0,
@@ -32586,7 +31530,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 54
+   "rank": 51
   },
   {
    "player_id": 1642281,
@@ -32655,11 +31599,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 2.41,
+   "proj": 3.01,
    "floor": 0.0,
-   "ceiling": 10.52,
+   "ceiling": 11.13,
    "sigma": 5.79,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -32690,7 +31634,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 99
   },
   {
    "player_id": 1642377,
@@ -32883,7 +31827,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 91
+   "rank": 90
   },
   {
    "player_id": 1642843,
@@ -32991,9 +31935,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 18.9,
-   "floor": 9.74,
-   "ceiling": 28.76,
+   "proj": 19.49,
+   "floor": 10.34,
+   "ceiling": 29.36,
    "sigma": 7.52,
    "minutes": 22,
    "rot_rank": null,
@@ -33032,7 +31976,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 32
+   "rank": 31
   },
   {
    "player_id": 1642855,
@@ -33150,11 +32094,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PR",
-   "proj": 2.86,
+   "proj": 3.7,
    "floor": 0.0,
-   "ceiling": 10.97,
+   "ceiling": 11.81,
    "sigma": 5.79,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -33185,7 +32129,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 96
   },
   {
    "player_id": 1642907,
@@ -33466,6 +32410,26 @@
    }
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "PA",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -730,
    "player": "Morez Johnson Jr.",
    "team": "Dallas",
@@ -33492,11 +32456,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 1.71,
+   "proj": 2.07,
    "floor": 0.0,
-   "ceiling": 8.5,
+   "ceiling": 8.86,
    "sigma": 4.95,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -33527,7 +32491,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 101
   },
   {
    "player_id": -721,
@@ -33536,11 +32500,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 2.19,
+   "proj": 2.58,
    "floor": 0.0,
-   "ceiling": 8.98,
+   "ceiling": 9.37,
    "sigma": 4.95,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -33571,7 +32535,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 98
   },
   {
    "player_id": -717,
@@ -33615,7 +32579,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 91
+   "rank": 90
   },
   {
    "player_id": -710,
@@ -33659,7 +32623,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 107
+   "rank": 106
   },
   {
    "player_id": -703,
@@ -33703,7 +32667,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 107
   },
   {
    "player_id": -701,
@@ -33772,11 +32736,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 0.0,
+   "proj": 2.71,
    "floor": 0.0,
-   "ceiling": 6.78,
+   "ceiling": 9.49,
    "sigma": 4.95,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -33813,27 +32777,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PA",
-   "line": 23.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.83,
-   "price_under": 1.88,
-   "l5_over": 0.4,
-   "l10_over": 0.4,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
+   "rank": 97
   },
   {
    "player_id": 201942,
@@ -34039,7 +32983,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 47
+   "rank": 45
   },
   {
    "player_id": 203944,
@@ -34176,7 +33120,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 90
+   "rank": 89
   },
   {
    "player_id": 1626171,
@@ -34289,7 +33233,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 5
+   "rank": 4
   },
   {
    "player_id": 1627752,
@@ -34309,26 +33253,6 @@
    "pos_usual": "SF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PA",
-   "line": 29.5,
-   "price": 1.93,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.8,
-   "l5_over": 0.6,
-   "l10_over": 0.4,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": "passed",
    "us": null
   },
   {
@@ -34369,26 +33293,6 @@
    "pos_usual": "PF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PA",
-   "line": 15.5,
-   "price": 2.0,
-   "book": "unibet",
-   "price_over": 2.0,
-   "price_under": 1.74,
-   "l5_over": 0.0,
-   "l10_over": 0.2,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "passed",
    "us": null
   },
   {
@@ -34482,7 +33386,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 88
   },
   {
    "player_id": 1628989,
@@ -34649,10 +33553,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 26.19,
-   "floor": 16.11,
-   "ceiling": 36.23,
-   "sigma": 7.86,
+   "proj": 26.92,
+   "floor": 16.04,
+   "ceiling": 37.86,
+   "sigma": 8.85,
    "minutes": 32,
    "rot_rank": null,
    "minutes_source": "model",
@@ -34660,15 +33564,15 @@
    "side": "over",
    "price": 1.77,
    "book": "neds",
-   "edge": 0.0963,
-   "p_us": 0.624,
+   "edge": 0.1283,
+   "p_us": 0.656,
    "p_book": 0.528,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.624,
-   "p_under": 0.376,
+   "p_over": 0.656,
+   "p_under": 0.344,
    "fair_over": 0.528,
    "fair_under": 0.472,
    "price_over": 1.77,
@@ -34690,7 +33594,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 10
+   "rank": 8
   },
   {
    "player_id": 1629651,
@@ -34783,7 +33687,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 38
+   "rank": 37
   },
   {
    "player_id": 1629673,
@@ -34792,30 +33696,30 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 13.44,
-   "floor": 5.21,
-   "ceiling": 22.58,
+   "proj": 13.75,
+   "floor": 5.52,
+   "ceiling": 22.89,
    "sigma": 6.6,
    "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 13.5,
+   "line": 12.5,
    "side": "over",
-   "price": 1.88,
-   "book": "unibet",
-   "edge": 0.0004,
-   "p_us": 0.496,
-   "p_book": 0.496,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
-   "l10_over": 0.5,
-   "l5_over": 0.4,
-   "p_over": 0.496,
-   "p_under": 0.504,
-   "fair_over": 0.496,
-   "fair_under": 0.504,
-   "price_over": 1.88,
-   "price_under": 1.85,
+   "price": 1.82,
+   "book": "neds",
+   "edge": 0.0637,
+   "p_us": 0.577,
+   "p_book": 0.513,
+   "tier": "A",
+   "gate_status": "passed",
+   "l10_over": 0.6,
+   "l5_over": 0.6,
+   "p_over": 0.577,
+   "p_under": 0.423,
+   "fair_over": 0.513,
+   "fair_under": 0.487,
+   "price_over": 1.82,
+   "price_under": 1.92,
    "us": null,
    "mu": -0.046,
    "mu_rank": 26,
@@ -34833,7 +33737,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 50
   },
   {
    "player_id": 1629750,
@@ -34931,9 +33835,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 22.96,
-   "floor": 12.88,
-   "ceiling": 33.0,
+   "proj": 23.74,
+   "floor": 13.67,
+   "ceiling": 33.78,
    "sigma": 7.86,
    "minutes": 32,
    "rot_rank": null,
@@ -34942,15 +33846,15 @@
    "side": "over",
    "price": 1.88,
    "book": "sportsbet",
-   "edge": 0.1139,
-   "p_us": 0.614,
+   "edge": 0.1487,
+   "p_us": 0.649,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.614,
-   "p_under": 0.386,
+   "p_over": 0.649,
+   "p_under": 0.351,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.88,
@@ -34972,7 +33876,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 18
+   "rank": 14
   },
   {
    "player_id": 1630183,
@@ -35085,7 +33989,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 113
+   "rank": 111
   },
   {
    "player_id": 1630194,
@@ -35232,9 +34136,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 10.19,
-   "floor": 2.65,
-   "ceiling": 17.88,
+   "proj": 10.26,
+   "floor": 2.73,
+   "ceiling": 17.96,
    "sigma": 5.95,
    "minutes": 28,
    "rot_rank": null,
@@ -35243,15 +34147,15 @@
    "side": "under",
    "price": 1.83,
    "book": "unibet",
-   "edge": 0.0128,
-   "p_us": 0.521,
+   "edge": 0.008,
+   "p_us": 0.516,
    "p_book": 0.508,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.479,
-   "p_under": 0.521,
+   "p_over": 0.484,
+   "p_under": 0.516,
    "fair_over": 0.492,
    "fair_under": 0.508,
    "price_over": 1.89,
@@ -35273,7 +34177,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 67
+   "rank": 66
   },
   {
    "player_id": 1630538,
@@ -35492,56 +34396,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "PA",
-   "proj": 7.56,
-   "floor": 1.7,
-   "ceiling": 14.35,
-   "sigma": 4.95,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": -0.026,
-   "mu_rank": 21,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": [
-    {
-     "star": "Trey Murphy III",
-     "n": 3,
-     "delta": -4.9
-    }
-   ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 83
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -35643,7 +34497,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 48
+   "rank": 47
   },
   {
    "player_id": 1631159,
@@ -35746,37 +34600,17 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "PA",
-   "line": 15.5,
-   "price": 1.89,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.82,
-   "l5_over": 0.0,
-   "l10_over": 0.2,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 8.8,
-   "floor": 2.12,
-   "ceiling": 15.78,
-   "sigma": 5.32,
-   "minutes": 18,
+   "proj": 9.53,
+   "floor": 1.99,
+   "ceiling": 17.22,
+   "sigma": 5.95,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -35813,7 +34647,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 74
+   "rank": 71
   },
   {
    "player_id": 1631323,
@@ -36240,10 +35074,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 8.88,
-   "floor": 2.2,
-   "ceiling": 15.86,
-   "sigma": 5.32,
+   "proj": 9.2,
+   "floor": 1.67,
+   "ceiling": 16.9,
+   "sigma": 5.95,
    "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
@@ -36350,11 +35184,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 2.54,
+   "proj": 3.18,
    "floor": 0.0,
-   "ceiling": 9.33,
+   "ceiling": 9.96,
    "sigma": 4.95,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -36385,7 +35219,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 96
   },
   {
    "player_id": 1642377,
@@ -36587,7 +35421,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 95
+   "rank": 94
   },
   {
    "player_id": 1642843,
@@ -36657,7 +35491,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 13
+   "rank": 11
   },
   {
    "player_id": 1642849,
@@ -36695,9 +35529,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 14.58,
-   "floor": 5.96,
-   "ceiling": 23.91,
+   "proj": 15.04,
+   "floor": 6.42,
+   "ceiling": 24.37,
    "sigma": 6.92,
    "minutes": 22,
    "rot_rank": null,
@@ -36736,7 +35570,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 40
   },
   {
    "player_id": 1642855,
@@ -36854,11 +35688,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "PA",
-   "proj": 1.91,
+   "proj": 2.47,
    "floor": 0.0,
-   "ceiling": 8.69,
+   "ceiling": 9.25,
    "sigma": 4.95,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -36889,7 +35723,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 100
   },
   {
    "player_id": 1642907,
@@ -37179,6 +36013,26 @@
    }
   },
   {
+   "player_id": -732,
+   "player": "Khalifa Diop",
+   "team": "Cleveland",
+   "opp": "Dallas",
+   "game": "Cleveland vs Dallas",
+   "stat": "RA",
+   "line": null,
+   "price": null,
+   "book": null,
+   "price_over": null,
+   "price_under": null,
+   "l5_over": null,
+   "l10_over": null,
+   "pos": "C",
+   "pos_usual": "C",
+   "early": 0,
+   "gate_status": null,
+   "us": null
+  },
+  {
    "player_id": -730,
    "player": "Morez Johnson Jr.",
    "team": "Dallas",
@@ -37205,11 +36059,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 0.94,
+   "proj": 1.14,
    "floor": 0.0,
-   "ceiling": 4.25,
+   "ceiling": 4.45,
    "sigma": 2.46,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -37240,7 +36094,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 101
   },
   {
    "player_id": -721,
@@ -37249,11 +36103,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 1.29,
+   "proj": 1.52,
    "floor": 0.0,
-   "ceiling": 4.59,
+   "ceiling": 4.82,
    "sigma": 2.46,
-   "minutes": 4,
+   "minutes": 5,
    "rot_rank": null,
    "minutes_source": "fallback",
    "line": null,
@@ -37284,7 +36138,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 99
   },
   {
    "player_id": -717,
@@ -37328,7 +36182,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 70
+   "rank": 72
   },
   {
    "player_id": -710,
@@ -37372,7 +36226,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 107
+   "rank": 106
   },
   {
    "player_id": -703,
@@ -37416,7 +36270,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 108
+   "rank": 107
   },
   {
    "player_id": -701,
@@ -37485,11 +36339,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 0.0,
-   "floor": 0.0,
-   "ceiling": 3.3,
+   "proj": 3.58,
+   "floor": 0.84,
+   "ceiling": 6.89,
    "sigma": 2.46,
-   "minutes": 0,
+   "minutes": 8,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -37526,27 +36380,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
-  },
-  {
-   "player_id": 201935,
-   "player": "James Harden",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "RA",
-   "line": 10.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.83,
-   "l5_over": 0.2,
-   "l10_over": 0.3,
-   "pos": "PG",
-   "pos_usual": "PG",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
+   "rank": 87
   },
   {
    "player_id": 201942,
@@ -37590,7 +36424,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 74
   },
   {
    "player_id": 202691,
@@ -37752,7 +36586,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 36
+   "rank": 37
   },
   {
    "player_id": 203944,
@@ -37889,7 +36723,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 88
+   "rank": 89
   },
   {
    "player_id": 1626171,
@@ -38016,26 +36850,6 @@
    "us": null
   },
   {
-   "player_id": 1628378,
-   "player": "Donovan Mitchell",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "RA",
-   "line": 9.5,
-   "price": 1.93,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.79,
-   "l5_over": 0.6,
-   "l10_over": 0.5,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1628380,
    "player": "Zach Collins",
    "team": "Chicago",
@@ -38073,26 +36887,6 @@
    "pos_usual": "PF",
    "early": null,
    "gate_status": null,
-   "us": null
-  },
-  {
-   "player_id": 1628386,
-   "player": "Jarrett Allen",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "RA",
-   "line": 10.5,
-   "price": 1.81,
-   "book": "unibet",
-   "price_over": 1.81,
-   "price_under": 1.92,
-   "l5_over": 0.2,
-   "l10_over": 0.4,
-   "pos": "C",
-   "pos_usual": "C",
-   "early": null,
-   "gate_status": "passed",
    "us": null
   },
   {
@@ -38186,7 +36980,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 88
   },
   {
    "player_id": 1628989,
@@ -38353,9 +37147,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 9.21,
-   "floor": 4.33,
-   "ceiling": 14.18,
+   "proj": 9.47,
+   "floor": 4.59,
+   "ceiling": 14.44,
    "sigma": 3.82,
    "minutes": 32,
    "rot_rank": null,
@@ -38364,15 +37158,15 @@
    "side": "over",
    "price": 1.83,
    "book": "sportsbet",
-   "edge": 0.061,
-   "p_us": 0.574,
+   "edge": 0.0872,
+   "p_us": 0.6,
    "p_book": 0.513,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.4,
-   "p_over": 0.574,
-   "p_under": 0.426,
+   "p_over": 0.6,
+   "p_under": 0.4,
    "fair_over": 0.513,
    "fair_under": 0.487,
    "price_over": 1.83,
@@ -38487,7 +37281,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 51
+   "rank": 53
   },
   {
    "player_id": 1629673,
@@ -38496,9 +37290,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 4.91,
-   "floor": 1.46,
-   "ceiling": 8.86,
+   "proj": 5.02,
+   "floor": 1.58,
+   "ceiling": 8.97,
    "sigma": 3.02,
    "minutes": 21,
    "rot_rank": null,
@@ -38507,15 +37301,15 @@
    "side": "over",
    "price": 1.83,
    "book": "sportsbet",
-   "edge": 0.0473,
-   "p_us": 0.561,
+   "edge": 0.064,
+   "p_us": 0.577,
    "p_book": 0.513,
-   "tier": "B",
+   "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.561,
-   "p_under": 0.439,
+   "p_over": 0.577,
+   "p_under": 0.423,
    "fair_over": 0.513,
    "fair_under": 0.487,
    "price_over": 1.83,
@@ -38537,7 +37331,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 70
   },
   {
    "player_id": 1629750,
@@ -38635,10 +37429,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 7.6,
-   "floor": 3.48,
-   "ceiling": 12.32,
-   "sigma": 3.46,
+   "proj": 7.86,
+   "floor": 3.62,
+   "ceiling": 12.65,
+   "sigma": 3.56,
    "minutes": 32,
    "rot_rank": null,
    "minutes_source": "model",
@@ -38646,15 +37440,15 @@
    "side": "over",
    "price": 1.58,
    "book": "neds",
-   "edge": 0.0409,
-   "p_us": 0.634,
+   "edge": 0.0665,
+   "p_us": 0.659,
    "p_book": 0.593,
-   "tier": "B",
+   "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.634,
-   "p_under": 0.366,
+   "p_over": 0.659,
+   "p_under": 0.341,
    "fair_over": 0.593,
    "fair_under": 0.407,
    "price_over": 1.58,
@@ -38676,7 +37470,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 36
   },
   {
    "player_id": 1630183,
@@ -38798,7 +37592,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 113
+   "rank": 111
   },
   {
    "player_id": 1630194,
@@ -38945,9 +37739,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 5.59,
-   "floor": 1.71,
-   "ceiling": 9.82,
+   "proj": 5.62,
+   "floor": 1.75,
+   "ceiling": 9.86,
    "sigma": 3.28,
    "minutes": 28,
    "rot_rank": null,
@@ -38956,15 +37750,15 @@
    "side": "over",
    "price": 2.15,
    "book": "unibet",
-   "edge": 0.0785,
-   "p_us": 0.511,
+   "edge": 0.0837,
+   "p_us": 0.516,
    "p_book": 0.433,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.2,
-   "p_over": 0.511,
-   "p_under": 0.489,
+   "p_over": 0.516,
+   "p_under": 0.484,
    "fair_over": 0.433,
    "fair_under": 0.567,
    "price_over": 2.15,
@@ -38986,7 +37780,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 59
   },
   {
    "player_id": 1630538,
@@ -39205,56 +37999,6 @@
    "us": null
   },
   {
-   "player_id": 1631097,
-   "player": "Bennedict Mathurin",
-   "team": "New Orleans",
-   "opp": "Denver",
-   "game": "Denver vs New Orleans",
-   "stat": "RA",
-   "proj": 3.18,
-   "floor": 0.43,
-   "ceiling": 6.49,
-   "sigma": 2.46,
-   "minutes": 15,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.031,
-   "mu_rank": 11,
-   "mu_n": 30,
-   "early": null,
-   "pos": "SG",
-   "pos_usual": "SG",
-   "ww": [
-    {
-     "star": "Trey Murphy III",
-     "n": 3,
-     "delta": -0.30000000000000004
-    }
-   ],
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 94
-  },
-  {
    "player_id": 1631107,
    "player": "Nikola Jovic",
    "team": "Miami",
@@ -39356,7 +38100,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 49
+   "rank": 50
   },
   {
    "player_id": 1631159,
@@ -39459,37 +38203,17 @@
    "us": null
   },
   {
-   "player_id": 1631212,
-   "player": "Peyton Watson",
-   "team": "Cleveland",
-   "opp": "Dallas",
-   "game": "Cleveland vs Dallas",
-   "stat": "RA",
-   "line": 6.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 1.9,
-   "l5_over": 0.6,
-   "l10_over": 0.8,
-   "pos": "SF",
-   "pos_usual": "SF",
-   "early": null,
-   "gate_status": "passed",
-   "us": null
-  },
-  {
    "player_id": 1631255,
    "player": "Karlo Matkovic",
    "team": "New Orleans",
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 5.33,
-   "floor": 1.89,
-   "ceiling": 9.28,
-   "sigma": 3.02,
-   "minutes": 18,
+   "proj": 5.77,
+   "floor": 1.9,
+   "ceiling": 10.01,
+   "sigma": 3.28,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -39526,7 +38250,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 58
+   "rank": 56
   },
   {
    "player_id": 1631323,
@@ -39953,9 +38677,9 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 8.98,
-   "floor": 4.1,
-   "ceiling": 13.95,
+   "proj": 9.31,
+   "floor": 4.43,
+   "ceiling": 14.27,
    "sigma": 3.82,
    "minutes": 22,
    "rot_rank": null,
@@ -39994,7 +38718,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 27
+   "rank": 26
   },
   {
    "player_id": 1642281,
@@ -40063,11 +38787,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 1.26,
+   "proj": 1.58,
    "floor": 0.0,
-   "ceiling": 4.57,
+   "ceiling": 4.88,
    "sigma": 2.46,
-   "minutes": 5,
+   "minutes": 7,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -40098,7 +38822,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 98
   },
   {
    "player_id": 1642377,
@@ -40408,10 +39132,10 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 9.78,
-   "floor": 4.9,
-   "ceiling": 14.75,
-   "sigma": 3.82,
+   "proj": 10.09,
+   "floor": 5.3,
+   "ceiling": 15.11,
+   "sigma": 3.87,
    "minutes": 22,
    "rot_rank": null,
    "minutes_source": "model",
@@ -40449,7 +39173,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 23
+   "rank": 22
   },
   {
    "player_id": 1642855,
@@ -40567,11 +39291,11 @@
    "opp": "Denver",
    "game": "Denver vs New Orleans",
    "stat": "RA",
-   "proj": 1.52,
+   "proj": 1.97,
    "floor": 0.0,
-   "ceiling": 4.82,
+   "ceiling": 5.27,
    "sigma": 2.46,
-   "minutes": 4,
+   "minutes": 6,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -40602,7 +39326,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 96
   },
   {
    "player_id": 1642907,
@@ -40747,6 +39471,10 @@
   {
    "run_at": "2026-11-14T22:40+00:00",
    "trigger": "injury_window"
+  },
+  {
+   "run_at": "2026-11-14T22:55+00:00",
+   "trigger": "news"
   }
  ]
 }
