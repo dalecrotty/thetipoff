@@ -3,7 +3,64 @@
  "player": "Josh Green",
  "team": "Utah",
  "opp": "Houston",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 1.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 1.6,
+   "book": "neds",
+   "price_over": 2.25,
+   "price_under": 1.6
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 2.45,
+   "book": "pointsbetau",
+   "price_over": 1.53,
+   "price_under": 2.45
+  },
+  "RA": {
+   "line": 3.5,
+   "price": 1.91,
+   "book": "unibet",
+   "price_over": 1.82,
+   "price_under": 1.91
+  },
+  "PTS": {
+   "line": 4.5,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 2.02,
+   "price_under": 1.76
+  },
+  "PA": {
+   "line": 6.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.89,
+   "price_under": 1.83
+  },
+  "PRA": {
+   "line": 8.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.87,
+   "price_under": 1.85
+  },
+  "PR": {
+   "line": 6.5,
+   "price": 1.98,
+   "book": "neds",
+   "price_over": 1.77,
+   "price_under": 1.98
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-11",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
