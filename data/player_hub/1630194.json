@@ -5,11 +5,32 @@
  "opp": "Miami",
  "lines": {
   "PTS": {
-   "line": 12.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "line": 10.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 17.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.91
+  },
+  "PRA": {
+   "line": 19.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "REB": {
+   "line": 7.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
   }
  },
  "recent_games": [
@@ -136,8 +157,13 @@
  ],
  "hits": {
   "PTS": {
-   "line": 12.5,
-   "over": 1,
+   "line": 10.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 3,
    "n": 5
   }
  },
