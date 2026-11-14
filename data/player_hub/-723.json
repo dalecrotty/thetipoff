@@ -2,8 +2,226 @@
  "player_id": -723,
  "player": "Malik Dia",
  "team": "New Orleans",
- "opp": "Denver",
+ "projections": {
+  "3PM": {
+   "mean": 0.16,
+   "floor": 0.0,
+   "ceiling": 0.16
+  },
+  "AST": {
+   "mean": 0.29,
+   "floor": 0.0,
+   "ceiling": 1.89
+  },
+  "BLK": {
+   "mean": 0.07,
+   "floor": 0.0,
+   "ceiling": 1.14
+  },
+  "PTS": {
+   "mean": 1.42,
+   "floor": 0.0,
+   "ceiling": 8.22
+  },
+  "REB": {
+   "mean": 0.65,
+   "floor": 0.0,
+   "ceiling": 3.27
+  },
+  "STL": {
+   "mean": 0.16,
+   "floor": 0.0,
+   "ceiling": 1.11
+  },
+  "TOV": {
+   "mean": 0.19,
+   "floor": 0.0,
+   "ceiling": 1.85
+  },
+  "PRA": {
+   "mean": 2.36,
+   "floor": 0.0,
+   "ceiling": 11.08
+  },
+  "PR": {
+   "mean": 2.07,
+   "floor": 0.0,
+   "ceiling": 10.19
+  },
+  "PA": {
+   "mean": 1.71,
+   "floor": 0.0,
+   "ceiling": 8.5
+  },
+  "RA": {
+   "mean": 0.94,
+   "floor": 0.0,
+   "ceiling": 4.25
+  }
+ },
+ "minutes": {
+  "value": 4,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 1,
+   "min_pg": 4.0,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.25
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l10": {
+   "games": 1,
+   "min_pg": 4.0,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.25
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "l5": {
+   "games": 1,
+   "min_pg": 4.0,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.25
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 4.0,
+   "PTS": {
+    "pg": 2.0,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.25
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  },
+  "away": {}
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-11-13",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-11-13_memphis_vs_new-orleans",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 4.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-13",
@@ -30,6 +248,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Denver"
 }
