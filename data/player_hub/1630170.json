@@ -4,6 +4,13 @@
  "team": "San Antonio",
  "opp": "Golden State",
  "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.94,
+   "book": "neds",
+   "price_over": 1.94,
+   "price_under": 1.8
+  },
   "RA": {
    "line": 6.5,
    "price": 1.95,
@@ -25,6 +32,13 @@
    "price_over": 1.85,
    "price_under": 1.85
   },
+  "REB": {
+   "line": 3.5,
+   "price": 2.05,
+   "book": "pointsbetau",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
   "PA": {
    "line": 14.5,
    "price": 1.76,
@@ -34,31 +48,17 @@
   },
   "PRA": {
    "line": 18.5,
-   "price": 1.75,
+   "price": 1.74,
    "book": "unibet",
    "price_over": 2.0,
-   "price_under": 1.75
-  },
-  "AST": {
-   "line": 2.5,
-   "price": 1.93,
-   "book": "sportsbet",
-   "price_over": 1.93,
-   "price_under": 1.83
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 2.0
+   "price_under": 1.74
   },
   "3PM": {
    "line": 1.5,
-   "price": 2.0,
+   "price": 2.05,
    "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 2.0
+   "price_over": 1.74,
+   "price_under": 2.05
   }
  },
  "recent_games": [
