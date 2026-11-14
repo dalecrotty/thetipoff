@@ -14,16 +14,16 @@
    "med_min": 36.4
   },
   {
-   "id": -734,
-   "name": "Cameron Boozer",
-   "games": 11,
-   "med_min": 33.0
-  },
-  {
    "id": 1630217,
    "name": "Desmond Bane",
    "games": 69,
    "med_min": 33.0
+  },
+  {
+   "id": -734,
+   "name": "Cameron Boozer",
+   "games": 12,
+   "med_min": 32.0
   },
   {
    "id": 1628991,
@@ -64,8 +64,8 @@
   {
    "id": 1642907,
    "name": "Cedric Coward",
-   "games": 72,
-   "med_min": 26.4
+   "games": 73,
+   "med_min": 26.5
   },
   {
    "id": 1630583,
@@ -76,7 +76,7 @@
   {
    "id": 1642377,
    "name": "Jaylen Wells",
-   "games": 159,
+   "games": 160,
    "med_min": 26.0
   },
   {
@@ -100,19 +100,19 @@
   {
    "id": 1629660,
    "name": "Ty Jerome",
-   "games": 25,
+   "games": 26,
    "med_min": 24.5
   },
   {
    "id": 1641707,
    "name": "Taylor Hendricks",
-   "games": 32,
+   "games": 33,
    "med_min": 24.1
   },
   {
    "id": 203924,
    "name": "Jerami Grant",
-   "games": 11,
+   "games": 12,
    "med_min": 24.0
   },
   {
@@ -164,6 +164,12 @@
    "med_min": 21.6
   },
   {
+   "id": 1642285,
+   "name": "Cam Spencer",
+   "games": 109,
+   "med_min": 21.1
+  },
+  {
    "id": 203935,
    "name": "Marcus Smart",
    "games": 19,
@@ -172,19 +178,13 @@
   {
    "id": 1641713,
    "name": "GG Jackson",
-   "games": 94,
-   "med_min": 21.0
-  },
-  {
-   "id": 1642285,
-   "name": "Cam Spencer",
-   "games": 108,
+   "games": 95,
    "med_min": 21.0
   },
   {
    "id": 1642914,
    "name": "Javon Small",
-   "games": 45,
+   "games": 46,
    "med_min": 21.0
   },
   {
@@ -196,8 +196,8 @@
   {
    "id": 1641765,
    "name": "Olivier-Maxence Prosper",
-   "games": 58,
-   "med_min": 19.2
+   "games": 59,
+   "med_min": 19.1
   },
   {
    "id": 1629634,
@@ -206,16 +206,16 @@
    "med_min": 19.0
   },
   {
+   "id": 1630191,
+   "name": "Isaiah Stewart",
+   "games": 9,
+   "med_min": 18.0
+  },
+  {
    "id": 1631132,
    "name": "Christian Koloko",
    "games": 11,
    "med_min": 17.7
-  },
-  {
-   "id": 1630191,
-   "name": "Isaiah Stewart",
-   "games": 8,
-   "med_min": 17.0
   },
   {
    "id": 1629646,
@@ -238,7 +238,7 @@
   {
    "id": 1631200,
    "name": "Kris Murray",
-   "games": 7,
+   "games": 8,
    "med_min": 13.0
   },
   {
@@ -30579,6 +30579,196 @@
      "FGA": 13.0,
      "3PA": 7.0,
      "FTA": 2.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-11-13_memphis_vs_new-orleans",
+   "lines": {
+    "1642285": {
+     "min": 24.0,
+     "PTS": 14.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 5.0,
+     "3PA": 5.0,
+     "FTA": 5.0,
+     "starter": false
+    },
+    "1642907": {
+     "min": 30.0,
+     "PTS": 14.0,
+     "REB": 7.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 5.0,
+     "FGA": 12.0,
+     "3PA": 5.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1641713": {
+     "min": 22.0,
+     "PTS": 14.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 11.0,
+     "3PA": 5.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1630191": {
+     "min": 20.0,
+     "PTS": 12.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 4.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 7.0,
+     "3PA": 2.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1642914": {
+     "min": 15.0,
+     "PTS": 10.0,
+     "REB": 2.0,
+     "AST": 5.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 4.0,
+     "3PA": 2.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1642377": {
+     "min": 27.0,
+     "PTS": 11.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 2.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 9.0,
+     "3PA": 8.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "203924": {
+     "min": 26.0,
+     "PTS": 22.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 7.0,
+     "FGA": 10.0,
+     "3PA": 6.0,
+     "FTA": 5.0,
+     "starter": false
+    },
+    "1631200": {
+     "min": 1.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 0.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1641765": {
+     "min": 2.0,
+     "PTS": 6.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 1.0,
+     "3PA": 0.0,
+     "FTA": 6.0,
+     "starter": false
+    },
+    "1641707": {
+     "min": 19.0,
+     "PTS": 10.0,
+     "REB": 12.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 5.0,
+     "3PA": 3.0,
+     "FTA": 3.0,
+     "starter": false
+    },
+    "1629660": {
+     "min": 29.0,
+     "PTS": 17.0,
+     "REB": 2.0,
+     "AST": 9.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 6.0,
+     "FGA": 18.0,
+     "3PA": 7.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "-734": {
+     "min": 25.0,
+     "PTS": 12.0,
+     "REB": 10.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 4.0,
+     "FGA": 9.0,
+     "3PA": 2.0,
+     "FTA": 4.0,
      "starter": true
     }
    }

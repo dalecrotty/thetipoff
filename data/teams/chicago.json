@@ -32,16 +32,16 @@
    "med_min": 31.2
   },
   {
-   "id": 1630581,
-   "name": "Josh Giddey",
-   "games": 134,
+   "id": 1626181,
+   "name": "Norman Powell",
+   "games": 9,
    "med_min": 31.0
   },
   {
-   "id": 1626181,
-   "name": "Norman Powell",
-   "games": 8,
-   "med_min": 30.0
+   "id": 1630581,
+   "name": "Josh Giddey",
+   "games": 135,
+   "med_min": 31.0
   },
   {
    "id": 1631093,
@@ -64,8 +64,8 @@
   {
    "id": 1630200,
    "name": "Tre Jones",
-   "games": 93,
-   "med_min": 26.7
+   "games": 94,
+   "med_min": 26.6
   },
   {
    "id": 1628989,
@@ -74,16 +74,16 @@
    "med_min": 26.3
   },
   {
-   "id": 1641824,
-   "name": "Matas Buzelis",
-   "games": 167,
+   "id": 1630171,
+   "name": "Isaac Okoro",
+   "games": 74,
    "med_min": 26.0
   },
   {
-   "id": 1630171,
-   "name": "Isaac Okoro",
-   "games": 73,
-   "med_min": 25.9
+   "id": 1641824,
+   "name": "Matas Buzelis",
+   "games": 168,
+   "med_min": 26.0
   },
   {
    "id": 1627824,
@@ -112,7 +112,7 @@
   {
    "id": 1630172,
    "name": "Patrick Williams",
-   "games": 138,
+   "games": 139,
    "med_min": 23.0
   },
   {
@@ -128,34 +128,28 @@
    "med_min": 22.4
   },
   {
+   "id": 1629651,
+   "name": "Nic Claxton",
+   "games": 3,
+   "med_min": 18.0
+  },
+  {
    "id": 1628380,
    "name": "Zach Collins",
    "games": 45,
    "med_min": 17.7
   },
   {
-   "id": 1629651,
-   "name": "Nic Claxton",
-   "games": 2,
-   "med_min": 17.0
-  },
-  {
    "id": 1630188,
    "name": "Jalen Smith",
-   "games": 127,
-   "med_min": 16.8
-  },
-  {
-   "id": 1642855,
-   "name": "Noa Essengue",
-   "games": 11,
-   "med_min": 14.0
+   "games": 128,
+   "med_min": 16.9
   },
   {
    "id": 1627741,
    "name": "Buddy Hield",
-   "games": 8,
-   "med_min": 13.5
+   "games": 9,
+   "med_min": 14.0
   },
   {
    "id": 1631207,
@@ -168,6 +162,12 @@
    "name": "Julian Phillips",
    "games": 114,
    "med_min": 13.0
+  },
+  {
+   "id": 1642855,
+   "name": "Noa Essengue",
+   "games": 12,
+   "med_min": 12.5
   },
   {
    "id": 1630644,
@@ -30607,6 +30607,166 @@
      "FGM": 1.0,
      "FGA": 1.0,
      "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2026-11-13_atlanta_vs_chicago",
+   "lines": {
+    "1627741": {
+     "min": 25.0,
+     "PTS": 12.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 5.0,
+     "FGA": 10.0,
+     "3PA": 7.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630171": {
+     "min": 41.0,
+     "PTS": 15.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 10.0,
+     "3PA": 6.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1630188": {
+     "min": 32.0,
+     "PTS": 15.0,
+     "REB": 12.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 6.0,
+     "FGA": 15.0,
+     "3PA": 6.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1630581": {
+     "min": 39.0,
+     "PTS": 15.0,
+     "REB": 10.0,
+     "AST": 14.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 3.0,
+     "TOV": 4.0,
+     "FGM": 5.0,
+     "FGA": 10.0,
+     "3PA": 7.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1641824": {
+     "min": 29.0,
+     "PTS": 11.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 3.0,
+     "TOV": 2.0,
+     "FGM": 3.0,
+     "FGA": 8.0,
+     "3PA": 7.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1629651": {
+     "min": 22.0,
+     "PTS": 2.0,
+     "REB": 6.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642855": {
+     "min": 8.0,
+     "PTS": 5.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1626181": {
+     "min": 31.0,
+     "PTS": 33.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 12.0,
+     "FGA": 19.0,
+     "3PA": 8.0,
+     "FTA": 6.0,
+     "starter": true
+    },
+    "1630172": {
+     "min": 24.0,
+     "PTS": 13.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 4.0,
+     "FGA": 7.0,
+     "3PA": 6.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630200": {
+     "min": 15.0,
+     "PTS": 4.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 2.0,
+     "FGA": 7.0,
+     "3PA": 2.0,
      "FTA": 0.0,
      "starter": false
     }

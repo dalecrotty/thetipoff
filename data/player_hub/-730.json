@@ -2,8 +2,497 @@
  "player_id": -730,
  "player": "Morez Johnson Jr.",
  "team": "Dallas",
- "opp": null,
+ "projections": {
+  "3PM": {
+   "mean": 0.23,
+   "floor": 0.08,
+   "ceiling": 0.23
+  },
+  "AST": {
+   "mean": 1.24,
+   "floor": 0.0,
+   "ceiling": 3.02
+  },
+  "BLK": {
+   "mean": 0.08,
+   "floor": 0.0,
+   "ceiling": 0.97
+  },
+  "PTS": {
+   "mean": 6.96,
+   "floor": 0.75,
+   "ceiling": 13.84
+  },
+  "REB": {
+   "mean": 5.22,
+   "floor": 2.07,
+   "ceiling": 8.89
+  },
+  "STL": {
+   "mean": 0.52,
+   "floor": 0.0,
+   "ceiling": 1.96
+  },
+  "TOV": {
+   "mean": 1.2,
+   "floor": 0.0,
+   "ceiling": 2.94
+  },
+  "PRA": {
+   "mean": 13.42,
+   "floor": 4.33,
+   "ceiling": 22.24
+  },
+  "PR": {
+   "mean": 12.18,
+   "floor": 4.13,
+   "ceiling": 20.13
+  },
+  "PA": {
+   "mean": 8.2,
+   "floor": 1.52,
+   "ceiling": 15.18
+  },
+  "RA": {
+   "mean": 6.46,
+   "floor": 2.17,
+   "ceiling": 10.91
+  }
+ },
+ "minutes": {
+  "value": 16,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 11,
+   "min_pg": 16.7,
+   "PTS": {
+    "pg": 6.91,
+    "pm": 0.413
+   },
+   "REB": {
+    "pg": 4.82,
+    "pm": 0.288
+   },
+   "AST": {
+    "pg": 1.18,
+    "pm": 0.071
+   },
+   "3PM": {
+    "pg": 0.18,
+    "pm": 0.011
+   },
+   "STL": {
+    "pg": 0.45,
+    "pm": 0.027
+   },
+   "BLK": {
+    "pg": 0.09,
+    "pm": 0.005
+   },
+   "TOV": {
+    "pg": 1.27,
+    "pm": 0.076
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 17.0,
+   "PTS": {
+    "pg": 7.0,
+    "pm": 0.412
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.294
+   },
+   "AST": {
+    "pg": 1.2,
+    "pm": 0.071
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.012
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.029
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.006
+   },
+   "TOV": {
+    "pg": 1.4,
+    "pm": 0.082
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 18.2,
+   "PTS": {
+    "pg": 7.6,
+    "pm": 0.418
+   },
+   "REB": {
+    "pg": 6.6,
+    "pm": 0.363
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.055
+   },
+   "3PM": {
+    "pg": 0.4,
+    "pm": 0.022
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.033
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.055
+   }
+  },
+  "home": {
+   "games": 6,
+   "min_pg": 17.8,
+   "PTS": {
+    "pg": 8.0,
+    "pm": 0.449
+   },
+   "REB": {
+    "pg": 6.17,
+    "pm": 0.346
+   },
+   "AST": {
+    "pg": 1.67,
+    "pm": 0.093
+   },
+   "3PM": {
+    "pg": 0.17,
+    "pm": 0.009
+   },
+   "STL": {
+    "pg": 0.67,
+    "pm": 0.037
+   },
+   "BLK": {
+    "pg": 0.17,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 1.5,
+    "pm": 0.084
+   }
+  },
+  "away": {
+   "games": 5,
+   "min_pg": 15.4,
+   "PTS": {
+    "pg": 5.6,
+    "pm": 0.364
+   },
+   "REB": {
+    "pg": 3.2,
+    "pm": 0.208
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.039
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.013
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.013
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.065
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-10-21_dallas_vs_houston",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 14.0,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 5.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-10-23_dallas_vs_indiana",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 17.0,
+   "PTS": 8.0,
+   "REB": 6.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 3.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-10-24_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 12.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 2.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2026-10-26_dallas_vs_miami",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 15.0,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 4.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-10-28_dallas_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 10.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 6.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-10-30_dallas_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 17.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 4.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Sacramento",
+   "venue": "H",
+   "game": "2026-11-02_dallas_vs_sacramento",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 17.0,
+   "PTS": 13.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 5.0,
+   "FGA": 5.0,
+   "3PA": 0.0,
+   "FTA": 6.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-11-04_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 8.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-06",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2026-11-06_dallas_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 24.0,
+   "PTS": 13.0,
+   "REB": 17.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 3.0,
+   "FGM": 5.0,
+   "FGA": 8.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-08",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2026-11-08_brooklyn_vs_dallas",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 19.0,
+   "PTS": 4.0,
+   "REB": 9.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 7.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-12",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-11-12_dallas_vs_minnesota",
+   "starter": false,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 13.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 0.0,
+   "FGA": 4.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-12",
@@ -124,8 +613,128 @@
    "FTA": 6.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-10-30_dallas_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 17.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 4.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "Oklahoma City",
+   "venue": "H",
+   "game": "2026-10-28_dallas_vs_oklahoma-city",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 10.0,
+   "REB": 6.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 6.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2026-10-26_dallas_vs_miami",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 15.0,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 4.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-10-24_dallas_vs_san-antonio",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 12.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 2.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-10-23_dallas_vs_indiana",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 17.0,
+   "PTS": 8.0,
+   "REB": 6.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 3.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Cleveland"
 }
