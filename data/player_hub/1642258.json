@@ -4,19 +4,33 @@
  "team": "Dallas",
  "opp": "Boston",
  "lines": {
+  "3PM": {
+   "line": 1.5,
+   "price": 1.5,
+   "book": "sportsbet",
+   "price_over": 2.45,
+   "price_under": 1.5
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 1.75,
+   "book": "tab",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
   "PR": {
-   "line": 9.5,
-   "price": 1.72,
-   "book": "neds",
-   "price_over": 1.72,
-   "price_under": 2.05
+   "line": 11.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
   },
   "REB": {
    "line": 3.5,
-   "price": 2.08,
+   "price": 1.96,
    "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
+   "price_over": 1.96,
+   "price_under": 1.8
   }
  },
  "recent_games": [
@@ -142,9 +156,19 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
   "REB": {
    "line": 3.5,
    "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
    "n": 5
   }
  },
