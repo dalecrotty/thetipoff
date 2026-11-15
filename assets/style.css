@@ -161,6 +161,8 @@ p.lead .n { font-family: var(--mono); font-weight: 500; color: var(--accent); }
 }
 .controls select:focus, .controls input:focus { outline: 1px solid var(--accent); border-color: var(--accent); }
 .controls input[type="search"] { flex: 1 1 180px; }
+.controls input.odds-in { width: 6.5em; flex: 0 0 auto; font-family: var(--mono, inherit); }
+.controls input.odds-in.bad { border-color: var(--bad); }
 
 /* ---- tables ---- */
 .tablewrap {

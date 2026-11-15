@@ -48,14 +48,36 @@ function usWords(text) {
 }
 /* decimal to American: 1.91 -> −110, 2.50 -> +150 (the minus is U+2212,
    as in the spreads) */
+const amNum = d => d >= 2 ? Math.round((d - 1) * 100) : -Math.round(100 / (d - 1));
+const amDec = a => a > 0 ? 1 + a / 100 : 1 + 100 / -a;
 function american(dec) {
   const d = Number(dec);
   if (!isFinite(d) || d <= 1) return "—";
-  const a = d >= 2 ? Math.round((d - 1) * 100) : -Math.round(100 / (d - 1));
+  const a = amNum(d);
   return a > 0 ? `+${a}` : `\u2212${-a}`;
 }
 const odds = dec => (dec === null || dec === undefined || isNaN(dec)) ? "—"
   : US ? american(dec) : Number(dec).toFixed(2);
+/* the odds filter on the board (owner, 15 Nov 2026: "i think i need a min
+   or max odds filter"). A typed price is decimal (1.70, $1.70) or American
+   (−110, +150: anything 100 or more either way); null when empty or not a
+   price. A row is compared as the reader sees it (two decimals, or the
+   American whole number), so a line shown at −110 passes a max of −110. */
+function parseOdds(text) {
+  const t = String(text ?? "").trim().replace(/\u2212/g, "-").replace(/^\$/, "").replace(",", ".");
+  if (!t) return null;
+  const v = Number(t);
+  if (!isFinite(v)) return null;
+  if (Math.abs(v) >= 100) return amDec(v);
+  return v > 1 ? v : null;
+}
+const shownPrice = dec => US ? amDec(amNum(Number(dec))) : Math.round(Number(dec) * 100) / 100;
+function oddsBetween(price, lo, hi) {
+  if (lo == null && hi == null) return true;
+  if (price == null || isNaN(price)) return false;          // no line, nothing to filter on
+  const p = shownPrice(price);
+  return (lo == null || p >= lo - 1e-9) && (hi == null || p <= hi + 1e-9);
+}
 /* each site lists its own region's books and their props (owner, 19 Oct
    2026): the rows carry the Australian book at the top level and the US
    book under "us"; on the US site the US block takes the top level, its
@@ -651,6 +673,8 @@ async function initBoard() {
   const tbody = $("#board tbody");
   const statSel = $("#fStat"), tierSel = $("#fTier"),
         teamSel = $("#fTeam"), gameSel = $("#fGame"), q = $("#fQ");
+  const minIn = $("#fMin"), maxIn = $("#fMax");
+  if (US) [minIn, maxIn].forEach(el => { if (el) el.inputMode = "text"; });   // American prices carry a sign
   [...new Set(rows.map(r => r.team).filter(Boolean))].sort().forEach(t => {
     const o = document.createElement("option");
     o.value = o.textContent = t;
@@ -727,8 +751,20 @@ async function initBoard() {
            (!needle || r.player.toLowerCase().includes(needle));
   };
 
+  // the price of the side we favour, between the reader's min and max; a
+  // box that isn't a price is marked and ignored. Not applied to the CSV,
+  // which is every market for the players on screen.
+  const priced = () => {
+    const [lo, hi] = [minIn, maxIn].map(el => {
+      const v = el ? parseOdds(el.value) : null;
+      if (el) el.classList.toggle("bad", !!el.value.trim() && v == null);
+      return v;
+    });
+    return r => oddsBetween(r.price, lo, hi);
+  };
+
   const render = () => {
-    const base = rows.filter(shared);
+    const base = rows.filter(shared).filter(priced());
     if (view === "leaders") {
       $("#statTabs").hidden = wide.matches;
       $("#leaders").innerHTML = wide.matches
@@ -759,6 +795,7 @@ async function initBoard() {
 
   [statSel, tierSel, teamSel, gameSel].forEach(el => el.onchange = render);
   q.oninput = render;
+  [minIn, maxIn].forEach(el => { if (el) el.oninput = render; });
   // a game or team in the address: the home strip and game pages link here
   const want = new URLSearchParams(location.search);
   const wg = want.get("game"), wt = want.get("team");
