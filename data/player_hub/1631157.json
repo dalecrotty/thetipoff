@@ -5,13 +5,13 @@
  "projections": {
   "3PM": {
    "mean": 1.82,
-   "floor": 0.11,
-   "ceiling": 4.01
+   "floor": 0.1,
+   "ceiling": 4.02
   },
   "AST": {
-   "mean": 4.2,
-   "floor": 1.49,
-   "ceiling": 7.18
+   "mean": 4.19,
+   "floor": 1.5,
+   "ceiling": 7.3
   },
   "BLK": {
    "mean": 0.37,
@@ -20,43 +20,43 @@
   },
   "PTS": {
    "mean": 11.93,
-   "floor": 4.14,
-   "ceiling": 20.33
+   "floor": 3.94,
+   "ceiling": 20.11
   },
   "REB": {
    "mean": 3.91,
-   "floor": 1.08,
-   "ceiling": 7.05
+   "floor": 1.14,
+   "ceiling": 7.02
   },
   "STL": {
    "mean": 1.11,
    "floor": 0.0,
-   "ceiling": 2.95
+   "ceiling": 2.96
   },
   "TOV": {
-   "mean": 2.68,
-   "floor": 0.52,
-   "ceiling": 4.95
+   "mean": 2.67,
+   "floor": 0.54,
+   "ceiling": 4.92
   },
   "PRA": {
-   "mean": 20.04,
-   "floor": 10.27,
-   "ceiling": 30.39
+   "mean": 20.03,
+   "floor": 10.26,
+   "ceiling": 30.38
   },
   "PR": {
    "mean": 15.84,
-   "floor": 6.57,
+   "floor": 6.56,
    "ceiling": 25.25
   },
   "PA": {
-   "mean": 16.13,
+   "mean": 16.12,
    "floor": 7.13,
-   "ceiling": 25.19
+   "ceiling": 25.18
   },
   "RA": {
-   "mean": 8.11,
-   "floor": 3.88,
-   "ceiling": 12.91
+   "mean": 8.1,
+   "floor": 3.87,
+   "ceiling": 12.9
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "AST": {
    "line": 4.5,
-   "p_over": 0.404,
-   "p_under": 0.596,
+   "p_over": 0.403,
+   "p_under": 0.597,
    "fair_over": 0.511,
    "fair_under": 0.489,
    "price_over": 1.83,
@@ -237,7 +237,7 @@
    "side": "under",
    "price": 1.91,
    "book": "neds",
-   "edge": 0.1066,
+   "edge": 0.1075,
    "tier": "A"
   },
   "PTS": {
@@ -256,8 +256,8 @@
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.523,
-   "p_under": 0.477,
+   "p_over": 0.522,
+   "p_under": 0.478,
    "fair_over": 0.459,
    "fair_under": 0.541,
    "price_over": 2.05,
@@ -265,13 +265,13 @@
    "side": "over",
    "price": 2.05,
    "book": "pointsbetau",
-   "edge": 0.0635,
+   "edge": 0.0628,
    "tier": "B"
   },
   "PA": {
    "line": 15.5,
-   "p_over": 0.509,
-   "p_under": 0.491,
+   "p_over": 0.508,
+   "p_under": 0.492,
    "fair_over": 0.511,
    "fair_under": 0.489,
    "price_over": 1.83,
@@ -279,7 +279,7 @@
    "side": "under",
    "price": 1.91,
    "book": "neds",
-   "edge": 0.0021,
+   "edge": 0.0024,
    "tier": null
   }
  },
@@ -300,8 +300,8 @@
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.523,
-   "p_under": 0.477,
+   "p_over": 0.522,
+   "p_under": 0.478,
    "fair_over": 0.459,
    "fair_under": 0.541,
    "price_over": 2.05,
@@ -309,7 +309,7 @@
    "side": "over",
    "price": 2.05,
    "book": "bovada",
-   "edge": 0.0635,
+   "edge": 0.0628,
    "tier": "B"
   }
  },
