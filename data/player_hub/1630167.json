@@ -226,6 +226,20 @@
   }
  },
  "lines": {
+  "PTS": {
+   "line": 9.5,
+   "p_over": 0.598,
+   "p_under": 0.402,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
+   "side": "over",
+   "price": 1.87,
+   "book": "pointsbetau",
+   "edge": 0.0977,
+   "tier": "A"
+  },
   "PA": {
    "line": 11.5,
    "p_over": 0.565,
@@ -238,20 +252,6 @@
    "price": 1.96,
    "book": "sportsbet",
    "edge": 0.0867,
-   "tier": "A"
-  },
-  "PTS": {
-   "line": 9.5,
-   "p_over": 0.598,
-   "p_under": 0.402,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
-   "side": "over",
-   "price": 1.8,
-   "book": "pointsbetau",
-   "edge": 0.0777,
    "tier": "A"
   },
   "PR": {
@@ -300,28 +300,28 @@
    "line": 5.5,
    "p_over": 0.497,
    "p_under": 0.503,
-   "fair_over": 0.517,
-   "fair_under": 0.483,
+   "fair_over": 0.521,
+   "fair_under": 0.479,
    "price_over": 1.8,
-   "price_under": 1.93,
+   "price_under": 1.96,
    "side": "under",
-   "price": 1.93,
+   "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0203,
+   "edge": 0.0241,
    "tier": null
   },
   "3PM": {
    "line": 1.5,
    "p_over": 0.473,
    "p_under": 0.527,
-   "fair_over": 0.469,
-   "fair_under": 0.531,
-   "price_over": 2.0,
-   "price_under": 1.77,
-   "side": "over",
-   "price": 2.0,
+   "fair_over": 0.48,
+   "fair_under": 0.52,
+   "price_over": 1.95,
+   "price_under": 1.8,
+   "side": "under",
+   "price": 1.8,
    "book": "pointsbetau",
-   "edge": 0.0032,
+   "edge": 0.0073,
    "tier": null
   },
   "AST": {
@@ -339,7 +339,22 @@
    "tier": null
   }
  },
- "lines_us": {},
+ "lines_us": {
+  "PTS": {
+   "line": 9.5,
+   "p_over": 0.598,
+   "p_under": 0.402,
+   "fair_over": 0.533,
+   "fair_under": 0.467,
+   "price_over": 1.75,
+   "price_under": 2.0,
+   "side": "over",
+   "price": 1.75,
+   "book": "betright",
+   "edge": 0.0643,
+   "tier": "A"
+  }
+ },
  "game_log": [
   {
    "date": "2024-10-23",
