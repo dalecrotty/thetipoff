@@ -9,9 +9,9 @@
    "ceiling": 0.0
   },
   "AST": {
-   "mean": 2.06,
+   "mean": 1.99,
    "floor": 0.0,
-   "ceiling": 4.03
+   "ceiling": 3.96
   },
   "BLK": {
    "mean": 0.87,
@@ -19,14 +19,14 @@
    "ceiling": 2.6
   },
   "PTS": {
-   "mean": 13.57,
-   "floor": 5.31,
-   "ceiling": 22.18
+   "mean": 13.11,
+   "floor": 4.85,
+   "ceiling": 21.72
   },
   "REB": {
-   "mean": 9.28,
-   "floor": 4.82,
-   "ceiling": 13.99
+   "mean": 9.74,
+   "floor": 5.27,
+   "ceiling": 14.45
   },
   "STL": {
    "mean": 0.22,
@@ -39,24 +39,24 @@
    "ceiling": 3.08
   },
   "PRA": {
-   "mean": 24.92,
-   "floor": 14.35,
-   "ceiling": 36.59
+   "mean": 24.84,
+   "floor": 14.28,
+   "ceiling": 36.51
   },
   "PR": {
-   "mean": 22.86,
-   "floor": 13.15,
+   "mean": 22.85,
+   "floor": 13.14,
    "ceiling": 33.9
   },
   "PA": {
-   "mean": 15.63,
-   "floor": 7.02,
-   "ceiling": 24.96
+   "mean": 15.1,
+   "floor": 6.49,
+   "ceiling": 24.43
   },
   "RA": {
-   "mean": 11.35,
-   "floor": 5.29,
-   "ceiling": 16.9
+   "mean": 11.74,
+   "floor": 5.67,
+   "ceiling": 17.29
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "REB": {
    "line": 10.5,
-   "p_over": 0.345,
-   "p_under": 0.655,
+   "p_over": 0.389,
+   "p_under": 0.611,
    "fair_over": 0.496,
    "fair_under": 0.504,
    "price_over": 1.88,
@@ -237,13 +237,13 @@
    "side": "under",
    "price": 1.85,
    "book": "unibet",
-   "edge": 0.1514,
+   "edge": 0.107,
    "tier": "A"
   },
   "RA": {
    "line": 12.5,
-   "p_over": 0.395,
-   "p_under": 0.605,
+   "p_over": 0.401,
+   "p_under": 0.599,
    "fair_over": 0.503,
    "fair_under": 0.497,
    "price_over": 1.85,
@@ -251,13 +251,13 @@
    "side": "under",
    "price": 1.87,
    "book": "unibet",
-   "edge": 0.1074,
+   "edge": 0.1016,
    "tier": "A"
   },
   "AST": {
    "line": 1.5,
-   "p_over": 0.592,
-   "p_under": 0.408,
+   "p_over": 0.574,
+   "p_under": 0.426,
    "fair_over": 0.567,
    "fair_under": 0.433,
    "price_over": 1.64,
@@ -265,27 +265,13 @@
    "side": "over",
    "price": 1.64,
    "book": "sportsbet",
-   "edge": 0.0247,
+   "edge": 0.0072,
    "tier": null
-  },
-  "PR": {
-   "line": 24.5,
-   "p_over": 0.424,
-   "p_under": 0.576,
-   "fair_over": 0.472,
-   "fair_under": 0.528,
-   "price_over": 1.97,
-   "price_under": 1.76,
-   "side": "under",
-   "price": 1.76,
-   "book": "unibet",
-   "edge": 0.0475,
-   "tier": "B"
   },
   "PRA": {
    "line": 26.5,
-   "p_over": 0.431,
-   "p_under": 0.569,
+   "p_over": 0.408,
+   "p_under": 0.592,
    "fair_over": 0.475,
    "fair_under": 0.525,
    "price_over": 1.96,
@@ -293,36 +279,50 @@
    "side": "under",
    "price": 1.77,
    "book": "unibet",
-   "edge": 0.0435,
-   "tier": "B"
+   "edge": 0.0668,
+   "tier": "A"
+  },
+  "PR": {
+   "line": 24.5,
+   "p_over": 0.402,
+   "p_under": 0.598,
+   "fair_over": 0.472,
+   "fair_under": 0.528,
+   "price_over": 1.97,
+   "price_under": 1.76,
+   "side": "under",
+   "price": 1.76,
+   "book": "unibet",
+   "edge": 0.0702,
+   "tier": "A"
   },
   "PA": {
    "line": 15.5,
-   "p_over": 0.508,
-   "p_under": 0.492,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "side": "over",
-   "price": 1.96,
-   "book": "sportsbet",
-   "edge": 0.0292,
-   "tier": null
+   "p_over": 0.456,
+   "p_under": 0.544,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.83,
+   "price_under": 1.83,
+   "side": "under",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.0444,
+   "tier": "B"
   },
   "PTS": {
    "line": 13.5,
-   "p_over": 0.504,
-   "p_under": 0.496,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "side": "over",
-   "price": 1.96,
-   "book": "sportsbet",
-   "edge": 0.0255,
-   "tier": null
+   "p_over": 0.448,
+   "p_under": 0.552,
+   "fair_over": 0.491,
+   "fair_under": 0.509,
+   "price_over": 1.9,
+   "price_under": 1.83,
+   "side": "under",
+   "price": 1.83,
+   "book": "neds",
+   "edge": 0.0425,
+   "tier": "B"
   }
  },
  "lines_us": {},
