@@ -254,20 +254,6 @@
    "edge": 0.0971,
    "tier": "A"
   },
-  "3PM": {
-   "line": 0.5,
-   "p_over": 0.655,
-   "p_under": 0.345,
-   "fair_over": 0.616,
-   "fair_under": 0.384,
-   "price_over": 1.53,
-   "price_under": 2.45,
-   "side": "over",
-   "price": 1.53,
-   "book": "pointsbetau",
-   "edge": 0.0396,
-   "tier": null
-  },
   "REB": {
    "line": 2.5,
    "p_over": 0.487,
@@ -280,6 +266,20 @@
    "price": 1.92,
    "book": "neds",
    "edge": 0.0002,
+   "tier": null
+  },
+  "3PM": {
+   "line": 0.5,
+   "p_over": 0.655,
+   "p_under": 0.345,
+   "fair_over": 0.616,
+   "fair_under": 0.384,
+   "price_over": 1.53,
+   "price_under": 2.45,
+   "side": "over",
+   "price": 1.53,
+   "book": "pointsbetau",
+   "edge": 0.0396,
    "tier": null
   }
  },
