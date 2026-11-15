@@ -4,59 +4,59 @@
  "team": "LA Lakers",
  "projections": {
   "3PM": {
-   "mean": 1.76,
-   "floor": 0.04,
-   "ceiling": 3.96
+   "mean": 1.72,
+   "floor": 0.0,
+   "ceiling": 3.92
   },
   "AST": {
-   "mean": 1.78,
+   "mean": 1.74,
    "floor": 0.0,
-   "ceiling": 3.9
+   "ceiling": 3.86
   },
   "BLK": {
-   "mean": 0.24,
+   "mean": 0.23,
    "floor": 0.0,
-   "ceiling": 1.03
+   "ceiling": 1.02
   },
   "PTS": {
-   "mean": 9.46,
-   "floor": 2.73,
-   "ceiling": 16.91
+   "mean": 9.22,
+   "floor": 2.49,
+   "ceiling": 16.66
   },
   "REB": {
-   "mean": 2.6,
-   "floor": 0.34,
-   "ceiling": 5.04
+   "mean": 2.54,
+   "floor": 0.28,
+   "ceiling": 4.98
   },
   "STL": {
-   "mean": 1.42,
-   "floor": 0.0,
-   "ceiling": 2.97
+   "mean": 1.38,
+   "floor": 0.07,
+   "ceiling": 3.08
   },
   "TOV": {
-   "mean": 0.76,
+   "mean": 0.74,
    "floor": 0.0,
-   "ceiling": 2.03
+   "ceiling": 2.01
   },
   "PRA": {
-   "mean": 13.85,
-   "floor": 4.76,
-   "ceiling": 22.67
+   "mean": 13.49,
+   "floor": 4.4,
+   "ceiling": 22.32
   },
   "PR": {
-   "mean": 12.07,
-   "floor": 4.01,
-   "ceiling": 20.01
+   "mean": 11.76,
+   "floor": 3.7,
+   "ceiling": 19.7
   },
   "PA": {
-   "mean": 11.25,
-   "floor": 3.37,
-   "ceiling": 19.54
+   "mean": 10.96,
+   "floor": 3.08,
+   "ceiling": 19.25
   },
   "RA": {
-   "mean": 4.39,
-   "floor": 1.03,
-   "ceiling": 7.83
+   "mean": 4.27,
+   "floor": 0.92,
+   "ceiling": 7.72
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PRA": {
    "line": 12.5,
-   "p_over": 0.56,
-   "p_under": 0.44,
+   "p_over": 0.54,
+   "p_under": 0.46,
    "fair_over": 0.507,
    "fair_under": 0.493,
    "price_over": 1.85,
@@ -237,13 +237,13 @@
    "side": "over",
    "price": 1.85,
    "book": "tab",
-   "edge": 0.0534,
+   "edge": 0.0331,
    "tier": "B"
   },
   "PTS": {
    "line": 8.5,
-   "p_over": 0.544,
-   "p_under": 0.456,
+   "p_over": 0.526,
+   "p_under": 0.474,
    "fair_over": 0.507,
    "fair_under": 0.493,
    "price_over": 1.85,
@@ -251,8 +251,8 @@
    "side": "over",
    "price": 1.85,
    "book": "tab",
-   "edge": 0.0375,
-   "tier": "B"
+   "edge": 0.0195,
+   "tier": null
   }
  },
  "lines_us": {},
