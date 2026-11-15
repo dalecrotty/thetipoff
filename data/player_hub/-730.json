@@ -4,6 +4,13 @@
  "team": "Dallas",
  "opp": "Boston",
  "lines": {
+  "3PM": {
+   "line": 0.5,
+   "price": 1.55,
+   "book": "unibet",
+   "price_over": 2.35,
+   "price_under": 1.55
+  },
   "REB": {
    "line": 5.5,
    "price": 2.1,
@@ -20,10 +27,10 @@
   },
   "PTS": {
    "line": 7.5,
-   "price": 1.89,
+   "price": 1.92,
    "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.89
+   "price_over": 1.84,
+   "price_under": 1.92
   }
  },
  "recent_games": [
@@ -156,6 +163,11 @@
   },
   "REB": {
    "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
    "over": 2,
    "n": 5
   }
