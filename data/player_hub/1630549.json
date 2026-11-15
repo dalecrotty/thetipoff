@@ -2,66 +2,33 @@
  "player_id": 1630549,
  "player": "Day'Ron Sharpe",
  "team": "Brooklyn",
- "opp": "Memphis",
- "lines": {
-  "AST": {
-   "line": 3.5,
-   "price": 2.0,
-   "book": "tab",
-   "price_over": 2.0,
-   "price_under": 1.75
-  },
-  "PA": {
-   "line": 13.5,
-   "price": 1.9,
-   "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.83
-  },
-  "PRA": {
-   "line": 21.5,
-   "price": 1.9,
-   "book": "tab",
-   "price_over": 1.9,
-   "price_under": 1.85
-  },
-  "PTS": {
-   "line": 9.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.83
-  },
-  "3PM": {
-   "line": 0.5,
-   "price": 1.5,
-   "book": "tab",
-   "price_over": 2.5,
-   "price_under": 1.5
-  },
-  "RA": {
-   "line": 11.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 1.9
-  },
-  "PR": {
-   "line": 17.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "REB": {
-   "line": 8.5,
-   "price": 1.91,
-   "book": "sportsbet",
-   "price_over": 1.85,
-   "price_under": 1.91
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-14",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-11-14_brooklyn_vs_memphis",
+   "starter": true,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 28.0,
+   "PTS": 16.0,
+   "REB": 11.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 7.0,
+   "FGA": 14.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-11",
    "opp": "New Orleans",
@@ -157,53 +124,8 @@
    "FTA": 3.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-02",
-   "opp": "New York",
-   "venue": "R",
-   "game": "2026-11-02_brooklyn_vs_new-york",
-   "starter": true,
-   "rest": "0",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 22.0,
-   "PTS": 4.0,
-   "REB": 6.0,
-   "AST": 3.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 1.0,
-   "TOV": 3.0,
-   "FGM": 1.0,
-   "FGA": 5.0,
-   "3PA": 0.0,
-   "FTA": 2.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 9.5,
-   "over": 2,
-   "n": 5
-  },
-  "REB": {
-   "line": 8.5,
-   "over": 1,
-   "n": 5
-  },
-  "AST": {
-   "line": 3.5,
-   "over": 4,
-   "n": 5
-  },
-  "3PM": {
-   "line": 0.5,
-   "over": 1,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

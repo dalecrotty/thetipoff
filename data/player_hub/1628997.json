@@ -2,9 +2,62 @@
  "player_id": 1628997,
  "player": "Caleb Martin",
  "team": "Dallas",
- "opp": "Cleveland",
- "lines": {},
+ "opp": "Boston",
+ "lines": {
+  "PTS": {
+   "line": 4.5,
+   "price": 1.74,
+   "book": "pointsbetau",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "PR": {
+   "line": 8.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 2.0
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-11-14",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2026-11-14_cleveland_vs_dallas",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 33.0,
+   "PTS": 15.0,
+   "REB": 8.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 6.0,
+   "FGA": 7.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-12",
    "opp": "Minnesota",
@@ -100,32 +153,24 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-04",
-   "opp": "San Antonio",
-   "venue": "R",
-   "game": "2026-11-04_dallas_vs_san-antonio",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 20.0,
-   "PTS": 0.0,
-   "REB": 3.0,
-   "AST": 2.0,
-   "3PM": 0.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 0.0,
-   "FGM": 0.0,
-   "FGA": 0.0,
-   "3PA": 0.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

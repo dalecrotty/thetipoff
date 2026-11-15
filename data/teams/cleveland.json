@@ -50,6 +50,12 @@
    "med_min": 25.1
   },
   {
+   "id": -735,
+   "name": "Meleek Thomas",
+   "games": 11,
+   "med_min": 23.0
+  },
+  {
    "id": 1627747,
    "name": "Caris LeVert",
    "games": 38,
@@ -60,12 +66,6 @@
    "name": "Sam Merrill",
    "games": 149,
    "med_min": 22.8
-  },
-  {
-   "id": -735,
-   "name": "Meleek Thomas",
-   "games": 10,
-   "med_min": 22.5
   },
   {
    "id": 1628366,
@@ -88,7 +88,7 @@
   {
    "id": 1642281,
    "name": "Jaylon Tyson",
-   "games": 137,
+   "games": 138,
    "med_min": 20.1
   },
   {
@@ -112,7 +112,7 @@
   {
    "id": -701,
    "name": "Mario Hezonja",
-   "games": 13,
+   "games": 14,
    "med_min": 19.0
   },
   {
@@ -130,13 +130,13 @@
   {
    "id": 1641854,
    "name": "Craig Porter",
-   "games": 132,
-   "med_min": 14.2
+   "games": 133,
+   "med_min": 14.4
   },
   {
    "id": 1628418,
    "name": "Thomas Bryant",
-   "games": 76,
+   "games": 77,
    "med_min": 12.6
   },
   {
@@ -152,22 +152,28 @@
    "med_min": 12.0
   },
   {
-   "id": 1642878,
-   "name": "Tyrese Proctor",
-   "games": 66,
-   "med_min": 10.8
-  },
-  {
    "id": 1641807,
    "name": "Norchad Omier",
-   "games": 2,
-   "med_min": 7.5
+   "games": 3,
+   "med_min": 12.0
+  },
+  {
+   "id": 1642878,
+   "name": "Tyrese Proctor",
+   "games": 67,
+   "med_min": 11.0
   },
   {
    "id": 1642400,
    "name": "Tristan Enaruna",
    "games": 12,
    "med_min": 7.5
+  },
+  {
+   "id": 1642434,
+   "name": "Riley Minix",
+   "games": 10,
+   "med_min": 7.4
   },
   {
    "id": 1629750,
@@ -180,12 +186,6 @@
    "name": "Olivier Sarr",
    "games": 4,
    "med_min": 7.0
-  },
-  {
-   "id": 1642434,
-   "name": "Riley Minix",
-   "games": 9,
-   "med_min": 6.9
   },
   {
    "id": 1631247,
@@ -34077,6 +34077,136 @@
      "3PA": 5.0,
      "FTA": 0.0,
      "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2026-11-14_cleveland_vs_dallas",
+   "lines": {
+    "1641854": {
+     "min": 28.0,
+     "PTS": 9.0,
+     "REB": 9.0,
+     "AST": 6.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 5.0,
+     "FGM": 3.0,
+     "FGA": 6.0,
+     "3PA": 1.0,
+     "FTA": 3.0,
+     "starter": false
+    },
+    "1642281": {
+     "min": 34.0,
+     "PTS": 18.0,
+     "REB": 4.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 5.0,
+     "FGA": 13.0,
+     "3PA": 7.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1642434": {
+     "min": 22.0,
+     "PTS": 2.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628418": {
+     "min": 27.0,
+     "PTS": 19.0,
+     "REB": 11.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 7.0,
+     "FGA": 12.0,
+     "3PA": 4.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1642878": {
+     "min": 34.0,
+     "PTS": 24.0,
+     "REB": 11.0,
+     "AST": 10.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 10.0,
+     "FGA": 19.0,
+     "3PA": 13.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1641807": {
+     "min": 27.0,
+     "PTS": 13.0,
+     "REB": 8.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 5.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "-701": {
+     "min": 34.0,
+     "PTS": 22.0,
+     "REB": 7.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 9.0,
+     "FGA": 12.0,
+     "3PA": 2.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "-735": {
+     "min": 34.0,
+     "PTS": 20.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 8.0,
+     "FGA": 17.0,
+     "3PA": 9.0,
+     "FTA": 2.0,
+     "starter": true
     }
    }
   }

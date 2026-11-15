@@ -2,8 +2,65 @@
  "player_id": 1642263,
  "player": "Reed Sheppard",
  "team": "Houston",
- "opp": null,
- "lines": {},
+ "opp": "Washington",
+ "lines": {
+  "PRA": {
+   "line": 21.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PR": {
+   "line": 17.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 18.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PTS": {
+   "line": 14.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 2.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "RA": {
+   "line": 6.5,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 1.78,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.96
+  },
+  "3PM": {
+   "line": 2.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-13",
@@ -61,7 +118,7 @@
    "starter": false,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 17.0,
    "PTS": 8.0,
    "REB": 0.0,
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 14.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 0,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 0,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
