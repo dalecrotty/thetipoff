@@ -2,8 +2,521 @@
  "player_id": -758,
  "player": "Emanuel Sharp",
  "team": "Sacramento",
- "opp": "Oklahoma City",
+ "projections": {
+  "3PM": {
+   "mean": 1.4,
+   "floor": 0.0,
+   "ceiling": 3.01
+  },
+  "AST": {
+   "mean": 0.66,
+   "floor": 0.0,
+   "ceiling": 2.02
+  },
+  "BLK": {
+   "mean": 0.26,
+   "floor": 0.0,
+   "ceiling": 0.99
+  },
+  "PTS": {
+   "mean": 5.59,
+   "floor": 0.77,
+   "ceiling": 11.31
+  },
+  "REB": {
+   "mean": 1.58,
+   "floor": 0.0,
+   "ceiling": 3.79
+  },
+  "STL": {
+   "mean": 0.76,
+   "floor": 0.0,
+   "ceiling": 1.99
+  },
+  "TOV": {
+   "mean": 0.63,
+   "floor": 0.03,
+   "ceiling": 2.03
+  },
+  "PRA": {
+   "mean": 7.83,
+   "floor": 0.11,
+   "ceiling": 16.55
+  },
+  "PR": {
+   "mean": 7.18,
+   "floor": 0.41,
+   "ceiling": 15.29
+  },
+  "PA": {
+   "mean": 6.25,
+   "floor": 0.38,
+   "ceiling": 13.04
+  },
+  "RA": {
+   "mean": 2.24,
+   "floor": 0.0,
+   "ceiling": 5.55
+  }
+ },
+ "minutes": {
+  "value": 20,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 12,
+   "min_pg": 17.2,
+   "PTS": {
+    "pg": 4.58,
+    "pm": 0.267
+   },
+   "REB": {
+    "pg": 1.25,
+    "pm": 0.073
+   },
+   "AST": {
+    "pg": 0.58,
+    "pm": 0.034
+   },
+   "3PM": {
+    "pg": 1.08,
+    "pm": 0.063
+   },
+   "STL": {
+    "pg": 0.67,
+    "pm": 0.039
+   },
+   "BLK": {
+    "pg": 0.25,
+    "pm": 0.015
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.029
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 17.5,
+   "PTS": {
+    "pg": 4.2,
+    "pm": 0.24
+   },
+   "REB": {
+    "pg": 1.4,
+    "pm": 0.08
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.034
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.057
+   },
+   "STL": {
+    "pg": 0.7,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 0.3,
+    "pm": 0.017
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.029
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 15.8,
+   "PTS": {
+    "pg": 4.6,
+    "pm": 0.291
+   },
+   "REB": {
+    "pg": 1.8,
+    "pm": 0.114
+   },
+   "AST": {
+    "pg": 0.4,
+    "pm": 0.025
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.063
+   },
+   "STL": {
+    "pg": 0.8,
+    "pm": 0.051
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.013
+   },
+   "TOV": {
+    "pg": 0.6,
+    "pm": 0.038
+   }
+  },
+  "home": {
+   "games": 7,
+   "min_pg": 15.3,
+   "PTS": {
+    "pg": 4.43,
+    "pm": 0.29
+   },
+   "REB": {
+    "pg": 1.43,
+    "pm": 0.093
+   },
+   "AST": {
+    "pg": 0.43,
+    "pm": 0.028
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.065
+   },
+   "STL": {
+    "pg": 0.57,
+    "pm": 0.037
+   },
+   "BLK": {
+    "pg": 0.29,
+    "pm": 0.019
+   },
+   "TOV": {
+    "pg": 0.57,
+    "pm": 0.037
+   }
+  },
+  "away": {
+   "games": 5,
+   "min_pg": 19.8,
+   "PTS": {
+    "pg": 4.8,
+    "pm": 0.242
+   },
+   "REB": {
+    "pg": 1.0,
+    "pm": 0.051
+   },
+   "AST": {
+    "pg": 0.8,
+    "pm": 0.04
+   },
+   "3PM": {
+    "pg": 1.2,
+    "pm": 0.061
+   },
+   "STL": {
+    "pg": 0.8,
+    "pm": 0.04
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.01
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.02
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-10-21_la-clippers_vs_sacramento",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 17.0,
+   "PTS": 8.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 6.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-23",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-10-23_portland_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 14.0,
+   "PTS": 5.0,
+   "REB": 0.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-25",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-10-25_memphis_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 14.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-27",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-10-27_sacramento_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 20.0,
+   "PTS": 5.0,
+   "REB": 0.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 4.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-29",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-10-29_new-orleans_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 18.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 2.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-31",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-10-31_memphis_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 24.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 7.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2026-11-02_dallas_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 20.0,
+   "PTS": 9.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 3.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-11-04_la-lakers_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 10.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-06",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-11-06_sacramento_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 31.0,
+   "PTS": 9.0,
+   "REB": 5.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 7.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-08",
+   "opp": "Miami",
+   "venue": "H",
+   "game": "2026-11-08_miami_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 12.0,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-10",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2026-11-10_orlando_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 19.0,
+   "PTS": 2.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-13",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-11-13_portland_vs_sacramento",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 7.0,
+   "PTS": 4.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-13",
@@ -124,8 +637,128 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Dallas",
+   "venue": "R",
+   "game": "2026-11-02_dallas_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 20.0,
+   "PTS": 9.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 3.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-31",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-10-31_memphis_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 24.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 7.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-29",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-10-29_new-orleans_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 18.0,
+   "PTS": 0.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 2.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-27",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-10-27_sacramento_vs_san-antonio",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 20.0,
+   "PTS": 5.0,
+   "REB": 0.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 4.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-25",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-10-25_memphis_vs_sacramento",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 14.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Oklahoma City"
 }
