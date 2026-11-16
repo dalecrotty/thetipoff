@@ -4,20 +4,6 @@
  "team": "Oklahoma City",
  "opp": "Sacramento",
  "lines": {
-  "PTS": {
-   "line": 32.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
-  },
-  "PR": {
-   "line": 36.5,
-   "price": 1.85,
-   "book": "pointsbetau",
-   "price_over": 1.85,
-   "price_under": 1.85
-  },
   "3PM": {
    "line": 1.5,
    "price": 2.23,
@@ -25,40 +11,54 @@
    "price_over": 1.6,
    "price_under": 2.23
   },
-  "PRA": {
-   "line": 41.5,
-   "price": 1.9,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9
+  "PTS": {
+   "line": 33.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
   },
-  "PA": {
+  "PR": {
    "line": 37.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 1.62,
+   "book": "neds",
+   "price_over": 1.62,
+   "price_under": 2.2
+  },
+  "PRA": {
+   "line": 42.5,
    "price": 1.87,
    "book": "sportsbet",
    "price_over": 1.89,
    "price_under": 1.87
   },
+  "PA": {
+   "line": 38.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 2.0,
+   "price_under": 1.77
+  },
   "REB": {
    "line": 3.5,
    "price": 2.05,
    "book": "neds",
-   "price_over": 1.72,
+   "price_over": 1.7,
    "price_under": 2.05
-  },
-  "AST": {
-   "line": 5.5,
-   "price": 2.08,
-   "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
-  },
-  "RA": {
-   "line": 9.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
   }
  },
  "recent_games": [
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 32.5,
+   "line": 33.5,
    "over": 1,
    "n": 5
   },
