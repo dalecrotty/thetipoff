@@ -2,8 +2,65 @@
  "player_id": 1630228,
  "player": "Jonathan Kuminga",
  "team": "Minnesota",
- "opp": null,
- "lines": {},
+ "opp": "Portland",
+ "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 2.12,
+   "book": "unibet",
+   "price_over": 2.12,
+   "price_under": 1.66
+  },
+  "RA": {
+   "line": 8.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PA": {
+   "line": 15.5,
+   "price": 1.82,
+   "book": "unibet",
+   "price_over": 1.82,
+   "price_under": 1.91
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.32,
+   "book": "unibet",
+   "price_over": 2.32,
+   "price_under": 1.56
+  },
+  "PRA": {
+   "line": 21.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.87
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.92,
+   "book": "unibet",
+   "price_over": 1.92,
+   "price_under": 1.81
+  },
+  "PR": {
+   "line": 19.5,
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.79
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 1.89,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.89
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-14",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

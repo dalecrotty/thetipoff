@@ -2,8 +2,30 @@
  "player_id": 1641730,
  "player": "Noah Clowney",
  "team": "Brooklyn",
- "opp": null,
- "lines": {},
+ "opp": "Philadelphia",
+ "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 1.68,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PR": {
+   "line": 11.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 1.78,
+   "price_under": 2.0
+  },
+  "PTS": {
+   "line": 7.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-14",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

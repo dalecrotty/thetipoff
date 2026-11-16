@@ -10,8 +10,8 @@
   {
    "id": 1626164,
    "name": "Devin Booker",
-   "games": 156,
-   "med_min": 36.2
+   "games": 157,
+   "med_min": 36.1
   },
   {
    "id": 203078,
@@ -22,20 +22,20 @@
   {
    "id": 1628415,
    "name": "Dillon Brooks",
-   "games": 73,
-   "med_min": 32.3
+   "games": 74,
+   "med_min": 32.1
   },
   {
    "id": 1628970,
    "name": "Miles Bridges",
-   "games": 11,
+   "games": 12,
    "med_min": 31.0
   },
   {
    "id": 1630224,
    "name": "Jalen Green",
-   "games": 49,
-   "med_min": 29.8
+   "games": 50,
+   "med_min": 29.5
   },
   {
    "id": 1626145,
@@ -58,7 +58,7 @@
   {
    "id": 1631221,
    "name": "Collin Gillespie",
-   "games": 129,
+   "games": 130,
    "med_min": 26.0
   },
   {
@@ -76,20 +76,26 @@
   {
    "id": 1630692,
    "name": "Jordan Goodwin",
-   "games": 80,
+   "games": 81,
    "med_min": 22.8
   },
   {
    "id": 1642345,
    "name": "Oso Ighodaro",
-   "games": 157,
+   "games": 158,
    "med_min": 21.0
   },
   {
    "id": 1642346,
    "name": "Ryan Dunn",
-   "games": 159,
-   "med_min": 19.7
+   "games": 160,
+   "med_min": 19.9
+  },
+  {
+   "id": 1628379,
+   "name": "Luke Kennard",
+   "games": 11,
+   "med_min": 18.0
   },
   {
    "id": 1630208,
@@ -101,12 +107,6 @@
    "id": 203486,
    "name": "Mason Plumlee",
    "games": 74,
-   "med_min": 17.0
-  },
-  {
-   "id": 1628379,
-   "name": "Luke Kennard",
-   "games": 10,
    "med_min": 17.0
   },
   {
@@ -140,16 +140,16 @@
    "med_min": 11.7
   },
   {
+   "id": 1642863,
+   "name": "Khaman Maluach",
+   "games": 63,
+   "med_min": 10.8
+  },
+  {
    "id": 1629312,
    "name": "Haywood Highsmith",
    "games": 10,
    "med_min": 10.4
-  },
-  {
-   "id": 1642863,
-   "name": "Khaman Maluach",
-   "games": 62,
-   "med_min": 10.2
   },
   {
    "id": 1642853,
@@ -176,6 +176,12 @@
    "med_min": 6.5
   },
   {
+   "id": -736,
+   "name": "Koa Peat",
+   "games": 7,
+   "med_min": 6.0
+  },
+  {
    "id": -681,
    "name": "Damion Lee",
    "games": 25,
@@ -186,12 +192,6 @@
    "name": "Nigel Hayes-Davis",
    "games": 27,
    "med_min": 4.9
-  },
-  {
-   "id": -736,
-   "name": "Koa Peat",
-   "games": 6,
-   "med_min": 4.5
   },
   {
    "id": 1630311,
@@ -32066,6 +32066,181 @@
      "FGM": 0.0,
      "FGA": 2.0,
      "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-15",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-11-15_la-lakers_vs_phoenix",
+   "lines": {
+    "1631221": {
+     "min": 28.0,
+     "PTS": 26.0,
+     "REB": 4.0,
+     "AST": 4.0,
+     "3PM": 5.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 8.0,
+     "FGA": 14.0,
+     "3PA": 10.0,
+     "FTA": 6.0,
+     "starter": false
+    },
+    "1626164": {
+     "min": 28.0,
+     "PTS": 17.0,
+     "REB": 4.0,
+     "AST": 7.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 14.0,
+     "3PA": 4.0,
+     "FTA": 9.0,
+     "starter": true
+    },
+    "1628415": {
+     "min": 22.0,
+     "PTS": 1.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 0.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1630224": {
+     "min": 21.0,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 4.0,
+     "FGA": 11.0,
+     "3PA": 6.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630692": {
+     "min": 31.0,
+     "PTS": 14.0,
+     "REB": 7.0,
+     "AST": 6.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 4.0,
+     "FGM": 3.0,
+     "FGA": 10.0,
+     "3PA": 8.0,
+     "FTA": 9.0,
+     "starter": false
+    },
+    "1642863": {
+     "min": 13.0,
+     "PTS": 7.0,
+     "REB": 4.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 4.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1628379": {
+     "min": 23.0,
+     "PTS": 18.0,
+     "REB": 6.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 7.0,
+     "FGA": 14.0,
+     "3PA": 9.0,
+     "FTA": 1.0,
+     "starter": false
+    },
+    "1628970": {
+     "min": 24.0,
+     "PTS": 14.0,
+     "REB": 3.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 6.0,
+     "FGA": 10.0,
+     "3PA": 5.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1642345": {
+     "min": 17.0,
+     "PTS": 4.0,
+     "REB": 2.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642346": {
+     "min": 24.0,
+     "PTS": 3.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-736": {
+     "min": 8.0,
+     "PTS": 10.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 7.0,
+     "3PA": 0.0,
      "FTA": 0.0,
      "starter": false
     }
