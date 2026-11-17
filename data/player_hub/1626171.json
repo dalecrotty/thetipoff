@@ -4,12 +4,33 @@
  "team": "Miami",
  "opp": "Houston",
  "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.5,
+   "book": "pointsbetau",
+   "price_over": 2.5,
+   "price_under": 1.5
+  },
   "PR": {
    "line": 12.5,
    "price": 1.74,
    "book": "unibet",
    "price_over": 2.0,
    "price_under": 1.74
+  },
+  "PTS": {
+   "line": 7.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.83
   },
   "PRA": {
    "line": 13.5,
@@ -18,26 +39,12 @@
    "price_over": 1.95,
    "price_under": 1.8
   },
-  "3PM": {
+  "AST": {
    "line": 1.5,
-   "price": 1.44,
-   "book": "pointsbetau",
-   "price_over": 2.65,
-   "price_under": 1.44
-  },
-  "PTS": {
-   "line": 7.5,
-   "price": 1.82,
-   "book": "unibet",
-   "price_over": 1.91,
-   "price_under": 1.82
-  },
-  "REB": {
-   "line": 4.5,
-   "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 2.05,
-   "price_under": 1.74
+   "price": 1.55,
+   "book": "tab",
+   "price_over": 2.35,
+   "price_under": 1.55
   }
  },
  "recent_games": [
@@ -171,6 +178,11 @@
   "REB": {
    "line": 4.5,
    "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
    "n": 5
   },
   "3PM": {
