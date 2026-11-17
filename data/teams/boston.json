@@ -4,7 +4,7 @@
   {
    "id": 1628369,
    "name": "Jayson Tatum",
-   "games": 106,
+   "games": 107,
    "med_min": 36.0
   },
   {
@@ -16,7 +16,7 @@
   {
    "id": 1628401,
    "name": "Derrick White",
-   "games": 173,
+   "games": 174,
    "med_min": 34.5
   },
   {
@@ -28,14 +28,14 @@
   {
    "id": 1630202,
    "name": "Payton Pritchard",
-   "games": 179,
-   "med_min": 30.9
+   "games": 180,
+   "med_min": 31.0
   },
   {
    "id": 202331,
    "name": "Paul George",
-   "games": 11,
-   "med_min": 30.0
+   "games": 12,
+   "med_min": 30.5
   },
   {
    "id": 204001,
@@ -58,7 +58,7 @@
   {
    "id": 1630573,
    "name": "Sam Hauser",
-   "games": 169,
+   "games": 170,
    "med_min": 23.0
   },
   {
@@ -82,8 +82,8 @@
   {
    "id": 1629011,
    "name": "Mitchell Robinson",
-   "games": 12,
-   "med_min": 17.5
+   "games": 13,
+   "med_min": 18.0
   },
   {
    "id": 1631169,
@@ -94,25 +94,25 @@
   {
    "id": 1631248,
    "name": "Baylor Scheierman",
-   "games": 128,
-   "med_min": 15.6
+   "games": 129,
+   "med_min": 15.3
   },
   {
    "id": 1630568,
    "name": "Luka Garza",
-   "games": 89,
+   "games": 90,
    "med_min": 15.1
   },
   {
    "id": 1642864,
    "name": "Hugo Gonzalez",
-   "games": 91,
-   "med_min": 13.3
+   "games": 92,
+   "med_min": 13.2
   },
   {
    "id": 1641775,
    "name": "Jordan Walsh",
-   "games": 138,
+   "games": 139,
    "med_min": 13.0
   },
   {
@@ -158,6 +158,12 @@
    "med_min": 6.0
   },
   {
+   "id": -775,
+   "name": "Chris Cenac Jr.",
+   "games": 5,
+   "med_min": 5.0
+  },
+  {
    "id": 1631120,
    "name": "JD Davison",
    "games": 15,
@@ -186,12 +192,6 @@
    "name": "Amari Williams",
    "games": 23,
    "med_min": 4.1
-  },
-  {
-   "id": -775,
-   "name": "Chris Cenac Jr.",
-   "games": 4,
-   "med_min": 3.5
   },
   {
    "id": 1642910,
@@ -31694,6 +31694,181 @@
      "FGM": 3.0,
      "FGA": 5.0,
      "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2026-11-16_boston_vs_orlando",
+   "lines": {
+    "1631248": {
+     "min": 11.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 2.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628401": {
+     "min": 32.0,
+     "PTS": 9.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 12.0,
+     "3PA": 6.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1642864": {
+     "min": 4.0,
+     "PTS": 0.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1628369": {
+     "min": 36.0,
+     "PTS": 24.0,
+     "REB": 12.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 5.0,
+     "FGM": 9.0,
+     "FGA": 23.0,
+     "3PA": 10.0,
+     "FTA": 5.0,
+     "starter": true
+    },
+    "1641775": {
+     "min": 17.0,
+     "PTS": 6.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 5.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1630568": {
+     "min": 18.0,
+     "PTS": 3.0,
+     "REB": 0.0,
+     "AST": 4.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 5.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1629011": {
+     "min": 18.0,
+     "PTS": 4.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "202331": {
+     "min": 36.0,
+     "PTS": 22.0,
+     "REB": 8.0,
+     "AST": 3.0,
+     "3PM": 5.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 7.0,
+     "FGA": 13.0,
+     "3PA": 9.0,
+     "FTA": 6.0,
+     "starter": true
+    },
+    "1630202": {
+     "min": 32.0,
+     "PTS": 21.0,
+     "REB": 4.0,
+     "AST": 5.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 7.0,
+     "FGA": 16.0,
+     "3PA": 11.0,
+     "FTA": 3.0,
+     "starter": false
+    },
+    "1630573": {
+     "min": 25.0,
+     "PTS": 12.0,
+     "REB": 1.0,
+     "AST": 2.0,
+     "3PM": 4.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 4.0,
+     "FGA": 6.0,
+     "3PA": 6.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-775": {
+     "min": 12.0,
+     "PTS": 4.0,
+     "REB": 2.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
      "FTA": 0.0,
      "starter": false
     }

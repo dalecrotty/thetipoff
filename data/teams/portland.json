@@ -4,7 +4,7 @@
   {
    "id": 1641739,
    "name": "Toumani Camara",
-   "games": 178,
+   "games": 179,
    "med_min": 33.5
   },
   {
@@ -16,7 +16,7 @@
   {
    "id": 1630166,
    "name": "Deni Avdija",
-   "games": 156,
+   "games": 157,
    "med_min": 33.0
   },
   {
@@ -38,21 +38,21 @@
    "med_min": 31.0
   },
   {
-   "id": -105,
-   "name": "Damian Lillard",
-   "games": 12,
-   "med_min": 30.5
-  },
-  {
    "id": 201950,
    "name": "Jrue Holiday",
-   "games": 71,
-   "med_min": 30.4
+   "games": 72,
+   "med_min": 30.2
+  },
+  {
+   "id": -105,
+   "name": "Damian Lillard",
+   "games": 13,
+   "med_min": 30.0
   },
   {
    "id": 1642270,
    "name": "Donovan Clingan",
-   "games": 162,
+   "games": 163,
    "med_min": 25.1
   },
   {
@@ -64,7 +64,7 @@
   {
    "id": 1630703,
    "name": "Scoot Henderson",
-   "games": 114,
+   "games": 115,
    "med_min": 25.0
   },
   {
@@ -76,8 +76,8 @@
   {
    "id": 1631321,
    "name": "Sidy Cissoko",
-   "games": 96,
-   "med_min": 19.9
+   "games": 97,
+   "med_min": 20.0
   },
   {
    "id": 1631200,
@@ -88,7 +88,7 @@
   {
    "id": 1629057,
    "name": "Robert Williams III",
-   "games": 95,
+   "games": 96,
    "med_min": 17.0
   },
   {
@@ -134,21 +134,27 @@
    "med_min": 10.0
   },
   {
+   "id": 1642382,
+   "name": "Branden Carlson",
+   "games": 8,
+   "med_min": 9.0
+  },
+  {
    "id": 1641712,
    "name": "Rayan Rupert",
    "games": 100,
    "med_min": 8.6
   },
   {
-   "id": 1642382,
-   "name": "Branden Carlson",
-   "games": 7,
-   "med_min": 8.0
-  },
-  {
    "id": 1630695,
    "name": "Micah Potter",
-   "games": 6,
+   "games": 7,
+   "med_min": 7.0
+  },
+  {
+   "id": 1643257,
+   "name": "Jayson Kent",
+   "games": 9,
    "med_min": 7.0
   },
   {
@@ -158,22 +164,16 @@
    "med_min": 6.3
   },
   {
-   "id": 1643257,
-   "name": "Jayson Kent",
-   "games": 8,
-   "med_min": 5.4
+   "id": 1642910,
+   "name": "John Tonje",
+   "games": 2,
+   "med_min": 6.0
   },
   {
    "id": 1642905,
    "name": "Yang Hansen",
-   "games": 54,
-   "med_min": 5.1
-  },
-  {
-   "id": 1642910,
-   "name": "John Tonje",
-   "games": 1,
-   "med_min": 5.0
+   "games": 55,
+   "med_min": 5.2
   },
   {
    "id": 1631451,
@@ -31621,6 +31621,211 @@
      "FGA": 1.0,
      "3PA": 1.0,
      "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-11-16_minnesota_vs_portland",
+   "lines": {
+    "1642382": {
+     "min": 14.0,
+     "PTS": 5.0,
+     "REB": 6.0,
+     "AST": 1.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 3.0,
+     "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "-105": {
+     "min": 24.0,
+     "PTS": 9.0,
+     "REB": 2.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 2.0,
+     "FGA": 15.0,
+     "3PA": 8.0,
+     "FTA": 3.0,
+     "starter": true
+    },
+    "1630166": {
+     "min": 30.0,
+     "PTS": 27.0,
+     "REB": 8.0,
+     "AST": 4.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 5.0,
+     "FGM": 11.0,
+     "FGA": 19.0,
+     "3PA": 3.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1642270": {
+     "min": 22.0,
+     "PTS": 10.0,
+     "REB": 10.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 5.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 5.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1642910": {
+     "min": 7.0,
+     "PTS": 7.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 7.0,
+     "3PA": 3.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "201950": {
+     "min": 25.0,
+     "PTS": 10.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 7.0,
+     "3PA": 4.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1629057": {
+     "min": 15.0,
+     "PTS": 2.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 4.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630703": {
+     "min": 23.0,
+     "PTS": 10.0,
+     "REB": 1.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 11.0,
+     "3PA": 5.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1631321": {
+     "min": 28.0,
+     "PTS": 5.0,
+     "REB": 4.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 2.0,
+     "FGA": 5.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1641739": {
+     "min": 26.0,
+     "PTS": 3.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 10.0,
+     "3PA": 7.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1642905": {
+     "min": 7.0,
+     "PTS": 0.0,
+     "REB": 1.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 1.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630695": {
+     "min": 7.0,
+     "PTS": 2.0,
+     "REB": 4.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 3.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1643257": {
+     "min": 11.0,
+     "PTS": 8.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 5.0,
+     "3PA": 4.0,
+     "FTA": 1.0,
      "starter": false
     }
    }

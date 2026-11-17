@@ -3,8 +3,61 @@
  "player": "Sidy Cissoko",
  "team": "Portland",
  "opp": "Minnesota",
- "lines": {},
+ "lines": {
+  "PR": {
+   "line": 9.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 2.25,
+   "book": "sportsbet",
+   "price_over": 2.25,
+   "price_under": 1.58
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.75,
+   "book": "sportsbet",
+   "price_over": 2.75,
+   "price_under": 1.4
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-11-16",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-11-16_minnesota_vs_portland",
+   "starter": true,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 28.0,
+   "PTS": 5.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-13",
    "opp": "Sacramento",
@@ -100,32 +153,24 @@
    "FTA": 3.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-06",
-   "opp": "LA Lakers",
-   "venue": "R",
-   "game": "2026-11-06_la-lakers_vs_portland",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 22.0,
-   "PTS": 7.0,
-   "REB": 2.0,
-   "AST": 3.0,
-   "3PM": 2.0,
-   "STL": 0.0,
-   "BLK": 1.0,
-   "TOV": 0.0,
-   "FGM": 2.0,
-   "FGA": 7.0,
-   "3PA": 5.0,
-   "FTA": 2.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
