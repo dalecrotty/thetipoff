@@ -1403,14 +1403,16 @@ async function initWow() {
   let team = null;                 // loaded team payload
   let focal = null;                // focal player id (string)
   // teammates who must have played (with) and who must have sat (without):
-  // two multi-select pickers (owner, 6 Oct 2026), names -> ids
-  let withP = new Set(), withoutP = new Set();
+  // two multi-select pickers (owner, 6 Oct 2026), names -> ids; a second
+  // without under the first (owner, 17 Nov 2026: "Quentin Grimes without
+  // Reaves OR Doncic"): a game matches when everyone in either group sat
+  let withP = new Set(), withoutP = new Set(), orP = new Set();
   let idOf = {}, nameOf = {};
   let season = null;               // a season label, "last2" or "all" (owner, 16 Oct 2026)
   let lastN = 0;                   // 0 = every game of his in the season, else his last N (owner, 28 Oct 2026)
   let onlyMatch = false;           // chart: drop the faded games while a lineup filter is on (owner, 29 Oct 2026)
-  const state = { get size() { return withP.size + withoutP.size; },
-                  clear() { withP.clear(); withoutP.clear(); } };
+  const state = { get size() { return withP.size + withoutP.size + orP.size; },
+                  clear() { withP.clear(); withoutP.clear(); orP.clear(); } };
 
   // averages skip missing values (shot columns are blank on a few old rows)
   const avg = (games, pick) => {
@@ -1433,7 +1435,9 @@ async function initWow() {
   const fits = g => {                        // the lineup filter
     if (!focalLine(g)) return false;           // focal must have played
     for (const n of withP) if (!played(g, idOf[n])) return false;
-    for (const n of withoutP) if (played(g, idOf[n])) return false;
+    // without: everyone in a group sat; with both groups picked, either will do
+    const outs = [withoutP, orP].filter(s => s.size);
+    if (outs.length && !outs.some(s => [...s].every(n => !played(g, idOf[n])))) return false;
     return true;
   };
   // with "matching games only" ticked, the last N are his last N matching
@@ -1475,8 +1479,16 @@ async function initWow() {
           (d > 0 ? "+" : "") + d.toFixed(1)}</td>`;
       }).join("")}</tr>`;
   };
+  // "without Reaves or Doncic"; a group of two or more reads "both ... and ..."
+  const outLabel = () => {
+    const gs = [withoutP, orP].filter(s => s.size).map(s => [...s]);
+    if (!gs.length) return "";
+    if (gs.length === 1) return `without ${gs[0].join(", ")}`;
+    const part = a => a.length > 1 ? `both ${a.join(" and ")}` : a[0];
+    return `without ${part(gs[0])} or ${part(gs[1])}`;
+  };
   const lineupLabel = () => [withP.size ? `with ${[...withP].join(", ")}` : "",
-    withoutP.size ? `without ${[...withoutP].join(", ")}` : ""].filter(Boolean).join(", ");
+    outLabel()].filter(Boolean).join(", ");
   const changeLine = (sel, rest) => {
     if (!sel.length || !rest.length) return "";
     const KEYS = [["PTS", "points"], ["FGA", "shots"], ["3PA", "3PA"], ["FTA", "free throws"], ["AST", "assists"],
@@ -1504,16 +1516,17 @@ async function initWow() {
   // a pick that is now the player himself, or didn't play in the season, drops
   // the picks as last chosen, so one set aside while its player is the
   // one being looked at comes back on the next player
-  let chosen = [[], []];
-  const onPick = () => { chosen = [[...withP], [...withoutP]]; render(); };
+  let chosen = [[], [], []];
+  const onPick = () => { chosen = [[...withP], [...withoutP], [...orP]]; render(); };
   const renderMates = (keep = false) => {
-    if (!keep) chosen = [[], []];
+    if (!keep) chosen = [[], [], []];
     const games = seasonGames();
     const ids = new Set(games.flatMap(g => Object.keys(g.lines)));
     const mates = team.players.filter(p => String(p.id) !== focal && ids.has(String(p.id))).map(p => p.name);
-    $("#wPick").innerHTML = `<div id="wWith"></div><div id="wWithout"></div>`;
+    $("#wPick").innerHTML = `<div id="wWith"></div><div class="wout"><div id="wWithout"></div><div id="wOr"></div></div>`;
     withP = multiSelect($("#wWith"), "With (played)", mates, onPick, chosen[0]);
     withoutP = multiSelect($("#wWithout"), "Without (sat)", mates, onPick, chosen[1]);
+    orP = multiSelect($("#wOr"), "Or without (sat)", mates, onPick, chosen[2]);
   };
 
   const render = () => {
