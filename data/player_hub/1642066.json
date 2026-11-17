@@ -3,7 +3,29 @@
  "player": "Myron Gardner",
  "team": "Miami",
  "opp": "Houston",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PTS": {
+   "line": 5.5,
+   "price": 1.81,
+   "book": "unibet",
+   "price_over": 1.92,
+   "price_under": 1.81
+  },
+  "PR": {
+   "line": 9.5,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 1.76,
+   "price_under": 2.02
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-14",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 5.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
