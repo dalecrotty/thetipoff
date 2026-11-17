@@ -4,19 +4,19 @@
  "team": "New Orleans",
  "opp": "Golden State",
  "lines": {
+  "REB": {
+   "line": 1.5,
+   "price": 1.72,
+   "book": "tab",
+   "price_over": 1.72,
+   "price_under": 2.05
+  },
   "3PM": {
    "line": 1.5,
-   "price": 1.96,
-   "book": "neds",
-   "price_over": 1.96,
-   "price_under": 1.73
-  },
-  "PTS": {
-   "line": 11.5,
-   "price": 1.9,
-   "book": "tab",
-   "price_over": 1.85,
-   "price_under": 1.9
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
   },
   "AST": {
    "line": 3.5,
@@ -24,6 +24,13 @@
    "book": "pointsbetau",
    "price_over": 2.05,
    "price_under": 1.74
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.9,
+   "book": "tab",
+   "price_over": 1.85,
+   "price_under": 1.9
   },
   "PA": {
    "line": 14.5,
@@ -165,6 +172,11 @@
  "hits": {
   "PTS": {
    "line": 11.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 1.5,
    "over": 3,
    "n": 5
   },

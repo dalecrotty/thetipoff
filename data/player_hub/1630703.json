@@ -226,46 +226,32 @@
   }
  },
  "lines": {
-  "REB": {
-   "line": 2.5,
-   "p_over": 0.299,
-   "p_under": 0.701,
-   "fair_over": 0.443,
-   "fair_under": 0.557,
-   "price_over": 2.1,
-   "price_under": 1.67,
-   "side": "under",
-   "price": 1.67,
-   "book": "neds",
-   "edge": 0.1437,
-   "tier": "A"
-  },
   "AST": {
    "line": 1.5,
    "p_over": 0.529,
    "p_under": 0.471,
-   "fair_over": 0.606,
-   "fair_under": 0.394,
-   "price_over": 1.56,
-   "price_under": 2.4,
+   "fair_over": 0.599,
+   "fair_under": 0.401,
+   "price_over": 1.57,
+   "price_under": 2.35,
    "side": "under",
-   "price": 2.4,
+   "price": 2.35,
    "book": "pointsbetau",
-   "edge": 0.0766,
+   "edge": 0.07,
    "tier": "A"
   },
-  "PR": {
-   "line": 12.5,
-   "p_over": 0.422,
-   "p_under": 0.578,
-   "fair_over": 0.524,
-   "fair_under": 0.476,
-   "price_over": 1.78,
-   "price_under": 1.96,
+  "REB": {
+   "line": 2.5,
+   "p_over": 0.299,
+   "p_under": 0.701,
+   "fair_over": 0.389,
+   "fair_under": 0.611,
+   "price_over": 2.4,
+   "price_under": 1.53,
    "side": "under",
-   "price": 1.96,
-   "book": "neds",
-   "edge": 0.1025,
+   "price": 1.53,
+   "book": "unibet",
+   "edge": 0.0901,
    "tier": "A"
   },
   "PTS": {
@@ -280,20 +266,6 @@
    "price": 1.85,
    "book": "neds",
    "edge": 0.0736,
-   "tier": "A"
-  },
-  "3PM": {
-   "line": 1.5,
-   "p_over": 0.328,
-   "p_under": 0.672,
-   "fair_over": 0.401,
-   "fair_under": 0.599,
-   "price_over": 2.35,
-   "price_under": 1.57,
-   "side": "under",
-   "price": 1.57,
-   "book": "pointsbetau",
-   "edge": 0.0724,
    "tier": "A"
   },
   "PA": {
@@ -314,14 +286,14 @@
    "line": 4.5,
    "p_over": 0.383,
    "p_under": 0.617,
-   "fair_over": 0.448,
-   "fair_under": 0.552,
-   "price_over": 2.07,
+   "fair_over": 0.447,
+   "fair_under": 0.553,
+   "price_over": 2.08,
    "price_under": 1.68,
    "side": "under",
    "price": 1.68,
    "book": "unibet",
-   "edge": 0.0653,
+   "edge": 0.0641,
    "tier": "A"
   },
   "PRA": {
@@ -337,6 +309,34 @@
    "book": "unibet",
    "edge": 0.0633,
    "tier": "A"
+  },
+  "3PM": {
+   "line": 1.5,
+   "p_over": 0.328,
+   "p_under": 0.672,
+   "fair_over": 0.394,
+   "fair_under": 0.606,
+   "price_over": 2.4,
+   "price_under": 1.56,
+   "side": "under",
+   "price": 1.56,
+   "book": "pointsbetau",
+   "edge": 0.0658,
+   "tier": "B"
+  },
+  "PR": {
+   "line": 12.5,
+   "p_over": 0.422,
+   "p_under": 0.578,
+   "fair_over": 0.467,
+   "fair_under": 0.533,
+   "price_over": 2.0,
+   "price_under": 1.75,
+   "side": "under",
+   "price": 1.75,
+   "book": "unibet",
+   "edge": 0.0451,
+   "tier": "B"
   }
  },
  "lines_us": {
