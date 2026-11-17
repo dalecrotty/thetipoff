@@ -2,30 +2,555 @@
  "player_id": -717,
  "player": "Trevon Brazile",
  "team": "Denver",
- "opp": "Phoenix",
+ "projections": {
+  "3PM": {
+   "mean": 0.56,
+   "floor": 0.0,
+   "ceiling": 1.89
+  },
+  "AST": {
+   "mean": 0.4,
+   "floor": 0.0,
+   "ceiling": 1.75
+  },
+  "BLK": {
+   "mean": 0.32,
+   "floor": 0.0,
+   "ceiling": 1.0
+  },
+  "PTS": {
+   "mean": 5.23,
+   "floor": 0.4,
+   "ceiling": 10.95
+  },
+  "REB": {
+   "mean": 4.06,
+   "floor": 1.29,
+   "ceiling": 7.18
+  },
+  "STL": {
+   "mean": 0.43,
+   "floor": 0.0,
+   "ceiling": 1.23
+  },
+  "TOV": {
+   "mean": 0.59,
+   "floor": 0.0,
+   "ceiling": 1.99
+  },
+  "PRA": {
+   "mean": 9.69,
+   "floor": 1.97,
+   "ceiling": 18.4
+  },
+  "PR": {
+   "mean": 9.29,
+   "floor": 1.56,
+   "ceiling": 17.63
+  },
+  "PA": {
+   "mean": 5.63,
+   "floor": 0.0,
+   "ceiling": 12.41
+  },
+  "RA": {
+   "mean": 4.46,
+   "floor": 1.1,
+   "ceiling": 7.9
+  }
+ },
+ "minutes": {
+  "value": 15,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 11,
+   "min_pg": 19.3,
+   "PTS": {
+    "pg": 6.91,
+    "pm": 0.358
+   },
+   "REB": {
+    "pg": 5.36,
+    "pm": 0.278
+   },
+   "AST": {
+    "pg": 0.45,
+    "pm": 0.024
+   },
+   "3PM": {
+    "pg": 0.73,
+    "pm": 0.038
+   },
+   "STL": {
+    "pg": 0.55,
+    "pm": 0.028
+   },
+   "BLK": {
+    "pg": 0.45,
+    "pm": 0.024
+   },
+   "TOV": {
+    "pg": 0.73,
+    "pm": 0.038
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 19.4,
+   "PTS": {
+    "pg": 7.2,
+    "pm": 0.371
+   },
+   "REB": {
+    "pg": 4.7,
+    "pm": 0.242
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.026
+   },
+   "3PM": {
+    "pg": 0.8,
+    "pm": 0.041
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.026
+   },
+   "TOV": {
+    "pg": 0.7,
+    "pm": 0.036
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 16.0,
+   "PTS": {
+    "pg": 5.2,
+    "pm": 0.325
+   },
+   "REB": {
+    "pg": 4.2,
+    "pm": 0.263
+   },
+   "AST": {
+    "pg": 0.6,
+    "pm": 0.037
+   },
+   "3PM": {
+    "pg": 0.4,
+    "pm": 0.025
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.013
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.013
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.025
+   }
+  },
+  "home": {
+   "games": 4,
+   "min_pg": 21.5,
+   "PTS": {
+    "pg": 8.75,
+    "pm": 0.407
+   },
+   "REB": {
+    "pg": 5.5,
+    "pm": 0.256
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.023
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.047
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.047
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.023
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.047
+   }
+  },
+  "away": {
+   "games": 7,
+   "min_pg": 18.0,
+   "PTS": {
+    "pg": 5.86,
+    "pm": 0.325
+   },
+   "REB": {
+    "pg": 5.29,
+    "pm": 0.294
+   },
+   "AST": {
+    "pg": 0.43,
+    "pm": 0.024
+   },
+   "3PM": {
+    "pg": 0.57,
+    "pm": 0.032
+   },
+   "STL": {
+    "pg": 0.29,
+    "pm": 0.016
+   },
+   "BLK": {
+    "pg": 0.43,
+    "pm": 0.024
+   },
+   "TOV": {
+    "pg": 0.57,
+    "pm": 0.032
+   }
+  }
+ },
  "lines": {
   "PTS": {
    "line": 4.5,
+   "p_over": 0.573,
+   "p_under": 0.427,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.9,
+   "price_under": 1.9,
+   "side": "over",
    "price": 1.9,
    "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.9
-  },
-  "PR": {
-   "line": 8.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.9
+   "edge": 0.073,
+   "tier": "A"
   },
   "REB": {
    "line": 3.5,
-   "price": 1.72,
+   "p_over": 0.554,
+   "p_under": 0.446,
+   "fair_over": 0.492,
+   "fair_under": 0.508,
+   "price_over": 1.91,
+   "price_under": 1.85,
+   "side": "over",
+   "price": 1.91,
+   "book": "sportsbet",
+   "edge": 0.0616,
+   "tier": "A"
+  },
+  "PR": {
+   "line": 8.5,
+   "p_over": 0.552,
+   "p_under": 0.448,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.85,
    "book": "neds",
-   "price_over": 1.72,
-   "price_under": 2.05
+   "edge": 0.0456,
+   "tier": "B"
   }
  },
+ "lines_us": {
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.554,
+   "p_under": 0.446,
+   "fair_over": 0.512,
+   "fair_under": 0.488,
+   "price_over": 1.83,
+   "price_under": 1.92,
+   "side": "over",
+   "price": 1.83,
+   "book": "betright",
+   "edge": 0.0417,
+   "tier": "B"
+  }
+ },
+ "game_log": [
+  {
+   "date": "2026-10-22",
+   "opp": "Oklahoma City",
+   "venue": "R",
+   "game": "2026-10-22_denver_vs_oklahoma-city",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 4.0,
+   "REB": 12.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 6.0,
+   "3PA": 4.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2026-10-24_denver_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 28.0,
+   "PTS": 17.0,
+   "REB": 9.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 2.0,
+   "FGM": 6.0,
+   "FGA": 11.0,
+   "3PA": 7.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2026-10-26_denver_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 17.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-10-28_denver_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 32.0,
+   "PTS": 11.0,
+   "REB": 8.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 9.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-10-30_denver_vs_phoenix",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 19.0,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-11-02_denver_vs_portland",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 6.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 3.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-11-04_denver_vs_toronto",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 23.0,
+   "PTS": 6.0,
+   "REB": 7.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-07",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-11-07_denver_vs_indiana",
+   "starter": false,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 14.0,
+   "PTS": 3.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-09",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-11-09_denver_vs_houston",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 14.0,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-11",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-11-11_denver_vs_memphis",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 13.0,
+   "PTS": 7.0,
+   "REB": 5.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 4.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-14",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-11-14_denver_vs_new-orleans",
+   "starter": false,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 16.0,
+   "PTS": 5.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-14",
@@ -146,19 +671,128 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-11-02_denver_vs_portland",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 6.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 3.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-10-30_denver_vs_phoenix",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 19.0,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "New Orleans",
+   "venue": "R",
+   "game": "2026-10-28_denver_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 32.0,
+   "PTS": 11.0,
+   "REB": 8.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 9.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2026-10-26_denver_vs_golden-state",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 17.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "New Orleans",
+   "venue": "H",
+   "game": "2026-10-24_denver_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 28.0,
+   "PTS": 17.0,
+   "REB": 9.0,
+   "AST": 0.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 2.0,
+   "FGM": 6.0,
+   "FGA": 11.0,
+   "3PA": 7.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 4.5,
-   "over": 4,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 3,
-   "n": 5
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Phoenix"
 }
