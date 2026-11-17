@@ -626,10 +626,15 @@ tr.thin td { color: var(--muted); }
 td .was { display: none; }
 /* with / without: a button that opens a checklist */
 .msel { position: relative; }
-/* with / without: the "or without" picker sits under the first (17 Nov 2026) */
-.wout { display: grid; gap: 8px; }
+/* with / without: an All / Any switch on each picker's label row (17 Nov 2026) */
+.mselw { position: relative; }
+.anyall { position: absolute; top: -3px; right: 0; display: inline-flex; z-index: 1; }
+.anyall button { font: 500 10px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; padding: 3px 7px;
+  background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 0; cursor: pointer; }
+.anyall button + button { border-left: 0; }
+.anyall button[aria-pressed="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); }
 /* a long list of names ends in an ellipsis instead of widening the page */
-#wPick > div, .wout > div { min-width: 0; }
+#wPick > div { min-width: 0; }
 .msel summary { list-style: none; cursor: pointer; display: flex; flex-direction: column; gap: 3px; }
 .msel summary::-webkit-details-marker { display: none; }
 .msel summary .k { font: 500 11px/1.2 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }

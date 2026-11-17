@@ -1403,16 +1403,18 @@ async function initWow() {
   let team = null;                 // loaded team payload
   let focal = null;                // focal player id (string)
   // teammates who must have played (with) and who must have sat (without):
-  // two multi-select pickers (owner, 6 Oct 2026), names -> ids; a second
-  // without under the first (owner, 17 Nov 2026: "Quentin Grimes without
-  // Reaves OR Doncic"): a game matches when everyone in either group sat
-  let withP = new Set(), withoutP = new Set(), orP = new Set();
+  // two multi-select pickers (owner, 6 Oct 2026), names -> ids, each with an
+  // All / Any switch (owner, 17 Nov 2026: "Quentin Grimes without Reaves OR
+  // Doncic", then "Do the same for with"): All = every name picked played
+  // (or sat), Any = at least one of them did
+  let withP = new Set(), withoutP = new Set();
+  let withMode = "all", withoutMode = "all";
   let idOf = {}, nameOf = {};
   let season = null;               // a season label, "last2" or "all" (owner, 16 Oct 2026)
   let lastN = 0;                   // 0 = every game of his in the season, else his last N (owner, 28 Oct 2026)
   let onlyMatch = false;           // chart: drop the faded games while a lineup filter is on (owner, 29 Oct 2026)
-  const state = { get size() { return withP.size + withoutP.size + orP.size; },
-                  clear() { withP.clear(); withoutP.clear(); orP.clear(); } };
+  const state = { get size() { return withP.size + withoutP.size; },
+                  clear() { withP.clear(); withoutP.clear(); } };
 
   // averages skip missing values (shot columns are blank on a few old rows)
   const avg = (games, pick) => {
@@ -1434,11 +1436,11 @@ async function initWow() {
   // teammate list and the roster stay on the whole season
   const fits = g => {                        // the lineup filter
     if (!focalLine(g)) return false;           // focal must have played
-    for (const n of withP) if (!played(g, idOf[n])) return false;
-    // without: everyone in a group sat; with both groups picked, either will do
-    const outs = [withoutP, orP].filter(s => s.size);
-    if (outs.length && !outs.some(s => [...s].every(n => !played(g, idOf[n])))) return false;
-    return true;
+    // each picker: every name (All) or at least one (Any) played / sat
+    const ok = (set, mode, want) => !set.size
+      || (mode === "any" ? [...set].some(n => played(g, idOf[n]) === want)
+                         : [...set].every(n => played(g, idOf[n]) === want));
+    return ok(withP, withMode, true) && ok(withoutP, withoutMode, false);
   };
   // with "matching games only" ticked, the last N are his last N matching
   // games, not the last N of everything (owner, 29 Oct 2026)
@@ -1479,16 +1481,14 @@ async function initWow() {
           (d > 0 ? "+" : "") + d.toFixed(1)}</td>`;
       }).join("")}</tr>`;
   };
-  // "without Reaves or Doncic"; a group of two or more reads "both ... and ..."
-  const outLabel = () => {
-    const gs = [withoutP, orP].filter(s => s.size).map(s => [...s]);
-    if (!gs.length) return "";
-    if (gs.length === 1) return `without ${gs[0].join(", ")}`;
-    const part = a => a.length > 1 ? `both ${a.join(" and ")}` : a[0];
-    return `without ${part(gs[0])} or ${part(gs[1])}`;
+  // "without Austin Reaves or Luka Doncic" (Any), "... and ..." (All)
+  const names = (set, mode) => {
+    const a = [...set];
+    return a.length < 2 ? a.join("")
+      : `${a.slice(0, -1).join(", ")} ${mode === "any" ? "or" : "and"} ${a[a.length - 1]}`;
   };
-  const lineupLabel = () => [withP.size ? `with ${[...withP].join(", ")}` : "",
-    outLabel()].filter(Boolean).join(", ");
+  const lineupLabel = () => [withP.size ? `with ${names(withP, withMode)}` : "",
+    withoutP.size ? `without ${names(withoutP, withoutMode)}` : ""].filter(Boolean).join(", ");
   const changeLine = (sel, rest) => {
     if (!sel.length || !rest.length) return "";
     const KEYS = [["PTS", "points"], ["FGA", "shots"], ["3PA", "3PA"], ["FTA", "free throws"], ["AST", "assists"],
@@ -1516,17 +1516,18 @@ async function initWow() {
   // a pick that is now the player himself, or didn't play in the season, drops
   // the picks as last chosen, so one set aside while its player is the
   // one being looked at comes back on the next player
-  let chosen = [[], [], []];
-  const onPick = () => { chosen = [[...withP], [...withoutP], [...orP]]; render(); };
+  let chosen = [[], []];
+  const onPick = () => { chosen = [[...withP], [...withoutP]]; render(); };
   const renderMates = (keep = false) => {
-    if (!keep) chosen = [[], [], []];
+    if (!keep) { chosen = [[], []]; withMode = withoutMode = "all"; }
     const games = seasonGames();
     const ids = new Set(games.flatMap(g => Object.keys(g.lines)));
     const mates = team.players.filter(p => String(p.id) !== focal && ids.has(String(p.id))).map(p => p.name);
-    $("#wPick").innerHTML = `<div id="wWith"></div><div class="wout"><div id="wWithout"></div><div id="wOr"></div></div>`;
+    $("#wPick").innerHTML = `<div id="wWith" class="mselw"></div><div id="wWithout" class="mselw"></div>`;
     withP = multiSelect($("#wWith"), "With (played)", mates, onPick, chosen[0]);
     withoutP = multiSelect($("#wWithout"), "Without (sat)", mates, onPick, chosen[1]);
-    orP = multiSelect($("#wOr"), "Or without (sat)", mates, onPick, chosen[2]);
+    anyAll($("#wWith"), () => withMode, m => { withMode = m; render(); });
+    anyAll($("#wWithout"), () => withoutMode, m => { withoutMode = m; render(); });
   };
 
   const render = () => {
@@ -2404,6 +2405,23 @@ async function initTrends() {
 /* ---------- team page: the game log, filters, with / without ---------- */
 /* a compact multi-select: a button that opens a checklist (native multi-
    selects are unusable on a phone) */
+/* an All / Any switch on a multiSelect's label row (With & Without page,
+   owner 17 Nov 2026); it sits outside the dropdown, so a click doesn't open it */
+function anyAll(el, get, set) {
+  const sw = document.createElement("span");
+  sw.className = "anyall";
+  sw.setAttribute("role", "group");
+  sw.setAttribute("aria-label", "Every name picked, or any one of them");
+  sw.innerHTML = [["all", "All", "every name picked"], ["any", "Any", "at least one of them"]].map(([m, t, tip]) =>
+    `<button type="button" data-m="${m}" title="${tip}" aria-pressed="${get() === m}">${t}</button>`).join("");
+  sw.addEventListener("click", e => {
+    const b = e.target.closest("button");
+    if (!b || b.dataset.m === get()) return;
+    $$("button", sw).forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    set(b.dataset.m);
+  });
+  el.appendChild(sw);
+}
 function multiSelect(el, label, options, onChange, initial = []) {
   // initial: names ticked from the start (kept across a change of player
   // on the With/Without page, owner 11 Nov 2026); names not on offer drop
