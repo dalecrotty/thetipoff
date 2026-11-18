@@ -9,58 +9,58 @@
    "ceiling": 0.0
   },
   "AST": {
-   "mean": 0.0,
+   "mean": 0.78,
    "floor": 0.0,
-   "ceiling": 1.36
+   "ceiling": 2.14
   },
   "BLK": {
-   "mean": 0.0,
+   "mean": 0.16,
    "floor": 0.0,
-   "ceiling": 0.89
+   "ceiling": 0.99
   },
   "PTS": {
-   "mean": 0.0,
+   "mean": 2.86,
    "floor": 0.0,
-   "ceiling": 5.72
+   "ceiling": 8.58
   },
   "REB": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 2.21
+   "mean": 2.84,
+   "floor": 0.7,
+   "ceiling": 5.79
   },
   "STL": {
-   "mean": 0.0,
+   "mean": 0.14,
    "floor": 0.0,
-   "ceiling": 0.8
+   "ceiling": 0.94
   },
   "TOV": {
-   "mean": 0.0,
+   "mean": 0.68,
    "floor": 0.0,
-   "ceiling": 1.4
+   "ceiling": 1.95
   },
   "PRA": {
-   "mean": 0.0,
+   "mean": 6.48,
    "floor": 0.0,
-   "ceiling": 8.71
+   "ceiling": 15.2
   },
   "PR": {
-   "mean": 0.0,
+   "mean": 5.7,
    "floor": 0.0,
-   "ceiling": 8.11
+   "ceiling": 13.82
   },
   "PA": {
-   "mean": 0.0,
+   "mean": 3.64,
    "floor": 0.0,
-   "ceiling": 6.78
+   "ceiling": 10.42
   },
   "RA": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 3.3
+   "mean": 3.62,
+   "floor": 0.87,
+   "ceiling": 6.93
   }
  },
  "minutes": {
-  "value": 0,
+  "value": 12,
   "source": "model"
  },
  "splits": {
@@ -228,16 +228,16 @@
  "lines": {
   "PTS": {
    "line": 2.5,
-   "p_over": 0.286,
-   "p_under": 0.714,
+   "p_over": 0.564,
+   "p_under": 0.436,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
    "price_under": 1.87,
-   "side": "under",
+   "side": "over",
    "price": 1.87,
    "book": "tab",
-   "edge": 0.2141,
+   "edge": 0.064,
    "tier": "A"
   }
  },
