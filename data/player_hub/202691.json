@@ -4,14 +4,14 @@
  "team": "Miami",
  "projections": {
   "3PM": {
-   "mean": 4.44,
-   "floor": 2.15,
-   "ceiling": 6.75
+   "mean": 4.43,
+   "floor": 2.03,
+   "ceiling": 6.7
   },
   "AST": {
-   "mean": 2.45,
-   "floor": 0.04,
-   "ceiling": 4.75
+   "mean": 2.44,
+   "floor": 0.05,
+   "ceiling": 4.67
   },
   "BLK": {
    "mean": 0.81,
@@ -20,13 +20,13 @@
   },
   "PTS": {
    "mean": 16.05,
-   "floor": 7.66,
-   "ceiling": 25.19
+   "floor": 7.41,
+   "ceiling": 24.98
   },
   "REB": {
    "mean": 1.81,
-   "floor": 0.0,
-   "ceiling": 3.99
+   "floor": 0.03,
+   "ceiling": 4.02
   },
   "STL": {
    "mean": 0.31,
@@ -35,8 +35,8 @@
   },
   "TOV": {
    "mean": 0.99,
-   "floor": 0.04,
-   "ceiling": 2.13
+   "floor": 0.0,
+   "ceiling": 2.0
   },
   "PRA": {
    "mean": 20.31,
@@ -50,13 +50,13 @@
   },
   "PA": {
    "mean": 18.5,
-   "floor": 9.94,
+   "floor": 9.93,
    "ceiling": 28.86
   },
   "RA": {
-   "mean": 4.26,
-   "floor": 0.9,
-   "ceiling": 7.7
+   "mean": 4.25,
+   "floor": 0.89,
+   "ceiling": 7.69
   }
  },
  "minutes": {
@@ -237,7 +237,7 @@
    "side": "over",
    "price": 1.92,
    "book": "sportsbet",
-   "edge": 0.1853,
+   "edge": 0.1852,
    "tier": "A"
   },
   "PTS": {
@@ -265,7 +265,7 @@
    "side": "over",
    "price": 1.77,
    "book": "unibet",
-   "edge": 0.1518,
+   "edge": 0.1512,
    "tier": "A"
   },
   "PRA": {
@@ -279,7 +279,7 @@
    "side": "over",
    "price": 1.89,
    "book": "sportsbet",
-   "edge": 0.1465,
+   "edge": 0.1462,
    "tier": "A"
   },
   "REB": {
@@ -293,21 +293,7 @@
    "side": "under",
    "price": 1.59,
    "book": "pointsbetau",
-   "edge": 0.1345,
-   "tier": "A"
-  },
-  "3PM": {
-   "line": 3.5,
-   "p_over": 0.6,
-   "p_under": 0.4,
-   "fair_over": 0.471,
-   "fair_under": 0.529,
-   "price_over": 1.94,
-   "price_under": 1.73,
-   "side": "over",
-   "price": 1.94,
-   "book": "neds",
-   "edge": 0.1282,
+   "edge": 0.1352,
    "tier": "A"
   },
   "PR": {
@@ -321,7 +307,21 @@
    "side": "over",
    "price": 1.88,
    "book": "sportsbet",
-   "edge": 0.1281,
+   "edge": 0.1279,
+   "tier": "A"
+  },
+  "3PM": {
+   "line": 3.5,
+   "p_over": 0.599,
+   "p_under": 0.401,
+   "fair_over": 0.471,
+   "fair_under": 0.529,
+   "price_over": 1.94,
+   "price_under": 1.73,
+   "side": "over",
+   "price": 1.94,
+   "book": "neds",
+   "edge": 0.1272,
    "tier": "A"
   },
   "RA": {
@@ -335,7 +335,7 @@
    "side": "over",
    "price": 1.87,
    "book": "unibet",
-   "edge": 0.1161,
+   "edge": 0.1153,
    "tier": "A"
   }
  },
