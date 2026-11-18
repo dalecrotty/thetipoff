@@ -3,7 +3,15 @@
  "player": "Isaac Jones",
  "team": "Detroit",
  "opp": "New Orleans",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 2.5,
+   "price": 1.9,
+   "book": "tab",
+   "price_over": 1.85,
+   "price_under": 1.9
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-14",
@@ -126,6 +134,12 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 2.5,
+   "over": 0,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
