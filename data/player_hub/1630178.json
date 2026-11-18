@@ -4,19 +4,19 @@
  "team": "Philadelphia",
  "opp": "Orlando",
  "lines": {
-  "AST": {
-   "line": 4.5,
-   "price": 1.64,
-   "book": "sportsbet",
-   "price_over": 1.64,
-   "price_under": 2.15
-  },
   "RA": {
    "line": 8.5,
    "price": 1.83,
    "book": "unibet",
    "price_over": 1.83,
    "price_under": 1.89
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
   },
   "3PM": {
    "line": 2.5,
@@ -25,18 +25,25 @@
    "price_over": 1.96,
    "price_under": 1.72
   },
-  "REB": {
-   "line": 3.5,
-   "price": 1.89,
-   "book": "sportsbet",
-   "price_over": 1.87,
-   "price_under": 1.89
-  },
   "PTS": {
    "line": 24.5,
    "price": 2.0,
    "book": "pointsbetau",
    "price_over": 1.83,
+   "price_under": 2.0
+  },
+  "PRA": {
+   "line": 33.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
+  },
+  "PA": {
+   "line": 29.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
    "price_under": 2.0
   },
   "PR": {
@@ -46,19 +53,12 @@
    "price_over": 1.96,
    "price_under": 1.77
   },
-  "PA": {
-   "line": 29.5,
-   "price": 1.75,
-   "book": "neds",
-   "price_over": 1.75,
-   "price_under": 2.0
-  },
-  "PRA": {
-   "line": 33.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9
+  "REB": {
+   "line": 3.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
   }
  },
  "recent_games": [
