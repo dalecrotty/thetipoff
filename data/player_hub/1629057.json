@@ -4,63 +4,63 @@
  "team": "Portland",
  "projections": {
   "3PM": {
-   "mean": 0.12,
+   "mean": 0.13,
    "floor": 0.0,
-   "ceiling": 0.12
+   "ceiling": 0.13
   },
   "AST": {
-   "mean": 1.16,
+   "mean": 1.39,
    "floor": 0.0,
-   "ceiling": 2.97
+   "ceiling": 2.98
   },
   "BLK": {
-   "mean": 1.38,
+   "mean": 1.48,
    "floor": 0.0,
-   "ceiling": 3.1
+   "ceiling": 3.21
   },
   "PTS": {
-   "mean": 6.32,
-   "floor": 0.26,
-   "ceiling": 13.16
+   "mean": 7.19,
+   "floor": 0.74,
+   "ceiling": 13.84
   },
   "REB": {
-   "mean": 6.36,
-   "floor": 1.77,
-   "ceiling": 10.96
+   "mean": 7.08,
+   "floor": 2.5,
+   "ceiling": 11.68
   },
   "STL": {
-   "mean": 0.64,
+   "mean": 0.69,
    "floor": 0.0,
-   "ceiling": 2.01
+   "ceiling": 2.0
   },
   "TOV": {
-   "mean": 0.79,
-   "floor": 0.01,
-   "ceiling": 2.06
+   "mean": 0.85,
+   "floor": 0.0,
+   "ceiling": 1.99
   },
   "PRA": {
-   "mean": 13.85,
-   "floor": 4.76,
-   "ceiling": 22.67
+   "mean": 15.66,
+   "floor": 6.29,
+   "ceiling": 24.83
   },
   "PR": {
-   "mean": 12.69,
-   "floor": 4.18,
-   "ceiling": 21.31
+   "mean": 14.28,
+   "floor": 5.17,
+   "ceiling": 23.52
   },
   "PA": {
-   "mean": 7.49,
-   "floor": 1.62,
-   "ceiling": 14.27
+   "mean": 8.58,
+   "floor": 1.9,
+   "ceiling": 15.56
   },
   "RA": {
-   "mean": 7.52,
-   "floor": 3.41,
-   "ceiling": 12.25
+   "mean": 8.47,
+   "floor": 4.24,
+   "ceiling": 13.27
   }
  },
  "minutes": {
-  "value": 17,
+  "value": 18,
   "source": "model"
  },
  "splits": {
@@ -228,17 +228,17 @@
  "lines": {
   "PTS": {
    "line": 6.5,
-   "p_over": 0.487,
-   "p_under": 0.513,
+   "p_over": 0.557,
+   "p_under": 0.443,
    "fair_over": 0.507,
    "fair_under": 0.493,
    "price_over": 1.85,
    "price_under": 1.9,
-   "side": "under",
-   "price": 1.9,
+   "side": "over",
+   "price": 1.85,
    "book": "tab",
-   "edge": 0.0197,
-   "tier": null
+   "edge": 0.0502,
+   "tier": "B"
   }
  },
  "lines_us": {},
@@ -2791,6 +2791,13 @@
   }
  ],
  "with_without_tonight": [
+  {
+   "star": "Deni Avdija",
+   "n_without": 13,
+   "PTS": 3.3,
+   "REB": 1.4,
+   "AST": 0.2
+  },
   {
    "star": "Shaedon Sharpe",
    "n_without": 34,
