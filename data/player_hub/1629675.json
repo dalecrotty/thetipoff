@@ -3,7 +3,64 @@
  "player": "Naz Reid",
  "team": "Charlotte",
  "opp": "LA Lakers",
- "lines": {},
+ "lines": {
+  "RA": {
+   "line": 9.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.89
+  },
+  "PA": {
+   "line": 19.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 7.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "PRA": {
+   "line": 26.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.05
+  },
+  "PR": {
+   "line": 24.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PTS": {
+   "line": 17.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.5,
+   "book": "neds",
+   "price_over": 1.5,
+   "price_under": 2.35
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-15",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 17.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
