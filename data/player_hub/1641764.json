@@ -5,11 +5,18 @@
  "opp": "Dallas",
  "lines": {
   "PTS": {
-   "line": 16.5,
-   "price": 1.9,
+   "line": 15.5,
+   "price": 1.8,
    "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.85
+   "price_over": 1.8,
+   "price_under": 1.94
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 2.1,
+   "book": "neds",
+   "price_over": 2.1,
+   "price_under": 1.68
   },
   "AST": {
    "line": 3.5,
@@ -18,19 +25,40 @@
    "price_over": 1.8,
    "price_under": 1.95
   },
-  "REB": {
-   "line": 5.5,
-   "price": 2.05,
-   "book": "neds",
-   "price_over": 2.05,
-   "price_under": 1.7
+  "RA": {
+   "line": 9.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PR": {
+   "line": 23.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PRA": {
+   "line": 27.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "PA": {
+   "line": 22.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
   },
   "3PM": {
    "line": 2.5,
-   "price": 2.05,
-   "book": "neds",
-   "price_over": 2.05,
-   "price_under": 1.65
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 1.72,
+   "price_under": 2.08
   }
  },
  "recent_games": [
@@ -157,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 16.5,
+   "line": 15.5,
    "over": 2,
    "n": 5
   },

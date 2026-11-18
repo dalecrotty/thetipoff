@@ -3,7 +3,22 @@
  "player": "Darryn Peterson",
  "team": "Utah",
  "opp": "LA Lakers",
- "lines": {},
+ "lines": {
+  "3PM": {
+   "line": 2.5,
+   "price": 2.0,
+   "book": "neds",
+   "price_over": 2.0,
+   "price_under": 1.7
+  },
+  "PTS": {
+   "line": 19.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-17",
@@ -126,6 +141,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 19.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
