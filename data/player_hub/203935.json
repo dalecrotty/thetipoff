@@ -4,8 +4,36 @@
  "team": "Houston",
  "opp": "Indiana",
  "lines": {
+  "REB": {
+   "line": 1.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 9.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
   "PTS": {
    "line": 5.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 3.0,
+   "book": "tab",
+   "price_over": 3.0,
+   "price_under": 1.36
+  },
+  "AST": {
+   "line": 1.5,
    "price": 1.85,
    "book": "tab",
    "price_over": 1.85,
@@ -137,6 +165,21 @@
  "hits": {
   "PTS": {
    "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
    "over": 2,
    "n": 5
   }
