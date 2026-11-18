@@ -4,19 +4,54 @@
  "team": "LA Lakers",
  "opp": "Utah",
  "lines": {
+  "PTS": {
+   "line": 14.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.85
+  },
+  "PA": {
+   "line": 16.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "PR": {
+   "line": 25.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.83,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 27.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "RA": {
+   "line": 12.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.78,
+   "book": "unibet",
+   "price_over": 1.78,
+   "price_under": 1.94
+  },
   "REB": {
    "line": 10.5,
-   "price": 1.9,
+   "price": 1.91,
    "book": "neds",
-   "price_over": 1.9,
-   "price_under": 1.83
-  },
-  "PTS": {
-   "line": 13.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.9
+   "price_over": 1.83,
+   "price_under": 1.91
   }
  },
  "recent_games": [
@@ -143,13 +178,18 @@
  ],
  "hits": {
   "PTS": {
-   "line": 13.5,
-   "over": 3,
+   "line": 14.5,
+   "over": 2,
    "n": 5
   },
   "REB": {
    "line": 10.5,
    "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 5,
    "n": 5
   }
  },
