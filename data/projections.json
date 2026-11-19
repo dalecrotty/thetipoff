@@ -8345,7 +8345,7 @@
    "game": "Brooklyn vs Chicago",
    "stat": "AST",
    "line": 2.5,
-   "price": 2.1,
+   "price": 1.71,
    "book": "pointsbetau",
    "price_over": 2.1,
    "price_under": 1.71,
@@ -30953,7 +30953,7 @@
     "price_under": 2.2,
     "l5_over": 0.6,
     "l10_over": 0.4,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -33607,7 +33607,7 @@
    "prior": 0.0,
    "prior_at": "2026-11-18T18:46+00:00",
    "move_reason": "minutes update",
-   "rank": 176
+   "rank": 175
   },
   {
    "player_id": 1630581,
@@ -41607,7 +41607,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 129
+   "rank": 128
   },
   {
    "player_id": 1631199,
@@ -52819,7 +52819,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 146
+   "rank": 145
   },
   {
    "player_id": 203954,
@@ -54577,10 +54577,10 @@
    "game": "Brooklyn vs Chicago",
    "stat": "PRA",
    "line": 11.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87,
    "l5_over": 0.8,
    "l10_over": 0.8,
    "pos": "PF",
@@ -58459,7 +58459,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 145
+   "rank": 144
   },
   {
    "player_id": -779,
@@ -61514,7 +61514,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -65407,7 +65407,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 157
+   "rank": 156
   },
   {
    "player_id": -779,
@@ -68482,7 +68482,7 @@
    "pos": "PF",
    "pos_usual": "PF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -79202,6 +79202,10 @@
   },
   {
    "run_at": "2026-11-19T00:05+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-11-19T00:08+00:00",
    "trigger": "lineups"
   }
  ]
