@@ -4,33 +4,40 @@
  "team": "Detroit",
  "opp": "New Orleans",
  "lines": {
-  "PRA": {
-   "line": 22.5,
-   "price": 1.9,
-   "book": "tab",
-   "price_over": 1.9,
-   "price_under": 1.85
-  },
   "PTS": {
-   "line": 11.5,
-   "price": 1.9,
+   "line": 10.5,
+   "price": 1.87,
    "book": "tab",
-   "price_over": 1.9,
-   "price_under": 1.85
+   "price_over": 1.87,
+   "price_under": 1.87
   },
   "PR": {
    "line": 19.5,
-   "price": 1.88,
-   "book": "unibet",
-   "price_over": 1.88,
+   "price": 1.9,
+   "book": "ladbrokes_au",
+   "price_over": 1.9,
    "price_under": 1.85
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
   },
   "REB": {
    "line": 7.5,
-   "price": 1.82,
-   "book": "unibet",
-   "price_over": 1.82,
-   "price_under": 1.91
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.85,
+   "price_under": 1.9
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 3.7,
+   "book": "tab",
+   "price_over": 3.7,
+   "price_under": 1.25
   }
  },
  "recent_games": [
@@ -164,6 +171,16 @@
   "REB": {
    "line": 7.5,
    "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 0,
    "n": 5
   }
  },
