@@ -4,19 +4,19 @@
  "team": "Detroit",
  "opp": "New Orleans",
  "lines": {
-  "PTS": {
-   "line": 14.5,
-   "price": 1.9,
-   "book": "tab",
-   "price_over": 1.85,
-   "price_under": 1.9
-  },
   "PR": {
    "line": 20.5,
    "price": 1.7,
    "book": "unibet",
    "price_over": 2.05,
    "price_under": 1.7
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85
   },
   "3PM": {
    "line": 1.5,
@@ -28,8 +28,8 @@
   "REB": {
    "line": 6.5,
    "price": 1.74,
-   "book": "pointsbetau",
-   "price_over": 2.05,
+   "book": "unibet",
+   "price_over": 2.0,
    "price_under": 1.74
   }
  },
@@ -157,7 +157,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 14.5,
+   "line": 13.5,
    "over": 1,
    "n": 5
   },

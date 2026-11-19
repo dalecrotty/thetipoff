@@ -6,20 +6,34 @@
  "lines": {
   "RA": {
    "line": 8.5,
-   "price": 1.67,
-   "book": "neds",
-   "price_over": 1.67,
-   "price_under": 2.15
-  },
-  "PRA": {
-   "line": 30.5,
-   "price": 1.73,
-   "book": "neds",
-   "price_over": 1.73,
-   "price_under": 2.02
+   "price": 1.68,
+   "book": "ladbrokes_au",
+   "price_over": 1.68,
+   "price_under": 2.1
   },
   "PA": {
    "line": 25.5,
+   "price": 1.83,
+   "book": "ladbrokes_au",
+   "price_over": 1.83,
+   "price_under": 1.91
+  },
+  "PRA": {
+   "line": 30.5,
+   "price": 1.78,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.98
+  },
+  "PTS": {
+   "line": 21.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 2.0
+  },
+  "PR": {
+   "line": 26.5,
    "price": 1.77,
    "book": "neds",
    "price_over": 1.77,
@@ -31,20 +45,6 @@
    "book": "tab",
    "price_over": 1.75,
    "price_under": 2.0
-  },
-  "PR": {
-   "line": 27.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PTS": {
-   "line": 22.5,
-   "price": 1.92,
-   "book": "sportsbet",
-   "price_over": 1.92,
-   "price_under": 1.84
   },
   "REB": {
    "line": 5.5,
@@ -185,8 +185,8 @@
  ],
  "hits": {
   "PTS": {
-   "line": 22.5,
-   "over": 2,
+   "line": 21.5,
+   "over": 4,
    "n": 5
   },
   "REB": {
