@@ -5,53 +5,60 @@
  "opp": "Utah",
  "lines": {
   "REB": {
-   "line": 4.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
+   "line": 3.5,
+   "price": 1.94,
+   "book": "unibet",
+   "price_over": 1.79,
+   "price_under": 1.94
   },
-  "PR": {
-   "line": 11.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PTS": {
-   "line": 7.5,
-   "price": 1.75,
-   "book": "tab",
-   "price_over": 2.0,
-   "price_under": 1.75
-  },
-  "PRA": {
-   "line": 13.5,
-   "price": 1.8,
+  "AST": {
+   "line": 1.5,
+   "price": 1.95,
    "book": "tab",
    "price_over": 1.95,
    "price_under": 1.8
   },
+  "RA": {
+   "line": 4.5,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "PTS": {
+   "line": 5.5,
+   "price": 1.91,
+   "book": "unibet",
+   "price_over": 1.91,
+   "price_under": 1.82
+  },
   "3PM": {
    "line": 0.5,
-   "price": 2.45,
-   "book": "pointsbetau",
-   "price_over": 1.53,
-   "price_under": 2.45
-  },
-  "RA": {
-   "line": 6.5,
-   "price": 1.68,
-   "book": "sportsbet",
-   "price_over": 2.1,
-   "price_under": 1.68
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.85,
+   "price_under": 1.9
   },
   "PA": {
-   "line": 8.5,
-   "price": 1.91,
+   "line": 7.5,
+   "price": 1.96,
    "book": "sportsbet",
-   "price_over": 1.85,
-   "price_under": 1.91
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PR": {
+   "line": 9.5,
+   "price": 1.88,
+   "book": "ladbrokes_au",
+   "price_over": 1.87,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 11.5,
+   "price": 1.8,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
   }
  },
  "recent_games": [
@@ -178,13 +185,18 @@
  ],
  "hits": {
   "PTS": {
-   "line": 7.5,
+   "line": 5.5,
    "over": 1,
    "n": 5
   },
   "REB": {
-   "line": 4.5,
+   "line": 3.5,
    "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 5,
    "n": 5
   },
   "3PM": {
