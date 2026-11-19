@@ -4,34 +4,34 @@
  "team": "Denver",
  "projections": {
   "3PM": {
-   "mean": 0.94,
-   "floor": 0.05,
-   "ceiling": 2.19
+   "mean": 0.93,
+   "floor": 0.04,
+   "ceiling": 2.18
   },
   "AST": {
-   "mean": 0.84,
+   "mean": 0.83,
    "floor": 0.0,
-   "ceiling": 2.2
+   "ceiling": 2.19
   },
   "BLK": {
-   "mean": 0.53,
+   "mean": 0.52,
    "floor": 0.0,
-   "ceiling": 1.95
+   "ceiling": 1.94
   },
   "PTS": {
-   "mean": 4.39,
+   "mean": 4.32,
    "floor": 0.0,
-   "ceiling": 10.11
+   "ceiling": 10.04
   },
   "REB": {
-   "mean": 2.64,
-   "floor": 0.38,
-   "ceiling": 5.07
+   "mean": 2.59,
+   "floor": 0.33,
+   "ceiling": 5.03
   },
   "STL": {
-   "mean": 0.45,
+   "mean": 0.44,
    "floor": 0.0,
-   "ceiling": 1.25
+   "ceiling": 1.24
   },
   "TOV": {
    "mean": 0.42,
@@ -39,24 +39,24 @@
    "ceiling": 1.82
   },
   "PRA": {
-   "mean": 7.87,
-   "floor": 0.15,
-   "ceiling": 16.59
+   "mean": 7.75,
+   "floor": 0.03,
+   "ceiling": 16.46
   },
   "PR": {
-   "mean": 7.03,
-   "floor": 0.26,
-   "ceiling": 15.14
+   "mean": 6.92,
+   "floor": 0.15,
+   "ceiling": 15.03
   },
   "PA": {
-   "mean": 5.24,
+   "mean": 5.15,
    "floor": 0.0,
-   "ceiling": 12.02
+   "ceiling": 11.94
   },
   "RA": {
-   "mean": 3.48,
-   "floor": 0.73,
-   "ceiling": 6.79
+   "mean": 3.43,
+   "floor": 0.68,
+   "ceiling": 6.73
   }
  },
  "minutes": {
@@ -228,36 +228,22 @@
  "lines": {
   "PTS": {
    "line": 3.5,
-   "p_over": 0.603,
-   "p_under": 0.397,
-   "fair_over": 0.492,
-   "fair_under": 0.508,
-   "price_over": 1.89,
-   "price_under": 1.83,
+   "p_over": 0.596,
+   "p_under": 0.404,
+   "fair_over": 0.522,
+   "fair_under": 0.478,
+   "price_over": 1.83,
+   "price_under": 2.0,
    "side": "over",
-   "price": 1.89,
-   "book": "unibet",
-   "edge": 0.1106,
-   "tier": "A"
-  },
-  "PR": {
-   "line": 5.5,
-   "p_over": 0.614,
-   "p_under": 0.386,
-   "fair_over": 0.547,
-   "fair_under": 0.453,
-   "price_over": 1.72,
-   "price_under": 2.08,
-   "side": "over",
-   "price": 1.72,
-   "book": "sportsbet",
-   "edge": 0.0665,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.074,
    "tier": "A"
   },
   "REB": {
    "line": 2.5,
-   "p_over": 0.477,
-   "p_under": 0.523,
+   "p_over": 0.468,
+   "p_under": 0.532,
    "fair_over": 0.416,
    "fair_under": 0.584,
    "price_over": 2.25,
@@ -265,8 +251,22 @@
    "side": "over",
    "price": 2.25,
    "book": "neds",
-   "edge": 0.0618,
-   "tier": "A"
+   "edge": 0.0523,
+   "tier": "B"
+  },
+  "PR": {
+   "line": 5.5,
+   "p_over": 0.606,
+   "p_under": 0.394,
+   "fair_over": 0.556,
+   "fair_under": 0.444,
+   "price_over": 1.68,
+   "price_under": 2.1,
+   "side": "over",
+   "price": 1.68,
+   "book": "sportsbet",
+   "edge": 0.0503,
+   "tier": "B"
   }
  },
  "lines_us": {},

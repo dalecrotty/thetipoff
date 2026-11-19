@@ -4,6 +4,13 @@
  "team": "Phoenix",
  "opp": "Sacramento",
  "lines": {
+  "AST": {
+   "line": 1.5,
+   "price": 1.57,
+   "book": "pointsbetau",
+   "price_over": 1.57,
+   "price_under": 2.35
+  },
   "3PM": {
    "line": 1.5,
    "price": 1.98,
@@ -11,18 +18,18 @@
    "price_over": 1.98,
    "price_under": 1.7
   },
-  "PA": {
-   "line": 10.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.87
-  },
   "RA": {
    "line": 6.5,
-   "price": 1.89,
+   "price": 1.9,
    "book": "sportsbet",
-   "price_over": 1.89,
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PA": {
+   "line": 10.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
    "price_under": 1.87
   },
   "PTS": {
@@ -32,24 +39,17 @@
    "price_over": 1.94,
    "price_under": 1.79
   },
-  "AST": {
-   "line": 2.5,
-   "price": 2.3,
-   "book": "unibet",
-   "price_over": 2.3,
-   "price_under": 1.56
-  },
   "PRA": {
    "line": 15.5,
-   "price": 1.92,
-   "book": "sportsbet",
-   "price_over": 1.92,
-   "price_under": 1.84
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
   },
   "PR": {
    "line": 12.5,
    "price": 1.75,
-   "book": "neds",
+   "book": "ladbrokes_au",
    "price_over": 1.75,
    "price_under": 2.0
   },
@@ -195,8 +195,8 @@
    "n": 5
   },
   "AST": {
-   "line": 2.5,
-   "over": 1,
+   "line": 1.5,
+   "over": 4,
    "n": 5
   },
   "3PM": {

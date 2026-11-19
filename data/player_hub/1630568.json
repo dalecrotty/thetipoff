@@ -4,14 +4,14 @@
  "team": "Boston",
  "projections": {
   "3PM": {
-   "mean": 0.64,
-   "floor": 0.02,
-   "ceiling": 1.97
+   "mean": 0.63,
+   "floor": 0.01,
+   "ceiling": 1.96
   },
   "AST": {
-   "mean": 1.34,
-   "floor": 0.08,
-   "ceiling": 3.14
+   "mean": 1.31,
+   "floor": 0.05,
+   "ceiling": 3.12
   },
   "BLK": {
    "mean": 0.29,
@@ -19,44 +19,44 @@
    "ceiling": 1.02
   },
   "PTS": {
-   "mean": 4.72,
+   "mean": 4.63,
    "floor": 0.0,
-   "ceiling": 10.44
+   "ceiling": 10.35
   },
   "REB": {
-   "mean": 2.35,
-   "floor": 0.09,
-   "ceiling": 4.79
+   "mean": 2.31,
+   "floor": 0.05,
+   "ceiling": 4.75
   },
   "STL": {
    "mean": 0.18,
    "floor": 0.0,
-   "ceiling": 0.98
+   "ceiling": 0.97
   },
   "TOV": {
-   "mean": 0.39,
+   "mean": 0.38,
    "floor": 0.0,
-   "ceiling": 1.79
+   "ceiling": 1.78
   },
   "PRA": {
-   "mean": 8.42,
-   "floor": 0.7,
-   "ceiling": 17.13
+   "mean": 8.25,
+   "floor": 0.53,
+   "ceiling": 16.97
   },
   "PR": {
-   "mean": 7.08,
-   "floor": 0.31,
-   "ceiling": 15.19
+   "mean": 6.94,
+   "floor": 0.17,
+   "ceiling": 15.06
   },
   "PA": {
-   "mean": 6.06,
-   "floor": 0.2,
-   "ceiling": 12.85
+   "mean": 5.95,
+   "floor": 0.08,
+   "ceiling": 12.73
   },
   "RA": {
-   "mean": 3.69,
-   "floor": 0.95,
-   "ceiling": 7.0
+   "mean": 3.62,
+   "floor": 0.87,
+   "ceiling": 6.93
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 5.5,
-   "p_over": 0.43,
-   "p_under": 0.57,
+   "p_over": 0.422,
+   "p_under": 0.578,
    "fair_over": 0.467,
    "fair_under": 0.533,
    "price_over": 2.0,
@@ -237,7 +237,7 @@
    "side": "under",
    "price": 1.75,
    "book": "tab",
-   "edge": 0.0364,
+   "edge": 0.0446,
    "tier": "B"
   }
  },

@@ -3,7 +3,36 @@
  "player": "Ja'Kobe Walter",
  "team": "Toronto",
  "opp": "Washington",
- "lines": {},
+ "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.67,
+   "book": "neds",
+   "price_over": 2.15,
+   "price_under": 1.67
+  },
+  "PA": {
+   "line": 16.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 20.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "RA": {
+   "line": 6.5,
+   "price": 2.02,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.02
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-17",
@@ -126,6 +155,12 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "AST": {
+   "line": 2.5,
+   "over": 0,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
