@@ -4,6 +4,13 @@
  "team": "Golden State",
  "opp": "Dallas",
  "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 1.72,
+   "price_under": 2.08
+  },
   "REB": {
    "line": 3.5,
    "price": 2.04,
@@ -18,33 +25,26 @@
    "price_over": 1.57,
    "price_under": 2.3
   },
+  "PA": {
+   "line": 14.5,
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
   "PR": {
    "line": 14.5,
    "price": 1.93,
    "book": "unibet",
    "price_over": 1.93,
    "price_under": 1.8
-  },
-  "PRA": {
-   "line": 17.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PTS": {
-   "line": 10.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.83,
-   "price_under": 1.89
-  },
-  "PA": {
-   "line": 13.5,
-   "price": 1.72,
-   "book": "ladbrokes_au",
-   "price_over": 1.72,
-   "price_under": 2.05
   },
   "3PM": {
    "line": 1.5,
@@ -53,12 +53,12 @@
    "price_over": 1.76,
    "price_under": 1.97
   },
-  "AST": {
-   "line": 2.5,
-   "price": 1.72,
-   "book": "sportsbet",
-   "price_over": 1.72,
-   "price_under": 2.08
+  "PRA": {
+   "line": 17.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
   }
  },
  "recent_games": [
@@ -185,8 +185,8 @@
  ],
  "hits": {
   "PTS": {
-   "line": 10.5,
-   "over": 2,
+   "line": 11.5,
+   "over": 1,
    "n": 5
   },
   "REB": {
