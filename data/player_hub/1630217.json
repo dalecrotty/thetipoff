@@ -3,7 +3,57 @@
  "player": "Desmond Bane",
  "team": "Orlando",
  "opp": "Philadelphia",
- "lines": {},
+ "lines": {
+  "RA": {
+   "line": 6.5,
+   "price": 1.55,
+   "book": "neds",
+   "price_over": 1.55,
+   "price_under": 2.35
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 1.75,
+   "book": "tab",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.71,
+   "book": "pointsbetau",
+   "price_over": 1.71,
+   "price_under": 2.1
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "PRA": {
+   "line": 25.5,
+   "price": 1.77,
+   "book": "neds",
+   "price_over": 1.77,
+   "price_under": 1.98
+  },
+  "PA": {
+   "line": 21.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
+  "PR": {
+   "line": 22.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-16",
@@ -126,6 +176,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "REB": {
+   "line": 4.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
