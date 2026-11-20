@@ -1,6 +1,6 @@
 {
  "calibration": {
-  "asof": "2026-11-19",
+  "asof": "2026-11-20",
   "season_start": "2026-10-20",
   "markets": [
    {
@@ -8,28 +8,28 @@
     "label": "Points",
     "windows": {
      "7d": {
-      "n": 1151,
-      "mae": 4.34,
-      "bias": -0.21,
-      "coverage": 0.821,
-      "below": 0.0834,
-      "above": 0.0956
+      "n": 1150,
+      "mae": 4.31,
+      "bias": -0.17,
+      "coverage": 0.82,
+      "below": 0.0852,
+      "above": 0.0948
      },
      "30d": {
-      "n": 4957,
-      "mae": 4.33,
-      "bias": 0.19,
-      "coverage": 0.8257,
-      "below": 0.088,
-      "above": 0.0863
+      "n": 4980,
+      "mae": 4.32,
+      "bias": 0.18,
+      "coverage": 0.8263,
+      "below": 0.0871,
+      "above": 0.0865
      },
      "season": {
-      "n": 4957,
+      "n": 5046,
       "mae": 4.33,
       "bias": 0.19,
-      "coverage": 0.8257,
-      "below": 0.088,
-      "above": 0.0863
+      "coverage": 0.8256,
+      "below": 0.0878,
+      "above": 0.0866
      }
     }
    },
@@ -38,27 +38,27 @@
     "label": "Rebounds",
     "windows": {
      "7d": {
-      "n": 1151,
+      "n": 1150,
       "mae": 1.87,
-      "bias": -0.07,
-      "coverage": 0.788,
-      "below": 0.1017,
-      "above": 0.1103
+      "bias": -0.02,
+      "coverage": 0.7843,
+      "below": 0.1035,
+      "above": 0.1122
      },
      "30d": {
-      "n": 4957,
+      "n": 4980,
       "mae": 1.8,
-      "bias": -0.03,
-      "coverage": 0.8067,
-      "below": 0.094,
-      "above": 0.0993
+      "bias": -0.02,
+      "coverage": 0.8062,
+      "below": 0.0944,
+      "above": 0.0994
      },
      "season": {
-      "n": 4957,
+      "n": 5046,
       "mae": 1.8,
-      "bias": -0.03,
-      "coverage": 0.8067,
-      "below": 0.094,
+      "bias": -0.02,
+      "coverage": 0.8062,
+      "below": 0.0945,
       "above": 0.0993
      }
     }
@@ -68,28 +68,28 @@
     "label": "Assists",
     "windows": {
      "7d": {
-      "n": 1151,
-      "mae": 1.29,
-      "bias": -0.05,
-      "coverage": 0.8028,
-      "below": 0.0869,
-      "above": 0.1103
+      "n": 1150,
+      "mae": 1.27,
+      "bias": -0.03,
+      "coverage": 0.8113,
+      "below": 0.0835,
+      "above": 0.1052
      },
      "30d": {
-      "n": 4957,
+      "n": 4980,
       "mae": 1.27,
       "bias": 0.01,
-      "coverage": 0.8088,
-      "below": 0.0898,
-      "above": 0.1015
+      "coverage": 0.8098,
+      "below": 0.089,
+      "above": 0.1012
      },
      "season": {
-      "n": 4957,
+      "n": 5046,
       "mae": 1.27,
       "bias": 0.01,
-      "coverage": 0.8088,
-      "below": 0.0898,
-      "above": 0.1015
+      "coverage": 0.8099,
+      "below": 0.0892,
+      "above": 0.1009
      }
     }
    },
@@ -98,35 +98,35 @@
     "label": "Threes",
     "windows": {
      "7d": {
-      "n": 1151,
-      "mae": 0.88,
-      "bias": -0.07,
-      "coverage": 0.7941,
-      "below": 0.0834,
-      "above": 0.1225
+      "n": 1150,
+      "mae": 0.89,
+      "bias": -0.05,
+      "coverage": 0.8,
+      "below": 0.0826,
+      "above": 0.1174
      },
      "30d": {
-      "n": 4957,
+      "n": 4980,
       "mae": 0.85,
-      "bias": -0.05,
-      "coverage": 0.785,
+      "bias": -0.04,
+      "coverage": 0.7855,
       "below": 0.097,
-      "above": 0.118
+      "above": 0.1175
      },
      "season": {
-      "n": 4957,
+      "n": 5046,
       "mae": 0.85,
-      "bias": -0.05,
-      "coverage": 0.785,
-      "below": 0.097,
-      "above": 0.118
+      "bias": -0.04,
+      "coverage": 0.7856,
+      "below": 0.0969,
+      "above": 0.1175
      }
     }
    }
   ]
  },
  "tips": {
-  "n_tips": 30,
+  "n_tips": 31,
   "n_clv": 26,
   "avg_clv": 0.05482826862475875,
   "beat_close": 0.8846153846153846,
