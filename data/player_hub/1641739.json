@@ -4,13 +4,6 @@
  "team": "Portland",
  "opp": "Milwaukee",
  "lines": {
-  "3PM": {
-   "line": 2.5,
-   "price": 2.1,
-   "book": "pointsbetau",
-   "price_over": 2.1,
-   "price_under": 1.71
-  },
   "PR": {
    "line": 16.5,
    "price": 1.75,
@@ -25,6 +18,13 @@
    "price_over": 1.87,
    "price_under": 1.95
   },
+  "PRA": {
+   "line": 19.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
   "PA": {
    "line": 14.5,
    "price": 1.87,
@@ -32,12 +32,12 @@
    "price_over": 1.87,
    "price_under": 1.87
   },
-  "PRA": {
-   "line": 19.5,
-   "price": 1.95,
+  "3PM": {
+   "line": 2.5,
+   "price": 2.1,
    "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8
+   "price_over": 2.1,
+   "price_under": 1.71
   },
   "RA": {
    "line": 6.5,
@@ -48,10 +48,10 @@
   },
   "REB": {
    "line": 4.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
+   "price": 1.95,
+   "book": "neds",
+   "price_over": 1.95,
+   "price_under": 1.8
   }
  },
  "recent_games": [
