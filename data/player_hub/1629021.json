@@ -4,33 +4,61 @@
  "team": "Brooklyn",
  "opp": "Orlando",
  "lines": {
-  "3PM": {
-   "line": 0.5,
-   "price": 1.94,
-   "book": "unibet",
-   "price_over": 1.94,
-   "price_under": 1.79
-  },
   "PTS": {
    "line": 7.5,
-   "price": 1.94,
+   "p_over": 0.599,
+   "p_under": 0.401,
+   "fair_over": 0.467,
+   "fair_under": 0.533,
+   "price_over": 2.0,
+   "price_under": 1.75,
+   "side": "over",
+   "price": 2.0,
    "book": "unibet",
-   "price_over": 1.94,
-   "price_under": 1.78
+   "edge": 0.1327,
+   "tier": "A"
+  },
+  "3PM": {
+   "line": 0.5,
+   "p_over": 0.604,
+   "p_under": 0.396,
+   "fair_over": 0.475,
+   "fair_under": 0.525,
+   "price_over": 1.96,
+   "price_under": 1.77,
+   "side": "over",
+   "price": 1.96,
+   "book": "unibet",
+   "edge": 0.1296,
+   "tier": "A"
   },
   "PR": {
    "line": 11.5,
-   "price": 2.02,
+   "p_over": 0.559,
+   "p_under": 0.441,
+   "fair_over": 0.433,
+   "fair_under": 0.567,
+   "price_over": 2.15,
+   "price_under": 1.64,
+   "side": "over",
+   "price": 2.15,
    "book": "unibet",
-   "price_over": 2.02,
-   "price_under": 1.72
+   "edge": 0.126,
+   "tier": "A"
   },
   "REB": {
    "line": 3.5,
-   "price": 2.0,
+   "p_over": 0.47,
+   "p_under": 0.53,
+   "fair_over": 0.433,
+   "fair_under": 0.567,
+   "price_over": 2.15,
+   "price_under": 1.64,
+   "side": "over",
+   "price": 2.15,
    "book": "unibet",
-   "price_over": 2.0,
-   "price_under": 1.75
+   "edge": 0.0374,
+   "tier": "B"
   }
  },
  "recent_games": [

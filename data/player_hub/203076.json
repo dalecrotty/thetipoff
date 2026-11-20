@@ -2,341 +2,63 @@
  "player_id": 203076,
  "player": "Anthony Davis",
  "team": "Washington",
- "projections": {
-  "3PM": {
-   "mean": 0.71,
-   "floor": 0.0,
-   "ceiling": 1.97
-  },
-  "AST": {
-   "mean": 2.54,
-   "floor": 0.13,
-   "ceiling": 4.84
-  },
-  "BLK": {
-   "mean": 1.36,
-   "floor": 0.0,
-   "ceiling": 3.09
-  },
-  "PTS": {
-   "mean": 24.62,
-   "floor": 14.19,
-   "ceiling": 34.8
-  },
-  "REB": {
-   "mean": 10.57,
-   "floor": 6.11,
-   "ceiling": 15.28
-  },
-  "STL": {
-   "mean": 1.19,
-   "floor": 0.0,
-   "ceiling": 2.91
-  },
-  "TOV": {
-   "mean": 2.08,
-   "floor": 0.25,
-   "ceiling": 4.11
-  },
-  "PRA": {
-   "mean": 37.74,
-   "floor": 25.48,
-   "ceiling": 49.24
-  },
-  "PR": {
-   "mean": 35.2,
-   "floor": 23.54,
-   "ceiling": 46.12
-  },
-  "PA": {
-   "mean": 27.16,
-   "floor": 16.28,
-   "ceiling": 38.11
-  },
-  "RA": {
-   "mean": 13.11,
-   "floor": 7.05,
-   "ceiling": 18.67
-  }
- },
- "minutes": {
-  "value": 34,
-  "source": "model"
- },
- "splits": {
-  "season": {
-   "games": 85,
-   "min_pg": 33.0,
-   "PTS": {
-    "pg": 23.67,
-    "pm": 0.717
-   },
-   "REB": {
-    "pg": 11.2,
-    "pm": 0.339
-   },
-   "AST": {
-    "pg": 3.12,
-    "pm": 0.094
-   },
-   "3PM": {
-    "pg": 0.66,
-    "pm": 0.02
-   },
-   "STL": {
-    "pg": 1.15,
-    "pm": 0.035
-   },
-   "BLK": {
-    "pg": 1.88,
-    "pm": 0.057
-   },
-   "TOV": {
-    "pg": 2.14,
-    "pm": 0.065
-   }
-  },
-  "l10": {
-   "games": 10,
-   "min_pg": 34.4,
-   "PTS": {
-    "pg": 25.3,
-    "pm": 0.735
-   },
-   "REB": {
-    "pg": 10.4,
-    "pm": 0.302
-   },
-   "AST": {
-    "pg": 2.0,
-    "pm": 0.058
-   },
-   "3PM": {
-    "pg": 0.7,
-    "pm": 0.02
-   },
-   "STL": {
-    "pg": 1.2,
-    "pm": 0.035
-   },
-   "BLK": {
-    "pg": 1.4,
-    "pm": 0.041
-   },
-   "TOV": {
-    "pg": 1.8,
-    "pm": 0.052
-   }
-  },
-  "l5": {
-   "games": 5,
-   "min_pg": 35.6,
-   "PTS": {
-    "pg": 22.6,
-    "pm": 0.635
-   },
-   "REB": {
-    "pg": 10.8,
-    "pm": 0.303
-   },
-   "AST": {
-    "pg": 2.2,
-    "pm": 0.062
-   },
-   "3PM": {
-    "pg": 0.4,
-    "pm": 0.011
-   },
-   "STL": {
-    "pg": 1.0,
-    "pm": 0.028
-   },
-   "BLK": {
-    "pg": 1.6,
-    "pm": 0.045
-   },
-   "TOV": {
-    "pg": 1.8,
-    "pm": 0.051
-   }
-  },
-  "home": {
-   "games": 44,
-   "min_pg": 33.7,
-   "PTS": {
-    "pg": 24.41,
-    "pm": 0.724
-   },
-   "REB": {
-    "pg": 11.43,
-    "pm": 0.339
-   },
-   "AST": {
-    "pg": 3.45,
-    "pm": 0.102
-   },
-   "3PM": {
-    "pg": 0.73,
-    "pm": 0.022
-   },
-   "STL": {
-    "pg": 1.27,
-    "pm": 0.038
-   },
-   "BLK": {
-    "pg": 2.2,
-    "pm": 0.065
-   },
-   "TOV": {
-    "pg": 2.02,
-    "pm": 0.06
-   }
-  },
-  "away": {
-   "games": 41,
-   "min_pg": 32.3,
-   "PTS": {
-    "pg": 22.88,
-    "pm": 0.708
-   },
-   "REB": {
-    "pg": 10.95,
-    "pm": 0.339
-   },
-   "AST": {
-    "pg": 2.76,
-    "pm": 0.085
-   },
-   "3PM": {
-    "pg": 0.59,
-    "pm": 0.018
-   },
-   "STL": {
-    "pg": 1.02,
-    "pm": 0.032
-   },
-   "BLK": {
-    "pg": 1.54,
-    "pm": 0.048
-   },
-   "TOV": {
-    "pg": 2.27,
-    "pm": 0.07
-   }
-  }
- },
+ "opp": "Chicago",
  "lines": {
   "AST": {
    "line": 2.5,
-   "p_over": 0.454,
-   "p_under": 0.546,
-   "fair_over": 0.428,
-   "fair_under": 0.572,
-   "price_over": 2.18,
-   "price_under": 1.63,
-   "side": "over",
    "price": 2.18,
    "book": "unibet",
-   "edge": 0.0266,
-   "tier": null
+   "price_over": 2.18,
+   "price_under": 1.63
   },
   "RA": {
    "line": 12.5,
-   "p_over": 0.552,
-   "p_under": 0.448,
-   "fair_over": 0.513,
-   "fair_under": 0.487,
-   "price_over": 1.82,
-   "price_under": 1.92,
-   "side": "over",
-   "price": 1.82,
-   "book": "ladbrokes_au",
-   "edge": 0.0383,
-   "tier": "B"
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.87
   },
   "REB": {
    "line": 10.5,
-   "p_over": 0.468,
-   "p_under": 0.532,
-   "fair_over": 0.504,
-   "fair_under": 0.496,
-   "price_over": 1.85,
-   "price_under": 1.88,
-   "side": "under",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0356,
-   "tier": "B"
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "PTS": {
+   "line": 23.5,
+   "price": 1.8,
+   "book": "tab",
+   "price_over": 1.8,
+   "price_under": 1.95
   },
   "PA": {
    "line": 26.5,
-   "p_over": 0.531,
-   "p_under": 0.469,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
-   "side": "over",
    "price": 1.87,
-   "book": "neds",
-   "edge": 0.031,
-   "tier": "B"
-  },
-  "PTS": {
-   "line": 24.5,
-   "p_over": 0.506,
-   "p_under": 0.494,
-   "fair_over": 0.48,
-   "fair_under": 0.52,
-   "price_over": 1.95,
-   "price_under": 1.8,
-   "side": "over",
-   "price": 1.95,
-   "book": "tab",
-   "edge": 0.0259,
-   "tier": null
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
   },
   "PRA": {
    "line": 36.5,
-   "p_over": 0.551,
-   "p_under": 0.449,
-   "fair_over": 0.533,
-   "fair_under": 0.467,
-   "price_over": 1.75,
-   "price_under": 2.0,
-   "side": "over",
-   "price": 1.75,
+   "price": 1.77,
    "book": "neds",
-   "edge": 0.0181,
-   "tier": null
+   "price_over": 1.77,
+   "price_under": 1.98
   },
   "3PM": {
    "line": 0.5,
-   "p_over": 0.497,
-   "p_under": 0.503,
-   "fair_over": 0.507,
-   "fair_under": 0.493,
-   "price_over": 1.83,
-   "price_under": 1.88,
-   "side": "under",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0098,
-   "tier": null
+   "price_over": 1.83,
+   "price_under": 1.88
   },
   "PR": {
    "line": 35.5,
-   "p_over": 0.486,
-   "p_under": 0.514,
-   "fair_over": 0.491,
-   "fair_under": 0.509,
-   "price_over": 1.9,
-   "price_under": 1.83,
-   "side": "under",
-   "price": 1.83,
-   "book": "pointsbetau",
-   "edge": 0.0047,
-   "tier": null
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
   }
  },
  "lines_us": {},
@@ -2624,6 +2346,27 @@
    "phase": "regular"
   }
  ],
- "with_without_tonight": [],
- "opp": "Chicago"
+ "hits": {
+  "PTS": {
+   "line": 23.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 10.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 1,
+   "n": 5
+  }
+ },
+ "members": "https://thedropcoverage.com/api.html#members"
 }

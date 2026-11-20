@@ -2,348 +2,63 @@
  "player_id": 1626181,
  "player": "Norman Powell",
  "team": "Chicago",
- "projections": {
-  "3PM": {
-   "mean": 2.63,
-   "floor": 0.42,
-   "ceiling": 5.13
-  },
-  "AST": {
-   "mean": 3.18,
-   "floor": 0.9,
-   "ceiling": 5.9
-  },
-  "BLK": {
-   "mean": 0.19,
-   "floor": 0.0,
-   "ceiling": 0.98
-  },
-  "PTS": {
-   "mean": 23.67,
-   "floor": 13.24,
-   "ceiling": 33.84
-  },
-  "REB": {
-   "mean": 3.38,
-   "floor": 0.92,
-   "ceiling": 6.15
-  },
-  "STL": {
-   "mean": 1.33,
-   "floor": 0.03,
-   "ceiling": 3.05
-  },
-  "TOV": {
-   "mean": 2.18,
-   "floor": 0.58,
-   "ceiling": 4.01
-  },
-  "PRA": {
-   "mean": 30.23,
-   "floor": 19.59,
-   "ceiling": 41.86
-  },
-  "PR": {
-   "mean": 27.05,
-   "floor": 17.05,
-   "ceiling": 37.77
-  },
-  "PA": {
-   "mean": 26.85,
-   "floor": 15.97,
-   "ceiling": 37.8
-  },
-  "RA": {
-   "mean": 6.56,
-   "floor": 2.27,
-   "ceiling": 11.02
-  }
- },
- "minutes": {
-  "value": 31,
-  "source": "model"
- },
- "splits": {
-  "season": {
-   "games": 131,
-   "min_pg": 30.9,
-   "PTS": {
-    "pg": 21.63,
-    "pm": 0.7
-   },
-   "REB": {
-    "pg": 3.27,
-    "pm": 0.106
-   },
-   "AST": {
-    "pg": 2.27,
-    "pm": 0.073
-   },
-   "3PM": {
-    "pg": 2.79,
-    "pm": 0.09
-   },
-   "STL": {
-    "pg": 1.17,
-    "pm": 0.038
-   },
-   "BLK": {
-    "pg": 0.19,
-    "pm": 0.006
-   },
-   "TOV": {
-    "pg": 1.88,
-    "pm": 0.061
-   }
-  },
-  "l10": {
-   "games": 10,
-   "min_pg": 29.6,
-   "PTS": {
-    "pg": 21.5,
-    "pm": 0.726
-   },
-   "REB": {
-    "pg": 2.5,
-    "pm": 0.084
-   },
-   "AST": {
-    "pg": 2.7,
-    "pm": 0.091
-   },
-   "3PM": {
-    "pg": 2.5,
-    "pm": 0.084
-   },
-   "STL": {
-    "pg": 1.5,
-    "pm": 0.051
-   },
-   "BLK": {
-    "pg": 0.2,
-    "pm": 0.007
-   },
-   "TOV": {
-    "pg": 2.3,
-    "pm": 0.078
-   }
-  },
-  "l5": {
-   "games": 5,
-   "min_pg": 28.4,
-   "PTS": {
-    "pg": 22.6,
-    "pm": 0.796
-   },
-   "REB": {
-    "pg": 3.0,
-    "pm": 0.106
-   },
-   "AST": {
-    "pg": 3.4,
-    "pm": 0.12
-   },
-   "3PM": {
-    "pg": 2.4,
-    "pm": 0.085
-   },
-   "STL": {
-    "pg": 0.8,
-    "pm": 0.028
-   },
-   "BLK": {
-    "pg": 0.4,
-    "pm": 0.014
-   },
-   "TOV": {
-    "pg": 2.6,
-    "pm": 0.092
-   }
-  },
-  "home": {
-   "games": 62,
-   "min_pg": 31.3,
-   "PTS": {
-    "pg": 22.4,
-    "pm": 0.715
-   },
-   "REB": {
-    "pg": 2.89,
-    "pm": 0.092
-   },
-   "AST": {
-    "pg": 2.47,
-    "pm": 0.079
-   },
-   "3PM": {
-    "pg": 2.89,
-    "pm": 0.092
-   },
-   "STL": {
-    "pg": 1.23,
-    "pm": 0.039
-   },
-   "BLK": {
-    "pg": 0.23,
-    "pm": 0.007
-   },
-   "TOV": {
-    "pg": 1.92,
-    "pm": 0.061
-   }
-  },
-  "away": {
-   "games": 69,
-   "min_pg": 30.5,
-   "PTS": {
-    "pg": 20.93,
-    "pm": 0.687
-   },
-   "REB": {
-    "pg": 3.62,
-    "pm": 0.119
-   },
-   "AST": {
-    "pg": 2.09,
-    "pm": 0.068
-   },
-   "3PM": {
-    "pg": 2.7,
-    "pm": 0.088
-   },
-   "STL": {
-    "pg": 1.12,
-    "pm": 0.037
-   },
-   "BLK": {
-    "pg": 0.16,
-    "pm": 0.005
-   },
-   "TOV": {
-    "pg": 1.84,
-    "pm": 0.06
-   }
-  }
- },
+ "opp": "Washington",
  "lines": {
   "3PM": {
    "line": 2.5,
-   "p_over": 0.469,
-   "p_under": 0.531,
-   "fair_over": 0.557,
-   "fair_under": 0.443,
-   "price_over": 1.67,
-   "price_under": 2.1,
-   "side": "under",
    "price": 2.1,
    "book": "unibet",
-   "edge": 0.0884,
-   "tier": "A"
+   "price_over": 1.67,
+   "price_under": 2.1
   },
   "AST": {
    "line": 2.5,
-   "p_over": 0.592,
-   "p_under": 0.408,
-   "fair_over": 0.509,
-   "fair_under": 0.491,
-   "price_over": 1.85,
-   "price_under": 1.92,
-   "side": "over",
-   "price": 1.85,
-   "book": "sportsbet",
-   "edge": 0.0824,
-   "tier": "A"
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
   },
   "RA": {
    "line": 5.5,
-   "p_over": 0.624,
-   "p_under": 0.376,
-   "fair_over": 0.553,
-   "fair_under": 0.447,
-   "price_over": 1.7,
-   "price_under": 2.1,
-   "side": "over",
    "price": 1.7,
-   "book": "ladbrokes_au",
-   "edge": 0.0716,
-   "tier": "A"
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 2.2,
    "book": "neds",
-   "price_over": 2.2,
-   "price_under": 1.64
-  },
-  "PA": {
-   "line": 25.5,
-   "p_over": 0.563,
-   "p_under": 0.437,
-   "fair_over": 0.528,
-   "fair_under": 0.472,
-   "price_over": 1.77,
-   "price_under": 1.98,
-   "side": "over",
-   "price": 1.77,
-   "book": "neds",
-   "edge": 0.0353,
-   "tier": "B"
+   "price_over": 1.7,
+   "price_under": 2.1
   },
   "PRA": {
    "line": 28.5,
-   "p_over": 0.572,
-   "p_under": 0.428,
-   "fair_over": 0.542,
-   "fair_under": 0.458,
-   "price_over": 1.73,
-   "price_under": 2.05,
-   "side": "over",
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 1.7,
+   "price_under": 2.05
+  },
+  "PA": {
+   "line": 25.5,
    "price": 1.73,
    "book": "neds",
-   "edge": 0.0295,
-   "tier": null
-  },
-  "PR": {
-   "line": 26.5,
-   "p_over": 0.524,
-   "p_under": 0.476,
-   "fair_over": 0.507,
-   "fair_under": 0.493,
-   "price_over": 1.85,
-   "price_under": 1.9,
-   "side": "over",
-   "price": 1.85,
-   "book": "neds",
-   "edge": 0.0174,
-   "tier": null
+   "price_over": 1.73,
+   "price_under": 2.02
   },
   "REB": {
    "line": 3.5,
-   "p_over": 0.428,
-   "p_under": 0.572,
-   "fair_over": 0.443,
-   "fair_under": 0.557,
-   "price_over": 2.1,
-   "price_under": 1.67,
-   "side": "under",
    "price": 1.67,
    "book": "unibet",
-   "edge": 0.0153,
-   "tier": null
+   "price_over": 2.1,
+   "price_under": 1.67
   },
   "PTS": {
    "line": 23.5,
-   "p_over": 0.508,
-   "p_under": 0.492,
-   "fair_over": 0.499,
-   "fair_under": 0.501,
-   "price_over": 1.88,
-   "price_under": 1.87,
-   "side": "over",
    "price": 1.88,
    "book": "neds",
-   "edge": 0.0095,
-   "tier": null
+   "price_over": 1.88,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 26.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
   }
  },
  "lines_us": {},

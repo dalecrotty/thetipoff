@@ -3,7 +3,64 @@
  "player": "T.J. McConnell",
  "team": "Indiana",
  "opp": "Cleveland",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 2.5,
+   "price": 1.74,
+   "book": "pointsbetau",
+   "price_over": 2.05,
+   "price_under": 1.74
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 1.89,
+   "book": "unibet",
+   "price_over": 1.82,
+   "price_under": 1.89
+  },
+  "PRA": {
+   "line": 15.5,
+   "price": 1.94,
+   "book": "unibet",
+   "price_over": 1.79,
+   "price_under": 1.94
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 1.68,
+   "book": "unibet",
+   "price_over": 2.06,
+   "price_under": 1.68
+  },
+  "PA": {
+   "line": 13.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.13,
+   "book": "pointsbetau",
+   "price_over": 5.75,
+   "price_under": 1.13
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-18",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 0,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

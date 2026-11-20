@@ -228,115 +228,59 @@
  "lines": {
   "3PM": {
    "line": 1.5,
-   "p_over": 0.205,
-   "p_under": 0.795,
-   "fair_over": 0.394,
-   "fair_under": 0.606,
-   "price_over": 2.4,
-   "price_under": 1.56,
-   "side": "under",
-   "price": 1.56,
-   "book": "pointsbetau",
-   "edge": 0.1891,
-   "tier": "A"
+   "price": 1.53,
+   "book": "unibet",
+   "price_over": 2.38,
+   "price_under": 1.53
   },
   "PTS": {
    "line": 18.5,
-   "p_over": 0.407,
-   "p_under": 0.593,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
-   "side": "under",
    "price": 1.95,
    "book": "tab",
-   "edge": 0.1131,
-   "tier": "A"
+   "price_over": 1.8,
+   "price_under": 1.95
   },
   "PA": {
    "line": 21.5,
-   "p_over": 0.394,
-   "p_under": 0.606,
-   "fair_over": 0.485,
-   "fair_under": 0.515,
-   "price_over": 1.92,
-   "price_under": 1.81,
-   "side": "under",
    "price": 1.81,
    "book": "unibet",
-   "edge": 0.0914,
-   "tier": "A"
+   "price_over": 1.92,
+   "price_under": 1.81
   },
   "RA": {
    "line": 8.5,
-   "p_over": 0.583,
-   "p_under": 0.417,
-   "fair_over": 0.511,
-   "fair_under": 0.489,
-   "price_over": 1.83,
-   "price_under": 1.91,
-   "side": "over",
-   "price": 1.83,
-   "book": "ladbrokes_au",
-   "edge": 0.0726,
-   "tier": "A"
+   "price": 1.8,
+   "book": "pointsbetau",
+   "price_over": 1.8,
+   "price_under": 1.87
   },
   "PR": {
    "line": 25.5,
-   "p_over": 0.413,
-   "p_under": 0.587,
-   "fair_over": 0.483,
-   "fair_under": 0.517,
-   "price_over": 1.93,
-   "price_under": 1.8,
-   "side": "under",
    "price": 1.8,
    "book": "unibet",
-   "edge": 0.0697,
-   "tier": "A"
+   "price_over": 1.93,
+   "price_under": 1.8
   },
   "PRA": {
    "line": 28.5,
-   "p_over": 0.397,
-   "p_under": 0.603,
-   "fair_over": 0.467,
-   "fair_under": 0.533,
-   "price_over": 2.0,
-   "price_under": 1.75,
-   "side": "under",
    "price": 1.75,
    "book": "unibet",
-   "edge": 0.0696,
-   "tier": "A"
+   "price_over": 2.0,
+   "price_under": 1.75
   },
   "REB": {
    "line": 6.5,
-   "p_over": 0.497,
-   "p_under": 0.503,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.018,
-   "tier": null
+   "price_over": 1.96,
+   "price_under": 1.8
   },
   "AST": {
    "line": 2.5,
-   "p_over": 0.446,
-   "p_under": 0.554,
-   "fair_over": 0.47,
-   "fair_under": 0.53,
-   "price_over": 1.97,
-   "price_under": 1.75,
-   "side": "under",
    "price": 1.75,
    "book": "unibet",
-   "edge": 0.0249,
-   "tier": null
+   "price_over": 1.97,
+   "price_under": 1.75
   }
  },
  "lines_us": {},
@@ -872,6 +816,27 @@
    "phase": "regular"
   }
  ],
- "with_without_tonight": [],
- "opp": "Chicago"
+ "hits": {
+  "PTS": {
+   "line": 18.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
+ "members": "https://thedropcoverage.com/api.html#members"
 }
