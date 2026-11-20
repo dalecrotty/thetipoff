@@ -2009,7 +2009,8 @@ function dayAfter(iso) {
    (owner, 6 Nov 2026: one Drop a day; we aim for the first run and prefer
    accuracy over time). tips.next_check comes from the dispatcher's plan. */
 const CHECK_WORDS = { night: "the 7pm Sydney pass", retry: "the late-evening retry",
-  main: "the morning build", lock: "the lock 90 minutes before the next tips" };
+  main: "the morning build", lock: "the lock 90 minutes before the next tips",
+  starters: "the look once the starters are named" };
 function noDropYet(tips) {
   const n = tips?.next_check;
   const when = n ? `${CHECK_WORDS[n.kind] || "the next run"}, ${whenAEDT(n.at)}` : null;
