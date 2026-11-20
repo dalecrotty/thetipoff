@@ -2,7 +2,229 @@
  "player_id": -743,
  "player": "Mikel Brown Jr.",
  "team": "Brooklyn",
- "opp": "Orlando",
+ "projections": {
+  "3PM": {
+   "mean": 1.97,
+   "floor": 0.03,
+   "ceiling": 3.93
+  },
+  "AST": {
+   "mean": 3.79,
+   "floor": 1.09,
+   "ceiling": 6.89
+  },
+  "BLK": {
+   "mean": 0.09,
+   "floor": 0.0,
+   "ceiling": 0.98
+  },
+  "PTS": {
+   "mean": 11.19,
+   "floor": 3.94,
+   "ceiling": 19.09
+  },
+  "REB": {
+   "mean": 1.67,
+   "floor": 0.0,
+   "ceiling": 3.88
+  },
+  "STL": {
+   "mean": 0.73,
+   "floor": 0.01,
+   "ceiling": 2.04
+  },
+  "TOV": {
+   "mean": 2.2,
+   "floor": 0.59,
+   "ceiling": 4.03
+  },
+  "PRA": {
+   "mean": 16.65,
+   "floor": 6.42,
+   "ceiling": 26.91
+  },
+  "PR": {
+   "mean": 12.86,
+   "floor": 4.36,
+   "ceiling": 21.48
+  },
+  "PA": {
+   "mean": 14.98,
+   "floor": 6.36,
+   "ceiling": 24.31
+  },
+  "RA": {
+   "mean": 5.46,
+   "floor": 2.01,
+   "ceiling": 9.4
+  }
+ },
+ "minutes": {
+  "value": 23,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 10,
+   "min_pg": 22.8,
+   "PTS": {
+    "pg": 11.4,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 1.8,
+    "pm": 0.079
+   },
+   "AST": {
+    "pg": 3.8,
+    "pm": 0.167
+   },
+   "3PM": {
+    "pg": 1.9,
+    "pm": 0.083
+   },
+   "STL": {
+    "pg": 0.7,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.004
+   },
+   "TOV": {
+    "pg": 2.2,
+    "pm": 0.096
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 22.8,
+   "PTS": {
+    "pg": 11.4,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 1.8,
+    "pm": 0.079
+   },
+   "AST": {
+    "pg": 3.8,
+    "pm": 0.167
+   },
+   "3PM": {
+    "pg": 1.9,
+    "pm": 0.083
+   },
+   "STL": {
+    "pg": 0.7,
+    "pm": 0.031
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.004
+   },
+   "TOV": {
+    "pg": 2.2,
+    "pm": 0.096
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 22.0,
+   "PTS": {
+    "pg": 12.0,
+    "pm": 0.545
+   },
+   "REB": {
+    "pg": 1.2,
+    "pm": 0.055
+   },
+   "AST": {
+    "pg": 3.6,
+    "pm": 0.164
+   },
+   "3PM": {
+    "pg": 2.2,
+    "pm": 0.1
+   },
+   "STL": {
+    "pg": 0.8,
+    "pm": 0.036
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 2.6,
+    "pm": 0.118
+   }
+  },
+  "home": {
+   "games": 5,
+   "min_pg": 21.6,
+   "PTS": {
+    "pg": 10.4,
+    "pm": 0.481
+   },
+   "REB": {
+    "pg": 1.4,
+    "pm": 0.065
+   },
+   "AST": {
+    "pg": 4.0,
+    "pm": 0.185
+   },
+   "3PM": {
+    "pg": 1.4,
+    "pm": 0.065
+   },
+   "STL": {
+    "pg": 0.4,
+    "pm": 0.019
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 2.6,
+    "pm": 0.12
+   }
+  },
+  "away": {
+   "games": 5,
+   "min_pg": 24.0,
+   "PTS": {
+    "pg": 12.4,
+    "pm": 0.517
+   },
+   "REB": {
+    "pg": 2.2,
+    "pm": 0.092
+   },
+   "AST": {
+    "pg": 3.6,
+    "pm": 0.15
+   },
+   "3PM": {
+    "pg": 2.4,
+    "pm": 0.1
+   },
+   "STL": {
+    "pg": 1.0,
+    "pm": 0.042
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.8,
+    "pm": 0.075
+   }
+  }
+ },
  "lines": {
   "REB": {
    "line": 2.5,
@@ -15,13 +237,13 @@
    "side": "under",
    "price": 1.5,
    "book": "unibet",
-   "edge": 0.1404,
+   "edge": 0.141,
    "tier": "A"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.562,
-   "p_under": 0.438,
+   "p_over": 0.561,
+   "p_under": 0.439,
    "fair_over": 0.492,
    "fair_under": 0.508,
    "price_over": 1.91,
@@ -29,13 +251,13 @@
    "side": "over",
    "price": 1.91,
    "book": "sportsbet",
-   "edge": 0.0695,
+   "edge": 0.0688,
    "tier": "B"
   },
   "PA": {
    "line": 14.5,
-   "p_over": 0.529,
-   "p_under": 0.471,
+   "p_over": 0.528,
+   "p_under": 0.472,
    "fair_over": 0.472,
    "fair_under": 0.528,
    "price_over": 1.97,
@@ -43,27 +265,27 @@
    "side": "over",
    "price": 1.97,
    "book": "unibet",
-   "edge": 0.0568,
+   "edge": 0.0565,
    "tier": "B"
   },
   "PTS": {
    "line": 10.5,
    "p_over": 0.549,
    "p_under": 0.451,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.9,
-   "price_under": 1.9,
+   "fair_over": 0.496,
+   "fair_under": 0.504,
+   "price_over": 1.88,
+   "price_under": 1.85,
    "side": "over",
-   "price": 1.9,
-   "book": "pointsbetau",
-   "edge": 0.0491,
+   "price": 1.88,
+   "book": "unibet",
+   "edge": 0.0531,
    "tier": "B"
   },
   "AST": {
    "line": 3.5,
-   "p_over": 0.506,
-   "p_under": 0.494,
+   "p_over": 0.505,
+   "p_under": 0.495,
    "fair_over": 0.453,
    "fair_under": 0.547,
    "price_over": 2.08,
@@ -71,13 +293,13 @@
    "side": "over",
    "price": 2.08,
    "book": "sportsbet",
-   "edge": 0.0531,
+   "edge": 0.0523,
    "tier": "B"
   },
   "PRA": {
    "line": 16.5,
-   "p_over": 0.508,
-   "p_under": 0.492,
+   "p_over": 0.507,
+   "p_under": 0.493,
    "fair_over": 0.483,
    "fair_under": 0.517,
    "price_over": 1.93,
@@ -85,7 +307,7 @@
    "side": "over",
    "price": 1.93,
    "book": "unibet",
-   "edge": 0.0251,
+   "edge": 0.0248,
    "tier": null
   },
   "PR": {
@@ -99,13 +321,13 @@
    "side": "over",
    "price": 1.85,
    "book": "unibet",
-   "edge": 0.0178,
+   "edge": 0.0177,
    "tier": null
   },
   "RA": {
    "line": 5.5,
-   "p_over": 0.495,
-   "p_under": 0.505,
+   "p_over": 0.494,
+   "p_under": 0.506,
    "fair_over": 0.488,
    "fair_under": 0.512,
    "price_over": 1.91,
@@ -113,10 +335,253 @@
    "side": "over",
    "price": 1.91,
    "book": "unibet",
-   "edge": 0.0072,
+   "edge": 0.0063,
    "tier": null
   }
  },
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-21",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2026-10-21_brooklyn_vs_charlotte",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 20.0,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 8.0,
+   "3PA": 3.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2026-10-24_brooklyn_vs_cleveland",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 20.0,
+   "PTS": 8.0,
+   "REB": 2.0,
+   "AST": 5.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 3.0,
+   "FGA": 10.0,
+   "3PA": 6.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-27",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-27_boston_vs_brooklyn",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 28.0,
+   "PTS": 17.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 17.0,
+   "3PA": 11.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-10-30_brooklyn_vs_detroit",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 23.0,
+   "PTS": 10.0,
+   "REB": 0.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 9.0,
+   "3PA": 4.0,
+   "FTA": 8.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-02_brooklyn_vs_new-york",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 27.0,
+   "PTS": 13.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 13.0,
+   "3PA": 8.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2026-11-04_brooklyn_vs_charlotte",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 20.0,
+   "PTS": 18.0,
+   "REB": 2.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 4.0,
+   "FGM": 6.0,
+   "FGA": 11.0,
+   "3PA": 5.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-07",
+   "opp": "Atlanta",
+   "venue": "R",
+   "game": "2026-11-07_atlanta_vs_brooklyn",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 25.0,
+   "PTS": 18.0,
+   "REB": 1.0,
+   "AST": 3.0,
+   "3PM": 3.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 13.0,
+   "3PA": 8.0,
+   "FTA": 7.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-14",
+   "opp": "Memphis",
+   "venue": "R",
+   "game": "2026-11-14_brooklyn_vs_memphis",
+   "starter": false,
+   "rest": "6",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 20.0,
+   "PTS": 6.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-16",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-11-16_brooklyn_vs_philadelphia",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 5.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 7.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-18",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2026-11-18_brooklyn_vs_chicago",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 27.0,
+   "PTS": 15.0,
+   "REB": 1.0,
+   "AST": 4.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 5.0,
+   "FGM": 4.0,
+   "FGA": 10.0,
+   "3PA": 6.0,
+   "FTA": 6.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-18",
@@ -237,14 +702,128 @@
    "FTA": 4.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-02_brooklyn_vs_new-york",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 27.0,
+   "PTS": 13.0,
+   "REB": 2.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 13.0,
+   "3PA": 8.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-10-30_brooklyn_vs_detroit",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 23.0,
+   "PTS": 10.0,
+   "REB": 0.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 9.0,
+   "3PA": 4.0,
+   "FTA": 8.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-27",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-27_boston_vs_brooklyn",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 28.0,
+   "PTS": 17.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 4.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 17.0,
+   "3PA": 11.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-24",
+   "opp": "Cleveland",
+   "venue": "R",
+   "game": "2026-10-24_brooklyn_vs_cleveland",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 20.0,
+   "PTS": 8.0,
+   "REB": 2.0,
+   "AST": 5.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 3.0,
+   "FGA": 10.0,
+   "3PA": 6.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-21",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2026-10-21_brooklyn_vs_charlotte",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 20.0,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 8.0,
+   "3PA": 3.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {
-  "3PM": {
-   "line": 1.5,
-   "over": 4,
-   "n": 5
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Orlando"
 }

@@ -6,12 +6,12 @@
   "3PM": {
    "mean": 0.57,
    "floor": 0.0,
-   "ceiling": 1.91
+   "ceiling": 1.9
   },
   "AST": {
    "mean": 0.73,
    "floor": 0.0,
-   "ceiling": 2.06
+   "ceiling": 2.09
   },
   "BLK": {
    "mean": 0.34,
@@ -21,12 +21,12 @@
   "PTS": {
    "mean": 2.55,
    "floor": 0.0,
-   "ceiling": 8.22
+   "ceiling": 8.27
   },
   "REB": {
-   "mean": 0.93,
+   "mean": 0.92,
    "floor": 0.0,
-   "ceiling": 3.11
+   "ceiling": 3.14
   },
   "STL": {
    "mean": 0.58,
@@ -34,9 +34,9 @@
    "ceiling": 2.02
   },
   "TOV": {
-   "mean": 0.3,
+   "mean": 0.29,
    "floor": 0.0,
-   "ceiling": 1.68
+   "ceiling": 1.7
   },
   "PRA": {
    "mean": 4.21,
@@ -54,7 +54,7 @@
    "ceiling": 10.07
   },
   "RA": {
-   "mean": 1.66,
+   "mean": 1.65,
    "floor": 0.0,
    "ceiling": 4.96
   }
@@ -4612,8 +4612,128 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "Charlotte",
+   "venue": "H",
+   "game": "2026-11-04_brooklyn_vs_charlotte",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 10.0,
+   "PTS": 1.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-02_brooklyn_vs_new-york",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 25.0,
+   "PTS": 5.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 3.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 6.0,
+   "3PA": 4.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-01",
+   "opp": "Indiana",
+   "venue": "R",
+   "game": "2026-11-01_brooklyn_vs_indiana",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 20.0,
+   "PTS": 0.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-10-30_brooklyn_vs_detroit",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 21.0,
+   "PTS": 6.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-27",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-10-27_boston_vs_brooklyn",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 25.0,
+   "PTS": 2.0,
+   "REB": 3.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 6.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Orlando"
 }

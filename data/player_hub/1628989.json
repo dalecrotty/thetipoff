@@ -6,10 +6,10 @@
  "lines": {
   "AST": {
    "line": 2.5,
-   "price": 1.57,
+   "price": 1.59,
    "book": "pointsbetau",
-   "price_over": 1.57,
-   "price_under": 2.35
+   "price_over": 1.59,
+   "price_under": 2.3
   },
   "PA": {
    "line": 15.5,
@@ -27,10 +27,10 @@
   },
   "RA": {
    "line": 6.5,
-   "price": 1.67,
-   "book": "pointsbetau",
-   "price_over": 1.67,
-   "price_under": 2.1
+   "price": 1.64,
+   "book": "neds",
+   "price_over": 1.64,
+   "price_under": 2.15
   },
   "PTS": {
    "line": 12.5,
@@ -55,7 +55,7 @@
   },
   "REB": {
    "line": 3.5,
-   "price": 1.73,
+   "price": 2.02,
    "book": "neds",
    "price_over": 1.73,
    "price_under": 2.02
@@ -183,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 12.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

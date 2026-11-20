@@ -4,19 +4,26 @@
  "team": "Atlanta",
  "opp": "Charlotte",
  "lines": {
-  "PRA": {
-   "line": 13.5,
-   "price": 2.0,
-   "book": "tab",
-   "price_over": 2.0,
-   "price_under": 1.75
-  },
   "PTS": {
    "line": 8.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "PRA": {
+   "line": 12.5,
    "price": 1.87,
-   "book": "pointsbetau",
+   "book": "tab",
    "price_over": 1.87,
-   "price_under": 1.95
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 11.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.9
   },
   "REB": {
    "line": 2.5,
@@ -24,13 +31,6 @@
    "book": "neds",
    "price_over": 1.75,
    "price_under": 2.02
-  },
-  "PR": {
-   "line": 11.5,
-   "price": 1.82,
-   "book": "neds",
-   "price_over": 1.82,
-   "price_under": 1.92
   },
   "3PM": {
    "line": 1.5,
