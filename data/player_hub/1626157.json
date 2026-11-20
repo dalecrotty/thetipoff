@@ -6,27 +6,27 @@
   "3PM": {
    "mean": 1.86,
    "floor": 0.0,
-   "ceiling": 3.87
+   "ceiling": 3.82
   },
   "AST": {
-   "mean": 4.59,
-   "floor": 1.55,
-   "ceiling": 7.77
+   "mean": 4.58,
+   "floor": 1.59,
+   "ceiling": 7.67
   },
   "BLK": {
    "mean": 0.67,
    "floor": 0.0,
-   "ceiling": 1.98
+   "ceiling": 1.97
   },
   "PTS": {
    "mean": 19.79,
-   "floor": 9.36,
-   "ceiling": 29.96
+   "floor": 9.78,
+   "ceiling": 29.92
   },
   "REB": {
-   "mean": 13.41,
-   "floor": 8.95,
-   "ceiling": 18.12
+   "mean": 13.4,
+   "floor": 8.81,
+   "ceiling": 17.99
   },
   "STL": {
    "mean": 1.01,
@@ -35,28 +35,28 @@
   },
   "TOV": {
    "mean": 2.97,
-   "floor": 0.82,
-   "ceiling": 5.24
+   "floor": 0.83,
+   "ceiling": 5.22
   },
   "PRA": {
-   "mean": 37.8,
-   "floor": 25.54,
-   "ceiling": 49.3
+   "mean": 37.77,
+   "floor": 25.51,
+   "ceiling": 49.28
   },
   "PR": {
-   "mean": 33.21,
-   "floor": 21.55,
-   "ceiling": 44.13
+   "mean": 33.19,
+   "floor": 21.53,
+   "ceiling": 44.11
   },
   "PA": {
-   "mean": 24.38,
-   "floor": 13.5,
+   "mean": 24.37,
+   "floor": 13.49,
    "ceiling": 35.32
   },
   "RA": {
-   "mean": 18.01,
-   "floor": 11.95,
-   "ceiling": 23.56
+   "mean": 17.98,
+   "floor": 11.92,
+   "ceiling": 23.53
   }
  },
  "minutes": {
@@ -237,13 +237,13 @@
    "side": "over",
    "price": 1.87,
    "book": "neds",
-   "edge": 0.1365,
+   "edge": 0.1357,
    "tier": "A"
   },
   "RA": {
    "line": 16.5,
-   "p_over": 0.625,
-   "p_under": 0.375,
+   "p_over": 0.623,
+   "p_under": 0.377,
    "fair_over": 0.509,
    "fair_under": 0.491,
    "price_over": 1.83,
@@ -251,7 +251,7 @@
    "side": "over",
    "price": 1.83,
    "book": "ladbrokes_au",
-   "edge": 0.1156,
+   "edge": 0.1136,
    "tier": "A"
   },
   "PTS": {
@@ -270,8 +270,8 @@
   },
   "PR": {
    "line": 34.5,
-   "p_over": 0.44,
-   "p_under": 0.56,
+   "p_over": 0.439,
+   "p_under": 0.561,
    "fair_over": 0.491,
    "fair_under": 0.509,
    "price_over": 1.9,
@@ -279,13 +279,13 @@
    "side": "under",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0508,
+   "edge": 0.0517,
    "tier": "B"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.533,
-   "p_under": 0.467,
+   "p_over": 0.532,
+   "p_under": 0.468,
    "fair_over": 0.529,
    "fair_under": 0.471,
    "price_over": 1.78,
@@ -293,13 +293,13 @@
    "side": "over",
    "price": 1.78,
    "book": "sportsbet",
-   "edge": 0.0037,
+   "edge": 0.003,
    "tier": null
   },
   "PRA": {
    "line": 36.5,
-   "p_over": 0.554,
-   "p_under": 0.446,
+   "p_over": 0.553,
+   "p_under": 0.447,
    "fair_over": 0.536,
    "fair_under": 0.464,
    "price_over": 1.75,
@@ -307,7 +307,7 @@
    "side": "over",
    "price": 1.75,
    "book": "neds",
-   "edge": 0.0181,
+   "edge": 0.0171,
    "tier": null
   },
   "PA": {
@@ -321,13 +321,13 @@
    "side": "under",
    "price": 1.9,
    "book": "pointsbetau",
-   "edge": 0.015,
+   "edge": 0.0153,
    "tier": null
   },
   "REB": {
    "line": 12.5,
-   "p_over": 0.535,
-   "p_under": 0.465,
+   "p_over": 0.534,
+   "p_under": 0.466,
    "fair_over": 0.528,
    "fair_under": 0.472,
    "price_over": 1.77,
@@ -335,7 +335,7 @@
    "side": "over",
    "price": 1.77,
    "book": "neds",
-   "edge": 0.0074,
+   "edge": 0.0059,
    "tier": null
   }
  },
@@ -351,7 +351,7 @@
    "side": "over",
    "price": 1.8,
    "book": "betright",
-   "edge": 0.1165,
+   "edge": 0.1157,
    "tier": "A"
   },
   "PTS": {
@@ -370,8 +370,8 @@
   },
   "REB": {
    "line": 12.5,
-   "p_over": 0.535,
-   "p_under": 0.465,
+   "p_over": 0.534,
+   "p_under": 0.466,
    "fair_over": 0.547,
    "fair_under": 0.453,
    "price_over": 1.7,
@@ -379,7 +379,7 @@
    "side": "under",
    "price": 2.05,
    "book": "betright",
-   "edge": 0.0113,
+   "edge": 0.0128,
    "tier": null
   }
  },
