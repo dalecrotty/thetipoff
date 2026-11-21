@@ -2,38 +2,33 @@
  "player_id": 1630193,
  "player": "Immanuel Quickley",
  "team": "Toronto",
- "opp": "Detroit",
- "lines": {
-  "PA": {
-   "line": 23.5,
-   "price": 1.78,
-   "book": "neds",
-   "price_over": 1.78,
-   "price_under": 1.96
-  },
-  "AST": {
-   "line": 5.5,
-   "price": 1.91,
-   "book": "ladbrokes_au",
-   "price_over": 1.83,
-   "price_under": 1.91
-  },
-  "PRA": {
-   "line": 27.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.9
-  },
-  "RA": {
-   "line": 9.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.83
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-20",
+   "opp": "Detroit",
+   "venue": "R",
+   "game": "2026-11-20_detroit_vs_toronto",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 33.0,
+   "PTS": 18.0,
+   "REB": 3.0,
+   "AST": 10.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 6.0,
+   "FGA": 10.0,
+   "3PA": 7.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-18",
    "opp": "Washington",
@@ -129,38 +124,8 @@
    "FTA": 8.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-11",
-   "opp": "Boston",
-   "venue": "H",
-   "game": "2026-11-11_boston_vs_toronto",
-   "starter": true,
-   "rest": "6",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 28.0,
-   "PTS": 11.0,
-   "REB": 4.0,
-   "AST": 4.0,
-   "3PM": 1.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 2.0,
-   "FGM": 3.0,
-   "FGA": 14.0,
-   "3PA": 8.0,
-   "FTA": 4.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "AST": {
-   "line": 5.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

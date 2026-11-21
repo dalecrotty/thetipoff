@@ -1,39 +1,8 @@
 {
- "generated_at": "2026-11-21T03:30+00:00",
- "slate_date": "2026-11-20",
- "au_game_date": "2026-11-21",
- "today": {
-  "slate_date": "2026-11-20",
-  "player_id": 1642883,
-  "player": "Sion James",
-  "team": "Charlotte",
-  "opp": "Atlanta",
-  "game_start": "2026-11-21T00:00:00+00:00",
-  "market": "player_rebounds",
-  "market_label": "Rebounds",
-  "book": "sportsbet",
-  "book_label": "Sportsbet",
-  "side": "over",
-  "line": 3.5,
-  "price": 1.89,
-  "model_proj": 5.37678983408281,
-  "model_prob": 0.738160927837383,
-  "fair_prob": 0.497340425531915,
-  "edge": 0.240820502305468,
-  "au_book": true,
-  "trial": false,
-  "posted_at": "2026-11-20T08:01:43.813551+00:00",
-  "posted_by": "tip (first)",
-  "closing_line": 4.5,
-  "closing_price": 2.1,
-  "clv": 0.11697529015482,
-  "clv_method": "line_adjusted",
-  "actual": 1.0,
-  "result": "loss",
-  "x_post_id": "2123708580993896900",
-  "stake": 1.0,
-  "units": -1.0
- },
+ "generated_at": "2026-11-21T08:01+00:00",
+ "slate_date": "2026-11-21",
+ "au_game_date": "2026-11-22",
+ "today": null,
  "summary": {
   "n_tips": 31,
   "n_clv": 27,
@@ -1078,7 +1047,10 @@
    "units": -1.0
   }
  ],
- "next_check": null,
+ "next_check": {
+  "at": "2026-11-21T11:00+00:00",
+  "kind": "retry"
+ },
  "rules": {
   "price_floor": 1.7,
   "books": [
