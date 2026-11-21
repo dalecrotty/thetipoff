@@ -226,20 +226,6 @@
   }
  },
  "lines": {
-  "3PM": {
-   "line": 1.5,
-   "p_over": 0.438,
-   "p_under": 0.562,
-   "fair_over": 0.469,
-   "fair_under": 0.531,
-   "price_over": 2.0,
-   "price_under": 1.77,
-   "side": "under",
-   "price": 1.77,
-   "book": "pointsbetau",
-   "edge": 0.0317,
-   "tier": null
-  },
   "PTS": {
    "line": 10.5,
    "p_over": 0.522,
@@ -254,36 +240,93 @@
    "edge": 0.0217,
    "tier": null
   },
+  "3PM": {
+   "line": 1.5,
+   "p_over": 0.438,
+   "p_under": 0.562,
+   "fair_over": 0.459,
+   "fair_under": 0.541,
+   "price_over": 2.05,
+   "price_under": 1.74,
+   "side": "under",
+   "price": 1.74,
+   "book": "pointsbetau",
+   "edge": 0.0213,
+   "tier": null
+  },
   "PA": {
    "line": 14.5,
    "p_over": 0.509,
    "p_under": 0.491,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.83,
-   "price_under": 1.83,
+   "fair_over": 0.49,
+   "fair_under": 0.51,
+   "price_over": 1.87,
+   "price_under": 1.8,
    "side": "over",
-   "price": 1.83,
+   "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0093,
+   "edge": 0.0189,
    "tier": null
   },
   "AST": {
    "line": 3.5,
    "p_over": 0.517,
    "p_under": 0.483,
-   "fair_over": 0.509,
-   "fair_under": 0.491,
-   "price_over": 1.83,
-   "price_under": 1.9,
-   "side": "over",
-   "price": 1.83,
+   "fair_over": 0.52,
+   "fair_under": 0.48,
+   "price_over": 1.8,
+   "price_under": 1.95,
+   "side": "under",
+   "price": 1.95,
    "book": "pointsbetau",
-   "edge": 0.0073,
+   "edge": 0.0033,
    "tier": null
   }
  },
- "lines_us": {},
+ "lines_us": {
+  "3PM": {
+   "line": 1.5,
+   "p_over": 0.438,
+   "p_under": 0.562,
+   "fair_over": 0.475,
+   "fair_under": 0.525,
+   "price_over": 1.98,
+   "price_under": 1.79,
+   "side": "under",
+   "price": 1.79,
+   "book": "betonlineag",
+   "edge": 0.037,
+   "tier": null
+  },
+  "PTS": {
+   "line": 10.5,
+   "p_over": 0.522,
+   "p_under": 0.478,
+   "fair_over": 0.503,
+   "fair_under": 0.497,
+   "price_over": 1.87,
+   "price_under": 1.89,
+   "side": "over",
+   "price": 1.87,
+   "book": "betonlineag",
+   "edge": 0.019,
+   "tier": null
+  },
+  "AST": {
+   "line": 3.5,
+   "p_over": 0.517,
+   "p_under": 0.483,
+   "fair_over": 0.527,
+   "fair_under": 0.473,
+   "price_over": 1.77,
+   "price_under": 1.97,
+   "side": "under",
+   "price": 1.97,
+   "book": "williamhill_us",
+   "edge": 0.01,
+   "tier": null
+  }
+ },
  "game_log": [
   {
    "date": "2024-10-23",

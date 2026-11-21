@@ -5,11 +5,18 @@
  "opp": "Memphis",
  "lines": {
   "PA": {
-   "line": 26.5,
-   "price": 1.9,
-   "book": "sportsbet",
-   "price_over": 1.9,
-   "price_under": 1.86
+   "line": 25.5,
+   "price": 1.77,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 1.9
+  },
+  "PTS": {
+   "line": 19.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
   },
   "AST": {
    "line": 5.5,
@@ -25,26 +32,26 @@
    "price_over": 1.98,
    "price_under": 1.72
   },
-  "RA": {
-   "line": 11.5,
-   "price": 2.08,
-   "book": "sportsbet",
-   "price_over": 2.08,
-   "price_under": 1.72
-  },
   "PRA": {
    "line": 31.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
   },
-  "PTS": {
-   "line": 20.5,
-   "price": 1.95,
-   "book": "pointsbetau",
-   "price_over": 1.95,
+  "PR": {
+   "line": 25.5,
+   "price": 1.92,
+   "book": "unibet",
+   "price_over": 1.92,
    "price_under": 1.8
+  },
+  "RA": {
+   "line": 10.5,
+   "price": 1.66,
+   "book": "unibet",
+   "price_over": 1.66,
+   "price_under": 2.12
   },
   "REB": {
    "line": 5.5,
@@ -52,13 +59,6 @@
    "book": "neds",
    "price_over": 2.05,
    "price_under": 1.7
-  },
-  "PR": {
-   "line": 25.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.83
   }
  },
  "recent_games": [
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 20.5,
+   "line": 19.5,
    "over": 1,
    "n": 5
   },
