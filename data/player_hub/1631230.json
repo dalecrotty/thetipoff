@@ -9,54 +9,54 @@
    "ceiling": 0.1
   },
   "AST": {
-   "mean": 0.48,
+   "mean": 0.47,
    "floor": 0.0,
-   "ceiling": 1.81
+   "ceiling": 1.83
   },
   "BLK": {
-   "mean": 0.52,
+   "mean": 0.5,
    "floor": 0.0,
    "ceiling": 1.92
   },
   "PTS": {
-   "mean": 3.59,
+   "mean": 3.48,
    "floor": 0.0,
-   "ceiling": 9.26
+   "ceiling": 9.2
   },
   "REB": {
-   "mean": 2.49,
-   "floor": 0.11,
-   "ceiling": 4.96
+   "mean": 2.41,
+   "floor": 0.15,
+   "ceiling": 4.85
   },
   "STL": {
-   "mean": 0.46,
+   "mean": 0.45,
    "floor": 0.0,
-   "ceiling": 1.26
+   "ceiling": 1.25
   },
   "TOV": {
-   "mean": 0.42,
+   "mean": 0.4,
    "floor": 0.0,
    "ceiling": 1.8
   },
   "PRA": {
-   "mean": 6.56,
+   "mean": 6.36,
    "floor": 0.0,
-   "ceiling": 15.28
+   "ceiling": 15.07
   },
   "PR": {
-   "mean": 6.08,
+   "mean": 5.89,
    "floor": 0.0,
-   "ceiling": 14.19
+   "ceiling": 14.0
   },
   "PA": {
-   "mean": 4.07,
+   "mean": 3.95,
    "floor": 0.0,
-   "ceiling": 10.86
+   "ceiling": 10.73
   },
   "RA": {
-   "mean": 2.97,
-   "floor": 0.22,
-   "ceiling": 6.28
+   "mean": 2.88,
+   "floor": 0.13,
+   "ceiling": 6.18
   }
  },
  "minutes": {
@@ -225,7 +225,22 @@
    }
   }
  },
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 4.5,
+   "p_over": 0.409,
+   "p_under": 0.591,
+   "fair_over": 0.533,
+   "fair_under": 0.467,
+   "price_over": 1.75,
+   "price_under": 2.0,
+   "side": "under",
+   "price": 2.0,
+   "book": "tab",
+   "edge": 0.1245,
+   "tier": "A"
+  }
+ },
  "lines_us": {},
  "game_log": [
   {

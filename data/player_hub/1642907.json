@@ -5,32 +5,60 @@
  "opp": "Minnesota",
  "lines": {
   "RA": {
-   "line": 11.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
+   "line": 10.5,
+   "price": 1.67,
+   "book": "neds",
+   "price_over": 1.67,
+   "price_under": 2.1
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.6,
+   "book": "neds",
+   "price_over": 1.6,
+   "price_under": 2.15
   },
   "AST": {
    "line": 3.5,
-   "price": 1.87,
-   "book": "sportsbet",
-   "price_over": 1.87,
-   "price_under": 1.89
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
   },
-  "PA": {
-   "line": 21.5,
-   "price": 1.78,
-   "book": "unibet",
-   "price_over": 1.94,
-   "price_under": 1.78
+  "REB": {
+   "line": 7.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
   },
   "PRA": {
-   "line": 29.5,
-   "price": 1.77,
+   "line": 27.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PA": {
+   "line": 19.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "PTS": {
+   "line": 16.5,
+   "price": 1.91,
    "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.77
+   "price_over": 1.82,
+   "price_under": 1.91
+  },
+  "PR": {
+   "line": 23.5,
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
   }
  },
  "recent_games": [
@@ -156,9 +184,24 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 16.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  },
   "AST": {
    "line": 3.5,
    "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 4,
    "n": 5
   }
  },

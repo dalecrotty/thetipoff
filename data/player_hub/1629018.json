@@ -5,13 +5,13 @@
  "projections": {
   "3PM": {
    "mean": 0.92,
-   "floor": 0.0,
+   "floor": 0.03,
    "ceiling": 2.17
   },
   "AST": {
    "mean": 0.33,
    "floor": 0.0,
-   "ceiling": 1.66
+   "ceiling": 1.69
   },
   "BLK": {
    "mean": 0.01,
@@ -21,12 +21,12 @@
   "PTS": {
    "mean": 4.38,
    "floor": 0.0,
-   "ceiling": 10.05
+   "ceiling": 10.1
   },
   "REB": {
-   "mean": 0.48,
+   "mean": 0.47,
    "floor": 0.0,
-   "ceiling": 2.66
+   "ceiling": 2.69
   },
   "STL": {
    "mean": 0.34,
@@ -36,7 +36,7 @@
   "TOV": {
    "mean": 0.28,
    "floor": 0.0,
-   "ceiling": 1.67
+   "ceiling": 1.69
   },
   "PRA": {
    "mean": 5.19,
@@ -225,7 +225,22 @@
    }
   }
  },
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 4.5,
+   "p_over": 0.489,
+   "p_under": 0.511,
+   "fair_over": 0.467,
+   "fair_under": 0.533,
+   "price_over": 2.0,
+   "price_under": 1.75,
+   "side": "over",
+   "price": 2.0,
+   "book": "tab",
+   "edge": 0.0228,
+   "tier": null
+  }
+ },
  "lines_us": {},
  "game_log": [
   {
