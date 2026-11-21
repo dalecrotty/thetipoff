@@ -2,341 +2,63 @@
  "player_id": 1628378,
  "player": "Donovan Mitchell",
  "team": "Cleveland",
- "projections": {
-  "3PM": {
-   "mean": 2.83,
-   "floor": 0.43,
-   "ceiling": 5.1
-  },
-  "AST": {
-   "mean": 5.17,
-   "floor": 2.18,
-   "ceiling": 8.26
-  },
-  "BLK": {
-   "mean": 0.34,
-   "floor": 0.0,
-   "ceiling": 1.02
-  },
-  "PTS": {
-   "mean": 27.01,
-   "floor": 17.0,
-   "ceiling": 37.14
-  },
-  "REB": {
-   "mean": 4.9,
-   "floor": 1.67,
-   "ceiling": 8.05
-  },
-  "STL": {
-   "mean": 1.4,
-   "floor": 0.0,
-   "ceiling": 2.95
-  },
-  "TOV": {
-   "mean": 2.77,
-   "floor": 0.64,
-   "ceiling": 5.02
-  },
-  "PRA": {
-   "mean": 37.08,
-   "floor": 24.82,
-   "ceiling": 48.58
-  },
-  "PR": {
-   "mean": 31.91,
-   "floor": 20.25,
-   "ceiling": 42.83
-  },
-  "PA": {
-   "mean": 32.18,
-   "floor": 21.3,
-   "ceiling": 43.12
-  },
-  "RA": {
-   "mean": 10.07,
-   "floor": 5.28,
-   "ceiling": 15.09
-  }
- },
- "minutes": {
-  "value": 35,
-  "source": "model"
- },
- "splits": {
-  "season": {
-   "games": 174,
-   "min_pg": 32.9,
-   "PTS": {
-    "pg": 25.82,
-    "pm": 0.785
-   },
-   "REB": {
-    "pg": 4.58,
-    "pm": 0.139
-   },
-   "AST": {
-    "pg": 5.1,
-    "pm": 0.155
-   },
-   "3PM": {
-    "pg": 3.16,
-    "pm": 0.096
-   },
-   "STL": {
-    "pg": 1.38,
-    "pm": 0.042
-   },
-   "BLK": {
-    "pg": 0.28,
-    "pm": 0.008
-   },
-   "TOV": {
-    "pg": 2.53,
-    "pm": 0.077
-   }
-  },
-  "l10": {
-   "games": 10,
-   "min_pg": 32.6,
-   "PTS": {
-    "pg": 25.1,
-    "pm": 0.77
-   },
-   "REB": {
-    "pg": 4.4,
-    "pm": 0.135
-   },
-   "AST": {
-    "pg": 5.6,
-    "pm": 0.172
-   },
-   "3PM": {
-    "pg": 2.9,
-    "pm": 0.089
-   },
-   "STL": {
-    "pg": 1.2,
-    "pm": 0.037
-   },
-   "BLK": {
-    "pg": 0.3,
-    "pm": 0.009
-   },
-   "TOV": {
-    "pg": 2.9,
-    "pm": 0.089
-   }
-  },
-  "l5": {
-   "games": 5,
-   "min_pg": 32.6,
-   "PTS": {
-    "pg": 26.4,
-    "pm": 0.81
-   },
-   "REB": {
-    "pg": 4.2,
-    "pm": 0.129
-   },
-   "AST": {
-    "pg": 4.8,
-    "pm": 0.147
-   },
-   "3PM": {
-    "pg": 2.4,
-    "pm": 0.074
-   },
-   "STL": {
-    "pg": 1.4,
-    "pm": 0.043
-   },
-   "BLK": {
-    "pg": 0.2,
-    "pm": 0.006
-   },
-   "TOV": {
-    "pg": 2.6,
-    "pm": 0.08
-   }
-  },
-  "home": {
-   "games": 89,
-   "min_pg": 32.8,
-   "PTS": {
-    "pg": 26.38,
-    "pm": 0.803
-   },
-   "REB": {
-    "pg": 4.64,
-    "pm": 0.141
-   },
-   "AST": {
-    "pg": 5.11,
-    "pm": 0.156
-   },
-   "3PM": {
-    "pg": 3.3,
-    "pm": 0.101
-   },
-   "STL": {
-    "pg": 1.38,
-    "pm": 0.042
-   },
-   "BLK": {
-    "pg": 0.29,
-    "pm": 0.009
-   },
-   "TOV": {
-    "pg": 2.54,
-    "pm": 0.077
-   }
-  },
-  "away": {
-   "games": 85,
-   "min_pg": 32.9,
-   "PTS": {
-    "pg": 25.24,
-    "pm": 0.766
-   },
-   "REB": {
-    "pg": 4.52,
-    "pm": 0.137
-   },
-   "AST": {
-    "pg": 5.08,
-    "pm": 0.154
-   },
-   "3PM": {
-    "pg": 3.0,
-    "pm": 0.091
-   },
-   "STL": {
-    "pg": 1.38,
-    "pm": 0.042
-   },
-   "BLK": {
-    "pg": 0.26,
-    "pm": 0.008
-   },
-   "TOV": {
-    "pg": 2.52,
-    "pm": 0.076
-   }
-  }
- },
+ "opp": "Indiana",
  "lines": {
   "PA": {
    "line": 30.5,
-   "p_over": 0.578,
-   "p_under": 0.422,
-   "fair_over": 0.504,
-   "fair_under": 0.496,
-   "price_over": 1.85,
-   "price_under": 1.88,
-   "side": "over",
    "price": 1.85,
    "book": "ladbrokes_au",
-   "edge": 0.0744,
-   "tier": "A"
+   "price_over": 1.85,
+   "price_under": 1.88
   },
   "PTS": {
    "line": 25.5,
-   "p_over": 0.574,
-   "p_under": 0.426,
-   "fair_over": 0.503,
-   "fair_under": 0.497,
-   "price_over": 1.85,
-   "price_under": 1.87,
-   "side": "over",
    "price": 1.85,
    "book": "unibet",
-   "edge": 0.0708,
-   "tier": "A"
+   "price_over": 1.85,
+   "price_under": 1.87
   },
   "PRA": {
    "line": 34.5,
-   "p_over": 0.606,
-   "p_under": 0.394,
-   "fair_over": 0.536,
-   "fair_under": 0.464,
-   "price_over": 1.75,
-   "price_under": 2.02,
-   "side": "over",
    "price": 1.75,
    "book": "ladbrokes_au",
-   "edge": 0.0705,
-   "tier": "A"
+   "price_over": 1.75,
+   "price_under": 2.02
   },
   "PR": {
    "line": 30.5,
-   "p_over": 0.562,
-   "p_under": 0.438,
-   "fair_over": 0.493,
-   "fair_under": 0.507,
-   "price_over": 1.9,
-   "price_under": 1.85,
-   "side": "over",
    "price": 1.9,
    "book": "ladbrokes_au",
-   "edge": 0.0684,
-   "tier": "A"
+   "price_over": 1.9,
+   "price_under": 1.85
   },
   "3PM": {
    "line": 2.5,
-   "p_over": 0.511,
-   "p_under": 0.489,
-   "fair_over": 0.541,
-   "fair_under": 0.459,
-   "price_over": 1.74,
-   "price_under": 2.05,
-   "side": "under",
    "price": 2.05,
    "book": "pointsbetau",
-   "edge": 0.0297,
-   "tier": null
+   "price_over": 1.74,
+   "price_under": 2.05
   },
   "RA": {
    "line": 9.5,
-   "p_over": 0.548,
-   "p_under": 0.452,
-   "fair_over": 0.507,
-   "fair_under": 0.493,
-   "price_over": 1.85,
-   "price_under": 1.9,
-   "side": "over",
    "price": 1.85,
    "book": "neds",
-   "edge": 0.0411,
-   "tier": "B"
+   "price_over": 1.85,
+   "price_under": 1.9
   },
   "AST": {
    "line": 4.5,
-   "p_over": 0.558,
-   "p_under": 0.442,
-   "fair_over": 0.539,
-   "fair_under": 0.461,
-   "price_over": 1.73,
-   "price_under": 2.02,
-   "side": "over",
    "price": 1.73,
    "book": "neds",
-   "edge": 0.0198,
-   "tier": null
+   "price_over": 1.73,
+   "price_under": 2.02
   },
   "REB": {
    "line": 4.5,
-   "p_over": 0.519,
-   "p_under": 0.481,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.88,
-   "price_under": 1.88,
-   "side": "over",
    "price": 1.88,
    "book": "sportsbet",
-   "edge": 0.0185,
-   "tier": null
+   "price_over": 1.88,
+   "price_under": 1.88
   }
  },
  "lines_us": {},
@@ -4760,13 +4482,26 @@
    "phase": "regular"
   }
  ],
- "with_without_tonight": [
-  {
-   "star": "Evan Mobley",
-   "n_without": 25,
-   "PTS": 3.2,
-   "REB": -0.5,
-   "AST": 1.0
+ "hits": {
+  "PTS": {
+   "line": 25.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
   }
  ],
  "opp": "Indiana"

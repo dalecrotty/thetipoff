@@ -5,11 +5,18 @@
  "opp": "Orlando",
  "lines": {
   "PTS": {
-   "line": 3.5,
-   "price": 1.75,
+   "line": 2.5,
+   "p_over": 0.505,
+   "p_under": 0.495,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
+   "side": "under",
+   "price": 1.9,
    "book": "tab",
-   "price_over": 2.0,
-   "price_under": 1.75
+   "edge": 0.0013,
+   "tier": null
   }
  },
  "recent_games": [

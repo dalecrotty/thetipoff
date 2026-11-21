@@ -2,61 +2,63 @@
  "player_id": 201935,
  "player": "James Harden",
  "team": "Cleveland",
- "projections": {
-  "3PM": {
-   "mean": 2.67,
-   "floor": 0.27,
-   "ceiling": 4.94
+ "opp": "Indiana",
+ "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 2.05,
+   "book": "neds",
+   "price_over": 1.72,
+   "price_under": 2.05
   },
   "AST": {
-   "mean": 6.91,
-   "floor": 3.36,
-   "ceiling": 10.72
+   "line": 6.5,
+   "price": 2.0,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
   },
-  "BLK": {
-   "mean": 0.57,
-   "floor": 0.0,
-   "ceiling": 1.98
-  },
-  "PTS": {
-   "mean": 17.49,
-   "floor": 8.85,
-   "ceiling": 26.42
-  },
-  "REB": {
-   "mean": 5.04,
-   "floor": 1.81,
-   "ceiling": 8.19
-  },
-  "STL": {
-   "mean": 1.08,
-   "floor": 0.0,
-   "ceiling": 2.92
-  },
-  "TOV": {
-   "mean": 3.16,
-   "floor": 1.03,
-   "ceiling": 5.41
+  "3PM": {
+   "line": 2.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
   },
   "PRA": {
-   "mean": 29.45,
-   "floor": 18.81,
-   "ceiling": 41.07
+   "line": 29.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
   },
-  "PR": {
-   "mean": 22.53,
-   "floor": 12.83,
-   "ceiling": 33.58
+  "PTS": {
+   "line": 17.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.88
   },
   "PA": {
-   "mean": 24.4,
-   "floor": 14.33,
-   "ceiling": 34.44
+   "line": 24.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
   },
   "RA": {
-   "mean": 11.96,
-   "floor": 5.9,
-   "ceiling": 17.51
+   "line": 11.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.02
+  },
+  "PR": {
+   "line": 22.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
   }
  },
  "minutes": {
@@ -4952,13 +4954,26 @@
    "phase": "regular"
   }
  ],
- "with_without_tonight": [
-  {
-   "star": "Evan Mobley",
-   "n_without": 8,
-   "PTS": -0.7,
-   "REB": 0.2,
-   "AST": 2.1
+ "hits": {
+  "PTS": {
+   "line": 17.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 2.5,
+   "over": 2,
+   "n": 5
   }
  ],
  "opp": "Indiana"

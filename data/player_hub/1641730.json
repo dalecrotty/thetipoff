@@ -6,31 +6,59 @@
  "lines": {
   "PTS": {
    "line": 6.5,
-   "price": 1.96,
+   "p_over": 0.552,
+   "p_under": 0.448,
+   "fair_over": 0.472,
+   "fair_under": 0.528,
+   "price_over": 1.98,
+   "price_under": 1.77,
+   "side": "over",
+   "price": 1.98,
    "book": "neds",
-   "price_over": 1.96,
-   "price_under": 1.78
+   "edge": 0.0804,
+   "tier": "A"
   },
   "PR": {
    "line": 9.5,
-   "price": 1.85,
+   "p_over": 0.565,
+   "p_under": 0.435,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.83,
    "book": "ladbrokes_au",
-   "price_over": 1.85,
-   "price_under": 1.88
+   "edge": 0.0559,
+   "tier": "B"
   },
   "PRA": {
-   "line": 10.5,
-   "price": 1.75,
+   "line": 11.5,
+   "p_over": 0.509,
+   "p_under": 0.491,
+   "fair_over": 0.467,
+   "fair_under": 0.533,
+   "price_over": 2.0,
+   "price_under": 1.75,
+   "side": "over",
+   "price": 2.0,
    "book": "tab",
-   "price_over": 1.75,
-   "price_under": 2.0
+   "edge": 0.0421,
+   "tier": "B"
   },
   "REB": {
    "line": 3.5,
-   "price": 1.71,
+   "p_over": 0.423,
+   "p_under": 0.577,
+   "fair_over": 0.459,
+   "fair_under": 0.541,
+   "price_over": 2.05,
+   "price_under": 1.74,
+   "side": "under",
+   "price": 1.74,
    "book": "pointsbetau",
-   "price_over": 2.1,
-   "price_under": 1.71
+   "edge": 0.0364,
+   "tier": "B"
   }
  },
  "recent_games": [
