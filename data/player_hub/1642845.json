@@ -226,20 +226,6 @@
   }
  },
  "lines": {
-  "RA": {
-   "line": 9.5,
-   "p_over": 0.596,
-   "p_under": 0.404,
-   "fair_over": 0.553,
-   "fair_under": 0.447,
-   "price_over": 1.7,
-   "price_under": 2.1,
-   "side": "over",
-   "price": 1.7,
-   "book": "neds",
-   "edge": 0.0434,
-   "tier": "B"
-  },
   "PTS": {
    "line": 13.5,
    "p_over": 0.518,
@@ -254,18 +240,32 @@
    "edge": 0.0141,
    "tier": null
   },
+  "RA": {
+   "line": 9.5,
+   "p_over": 0.596,
+   "p_under": 0.404,
+   "fair_over": 0.553,
+   "fair_under": 0.447,
+   "price_over": 1.7,
+   "price_under": 2.1,
+   "side": "over",
+   "price": 1.7,
+   "book": "neds",
+   "edge": 0.0434,
+   "tier": "B"
+  },
   "3PM": {
    "line": 1.5,
    "p_over": 0.536,
    "p_under": 0.464,
-   "fair_over": 0.568,
-   "fair_under": 0.432,
-   "price_over": 1.67,
-   "price_under": 2.2,
+   "fair_over": 0.561,
+   "fair_under": 0.439,
+   "price_over": 1.64,
+   "price_under": 2.1,
    "side": "under",
-   "price": 2.2,
-   "book": "pointsbetau",
-   "edge": 0.0326,
+   "price": 2.1,
+   "book": "neds",
+   "edge": 0.0257,
    "tier": null
   },
   "AST": {
@@ -281,20 +281,6 @@
    "book": "neds",
    "edge": 0.0503,
    "tier": "B"
-  },
-  "PA": {
-   "line": 17.5,
-   "p_over": 0.529,
-   "p_under": 0.471,
-   "fair_over": 0.501,
-   "fair_under": 0.499,
-   "price_over": 1.87,
-   "price_under": 1.88,
-   "side": "over",
-   "price": 1.87,
-   "book": "ladbrokes_au",
-   "edge": 0.0274,
-   "tier": null
   },
   "PRA": {
    "line": 24.5,
@@ -324,18 +310,32 @@
    "edge": 0.0139,
    "tier": null
   },
+  "PA": {
+   "line": 17.5,
+   "p_over": 0.529,
+   "p_under": 0.471,
+   "fair_over": 0.509,
+   "fair_under": 0.491,
+   "price_over": 1.83,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.83,
+   "book": "ladbrokes_au",
+   "edge": 0.0193,
+   "tier": null
+  },
   "REB": {
    "line": 6.5,
    "p_over": 0.45,
    "p_under": 0.55,
-   "fair_over": 0.449,
-   "fair_under": 0.551,
-   "price_over": 2.1,
-   "price_under": 1.71,
-   "side": "over",
-   "price": 2.1,
-   "book": "pointsbetau",
-   "edge": 0.0013,
+   "fair_over": 0.453,
+   "fair_under": 0.547,
+   "price_over": 2.08,
+   "price_under": 1.72,
+   "side": "under",
+   "price": 1.72,
+   "book": "sportsbet",
+   "edge": 0.0025,
    "tier": null
   }
  },
