@@ -240,6 +240,20 @@
    "edge": 0.1432,
    "tier": "A"
   },
+  "PA": {
+   "line": 10.5,
+   "p_over": 0.629,
+   "p_under": 0.371,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.83,
+   "price_under": 1.83,
+   "side": "over",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.1293,
+   "tier": "A"
+  },
   "3PM": {
    "line": 0.5,
    "p_over": 0.704,
@@ -253,6 +267,20 @@
    "book": "unibet",
    "edge": 0.0694,
    "tier": "B"
+  },
+  "AST": {
+   "line": 3.5,
+   "p_over": 0.435,
+   "p_under": 0.565,
+   "fair_over": 0.42,
+   "fair_under": 0.58,
+   "price_over": 2.25,
+   "price_under": 1.63,
+   "side": "over",
+   "price": 2.25,
+   "book": "pointsbetau",
+   "edge": 0.015,
+   "tier": null
   }
  },
  "lines_us": {},
