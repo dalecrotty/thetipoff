@@ -2,8 +2,377 @@
  "player_id": -775,
  "player": "Chris Cenac Jr.",
  "team": "Boston",
- "opp": "Sacramento",
+ "projections": {
+  "3PM": {
+   "mean": 0.65,
+   "floor": 0.03,
+   "ceiling": 1.98
+  },
+  "AST": {
+   "mean": 1.01,
+   "floor": 0.05,
+   "ceiling": 2.37
+  },
+  "BLK": {
+   "mean": 0.53,
+   "floor": 0.0,
+   "ceiling": 1.95
+  },
+  "PTS": {
+   "mean": 7.76,
+   "floor": 1.3,
+   "ceiling": 14.41
+  },
+  "REB": {
+   "mean": 4.37,
+   "floor": 1.2,
+   "ceiling": 7.84
+  },
+  "STL": {
+   "mean": 0.5,
+   "floor": 0.0,
+   "ceiling": 1.95
+  },
+  "TOV": {
+   "mean": 0.96,
+   "floor": 0.01,
+   "ceiling": 2.1
+  },
+  "PRA": {
+   "mean": 13.14,
+   "floor": 4.05,
+   "ceiling": 21.97
+  },
+  "PR": {
+   "mean": 12.13,
+   "floor": 4.07,
+   "ceiling": 20.07
+  },
+  "PA": {
+   "mean": 8.78,
+   "floor": 2.09,
+   "ceiling": 15.75
+  },
+  "RA": {
+   "mean": 5.38,
+   "floor": 1.93,
+   "ceiling": 9.33
+  }
+ },
+ "minutes": {
+  "value": 16,
+  "source": "fallback"
+ },
+ "splits": {
+  "season": {
+   "games": 6,
+   "min_pg": 7.5,
+   "PTS": {
+    "pg": 4.0,
+    "pm": 0.533
+   },
+   "REB": {
+    "pg": 2.33,
+    "pm": 0.311
+   },
+   "AST": {
+    "pg": 0.17,
+    "pm": 0.022
+   },
+   "3PM": {
+    "pg": 0.33,
+    "pm": 0.044
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.17,
+    "pm": 0.022
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.089
+   }
+  },
+  "l10": {
+   "games": 6,
+   "min_pg": 7.5,
+   "PTS": {
+    "pg": 4.0,
+    "pm": 0.533
+   },
+   "REB": {
+    "pg": 2.33,
+    "pm": 0.311
+   },
+   "AST": {
+    "pg": 0.17,
+    "pm": 0.022
+   },
+   "3PM": {
+    "pg": 0.33,
+    "pm": 0.044
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.17,
+    "pm": 0.022
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.089
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 8.0,
+   "PTS": {
+    "pg": 4.2,
+    "pm": 0.525
+   },
+   "REB": {
+    "pg": 2.6,
+    "pm": 0.325
+   },
+   "AST": {
+    "pg": 0.2,
+    "pm": 0.025
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.025
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.025
+   },
+   "TOV": {
+    "pg": 0.8,
+    "pm": 0.1
+   }
+  },
+  "home": {
+   "games": 4,
+   "min_pg": 6.5,
+   "PTS": {
+    "pg": 4.0,
+    "pm": 0.615
+   },
+   "REB": {
+    "pg": 2.0,
+    "pm": 0.308
+   },
+   "AST": {
+    "pg": 0.25,
+    "pm": 0.038
+   },
+   "3PM": {
+    "pg": 0.25,
+    "pm": 0.038
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.154
+   }
+  },
+  "away": {
+   "games": 2,
+   "min_pg": 9.5,
+   "PTS": {
+    "pg": 4.0,
+    "pm": 0.421
+   },
+   "REB": {
+    "pg": 3.0,
+    "pm": 0.316
+   },
+   "AST": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "3PM": {
+    "pg": 0.5,
+    "pm": 0.053
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.053
+   },
+   "TOV": {
+    "pg": 0.0,
+    "pm": 0.0
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-26",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2026-10-26_boston_vs_chicago",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 5.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-30",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2026-10-30_boston_vs_chicago",
+   "starter": false,
+   "rest": "3",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 2.0,
+   "PTS": 3.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 1.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Houston",
+   "venue": "R",
+   "game": "2026-11-02_boston_vs_houston",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 2.0,
+   "PTS": 2.0,
+   "REB": 0.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-15",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2026-11-15_boston_vs_dallas",
+   "starter": false,
+   "rest": "12",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 7.0,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 5.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-16",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2026-11-16_boston_vs_orlando",
+   "starter": false,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 12.0,
+   "PTS": 4.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-18",
+   "opp": "Denver",
+   "venue": "R",
+   "game": "2026-11-18_boston_vs_denver",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 17.0,
+   "PTS": 6.0,
+   "REB": 6.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 2.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-18",
@@ -124,8 +493,32 @@
    "FTA": 2.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Chicago",
+   "venue": "H",
+   "game": "2026-10-26_boston_vs_chicago",
+   "starter": false,
+   "rest": "",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 5.0,
+   "PTS": 3.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Sacramento"
 }
