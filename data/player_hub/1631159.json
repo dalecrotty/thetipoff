@@ -4,14 +4,14 @@
  "team": "Chicago",
  "projections": {
   "3PM": {
-   "mean": 0.09,
+   "mean": 0.08,
    "floor": 0.0,
-   "ceiling": 0.09
+   "ceiling": 0.08
   },
   "AST": {
-   "mean": 0.16,
+   "mean": 0.14,
    "floor": 0.0,
-   "ceiling": 1.52
+   "ceiling": 1.5
   },
   "BLK": {
    "mean": 0.06,
@@ -19,44 +19,44 @@
    "ceiling": 0.95
   },
   "PTS": {
-   "mean": 1.0,
+   "mean": 0.9,
    "floor": 0.0,
-   "ceiling": 6.72
+   "ceiling": 6.62
   },
   "REB": {
-   "mean": 0.5,
+   "mean": 0.45,
    "floor": 0.0,
-   "ceiling": 2.71
+   "ceiling": 2.66
   },
   "STL": {
    "mean": 0.05,
    "floor": 0.0,
-   "ceiling": 0.85
+   "ceiling": 0.84
   },
   "TOV": {
-   "mean": 0.11,
+   "mean": 0.1,
    "floor": 0.0,
-   "ceiling": 1.52
+   "ceiling": 1.51
   },
   "PRA": {
-   "mean": 1.66,
-   "floor": 0.0,
-   "ceiling": 10.37
-  },
-  "PR": {
    "mean": 1.5,
    "floor": 0.0,
-   "ceiling": 9.61
+   "ceiling": 10.21
+  },
+  "PR": {
+   "mean": 1.36,
+   "floor": 0.0,
+   "ceiling": 9.47
   },
   "PA": {
-   "mean": 1.16,
+   "mean": 1.05,
    "floor": 0.0,
-   "ceiling": 7.94
+   "ceiling": 7.83
   },
   "RA": {
-   "mean": 0.66,
+   "mean": 0.6,
    "floor": 0.0,
-   "ceiling": 3.96
+   "ceiling": 3.9
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 5.5,
-   "p_over": 0.154,
-   "p_under": 0.846,
+   "p_over": 0.149,
+   "p_under": 0.851,
    "fair_over": 0.456,
    "fair_under": 0.544,
    "price_over": 2.05,
@@ -237,7 +237,7 @@
    "side": "under",
    "price": 1.72,
    "book": "tab",
-   "edge": 0.302,
+   "edge": 0.307,
    "tier": "A"
   }
  },
