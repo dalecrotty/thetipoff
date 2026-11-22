@@ -22,8 +22,8 @@
   {
    "id": 1630180,
    "name": "Saddiq Bey",
-   "games": 89,
-   "med_min": 31.1
+   "games": 90,
+   "med_min": 31.4
   },
   {
    "id": 1627749,
@@ -32,15 +32,15 @@
    "med_min": 31.0
   },
   {
-   "id": 1630529,
-   "name": "Herbert Jones",
-   "games": 93,
-   "med_min": 30.1
-  },
-  {
    "id": 1629627,
    "name": "Zion Williamson",
    "games": 108,
+   "med_min": 30.0
+  },
+  {
+   "id": 1630529,
+   "name": "Herbert Jones",
+   "games": 94,
    "med_min": 30.0
   },
   {
@@ -52,7 +52,7 @@
   {
    "id": 1642847,
    "name": "Jeremiah Fears",
-   "games": 99,
+   "games": 100,
    "med_min": 26.4
   },
   {
@@ -64,14 +64,14 @@
   {
    "id": 1642852,
    "name": "Derik Queen",
-   "games": 98,
-   "med_min": 24.7
+   "games": 99,
+   "med_min": 24.8
   },
   {
    "id": 1629673,
    "name": "Jordan Poole",
-   "games": 50,
-   "med_min": 24.3
+   "games": 51,
+   "med_min": 24.5
   },
   {
    "id": -645,
@@ -94,7 +94,7 @@
   {
    "id": 1642274,
    "name": "Yves Missi",
-   "games": 145,
+   "games": 146,
    "med_min": 24.0
   },
   {
@@ -154,14 +154,20 @@
   {
    "id": 1631255,
    "name": "Karlo Matkovic",
-   "games": 120,
-   "med_min": 17.8
+   "games": 121,
+   "med_min": 17.6
   },
   {
    "id": 1630570,
    "name": "Trendon Watford",
    "games": 6,
    "med_min": 17.5
+  },
+  {
+   "id": -721,
+   "name": "Jaron Pierre Jr.",
+   "games": 7,
+   "med_min": 17.0
   },
   {
    "id": -619,
@@ -206,12 +212,6 @@
    "med_min": 12.5
   },
   {
-   "id": -721,
-   "name": "Jaron Pierre Jr.",
-   "games": 6,
-   "med_min": 12.0
-  },
-  {
    "id": 1631288,
    "name": "Jamal Cain",
    "games": 36,
@@ -230,16 +230,16 @@
    "med_min": 11.3
   },
   {
+   "id": 1642358,
+   "name": "AJ Johnson",
+   "games": 7,
+   "med_min": 6.0
+  },
+  {
    "id": 1630621,
    "name": "Hunter Dickinson",
    "games": 5,
    "med_min": 5.1
-  },
-  {
-   "id": 1642358,
-   "name": "AJ Johnson",
-   "games": 6,
-   "med_min": 5.0
   },
   {
    "id": -723,
@@ -29915,6 +29915,151 @@
      "FGM": 1.0,
      "FGA": 3.0,
      "3PA": 2.0,
+     "FTA": 0.0,
+     "starter": false
+    }
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "San Antonio",
+   "venue": "R",
+   "game": "2026-11-21_new-orleans_vs_san-antonio",
+   "lines": {
+    "1642358": {
+     "min": 8.0,
+     "PTS": 0.0,
+     "REB": 0.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 0.0,
+     "FGA": 2.0,
+     "3PA": 1.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1642852": {
+     "min": 35.0,
+     "PTS": 15.0,
+     "REB": 15.0,
+     "AST": 0.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 7.0,
+     "FGA": 16.0,
+     "3PA": 1.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1630529": {
+     "min": 25.0,
+     "PTS": 2.0,
+     "REB": 4.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 1.0,
+     "FGA": 8.0,
+     "3PA": 3.0,
+     "FTA": 2.0,
+     "starter": true
+    },
+    "1642847": {
+     "min": 34.0,
+     "PTS": 29.0,
+     "REB": 5.0,
+     "AST": 4.0,
+     "3PM": 2.0,
+     "STL": 2.0,
+     "BLK": 0.0,
+     "TOV": 5.0,
+     "FGM": 9.0,
+     "FGA": 17.0,
+     "3PA": 6.0,
+     "FTA": 10.0,
+     "starter": true
+    },
+    "1629673": {
+     "min": 31.0,
+     "PTS": 25.0,
+     "REB": 3.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 2.0,
+     "FGM": 9.0,
+     "FGA": 16.0,
+     "3PA": 9.0,
+     "FTA": 4.0,
+     "starter": false
+    },
+    "1631255": {
+     "min": 15.0,
+     "PTS": 3.0,
+     "REB": 3.0,
+     "AST": 0.0,
+     "3PM": 1.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 1.0,
+     "FGA": 4.0,
+     "3PA": 3.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630180": {
+     "min": 32.0,
+     "PTS": 2.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 12.0,
+     "3PA": 7.0,
+     "FTA": 1.0,
+     "starter": true
+    },
+    "1642274": {
+     "min": 35.0,
+     "PTS": 9.0,
+     "REB": 13.0,
+     "AST": 1.0,
+     "3PM": 0.0,
+     "STL": 2.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 3.0,
+     "FGA": 8.0,
+     "3PA": 0.0,
+     "FTA": 6.0,
+     "starter": true
+    },
+    "-721": {
+     "min": 25.0,
+     "PTS": 6.0,
+     "REB": 5.0,
+     "AST": 0.0,
+     "3PM": 2.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 2.0,
+     "FGA": 7.0,
+     "3PA": 5.0,
      "FTA": 0.0,
      "starter": false
     }
