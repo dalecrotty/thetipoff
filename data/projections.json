@@ -2322,7 +2322,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 16
+   "rank": 17
   },
   {
    "player_id": 1641744,
@@ -3422,7 +3422,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 90
+   "rank": 91
   },
   {
    "player_id": 1642910,
@@ -8445,7 +8445,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 71
   },
   {
    "player_id": 1628436,
@@ -9561,7 +9561,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 74
+   "rank": 73
   },
   {
    "player_id": 1631099,
@@ -12301,7 +12301,7 @@
    "prior": 8.08,
    "prior_at": "2026-11-21T15:31+00:00",
    "move_reason": "Anunoby, Towns out",
-   "rank": 69
+   "rank": 68
   },
   {
    "player_id": 1628436,
@@ -16634,7 +16634,7 @@
    "prior": 6.93,
    "prior_at": "2026-11-21T15:31+00:00",
    "move_reason": "Anunoby, Towns out",
-   "rank": 9
+   "rank": 10
   },
   {
    "player_id": 1628436,
@@ -16869,7 +16869,7 @@
    "prior": 1.75,
    "prior_at": "2026-11-21T15:31+00:00",
    "move_reason": "Anunoby, Towns out",
-   "rank": 103
+   "rank": 102
   },
   {
    "player_id": 1629014,
@@ -17134,7 +17134,7 @@
     "price_under": 1.73,
     "l5_over": 0.4,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -18777,13 +18777,13 @@
    "opp": "New Orleans",
    "game": "New Orleans vs San Antonio",
    "stat": "REB",
-   "line": 4.5,
-   "price": 2.0,
-   "book": "neds",
-   "price_over": 1.75,
-   "price_under": 2.0,
-   "l5_over": 0.4,
-   "l10_over": 0.6,
+   "line": 5.5,
+   "price": 1.65,
+   "book": "unibet",
+   "price_over": 2.15,
+   "price_under": 1.65,
+   "l5_over": 0.2,
+   "l10_over": 0.4,
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
@@ -21873,7 +21873,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 82
+   "rank": 81
   },
   {
    "player_id": 1631099,
@@ -22609,7 +22609,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 77
   },
   {
    "player_id": 1642274,
@@ -24593,7 +24593,7 @@
    "prior": 0.98,
    "prior_at": "2026-11-21T15:31+00:00",
    "move_reason": "Anunoby, Towns out",
-   "rank": 62
+   "rank": 61
   },
   {
    "player_id": 1629014,
@@ -27081,7 +27081,7 @@
    "prior": 0.0,
    "prior_at": "2026-11-21T15:31+00:00",
    "move_reason": "Anunoby, Towns out",
-   "rank": 61
+   "rank": 60
   },
   {
    "player_id": 1643257,
@@ -27927,7 +27927,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 35
+   "rank": 34
   },
   {
    "player_id": 202331,
@@ -29435,7 +29435,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 104
+   "rank": 103
   },
   {
    "player_id": 1630695,
@@ -35523,7 +35523,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 77
   },
   {
    "player_id": 203084,
@@ -37411,7 +37411,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 77
+   "rank": 76
   },
   {
    "player_id": 1631342,
@@ -37925,7 +37925,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 73
+   "rank": 72
   },
   {
    "player_id": 1642285,
@@ -38667,7 +38667,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 111
+   "rank": 110
   },
   {
    "player_id": -814,
@@ -42544,6 +42544,10 @@
   },
   {
    "run_at": "2026-11-22T00:40+00:00",
+   "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-11-22T00:43+00:00",
    "trigger": "lineups"
   }
  ]
