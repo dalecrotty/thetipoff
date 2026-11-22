@@ -4,63 +4,63 @@
  "team": "Miami",
  "projections": {
   "3PM": {
-   "mean": 0.0,
+   "mean": 0.72,
    "floor": 0.0,
-   "ceiling": 0.0
+   "ceiling": 1.97
   },
   "AST": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 1.36
+   "mean": 1.89,
+   "floor": 0.09,
+   "ceiling": 4.01
   },
   "BLK": {
-   "mean": 0.0,
+   "mean": 0.48,
    "floor": 0.0,
-   "ceiling": 0.89
+   "ceiling": 1.89
   },
   "PTS": {
-   "mean": 0.0,
+   "mean": 4.73,
    "floor": 0.0,
-   "ceiling": 5.72
+   "ceiling": 10.45
   },
   "REB": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 2.21
+   "mean": 2.61,
+   "floor": 0.35,
+   "ceiling": 5.05
   },
   "STL": {
-   "mean": 0.0,
+   "mean": 0.45,
    "floor": 0.0,
-   "ceiling": 0.8
+   "ceiling": 1.25
   },
   "TOV": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 1.4
+   "mean": 0.96,
+   "floor": 0.02,
+   "ceiling": 2.1
   },
   "PRA": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 8.71
+   "mean": 9.24,
+   "floor": 1.52,
+   "ceiling": 17.96
   },
   "PR": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 8.11
+   "mean": 7.35,
+   "floor": 0.58,
+   "ceiling": 15.46
   },
   "PA": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 6.78
+   "mean": 6.63,
+   "floor": 0.76,
+   "ceiling": 13.41
   },
   "RA": {
-   "mean": 0.0,
-   "floor": 0.0,
-   "ceiling": 3.3
+   "mean": 4.51,
+   "floor": 1.15,
+   "ceiling": 7.95
   }
  },
  "minutes": {
-  "value": 0,
+  "value": 15,
   "source": "model"
  },
  "splits": {
@@ -228,17 +228,17 @@
  "lines": {
   "PTS": {
    "line": 4.5,
-   "p_over": 0.154,
-   "p_under": 0.846,
+   "p_over": 0.525,
+   "p_under": 0.475,
    "fair_over": 0.48,
    "fair_under": 0.52,
    "price_over": 1.95,
    "price_under": 1.8,
-   "side": "under",
-   "price": 1.8,
+   "side": "over",
+   "price": 1.95,
    "book": "tab",
-   "edge": 0.3256,
-   "tier": "A"
+   "edge": 0.0453,
+   "tier": "B"
   }
  },
  "lines_us": {},
