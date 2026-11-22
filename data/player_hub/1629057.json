@@ -4,59 +4,59 @@
  "team": "Portland",
  "projections": {
   "3PM": {
-   "mean": 0.11,
+   "mean": 0.1,
    "floor": 0.0,
-   "ceiling": 0.11
+   "ceiling": 0.1
   },
   "AST": {
    "mean": 1.39,
    "floor": 0.0,
-   "ceiling": 2.99
+   "ceiling": 2.98
   },
   "BLK": {
-   "mean": 1.1,
+   "mean": 1.09,
    "floor": 0.0,
-   "ceiling": 2.82
+   "ceiling": 2.81
   },
   "PTS": {
-   "mean": 5.84,
-   "floor": 1.01,
-   "ceiling": 11.56
+   "mean": 5.8,
+   "floor": 0.98,
+   "ceiling": 11.52
   },
   "REB": {
-   "mean": 6.16,
-   "floor": 2.69,
-   "ceiling": 9.88
+   "mean": 6.12,
+   "floor": 2.66,
+   "ceiling": 9.84
   },
   "STL": {
    "mean": 0.58,
-   "floor": 0.0,
-   "ceiling": 1.95
+   "floor": 0.02,
+   "ceiling": 2.03
   },
   "TOV": {
-   "mean": 0.83,
+   "mean": 0.82,
    "floor": 0.0,
-   "ceiling": 1.97
+   "ceiling": 1.96
   },
   "PRA": {
-   "mean": 13.4,
-   "floor": 4.3,
-   "ceiling": 22.22
+   "mean": 13.31,
+   "floor": 4.22,
+   "ceiling": 22.14
   },
   "PR": {
-   "mean": 12.0,
-   "floor": 3.94,
-   "ceiling": 19.94
+   "mean": 11.93,
+   "floor": 3.87,
+   "ceiling": 19.87
   },
   "PA": {
-   "mean": 7.23,
-   "floor": 1.37,
-   "ceiling": 14.02
+   "mean": 7.19,
+   "floor": 1.32,
+   "ceiling": 13.98
   },
   "RA": {
-   "mean": 7.56,
-   "floor": 3.44,
-   "ceiling": 12.28
+   "mean": 7.51,
+   "floor": 3.39,
+   "ceiling": 12.23
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 4.5,
-   "p_over": 0.632,
-   "p_under": 0.368,
+   "p_over": 0.629,
+   "p_under": 0.371,
    "fair_over": 0.532,
    "fair_under": 0.468,
    "price_over": 1.8,
@@ -237,13 +237,13 @@
    "side": "over",
    "price": 1.8,
    "book": "pointsbetau",
-   "edge": 0.0998,
+   "edge": 0.0965,
    "tier": "A"
   },
   "PR": {
    "line": 11.5,
-   "p_over": 0.532,
-   "p_under": 0.468,
+   "p_over": 0.527,
+   "p_under": 0.473,
    "fair_over": 0.449,
    "fair_under": 0.551,
    "price_over": 2.1,
@@ -251,13 +251,13 @@
    "side": "over",
    "price": 2.1,
    "book": "pointsbetau",
-   "edge": 0.0829,
+   "edge": 0.0783,
    "tier": "A"
   },
   "REB": {
    "line": 5.5,
-   "p_over": 0.548,
-   "p_under": 0.452,
+   "p_over": 0.543,
+   "p_under": 0.457,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -265,7 +265,7 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0482,
+   "edge": 0.0433,
    "tier": "B"
   }
  },
