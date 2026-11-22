@@ -6,10 +6,10 @@
  "lines": {
   "REB": {
    "line": 6.5,
-   "price": 1.73,
+   "price": 1.72,
    "book": "unibet",
    "price_over": 2.02,
-   "price_under": 1.73
+   "price_under": 1.72
   },
   "3PM": {
    "line": 1.5,
@@ -31,6 +31,13 @@
    "book": "unibet",
    "price_over": 2.02,
    "price_under": 1.72
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
   },
   "PRA": {
    "line": 17.5,
@@ -171,6 +178,11 @@
   "REB": {
    "line": 6.5,
    "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 3,
    "n": 5
   },
   "3PM": {
