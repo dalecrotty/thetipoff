@@ -4,59 +4,59 @@
  "team": "Atlanta",
  "projections": {
   "3PM": {
-   "mean": 1.68,
+   "mean": 1.66,
    "floor": 0.0,
-   "ceiling": 3.87
+   "ceiling": 3.85
   },
   "AST": {
-   "mean": 1.27,
+   "mean": 1.25,
    "floor": 0.0,
-   "ceiling": 3.05
+   "ceiling": 3.03
   },
   "BLK": {
    "mean": 0.31,
-   "floor": 0.0,
-   "ceiling": 0.99
+   "floor": 0.01,
+   "ceiling": 1.04
   },
   "PTS": {
-   "mean": 9.04,
-   "floor": 2.01,
-   "ceiling": 16.47
+   "mean": 8.94,
+   "floor": 1.91,
+   "ceiling": 16.37
   },
   "REB": {
-   "mean": 3.33,
-   "floor": 0.88,
-   "ceiling": 6.11
+   "mean": 3.29,
+   "floor": 0.84,
+   "ceiling": 6.07
   },
   "STL": {
-   "mean": 1.14,
-   "floor": 0.01,
-   "ceiling": 2.97
+   "mean": 1.12,
+   "floor": 0.0,
+   "ceiling": 2.96
   },
   "TOV": {
-   "mean": 0.78,
+   "mean": 0.77,
    "floor": 0.0,
-   "ceiling": 2.03
+   "ceiling": 2.02
   },
   "PRA": {
-   "mean": 13.64,
-   "floor": 4.55,
-   "ceiling": 22.47
+   "mean": 13.49,
+   "floor": 4.4,
+   "ceiling": 22.31
   },
   "PR": {
-   "mean": 12.38,
-   "floor": 3.87,
-   "ceiling": 21.0
+   "mean": 12.23,
+   "floor": 4.18,
+   "ceiling": 20.18
   },
   "PA": {
-   "mean": 10.31,
-   "floor": 2.78,
-   "ceiling": 18.01
+   "mean": 10.19,
+   "floor": 2.66,
+   "ceiling": 17.89
   },
   "RA": {
-   "mean": 4.6,
-   "floor": 1.24,
-   "ceiling": 8.05
+   "mean": 4.55,
+   "floor": 1.19,
+   "ceiling": 7.99
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PR": {
    "line": 11.5,
-   "p_over": 0.553,
-   "p_under": 0.447,
+   "p_over": 0.547,
+   "p_under": 0.453,
    "fair_over": 0.505,
    "fair_under": 0.495,
    "price_over": 1.83,
@@ -237,13 +237,13 @@
    "side": "over",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0472,
+   "edge": 0.0411,
    "tier": "B"
   },
   "REB": {
    "line": 2.5,
-   "p_over": 0.62,
-   "p_under": 0.38,
+   "p_over": 0.613,
+   "p_under": 0.387,
    "fair_over": 0.58,
    "fair_under": 0.42,
    "price_over": 1.63,
@@ -251,13 +251,13 @@
    "side": "over",
    "price": 1.63,
    "book": "pointsbetau",
-   "edge": 0.04,
+   "edge": 0.0331,
    "tier": "B"
   },
   "PTS": {
    "line": 8.5,
-   "p_over": 0.539,
-   "p_under": 0.461,
+   "p_over": 0.532,
+   "p_under": 0.468,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -265,13 +265,13 @@
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0394,
+   "edge": 0.0318,
    "tier": "B"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.484,
-   "p_under": 0.516,
+   "p_over": 0.478,
+   "p_under": 0.522,
    "fair_over": 0.511,
    "fair_under": 0.489,
    "price_over": 1.84,
@@ -279,15 +279,15 @@
    "side": "under",
    "price": 1.92,
    "book": "sportsbet",
-   "edge": 0.027,
+   "edge": 0.0325,
    "tier": null
   }
  },
  "lines_us": {
   "REB": {
    "line": 2.5,
-   "p_over": 0.62,
-   "p_under": 0.38,
+   "p_over": 0.613,
+   "p_under": 0.387,
    "fair_over": 0.574,
    "fair_under": 0.426,
    "price_over": 1.62,
@@ -295,13 +295,13 @@
    "side": "over",
    "price": 1.62,
    "book": "betrivers",
-   "edge": 0.0462,
+   "edge": 0.0393,
    "tier": "B"
   },
   "PTS": {
    "line": 8.5,
-   "p_over": 0.539,
-   "p_under": 0.461,
+   "p_over": 0.532,
+   "p_under": 0.468,
    "fair_over": 0.493,
    "fair_under": 0.507,
    "price_over": 1.91,
@@ -309,13 +309,13 @@
    "side": "over",
    "price": 1.91,
    "book": "betright",
-   "edge": 0.046,
+   "edge": 0.0385,
    "tier": "B"
   },
   "PR": {
    "line": 11.5,
-   "p_over": 0.553,
-   "p_under": 0.447,
+   "p_over": 0.547,
+   "p_under": 0.453,
    "fair_over": 0.519,
    "fair_under": 0.481,
    "price_over": 1.82,
@@ -323,13 +323,13 @@
    "side": "over",
    "price": 1.82,
    "book": "fanduel",
-   "edge": 0.0341,
-   "tier": "B"
+   "edge": 0.028,
+   "tier": null
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.484,
-   "p_under": 0.516,
+   "p_over": 0.478,
+   "p_under": 0.522,
    "fair_over": 0.504,
    "fair_under": 0.496,
    "price_over": 1.85,
@@ -337,7 +337,7 @@
    "side": "under",
    "price": 1.88,
    "book": "williamhill_us",
-   "edge": 0.0204,
+   "edge": 0.0259,
    "tier": null
   }
  },
