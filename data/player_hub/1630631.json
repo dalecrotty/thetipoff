@@ -4,63 +4,63 @@
  "team": "New York",
  "projections": {
   "3PM": {
-   "mean": 0.58,
-   "floor": 0.0,
-   "ceiling": 1.91
-  },
-  "AST": {
-   "mean": 1.87,
-   "floor": 0.06,
-   "ceiling": 3.99
-  },
-  "BLK": {
-   "mean": 0.12,
-   "floor": 0.0,
-   "ceiling": 1.01
-  },
-  "PTS": {
-   "mean": 3.96,
-   "floor": 0.0,
-   "ceiling": 9.67
-  },
-  "REB": {
-   "mean": 1.56,
-   "floor": 0.0,
-   "ceiling": 3.77
-  },
-  "STL": {
-   "mean": 0.61,
+   "mean": 0.72,
    "floor": 0.0,
    "ceiling": 1.98
   },
-  "TOV": {
-   "mean": 0.89,
+  "AST": {
+   "mean": 2.32,
+   "floor": 0.25,
+   "ceiling": 4.31
+  },
+  "BLK": {
+   "mean": 0.15,
    "floor": 0.0,
-   "ceiling": 2.03
+   "ceiling": 0.98
+  },
+  "PTS": {
+   "mean": 4.91,
+   "floor": 0.08,
+   "ceiling": 10.63
+  },
+  "REB": {
+   "mean": 1.94,
+   "floor": 0.16,
+   "ceiling": 4.15
+  },
+  "STL": {
+   "mean": 0.76,
+   "floor": 0.0,
+   "ceiling": 1.99
+  },
+  "TOV": {
+   "mean": 1.11,
+   "floor": 0.0,
+   "ceiling": 2.11
   },
   "PRA": {
-   "mean": 7.39,
-   "floor": 0.0,
-   "ceiling": 16.1
+   "mean": 9.17,
+   "floor": 1.45,
+   "ceiling": 17.88
   },
   "PR": {
-   "mean": 5.52,
-   "floor": 0.0,
-   "ceiling": 13.63
+   "mean": 6.85,
+   "floor": 0.08,
+   "ceiling": 14.96
   },
   "PA": {
-   "mean": 5.83,
-   "floor": 0.0,
-   "ceiling": 12.61
+   "mean": 7.23,
+   "floor": 1.37,
+   "ceiling": 14.02
   },
   "RA": {
-   "mean": 3.43,
-   "floor": 0.68,
-   "ceiling": 6.74
+   "mean": 4.26,
+   "floor": 0.9,
+   "ceiling": 7.7
   }
  },
  "minutes": {
-  "value": 12,
+  "value": 14,
   "source": "model"
  },
  "splits": {
@@ -228,17 +228,17 @@
  "lines": {
   "PTS": {
    "line": 5.5,
-   "p_over": 0.363,
-   "p_under": 0.637,
-   "fair_over": 0.467,
-   "fair_under": 0.533,
-   "price_over": 2.0,
-   "price_under": 1.75,
+   "p_over": 0.447,
+   "p_under": 0.553,
+   "fair_over": 0.493,
+   "fair_under": 0.507,
+   "price_over": 1.9,
+   "price_under": 1.85,
    "side": "under",
-   "price": 1.75,
+   "price": 1.85,
    "book": "tab",
-   "edge": 0.1033,
-   "tier": "A"
+   "edge": 0.0464,
+   "tier": "B"
   }
  },
  "lines_us": {},
