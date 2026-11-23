@@ -4,19 +4,33 @@
  "team": "San Antonio",
  "opp": "Sacramento",
  "lines": {
+  "REB": {
+   "line": 5.5,
+   "price": 1.75,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
   "3PM": {
    "line": 2.5,
-   "price": 1.67,
-   "book": "neds",
+   "price": 2.1,
+   "book": "unibet",
    "price_over": 1.67,
-   "price_under": 2.05
+   "price_under": 2.1
   },
   "PTS": {
-   "line": 13.5,
-   "price": 1.82,
-   "book": "neds",
-   "price_over": 1.92,
-   "price_under": 1.82
+   "line": 12.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
   }
  },
  "recent_games": [
@@ -143,7 +157,12 @@
  ],
  "hits": {
   "PTS": {
-   "line": 13.5,
+   "line": 12.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 5.5,
    "over": 2,
    "n": 5
   },
