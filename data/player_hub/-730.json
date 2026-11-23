@@ -3,7 +3,50 @@
  "player": "Morez Johnson Jr.",
  "team": "Dallas",
  "opp": "Utah",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74
+  },
+  "PRA": {
+   "line": 11.5,
+   "price": 1.8,
+   "book": "tab",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "PTS": {
+   "line": 5.5,
+   "price": 1.75,
+   "book": "tab",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 2.6,
+   "book": "tab",
+   "price_over": 2.6,
+   "price_under": 1.46
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 1.78,
+   "price_under": 2.0
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.28,
+   "book": "tab",
+   "price_over": 3.4,
+   "price_under": 1.28
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-21",
@@ -126,6 +169,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 5.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
