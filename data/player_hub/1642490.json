@@ -2,8 +2,246 @@
  "player_id": 1642490,
  "player": "Josh Oduro",
  "team": "New Orleans",
- "opp": null,
+ "projections": {},
+ "minutes": null,
+ "splits": {
+  "season": {
+   "games": 3,
+   "min_pg": 27.3,
+   "PTS": {
+    "pg": 8.33,
+    "pm": 0.306
+   },
+   "REB": {
+    "pg": 7.67,
+    "pm": 0.281
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.049
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.024
+   }
+  },
+  "l10": {
+   "games": 3,
+   "min_pg": 27.3,
+   "PTS": {
+    "pg": 8.33,
+    "pm": 0.306
+   },
+   "REB": {
+    "pg": 7.67,
+    "pm": 0.281
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.049
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.024
+   }
+  },
+  "l5": {
+   "games": 3,
+   "min_pg": 27.3,
+   "PTS": {
+    "pg": 8.33,
+    "pm": 0.306
+   },
+   "REB": {
+    "pg": 7.67,
+    "pm": 0.281
+   },
+   "AST": {
+    "pg": 1.33,
+    "pm": 0.049
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.67,
+    "pm": 0.024
+   }
+  },
+  "home": {
+   "games": 1,
+   "min_pg": 26.5,
+   "PTS": {
+    "pg": 9.0,
+    "pm": 0.34
+   },
+   "REB": {
+    "pg": 5.0,
+    "pm": 0.189
+   },
+   "AST": {
+    "pg": 1.0,
+    "pm": 0.038
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.038
+   }
+  },
+  "away": {
+   "games": 2,
+   "min_pg": 27.6,
+   "PTS": {
+    "pg": 8.0,
+    "pm": 0.289
+   },
+   "REB": {
+    "pg": 9.0,
+    "pm": 0.325
+   },
+   "AST": {
+    "pg": 1.5,
+    "pm": 0.054
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 0.5,
+    "pm": 0.018
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-04-07",
+   "opp": "Utah",
+   "venue": "H",
+   "game": "2026-04-07_new-orleans_vs_utah",
+   "starter": false,
+   "rest": "3+",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 26.5,
+   "PTS": 9.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 7.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-04-10",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-04-10_boston_vs_new-orleans",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 23.9,
+   "PTS": 12.0,
+   "REB": 12.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 5.0,
+   "FGA": 8.0,
+   "3PA": 2.0,
+   "FTA": 3.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-04-12",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-04-12_minnesota_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 31.4,
+   "PTS": 4.0,
+   "REB": 6.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 2.0,
+   "3PA": 0.0,
+   "FTA": 1.0,
+   "season": "2025-26",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-04-12",
@@ -78,6 +316,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": null
 }
