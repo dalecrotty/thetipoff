@@ -4,19 +4,33 @@
  "team": "Philadelphia",
  "opp": "Portland",
  "lines": {
-  "3PM": {
-   "line": 1.5,
-   "price": 1.44,
-   "book": "pointsbetau",
-   "price_over": 2.65,
-   "price_under": 1.44
+  "PR": {
+   "line": 9.5,
+   "price": 1.95,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.95
   },
   "PTS": {
+   "line": 5.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.42,
+   "book": "pointsbetau",
+   "price_over": 2.75,
+   "price_under": 1.42
+  },
+  "REB": {
    "line": 4.5,
-   "price": 1.85,
-   "book": "tab",
-   "price_over": 1.9,
-   "price_under": 1.85
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.7
   }
  },
  "recent_games": [
@@ -143,6 +157,11 @@
  ],
  "hits": {
   "PTS": {
+   "line": 5.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
    "line": 4.5,
    "over": 4,
    "n": 5

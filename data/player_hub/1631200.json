@@ -4,12 +4,40 @@
  "team": "Memphis",
  "opp": "Charlotte",
  "lines": {
-  "PTS": {
-   "line": 0.5,
-   "price": 1.72,
+  "REB": {
+   "line": 3.5,
+   "price": 1.52,
    "book": "tab",
-   "price_over": 1.72,
-   "price_under": 2.05
+   "price_over": 2.45,
+   "price_under": 1.52
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 1.75,
+   "book": "tab",
+   "price_over": 2.0,
+   "price_under": 1.75
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 2.3,
+   "book": "tab",
+   "price_over": 1.58,
+   "price_under": 2.3
+  },
+  "PRA": {
+   "line": 10.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 1.4,
+   "book": "tab",
+   "price_over": 2.8,
+   "price_under": 1.4
   }
  },
  "recent_games": [
@@ -136,6 +164,21 @@
  ],
  "hits": {
   "PTS": {
+   "line": 6.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 0,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
    "line": 0.5,
    "over": 3,
    "n": 5
