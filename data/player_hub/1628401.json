@@ -4,6 +4,13 @@
  "team": "Boston",
  "opp": "Golden State",
  "lines": {
+  "PTS": {
+   "line": 15.5,
+   "price": 1.87,
+   "book": "tab",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
   "3PM": {
    "line": 2.5,
    "price": 1.71,
@@ -15,36 +22,29 @@
    "line": 18.5,
    "price": 1.83,
    "book": "pointsbetau",
-   "price_over": 1.87,
+   "price_over": 1.9,
    "price_under": 1.83
   },
   "PA": {
-   "line": 19.5,
-   "price": 1.98,
-   "book": "neds",
-   "price_over": 1.78,
-   "price_under": 1.98
-  },
-  "PTS": {
-   "line": 14.5,
-   "price": 1.9,
-   "book": "pointsbetau",
-   "price_over": 1.83,
-   "price_under": 1.9
+   "line": 20.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
   },
   "PRA": {
    "line": 23.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
   },
   "AST": {
    "line": 5.5,
-   "price": 1.71,
-   "book": "pointsbetau",
+   "price": 1.68,
+   "book": "neds",
    "price_over": 2.1,
-   "price_under": 1.71
+   "price_under": 1.68
   },
   "RA": {
    "line": 8.5,
@@ -55,10 +55,10 @@
   },
   "REB": {
    "line": 3.5,
-   "price": 1.77,
-   "book": "pointsbetau",
+   "price": 1.74,
+   "book": "unibet",
    "price_over": 2.0,
-   "price_under": 1.77
+   "price_under": 1.74
   }
  },
  "recent_games": [
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 14.5,
+   "line": 15.5,
    "over": 2,
    "n": 5
   },
