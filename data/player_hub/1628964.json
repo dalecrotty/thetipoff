@@ -2,52 +2,33 @@
  "player_id": 1628964,
  "player": "Mo Bamba",
  "team": "Utah",
- "opp": "Dallas",
- "lines": {
-  "PRA": {
-   "line": 15.5,
-   "price": 1.86,
-   "book": "sportsbet",
-   "price_over": 1.9,
-   "price_under": 1.86
-  },
-  "PR": {
-   "line": 14.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
-  },
-  "REB": {
-   "line": 6.5,
-   "price": 1.88,
-   "book": "sportsbet",
-   "price_over": 1.88,
-   "price_under": 1.88
-  },
-  "PTS": {
-   "line": 7.5,
-   "price": 1.9,
-   "book": "tab",
-   "price_over": 1.85,
-   "price_under": 1.9
-  },
-  "PA": {
-   "line": 8.5,
-   "price": 1.89,
-   "book": "sportsbet",
-   "price_over": 1.87,
-   "price_under": 1.89
-  },
-  "RA": {
-   "line": 7.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  }
- },
+ "opp": "LA Lakers",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-22",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2026-11-22_dallas_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 23.0,
+   "PTS": 6.0,
+   "REB": 10.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 5.0,
+   "FGM": 3.0,
+   "FGA": 6.0,
+   "3PA": 1.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-20",
    "opp": "Phoenix",
@@ -143,43 +124,8 @@
    "FTA": 3.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-13",
-   "opp": "Houston",
-   "venue": "R",
-   "game": "2026-11-13_houston_vs_utah",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 20.0,
-   "PTS": 9.0,
-   "REB": 9.0,
-   "AST": 1.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 2.0,
-   "TOV": 1.0,
-   "FGM": 4.0,
-   "FGA": 5.0,
-   "3PA": 0.0,
-   "FTA": 2.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 7.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 6.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

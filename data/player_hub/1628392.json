@@ -2,59 +2,83 @@
  "player_id": 1628392,
  "player": "Isaiah Hartenstein",
  "team": "Oklahoma City",
- "opp": "Miami",
+ "opp": "Indiana",
  "lines": {
-  "RA": {
-   "line": 16.5,
-   "price": 1.95,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.74
-  },
-  "REB": {
-   "line": 10.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 2.0
-  },
-  "PRA": {
-   "line": 25.5,
-   "price": 1.72,
-   "book": "neds",
-   "price_over": 1.72,
-   "price_under": 2.05
-  },
-  "PR": {
-   "line": 20.5,
-   "price": 1.77,
-   "book": "neds",
-   "price_over": 1.77,
-   "price_under": 1.98
-  },
-  "PA": {
-   "line": 14.5,
-   "price": 1.75,
-   "book": "neds",
-   "price_over": 1.75,
-   "price_under": 2.0
-  },
-  "PTS": {
-   "line": 9.5,
+  "AST": {
+   "line": 3.5,
    "price": 1.8,
    "book": "neds",
    "price_over": 1.8,
    "price_under": 1.94
   },
-  "AST": {
-   "line": 5.5,
-   "price": 1.96,
-   "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.77
+  "RA": {
+   "line": 15.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 24.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PA": {
+   "line": 12.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PR": {
+   "line": 20.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "REB": {
+   "line": 11.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.88,
+   "price_under": 1.85
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-22",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2026-11-22_miami_vs_oklahoma-city",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 23.0,
+   "PTS": 2.0,
+   "REB": 8.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 1.0,
+   "FGA": 5.0,
+   "3PA": 0.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-20",
    "opp": "New Orleans",
@@ -87,7 +111,7 @@
    "starter": true,
    "rest": "2",
    "result": "L",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 27.0,
    "PTS": 6.0,
    "REB": 17.0,
@@ -150,46 +174,22 @@
    "FTA": 4.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-11",
-   "opp": "Portland",
-   "venue": "R",
-   "game": "2026-11-11_oklahoma-city_vs_portland",
-   "starter": true,
-   "rest": "0",
-   "result": "L",
-   "opp_tier": "Middle 10",
-   "min": 34.0,
-   "PTS": 20.0,
-   "REB": 11.0,
-   "AST": 6.0,
-   "3PM": 0.0,
-   "STL": 2.0,
-   "BLK": 0.0,
-   "TOV": 6.0,
-   "FGM": 10.0,
-   "FGA": 14.0,
-   "3PA": 0.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 9.5,
-   "over": 2,
+   "line": 8.5,
+   "over": 1,
    "n": 5
   },
   "REB": {
-   "line": 10.5,
-   "over": 4,
+   "line": 11.5,
+   "over": 2,
    "n": 5
   },
   "AST": {
-   "line": 5.5,
-   "over": 3,
+   "line": 3.5,
+   "over": 4,
    "n": 5
   }
  },

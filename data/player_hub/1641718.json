@@ -2,66 +2,90 @@
  "player_id": 1641718,
  "player": "Keyonte George",
  "team": "Utah",
- "opp": "Dallas",
+ "opp": "LA Lakers",
  "lines": {
-  "PRA": {
-   "line": 35.5,
-   "price": 1.9,
-   "book": "tab",
-   "price_over": 1.85,
+  "PA": {
+   "line": 29.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
    "price_under": 1.9
   },
-  "REB": {
-   "line": 3.5,
-   "price": 1.92,
-   "book": "neds",
-   "price_over": 1.82,
-   "price_under": 1.92
+  "RA": {
+   "line": 10.5,
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "PRA": {
+   "line": 33.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 1.64,
+   "price_under": 2.15
   },
   "PTS": {
-   "line": 23.5,
-   "price": 1.95,
-   "book": "tab",
+   "line": 21.5,
+   "price": 1.8,
+   "book": "pointsbetau",
    "price_over": 1.8,
    "price_under": 1.95
   },
+  "PR": {
+   "line": 26.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
   "3PM": {
    "line": 2.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
-  },
-  "PA": {
-   "line": 31.5,
-   "price": 1.84,
+   "price": 2.08,
    "book": "sportsbet",
-   "price_over": 1.92,
-   "price_under": 1.84
+   "price_over": 2.08,
+   "price_under": 1.72
   },
-  "PR": {
-   "line": 27.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "AST": {
-   "line": 7.5,
-   "price": 1.85,
-   "book": "tab",
-   "price_over": 1.9,
-   "price_under": 1.85
-  },
-  "RA": {
-   "line": 11.5,
-   "price": 2.0,
-   "book": "sportsbet",
-   "price_over": 2.0,
-   "price_under": 1.78
+  "REB": {
+   "line": 3.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-22",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2026-11-22_dallas_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 26.0,
+   "PTS": 15.0,
+   "REB": 5.0,
+   "AST": 7.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 9.0,
+   "3PA": 6.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-20",
    "opp": "Phoenix",
@@ -157,36 +181,12 @@
    "FTA": 2.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-13",
-   "opp": "Houston",
-   "venue": "R",
-   "game": "2026-11-13_houston_vs_utah",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 38.0,
-   "PTS": 27.0,
-   "REB": 4.0,
-   "AST": 7.0,
-   "3PM": 4.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 3.0,
-   "FGM": 8.0,
-   "FGA": 18.0,
-   "3PA": 7.0,
-   "FTA": 8.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 23.5,
-   "over": 3,
+   "line": 21.5,
+   "over": 2,
    "n": 5
   },
   "REB": {
@@ -195,13 +195,13 @@
    "n": 5
   },
   "AST": {
-   "line": 7.5,
-   "over": 3,
+   "line": 6.5,
+   "over": 4,
    "n": 5
   },
   "3PM": {
    "line": 2.5,
-   "over": 3,
+   "over": 2,
    "n": 5
   }
  },

@@ -2,24 +2,33 @@
  "player_id": 1630700,
  "player": "Dyson Daniels",
  "team": "Atlanta",
- "opp": "Detroit",
- "lines": {
-  "RA": {
-   "line": 12.5,
-   "price": 1.86,
-   "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.9
-  },
-  "PA": {
-   "line": 15.5,
-   "price": 1.73,
-   "book": "neds",
-   "price_over": 1.73,
-   "price_under": 2.02
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-22",
+   "opp": "Detroit",
+   "venue": "H",
+   "game": "2026-11-22_atlanta_vs_detroit",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 39.0,
+   "PTS": 5.0,
+   "REB": 14.0,
+   "AST": 8.0,
+   "3PM": 0.0,
+   "STL": 5.0,
+   "BLK": 3.0,
+   "TOV": 3.0,
+   "FGM": 2.0,
+   "FGA": 9.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-20",
    "opp": "Charlotte",
@@ -113,30 +122,6 @@
    "FGA": 5.0,
    "3PA": 0.0,
    "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
-  },
-  {
-   "date": "2026-11-09",
-   "opp": "LA Lakers",
-   "venue": "H",
-   "game": "2026-11-09_atlanta_vs_la-lakers",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 31.0,
-   "PTS": 10.0,
-   "REB": 6.0,
-   "AST": 8.0,
-   "3PM": 1.0,
-   "STL": 4.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 4.0,
-   "FGA": 4.0,
-   "3PA": 1.0,
-   "FTA": 2.0,
    "season": "2026-27",
    "phase": "regular"
   }

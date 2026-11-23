@@ -2,17 +2,33 @@
  "player_id": 1629004,
  "player": "Svi Mykhailiuk",
  "team": "Utah",
- "opp": "Dallas",
- "lines": {
-  "PTS": {
-   "line": 8.5,
-   "price": 1.95,
-   "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
-  }
- },
+ "opp": "LA Lakers",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-22",
+   "opp": "Dallas",
+   "venue": "H",
+   "game": "2026-11-22_dallas_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 32.0,
+   "PTS": 39.0,
+   "REB": 5.0,
+   "AST": 3.0,
+   "3PM": 10.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 12.0,
+   "FGA": 23.0,
+   "3PA": 15.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-20",
    "opp": "Phoenix",
@@ -108,38 +124,8 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-13",
-   "opp": "Houston",
-   "venue": "R",
-   "game": "2026-11-13_houston_vs_utah",
-   "starter": false,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 7.0,
-   "PTS": 0.0,
-   "REB": 1.0,
-   "AST": 0.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0,
-   "FGM": 0.0,
-   "FGA": 0.0,
-   "3PA": 0.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 8.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }
