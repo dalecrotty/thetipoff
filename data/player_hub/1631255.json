@@ -5,28 +5,28 @@
  "projections": {
   "3PM": {
    "mean": 0.63,
-   "floor": 0.0,
-   "ceiling": 1.97
+   "floor": 0.01,
+   "ceiling": 1.96
   },
   "AST": {
    "mean": 0.6,
    "floor": 0.0,
-   "ceiling": 1.93
+   "ceiling": 1.96
   },
   "BLK": {
    "mean": 0.48,
-   "floor": 0.0,
-   "ceiling": 1.89
+   "floor": 0.02,
+   "ceiling": 1.09
   },
   "PTS": {
-   "mean": 4.65,
+   "mean": 4.61,
    "floor": 0.0,
-   "ceiling": 10.31
+   "ceiling": 10.33
   },
   "REB": {
-   "mean": 2.84,
-   "floor": 0.7,
-   "ceiling": 5.72
+   "mean": 2.81,
+   "floor": 0.67,
+   "ceiling": 5.76
   },
   "STL": {
    "mean": 0.35,
@@ -35,28 +35,28 @@
   },
   "TOV": {
    "mean": 0.79,
-   "floor": 0.0,
+   "floor": 0.01,
    "ceiling": 2.05
   },
   "PRA": {
-   "mean": 8.09,
-   "floor": 0.37,
-   "ceiling": 16.8
+   "mean": 8.02,
+   "floor": 0.3,
+   "ceiling": 16.74
   },
   "PR": {
-   "mean": 7.49,
-   "floor": 0.72,
-   "ceiling": 15.6
+   "mean": 7.43,
+   "floor": 0.66,
+   "ceiling": 15.54
   },
   "PA": {
-   "mean": 5.25,
+   "mean": 5.21,
    "floor": 0.0,
-   "ceiling": 12.04
+   "ceiling": 12.0
   },
   "RA": {
-   "mean": 3.44,
-   "floor": 0.69,
-   "ceiling": 6.75
+   "mean": 3.41,
+   "floor": 0.66,
+   "ceiling": 6.72
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 2.5,
-   "p_over": 0.723,
-   "p_under": 0.277,
+   "p_over": 0.721,
+   "p_under": 0.279,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -237,7 +237,7 @@
    "side": "over",
    "price": 1.87,
    "book": "tab",
-   "edge": 0.2231,
+   "edge": 0.2213,
    "tier": "A"
   }
  },
