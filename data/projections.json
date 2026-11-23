@@ -621,7 +621,7 @@
    "prior": 0.68,
    "prior_at": "2026-11-23T18:46+00:00",
    "move_reason": "Embiid out",
-   "rank": 113
+   "rank": 112
   },
   {
    "player_id": 203486,
@@ -9226,7 +9226,7 @@
    "game": "Milwaukee vs Toronto",
    "stat": "AST",
    "line": 6.5,
-   "price": 1.93,
+   "price": 1.79,
    "book": "unibet",
    "price_over": 1.93,
    "price_under": 1.79,
@@ -21291,7 +21291,7 @@
    "prior": 9.22,
    "prior_at": "2026-11-23T18:46+00:00",
    "move_reason": "Embiid out",
-   "rank": 112
+   "rank": 111
   },
   {
    "player_id": 1629018,
@@ -22040,7 +22040,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 9
+   "rank": 8
   },
   {
    "player_id": 1630167,
@@ -22735,7 +22735,7 @@
     "price_under": 1.82,
     "l5_over": 0.4,
     "l10_over": 0.6,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -50851,7 +50851,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 85
+   "rank": 84
   },
   {
    "player_id": 1641744,
@@ -52129,7 +52129,7 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -52736,7 +52736,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "failed:edge_below_tier",
+   "gate_status": "passed",
    "us": null
   },
   {
@@ -58633,7 +58633,7 @@
    "pos": "C",
    "pos_usual": "C",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -72174,6 +72174,10 @@
   {
    "run_at": "2026-11-23T22:58+00:00",
    "trigger": "lines"
+  },
+  {
+   "run_at": "2026-11-23T23:08+00:00",
+   "trigger": "lineups"
   }
  ]
 }
