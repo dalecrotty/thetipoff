@@ -4,11 +4,32 @@
  "team": "LA Clippers",
  "opp": "Houston",
  "lines": {
+  "PTS": {
+   "line": 11.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.83,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
+  },
   "3PM": {
    "line": 1.5,
+   "price": 2.1,
+   "book": "unibet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
+  "REB": {
+   "line": 4.5,
    "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
+   "book": "unibet",
+   "price_over": 1.93,
    "price_under": 1.8
   }
  },
@@ -135,6 +156,16 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 4,
+   "n": 5
+  },
   "3PM": {
    "line": 1.5,
    "over": 3,
