@@ -371,26 +371,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "3PM",
-   "proj": 1.0,
+   "proj": 1.02,
    "floor": 0.0,
-   "ceiling": 2.88,
+   "ceiling": 2.9,
    "sigma": 1.18,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
    "price": 1.61,
    "book": "unibet",
-   "edge": 0.159,
-   "p_us": 0.736,
+   "edge": 0.1527,
+   "p_us": 0.73,
    "p_book": 0.577,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.2,
-   "p_over": 0.264,
-   "p_under": 0.736,
+   "p_over": 0.27,
+   "p_under": 0.73,
    "fair_over": 0.423,
    "fair_under": 0.577,
    "price_over": 2.2,
@@ -406,7 +406,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 120
+   "rank": 119
   },
   {
    "player_id": 201142,
@@ -586,11 +586,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "3PM",
-   "proj": 0.68,
-   "floor": 0.04,
-   "ceiling": 2.02,
-   "sigma": 0.81,
-   "minutes": 12,
+   "proj": 1.14,
+   "floor": 0.03,
+   "ceiling": 3.02,
+   "sigma": 1.18,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -618,10 +618,10 @@
    "pos": "SG",
    "pos_usual": "SG",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 150
+   "prior": 0.68,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 113
   },
   {
    "player_id": 203486,
@@ -771,50 +771,6 @@
    "early": null,
    "gate_status": "passed",
    "us": null
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "3PM",
-   "proj": 0.87,
-   "floor": 0.0,
-   "ceiling": 2.12,
-   "sigma": 1.08,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": 1.5,
-   "side": "under",
-   "price": 1.45,
-   "book": "sportsbet",
-   "edge": 0.14,
-   "p_us": 0.782,
-   "p_book": 0.642,
-   "tier": "A",
-   "gate_status": "passed",
-   "l10_over": 0.1,
-   "l5_over": 0.2,
-   "p_over": 0.218,
-   "p_under": 0.782,
-   "fair_over": 0.358,
-   "fair_under": 0.642,
-   "price_over": 2.6,
-   "price_under": 1.45,
-   "us": null,
-   "mu": 0.101,
-   "mu_rank": 8,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 133
   },
   {
    "player_id": 203991,
@@ -1103,26 +1059,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "3PM",
-   "proj": 1.91,
-   "floor": 0.0,
-   "ceiling": 3.92,
+   "proj": 1.95,
+   "floor": 0.02,
+   "ceiling": 3.96,
    "sigma": 1.51,
-   "minutes": 35,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 1.5,
    "side": "over",
    "price": 1.98,
    "book": "neds",
-   "edge": 0.0838,
-   "p_us": 0.546,
+   "edge": 0.0934,
+   "p_us": 0.555,
    "p_book": 0.462,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.546,
-   "p_under": 0.454,
+   "p_over": 0.555,
+   "p_under": 0.445,
    "fair_over": 0.462,
    "fair_under": 0.538,
    "price_over": 1.98,
@@ -1138,7 +1094,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 60
+   "rank": 56
   },
   {
    "player_id": 1627783,
@@ -1614,26 +1570,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "3PM",
-   "proj": 2.04,
-   "floor": 0.11,
-   "ceiling": 4.05,
+   "proj": 2.08,
+   "floor": 0.15,
+   "ceiling": 4.09,
    "sigma": 1.51,
-   "minutes": 19,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 1.5,
    "side": "over",
    "price": 1.68,
    "book": "sportsbet",
-   "edge": 0.0221,
-   "p_us": 0.578,
+   "edge": 0.032,
+   "p_us": 0.588,
    "p_book": 0.556,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.6,
-   "p_over": 0.578,
-   "p_under": 0.422,
+   "p_over": 0.588,
+   "p_under": 0.412,
    "fair_over": 0.556,
    "fair_under": 0.444,
    "price_over": 1.68,
@@ -2200,11 +2156,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "3PM",
-   "proj": 0.85,
+   "proj": 0.9,
    "floor": 0.0,
-   "ceiling": 2.1,
+   "ceiling": 2.15,
    "sigma": 1.08,
-   "minutes": 19,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -2235,7 +2191,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 134
+   "rank": 133
   },
   {
    "player_id": 1630163,
@@ -2417,26 +2373,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "3PM",
-   "proj": 2.5,
-   "floor": 0.3,
-   "ceiling": 5.01,
+   "proj": 2.55,
+   "floor": 0.34,
+   "ceiling": 5.05,
    "sigma": 1.69,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 2.5,
    "side": "under",
    "price": 1.87,
    "book": "unibet",
-   "edge": 0.0609,
-   "p_us": 0.558,
+   "edge": 0.0517,
+   "p_us": 0.549,
    "p_book": 0.497,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.442,
-   "p_under": 0.558,
+   "p_over": 0.451,
+   "p_under": 0.549,
    "fair_over": 0.503,
    "fair_under": 0.497,
    "price_over": 1.85,
@@ -2452,7 +2408,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 29
+   "rank": 26
   },
   {
    "player_id": 1630180,
@@ -3101,7 +3057,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 211
+   "rank": 210
   },
   {
    "player_id": 1630702,
@@ -3387,7 +3343,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 217
+   "rank": 216
   },
   {
    "player_id": 1631131,
@@ -3451,7 +3407,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 219
+   "rank": 218
   },
   {
    "player_id": 1631157,
@@ -3729,11 +3685,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "3PM",
-   "proj": 0.12,
-   "floor": 0.0,
-   "ceiling": 0.12,
+   "proj": 0.21,
+   "floor": 0.06,
+   "ceiling": 0.21,
    "sigma": 0.32,
-   "minutes": 10,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -3764,7 +3720,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 184
+   "rank": 176
   },
   {
    "player_id": 1631245,
@@ -4061,7 +4017,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 228
+   "rank": 227
   },
   {
    "player_id": 1641716,
@@ -4194,7 +4150,7 @@
    "floor": 0.0,
    "ceiling": 0.0,
    "sigma": 0.32,
-   "minutes": 11,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -4225,7 +4181,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 230
+   "rank": 229
   },
   {
    "player_id": 1641738,
@@ -4904,7 +4860,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 241
+   "rank": 240
   },
   {
    "player_id": 1642349,
@@ -5068,7 +5024,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 165
+   "rank": 164
   },
   {
    "player_id": 1642384,
@@ -5137,26 +5093,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "3PM",
-   "proj": 1.62,
+   "proj": 1.66,
    "floor": 0.0,
-   "ceiling": 3.8,
+   "ceiling": 3.84,
    "sigma": 1.41,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 1.5,
    "side": "under",
    "price": 2.02,
    "book": "sportsbet",
-   "edge": 0.0685,
-   "p_us": 0.534,
+   "edge": 0.0586,
+   "p_us": 0.524,
    "p_book": 0.466,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.2,
-   "p_over": 0.466,
-   "p_under": 0.534,
+   "p_over": 0.476,
+   "p_under": 0.524,
    "fair_over": 0.534,
    "fair_under": 0.466,
    "price_over": 1.76,
@@ -5574,7 +5530,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 250
+   "rank": 249
   },
   {
    "player_id": 1642907,
@@ -5818,7 +5774,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 252
   },
   {
    "player_id": -729,
@@ -5862,7 +5818,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1643257,
@@ -5906,7 +5862,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 163
+   "rank": 162
   },
   {
    "player_id": 1642910,
@@ -5950,7 +5906,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 255
+   "rank": 254
   },
   {
    "player_id": -756,
@@ -6886,44 +6842,44 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 6.92,
-   "floor": 3.42,
-   "ceiling": 10.81,
+   "proj": 7.05,
+   "floor": 3.54,
+   "ceiling": 10.93,
    "sigma": 2.93,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 6.5,
    "side": "over",
    "price": 1.9,
    "book": "neds",
-   "edge": 0.0216,
-   "p_us": 0.512,
+   "edge": 0.0367,
+   "p_us": 0.527,
    "p_book": 0.491,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.2,
-   "p_over": 0.512,
-   "p_under": 0.488,
+   "p_over": 0.527,
+   "p_under": 0.473,
    "fair_over": 0.491,
    "fair_under": 0.509,
    "price_over": 1.9,
    "price_under": 1.83,
    "us": {
     "line": 6.5,
-    "side": "under",
-    "price": 1.96,
+    "side": "over",
+    "price": 1.8,
     "book": "betright",
-    "edge": 0.0091,
-    "p_us": 0.488,
-    "p_book": 0.479,
+    "edge": 0.0061,
+    "p_us": 0.527,
+    "p_book": 0.521,
     "tier": null,
     "gate_status": "failed:edge_below_tier",
     "l10_over": 0.5,
     "l5_over": 0.2,
-    "p_over": 0.512,
-    "p_under": 0.488,
+    "p_over": 0.527,
+    "p_under": 0.473,
     "fair_over": 0.521,
     "fair_under": 0.479,
     "price_over": 1.8,
@@ -6939,7 +6895,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 9
+   "rank": 7
   },
   {
    "player_id": 201142,
@@ -7125,11 +7081,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 0.78,
-   "floor": 0.0,
-   "ceiling": 2.11,
-   "sigma": 1.07,
-   "minutes": 12,
+   "proj": 1.31,
+   "floor": 0.03,
+   "ceiling": 3.1,
+   "sigma": 1.28,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -7156,11 +7112,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 177
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -0.4
+    }
+   ],
+   "prior": 0.78,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 141
   },
   {
    "player_id": 203486,
@@ -7319,68 +7281,6 @@
     "l10_over": 0.5,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "AST",
-   "proj": 4.4,
-   "floor": 1.37,
-   "ceiling": 7.58,
-   "sigma": 2.51,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": 3.5,
-   "side": "over",
-   "price": 1.9,
-   "book": "sportsbet",
-   "edge": 0.1144,
-   "p_us": 0.609,
-   "p_book": 0.495,
-   "tier": "A",
-   "gate_status": "passed",
-   "l10_over": 0.4,
-   "l5_over": 0.4,
-   "p_over": 0.609,
-   "p_under": 0.391,
-   "fair_over": 0.495,
-   "fair_under": 0.505,
-   "price_over": 1.9,
-   "price_under": 1.86,
-   "us": {
-    "line": 3.5,
-    "side": "over",
-    "price": 1.83,
-    "book": "betright",
-    "edge": 0.0971,
-    "p_us": 0.609,
-    "p_book": 0.512,
-    "tier": "A",
-    "gate_status": "passed",
-    "l10_over": 0.4,
-    "l5_over": 0.4,
-    "p_over": 0.609,
-    "p_under": 0.391,
-    "fair_over": 0.512,
-    "fair_under": 0.488,
-    "price_over": 1.83,
-    "price_under": 1.92
-   },
-   "mu": 0.085,
-   "mu_rank": 6,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 35
   },
   {
    "player_id": 203991,
@@ -7687,26 +7587,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 3.28,
-   "floor": 1.0,
-   "ceiling": 5.99,
+   "proj": 3.34,
+   "floor": 1.06,
+   "ceiling": 6.06,
    "sigma": 2.03,
-   "minutes": 35,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 3.5,
    "side": "under",
    "price": 1.67,
    "book": "neds",
-   "edge": 0.0352,
-   "p_us": 0.592,
+   "edge": 0.0223,
+   "p_us": 0.579,
    "p_book": 0.557,
-   "tier": "B",
-   "gate_status": "passed",
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.408,
-   "p_under": 0.592,
+   "p_over": 0.421,
+   "p_under": 0.579,
    "fair_over": 0.443,
    "fair_under": 0.557,
    "price_over": 2.1,
@@ -7718,11 +7618,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -0.3
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 56
+   "rank": 54
   },
   {
    "player_id": 1627783,
@@ -8234,11 +8140,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 1.16,
+   "proj": 1.19,
    "floor": 0.0,
-   "ceiling": 2.95,
+   "ceiling": 2.97,
    "sigma": 1.28,
-   "minutes": 19,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -8265,11 +8171,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 152
+   "rank": 151
   },
   {
    "player_id": 1629018,
@@ -8419,7 +8331,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 140
+   "rank": 139
   },
   {
    "player_id": 1629060,
@@ -8871,11 +8783,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 1.14,
+   "proj": 1.21,
    "floor": 0.0,
-   "ceiling": 2.92,
+   "ceiling": 2.99,
    "sigma": 1.28,
-   "minutes": 19,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -8902,11 +8814,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 3.8
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 154
+   "rank": 149
   },
   {
    "player_id": 1630163,
@@ -9121,44 +9039,44 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 5.4,
-   "floor": 2.37,
-   "ceiling": 8.58,
+   "proj": 5.49,
+   "floor": 2.46,
+   "ceiling": 8.67,
    "sigma": 2.51,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 5.5,
-   "side": "under",
-   "price": 1.68,
+   "side": "over",
+   "price": 2.1,
    "book": "neds",
-   "edge": 0.0014,
-   "p_us": 0.557,
-   "p_book": 0.556,
+   "edge": 0.0116,
+   "p_us": 0.456,
+   "p_book": 0.444,
    "tier": null,
    "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.443,
-   "p_under": 0.557,
+   "p_over": 0.456,
+   "p_under": 0.544,
    "fair_over": 0.444,
    "fair_under": 0.556,
    "price_over": 2.1,
    "price_under": 1.68,
    "us": {
     "line": 5.5,
-    "side": "under",
-    "price": 1.68,
+    "side": "over",
+    "price": 2.1,
     "book": "betright",
-    "edge": 0.0014,
-    "p_us": 0.557,
-    "p_book": 0.556,
+    "edge": 0.0116,
+    "p_us": 0.456,
+    "p_book": 0.444,
     "tier": null,
     "gate_status": "failed:edge_below_tier",
     "l10_over": 0.6,
     "l5_over": 0.6,
-    "p_over": 0.443,
-    "p_under": 0.557,
+    "p_over": 0.456,
+    "p_under": 0.544,
     "fair_over": 0.444,
     "fair_under": 0.556,
     "price_over": 2.1,
@@ -9170,11 +9088,17 @@
    "early": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 72,
+     "delta": -0.8
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 21
+   "rank": 20
   },
   {
    "player_id": 1630180,
@@ -9920,7 +9844,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 117
+   "rank": 116
   },
   {
    "player_id": 1631095,
@@ -10202,7 +10126,13 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 40,
+     "delta": 0.1
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -10493,11 +10423,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 0.4,
+   "proj": 0.73,
    "floor": 0.0,
-   "ceiling": 1.73,
+   "ceiling": 2.06,
    "sigma": 1.07,
-   "minutes": 10,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -10524,11 +10454,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 197
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 42,
+     "delta": 0.5
+    }
+   ],
+   "prior": 0.4,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 180
   },
   {
    "player_id": 1631245,
@@ -10658,7 +10594,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 103
+   "rank": 102
   },
   {
    "player_id": 1631342,
@@ -10987,11 +10923,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 0.52,
+   "proj": 0.85,
    "floor": 0.0,
-   "ceiling": 1.85,
+   "ceiling": 2.18,
    "sigma": 1.07,
-   "minutes": 11,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -11018,11 +10954,17 @@
    "early": null,
    "pos": "C",
    "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 191
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 88,
+     "delta": 0.3
+    }
+   ],
+   "prior": 0.52,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 175
   },
   {
    "player_id": 1641738,
@@ -11092,7 +11034,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 132
+   "rank": 131
   },
   {
    "player_id": 1641744,
@@ -11460,7 +11402,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 87
+   "rank": 86
   },
   {
    "player_id": 1642271,
@@ -11727,7 +11669,13 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 81,
+     "delta": 1.1
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -11904,7 +11852,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 200
+   "rank": 199
   },
   {
    "player_id": 1642384,
@@ -11973,26 +11921,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 3.89,
-   "floor": 1.19,
-   "ceiling": 6.88,
+   "proj": 3.97,
+   "floor": 1.27,
+   "ceiling": 6.96,
    "sigma": 2.26,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 3.5,
    "side": "over",
    "price": 2.25,
    "book": "pointsbetau",
-   "edge": 0.1039,
-   "p_us": 0.524,
+   "edge": 0.1183,
+   "p_us": 0.538,
    "p_book": 0.42,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 1.0,
-   "p_over": 0.524,
-   "p_under": 0.476,
+   "p_over": 0.538,
+   "p_under": 0.462,
    "fair_over": 0.42,
    "fair_under": 0.58,
    "price_over": 2.25,
@@ -12002,15 +11950,15 @@
     "side": "over",
     "price": 2.15,
     "book": "betright",
-    "edge": 0.0868,
-    "p_us": 0.524,
+    "edge": 0.1012,
+    "p_us": 0.538,
     "p_book": 0.437,
     "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.7,
     "l5_over": 1.0,
-    "p_over": 0.524,
-    "p_under": 0.476,
+    "p_over": 0.538,
+    "p_under": 0.462,
     "fair_over": 0.437,
     "fair_under": 0.563,
     "price_over": 2.15,
@@ -12022,11 +11970,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 45,
+     "delta": -0.2
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 40
   },
   {
    "player_id": 1642846,
@@ -12670,9 +12624,9 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "AST",
-   "proj": 0.0,
+   "proj": 0.01,
    "floor": 0.0,
-   "ceiling": 1.33,
+   "ceiling": 1.34,
    "sigma": 1.07,
    "minutes": 0,
    "rot_rank": null,
@@ -12705,7 +12659,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 203
   },
   {
    "player_id": -729,
@@ -12745,11 +12699,17 @@
    "early": 11,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -0.4
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1643257,
@@ -12837,7 +12797,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 255
+   "rank": 254
   },
   {
    "player_id": -756,
@@ -13710,11 +13670,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "BLK",
-   "proj": 0.6,
-   "floor": 0.02,
-   "ceiling": 2.0,
-   "sigma": 0.75,
-   "minutes": 33,
+   "proj": 0.61,
+   "floor": 0.0,
+   "ceiling": 1.92,
+   "sigma": 0.85,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -13898,11 +13858,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "BLK",
-   "proj": 0.15,
+   "proj": 0.26,
    "floor": 0.0,
    "ceiling": 0.98,
-   "sigma": 0.43,
-   "minutes": 12,
+   "sigma": 0.52,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -13933,7 +13893,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 159
+   "rank": 116
   },
   {
    "player_id": 203486,
@@ -14074,50 +14034,6 @@
    "early": null,
    "gate_status": null,
    "us": null
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "BLK",
-   "proj": 1.09,
-   "floor": 0.0,
-   "ceiling": 2.82,
-   "sigma": 1.31,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.039,
-   "mu_rank": 14,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 21
   },
   {
    "player_id": 203991,
@@ -14406,11 +14322,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "BLK",
-   "proj": 0.52,
+   "proj": 0.53,
    "floor": 0.0,
-   "ceiling": 1.92,
+   "ceiling": 1.93,
    "sigma": 0.75,
-   "minutes": 35,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -14441,7 +14357,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 69
+   "rank": 68
   },
   {
    "player_id": 1627783,
@@ -14894,7 +14810,7 @@
    "floor": 0.0,
    "ceiling": 0.97,
    "sigma": 0.4,
-   "minutes": 19,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -14925,7 +14841,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 188
   },
   {
    "player_id": 1629018,
@@ -15069,7 +14985,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 17
+   "rank": 18
   },
   {
    "player_id": 1629060,
@@ -15458,11 +15374,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "BLK",
-   "proj": 0.34,
+   "proj": 0.36,
    "floor": 0.0,
-   "ceiling": 1.02,
+   "ceiling": 1.04,
    "sigma": 0.63,
-   "minutes": 19,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -15493,7 +15409,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 98
+   "rank": 94
   },
   {
    "player_id": 1630163,
@@ -15557,7 +15473,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 51
+   "rank": 50
   },
   {
    "player_id": 1630167,
@@ -15666,11 +15582,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "BLK",
-   "proj": 0.49,
+   "proj": 0.5,
    "floor": 0.0,
    "ceiling": 1.9,
    "sigma": 0.75,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -15701,7 +15617,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 72
+   "rank": 71
   },
   {
    "player_id": 1630180,
@@ -16305,7 +16221,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 217
+   "rank": 216
   },
   {
    "player_id": 1630702,
@@ -16573,7 +16489,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 223
+   "rank": 222
   },
   {
    "player_id": 1631131,
@@ -16637,7 +16553,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 225
+   "rank": 224
   },
   {
    "player_id": 1631157,
@@ -16906,11 +16822,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "BLK",
-   "proj": 0.36,
+   "proj": 0.65,
    "floor": 0.0,
-   "ceiling": 1.03,
-   "sigma": 0.63,
-   "minutes": 10,
+   "ceiling": 1.96,
+   "sigma": 0.85,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -16938,10 +16854,10 @@
    "pos": "PF",
    "pos_usual": "PF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 95
+   "prior": 0.36,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 53
   },
   {
    "player_id": 1631245,
@@ -17229,7 +17145,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 233
+   "rank": 232
   },
   {
    "player_id": 1641716,
@@ -17358,11 +17274,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "BLK",
-   "proj": 0.74,
-   "floor": 0.01,
-   "ceiling": 2.05,
-   "sigma": 0.85,
-   "minutes": 11,
+   "proj": 1.22,
+   "floor": 0.0,
+   "ceiling": 2.95,
+   "sigma": 1.31,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -17390,10 +17306,10 @@
    "pos": "C",
    "pos_usual": "C",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 43
+   "prior": 0.74,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 16
   },
   {
    "player_id": 1641738,
@@ -17457,7 +17373,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 44
   },
   {
    "player_id": 1641744,
@@ -18045,7 +17961,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 242
+   "rank": 241
   },
   {
    "player_id": 1642349,
@@ -18278,11 +18194,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "BLK",
-   "proj": 0.41,
+   "proj": 0.42,
    "floor": 0.0,
-   "ceiling": 1.02,
+   "ceiling": 1.03,
    "sigma": 0.69,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -18313,7 +18229,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 81
+   "rank": 80
   },
   {
    "player_id": 1642846,
@@ -18697,7 +18613,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 250
+   "rank": 249
   },
   {
    "player_id": 1642907,
@@ -18941,7 +18857,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 252
   },
   {
    "player_id": -729,
@@ -18985,7 +18901,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1643257,
@@ -19029,7 +18945,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 170
+   "rank": 169
   },
   {
    "player_id": 1642910,
@@ -19073,7 +18989,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 255
+   "rank": 254
   },
   {
    "player_id": -756,
@@ -19991,7 +19907,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 17
+   "rank": 16
   },
   {
    "player_id": 2544,
@@ -20000,44 +19916,44 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 16.3,
-   "floor": 7.91,
-   "ceiling": 25.43,
+   "proj": 17.3,
+   "floor": 8.91,
+   "ceiling": 26.43,
    "sigma": 6.89,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 17.5,
-   "side": "under",
-   "price": 1.8,
-   "book": "tab",
-   "edge": 0.047,
-   "p_us": 0.567,
-   "p_book": 0.52,
-   "tier": "B",
+   "line": 15.5,
+   "side": "over",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.0861,
+   "p_us": 0.608,
+   "p_book": 0.522,
+   "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.4,
    "l5_over": 0.6,
-   "p_over": 0.433,
-   "p_under": 0.567,
-   "fair_over": 0.48,
-   "fair_under": 0.52,
-   "price_over": 1.95,
-   "price_under": 1.8,
+   "p_over": 0.608,
+   "p_under": 0.392,
+   "fair_over": 0.522,
+   "fair_under": 0.478,
+   "price_over": 1.83,
+   "price_under": 2.0,
    "us": {
     "line": 16.5,
-    "side": "under",
-    "price": 1.92,
+    "side": "over",
+    "price": 1.83,
     "book": "betright",
-    "edge": 0.0234,
-    "p_us": 0.511,
-    "p_book": 0.488,
-    "tier": null,
-    "gate_status": "failed:edge_below_tier",
+    "edge": 0.0366,
+    "p_us": 0.549,
+    "p_book": 0.512,
+    "tier": "B",
+    "gate_status": "passed",
     "l10_over": 0.4,
     "l5_over": 0.6,
-    "p_over": 0.489,
-    "p_under": 0.511,
+    "p_over": 0.549,
+    "p_under": 0.451,
     "fair_over": 0.512,
     "fair_under": 0.488,
     "price_over": 1.83,
@@ -20050,10 +19966,10 @@
    "pos": "PF",
    "pos_usual": "PF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 42
+   "prior": 16.3,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 37
   },
   {
    "player_id": 201142,
@@ -20210,7 +20126,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 51
+   "rank": 50
   },
   {
    "player_id": 203084,
@@ -20239,11 +20155,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 2.66,
+   "proj": 4.68,
    "floor": 0.0,
-   "ceiling": 8.33,
+   "ceiling": 10.35,
    "sigma": 4.33,
-   "minutes": 12,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -20270,11 +20186,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 194
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.4
+    }
+   ],
+   "prior": 2.66,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 172
   },
   {
    "player_id": 203486,
@@ -20442,68 +20364,6 @@
     "l10_over": 0.5,
     "gate_status": "failed:edge_below_tier"
    }
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "PTS",
-   "proj": 23.03,
-   "floor": 12.6,
-   "ceiling": 33.21,
-   "sigma": 8.19,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": 21.5,
-   "side": "over",
-   "price": 1.91,
-   "book": "sportsbet",
-   "edge": 0.0826,
-   "p_us": 0.575,
-   "p_book": 0.492,
-   "tier": "A",
-   "gate_status": "passed",
-   "l10_over": 0.4,
-   "l5_over": 0.6,
-   "p_over": 0.575,
-   "p_under": 0.425,
-   "fair_over": 0.492,
-   "fair_under": 0.508,
-   "price_over": 1.91,
-   "price_under": 1.85,
-   "us": {
-    "line": 21.5,
-    "side": "over",
-    "price": 1.8,
-    "book": "betright",
-    "edge": 0.0534,
-    "p_us": 0.575,
-    "p_book": 0.521,
-    "tier": "B",
-    "gate_status": "passed",
-    "l10_over": 0.4,
-    "l5_over": 0.6,
-    "p_over": 0.575,
-    "p_under": 0.425,
-    "fair_over": 0.521,
-    "fair_under": 0.479,
-    "price_over": 1.8,
-    "price_under": 1.96
-   },
-   "mu": 0.057,
-   "mu_rank": 9,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 11
   },
   {
    "player_id": 203991,
@@ -20819,26 +20679,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 22.21,
-   "floor": 11.78,
-   "ceiling": 32.38,
+   "proj": 23.54,
+   "floor": 13.11,
+   "ceiling": 33.72,
    "sigma": 8.19,
-   "minutes": 35,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 19.5,
    "side": "over",
    "price": 1.85,
    "book": "tab",
-   "edge": 0.1237,
-   "p_us": 0.63,
+   "edge": 0.1835,
+   "p_us": 0.69,
    "p_book": 0.507,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.63,
-   "p_under": 0.37,
+   "p_over": 0.69,
+   "p_under": 0.31,
    "fair_over": 0.507,
    "fair_under": 0.493,
    "price_over": 1.85,
@@ -20850,11 +20710,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 15
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -2.0
+    }
+   ],
+   "prior": 22.21,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 11
   },
   {
    "player_id": 1627783,
@@ -21366,44 +21232,44 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 9.22,
-   "floor": 2.19,
-   "ceiling": 16.65,
+   "proj": 9.83,
+   "floor": 2.8,
+   "ceiling": 17.26,
    "sigma": 5.67,
-   "minutes": 19,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 9.5,
-   "side": "under",
-   "price": 1.95,
-   "book": "tab",
-   "edge": 0.0392,
-   "p_us": 0.519,
-   "p_book": 0.48,
-   "tier": "B",
+   "line": 8.5,
+   "side": "over",
+   "price": 1.83,
+   "book": "pointsbetau",
+   "edge": 0.0734,
+   "p_us": 0.596,
+   "p_book": 0.522,
+   "tier": "A",
    "gate_status": "passed",
-   "l10_over": 0.5,
-   "l5_over": 0.8,
-   "p_over": 0.481,
-   "p_under": 0.519,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
+   "l10_over": 0.6,
+   "l5_over": 1.0,
+   "p_over": 0.596,
+   "p_under": 0.404,
+   "fair_over": 0.522,
+   "fair_under": 0.478,
+   "price_over": 1.83,
+   "price_under": 2.0,
    "us": {
     "line": 8.5,
     "side": "over",
     "price": 1.82,
     "book": "betright",
-    "edge": 0.035,
-    "p_us": 0.552,
+    "edge": 0.0784,
+    "p_us": 0.596,
     "p_book": 0.517,
-    "tier": "B",
+    "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.6,
     "l5_over": 1.0,
-    "p_over": 0.552,
-    "p_under": 0.448,
+    "p_over": 0.596,
+    "p_under": 0.404,
     "fair_over": 0.517,
     "fair_under": 0.483,
     "price_over": 1.82,
@@ -21415,11 +21281,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 116
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 1.0
+    }
+   ],
+   "prior": 9.22,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 112
   },
   {
    "player_id": 1629018,
@@ -21587,7 +21459,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 155
+   "rank": 154
   },
   {
    "player_id": 1629060,
@@ -22030,26 +21902,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 3.51,
+   "proj": 3.91,
    "floor": 0.0,
-   "ceiling": 9.18,
+   "ceiling": 9.58,
    "sigma": 4.33,
-   "minutes": 19,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 4.5,
    "side": "under",
    "price": 1.85,
    "book": "tab",
-   "edge": 0.0815,
-   "p_us": 0.588,
+   "edge": 0.0463,
+   "p_us": 0.553,
    "p_book": 0.507,
-   "tier": "A",
+   "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.8,
-   "p_over": 0.412,
-   "p_under": 0.588,
+   "p_over": 0.447,
+   "p_under": 0.553,
    "fair_over": 0.493,
    "fair_under": 0.507,
    "price_over": 1.9,
@@ -22061,11 +21933,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 3.7
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 185
+   "rank": 184
   },
   {
    "player_id": 1630163,
@@ -22162,7 +22040,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 8
+   "rank": 9
   },
   {
    "player_id": 1630167,
@@ -22280,44 +22158,44 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 23.05,
-   "floor": 12.62,
-   "ceiling": 33.22,
+   "proj": 24.81,
+   "floor": 14.38,
+   "ceiling": 34.98,
    "sigma": 8.19,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 25.5,
-   "side": "under",
-   "price": 1.87,
-   "book": "tab",
-   "edge": 0.1213,
-   "p_us": 0.621,
+   "line": 24.5,
+   "side": "over",
+   "price": 1.9,
+   "book": "pointsbetau",
+   "edge": 0.015,
+   "p_us": 0.515,
    "p_book": 0.5,
-   "tier": "A",
-   "gate_status": "passed",
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.379,
-   "p_under": 0.621,
+   "p_over": 0.515,
+   "p_under": 0.485,
    "fair_over": 0.5,
    "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
+   "price_over": 1.9,
+   "price_under": 1.9,
    "us": {
     "line": 25.5,
     "side": "under",
     "price": 1.83,
     "book": "betright",
-    "edge": 0.1093,
-    "p_us": 0.621,
+    "edge": 0.0228,
+    "p_us": 0.535,
     "p_book": 0.512,
-    "tier": "A",
-    "gate_status": "passed",
+    "tier": null,
+    "gate_status": "failed:edge_below_tier",
     "l10_over": 0.5,
     "l5_over": 0.4,
-    "p_over": 0.379,
-    "p_under": 0.621,
+    "p_over": 0.465,
+    "p_under": 0.535,
     "fair_over": 0.488,
     "fair_under": 0.512,
     "price_over": 1.92,
@@ -22329,11 +22207,17 @@
    "early": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 10
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 72,
+     "delta": 1.8
+    }
+   ],
+   "prior": 23.05,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 7
   },
   {
    "player_id": 1630180,
@@ -23142,7 +23026,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 96
+   "rank": 95
   },
   {
    "player_id": 1631095,
@@ -23424,7 +23308,13 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 40,
+     "delta": 2.4
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -23733,26 +23623,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 3.05,
-   "floor": 0.0,
-   "ceiling": 8.71,
+   "proj": 5.7,
+   "floor": 0.63,
+   "ceiling": 11.37,
    "sigma": 4.33,
-   "minutes": 10,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 3.5,
-   "side": "under",
+   "side": "over",
    "price": 1.87,
    "book": "tab",
-   "edge": 0.0409,
-   "p_us": 0.541,
+   "edge": 0.2109,
+   "p_us": 0.711,
    "p_book": 0.5,
-   "tier": "B",
+   "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.8,
-   "p_over": 0.459,
-   "p_under": 0.541,
+   "p_over": 0.711,
+   "p_under": 0.289,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -23764,11 +23654,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 190
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 42,
+     "delta": 0.6
+    }
+   ],
+   "prior": 3.05,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 162
   },
   {
    "player_id": 1631245,
@@ -23898,7 +23794,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 129
+   "rank": 128
   },
   {
    "player_id": 1631342,
@@ -24227,26 +24123,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 2.57,
-   "floor": 0.0,
-   "ceiling": 8.23,
+   "proj": 5.14,
+   "floor": 0.06,
+   "ceiling": 10.8,
    "sigma": 4.33,
-   "minutes": 11,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 4.5,
-   "side": "under",
+   "side": "over",
    "price": 1.87,
    "book": "tab",
-   "edge": 0.1692,
-   "p_us": 0.669,
+   "edge": 0.0639,
+   "p_us": 0.564,
    "p_book": 0.5,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.2,
-   "p_over": 0.331,
-   "p_under": 0.669,
+   "p_over": 0.564,
+   "p_under": 0.436,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -24258,11 +24154,17 @@
    "early": null,
    "pos": "C",
    "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 196
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 88,
+     "delta": 4.5
+    }
+   ],
+   "prior": 2.57,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 168
   },
   {
    "player_id": 1641738,
@@ -24745,7 +24647,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 82
+   "rank": 81
   },
   {
    "player_id": 1642271,
@@ -25012,7 +24914,13 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 81,
+     "delta": 5.4
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -25198,7 +25106,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 192
+   "rank": 193
   },
   {
    "player_id": 1642384,
@@ -25267,44 +25175,44 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 12.7,
-   "floor": 4.91,
-   "ceiling": 21.11,
-   "sigma": 6.27,
-   "minutes": 33,
+   "proj": 13.97,
+   "floor": 5.71,
+   "ceiling": 22.58,
+   "sigma": 6.61,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 12.5,
    "side": "over",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0198,
-   "p_us": 0.513,
+   "edge": 0.0969,
+   "p_us": 0.59,
    "p_book": 0.493,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "A",
+   "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.513,
-   "p_under": 0.487,
+   "p_over": 0.59,
+   "p_under": 0.41,
    "fair_over": 0.493,
    "fair_under": 0.507,
    "price_over": 1.88,
    "price_under": 1.83,
    "us": {
     "line": 12.5,
-    "side": "under",
-    "price": 1.96,
+    "side": "over",
+    "price": 1.8,
     "book": "betright",
-    "edge": 0.0082,
-    "p_us": 0.487,
-    "p_book": 0.479,
-    "tier": null,
-    "gate_status": "failed:edge_below_tier",
+    "edge": 0.0689,
+    "p_us": 0.59,
+    "p_book": 0.521,
+    "tier": "A",
+    "gate_status": "passed",
     "l10_over": 0.7,
     "l5_over": 0.8,
-    "p_over": 0.513,
-    "p_under": 0.487,
+    "p_over": 0.59,
+    "p_under": 0.41,
     "fair_over": 0.521,
     "fair_under": 0.479,
     "price_over": 1.8,
@@ -25316,11 +25224,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 76
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 45,
+     "delta": 2.8
+    }
+   ],
+   "prior": 12.7,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 58
   },
   {
    "player_id": 1642846,
@@ -25973,9 +25887,9 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PTS",
-   "proj": 0.0,
+   "proj": 0.03,
    "floor": 0.0,
-   "ceiling": 5.67,
+   "ceiling": 5.7,
    "sigma": 4.33,
    "minutes": 0,
    "rot_rank": null,
@@ -26008,7 +25922,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 203
   },
   {
    "player_id": -729,
@@ -26048,11 +25962,17 @@
    "early": 11,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 2.0
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1643257,
@@ -26096,7 +26016,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 189
+   "rank": 191
   },
   {
    "player_id": 1642910,
@@ -26140,7 +26060,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 255
+   "rank": 254
   },
   {
    "player_id": -756,
@@ -27058,7 +26978,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 104
+   "rank": 105
   },
   {
    "player_id": 2544,
@@ -27067,44 +26987,44 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 6.54,
-   "floor": 2.07,
-   "ceiling": 11.24,
+   "proj": 6.87,
+   "floor": 2.4,
+   "ceiling": 11.57,
    "sigma": 3.62,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 6.5,
-   "side": "under",
-   "price": 1.88,
-   "book": "sportsbet",
-   "edge": 0.0367,
-   "p_us": 0.537,
-   "p_book": 0.5,
-   "tier": "B",
-   "gate_status": "passed",
+   "side": "over",
+   "price": 1.95,
+   "book": "unibet",
+   "edge": 0.0293,
+   "p_us": 0.505,
+   "p_book": 0.476,
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.4,
-   "p_over": 0.463,
-   "p_under": 0.537,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.88,
-   "price_under": 1.88,
+   "p_over": 0.505,
+   "p_under": 0.495,
+   "fair_over": 0.476,
+   "fair_under": 0.524,
+   "price_over": 1.95,
+   "price_under": 1.77,
    "us": {
     "line": 6.5,
     "side": "under",
     "price": 1.91,
     "book": "betright",
-    "edge": 0.0447,
-    "p_us": 0.537,
+    "edge": 0.0029,
+    "p_us": 0.495,
     "p_book": 0.492,
-    "tier": "B",
-    "gate_status": "passed",
+    "tier": null,
+    "gate_status": "failed:edge_below_tier",
     "l10_over": 0.6,
     "l5_over": 0.4,
-    "p_over": 0.463,
-    "p_under": 0.537,
+    "p_over": 0.505,
+    "p_under": 0.495,
     "fair_over": 0.508,
     "fair_under": 0.492,
     "price_over": 1.85,
@@ -27117,10 +27037,10 @@
    "pos": "PF",
    "pos_usual": "PF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 29
+   "prior": 6.54,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 22
   },
   {
    "player_id": 201142,
@@ -27306,11 +27226,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 1.31,
+   "proj": 2.3,
    "floor": 0.0,
-   "ceiling": 3.5,
-   "sigma": 1.67,
-   "minutes": 12,
+   "ceiling": 4.78,
+   "sigma": 1.79,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -27337,11 +27257,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 195
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.5
+    }
+   ],
+   "prior": 1.31,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 161
   },
   {
    "player_id": 203486,
@@ -27509,68 +27435,6 @@
     "l10_over": 0.3,
     "gate_status": "passed"
    }
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "REB",
-   "proj": 7.99,
-   "floor": 3.52,
-   "ceiling": 12.69,
-   "sigma": 3.62,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": 8.5,
-   "side": "under",
-   "price": 1.77,
-   "book": "pointsbetau",
-   "edge": 0.0658,
-   "p_us": 0.596,
-   "p_book": 0.531,
-   "tier": "A",
-   "gate_status": "passed",
-   "l10_over": 0.3,
-   "l5_over": 0.2,
-   "p_over": 0.404,
-   "p_under": 0.596,
-   "fair_over": 0.469,
-   "fair_under": 0.531,
-   "price_over": 2.0,
-   "price_under": 1.77,
-   "us": {
-    "line": 8.5,
-    "side": "under",
-    "price": 1.68,
-    "book": "betright",
-    "edge": 0.0408,
-    "p_us": 0.596,
-    "p_book": 0.556,
-    "tier": "B",
-    "gate_status": "passed",
-    "l10_over": 0.3,
-    "l5_over": 0.2,
-    "p_over": 0.404,
-    "p_under": 0.596,
-    "fair_over": 0.444,
-    "fair_under": 0.556,
-    "price_over": 2.1,
-    "price_under": 1.68
-   },
-   "mu": 0.008,
-   "mu_rank": 15,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 15
   },
   {
    "player_id": 203991,
@@ -27904,26 +27768,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 6.63,
-   "floor": 2.77,
-   "ceiling": 10.63,
+   "proj": 6.93,
+   "floor": 3.07,
+   "ceiling": 10.93,
    "sigma": 3.17,
-   "minutes": 35,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 5.5,
    "side": "over",
    "price": 1.92,
    "book": "sportsbet",
-   "edge": 0.1181,
-   "p_us": 0.607,
+   "edge": 0.1526,
+   "p_us": 0.642,
    "p_book": 0.489,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.607,
-   "p_under": 0.393,
+   "p_over": 0.642,
+   "p_under": 0.358,
    "fair_over": 0.489,
    "fair_under": 0.511,
    "price_over": 1.92,
@@ -27935,11 +27799,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -4.2
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 24
+   "rank": 21
   },
   {
    "player_id": 1627783,
@@ -28469,11 +28339,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 1.56,
+   "proj": 1.63,
    "floor": 0.0,
-   "ceiling": 3.74,
+   "ceiling": 3.81,
    "sigma": 1.67,
-   "minutes": 19,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -28500,11 +28370,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -1.1
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 188
+   "rank": 186
   },
   {
    "player_id": 1629018,
@@ -28672,7 +28548,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 34
+   "rank": 33
   },
   {
    "player_id": 1629060,
@@ -29115,11 +28991,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 3.53,
-   "floor": 1.07,
-   "ceiling": 6.3,
-   "sigma": 2.18,
-   "minutes": 19,
+   "proj": 3.88,
+   "floor": 1.05,
+   "ceiling": 7.02,
+   "sigma": 2.37,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -29146,11 +29022,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 117
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 1.4
+    }
+   ],
+   "prior": 3.53,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 102
   },
   {
    "player_id": 1630163,
@@ -29247,7 +29129,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 23
+   "rank": 24
   },
   {
    "player_id": 1630167,
@@ -29365,26 +29247,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 3.32,
-   "floor": 0.87,
-   "ceiling": 6.1,
+   "proj": 3.25,
+   "floor": 0.8,
+   "ceiling": 6.03,
    "sigma": 2.18,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 3.5,
    "side": "under",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0734,
-   "p_us": 0.583,
+   "edge": 0.0879,
+   "p_us": 0.597,
    "p_book": 0.509,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.417,
-   "p_under": 0.583,
+   "p_over": 0.403,
+   "p_under": 0.597,
    "fair_over": 0.491,
    "fair_under": 0.509,
    "price_over": 1.9,
@@ -29394,15 +29276,15 @@
     "side": "under",
     "price": 1.8,
     "book": "betright",
-    "edge": 0.0628,
-    "p_us": 0.583,
+    "edge": 0.0773,
+    "p_us": 0.597,
     "p_book": 0.52,
     "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.5,
     "l5_over": 0.4,
-    "p_over": 0.417,
-    "p_under": 0.583,
+    "p_over": 0.403,
+    "p_under": 0.597,
     "fair_over": 0.48,
     "fair_under": 0.52,
     "price_over": 1.95,
@@ -29414,11 +29296,17 @@
    "early": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 72,
+     "delta": -0.9
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 121
+   "rank": 126
   },
   {
    "player_id": 1630180,
@@ -30209,7 +30097,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 164
+   "rank": 165
   },
   {
    "player_id": 1631095,
@@ -30491,7 +30379,13 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 40,
+     "delta": 0.8
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -30791,11 +30685,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 1.8,
-   "floor": 0.0,
-   "ceiling": 3.99,
-   "sigma": 1.67,
-   "minutes": 10,
+   "proj": 3.24,
+   "floor": 0.79,
+   "ceiling": 6.02,
+   "sigma": 2.18,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -30822,11 +30716,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 181
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 42,
+     "delta": -0.4
+    }
+   ],
+   "prior": 1.8,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 127
   },
   {
    "player_id": 1631245,
@@ -31303,11 +31203,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 2.68,
-   "floor": 0.3,
-   "ceiling": 5.16,
-   "sigma": 1.79,
-   "minutes": 11,
+   "proj": 4.74,
+   "floor": 1.6,
+   "ceiling": 8.41,
+   "sigma": 2.68,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -31334,11 +31234,17 @@
    "early": null,
    "pos": "C",
    "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 150
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 88,
+     "delta": 2.9
+    }
+   ],
+   "prior": 2.68,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 63
   },
   {
    "player_id": 1641738,
@@ -32115,7 +32021,13 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 81,
+     "delta": 1.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -32292,7 +32204,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 172
+   "rank": 173
   },
   {
    "player_id": 1642384,
@@ -32361,26 +32273,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 5.22,
-   "floor": 2.08,
-   "ceiling": 8.89,
-   "sigma": 2.68,
-   "minutes": 33,
+   "proj": 5.56,
+   "floor": 2.1,
+   "ceiling": 9.05,
+   "sigma": 2.78,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 6.5,
    "side": "under",
    "price": 1.63,
    "book": "unibet",
-   "edge": 0.143,
-   "p_us": 0.714,
+   "edge": 0.0968,
+   "p_us": 0.668,
    "p_book": 0.571,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.3,
    "l5_over": 0.6,
-   "p_over": 0.286,
-   "p_under": 0.714,
+   "p_over": 0.332,
+   "p_under": 0.668,
    "fair_over": 0.429,
    "fair_under": 0.571,
    "price_over": 2.17,
@@ -32390,15 +32302,15 @@
     "side": "under",
     "price": 2.0,
     "book": "betright",
-    "edge": 0.1178,
-    "p_us": 0.584,
+    "edge": 0.0679,
+    "p_us": 0.535,
     "p_book": 0.467,
     "tier": "A",
     "gate_status": "passed",
     "l10_over": 0.5,
     "l5_over": 0.6,
-    "p_over": 0.416,
-    "p_under": 0.584,
+    "p_over": 0.465,
+    "p_under": 0.535,
     "fair_over": 0.533,
     "fair_under": 0.467,
     "price_over": 1.75,
@@ -32410,11 +32322,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 53
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 45,
+     "delta": 0.3
+    }
+   ],
+   "prior": 5.22,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 44
   },
   {
    "player_id": 1642846,
@@ -33076,9 +32994,9 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "REB",
-   "proj": 0.0,
+   "proj": 0.02,
    "floor": 0.0,
-   "ceiling": 2.18,
+   "ceiling": 2.21,
    "sigma": 1.67,
    "minutes": 0,
    "rot_rank": null,
@@ -33111,7 +33029,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 203
   },
   {
    "player_id": -729,
@@ -33151,11 +33069,17 @@
    "early": 11,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.7
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1643257,
@@ -33243,7 +33167,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 255
+   "rank": 254
   },
   {
    "player_id": -756,
@@ -34107,7 +34031,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 115
+   "rank": 114
   },
   {
    "player_id": 2544,
@@ -34116,11 +34040,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 1.36,
-   "floor": 0.05,
-   "ceiling": 3.08,
+   "proj": 1.38,
+   "floor": 0.08,
+   "ceiling": 3.1,
    "sigma": 1.18,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -34151,7 +34075,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 20
+   "rank": 18
   },
   {
    "player_id": 201142,
@@ -34304,11 +34228,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 0.41,
+   "proj": 0.68,
    "floor": 0.0,
-   "ceiling": 1.2,
-   "sigma": 0.76,
-   "minutes": 12,
+   "ceiling": 1.99,
+   "sigma": 0.91,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -34336,10 +34260,10 @@
    "pos": "SG",
    "pos_usual": "SG",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 167
+   "prior": 0.41,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 121
   },
   {
    "player_id": 203486,
@@ -34480,50 +34404,6 @@
    "early": null,
    "gate_status": null,
    "us": null
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "STL",
-   "proj": 0.74,
-   "floor": 0.01,
-   "ceiling": 2.05,
-   "sigma": 0.91,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.263,
-   "mu_rank": 5,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 111
   },
   {
    "player_id": 203991,
@@ -34812,11 +34692,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 1.37,
-   "floor": 0.07,
-   "ceiling": 3.09,
-   "sigma": 1.18,
-   "minutes": 35,
+   "proj": 1.4,
+   "floor": 0.0,
+   "ceiling": 2.94,
+   "sigma": 1.27,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -34847,7 +34727,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 19
+   "rank": 15
   },
   {
    "player_id": 1627783,
@@ -35296,11 +35176,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 0.35,
+   "proj": 0.36,
    "floor": 0.0,
    "ceiling": 1.15,
    "sigma": 0.76,
-   "minutes": 19,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -35331,7 +35211,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 181
+   "rank": 180
   },
   {
    "player_id": 1629018,
@@ -35475,7 +35355,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 134
+   "rank": 135
   },
   {
    "player_id": 1629060,
@@ -35864,11 +35744,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 0.8,
+   "proj": 0.85,
    "floor": 0.0,
-   "ceiling": 2.03,
-   "sigma": 0.92,
-   "minutes": 19,
+   "ceiling": 2.01,
+   "sigma": 0.99,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -35899,7 +35779,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 88
   },
   {
    "player_id": 1630163,
@@ -36072,11 +35952,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 1.3,
-   "floor": 0.0,
-   "ceiling": 3.02,
+   "proj": 1.32,
+   "floor": 0.02,
+   "ceiling": 3.04,
    "sigma": 1.18,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -36107,7 +35987,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 24
+   "rank": 23
   },
   {
    "player_id": 1630180,
@@ -36711,7 +36591,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 217
+   "rank": 216
   },
   {
    "player_id": 1630702,
@@ -36979,7 +36859,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 223
+   "rank": 222
   },
   {
    "player_id": 1631131,
@@ -37043,7 +36923,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 225
+   "rank": 224
   },
   {
    "player_id": 1631157,
@@ -37312,11 +37192,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 0.34,
+   "proj": 0.62,
    "floor": 0.0,
-   "ceiling": 1.14,
-   "sigma": 0.76,
-   "minutes": 10,
+   "ceiling": 1.99,
+   "sigma": 0.88,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -37344,10 +37224,10 @@
    "pos": "PF",
    "pos_usual": "PF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 184
+   "prior": 0.34,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 134
   },
   {
    "player_id": 1631245,
@@ -37471,7 +37351,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 100
+   "rank": 101
   },
   {
    "player_id": 1631342,
@@ -37635,7 +37515,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 233
+   "rank": 232
   },
   {
    "player_id": 1641716,
@@ -37764,11 +37644,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 0.36,
+   "proj": 0.6,
    "floor": 0.0,
-   "ceiling": 1.16,
-   "sigma": 0.76,
-   "minutes": 11,
+   "ceiling": 1.97,
+   "sigma": 0.88,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -37796,10 +37676,10 @@
    "pos": "C",
    "pos_usual": "C",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 179
+   "prior": 0.36,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 139
   },
   {
    "player_id": 1641738,
@@ -38451,7 +38331,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 242
+   "rank": 241
   },
   {
    "player_id": 1642349,
@@ -38615,7 +38495,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 202
+   "rank": 201
   },
   {
    "player_id": 1642384,
@@ -38684,11 +38564,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "STL",
-   "proj": 1.52,
+   "proj": 1.55,
    "floor": 0.0,
-   "ceiling": 3.06,
+   "ceiling": 3.09,
    "sigma": 1.27,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -39103,7 +38983,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 250
+   "rank": 249
   },
   {
    "player_id": 1642907,
@@ -39314,7 +39194,7 @@
    "stat": "STL",
    "proj": 0.0,
    "floor": 0.0,
-   "ceiling": 0.79,
+   "ceiling": 0.8,
    "sigma": 0.76,
    "minutes": 0,
    "rot_rank": null,
@@ -39347,7 +39227,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 252
   },
   {
    "player_id": -729,
@@ -39391,7 +39271,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1643257,
@@ -39435,7 +39315,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 177
+   "rank": 178
   },
   {
    "player_id": 1642910,
@@ -39479,7 +39359,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 255
+   "rank": 254
   },
   {
    "player_id": -756,
@@ -40343,7 +40223,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 24
+   "rank": 23
   },
   {
    "player_id": 2544,
@@ -40352,11 +40232,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 2.53,
-   "floor": 0.38,
-   "ceiling": 4.8,
+   "proj": 2.57,
+   "floor": 0.42,
+   "ceiling": 4.84,
    "sigma": 1.78,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -40387,7 +40267,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 26
+   "rank": 24
   },
   {
    "player_id": 201142,
@@ -40511,7 +40391,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 31
+   "rank": 30
   },
   {
    "player_id": 203084,
@@ -40540,11 +40420,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 0.28,
+   "proj": 0.46,
    "floor": 0.0,
-   "ceiling": 1.66,
+   "ceiling": 1.85,
    "sigma": 0.8,
-   "minutes": 12,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -40572,10 +40452,10 @@
    "pos": "SG",
    "pos_usual": "SG",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 197
+   "prior": 0.28,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 181
   },
   {
    "player_id": 203486,
@@ -40716,50 +40596,6 @@
    "early": null,
    "gate_status": null,
    "us": null
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "TOV",
-   "proj": 3.0,
-   "floor": 0.85,
-   "ceiling": 5.27,
-   "sigma": 1.78,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": null,
-   "side": null,
-   "price": null,
-   "book": null,
-   "edge": null,
-   "p_us": null,
-   "p_book": null,
-   "tier": null,
-   "gate_status": null,
-   "l10_over": null,
-   "l5_over": null,
-   "p_over": null,
-   "p_under": null,
-   "fair_over": null,
-   "fair_under": null,
-   "price_over": null,
-   "price_under": null,
-   "us": null,
-   "mu": 0.154,
-   "mu_rank": 5,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 12
   },
   {
    "player_id": 203991,
@@ -41048,11 +40884,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 2.88,
-   "floor": 0.72,
-   "ceiling": 5.14,
+   "proj": 2.93,
+   "floor": 0.78,
+   "ceiling": 5.2,
    "sigma": 1.78,
-   "minutes": 35,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -41083,7 +40919,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 18
+   "rank": 16
   },
   {
    "player_id": 1627783,
@@ -41532,11 +41368,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 0.64,
-   "floor": 0.01,
-   "ceiling": 2.02,
+   "proj": 0.65,
+   "floor": 0.02,
+   "ceiling": 2.03,
    "sigma": 0.8,
-   "minutes": 19,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -41567,7 +41403,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 162
+   "rank": 161
   },
   {
    "player_id": 1629018,
@@ -41711,7 +41547,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 157
+   "rank": 156
   },
   {
    "player_id": 1629060,
@@ -42100,11 +41936,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 0.21,
+   "proj": 0.22,
    "floor": 0.0,
-   "ceiling": 1.59,
+   "ceiling": 1.6,
    "sigma": 0.8,
-   "minutes": 19,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -42135,7 +41971,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 202
+   "rank": 201
   },
   {
    "player_id": 1630163,
@@ -42308,11 +42144,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 2.18,
-   "floor": 0.58,
-   "ceiling": 4.01,
+   "proj": 2.22,
+   "floor": 0.62,
+   "ceiling": 4.05,
    "sigma": 1.47,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -42343,7 +42179,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 47
+   "rank": 43
   },
   {
    "player_id": 1630180,
@@ -43548,11 +43384,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 0.32,
+   "proj": 0.58,
    "floor": 0.0,
-   "ceiling": 1.7,
+   "ceiling": 1.96,
    "sigma": 0.8,
-   "minutes": 10,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -43580,10 +43416,10 @@
    "pos": "PF",
    "pos_usual": "PF",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 194
+   "prior": 0.32,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 167
   },
   {
    "player_id": 1631245,
@@ -44000,11 +43836,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 0.74,
+   "proj": 1.22,
    "floor": 0.0,
-   "ceiling": 1.99,
-   "sigma": 0.87,
-   "minutes": 11,
+   "ceiling": 2.96,
+   "sigma": 1.16,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -44032,10 +43868,10 @@
    "pos": "C",
    "pos_usual": "C",
    "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 154
+   "prior": 0.74,
+   "prior_at": "2026-11-23T18:46+00:00",
+   "move_reason": "Embiid out",
+   "rank": 102
   },
   {
    "player_id": 1641738,
@@ -44099,7 +43935,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 89
+   "rank": 88
   },
   {
    "player_id": 1641744,
@@ -44443,7 +44279,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 90
+   "rank": 89
   },
   {
    "player_id": 1642271,
@@ -44851,7 +44687,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 193
+   "rank": 194
   },
   {
    "player_id": 1642384,
@@ -44920,11 +44756,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 1.54,
+   "proj": 1.57,
    "floor": 0.0,
-   "ceiling": 2.99,
+   "ceiling": 3.03,
    "sigma": 1.29,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -44955,7 +44791,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 78
+   "rank": 76
   },
   {
    "player_id": 1642846,
@@ -45548,9 +45384,9 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "TOV",
-   "proj": 0.0,
+   "proj": 0.01,
    "floor": 0.0,
-   "ceiling": 1.38,
+   "ceiling": 1.39,
    "sigma": 0.8,
    "minutes": 0,
    "rot_rank": null,
@@ -45583,7 +45419,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 253
+   "rank": 203
   },
   {
    "player_id": -729,
@@ -45627,7 +45463,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 254
+   "rank": 253
   },
   {
    "player_id": 1643257,
@@ -45671,7 +45507,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 185
+   "rank": 186
   },
   {
    "player_id": 1642910,
@@ -45715,7 +45551,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 255
+   "rank": 254
   },
   {
    "player_id": -756,
@@ -46853,7 +46689,13 @@
    "early": 11,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 2.3000000000000003
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -46946,9 +46788,9 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 0.0,
+   "proj": 0.06,
    "floor": 0.0,
-   "ceiling": 8.71,
+   "ceiling": 8.78,
    "sigma": 6.33,
    "minutes": 0,
    "rot_rank": null,
@@ -46981,7 +46823,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 220
+   "rank": 203
   },
   {
    "player_id": -701,
@@ -47103,26 +46945,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 29.76,
-   "floor": 19.12,
-   "ceiling": 41.39,
-   "sigma": 8.94,
-   "minutes": 33,
+   "proj": 31.22,
+   "floor": 18.96,
+   "ceiling": 42.72,
+   "sigma": 9.79,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 29.5,
    "side": "over",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.0178,
-   "p_us": 0.511,
+   "edge": 0.0781,
+   "p_us": 0.571,
    "p_book": 0.493,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "A",
+   "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.511,
-   "p_under": 0.489,
+   "p_over": 0.571,
+   "p_under": 0.429,
    "fair_over": 0.493,
    "fair_under": 0.507,
    "price_over": 1.88,
@@ -47138,7 +46980,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 27
+   "rank": 19
   },
   {
    "player_id": 201142,
@@ -47277,7 +47119,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 50
+   "rank": 49
   },
   {
    "player_id": 203084,
@@ -47306,11 +47148,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 4.75,
-   "floor": 0.0,
-   "ceiling": 13.46,
+   "proj": 8.3,
+   "floor": 0.58,
+   "ceiling": 17.01,
    "sigma": 6.33,
-   "minutes": 12,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -47337,11 +47179,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 198
+   "rank": 177
   },
   {
    "player_id": 203486,
@@ -47491,50 +47339,6 @@
    "early": null,
    "gate_status": "failed:edge_below_tier",
    "us": null
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "PRA",
-   "proj": 35.43,
-   "floor": 23.17,
-   "ceiling": 46.93,
-   "sigma": 9.79,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": 33.5,
-   "side": "over",
-   "price": 1.87,
-   "book": "sportsbet",
-   "edge": 0.0773,
-   "p_us": 0.58,
-   "p_book": 0.503,
-   "tier": "A",
-   "gate_status": "passed",
-   "l10_over": 0.4,
-   "l5_over": 0.6,
-   "p_over": 0.58,
-   "p_under": 0.42,
-   "fair_over": 0.503,
-   "fair_under": 0.497,
-   "price_over": 1.87,
-   "price_under": 1.89,
-   "us": null,
-   "mu": 0.049,
-   "mu_rank": 8,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 8
   },
   {
    "player_id": 203991,
@@ -47832,26 +47636,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 32.12,
-   "floor": 19.86,
-   "ceiling": 43.63,
+   "proj": 33.82,
+   "floor": 21.56,
+   "ceiling": 45.32,
    "sigma": 9.79,
-   "minutes": 35,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 28.5,
    "side": "over",
    "price": 1.7,
    "book": "neds",
-   "edge": 0.1009,
-   "p_us": 0.648,
+   "edge": 0.1642,
+   "p_us": 0.711,
    "p_book": 0.547,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.6,
-   "p_over": 0.648,
-   "p_under": 0.352,
+   "p_over": 0.711,
+   "p_under": 0.289,
    "fair_over": 0.547,
    "fair_under": 0.453,
    "price_over": 1.7,
@@ -47863,11 +47667,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -6.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 14
+   "rank": 10
   },
   {
    "player_id": 1627783,
@@ -48343,26 +48153,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 11.95,
-   "floor": 3.32,
-   "ceiling": 20.73,
-   "sigma": 7.07,
-   "minutes": 19,
+   "proj": 12.65,
+   "floor": 3.56,
+   "ceiling": 21.47,
+   "sigma": 6.89,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 12.5,
    "side": "under",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0535,
-   "p_us": 0.532,
+   "edge": 0.013,
+   "p_us": 0.492,
    "p_book": 0.479,
-   "tier": "B",
-   "gate_status": "passed",
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.4,
    "l5_over": 0.6,
-   "p_over": 0.468,
-   "p_under": 0.532,
+   "p_over": 0.508,
+   "p_under": 0.492,
    "fair_over": 0.521,
    "fair_under": 0.479,
    "price_over": 1.8,
@@ -48374,11 +48184,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.3999999999999999
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 140
+   "rank": 132
   },
   {
    "player_id": 1629018,
@@ -48528,7 +48344,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 126
+   "rank": 125
   },
   {
    "player_id": 1629060,
@@ -48944,11 +48760,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 8.18,
-   "floor": 0.46,
-   "ceiling": 16.89,
+   "proj": 9.0,
+   "floor": 1.28,
+   "ceiling": 17.71,
    "sigma": 6.33,
-   "minutes": 19,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -48975,11 +48791,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 8.899999999999999
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 175
+   "rank": 171
   },
   {
    "player_id": 1630163,
@@ -49167,30 +48989,30 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 31.78,
-   "floor": 21.14,
-   "ceiling": 43.41,
-   "sigma": 8.94,
-   "minutes": 36,
+   "proj": 33.56,
+   "floor": 21.3,
+   "ceiling": 45.06,
+   "sigma": 9.79,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 33.5,
-   "side": "under",
-   "price": 1.87,
-   "book": "pointsbetau",
-   "edge": 0.0759,
-   "p_us": 0.576,
-   "p_book": 0.5,
-   "tier": "A",
-   "gate_status": "passed",
+   "line": 32.5,
+   "side": "over",
+   "price": 1.77,
+   "book": "neds",
+   "edge": 0.016,
+   "p_us": 0.544,
+   "p_book": 0.528,
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.424,
-   "p_under": 0.576,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
+   "p_over": 0.544,
+   "p_under": 0.456,
+   "fair_over": 0.528,
+   "fair_under": 0.472,
+   "price_over": 1.77,
+   "price_under": 1.98,
    "us": null,
    "mu": -0.014,
    "mu_rank": 17,
@@ -49198,11 +49020,17 @@
    "early": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 72,
+     "delta": 0.09999999999999998
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 17
+   "rank": 13
   },
   {
    "player_id": 1630180,
@@ -49833,7 +49661,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 234
+   "rank": 233
   },
   {
    "player_id": 1630702,
@@ -49903,7 +49731,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 118
+   "rank": 117
   },
   {
    "player_id": 1631095,
@@ -50125,7 +49953,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 240
+   "rank": 239
   },
   {
    "player_id": 1631127,
@@ -50205,11 +50033,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 40,
+     "delta": 3.3000000000000003
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 243
+   "rank": 242
   },
   {
    "player_id": 1631157,
@@ -50487,11 +50321,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 5.25,
-   "floor": 0.0,
-   "ceiling": 13.97,
+   "proj": 9.68,
+   "floor": 1.95,
+   "ceiling": 18.39,
    "sigma": 6.33,
-   "minutes": 10,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -50518,11 +50352,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 42,
+     "delta": 0.7
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 195
+   "rank": 162
   },
   {
    "player_id": 1631245,
@@ -50652,7 +50492,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 123
+   "rank": 122
   },
   {
    "player_id": 1631342,
@@ -50834,7 +50674,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 250
   },
   {
    "player_id": 1641716,
@@ -50963,11 +50803,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 5.76,
-   "floor": 0.0,
-   "ceiling": 14.48,
+   "proj": 10.73,
+   "floor": 3.01,
+   "ceiling": 19.45,
    "sigma": 6.33,
-   "minutes": 11,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -50994,11 +50834,17 @@
    "early": null,
    "pos": "C",
    "pos_usual": "C",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 88,
+     "delta": 7.7
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 190
+   "rank": 153
   },
   {
    "player_id": 1641738,
@@ -51068,7 +50914,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 86
+   "rank": 85
   },
   {
    "player_id": 1641744,
@@ -51516,7 +51362,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 46
+   "rank": 45
   },
   {
    "player_id": 1642271,
@@ -51765,11 +51611,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 81,
+     "delta": 8.0
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 263
   },
   {
    "player_id": 1642349,
@@ -51953,7 +51805,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 194
+   "rank": 195
   },
   {
    "player_id": 1642384,
@@ -52062,30 +51914,30 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PRA",
-   "proj": 21.81,
-   "floor": 11.99,
-   "ceiling": 32.39,
+   "proj": 23.51,
+   "floor": 13.68,
+   "ceiling": 34.08,
    "sigma": 8.18,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 22.5,
-   "side": "under",
-   "price": 1.83,
-   "book": "pointsbetau",
-   "edge": 0.0237,
-   "p_us": 0.533,
-   "p_book": 0.509,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
-   "l10_over": 0.6,
+   "line": 21.5,
+   "side": "over",
+   "price": 1.82,
+   "book": "neds",
+   "edge": 0.0898,
+   "p_us": 0.603,
+   "p_book": 0.513,
+   "tier": "A",
+   "gate_status": "passed",
+   "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.467,
-   "p_under": 0.533,
-   "fair_over": 0.491,
-   "fair_under": 0.509,
-   "price_over": 1.9,
-   "price_under": 1.83,
+   "p_over": 0.603,
+   "p_under": 0.397,
+   "fair_over": 0.513,
+   "fair_under": 0.487,
+   "price_over": 1.82,
+   "price_under": 1.92,
    "us": null,
    "mu": -0.044,
    "mu_rank": 25,
@@ -52093,11 +51945,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 45,
+     "delta": 2.8999999999999995
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 63
+   "rank": 57
   },
   {
    "player_id": 1642846,
@@ -52514,7 +52372,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642907,
@@ -52578,7 +52436,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 276
+   "rank": 275
   },
   {
    "player_id": 1642914,
@@ -53380,7 +53238,13 @@
    "early": 11,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 2.7
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -53473,9 +53337,9 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 0.0,
+   "proj": 0.06,
    "floor": 0.0,
-   "ceiling": 8.11,
+   "ceiling": 8.17,
    "sigma": 5.79,
    "minutes": 0,
    "rot_rank": null,
@@ -53508,7 +53372,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 220
+   "rank": 203
   },
   {
    "player_id": -701,
@@ -53621,7 +53485,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 22
+   "rank": 21
   },
   {
    "player_id": 2544,
@@ -53630,26 +53494,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 22.84,
-   "floor": 13.13,
-   "ceiling": 33.88,
-   "sigma": 8.13,
-   "minutes": 33,
+   "proj": 24.17,
+   "floor": 12.51,
+   "ceiling": 35.09,
+   "sigma": 9.18,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 22.5,
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0178,
-   "p_us": 0.518,
+   "edge": 0.0728,
+   "p_us": 0.573,
    "p_book": 0.5,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "A",
+   "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
-   "p_over": 0.518,
-   "p_under": 0.482,
+   "p_over": 0.573,
+   "p_under": 0.427,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -53665,7 +53529,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 40
+   "rank": 32
   },
   {
    "player_id": 201142,
@@ -53833,11 +53697,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 3.97,
-   "floor": 0.0,
-   "ceiling": 12.09,
+   "proj": 6.99,
+   "floor": 0.22,
+   "ceiling": 15.1,
    "sigma": 5.79,
-   "minutes": 12,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -53864,11 +53728,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.9
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 197
+   "rank": 179
   },
   {
    "player_id": 203486,
@@ -54018,50 +53888,6 @@
    "early": null,
    "gate_status": "passed",
    "us": null
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "PR",
-   "proj": 31.02,
-   "floor": 19.36,
-   "ceiling": 41.94,
-   "sigma": 9.18,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": 29.5,
-   "side": "over",
-   "price": 1.83,
-   "book": "sportsbet",
-   "edge": 0.0532,
-   "p_us": 0.566,
-   "p_book": 0.513,
-   "tier": "B",
-   "gate_status": "passed",
-   "l10_over": 0.4,
-   "l5_over": 0.6,
-   "p_over": 0.566,
-   "p_under": 0.434,
-   "fair_over": 0.513,
-   "fair_under": 0.487,
-   "price_over": 1.83,
-   "price_under": 1.93,
-   "us": null,
-   "mu": 0.044,
-   "mu_rank": 9,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 8
   },
   {
    "player_id": 203991,
@@ -54359,26 +54185,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 28.85,
-   "floor": 17.18,
-   "ceiling": 39.77,
+   "proj": 30.47,
+   "floor": 18.81,
+   "ceiling": 41.39,
    "sigma": 9.18,
-   "minutes": 35,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 25.5,
    "side": "over",
    "price": 1.73,
    "book": "neds",
-   "edge": 0.1048,
-   "p_us": 0.643,
+   "edge": 0.169,
+   "p_us": 0.708,
    "p_book": 0.539,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.643,
-   "p_under": 0.357,
+   "p_over": 0.708,
+   "p_under": 0.292,
    "fair_over": 0.539,
    "fair_under": 0.461,
    "price_over": 1.73,
@@ -54390,11 +54216,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -6.2
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 11
+   "rank": 8
   },
   {
    "player_id": 1627783,
@@ -54870,11 +54702,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 10.78,
-   "floor": 3.05,
-   "ceiling": 19.12,
-   "sigma": 6.24,
-   "minutes": 19,
+   "proj": 11.46,
+   "floor": 3.4,
+   "ceiling": 19.4,
+   "sigma": 6.4,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -54901,11 +54733,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -0.10000000000000009
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 136
+   "rank": 128
   },
   {
    "player_id": 1629018,
@@ -55055,7 +54893,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 121
+   "rank": 120
   },
   {
    "player_id": 1629060,
@@ -55471,11 +55309,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 7.04,
-   "floor": 0.28,
-   "ceiling": 15.16,
+   "proj": 7.79,
+   "floor": 1.03,
+   "ceiling": 15.91,
    "sigma": 5.79,
-   "minutes": 19,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -55502,11 +55340,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 5.1
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 177
+   "rank": 169
   },
   {
    "player_id": 1630163,
@@ -55694,26 +55538,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 26.38,
-   "floor": 16.37,
-   "ceiling": 37.09,
-   "sigma": 8.4,
-   "minutes": 36,
+   "proj": 28.06,
+   "floor": 16.4,
+   "ceiling": 38.98,
+   "sigma": 9.18,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 28.5,
    "side": "under",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0985,
-   "p_us": 0.598,
+   "edge": 0.0205,
+   "p_us": 0.52,
    "p_book": 0.5,
-   "tier": "A",
-   "gate_status": "passed",
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.402,
-   "p_under": 0.598,
+   "p_over": 0.48,
+   "p_under": 0.52,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -55725,11 +55569,17 @@
    "early": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 72,
+     "delta": 0.9
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 17
+   "rank": 11
   },
   {
    "player_id": 1630180,
@@ -56369,7 +56219,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 234
+   "rank": 233
   },
   {
    "player_id": 1630702,
@@ -56439,7 +56289,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 118
+   "rank": 117
   },
   {
    "player_id": 1631095,
@@ -56661,7 +56511,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 240
+   "rank": 239
   },
   {
    "player_id": 1631127,
@@ -56741,11 +56591,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 40,
+     "delta": 3.2
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 243
+   "rank": 242
   },
   {
    "player_id": 1631157,
@@ -57023,11 +56879,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 4.85,
-   "floor": 0.0,
-   "ceiling": 12.96,
+   "proj": 8.95,
+   "floor": 2.18,
+   "ceiling": 17.06,
    "sigma": 5.79,
-   "minutes": 10,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -57054,11 +56910,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 42,
+     "delta": 0.19999999999999996
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 191
+   "rank": 156
   },
   {
    "player_id": 1631245,
@@ -57188,7 +57050,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 122
+   "rank": 121
   },
   {
    "player_id": 1631342,
@@ -57370,7 +57232,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 250
   },
   {
    "player_id": 1641716,
@@ -57499,11 +57361,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 5.25,
-   "floor": 0.0,
-   "ceiling": 13.36,
-   "sigma": 5.79,
-   "minutes": 11,
+   "proj": 9.88,
+   "floor": 2.15,
+   "ceiling": 18.22,
+   "sigma": 6.24,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -57530,11 +57392,17 @@
    "early": null,
    "pos": "C",
    "pos_usual": "C",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 88,
+     "delta": 7.4
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 187
+   "rank": 147
   },
   {
    "player_id": 1641738,
@@ -57604,7 +57472,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 74
+   "rank": 73
   },
   {
    "player_id": 1641744,
@@ -58301,11 +58169,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 81,
+     "delta": 6.9
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 263
   },
   {
    "player_id": 1642349,
@@ -58489,7 +58363,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 190
+   "rank": 191
   },
   {
    "player_id": 1642384,
@@ -58598,30 +58472,30 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PR",
-   "proj": 17.92,
-   "floor": 8.65,
-   "ceiling": 27.33,
-   "sigma": 7.55,
-   "minutes": 33,
+   "proj": 19.53,
+   "floor": 10.38,
+   "ceiling": 29.4,
+   "sigma": 7.52,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 18.5,
-   "side": "under",
-   "price": 1.9,
-   "book": "pointsbetau",
-   "edge": 0.0408,
-   "p_us": 0.531,
-   "p_book": 0.491,
+   "side": "over",
+   "price": 1.87,
+   "book": "neds",
+   "edge": 0.0574,
+   "p_us": 0.557,
+   "p_book": 0.5,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.469,
-   "p_under": 0.531,
-   "fair_over": 0.509,
-   "fair_under": 0.491,
-   "price_over": 1.83,
-   "price_under": 1.9,
+   "p_over": 0.557,
+   "p_under": 0.443,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
    "us": null,
    "mu": -0.032,
    "mu_rank": 25,
@@ -58629,11 +58503,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 45,
+     "delta": 3.0999999999999996
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 71
+   "rank": 60
   },
   {
    "player_id": 1642846,
@@ -59050,7 +58930,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642907,
@@ -59114,7 +58994,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 276
+   "rank": 275
   },
   {
    "player_id": 1642914,
@@ -59907,7 +59787,13 @@
    "early": 11,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 1.6
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -60000,9 +59886,9 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 0.0,
+   "proj": 0.04,
    "floor": 0.0,
-   "ceiling": 6.78,
+   "ceiling": 6.82,
    "sigma": 4.95,
    "minutes": 0,
    "rot_rank": null,
@@ -60035,7 +59921,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 220
+   "rank": 203
   },
   {
    "player_id": -701,
@@ -60157,26 +60043,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 23.23,
-   "floor": 12.34,
-   "ceiling": 34.17,
+   "proj": 24.35,
+   "floor": 13.47,
+   "ceiling": 35.3,
    "sigma": 8.85,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 22.5,
    "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.034,
-   "p_us": 0.534,
+   "edge": 0.0864,
+   "p_us": 0.586,
    "p_book": 0.5,
-   "tier": "B",
+   "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.7,
    "l5_over": 0.8,
-   "p_over": 0.534,
-   "p_under": 0.466,
+   "p_over": 0.586,
+   "p_under": 0.414,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -60192,7 +60078,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 32
+   "rank": 27
   },
   {
    "player_id": 201142,
@@ -60331,7 +60217,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 41
+   "rank": 40
   },
   {
    "player_id": 203084,
@@ -60360,11 +60246,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 3.44,
-   "floor": 0.0,
-   "ceiling": 10.22,
+   "proj": 5.99,
+   "floor": 0.13,
+   "ceiling": 12.78,
    "sigma": 4.95,
-   "minutes": 12,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -60391,11 +60277,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.0
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 196
+   "rank": 170
   },
   {
    "player_id": 203486,
@@ -60545,50 +60437,6 @@
    "early": null,
    "gate_status": "passed",
    "us": null
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "PA",
-   "proj": 27.44,
-   "floor": 16.56,
-   "ceiling": 38.39,
-   "sigma": 8.85,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": 25.5,
-   "side": "over",
-   "price": 1.96,
-   "book": "sportsbet",
-   "edge": 0.1117,
-   "p_us": 0.59,
-   "p_book": 0.479,
-   "tier": "A",
-   "gate_status": "passed",
-   "l10_over": 0.4,
-   "l5_over": 0.6,
-   "p_over": 0.59,
-   "p_under": 0.41,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "us": null,
-   "mu": 0.061,
-   "mu_rank": 8,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 13
   },
   {
    "player_id": 203991,
@@ -60886,26 +60734,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 25.49,
-   "floor": 15.41,
-   "ceiling": 35.53,
-   "sigma": 7.86,
-   "minutes": 35,
+   "proj": 26.89,
+   "floor": 16.0,
+   "ceiling": 37.83,
+   "sigma": 8.85,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 23.5,
    "side": "over",
    "price": 1.83,
    "book": "pointsbetau",
-   "edge": 0.0833,
-   "p_us": 0.593,
+   "edge": 0.1456,
+   "p_us": 0.655,
    "p_book": 0.509,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.593,
-   "p_under": 0.407,
+   "p_over": 0.655,
+   "p_under": 0.345,
    "fair_over": 0.509,
    "fair_under": 0.491,
    "price_over": 1.83,
@@ -60917,11 +60765,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -2.3
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 23
+   "rank": 16
   },
   {
    "player_id": 1627783,
@@ -61397,26 +61251,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 10.39,
-   "floor": 2.85,
-   "ceiling": 18.08,
-   "sigma": 5.95,
-   "minutes": 19,
+   "proj": 11.02,
+   "floor": 3.14,
+   "ceiling": 19.31,
+   "sigma": 6.24,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 10.5,
-   "side": "under",
+   "side": "over",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0076,
-   "p_us": 0.508,
+   "edge": 0.0335,
+   "p_us": 0.534,
    "p_book": 0.5,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "B",
+   "gate_status": "passed",
    "l10_over": 0.6,
    "l5_over": 1.0,
-   "p_over": 0.492,
-   "p_under": 0.508,
+   "p_over": 0.534,
+   "p_under": 0.466,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
@@ -61428,11 +61282,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 1.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 122
+   "rank": 117
   },
   {
    "player_id": 1629018,
@@ -61582,7 +61442,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 155
+   "rank": 154
   },
   {
    "player_id": 1629060,
@@ -61998,11 +61858,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 4.65,
+   "proj": 5.12,
    "floor": 0.0,
-   "ceiling": 11.44,
+   "ceiling": 11.9,
    "sigma": 4.95,
-   "minutes": 19,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -62029,11 +61889,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 7.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 183
+   "rank": 179
   },
   {
    "player_id": 1630163,
@@ -62221,30 +62087,30 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 28.46,
-   "floor": 17.57,
-   "ceiling": 39.4,
+   "proj": 30.31,
+   "floor": 19.42,
+   "ceiling": 41.25,
    "sigma": 8.85,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 29.5,
-   "side": "under",
-   "price": 1.93,
-   "book": "sportsbet",
-   "edge": 0.0619,
-   "p_us": 0.549,
-   "p_book": 0.487,
-   "tier": "A",
-   "gate_status": "passed",
+   "side": "over",
+   "price": 1.83,
+   "book": "unibet",
+   "edge": 0.0297,
+   "p_us": 0.538,
+   "p_book": 0.508,
+   "tier": null,
+   "gate_status": "failed:edge_below_tier",
    "l10_over": 0.6,
    "l5_over": 0.6,
-   "p_over": 0.451,
-   "p_under": 0.549,
-   "fair_over": 0.513,
-   "fair_under": 0.487,
+   "p_over": 0.538,
+   "p_under": 0.462,
+   "fair_over": 0.508,
+   "fair_under": 0.492,
    "price_over": 1.83,
-   "price_under": 1.93,
+   "price_under": 1.89,
    "us": null,
    "mu": -0.015,
    "mu_rank": 17,
@@ -62252,11 +62118,17 @@
    "early": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 72,
+     "delta": 1.0
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 11
+   "rank": 9
   },
   {
    "player_id": 1630180,
@@ -62887,7 +62759,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 234
+   "rank": 233
   },
   {
    "player_id": 1630702,
@@ -62957,7 +62829,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 105
+   "rank": 104
   },
   {
    "player_id": 1631095,
@@ -63179,7 +63051,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 240
+   "rank": 239
   },
   {
    "player_id": 1631127,
@@ -63259,11 +63131,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 40,
+     "delta": 2.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 243
+   "rank": 242
   },
   {
    "player_id": 1631157,
@@ -63541,11 +63419,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 3.45,
-   "floor": 0.0,
-   "ceiling": 10.23,
+   "proj": 6.43,
+   "floor": 0.57,
+   "ceiling": 13.22,
    "sigma": 4.95,
-   "minutes": 10,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -63572,11 +63450,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 42,
+     "delta": 1.1
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 195
+   "rank": 165
   },
   {
    "player_id": 1631245,
@@ -63706,7 +63590,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 125
+   "rank": 124
   },
   {
    "player_id": 1631342,
@@ -63888,7 +63772,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 250
   },
   {
    "player_id": 1641716,
@@ -64017,11 +63901,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 3.08,
-   "floor": 0.0,
-   "ceiling": 9.87,
+   "proj": 5.99,
+   "floor": 0.12,
+   "ceiling": 12.77,
    "sigma": 4.95,
-   "minutes": 11,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -64048,11 +63932,17 @@
    "early": null,
    "pos": "C",
    "pos_usual": "C",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 88,
+     "delta": 4.8
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 200
+   "rank": 171
   },
   {
    "player_id": 1641738,
@@ -64122,7 +64012,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 83
+   "rank": 82
   },
   {
    "player_id": 1641744,
@@ -64561,7 +64451,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 85
+   "rank": 84
   },
   {
    "player_id": 1642271,
@@ -64810,11 +64700,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 81,
+     "delta": 6.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 263
   },
   {
    "player_id": 1642349,
@@ -65107,26 +65003,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "PA",
-   "proj": 16.59,
-   "floor": 7.6,
-   "ceiling": 25.66,
+   "proj": 17.95,
+   "floor": 8.95,
+   "ceiling": 27.01,
    "sigma": 7.14,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 15.5,
    "side": "over",
    "price": 1.8,
    "book": "unibet",
-   "edge": 0.0445,
-   "p_us": 0.562,
+   "edge": 0.1188,
+   "p_us": 0.636,
    "p_book": 0.517,
-   "tier": "B",
+   "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 1.0,
-   "p_over": 0.562,
-   "p_under": 0.438,
+   "p_over": 0.636,
+   "p_under": 0.364,
    "fair_over": 0.517,
    "fair_under": 0.483,
    "price_over": 1.8,
@@ -65138,11 +65034,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 45,
+     "delta": 2.5999999999999996
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 54
   },
   {
    "player_id": 1642846,
@@ -65559,7 +65461,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642907,
@@ -65623,7 +65525,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 276
+   "rank": 275
   },
   {
    "player_id": 1642914,
@@ -65827,7 +65729,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 192
+   "rank": 194
   },
   {
    "player_id": -821,
@@ -66416,7 +66318,13 @@
    "early": 11,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.29999999999999993
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -66509,9 +66417,9 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 0.0,
+   "proj": 0.03,
    "floor": 0.0,
-   "ceiling": 3.3,
+   "ceiling": 3.33,
    "sigma": 2.46,
    "minutes": 0,
    "rot_rank": null,
@@ -66544,7 +66452,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 220
+   "rank": 203
   },
   {
    "player_id": -701,
@@ -66657,7 +66565,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 62
+   "rank": 61
   },
   {
    "player_id": 2544,
@@ -66666,30 +66574,30 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 13.47,
-   "floor": 7.4,
-   "ceiling": 19.02,
+   "proj": 13.92,
+   "floor": 7.86,
+   "ceiling": 19.47,
    "sigma": 4.68,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
-   "line": 13.5,
+   "line": 12.5,
    "side": "over",
-   "price": 1.96,
-   "book": "sportsbet",
-   "edge": 0.0181,
-   "p_us": 0.497,
-   "p_book": 0.479,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
-   "l10_over": 0.5,
-   "l5_over": 0.2,
-   "p_over": 0.497,
-   "p_under": 0.503,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
+   "price": 1.67,
+   "book": "neds",
+   "edge": 0.0551,
+   "p_us": 0.618,
+   "p_book": 0.563,
+   "tier": "B",
+   "gate_status": "passed",
+   "l10_over": 0.6,
+   "l5_over": 0.4,
+   "p_over": 0.618,
+   "p_under": 0.382,
+   "fair_over": 0.563,
+   "fair_under": 0.437,
+   "price_over": 1.67,
+   "price_under": 2.15,
    "us": null,
    "mu": -0.026,
    "mu_rank": 20,
@@ -66701,7 +66609,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 10
+   "rank": 8
   },
   {
    "player_id": 201142,
@@ -66840,7 +66748,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 37
+   "rank": 36
   },
   {
    "player_id": 203084,
@@ -66869,11 +66777,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 2.09,
-   "floor": 0.0,
-   "ceiling": 5.4,
+   "proj": 3.62,
+   "floor": 0.87,
+   "ceiling": 6.92,
    "sigma": 2.46,
-   "minutes": 12,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -66900,11 +66808,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 0.09999999999999998
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 195
+   "rank": 169
   },
   {
    "player_id": 203486,
@@ -67054,50 +66968,6 @@
    "early": null,
    "gate_status": "failed:edge_below_tier",
    "us": null
-  },
-  {
-   "player_id": 203954,
-   "player": "Joel Embiid",
-   "team": "Philadelphia",
-   "opp": "Portland",
-   "game": "Philadelphia vs Portland",
-   "stat": "RA",
-   "proj": 12.39,
-   "floor": 6.33,
-   "ceiling": 17.95,
-   "sigma": 4.68,
-   "minutes": 32,
-   "rot_rank": null,
-   "minutes_source": "model",
-   "line": 11.5,
-   "side": "over",
-   "price": 1.76,
-   "book": "unibet",
-   "edge": 0.0469,
-   "p_us": 0.575,
-   "p_book": 0.528,
-   "tier": "B",
-   "gate_status": "passed",
-   "l10_over": 0.5,
-   "l5_over": 0.4,
-   "p_over": 0.575,
-   "p_under": 0.425,
-   "fair_over": 0.528,
-   "fair_under": 0.472,
-   "price_over": 1.76,
-   "price_under": 1.97,
-   "us": null,
-   "mu": 0.034,
-   "mu_rank": 11,
-   "mu_n": 30,
-   "early": null,
-   "pos": "C",
-   "pos_usual": "C",
-   "ww": null,
-   "prior": null,
-   "prior_at": null,
-   "move_reason": null,
-   "rank": 16
   },
   {
    "player_id": 203991,
@@ -67395,26 +67265,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 9.91,
-   "floor": 5.03,
-   "ceiling": 14.88,
-   "sigma": 3.82,
-   "minutes": 35,
+   "proj": 10.27,
+   "floor": 5.49,
+   "ceiling": 15.3,
+   "sigma": 3.87,
+   "minutes": 36,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 8.5,
    "side": "over",
    "price": 1.8,
    "book": "sportsbet",
-   "edge": 0.1233,
-   "p_us": 0.645,
+   "edge": 0.125,
+   "p_us": 0.646,
    "p_book": 0.521,
    "tier": "A",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.4,
-   "p_over": 0.645,
-   "p_under": 0.355,
+   "p_over": 0.646,
+   "p_under": 0.354,
    "fair_over": 0.521,
    "fair_under": 0.479,
    "price_over": 1.8,
@@ -67426,11 +67296,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -4.5
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 36
+   "rank": 34
   },
   {
    "player_id": 1627783,
@@ -67906,11 +67782,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 2.72,
-   "floor": 0.0,
-   "ceiling": 6.03,
+   "proj": 2.82,
+   "floor": 0.07,
+   "ceiling": 6.12,
    "sigma": 2.46,
-   "minutes": 19,
+   "minutes": 20,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -67937,7 +67813,13 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": -0.6000000000000001
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
@@ -68091,7 +67973,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 74
+   "rank": 73
   },
   {
    "player_id": 1629060,
@@ -68507,11 +68389,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 4.66,
-   "floor": 1.3,
-   "ceiling": 8.11,
-   "sigma": 2.69,
-   "minutes": 19,
+   "proj": 5.09,
+   "floor": 1.64,
+   "ceiling": 9.03,
+   "sigma": 3.02,
+   "minutes": 21,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -68538,11 +68420,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 3,
+     "delta": 5.199999999999999
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 142
+   "rank": 132
   },
   {
    "player_id": 1630163,
@@ -68730,26 +68618,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 8.73,
-   "floor": 4.5,
-   "ceiling": 13.53,
+   "proj": 8.75,
+   "floor": 4.51,
+   "ceiling": 13.55,
    "sigma": 3.56,
-   "minutes": 36,
+   "minutes": 38,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 8.5,
    "side": "over",
    "price": 1.93,
    "book": "sportsbet",
-   "edge": 0.0454,
-   "p_us": 0.528,
+   "edge": 0.0473,
+   "p_us": 0.53,
    "p_book": 0.483,
    "tier": "B",
    "gate_status": "passed",
    "l10_over": 0.5,
    "l5_over": 0.6,
-   "p_over": 0.528,
-   "p_under": 0.472,
+   "p_over": 0.53,
+   "p_under": 0.47,
    "fair_over": 0.483,
    "fair_under": 0.517,
    "price_over": 1.93,
@@ -68761,11 +68649,17 @@
    "early": null,
    "pos": "PG",
    "pos_usual": "PG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 72,
+     "delta": -1.7000000000000002
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 52
+   "rank": 51
   },
   {
    "player_id": 1630180,
@@ -69396,7 +69290,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 234
+   "rank": 233
   },
   {
    "player_id": 1630702,
@@ -69688,7 +69582,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 240
+   "rank": 239
   },
   {
    "player_id": 1631127,
@@ -69768,11 +69662,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 40,
+     "delta": 0.9
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 243
+   "rank": 242
   },
   {
    "player_id": 1631157,
@@ -70050,11 +69950,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 2.21,
-   "floor": 0.0,
-   "ceiling": 5.51,
+   "proj": 3.97,
+   "floor": 1.22,
+   "ceiling": 7.28,
    "sigma": 2.46,
-   "minutes": 10,
+   "minutes": 18,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -70081,11 +69981,17 @@
    "early": null,
    "pos": "PF",
    "pos_usual": "PF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 42,
+     "delta": 0.09999999999999998
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 193
+   "rank": 157
   },
   {
    "player_id": 1631245,
@@ -70215,7 +70121,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 109
+   "rank": 108
   },
   {
    "player_id": 1631342,
@@ -70397,7 +70303,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 251
+   "rank": 250
   },
   {
    "player_id": 1641716,
@@ -70526,11 +70432,11 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 3.2,
-   "floor": 0.45,
-   "ceiling": 6.5,
-   "sigma": 2.46,
-   "minutes": 11,
+   "proj": 5.6,
+   "floor": 1.72,
+   "ceiling": 9.84,
+   "sigma": 3.28,
+   "minutes": 19,
    "rot_rank": null,
    "minutes_source": "model",
    "line": null,
@@ -70557,11 +70463,17 @@
    "early": null,
    "pos": "C",
    "pos_usual": "C",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 88,
+     "delta": 3.1999999999999997
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 180
+   "rank": 121
   },
   {
    "player_id": 1641738,
@@ -70631,7 +70543,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 105
+   "rank": 104
   },
   {
    "player_id": 1641744,
@@ -71319,11 +71231,17 @@
    "early": null,
    "pos": "SF",
    "pos_usual": "SF",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 81,
+     "delta": 2.6
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 264
+   "rank": 263
   },
   {
    "player_id": 1642349,
@@ -71507,7 +71425,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 192
+   "rank": 193
   },
   {
    "player_id": 1642384,
@@ -71616,26 +71534,26 @@
    "opp": "Portland",
    "game": "Philadelphia vs Portland",
    "stat": "RA",
-   "proj": 9.11,
-   "floor": 4.23,
-   "ceiling": 14.08,
+   "proj": 9.54,
+   "floor": 4.65,
+   "ceiling": 14.5,
    "sigma": 3.82,
-   "minutes": 33,
+   "minutes": 34,
    "rot_rank": null,
    "minutes_source": "model",
    "line": 8.5,
    "side": "over",
    "price": 1.74,
    "book": "sportsbet",
-   "edge": 0.0231,
-   "p_us": 0.564,
+   "edge": 0.0662,
+   "p_us": 0.607,
    "p_book": 0.541,
-   "tier": null,
-   "gate_status": "failed:edge_below_tier",
+   "tier": "A",
+   "gate_status": "passed",
    "l10_over": 0.8,
    "l5_over": 1.0,
-   "p_over": 0.564,
-   "p_under": 0.436,
+   "p_over": 0.607,
+   "p_under": 0.393,
    "fair_over": 0.541,
    "fair_under": 0.459,
    "price_over": 1.74,
@@ -71647,11 +71565,17 @@
    "early": null,
    "pos": "SG",
    "pos_usual": "SG",
-   "ww": null,
+   "ww": [
+    {
+     "star": "Joel Embiid",
+     "n": 45,
+     "delta": 0.09999999999999998
+    }
+   ],
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 45
+   "rank": 41
   },
   {
    "player_id": 1642846,
@@ -72068,7 +71992,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 275
+   "rank": 274
   },
   {
    "player_id": 1642907,
@@ -72132,7 +72056,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 276
+   "rank": 275
   },
   {
    "player_id": 1642914,
@@ -72336,7 +72260,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 196
+   "rank": 195
   }
  ],
  "movers": [],
@@ -72368,6 +72292,10 @@
   {
    "run_at": "2026-11-23T22:41+00:00",
    "trigger": "injury_window"
+  },
+  {
+   "run_at": "2026-11-23T22:47+00:00",
+   "trigger": "lineups"
   }
  ]
 }

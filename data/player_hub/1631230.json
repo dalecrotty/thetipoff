@@ -4,63 +4,63 @@
  "team": "Philadelphia",
  "projections": {
   "3PM": {
-   "mean": 0.12,
-   "floor": 0.0,
-   "ceiling": 0.12
+   "mean": 0.21,
+   "floor": 0.06,
+   "ceiling": 0.21
   },
   "AST": {
-   "mean": 0.4,
+   "mean": 0.73,
    "floor": 0.0,
-   "ceiling": 1.73
+   "ceiling": 2.06
   },
   "BLK": {
-   "mean": 0.36,
+   "mean": 0.65,
    "floor": 0.0,
-   "ceiling": 1.03
+   "ceiling": 1.96
   },
   "PTS": {
-   "mean": 3.05,
-   "floor": 0.0,
-   "ceiling": 8.71
+   "mean": 5.7,
+   "floor": 0.63,
+   "ceiling": 11.37
   },
   "REB": {
-   "mean": 1.8,
-   "floor": 0.0,
-   "ceiling": 3.99
+   "mean": 3.24,
+   "floor": 0.79,
+   "ceiling": 6.02
   },
   "STL": {
-   "mean": 0.34,
+   "mean": 0.62,
    "floor": 0.0,
-   "ceiling": 1.14
+   "ceiling": 1.99
   },
   "TOV": {
-   "mean": 0.32,
+   "mean": 0.58,
    "floor": 0.0,
-   "ceiling": 1.7
+   "ceiling": 1.96
   },
   "PRA": {
-   "mean": 5.25,
-   "floor": 0.0,
-   "ceiling": 13.97
+   "mean": 9.68,
+   "floor": 1.95,
+   "ceiling": 18.39
   },
   "PR": {
-   "mean": 4.85,
-   "floor": 0.0,
-   "ceiling": 12.96
+   "mean": 8.95,
+   "floor": 2.18,
+   "ceiling": 17.06
   },
   "PA": {
-   "mean": 3.45,
-   "floor": 0.0,
-   "ceiling": 10.23
+   "mean": 6.43,
+   "floor": 0.57,
+   "ceiling": 13.22
   },
   "RA": {
-   "mean": 2.21,
-   "floor": 0.0,
-   "ceiling": 5.51
+   "mean": 3.97,
+   "floor": 1.22,
+   "ceiling": 7.28
   }
  },
  "minutes": {
-  "value": 10,
+  "value": 18,
   "source": "model"
  },
  "splits": {
@@ -228,17 +228,17 @@
  "lines": {
   "PTS": {
    "line": 3.5,
-   "p_over": 0.459,
-   "p_under": 0.541,
+   "p_over": 0.711,
+   "p_under": 0.289,
    "fair_over": 0.5,
    "fair_under": 0.5,
    "price_over": 1.87,
    "price_under": 1.87,
-   "side": "under",
+   "side": "over",
    "price": 1.87,
    "book": "tab",
-   "edge": 0.0409,
-   "tier": "B"
+   "edge": 0.2109,
+   "tier": "A"
   }
  },
  "lines_us": {},
@@ -3294,6 +3294,14 @@
    "phase": "playoffs"
   }
  ],
- "with_without_tonight": [],
+ "with_without_tonight": [
+  {
+   "star": "Joel Embiid",
+   "n_without": 42,
+   "PTS": 0.6,
+   "REB": -0.4,
+   "AST": 0.5
+  }
+ ],
  "opp": "Portland"
 }
