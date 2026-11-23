@@ -3,7 +3,36 @@
  "player": "Kelly Oubre Jr.",
  "team": "Indiana",
  "opp": "Oklahoma City",
- "lines": {},
+ "lines": {
+  "PR": {
+   "line": 17.5,
+   "price": 1.87,
+   "book": "unibet",
+   "price_over": 1.87,
+   "price_under": 1.85
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.95,
+   "book": "unibet",
+   "price_over": 1.95,
+   "price_under": 1.77
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.82,
+   "book": "unibet",
+   "price_over": 1.91,
+   "price_under": 1.82
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 2.1,
+   "book": "sportsbet",
+   "price_over": 2.1,
+   "price_under": 1.68
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-22",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 5,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

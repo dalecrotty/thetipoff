@@ -4,33 +4,54 @@
  "team": "Toronto",
  "opp": "Milwaukee",
  "lines": {
-  "RA": {
-   "line": 10.5,
-   "price": 1.76,
+  "REB": {
+   "line": 7.5,
+   "price": 2.0,
+   "book": "pointsbetau",
+   "price_over": 1.77,
+   "price_under": 2.0
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.83,
    "book": "unibet",
-   "price_over": 1.97,
-   "price_under": 1.76
+   "price_over": 1.88,
+   "price_under": 1.83
   },
   "PRA": {
-   "line": 21.5,
-   "price": 1.77,
+   "line": 20.5,
+   "price": 1.83,
    "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.77
+   "price_over": 1.88,
+   "price_under": 1.83
+  },
+  "RA": {
+   "line": 9.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.74,
+   "price_under": 1.95
   },
   "AST": {
    "line": 1.5,
-   "price": 2.23,
+   "price": 2.2,
    "book": "unibet",
-   "price_over": 1.6,
-   "price_under": 2.23
+   "price_over": 1.61,
+   "price_under": 2.2
   },
   "PA": {
    "line": 12.5,
-   "price": 1.85,
+   "price": 1.83,
    "book": "unibet",
-   "price_over": 1.88,
-   "price_under": 1.85
+   "price_over": 1.89,
+   "price_under": 1.83
+  },
+  "PTS": {
+   "line": 10.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
   }
  },
  "recent_games": [
@@ -156,6 +177,16 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  },
   "AST": {
    "line": 1.5,
    "over": 3,
