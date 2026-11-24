@@ -2,8 +2,294 @@
  "player_id": 1643158,
  "player": "Andersson Garcia",
  "team": "Utah",
- "opp": null,
+ "projections": {},
+ "minutes": null,
+ "splits": {
+  "season": {
+   "games": 5,
+   "min_pg": 33.8,
+   "PTS": {
+    "pg": 5.2,
+    "pm": 0.154
+   },
+   "REB": {
+    "pg": 8.4,
+    "pm": 0.249
+   },
+   "AST": {
+    "pg": 2.8,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.006
+   },
+   "STL": {
+    "pg": 1.6,
+    "pm": 0.047
+   },
+   "BLK": {
+    "pg": 0.8,
+    "pm": 0.024
+   },
+   "TOV": {
+    "pg": 1.4,
+    "pm": 0.041
+   }
+  },
+  "l10": {
+   "games": 5,
+   "min_pg": 33.8,
+   "PTS": {
+    "pg": 5.2,
+    "pm": 0.154
+   },
+   "REB": {
+    "pg": 8.4,
+    "pm": 0.249
+   },
+   "AST": {
+    "pg": 2.8,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.006
+   },
+   "STL": {
+    "pg": 1.6,
+    "pm": 0.047
+   },
+   "BLK": {
+    "pg": 0.8,
+    "pm": 0.024
+   },
+   "TOV": {
+    "pg": 1.4,
+    "pm": 0.041
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 33.8,
+   "PTS": {
+    "pg": 5.2,
+    "pm": 0.154
+   },
+   "REB": {
+    "pg": 8.4,
+    "pm": 0.249
+   },
+   "AST": {
+    "pg": 2.8,
+    "pm": 0.083
+   },
+   "3PM": {
+    "pg": 0.2,
+    "pm": 0.006
+   },
+   "STL": {
+    "pg": 1.6,
+    "pm": 0.047
+   },
+   "BLK": {
+    "pg": 0.8,
+    "pm": 0.024
+   },
+   "TOV": {
+    "pg": 1.4,
+    "pm": 0.041
+   }
+  },
+  "home": {
+   "games": 2,
+   "min_pg": 36.5,
+   "PTS": {
+    "pg": 6.5,
+    "pm": 0.178
+   },
+   "REB": {
+    "pg": 10.0,
+    "pm": 0.274
+   },
+   "AST": {
+    "pg": 3.0,
+    "pm": 0.082
+   },
+   "3PM": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "STL": {
+    "pg": 2.0,
+    "pm": 0.055
+   },
+   "BLK": {
+    "pg": 0.5,
+    "pm": 0.014
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.027
+   }
+  },
+  "away": {
+   "games": 3,
+   "min_pg": 31.9,
+   "PTS": {
+    "pg": 4.33,
+    "pm": 0.136
+   },
+   "REB": {
+    "pg": 7.33,
+    "pm": 0.23
+   },
+   "AST": {
+    "pg": 2.67,
+    "pm": 0.084
+   },
+   "3PM": {
+    "pg": 0.33,
+    "pm": 0.01
+   },
+   "STL": {
+    "pg": 1.33,
+    "pm": 0.042
+   },
+   "BLK": {
+    "pg": 1.0,
+    "pm": 0.031
+   },
+   "TOV": {
+    "pg": 1.67,
+    "pm": 0.052
+   }
+  }
+ },
  "lines": {},
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-03-11",
+   "opp": "New York",
+   "venue": "H",
+   "game": "2026-03-11_new-york_vs_utah",
+   "starter": false,
+   "rest": "3+",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 25.1,
+   "PTS": 6.0,
+   "REB": 9.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-03-13",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2026-03-13_portland_vs_utah",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 28.6,
+   "PTS": 6.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 2.0,
+   "FGA": 6.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-03-15",
+   "opp": "Sacramento",
+   "venue": "R",
+   "game": "2026-03-15_sacramento_vs_utah",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 43.0,
+   "PTS": 3.0,
+   "REB": 11.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 1.0,
+   "FGA": 7.0,
+   "3PA": 6.0,
+   "FTA": 0.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-03-18",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-03-18_minnesota_vs_utah",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 24.1,
+   "PTS": 4.0,
+   "REB": 8.0,
+   "AST": 3.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 2.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 5.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2025-26",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-03-19",
+   "opp": "Milwaukee",
+   "venue": "H",
+   "game": "2026-03-19_milwaukee_vs_utah",
+   "starter": true,
+   "rest": "0",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 48.0,
+   "PTS": 7.0,
+   "REB": 11.0,
+   "AST": 6.0,
+   "3PM": 0.0,
+   "STL": 3.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 3.0,
+   "season": "2025-26",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-03-19",
@@ -126,6 +412,6 @@
    "phase": "regular"
   }
  ],
- "hits": {},
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": null
 }
