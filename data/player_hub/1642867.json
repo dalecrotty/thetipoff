@@ -4,41 +4,6 @@
  "team": "Toronto",
  "opp": "Milwaukee",
  "lines": {
-  "3PM": {
-   "line": 0.5,
-   "price": 1.57,
-   "book": "pointsbetau",
-   "price_over": 2.35,
-   "price_under": 1.57
-  },
-  "PTS": {
-   "line": 11.5,
-   "price": 1.85,
-   "book": "tab",
-   "price_over": 1.85,
-   "price_under": 1.9
-  },
-  "RA": {
-   "line": 8.5,
-   "price": 2.0,
-   "book": "unibet",
-   "price_over": 2.0,
-   "price_under": 1.74
-  },
-  "PA": {
-   "line": 14.5,
-   "price": 2.0,
-   "book": "sportsbet",
-   "price_over": 2.0,
-   "price_under": 1.78
-  },
-  "PR": {
-   "line": 17.5,
-   "price": 1.75,
-   "book": "neds",
-   "price_over": 1.75,
-   "price_under": 2.02
-  },
   "REB": {
    "line": 6.5,
    "price": 1.74,
@@ -46,12 +11,47 @@
    "price_over": 2.05,
    "price_under": 1.74
   },
+  "RA": {
+   "line": 8.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
   "PRA": {
    "line": 20.5,
    "price": 1.88,
    "book": "sportsbet",
    "price_over": 1.88,
    "price_under": 1.88
+  },
+  "PR": {
+   "line": 18.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.89,
+   "price_under": 1.83
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.57,
+   "book": "pointsbetau",
+   "price_over": 2.35,
+   "price_under": 1.57
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.83,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.83
+  },
+  "PTS": {
+   "line": 12.5,
+   "price": 1.78,
+   "book": "unibet",
+   "price_over": 1.95,
+   "price_under": 1.78
   },
   "AST": {
    "line": 2.5,
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 11.5,
+   "line": 12.5,
    "over": 1,
    "n": 5
   },
