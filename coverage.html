@@ -25,6 +25,8 @@
 .cv-game h2 small{font:500 13px "DM Mono",monospace;color:var(--sub);align-self:center}
 .cv-tw{overflow-x:auto}.cv-game table{width:100%;border-collapse:collapse;min-width:720px}
 .cv-game th{text-align:left;font:500 11px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);padding:7px 9px;border-bottom:1px solid var(--line)}
+.cv-game th,.cv-game td{text-align:left}
+body[data-page="coverage"] .signup{display:none}
 .cv-game td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:middle}
 .cv-game td span{display:block;font:400 12px "DM Mono",monospace;color:var(--sub)}
 .cv-m{font:500 15px "DM Mono",monospace}
@@ -76,6 +78,9 @@
   const nothing = () => { box.innerHTML = '<p class="lead">Nothing here.</p>'; };
   if (!key) { nothing(); return; }
   const W = { PTS: "points", REB: "rebounds", AST: "assists", "3PM": "threes", RA: "rebounds + assists" };
+  const BOOK = { sportsbet: "Sportsbet", tab: "TAB", tabtouch: "TABtouch", neds: "Neds", ladbrokes_au: "Ladbrokes",
+                 pointsbetau: "PointsBet", unibet: "Unibet", dabble_au: "Dabble", betr_au: "Betr",
+                 picklebet_au: "Picklebet", betright: "Bet Right", playup: "PlayUp", bet365_au: "bet365" };
   const pct = v => v == null ? "–" : Math.round(v * 100) + "%";
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const tip = t => t ? new Date(t).toLocaleString("en-AU", { timeZone: "Australia/Sydney", weekday: "short",
@@ -99,7 +104,7 @@
     return `<tr><td><b>${esc(r.name)}</b><span>${esc(r.team)}</span></td>
       <td><b class="cv-m">${Math.floor(r.line) + 1}+</b> ${W[r.stat] || r.stat}</td>
       <td><b class="cv-m">${r.hits}/10</b><div class="cv-dots">${dots}</div></td>
-      <td><span class="cv-m" style="color:inherit">${r.price.toFixed(2)}</span><span>${esc(r.book)}</span></td>
+      <td><span class="cv-m" style="color:inherit">${r.price.toFixed(2)}</span><span>${esc(BOOK[r.book] || r.book)}</span></td>
       <td><b class="cv-m">${pct(r.p)}</b><span>book ${pct(r.book_p)}</span></td>
       <td class="cv-m">${r.minutes == null ? "–" : Math.round(r.minutes)}<span>L10 ${r.l10_min == null ? "–" : Math.round(r.l10_min)}</span></td>
       <td>${tags}</td></tr>`;
