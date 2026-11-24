@@ -97,7 +97,7 @@ body[data-page="coverage"] .signup{display:none}
     else if (r.result === "loss") tags += `<span class="cv-tag loss">${r.actual}</span>`;
     else if (r.result === "void") tags += `<span class="cv-tag">Void</span>`;
     if (gap >= 0.04) tags += '<span class="cv-tag val">Value</span>';
-    else if (gap <= -0.05) tags += '<span class="cv-tag trap">Priced past it</span>';
+    else if (gap <= -0.05) tags += '<span class="cv-tag trap">No value</span>';
     if (r.minutes != null && r.l10_min != null && Math.abs(r.minutes - r.l10_min) >= 2)
       tags += `<span class="cv-tag">${r.minutes - r.l10_min > 0 ? "+" : ""}${Math.round(r.minutes - r.l10_min)} min</span>`;
     const dots = r.last10.map(v => `<i class="${v > r.line ? "o" : "u"}">${v}</i>`).join("");
@@ -105,7 +105,7 @@ body[data-page="coverage"] .signup{display:none}
       <td><b class="cv-m">${Math.floor(r.line) + 1}+</b> ${W[r.stat] || r.stat}</td>
       <td><b class="cv-m">${r.hits}/10</b><div class="cv-dots">${dots}</div></td>
       <td><span class="cv-m" style="color:inherit">${r.price.toFixed(2)}</span><span>${esc(BOOK[r.book] || r.book)}</span></td>
-      <td><b class="cv-m">${pct(r.p)}</b><span>book ${pct(r.book_p)}</span></td>
+      <td><b class="cv-m">${r.mu == null ? "–" : r.mu.toFixed(1)}</b><span>${W[r.stat] || r.stat}</span></td>
       <td class="cv-m">${r.minutes == null ? "–" : Math.round(r.minutes)}<span>L10 ${r.l10_min == null ? "–" : Math.round(r.l10_min)}</span></td>
       <td>${tags}</td></tr>`;
   }
@@ -113,17 +113,17 @@ body[data-page="coverage"] .signup{display:none}
     const rows = d.games.flatMap(g => g.rows);
     const n = rows.length, avg = f => n ? rows.reduce((s, r) => s + (f(r) || 0), 0) / n : null;
     const rec = d.record;
-    let h = `<p class="lead">Each player's highest line at $1.20 or better (Australian books, alternates included) that he cleared in 9 or 10 of his last 10, with our model's chance beside it. US slate ${esc(d.slate)}.</p>
+    let h = `<p class="lead">Each player's highest line at $1.20 or better (Australian books, alternates included) that he cleared in 9 or 10 of his last 10, with our prediction for tonight beside it. US slate ${esc(d.slate)}.</p>
       <div class="cv-note"><div><b>${n}</b><span>lines tonight</span></div>
       <div><b>${pct(avg(r => r.hits / 10))}</b><span>their last-10 rate</span></div>
-      <div><b>${pct(avg(r => r.p))}</b><span>our chance, average</span></div>
-      <div><b>${pct(avg(r => r.book_p))}</b><span>the prices say</span></div>`;
+      <div><b>${rows.filter(r => (r.p ?? 0) - r.book_p >= 0.04).length}</b><span>marked Value</span></div>
+      <div><b>${rows.filter(r => (r.p ?? 0) - r.book_p <= -0.05).length}</b><span>marked No value</span></div>`;
     if (rec) h += `<p>Record so far (${rec.nights} nights): ${rec.wins}/${rec.n} (${pct(rec.rate)}), ${rec.units >= 0 ? "+" : ""}${rec.units.toFixed(1)}u flat; the last 10 said ${pct(rec.said_l10)}, our chance ${pct(rec.said_ours)}, the prices ${pct(rec.said_book)}. Value rows ${rec.value_wins}/${rec.value_n}, ${rec.value_units >= 0 ? "+" : ""}${rec.value_units.toFixed(1)}u.</p>`;
     else h += `<p>No nights graded yet: the first result comes with the morning build after tonight's games.</p>`;
     h += "</div>";
     for (const g of d.games) {
       h += `<section class="cv-game"><h2>${esc(g.game)}<small>${tip(g.tip)} · ${g.rows.length} lines</small></h2><div class="cv-tw"><table>
-        <thead><tr><th>Player</th><th>Line</th><th>Last 10</th><th>Best price</th><th>Our chance</th><th>Min tonight</th><th></th></tr></thead>
+        <thead><tr><th>Player</th><th>Line</th><th>Last 10</th><th>Best price</th><th>Our prediction</th><th>Min tonight</th><th></th></tr></thead>
         <tbody>${g.rows.map(row).join("")}</tbody></table></div></section>`;
     }
     if (d.nights && d.nights.length) {
@@ -131,7 +131,7 @@ body[data-page="coverage"] .signup{display:none}
         d.nights.map(x => `<tr><td>${x.slate}</td><td>${x.wins}/${x.n}</td><td>${x.units >= 0 ? "+" : ""}${x.units.toFixed(2)}u</td><td>${pct(x.said_ours)}</td><td>${pct(x.said_book)}</td></tr>`).join("") +
         "</tbody></table></div>";
     }
-    h += `<p class="sub">Last 10: oldest to newest, green over the line, red under. Our chance: the model's chance of the over (raw, not pulled); book: 1 ÷ price, margin included. Value: ours 4+ points over the book; priced past it: 5+ under. ± min: tonight's minutes against his last-10 average, at 2+.</p>`;
+    h += `<p class="sub">Last 10: oldest to newest, green over the line, red under. Our prediction: what we expect him to finish with tonight. Value: our chance of the over is 4+ points better than the price implies. No value: the price is shorter than our chance supports, by 5+ points. ± min: tonight's minutes against his last-10 average, at 2+.</p>`;
     box.innerHTML = h;
   }
   addEventListener("DOMContentLoaded", run);
