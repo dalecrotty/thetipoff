@@ -4,6 +4,27 @@
  "team": "San Antonio",
  "opp": "Sacramento",
  "lines": {
+  "RA": {
+   "line": 12.5,
+   "price": 1.97,
+   "book": "unibet",
+   "price_over": 1.97,
+   "price_under": 1.76
+  },
+  "REB": {
+   "line": 5.5,
+   "price": 2.18,
+   "book": "unibet",
+   "price_over": 2.18,
+   "price_under": 1.62
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.71,
+   "book": "pointsbetau",
+   "price_over": 1.71,
+   "price_under": 2.1
+  },
   "PTS": {
    "line": 19.5,
    "price": 1.94,
@@ -12,18 +33,18 @@
    "price_under": 1.94
   },
   "PA": {
-   "line": 27.5,
+   "line": 25.5,
    "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.89,
+   "book": "pointsbetau",
+   "price_over": 1.83,
    "price_under": 1.83
   },
   "PRA": {
-   "line": 32.5,
-   "price": 1.93,
-   "book": "sportsbet",
-   "price_over": 1.83,
-   "price_under": 1.93
+   "line": 31.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
   },
   "PR": {
    "line": 25.5,
@@ -34,31 +55,10 @@
   },
   "3PM": {
    "line": 1.5,
-   "price": 2.25,
-   "book": "sportsbet",
+   "price": 1.58,
+   "book": "neds",
    "price_over": 1.58,
-   "price_under": 2.25
-  },
-  "REB": {
-   "line": 5.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
-  },
-  "RA": {
-   "line": 12.5,
-   "price": 1.97,
-   "book": "unibet",
-   "price_over": 1.97,
-   "price_under": 1.76
-  },
-  "AST": {
-   "line": 7.5,
-   "price": 1.74,
-   "book": "sportsbet",
-   "price_over": 2.05,
-   "price_under": 1.74
+   "price_under": 2.2
   }
  },
  "recent_games": [
@@ -195,8 +195,8 @@
    "n": 5
   },
   "AST": {
-   "line": 7.5,
-   "over": 2,
+   "line": 6.5,
+   "over": 3,
    "n": 5
   },
   "3PM": {
