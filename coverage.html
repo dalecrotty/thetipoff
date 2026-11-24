@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Coverage | Drop Coverage</title>
-<meta name="robots" content="noindex, nofollow">
+<title>NBA Player Prop Hit Rates Today: Last 10 Games v Tonight's Lines | Drop Coverage</title>
+<meta name="description" content="The Coverage: every NBA player who has cleared tonight's bookmaker line in 9 or 10 of his last 10 games, with the best Australian price and our prediction for tonight.">
+<link rel="canonical" href="https://thedropcoverage.com/coverage.html">
 <meta name="theme-color" content="#EAD7B2" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#16203A" media="(prefers-color-scheme: dark)">
 <script>try{var m=localStorage.getItem("dc.mode");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
@@ -26,7 +27,6 @@
 .cv-tw{overflow-x:auto}.cv-game table{width:100%;border-collapse:collapse;min-width:720px}
 .cv-game th{text-align:left;font:500 11px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);padding:7px 9px;border-bottom:1px solid var(--line)}
 .cv-game th,.cv-game td{text-align:left}
-body[data-page="coverage"] .signup{display:none}
 .cv-game td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:middle}
 .cv-game td span{display:block;font:400 12px "DM Mono",monospace;color:var(--sub)}
 .cv-m{font:500 15px "DM Mono",monospace}
@@ -52,31 +52,17 @@ body[data-page="coverage"] .signup{display:none}
   </nav>
 </header>
 <main>
-  <p class="kicker">Internal · not listed</p>
+  <p class="kicker">Hit rates</p>
   <h1>The Coverage</h1>
-  <div id="cv"><p class="lead">Loading…</p></div>
+  <p class="lead">The Coverage lists every NBA player who has cleared tonight's bookmaker line in 9 or 10 of his last 10 games: the highest line priced $1.20 or better at two or more Australian bookmakers, with the best price and our prediction for tonight.</p>
+  <div id="cv"><p class="sub">Loading tonight's lines…</p></div>
 </main>
 <script>
-/* The Coverage, internal only (owner, 25 Nov 2026: "only internal browsers
-   can see"). Not linked, not in the sitemap, noindex. The numbers come from
-   the data edge function, which serves them only to a browser holding the
-   internal key: open this page once with ?key=... on each device and the
-   key is kept in that browser (dc.coverage_key). */
+/* The Coverage (owner, 24-25 Nov 2026). Tonight's sheet comes from the data
+   edge function (name=coverage), open to everyone while the gate is off. */
 (function () {
-  const KEY = "dc.coverage_key";
-  const q = new URLSearchParams(location.search);
-  try {
-    if (q.has("key")) {
-      if (q.get("key")) localStorage.setItem(KEY, q.get("key")); else localStorage.removeItem(KEY);
-      q.delete("key");
-      history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : ""));
-    }
-  } catch (e) { /* no storage: this visit only */ }
-  let key = "";
-  try { key = localStorage.getItem(KEY) || ""; } catch (e) {}
   const box = document.getElementById("cv");
-  const nothing = () => { box.innerHTML = '<p class="lead">Nothing here.</p>'; };
-  if (!key) { nothing(); return; }
+  const nothing = () => { box.innerHTML = '<p class="sub">Tonight\'s lines aren\'t up yet. They go up with the evening build (7pm AEDT) and update through the morning.</p>'; };
   const W = { PTS: "points", REB: "rebounds", AST: "assists", "3PM": "threes", RA: "rebounds + assists" };
   const BOOK = { sportsbet: "Sportsbet", tab: "TAB", tabtouch: "TABtouch", neds: "Neds", ladbrokes_au: "Ladbrokes",
                  pointsbetau: "PointsBet", unibet: "Unibet", dabble_au: "Dabble", betr_au: "Betr",
@@ -86,25 +72,23 @@ body[data-page="coverage"] .signup{display:none}
   const tip = t => t ? new Date(t).toLocaleString("en-AU", { timeZone: "Australia/Sydney", weekday: "short",
       hour: "numeric", minute: "2-digit" }).replace(/\s?(am|pm)/i, m => m.trim().toLowerCase()) + " AEDT" : "";
   const run = () => fetch("https://gpupsgkyyldqyfemtjml.supabase.co/functions/v1/data?name=coverage", {
-      headers: { "Authorization": "Bearer " + (typeof SIGNUP !== "undefined" ? SIGNUP.key : ""),
-                 "x-dc-key": key } })
+      headers: { "Authorization": "Bearer " + (typeof SIGNUP !== "undefined" ? SIGNUP.key : "") } })
     .then(r => r.ok ? r.json() : Promise.reject(r.status))
     .then(render).catch(nothing);
   function row(r) {
-    const gap = (r.p ?? 0) - r.book_p;
     let tags = "";
     if (r.result === "win") tags += `<span class="cv-tag win">Over ${r.actual}</span>`;
     else if (r.result === "loss") tags += `<span class="cv-tag loss">${r.actual}</span>`;
     else if (r.result === "void") tags += `<span class="cv-tag">Void</span>`;
-    if (gap >= 0.04) tags += '<span class="cv-tag val">Value</span>';
-    else if (gap <= -0.05) tags += '<span class="cv-tag trap">No value</span>';
+    if (r.tag === "value") tags += '<span class="cv-tag val">Value</span>';
+    else if (r.tag === "no_value") tags += '<span class="cv-tag trap">No value</span>';
     if (r.minutes != null && r.l10_min != null && Math.abs(r.minutes - r.l10_min) >= 2)
       tags += `<span class="cv-tag">${r.minutes - r.l10_min > 0 ? "+" : ""}${Math.round(r.minutes - r.l10_min)} min</span>`;
     const dots = r.last10.map(v => `<i class="${v > r.line ? "o" : "u"}">${v}</i>`).join("");
     return `<tr><td><b>${esc(r.name)}</b><span>${esc(r.team)}</span></td>
       <td><b class="cv-m">${Math.floor(r.line) + 1}+</b> ${W[r.stat] || r.stat}</td>
       <td><b class="cv-m">${r.hits}/10</b><div class="cv-dots">${dots}</div></td>
-      <td><span class="cv-m" style="color:inherit">${r.price.toFixed(2)}</span><span>${esc(BOOK[r.book] || r.book)}</span></td>
+      <td><span class="cv-m" style="color:inherit">${typeof odds === "function" ? odds(r.price) : r.price.toFixed(2)}</span><span>${esc(BOOK[r.book] || r.book)}</span></td>
       <td><b class="cv-m">${r.mu == null ? "–" : r.mu.toFixed(1)}</b><span>${W[r.stat] || r.stat}</span></td>
       <td class="cv-m">${r.minutes == null ? "–" : Math.round(r.minutes)}<span>L10 ${r.l10_min == null ? "–" : Math.round(r.l10_min)}</span></td>
       <td>${tags}</td></tr>`;
@@ -113,13 +97,11 @@ body[data-page="coverage"] .signup{display:none}
     const rows = d.games.flatMap(g => g.rows);
     const n = rows.length, avg = f => n ? rows.reduce((s, r) => s + (f(r) || 0), 0) / n : null;
     const rec = d.record;
-    let h = `<p class="lead">Each player's highest line at $1.20 or better (Australian books, alternates included) that he cleared in 9 or 10 of his last 10, with our prediction for tonight beside it. US slate ${esc(d.slate)}.</p>
-      <div class="cv-note"><div><b>${n}</b><span>lines tonight</span></div>
+    let h = `<div class="cv-note"><div><b>${n}</b><span>lines tonight</span></div>
       <div><b>${pct(avg(r => r.hits / 10))}</b><span>their last-10 rate</span></div>
-      <div><b>${rows.filter(r => (r.p ?? 0) - r.book_p >= 0.04).length}</b><span>marked Value</span></div>
-      <div><b>${rows.filter(r => (r.p ?? 0) - r.book_p <= -0.05).length}</b><span>marked No value</span></div>`;
-    if (rec) h += `<p>Record so far (${rec.nights} nights): ${rec.wins}/${rec.n} (${pct(rec.rate)}), ${rec.units >= 0 ? "+" : ""}${rec.units.toFixed(1)}u flat; the last 10 said ${pct(rec.said_l10)}, our chance ${pct(rec.said_ours)}, the prices ${pct(rec.said_book)}. Value rows ${rec.value_wins}/${rec.value_n}, ${rec.value_units >= 0 ? "+" : ""}${rec.value_units.toFixed(1)}u.</p>`;
-    else h += `<p>No nights graded yet: the first result comes with the morning build after tonight's games.</p>`;
+      <div><b>${rows.filter(r => r.tag === "value").length}</b><span>marked Value</span></div>
+      <div><b>${rows.filter(r => r.tag === "no_value").length}</b><span>marked No value</span></div>`;
+    if (rec) h += `<p>Since we started keeping count (${rec.nights} ${rec.nights === 1 ? "night" : "nights"}): ${rec.wins} of ${rec.n} listed lines were cleared (${pct(rec.rate)}).</p>`;
     h += "</div>";
     for (const g of d.games) {
       h += `<section class="cv-game"><h2>${esc(g.game)}<small>${tip(g.tip)} · ${g.rows.length} lines</small></h2><div class="cv-tw"><table>
@@ -127,11 +109,11 @@ body[data-page="coverage"] .signup{display:none}
         <tbody>${g.rows.map(row).join("")}</tbody></table></div></section>`;
     }
     if (d.nights && d.nights.length) {
-      h += `<h2>By night</h2><div class="cv-tw"><table class="cv-nights"><thead><tr><th>US slate</th><th>Hit</th><th>Units</th><th>Our chance</th><th>Prices</th></tr></thead><tbody>` +
-        d.nights.map(x => `<tr><td>${x.slate}</td><td>${x.wins}/${x.n}</td><td>${x.units >= 0 ? "+" : ""}${x.units.toFixed(2)}u</td><td>${pct(x.said_ours)}</td><td>${pct(x.said_book)}</td></tr>`).join("") +
+      h += `<h2>By night</h2><div class="cv-tw"><table class="cv-nights"><thead><tr><th>US slate</th><th>Lines listed</th><th>Cleared</th><th>Rate</th></tr></thead><tbody>` +
+        d.nights.map(x => `<tr><td>${x.slate}</td><td>${x.n}</td><td>${x.wins}</td><td>${pct(x.wins / x.n)}</td></tr>`).join("") +
         "</tbody></table></div>";
     }
-    h += `<p class="sub">Last 10: oldest to newest, green over the line, red under. Our prediction: what we expect him to finish with tonight. Value: our chance of the over is 4+ points better than the price implies. No value: the price is shorter than our chance supports, by 5+ points. ± min: tonight's minutes against his last-10 average, at 2+.</p>`;
+    h += `<p class="sub">Last 10: oldest to newest, green over the line, red under. Best price: the best price for the over among the Australian bookmakers offering that line (two or more must). Our prediction: what we expect him to finish with tonight. Value: our chance of the over is 4+ points better than the price implies. No value: the price is shorter than our chance supports, by 5+ points. ± min: tonight's minutes against his last-10 average, at 2+.</p>`;
     box.innerHTML = h;
   }
   addEventListener("DOMContentLoaded", run);
