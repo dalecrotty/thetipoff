@@ -4,59 +4,59 @@
  "team": "New Orleans",
  "projections": {
   "3PM": {
-   "mean": 0.63,
+   "mean": 0.62,
    "floor": 0.01,
    "ceiling": 1.96
   },
   "AST": {
-   "mean": 0.6,
+   "mean": 0.59,
    "floor": 0.0,
-   "ceiling": 1.96
+   "ceiling": 1.95
   },
   "BLK": {
    "mean": 0.48,
-   "floor": 0.02,
+   "floor": 0.01,
    "ceiling": 1.09
   },
   "PTS": {
-   "mean": 4.61,
+   "mean": 4.58,
    "floor": 0.0,
-   "ceiling": 10.33
+   "ceiling": 10.29
   },
   "REB": {
-   "mean": 2.81,
-   "floor": 0.67,
-   "ceiling": 5.76
+   "mean": 2.79,
+   "floor": 0.65,
+   "ceiling": 5.74
   },
   "STL": {
-   "mean": 0.35,
+   "mean": 0.34,
    "floor": 0.0,
    "ceiling": 1.14
   },
   "TOV": {
-   "mean": 0.79,
-   "floor": 0.01,
+   "mean": 0.78,
+   "floor": 0.0,
    "ceiling": 2.05
   },
   "PRA": {
-   "mean": 8.02,
-   "floor": 0.3,
-   "ceiling": 16.74
+   "mean": 7.96,
+   "floor": 0.24,
+   "ceiling": 16.68
   },
   "PR": {
-   "mean": 7.43,
-   "floor": 0.66,
-   "ceiling": 15.54
+   "mean": 7.37,
+   "floor": 0.6,
+   "ceiling": 15.48
   },
   "PA": {
-   "mean": 5.21,
+   "mean": 5.17,
    "floor": 0.0,
-   "ceiling": 12.0
+   "ceiling": 11.96
   },
   "RA": {
-   "mean": 3.41,
-   "floor": 0.66,
-   "ceiling": 6.72
+   "mean": 3.39,
+   "floor": 0.64,
+   "ceiling": 6.69
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 2.5,
-   "p_over": 0.721,
-   "p_under": 0.279,
+   "p_over": 0.72,
+   "p_under": 0.28,
    "fair_over": 0.52,
    "fair_under": 0.48,
    "price_over": 1.8,
@@ -237,7 +237,7 @@
    "side": "over",
    "price": 1.8,
    "book": "tab",
-   "edge": 0.2013,
+   "edge": 0.1995,
    "tier": "A"
   }
  },
