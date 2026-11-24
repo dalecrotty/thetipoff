@@ -6,24 +6,45 @@
  "lines": {
   "PTS": {
    "line": 6.5,
-   "price": 1.85,
+   "p_over": 0.646,
+   "p_under": 0.354,
+   "fair_over": 0.48,
+   "fair_under": 0.52,
+   "price_over": 1.95,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.95,
    "book": "tab",
-   "price_over": 1.85,
-   "price_under": 1.9
+   "edge": 0.1658,
+   "tier": "A"
   },
   "PRA": {
    "line": 11.5,
-   "price": 2.02,
+   "p_over": 0.536,
+   "p_under": 0.464,
+   "fair_over": 0.471,
+   "fair_under": 0.529,
+   "price_over": 2.0,
+   "price_under": 1.78,
+   "side": "over",
+   "price": 2.0,
    "book": "sportsbet",
-   "price_over": 2.02,
-   "price_under": 1.76
+   "edge": 0.0651,
+   "tier": "A"
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.98,
+   "p_over": 0.518,
+   "p_under": 0.482,
+   "fair_over": 0.469,
+   "fair_under": 0.531,
+   "price_over": 1.96,
+   "price_under": 1.73,
+   "side": "over",
+   "price": 1.96,
    "book": "neds",
-   "price_over": 1.98,
-   "price_under": 1.7
+   "edge": 0.0491,
+   "tier": "B"
   }
  },
  "recent_games": [

@@ -2,52 +2,8 @@
  "player_id": 1630183,
  "player": "Jaden McDaniels",
  "team": "Minnesota",
- "projections": {
-  "3PM": {
-   "mean": 1.52,
-   "floor": 0.01,
-   "ceiling": 3.13
-  },
-  "AST": {
-   "mean": 3.88,
-   "floor": 1.19,
-   "ceiling": 6.99
-  },
-  "BLK": {
-   "mean": 0.94,
-   "floor": 0.0,
-   "ceiling": 2.12
-  },
-  "PTS": {
-   "mean": 18.99,
-   "floor": 9.41,
-   "ceiling": 28.53
-  },
-  "REB": {
-   "mean": 5.76,
-   "floor": 2.29,
-   "ceiling": 9.48
-  },
-  "STL": {
-   "mean": 1.33,
-   "floor": 0.0,
-   "ceiling": 2.88
-  },
-  "TOV": {
-   "mean": 2.27,
-   "floor": 0.67,
-   "ceiling": 4.11
-  },
-  "PRA": {
-   "mean": 28.63,
-   "floor": 17.99,
-   "ceiling": 40.26
-  },
-  "PR": {
-   "mean": 24.75,
-   "floor": 14.75,
-   "ceiling": 35.47
-  },
+ "opp": "Brooklyn",
+ "lines": {
   "PA": {
    "mean": 22.87,
    "floor": 12.8,
@@ -242,17 +198,10 @@
   },
   "PRA": {
    "line": 25.5,
-   "p_over": 0.628,
-   "p_under": 0.372,
-   "fair_over": 0.544,
-   "fair_under": 0.456,
-   "price_over": 1.72,
-   "price_under": 2.05,
-   "side": "over",
    "price": 1.72,
    "book": "neds",
-   "edge": 0.0846,
-   "tier": "A"
+   "price_over": 1.72,
+   "price_under": 2.05
   },
   "3PM": {
    "line": 1.5,
@@ -296,6 +245,20 @@
    "edge": 0.0777,
    "tier": "A"
   },
+  "RA": {
+   "line": 8.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.02
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 2.1,
+   "book": "neds",
+   "price_over": 2.1,
+   "price_under": 1.68
+  },
   "PTS": {
    "line": 17.5,
    "p_over": 0.573,
@@ -326,17 +289,10 @@
   },
   "REB": {
    "line": 5.5,
-   "p_over": 0.494,
-   "p_under": 0.506,
-   "fair_over": 0.507,
-   "fair_under": 0.493,
-   "price_over": 1.83,
-   "price_under": 1.88,
-   "side": "under",
    "price": 1.88,
    "book": "unibet",
-   "edge": 0.013,
-   "tier": null
+   "price_over": 1.83,
+   "price_under": 1.88
   }
  },
  "lines_us": {

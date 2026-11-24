@@ -228,101 +228,52 @@
  "lines": {
   "PA": {
    "line": 11.5,
-   "p_over": 0.649,
-   "p_under": 0.351,
-   "fair_over": 0.553,
-   "fair_under": 0.447,
-   "price_over": 1.7,
-   "price_under": 2.1,
-   "side": "over",
    "price": 1.7,
    "book": "neds",
-   "edge": 0.0968,
-   "tier": "A"
+   "price_over": 1.7,
+   "price_under": 2.1
   },
   "PTS": {
    "line": 8.5,
-   "p_over": 0.597,
-   "p_under": 0.403,
-   "fair_over": 0.478,
-   "fair_under": 0.522,
-   "price_over": 1.94,
-   "price_under": 1.78,
-   "side": "over",
    "price": 1.94,
    "book": "unibet",
-   "edge": 0.1185,
-   "tier": "A"
+   "price_over": 1.94,
+   "price_under": 1.78
   },
   "AST": {
    "line": 3.5,
-   "p_over": 0.578,
-   "p_under": 0.422,
-   "fair_over": 0.459,
-   "fair_under": 0.541,
-   "price_over": 2.05,
-   "price_under": 1.74,
-   "side": "over",
    "price": 2.05,
    "book": "sportsbet",
-   "edge": 0.1184,
-   "tier": "A"
+   "price_over": 2.05,
+   "price_under": 1.74
   },
   "PRA": {
    "line": 19.5,
-   "p_over": 0.61,
-   "p_under": 0.39,
-   "fair_over": 0.513,
-   "fair_under": 0.487,
-   "price_over": 1.83,
-   "price_under": 1.93,
-   "side": "over",
    "price": 1.83,
    "book": "sportsbet",
-   "edge": 0.0968,
-   "tier": "A"
+   "price_over": 1.83,
+   "price_under": 1.93
   },
   "PR": {
    "line": 16.5,
-   "p_over": 0.551,
-   "p_under": 0.449,
-   "fair_over": 0.479,
-   "fair_under": 0.521,
-   "price_over": 1.96,
-   "price_under": 1.8,
-   "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0728,
-   "tier": "A"
+   "price_over": 1.96,
+   "price_under": 1.8
   },
   "RA": {
    "line": 10.5,
-   "p_over": 0.606,
-   "p_under": 0.394,
-   "fair_over": 0.566,
-   "fair_under": 0.434,
-   "price_over": 1.65,
-   "price_under": 2.15,
-   "side": "over",
    "price": 1.65,
    "book": "neds",
-   "edge": 0.0401,
-   "tier": "B"
+   "price_over": 1.65,
+   "price_under": 2.15
   },
   "REB": {
    "line": 7.5,
-   "p_over": 0.467,
-   "p_under": 0.533,
-   "fair_over": 0.517,
-   "fair_under": 0.483,
-   "price_over": 1.8,
-   "price_under": 1.93,
-   "side": "under",
    "price": 1.93,
    "book": "unibet",
-   "edge": 0.0507,
-   "tier": "B"
+   "price_over": 1.8,
+   "price_under": 1.93
   }
  },
  "lines_us": {
@@ -3647,6 +3598,22 @@
    "phase": "regular"
   }
  ],
- "with_without_tonight": [],
- "opp": "Minnesota"
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  }
+ },
+ "members": "https://thedropcoverage.com/api.html#members"
 }

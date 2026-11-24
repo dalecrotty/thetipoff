@@ -228,45 +228,31 @@
  "lines": {
   "REB": {
    "line": 3.5,
-   "p_over": 0.466,
-   "p_under": 0.534,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
-   "side": "under",
-   "price": 1.87,
+   "price": 1.9,
    "book": "pointsbetau",
-   "edge": 0.034,
-   "tier": "B"
+   "price_over": 1.83,
+   "price_under": 1.9
   },
   "PTS": {
    "line": 5.5,
-   "p_over": 0.515,
-   "p_under": 0.485,
-   "fair_over": 0.493,
-   "fair_under": 0.507,
-   "price_over": 1.9,
-   "price_under": 1.85,
-   "side": "over",
    "price": 1.9,
    "book": "tab",
-   "edge": 0.0216,
-   "tier": null
+   "price_over": 1.9,
+   "price_under": 1.85
   },
   "PR": {
    "line": 9.5,
-   "p_over": 0.483,
-   "p_under": 0.517,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.87,
-   "price_under": 1.87,
-   "side": "under",
    "price": 1.87,
    "book": "pointsbetau",
-   "edge": 0.0173,
-   "tier": null
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 10.5,
+   "price": 1.95,
+   "book": "tab",
+   "price_over": 1.95,
+   "price_under": 1.8
   },
   "3PM": {
    "line": 0.5,
@@ -2606,13 +2592,21 @@
    "phase": "regular"
   }
  ],
- "with_without_tonight": [
-  {
-   "star": "Anthony Edwards",
-   "n_without": 13,
-   "PTS": 2.8,
-   "REB": 0.6,
-   "AST": -0.2
+ "hits": {
+  "PTS": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
   }
  ],
  "opp": "Brooklyn"

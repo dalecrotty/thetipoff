@@ -228,45 +228,38 @@
  "lines": {
   "PTS": {
    "line": 9.5,
-   "p_over": 0.495,
-   "p_under": 0.505,
-   "fair_over": 0.487,
-   "fair_under": 0.513,
-   "price_over": 1.92,
-   "price_under": 1.82,
-   "side": "over",
    "price": 1.92,
    "book": "neds",
-   "edge": 0.0085,
-   "tier": null
+   "price_over": 1.92,
+   "price_under": 1.82
   },
   "REB": {
    "line": 10.5,
-   "p_over": 0.432,
-   "p_under": 0.568,
-   "fair_over": 0.478,
-   "fair_under": 0.522,
-   "price_over": 1.94,
-   "price_under": 1.78,
-   "side": "under",
    "price": 1.78,
    "book": "unibet",
-   "edge": 0.0469,
-   "tier": "B"
+   "price_over": 1.94,
+   "price_under": 1.78
   },
   "PA": {
    "line": 10.5,
-   "p_over": 0.542,
-   "p_under": 0.458,
-   "fair_over": 0.5,
-   "fair_under": 0.5,
-   "price_over": 1.85,
-   "price_under": 1.85,
-   "side": "over",
-   "price": 1.85,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "RA": {
+   "line": 11.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "AST": {
+   "line": 1.5,
+   "price": 2.0,
    "book": "unibet",
-   "edge": 0.0418,
-   "tier": "B"
+   "price_over": 2.0,
+   "price_under": 1.74
   },
   "RA": {
    "line": 11.5,
@@ -282,47 +275,12 @@
    "edge": 0.0417,
    "tier": "B"
   },
-  "AST": {
-   "line": 1.5,
-   "p_over": 0.499,
-   "p_under": 0.501,
-   "fair_over": 0.465,
-   "fair_under": 0.535,
-   "price_over": 2.0,
-   "price_under": 1.74,
-   "side": "over",
-   "price": 2.0,
-   "book": "unibet",
-   "edge": 0.0336,
-   "tier": "B"
-  },
-  "PR": {
-   "line": 18.5,
-   "p_over": 0.562,
-   "p_under": 0.438,
-   "fair_over": 0.533,
-   "fair_under": 0.467,
-   "price_over": 1.75,
-   "price_under": 2.0,
-   "side": "over",
-   "price": 1.75,
-   "book": "neds",
-   "edge": 0.0287,
-   "tier": null
-  },
   "PRA": {
    "line": 20.5,
-   "p_over": 0.543,
-   "p_under": 0.457,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
-   "side": "over",
    "price": 1.8,
    "book": "pointsbetau",
-   "edge": 0.0231,
-   "tier": null
+   "price_over": 1.8,
+   "price_under": 1.95
   }
  },
  "lines_us": {
@@ -4823,13 +4781,21 @@
    "phase": "regular"
   }
  ],
- "with_without_tonight": [
-  {
-   "star": "Anthony Edwards",
-   "n_without": 34,
-   "PTS": -0.3,
-   "REB": 0.5,
-   "AST": 0.3
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 10.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 1.5,
+   "over": 4,
+   "n": 5
   }
  ],
  "opp": "Brooklyn"
