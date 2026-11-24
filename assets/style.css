@@ -119,6 +119,17 @@ nav.site a {
 }
 nav.site a.on { color: var(--ink); box-shadow: inset 0 -3px 0 var(--court-red); border-radius: 0; }
 nav.site a:hover { color: var(--ink); }
+/* Hit rates is new (owner, 25 Nov 2026: "a badge and border around it in the
+   menu that says 'new'"): by its address, so every page gets it from this
+   file alone. Take this rule out when it stops being new. */
+nav.site a[href$="nba/hit-rates/"] {
+  display: inline-flex; align-items: center; gap: 6px; color: var(--ink);
+  box-shadow: inset 0 0 0 2px var(--court-red); margin: 0 4px;
+}
+nav.site a[href$="nba/hit-rates/"]::after {
+  content: "NEW"; font: 500 10px/1 var(--mono, "DM Mono", monospace); letter-spacing: .08em;
+  background: var(--court-red); color: var(--cream); padding: 3px 4px;
+}
 /* ---- freshness strip: one line, scrolls sideways on a phone ---- */
 .fresh {
   display: flex; gap: 0; align-items: center; flex-wrap: nowrap;
