@@ -3,7 +3,36 @@
  "player": "Kel'el Ware",
  "team": "Milwaukee",
  "opp": "Toronto",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 7.5,
+   "price": 1.64,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  },
+  "PRA": {
+   "line": 17.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85
+  },
+  "PR": {
+   "line": 16.5,
+   "price": 1.85,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.91,
+   "price_under": 1.83
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-21",
@@ -126,6 +155,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 9.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
