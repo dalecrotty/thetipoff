@@ -22,7 +22,10 @@
 .cv-note p{grid-column:1/-1;margin:0;font-size:13px;border-top:1px solid rgba(255,255,255,.2);padding-top:8px}
 .cv-game{background:var(--surface);border:2px solid var(--rule);margin:0 0 18px}
 .cv-game h2{margin:0;padding:10px 12px;border-bottom:2px solid var(--rule);font-size:18px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
-.cv-game h2 small{font:500 13px "DM Mono",monospace;color:var(--sub);align-self:center}
+.cv-game h2{align-items:center}
+.cv-game h2 small{display:block;font:500 13px "DM Mono",monospace;color:var(--sub);margin-top:2px}
+.cv-share{font:500 12px "DM Mono",monospace;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border:2px solid var(--rule);background:var(--ink);color:var(--on-ink);cursor:pointer;white-space:nowrap}
+.cv-share:disabled{opacity:.6;cursor:default}
 .cv-tw{overflow-x:auto}.cv-game table{width:100%;border-collapse:collapse;min-width:720px}
 .cv-game th{text-align:left;font:500 11px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);padding:7px 9px;border-bottom:1px solid var(--line)}
 .cv-game th,.cv-game td{text-align:left}
@@ -35,6 +38,24 @@
 .cv-tag.val{background:var(--navy);color:var(--mint);border-color:var(--navy)}.cv-tag.trap{background:#C8352B;color:var(--cream);border-color:#C8352B}
 .cv-tag.win{background:var(--mint);color:var(--navy);border-color:var(--mint)}.cv-tag.loss{background:#C8352B;color:var(--cream);border-color:#C8352B}
 .cv-nights td,.cv-nights th{padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;font:400 13px "DM Mono",monospace}
+@media (max-width:700px){
+  .cv-game table{min-width:0}
+  .cv-game table,.cv-game tbody,.cv-game td{display:block}
+  .cv-game thead{display:none}
+  .cv-game tr{display:grid;grid-template-columns:1fr auto;gap:6px 12px;padding:12px;border-bottom:1px solid var(--line)}
+  .cv-game td{padding:0;border:0}
+  .c-pl{grid-area:1/1}.c-pr{grid-area:1/2;text-align:right!important}
+  .c-line{grid-area:2/1}.c-pred{grid-area:2/2;text-align:right!important}
+  .c-pred b::before{content:"Pred ";font:400 12px "DM Mono",monospace;color:var(--sub)}
+  .c-pred span{display:none!important}
+  .c-l10{grid-area:3/1/4/3;display:flex!important;align-items:center;gap:10px}
+  .c-l10 .cv-dots{margin-top:0}
+  .c-min{grid-area:4/1;font-size:13px!important;color:var(--sub)}
+  .c-min span{display:inline!important}.c-min span::before{content:" min tonight · "}
+  .c-tags{grid-area:4/2;display:flex!important;gap:4px;justify-content:flex-end;align-items:center}
+  .c-tags .cv-tag{margin:0 0 0 4px}
+  .cv-nights{min-width:0!important}
+}
 </style>
 <link rel="canonical" href="https://thedropcoverage.com/coverage.html">
 </head>
@@ -67,6 +88,7 @@
   const BOOK = { sportsbet: "Sportsbet", tab: "TAB", tabtouch: "TABtouch", neds: "Neds", ladbrokes_au: "Ladbrokes",
                  pointsbetau: "PointsBet", unibet: "Unibet", dabble_au: "Dabble", betr_au: "Betr",
                  picklebet_au: "Picklebet", betright: "Bet Right", playup: "PlayUp", bet365_au: "bet365" };
+  const price = v => typeof odds === "function" ? odds(v) : v.toFixed(2);
   const pct = v => v == null ? "–" : Math.round(v * 100) + "%";
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const tip = t => t ? new Date(t).toLocaleString("en-AU", { timeZone: "Australia/Sydney", weekday: "short",
@@ -85,13 +107,13 @@
     if (r.minutes != null && r.l10_min != null && Math.abs(r.minutes - r.l10_min) >= 2)
       tags += `<span class="cv-tag">${r.minutes - r.l10_min > 0 ? "+" : ""}${Math.round(r.minutes - r.l10_min)} min</span>`;
     const dots = r.last10.map(v => `<i class="${v > r.line ? "o" : "u"}">${v}</i>`).join("");
-    return `<tr><td><b>${esc(r.name)}</b><span>${esc(r.team)}</span></td>
-      <td><b class="cv-m">${Math.floor(r.line) + 1}+</b> ${W[r.stat] || r.stat}</td>
-      <td><b class="cv-m">${r.hits}/10</b><div class="cv-dots">${dots}</div></td>
-      <td><span class="cv-m" style="color:inherit">${typeof odds === "function" ? odds(r.price) : r.price.toFixed(2)}</span><span>${esc(BOOK[r.book] || r.book)}</span></td>
-      <td><b class="cv-m">${r.mu == null ? "–" : r.mu.toFixed(1)}</b><span>${W[r.stat] || r.stat}</span></td>
-      <td class="cv-m">${r.minutes == null ? "–" : Math.round(r.minutes)}<span>L10 ${r.l10_min == null ? "–" : Math.round(r.l10_min)}</span></td>
-      <td>${tags}</td></tr>`;
+    return `<tr><td class="c-pl"><b>${esc(r.name)}</b><span>${esc(r.team)}</span></td>
+      <td class="c-line"><b class="cv-m">${Math.floor(r.line) + 1}+</b> ${W[r.stat] || r.stat}</td>
+      <td class="c-l10"><b class="cv-m">${r.hits}/10</b><div class="cv-dots">${dots}</div></td>
+      <td class="c-pr"><span class="cv-m" style="color:inherit">${price(r.price)}</span><span>${esc(BOOK[r.book] || r.book)}</span></td>
+      <td class="c-pred"><b class="cv-m">${r.mu == null ? "–" : r.mu.toFixed(1)}</b><span>${W[r.stat] || r.stat}</span></td>
+      <td class="c-min cv-m">${r.minutes == null ? "–" : Math.round(r.minutes)}<span>L10 ${r.l10_min == null ? "–" : Math.round(r.l10_min)}</span></td>
+      <td class="c-tags">${tags}</td></tr>`;
   }
   function render(d) {
     const rows = d.games.flatMap(g => g.rows);
@@ -104,7 +126,7 @@
     if (rec) h += `<p>Since we started keeping count (${rec.nights} ${rec.nights === 1 ? "night" : "nights"}): ${rec.wins} of ${rec.n} listed lines were cleared (${pct(rec.rate)}).</p>`;
     h += "</div>";
     for (const g of d.games) {
-      h += `<section class="cv-game"><h2>${esc(g.game)}<small>${tip(g.tip)} · ${g.rows.length} lines</small></h2><div class="cv-tw"><table>
+      h += `<section class="cv-game"><h2><span>${esc(g.game)}<small>${tip(g.tip)} · ${g.rows.length} lines</small></span><button type="button" class="cv-share" data-g="${d.games.indexOf(g)}">Share image</button></h2><div class="cv-tw"><table>
         <thead><tr><th>Player</th><th>Line</th><th>Last 10</th><th>Best price</th><th>Our prediction</th><th>Min tonight</th><th></th></tr></thead>
         <tbody>${g.rows.map(row).join("")}</tbody></table></div></section>`;
     }
@@ -115,6 +137,68 @@
     }
     h += `<p class="sub">Last 10: oldest to newest, green over the line, red under. Best price: the best price for the over among the Australian bookmakers offering that line (two or more must). Our prediction: what we expect him to finish with tonight. Value: our chance of the over is 4+ points better than the price implies. No value: the price is shorter than our chance supports, by 5+ points. ± min: tonight's minutes against his last-10 average, at 2+.</p>`;
     box.innerHTML = h;
+    box.querySelectorAll(".cv-share").forEach(b => b.addEventListener("click", () => share(d.games[+b.dataset.g], b)));
+  }
+
+  /* A branded picture of one game's lines (owner, 25 Nov 2026: "a share image
+     ... to friends via WhatsApp, message"), drawn in the browser: the phone's
+     share sheet where it takes a file, a download elsewhere. */
+  const C = { maple: "#EAD7B2", cream: "#F5EAD3", navy: "#16203A", red: "#C8352B", green: "#2A7A4B", brown: "#5B4A2F", mint: "#7FD4A4" };
+  const SHARE_MAX = 10;
+  async function draw(g) {
+    try { await Promise.all([document.fonts.load('800 40px Archivo'), document.fonts.load('500 30px "DM Mono"')]); } catch (e) {}
+    const rows = g.rows.slice().sort((a, b) => b.hits - a.hits || b.price - a.price).slice(0, SHARE_MAX);
+    const more = g.rows.length - rows.length;
+    const Wd = 1080, RH = 104, top = 300, H = top + rows.length * RH + (more ? 60 : 0) + 150;
+    const cv = document.createElement("canvas"); cv.width = Wd; cv.height = H;
+    const x = cv.getContext("2d");
+    const font = (w, px, fam) => { x.font = `${w} ${px}px ${fam === "m" ? '"DM Mono", monospace' : 'Archivo, system-ui, sans-serif'}`; };
+    const fit = (t, max) => { while (x.measureText(t).width > max && t.length > 4) t = t.slice(0, -2).trimEnd() + "…"; return t; };
+    x.fillStyle = C.maple; x.fillRect(0, 0, Wd, H);
+    x.fillStyle = C.navy; x.fillRect(0, 0, Wd, 16); x.fillStyle = C.red; x.fillRect(Wd * .7, 0, Wd * .15, 16);
+    x.textBaseline = "alphabetic"; x.fillStyle = C.navy;
+    font(800, 34, "a"); x.fillText("DROP COVERAGE", 48, 78);
+    const ww = x.measureText("DROP COVERAGE").width; x.fillRect(48, 90, ww, 5); x.fillStyle = C.red; x.fillRect(48 + ww * .37, 90, ww * .14, 5);
+    x.fillStyle = C.brown; font(500, 22, "m"); x.textAlign = "right"; x.fillText("THE COVERAGE · LAST 10 GAMES", Wd - 48, 76); x.textAlign = "left";
+    x.fillStyle = C.navy; font(800, 60, "a"); x.fillText(fit(g.game, Wd - 96), 48, 176);
+    x.fillStyle = C.brown; font(500, 26, "m"); x.fillText(tip(g.tip).toUpperCase() + " · CLEARED IN 9 OR 10 OF HIS LAST 10", 48, 222);
+    x.fillStyle = C.navy; x.fillRect(48, 250, Wd - 96, 4);
+    x.fillStyle = C.brown; font(500, 18, "m"); x.fillText("PLAYER", 48, 284); x.fillText("LAST 10", 560, 284);
+    x.textAlign = "right"; x.fillText("BEST PRICE", Wd - 48, 284); x.textAlign = "left";
+    rows.forEach((r, i) => {
+      const y = top + i * RH;
+      if (i % 2 === 0) { x.fillStyle = C.cream; x.fillRect(48, y, Wd - 96, RH); }
+      x.fillStyle = C.navy; font(700, 34, "a"); x.fillText(fit(r.name, 480), 64, y + 46);
+      x.fillStyle = C.brown; font(500, 24, "m"); x.fillText(`${Math.floor(r.line) + 1}+ ${W[r.stat] || r.stat}`, 64, y + 82);
+      r.last10.forEach((v, k) => { x.fillStyle = v > r.line ? C.green : C.red; x.fillRect(560 + k * 26, y + 22, 22, 22); });
+      x.fillStyle = C.navy; font(500, 30, "m"); x.fillText(`${r.hits}/10`, 560, y + 84);
+      if (r.tag === "value") { font(500, 18, "m"); const tw = x.measureText("VALUE").width + 16; x.fillStyle = C.navy; x.fillRect(690, y + 60, tw, 28); x.fillStyle = C.mint; x.fillText("VALUE", 698, y + 81); }
+      x.textAlign = "right"; x.fillStyle = C.navy; font(500, 38, "m"); x.fillText(price(r.price), Wd - 64, y + 50);
+      x.fillStyle = C.brown; font(500, 22, "m"); x.fillText((BOOK[r.book] || r.book).toUpperCase(), Wd - 64, y + 84); x.textAlign = "left";
+    });
+    let y = top + rows.length * RH;
+    if (more) { x.fillStyle = C.brown; font(500, 24, "m"); x.fillText(`+ ${more} more for this game on the site`, 64, y + 40); y += 60; }
+    x.fillStyle = C.navy; x.fillRect(48, y + 24, Wd - 96, 4);
+    font(800, 30, "a"); x.fillText("thedropcoverage.com", 48, y + 76);
+    x.fillStyle = C.brown; font(500, 20, "m"); x.fillText("18+ · Gamble responsibly · Gambling Help Online 1800 858 858", 48, y + 112);
+    x.textAlign = "right"; x.fillText("Data, not a promise of profit.", Wd - 48, y + 76); x.textAlign = "left";
+    return cv;
+  }
+  async function share(g, btn) {
+    const was = btn.textContent; btn.disabled = true; btn.textContent = "Making image…";
+    try {
+      const cv = await draw(g);
+      const blob = await new Promise(r => cv.toBlob(r, "image/png"));
+      const name = "drop-coverage-" + g.game.toLowerCase().replace(/[^a-z0-9]+/g, "-") + ".png";
+      const file = new File([blob], name, { type: "image/png" });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: "The Coverage: " + g.game, text: g.game + " hit rates, last 10 games. thedropcoverage.com/coverage.html" });
+      } else {
+        const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name;
+        document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+      }
+    } catch (e) { if (!e || e.name !== "AbortError") console.error(e); }
+    btn.disabled = false; btn.textContent = was;
   }
   addEventListener("DOMContentLoaded", run);
 })();
