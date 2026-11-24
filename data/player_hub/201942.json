@@ -4,12 +4,54 @@
  "team": "Denver",
  "opp": "Dallas",
  "lines": {
+  "RA": {
+   "line": 3.5,
+   "price": 1.64,
+   "book": "unibet",
+   "price_over": 1.64,
+   "price_under": 2.15
+  },
   "PTS": {
    "line": 10.5,
    "price": 1.96,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8
+  },
+  "PA": {
+   "line": 12.5,
+   "price": 1.85,
+   "book": "unibet",
+   "price_over": 1.85,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 14.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.85
+  },
+  "PR": {
+   "line": 12.5,
+   "price": 1.94,
+   "book": "unibet",
+   "price_over": 1.94,
+   "price_under": 1.78
+  },
+  "REB": {
+   "line": 1.5,
+   "price": 2.02,
+   "book": "unibet",
+   "price_over": 1.73,
+   "price_under": 2.02
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 2.3,
+   "book": "unibet",
+   "price_over": 2.3,
+   "price_under": 1.56
   }
  },
  "recent_games": [
@@ -138,6 +180,16 @@
   "PTS": {
    "line": 10.5,
    "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 0,
    "n": 5
   }
  },
