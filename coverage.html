@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Coverage | Drop Coverage</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#EAD7B2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16203A" media="(prefers-color-scheme: dark)">
+<script>try{var m=localStorage.getItem("dc.mode");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/brand/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=edae1769">
+<script src="assets/analytics.js?v=6172de6f" defer></script>
+<script src="assets/app.js?v=dcfeb534" defer></script>
+<style>
+.cv-note{background:var(--navy);color:var(--cream);padding:14px 16px;margin:0 0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.cv-note b{display:block;font:500 26px "DM Mono",monospace;color:var(--mint)}.cv-note span{font-size:13px}
+.cv-note p{grid-column:1/-1;margin:0;font-size:13px;border-top:1px solid rgba(255,255,255,.2);padding-top:8px}
+.cv-game{background:var(--surface);border:2px solid var(--rule);margin:0 0 18px}
+.cv-game h2{margin:0;padding:10px 12px;border-bottom:2px solid var(--rule);font-size:18px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.cv-game h2 small{font:500 13px "DM Mono",monospace;color:var(--sub);align-self:center}
+.cv-tw{overflow-x:auto}.cv-game table{width:100%;border-collapse:collapse;min-width:720px}
+.cv-game th{text-align:left;font:500 11px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);padding:7px 9px;border-bottom:1px solid var(--line)}
+.cv-game td{padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:middle}
+.cv-game td span{display:block;font:400 12px "DM Mono",monospace;color:var(--sub)}
+.cv-m{font:500 15px "DM Mono",monospace}
+.cv-dots{display:flex;gap:2px;margin-top:3px}.cv-dots i{font:500 10px/17px "DM Mono",monospace;font-style:normal;min-width:19px;text-align:center;color:#fff}
+.cv-dots i.o{background:#2A7A4B}.cv-dots i.u{background:#C8352B}
+.cv-tag{display:inline-block;font:500 11px "DM Mono",monospace;padding:2px 6px;margin:2px 4px 2px 0;border:1.5px solid var(--rule);white-space:nowrap}
+.cv-tag.val{background:var(--navy);color:var(--mint);border-color:var(--navy)}.cv-tag.trap{background:#C8352B;color:var(--cream);border-color:#C8352B}
+.cv-tag.win{background:var(--mint);color:var(--navy);border-color:var(--mint)}.cv-tag.loss{background:#C8352B;color:var(--cream);border-color:#C8352B}
+.cv-nights td,.cv-nights th{padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;font:400 13px "DM Mono",monospace}
+</style>
+</head>
+<body data-page="coverage">
+<header class="site">
+  <a class="logo" href="/" aria-label="Drop Coverage home"><span class="wm">Drop Coverage</span></a>
+  <nav class="site">
+    <a href="predictions.html">Predictions</a>
+    <a href="tip.html">The Drop</a>
+    <a href="games.html">Game trends</a>
+    <a href="players/">Players</a>
+    <a href="matchups.html">Matchups</a>
+    <a href="with-without.html">With/Without</a>
+    <a href="track-record.html">Track record</a>
+  </nav>
+</header>
+<main>
+  <p class="kicker">Internal · not listed</p>
+  <h1>The Coverage</h1>
+  <div id="cv"><p class="lead">Loading…</p></div>
+</main>
+<script>
+/* The Coverage, internal only (owner, 25 Nov 2026: "only internal browsers
+   can see"). Not linked, not in the sitemap, noindex. The numbers come from
+   the data edge function, which serves them only to a browser holding the
+   internal key: open this page once with ?key=... on each device and the
+   key is kept in that browser (dc.coverage_key). */
+(function () {
+  const KEY = "dc.coverage_key";
+  const q = new URLSearchParams(location.search);
+  try {
+    if (q.has("key")) {
+      if (q.get("key")) localStorage.setItem(KEY, q.get("key")); else localStorage.removeItem(KEY);
+      q.delete("key");
+      history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : ""));
+    }
+  } catch (e) { /* no storage: this visit only */ }
+  let key = "";
+  try { key = localStorage.getItem(KEY) || ""; } catch (e) {}
+  const box = document.getElementById("cv");
+  const nothing = () => { box.innerHTML = '<p class="lead">Nothing here.</p>'; };
+  if (!key) { nothing(); return; }
+  const W = { PTS: "points", REB: "rebounds", AST: "assists", "3PM": "threes", RA: "rebounds + assists" };
+  const pct = v => v == null ? "–" : Math.round(v * 100) + "%";
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const tip = t => t ? new Date(t).toLocaleString("en-AU", { timeZone: "Australia/Sydney", weekday: "short",
+      hour: "numeric", minute: "2-digit" }).replace(/\s?(am|pm)/i, m => m.trim().toLowerCase()) + " AEDT" : "";
+  const run = () => fetch("https://gpupsgkyyldqyfemtjml.supabase.co/functions/v1/data?name=coverage", {
+      headers: { "Authorization": "Bearer " + (typeof SIGNUP !== "undefined" ? SIGNUP.key : ""),
+                 "x-dc-key": key } })
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(render).catch(nothing);
+  function row(r) {
+    const gap = (r.p ?? 0) - r.book_p;
+    let tags = "";
+    if (r.result === "win") tags += `<span class="cv-tag win">Over ${r.actual}</span>`;
+    else if (r.result === "loss") tags += `<span class="cv-tag loss">${r.actual}</span>`;
+    else if (r.result === "void") tags += `<span class="cv-tag">Void</span>`;
+    if (gap >= 0.04) tags += '<span class="cv-tag val">Value</span>';
+    else if (gap <= -0.05) tags += '<span class="cv-tag trap">Priced past it</span>';
+    if (r.minutes != null && r.l10_min != null && Math.abs(r.minutes - r.l10_min) >= 2)
+      tags += `<span class="cv-tag">${r.minutes - r.l10_min > 0 ? "+" : ""}${Math.round(r.minutes - r.l10_min)} min</span>`;
+    const dots = r.last10.map(v => `<i class="${v > r.line ? "o" : "u"}">${v}</i>`).join("");
+    return `<tr><td><b>${esc(r.name)}</b><span>${esc(r.team)}</span></td>
+      <td><b class="cv-m">${Math.floor(r.line) + 1}+</b> ${W[r.stat] || r.stat}</td>
+      <td><b class="cv-m">${r.hits}/10</b><div class="cv-dots">${dots}</div></td>
+      <td><span class="cv-m" style="color:inherit">${r.price.toFixed(2)}</span><span>${esc(r.book)}</span></td>
+      <td><b class="cv-m">${pct(r.p)}</b><span>book ${pct(r.book_p)}</span></td>
+      <td class="cv-m">${r.minutes == null ? "–" : Math.round(r.minutes)}<span>L10 ${r.l10_min == null ? "–" : Math.round(r.l10_min)}</span></td>
+      <td>${tags}</td></tr>`;
+  }
+  function render(d) {
+    const rows = d.games.flatMap(g => g.rows);
+    const n = rows.length, avg = f => n ? rows.reduce((s, r) => s + (f(r) || 0), 0) / n : null;
+    const rec = d.record;
+    let h = `<p class="lead">Each player's highest line at $1.20 or better (Australian books, alternates included) that he cleared in 9 or 10 of his last 10, with our model's chance beside it. US slate ${esc(d.slate)}.</p>
+      <div class="cv-note"><div><b>${n}</b><span>lines tonight</span></div>
+      <div><b>${pct(avg(r => r.hits / 10))}</b><span>their last-10 rate</span></div>
+      <div><b>${pct(avg(r => r.p))}</b><span>our chance, average</span></div>
+      <div><b>${pct(avg(r => r.book_p))}</b><span>the prices say</span></div>`;
+    if (rec) h += `<p>Record so far (${rec.nights} nights): ${rec.wins}/${rec.n} (${pct(rec.rate)}), ${rec.units >= 0 ? "+" : ""}${rec.units.toFixed(1)}u flat; the last 10 said ${pct(rec.said_l10)}, our chance ${pct(rec.said_ours)}, the prices ${pct(rec.said_book)}. Value rows ${rec.value_wins}/${rec.value_n}, ${rec.value_units >= 0 ? "+" : ""}${rec.value_units.toFixed(1)}u.</p>`;
+    else h += `<p>No nights graded yet: the first result comes with the morning build after tonight's games.</p>`;
+    h += "</div>";
+    for (const g of d.games) {
+      h += `<section class="cv-game"><h2>${esc(g.game)}<small>${tip(g.tip)} · ${g.rows.length} lines</small></h2><div class="cv-tw"><table>
+        <thead><tr><th>Player</th><th>Line</th><th>Last 10</th><th>Best price</th><th>Our chance</th><th>Min tonight</th><th></th></tr></thead>
+        <tbody>${g.rows.map(row).join("")}</tbody></table></div></section>`;
+    }
+    if (d.nights && d.nights.length) {
+      h += `<h2>By night</h2><div class="cv-tw"><table class="cv-nights"><thead><tr><th>US slate</th><th>Hit</th><th>Units</th><th>Our chance</th><th>Prices</th></tr></thead><tbody>` +
+        d.nights.map(x => `<tr><td>${x.slate}</td><td>${x.wins}/${x.n}</td><td>${x.units >= 0 ? "+" : ""}${x.units.toFixed(2)}u</td><td>${pct(x.said_ours)}</td><td>${pct(x.said_book)}</td></tr>`).join("") +
+        "</tbody></table></div>";
+    }
+    h += `<p class="sub">Last 10: oldest to newest, green over the line, red under. Our chance: the model's chance of the over (raw, not pulled); book: 1 ÷ price, margin included. Value: ours 4+ points over the book; priced past it: 5+ under. ± min: tonight's minutes against his last-10 average, at 2+.</p>`;
+    box.innerHTML = h;
+  }
+  addEventListener("DOMContentLoaded", run);
+})();
+</script>
+<footer class="rg">
+  <a class="fmark" href="/" aria-label="Drop Coverage home"><img src="assets/brand/wordmark-stacked.svg" alt="Drop Coverage" width="120" height="78"></a>
+  <p class="rgline"><b>18+</b> Gamble responsibly · <a href="https://www.gamblinghelponline.org.au">Gambling Help Online</a> 1800 858 858 (AU)
+  · <b>21+</b> Gambling problem? Call 1-800-GAMBLER (US)</p>
+  <p class="rgline">Projections are data, not a promise of profit.</p>
+  <nav class="flinks"><a href="track-record.html">Track record</a><a href="learn/">How it works</a><a href="schedule.html">Schedule</a><a href="responsible-gambling.html">Responsible gambling</a><a href="api.html">Open data</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="refunds.html">Refunds</a></nav>
+  <div class="social">Follow <a href="https://x.com/drop_coverage">@drop_coverage</a> on X. Take that for data.</div>
+</footer>
+</body>
+</html>
