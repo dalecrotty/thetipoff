@@ -2,14 +2,243 @@
  "player_id": 1628415,
  "player": "Dillon Brooks",
  "team": "Phoenix",
- "opp": "New Orleans",
+ "projections": {
+  "3PM": {
+   "mean": 2.16,
+   "floor": 0.22,
+   "ceiling": 4.12
+  },
+  "AST": {
+   "mean": 2.28,
+   "floor": 0.2,
+   "ceiling": 4.26
+  },
+  "BLK": {
+   "mean": 0.14,
+   "floor": 0.0,
+   "ceiling": 0.98
+  },
+  "PTS": {
+   "mean": 15.32,
+   "floor": 6.68,
+   "ceiling": 24.25
+  },
+  "REB": {
+   "mean": 3.69,
+   "floor": 0.92,
+   "ceiling": 6.81
+  },
+  "STL": {
+   "mean": 0.6,
+   "floor": 0.0,
+   "ceiling": 1.97
+  },
+  "TOV": {
+   "mean": 1.52,
+   "floor": 0.09,
+   "ceiling": 3.14
+  },
+  "PRA": {
+   "mean": 21.29,
+   "floor": 11.46,
+   "ceiling": 31.87
+  },
+  "PR": {
+   "mean": 19.01,
+   "floor": 9.86,
+   "ceiling": 28.88
+  },
+  "PA": {
+   "mean": 17.6,
+   "floor": 8.6,
+   "ceiling": 26.66
+  },
+  "RA": {
+   "mean": 5.97,
+   "floor": 2.1,
+   "ceiling": 10.21
+  }
+ },
+ "minutes": {
+  "value": 28,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 152,
+   "min_pg": 31.2,
+   "PTS": {
+    "pg": 16.76,
+    "pm": 0.538
+   },
+   "REB": {
+    "pg": 3.71,
+    "pm": 0.119
+   },
+   "AST": {
+    "pg": 1.81,
+    "pm": 0.058
+   },
+   "3PM": {
+    "pg": 2.39,
+    "pm": 0.077
+   },
+   "STL": {
+    "pg": 0.86,
+    "pm": 0.028
+   },
+   "BLK": {
+    "pg": 0.18,
+    "pm": 0.006
+   },
+   "TOV": {
+    "pg": 1.39,
+    "pm": 0.045
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 28.4,
+   "PTS": {
+    "pg": 14.3,
+    "pm": 0.504
+   },
+   "REB": {
+    "pg": 3.4,
+    "pm": 0.12
+   },
+   "AST": {
+    "pg": 1.9,
+    "pm": 0.067
+   },
+   "3PM": {
+    "pg": 2.1,
+    "pm": 0.074
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.018
+   },
+   "BLK": {
+    "pg": 0.1,
+    "pm": 0.004
+   },
+   "TOV": {
+    "pg": 1.6,
+    "pm": 0.056
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 27.0,
+   "PTS": {
+    "pg": 15.6,
+    "pm": 0.578
+   },
+   "REB": {
+    "pg": 3.0,
+    "pm": 0.111
+   },
+   "AST": {
+    "pg": 2.6,
+    "pm": 0.096
+   },
+   "3PM": {
+    "pg": 2.6,
+    "pm": 0.096
+   },
+   "STL": {
+    "pg": 0.2,
+    "pm": 0.007
+   },
+   "BLK": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "TOV": {
+    "pg": 1.8,
+    "pm": 0.067
+   }
+  },
+  "home": {
+   "games": 79,
+   "min_pg": 30.8,
+   "PTS": {
+    "pg": 17.67,
+    "pm": 0.574
+   },
+   "REB": {
+    "pg": 3.71,
+    "pm": 0.12
+   },
+   "AST": {
+    "pg": 1.7,
+    "pm": 0.055
+   },
+   "3PM": {
+    "pg": 2.49,
+    "pm": 0.081
+   },
+   "STL": {
+    "pg": 0.85,
+    "pm": 0.028
+   },
+   "BLK": {
+    "pg": 0.15,
+    "pm": 0.005
+   },
+   "TOV": {
+    "pg": 1.33,
+    "pm": 0.043
+   }
+  },
+  "away": {
+   "games": 73,
+   "min_pg": 31.6,
+   "PTS": {
+    "pg": 15.78,
+    "pm": 0.5
+   },
+   "REB": {
+    "pg": 3.71,
+    "pm": 0.118
+   },
+   "AST": {
+    "pg": 1.93,
+    "pm": 0.061
+   },
+   "3PM": {
+    "pg": 2.29,
+    "pm": 0.072
+   },
+   "STL": {
+    "pg": 0.88,
+    "pm": 0.028
+   },
+   "BLK": {
+    "pg": 0.22,
+    "pm": 0.007
+   },
+   "TOV": {
+    "pg": 1.47,
+    "pm": 0.046
+   }
+  }
+ },
  "lines": {
   "AST": {
    "line": 1.5,
+   "p_over": 0.642,
+   "p_under": 0.358,
+   "fair_over": 0.579,
+   "fair_under": 0.421,
+   "price_over": 1.6,
+   "price_under": 2.2,
+   "side": "over",
    "price": 1.6,
    "book": "sportsbet",
-   "price_over": 1.6,
-   "price_under": 2.2
+   "edge": 0.063,
+   "tier": "A"
   },
   "RA": {
    "line": 5.5,
@@ -27,10 +256,17 @@
   },
   "3PM": {
    "line": 1.5,
+   "p_over": 0.606,
+   "p_under": 0.394,
+   "fair_over": 0.556,
+   "fair_under": 0.444,
+   "price_over": 1.68,
+   "price_under": 2.1,
+   "side": "over",
    "price": 1.68,
    "book": "sportsbet",
-   "price_over": 1.68,
-   "price_under": 2.1
+   "edge": 0.0504,
+   "tier": "B"
   },
   "REB": {
    "line": 3.5,
@@ -3903,29 +4139,128 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-11-10",
+   "opp": "LA Clippers",
+   "venue": "H",
+   "game": "2026-11-10_la-clippers_vs_phoenix",
+   "starter": true,
+   "rest": "0",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 22.0,
+   "PTS": 8.0,
+   "REB": 4.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 12.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-09",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-11-09_phoenix_vs_san-antonio",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 26.0,
+   "PTS": 7.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 14.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-07",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-11-07_houston_vs_phoenix",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 37.0,
+   "PTS": 11.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 4.0,
+   "FGA": 10.0,
+   "3PA": 7.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-05",
+   "opp": "Orlando",
+   "venue": "H",
+   "game": "2026-11-05_orlando_vs_phoenix",
+   "starter": true,
+   "rest": "0",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 29.0,
+   "PTS": 24.0,
+   "REB": 1.0,
+   "AST": 1.0,
+   "3PM": 4.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 9.0,
+   "FGA": 16.0,
+   "3PA": 6.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-11-04_phoenix_vs_portland",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 35.0,
+   "PTS": 15.0,
+   "REB": 6.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 7.0,
+   "FGA": 15.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 15.5,
-   "over": 2,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 1,
-   "n": 5
-  },
-  "AST": {
-   "line": 1.5,
-   "over": 3,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 4,
-   "n": 5
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "New Orleans"
 }

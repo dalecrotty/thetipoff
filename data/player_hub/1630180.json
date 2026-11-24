@@ -2,7 +2,229 @@
  "player_id": 1630180,
  "player": "Saddiq Bey",
  "team": "New Orleans",
- "opp": "Phoenix",
+ "projections": {
+  "3PM": {
+   "mean": 2.27,
+   "floor": 0.05,
+   "ceiling": 4.79
+  },
+  "AST": {
+   "mean": 2.87,
+   "floor": 0.48,
+   "ceiling": 5.09
+  },
+  "BLK": {
+   "mean": 0.2,
+   "floor": 0.0,
+   "ceiling": 1.0
+  },
+  "PTS": {
+   "mean": 15.02,
+   "floor": 6.38,
+   "ceiling": 23.95
+  },
+  "REB": {
+   "mean": 4.77,
+   "floor": 1.53,
+   "ceiling": 7.91
+  },
+  "STL": {
+   "mean": 0.75,
+   "floor": 0.0,
+   "ceiling": 1.98
+  },
+  "TOV": {
+   "mean": 0.87,
+   "floor": 0.0,
+   "ceiling": 2.01
+  },
+  "PRA": {
+   "mean": 22.66,
+   "floor": 12.83,
+   "ceiling": 33.24
+  },
+  "PR": {
+   "mean": 19.79,
+   "floor": 10.63,
+   "ceiling": 29.65
+  },
+  "PA": {
+   "mean": 17.89,
+   "floor": 8.9,
+   "ceiling": 26.95
+  },
+  "RA": {
+   "mean": 7.64,
+   "floor": 3.52,
+   "ceiling": 12.36
+  }
+ },
+ "minutes": {
+  "value": 31,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 90,
+   "min_pg": 31.0,
+   "PTS": {
+    "pg": 17.31,
+    "pm": 0.559
+   },
+   "REB": {
+    "pg": 5.36,
+    "pm": 0.173
+   },
+   "AST": {
+    "pg": 2.53,
+    "pm": 0.082
+   },
+   "3PM": {
+    "pg": 2.13,
+    "pm": 0.069
+   },
+   "STL": {
+    "pg": 0.9,
+    "pm": 0.029
+   },
+   "BLK": {
+    "pg": 0.13,
+    "pm": 0.004
+   },
+   "TOV": {
+    "pg": 0.91,
+    "pm": 0.029
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 33.0,
+   "PTS": {
+    "pg": 15.6,
+    "pm": 0.473
+   },
+   "REB": {
+    "pg": 5.1,
+    "pm": 0.155
+   },
+   "AST": {
+    "pg": 3.1,
+    "pm": 0.094
+   },
+   "3PM": {
+    "pg": 2.7,
+    "pm": 0.082
+   },
+   "STL": {
+    "pg": 0.4,
+    "pm": 0.012
+   },
+   "BLK": {
+    "pg": 0.4,
+    "pm": 0.012
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.012
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 37.0,
+   "PTS": {
+    "pg": 14.4,
+    "pm": 0.389
+   },
+   "REB": {
+    "pg": 6.2,
+    "pm": 0.168
+   },
+   "AST": {
+    "pg": 3.6,
+    "pm": 0.097
+   },
+   "3PM": {
+    "pg": 2.6,
+    "pm": 0.07
+   },
+   "STL": {
+    "pg": 0.6,
+    "pm": 0.016
+   },
+   "BLK": {
+    "pg": 0.4,
+    "pm": 0.011
+   },
+   "TOV": {
+    "pg": 0.4,
+    "pm": 0.011
+   }
+  },
+  "home": {
+   "games": 48,
+   "min_pg": 31.6,
+   "PTS": {
+    "pg": 17.71,
+    "pm": 0.56
+   },
+   "REB": {
+    "pg": 5.81,
+    "pm": 0.184
+   },
+   "AST": {
+    "pg": 2.58,
+    "pm": 0.082
+   },
+   "3PM": {
+    "pg": 2.1,
+    "pm": 0.067
+   },
+   "STL": {
+    "pg": 1.02,
+    "pm": 0.032
+   },
+   "BLK": {
+    "pg": 0.15,
+    "pm": 0.005
+   },
+   "TOV": {
+    "pg": 1.1,
+    "pm": 0.035
+   }
+  },
+  "away": {
+   "games": 42,
+   "min_pg": 30.3,
+   "PTS": {
+    "pg": 16.86,
+    "pm": 0.557
+   },
+   "REB": {
+    "pg": 4.83,
+    "pm": 0.16
+   },
+   "AST": {
+    "pg": 2.48,
+    "pm": 0.082
+   },
+   "3PM": {
+    "pg": 2.17,
+    "pm": 0.072
+   },
+   "STL": {
+    "pg": 0.76,
+    "pm": 0.025
+   },
+   "BLK": {
+    "pg": 0.12,
+    "pm": 0.004
+   },
+   "TOV": {
+    "pg": 0.69,
+    "pm": 0.023
+   }
+  }
+ },
  "lines": {
   "AST": {
    "line": 2.5,
@@ -2429,29 +2651,128 @@
    "FTA": 6.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-11-13",
+   "opp": "Memphis",
+   "venue": "H",
+   "game": "2026-11-13_memphis_vs_new-orleans",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 35.0,
+   "PTS": 30.0,
+   "REB": 10.0,
+   "AST": 0.0,
+   "3PM": 6.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 11.0,
+   "FGA": 20.0,
+   "3PA": 9.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-11",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2026-11-11_brooklyn_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 29.0,
+   "PTS": 15.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 5.0,
+   "FGA": 11.0,
+   "3PA": 8.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-09",
+   "opp": "Golden State",
+   "venue": "R",
+   "game": "2026-11-09_golden-state_vs_new-orleans",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 24.0,
+   "PTS": 9.0,
+   "REB": 0.0,
+   "AST": 4.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 9.0,
+   "3PA": 5.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-08",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-11-08_la-clippers_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 26.0,
+   "PTS": 13.0,
+   "REB": 4.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 12.0,
+   "3PA": 6.0,
+   "FTA": 6.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-06",
+   "opp": "Minnesota",
+   "venue": "H",
+   "game": "2026-11-06_minnesota_vs_new-orleans",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 31.0,
+   "PTS": 17.0,
+   "REB": 5.0,
+   "AST": 4.0,
+   "3PM": 3.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 13.0,
+   "3PA": 6.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 15.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 4.5,
-   "over": 5,
-   "n": 5
-  },
-  "AST": {
-   "line": 2.5,
-   "over": 4,
-   "n": 5
-  },
-  "3PM": {
-   "line": 2.5,
-   "over": 2,
-   "n": 5
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Phoenix"
 }
