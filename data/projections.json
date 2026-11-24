@@ -1362,7 +1362,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 77
+   "rank": 76
   },
   {
    "player_id": 1628983,
@@ -1561,7 +1561,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -4522,7 +4522,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 151
+   "rank": 152
   },
   {
    "player_id": 1642347,
@@ -15026,7 +15026,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 146
+   "rank": 147
   },
   {
    "player_id": 1630182,
@@ -20839,13 +20839,13 @@
    "gate_status": "passed",
    "us": {
     "line": 9.5,
-    "price": 1.75,
+    "price": 2.0,
     "book": "betright",
     "price_over": 1.75,
     "price_under": 2.0,
     "l5_over": 0.6,
     "l10_over": 0.5,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -21373,7 +21373,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 102
+   "rank": 101
   },
   {
    "player_id": 1629675,
@@ -27996,7 +27996,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": {
     "line": 4.5,
     "price": 1.7,
@@ -28005,7 +28005,7 @@
     "price_under": 2.1,
     "l5_over": 0.4,
     "l10_over": 0.3,
-    "gate_status": "passed"
+    "gate_status": "failed:edge_below_tier"
    }
   },
   {
@@ -28266,7 +28266,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 47
+   "rank": 46
   },
   {
    "player_id": 1629631,
@@ -29060,7 +29060,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 114
+   "rank": 115
   },
   {
    "player_id": 1630228,
@@ -31525,7 +31525,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 42
+   "rank": 41
   },
   {
    "player_id": 1642346,
@@ -31962,7 +31962,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 49
+   "rank": 48
   },
   {
    "player_id": 1642852,
@@ -35716,7 +35716,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 71
+   "rank": 72
   },
   {
    "player_id": 1630228,
@@ -47665,17 +47665,17 @@
    "opp": "Indiana",
    "game": "Indiana vs Oklahoma City",
    "stat": "PRA",
-   "line": 16.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8,
+   "line": 17.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85,
    "l5_over": 0.4,
    "l10_over": 0.3,
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -53827,7 +53827,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -56888,7 +56888,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 166
+   "rank": 167
   },
   {
    "player_id": 1642347,
@@ -60408,7 +60408,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 101
+   "rank": 100
   },
   {
    "player_id": 1629675,
@@ -66560,7 +66560,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 150
+   "rank": 151
   },
   {
    "player_id": 1629675,
@@ -66824,7 +66824,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 75
+   "rank": 74
   },
   {
    "player_id": 1630182,
@@ -70300,6 +70300,10 @@
   {
    "run_at": "2026-11-24T00:04+00:00",
    "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-11-24T00:05+00:00",
+   "trigger": "lines"
   }
  ]
 }
