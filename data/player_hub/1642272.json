@@ -6,10 +6,17 @@
  "lines": {
   "PR": {
    "line": 18.5,
-   "price": 1.83,
+   "price": 1.84,
    "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PTS": {
+   "line": 14.5,
+   "price": 1.83,
+   "book": "pointsbetau",
    "price_over": 1.83,
-   "price_under": 1.93
+   "price_under": 2.0
   },
   "RA": {
    "line": 5.5,
@@ -20,17 +27,17 @@
   },
   "PRA": {
    "line": 20.5,
-   "price": 1.86,
+   "price": 1.88,
    "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.9
+   "price_over": 1.88,
+   "price_under": 1.88
   },
-  "PTS": {
-   "line": 15.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.96,
-   "price_under": 1.8
+  "PA": {
+   "line": 16.5,
+   "price": 1.83,
+   "book": "pointsbetau",
+   "price_over": 1.83,
+   "price_under": 1.9
   },
   "REB": {
    "line": 3.5,
@@ -39,19 +46,12 @@
    "price_over": 1.96,
    "price_under": 1.8
   },
-  "PA": {
-   "line": 17.5,
-   "price": 1.95,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8
-  },
   "AST": {
    "line": 1.5,
-   "price": 2.05,
+   "price": 2.0,
    "book": "pointsbetau",
-   "price_over": 1.74,
-   "price_under": 2.05
+   "price_over": 1.77,
+   "price_under": 2.0
   },
   "3PM": {
    "line": 2.5,
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 15.5,
+   "line": 14.5,
    "over": 3,
    "n": 5
   },
