@@ -4,63 +4,63 @@
  "team": "Dallas",
  "projections": {
   "3PM": {
-   "mean": 0.62,
-   "floor": 0.01,
-   "ceiling": 1.95
+   "mean": 0.58,
+   "floor": 0.0,
+   "ceiling": 1.91
   },
   "AST": {
-   "mean": 0.64,
+   "mean": 0.59,
    "floor": 0.0,
-   "ceiling": 2.0
+   "ceiling": 1.95
   },
   "BLK": {
-   "mean": 0.15,
+   "mean": 0.14,
    "floor": 0.0,
-   "ceiling": 0.99
+   "ceiling": 0.98
   },
   "PTS": {
-   "mean": 4.33,
+   "mean": 4.03,
    "floor": 0.0,
-   "ceiling": 10.04
+   "ceiling": 9.75
   },
   "REB": {
-   "mean": 1.92,
-   "floor": 0.14,
-   "ceiling": 4.13
+   "mean": 1.78,
+   "floor": 0.01,
+   "ceiling": 4.0
   },
   "STL": {
-   "mean": 0.23,
+   "mean": 0.21,
    "floor": 0.0,
-   "ceiling": 1.02
+   "ceiling": 1.01
   },
   "TOV": {
-   "mean": 0.53,
+   "mean": 0.49,
    "floor": 0.0,
-   "ceiling": 1.93
+   "ceiling": 1.9
   },
   "PRA": {
-   "mean": 6.88,
+   "mean": 6.41,
    "floor": 0.0,
-   "ceiling": 15.6
+   "ceiling": 15.13
   },
   "PR": {
-   "mean": 6.24,
+   "mean": 5.82,
    "floor": 0.0,
-   "ceiling": 14.36
+   "ceiling": 13.93
   },
   "PA": {
-   "mean": 4.97,
+   "mean": 4.63,
    "floor": 0.0,
-   "ceiling": 11.75
+   "ceiling": 11.41
   },
   "RA": {
-   "mean": 2.55,
+   "mean": 2.38,
    "floor": 0.0,
-   "ceiling": 5.86
+   "ceiling": 5.68
   }
  },
  "minutes": {
-  "value": 9,
+  "value": 8,
   "source": "model"
  },
  "splits": {
@@ -228,16 +228,16 @@
  "lines": {
   "PTS": {
    "line": 3.5,
-   "p_over": 0.597,
-   "p_under": 0.403,
-   "fair_over": 0.533,
-   "fair_under": 0.467,
-   "price_over": 1.75,
-   "price_under": 2.0,
+   "p_over": 0.567,
+   "p_under": 0.433,
+   "fair_over": 0.467,
+   "fair_under": 0.533,
+   "price_over": 2.0,
+   "price_under": 1.75,
    "side": "over",
-   "price": 1.75,
+   "price": 2.0,
    "book": "tab",
-   "edge": 0.0634,
+   "edge": 0.1005,
    "tier": "A"
   }
  },

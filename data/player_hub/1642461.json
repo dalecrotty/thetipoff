@@ -60,7 +60,7 @@
   }
  },
  "minutes": {
-  "value": 19,
+  "value": 18,
   "source": "model"
  },
  "splits": {
@@ -226,6 +226,34 @@
   }
  },
  "lines": {
+  "REB": {
+   "line": 2.5,
+   "p_over": 0.448,
+   "p_under": 0.552,
+   "fair_over": 0.397,
+   "fair_under": 0.603,
+   "price_over": 2.35,
+   "price_under": 1.55,
+   "side": "over",
+   "price": 2.35,
+   "book": "tab",
+   "edge": 0.051,
+   "tier": "B"
+  },
+  "AST": {
+   "line": 0.5,
+   "p_over": 0.493,
+   "p_under": 0.507,
+   "fair_over": 0.444,
+   "fair_under": 0.556,
+   "price_over": 2.1,
+   "price_under": 1.68,
+   "side": "over",
+   "price": 2.1,
+   "book": "tab",
+   "edge": 0.0485,
+   "tier": "B"
+  },
   "PRA": {
    "line": 6.5,
    "p_over": 0.55,
@@ -240,18 +268,32 @@
    "edge": 0.0305,
    "tier": "B"
   },
-  "PTS": {
-   "line": 3.5,
-   "p_over": 0.564,
-   "p_under": 0.436,
-   "fair_over": 0.544,
-   "fair_under": 0.456,
-   "price_over": 1.72,
-   "price_under": 2.05,
+  "3PM": {
+   "line": 0.5,
+   "p_over": 0.52,
+   "p_under": 0.48,
+   "fair_over": 0.5,
+   "fair_under": 0.5,
+   "price_over": 1.87,
+   "price_under": 1.87,
    "side": "over",
+   "price": 1.87,
+   "book": "tab",
+   "edge": 0.0204,
+   "tier": null
+  },
+  "PTS": {
+   "line": 4.5,
+   "p_over": 0.456,
+   "p_under": 0.544,
+   "fair_over": 0.456,
+   "fair_under": 0.544,
+   "price_over": 2.05,
+   "price_under": 1.72,
+   "side": "under",
    "price": 1.72,
    "book": "tab",
-   "edge": 0.0206,
+   "edge": 0.0006,
    "tier": null
   }
  },
