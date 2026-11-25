@@ -226,33 +226,33 @@
   }
  },
  "lines": {
-  "PTS": {
-   "line": 6.5,
-   "p_over": 0.54,
-   "p_under": 0.46,
-   "fair_over": 0.459,
-   "fair_under": 0.541,
-   "price_over": 2.05,
-   "price_under": 1.74,
-   "side": "over",
-   "price": 2.05,
-   "book": "pointsbetau",
-   "edge": 0.0809,
-   "tier": "A"
-  },
   "PR": {
    "line": 9.5,
    "p_over": 0.586,
    "p_under": 0.414,
-   "fair_over": 0.529,
-   "fair_under": 0.471,
+   "fair_over": 0.524,
+   "fair_under": 0.476,
    "price_over": 1.78,
-   "price_under": 2.0,
+   "price_under": 1.96,
    "side": "over",
    "price": 1.78,
+   "book": "ladbrokes_au",
+   "edge": 0.062,
+   "tier": "A"
+  },
+  "PTS": {
+   "line": 6.5,
+   "p_over": 0.54,
+   "p_under": 0.46,
+   "fair_over": 0.479,
+   "fair_under": 0.521,
+   "price_over": 1.96,
+   "price_under": 1.8,
+   "side": "over",
+   "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0569,
-   "tier": "B"
+   "edge": 0.0613,
+   "tier": "A"
   },
   "AST": {
    "line": 1.5,
@@ -268,32 +268,18 @@
    "edge": 0.0555,
    "tier": "B"
   },
-  "3PM": {
-   "line": 0.5,
-   "p_over": 0.549,
-   "p_under": 0.451,
-   "fair_over": 0.56,
-   "fair_under": 0.44,
-   "price_over": 1.69,
-   "price_under": 2.15,
-   "side": "under",
-   "price": 2.15,
-   "book": "pointsbetau",
-   "edge": 0.0109,
-   "tier": null
-  },
   "REB": {
    "line": 3.5,
    "p_over": 0.521,
    "p_under": 0.479,
-   "fair_over": 0.471,
-   "fair_under": 0.529,
+   "fair_over": 0.467,
+   "fair_under": 0.533,
    "price_over": 2.0,
-   "price_under": 1.78,
+   "price_under": 1.75,
    "side": "over",
    "price": 2.0,
-   "book": "sportsbet",
-   "edge": 0.0506,
+   "book": "neds",
+   "edge": 0.0548,
    "tier": "B"
   },
   "PRA": {
@@ -309,6 +295,20 @@
    "book": "tab",
    "edge": 0.0307,
    "tier": "B"
+  },
+  "3PM": {
+   "line": 0.5,
+   "p_over": 0.549,
+   "p_under": 0.451,
+   "fair_over": 0.568,
+   "fair_under": 0.432,
+   "price_over": 1.67,
+   "price_under": 2.2,
+   "side": "under",
+   "price": 2.2,
+   "book": "pointsbetau",
+   "edge": 0.0195,
+   "tier": null
   }
  },
  "lines_us": {},
