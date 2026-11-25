@@ -3,7 +3,64 @@
  "player": "Tyrese Proctor",
  "team": "Cleveland",
  "opp": "New York",
- "lines": {},
+ "lines": {
+  "PTS": {
+   "line": 6.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.67,
+   "book": "pointsbetau",
+   "price_over": 2.2,
+   "price_under": 1.67
+  },
+  "PA": {
+   "line": 8.5,
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 1.7,
+   "price_under": 2.1
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 2.4,
+   "book": "pointsbetau",
+   "price_over": 2.4,
+   "price_under": 1.56
+  },
+  "PR": {
+   "line": 9.5,
+   "price": 1.75,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "RA": {
+   "line": 5.5,
+   "price": 2.0,
+   "book": "ladbrokes_au",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "PRA": {
+   "line": 11.5,
+   "price": 1.62,
+   "book": "neds",
+   "price_over": 1.62,
+   "price_under": 2.2
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.95,
+   "price_under": 1.8
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-23",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 1,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

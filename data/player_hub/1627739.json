@@ -4,8 +4,22 @@
  "team": "LA Clippers",
  "opp": "Memphis",
  "lines": {
+  "REB": {
+   "line": 3.5,
+   "price": 2.05,
+   "book": "neds",
+   "price_over": 1.72,
+   "price_under": 2.05
+  },
   "PTS": {
    "line": 4.5,
+   "price": 1.87,
+   "book": "neds",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 8.5,
    "price": 1.87,
    "book": "neds",
    "price_over": 1.87,
@@ -137,6 +151,11 @@
  "hits": {
   "PTS": {
    "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
    "over": 3,
    "n": 5
   }

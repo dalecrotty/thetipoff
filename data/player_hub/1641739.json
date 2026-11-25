@@ -4,26 +4,33 @@
  "team": "Portland",
  "opp": "San Antonio",
  "lines": {
+  "PTS": {
+   "line": 10.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
   "PR": {
    "line": 14.5,
-   "price": 1.85,
-   "book": "pointsbetau",
-   "price_over": 1.85,
-   "price_under": 1.85
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
   },
   "REB": {
    "line": 4.5,
-   "price": 2.05,
+   "price": 2.1,
    "book": "neds",
-   "price_over": 2.05,
-   "price_under": 1.7
+   "price_over": 2.1,
+   "price_under": 1.67
   },
   "3PM": {
    "line": 2.5,
-   "price": 1.63,
+   "price": 1.61,
    "book": "unibet",
-   "price_over": 2.18,
-   "price_under": 1.63
+   "price_over": 2.2,
+   "price_under": 1.61
   }
  },
  "recent_games": [
@@ -149,6 +156,11 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 10.5,
+   "over": 1,
+   "n": 5
+  },
   "REB": {
    "line": 4.5,
    "over": 4,

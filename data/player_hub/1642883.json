@@ -4,19 +4,61 @@
  "team": "Charlotte",
  "opp": "Chicago",
  "lines": {
+  "RA": {
+   "line": 7.5,
+   "price": 1.96,
+   "book": "unibet",
+   "price_over": 1.96,
+   "price_under": 1.77
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 2.23,
+   "book": "unibet",
+   "price_over": 2.23,
+   "price_under": 1.6
+  },
+  "PR": {
+   "line": 10.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.02
+  },
+  "PRA": {
+   "line": 13.5,
+   "price": 1.67,
+   "book": "neds",
+   "price_over": 1.67,
+   "price_under": 2.1
+  },
   "PTS": {
    "line": 6.5,
-   "price": 1.96,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PA": {
+   "line": 9.5,
+   "price": 1.78,
+   "book": "sportsbet",
+   "price_over": 1.78,
+   "price_under": 2.0
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 2.2,
    "book": "neds",
-   "price_over": 1.96,
-   "price_under": 1.78
+   "price_over": 2.2,
+   "price_under": 1.64
   },
   "3PM": {
    "line": 1.5,
-   "price": 1.59,
+   "price": 1.56,
    "book": "pointsbetau",
-   "price_over": 2.3,
-   "price_under": 1.59
+   "price_over": 2.4,
+   "price_under": 1.56
   }
  },
  "recent_games": [
@@ -145,6 +187,16 @@
   "PTS": {
    "line": 6.5,
    "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 4,
    "n": 5
   },
   "3PM": {
