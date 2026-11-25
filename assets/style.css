@@ -853,3 +853,20 @@ td .ov { color: var(--over-ink); } td .un { color: var(--under-ink); }
 /* matchups: a breath between the position chips and the role chips */
 .chips .chipgap { display: inline-block; width: 14px; }
 .chip.role { opacity: .92; }
+
+/* free for another month (owner, 25 Nov 2026): a strip under the header on
+   every page until 1 January 2027. Navy in both modes, the tag in court-red. */
+.promo { background: var(--navy); color: var(--cream); border-bottom: 3px solid var(--court-red); }
+.promo-in { max-width: 1120px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center;
+  gap: 12px; flex-wrap: wrap; font: 500 15px/1.35 var(--sans); }
+.promo-tag { background: var(--court-red); color: var(--cream); font: 700 12px/1 var(--mono);
+  letter-spacing: .08em; text-transform: uppercase; padding: 6px 8px; white-space: nowrap; }
+.promo-copy { flex: 1 1 260px; }
+.promo-copy b { font-weight: 700; }
+.promo-cta { color: var(--cream); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+.promo-cta:hover { color: var(--mint); }
+.promo-x { background: none; border: 0; color: var(--label-on-navy); font: 400 22px/1 var(--sans);
+  padding: 0 4px; cursor: pointer; }
+.promo-x:hover, .promo-x:focus-visible { color: var(--cream); }
+@media (max-width: 700px) { .promo-in { font-size: 14px; gap: 8px; padding: 10px 12px; } .promo-copy { flex-basis: 100%; order: 2; }
+  .promo-cta { order: 3; } .promo-x { margin-left: auto; } }

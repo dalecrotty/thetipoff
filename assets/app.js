@@ -311,7 +311,7 @@ const pLink = (id, name) => {
 
 /* The members' data (api.html#members). The public file under /data
    carries the free columns; the full payload comes from the data endpoint,
-   open to everyone until 1 December and then to members. If the endpoint
+   open to everyone until 1 January 2027 and then to members. If the endpoint
    is down or says members only, the page runs on the public file and the
    members' columns show as locked. */
 const DATA_API = "https://gpupsgkyyldqyfemtjml.supabase.co/functions/v1/data";
@@ -599,7 +599,7 @@ function leadSentence(rows) {
    One row per player, every market: our prediction and 80% range, the
    bookmaker's line and price (decimal) and the edge, + on the over and −
    on the under. The board's game / team / search filters decide the rows.
-   Free until the members' gate goes on (1 Dec 2026), then members only:
+   Free until the members' gate goes on (1 Jan 2027), then members only:
    raw data free now, a reason to join later (owner, 16 Oct 2026). */
 const CSV_MARKETS = [["PTS", "points"], ["REB", "rebounds"], ["AST", "assists"], ["3PM", "threes"],
   ["STL", "steals"], ["BLK", "blocks"], ["TOV", "turnovers"], ["PRA", "pra"], ["PR", "pr"], ["PA", "pa"], ["RA", "ra"]];
@@ -2563,7 +2563,7 @@ function signupBox(where) {
   el.className = `signup su-${where}`;
   el.id = id;
   el.innerHTML = `
-    <div class="su-copy"><b>Email before 1 December: season one for ${US ? "US$49 (A$69), not US$69" : "A$69 (US$49), not A$99"}.</b>
+    <div class="su-copy"><b>Email before 1 January: season one for ${US ? "US$49 (A$69), not US$69" : "A$69 (US$49), not A$99"}.</b>
       <span>Leave your email and we'll send the offer when memberships open. One email, nothing else.</span></div>
     <form class="su-form" novalidate>
       <label class="vh" for="suEmail-${where}">Email address</label>
@@ -2572,7 +2572,7 @@ function signupBox(where) {
       <button class="su-btn" type="submit">Sign up</button>
     </form>
     <p class="su-msg" role="status"></p>
-    <p class="su-fine">Used only to send the offer when memberships open. The early-bird season pass is ${US ? "US$49 or A$69" : "A$69 or US$49"} for season one (1 December to the Finals); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
+    <p class="su-fine">Used only to send the offer when memberships open. The early-bird season pass is ${US ? "US$49 or A$69" : "A$69 or US$49"} for season one (1 January to the Finals); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
   const form = el.querySelector("form"), msg = el.querySelector(".su-msg"), btn = el.querySelector(".su-btn");
   if (signedUp()) { form.hidden = true; msg.textContent = ON_LIST; msg.className = "su-msg ok"; }
   let busy = false;
@@ -2625,6 +2625,33 @@ function mountSignup() {
   }
 }
 addEventListener("DOMContentLoaded", mountSignup);
+
+/* ---------- free for another month (owner, 25 Nov 2026) ----------
+   "Can we make a big deal of we're extending our free offer for another
+   month!" A strip under the header on every page until the gate goes on
+   (1 January 2027): what's free, until when, and the way to the early-bird
+   offer. The reader can close it (dc.promo, per browser); it removes
+   itself on the day. */
+const PROMO = { id: "free-jan", until: Date.UTC(2026, 11, 31, 13, 0) };   // 1 Jan 2027, midnight AEDT
+function mountPromo() {
+  if (Date.now() >= PROMO.until || document.getElementById("promo")) return;
+  try { if (localStorage.getItem("dc.promo") === PROMO.id) return; } catch {}
+  const head = $("header.site");
+  if (!head) return;
+  const el = document.createElement("aside");
+  el.id = "promo"; el.className = "promo"; el.setAttribute("aria-label", "Free for another month");
+  el.innerHTML = `<div class="promo-in"><b class="promo-tag">Free for another month</b>
+    <span class="promo-copy">Every prediction, chance and edge on Drop Coverage is open to everyone until <b>1 January 2027</b>.</span>
+    <a class="promo-cta" href="#signup">Get the early-bird price</a>
+    <button class="promo-x" type="button" aria-label="Close">×</button></div>`;
+  el.querySelector(".promo-x").addEventListener("click", () => {
+    try { localStorage.setItem("dc.promo", PROMO.id); } catch {}
+    el.remove();
+  });
+  el.querySelector(".promo-cta").addEventListener("click", () => window.dcEvent?.("promo_click", { promo: PROMO.id, source_page: location.pathname }));
+  head.after(el);
+}
+addEventListener("DOMContentLoaded", mountPromo);
 
 /* ---------- boot ---------- */
 addEventListener("DOMContentLoaded", () => {
