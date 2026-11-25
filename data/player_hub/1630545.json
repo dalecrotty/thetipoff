@@ -2,8 +2,65 @@
  "player_id": 1630545,
  "player": "Terrence Shannon Jr.",
  "team": "Minnesota",
- "opp": null,
- "lines": {},
+ "opp": "Oklahoma City",
+ "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 2.2,
+   "book": "sportsbet",
+   "price_over": 2.2,
+   "price_under": 1.58
+  },
+  "PA": {
+   "line": 14.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  },
+  "PRA": {
+   "line": 17.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "RA": {
+   "line": 5.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "PR": {
+   "line": 15.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.52,
+   "book": "sportsbet",
+   "price_over": 2.4,
+   "price_under": 1.52
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.67,
+   "book": "pointsbetau",
+   "price_over": 2.2,
+   "price_under": 1.67
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-23",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

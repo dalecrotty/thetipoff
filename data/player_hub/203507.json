@@ -2,8 +2,58 @@
  "player_id": 203507,
  "player": "Giannis Antetokounmpo",
  "team": "Miami",
- "opp": null,
- "lines": {},
+ "opp": "Philadelphia",
+ "lines": {
+  "AST": {
+   "line": 5.5,
+   "price": 2.0,
+   "book": "neds",
+   "price_over": 1.75,
+   "price_under": 2.0
+  },
+  "RA": {
+   "line": 18.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PTS": {
+   "line": 28.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.82,
+   "price_under": 1.92
+  },
+  "PR": {
+   "line": 42.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
+  },
+  "PRA": {
+   "line": 48.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "REB": {
+   "line": 12.5,
+   "price": 1.8,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 35.5,
+   "price": 1.91,
+   "book": "unibet",
+   "price_over": 1.91,
+   "price_under": 1.82
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-18",
@@ -61,7 +111,7 @@
    "starter": true,
    "rest": "0",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 31.0,
    "PTS": 34.0,
    "REB": 14.0,
@@ -126,6 +176,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 28.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 12.5,
+   "over": 3,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -1,6 +1,6 @@
 {
  "calibration": {
-  "asof": "2026-11-24",
+  "asof": "2026-11-25",
   "season_start": "2026-10-20",
   "markets": [
    {
@@ -8,27 +8,27 @@
     "label": "Points",
     "windows": {
      "7d": {
-      "n": 1150,
-      "mae": 4.37,
+      "n": 1118,
+      "mae": 4.35,
       "bias": -0.04,
-      "coverage": 0.8278,
-      "below": 0.0878,
-      "above": 0.0843
+      "coverage": 0.8247,
+      "below": 0.0886,
+      "above": 0.0868
      },
      "30d": {
-      "n": 4929,
+      "n": 4844,
       "mae": 4.33,
-      "bias": 0.11,
-      "coverage": 0.8237,
-      "below": 0.0874,
-      "above": 0.0889
+      "bias": 0.1,
+      "coverage": 0.8243,
+      "below": 0.0863,
+      "above": 0.0894
      },
      "season": {
-      "n": 5727,
+      "n": 5797,
       "mae": 4.35,
       "bias": 0.16,
-      "coverage": 0.8245,
-      "below": 0.0887,
+      "coverage": 0.8244,
+      "below": 0.0888,
       "above": 0.0868
      }
     }
@@ -38,27 +38,27 @@
     "label": "Rebounds",
     "windows": {
      "7d": {
-      "n": 1150,
-      "mae": 1.82,
-      "bias": -0.01,
-      "coverage": 0.7974,
-      "below": 0.1009,
-      "above": 0.1017
+      "n": 1118,
+      "mae": 1.77,
+      "bias": -0.02,
+      "coverage": 0.8059,
+      "below": 0.0957,
+      "above": 0.0984
      },
      "30d": {
-      "n": 4929,
-      "mae": 1.8,
+      "n": 4844,
+      "mae": 1.79,
       "bias": -0.04,
-      "coverage": 0.8046,
-      "below": 0.0947,
-      "above": 0.1006
+      "coverage": 0.8062,
+      "below": 0.0937,
+      "above": 0.1001
      },
      "season": {
-      "n": 5727,
+      "n": 5797,
       "mae": 1.8,
-      "bias": -0.03,
-      "coverage": 0.8065,
-      "below": 0.0939,
+      "bias": -0.04,
+      "coverage": 0.8068,
+      "below": 0.0937,
       "above": 0.0995
      }
     }
@@ -68,28 +68,28 @@
     "label": "Assists",
     "windows": {
      "7d": {
-      "n": 1150,
-      "mae": 1.32,
+      "n": 1118,
+      "mae": 1.31,
       "bias": 0.01,
-      "coverage": 0.8043,
-      "below": 0.0913,
-      "above": 0.1043
+      "coverage": 0.8131,
+      "below": 0.0877,
+      "above": 0.0993
      },
      "30d": {
-      "n": 4929,
+      "n": 4844,
       "mae": 1.28,
       "bias": -0.0,
-      "coverage": 0.8071,
-      "below": 0.0897,
-      "above": 0.1033
+      "coverage": 0.8088,
+      "below": 0.0888,
+      "above": 0.1024
      },
      "season": {
-      "n": 5727,
+      "n": 5797,
       "mae": 1.28,
-      "bias": 0.01,
-      "coverage": 0.8083,
-      "below": 0.0903,
-      "above": 0.1014
+      "bias": 0.02,
+      "coverage": 0.8092,
+      "below": 0.0902,
+      "above": 0.1006
      }
     }
    },
@@ -98,27 +98,27 @@
     "label": "Threes",
     "windows": {
      "7d": {
-      "n": 1150,
-      "mae": 0.91,
-      "bias": -0.03,
-      "coverage": 0.7826,
-      "below": 0.0983,
-      "above": 0.1191
+      "n": 1118,
+      "mae": 0.9,
+      "bias": -0.02,
+      "coverage": 0.7782,
+      "below": 0.0993,
+      "above": 0.1225
      },
      "30d": {
-      "n": 4929,
+      "n": 4844,
       "mae": 0.87,
       "bias": -0.06,
-      "coverage": 0.7793,
-      "below": 0.099,
-      "above": 0.1217
+      "coverage": 0.7816,
+      "below": 0.097,
+      "above": 0.1214
      },
      "season": {
-      "n": 5727,
+      "n": 5797,
       "mae": 0.86,
       "bias": -0.04,
-      "coverage": 0.7831,
-      "below": 0.098,
+      "coverage": 0.784,
+      "below": 0.0971,
       "above": 0.1189
      }
     }
@@ -126,7 +126,7 @@
   ]
  },
  "tips": {
-  "n_tips": 35,
+  "n_tips": 36,
   "n_clv": 31,
   "avg_clv": 0.06357606736170043,
   "beat_close": 0.9032258064516129,
@@ -186,14 +186,14 @@
   "earlier": {
    "n_locked": 276,
    "n_graded": 275,
-   "won": 137,
-   "lost": 138,
+   "won": 138,
+   "lost": 137,
    "push": 0,
    "void": 1,
    "open": 0,
-   "hit": 0.4982,
-   "units": -23.66,
-   "roi": -0.086,
+   "hit": 0.5018,
+   "units": -21.82,
+   "roi": -0.0793,
    "roi_public": true,
    "avg_price": 1.845,
    "break_even": 0.542,

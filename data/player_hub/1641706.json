@@ -2,8 +2,65 @@
  "player_id": 1641706,
  "player": "Brandon Miller",
  "team": "Charlotte",
- "opp": null,
- "lines": {},
+ "opp": "Chicago",
+ "lines": {
+  "RA": {
+   "line": 8.5,
+   "price": 2.15,
+   "book": "pointsbetau",
+   "price_over": 2.15,
+   "price_under": 1.65
+  },
+  "PRA": {
+   "line": 29.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PR": {
+   "line": 26.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PA": {
+   "line": 25.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 21.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 4.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  },
+  "AST": {
+   "line": 3.5,
+   "price": 2.05,
+   "book": "pointsbetau",
+   "price_over": 2.05,
+   "price_under": 1.74
+  },
+  "3PM": {
+   "line": 3.5,
+   "price": 1.74,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.74
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-23",
@@ -116,7 +173,7 @@
    "AST": 1.0,
    "3PM": 0.0,
    "STL": 1.0,
-   "BLK": 1.0,
+   "BLK": 0.0,
    "TOV": 0.0,
    "FGM": 3.0,
    "FGA": 10.0,
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 21.5,
+   "over": 1,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 3.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
