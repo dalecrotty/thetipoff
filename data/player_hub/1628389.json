@@ -2,9 +2,90 @@
  "player_id": 1628389,
  "player": "Bam Adebayo",
  "team": "Miami",
- "opp": "Philadelphia",
- "lines": {},
+ "opp": "New York",
+ "lines": {
+  "AST": {
+   "line": 2.5,
+   "price": 1.62,
+   "book": "unibet",
+   "price_over": 1.62,
+   "price_under": 2.12
+  },
+  "RA": {
+   "line": 11.5,
+   "price": 2.07,
+   "book": "unibet",
+   "price_over": 2.07,
+   "price_under": 1.66
+  },
+  "PRA": {
+   "line": 29.5,
+   "price": 1.93,
+   "book": "unibet",
+   "price_over": 1.93,
+   "price_under": 1.75
+  },
+  "REB": {
+   "line": 7.5,
+   "price": 1.71,
+   "book": "unibet",
+   "price_over": 1.71,
+   "price_under": 2.0
+  },
+  "PA": {
+   "line": 21.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.44,
+   "book": "sportsbet",
+   "price_over": 2.6,
+   "price_under": 1.44
+  },
+  "PR": {
+   "line": 26.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 17.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.8,
+   "price_under": 1.96
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-11-25",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2026-11-25_miami_vs_philadelphia",
+   "starter": true,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 35.0,
+   "PTS": 17.0,
+   "REB": 11.0,
+   "AST": 3.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 6.0,
+   "FGA": 16.0,
+   "3PA": 3.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-22",
    "opp": "Oklahoma City",
@@ -100,32 +181,29 @@
    "FTA": 13.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-13",
-   "opp": "Cleveland",
-   "venue": "H",
-   "game": "2026-11-13_cleveland_vs_miami",
-   "starter": true,
-   "rest": "2",
-   "result": "W",
-   "opp_tier": "Middle 10",
-   "min": 38.0,
-   "PTS": 37.0,
-   "REB": 14.0,
-   "AST": 3.0,
-   "3PM": 2.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 0.0,
-   "FGM": 13.0,
-   "FGA": 19.0,
-   "3PA": 3.0,
-   "FTA": 10.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 17.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 7.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 3,
+   "n": 5
+  },
+  "3PM": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

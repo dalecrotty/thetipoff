@@ -2,66 +2,33 @@
  "player_id": -105,
  "player": "Damian Lillard",
  "team": "Portland",
- "opp": "San Antonio",
- "lines": {
-  "RA": {
-   "line": 6.5,
-   "price": 1.6,
-   "book": "neds",
-   "price_over": 1.6,
-   "price_under": 2.25
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 2.2,
-   "book": "neds",
-   "price_over": 2.2,
-   "price_under": 1.64
-  },
-  "3PM": {
-   "line": 2.5,
-   "price": 2.25,
-   "book": "sportsbet",
-   "price_over": 1.58,
-   "price_under": 2.25
-  },
-  "AST": {
-   "line": 3.5,
-   "price": 1.7,
-   "book": "neds",
-   "price_over": 1.7,
-   "price_under": 2.1
-  },
-  "PRA": {
-   "line": 27.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.88
-  },
-  "PR": {
-   "line": 23.5,
-   "price": 1.87,
-   "book": "unibet",
-   "price_over": 1.87,
-   "price_under": 1.85
-  },
-  "PA": {
-   "line": 24.5,
-   "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.91,
-   "price_under": 1.82
-  },
-  "PTS": {
-   "line": 20.5,
-   "price": 1.95,
-   "book": "tab",
-   "price_over": 1.8,
-   "price_under": 1.95
-  }
- },
+ "opp": "Golden State",
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-25",
+   "opp": "San Antonio",
+   "venue": "H",
+   "game": "2026-11-25_portland_vs_san-antonio",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 34.0,
+   "PTS": 29.0,
+   "REB": 3.0,
+   "AST": 7.0,
+   "3PM": 5.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 7.0,
+   "FGA": 20.0,
+   "3PA": 12.0,
+   "FTA": 10.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-23",
    "opp": "Philadelphia",
@@ -157,53 +124,8 @@
    "FTA": 5.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-16",
-   "opp": "Minnesota",
-   "venue": "R",
-   "game": "2026-11-16_minnesota_vs_portland",
-   "starter": true,
-   "rest": "2",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 24.0,
-   "PTS": 9.0,
-   "REB": 2.0,
-   "AST": 4.0,
-   "3PM": 2.0,
-   "STL": 0.0,
-   "BLK": 1.0,
-   "TOV": 0.0,
-   "FGM": 2.0,
-   "FGA": 15.0,
-   "3PA": 8.0,
-   "FTA": 3.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 20.5,
-   "over": 2,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 1,
-   "n": 5
-  },
-  "AST": {
-   "line": 3.5,
-   "over": 3,
-   "n": 5
-  },
-  "3PM": {
-   "line": 2.5,
-   "over": 2,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

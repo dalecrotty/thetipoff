@@ -2,9 +2,83 @@
  "player_id": 203507,
  "player": "Giannis Antetokounmpo",
  "team": "Miami",
- "opp": "Philadelphia",
- "lines": {},
+ "opp": "New York",
+ "lines": {
+  "RA": {
+   "line": 16.5,
+   "price": 1.88,
+   "book": "sportsbet",
+   "price_over": 1.88,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 43.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "PR": {
+   "line": 38.5,
+   "price": 1.91,
+   "book": "sportsbet",
+   "price_over": 1.91,
+   "price_under": 1.85
+  },
+  "PA": {
+   "line": 32.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.93,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 11.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
+  "PTS": {
+   "line": 27.5,
+   "price": 2.0,
+   "book": "sportsbet",
+   "price_over": 2.0,
+   "price_under": 1.78
+  },
+  "AST": {
+   "line": 5.5,
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
+  }
+ },
  "recent_games": [
+  {
+   "date": "2026-11-25",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2026-11-25_miami_vs_philadelphia",
+   "starter": true,
+   "rest": "6",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 36.0,
+   "PTS": 32.0,
+   "REB": 14.0,
+   "AST": 4.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 5.0,
+   "FGM": 11.0,
+   "FGA": 18.0,
+   "3PA": 1.0,
+   "FTA": 13.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-18",
    "opp": "Milwaukee",
@@ -100,32 +174,24 @@
    "FTA": 11.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-10",
-   "opp": "Utah",
-   "venue": "R",
-   "game": "2026-11-10_miami_vs_utah",
-   "starter": true,
-   "rest": "1",
-   "result": "W",
-   "opp_tier": "Bottom 10",
-   "min": 31.0,
-   "PTS": 30.0,
-   "REB": 11.0,
-   "AST": 4.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 12.0,
-   "FGA": 21.0,
-   "3PA": 2.0,
-   "FTA": 9.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 27.5,
+   "over": 3,
+   "n": 5
+  },
+  "REB": {
+   "line": 11.5,
+   "over": 4,
+   "n": 5
+  },
+  "AST": {
+   "line": 5.5,
+   "over": 3,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
