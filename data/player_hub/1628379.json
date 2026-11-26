@@ -4,14 +4,14 @@
  "team": "Phoenix",
  "projections": {
   "3PM": {
-   "mean": 1.4,
+   "mean": 1.41,
    "floor": 0.0,
    "ceiling": 3.01
   },
   "AST": {
-   "mean": 1.42,
+   "mean": 1.43,
    "floor": 0.0,
-   "ceiling": 3.02
+   "ceiling": 3.03
   },
   "BLK": {
    "mean": 0.02,
@@ -19,17 +19,17 @@
    "ceiling": 0.91
   },
   "PTS": {
-   "mean": 6.86,
-   "floor": 0.79,
-   "ceiling": 13.69
+   "mean": 6.9,
+   "floor": 0.84,
+   "ceiling": 13.73
   },
   "REB": {
-   "mean": 1.52,
+   "mean": 1.53,
    "floor": 0.0,
-   "ceiling": 3.73
+   "ceiling": 3.74
   },
   "STL": {
-   "mean": 0.27,
+   "mean": 0.28,
    "floor": 0.0,
    "ceiling": 1.07
   },
@@ -39,24 +39,24 @@
    "ceiling": 1.86
   },
   "PRA": {
-   "mean": 9.8,
-   "floor": 2.07,
-   "ceiling": 18.51
+   "mean": 9.86,
+   "floor": 2.14,
+   "ceiling": 18.57
   },
   "PR": {
-   "mean": 8.38,
-   "floor": 1.61,
-   "ceiling": 16.49
+   "mean": 8.43,
+   "floor": 1.67,
+   "ceiling": 16.55
   },
   "PA": {
-   "mean": 8.28,
-   "floor": 1.59,
-   "ceiling": 15.25
+   "mean": 8.33,
+   "floor": 1.65,
+   "ceiling": 15.31
   },
   "RA": {
-   "mean": 2.94,
-   "floor": 0.19,
-   "ceiling": 6.24
+   "mean": 2.96,
+   "floor": 0.21,
+   "ceiling": 6.26
   }
  },
  "minutes": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 5.5,
-   "p_over": 0.61,
-   "p_under": 0.39,
+   "p_over": 0.614,
+   "p_under": 0.386,
    "fair_over": 0.533,
    "fair_under": 0.467,
    "price_over": 1.75,
@@ -237,21 +237,21 @@
    "side": "over",
    "price": 1.75,
    "book": "tab",
-   "edge": 0.0768,
+   "edge": 0.0803,
    "tier": "A"
   },
   "3PM": {
    "line": 1.5,
-   "p_over": 0.398,
-   "p_under": 0.602,
-   "fair_over": 0.433,
-   "fair_under": 0.567,
-   "price_over": 2.15,
-   "price_under": 1.64,
+   "p_over": 0.401,
+   "p_under": 0.599,
+   "fair_over": 0.432,
+   "fair_under": 0.568,
+   "price_over": 2.2,
+   "price_under": 1.67,
    "side": "under",
-   "price": 1.64,
-   "book": "sportsbet",
-   "edge": 0.0344,
+   "price": 1.67,
+   "book": "pointsbetau",
+   "edge": 0.0304,
    "tier": null
   }
  },

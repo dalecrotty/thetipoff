@@ -5,11 +5,25 @@
  "opp": "Cleveland",
  "lines": {
   "PTS": {
-   "line": 7.5,
+   "line": 5.5,
+   "price": 1.9,
+   "book": "pointsbetau",
+   "price_over": 1.9,
+   "price_under": 1.9
+  },
+  "PA": {
+   "line": 8.5,
    "price": 1.8,
-   "book": "tab",
-   "price_over": 1.95,
-   "price_under": 1.8
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.94
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 1.71,
+   "book": "pointsbetau",
+   "price_over": 1.71,
+   "price_under": 2.1
   }
  },
  "recent_games": [
@@ -136,7 +150,12 @@
  ],
  "hits": {
   "PTS": {
-   "line": 7.5,
+   "line": 5.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
    "over": 2,
    "n": 5
   }
