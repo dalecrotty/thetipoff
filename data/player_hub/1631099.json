@@ -20,10 +20,10 @@
   },
   "PRA": {
    "line": 20.5,
-   "price": 1.91,
+   "price": 1.9,
    "book": "sportsbet",
-   "price_over": 1.91,
-   "price_under": 1.85
+   "price_over": 1.9,
+   "price_under": 1.86
   },
   "PA": {
    "line": 15.5,
@@ -34,17 +34,24 @@
   },
   "PR": {
    "line": 18.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.9
+   "price": 1.84,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.92,
+   "price_under": 1.84
   },
   "REB": {
    "line": 5.5,
-   "price": 2.1,
-   "book": "neds",
-   "price_over": 2.1,
-   "price_under": 1.67
+   "price": 2.15,
+   "book": "sportsbet",
+   "price_over": 2.15,
+   "price_under": 1.64
   },
   "3PM": {
    "line": 1.5,
@@ -177,6 +184,11 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 13.5,
+   "over": 2,
+   "n": 5
+  },
   "REB": {
    "line": 5.5,
    "over": 3,

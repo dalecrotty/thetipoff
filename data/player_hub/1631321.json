@@ -3,7 +3,29 @@
  "player": "Sidy Cissoko",
  "team": "Portland",
  "opp": "San Antonio",
- "lines": {},
+ "lines": {
+  "PR": {
+   "line": 9.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.88,
+   "price_under": 1.83
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 2.25,
+   "book": "unibet",
+   "price_over": 2.25,
+   "price_under": 1.57
+  },
+  "PTS": {
+   "line": 6.5,
+   "price": 2.0,
+   "book": "unibet",
+   "price_over": 2.0,
+   "price_under": 1.75
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-23",
@@ -126,6 +148,17 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 6.5,
+   "over": 2,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

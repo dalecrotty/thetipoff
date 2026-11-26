@@ -4,12 +4,33 @@
  "team": "Sacramento",
  "opp": "Golden State",
  "lines": {
+  "AST": {
+   "line": 3.5,
+   "price": 1.69,
+   "book": "pointsbetau",
+   "price_over": 1.69,
+   "price_under": 2.15
+  },
+  "PA": {
+   "line": 15.5,
+   "price": 1.89,
+   "book": "sportsbet",
+   "price_over": 1.89,
+   "price_under": 1.86
+  },
+  "PTS": {
+   "line": 11.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
   "3PM": {
    "line": 1.5,
-   "price": 2.2,
+   "price": 2.0,
    "book": "sportsbet",
-   "price_over": 1.6,
-   "price_under": 2.2
+   "price_over": 1.78,
+   "price_under": 2.0
   }
  },
  "recent_games": [
@@ -135,6 +156,16 @@
   }
  ],
  "hits": {
+  "PTS": {
+   "line": 11.5,
+   "over": 2,
+   "n": 5
+  },
+  "AST": {
+   "line": 3.5,
+   "over": 2,
+   "n": 5
+  },
   "3PM": {
    "line": 1.5,
    "over": 2,
