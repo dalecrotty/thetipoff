@@ -7,8 +7,9 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
    On-page words, tip times, the price order and the help line follow the
    reader's region. Titles, URLs and what search engines index stay the
    Australian default: crawlers always get it. The region comes from the
-   device's time zone (America/* is the US) until the reader picks one in
-   the footer ("dc.region"). Prices are decimal in Australia and American
+   visitor's country (Cloudflare, the dc_country cookie; 27 Nov 2026), else
+   the device's time zone (America/* is the US), until the reader picks one
+   in the footer ("dc.region"). Prices are decimal in Australia and American
    for a US reader (owner, 15 Oct 2026: a .com sells to both). */
 const REGION_KEY = "dc.region";
 const US_ZONE = /^(America\/|US\/|Pacific\/Honolulu$)/;
@@ -19,6 +20,12 @@ const IS_BOT = /bot|crawl|spider|slurp|bingpreview|lighthouse|inspectiontool/i.t
 const REGION = (() => {
   if (IS_BOT) return "au";
   try { const r = localStorage.getItem(REGION_KEY); if (r === "au" || r === "us") return r; } catch { /* default */ }
+  // the visitor's country, set by the Cloudflare Pages function (owner, 12
+  // Nov 2026: a US VPN showed the Australian site): US is the US site, AU the
+  // Australian; anywhere else falls back to the time zone
+  const c = (document.cookie.match(/(?:^|;\s*)dc_country=([A-Z]{2})/) || [])[1];
+  if (c === "US") return "us";
+  if (c === "AU") return "au";
   return US_ZONE.test(DEVICE_TZ) ? "us" : "au";
 })();
 const US = REGION === "us";
