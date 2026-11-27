@@ -3,7 +3,36 @@
  "player": "Zaccharie Risacher",
  "team": "Dallas",
  "opp": "Phoenix",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 3.5,
+   "price": 1.74,
+   "book": "pointsbetau",
+   "price_over": 1.74,
+   "price_under": 2.05
+  },
+  "PR": {
+   "line": 12.5,
+   "price": 1.95,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.77
+  },
+  "PTS": {
+   "line": 8.5,
+   "price": 1.9,
+   "book": "neds",
+   "price_over": 1.9,
+   "price_under": 1.83
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 2.45,
+   "book": "pointsbetau",
+   "price_over": 1.53,
+   "price_under": 2.45
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-24",
@@ -126,6 +155,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 8.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 4,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }

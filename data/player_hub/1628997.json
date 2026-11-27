@@ -3,7 +3,64 @@
  "player": "Caleb Martin",
  "team": "Dallas",
  "opp": "Phoenix",
- "lines": {},
+ "lines": {
+  "PA": {
+   "line": 8.5,
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "PTS": {
+   "line": 5.5,
+   "price": 1.88,
+   "book": "neds",
+   "price_over": 1.88,
+   "price_under": 1.87
+  },
+  "PRA": {
+   "line": 12.5,
+   "price": 2.02,
+   "book": "sportsbet",
+   "price_over": 2.02,
+   "price_under": 1.76
+  },
+  "AST": {
+   "line": 2.5,
+   "price": 2.2,
+   "book": "pointsbetau",
+   "price_over": 2.2,
+   "price_under": 1.67
+  },
+  "RA": {
+   "line": 6.5,
+   "price": 2.05,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74
+  },
+  "PR": {
+   "line": 9.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "3PM": {
+   "line": 0.5,
+   "price": 1.42,
+   "book": "pointsbetau",
+   "price_over": 1.42,
+   "price_under": 2.75
+  },
+  "REB": {
+   "line": 3.5,
+   "price": 1.78,
+   "book": "neds",
+   "price_over": 1.78,
+   "price_under": 1.98
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-24",
@@ -126,6 +183,27 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 5.5,
+   "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 3.5,
+   "over": 5,
+   "n": 5
+  },
+  "AST": {
+   "line": 2.5,
+   "over": 5,
+   "n": 5
+  },
+  "3PM": {
+   "line": 0.5,
+   "over": 4,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
