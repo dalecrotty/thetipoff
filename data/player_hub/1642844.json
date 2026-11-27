@@ -2,8 +2,67 @@
  "player_id": 1642844,
  "player": "Dylan Harper",
  "team": "San Antonio",
- "projections": {},
- "minutes": null,
+ "projections": {
+  "3PM": {
+   "mean": 1.27,
+   "floor": 0.0,
+   "ceiling": 2.99
+  },
+  "AST": {
+   "mean": 4.63,
+   "floor": 1.13,
+   "ceiling": 8.52
+  },
+  "BLK": {
+   "mean": 0.19,
+   "floor": 0.0,
+   "ceiling": 0.98
+  },
+  "PTS": {
+   "mean": 18.16,
+   "floor": 7.73,
+   "ceiling": 28.34
+  },
+  "REB": {
+   "mean": 5.43,
+   "floor": 1.97,
+   "ceiling": 8.92
+  },
+  "STL": {
+   "mean": 1.03,
+   "floor": 0.0,
+   "ceiling": 2.86
+  },
+  "TOV": {
+   "mean": 1.78,
+   "floor": 0.0,
+   "ceiling": 3.81
+  },
+  "PRA": {
+   "mean": 28.23,
+   "floor": 15.97,
+   "ceiling": 39.74
+  },
+  "PR": {
+   "mean": 23.6,
+   "floor": 11.93,
+   "ceiling": 34.52
+  },
+  "PA": {
+   "mean": 22.8,
+   "floor": 11.92,
+   "ceiling": 33.75
+  },
+  "RA": {
+   "mean": 10.07,
+   "floor": 4.01,
+   "ceiling": 15.62
+  }
+ },
+ "minutes": {
+  "value": 30,
+  "source": "model"
+ },
  "splits": {
   "season": {
    "games": 108,
@@ -3005,5 +3064,5 @@
   }
  ],
  "with_without_tonight": [],
- "opp": null
+ "opp": "LA Lakers"
 }
