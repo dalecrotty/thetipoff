@@ -1911,10 +1911,10 @@ async function initRecord() {
   const t = d.tips;
   const tOpen = t?.averages_public, tLater = dropsLater(t);
   $("#rtip").innerHTML = `
-    <div class="card"><div class="k">Avg CLV</div><div class="v">${tOpen ? pct(t.avg_clv) : "—"}</div><div class="r">${tOpen ? `${t.n_clv ?? 0} graded at the close` : tLater}</div></div>
-    <div class="card"><div class="k">Beat the close</div><div class="v">${tOpen ? pct(t.beat_close) : "—"}</div>${tOpen ? "" : `<div class="r">${tLater}</div>`}</div>
     <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="/tip">Every Drop →</a></div></div>
-    <div class="card"><div class="k">Units</div><div class="v ${unitsCls(t?.units)}">${unitsTxt(t?.units ?? 0)}</div><div class="r">1 unit on every Drop</div></div>`;
+    <div class="card"><div class="k">Units</div><div class="v ${unitsCls(t?.units)}">${unitsTxt(t?.units ?? 0)}</div><div class="r">1 unit on every Drop</div></div>
+    <div class="card"><div class="k">Line moved our way</div><div class="v">${tOpen ? pct(t.beat_close) : "—"}</div><div class="r">${tOpen ? `of ${t.n_clv ?? 0} graded at the close` : tLater}</div></div>
+    <div class="card"><div class="k">Avg CLV</div><div class="v">${tOpen ? pct(t.avg_clv) : "—"}</div>${tOpen ? `<div class="r">the market's move towards our side</div>` : `<div class="r">${tLater}</div>`}</div>`;
   const e = d.edges || {};
   $("#redges").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${pct(e.avg_clv)}</div><div class="r">${e.n_clv ?? 0} graded at the close</div></div>
@@ -1986,12 +1986,10 @@ async function initTip() {
     : `The record starts on opening night, 20 October (21 October AEDT). Preseason Drops are a trial run: listed, never counted. Each Drop names its bookmaker; a US book stands in where no Australian book priced the player.`;
   const open = s.averages_public, later = `<div class="r">${dropsLater(s)}</div>`;
   $("#tcards").innerHTML = `
-    <div class="card"><div class="k">Avg CLV</div><div class="v">${open ? pct(s.avg_clv) : "—"}</div>${open ? `<div class="r">${s.n_clv} graded at the close</div>` : later}</div>
-    <div class="card"><div class="k">Beat the close</div><div class="v">${open ? pct(s.beat_close) : "—"}</div>${open ? "" : later}</div>
     <div class="card"><div class="k">Covered–not</div><div class="v">${s.wins}–${s.losses}</div><div class="r">${s.pushes} push · ${s.voids} void</div></div>
     <div class="card"><div class="k">Units</div><div class="v ${unitsCls(s.units)}">${unitsTxt(s.units ?? 0)}</div><div class="r">1 unit on every Drop · ${s.n_graded ?? 0} graded</div></div>
-    <div class="card"><div class="k">Hit rate</div><div class="v">${open ? pct(s.hit_rate) : "—"}</div>${open ? "" : later}</div>
-    <div class="card"><div class="k">Return (flat)</div><div class="v">${open ? pct(s.roi) : "—"}</div>${open ? "" : later}</div>`;
+    <div class="card"><div class="k">Return (flat)</div><div class="v">${open ? pct(s.roi) : "—"}</div>${open ? "" : later}</div>
+    <div class="card"><div class="k">Line moved our way</div><div class="v">${open ? pct(s.beat_close) : "—"}</div>${open ? `<div class="r">of ${s.n_clv} graded at the close · avg CLV ${pct(s.avg_clv)}</div>` : later}</div>`;
   const tb = $("#tips tbody");
   tb.innerHTML = tipsShown.length ? tipsShown.map(r => `<tr class="${r.trial ? "trial" : ""}">
       <td class="s dim">${auDay(dayAfter(r.slate_date))}${r.trial ? " · trial" : ""}</td>
@@ -2056,15 +2054,15 @@ async function initHome() {
     loadData("projections").catch(() => null),
     loadData("games").catch(() => null),
     loadJSON("data/track_record.json").catch(() => null)]);
-  // the record, in the open (brief §10): accuracy first, then the tip's CLV
+  // the record, in the open (brief §10): accuracy first, then the Drop's record and units (owner, 27 Nov 2026)
   const pts = ((trackRec?.calibration?.markets) || []).find(m => m.stat === "PTS");
   const ps = pts?.windows?.season || {};
   const ts = tips?.summary || {};
   $("#hRecord").innerHTML = ps.n ? `<div class="cards">
     <div class="card"><div class="k">Points: average miss</div><div class="v">${fmt(ps.mae)}</div><div class="r">${ps.n.toLocaleString("en-AU")} player games</div></div>
     <div class="card"><div class="k">Inside our range</div><div class="v">${pct(ps.coverage)}</div><div class="r">target 80%</div></div>
-    <div class="card"><div class="k">The Drop: avg CLV</div><div class="v">${ts.averages_public ? pct(ts.avg_clv) : "—"}</div><div class="r">${ts.averages_public ? `${ts.n_clv ?? 0} graded at the close` : dropsLater(ts)}</div></div>
-    <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="/track-record">Full record →</a></div></div></div>`
+    <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="/track-record">Full record →</a></div></div>
+    <div class="card"><div class="k">The Drop: units</div><div class="v ${unitsCls(ts.units)}">${unitsTxt(ts.units ?? 0)}</div><div class="r">${ts.averages_public ? `line moved our way on ${pct(ts.beat_close)}` : "1 unit on every Drop"}</div></div></div>`
     : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the Drop's closing-line value. <a href="/track-record">How it's graded →</a></p>`;
   const games = gd?.games || [];
   if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${slateDay(games[0].start)}`;
