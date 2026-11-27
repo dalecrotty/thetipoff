@@ -303,7 +303,9 @@ async function loadJSON(path) {
 let PLAYER_PAGES = {};
 const playerPagesReady = loadJSON("data/player_pages.json")
   .then(p => { if (p && p._full) PLAYER_PAGES = p; }).catch(() => {});
-const pHref = id => PLAYER_PAGES[String(id)] || `/player.html?id=${id}`;
+// clean addresses (27 Nov 2026): no ".html" in a link
+const cleanHref = u => String(u).replace(/(^|\/)index\.html(?=$|[?#])/, "$1").replace(/\.html(?=$|[?#])/, "");
+const pHref = id => cleanHref(PLAYER_PAGES[String(id)] || `/player?id=${id}`);
 const pLink = (id, name) => {
   const to = PLAYER_PAGES[String(id)];
   return to ? `<a href="${to}">${esc(name)}</a>` : esc(name);
@@ -812,7 +814,7 @@ async function initBoard() {
   if (csvBtn) {
     if (window.DATA_LOCKED) { csvBtn.textContent = "CSV: members"; csvBtn.title = "The CSV export is part of membership"; }
     csvBtn.onclick = async () => {
-      if (window.DATA_LOCKED) { location.href = "/api.html#members"; return; }
+      if (window.DATA_LOCKED) { location.href = "/api#members"; return; }
       const gd = await loadData("games").catch(() => null);
       const start = {};
       (gd?.games || []).forEach(g => { start[`${g.home} vs ${g.away}`] = g.start; });
@@ -1350,7 +1352,7 @@ async function initPlayer() {
 
     $("#gamelog tbody").innerHTML = games.slice().reverse().map(g => `<tr>
       <td class="s">${g.game
-        ? `<a href="/boxscore.html?g=${encodeURIComponent(g.game)}"
+        ? `<a href="/boxscore?g=${encodeURIComponent(g.game)}"
              target="_blank" rel="noopener" title="open box score">${g.date} ↗</a>`
         : `<span class="dim">${g.date}</span>`}</td>
       <td class="s">${teamBadge(g.opp)}${g.opp_tier
@@ -1560,7 +1562,7 @@ async function initWow() {
       const l = focalLine(g);
       return `<tr>
         <td class="s">${g.game
-          ? `<a href="/boxscore.html?g=${encodeURIComponent(g.game)}"
+          ? `<a href="/boxscore?g=${encodeURIComponent(g.game)}"
                target="_blank" rel="noopener">${g.date} ↗</a>`
           : `<span class="dim">${g.date}</span>`}</td>
         <td class="s">${teamBadge(g.opp)}</td>
@@ -1904,7 +1906,7 @@ async function initRecord() {
   $("#rtip").innerHTML = `
     <div class="card"><div class="k">Avg CLV</div><div class="v">${tOpen ? pct(t.avg_clv) : "—"}</div><div class="r">${tOpen ? `${t.n_clv ?? 0} graded at the close` : tLater}</div></div>
     <div class="card"><div class="k">Beat the close</div><div class="v">${tOpen ? pct(t.beat_close) : "—"}</div>${tOpen ? "" : `<div class="r">${tLater}</div>`}</div>
-    <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="/tip.html">Every Drop →</a></div></div>
+    <div class="card"><div class="k">Covered–not</div><div class="v">${t ? `${t.wins}–${t.losses}` : "0–0"}</div><div class="r"><a href="/tip">Every Drop →</a></div></div>
     <div class="card"><div class="k">Units</div><div class="v ${unitsCls(t?.units)}">${unitsTxt(t?.units ?? 0)}</div><div class="r">1 unit on every Drop</div></div>`;
   const e = d.edges || {};
   $("#redges").innerHTML = `
@@ -2055,14 +2057,14 @@ async function initHome() {
     <div class="card"><div class="k">Points: average miss</div><div class="v">${fmt(ps.mae)}</div><div class="r">${ps.n.toLocaleString("en-AU")} player games</div></div>
     <div class="card"><div class="k">Inside our range</div><div class="v">${pct(ps.coverage)}</div><div class="r">target 80%</div></div>
     <div class="card"><div class="k">The Drop: avg CLV</div><div class="v">${ts.averages_public ? pct(ts.avg_clv) : "—"}</div><div class="r">${ts.averages_public ? `${ts.n_clv ?? 0} graded at the close` : dropsLater(ts)}</div></div>
-    <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="/track-record.html">Full record →</a></div></div></div>`
-    : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the Drop's closing-line value. <a href="/track-record.html">How it's graded →</a></p>`;
+    <div class="card"><div class="k">The Drop: covered–not</div><div class="v">${ts.wins ?? 0}–${ts.losses ?? 0}</div><div class="r"><a href="/track-record">Full record →</a></div></div></div>`
+    : `<p class="dim">Every prediction is graded in the open from opening night, 20 October (21 October AEDT): how far off, whether the ranges hold, and the Drop's closing-line value. <a href="/track-record">How it's graded →</a></p>`;
   const games = gd?.games || [];
   if (games.length && games[0].start) $("#hday").textContent = `Tonight · ${slateDay(games[0].start)}`;
 
   const t = tips?.today;
   const rec = tips?.summary;
-  $("#hTip").innerHTML = `<div class="ph2"><span>The Drop</span><a href="/tip.html">Record →</a></div>` + (t
+  $("#hTip").innerHTML = `<div class="ph2"><span>The Drop</span><a href="/tip">Record →</a></div>` + (t
     ? `<div class="tipmini">
         <div class="who">${esc(t.player)}</div>
         <div class="bet">${esc(t.market_label)} ${t.side === "over" ? "Over" : "Under"} <b>${fmt(t.line)}</b> @ <b>${odds(t.price)}</b>, ${esc(t.book_label)} · ${fmt(t.stake ?? 1, 0)} unit</div>
@@ -2073,7 +2075,7 @@ async function initHome() {
 
   const rows = regionLines(board?.rows || []).map(favour).filter(r => r.edge != null && r.line != null && r.tier)
     .sort((a, b) => b.edge - a.edge).slice(0, 6);
-  $("#hEdges").innerHTML = `<div class="ph2"><span>Biggest edges tonight</span><a href="/predictions.html">All predictions →</a></div>` + (rows.length
+  $("#hEdges").innerHTML = `<div class="ph2"><span>Biggest edges tonight</span><a href="/predictions">All predictions →</a></div>` + (rows.length
     ? `<table class="mini"><tbody>${rows.map(r => `<tr>
         <td class="s">${pLink(r.player_id, r.player)} <span class="sm dim">${esc(STAT_WORD[r.stat] || r.stat)}</span></td>
         <td class="num"><span class="ours">${fmt(r.proj)}</span> <span class="dim">v ${fmt(r.line)}</span></td>
@@ -2093,8 +2095,8 @@ async function initHome() {
 /* a game's own page (dated, /nba/games/...), written by the pipeline; the
    board filtered to the game is linked from there */
 // absolute: these links are built on pages under /players/ and /nba/ too
-const gameHref = g => g.url || `/predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
-const boardHref = g => `/predictions.html?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
+const gameHref = g => g.url || `/predictions?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
+const boardHref = g => `/predictions?game=${encodeURIComponent(`${g.home} vs ${g.away}`)}`;
 const TEAM_NICK = { Atlanta: "Hawks", Boston: "Celtics", Brooklyn: "Nets", Charlotte: "Hornets",
   Chicago: "Bulls", Cleveland: "Cavaliers", Dallas: "Mavericks", Denver: "Nuggets", Detroit: "Pistons",
   "Golden State": "Warriors", Houston: "Rockets", Indiana: "Pacers", "LA Clippers": "Clippers",
@@ -2104,8 +2106,8 @@ const TEAM_NICK = { Atlanta: "Hawks", Boston: "Celtics", Brooklyn: "Nets", Charl
   "San Antonio": "Spurs", Toronto: "Raptors", Utah: "Jazz", Washington: "Wizards" };
 const nick = t => TEAM_NICK[t] || t;
 const slugOf = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-const teamHref = t => `teams/${slugOf(t)}.html`;
-const pairHref = g => { const [x, y] = [nick(g.home), nick(g.away)].sort(); return `games/${slugOf(x)}-vs-${slugOf(y)}.html`; };
+const teamHref = t => `teams/${slugOf(t)}`;
+const pairHref = g => { const [x, y] = [nick(g.home), nick(g.away)].sort(); return `games/${slugOf(x)}-vs-${slugOf(y)}`; };
 
 /* ---------- Game trends: shared ----------
    One row per team per completed game (data/trends.json, last season
@@ -2572,7 +2574,7 @@ function signupBox(where) {
       <button class="su-btn" type="submit">Sign up</button>
     </form>
     <p class="su-msg" role="status"></p>
-    <p class="su-fine">Used only to send the offer when memberships open. The early-bird season pass is ${US ? "US$49 or A$69" : "A$69 or US$49"} for season one (1 January to the Finals); there is no lifetime rate. <a href="/privacy.html">Privacy</a></p>`;
+    <p class="su-fine">Used only to send the offer when memberships open. The early-bird season pass is ${US ? "US$49 or A$69" : "A$69 or US$49"} for season one (1 January to the Finals); there is no lifetime rate. <a href="/privacy">Privacy</a></p>`;
   const form = el.querySelector("form"), msg = el.querySelector(".su-msg"), btn = el.querySelector(".su-btn");
   if (signedUp()) { form.hidden = true; msg.textContent = ON_LIST; msg.className = "su-msg ok"; }
   let busy = false;
@@ -2612,7 +2614,7 @@ function signupBox(where) {
 
 // a box near the top of these pages too (owner, 10 Nov 2026), under the
 // page's opening paragraph
-const SIGNUP_TOP = [/^\/api\.html$/, /^\/nba\/tips-today\/?(index\.html)?$/, /^\/teams\/(?!index\.html$)[a-z0-9-]+\.html$/];
+const SIGNUP_TOP = [/^\/api(\.html)?$/, /^\/nba\/tips-today\/?(index\.html)?$/, /^\/teams\/(?!index(\.html)?$)[a-z0-9-]+(\.html)?$/];
 
 function mountSignup() {
   const foot = $("footer.rg");
