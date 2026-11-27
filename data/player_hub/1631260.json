@@ -4,14 +4,14 @@
  "team": "Milwaukee",
  "projections": {
   "3PM": {
-   "mean": 0.98,
+   "mean": 1.09,
    "floor": 0.0,
-   "ceiling": 2.86
+   "ceiling": 2.97
   },
   "AST": {
-   "mean": 0.58,
+   "mean": 0.65,
    "floor": 0.0,
-   "ceiling": 1.94
+   "ceiling": 2.01
   },
   "BLK": {
    "mean": 0.06,
@@ -19,48 +19,48 @@
    "ceiling": 0.95
   },
   "PTS": {
-   "mean": 3.21,
+   "mean": 3.58,
    "floor": 0.0,
-   "ceiling": 8.93
+   "ceiling": 9.29
   },
   "REB": {
-   "mean": 0.67,
+   "mean": 0.74,
    "floor": 0.0,
-   "ceiling": 2.88
+   "ceiling": 2.96
   },
   "STL": {
-   "mean": 0.11,
+   "mean": 0.12,
    "floor": 0.0,
-   "ceiling": 0.9
+   "ceiling": 0.92
   },
   "TOV": {
-   "mean": 0.32,
+   "mean": 0.35,
    "floor": 0.0,
-   "ceiling": 1.72
+   "ceiling": 1.75
   },
   "PRA": {
-   "mean": 4.47,
+   "mean": 4.97,
    "floor": 0.0,
-   "ceiling": 13.18
+   "ceiling": 13.69
   },
   "PR": {
-   "mean": 3.88,
+   "mean": 4.32,
    "floor": 0.0,
-   "ceiling": 12.0
+   "ceiling": 12.44
   },
   "PA": {
-   "mean": 3.8,
+   "mean": 4.23,
    "floor": 0.0,
-   "ceiling": 10.58
+   "ceiling": 11.01
   },
   "RA": {
-   "mean": 1.25,
+   "mean": 1.4,
    "floor": 0.0,
-   "ceiling": 4.56
+   "ceiling": 4.7
   }
  },
  "minutes": {
-  "value": 9,
+  "value": 10,
   "source": "model"
  },
  "splits": {
@@ -228,17 +228,17 @@
  "lines": {
   "PTS": {
    "line": 3.5,
-   "p_over": 0.474,
-   "p_under": 0.526,
-   "fair_over": 0.52,
-   "fair_under": 0.48,
-   "price_over": 1.8,
-   "price_under": 1.95,
-   "side": "under",
-   "price": 1.95,
+   "p_over": 0.511,
+   "p_under": 0.489,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
+   "side": "over",
+   "price": 1.85,
    "book": "tab",
-   "edge": 0.046,
-   "tier": "B"
+   "edge": 0.0043,
+   "tier": null
   }
  },
  "lines_us": {},
