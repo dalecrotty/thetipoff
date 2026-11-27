@@ -3,7 +3,57 @@
  "player": "Bones Hyland",
  "team": "Minnesota",
  "opp": "Memphis",
- "lines": {},
+ "lines": {
+  "REB": {
+   "line": 2.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.95,
+   "price_under": 1.8
+  },
+  "AST": {
+   "line": 4.5,
+   "price": 2.05,
+   "book": "neds",
+   "price_over": 1.7,
+   "price_under": 2.05
+  },
+  "RA": {
+   "line": 7.5,
+   "price": 1.69,
+   "book": "pointsbetau",
+   "price_over": 2.05,
+   "price_under": 1.69
+  },
+  "PRA": {
+   "line": 21.5,
+   "price": 1.87,
+   "book": "pointsbetau",
+   "price_over": 1.87,
+   "price_under": 1.87
+  },
+  "PA": {
+   "line": 19.5,
+   "price": 1.74,
+   "book": "pointsbetau",
+   "price_over": 1.95,
+   "price_under": 1.74
+  },
+  "PR": {
+   "line": 16.5,
+   "price": 1.85,
+   "book": "pointsbetau",
+   "price_over": 1.85,
+   "price_under": 1.85
+  },
+  "PTS": {
+   "line": 14.5,
+   "price": 1.82,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
+  }
+ },
  "recent_games": [
   {
    "date": "2026-11-25",
@@ -126,6 +176,22 @@
    "phase": "regular"
   }
  ],
- "hits": {},
+ "hits": {
+  "PTS": {
+   "line": 14.5,
+   "over": 0,
+   "n": 5
+  },
+  "REB": {
+   "line": 2.5,
+   "over": 0,
+   "n": 5
+  },
+  "AST": {
+   "line": 4.5,
+   "over": 1,
+   "n": 5
+  }
+ },
  "members": "https://thedropcoverage.com/api.html#members"
 }
