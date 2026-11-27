@@ -4,14 +4,14 @@
  "team": "Detroit",
  "projections": {
   "3PM": {
-   "mean": 0.22,
-   "floor": 0.07,
-   "ceiling": 0.22
+   "mean": 0.21,
+   "floor": 0.06,
+   "ceiling": 0.21
   },
   "AST": {
    "mean": 0.14,
    "floor": 0.0,
-   "ceiling": 1.47
+   "ceiling": 1.5
   },
   "BLK": {
    "mean": 0.0,
@@ -19,48 +19,48 @@
    "ceiling": 0.89
   },
   "PTS": {
-   "mean": 0.81,
+   "mean": 0.78,
    "floor": 0.0,
-   "ceiling": 6.48
+   "ceiling": 6.5
   },
   "REB": {
-   "mean": 0.27,
+   "mean": 0.26,
    "floor": 0.0,
-   "ceiling": 2.45
+   "ceiling": 2.47
   },
   "STL": {
    "mean": 0.02,
    "floor": 0.0,
-   "ceiling": 0.81
+   "ceiling": 0.82
   },
   "TOV": {
    "mean": 0.02,
    "floor": 0.0,
-   "ceiling": 1.4
+   "ceiling": 1.42
   },
   "PRA": {
-   "mean": 1.22,
+   "mean": 1.18,
    "floor": 0.0,
-   "ceiling": 9.94
+   "ceiling": 9.89
   },
   "PR": {
-   "mean": 1.08,
+   "mean": 1.04,
    "floor": 0.0,
-   "ceiling": 9.19
+   "ceiling": 9.15
   },
   "PA": {
-   "mean": 0.96,
+   "mean": 0.92,
    "floor": 0.0,
-   "ceiling": 7.74
+   "ceiling": 7.71
   },
   "RA": {
-   "mean": 0.41,
+   "mean": 0.39,
    "floor": 0.0,
-   "ceiling": 3.72
+   "ceiling": 3.7
   }
  },
  "minutes": {
-  "value": 3,
+  "value": 2,
   "source": "model"
  },
  "splits": {
@@ -228,8 +228,8 @@
  "lines": {
   "PTS": {
    "line": 5.5,
-   "p_over": 0.145,
-   "p_under": 0.855,
+   "p_over": 0.143,
+   "p_under": 0.857,
    "fair_over": 0.456,
    "fair_under": 0.544,
    "price_over": 2.05,
@@ -237,7 +237,7 @@
    "side": "under",
    "price": 1.72,
    "book": "tab",
-   "edge": 0.3117,
+   "edge": 0.3133,
    "tier": "A"
   }
  },
