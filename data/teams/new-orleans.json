@@ -4,7 +4,7 @@
   {
    "id": 1630530,
    "name": "Trey Murphy III",
-   "games": 130,
+   "games": 131,
    "med_min": 36.0
   },
   {
@@ -22,8 +22,8 @@
   {
    "id": 1630180,
    "name": "Saddiq Bey",
-   "games": 91,
-   "med_min": 31.7
+   "games": 92,
+   "med_min": 31.4
   },
   {
    "id": 1627749,
@@ -34,25 +34,25 @@
   {
    "id": 1629627,
    "name": "Zion Williamson",
-   "games": 109,
+   "games": 110,
    "med_min": 30.0
   },
   {
    "id": 1630529,
    "name": "Herbert Jones",
-   "games": 95,
+   "games": 96,
    "med_min": 30.0
+  },
+  {
+   "id": 1642847,
+   "name": "Jeremiah Fears",
+   "games": 102,
+   "med_min": 26.6
   },
   {
    "id": 1642490,
    "name": "Josh Oduro",
    "games": 3,
-   "med_min": 26.5
-  },
-  {
-   "id": 1642847,
-   "name": "Jeremiah Fears",
-   "games": 101,
    "med_min": 26.5
   },
   {
@@ -64,13 +64,13 @@
   {
    "id": 1642852,
    "name": "Derik Queen",
-   "games": 100,
-   "med_min": 24.7
+   "games": 101,
+   "med_min": 24.6
   },
   {
    "id": 1629673,
    "name": "Jordan Poole",
-   "games": 52,
+   "games": 53,
    "med_min": 24.5
   },
   {
@@ -94,7 +94,7 @@
   {
    "id": 1642274,
    "name": "Yves Missi",
-   "games": 147,
+   "games": 148,
    "med_min": 24.0
   },
   {
@@ -154,8 +154,8 @@
   {
    "id": 1630570,
    "name": "Trendon Watford",
-   "games": 6,
-   "med_min": 17.5
+   "games": 7,
+   "med_min": 18.0
   },
   {
    "id": 1631255,
@@ -30220,6 +30220,151 @@
      "FGM": 10.0,
      "FGA": 18.0,
      "3PA": 0.0,
+     "FTA": 5.0,
+     "starter": true
+    }
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "season": "2026-27",
+   "phase": "regular",
+   "opp": "LA Clippers",
+   "venue": "R",
+   "game": "2026-11-27_la-clippers_vs_new-orleans",
+   "lines": {
+    "1642852": {
+     "min": 16.0,
+     "PTS": 11.0,
+     "REB": 8.0,
+     "AST": 2.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 1.0,
+     "FGM": 5.0,
+     "FGA": 8.0,
+     "3PA": 0.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630529": {
+     "min": 34.0,
+     "PTS": 7.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 1.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 3.0,
+     "FGM": 2.0,
+     "FGA": 6.0,
+     "3PA": 3.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1642847": {
+     "min": 28.0,
+     "PTS": 11.0,
+     "REB": 1.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 3.0,
+     "BLK": 0.0,
+     "TOV": 4.0,
+     "FGM": 4.0,
+     "FGA": 14.0,
+     "3PA": 4.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1629673": {
+     "min": 23.0,
+     "PTS": 16.0,
+     "REB": 5.0,
+     "AST": 2.0,
+     "3PM": 3.0,
+     "STL": 1.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 4.0,
+     "FGA": 10.0,
+     "3PA": 5.0,
+     "FTA": 5.0,
+     "starter": false
+    },
+    "1630180": {
+     "min": 25.0,
+     "PTS": 8.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 3.0,
+     "FGA": 11.0,
+     "3PA": 7.0,
+     "FTA": 2.0,
+     "starter": false
+    },
+    "1630570": {
+     "min": 18.0,
+     "PTS": 0.0,
+     "REB": 6.0,
+     "AST": 3.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 0.0,
+     "FGA": 2.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": false
+    },
+    "1630530": {
+     "min": 34.0,
+     "PTS": 25.0,
+     "REB": 2.0,
+     "AST": 0.0,
+     "3PM": 3.0,
+     "STL": 6.0,
+     "BLK": 0.0,
+     "TOV": 1.0,
+     "FGM": 9.0,
+     "FGA": 16.0,
+     "3PA": 9.0,
+     "FTA": 4.0,
+     "starter": true
+    },
+    "1642274": {
+     "min": 31.0,
+     "PTS": 2.0,
+     "REB": 12.0,
+     "AST": 4.0,
+     "3PM": 0.0,
+     "STL": 0.0,
+     "BLK": 1.0,
+     "TOV": 0.0,
+     "FGM": 1.0,
+     "FGA": 6.0,
+     "3PA": 0.0,
+     "FTA": 0.0,
+     "starter": true
+    },
+    "1629627": {
+     "min": 31.0,
+     "PTS": 25.0,
+     "REB": 7.0,
+     "AST": 5.0,
+     "3PM": 0.0,
+     "STL": 1.0,
+     "BLK": 1.0,
+     "TOV": 3.0,
+     "FGM": 11.0,
+     "FGA": 15.0,
+     "3PA": 2.0,
      "FTA": 5.0,
      "starter": true
     }

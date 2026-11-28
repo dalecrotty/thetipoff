@@ -2,66 +2,33 @@
  "player_id": 1642843,
  "player": "Cooper Flagg",
  "team": "Dallas",
- "opp": "Phoenix",
- "lines": {
-  "PR": {
-   "line": 33.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PRA": {
-   "line": 40.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.83
-  },
-  "PTS": {
-   "line": 26.5,
-   "price": 1.9,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.9
-  },
-  "PA": {
-   "line": 33.5,
-   "price": 1.83,
-   "book": "pointsbetau",
-   "price_over": 1.9,
-   "price_under": 1.83
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 2.0,
-   "book": "pointsbetau",
-   "price_over": 1.77,
-   "price_under": 2.0
-  },
-  "REB": {
-   "line": 6.5,
-   "price": 2.0,
-   "book": "unibet",
-   "price_over": 1.7,
-   "price_under": 2.0
-  },
-  "RA": {
-   "line": 13.5,
-   "price": 1.93,
-   "book": "sportsbet",
-   "price_over": 1.83,
-   "price_under": 1.93
-  },
-  "AST": {
-   "line": 6.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.85,
-   "price_under": 1.9
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-11-27_dallas_vs_phoenix",
+   "starter": true,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 42.0,
+   "PTS": 34.0,
+   "REB": 7.0,
+   "AST": 8.0,
+   "3PM": 1.0,
+   "STL": 5.0,
+   "BLK": 4.0,
+   "TOV": 2.0,
+   "FGM": 13.0,
+   "FGA": 27.0,
+   "3PA": 4.0,
+   "FTA": 8.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-24",
    "opp": "Denver",
@@ -70,7 +37,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 31.0,
    "PTS": 24.0,
    "REB": 6.0,
@@ -157,53 +124,8 @@
    "FTA": 8.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-15",
-   "opp": "Boston",
-   "venue": "R",
-   "game": "2026-11-15_boston_vs_dallas",
-   "starter": true,
-   "rest": "0",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 27.0,
-   "PTS": 17.0,
-   "REB": 3.0,
-   "AST": 4.0,
-   "3PM": 2.0,
-   "STL": 1.0,
-   "BLK": 1.0,
-   "TOV": 3.0,
-   "FGM": 5.0,
-   "FGA": 15.0,
-   "3PA": 6.0,
-   "FTA": 5.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 26.5,
-   "over": 2,
-   "n": 5
-  },
-  "REB": {
-   "line": 6.5,
-   "over": 0,
-   "n": 5
-  },
-  "AST": {
-   "line": 6.5,
-   "over": 3,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 4,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

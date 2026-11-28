@@ -2,38 +2,48 @@
  "player_id": 1626162,
  "player": "Kelly Oubre Jr.",
  "team": "Indiana",
- "opp": "Philadelphia",
+ "opp": "Chicago",
  "lines": {
-  "PR": {
-   "line": 16.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.82
-  },
-  "PTS": {
-   "line": 12.5,
-   "price": 1.83,
-   "book": "unibet",
-   "price_over": 1.83,
-   "price_under": 1.85
-  },
-  "REB": {
-   "line": 3.5,
-   "price": 1.76,
-   "book": "unibet",
-   "price_over": 1.76,
-   "price_under": 1.92
-  },
   "3PM": {
    "line": 1.5,
-   "price": 1.68,
-   "book": "unibet",
-   "price_over": 2.04,
-   "price_under": 1.68
+   "price": 1.72,
+   "book": "neds",
+   "price_over": 1.98,
+   "price_under": 1.72
+  },
+  "PTS": {
+   "line": 13.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-11-27_indiana_vs_philadelphia",
+   "starter": true,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 17.0,
+   "PTS": 8.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 6.0,
+   "3PA": 2.0,
+   "FTA": 9.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-23",
    "opp": "Oklahoma City",
@@ -66,7 +76,7 @@
    "starter": true,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Top 10",
+   "opp_tier": "Middle 10",
    "min": 27.0,
    "PTS": 15.0,
    "REB": 5.0,
@@ -129,46 +139,17 @@
    "FTA": 1.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-15",
-   "opp": "Philadelphia",
-   "venue": "R",
-   "game": "2026-11-15_indiana_vs_philadelphia",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 29.0,
-   "PTS": 16.0,
-   "REB": 4.0,
-   "AST": 2.0,
-   "3PM": 2.0,
-   "STL": 1.0,
-   "BLK": 1.0,
-   "TOV": 3.0,
-   "FGM": 6.0,
-   "FGA": 11.0,
-   "3PA": 5.0,
-   "FTA": 2.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 12.5,
-   "over": 5,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 5,
+   "line": 13.5,
+   "over": 4,
    "n": 5
   },
   "3PM": {
    "line": 1.5,
-   "over": 4,
+   "over": 3,
    "n": 5
   }
  },

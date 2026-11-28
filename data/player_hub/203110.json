@@ -2,66 +2,33 @@
  "player_id": 203110,
  "player": "Draymond Green",
  "team": "Golden State",
- "opp": "Portland",
- "lines": {
-  "AST": {
-   "line": 4.5,
-   "price": 1.75,
-   "book": "neds",
-   "price_over": 1.75,
-   "price_under": 2.02
-  },
-  "RA": {
-   "line": 8.5,
-   "price": 1.58,
-   "book": "neds",
-   "price_over": 1.58,
-   "price_under": 2.3
-  },
-  "PA": {
-   "line": 10.5,
-   "price": 1.91,
-   "book": "neds",
-   "price_over": 1.91,
-   "price_under": 1.83
-  },
-  "PRA": {
-   "line": 14.5,
-   "price": 1.75,
-   "book": "neds",
-   "price_over": 1.75,
-   "price_under": 2.0
-  },
-  "PTS": {
-   "line": 5.5,
-   "price": 1.85,
-   "book": "neds",
-   "price_over": 1.88,
-   "price_under": 1.85
-  },
-  "3PM": {
-   "line": 0.5,
-   "price": 2.5,
-   "book": "pointsbetau",
-   "price_over": 1.5,
-   "price_under": 2.5
-  },
-  "PR": {
-   "line": 9.5,
-   "price": 2.02,
-   "book": "sportsbet",
-   "price_over": 1.76,
-   "price_under": 2.02
-  },
-  "REB": {
-   "line": 4.5,
-   "price": 1.82,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.82
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "Portland",
+   "venue": "R",
+   "game": "2026-11-27_golden-state_vs_portland",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 27.0,
+   "PTS": 3.0,
+   "REB": 5.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 1.0,
+   "FGA": 7.0,
+   "3PA": 3.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-25",
    "opp": "Sacramento",
@@ -94,7 +61,7 @@
    "starter": true,
    "rest": "3",
    "result": "W",
-   "opp_tier": "Top 10",
+   "opp_tier": "Middle 10",
    "min": 27.0,
    "PTS": 9.0,
    "REB": 6.0,
@@ -157,53 +124,8 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-13",
-   "opp": "San Antonio",
-   "venue": "R",
-   "game": "2026-11-13_golden-state_vs_san-antonio",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 16.0,
-   "PTS": 4.0,
-   "REB": 3.0,
-   "AST": 3.0,
-   "3PM": 0.0,
-   "STL": 1.0,
-   "BLK": 0.0,
-   "TOV": 2.0,
-   "FGM": 2.0,
-   "FGA": 5.0,
-   "3PA": 2.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 5.5,
-   "over": 2,
-   "n": 5
-  },
-  "REB": {
-   "line": 4.5,
-   "over": 2,
-   "n": 5
-  },
-  "AST": {
-   "line": 4.5,
-   "over": 2,
-   "n": 5
-  },
-  "3PM": {
-   "line": 0.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

@@ -2,66 +2,33 @@
  "player_id": 1642264,
  "player": "Stephon Castle",
  "team": "San Antonio",
- "opp": "LA Lakers",
- "lines": {
-  "REB": {
-   "line": 5.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
-  },
-  "RA": {
-   "line": 12.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "PRA": {
-   "line": 29.5,
-   "price": 1.96,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "AST": {
-   "line": 7.5,
-   "price": 1.72,
-   "book": "neds",
-   "price_over": 2.05,
-   "price_under": 1.72
-  },
-  "PR": {
-   "line": 22.5,
-   "price": 1.85,
-   "book": "sportsbet",
-   "price_over": 1.9,
-   "price_under": 1.85
-  },
-  "PA": {
-   "line": 23.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.8,
-   "price_under": 1.87
-  },
-  "3PM": {
-   "line": 1.5,
-   "price": 2.2,
-   "book": "pointsbetau",
-   "price_over": 1.67,
-   "price_under": 2.2
-  },
-  "PTS": {
-   "line": 16.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-11-27_la-lakers_vs_san-antonio",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Top 10",
+   "min": 36.0,
+   "PTS": 26.0,
+   "REB": 4.0,
+   "AST": 9.0,
+   "3PM": 4.0,
+   "STL": 2.0,
+   "BLK": 1.0,
+   "TOV": 6.0,
+   "FGM": 10.0,
+   "FGA": 15.0,
+   "3PA": 7.0,
+   "FTA": 3.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-25",
    "opp": "Portland",
@@ -157,53 +124,8 @@
    "FTA": 5.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-17",
-   "opp": "Detroit",
-   "venue": "H",
-   "game": "2026-11-17_detroit_vs_san-antonio",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 31.0,
-   "PTS": 10.0,
-   "REB": 2.0,
-   "AST": 7.0,
-   "3PM": 2.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 3.0,
-   "FGM": 3.0,
-   "FGA": 11.0,
-   "3PA": 5.0,
-   "FTA": 4.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 16.5,
-   "over": 4,
-   "n": 5
-  },
-  "REB": {
-   "line": 5.5,
-   "over": 3,
-   "n": 5
-  },
-  "AST": {
-   "line": 7.5,
-   "over": 3,
-   "n": 5
-  },
-  "3PM": {
-   "line": 1.5,
-   "over": 5,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

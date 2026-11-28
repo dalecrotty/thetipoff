@@ -2,38 +2,33 @@
  "player_id": 1642258,
  "player": "Zaccharie Risacher",
  "team": "Dallas",
- "opp": "Phoenix",
- "lines": {
-  "REB": {
-   "line": 4.5,
-   "price": 2.15,
-   "book": "pointsbetau",
-   "price_over": 2.15,
-   "price_under": 1.69
-  },
-  "PR": {
-   "line": 13.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.87
-  },
-  "PTS": {
-   "line": 9.5,
-   "price": 2.05,
-   "book": "pointsbetau",
-   "price_over": 2.05,
-   "price_under": 1.8
-  },
-  "3PM": {
-   "line": 0.5,
-   "price": 1.56,
-   "book": "pointsbetau",
-   "price_over": 1.56,
-   "price_under": 2.4
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-11-27_dallas_vs_phoenix",
+   "starter": true,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 31.0,
+   "PTS": 10.0,
+   "REB": 6.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 2.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 9.0,
+   "3PA": 2.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-24",
    "opp": "Denver",
@@ -42,7 +37,7 @@
    "starter": true,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 21.0,
    "PTS": 12.0,
    "REB": 6.0,
@@ -129,48 +124,8 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-15",
-   "opp": "Boston",
-   "venue": "R",
-   "game": "2026-11-15_boston_vs_dallas",
-   "starter": false,
-   "rest": "0",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 27.0,
-   "PTS": 18.0,
-   "REB": 5.0,
-   "AST": 0.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 8.0,
-   "FGA": 9.0,
-   "3PA": 2.0,
-   "FTA": 2.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 9.5,
-   "over": 4,
-   "n": 5
-  },
-  "REB": {
-   "line": 4.5,
-   "over": 4,
-   "n": 5
-  },
-  "3PM": {
-   "line": 0.5,
-   "over": 4,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

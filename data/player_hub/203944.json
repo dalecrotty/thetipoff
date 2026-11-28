@@ -2,21 +2,28 @@
  "player_id": 203944,
  "player": "Julius Randle",
  "team": "Brooklyn",
- "opp": "Toronto",
+ "opp": "Charlotte",
  "lines": {
+  "REB": {
+   "line": 6.5,
+   "price": 1.7,
+   "book": "neds",
+   "price_over": 2.05,
+   "price_under": 1.7
+  },
   "PTS": {
    "line": 19.5,
-   "price": 1.87,
-   "book": "pointsbetau",
-   "price_over": 1.87,
-   "price_under": 1.95
+   "price": 1.83,
+   "book": "neds",
+   "price_over": 1.83,
+   "price_under": 1.91
   },
   "PA": {
    "line": 24.5,
-   "price": 1.92,
+   "price": 1.88,
    "book": "sportsbet",
-   "price_over": 1.92,
-   "price_under": 1.84
+   "price_over": 1.88,
+   "price_under": 1.88
   },
   "PR": {
    "line": 26.5,
@@ -25,12 +32,12 @@
    "price_over": 1.92,
    "price_under": 1.84
   },
-  "AST": {
-   "line": 4.5,
-   "price": 1.76,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.76
+  "RA": {
+   "line": 10.5,
+   "price": 1.93,
+   "book": "sportsbet",
+   "price_over": 1.83,
+   "price_under": 1.93
   },
   "PRA": {
    "line": 30.5,
@@ -39,29 +46,46 @@
    "price_over": 1.83,
    "price_under": 1.9
   },
-  "REB": {
-   "line": 6.5,
-   "price": 1.77,
-   "book": "pointsbetau",
-   "price_over": 2.0,
-   "price_under": 1.77
+  "AST": {
+   "line": 4.5,
+   "price": 1.8,
+   "book": "neds",
+   "price_over": 1.94,
+   "price_under": 1.8
   },
   "3PM": {
    "line": 1.5,
-   "price": 2.1,
+   "price": 2.15,
    "book": "sportsbet",
-   "price_over": 2.1,
-   "price_under": 1.68
-  },
-  "RA": {
-   "line": 10.5,
-   "price": 1.94,
-   "book": "unibet",
-   "price_over": 1.75,
-   "price_under": 1.94
+   "price_over": 2.15,
+   "price_under": 1.64
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2026-11-27_brooklyn_vs_toronto",
+   "starter": true,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 31.0,
+   "PTS": 21.0,
+   "REB": 5.0,
+   "AST": 5.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 2.0,
+   "FGM": 8.0,
+   "FGA": 18.0,
+   "3PA": 5.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-25",
    "opp": "Milwaukee",
@@ -157,30 +181,6 @@
    "FTA": 4.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-16",
-   "opp": "Philadelphia",
-   "venue": "H",
-   "game": "2026-11-16_brooklyn_vs_philadelphia",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 34.0,
-   "PTS": 33.0,
-   "REB": 6.0,
-   "AST": 1.0,
-   "3PM": 2.0,
-   "STL": 2.0,
-   "BLK": 1.0,
-   "TOV": 1.0,
-   "FGM": 13.0,
-   "FGA": 20.0,
-   "3PA": 4.0,
-   "FTA": 5.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
@@ -196,12 +196,12 @@
   },
   "AST": {
    "line": 4.5,
-   "over": 1,
+   "over": 2,
    "n": 5
   },
   "3PM": {
    "line": 1.5,
-   "over": 4,
+   "over": 3,
    "n": 5
   }
  },

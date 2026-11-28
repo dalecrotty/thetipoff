@@ -2,66 +2,33 @@
  "player_id": 201950,
  "player": "Jrue Holiday",
  "team": "Portland",
- "opp": "Golden State",
- "lines": {
-  "RA": {
-   "line": 9.5,
-   "price": 1.68,
-   "book": "neds",
-   "price_over": 1.68,
-   "price_under": 2.1
-  },
-  "PRA": {
-   "line": 25.5,
-   "price": 1.8,
-   "book": "unibet",
-   "price_over": 1.8,
-   "price_under": 1.88
-  },
-  "PA": {
-   "line": 21.5,
-   "price": 1.89,
-   "book": "unibet",
-   "price_over": 1.89,
-   "price_under": 1.79
-  },
-  "PR": {
-   "line": 20.5,
-   "price": 1.93,
-   "book": "unibet",
-   "price_over": 1.93,
-   "price_under": 1.76
-  },
-  "PTS": {
-   "line": 15.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.83
-  },
-  "3PM": {
-   "line": 2.5,
-   "price": 2.0,
-   "book": "neds",
-   "price_over": 2.0,
-   "price_under": 1.7
-  },
-  "AST": {
-   "line": 5.5,
-   "price": 1.85,
-   "book": "unibet",
-   "price_over": 1.85,
-   "price_under": 1.83
-  },
-  "REB": {
-   "line": 4.5,
-   "price": 2.05,
-   "book": "sportsbet",
-   "price_over": 2.05,
-   "price_under": 1.74
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "Golden State",
+   "venue": "H",
+   "game": "2026-11-27_golden-state_vs_portland",
+   "starter": true,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 34.0,
+   "PTS": 12.0,
+   "REB": 4.0,
+   "AST": 6.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 5.0,
+   "FGA": 11.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-25",
    "opp": "San Antonio",
@@ -118,7 +85,7 @@
    "starter": false,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Top 10",
+   "opp_tier": "Middle 10",
    "min": 31.0,
    "PTS": 13.0,
    "REB": 9.0,
@@ -157,53 +124,8 @@
    "FTA": 5.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-17",
-   "opp": "Minnesota",
-   "venue": "R",
-   "game": "2026-11-17_minnesota_vs_portland",
-   "starter": false,
-   "rest": "0",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 31.0,
-   "PTS": 23.0,
-   "REB": 5.0,
-   "AST": 6.0,
-   "3PM": 5.0,
-   "STL": 2.0,
-   "BLK": 1.0,
-   "TOV": 2.0,
-   "FGM": 7.0,
-   "FGA": 19.0,
-   "3PA": 9.0,
-   "FTA": 6.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 15.5,
-   "over": 3,
-   "n": 5
-  },
-  "REB": {
-   "line": 4.5,
-   "over": 3,
-   "n": 5
-  },
-  "AST": {
-   "line": 5.5,
-   "over": 4,
-   "n": 5
-  },
-  "3PM": {
-   "line": 2.5,
-   "over": 3,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

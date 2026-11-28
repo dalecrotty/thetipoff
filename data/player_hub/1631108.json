@@ -2,17 +2,33 @@
  "player_id": 1631108,
  "player": "Max Christie",
  "team": "Dallas",
- "opp": "Phoenix",
- "lines": {
-  "PTS": {
-   "line": 5.5,
-   "price": 1.95,
-   "book": "tab",
-   "price_over": 1.8,
-   "price_under": 1.95
-  }
- },
+ "opp": null,
+ "lines": {},
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "Phoenix",
+   "venue": "R",
+   "game": "2026-11-27_dallas_vs_phoenix",
+   "starter": false,
+   "rest": "2",
+   "result": "W",
+   "opp_tier": "Middle 10",
+   "min": 20.0,
+   "PTS": 16.0,
+   "REB": 3.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 7.0,
+   "3PA": 4.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-24",
    "opp": "Denver",
@@ -21,7 +37,7 @@
    "starter": false,
    "rest": "1",
    "result": "W",
-   "opp_tier": "Middle 10",
+   "opp_tier": "Top 10",
    "min": 4.0,
    "PTS": 2.0,
    "REB": 1.0,
@@ -108,38 +124,8 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-12",
-   "opp": "Minnesota",
-   "venue": "R",
-   "game": "2026-11-12_dallas_vs_minnesota",
-   "starter": false,
-   "rest": "2",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 7.0,
-   "PTS": 3.0,
-   "REB": 2.0,
-   "AST": 0.0,
-   "3PM": 1.0,
-   "STL": 0.0,
-   "BLK": 1.0,
-   "TOV": 0.0,
-   "FGM": 1.0,
-   "FGA": 2.0,
-   "3PA": 2.0,
-   "FTA": 0.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 5.5,
-   "over": 1,
-   "n": 5
-  }
- },
+ "hits": {},
  "members": "https://thedropcoverage.com/api.html#members"
 }

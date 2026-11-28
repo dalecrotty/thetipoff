@@ -2,59 +2,55 @@
  "player_id": 1627826,
  "player": "Ivica Zubac",
  "team": "Indiana",
- "opp": "Philadelphia",
+ "opp": "Chicago",
  "lines": {
-  "RA": {
-   "line": 11.5,
-   "price": 1.93,
-   "book": "sportsbet",
-   "price_over": 1.93,
-   "price_under": 1.83
-  },
-  "PRA": {
-   "line": 23.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
   "REB": {
-   "line": 9.5,
-   "price": 2.05,
-   "book": "tab",
-   "price_over": 2.05,
-   "price_under": 1.72
+   "line": 8.5,
+   "price": 1.85,
+   "book": "neds",
+   "price_over": 1.85,
+   "price_under": 1.9
   },
   "PTS": {
-   "line": 12.5,
-   "price": 1.96,
-   "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.72
+   "line": 13.5,
+   "price": 1.92,
+   "book": "neds",
+   "price_over": 1.92,
+   "price_under": 1.82
   },
   "PR": {
-   "line": 21.5,
-   "price": 1.8,
-   "book": "sportsbet",
-   "price_over": 1.8,
-   "price_under": 1.96
-  },
-  "PA": {
-   "line": 14.5,
+   "line": 23.5,
    "price": 1.91,
-   "book": "unibet",
-   "price_over": 1.91,
-   "price_under": 1.78
-  },
-  "AST": {
-   "line": 1.5,
-   "price": 1.6,
-   "book": "tab",
-   "price_over": 1.6,
-   "price_under": 2.25
+   "book": "sportsbet",
+   "price_over": 1.85,
+   "price_under": 1.91
   }
  },
  "recent_games": [
+  {
+   "date": "2026-11-27",
+   "opp": "Philadelphia",
+   "venue": "H",
+   "game": "2026-11-27_indiana_vs_philadelphia",
+   "starter": true,
+   "rest": "3",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 24.0,
+   "PTS": 5.0,
+   "REB": 16.0,
+   "AST": 2.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 4.0,
+   "FGM": 2.0,
+   "FGA": 7.0,
+   "3PA": 0.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
   {
    "date": "2026-11-23",
    "opp": "Oklahoma City",
@@ -87,7 +83,7 @@
    "starter": true,
    "rest": "1",
    "result": "L",
-   "opp_tier": "Top 10",
+   "opp_tier": "Middle 10",
    "min": 31.0,
    "PTS": 10.0,
    "REB": 14.0,
@@ -150,46 +146,17 @@
    "FTA": 0.0,
    "season": "2026-27",
    "phase": "regular"
-  },
-  {
-   "date": "2026-11-15",
-   "opp": "Philadelphia",
-   "venue": "R",
-   "game": "2026-11-15_indiana_vs_philadelphia",
-   "starter": true,
-   "rest": "1",
-   "result": "L",
-   "opp_tier": "Top 10",
-   "min": 22.0,
-   "PTS": 8.0,
-   "REB": 5.0,
-   "AST": 2.0,
-   "3PM": 0.0,
-   "STL": 0.0,
-   "BLK": 0.0,
-   "TOV": 1.0,
-   "FGM": 3.0,
-   "FGA": 6.0,
-   "3PA": 0.0,
-   "FTA": 2.0,
-   "season": "2026-27",
-   "phase": "regular"
   }
  ],
  "hits": {
   "PTS": {
-   "line": 12.5,
+   "line": 13.5,
    "over": 2,
    "n": 5
   },
   "REB": {
-   "line": 9.5,
-   "over": 3,
-   "n": 5
-  },
-  "AST": {
-   "line": 1.5,
-   "over": 3,
+   "line": 8.5,
+   "over": 4,
    "n": 5
   }
  },
