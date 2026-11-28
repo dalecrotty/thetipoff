@@ -4,20 +4,6 @@
  "team": "Utah",
  "opp": "Denver",
  "lines": {
-  "AST": {
-   "line": 6.5,
-   "price": 2.02,
-   "book": "neds",
-   "price_over": 1.73,
-   "price_under": 2.02
-  },
-  "PA": {
-   "line": 27.5,
-   "price": 1.92,
-   "book": "unibet",
-   "price_over": 1.76,
-   "price_under": 1.92
-  },
   "PR": {
    "line": 23.5,
    "price": 1.96,
@@ -27,24 +13,10 @@
   },
   "REB": {
    "line": 3.5,
-   "price": 1.8,
-   "book": "pointsbetau",
-   "price_over": 1.95,
-   "price_under": 1.8
-  },
-  "PRA": {
-   "line": 30.5,
-   "price": 1.86,
-   "book": "sportsbet",
-   "price_over": 1.86,
-   "price_under": 1.9
-  },
-  "PTS": {
-   "line": 20.5,
-   "price": 1.87,
+   "price": 2.06,
    "book": "unibet",
-   "price_over": 1.81,
-   "price_under": 1.87
+   "price_over": 2.06,
+   "price_under": 1.66
   },
   "RA": {
    "line": 9.5,
@@ -53,12 +25,40 @@
    "price_over": 1.58,
    "price_under": 2.3
   },
+  "PTS": {
+   "line": 19.5,
+   "price": 1.87,
+   "book": "sportsbet",
+   "price_over": 1.87,
+   "price_under": 1.89
+  },
+  "PRA": {
+   "line": 30.5,
+   "price": 1.86,
+   "book": "sportsbet",
+   "price_over": 1.86,
+   "price_under": 1.9
+  },
+  "PA": {
+   "line": 27.5,
+   "price": 1.96,
+   "book": "sportsbet",
+   "price_over": 1.96,
+   "price_under": 1.8
+  },
   "3PM": {
    "line": 1.5,
    "price": 1.5,
    "book": "sportsbet",
    "price_over": 1.5,
    "price_under": 2.45
+  },
+  "AST": {
+   "line": 6.5,
+   "price": 1.73,
+   "book": "neds",
+   "price_over": 1.73,
+   "price_under": 2.02
   }
  },
  "recent_games": [
@@ -185,7 +185,7 @@
  ],
  "hits": {
   "PTS": {
-   "line": 20.5,
+   "line": 19.5,
    "over": 2,
    "n": 5
   },
