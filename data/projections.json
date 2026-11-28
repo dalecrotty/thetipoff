@@ -24229,7 +24229,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -29932,7 +29932,7 @@
    "prior": 2.18,
    "prior_at": "2026-11-26T18:46+00:00",
    "move_reason": "Cunningham, Duren, Robinson out",
-   "rank": 100
+   "rank": 101
   },
   {
    "player_id": 1628997,
@@ -31314,7 +31314,7 @@
    "prior": 1.85,
    "prior_at": "2026-11-26T18:46+00:00",
    "move_reason": "Cunningham, Duren, Robinson out",
-   "rank": 146
+   "rank": 145
   },
   {
    "player_id": 1630202,
@@ -36576,7 +36576,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 129
+   "rank": 130
   },
   {
    "player_id": 1626171,
@@ -39484,7 +39484,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 126
+   "rank": 125
   },
   {
    "player_id": 1631172,
@@ -53093,7 +53093,7 @@
    "pos": "SG",
    "pos_usual": "SG",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -53332,7 +53332,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 28
+   "rank": 27
   },
   {
    "player_id": 1641711,
@@ -58789,7 +58789,7 @@
    "pos": "SF",
    "pos_usual": "SF",
    "early": null,
-   "gate_status": "passed",
+   "gate_status": "failed:edge_below_tier",
    "us": null
   },
   {
@@ -64902,7 +64902,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 57
+   "rank": 56
   },
   {
    "player_id": 1630202,
@@ -71474,7 +71474,7 @@
    "prior": null,
    "prior_at": null,
    "move_reason": null,
-   "rank": 153
+   "rank": 152
   },
   {
    "player_id": 1630202,
@@ -71484,7 +71484,7 @@
    "game": "Atlanta vs Boston",
    "stat": "RA",
    "line": 7.5,
-   "price": 1.96,
+   "price": 1.8,
    "book": "sportsbet",
    "price_over": 1.96,
    "price_under": 1.8,
@@ -75124,6 +75124,10 @@
   {
    "run_at": "2026-11-28T00:36+00:00",
    "trigger": "lineups"
+  },
+  {
+   "run_at": "2026-11-28T00:37+00:00",
+   "trigger": "lines"
   }
  ]
 }
