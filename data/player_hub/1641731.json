@@ -227,37 +227,9 @@
  },
  "lines": {
   "PTS": {
-   "line": 8.5,
-   "p_over": 0.439,
-   "p_under": 0.561,
-   "fair_over": 0.493,
-   "fair_under": 0.507,
-   "price_over": 1.9,
-   "price_under": 1.85,
-   "side": "under",
-   "price": 1.85,
-   "book": "tab",
-   "edge": 0.0543,
-   "tier": "B"
-  },
-  "REB": {
-   "line": 3.5,
-   "p_over": 0.503,
-   "p_under": 0.497,
-   "fair_over": 0.547,
-   "fair_under": 0.453,
-   "price_over": 1.72,
-   "price_under": 2.08,
-   "side": "under",
-   "price": 2.08,
-   "book": "sportsbet",
-   "edge": 0.044,
-   "tier": "B"
-  },
-  "PR": {
-   "line": 11.5,
-   "p_over": 0.5,
-   "p_under": 0.5,
+   "line": 7.5,
+   "p_over": 0.517,
+   "p_under": 0.483,
    "fair_over": 0.479,
    "fair_under": 0.521,
    "price_over": 1.96,
@@ -265,11 +237,54 @@
    "side": "over",
    "price": 1.96,
    "book": "sportsbet",
-   "edge": 0.0209,
+   "edge": 0.0379,
+   "tier": "B"
+  },
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.503,
+   "p_under": 0.497,
+   "fair_over": 0.53,
+   "fair_under": 0.47,
+   "price_over": 1.73,
+   "price_under": 1.95,
+   "side": "under",
+   "price": 1.95,
+   "book": "unibet",
+   "edge": 0.0265,
+   "tier": null
+  },
+  "PR": {
+   "line": 11.5,
+   "p_over": 0.5,
+   "p_under": 0.5,
+   "fair_over": 0.499,
+   "fair_under": 0.501,
+   "price_over": 1.88,
+   "price_under": 1.87,
+   "side": "over",
+   "price": 1.88,
+   "book": "ladbrokes_au",
+   "edge": 0.0009,
    "tier": null
   }
  },
- "lines_us": {},
+ "lines_us": {
+  "REB": {
+   "line": 3.5,
+   "p_over": 0.503,
+   "p_under": 0.497,
+   "fair_over": 0.527,
+   "fair_under": 0.473,
+   "price_over": 1.78,
+   "price_under": 1.98,
+   "side": "under",
+   "price": 1.98,
+   "book": "betright",
+   "edge": 0.0232,
+   "tier": null
+  }
+ },
  "game_log": [
   {
    "date": "2024-10-24",
