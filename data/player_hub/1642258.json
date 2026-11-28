@@ -4,12 +4,47 @@
  "team": "Dallas",
  "opp": "Phoenix",
  "lines": {
+  "AST": {
+   "line": 1.5,
+   "price": 1.55,
+   "book": "tab",
+   "price_over": 2.35,
+   "price_under": 1.55
+  },
+  "3PM": {
+   "line": 1.5,
+   "price": 1.48,
+   "book": "tab",
+   "price_over": 2.55,
+   "price_under": 1.48
+  },
+  "RA": {
+   "line": 5.5,
+   "price": 1.9,
+   "book": "sportsbet",
+   "price_over": 1.9,
+   "price_under": 1.86
+  },
   "REB": {
    "line": 4.5,
-   "price": 2.15,
-   "book": "pointsbetau",
-   "price_over": 2.15,
-   "price_under": 1.69
+   "price": 2.08,
+   "book": "sportsbet",
+   "price_over": 2.08,
+   "price_under": 1.72
+  },
+  "PTS": {
+   "line": 9.5,
+   "price": 1.88,
+   "book": "unibet",
+   "price_over": 1.79,
+   "price_under": 1.88
+  },
+  "PRA": {
+   "line": 15.5,
+   "price": 1.85,
+   "book": "tab",
+   "price_over": 1.9,
+   "price_under": 1.85
   },
   "PR": {
    "line": 13.5,
@@ -18,19 +53,12 @@
    "price_over": 1.87,
    "price_under": 1.87
   },
-  "PTS": {
-   "line": 9.5,
-   "price": 2.05,
-   "book": "pointsbetau",
-   "price_over": 2.05,
-   "price_under": 1.8
-  },
-  "3PM": {
-   "line": 0.5,
-   "price": 1.56,
-   "book": "pointsbetau",
-   "price_over": 1.56,
-   "price_under": 2.4
+  "PA": {
+   "line": 10.5,
+   "price": 1.92,
+   "book": "sportsbet",
+   "price_over": 1.84,
+   "price_under": 1.92
   }
  },
  "recent_games": [
@@ -166,9 +194,14 @@
    "over": 4,
    "n": 5
   },
+  "AST": {
+   "line": 1.5,
+   "over": 1,
+   "n": 5
+  },
   "3PM": {
-   "line": 0.5,
-   "over": 4,
+   "line": 1.5,
+   "over": 0,
    "n": 5
   }
  },
