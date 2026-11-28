@@ -4,12 +4,26 @@
  "team": "Minnesota",
  "opp": "Memphis",
  "lines": {
+  "REB": {
+   "line": 4.5,
+   "price": 1.95,
+   "book": "neds",
+   "price_over": 1.8,
+   "price_under": 1.95
+  },
+  "PR": {
+   "line": 12.5,
+   "price": 1.67,
+   "book": "pointsbetau",
+   "price_over": 2.2,
+   "price_under": 1.67
+  },
   "PTS": {
    "line": 7.5,
-   "price": 1.75,
-   "book": "tab",
-   "price_over": 2.0,
-   "price_under": 1.75
+   "price": 1.74,
+   "book": "sportsbet",
+   "price_over": 2.05,
+   "price_under": 1.74
   }
  },
  "recent_games": [
@@ -138,6 +152,11 @@
   "PTS": {
    "line": 7.5,
    "over": 4,
+   "n": 5
+  },
+  "REB": {
+   "line": 4.5,
+   "over": 3,
    "n": 5
   }
  },

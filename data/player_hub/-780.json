@@ -2,44 +2,726 @@
  "player_id": -780,
  "player": "Nate Ament",
  "team": "Milwaukee",
- "opp": "Detroit",
+ "projections": {
+  "3PM": {
+   "mean": 1.06,
+   "floor": 0.0,
+   "ceiling": 2.94
+  },
+  "AST": {
+   "mean": 0.57,
+   "floor": 0.0,
+   "ceiling": 1.93
+  },
+  "BLK": {
+   "mean": 0.27,
+   "floor": 0.0,
+   "ceiling": 1.0
+  },
+  "PTS": {
+   "mean": 8.08,
+   "floor": 1.62,
+   "ceiling": 14.73
+  },
+  "REB": {
+   "mean": 3.41,
+   "floor": 0.97,
+   "ceiling": 6.13
+  },
+  "STL": {
+   "mean": 0.44,
+   "floor": 0.0,
+   "ceiling": 1.24
+  },
+  "TOV": {
+   "mean": 1.02,
+   "floor": 0.0,
+   "ceiling": 2.02
+  },
+  "PRA": {
+   "mean": 12.06,
+   "floor": 3.44,
+   "ceiling": 20.84
+  },
+  "PR": {
+   "mean": 11.49,
+   "floor": 3.43,
+   "ceiling": 19.44
+  },
+  "PA": {
+   "mean": 8.65,
+   "floor": 1.96,
+   "ceiling": 15.62
+  },
+  "RA": {
+   "mean": 3.98,
+   "floor": 1.23,
+   "ceiling": 7.28
+  }
+ },
+ "minutes": {
+  "value": 21,
+  "source": "model"
+ },
+ "splits": {
+  "season": {
+   "games": 17,
+   "min_pg": 19.0,
+   "PTS": {
+    "pg": 7.65,
+    "pm": 0.402
+   },
+   "REB": {
+    "pg": 3.06,
+    "pm": 0.161
+   },
+   "AST": {
+    "pg": 0.53,
+    "pm": 0.028
+   },
+   "3PM": {
+    "pg": 1.0,
+    "pm": 0.053
+   },
+   "STL": {
+    "pg": 0.41,
+    "pm": 0.022
+   },
+   "BLK": {
+    "pg": 0.24,
+    "pm": 0.012
+   },
+   "TOV": {
+    "pg": 0.88,
+    "pm": 0.046
+   }
+  },
+  "l10": {
+   "games": 10,
+   "min_pg": 21.8,
+   "PTS": {
+    "pg": 8.0,
+    "pm": 0.367
+   },
+   "REB": {
+    "pg": 3.7,
+    "pm": 0.17
+   },
+   "AST": {
+    "pg": 0.7,
+    "pm": 0.032
+   },
+   "3PM": {
+    "pg": 1.1,
+    "pm": 0.05
+   },
+   "STL": {
+    "pg": 0.5,
+    "pm": 0.023
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 0.9,
+    "pm": 0.041
+   }
+  },
+  "l5": {
+   "games": 5,
+   "min_pg": 22.4,
+   "PTS": {
+    "pg": 8.4,
+    "pm": 0.375
+   },
+   "REB": {
+    "pg": 4.2,
+    "pm": 0.188
+   },
+   "AST": {
+    "pg": 0.4,
+    "pm": 0.018
+   },
+   "3PM": {
+    "pg": 0.8,
+    "pm": 0.036
+   },
+   "STL": {
+    "pg": 0.0,
+    "pm": 0.0
+   },
+   "BLK": {
+    "pg": 0.2,
+    "pm": 0.009
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.045
+   }
+  },
+  "home": {
+   "games": 9,
+   "min_pg": 20.7,
+   "PTS": {
+    "pg": 9.0,
+    "pm": 0.435
+   },
+   "REB": {
+    "pg": 3.56,
+    "pm": 0.172
+   },
+   "AST": {
+    "pg": 0.56,
+    "pm": 0.027
+   },
+   "3PM": {
+    "pg": 1.22,
+    "pm": 0.059
+   },
+   "STL": {
+    "pg": 0.22,
+    "pm": 0.011
+   },
+   "BLK": {
+    "pg": 0.33,
+    "pm": 0.016
+   },
+   "TOV": {
+    "pg": 1.0,
+    "pm": 0.048
+   }
+  },
+  "away": {
+   "games": 8,
+   "min_pg": 17.1,
+   "PTS": {
+    "pg": 6.12,
+    "pm": 0.358
+   },
+   "REB": {
+    "pg": 2.5,
+    "pm": 0.146
+   },
+   "AST": {
+    "pg": 0.5,
+    "pm": 0.029
+   },
+   "3PM": {
+    "pg": 0.75,
+    "pm": 0.044
+   },
+   "STL": {
+    "pg": 0.62,
+    "pm": 0.036
+   },
+   "BLK": {
+    "pg": 0.12,
+    "pm": 0.007
+   },
+   "TOV": {
+    "pg": 0.75,
+    "pm": 0.044
+   }
+  }
+ },
  "lines": {
+  "AST": {
+   "line": 0.5,
+   "p_over": 0.426,
+   "p_under": 0.574,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
+   "side": "under",
+   "price": 1.9,
+   "book": "tab",
+   "edge": 0.0803,
+   "tier": "A"
+  },
   "PTS": {
    "line": 7.5,
-   "price": 1.96,
-   "book": "unibet",
-   "price_over": 1.96,
-   "price_under": 1.72
+   "p_over": 0.545,
+   "p_under": 0.455,
+   "fair_over": 0.478,
+   "fair_under": 0.522,
+   "price_over": 2.0,
+   "price_under": 1.83,
+   "side": "over",
+   "price": 2.0,
+   "book": "pointsbetau",
+   "edge": 0.0668,
+   "tier": "A"
   },
   "PR": {
    "line": 10.5,
+   "p_over": 0.563,
+   "p_under": 0.437,
+   "fair_over": 0.504,
+   "fair_under": 0.496,
+   "price_over": 1.82,
+   "price_under": 1.85,
+   "side": "over",
    "price": 1.82,
    "book": "unibet",
-   "price_over": 1.82,
-   "price_under": 1.85
+   "edge": 0.0585,
+   "tier": "B"
   },
   "PRA": {
    "line": 11.5,
+   "p_over": 0.533,
+   "p_under": 0.467,
+   "fair_over": 0.507,
+   "fair_under": 0.493,
+   "price_over": 1.85,
+   "price_under": 1.9,
+   "side": "over",
    "price": 1.85,
    "book": "tab",
-   "price_over": 1.85,
-   "price_under": 1.9
+   "edge": 0.0263,
+   "tier": null
   },
   "REB": {
    "line": 3.5,
-   "price": 1.69,
-   "book": "pointsbetau",
-   "price_over": 2.15,
-   "price_under": 1.69
+   "p_over": 0.434,
+   "p_under": 0.566,
+   "fair_over": 0.456,
+   "fair_under": 0.544,
+   "price_over": 2.05,
+   "price_under": 1.72,
+   "side": "under",
+   "price": 1.72,
+   "book": "tab",
+   "edge": 0.0219,
+   "tier": null
   },
   "3PM": {
-   "line": 0.5,
-   "price": 1.45,
-   "book": "unibet",
-   "price_over": 1.45,
-   "price_under": 2.48
+   "line": 1.5,
+   "p_over": 0.286,
+   "p_under": 0.714,
+   "fair_over": 0.302,
+   "fair_under": 0.698,
+   "price_over": 3.1,
+   "price_under": 1.34,
+   "side": "under",
+   "price": 1.34,
+   "book": "tab",
+   "edge": 0.0161,
+   "tier": null
   }
  },
+ "lines_us": {},
+ "game_log": [
+  {
+   "date": "2026-10-24",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2026-10-24_milwaukee_vs_philadelphia",
+   "starter": false,
+   "rest": "",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 11.0,
+   "PTS": 1.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 0.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-26",
+   "opp": "Indiana",
+   "venue": "H",
+   "game": "2026-10-26_indiana_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 14.0,
+   "PTS": 7.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 8.0,
+   "3PA": 2.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-28",
+   "opp": "Houston",
+   "venue": "H",
+   "game": "2026-10-28_houston_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 20.0,
+   "PTS": 8.0,
+   "REB": 4.0,
+   "AST": 0.0,
+   "3PM": 1.0,
+   "STL": 1.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 2.0,
+   "FGA": 7.0,
+   "3PA": 4.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-10-31",
+   "opp": "Cleveland",
+   "venue": "H",
+   "game": "2026-10-31_cleveland_vs_milwaukee",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 19.0,
+   "PTS": 14.0,
+   "REB": 1.0,
+   "AST": 2.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 6.0,
+   "FGA": 8.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-02",
+   "opp": "Minnesota",
+   "venue": "R",
+   "game": "2026-11-02_milwaukee_vs_minnesota",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 8.0,
+   "PTS": 4.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 1.0,
+   "FGA": 1.0,
+   "3PA": 0.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-04",
+   "opp": "Boston",
+   "venue": "R",
+   "game": "2026-11-04_boston_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 18.0,
+   "PTS": 9.0,
+   "REB": 2.0,
+   "AST": 0.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 9.0,
+   "3PA": 6.0,
+   "FTA": 2.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-06",
+   "opp": "Toronto",
+   "venue": "H",
+   "game": "2026-11-06_milwaukee_vs_toronto",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 15.0,
+   "PTS": 7.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 5.0,
+   "3PA": 1.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-08",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-11-08_boston_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 23.0,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 9.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-10",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-10_milwaukee_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 22.0,
+   "PTS": 10.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 5.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-11",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-11-11_la-lakers_vs_milwaukee",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 22.0,
+   "PTS": 2.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 1.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-13",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2026-11-13_milwaukee_vs_orlando",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 22.0,
+   "PTS": 9.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 8.0,
+   "3PA": 5.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-15",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2026-11-15_atlanta_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 17.0,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-18",
+   "opp": "Miami",
+   "venue": "R",
+   "game": "2026-11-18_miami_vs_milwaukee",
+   "starter": false,
+   "rest": "2",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 17.0,
+   "PTS": 7.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 3.0,
+   "FGM": 1.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 5.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-19",
+   "opp": "Portland",
+   "venue": "H",
+   "game": "2026-11-19_milwaukee_vs_portland",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 35.0,
+   "PTS": 18.0,
+   "REB": 9.0,
+   "AST": 0.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 6.0,
+   "FGA": 11.0,
+   "3PA": 5.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-21",
+   "opp": "Philadelphia",
+   "venue": "R",
+   "game": "2026-11-21_milwaukee_vs_philadelphia",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 14.0,
+   "PTS": 2.0,
+   "REB": 1.0,
+   "AST": 0.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 1.0,
+   "FGA": 2.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-23",
+   "opp": "Toronto",
+   "venue": "R",
+   "game": "2026-11-23_milwaukee_vs_toronto",
+   "starter": false,
+   "rest": "1",
+   "result": "W",
+   "opp_tier": "Bottom 10",
+   "min": 25.0,
+   "PTS": 7.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 0.0,
+   "FTA": 4.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-25",
+   "opp": "Brooklyn",
+   "venue": "H",
+   "game": "2026-11-25_brooklyn_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Bottom 10",
+   "min": 21.0,
+   "PTS": 8.0,
+   "REB": 3.0,
+   "AST": 0.0,
+   "3PM": 2.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 3.0,
+   "FGA": 6.0,
+   "3PA": 5.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  }
+ ],
  "recent_games": [
   {
    "date": "2026-11-25",
@@ -160,24 +842,128 @@
    "FTA": 5.0,
    "season": "2026-27",
    "phase": "regular"
+  },
+  {
+   "date": "2026-11-15",
+   "opp": "Atlanta",
+   "venue": "H",
+   "game": "2026-11-15_atlanta_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 17.0,
+   "PTS": 5.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 1.0,
+   "STL": 0.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 2.0,
+   "FGA": 5.0,
+   "3PA": 3.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-13",
+   "opp": "Orlando",
+   "venue": "R",
+   "game": "2026-11-13_milwaukee_vs_orlando",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Middle 10",
+   "min": 22.0,
+   "PTS": 9.0,
+   "REB": 3.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 3.0,
+   "FGA": 8.0,
+   "3PA": 5.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-11",
+   "opp": "LA Lakers",
+   "venue": "H",
+   "game": "2026-11-11_la-lakers_vs_milwaukee",
+   "starter": true,
+   "rest": "0",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 22.0,
+   "PTS": 2.0,
+   "REB": 4.0,
+   "AST": 1.0,
+   "3PM": 0.0,
+   "STL": 0.0,
+   "BLK": 1.0,
+   "TOV": 2.0,
+   "FGM": 1.0,
+   "FGA": 3.0,
+   "3PA": 1.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-10",
+   "opp": "New York",
+   "venue": "R",
+   "game": "2026-11-10_milwaukee_vs_new-york",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 22.0,
+   "PTS": 10.0,
+   "REB": 2.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 2.0,
+   "BLK": 0.0,
+   "TOV": 0.0,
+   "FGM": 4.0,
+   "FGA": 8.0,
+   "3PA": 5.0,
+   "FTA": 1.0,
+   "season": "2026-27",
+   "phase": "regular"
+  },
+  {
+   "date": "2026-11-08",
+   "opp": "Boston",
+   "venue": "H",
+   "game": "2026-11-08_boston_vs_milwaukee",
+   "starter": false,
+   "rest": "1",
+   "result": "L",
+   "opp_tier": "Top 10",
+   "min": 23.0,
+   "PTS": 12.0,
+   "REB": 5.0,
+   "AST": 1.0,
+   "3PM": 2.0,
+   "STL": 1.0,
+   "BLK": 0.0,
+   "TOV": 1.0,
+   "FGM": 5.0,
+   "FGA": 9.0,
+   "3PA": 4.0,
+   "FTA": 0.0,
+   "season": "2026-27",
+   "phase": "regular"
   }
  ],
- "hits": {
-  "PTS": {
-   "line": 7.5,
-   "over": 2,
-   "n": 5
-  },
-  "REB": {
-   "line": 3.5,
-   "over": 3,
-   "n": 5
-  },
-  "3PM": {
-   "line": 0.5,
-   "over": 2,
-   "n": 5
-  }
- },
- "members": "https://thedropcoverage.com/api.html#members"
+ "with_without_tonight": [],
+ "opp": "Detroit"
 }
